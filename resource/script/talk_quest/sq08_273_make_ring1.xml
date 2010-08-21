@@ -1,0 +1,259 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_273_make_ring1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>273</qid>
+      <designer>곽노찬</designer>
+      <qlevel>10</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>274</nextqid>
+      <nextqname>sq08_274_make_ring2</nextqname>
+      <nextqnpc>n025_trader_corin</nextqnpc>
+      <qkname mid="1"><![CDATA[制作戒指Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>25</npcid>
+         <npcename>n025_trader_corin</npcename>
+         <npckname>대장장이 코린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-class_check" mid="6"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$铁匠考林$<BR>嗯……我好像从没在凯德拉见过你……？<BR>你是……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-a" image="QW_PrairieTown.dds" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-b" mid="8"><![CDATA[<html>好像不是特别出名……</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$铁匠考林$<BR>是的……是的……你就是那个在<FONT color=#a82424>普雷利镇</FONT>很出名的冒险家吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-b" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-e" mid="13"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$铁匠考林$<BR>呵呵……我的弟弟<FONT color=#a82424>道林</FONT>对你可是赞不绝口啊。那个脾气不好的家伙说你要来凯德拉观看，让我对你关照一点。所以我一直想看看你到底是什么样的人。呵呵……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-c" image="QW_ManaRidge.dds" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-d" mid="15"><![CDATA[<html>好像不是特别出名……</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$铁匠考林$<BR>是的……是的……你就是那个在<FONT color=#a82424>普雷利镇</FONT>很出名的冒险家吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-d" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-e" mid="17"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$铁匠考林$<BR>呵呵……我的弟弟<FONT color=#a82424>道林</FONT>对你可是赞不绝口啊。那个脾气不好的家伙说你要来凯德拉观看，让我对你关照一点。所以我一直想看看你到底是什么样的人。呵呵……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-e" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-f" mid="20"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$铁匠考林$<BR>既然兄弟让我关照你，我就应该帮帮你……嗯……<FONT color=#a82424>凯德拉关卡</FONT>到处都是老练的冒险家。没有你这种新手可以用的（蹩脚的）东西……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-g" mid="23"><![CDATA[<html>啊……没事……你给我好了！</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$铁匠考林$<BR><FONT color=#7e12d2>(铁匠考林上下打量着我)</FONT><BR>虽然你看上去全身都是破布，不过装备好歹还算齐全。所以我也没有什么好帮你准备的装备……嗯……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-g" image="QS_Default.dds" itemindex="336732192">
+      <talk_answer link_index="n025_trader_corin-accepting-h" mid="26"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$铁匠考林$<BR>好吧。我有几个制作戒指的时候剩下的<FONT color=#a82424>普通的星光碎片</FONT>，可以给你制作一个适合你用的戒指。怎么样？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-acceptted" mid="28"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$制作戒指Ⅰ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-1-a" mid="30"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$铁匠考林$<BR>要想制作戒指，需要用到几种材料。<BR>那就是<FONT color=#a82424>玛瑙碎片</FONT>和<FONT color=#a82424>普通的星光碎片</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-a" image="QS_Default.dds" itemindex="336617472">
+      <talk_answer link_index="n025_trader_corin-1-b" mid="32"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$铁匠考林$<BR><FONT color=#a82424>玛瑙碎片</FONT>你应该有很多，我就不再说明了。而星光则不是那么容易得到的。呵呵……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-b" image="QS_Default.dds" itemindex="336732192">
+      <talk_answer link_index="n025_trader_corin-1-c" mid="37"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$铁匠考林$<BR>这次我就把<FONT color=#a82424>普通的星光碎片</FONT>送给你吧。但是光这样给你好像有点不太好吧？我问你几个问题，你来试着回答。之前我会对你进行简单的教育，应该不难回答。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-c" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-1-d" mid="50"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$铁匠考林$<BR>在各个村庄的铁匠铺可以制作物品。物品大致可以分为<FONT color=#a82424>武器</FONT>/<FONT color=#a82424>防具</FONT>/<FONT color=#a82424>饰品</FONT>。当然，每个村庄可以制作的物品的种类会有所不同。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-d" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-1-e" mid="51"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$铁匠考林$<BR>普雷利镇和魔法山脊的铁匠铺可以制作10级以下的装备，这里可以制作24级以下的装备。下一个地区神圣天堂可以制作24级以上的装备。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-e" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-1-f" mid="44"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$铁匠考林$<BR>制作物品有两种方法。在物品制作清单中，可以看到物品分左右配置。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-f" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-1-g" mid="48"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$铁匠考林$<BR>差异就是<FONT color=#a82424>材料的数量</FONT>和<FONT color=#a82424>制作概率</FONT>。当然，消耗材料多的制作方法制作的成功率较高。而消耗材料少的方法的成功率较低，但却可以进行更多次的尝试。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-g" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-1-h" mid="53"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$铁匠考林$<BR>还有，最重要的是！制作出来的物品根据种类的不同，属性会有很大的差异。即使是同一种物品，属性也可能有所差异。查看想要制作的物品，可以看到可以得到什么属性。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-h" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2" mid="55"><![CDATA[<html>(怎么感觉有点不负责任啊……</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$铁匠考林$<BR>
+运气好的话，就能得到拥有自己想要的属性的物品。运气不好的话，物品制作就会失败。或者即使制作成功，也无法获得自己想要的属性。呵呵……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-a" mid="57"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$铁匠考林$<BR>
+好的！说明就到这里！<BR>
+我要出题了。仔细听好，然后说出正确答案。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-a" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-b" mid="60"><![CDATA[<html> 武器</html>]]></talk_answer>
+      <talk_answer link_index="n025_trader_corin-2-b" mid="61"><![CDATA[<html> 防具</html>]]></talk_answer>
+      <talk_answer link_index="n025_trader_corin-2-b" mid="62"><![CDATA[<html> 饰品</html>]]></talk_answer>
+      <talk_answer link_index="n025_trader_corin-2-c" mid="63"><![CDATA[<html> 猎犬</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$铁匠考林$<BR>
+下列物品中，无法制作的物品是？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-b" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-a" mid="65"><![CDATA[<html>(重新回答问题)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$铁匠考林$<BR>
+连这都能答错，真是服了你了……你的脑袋是<FONT color=#a82424>离线</FONT> 状态吗？啧啧……仔细听着！<BR>
+可以制作的物品种类是<FONT color=#a82424>武器</FONT>/<FONT color=#a82424>防具</FONT>/<FONT color=#a82424>饰品</FONT>。重来！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-c" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-d" mid="68"><![CDATA[<html>☞ Yes~！</html>]]></talk_answer>
+      <talk_answer link_index="n025_trader_corin-2-e" mid="69"><![CDATA[<html>☞ No~！</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$铁匠考林$<BR>
+下一个问题！<FONT color=#a82424>制作物品的方法</FONT>一共有<FONT color=#a82424>三种</FONT>。分别是消耗材料多但成功率高的方法、消耗材料少但成功率低的方法，以及没有材料花钱制作的方法。对的话选择<FONT color=#a82424>Yes</FONT>！错的话选择<FONT color=#a82424>NO</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-d" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-a" mid="71"><![CDATA[<html>(从头开始回答)</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$铁匠考林$<BR>错了！制作物品的方法只有消耗材料多但成功率高的方法，以及消耗材料少但成功率低的方法<FONT color=#a82424>两种</FONT>！<BR>重来！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-e" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-f" mid="73"><![CDATA[<html> 道具制作只能在各村庄的铁匠处进行。</html>]]></talk_answer>
+      <talk_answer link_index="n025_trader_corin-2-f" mid="77"><![CDATA[<html> 制作出的道具属性在一定范围内随机生成。</html>]]></talk_answer>
+      <talk_answer link_index="n025_trader_corin-2-g" mid="78"><![CDATA[<html> 制作材料可在铁匠和杂货店购买。</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$铁匠考林$<BR>
+最后一个问题！哪一项不是物品制作的特点？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-f" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-a" mid="80"><![CDATA[<html>(从头开始回答)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$铁匠考林$<BR>
+很遗憾，回答错误。制作材料只能通过打猎或分解物品获得。从头开始～！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-g" image="QS_Default.dds" itemindex="336732192">
+      <talk_answer link_index="n025_trader_corin-2-h" mid="82"><![CDATA[<html>谢谢。</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$铁匠考林$<BR>
+真了不起！好的，按照约定，我把<FONT color=#a82424>普通的星光碎片</FONT>送给你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-h" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-!next" mid="84"><![CDATA[<html><FONT color=#086171>(获得奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="conexe" true="2" false="3">1</exe>
+         <exe type="talk" npc="n025_trader_corin">a</exe>
+         <exe type="talk" npc="n025_trader_corin">c</exe>
+         <exe type="recompense_view">2730,,,,</exe>
+         <exe type="setquest">273</exe>
+         <exe type="talk" npc="n025_trader_corin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2730,,,,</exe>
+         <exe type="complete">273</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="class_check">0</exelink>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="h">4</exelink>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="acceptted">5,6</exelink>
+   <exelink qstep="1" npc="n025_trader_corin" sub="b" />
+   <exelink qstep="1" npc="n025_trader_corin" sub="c" />
+   <exelink qstep="1" npc="n025_trader_corin" sub="d" />
+   <exelink qstep="1" npc="n025_trader_corin" sub="e" />
+   <exelink qstep="1" npc="n025_trader_corin" sub="f" />
+   <exelink qstep="1" npc="n025_trader_corin" sub="g" />
+   <exelink qstep="1" npc="n025_trader_corin" sub="h" />
+   <exelink qstep="1" npc="n025_trader_corin" sub="2">0</exelink>
+   <exelink qstep="2" npc="n025_trader_corin" sub="b" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="b" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="b" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="c" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="a" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="d" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="e" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="a" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="f" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="f" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="g" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="a" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="h">0</exelink>
+   <exelink qstep="2" npc="n025_trader_corin" sub="!next">1</exelink>
+   <journal_data recompense="2730" quest_title="반지 제작Ⅰ" chapterid="" quest_level="10" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n25</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>25</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="87"><![CDATA[和铁匠考林对话]]></title>
+         <contents mid="88"><![CDATA[<html><FONT color=#a82424>铁匠考林</FONT>说会用用剩的<FONT color=#a82424>普通的星光碎片</FONT>帮我制作戒指。<BR>和铁匠考林对话，获取普通的星光碎片。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 铁匠考林</FONT></html>]]></contents>
+         <destination mid="89"><![CDATA[和铁匠考林对话]]></destination>
+         <todo_msg mid="90"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>10:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,21 @@
+   <talk>
+      <npcename>n217_argenta</npcename>
+      <npcid>217</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[阿尔杰塔]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$阿尔杰塔$<BR>杰兰特, 那个家伙真无药可救啊。<BR>
+嗯，虽说杰兰特的个性本是如此。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">mq11_409_remainder_works</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="enterquest">mq11_410_sea_monsters_soul</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">409</chk>
+         <chk type="hasquest">410</chk>
+      </conditions>
+   </talk>

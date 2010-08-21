@@ -1,0 +1,428 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq01_059_dorins_amazing_box1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>59</qid>
+      <designer>곽노찬</designer>
+      <qlevel>7</qlevel>
+      <qdesc>300150 낡은 유물함
+300151 폭풍의 바랄라이카
+300152 바랄라이카 부스러기</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>60</nextqid>
+      <nextqname>sq01_060_dorins_amazing_box2</nextqname>
+      <nextqnpc>n002_trader_dorin</nextqnpc>
+      <qkname mid="1"><![CDATA[道林的遗物盒Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>2</npcid>
+         <npcename>n002_trader_dorin</npcename>
+         <npckname>대장장이 도린 (프레리 무기상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>361</npcid>
+         <npcename>n361_item_destroy</npcename>
+         <npckname>아이템 분해기</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-a" mid="6"><![CDATA[<html>……遇到什么不愉快的事情了？</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$铁匠道林$<BR>喂喂喂~ 这是谁呀？<BR>这不是最近村里的大红人……啊～嚏！<BR> 
+意气风发的<FONT color=#a82424>狂人勇士</FONT>吗～？！<BR>今天来找我，有什么事吗？啊～嚏！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-b" mid="8"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$铁匠道林$<BR>嗯？没有没有！～哪有什么不愉快的事情……啊～嚏～！<BR>难道我会因为别人把<FONT color=#a82424>东西</FONT>大包大包地<FONT color=#a82424>拿来卖</FONT>，我费尽心思做的<FONT color=#a82424>东西</FONT>却<FONT color=#a82424>没人看一眼，</FONT>就会这样吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-c" mid="20"><![CDATA[<html>(啊，真恶心……) 嗯，有什么好东西吗？</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$铁匠道林$<BR> 
+哎呀，还会有别的吗……<BR> 
+啊，今天<FONT color=#a82424>痰</FONT>怎么这么多。咳，啊～嚏～！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-d" mid="12"><![CDATA[<html>(………)随便给我个什么东西……</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$铁匠道林$<BR> 哎呀！欢迎光临～～我们铁匠铺按照<FONT color=#a82424>热情</FONT>、<FONT color=#a82424>正直</FONT>的店训，常年提供<FONT color=#a82424>最高品质</FONT>的东西，顾客满意度连续<FONT color=#dc5a00>10</FONT><FONT color=#a82424>年</FONT>排名第<FONT color=#dc5a00>1</FONT><FONT color=#a82424></FONT>。本着<FONT color=#a82424>服务于大众</FONT>的宗旨，向顾客提供最好的商品，是我们铁匠铺最大的荣耀。你需要什么呢～？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-d" image="QS_Default.dds" itemindex="300150">
+      <talk_answer link_index="n002_trader_dorin-accepting-e" mid="15"><![CDATA[<html>遗物盒……？那是什么？</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$铁匠道林$<BR>哦～！那样的话，我隆重向你介绍我们家族代代相传的<FONT color=#a82424>古代遗物盒</FONT>，现在惊爆价，只要<FONT color=#dc5a00>10</FONT>个<FONT color=#a82424>金币</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$道林的遗物盒Ⅰ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1" image="QS_Default.dds" itemindex="300150">
+      <talk_answer link_index="n002_trader_dorin-1-a" mid="22"><![CDATA[<html>原来如此。</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$铁匠道林$<BR>所谓<FONT color=#a82424>遗物盒</FONT>，是指里面<FONT color=#a82424>装的不知道是什么</FONT>的箱子～！<BR>要想知道箱子里装着什么东西，必须把<FONT color=#a82424>古代遗物盒</FONT>打开才能知道～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1-a" image="QS_Default.dds" itemindex="300150">
+      <talk_answer link_index="n002_trader_dorin-1-b" mid="24"><![CDATA[<html>啊，我现在没钱……等下次……</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$铁匠道林$<BR>来来～改变惨淡人生的绝好契机！人生逆转的长篇史诗！你想要<FONT color=#a82424>古代遗物</FONT><FONT color=#a82424>盒</FONT>吗～？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1-b" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-1-c" mid="26"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$铁匠道林$<BR>
+…<BR>
+……<BR>
+………<BR>
+啊，滚开……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1-c" image="QS_Default.dds" itemindex="300150">
+      <talk_answer link_index="n002_trader_dorin-1-d" mid="30"><![CDATA[<html>谢……谢谢。</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$铁匠道林$<BR>啊……虽然我是个卖东西的，不过你也算是老顾客了，这次我就允许你<FONT color=#a82424>赊账</FONT>吧。<FONT color=#a82424>古代遗物盒</FONT>我先赊给你，你打开看看吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1-d" image="QS_Default.dds" itemindex="300150">
+      <talk_answer link_index="n002_trader_dorin-1-e" mid="33"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$铁匠道林$<BR>在<FONT color=#a82424>背包</FONT>里选择<FONT color=#a82424>遗物盒</FONT>，用<FONT color=#a82424>鼠标右键</FONT>就可以使用了。打开箱子，确认弹出的物品后，再来和我说话。<BR><FONT color=#7e12d2>(铁匠道林把<FONT color=#a82424>陈旧的遗物盒</FONT>交给了我)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1-e" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$铁匠道林$<BR> 
+啊，对了……<FONT color=#a82424>赊账利率</FONT>是<FONT color=#a82424>每年</FONT><FONT color=#dc5a00>79.24</FONT><FONT color=#086171>%</FONT>，<FONT color=#a82424>延迟利息</FONT>最高为<FONT color=#dc5a00>99.98</FONT><FONT color=#a82424>%</FONT>。<FONT color=#a82424>手续费</FONT>和其他<FONT color=#a82424>附加费用</FONT>另计。这我得先告诉你～嘿嘿～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2" image="QS_Default.dds" itemindex="300150">
+      <talk_question mid="28"><![CDATA[<html>$铁匠道林$<BR>你在干嘛？我不是说过，在<FONT color=#a82424>背包</FONT>里选择<FONT color=#a82424>遗物盒</FONT>，点击<FONT color=#a82424>鼠标右键</FONT>就可以使用吗？<BR>你该不会这么快就忘了吧？快把箱子打开！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-a" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n002_trader_dorin-2-b" mid="39"><![CDATA[<html>出来的好像是非常好的东西……</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$铁匠道林$<BR>
+哈……哈哈哈哈？！！！这……这是……！！！<BR>
+<FONT color=#7e12d2>(铁匠道林的眼睛睁得老大，眼珠好像要蹦出来一样)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-b" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n002_trader_dorin-2-class_check_2" mid="41"><![CDATA[<html>你知道这个东西吗？</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$铁匠道林$<BR> 这……这不是……<BR> 暴…暴…暴…暴…暴…暴…暴…暴…暴……<BR> <FONT color=#dc5a00>暴风三弦琴</FONT>吗？！！？！<BR> 怎……怎么会在那里……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-c" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n002_trader_dorin-2-e" mid="44"><![CDATA[<html>嘿嘿～不管怎样，谢谢你让我得到了一个好东西。</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$铁匠道林$<BR>那、那是我们<FONT color=#a82424>祖先</FONT>经过几代制作而成的<FONT color=#a82424>古代的武器</FONT>。那……那么好的东西怎么会在那个垃圾一样的旧箱子里啊……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-d" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n002_trader_dorin-2-e" mid="46"><![CDATA[<html>呵呵～不管怎样，谢谢你让我得到了一个好东西～</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$铁匠道林$<BR>那、那是我们<FONT color=#a82424>祖先</FONT>经过几代制作而成的<FONT color=#a82424>古代的武器</FONT>。那……那么好的东西怎么会在那个垃圾一样的旧箱子里啊……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-e" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n002_trader_dorin-2-f" mid="48"><![CDATA[<html>无法使用？</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$铁匠道林$<BR>
+呵呵……不过反正现在已经是<FONT color=#a82424>无法使用的武器</FONT>了。<BR>
+除了作为<FONT color=#a82424>古董</FONT>，就没有别的价值了。还不如把它改造一下，用来制作新武器。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-f" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n002_trader_dorin-2-g" mid="50"><![CDATA[<html>那你说的改造一下，制作新的武器是怎么回事……？</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$铁匠道林$<BR>
+怎么回事？你确认过物品了吗？<BR>
+你仔细看看<FONT color=#a82424>物品信息</FONT>。<FONT color=#a82424>职业限制</FONT>上写的是<FONT color=#dc5a00>古代人</FONT>，不是吗？<FONT color=#dc5a00>古代人</FONT>已经灭亡几百年了，所以它现在就是个没人能用的东西。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-g" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n002_trader_dorin-2-h" mid="53"><![CDATA[<html>(道林的嘴角浮起一丝微笑，说道。)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$铁匠道林$<BR> 虽然<FONT color=#a82424>分解</FONT>祖先留下的<FONT color=#a82424>古代人的遗产</FONT>很让人心痛，但人生就是不停循环的过程，不是吗？反正是没用的东西，不如用来创造新的东西。可以说是为了创造而破坏～嘿嘿……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-h" image="QN_Npc_ItemDissolution.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$铁匠道林$<BR>长话短说，你先去分解<FONT color=#dc5a00>暴风三弦琴</FONT>。<BR>我会帮你重新制造成你可以使用的武器。<BR><FONT color=#a82424>物品分解机</FONT>在<FONT color=#a82424>阴影森林</FONT>，你快去快回。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-i" image="QS_Default.dds" itemindex="300150">
+      <talk_question mid="85"><![CDATA[<html>$铁匠道林$<BR>嗯？<FONT color=#a82424>遗物盒</FONT>弄丢了？这么毛手毛脚……<BR>我再给你一个，你快去<FONT color=#a82424>背包</FONT>里选择<FONT color=#a82424>遗物盒</FONT>，然后点击<FONT color=#a82424>鼠标右键</FONT>使用！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-j" image="QS_Default.dds" itemindex="300150">
+      <talk_question mid="89"><![CDATA[<html>$铁匠道林$<BR>你这家伙?<BR>让你打开遗物盒，你却窝在仓库干什么啊? 还不赶快拿出来！<BR><FONT color=#7e12d2>（把古代的遗物盒取出的道具交给铁匠道林吧）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n002_trader_dorin-3-a" mid="95"><![CDATA[<html>嗯？这是分解物品得到的残骸……</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$铁匠道林$<BR>…<BR>………<BR>……………<BR>…………………这是什么啊？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-a" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n002_trader_dorin-3-b" mid="61"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$铁匠道林$<BR> ……<BR>不，我是说……<BR><FONT color=#dc5a00>暴风三弦琴</FONT>分解之后，怎么会出来这些东西？<BR> 这是什么……？嗯？为什么都是些<FONT color=#a82424>垃圾</FONT>啊～！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-b" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n002_trader_dorin-3-c" mid="63"><![CDATA[<html>你和我说又有什么用……</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$铁匠道林$<BR>
+为了制作<FONT color=#dc5a00>暴风三弦琴</FONT>，我们祖先不知道用掉了多少纹章、宝玉、黄金和宝石？！！<BR>
+为什么只有这些东西？？这像话吗？！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-c" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n002_trader_dorin-3-d" mid="65"><![CDATA[<html>……(原来还有这种计划……)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$铁匠道林$<BR>啊～！我本来想制造一个超越<FONT color=#dc5a00>暴风三弦琴</FONT>的、<FONT color=#a82424>壮观的</FONT>、<FONT color=#086171>惊人的</FONT>、<FONT color=#dc5a00>东方的</FONT>、<FONT color=#7e12d2>绝美的</FONT>、<FONT color=#419300>百万吨级的</FONT>、<FONT color=#a82424>充满悬念的</FONT>、<FONT color=#dc5a00>唯一的</FONT>物品！！啊啊啊～～～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-d" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-3-!next" mid="67"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-e" image="QN_Npc_ItemDissolution.dds" itemindex="">
+      <talk_question mid="87"><![CDATA[<html>$铁匠道林$<BR>我让你去分解<FONT color=#a94407>暴风三弦琴</FONT>，你把它扔在哪儿了？我再给你一个，你马上去<FONT color=#a82424>阴影森林</FONT><FONT color=#a82424>分解</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-f" image="QN_Npc_ItemDissolution.dds" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$铁匠道林$<BR>磨蹭什么? 不是叫你去<FONT color=#a82424>阴影森林</FONT>对<FONT color=#dc5a00>暴风三弦琴</FONT> 进行<FONT color=#a82424>分解</FONT>后回来吗?<BR>还不赶紧过去把道具分解出的<FONT color=#a82424>材料</FONT>拿回来。<BR>
+<FONT color=#7e12d2>（利用物品分解机分解暴风三弦琴吧）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-g" image="QS_Default.dds" itemindex="300152">
+      <talk_question mid="98"><![CDATA[<html>$铁匠道林$<BR>我不是让你快去分解<FONT color=#a94407>暴风三弦琴</FONT>，然后把材料拿回来的吗？<BR>
+<FONT color=#7e12d2>(请把暴风三弦琴分解得到的材料拿过来)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">59</exe>
+         <exe type="recompense_view">,591,592,592,592</exe>
+         <exe type="talk" npc="n002_trader_dorin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>300150 케케묵은 깜짝 상자</comment>
+      <conditions />
+      <executions>
+         <exe type="additem" num="1">300150</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="30000" exe="" onexe="4,5,6">300152</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>300150 낡은 유물함
+300151 폭풍의 바랄라이카
+300152 바랄라이카 부스러기
+</comment>
+      <conditions>
+         <chk type="item" num="1" op="]=">300151</chk>
+         <chk type="class" op="=">1</chk>
+         <chk type="item" num="1" op="]=">300150</chk>
+         <chk type="item" num="1" op="]=">300152</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300150 , 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300151 , 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300152 , 1) >= 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="10,16,6,9" false="18">3</exe>
+         <exe type="talk" npc="n002_trader_dorin">a</exe>
+         <exe type="talk" npc="n002_trader_dorin">2</exe>
+         <exe type="conexe" true="4" false="5">1</exe>
+         <exe type="talk" npc="n002_trader_dorin">c</exe>
+         <exe type="talk" npc="n002_trader_dorin">d</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntitem" num="30000" exe="" onexe="10,9">300152</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="conexe" true="1" false="19">0</exe>
+         <exe type="talk" npc="n002_trader_dorin">i</exe>
+         <exe type="additem" num="1">300150</exe>
+         <exe type="conexe" true="2" false="15">2</exe>
+         <exe type="conexe" true="17" false="12,13">4</exe>
+         <exe type="talk" npc="n002_trader_dorin">3</exe>
+         <exe type="talk" npc="n002_trader_dorin">j</exe>
+         <exe type="conexe" true="17" false="11">6</exe>
+         <exe type="conexe" true="17" false="14">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="item" num="1" op="]=">300152</chk>
+         <chk type="class" op="=">1</chk>
+         <chk type="item" num="1" op="]=">300151</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300151 , 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300152 , 1) >= 1</chk>
+         <chk type="item" num="1" op="]=">130150</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300150 , 1) >= 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="7">0</exe>
+         <exe type="talk" npc="n002_trader_dorin">3</exe>
+         <exe type="talk" npc="n002_trader_dorin">f</exe>
+         <exe type="recompense">591,,,,</exe>
+         <exe type="complete">59</exe>
+         <exe type="conexe" true="3" false="6">1</exe>
+         <exe type="recompense">592,,,,</exe>
+         <exe type="conexe" true="12" false="10">4</exe>
+         <exe type="talk" npc="n002_trader_dorin">e</exe>
+         <exe type="additem" num="1">300151</exe>
+         <exe type="conexe" true="2" false="11">2</exe>
+         <exe type="conexe" true="12" false="13">3</exe>
+         <exe type="talk" npc="n002_trader_dorin">g</exe>
+         <exe type="conexe" true="12" false="14">5</exe>
+         <exe type="conexe" true="12" false="8,9">6</exe>
+         <exe type="delitem" num="-1">300150</exe>
+         <exe type="delitem" num="-1">300151</exe>
+         <exe type="delitem" num="-1">300152</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n002_trader_dorin" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n002_trader_dorin" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n002_trader_dorin" sub="b" />
+   <exelink qstep="1" npc="n002_trader_dorin" sub="c" />
+   <exelink qstep="1" npc="n002_trader_dorin" sub="d" />
+   <exelink qstep="1" npc="n002_trader_dorin" sub="e">0,1,2,3</exelink>
+   <exelink qstep="2" npc="n002_trader_dorin">0</exelink>
+   <exelink qstep="2" npc="n002_trader_dorin" sub="b" />
+   <exelink qstep="2" npc="n002_trader_dorin" sub="class_check_2">3</exelink>
+   <exelink qstep="2" npc="n002_trader_dorin" sub="e" />
+   <exelink qstep="2" npc="n002_trader_dorin" sub="e" />
+   <exelink qstep="2" npc="n002_trader_dorin" sub="f" />
+   <exelink qstep="2" npc="n002_trader_dorin" sub="g" />
+   <exelink qstep="2" npc="n002_trader_dorin" sub="h">6,7,8</exelink>
+   <exelink qstep="3" npc="n002_trader_dorin">0</exelink>
+   <exelink qstep="3" npc="n002_trader_dorin" sub="b" />
+   <exelink qstep="3" npc="n002_trader_dorin" sub="c" />
+   <exelink qstep="3" npc="n002_trader_dorin" sub="d">5</exelink>
+   <exelink qstep="3" npc="n002_trader_dorin" sub="!next">4,15,16,17</exelink>
+   <journal_data recompense="1:591,2:592" quest_title="도린의 유물함Ⅰ" chapterid="" quest_level="7" quest_mark_type="10" use_item_list="300151,300150,300152">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,n2</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>2</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[和铁匠道林对话]]></title>
+         <contents mid="69"><![CDATA[<html>去铁匠道林那里听听<FONT color=#a82424>古代遗物盒</FONT>的事情。<BR><BR><FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→ 铁匠道林</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[和铁匠道林对话]]></destination>
+         <todo_msg mid="71"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,n2</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>2</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[使用陈旧的遗物盒后，和铁匠道林对话]]></title>
+         <contents mid="73"><![CDATA[<html>使用从道林那里得到的<FONT color=#a82424>陈旧的遗物盒</FONT>，获得物品后，重新和<FONT color=#a82424>道林</FONT>对话。<BR><BR><FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→ 铁匠道林</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[使用陈旧的遗物盒后，和铁匠道林对话]]></destination>
+         <todo_msg mid="75"><![CDATA[请使用从道林那里得到的陈旧的遗物盒。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_ItemDissolution.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>2,n361</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>361</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[用阴影森林的物品分解机分解暴风三弦琴]]></title>
+         <contents mid="78"><![CDATA[<html>道林说暴风三弦琴分解之后可以制作成新的物品，让我去<FONT color=#a82424>阴影森林</FONT>的<FONT color=#a82424>物品分解机</FONT>把<FONT color=#dc5a00>暴风三弦琴</FONT>分解掉。<BR> 
+<BR> 
+<FONT color=#086171>阴影森林</FONT> <FONT color=#a82424>→ 物品分解机</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[用阴影森林的物品分解机分解暴风三弦琴]]></destination>
+         <todo_msg mid="80"><![CDATA[请用阴影森林的物品分解机分解暴风三弦琴。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,n2</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>2</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[和铁匠道林对话]]></title>
+         <contents mid="82"><![CDATA[<html><FONT color=#a82424>分解</FONT>了<FONT color=#dc5a00>暴风三弦琴</FONT>，获得了<FONT color=#a82424>三弦琴碎渣</FONT>。回到普雷利镇的<FONT color=#a82424>铁匠道林</FONT>那里，并与其对话。<BR><BR><FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→ 铁匠道林</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[和铁匠道林对话]]></destination>
+         <todo_msg mid="84"><![CDATA[分解了暴风三弦琴。请回到铁匠道林那里。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>7:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1:2</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

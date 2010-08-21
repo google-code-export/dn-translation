@@ -1,0 +1,754 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_403_meet_argenta_again</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>403</qid>
+      <designer>김인정</designer>
+      <qlevel>26</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>421</nextqid>
+      <nextqname>mq11_421_warclouds</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[黑暗大君主的领地]]></qkname>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드(세인트헤이븐 왕성)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>210</npcid>
+         <npcename>n210_argenta</npcename>
+         <npckname>아르젠타(검은 대군주의 영지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>211</npcid>
+         <npcename>n211_geraint</npcename>
+         <npckname>제레인트(검은 대군주의 영지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>212</npcid>
+         <npcename>n212_argenta</npcename>
+         <npckname>아르젠타(검은 산자락)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>261</npcid>
+         <npcename>n261_slave_david</npcename>
+         <npckname>아르젠타의 노예 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$主教伊格纳西奥$<BR><FONT color=#a82424>道格拉斯将军</FONT>正在聚集兵力，就与他商议出兵吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$阿尔杰塔$<BR>你现在怎么还在这里。<BR>不要妨碍我，去做该做的事情吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-1" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$阿尔杰塔$<BR>什么啊?你怎么会在这里?<BR>赶紧去做该做的事情吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n211_geraint-1" image="" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$金发剑士$<BR>… <FONT color=#7e12d2>（似乎没有对话的想法）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$精锐士兵克林德$<BR>抱歉，我现在很忙。单就凯德拉发生的事情，报告至少得写100张。哎...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="122"><![CDATA[<html>明白了。</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$道格拉斯将军$<BR>
+
+得了解召集兵力的情况。 <BR>你就到<FONT color=#a82424>精锐士兵克林德</FONT>那里了解一下情况回来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_question mid="123"><![CDATA[<html>$道格拉斯将军$<BR>要是他们准备好的话，就回来告诉我吧。<BR>我得继续打探 <FONT color=#a82424>黑暗矿山</FONT>的情况，同时为了与<FONT color=#a82424>黑骑士</FONT>的对战，要开始准备兵站的事了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="186"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+喂，我说！<FONT color=#a82424>阿尔杰塔</FONT>大人怎么了！<BR>
+为何还不回来啊~！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$道格拉斯将军$<BR>要是他们准备好的话，就回来告诉我吧。<BR>我得继续打探 <FONT color=#a82424>黑暗矿山</FONT>的情况，同时为了与<FONT color=#a82424>黑骑士</FONT>的对战，要开始准备兵站的事了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-2-level1" mid="15"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$精锐士兵克林德$<BR>得到了紧急召集的命令，现在神圣天堂可参战的兵力正迅速集结当中。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-a" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-2-b" mid="125"><![CDATA[<html>原来如此。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$精锐士兵克林德$<BR>但是，与魔物们的持久战过后，城内的预备兵力要比想象的还少呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-b" image="" itemindex="">
+      <talk_question mid="126"><![CDATA[<html>$精锐士兵克林德$<BR>所以现在已经向派往其他地方的士兵下达了紧急撤离的命令。<BR>你也做好相应准备，等下一步的通知吧。<BR><FONT color=#7e12d2>（达到26级之后，方可开始下一阶段。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-c" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$精锐士兵克林德$<BR>以当前召集的兵力，姑且可以出兵了。<BR>请向<FONT color=#a82424>将军大人</FONT>禀告后，等待下一步的命令吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$精锐士兵克林德$<BR>预备兵力已经完成集结。<BR>请向<FONT color=#a82424>道格兰斯将军</FONT>报告并等待下一步的命令吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-party" mid="129"><![CDATA[<html>（道格拉斯将军很骄傲）</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$道格拉斯将军$<BR>看来已经完成兵力集结了。<BR>虽然比期待的要少，但是可都是经验丰富的精锐士兵们呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-b" mid="131"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$道格拉斯将军$<BR>目的地为<FONT color=#a82424>黑暗大君主的领地</FONT>… 与<FONT color=#a82424>黑骑士</FONT>的较量当中，我们至今还未成功进入到他的根据地深处。趁这次机会得到更多情报的话，肯定会对将来的战斗有好处的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-c" mid="134"><![CDATA[<html>是！那是当然！</html>]]></talk_answer>
+      <talk_question mid="133"><![CDATA[<html>$道格拉斯将军${action:talk}<BR>那就赶快出发吧。<BR>
+我们会全力以赴的，你也要为了营救<FONT color=#a82424>先知</FONT>尽自己最大的努力才是。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-c" image="QW_28.dds" itemindex="">
+      <talk_question mid="135"><![CDATA[<html>$道格拉斯将军$<BR>精锐第一军已经出发了吧。<BR>你也准备好之后，赶紧前往 <FONT color=#a82424>黑暗大君主的领地</FONT>与他们回合吧。<BR><FONT color=#7e12d2>※ 该任务组队状态下无法进行。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-d" image="" itemindex="">
+      <talk_question mid="234"><![CDATA[<html>$道格拉斯将军$<BR><FONT color=#7e12d2><FONT color=#2b2723>精锐士兵即将出发，</FONT></FONT><FONT color=#7e12d2><FONT color=#2b2723>你也好好整理之后回来吧。</FONT></FONT><BR>
+<FONT color=#7e12d2>※ 该任务组队状态下无法进行。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="QW_28.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$道格拉斯将军$<BR>第一精锐军已经出发了。<BR>你自己做好准备的话，赶紧也前往 <FONT color=#a82424>黑暗大君主的领地</FONT>，与他们汇合吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-4" image="QW_28.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$精锐士兵克林德$<BR>道格拉斯将军的支援兵力已经准备就绪了。请先出发吧，我们也会紧随其后的，所以请放心前往<FONT color=#a82424>黑暗大君主的领地</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4" image="QW_28.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$主教伊格纳西奥$<BR>哦，现在才出发啊? 道格拉斯将军的兵力能帮的上忙，最好不过了。<BR>赶紧前往<FONT color=#a82424>黑暗大君主的领地</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n211_geraint-4" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$金发剑士$<BR>...<BR>（似乎正在和<FONT color=#a82424>阿尔杰塔</FONT>对话）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-4" image="" itemindex="">
+      <talk_answer link_index="n210_argenta-4-a" mid="107"><![CDATA[<html>认识那… 那个金发剑士吗?</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$阿尔杰塔$<BR>还以为不是你的脚步声呢。<FONT color=#382000>{user_nick}</FONT>.<BR>还真找到这里来了啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-4-a" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n210_argenta-4-b" mid="109"><![CDATA[<html>嗯?就是那个人吗?！</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$阿尔杰塔$<BR>当然知道。那个家伙就是<FONT color=#a82424>杰兰特</FONT>，<BR>不久前我提到过他的吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-4-b" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n210_argenta-4-c" mid="111"><![CDATA[<html>在被遗弃的韦尔顿哈鲁看到与黑骑士打斗的情形。</html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$阿尔杰塔$<BR>嗯。不过你这是什么反应啊?<BR>你，你见过<FONT color=#a82424>杰兰特</FONT>？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-4-c" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n210_argenta-4-d" mid="113"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$阿尔杰塔$<BR>啊，看到了哇。就是这个笨蛋轻易的放走黑骑士的。<BR><FONT color=#a82424>杰兰特</FONT>，你怎么就能让这种乳臭未干的<FONT color=#a82424>那个家伙</FONT>从你的眼皮底下溜之大吉呢? 我绝对无法理解啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-4-d" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n210_argenta-4-cutin" mid="115"><![CDATA[<html>（杰兰特缓慢的开口）</html>]]></talk_answer>
+      <talk_question mid="114"><![CDATA[<html>$阿尔杰塔$<BR><FONT color=#a82424>杰兰特</FONT>! 给我听着?!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-5" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n210_argenta-5-a" mid="101"><![CDATA[<html>干吗?</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$阿尔杰塔$<BR>你不能跟着<FONT color=#a82424>杰兰特</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-5-a" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_answer link_index="n210_argenta-5-b" mid="103"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$阿尔杰塔$<BR>为什么?我都很难帮的上忙，更何况是你? 就以你现在的实力，没怎么着就可能一命呜呼了呢? 我现在要到<FONT color=#a82424>黑山山角</FONT>，你就乖乖的跟着我来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-5-b" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_question mid="104"><![CDATA[<html>$阿尔杰塔$<BR>磨蹭什么? <BR>我要到黑山山角 ，还不去准备。<BR>以你现在的实力就不要做梦，想跟着杰兰特啦，明白吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-5" image="QW_28.dds" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$道格拉斯将军$<BR><FONT color=#a82424>黑暗大君主的领地</FONT>的事情完成的如何?<BR>一起去的兵力似乎已经安全返回。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$主教伊格纳西奥$<BR>见到<FONT color=#a82424>阿尔杰塔</FONT>了吗? 如果她要是有什么事想说的话，你应该好好听取才是。<BR><FONT color=#7e12d2>（与黑山山角的阿尔杰塔对话）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n211_geraint-5" image="" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$杰兰特$<BR>...<BR>
+<FONT color=#7e12d2>（似乎没有对话的意思）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-5" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-5-a" mid="69"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$阿尔杰塔$<BR>现在不是傻呆在这里的时候。<BR>别妨碍我，去做你该做的事情吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-6" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-6-a" mid="86"><![CDATA[<html>贝思柯德? 那个黑骑士的名字叫贝思柯德?</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$阿尔杰塔$<BR>不知<FONT color=#a82424>杰兰特</FONT>还顺不顺利。<BR>
+
+那个傻瓜吃了那么大的亏，还不死心。以前也曾经吃过 <FONT color=#a82424>贝思柯德</FONT> 相同的亏，到现在依然还不死心呢… 啧啧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-6-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-6-b" mid="154"><![CDATA[<html>贝思柯德和杰兰特…</html>]]></talk_answer>
+      <talk_question mid="153"><![CDATA[<html>$阿尔杰塔$<BR>我没跟你说过吗? …不，这种事心里知道就可以了? 追<FONT color=#a82424>古代人</FONT>都追到这里，还什么都不懂啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-6-b" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-6-c" mid="155"><![CDATA[<html>（戴维兴奋的大叫）</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+<FONT color=#a82424>贝思柯德</FONT>?! <FONT color=#a82424>杰兰特</FONT>?!!<BR>
+哦… 还是阿尔杰塔大人!!<BR>看来与
+<FONT color=#a82424>六大英雄</FONT>很亲近的嘛!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-6-c" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="156"><![CDATA[<html>$阿尔杰塔$<BR>啊~ 那个家伙怎么又活蹦乱跳起来了…<BR>小鬼，我得休息一会，你就过去好好堵住那个 <FONT color=#a82424>笨瓜</FONT>的嘴吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="188"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+呵呵呵。<FONT color=#a82424>阿尔杰塔</FONT>大人还是没忘记我啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-a" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-b" mid="191"><![CDATA[<html>传说中的六大英雄? 说什么呢?</html>]]></talk_answer>
+      <talk_question mid="190"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+看来，还是我的阿尔杰塔大人啊！<BR>
+我虽知道她不是什么平凡的人，但却万万没想到能与传说中的<FONT color=#a82424>六大英雄</FONT>们相识！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-b" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-c" mid="193"><![CDATA[<html>…居然听你这么说…我可有点生气啦。</html>]]></talk_answer>
+      <talk_question mid="192"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+…………?<BR>
+什么? 不认识<FONT color=#a82424>六大英雄</FONT>…?<BR>
+再怎么笨也得有分寸啊！怎么可能不认识<FONT color=#a82424>六大英雄</FONT>呢！！！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-c" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-d" mid="195"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="194"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+啧啧，你这个笨蛋…我就为你特别说明一次吧，可要好好听讲哦！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-d" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-e" mid="197"><![CDATA[<html>…讲讲重点即可，没用的可以省略。</html>]]></talk_answer>
+      <talk_question mid="196"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+50多年前！ 被贤者打败而受致命伤并逃到自身巢穴的<FONT color=#a82424>黑龙卡拉斯</FONT>又重新复活了！世界因邪恶的<FONT color=#a82424>黑龙卡拉斯</FONT>而陷入一片恐慌之中，人类面临关乎生死存亡的危机当中！就在人类的希望即将崩塌之时~！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-e" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-f" mid="200"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="198"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+啧啧… 真是个冷血动物…<BR>
+总之，为了对抗那个邪恶的黑龙卡拉斯，大陆出现了 <FONT color=#a82424>六位</FONT>英雄。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-f" image="QN_Npc_Geraint_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-g" mid="203"><![CDATA[<html>（继续） </html>]]></talk_answer>
+      <talk_question mid="201"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+第一位！某一天，神秘的出现并迎战黑龙卡拉斯的金发剑士，<FONT color=#a82424>杰兰特</FONT>！ 他是<FONT color=#a82424>屠龙者</FONT>的领导，也是组建屠龙者的核心人物！ 没有他，也不会有六大英雄！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-g" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-h" mid="206"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="204"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+第二位！年纪轻轻就成为王国最高骑士的近卫队长<FONT color=#a82424>贝思柯德</FONT> 侯爵！下等贵族家族出身的贝思柯德侯爵，是依靠自己的实力上位的传说般的人物！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-h" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-i" mid="209"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="207"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+第三位！无数佣兵们的首长、佣兵队长<FONT color=#a82424>巴尔纳</FONT>！ 他所率领的佣兵团就是现今<FONT color=#a82424>冒险家公会</FONT>的前身！他是所有佣兵和冒险家、战士们的偶像英雄！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-i" image="QN_archer_nerwin_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-j" mid="212"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="210"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+第四位！遥远的异国大地，精灵王国阿努·阿兰德为了与人类建交而访问至此的<FONT color=#a82424>银色新月弓手团</FONT>的领导<FONT color=#a82424>内尔文</FONT>！相传，她在龙之突袭过后，回到精灵王国成为了王国女王！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-j" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-k" mid="214"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="213"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+第五位！信奉阿尔泰亚女神的神殿骑士团的领导，<FONT color=#a82424>泰兰斯·特拉玛依</FONT>！龙之突袭之后，创立了以自己的名字命名的<FONT color=#a82424>特拉马伊教团</FONT>，继而荣登为教皇！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-k" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-l" mid="216"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="215"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+第六位！ 继承魔法师传统和佩奥里斯塔之名的<FONT color=#a82424>卡拉秋佩奥里斯塔</FONT>！ 相传，她所率领的<FONT color=#a82424>佩奥里斯塔魔法师团</FONT>的战斗力，令魔物们无不对其闻风丧胆！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-l" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-m" mid="220"><![CDATA[<html>嗯…? 我见到的杰兰特和贝思柯德…</html>]]></talk_answer>
+      <talk_question mid="217"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+呵呵呵。如…如何啊?<BR>
+是不是对我伟大的戴维大人的知识佩服的很啊?！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-m" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-n" mid="222"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="221"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+嗯? 强大的看上去不像人类，但是外表看上去才20岁左右…? 龙之突袭也已经过了50年，除了内尔文女王其他人都该变成爷爷奶奶了…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-n" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-o" mid="224"><![CDATA[<html>嗯，反正我得回王城了。那么…</html>]]></talk_answer>
+      <talk_question mid="223"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+话… 话说回来，据说贝思柯德侯爵在龙之突袭当中阵亡，而杰兰特和巴尔纳也失去踪影了呢…<BR>
+难…难道，阿尔杰塔大人与英雄们没任何关… 关系?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-o" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-p" mid="226"><![CDATA[<html>我承诺过，一定要找回来…</html>]]></talk_answer>
+      <talk_question mid="225"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>本以为可以见到我的偶像杰兰特大人… 切。<BR>话说回来，王城有什么好东西，你每天都那么不要脸的自由进出啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-p" image="" itemindex="">
+      <talk_question mid="227"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>
+啧啧… 小屁孩口气倒是不小啊…<BR>
+你以为你那样，我亲爱的阿尔杰塔大人就会对你另眼相看吗！阿尔杰塔大人可是只属于我的女王！呵呵！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-6" image="" itemindex="">
+      <talk_question mid="232"><![CDATA[<html>$阿尔杰塔$<BR>还磨蹭什么啊?<BR>我要去<FONT color=#a82424>黑山山角</FONT>，你也到那里去吧。<BR>以你现在的实力就不要做梦想跟着杰兰特啦，明白吗??</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-7" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-7-a" mid="166"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="165"><![CDATA[<html>$阿尔杰塔$<BR>你不是说要到<FONT color=#a82424>王城</FONT>去吗，这么快就回来啦？好像没去吧。你不会是想跟着 <FONT color=#a82424>杰兰特</FONT>吧? 你现在对他而言就是一累赘，所以好好训练，别想歪了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-7-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="167"><![CDATA[<html>$阿尔杰塔$<BR>是，人类总是有很多这个那个无聊的的事情? 什么<FONT color=#a82424>冒险家公会</FONT>啦。就到那种地方接受特别训练，变得更强一些吧。<BR><FONT color=#7e12d2>（要向主教伊格纳西奥报告）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-a" mid="169"><![CDATA[<html>（讲述目击到的事情）</html>]]></talk_answer>
+      <talk_question mid="168"><![CDATA[<html>$主教伊格纳西奥$<BR>快过来。<BR><FONT color=#a82424>黑骑士</FONT>怎么样了? 找到了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7-a" image="QW_43.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-b" mid="172"><![CDATA[<html>是的。</html>]]></talk_answer>
+      <talk_question mid="170"><![CDATA[<html>$主教伊格纳西奥$<BR>
+哦…是黑暗领地守备队据点…那个地方可不能冒然进去啊。与阿尔杰塔一起的剑士独自前往了?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7-b" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-c" mid="178"><![CDATA[<html><FONT color=#a94407>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="177"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7-c" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-!next" mid="180"><![CDATA[<html>得赶紧行动。</html>]]></talk_answer>
+      <talk_question mid="179"><![CDATA[<html>$主教伊格纳西奥$<BR>在你去追击<FONT color=#a82424>黑骑士</FONT>的时候，我曾试图努力说服其他贵族和国王陛下…<BR>但是由于现在 <FONT color=#a82424>神圣天堂</FONT>内外都很不平静，所以很难动员兵力啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-7" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="181"><![CDATA[<html>$阿尔杰塔的奴隶戴维$<BR>无论你耍什么手段阿尔杰塔大人的奴隶将永远是我！呵呵呵。<BR>
+<FONT color=#7e12d2>（要向主教伊格纳西奥报告）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="[">26</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2,3,4">0</exe>
+         <exe type="talk" npc="n209_elite_soldier">a</exe>
+         <exe type="talk" npc="n209_elite_soldier">c</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n042_general_duglars">a</exe>
+         <exe type="talk" npc="n042_general_duglars">d</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 1) == 2</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">8</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 1, 2);</exe>
+         <exe type="conexe" true="5" false="6">0</exe>
+         <exe type="conexe" true="7" false="8">0</exe>
+         <exe type="talk" npc="n212_argenta">c</exe>
+         <exe type="talk" npc="n212_argenta">6</exe>
+         <exe type="talk" npc="n261_slave_david">a</exe>
+         <exe type="talk" npc="n261_slave_david">6</exe>
+         <exe type="setjornal">9</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4031,4032,4033,4034</exe>
+         <exe type="complete">403</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n042_general_duglars" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n209_elite_soldier" sub="level1">0</exelink>
+   <exelink qstep="2" npc="n209_elite_soldier" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="party">2</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="c">0,1</exelink>
+   <exelink qstep="4" npc="n210_argenta" sub="b" />
+   <exelink qstep="4" npc="n210_argenta" sub="c" />
+   <exelink qstep="4" npc="n210_argenta" sub="d" />
+   <exelink qstep="4" npc="n210_argenta" sub="cutin">0</exelink>
+   <exelink qstep="5" npc="n210_argenta" sub="b">0,1</exelink>
+   <exelink qstep="6" npc="n212_argenta">3</exelink>
+   <exelink qstep="6" npc="n212_argenta" sub="b" />
+   <exelink qstep="6" npc="n212_argenta" sub="c">1,2</exelink>
+   <exelink qstep="6" npc="n261_slave_david">4</exelink>
+   <exelink qstep="6" npc="n261_slave_david" sub="b" />
+   <exelink qstep="6" npc="n261_slave_david" sub="c" />
+   <exelink qstep="6" npc="n261_slave_david" sub="d" />
+   <exelink qstep="6" npc="n261_slave_david" sub="e" />
+   <exelink qstep="6" npc="n261_slave_david" sub="f" />
+   <exelink qstep="6" npc="n261_slave_david" sub="g" />
+   <exelink qstep="6" npc="n261_slave_david" sub="h" />
+   <exelink qstep="6" npc="n261_slave_david" sub="i" />
+   <exelink qstep="6" npc="n261_slave_david" sub="j" />
+   <exelink qstep="6" npc="n261_slave_david" sub="k" />
+   <exelink qstep="6" npc="n261_slave_david" sub="l" />
+   <exelink qstep="6" npc="n261_slave_david" sub="m" />
+   <exelink qstep="6" npc="n261_slave_david" sub="n" />
+   <exelink qstep="6" npc="n261_slave_david" sub="o" />
+   <exelink qstep="6" npc="n261_slave_david" sub="p">0,9</exelink>
+   <exelink qstep="7" npc="n039_bishop_ignasio" sub="b">0</exelink>
+   <exelink qstep="7" npc="n039_bishop_ignasio" sub="c">1</exelink>
+   <exelink qstep="7" npc="n039_bishop_ignasio" sub="!next" />
+   <journal_data recompense="1:4031,2:4032,3:4033,4:4034" quest_title="검은 대군주의 영지" chapterid="4" quest_level="26" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[出兵准备]]></title>
+         <contents mid="37"><![CDATA[<html>跟道格拉斯将军汇报出兵情况吧。<BR><BR><FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 道格拉斯将军</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[与道格拉斯将军对话]]></destination>
+         <todo_msg mid="39"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n209</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>209</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[克林德的情况]]></title>
+         <contents mid="41"><![CDATA[<html><FONT color=#a82424>精锐士兵克林德</FONT>正在召集可参战的兵力。去了解一下情况吧。<BR>
+<FONT color=#7e12d2>(Lv26以上才能执行任务)<BR></FONT><BR><FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 精锐士兵克林德</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[(Lv26)与精锐士兵克林德对话]]></destination>
+         <todo_msg mid="43"><![CDATA[到精锐士兵克林德那里了解召集兵力的情况。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[向道格拉斯将军报告]]></title>
+         <contents mid="45"><![CDATA[<html>已经完成兵力召集。向道格拉斯将军报告吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→道格拉斯将军</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[与道格拉斯将军对话]]></destination>
+         <todo_msg mid="47"><![CDATA[完成兵力召集了，向道格拉斯将军报告吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_28.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>284,0,0</destination_pos>
+         <destination_mode>custom:281@1,282@1,283@1,284@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[向着黑暗大君主的领地]]></title>
+         <contents mid="49"><![CDATA[<html>道格拉斯将军说会派兵过去。到<FONT color=#a82424>黑暗大君主的领地</FONT>吧。<BR><FONT color=#7e12d2>※ 在组队状态下无法执行该任务。</FONT><BR><BR><FONT color=#086171>黑山山角（黑暗大君主的关卡）</FONT> <FONT color=#a82424>→ 黑暗大君主的领地</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[(单人) 在黑暗大君主的领地追击黑骑士]]></destination>
+         <todo_msg mid="51"><![CDATA[到黑暗大君主的领地去追击黑骑士吧。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>284,n210</destination_pos>
+         <destination_mode>custom:281@1,282@1,283@1,284@1</destination_mode>
+         <statemark_npcid>210</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[黑骑士的行踪]]></title>
+         <contents mid="53"><![CDATA[<html>到了黑暗大君主的领地，但是守候在那里的不是黑骑士，而是阿尔杰塔和金发剑士。<BR>
+与<FONT color=#a82424>阿尔杰塔</FONT>对话吧。<BR>
+<FONT color=#7e12d2>※ 组队状态下无法执行该任务。</FONT><BR><BR><FONT color=#086171>黑山山角(黑暗大君主的关卡)</FONT> <FONT color=#a82424>→ 黑暗大君主的领地(阿尔杰塔)</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[(单人)在黑暗大君主的领地与阿尔杰塔对话]]></destination>
+         <todo_msg mid="55"><![CDATA[没看到黑骑士。与阿尔杰塔对话吧。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>284,n210</destination_pos>
+         <destination_mode>custom:281@1,282@1,283@1,284@1</destination_mode>
+         <statemark_npcid>210</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[金发剑士]]></title>
+         <contents mid="57"><![CDATA[<html>在被遗弃的韦尔顿哈鲁与黑骑士对战的<FONT color=#a82424>金发剑士</FONT>就是阿尔杰塔寻觅的<FONT color=#a82424>杰兰特</FONT>。他孤身前去追击黑骑士。<BR>与
+<FONT color=#a82424>阿尔杰塔</FONT>对话，讨论下一步的计划。<BR>
+<FONT color=#7e12d2>※ 组队状态下无法执行该任务。</FONT><BR><BR><FONT color=#086171>黑山山角(黑暗大君主的关卡)</FONT> <FONT color=#a82424>→ 黑暗大君主的领地(阿尔杰塔)</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[(单人) 在黑暗大君主的领地与阿尔杰塔对话]]></destination>
+         <todo_msg mid="59"><![CDATA[杰兰特离开了。与阿尔杰塔对话吧。]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13,n212</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>212</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="143"><![CDATA[阿尔杰塔]]></title>
+         <contents mid="144"><![CDATA[<html>杰兰特去追黑骑士去了。但我又不能跟着他走，先到<FONT color=#a82424>黑山</FONT> <FONT color=#a82424>山角</FONT>与 <FONT color=#a82424>阿尔杰塔</FONT>对话吧。<BR><BR><FONT color=#086171>黑山山角</FONT> <FONT color=#a82424>→ 阿尔杰塔</FONT></html>]]></contents>
+         <destination mid="145"><![CDATA[在黑山山角与阿尔杰塔对话]]></destination>
+         <todo_msg mid="146"><![CDATA[前往黑山山角与阿尔杰塔对话吧。]]></todo_msg>
+      </journal>
+      <journal index="8">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13,n261</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>261</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="147"><![CDATA[烦人的戴维]]></title>
+         <contents mid="148"><![CDATA[<html>在和阿尔杰塔对话的过程中，说到贝思柯德和杰兰特时，戴维忽然不安分起来。<BR>
+与<FONT color=#a82424>黑山山角</FONT>的<FONT color=#a82424>戴维</FONT>对话吧。<BR>
+ <BR>
+<FONT color=#086171>黑山山角</FONT> <FONT color=#a82424>→ 阿尔杰塔的奴隶戴维</FONT></html>]]></contents>
+         <destination mid="149"><![CDATA[在黑山山角与戴维对话。]]></destination>
+         <todo_msg mid="150"><![CDATA[与阿尔杰塔的奴隶戴维对话吧。]]></todo_msg>
+      </journal>
+      <journal index="9">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="228"><![CDATA[马上要做的事]]></title>
+         <contents mid="229"><![CDATA[<html>现在恐怕还无法跟着杰兰特走。先回到<FONT color=#a82424>王城</FONT>向<FONT color=#a82424>伊格纳西奥</FONT>汇报情况，并请求支援吧。<BR><BR><FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="230"><![CDATA[与主教伊格纳西奥对话。]]></destination>
+         <todo_msg mid="231"><![CDATA[回到王城向主教伊格纳西奥报告吧，]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>420</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

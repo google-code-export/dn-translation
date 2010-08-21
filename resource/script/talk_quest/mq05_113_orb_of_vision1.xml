@@ -1,0 +1,503 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_113_orb_of_vision1</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>113</qid>
+      <designer>손원호</designer>
+      <qlevel>3</qlevel>
+      <qdesc>파렐리나의 안식처가 위험하다는 소식을 알리자, 신시아는 소서리스의 남아도는 힘을 이용해 안식처를 지켜 달라고 부탁한다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>114</nextqid>
+      <nextqname>mq05_114_orb_of_vision2</nextqname>
+      <nextqnpc>n012_sorceress_master_cynthia</nextqnpc>
+      <qkname mid="1"><![CDATA[秘传之球Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>11</npcid>
+         <npcename>n011_priest_leonardo</npcename>
+         <npckname>상급 클레릭 레오날드    (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>156</npcid>
+         <npcename>n156_cleric_jake</npcename>
+         <npckname>클레릭 제이크(눈서리 고갯길)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>160</npcid>
+         <npcename>n160_cleric_jake</npcename>
+         <npckname>클레릭 제이크(파렐리나의 안식처)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>161</npcid>
+         <npcename>n161_sorceress_cecilia</npcename>
+         <npckname>소서리스 세실리아(파렐리나의 안식처)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>19</npcid>
+         <npcename>n019_sorceress_fallen</npcename>
+         <npckname>쓰러진 소서리스01</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>21</npcid>
+         <npcename>n021_sorceress_fallen</npcename>
+         <npckname>쓰러진 소서리스02</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>22</npcid>
+         <npcename>n022_sorceress_fallen</npcename>
+         <npckname>쓰러진 소서리스03</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-a" mid="112"><![CDATA[<html>是吧。</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$高级魔法师辛西亚$<BR>你先带着牧师的圣珠，去见见<FONT color=#a82424>雷昂纳多</FONT>吧。<BR>我很想知道那个老头的答案。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-b" mid="213"><![CDATA[<html>火焰虫就足矣。</html>]]></talk_answer>
+      <talk_question mid="211"><![CDATA[<html>$高级魔法师辛西亚$<BR>话说回来，你也到了该学习<FONT color=#a82424>新技能</FONT>的时候了。总不能只仅仅靠火焰虫吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-c" mid="234"><![CDATA[<html>修炼? 我还想就此在魔法山脊好-好的休息一下呢…</html>]]></talk_answer>
+      <talk_question mid="233"><![CDATA[<html>$高级魔法师辛西亚$<BR>真是废话多。虽然现在还能勉强使用那些，但是要想完成今后艰难不断的历练，强力的魔法肯定是必须的。所以，得提前准备好才行。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-c" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-_skill_trade_1" mid="236"><![CDATA[<html>[技能学习]</html>]]></talk_answer>
+      <talk_question mid="235"><![CDATA[<html>$高级魔法师辛西亚$<BR>
+哈哈哈~！让我永远的解放你? 废话少说，赶紧试着学习<FONT color=#a82424>冰尖柱</FONT>技能吧。它是与火焰虫相反的寒气系列的元素魔法。学成之后千万不要忘记要去找<FONT color=#a82424>雷昂纳多</FONT>啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-a" mid="123"><![CDATA[<html>(拿出牧师的圣珠)</html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$高级牧师雷昂纳多${action:Talk}<BR>你找我有什么事吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-a" image="QS_Default.dds" itemindex="300144">
+      <talk_answer link_index="n011_priest_leonardo-2-b" mid="125"><![CDATA[<html>这是袭击车队的人掉下来的东西。</html>]]></talk_answer>
+      <talk_question mid="124"><![CDATA[<html>$高级牧师雷昂纳多$<BR>这是……<FONT color=#a82424>牧师的圣珠？</FONT>魔法师怎么会有牧师的圣珠呢？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-b" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-c" mid="127"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$高级牧师雷昂纳多$<BR>这么说来，袭击车队的魔物的背后，有牧师主使吗？真让人不敢相信。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-c" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-d" mid="129"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$高级牧师雷昂纳多$<BR>这件事不能就这么算了。必须对这件事进行秘密调查。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-d" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-e" mid="131"><![CDATA[<html>好的。</html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$高级牧师雷昂纳多$<BR>发生了这种情况，魔法师们<FONT color=#2b2723>护送的秘传之球说不定也会遇到危险</FONT>。我没办法亲自过去，你去<FONT color=#a82424>雪霜坡道</FONT>找到<FONT color=#a82424>杰克</FONT>。他一定可以帮助你，保护秘传之球的安全。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-e" image="" itemindex="">
+      <talk_question mid="132"><![CDATA[<html>$高级牧师雷昂纳多$<BR>我们之中竟然有叛徒，真让人不敢相信……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-a" mid="229"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="134"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR>技能你都学会了吗? 对于新手你，现在能学到的技能还很少。但是随着等级的提升，就可以学到更丰富的技能，所以别贪玩，专心一点吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-b" mid="231"><![CDATA[<html>哼！ 转职，小菜一碟！</html>]]></talk_answer>
+      <talk_question mid="230"><![CDATA[<html>$高级魔法师辛西亚$<BR>
+另外，到了 <FONT color=#a82424>15级</FONT>就可以通过<FONT color=#a82424>转职</FONT>可以学到更细分和特殊的技能。<BR>
+嗯…不过现在跟你说转职还为时过早啊~ 呵呵呵~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-b" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="232"><![CDATA[<html>$高级魔法师辛西亚$<BR>嗯，现在废话少说，赶紧到<FONT color=#a82424>雷昂纳多</FONT>老头那里吧。<BR>
+很期待他会怎么回答呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3" image="" itemindex="">
+      <talk_question mid="137"><![CDATA[<html>$高级牧师雷昂纳多$<BR>这件事不能就这么算了。<BR>
+必须进行仔细的调查。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-3" image="" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-3-a" mid="139"><![CDATA[<html>(说明事情的来龙去脉)</html>]]></talk_answer>
+      <talk_question mid="138"><![CDATA[<html>$牧师杰克$<BR><FONT color=#382000>{user_nick}</FONT>，我们又见面了。<BR>找我有什么事吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-3-a" image="" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-3-b" mid="141"><![CDATA[<html>秘传之球？</html>]]></talk_answer>
+      <talk_question mid="140"><![CDATA[<html>$牧师杰克$<BR>原来如此。事实上，<FONT color=#a82424>秘传之球</FONT>现在好像也遇到了未曾想到的危机。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-3-b" image="" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-3-c" mid="143"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="142"><![CDATA[<html>$牧师杰克$<BR>是的，周围的魔物们的举动很不寻常。<BR>看来除了贤者之杖之外，魔物们还想偷走秘传之球。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-3-c" image="" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-3-d" mid="145"><![CDATA[<html>秘传之球目前存放在帕雷利娜安息处。</html>]]></talk_answer>
+      <talk_question mid="144"><![CDATA[<html>$牧师杰克$<BR>我不知道秘传之球存放在哪里，所以我没法帮你。为了找回贤者之杖，我们决不能让魔物抢走秘传之球。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-3-d" image="" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-3-e" mid="147"><![CDATA[<html>好的。</html>]]></talk_answer>
+      <talk_question mid="146"><![CDATA[<html>$牧师杰克$<BR>帕雷利娜安息处……<FONT color=#7e12d2>(杰克陷入了沉思) </FONT><BR>听你这么一说，魔物们移动的方向好像就是<FONT color=#a82424>帕雷利娜安息处</FONT>。我们快到那里去吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-3-e" image="QW_8.dds" itemindex="">
+      <talk_question mid="148"><![CDATA[<html>$牧师杰克$<BR>让我们在<FONT color=#a82424>帕雷利娜安息处</FONT>的里面见面吧。<BR>请抓紧时间！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-4" image="QW_8.dds" itemindex="">
+      <talk_question mid="149"><![CDATA[<html>$牧师杰克$<BR>请快一点。怪物们正在向<FONT color=#a82424>帕雷利娜安息处</FONT>移动。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n019_sorceress_fallen-4" image="" itemindex="">
+      <talk_question mid="150"><![CDATA[<html>$倒下的魔法师$<BR>呃呃……我们突然遭到了魔物的袭击，大家都受了伤。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n021_sorceress_fallen-4" image="" itemindex="">
+      <talk_question mid="151"><![CDATA[<html>$倒下的魔法师$<BR>呃呃……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n022_sorceress_fallen-4" image="" itemindex="">
+      <talk_question mid="152"><![CDATA[<html>$倒下的魔法师$<BR>呼呼……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-4" image="" itemindex="">
+      <talk_question mid="154"><![CDATA[<html>$牧师杰克$<BR>由于遭到魔物的袭击，护送秘传之球的魔法师大多受了伤。我们应该先确认一下魔法师们的身体情况。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n161_sorceress_cecilia-4" image="" itemindex="">
+      <talk_answer link_index="n161_sorceress_cecilia-4-a" mid="156"><![CDATA[<html>有什么事吗？</html>]]></talk_answer>
+      <talk_question mid="155"><![CDATA[<html>$魔法师塞西莉亚$<BR>你是……<FONT color=#382000>{user_nick}</FONT>吧。我经常听<FONT color=#a82424>辛西亚</FONT>说起你的事情。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n161_sorceress_cecilia-4-a" image="" itemindex="">
+      <talk_answer link_index="n161_sorceress_cecilia-4-b" mid="158"><![CDATA[<html>是吗？</html>]]></talk_answer>
+      <talk_question mid="157"><![CDATA[<html>$魔法师塞西莉亚$<BR>我在这里守护保管秘传之球的房间，但突然受到了魔物的攻击，变成了这副模样。我应该按照辛西亚的吩咐，更警惕一点的……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n161_sorceress_cecilia-4-b" image="QN_Jake.dds" itemindex="">
+      <talk_question mid="159"><![CDATA[<html>$魔法师塞西莉亚$<BR>竟然要接受牧师的帮助……真是没脸去见魔法师的始祖马里安了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n161_sorceress_cecilia-5" image="" itemindex="">
+      <talk_question mid="161"><![CDATA[<html>$魔法师塞西莉亚$<BR>如果没有杰克的帮助……真是连想都不敢想。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-5" image="" itemindex="">
+      <talk_answer link_index="n160_cleric_jake-5-a" mid="163"><![CDATA[<html>谢谢你们救了我们这些魔法师。</html>]]></talk_answer>
+      <talk_question mid="162"><![CDATA[<html>$牧师杰克$<BR>果然不出所料，这里也遭到了敌人的袭击。幸亏来的还算及时，不然就糟了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-5-a" image="" itemindex="">
+      <talk_answer link_index="n160_cleric_jake-5-b" mid="165"><![CDATA[<html>保管秘传之球的房间很牢固，应该没事。</html>]]></talk_answer>
+      <talk_question mid="164"><![CDATA[<html>$牧师杰克$<BR>我们只不过做了自己应该做的事情。但是我很担心秘传之球。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-5-b" image="" itemindex="">
+      <talk_answer link_index="n160_cleric_jake-5-c" mid="167"><![CDATA[<html>魔法师的魔法真了不起！</html>]]></talk_answer>
+      <talk_question mid="166"><![CDATA[<html>$牧师杰克$<BR>魔法师们的智慧果然很了不起。这个门被魔法保护得非常好。所以魔物们攻击了几次之后，就全部撤退了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-5-c" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n160_cleric_jake-5-d" mid="169"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="168"><![CDATA[<html>$牧师杰克$<BR>好的，我应该先去向雷昂纳多报告这件事。 <FONT color=#382000>{user_nick}</FONT>，你也应该去转告<FONT color=#a82424>辛西亚</FONT>，说秘传之球的安全受到了威胁。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-5-d" image="" itemindex="">
+      <talk_question mid="170"><![CDATA[<html>$牧师杰克$<BR>总之请你继续努力，保护秘传之球不被魔物们抢走！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-6" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="171"><![CDATA[<html>$牧师杰克$<BR>请抓紧时间！<FONT color=#a82424>辛西亚</FONT>一定正在等着你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-6" image="" itemindex="">
+      <talk_question mid="172"><![CDATA[<html>$高级牧师雷昂纳多${action:Talk}<BR>呵呵，年纪大了，站着都累。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-6" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-6-a" mid="174"><![CDATA[<html>由于魔物们的袭击，很多魔法师都受了伤。</html>]]></talk_answer>
+      <talk_question mid="173"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR>大致的情况我已经听雷昂纳多说了。对了？帕雷利娜安息处的情况怎么样？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-6-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-6-b" mid="176"><![CDATA[<html>是很奇怪。</html>]]></talk_answer>
+      <talk_question mid="175"><![CDATA[<html>$高级魔法师辛西亚$<BR>秘传之球藏在帕雷利娜安息处，是只有我们魔法师才知道的秘密。魔物们到底是怎么知道的呢？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-6-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-6-c" mid="178"><![CDATA[<html><FONT color=#a94407>(获得奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="177"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-6-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-6-d" mid="181"><![CDATA[<html>啊哈哈……</html>]]></talk_answer>
+      <talk_question mid="179"><![CDATA[<html>$高级魔法师辛西亚$<BR>等等。你……为什么这么热心地帮助我们啊？真奇怪？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-6-d" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-6-!next" mid="183"><![CDATA[<html>(呃……)</html>]]></talk_answer>
+      <talk_question mid="182"><![CDATA[<html>$高级魔法师辛西亚$<BR>你也年纪不小了，应该懂事了。该不会像傻瓜一样把魔法师的秘密到处跟人说吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1130,,,,</exe>
+         <exe type="complete">113</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="_skill_trade_1">0,1,2</exelink>
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="b" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="c" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="d" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="e">0,1</exelink>
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="3" npc="n156_cleric_jake" sub="b" />
+   <exelink qstep="3" npc="n156_cleric_jake" sub="c" />
+   <exelink qstep="3" npc="n156_cleric_jake" sub="d" />
+   <exelink qstep="3" npc="n156_cleric_jake" sub="e">0,1</exelink>
+   <exelink qstep="4" npc="n161_sorceress_cecilia" sub="b">0,1</exelink>
+   <exelink qstep="5" npc="n160_cleric_jake" sub="b" />
+   <exelink qstep="5" npc="n160_cleric_jake" sub="c" />
+   <exelink qstep="5" npc="n160_cleric_jake" sub="d">0,1</exelink>
+   <exelink qstep="6" npc="n012_sorceress_master_cynthia" sub="b">0</exelink>
+   <exelink qstep="6" npc="n012_sorceress_master_cynthia" sub="c">1</exelink>
+   <exelink qstep="6" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="6" npc="n012_sorceress_master_cynthia" sub="!next" />
+   <journal_data recompense="1130" quest_title="비전의 오브Ⅰ" chapterid="1" quest_level="3" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image />
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="206"><![CDATA[和高级魔法师辛西亚对话]]></title>
+         <contents mid="207"><![CDATA[<html>和高级魔法师辛西亚对话。<BR><BR><FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→ 高级魔法师辛西亚</FONT></html>]]></contents>
+         <destination mid="208"><![CDATA[和高级魔法师辛西亚对话]]></destination>
+         <todo_msg mid="209"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Cl_Leonardo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n11</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>11</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="185"><![CDATA[和高级牧师雷昂纳多对话]]></title>
+         <contents mid="186"><![CDATA[<html>把牧师的圣珠交给魔法山脊的高级牧师雷昂纳多。<BR><BR><FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→ 高级牧师雷昂纳多</FONT></html>]]></contents>
+         <destination mid="187"><![CDATA[和高级牧师雷昂纳多对话]]></destination>
+         <todo_msg mid="188"><![CDATA[请学习新技能，并去见见雷昂纳多。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>6,n156</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>156</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="189"><![CDATA[和牧师杰克对话]]></title>
+         <contents mid="190"><![CDATA[<html>秘传之球说不定会有危险！去和牧师杰克谈一谈。<BR><BR><FONT color=#086171>雪霜坡道</FONT> <FONT color=#a82424>→ 牧师杰克</FONT></html>]]></contents>
+         <destination mid="191"><![CDATA[和牧师杰克对话]]></destination>
+         <todo_msg mid="192"><![CDATA[请去雪霜坡道，和杰克对话。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_8.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>88,0,0</destination_pos>
+         <destination_mode>custom:86@1,87@1,88@4</destination_mode>
+         <statemark_npcid>161</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="193"><![CDATA[去帕雷利娜安息处确认秘传之球的安全]]></title>
+         <contents mid="194"><![CDATA[<html>秘传之球有危险！请去帕雷利娜安息处确认一下秘传之球的安全。<BR><BR><FONT color=#086171>融解森林(魔法师之路)</FONT> <FONT color=#a82424>→ 帕雷利娜安息处</FONT></html>]]></contents>
+         <destination mid="195"><![CDATA[在融解森林 帕雷利娜安息处确认宝珠的安全]]></destination>
+         <todo_msg mid="196"><![CDATA[请到帕雷利娜安息处去确认秘传之球的安全。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>88,0,0</destination_pos>
+         <destination_mode>custum:88@4</destination_mode>
+         <statemark_npcid>160</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="197"><![CDATA[和牧师杰克对话]]></title>
+         <contents mid="198"><![CDATA[<html>据说魔法师们在帕雷利娜安息处受到魔物攻击的时候，杰克保护了他们。请和牧师杰克对话。<BR><BR><FONT color=#a82424>帕雷利娜安息处 → 牧师杰克 </FONT></html>]]></contents>
+         <destination mid="199"><![CDATA[和牧师杰克对话]]></destination>
+         <todo_msg mid="200"><![CDATA[请和牧师杰克对话。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="201"><![CDATA[和高级魔法师辛西亚对话]]></title>
+         <contents mid="202"><![CDATA[<html>保管秘传之球的帕雷利娜安息处受到了魔物们的袭击。回到魔法山脊，向老师辛西亚报告这一情况。<BR><BR><FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→ 高级魔法师辛西亚</FONT></html>]]></contents>
+         <destination mid="203"><![CDATA[和高级魔法师辛西亚对话]]></destination>
+         <todo_msg mid="204"><![CDATA[请回到魔法山脊，向辛西亚报告情况。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>112</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

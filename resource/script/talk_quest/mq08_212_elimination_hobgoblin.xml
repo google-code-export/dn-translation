@@ -1,0 +1,199 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_212_elimination_hobgoblin</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>212</qid>
+      <designer>김주연</designer>
+      <qlevel>16</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>213</nextqid>
+      <nextqname>mq08_213_priestess_in_red</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[击退小精灵]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="6"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>新变形的<FONT color=#a82424>小精灵、布洛怪、蜘蛛、食人魔</FONT>……按你所说，凯德拉的魔物都是那个红色黑暗精灵的手下。比小妖精更强的小精灵会遍布整个凯德拉？！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="8"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>呜呜……想想就腿发软。目前最大的收获就是侦察工作取得了成功。我们将会以你听到的内容为基础，一一着手进行处理。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QP_hobgoblin_maker.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-c" mid="10"><![CDATA[<html>位置是……？！</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>她叫<FONT color=#a82424>埃雷娜</FONT>吧……？很好，让我们快速行动，把她逼入绝境！首先，以我丰富的经验和战略家的眼光看……<FONT color=#a82424>小精灵制造设施</FONT>的位置是……！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-c" image="QW_19.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>是<FONT color=#a82424>神殿礼拜堂</FONT>！！<BR>你去把小精灵制造设施破坏掉，击退小精灵，保卫凯德拉！好了，赶快出发！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QW_19.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>根据我多年的经验，以及科学的、合理的灵感，埃雷娜的<FONT color=#a82424>小精灵制造设施</FONT>一定就在<FONT color=#a82424>神殿礼拜堂</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-a" mid="14"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>辛苦了。<BR>看你的表情，我一定是猜对了！很好，接下去……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-!next" mid="36"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">212</exe>
+         <exe type="recompense">,2121,2122,2123,2124</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c">0,1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="a">1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="!next">0</exelink>
+   <journal_data recompense="1:2121,2:2122,3:2123,4:2124" quest_title="홉고블린 퇴치" chapterid="3" quest_level="16" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>길드장 데커드</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[新的消息]]></title>
+         <contents mid="24"><![CDATA[<html>应该把墓穴听到的演说内容告诉戴卡德，并和他商议对策。和<FONT color=#a82424>公会会长戴卡德</FONT>对话。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 冒险家公会会长戴卡德</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[和冒险家公会会长戴卡德对话]]></destination>
+         <todo_msg mid="26"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_HopGoblinGreen.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>144,0,0</destination_pos>
+         <destination_mode>custom:141@1,142@1,143@1,144@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <get_location>캐더락</get_location>
+         <start_npc>길드장 데커드</start_npc>
+         <desc_location>바람 숲 지역, 바람 숲 신전 입구의 신전 예배당</desc_location>
+         <step_action>사냥</step_action>
+         <complete_npc>길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster>홉고블린</hunt_monster>
+         <hunt_monsterindex>461,475</hunt_monsterindex>
+         <collect_item>오염자의 지령서</collect_item>
+         <collect_itemindex>50</collect_itemindex>
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[击退神殿礼拜堂的小精灵，破坏制造设施]]></title>
+         <contents mid="28"><![CDATA[<html>根据戴卡德的科学的、合理的灵感，<FONT color=#a82424>小精灵制造设施</FONT>应该在<FONT color=#a82424>神殿礼拜堂</FONT>。<BR>去<FONT color=#a82424>神殿礼拜堂</FONT>破坏<FONT color=#a82424>小精灵制造设施</FONT>。<BR><BR><FONT color=#086171>狂风森林地区(狂风森林神殿入口)</FONT> <FONT color=#a82424>→神殿礼拜堂</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[击退神殿礼拜堂的小精灵，破坏制造设施]]></destination>
+         <todo_msg mid="30"><![CDATA[请击退神殿礼拜堂的小精灵，破坏制造设施。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>길드장 데커드</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[和冒险家公会会长戴卡德对话]]></title>
+         <contents mid="32"><![CDATA[<html>击退了小精灵，破坏了神殿礼拜堂里的制造设施。回去向<FONT color=#a82424>凯德拉关卡的公会会长戴卡德</FONT>报告。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 冒险家公会会长戴卡德</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[和冒险家公会会长戴卡德对话]]></destination>
+         <todo_msg mid="34"><![CDATA[请回去向冒险家公会会长戴卡德报告。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1;-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>211</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

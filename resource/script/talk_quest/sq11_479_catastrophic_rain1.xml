@@ -1,0 +1,207 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_479_catastrophic_rain1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>479</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>오염된 토양표본(300016)
+군터에게 가면 블랙 드래곤을 퇴치한 후 인근이 크게 오염되고 있다는 말을 한다. 용추종자들도 이때를 틈타서 난립하고 있다며, 잡아 들이는 걸 또 도와달라고 한다.
+검은 대군주의 연병장(30~32)에서 오염된 표본을 채집해 전염병을 퍼뜨리려는 용추종자들이 있다고 한다. 가서 일망타진해 달라는 의뢰.
+용추종자들을 해치우고 오염된 표본을 압수해 온다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>480</nextqid>
+      <nextqname>sq11_480_catastrophic_rain2</nextqname>
+      <nextqnpc>n036_adventurer_guildmaster_gunter</nextqnpc>
+      <qkname mid="1"><![CDATA[灾难之雨 I]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="6"><![CDATA[<html>你是说与黑龙的战斗?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$冒险家公会长冈特${action:talk}<BR>哦，听说你也参加了本次战斗?就是在<FONT color=#a82424>黑暗大君主关卡</FONT>发生的激烈的攻防战。听说你和<BR><FONT color=#a82424>道格拉斯将军</FONT>所率领的精锐士兵都非常勇敢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="40"><![CDATA[<html>原来如此。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$冒险家公会长冈特$<BR>啊…你既然参战了，也亲眼目睹了吧。<BR>因为 <FONT color=#a82424>黑龙</FONT>重新出现的消息一旦传播出去的话，会造成人心惶惶，所以王城已经着手秘密处理了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="42"><![CDATA[<html>（还是算在王室的功劳上啦。）</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$冒险家公会长冈特$<BR>尽管采取了保密措施，但终究纸还是包不住火的，真让人担心啊。<BR>
+不过，这么快就击退了它，老实说，我对我们的军队真是刮目相看啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="8"><![CDATA[<html>而且?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$冒险家公会长冈特$<BR>虽然<FONT color=#a82424>黑龙</FONT>消失了，但听说周围被<FONT color=#a82424>污染</FONT>的很严重，遭受到的伤害可不是一般厉害啊。接触从黑龙的伤口处留出来东西后，要么会得病，要么死人的… 而且</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-e" mid="10"><![CDATA[<html>那…真是大事不好啊。 </html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$冒险家公会长冈特$<BR>趁这个机会<FONT color=#a82424>龙之追随者</FONT>又开始有了猖獗的迹象。还有想利用黑龙遗留下来的东西做些坏事的家伙们。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-f" mid="12"><![CDATA[<html>有什么事?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$冒险家公会长冈特$<BR>不管真相如何，反正最近神圣天堂的人们都人心惶惶的。所以你要是不忙的话，可否帮我一点忙啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-f" image="QW_36.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-g" mid="14"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$冒险家公会长冈特$<BR>据说龙之追随者的余党正在<FONT color=#a82424>黑暗大君主的练兵场</FONT>收集污染物质，欲传染疾病。要是率领士兵浩浩荡荡的过去扫荡的话，肯定会逃跑的，所以你悄无声息的过去解决吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$灾难之雨 I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="QS_Default.dds" itemindex="300016">
+      <talk_question mid="17"><![CDATA[<html>$冒险家公会长冈特${action:talk}<BR>它们身上会有收集到的<FONT color=#a82424>被污染的土壤标本</FONT>，彻底消灭之后，把它夺回来吧。<BR>千万要小心啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-a" mid="20"><![CDATA[<html>（递交被污染的土壤标本）</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$冒险家公会长冈特$<BR>哦哦，快来。<BR>正等着你呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-a" image="QS_Default.dds" itemindex="300016">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-b" mid="22"><![CDATA[<html>（冈特陷入沉思当中）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$冒险家公会长冈特${action:talk}<BR>嗯… 果然具有不详的颜色啊。虽然普通魔物也在污染周边地带，但是好像巨型魔物的危害更大呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-b" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-c" mid="24"><![CDATA[<html>嗯，这点事不算什么。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$冒险家公会长冈特$<BR>听说<FONT color=#a82424>纹章学者斯塔西</FONT>针对这些污染正在进行研究，不知这些会不会对他有帮助，你拿去给他看看吧。<BR>总之，辛苦你了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-d" mid="26"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-d" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-!next" mid="28"><![CDATA[<html>嗯? 什么事?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$冒险家公会长冈特$<BR>啊... 提起<FONT color=#a82424>斯塔西</FONT>倒让我想起来了，上次有向我委托的事情呢。顺便连那个事情一起做完如何啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">479</exe>
+         <exe type="recompense_view">,4791,4792,4793,4794</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,5,6,7">21070</exe>
+         <exe type="addquestitem" num="1">300016</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300016</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n036_adventurer_guildmaster_gunter">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4791,4792,4793,4794</exe>
+         <exe type="complete">479</exe>
+         <exe type="delquestitem" num="-1">300016</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="g">1</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">0,8,2,4</exelink>
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="b" />
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="c">0</exelink>
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="d">1,2</exelink>
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="!next" />
+   <journal_data recompense="1:4791,2:4792,3:4793,4:4794" quest_title="재앙의 비 I" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="300016">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_36.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>363,0,0</destination_pos>
+         <destination_mode>custom:361@1,362@1,363@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[凌乱的情况]]></title>
+         <contents mid="32"><![CDATA[<html>到黑暗大君主的练兵场去消灭<FONT color=#a82424>龙之追随者</FONT>，并收集被污染的土壤标本吧。<BR><BR><FONT color=#086171>黑山山角（黑暗大君主的关卡）</FONT> <FONT color=#a82424>→黑暗大君主的练兵场</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[回收被污染的土壤标本]]></destination>
+         <todo_msg mid="34"><![CDATA[在黑暗大君主的练兵场消灭龙之追随者吧。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[回收成功]]></title>
+         <contents mid="36"><![CDATA[<html>回去向冒险家公会长冈特报告吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→冒险家公会长冈特</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[向冒险家公会长冈特报告]]></destination>
+         <todo_msg mid="38"><![CDATA[向冒险家公会长冈特报告吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>409</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

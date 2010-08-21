@@ -1,0 +1,344 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_117_love_money</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>117</qid>
+      <designer>손원호</designer>
+      <qlevel>5</qlevel>
+      <qdesc>오브의 안전을 위해 회랑으로 갔다는 제이크의 소식을 듣고, 길이 엇갈린 소서리스는 오브의 안전을 전하기 위해 회랑으로 향한다. 소식을 전하고 마을로 온 소서리스에게 타라는 오브가 사라졌다는 소식을 전한다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>118</nextqid>
+      <nextqname>mq05_118_snatch_orb</nextqname>
+      <nextqnpc>n012_sorceress_master_cynthia</nextqnpc>
+      <qkname mid="1"><![CDATA[还是富人好]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>14</npcid>
+         <npcename>n014_cleric_cedric</npcename>
+         <npckname>클레릭 세드릭   (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라   (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>206</npcid>
+         <npcename>n206_cleric_jake</npcename>
+         <npckname>클레릭 제이크(고요한 수도원 회랑)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1" image="" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-1-a" mid="6"><![CDATA[<html>什么事?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$牧师赛德瑞$<BR>请稍等。不好意思有件事想拜托你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1-a" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-1-b" mid="8"><![CDATA[<html>杰克?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$牧师赛德瑞$<BR>... 是关于<FONT color=#a82424>杰克</FONT>的委托。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1-b" image="QW_9.dds" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-1-c" mid="10"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$牧师赛德瑞$<BR>是的，为了寻找宝珠，杰克也去了<FONT color=#a82424>寂静修道院回廊</FONT>。但是他还不知道宝珠已经找回的事。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1-c" image="" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-1-d" mid="72"><![CDATA[<html>（嗯...有点麻烦哦）</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$牧师赛德瑞$<BR>可否再次回去，向他转告宝珠已经找到的消息?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1-d" image="" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-1-e" mid="12"><![CDATA[<html>好吧。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$牧师赛德瑞$<BR>您也知道我没什么家当，但是这次要是帮到杰克的话，我会给<FONT color=#a82424>丰厚的奖励</FONT>的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1-e" image="QW_9.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$牧师赛德瑞$<BR>那就拜托你了。就在<FONT color=#a82424>寂静修道院回廊</FONT>。赶紧过去看看吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1" image="" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$魔法师塔拉${action:Talk}<BR>天气似乎有点冷了吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$高级魔法师辛西亚$<BR>
+魔之气息很不寻常。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-2" image="QW_9.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$牧师赛德瑞$<BR>在寂静修道院回廊。赶紧动身啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n206_cleric_jake-2" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n206_cleric_jake-2-a" mid="16"><![CDATA[<html>宝珠已经找到。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$牧师杰克$<BR>你也是为了寻找<FONT color=#a82424>秘传之球</FONT>而来的吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n206_cleric_jake-2-a" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n206_cleric_jake-2-b" mid="18"><![CDATA[<html>是，不要担心。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$牧师杰克$<BR>是吗，真是...万幸呢。宝珠现在确实在安全的地方吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n206_cleric_jake-2-b" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$牧师杰克$<BR>呼，还好。 <BR>
+那么，我就回去报告这个情况咯。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-3-a" mid="25"><![CDATA[<html>什么事啊?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$魔法师塔拉${action:Talk}<BR>去哪了?找了老半天呢！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3-a" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n015_sorceress_tara-3-b" mid="29"><![CDATA[<html>辛西亚大人不是在好好保存着吗...</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$魔法师塔拉$<BR>宝珠消失啦。<FONT color=#a82424>秘传之球</FONT>啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3-b" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n015_sorceress_tara-3-c" mid="31"><![CDATA[<html>啊。</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$魔法师塔拉$<BR>你不觉得有点奇怪吗？<FONT color=#a82424>秘传之球</FONT>由辛西亚保管是很保密的，罪犯是怎么知道的呢？难道是……前辈把它拿走了？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3-c" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-3-d" mid="33"><![CDATA[<html>明白了。</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$魔法师塔拉$<BR>呼...抱歉。反正大家正处于高度紧张的状态当中，赶紧先到 <FONT color=#a82424>辛西亚</FONT>大人那里看看吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3-d" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-3-e" mid="35"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3-e" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$魔法师塔拉$<BR><FONT color=#a82424>辛西亚</FONT>大人很生气呢，你得悠着点！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$魔法师塔拉$<BR><FONT color=#a82424>辛西亚</FONT>大人很生气呢，赶紧过去看看吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-a" mid="39"><![CDATA[<html>不是我啊。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR><FONT color=#382000>{user_nick}！</FONT>你你你你你！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-a" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-b" mid="41"><![CDATA[<html>不是我啦。</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$高级魔法师辛西亚$<BR>不是什么啊！即使宝珠再贵，你怎么能偷那个东西呢? 不给我交出来的话，有你好看！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-c" mid="43"><![CDATA[<html>（什么嘛...）</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$高级魔法师辛西亚$<BR>... 什么，不是你? <FONT color=#7e12d2>（正色）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-d" mid="45"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$高级魔法师辛西亚$<BR>我就说嘛，怎么可能会是你呢。即使你再鲁莽，至少也该知道 <FONT color=#a82424>保住自己的小命要紧吧。</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-d" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-e" mid="76"><![CDATA[<html>我对牧师赛德瑞说过。</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$高级魔法师辛西亚$<BR>不过敌人到底怎么会知道宝珠就在我这里的呢?真奇怪。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-e" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-!next" mid="47"><![CDATA[<html>（呼...）</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$高级魔法师辛西亚$<BR>哎呀，我就说嘛，怪不得你老老实实的样子。<BR>别担心，我现在心情还不错，不会教训你的。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1170,,,,</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">117</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n014_cleric_cedric" sub="b" />
+   <exelink qstep="1" npc="n014_cleric_cedric" sub="c" />
+   <exelink qstep="1" npc="n014_cleric_cedric" sub="d" />
+   <exelink qstep="1" npc="n014_cleric_cedric" sub="e">0,1</exelink>
+   <exelink qstep="2" npc="n206_cleric_jake" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="3" npc="n015_sorceress_tara" sub="c" />
+   <exelink qstep="3" npc="n015_sorceress_tara" sub="d">0</exelink>
+   <exelink qstep="3" npc="n015_sorceress_tara" sub="e">1,2</exelink>
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="e" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="!next">0</exelink>
+   <journal_data recompense="1170" quest_title="부자가 좋아" chapterid="1" quest_level="5" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Cl_Fallen_Cedric.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>6,n14</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>14</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[与牧师赛德瑞对话]]></title>
+         <contents mid="50"><![CDATA[<html>牧师赛德瑞正在找我。到村庄外的雪霜坡道去找赛德瑞看看吧。<BR><BR><FONT color=#086171>雪霜坡道</FONT> <FONT color=#a82424>→牧师赛德瑞</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[与牧师赛德瑞对话]]></destination>
+         <todo_msg mid="52"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_9.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>93,0,0</destination_pos>
+         <destination_mode>custom:91@1,92@1,93@4</destination_mode>
+         <statemark_npcid>206</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string>고요한 수도원 회랑
+n206_cleric_jake : 제이크 등장 </trigger_string>
+         <maptool_index />
+         <title mid="53"><![CDATA[向牧师杰克转告消息]]></title>
+         <contents mid="54"><![CDATA[<html>杰克还在寂静修道院回廊。到那里向他转告宝珠现在很安全。<BR>
+ <BR>
+<FONT color=#086171>融解森林（寂静修道院正门）</FONT> <FONT color=#a82424>→寂静修道院回廊</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[向牧师杰克转告消息]]></destination>
+         <todo_msg mid="56"><![CDATA[到寂静修道院回廊去见杰克吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n15</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>15</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[和魔法师塔拉对话]]></title>
+         <contents mid="58"><![CDATA[<html>杰克给了很多钱！向塔拉转告这个好消息吧。<BR>
+ <BR>
+<FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→魔法师塔拉</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[和魔法师塔拉对话]]></destination>
+         <todo_msg mid="60"><![CDATA[向魔法山脊的塔拉转告消息吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[和高级魔法师辛西亚对话]]></title>
+         <contents mid="62"><![CDATA[<html>秘传之球又被丢失了，这次怀疑到我头上。告诉辛西亚老师我是冤枉的！<BR>
+ <BR>
+<FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→高级魔法师辛西亚</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[和高级魔法师辛西亚对话]]></destination>
+         <todo_msg mid="64"><![CDATA[向辛西亚诉说我是冤枉的。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>116</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

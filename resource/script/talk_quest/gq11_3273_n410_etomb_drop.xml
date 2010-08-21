@@ -1,0 +1,191 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>gq11_3273_n410_etomb_drop</qename>
+      <qtype>venturerquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>3273</qid>
+      <designer>김주연</designer>
+      <qlevel>32</qlevel>
+      <qdesc>도마뱀 꼬리 400168</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[公会委托]寻找故乡的味道]]></qkname>
+      <qnpc>
+         <npcid>410</npcid>
+         <npcename>n410_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-a" mid="6"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$冒险家公会公告栏$<BR>我离开故乡已经有～10年了。<BR>
+所以怀念故乡的味道，也是可以理解的，不是吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-a" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-b" mid="70"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$冒险家公会公告栏$<BR>因为怀念故乡的味道，所以我在公告栏上留了言。<BR>大家都能理解吧？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-b" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-c" mid="72"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$冒险家公会公告栏$<BR>
+事实上，我小时候除了吃之外，别的什么都不擅长。所以到现在为止我还在各地旅行。说了这些，你们能接受我的委托吗……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-c" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-d" mid="74"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$冒险家公会公告栏$<BR>在故乡，我们会把蜥蜴尾巴烤着吃。咀嚼时的那种香味，不是任何人都有机会领略的。是的，我也是这么认为。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-d" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-e" mid="76"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$冒险家公会公告栏$<BR>不管是谁都可以，请帮我搜集一些蜥蜴尾巴。特别是<FONT color=#a82424>掠夺者蓝鳞蜥蜴人</FONT>的尾巴。<BR><FONT color=#7e12d2> 委托人：美食家米勒</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-f" mid="11"><![CDATA[<html><FONT color=#086171>(接受委托)</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$委托奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-f" image="GQ_item.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$[公会委托]寻找故乡的味道$<BR>请到<FONT color=#a82424>精灵坟墓</FONT>去打猎<FONT color=#a82424>掠夺者蓝鳞蜥蜴人</FONT>，搜集<FONT color=#2b2723> 蜥蜴尾巴</FONT> 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-1" image="GQ_item.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$冒险家公会公告栏$<BR>现在正在执行<FONT color=#a82424>[公会委托]寻找故乡的味道</FONT>。<BR><BR>※ <FONT color=#7e12d2>同一公告栏中，只能接受一个公会委托。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-2" image="GQ_prop_end.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-2-a" mid="22"><![CDATA[<html>[委托完成] <FONT color=#086171>寻找故乡的味道</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$冒险家公会公告栏$<BR>完成委托的冒险家请在下面的委托书上加盖完成图章。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-2-a" image="" itemindex="">
+      <talk_answer link_index="n410_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$委托赏金$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-2-b" image="GQ_prop_end.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$冒险家公会公告栏$<BR>冒险家公会的委托已完成。<BR><BR><FONT color=#a82424>[冒险家公会]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="1" op="]=">400168</chk>
+      </conditions>
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,3273, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">32730,,,,</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">400168</exe>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="6">1002</exe>
+         <exe type="conexe" true="7,8,9" false="10,11">0</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">400168</exe>
+         <exe type="conexe" true="7,8,9" false="">0</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">32730,,,,</exe>
+         <exe type="complete">3273</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n410_guild_board" sub="e">3</exelink>
+   <exelink qstep="accepting" npc="n410_guild_board" sub="f">0,1,4,5,2</exelink>
+   <exelink qstep="2" npc="n410_guild_board" sub="a">0</exelink>
+   <exelink qstep="2" npc="n410_guild_board" sub="b">1</exelink>
+   <journal_data recompense="32730" quest_title="[길드의뢰] 고향의 맛을 찾아서" chapterid="" quest_level="32" quest_mark_type="19" use_item_list="400168">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_37.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>374,0,0</destination_pos>
+         <destination_mode>custom:371@3,372@3,373@3,374@3</destination_mode>
+         <statemark_npcid>410</statemark_npcid>
+         <statemark_type>20</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[去精灵坟墓搜集蜥蜴尾巴]]></title>
+         <contents mid="43"><![CDATA[<html>去精灵坟墓打猎掠夺者蓝鳞蜥蜴人，搜集蜥蜴尾巴。<BR><BR><FONT color=#086171>赫尔马岱港口(下游废墟入口) </FONT><FONT color=#a82424>→ 精灵坟墓</FONT><BR><BR><FONT color=#7e12d2>※ 无法在深渊级难度下执行。</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[搜集蜥蜴尾巴]]></destination>
+         <todo_msg mid="45"><![CDATA[冒险家公会委托添加完成。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_guild_board.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n410</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>410</statemark_npcid>
+         <statemark_type>21</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[向赫尔马岱港口的冒险家公会公告栏报告结果]]></title>
+         <contents mid="47"><![CDATA[<html>向赫尔马岱港口的下游废墟入口附近的冒险家公会公告栏报告结果。<BR><BR><FONT color=#086171>赫尔马岱港口(下游废墟入口) </FONT><FONT color=#a82424>→ 冒险家公会公告栏</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[向赫尔马岱港口的冒险家公会公告栏报告结果]]></destination>
+         <todo_msg mid="49"><![CDATA[完成了冒险家公会的委托。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>3271</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

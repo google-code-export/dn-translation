@@ -1,0 +1,376 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_216_argentas_kiss</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>216</qid>
+      <designer>김주연</designer>
+      <qlevel>20</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>217</nextqid>
+      <nextqname>mq08_217_blessed_stone</nextqname>
+      <nextqnpc>n035_soceress_master_tiana</nextqnpc>
+      <qkname mid="1"><![CDATA[阿尔杰塔的呼吸]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나 (캐더락 소서리 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="6"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>啊……要是能阻止毒气扩散，能够净化毒素的话……嗯？！对了！！净化！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="8"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>啊哈，让我想想……<BR>魔法师好像对古代人的净化技术进行过研究。<FONT color=#387206>{user_nick}！</FONT>拜托你一件事。你去问问<FONT color=#a82424>高级魔法师缇娜</FONT>，哪个魔法师对古代人的净化设施有过研究。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>也许那个魔法师的研究将是我们的希望。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$高级魔法师缇娜$<BR>听说有污染物质被散布到了凯德拉。<FONT color=#387206>{user_nick}</FONT>，戴卡德正在找你，你快去见见他。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$阿尔杰塔$<BR>喂，来往的人都说凯德拉这下完蛋了。快去确认一下到底是怎么回事。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-a" mid="13"><![CDATA[<html>你知道净化设施的研究情况吗？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$高级魔法师缇娜$<BR>污染物质扩散的事情，我已经听说了。我正在看能不能帮到什么忙……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-b" mid="15"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$高级魔法师缇娜$<BR>嗯，当然。事实上，在与魔物抗战的10多年前，我在<FONT color=#a82424>英雄魔法师卡拉秋</FONT>的命令下，负责对古代人的净化装置进行调查。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-c" mid="17"><![CDATA[<html>我能看看研究资料吗？</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$高级魔法师缇娜$<BR>老师的命运在<FONT color=#a82424>魔物抗战</FONT>中发生了转折，之后不得不中断了净化装置的研究。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-c" image="QW_24.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-d" mid="19"><![CDATA[<html>我去找找看。</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$高级魔法师缇娜$<BR>很遗憾，研究资料在老师去世的<FONT color=#a82424>死亡盆地</FONT>里，谁也不知道文件到底在哪。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-d" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$高级魔法师缇娜$<BR>没想到你还这么积极。我现在能说的话只有这些。<BR><FONT color=#387206>{user_nick}</FONT>，愿幸运之神与你同在。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$阿尔杰塔$<BR>戴卡德是不是想起了什么？你问我怎么知道的？附近的声音全都逃不过我的耳朵。你快去见见<FONT color=#a82424>缇娜</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html><FONT color=#a82424><FONT color=#2b2723>$冒险家公会会长戴卡德$<BR>你去问问</FONT>高级魔法师缇娜</FONT>，哪个魔法师对古代人的净化设施有过研究。也许那个魔法师的研究将是我们的希望。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3" image="QW_24.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-a" mid="24"><![CDATA[<html>你是在担心我吗？</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$阿尔杰塔$<BR>你真的要去死亡盆地？寻找那个魔法师的研究资料？这对你来说很危险。去之前，你先拿着这个。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-cutscene" mid="26"><![CDATA[<html>说得也是……</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$阿尔杰塔$<BR>哼，你死了的话，谁来和我说话，谁来帮我跑腿啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$阿尔杰塔$<BR>你死了我就会很无聊，所以我才会帮你。你不要误会。对了，那个的效果持续不了太长时间，你要自己注意。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4" image="QS_Default.dds" itemindex="300061">
+      <talk_question mid="30"><![CDATA[<html>$高级魔法师缇娜$<BR>老师的研究资料在他去世的<FONT color=#a82424>死亡盆地</FONT>里。没有研究资料的话，谁都没办法帮你。你能快点去把研究资料找回来吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-5-a" mid="32"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$高级魔法师缇娜$<BR>谢谢你。咳……最终还是要借别人的手找到。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-5-levelcheck" mid="34"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5-b" image="" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$高级魔法师缇娜$<BR>解读文件需要一点时间，请稍等一下。<BR>你也别闲着，可以去修炼修炼。<BR>你就趁这功夫好好修炼吧?<BR><FONT color=#7e12d2>（必须达到22级以上才能执行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-6-a" mid="103"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$高级魔法师缇娜$<BR>文件已经解读好了，嗯……好像可以找到办法。这里写着<FONT color=#a82424>“古代人用于给凯德拉周边的森林注入生命力的古代机械装置”'</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6-a" image="QP_puri_facility.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-6-b" mid="39"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$高级魔法师缇娜$<BR>不知道用这个净化装置，能不能让荒废的死亡森林恢复原貌。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-6-!next" mid="99"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$高级魔法师缇娜$<BR>据说古代人的知识中，有一种可以解除有毒物质毒性的净化装置。这个文件里记录有和净化装置有关的内容。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6-c" image="" itemindex="">
+      <talk_question mid="104"><![CDATA[<html>$高级魔法师缇娜$<BR>我马上开始解读文件，可能会花一点时间，请你耐心等待。<BR><FONT color=#7e12d2>（必须达到22级以上才能执行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="custom">api_user_PlayCutScene(userObjID,npcObjID,72);</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7,4,5,6">664</exe>
+         <exe type="addquestitem" num="1">300061</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">22</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">,2161,2162,2163,2164</exe>
+         <exe type="setstep">6</exe>
+         <exe type="conexe" true="1,3" false="1,4">0</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">6</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">b</exe>
+         <exe type="delquestitem" num="-1">300061</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">22</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">6</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">c</exe>
+         <exe type="complete">216</exe>
+         <exe type="delquestitem" num="-1">300004</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="c" />
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="d">0,1</exelink>
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="cutscene">3,0,2,1</exelink>
+   <exelink qstep="5" npc="n035_soceress_master_tiana" sub="a">0</exelink>
+   <exelink qstep="5" npc="n035_soceress_master_tiana" sub="levelcheck">2,5</exelink>
+   <exelink qstep="6" npc="n035_soceress_master_tiana">0</exelink>
+   <exelink qstep="6" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="6" npc="n035_soceress_master_tiana" sub="!next">3,4</exelink>
+   <journal_data recompense="1:2161,2:2162,3:2163,4:2164" quest_title="아르젠타의 숨결" chapterid="3" quest_level="20" quest_mark_type="7" use_item_list="300061">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[和冒险家公会会长戴卡德对话]]></title>
+         <contents mid="43"><![CDATA[<html><FONT color=#a82424>冒险家公会会长戴卡德</FONT>说他正在寻找<FONT color=#a82424>净化</FONT>受到污染物质污染的凯德拉的方法。去和冒险家公会会长戴卡德对话。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 冒险家公会会长戴卡德</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[和冒险家公会会长戴卡德对话]]></destination>
+         <todo_msg mid="45"><![CDATA[请和戴卡德一起，思考净化凯德拉的方法。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2265,1121</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[和凯德拉的高级魔法师缇娜对话]]></title>
+         <contents mid="83"><![CDATA[<html>据<FONT color=#a82424>冒险家公会会长戴卡德</FONT>回忆，凯德拉的魔法师曾经进行过净化相关的研究。去和高级魔法师缇娜对话。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级魔法师缇娜</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[和凯德拉的高级魔法师缇娜对话]]></destination>
+         <todo_msg mid="85"><![CDATA[请去凯德拉关卡，和高级魔法师缇娜对话。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[去死亡盆地之前，和阿尔杰塔对话]]></title>
+         <contents mid="87"><![CDATA[<html>据说魔法师们的“净化”研究资料遗失在了死亡盆地。去死亡盆地之前，和<FONT color=#a82424>阿尔杰塔</FONT>对话。<BR><BR><FONT color=#086171>灰色废墟</FONT><FONT color=#a82424> → 阿尔杰塔</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[去死亡盆地之前，和阿尔杰塔对话]]></destination>
+         <todo_msg mid="89"><![CDATA[去死亡盆地之前，请和阿尔杰塔对话。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_24.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>244,0,0</destination_pos>
+         <destination_mode>custom:241@1,242@1,243@1,244@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[去死亡盆地搜索魔法师的研究资料]]></title>
+         <contents mid="91"><![CDATA[<html>据说关于<FONT color=#a82424>净化装置</FONT>的研究资料在<FONT color=#a82424>死亡盆地</FONT>。去死亡盆地寻找魔法师的研究资料。<BR><BR><BR><FONT color=#086171>堆满落叶的湖岸(死亡森林入口)</FONT> <FONT color=#a82424>→ 死亡盆地</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[去死亡盆地搜索魔法师的研究资料]]></destination>
+         <todo_msg mid="93"><![CDATA[请去死亡盆地搜索魔法师的研究资料。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2265,1121</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[把找到的日志交给高级魔法师缇娜]]></title>
+         <contents mid="95"><![CDATA[<html>找到了写有魔法师们的研究记录的日志。把它交给凯德拉关卡的<FONT color=#a82424>高级魔法师缇娜</FONT>吧。<BR><FONT color=#7e12d2>※ 22级以上方可进行。</FONT><BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级魔法师缇娜</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[（22级）把找到的日志交给高级魔法师缇娜]]></destination>
+         <todo_msg mid="97"><![CDATA[找到了写有研究记录的日志。请把它交给高级魔法师缇娜。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>215</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

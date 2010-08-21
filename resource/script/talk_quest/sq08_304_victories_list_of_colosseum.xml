@@ -1,0 +1,223 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_304_victories_list_of_colosseum</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>304</qid>
+      <designer>김주연</designer>
+      <qlevel>10</qlevel>
+      <qdesc>콜로세움 승률기록부	300230
+
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[竞技场胜负记录簿]]></qkname>
+      <qnpc>
+         <npcid>148</npcid>
+         <npcename>n148_arena_ticker_1</npcename>
+         <npckname>콜로세움 관리병 조셉</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n148_arena_ticker_1-noquest" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$竞技场管理兵约瑟夫${action:Talk}<BR>你是来竞技场挑战的吗？<BR>
+<FONT color=#7e12d2>(可以从凯德拉关卡的冒险家公会长戴卡德处接受任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="6"><![CDATA[<html>是什么事情呢？</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$冒险家公会长戴卡德$<BR>啊，来的正好。我正想拜托你件事情呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="10"><![CDATA[<html>竞技场胜负记录簿是什么?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$冒险家公会长戴卡德$<BR>啊，没别的。最近因为太忙，所以没来得及到竞技场。<BR>最好能得到竞技场胜负记录簿就好了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="12"><![CDATA[<html>那把胜负记录簿拿来就可以吧?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$冒险家公会长戴卡德$<BR>竞技场胜负记录簿是记录参加竞技场战斗的人们胜率的文件。看它就可以知道谁是最厉害的斗士了。它可是选拔优秀人才的非常重要的参考资料哦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-d" mid="14"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$冒险家公会长戴卡德$<BR>是啊，也不用做别的，眨眼间的工夫就能完成啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-e" mid="16"><![CDATA[<html>既然这么容易，那我就过去一趟吧。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$冒险家公会长戴卡德$<BR>看见<FONT color=#a82424>右上方的频道移动 键</FONT>了吧? 点击它<FONT color=#a82424>选择竞技场频道</FONT>即可。<BR>可以去吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="18"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$竞技场胜负记录簿$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="20"><![CDATA[<html>（重新咨询进入竞技场的方法） </html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="21"><![CDATA[<html>嗯，我现在就出发！</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$冒险家公会长戴卡德$<BR>难道，这么快就回来啦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="23"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$冒险家公会长戴卡德$<BR>似乎忘记<FONT color=#a82424>进入竞技场的方法</FONT>了吧。<BR>看见<FONT color=#a82424>右上方的频道移动键</FONT>了吧? 点击它<FONT color=#a82424>选择竞技场频道</FONT>即可。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QN_Npc_Pvp_Gambler.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$冒险家公会长戴卡德$<BR>向<FONT color=#a82424>竞技场管理兵一个叫 </FONT><FONT color=#2b2723>约瑟夫</FONT>的朋友获取<FONT color=#a82424>胜负记录簿</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n148_arena_ticker_1-1" image="" itemindex="">
+      <talk_answer link_index="n148_arena_ticker_1-1-a" mid="28"><![CDATA[<html>不，是戴卡德让我来的。</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$竞技场管理兵约瑟夫$<BR>我好像从来没见过你？<BR>你是来参加竞技场剑斗会的吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n148_arena_ticker_1-1-a" image="" itemindex="">
+      <talk_answer link_index="n148_arena_ticker_1-2" mid="30"><![CDATA[<html>（获得竞技场胜负记录簿）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$竞技场管理兵约瑟夫$<BR>原来如此。嗯……看来他还是放不下啊。<BR>这是<FONT color=#a82424>胜负记录</FONT>，你拿去吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n148_arena_ticker_1-2" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$竞技场管理兵约瑟夫$<BR>有空的话，随时欢迎来竞技场挑战。和其他冒险家一较高下的机会可不多哦。那么，再见……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="33"><![CDATA[<html>（递交竞技场胜负记录簿）</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$冒险家公会长戴卡德$<BR>怎么样？<BR>胜负记录拿来了吧？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="35"><![CDATA[<html>但是，你要胜负记录干什么呢？</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$冒险家公会长戴卡德$<BR>呵呵，没错！<BR>辛苦了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-c" mid="39"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-c" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-d" mid="51"><![CDATA[<html>(感觉有点奇怪)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$冒险家公会长戴卡德$<BR>
+这个吗？当然是为了调查冒险家们的战绩和胜率。这是冒险家公会最基本的情报搜集工作，你不要大惊小怪。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-d" image="" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$冒险家公会长戴卡德$<BR>嗯……嗯？这个家伙的战绩怎么回事？我还以为他还可以呢……啧啧……哈……！赔率12倍！嗯……</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">304</exe>
+         <exe type="recompense_view">,3041,3042,3043,3044</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300230</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">304</exe>
+         <exe type="delquestitem" num="-1">300230</exe>
+         <exe type="recompense">,3041,3042,3043,3044</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n148_arena_ticker_1" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b">2</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="d" />
+   <journal_data recompense="1:3041,2:3042,3:3043,4:3044" quest_title="콜로세움의 승률기록부" chapterid="" quest_level="10" quest_mark_type="10" use_item_list="300230">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Pvp_Gambler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>40,n148</destination_pos>
+         <destination_mode>custom:8@4</destination_mode>
+         <statemark_npcid>148</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[竞技场胜负记录簿]]></title>
+         <contents mid="43"><![CDATA[<html>去竞技场见见<FONT color=#a82424>竞技场管理兵约瑟夫</FONT>。从他那里获取<FONT color=#a82424>竞技场胜负记录</FONT>。<BR><FONT color=#7e12d2>(通过右上方的频道选择窗口，可以选择并移动到竞技场频道。)</FONT><BR><BR><FONT color=#086171>竞技场频道</FONT> <FONT color=#a82424>→ 竞技场管理兵约瑟夫 </FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[竞技场胜负记录簿]]></destination>
+         <todo_msg mid="45"><![CDATA[与竞技场管理兵约瑟夫对话吧。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom:40@4</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[与冒险家公会会长戴卡德对话]]></title>
+         <contents mid="47"><![CDATA[<html>把<FONT color=#a82424>竞技场胜负记录</FONT>交给凯德拉关卡的<FONT color=#a82424>冒险家公会长戴卡德</FONT>。<BR><BR><FONT color=#086171>凯德拉关卡 </FONT><FONT color=#a82424>→ 冒险家公会长戴卡德</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[和冒险家公会长戴卡德对话]]></destination>
+         <todo_msg mid="49"><![CDATA[请和冒险家公会长戴卡德对话。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>10:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

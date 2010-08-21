@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n290_Elite_Soldier_wounded</npcename>
+      <npcid>290</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[受伤的精锐士兵]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$受伤的精锐士兵$<BR>呃……呃……<BR><FONT color=#7e12d2>(伤势很重，好像无法说话)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_573_fearful_fact</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">573</chk>
+      </conditions>
+   </talk>

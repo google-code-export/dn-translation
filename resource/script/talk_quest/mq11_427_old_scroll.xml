@@ -1,0 +1,243 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_427_old_scroll</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>427</qid>
+      <designer>김인정</designer>
+      <qlevel>36</qlevel>
+      <qdesc>1. 주교와 대화
+2. 고엽의 숲 폭발지역에서 고대인의 주문서 습득
+3. 주교에게 보고.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>428</nextqid>
+      <nextqname>mq11_428_revive_serpentra</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[古代人的卷轴]]></qkname>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>有什么问题吗？</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$主教伊格纳西奥${action:Talk}<BR>祭坛我已经建好了，仪式也进行得很顺利。<BR>暂时没什么问题，但是……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="9"><![CDATA[<html>嗯……是吗？</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$主教伊格纳西奥$<BR>事实上……要想举行大规模的仪式，需要可以控制巨大力量的<FONT color=#a82424>卷轴</FONT>。我的卷轴是古代人为了传授给人类而经过修改的卷轴，用来应付大规模的仪式好像有点力不从心。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QS_Default.dds" itemindex="300027">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="11"><![CDATA[<html>什么地方才能找到呢？</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$主教伊格纳西奥$<BR>因此我需要<FONT color=#a82424>古代人的卷轴</FONT>。如果能找到古代人举行重要仪式时使用的卷轴，应该就能控制住巨大的海怪的力量。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="QW_41.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="13"><![CDATA[<html>那个东西会不会很危险呢？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$主教伊格纳西奥$<BR>在<FONT color=#a82424>枯叶林爆炸地区</FONT>可以找到。那里是因为古代人举行的某种实验才会变成不毛之地的。因此据说那里有可以控制巨大力量的卷轴。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-e" mid="15"><![CDATA[<html>有道理。</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$主教伊格纳西奥$<BR>那要看是谁，用它来干什么。力量这个东西，只不过是个工具。如果是为了神圣天堂的安危，即使是很强大的力量，应该也可以控制得住。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-e" image="QW_41.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$主教伊格纳西奥$<BR>在<FONT color=#a82424>枯叶林爆炸地区</FONT>的最强魔物身上，一定可以找到那个卷轴。那就拜托你了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_41.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$主教伊格纳西奥$<BR>在<FONT color=#a82424>枯叶林爆炸地区</FONT>的最强魔物身上，一定可以找到那个卷轴。那就拜托你了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="QS_Default.dds" itemindex="300027">
+      <talk_answer link_index="n039_bishop_ignasio-3-a" mid="19"><![CDATA[<html>(怎么称号越来越响亮了啊……)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$主教伊格纳西奥$<BR>亲爱的朋友，神圣天堂忠实的守护者<FONT color=#387206>{user_nick}</FONT>！<BR><FONT color=#a82424>古代人的卷轴</FONT>找到了吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-b" mid="21"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$主教伊格纳西奥${action:Talk}<BR><FONT color=#7e12d2>(主教接过了古代人的卷轴)</FONT><BR>
+真了不起！！我都不知道该怎么称赞你才好了。呵呵……我想应该是神把你派到了我的身边。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-b" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-c" mid="40"><![CDATA[<html>好的，那就辛苦你了。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$主教伊格纳西奥$<BR>准备好祭坛之后，我会进行剩下的仪式。你先下去休息吧。这段时间你一直很忙，你可以去逛逛街，享受一下难得的悠闲。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-d" mid="42"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$主教伊格纳西奥$<BR>呵呵，别担心，你先退下吧。这一切全都是托你的福。<BR>我见到的冒险家之中，没有一个人像你这么能干。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-d" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-e" mid="44"><![CDATA[<html>(主教像吃饱了的浣熊一样笑着说)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$主教伊格纳西奥$<BR>相信我！<BR><FONT color=#a82424>杰兰特</FONT>好像还没恢复，你要好好照顾他。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-e" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-!next" mid="23"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">1096</exe>
+         <exe type="addquestitem" num="1">300027</exe>
+         <exe type="huntitem" num="1" exe="" onexe="5,6,7">300027</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4271,4272,4273,4274</exe>
+         <exe type="delquestitem" num="-1">300027</exe>
+         <exe type="complete">427</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="e">0,2,4,1</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="e">0</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="!next">1,2</exelink>
+   <journal_data recompense="1:4271,2:4272,3:4273,4:4274" quest_title="고대인의 주문서" chapterid="5" quest_level="36" quest_mark_type="7" use_item_list="300027">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[主教的准备]]></title>
+         <contents mid="28"><![CDATA[<html>去主教伊格纳西奥那里确认仪式的准备是否已经完成。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[和主教伊格纳西奥对话]]></destination>
+         <todo_msg mid="30"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_41.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>413,0,0</destination_pos>
+         <destination_mode>custom:411@1,412@1,413@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[古代人的卷轴]]></title>
+         <contents mid="32"><![CDATA[<html>去枯叶林爆炸地区寻找<FONT color=#a82424>古代人的卷轴</FONT>。<BR><BR>
+<FONT color=#7e12d2>※ 在深渊难度下无法执行。</FONT><BR>
+<BR><FONT color=#086171>黑山山角(阴森的丛林路)</FONT> <FONT color=#a82424>→ 枯叶林爆炸地区</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[搜集古代人的卷轴]]></destination>
+         <todo_msg mid="34"><![CDATA[请到枯叶林爆炸地区去寻找古代人的卷轴。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[回收卷轴]]></title>
+         <contents mid="36"><![CDATA[<html>把古代人的卷轴交给主教伊格纳西奥。<BR><BR><FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[和主教伊格纳西奥对话]]></destination>
+         <todo_msg mid="38"><![CDATA[请把古代人的卷轴交给主教伊格纳西奥。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>426</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

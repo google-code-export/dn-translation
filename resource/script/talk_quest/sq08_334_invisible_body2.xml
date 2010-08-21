@@ -1,0 +1,327 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_334_invisible_body2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>334</qid>
+      <designer>김주연</designer>
+      <qlevel>21</qlevel>
+      <qdesc>몸이 보여요!포션	400137
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>336</nextqid>
+      <nextqname>sq08_336_invisible_body3</nextqname>
+      <nextqnpc>n255_invisible_thief</nextqnpc>
+      <qkname mid="1"><![CDATA[看不见的身体Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>255</npcid>
+         <npcename>n255_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>269</npcid>
+         <npcename>n269_invisible_thef_sq333_334</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-noquest" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$???$<BR>感觉似乎还有什么东西.<BR><FONT color=#7e12d2>（与凯德拉关卡的牧师杰梅因对话可接受任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$消耗品商人梅伊$<BR>神圣天堂的商团要是经常到我们凯德拉就好了。那样的话，再也没有人会说我是乡下杂货店小姐了。<BR><FONT color=#7e12d2>（与凯德拉关卡的牧师杰梅因对话可接受任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-noquest" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$???$<BR>感觉似乎还有什么东西.<BR><FONT color=#7e12d2>（与凯德拉关卡的牧师杰梅因对话可接受任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting" image="QP_Manufactory.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-a" mid="9"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$牧师杰梅因$<BR>还好，在不归之路目击的那台制造机与魔物们的阴谋并无多大关系。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-b" mid="11"><![CDATA[<html>他不想回到村庄。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$牧师杰梅因$<BR>我还一度真担心它是不是魔物们放置的。话说回来，如果把那个看不见的小偷带回来的话，我可以用我的神之力量帮助他… 怎么样啊？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-c" mid="13"><![CDATA[<html>反正…我想先求助梅伊小姐看看。</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$牧师杰梅因$<BR>是吗?信仰或信任是无法强制要求的，所以没办法啊。不过 居然是看不见的身体，这可真神奇啊。<BR>
+那么想去哪里搞到药物呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$看不见的身体Ⅱ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$牧师杰梅因$<BR>
+消耗品商人梅伊… 小姐吗?<BR>
+哈哈…嗯，既然她受过你的帮助，求助她也无妨。虽然我对 <FONT color=#a82424>梅伊</FONT>小姐的料理有些担心，但是她倒是也能做出偶尔可以使用的药水呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-a" mid="18"><![CDATA[<html>不是，有件事向拜托你….</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$消耗品商人梅伊$<BR>天啊，今天可没什么新来的货哦，是想卖给我什么东西吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-b" mid="20"><![CDATA[<html>所以那个….</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$消耗品商人梅伊$<BR>把<FONT color=#a82424>透明的人</FONT>恢复为原来样子的药?<BR>
+透明的人…<BR>他到底吃了什么而变成透明的啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-b" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-c" mid="22"><![CDATA[<html>（呃…，新菜单还包括什么药物吗…）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$消耗品商人梅伊$<BR><FONT color=#a82424>魔法师的实验药物</FONT>?！哈哈！<BR>那样的话，可能与缇娜姐姐使用的药水相似吧。<BR>前不久为了开发新的菜单而收到过药物什么的….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-d" mid="24"><![CDATA[<html>（嗯，很可疑啊…）</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$消耗品商人梅伊$<BR>当，当然是为了制作功能性药物而收取的东西嘛。<BR>难道我还会放进食物里边去啊?呵…呵呵呵呵….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-e" mid="26"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$消耗品商人梅伊$<BR>
+反正，请稍等片刻！<BR>
+用这个，那个，挤出，拧一下，翻开，贴上…<BR>
+……………………………………………………………<BR>
+<FONT color=#7e12d2>（梅伊正在做什么）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-e" image="QS_Default.dds" itemindex="400137">
+      <talk_answer link_index="n026_trader_may-1-f" mid="28"><![CDATA[<html>这个…不会是吃下去就会死人的吧…?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$消耗品商人梅伊$<BR>…<BR>……<BR>
+………<BR>完成啦！试剂 '<FONT color=#a82424>显示身体吧！</FONT>' 药水。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-f" image="QS_Default.dds" itemindex="400137">
+      <talk_answer link_index="n026_trader_may-2" mid="30"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$消耗品商人梅伊${action:Talk}<BR>什么话啊！<BR>上次我都做过洗涤剂不挺好的嘛。<BR>嗯，拿着这个赶紧过去<FONT color=#a82424>实验</FONT>一下吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$???$<BR>感觉似乎还有什么东西.<BR><FONT color=#7e12d2>（与凯德拉关卡的消耗品商人梅伊对话）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$???$<BR>感觉似乎还有什么东西.<BR><FONT color=#7e12d2>（与凯德拉关卡的消耗品商人梅伊对话）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$消耗品商人梅伊$<BR>把它吃下去后，身体显示的话，请让他务必到凯德拉商店哦~.<BR>
+真想看看他到底是什么人。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-2" image="" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-2-a" mid="36"><![CDATA[<html>在吗?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$隐身的小偷$<BR>….<BR><FONT color=#7e12d2>（似乎感觉到就在这附近）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-2-a" image="" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-2-b" mid="38"><![CDATA[<html>嗯，这个 ….</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$隐身的小偷$<BR>喂！<BR>这么快就回来啦！药都带来了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-2-b" image="QS_Default.dds" itemindex="400137">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-2-c" mid="40"><![CDATA[<html>幸亏…啊。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$隐身的小偷$<BR>哈…这次用了什么材料，蛮香的…嗯，就像…是的，就像上次我吃过的药品一样！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-2-c" image="QS_Default.dds" itemindex="400137">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-2-d" mid="42"><![CDATA[<html>啊….</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$隐身的小偷$<BR>哈哈哈！好啊！让我喝喝看。<BR>不过呢。<BR>由于我长时间以透明状态示人，我没穿什么衣服。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-2-d" image="QS_Default.dds" itemindex="400137">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-3" mid="44"><![CDATA[<html>等，请等等。我还是回村庄等你吧。</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$隐身的小偷$<BR>还呆在那里干嘛?<BR>我就直接喝下去啦?<BR>尽管如此，我可是肌肉很发达的哦，嘿。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-3" image="QW_CataractGateway.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$隐身的小偷$<BR>也好。 <BR>那我们就在以前我们见过的 <FONT color=#a82424>帐篷</FONT> 附近见吧，就在那里。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3" image="QW_CataractGateway.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$牧师杰梅因$<BR>请您转告他，如果他要是有与信仰和信任相关的问题想和我交流的话，我随时欢迎。<BR>
+<FONT color=#7e12d2>（要到凯德拉关卡的牧师帐篷周围）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QW_CataractGateway.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$消耗品商人梅伊$<BR>我的药对那位透明人有效果了吗?<BR><FONT color=#7e12d2>（要到凯德拉关卡的牧师帐篷周围）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-3" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-3-a" mid="49"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$牧师帐篷顶$<BR>….<BR><FONT color=#7e12d2>（好像没什么人。似乎不在这里。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-3-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-3-!next" mid="89"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3341,3342,3343,3344</exe>
+         <exe type="setquest">334</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">400137</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="1">400137</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3341,3342,3343,3344</exe>
+         <exe type="complete">334</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n026_trader_may" sub="b" />
+   <exelink qstep="1" npc="n026_trader_may" sub="c" />
+   <exelink qstep="1" npc="n026_trader_may" sub="d" />
+   <exelink qstep="1" npc="n026_trader_may" sub="e" />
+   <exelink qstep="1" npc="n026_trader_may" sub="f" />
+   <exelink qstep="1" npc="n026_trader_may" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n269_invisible_thef_sq333_334" sub="b" />
+   <exelink qstep="2" npc="n269_invisible_thef_sq333_334" sub="c" />
+   <exelink qstep="2" npc="n269_invisible_thef_sq333_334" sub="d" />
+   <exelink qstep="2" npc="n269_invisible_thef_sq333_334" sub="3">0,1,2</exelink>
+   <exelink qstep="3" npc="n255_invisible_thief" sub="a">0</exelink>
+   <exelink qstep="3" npc="n255_invisible_thief" sub="!next">1</exelink>
+   <journal_data recompense="1:3341,2:3342,3:3343,4:3344" quest_title="보이지 않는 몸Ⅱ" chapterid="" quest_level="21" quest_mark_type="10" use_item_list="400137">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[与消耗品商人梅伊对话]]></title>
+         <contents mid="73"><![CDATA[<html>现在根据小偷的委托，到<FONT color=#a82424>消耗品商人梅伊</FONT>那里确认一下可否制作药物吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 与消耗品商人梅伊对话</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[与消耗品商人梅伊对话]]></destination>
+         <todo_msg mid="75"><![CDATA[新增了任务。.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_23.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>174,0,0</destination_pos>
+         <destination_mode>custom:171@1,172@1,173@1,174@2</destination_mode>
+         <statemark_npcid>269</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[与不归之路的隐身的小偷对话]]></title>
+         <contents mid="77"><![CDATA[<html>从<FONT color=#a82424>消耗品商人梅伊</FONT>获得了有些可疑的药水。把它交给<FONT color=#a82424>不归之路上的 </FONT>隐身的小偷吧。<BR>
+ <BR>
+<FONT color=#086171>水晶谷（叹息峡谷入口）</FONT> <FONT color=#a82424>→ 不归之路</FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[与不归之路的隐身的小偷对话]]></destination>
+         <todo_msg mid="79"><![CDATA[到在不归之路等待中的隐身的小偷那里吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_CataractGateway.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n255</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>255</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="80"><![CDATA[凯德拉关卡的牧师帐篷顶]]></title>
+         <contents mid="81"><![CDATA[<html>为了稍微害羞的小偷，就回到村庄等他吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 牧师帐篷 顶</FONT></html>]]></contents>
+         <destination mid="82"><![CDATA[凯德拉关卡的牧师帐篷顶]]></destination>
+         <todo_msg mid="83"><![CDATA[与凯德拉关卡的帐篷顶上隐身的小偷见面吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>21:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>333</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

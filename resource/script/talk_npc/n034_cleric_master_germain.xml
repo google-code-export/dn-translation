@@ -1,0 +1,44 @@
+﻿   <talk>
+      <npcename>n034_cleric_master_germain</npcename>
+      <npcid>34</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[高级牧师杰梅因]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[任务]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="4"><![CDATA[<html>[学习技能]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$高级牧师杰梅因${action:Talk}<BR>我秉承师傅的遗志在这里为了守护信仰而努力。<BR>如果想跟我探讨关于信仰和信任的问题，随时来找我。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="7"><![CDATA[<html>[任务]</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$高级牧师杰梅因${action:Talk}<BR>我秉承师傅的遗志在这里为了守护信仰而努力。<BR>如果想跟我探讨关于信仰和信任的问题，随时来找我。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="9" link_target="mq08_205_ancient_relic.xml"><![CDATA[<html>[Lv12] <FONT color=#a94407>古人的遗物</FONT><FONT color=#a94407></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="mq08_206_surprise_attack.xml"><![CDATA[<html>[Lv14] <FONT color=#a94407>突然袭击</FONT><FONT color=#a94407></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="143" link_target="sq08_314_entity_of_the_darkness.xml"><![CDATA[<html>[Lv12] <FONT color=#086171>黑色气韵的实体</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="113" link_target="sq08_255_ashes_of_saint1.xml"><![CDATA[<html>[Lv13] <FONT color=#086171>老师的遗骸 I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="114" link_target="sq08_256_ashes_of_saint2.xml"><![CDATA[<html>[Lv13] <FONT color=#086171>老师的遗骸 II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="115" link_target="sq08_257_ashes_of_saint3.xml"><![CDATA[<html>[Lv13] <FONT color=#086171>老师的遗骸 III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="116" link_target="sq08_258_ashes_of_saint4.xml"><![CDATA[<html>[Lv13] <FONT color=#086171>老师的遗骸 IV</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="120" link_target="sq08_284_test_cleric1.xml"><![CDATA[<html>[转职] <FONT color=#086171>缘分Ⅰ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="121" link_target="sq08_285_test_cleric2.xml"><![CDATA[<html>[转职] <FONT color=#086171>缘分Ⅱ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="152" link_target="sq08_343_change_job4.xml"><![CDATA[<html>[Lv15] <FONT color=#086171>艾琳的转职礼物</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="129" link_target="sq08_335_guard_over_fire.xml"><![CDATA[<html>[Lv17] <FONT color=#086171>玩火</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="147" link_target="sq08_321_sign_of_death1.xml"><![CDATA[<html>[Lv20] <FONT color=#086171>死亡气息Ⅰ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="138" link_target="sq08_333_invisible_body1.xml"><![CDATA[<html>[Lv21]<FONT color=#086171> 看不见的身体Ⅰ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="139" link_target="sq08_334_invisible_body2.xml"><![CDATA[<html>[Lv21] <FONT color=#086171>看不见的身体Ⅱ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back1" mid="153"><![CDATA[<html>(返回)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$高级牧师杰梅因$<BR>我的师傅威廉数年前受女神的召唤来到凯德拉与攻击这里的魔物对抗。<BR>之后就由我继承了师傅的遗志。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="0" false="1">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <exelink idx="skill">3</exelink>
+      <exelink idx="back1">2</exelink>
+   </talk>

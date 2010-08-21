@@ -1,0 +1,21 @@
+﻿   <talk>
+      <npcename>n304_auction_manger_duwen</npcename>
+      <npcid>304</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[交易所会长达尔文]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="auction" mid="3"><![CDATA[<html>[交易所]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="4"><![CDATA[<html>[对话] 交易所是个什么地方？</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$交易所会长达尔文$<BR>想要诚信交易吗?<BR>那你就来对地方了。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="001" mid="6"><![CDATA[<html>(返回)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$交易所会长达尔文$<BR>这里是为忙于冒险的人们代为进行委托销售的地方。而且如需要什么东西，亦可随意购买。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenMarket(userObjID);</exe>
+      </executions>
+      <conditions />
+      <exelink idx="auction">1</exelink>
+   </talk>

@@ -1,0 +1,45 @@
+﻿   <talk>
+      <npcename>n035_soceress_master_tiana</npcename>
+      <npcid>35</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[高级魔法师缇娜]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[任务]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="4"><![CDATA[<html>[学习技能]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$高级魔法师缇娜${action:Talk}<BR>哼，用我们魔法师的魔法可以轻而易举地消灭掉魔物。想知道为什么我们被称作魔女并为世人所畏惧吗？</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="7"><![CDATA[<html>[任务]</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$高级魔法师缇娜${action:Talk}<BR>哼，用我们魔法师的魔法可以轻而易举地消灭掉魔物。想知道为什么我们被称作魔女并为世人所畏惧吗？</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="16" link_target="mq08_216_argentas_kiss.xml"><![CDATA[<html>[Lv20] <FONT color=#a94407>阿尔杰塔的气息</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="mq08_217_blessed_stone.xml"><![CDATA[<html>[Lv22]<FONT color=#a94407>祝福之石</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="mq08_218_awakened_guardian.xml"><![CDATA[<html>[Lv22]<FONT color=#a94407>苏醒的守护者</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="97" link_target="sq08_338_lost_spellbook.xml"><![CDATA[<html>[Lv11] <FONT color=#086171>消失的卷轴</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="98" link_target="sq08_339_tiana_fury.xml"><![CDATA[<html>[Lv11] <FONT color=#086171>缇娜的愤怒</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="106" link_target="sq08_282_test_sorceress1.xml"><![CDATA[<html><FONT color=#2b2723>[转职] </FONT><FONT color=#086171>重新找到的路Ⅰ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="107" link_target="sq08_283_test_sorceress2.xml"><![CDATA[<html><FONT color=#2b2723>[转职] </FONT><FONT color=#086171>重新找到的路Ⅱ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="112" link_target="sq08_342_change_job3.xml"><![CDATA[<html>[Lv15] <FONT color=#086171>艾琳的转职礼物</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="99" link_target="sq08_308_strange_smell.xml"><![CDATA[<html>[Lv18] <FONT color=#086171>奇怪的味道</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="100" link_target="sq08_309_hapless_thief.xml"><![CDATA[<html>[Lv18] <FONT color=#086171>不走运的小偷</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="101" link_target="sq08_307_cut_a_deal.xml"><![CDATA[<html>[Lv19] <FONT color=#086171>缇娜的交易提议</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="102" link_target="sq08_268_fame_of_david.xml"><![CDATA[<html><FONT color=#2b2723>[Lv22] </FONT><FONT color=#086171>胡说八道的评价</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="103" link_target="sq08_286_argenta_slave.xml"><![CDATA[<html><FONT color=#2b2723>[Lv22] </FONT><FONT color=#086171>阿尔杰塔的奴隶</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="104" link_target="sq08_292_battle_magic1.xml"><![CDATA[<html><FONT color=#2b2723>[Lv21] </FONT><FONT color=#086171>[称号]「魔族Lv1」战斗的基本是魔力Ⅰ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="105" link_target="sq08_293_battle_magic2.xml"><![CDATA[<html><FONT size=2>[Lv21] <FONT color=#086171>[称号]「魔族Lv1」战斗的基本是魔力Ⅱ</FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="back1" mid="113"><![CDATA[<html>(返回)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$高级魔法师缇娜$<BR>你那阴沉的脸是什么意思…？有话就快点说,说完就走人。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="0" false="1">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <exelink idx="skill">3</exelink>
+      <exelink idx="back1">2</exelink>
+   </talk>

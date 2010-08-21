@@ -1,0 +1,334 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_510_darkelf_teleju6</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>510</qid>
+      <designer>김주연</designer>
+      <qlevel>36</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[黑暗精灵泰雷珠Ⅵ]]></qkname>
+      <qnpc>
+         <npcid>281</npcid>
+         <npcename>n281_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>283</npcid>
+         <npcename>n283_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>我错了……所以……<BR><FONT color=#7e12d2>(泰雷珠悲伤地凝视着虚空)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>我错了……所以……<BR><FONT color=#7e12d2>(和王城内部的将军道格拉斯对话，可以接受任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="8"><![CDATA[<html>这可糟了。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$将军道格拉斯${action:talk}<BR>为了向上次让侦察部队全灭的黑暗精灵报仇，我们派出了精锐部队。但是没有取得任何成果，反倒有几个精锐士兵被抓了去。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="10"><![CDATA[<html>好的。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$将军道格拉斯$<BR>必须把精锐士兵们救出来才行……这件事能交给你吗？指令书是你抢回来的，我想你一定可以做到。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="12"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$黑暗精灵泰雷珠Ⅵ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$将军道格拉斯${action:talk}<BR>请你一定要把被俘的精锐士兵们救出来。<BR>他们全都是神圣天堂宝贵的战斗力。<BR>※ <FONT color=#7e12d2>组队状态下无法进行。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>我错了……所以……<BR><FONT color=#7e12d2>(泰雷珠悲伤地凝视着虚空)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-1" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>我错了……所以……<BR><FONT color=#7e12d2>(泰雷珠悲伤地凝视着虚空)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-2" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>我错了……所以……<BR><FONT color=#7e12d2>(泰雷珠悲伤地凝视着虚空)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-3" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>我错了……所以……<BR><FONT color=#7e12d2>(泰雷珠悲伤地凝视着虚空)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-3" image="" itemindex="">
+      <talk_answer link_index="n283_darkelf_teleju-3-a" mid="19"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>我希望不要遇到你……你怎么又在我面前出现了？是为了救那些人类？你真是即善良又残忍。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-3-a" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n283_darkelf_teleju-3-b" mid="21"><![CDATA[<html>女王？……你是黑暗精灵的女王？</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>你知道<FONT color=#a82424>埃雷娜</FONT>吧？<BR>
+她在50年前是我们的女王，和现在的我一样。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-3-b" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n283_darkelf_teleju-3-c" mid="23"><![CDATA[<html>红色军队……？</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>虽然我还是个年轻的黑暗精灵，但我找到很多有关<FONT color=#a82424>埃雷娜</FONT>的事情。她放弃了王位，加入了红色军队。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-3-c" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n283_darkelf_teleju-3-d" mid="25"><![CDATA[<html>(泰雷珠握紧了拳头)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>虽然我不清楚详细的情况，但据说是为了提高我们的地位。她说我们不能一直躲在漆黑的地下，指望着生病的生命之树……但是结果埃雷娜却被人杀害了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-3-d" image="" itemindex="">
+      <talk_answer link_index="n283_darkelf_teleju-3-e" mid="27"><![CDATA[<html>(泰雷珠好像快要哭出来了)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>就是……就是被你们杀害的！！<BR>
+其他的黑暗精灵把这件事告诉了我。所以我……我……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-3-e" image="" itemindex="">
+      <talk_answer link_index="n283_darkelf_teleju-3-f" mid="29"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>所以我……要杀死你们。我讨厌你们。<BR>
+虽然我憧憬外面的世界，虽然我很想了解你们，但我们绝对不可能成为朋友。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-3-f" image="" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>……好了，让我最后一次把你送走。<BR>
+为了让我们最后一次在外面的世界中见面。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-4" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>我想最后再到外面的世界来和你见一面。<BR>我们再见面的时候，我一定会杀死你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-a" mid="33"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>再见……<BR><FONT color=#7e12d2>(泰雷珠无力地和我道别)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-b" mid="35"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>我希望能成为你的朋友，但你们和我们黑暗精灵，就像是光和影子一样，不是吗？光越强，影子就会越深。你们越是攻击我们，我们就会更恨你们。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-b" image="QN_archer_nerwin_silhouette.dds" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-c" mid="37"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>我是黑暗精灵的女王，我必须为了同族而活下去。<BR>
+就像阿努·阿兰德的<FONT color=#a82424>精灵女王</FONT>把身体献给生命之树一样。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-c" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-d" mid="39"><![CDATA[<html>泰雷珠……</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>你们是我百姓们的敌人，我不能同情我们的敌人。所以下次再见面的时候，我一定会杀死你。<BR>
+你也可以杀死我。再见面的时候，我会把你忘掉。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-d" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-e" mid="41"><![CDATA[<html>(泰雷珠拿出了什么东西)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>……但是我真的很开心。我想我们原本应该可以成为很好的朋友。真的。因此，即使你忘了我，我也无法把你忘记。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-e" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-f" mid="45"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$任务奖励$ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-f" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$黑暗精灵泰雷珠$<BR>很奇怪。我的心很疼……感觉心里就像变成了一片废墟…… <BR>不过能见到你，我应该感到高兴才对。再见。<FONT color=#382000><FONT color=#382000>{user_nick}</FONT></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5101,5102,5103,5104</exe>
+         <exe type="setquest">510</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>1스탭일 때 텔레주 
+2스탭일때 텔레주와 대화</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5101,5102,5103,5104</exe>
+         <exe type="complete">510</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">1,2</exelink>
+   <exelink qstep="3" npc="n283_darkelf_teleju" sub="b" />
+   <exelink qstep="3" npc="n283_darkelf_teleju" sub="c" />
+   <exelink qstep="3" npc="n283_darkelf_teleju" sub="d" />
+   <exelink qstep="3" npc="n283_darkelf_teleju" sub="e" />
+   <exelink qstep="3" npc="n283_darkelf_teleju" sub="f">0,1</exelink>
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="b" />
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="c" />
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="d" />
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="e">0</exelink>
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="f">1</exelink>
+   <journal_data recompense="1:5101,2:5102,3:5103,4:5104" quest_title="다크엘프 텔레주Ⅵ" chapterid="" quest_level="36" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_42.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>423,0,0</destination_pos>
+         <destination_mode>custom:421@1,422@1,423@2</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[去死亡城市入口救出士兵]]></title>
+         <contents mid="48"><![CDATA[<html>侦察部队溃败之后，为了向黑暗精灵复仇，将军派出了精锐部队，但反而有几个人被黑暗精灵所俘虏。去<FONT color=#a82424>死亡城市入口</FONT>救出被俘的<FONT color=#a82424>精锐士兵</FONT>吧。<BR>
+※ <FONT color=#7e12d2>组队状态下无法进行。</FONT><BR><BR><FONT color=#2b2723><FONT color=#086171>赫尔马岱港口(黑暗矿山入口)</FONT> </FONT><FONT color=#a82424>→ 死亡城市入口</FONT> </html>]]></contents>
+         <destination mid="49"><![CDATA[(1人)去死亡城市入口救出士兵]]></destination>
+         <todo_msg mid="50"><![CDATA[请到死亡城市入口去救出被俘的士兵。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_42.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>424,1324,-2826</destination_pos>
+         <destination_mode>custom:421@1,422@1,423@2</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[救出死亡城市入口的士兵]]></title>
+         <contents mid="52"><![CDATA[<html>去拯救精锐士兵的时候，遇到了黑暗精灵泰雷珠。先把士兵们救出来吧。<BR>※ <FONT color=#7e12d2>组队状态下无法进行。</FONT><BR>
+<FONT color=#7e12d2></FONT><BR><FONT color=#086171>赫尔马岱港口(黑暗矿山入口)</FONT> <FONT color=#a82424>→ 死亡城市入口(黑暗精灵泰雷珠)</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[(1人)救出死亡城市入口的士兵]]></destination>
+         <todo_msg mid="54"><![CDATA[请救出士兵。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Teleju.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>424,0,0</destination_pos>
+         <destination_mode>custom:421@1,422@1,423@1,424@4</destination_mode>
+         <statemark_npcid>283</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[和死亡城市入口的泰雷珠对话]]></title>
+         <contents mid="56"><![CDATA[<html>把被抓住的精锐士兵全部放了出来。和<FONT color=#a82424>黑暗精灵泰雷珠</FONT>对话。<BR>
+<BR><FONT color=#086171>赫尔马岱港口(黑暗矿山入口)</FONT> <FONT color=#a82424>→ 死亡城市入口(黑暗精灵泰雷珠)</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[(1人)和死亡城市入口的泰雷珠对话]]></destination>
+         <todo_msg mid="58"><![CDATA[黑暗精灵泰雷珠走到了里面。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Teleju.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n281</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>281</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[和赫尔马岱港口的黑暗精灵泰雷珠对话]]></title>
+         <contents mid="67"><![CDATA[<html>泰雷珠好像因为埃雷娜的死讯而受到了打击。回到赫尔马岱港口确认一下情况吧。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→黑暗精灵泰雷珠</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[和赫尔马岱港口的黑暗精灵泰雷珠对话]]></destination>
+         <todo_msg mid="69"><![CDATA[请回到赫尔马岱港口，和黑暗精灵泰雷珠对话。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>36:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>495</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

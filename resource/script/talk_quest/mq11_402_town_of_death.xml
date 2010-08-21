@@ -1,0 +1,304 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_402_town_of_death</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>402</qid>
+      <designer>김인정</designer>
+      <qlevel>24</qlevel>
+      <qdesc>1. 주교와 대화.
+2. 버려진 윌든 할로우로.
+3. 벨스커드 vs 제레인트 싸움을 목격.
+4. 주교에게 돌아와 보고.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>419</nextqid>
+      <nextqname>mq11_419_where_argenta</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[死亡村庄]]></qkname>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드(세인트헤이븐 왕성)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-check" mid="6"><![CDATA[<html>要我帮你什么?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$主教伊格纳西奥$<BR>哦，真的会帮我吗?<BR>反正不能干等着王城的支援，索性让我们一起联起手寻找 <FONT color=#a82424>先知</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$主教伊格纳西奥$<BR>嗯... 虽然很想得到你的帮助，但是你似乎已经非常劳累。<BR><FONT color=#7e12d2>（24级过后才能进入下一阶段。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="9"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$主教伊格纳西奥$<BR>其实我得到了一份很让人烦恼的报告。<BR>神殿骑士团情报员说，不久前亲眼目击了那个可能是 <FONT color=#a82424>黑骑士</FONT>的家伙。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="62"><![CDATA[<html>如果是黑骑士的话，我可以去办。</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$主教伊格纳西奥$<BR>
+只是，没看到理应会在<FONT color=#a82424>黑骑士</FONT>身边的先知。所以为了进一步确认情况，得派个人过去。但是由于情况不明，所以很苦恼啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-d" image="QW_31.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-2" mid="15"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$主教伊格纳西奥$<BR>神殿骑士团目击 <FONT color=#a82424>黑骑士</FONT>的地方就在<FONT color=#a82424>黑山山角</FONT>。<BR>据说有可疑的人向<FONT color=#a82424>被遗弃的韦尔顿哈鲁</FONT>方向过去了，不妨到那里看看吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$国王卡西乌斯$<BR>唔，呜呼。关于先知者的事，朕会在道格拉斯将军回来之后与他一起商议决定的。 <BR>那么...下...下次还会来的是吧?<BR><FONT color=#7e12d2>（与主教伊格纳西奥对话）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-a" mid="20"><![CDATA[<html>但要是不去寻找的话...</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$公爵斯图尔特$<BR>我也知道得去找先知，但是我要守护年幼的国王而无法抽身，所以很遗憾，没法帮上你啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$公爵斯图尔特$<BR>虽然很遗憾，但是希望你能理解。先知的行踪得到确认之时，我会派兵力过去的。今天姑且就这样吧。<BR><FONT color=#7e12d2>（与主教伊格纳西奥对话）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-a" mid="23"><![CDATA[<html>如果不去找先知者的话...</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>我一定会揭穿那浣熊一样的 <FONT color=#a82424>主教</FONT>真实面目。哼。四处派遣神殿骑士团，居然还一无所获，谁会相信啊? 要是小瞧我卡拉安的话，算他倒大霉啦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-b" mid="25"><![CDATA[<html>最重要的不是顺序嘛。</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>你是在命令宫廷魔法师吗？<BR>
+胆敢无视我？谁说我们不去找先知的？<BR>
+将军、公爵、主教都在推脱，凭什么得我们先去？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-b" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>我手下的魔法师个个都能以一当百。所以我怎么能把这种兵力投入到无休止的消耗战当中呢？！哼！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$道格拉斯将军$<BR>现在接到了另外一个命令，所以我才回到了王城。我还不知详情如何，所以没空和你聊啊<BR><FONT color=#7e12d2>（与主教伊格纳西奥对话）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-1-a" mid="29"><![CDATA[<html>看上去...不是很高兴的样子。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$精锐士兵克林德$<BR>因黑暗骑士的袭击，同伴们受伤的受伤，而且跟丢了先知者，真是没脸见人啊。不过由于<FONT color=#382000>{user_nick}</FONT>您的存在，至少获知了先知者的行踪，国王陛下也会高兴的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$精锐士兵克林德$<BR>肯定会的。我已经提交了报告，希望一切顺利吧。<BR>国王陛下会果断处理的。<BR><FONT color=#7e12d2>（与主教伊格纳西奥对话）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_31.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$主教伊格纳西奥$<BR><FONT color=#a82424>被遗弃的</FONT> <FONT color=#a82424>韦尔顿哈鲁</FONT>是被可疑的力量所侵蚀从而变成了荒废之地。假如<FONT color=#a82424>黑骑士</FONT>真的去了那里，真不知他们会搞什么鬼。总之愿幸运之神保佑我们吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-a" mid="33"><![CDATA[<html>（讲述目击的事情）</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$主教伊格纳西奥$<BR>什么? <FONT color=#a82424>黑骑士</FONT>果真去了那里?<BR>到底怎么回事。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-b" mid="35"><![CDATA[<html>该不会是王城的骑士吧?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$主教伊格纳西奥$<BR>有位<FONT color=#a82424>金发剑士</FONT>正与<FONT color=#a82424>黑骑士</FONT>战斗是吧。<BR>
+嗯…看来那个金发剑士也在盯着先知呢，亦或……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-b" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-c" mid="37"><![CDATA[<html>原来如此。</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$主教伊格纳西奥$<BR>不可能啊，且不说能与<FONT color=#a82424>黑骑士</FONT>相匹敌的剑士屈指可数，而且即便他是我们派出去的人，道格拉斯将军肯定也会向我报告的啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-d" mid="39"><![CDATA[<html>似乎…有人知道关于黑骑士的行踪。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$主教伊格纳西奥$<BR>我们都不知道<FONT color=#a82424>黑骑士</FONT>把先知藏在哪里，所以现在只能继续追他了。但是，我们又不知道他的目的或行迹… </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-e" mid="41"><![CDATA[<html>嗯，她一直在追击黑骑士。</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$主教伊格纳西奥$<BR>居然还有人知道黑骑士的行踪?<BR>
+
+那是真的吗? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-e" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-f" mid="69"><![CDATA[<html>她的名字叫阿尔杰塔。</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$主教伊格纳西奥$<BR>
+她… 是不是指你在凯德拉关卡得到那个<FONT color=#a82424>银发女剑士</FONT>帮助的那个她啊，她叫什么名字来着?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-f" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-!next" mid="43"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">24</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">b</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">a</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4021,4022,4023,4024</exe>
+         <exe type="complete">402</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="check">0</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="2">3,4</exelink>
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="e" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="f">0</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="!next">1</exelink>
+   <journal_data recompense="1:4021,2:4022,3:4023,4:4024" quest_title="죽음의 마을" chapterid="4" quest_level="24" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[目击之谈]]></title>
+         <contents mid="48"><![CDATA[<html>和主教伊格纳西奥谈谈关于营救先知的事。<BR><FONT color=#7e12d2></FONT><BR><FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[（24级）与主教伊格纳西奥对话]]></destination>
+         <todo_msg mid="50"><![CDATA[新增了任务。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_31.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>314,0,0</destination_pos>
+         <destination_mode>custom:311@1,312@1,313@1,314@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[被遗弃的韦尔顿哈鲁]]></title>
+         <contents mid="54"><![CDATA[<html>从主教伊格纳西奥那里获知黑暗骑士前往<FONT color=#a82424>被遗弃的韦尔顿哈鲁</FONT>方向的情报。<BR><BR><FONT color=#086171>黑山山角（阴森的丛林路）</FONT> <FONT color=#a82424>→被遗弃的韦尔顿哈鲁</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[追击被遗弃的韦尔顿哈鲁的黑暗骑士]]></destination>
+         <todo_msg mid="56"><![CDATA[追击被遗弃的韦尔顿哈鲁的黑暗骑士吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom:21@1</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[另外一名骑士]]></title>
+         <contents mid="58"><![CDATA[<html>虽目击了黑暗骑士和金发骑士激斗的情形，但还是跟丢了。不妨回到<FONT color=#a82424>神圣天堂王城</FONT>与<FONT color=#a82424>主教伊格纳西奥</FONT>商议吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[向主教伊格纳西奥报告]]></destination>
+         <todo_msg mid="60"><![CDATA[向主教伊格纳西奥报告目击到的内容。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>401</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,199 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq01_064_healthy_doris</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>64</qid>
+      <designer>김인정</designer>
+      <qlevel>4</qlevel>
+      <qdesc>1. 도리스와 대화
+2. 고블린을 공격해 냄새나는 약초 습득
+3. 도리스에게 약초 전달.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[关注健康的多莉丝]]></qkname>
+      <qnpc>
+         <npcid>3</npcid>
+         <npcename>n003_trader_dolis</npcename>
+         <npckname>상인 도리스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-a" mid="6"><![CDATA[<html>还有什么事情吗?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$商人多莉丝$<BR>多亏您上次提供的香水，我才得以备好了礼物送了出去。非常感谢呢。<BR>不过...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-a" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-b" mid="8"><![CDATA[<html>（多莉丝哀叹了一声）</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$商人多莉丝${action:Talk}<BR>由于箩丝到现在也没找到，<FONT color=#a82424>史蒂夫</FONT>大人意志消沉的很厉害呢。除了史蒂夫大人，海洛德村长、莉莉…还有村庄里的所有人都为箩丝担心的每天都睡不好觉呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-c" mid="10"><![CDATA[<html>原来如此... （死了还真不行。）</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$商人多莉丝$<BR>我也想过，我能为大家做什么。嗯~我不是擅长做料理吗? 我做的<FONT color=#a82424>营养餐</FONT>在猎犬之间还流传着<FONT color=#a82424>两人食则必有一死</FONT>的人气呢。呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-d" mid="12"><![CDATA[<html>哇，很好的想法嘛。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$商人多莉丝$<BR>所以呢！！我想做一份健康卫生的营养餐分给大家吃呢！<BR>如何，想法不错吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-d" image="QW_2.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-e" mid="14"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$商人多莉丝${action:Talk}<BR>当然?当然啦? 呵呵，那么~一定会帮我的吧? 烦请到<FONT color=#a82424>古代神殿遗迹</FONT>取些<FONT color=#a82424>流浪者小妖精</FONT>身上的 <FONT color=#a82424>刺鼻的药草</FONT>回来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$关注健康的多莉丝$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1" image="QW_2.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$商人多莉丝$<BR>消灭<FONT color=#a82424>古代神殿遗迹</FONT>的<FONT color=#a82424>流浪者小妖精</FONT>，就有机会获得它们藏着掖着的刺鼻的药草。拜托你拉~！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2" image="QS_Default.dds" itemindex="300094">
+      <talk_answer link_index="n003_trader_dolis-2-a" mid="19"><![CDATA[<html>在这里。</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$商人多莉丝$<BR>啊~ 取回来了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2-a" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n003_trader_dolis-2-b" mid="21"><![CDATA[<html>（刺鼻的味道似乎能把昨天吃的饭都给吐出来）</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$商人多莉丝${action:Talk}<BR>非常感谢。那么让我试着做成汁与面粉调制一起看看吧，呵呵。<FONT color=#7e12d2>（多莉丝把药草捏碎着投放至白色面粉当中）</FONT> 啊~ <FONT color=#a82424>好香</FONT>的味道啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2-b" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-2-c" mid="23"><![CDATA[<html>（吃下去的话还不一定生出什么病呢，快溜吧。）</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$商人多莉丝$<BR>得赶紧做成营养餐分给大伙才好啊~ 呵呵。如果再等一会的话，您也可以品尝得到呢~！！<FONT color=#7e12d2>（多莉丝眨巴着眼睛望着这里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2-c" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-2-d" mid="25"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2-d" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$商人多莉丝${action:Talk}<BR>非常感谢哦。大家吃下去之后，应该会有所感动吧? 呵呵...希望箩丝能够安然无恙吧。<BR><FONT color=#7e12d2>（多莉丝正做着远大的梦想）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="5" op="]=">300094</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">64</exe>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="3">126</exe>
+         <exe type="addquestitem" num="1">300094</exe>
+         <exe type="conexe" true="6,4,5" false="2">0</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="recompense_view">,641,642,642,642</exe>
+         <exe type="huntitem" num="5" exe="" onexe="">300094</exe>
+         <exe type="talk" npc="n003_trader_dolis">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300094</exe>
+         <exe type="recompense">,641,642,642,642</exe>
+         <exe type="complete">64</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n003_trader_dolis" sub="e">7</exelink>
+   <exelink qstep="accepting" npc="n003_trader_dolis" sub="acceptted">0,9,1,8</exelink>
+   <exelink qstep="2" npc="n003_trader_dolis" sub="b" />
+   <exelink qstep="2" npc="n003_trader_dolis" sub="c">1</exelink>
+   <exelink qstep="2" npc="n003_trader_dolis" sub="d">0,2</exelink>
+   <journal_data recompense="1:641,2:642" quest_title="건강을 생각하는 도리스" chapterid="" quest_level="4" quest_mark_type="10" use_item_list="300094(냄새나는 약초)">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_2.dds</contents_image>
+         <need_itemlist>300094</need_itemlist>
+         <destination_pos>58,0,0</destination_pos>
+         <destination_mode>custom:56@3,57@3,58@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="28"><![CDATA[善良的多莉丝]]></title>
+         <contents mid="29"><![CDATA[<html><FONT color=#a82424>商人多莉丝</FONT>要做营养餐。到<FONT color=#a82424>古代神殿</FONT>遗迹获取一些小妖精身上的<FONT color=#a82424>刺鼻的药草</FONT>回来吧。<BR><BR><FONT color=#086171>狂风森林（狂风森林神殿入口）</FONT> <FONT color=#a82424>→古代神殿遗迹</FONT></html>]]></contents>
+         <destination mid="30"><![CDATA[收集5个充满异味的药草]]></destination>
+         <todo_msg mid="31"><![CDATA[到古代神殿遗迹收集一些刺鼻的药草吧。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_Doris.dds</contents_image>
+         <need_itemlist>300094</need_itemlist>
+         <destination_pos>1,n3</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>3</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="32"><![CDATA[多莉丝的远大计划]]></title>
+         <contents mid="33"><![CDATA[<html>刺鼻的药草收集好了。就交给 <FONT color=#a82424>普雷利镇</FONT>的商人多莉丝吧<BR>
+ <BR>
+<FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→商人多莉丝</FONT></html>]]></contents>
+         <destination mid="34"><![CDATA[和商人多莉丝对话]]></destination>
+         <todo_msg mid="35"><![CDATA[刺鼻的药草收集好了，向商人多莉丝报告吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>4:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1:2</user_class>
+      <prev_quest>52</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

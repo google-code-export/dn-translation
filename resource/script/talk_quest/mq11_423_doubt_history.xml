@@ -1,0 +1,552 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_423_doubt_history</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>423</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>424</nextqid>
+      <nextqname>mq11_424_retrieval_darkcore</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[伊西莉安的疑问]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>听说你接受了<FONT color=#a82424>斯塔西</FONT>的委托。<BR>我也有很多问题想问，有时间的话，请过来找我。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$杰兰特$<BR>如果你又有问题了的话，我可以为你解答。<BR>我虽然不会说谎，但信不信是你的自由。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$主教伊格纳西奥$<BR>看来你很忙嘛。<FONT color=#a82424>先知</FONT>还好吧？<BR>请你好好照顾<FONT color=#a82424>杰兰特</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-a" mid="9"><![CDATA[<html>什么事情啊？</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$纹章学者斯塔西$<BR>听说他还健在，我终于可以放下心来了，呵呵。<BR>……不好意思，我还有一件事情想拜托你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-a" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$纹章学者斯塔西$<BR>没能从50年前的阴影中摆脱出来的，不止我一个。<BR>
+我想应该也给<FONT color=#a82424>她</FONT>一个机会，不是吗？<BR>希望你能去见见<FONT color=#a82424>高级弓箭手伊西莉安</FONT>。拜托你了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$纹章学者斯塔西${action:Talk}<BR><FONT color=#a82424>高级弓箭手伊西莉安</FONT>跟随<FONT color=#a82424>内尔文</FONT> ，参加了50年前的战斗。<BR>她应该也有很多解不开的疑问。你去和她谈谈吧。拜托了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="QN_Npc_Geraint_silhouette.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-a" mid="13"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>我听斯塔西说了。<BR>
+我一直以来都想见到的<FONT color=#a82424>那个人</FONT>来到了神圣天堂的王城。而且……<FONT color=#387206>{user_nick}</FONT>，只有你能见到那个人。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-a" image="QN_archer_nerwin_silhouette.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-b" mid="15"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>50年前，我跟随<FONT color=#a82424>纳尔希亚</FONT>女王……<BR>
+当时她还叫做<FONT color=#a82424>内尔文</FONT>。参加了和黑龙的战斗。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-c" mid="119"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="118"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>
+那支军队由人类和精灵联合组成，大家彼此都很信任。但<FONT color=#a82424>龙</FONT>的突然出现，让大家陷入了混乱。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-c" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-d" mid="17"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>当<FONT color=#a82424>金龙</FONT>——我们的首领<FONT color=#a82424>杰兰特</FONT>变成龙的时候，大家全都非常吃惊。战争结束之后，卡拉秋和巴尔纳全都认为他是背叛者。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-e" mid="19"><![CDATA[<html>(伊西莉安的声音有点颤抖)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>很多人死了，很多人受了伤。<BR>
+但是<FONT color=#a82424>杰兰特</FONT>一句话都没说，就消失了。<BR>
+和<FONT color=#a82424>阿尔杰塔</FONT>一起，没有一句道歉，没有一句辩白，就那样离开了。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-e" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-f" mid="21"><![CDATA[<html>是吗？</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>内尔文受到了<FONT color=#a82424>黑龙</FONT>的血的污染，受了重伤，被紧急送回了<FONT color=#a82424>阿努·阿兰德</FONT>。<BR>
+在走之前，她一直很想知道。<BR>
+那两个人到底要去哪里……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-f" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>拜托你。希望你能帮我和内尔文解开多年以来的疑问。<BR>请你帮我问问他，他们俩在这段时间到底在干什么。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>请帮我向<FONT color=#a82424>杰兰特</FONT>转达我的话。<BR>就说我想知道在这<FONT color=#a82424>50年</FONT>里，他们到底干了什么。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-a" mid="25"><![CDATA[<html>(转述伊西莉安的疑问)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$杰兰特$<BR>你又有什么问题了吗？<BR>有问题的话，我可以为你解答。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-a" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-b" mid="27"><![CDATA[<html>我想你也一样吧……</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$杰兰特$<BR>又是和50年前的事情有关的人吗……<BR>时间过了这么久，看来大家还是没能摆脱那时候的阴影啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-b" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-c" mid="30"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$杰兰特$<BR>……<BR>是的，我也一样……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-c" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-d" mid="34"><![CDATA[<html>阿尔杰塔在干什么呢？</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$杰兰特$<BR>50年前的战斗之后，<FONT color=#a82424>贝思柯德</FONT>带着黑龙的宝玉消失了。我追踪着他在<FONT color=#a82424>阿尔特里亚大陆</FONT>各地流浪。 同时我还必须找到并封印<FONT color=#a82424>混</FONT><FONT color=#a82424>沌龙</FONT>的碎片。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-e" mid="40"><![CDATA[<html>巨石碑……到底是什么啊？</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$杰兰特$<BR><FONT color=#a82424>女神的梦</FONT>被堕落之毒污染后，世界逐渐变得不稳定。污染扩散之后，魔物变得越来越强。上次我也说过了，虽然她正在逐渐衰弱，但为了支撑<FONT color=#a94407>巨石碑</FONT>，她不得不耗费很大的力量。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-e" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-f" mid="42"><![CDATA[<html>(虽然不太理解，但没想到竟然还有这种东西……)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$杰兰特$<BR>
+<FONT color=#a82424>巨石碑</FONT>……是女神和世界连接的媒介。<BR>为了不让这个世界破碎，必须守护好巨石碑。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-f" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-g" mid="44"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$杰兰特$<BR><FONT color=#a82424>阿尔杰塔</FONT>虽然很疲惫，但为了支撑巨石碑，她不得不耗费很大的力量。当预示先知觉醒的<FONT color=#a82424>第二颗太古之星</FONT>出现之后，为了寻找古代人的后裔，她来到了凯德拉关卡。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-g" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$杰兰特$<BR>
+之后的事情你也知道了。<BR>还有问题吗？<BR>相不相信我的话，是你的自由……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-4-a" mid="47"><![CDATA[<html>(贤明……？那个阿尔杰塔？)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$杰兰特$<BR>世界正在逐渐变得不稳定。我现在还没完全康复，帮不了<FONT color=#a82424>阿尔杰塔</FONT>什么忙。<BR>只能对她的坚强和贤明表示感叹。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4-a" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$杰兰特$<BR>干嘛用这种眼神看着我？<BR>
+我说错什么了吗？<BR>好了，你回到<FONT color=#a82424>让你来问问题的人</FONT>那里去吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-a" mid="50"><![CDATA[<html>(转述杰兰特的话)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$高级弓箭手伊西莉安${action:talk}<BR>我会仔细听着的，请告诉我他的回答吧。<BR><FONT color=#a82424>50年</FONT>以来，我一直抱着这个疑问。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-b" mid="52"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>世界的均衡……<BR>
+<FONT color=#7e12d2>(伊西莉安陷入了沉思)</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-c" mid="129"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>
+原来如此。<BR>
+他们是为了守护世界而存在的人。<BR>我想他们一定经历了不少的苦难。<BR>
+但是……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-c" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-d" mid="54"><![CDATA[<html>(伊西莉安的表情很复杂)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>但是，让龙理解我们的<FONT color=#a82424>感情</FONT>，真的不可能吗？我不是说友情和爱情之类复杂的感情。<BR>
+我和内尔文……不，所有人其实都一样。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-d" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-e" mid="56"><![CDATA[<html>原来如此。</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$高级弓箭手伊西莉安$<BR><FONT color=#a82424>杰兰特</FONT>是我们的<FONT color=#a82424>首领</FONT>。大家都很信任他，喜欢他。因此看到他的原形之后，卡拉秋和巴尔纳都很愤怒。<BR>
+他们觉得一直把他当作同伴，却遭到了背叛……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-e" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-f" mid="58"><![CDATA[<html>要我去问问这件事吗？</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>但是<FONT color=#a82424>杰兰特</FONT>和<FONT color=#a82424>阿尔杰塔</FONT>没有做任何的辩解，就离开了。留下来的人们，感受到了比冰还要冷的背叛感，觉得自己受到了利用。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-f" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-g" mid="60"><![CDATA[<html>(这样真的就可以了吗……？)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>不，我不想问了。知道过去的这段时间，他们都在忠实地履行自己的宿命，对我来说这就足够了。<BR>
+因为任何人都无法背叛<FONT color=#a82424>宿命</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-g" image="" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>我也要去履行自己的<FONT color=#a82424>宿命</FONT>了。过去的事情，就让它随风而去吧。<BR><FONT color=#7e12d2>(伊西莉安轻轻地微笑着)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-5" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-5-a" mid="63"><![CDATA[<html>这就是你的宿命吗？</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>这次战斗中的一部分伤员患上了疾病，你应该听说了吧？从症状看，应该是受到了<FONT color=#a82424>黑龙的血</FONT>的污染。<BR>
+虽然没有治疗药，但我想尽我的能力去照顾他们。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-5-a" image="QM_black_Dragon.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>在<FONT color=#a82424>50年前</FONT>的战争中，也发生了类似的事情。经历了那种事情的我，现在呆在这里，<BR>
+也是一种宿命，不是吗？<BR>
+有时间的话，希望你能来帮我。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-a" mid="66"><![CDATA[<html>那个人是谁？</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$杰兰特$<BR>之前我一直没有时间。<FONT color=#a82424>贝思柯德</FONT>拿着黑龙的宝物逃走了之后，我终于明白是<FONT color=#a82424>有人</FONT>指使他拿走了那个东西。贝思柯德是受那个人之命潜入我们内部的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-b" mid="68"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$杰兰特$<BR>不知道。<BR>我只是有所预感……但因为无法确定，所以我想没有必要说出来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-b" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-c" mid="70"><![CDATA[<html>那……不是他们的错。</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$杰兰特$<BR>同伴们认为我背叛了他们，我也不想争辩什么。<BR>他们在战斗中受了无法痊愈的<FONT color=#a82424>伤</FONT>，但我没有能力帮他们治疗。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-c" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-d" mid="72"><![CDATA[<html>(不知道该说什么才好……)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$杰兰特$<BR>既然我无法帮助他们，还不如让他们恨我。<BR><FONT color=#a82424>憎恶也是可以让人活下去的力量</FONT>……好像有人这样说过。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-d" image="" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$杰兰特$<BR>……我好像跟你说了太多的话。<BR>与其纠缠于我和我的往事，还不如到外面光明的世界中去做点别的事情。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6" image="" itemindex="">
+      <talk_question mid="75"><![CDATA[<html>$杰兰特$<BR>……我好像跟你说了太多的话。<BR>与其纠缠于我和我的往事，还不如到外面光明的世界中去做点别的事情。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-6" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-6-a" mid="77"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$高级弓箭手伊西莉安${action:talk}<BR>你又去见<FONT color=#a82424>杰兰特</FONT>了吗？<BR>唉……你真是位善良的人。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-6-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-6-b" mid="79"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>我知道他一定会这么回答。<BR>但至少我不恨他。其他人的想法也许也和我一样。<BR>
+<FONT color=#7e12d2>(伊西莉安微笑着说)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-6-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>……<FONT color=#a82424>杰兰特</FONT>是个让人无法憎恨的人。<BR>如果他真的背叛了我们，可能大家会好受一些……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-6-a" mid="82"><![CDATA[<html>你有什么苦恼吗？</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$主教伊格纳西奥${action:Talk}<BR>你来的正好。<BR>王国的事情让我非常担忧，看到了你，我就有了希望。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-6-b" mid="84"><![CDATA[<html>(主教用忧国忧民的眼神看着我)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$主教伊格纳西奥$<BR>虽然当前的危机过去了，但我希望能为<FONT color=#a82424>神圣天堂</FONT>做点什么事情……最近因为担心的事情太多，我一直睡不着觉。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6-b" image="QW_28.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-6-c" mid="86"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$主教伊格纳西奥$<BR>但是……我用贤者之眼看了一下，<FONT color=#a82424>黑暗大君主的领地</FONT>还残留有很多邪恶的气息。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-6-d" mid="138"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="137"><![CDATA[<html>$主教伊格纳西奥$<BR>
+为了防止王国内再次出现类似的悲剧，必须把<FONT color=#a82424>黑龙</FONT>的邪恶气息扫荡干净。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6-d" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-6-e" mid="88"><![CDATA[<html>但是杰兰特受了伤，阿尔杰塔……</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$主教伊格纳西奥$<BR>必须把<FONT color=#a82424>邪恶的核</FONT>全部消灭掉。那样的话，即使黑龙复活，也无法恢复原来的力量。但是以我们的力量，这有点困难。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6-e" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-6-f" mid="90"><![CDATA[<html>应该怎么做呢？</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$主教伊格纳西奥$<BR>我们不能光依靠他们。<FONT color=#a82424>杰兰特</FONT>受了伤，因此希望你能帮帮我们。<BR>我从古书上看到，说借助古代的力量，可以<FONT color=#a82424>净化</FONT>黑暗气息。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6-f" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-6-!next" mid="92"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4231,4232,4233,4234</exe>
+         <exe type="complete">423</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="d" />
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="e" />
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="f">0,1</exelink>
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="d" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="e" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="f" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="g">0,1</exelink>
+   <exelink qstep="4" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="4" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="4" npc="n044_archer_master_ishilien" sub="d" />
+   <exelink qstep="4" npc="n044_archer_master_ishilien" sub="e" />
+   <exelink qstep="4" npc="n044_archer_master_ishilien" sub="f" />
+   <exelink qstep="4" npc="n044_archer_master_ishilien" sub="g">0,1</exelink>
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="d">0,1</exelink>
+   <exelink qstep="6" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="6" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="6" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="6" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="6" npc="n039_bishop_ignasio" sub="e" />
+   <exelink qstep="6" npc="n039_bishop_ignasio" sub="f">0</exelink>
+   <exelink qstep="6" npc="n039_bishop_ignasio" sub="!next">1</exelink>
+   <journal_data recompense="1:4231,2:4232,3:4233,4:4234" quest_title="이실리엔의 의문" chapterid="5" quest_level="34" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[斯塔西的委托]]></title>
+         <contents mid="94"><![CDATA[<html>去和纹章学者斯塔西谈谈。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 纹章学者斯塔西</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[和纹章学者斯塔西对话]]></destination>
+         <todo_msg mid="96"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="97"><![CDATA[伊西莉安的故事]]></title>
+         <contents mid="98"><![CDATA[<html>去50年前参加了战斗的<FONT color=#a82424>高级弓箭手伊西莉安</FONT>那里，听听她的故事。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 高级弓箭手伊西莉安</FONT></html>]]></contents>
+         <destination mid="99"><![CDATA[和高级弓箭手伊西莉安对话]]></destination>
+         <todo_msg mid="100"><![CDATA[请到高级弓箭手伊西莉安那里去听听她的故事。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="101"><![CDATA[50年的疑问]]></title>
+         <contents mid="102"><![CDATA[<html>高级弓箭手伊西莉安说有一个埋藏了50年的疑问。把她的问题转告给杰兰特。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂(地下秘密地区)</FONT> <FONT color=#a82424>→ 杰兰特</FONT></html>]]></contents>
+         <destination mid="103"><![CDATA[和杰兰特对话]]></destination>
+         <todo_msg mid="104"><![CDATA[请把高级弓箭手伊西莉安的问题转告给杰兰特。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="105"><![CDATA[回到伊西莉安那里]]></title>
+         <contents mid="106"><![CDATA[<html>回到高级弓箭手伊西莉安那里，转述杰兰特的回答。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 高级弓箭手伊西莉安</FONT></html>]]></contents>
+         <destination mid="107"><![CDATA[和高级弓箭手伊西莉安对话]]></destination>
+         <todo_msg mid="108"><![CDATA[请向高级弓箭手伊西莉安转述杰兰特的回答。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="109"><![CDATA[其他的故事]]></title>
+         <contents mid="110"><![CDATA[<html><FONT color=#a82424>高级弓箭手伊西莉安</FONT>好像不想再问了。重新回到<FONT color=#a82424>杰兰特</FONT>那里，听听其他的故事。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂(地下秘密地区)</FONT> <FONT color=#a82424>→ 杰兰特</FONT></html>]]></contents>
+         <destination mid="111"><![CDATA[和杰兰特对话]]></destination>
+         <todo_msg mid="112"><![CDATA[请回到杰兰特那里，听听其他的故事。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="113"><![CDATA[在王城里]]></title>
+         <contents mid="114"><![CDATA[<html>50年前的所有有关的人好像都没能从阴影中摆脱出来。回到王城，看看有没有别的事情吧。<BR><BR><FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="115"><![CDATA[和主教伊格纳西奥对话]]></destination>
+         <todo_msg mid="116"><![CDATA[请到王城去看看有没有别的事。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>422</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

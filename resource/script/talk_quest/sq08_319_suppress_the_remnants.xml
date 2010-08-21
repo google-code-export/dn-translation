@@ -1,0 +1,180 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_319_suppress_the_remnants</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>319</qid>
+      <designer>곽노찬</designer>
+      <qlevel>20</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[讨伐残党]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="6"><![CDATA[<html>有什么事啊? （这么问都已经非常无聊啊…）</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>喂，来的正好。<BR>我正缺人手呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="8"><![CDATA[<html>看来需要去讨伐魔物们的人手啊。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>嗯，自上次击退黑暗精灵之后，我还以为魔物们会有所收敛。<BR>
+但是不知怎么搞的，魔物们又开始出没，而且反而比以前更多啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="10"><![CDATA[<html>嗯，这买卖又不是什么第一次。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>是的，你真会来事啊。呵呵~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-d" mid="12"><![CDATA[<html>就交给我吧。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>嗯? 买卖，说什么呢。<BR>反正，到<FONT color=#a82424>不归之路</FONT>去消灭50只<FONT color=#a82424>驻地大本营投石小妖精</FONT>回来吧。 像你这样的精英分子，应该很容易处理吧? 呵呵</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-e" mid="14"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$讨伐残党$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QW_23.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$冒险家公会长$<BR>呵呵呵，那么就闪电般的到<FONT color=#a82424>不归之路</FONT>速战速决吧。不过顺路再…<BR><FONT color=#7e12d2>（戴卡德开始翻开委托传单。要呆下去的话，难不保要交给我更多的事呢）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="17"><![CDATA[<html>也不必非得找个事让我做啊….</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>嗯? 我还没找到新的委托，你就这么快回来了啊?<BR>你，可真有一手啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="19"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-b" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>
+难道这都是为我自己吗? 我还不都是为了你啊，呵呵…嗯，那么其他事情就…<BR>
+<FONT color=#7e12d2>（冒险家公会会长戴卡德又开始翻开委托传单，还是赶紧溜吧）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3191,3192,3193,3194</exe>
+         <exe type="setquest">319</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+         <exe type="huntmon" num="50" party="1" exe="4,5,6" onexe="">604</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3191,3192,3193,3194</exe>
+         <exe type="complete">319</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="e">1,2,3</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="a">0</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b">1</exelink>
+   <journal_data recompense="1:3191,2:3192,3:3193,4:3194" quest_title="잔당 토벌" chapterid="" quest_level="20" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_23.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>174,0,0</destination_pos>
+         <destination_mode>custom:171@3,172@3,173@3,174@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[消灭50只驻地大本营投石小妖精]]></title>
+         <contents mid="27"><![CDATA[<html>在不归之路消灭50只驻地大本营投石小妖精吧。<BR><BR><FONT color=#086171>水晶谷（叹息峡谷入口）</FONT> <FONT color=#a82424>→ 不归之路</FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[消灭50只驻地大本营投石小妖精]]></destination>
+         <todo_msg mid="29"><![CDATA[新增了任务。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[与冒险家公会会长戴卡德对话]]></title>
+         <contents mid="31"><![CDATA[<html>向凯德拉关卡的冒险家公会会长戴卡德报告吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 冒险家公会会长戴卡德</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[与冒险家公会会长戴卡德对话]]></destination>
+         <todo_msg mid="33"><![CDATA[与凯德拉关卡的冒险家公会会长戴卡德对话吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>20:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>215</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

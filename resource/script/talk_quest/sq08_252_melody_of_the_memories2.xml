@@ -1,0 +1,419 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_252_melody_of_the_memories2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>252</qid>
+      <designer>나은하</designer>
+      <qlevel>10</qlevel>
+      <qdesc>300166 프로포즈 반지</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[记忆中的旋律Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이   (캐더락 잡화상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>33</npcid>
+         <npcename>n033_archer_master_adellin</npcename>
+         <npckname>상급 아처 아델린  (캐더락 아쳐 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-noquest" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="101"><![CDATA[<html>$高级弓箭手艾德琳$<BR>要不是与学弓术相关的事情的话，请让我单独呆一会吧。<BR><FONT color=#7e12d2>（可从消耗品商人梅伊处接受任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-noquest" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="103"><![CDATA[<html>$纹章学者贝利$<BR><FONT color=#7e12d2><FONT color=#2b2723>风好像在唱着悲伤的歌。</FONT></FONT><BR>
+<FONT color=#7e12d2>(可以从消耗品商人梅伊那里接受任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="QS_Default.dds" itemindex="300165">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="72"><![CDATA[<html>(梅伊把日记本的内容翻开给我看)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$消耗品商人梅伊$<BR>来的正好。我正在看你之前拿过来的<FONT color=#a82424>尤利克哥哥的日记本</FONT>呢。从里面的内容，可以了解到尤利克哥哥为什么会和艾德琳姐姐吵架。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="74"><![CDATA[<html><FONT face=Arial size=2>（继续）</FONT><FONT face=Arial size=2></FONT></html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$日记本里的内容$<BR><FONT color=#7e12d2>我知道我会先于她离开这个世界。她的时间如同巨大的树一样还在慢慢的成长，而我的时间犹如急流一般奔腾而去。我害怕把她一个人留下。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="76"><![CDATA[<html><FONT face=Arial size=2>（继续）</FONT><FONT face=Arial size=2></FONT></html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$日记本里的内容$<BR><FONT color=#7e12d2>她虽然时常安慰不安的我，但我知道她也害怕一个人留在这世上。我觉得应该让她自由，所以我才跟她说了那么绝情的话。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="78"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$日记本里的内容$<BR><FONT color=#7e12d2>又听到魔物们的呐喊声了。看来这应该是我最后一篇日记了吧。<BR>如果我能活下来的话，我真希望能向她说声对不起，并且希望能给她一个最浪漫的求婚仪式。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-e" mid="80"><![CDATA[<html>（梅伊似乎很生气的样子。）</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$日记本里的内容$<BR><FONT color=#7e12d2>但是事与愿违。戒指在叹息峡谷的战斗当中不幸被魔物抢走。<BR>如果有人发现这本日记的话，希望能替我找到那枚戒指并交给她。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-f" mid="82"><![CDATA[<html>镇静，艾德琳要听见了。</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$消耗品商人梅伊${action:Angry}<BR>没想到尤利克哥哥这么没出息。人类比精灵活的时间短，就这样抛弃艾德琳姐姐，然后又觉得过意不去、担心，而吵了架?！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-g" mid="84"><![CDATA[<html>（梅伊喘着粗气。）</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$消耗品商人梅伊$<BR>真是笨男人啊！！决不能原谅。<BR>就因为这种蠢想法，艾德琳姐姐3年多就这样一直在受着伤害！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-h" mid="86"><![CDATA[<html>恩?我怎么...?</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$消耗品商人梅伊$<BR>嗯，有办法了！<BR>不能就这样对待艾德琳姐姐了。 <BR>您得帮我一个忙才行。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-h" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-i" mid="88"><![CDATA[<html>啊，知道啦！我帮你还不行吗！</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$消耗品商人梅伊$<BR>你不觉得艾德琳姐姐很可怜吗?<BR>怎么能那样无动于衷呢?<BR><FONT color=#7e12d2>(梅伊开始了30分钟左右的说教)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-j" mid="92"><![CDATA[<html>但是我也不是你的下人啊...</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$消耗品商人梅伊$<BR>想的很好。首先得按照这个笨蛋哥哥的遗言找回戒指，然后把日记本和戒指交给艾德琳姐姐吧。<BR><FONT color=#a82424>嗯，向叹息峡谷出发吧！</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-j" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-k" mid="94"><![CDATA[<html>（与其再听一遍她的说教，还不如到叹息峡谷找回戒指呢。）</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$消耗品商人梅伊$<BR>你好像还没听懂我刚才说的话，那就让我再次跟你说明一下该这么做的理由吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-k" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="96"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$记忆中的旋律 II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-a" mid="7"><![CDATA[<html>(梅伊把日记本的内容翻开给我看)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$消耗品商人梅伊$<BR>等等……虽然不太清楚，但我觉得可能是因为这个。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-b" mid="11"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$日记本里的内容$<BR><FONT color=#7e12d2>我知道我会先于她离开这个世界。她的时间如同巨大的树一样还在慢慢的成长，而我的时间犹如急流一般奔腾而去。我害怕把她一个人留下。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-c" mid="13"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$日记本里的内容$<BR><FONT color=#7e12d2>她虽然时常安慰不安的我，但我知道她也害怕一个人留在这世上。我觉得应该让她自由，所以我才跟她说了那么绝情的话。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-d" mid="15"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$日记本里的内容$<BR><FONT color=#7e12d2>又听到魔物们的呐喊声了。看来这应该是我最后一篇日记了吧。<BR>如果我能活下来的话，我真希望能向她说声对不起，并且希望能给她一个最浪漫的求婚仪式。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-e" mid="17"><![CDATA[<html>（梅伊似乎很生气的样子）</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$日记本里的内容$<BR><FONT color=#7e12d2>但是事与愿违。戒指在叹息峡谷的战斗当中不幸被魔物抢走。<BR>如果有人发现这本日记的话，希望能替我找到那枚戒指并交给她。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-f" mid="19"><![CDATA[<html>镇静，艾德琳要听见了。</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$消耗品商人梅伊${action:Angry}<BR>没想到尤利克哥哥这么没出息。人类比精灵活的时间短，就这样抛弃艾德琳姐姐，然后又觉得过意不去、担心，而吵了架?！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-f" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-g" mid="21"><![CDATA[<html>(梅伊喘着粗气)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$消耗品商人梅伊$<BR>真是笨男人啊！！决不能原谅。<BR>就因为这种蠢想法，艾德琳姐姐3年多就这样一直在受着伤害！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-g" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-h" mid="23"><![CDATA[<html>恩?我怎么...?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$消耗品商人梅伊$<BR>嗯，有办法了！<BR>不能就这样对待艾德琳姐姐了。 <BR>您得帮我一个忙才行。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-h" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-i" mid="25"><![CDATA[<html>啊，知道啦！我帮你还不行吗！</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$消耗品商人梅伊$<BR>你不觉得艾德琳姐姐很可怜吗?<BR>怎么能那样无动于衷呢?<BR><FONT color=#7e12d2>(梅伊开始了30分钟左右的说教)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-i" image="QW_14.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-j" mid="27"><![CDATA[<html>但是我也不是你的下人啊....</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$消耗品商人梅伊$<BR>想的很好。首先得按照这个笨蛋哥哥的遗言找回戒指，然后把日记本和戒指交给艾德琳姐姐吧。<BR><FONT color=#a82424>嗯，向叹息峡谷出发吧！</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-j" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2" mid="29"><![CDATA[<html>（还是到叹息峡谷找回戒指吧）</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$消耗品商人梅伊$<BR>你好像还没听懂我刚才说的话，那就让我再次跟你说明一下该这么做的理由吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$纹章学者贝利$<BR>你从梅伊那里了解到尤利克和艾德琳吵架的原因了吗？<BR><FONT color=#7e12d2>(去和梅伊聊聊吧)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$高级弓箭手艾德琳$<BR>要不是与学弓术相关的事情的话，请让我单独呆一会吧。<BR><FONT color=#7e12d2>（艾德琳似乎陷入沉思当中）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="QW_14.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$消耗品商人梅伊$<BR><FONT color=#a82424>嗯，那么就向叹息峡谷出发吧！<BR></FONT>赶紧过去把艾德琳姐姐的<FONT color=#a82424>求婚戒指</FONT>找回来啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="34"><![CDATA[<html>（梅伊似乎放心的叹了一口气。）</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$消耗品商人梅伊$<BR>好极了。现在就把尤利克哥哥的小册子和戒指交给艾德琳姐姐吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$消耗品商人梅伊$<BR>见到尤利克哥哥的日记本和求婚戒指的话，艾德琳姐姐多少也会得到安慰吧。<BR>快啊，去找<FONT color=#a82424>艾德琳</FONT>姐姐啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-4" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-4-a" mid="37"><![CDATA[<html>（告诉日记的内容）</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$侦察兵福古斯$<BR>听说过关于两个人吵架的原因了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-4-a" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$侦察兵福古斯$<BR>原来如此。 真是愚蠢的想法啊。<BR>为了尽快抚平艾德琳的伤痛就赶紧交给她日记和戒指吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4" image="QS_Default.dds" itemindex="300165">
+      <talk_answer link_index="n033_archer_master_adellin-4-a" mid="40"><![CDATA[<html>（艾德琳用颤抖的手接过日记本和戒指）</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$高级弓箭手艾德琳$<BR>嗯，尤利克的日记本和戒指?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-a" image="QS_Default.dds" itemindex="300165">
+      <talk_answer link_index="n033_archer_master_adellin-4-b" mid="42"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$高级弓箭手艾德琳$<BR><FONT color=#7e12d2>（艾德琳认真的读着日记本。在行将读完之际终于忍不住哭了出来）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-b" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4-c" mid="105"><![CDATA[<html>（等待着艾德琳痛快的哭完一场）</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$高级弓箭手艾德琳${action:Cry}<BR>
+他很笨，我也很笨。因为那天凌晨做了恶梦，让我很不安，最后把他弄得也很不安。<BR>我一直装得若无其事……偏偏那一天……<BR>
+</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-c" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4-d" mid="46"><![CDATA[<html>嗯，尤利克一直深爱着你呢。</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$高级弓箭手艾德琳$<BR>不好意思，让你见笑了...<BR>但是，我反倒知道了原来他一直没有嫌弃我。<BR><FONT color=#7e12d2>（艾德琳擦去眼泪，勉强挤出了些许笑容）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-d" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4-e" mid="48"><![CDATA[<html>现在好受些了吗?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$高级弓箭手艾德琳$<BR>真的谢谢你。<BR>我会记着他一直爱我并坚强的活下去的。直到我和连接生命之树的灵魂断了联系为止...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-e" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4-f" mid="50"><![CDATA[<html>希望那一天尽早到来吧。</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$高级弓箭手艾德琳$<BR>现在难免还有些伤心。但是就像受伤的树木重新会发芽，我的伤痛也会得到愈合吧。到了那一天我就可以再次演奏<FONT color=#a82424>记忆中的旋律</FONT>了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-f" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4-g" mid="52"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-g" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$高级弓箭手艾德琳$<BR>在风中似乎又听到了那种旋律...</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="qcount">.</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense_view">,2521,2522,2523,2524</exe>
+         <exe type="setquest">252</exe>
+         <exe type="talk" npc="n026_trader_may">2</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">371</exe>
+         <exe type="addquestitem" num="1">300166</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntitem" num="30001" exe="" onexe="9,7,8,6">300166</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">371</exe>
+         <exe type="addquestitem" num="1">300166</exe>
+         <exe type="huntitem" num="30001" exe="" onexe="5,6,7">300166</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">372</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300165</exe>
+         <exe type="delquestitem" num="-1">300166</exe>
+         <exe type="recompense">,2521,2522,2523,2524</exe>
+         <exe type="complete">252</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="k">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2,5,3,4</exelink>
+   <exelink qstep="1" npc="n026_trader_may" sub="b" />
+   <exelink qstep="1" npc="n026_trader_may" sub="c" />
+   <exelink qstep="1" npc="n026_trader_may" sub="d" />
+   <exelink qstep="1" npc="n026_trader_may" sub="e" />
+   <exelink qstep="1" npc="n026_trader_may" sub="f" />
+   <exelink qstep="1" npc="n026_trader_may" sub="g" />
+   <exelink qstep="1" npc="n026_trader_may" sub="h" />
+   <exelink qstep="1" npc="n026_trader_may" sub="i" />
+   <exelink qstep="1" npc="n026_trader_may" sub="j" />
+   <exelink qstep="1" npc="n026_trader_may" sub="2">2,4,8,0,1</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="a">0,1</exelink>
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="a">0,1</exelink>
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="b" />
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="c" />
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="d" />
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="e" />
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="f">2</exelink>
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="g">3</exelink>
+   <journal_data recompense="1:2521,2:2522,3:2523,4:2524" quest_title="추억의 멜로디Ⅱ" chapterid="" quest_level="10" quest_mark_type="10" use_item_list="300166">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[与消耗品商人梅伊对话]]></title>
+         <contents mid="56"><![CDATA[<html>梅伊读着日记本，终于发现了二人吵架的原因。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 消耗品商人梅伊</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[与消耗品商人梅伊对话]]></destination>
+         <todo_msg mid="58"><![CDATA[与消耗品商人梅伊对话吧。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_14.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>119,0,0</destination_pos>
+         <destination_mode>custom:116@1,117@1,118@1,119@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[在叹息峡谷寻找求婚戒指]]></title>
+         <contents mid="60"><![CDATA[<html>梅伊要求在<FONT color=#a82424>叹息峡谷</FONT>搜寻艾德琳的<FONT color=#a82424>求婚戒指</FONT>。<BR><BR><FONT color=#086171>水晶谷</FONT> <FONT color=#a82424>→ 叹息峡谷</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[在叹息峡谷打猎并搜寻求婚戒指]]></destination>
+         <todo_msg mid="62"><![CDATA[在叹息峡谷打猎并搜寻求婚戒指吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[与消耗品商人梅伊对话]]></title>
+         <contents mid="64"><![CDATA[<html>找到了高级弓箭手艾德琳的求婚戒指。就回到 <FONT color=#a82424>消耗品商人梅伊</FONT>那里吧。<BR><BR><FONT color=#086171>凯德拉关卡</FONT><FONT color=#a82424> → 消耗品商人梅伊</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[与凯德拉关卡的消耗品商人梅伊对话]]></destination>
+         <todo_msg mid="66"><![CDATA[与凯德拉关卡的消耗品商人梅伊对话吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Adellin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n33</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>33</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[和高级弓箭手艾德琳对话]]></title>
+         <contents mid="68"><![CDATA[<html>把尤利克的小册子和求婚戒指交给<FONT color=#a82424>高级弓箭手艾德琳</FONT>吧。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级弓箭手艾德琳</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[和高级弓箭手艾德琳对话]]></destination>
+         <todo_msg mid="70"><![CDATA[与凯德拉关卡的高级弓箭手艾德琳对话吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>10:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>251</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

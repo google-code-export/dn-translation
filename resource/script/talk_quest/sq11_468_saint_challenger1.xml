@@ -1,0 +1,376 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_468_saint_challenger1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>468</qid>
+      <designer>손원호</designer>
+      <qlevel>29</qlevel>
+      <qdesc>상급 워리어에게 가면 김오크의 도전장을 볼 수 있다. 예전처럼 허세쩌는 도전장을 보고 약속장소인 검은 대군주의 탑으로 김오크를 찾아가는 주인공. 싸우기 위해 김오크를 찾아갔지만 정작 김오크는 기억을 잃은 상태다. 그는 어째서 싸우는지, 왜 싸움같이 무익한 짓을 하는지 오히려 이해를 못하는데. 
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>469</nextqid>
+      <nextqname>sq11_469_saint_challenger2</nextqname>
+      <nextqnpc>n098_warrior_master_lodrigo</nextqnpc>
+      <qkname mid="1"><![CDATA[回来的兽人金]]></qkname>
+      <qnpc>
+         <npcid>242</npcid>
+         <npcename>n242_orc_oneeye</npcename>
+         <npckname>김오크</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>98</npcid>
+         <npcename>n098_warrior_master_lodrigo</npcename>
+         <npckname>상급 워리어 로드리고</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n242_orc_oneeye-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$兽人金$<BR>
+这是哪…我是谁?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-a" mid="7"><![CDATA[<html>这句俗话好像有点奇怪啊……</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$高级战士罗德里格$<BR>你就是<FONT color=#382000>{user_nick}</FONT>? <FONT color=#a82424>说曹操曹操就到啦...</FONT>我就知道你会来的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-b" mid="9"><![CDATA[<html>呃！难道又是挑战书吗?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$高级战士罗德里格$<BR>这种小问题就不要计较了。<BR>
+你认识<FONT color=#a82424>兽人金</FONT>吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-c" mid="11"><![CDATA[<html>给我看看挑战书吧。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$高级战士罗德里格$<BR>看来我找对人了，那个叫兽人金的家伙，我都了说了好几次他的挑战书发错对象了，但还是继续给我发，真是烦死我了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-d" mid="13"><![CDATA[<html>（读取挑战书）</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$高级战士罗德里格$<BR><FONT color=#a82424>饭要一口一口吃的啊。</FONT>别着急。<BR>
+<BR><FONT color=#7e12d2>（罗德里格从怀里拿出挑战书）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-d" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-e" mid="15"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html><FONT color=#382000>$兽人金的挑战书$<BR></FONT><FONT color=#387206>呵呵呵呵，{user_nick}。距离上次比试，已经过去很长时间了。那时因为是切磋，所以我没有向你展示我的新技能，真是遗憾。你该不会是以为那是正式的决斗吧？</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-e" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-f" mid="17"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$兽人金的挑战书$<BR><FONT color=#387206>要说把它称之为对决，但我们之间的战斗力确实有很大的差距。就好比孩童们的打架掺和进一个职业摔跤手。呵呵呵，对我而言，像你这种菜鸟，我都提不起战斗的兴趣啊。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-f" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-g" mid="19"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$兽人金的挑战书$<BR><FONT color=#387206>当时你的战斗力是400左右。我的战斗力?如果我进行3段变身的话，可以轻易的上升到10万，但我一变身就怕我们的行星遭受危险... 你要是经常看漫画的话，应该听得懂我说的意思吧?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-g" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-h" mid="21"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$兽人金的挑战书$<BR><FONT color=#387206>但是我以爷爷的名字发誓，不……为了恢复父亲的名誉，我不能一直只和人切磋。所以就在今天！（等等，今天我得去上学……） 那就明天之后！让我们来堂堂正正地决一胜负！</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-h" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-i" mid="23"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$兽人金的挑战书$<BR><FONT color=#387206>如果你不接受挑战，我会和你周围的朋友们谈谈！我会让你感受到真正的恐怖（哎呀……我怎么突然掉眼泪了……）！</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-i" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-j" mid="25"><![CDATA[<html>（与罗德里格对话）</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$兽人金的挑战书$<BR><FONT color=#387206>那我先去<FONT color=#a82424>黑暗领地守备队据点</FONT></FONT><FONT color=#387206>活动一下身体，你去那里找我吧！呵呵呵。<BR><BR> 经秘密特训变得更强大的兽人金留名。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-j" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-k" mid="28"><![CDATA[<html>怎么可能。</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$高级战士罗德里格$<BR>这个家伙难道是你宿命中的对手吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-k" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-l" mid="30"><![CDATA[<html>这些个谚语都不大对劲啊！</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$高级战士罗德里格$<BR>嗯，这是最近难得一见的热血对决……我体内的战士的血也开始沸腾了！<FONT color=#a82424>我非常兴奋，愿意和你同生共死</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-l" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-m" mid="32"><![CDATA[<html>……我要去挑战地点看看了。</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$高级战士罗德里格$<BR>男子汉不必拘泥小节。<FONT color=#a82424>想成大事，就要肚量宽……</FONT>…….一看你就不是当演员的料。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-m" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-n" mid="34"><![CDATA[<html>……知道了。.</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$高级战士罗德里格$<BR>哈哈哈，你年纪虽小，但还是有点气魄嘛。<BR>
+不过<FONT color=#a82424>常在河边走，哪有不湿鞋</FONT>。<BR>
+你最好还是小心为妙。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-n" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-acceptted" mid="37"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$回来的兽人金$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1" image="QW_43.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-1-a" mid="40"><![CDATA[<html>像熊一样?</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$高级战士罗德里格$<BR><FONT color=#a82424>黑暗领地守备队据点</FONT>可以通过黑山山角过去。希望你能像熊一样漂亮地战胜他。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1-a" image="" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$高级战士罗德里格$<BR>不要拘泥于小节嘛，啊哈哈！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-2-a" mid="43"><![CDATA[<html>我拒绝。</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$高级战士罗德里格$<BR>看来兽人金是害怕了。<BR>
+<FONT color=#a82424>一个巴掌拍不响</FONT>，要我帮你吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2-a" image="QW_43.dds" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$高级战士罗德里格$<BR>那你还不过去，在这干嘛呢！<FONT color=#a82424>黑暗领地守备队据点 </FONT>可以穿过黑山山角过去。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n242_orc_oneeye-2" image="" itemindex="">
+      <talk_answer link_index="n242_orc_oneeye-2-a" mid="46"><![CDATA[<html>来吧！</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$兽人金$<BR>这里是哪儿…我又是谁?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n242_orc_oneeye-2-a" image="" itemindex="">
+      <talk_answer link_index="n242_orc_oneeye-2-b" mid="48"><![CDATA[<html>不认识我吗? </html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$兽人金$<BR>等…等会。你到底是谁，为何想和我打啊? 我可不想和任何人打架。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n242_orc_oneeye-2-b" image="" itemindex="">
+      <talk_answer link_index="n242_orc_oneeye-2-c" mid="50"><![CDATA[<html>啊！ 怎么可能。</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$兽人金$<BR>似乎有点面熟...我们... 难道是<FONT color=#a82424>恋人关系</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n242_orc_oneeye-2-c" image="" itemindex="">
+      <talk_answer link_index="n242_orc_oneeye-2-d" mid="52"><![CDATA[<html>我是接到你的挑战书才到这里来的啊。</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$兽人金$<BR>啊啊... 什么也想不起来了。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n242_orc_oneeye-2-d" image="" itemindex="">
+      <talk_answer link_index="n242_orc_oneeye-2-e" mid="54"><![CDATA[<html>难道你失忆啦?</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$兽人金$<BR>挑战书？你是说决斗吗？<BR>
+对不起，我不喜欢那种野蛮的行为。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n242_orc_oneeye-2-e" image="" itemindex="">
+      <talk_answer link_index="n242_orc_oneeye-2-f" mid="57"><![CDATA[<html>不是啊！</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$兽人金$<BR>记忆……啊……我什么都记不起来了。<BR>
+我只记得我叫兽人金……<BR>
+你……你是我的粉丝吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n242_orc_oneeye-2-f" image="" itemindex="">
+      <talk_answer link_index="n242_orc_oneeye-2-g" mid="59"><![CDATA[<html>（看来今后不会发生什么麻烦事了）</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$兽人金$<BR>啊……头疼得快要裂开了。<BR>
+你先走开。需要的话，我会给你签名的。<BR><BR><FONT color=#7e12d2>(兽人金好像真的失去了记忆)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n242_orc_oneeye-2-g" image="" itemindex="">
+      <talk_answer link_index="n242_orc_oneeye-2-h" mid="61"><![CDATA[<html>那我就走了！</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$兽人金$<BR>似乎想起什么，但又什么也想不起来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n242_orc_oneeye-2-h" image="" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$兽人金$<BR>这里是哪儿啊…我为何在这里啊...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n242_orc_oneeye-3" image="" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$兽人金$<BR>这里是哪儿啊... 我为何在这里啊...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-a" mid="65"><![CDATA[<html>成语也是错的，也不符合现在的情况啊！</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$高级战士罗德里格$<BR><FONT color=#a82424>瘸腿的狗跑千里。</FONT> <BR>
+这么快就回来啦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-a" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-b" mid="67"><![CDATA[<html>（不像是个坏人）</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$高级战士罗德里格$<BR>真是个固执的家伙。<BR>
+你好像有点累了，先拿着这个吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-b" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-c" mid="69"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-c" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-d" mid="71"><![CDATA[<html>信?不是挑战书?</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$高级战士罗德里格$<BR>你不在的时候我又收到兽人金的<FONT color=#a82424>第二封信</FONT>。我还原本以为再也不会收到这个发着恶臭的信件... 怎么总是发给我呢。真是连鬼都要跳 hip hop了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-d" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-e" mid="73"><![CDATA[<html>（读取兽人金的信）</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$高级战士罗德里格$<BR>详细的你自己读读看吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-e" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-f" mid="76"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$兽人金的信$<BR><FONT color=#387206>你好，{user_nick}。这里的的天气像伊比利亚半岛跳舞的女人一样明媚。唯一的缺点是离黑山比较近，硫磺味道很重。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-f" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-g" mid="78"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html><FONT color=#382000>$兽人金的信$<BR></FONT><FONT color=#387206>昨天晚上送走你之后，我又仔细地想了想。在我失去记忆之前，我们好像是很好的朋友。其他的我忘记了，但记得你的名字。这就是证据，呵呵。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-g" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-h" mid="80"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html><FONT color=#382000>$兽人金的信$<BR></FONT><FONT color=#387206>既然我们是好朋友，我想拜托你一件事。</FONT><BR>
+<FONT color=#387206>你应该能帮我吧？呵呵呵～</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-h" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-i" mid="82"><![CDATA[<html>（还给信）</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html><FONT color=#382000>$兽人金的信$<BR></FONT><FONT color=#387206>详细的情况，我们在<FONT color=#a82424>黑山山角</FONT></FONT><FONT color=#387206>见面后再说吧。通过信来谈重要的事情有点不成体统。<BR><BR> 亲爱的朋友兽人金写于黑山山角</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-i" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-j" mid="84"><![CDATA[<html>这个家伙自顾自的在做白日做梦吧。</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$高级战士罗德里格$<BR>啊…你还是兽人金的朋友啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-j" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-!next" mid="86"><![CDATA[<html>是啊，真是没想到。</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$高级战士罗德里格$<BR>但是这个兽人金也了不得嘛，失忆了却还记得自己对手的名字。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4681,4682,4683,4684</exe>
+         <exe type="setquest">468</exe>
+         <exe type="talk" npc="n098_warrior_master_lodrigo">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4681,4682,4683,4684</exe>
+         <exe type="complete">468</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="n">0</exelink>
+   <exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n098_warrior_master_lodrigo" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n242_orc_oneeye" sub="b" />
+   <exelink qstep="2" npc="n242_orc_oneeye" sub="c" />
+   <exelink qstep="2" npc="n242_orc_oneeye" sub="d" />
+   <exelink qstep="2" npc="n242_orc_oneeye" sub="e" />
+   <exelink qstep="2" npc="n242_orc_oneeye" sub="f" />
+   <exelink qstep="2" npc="n242_orc_oneeye" sub="g" />
+   <exelink qstep="2" npc="n242_orc_oneeye" sub="h">0,1</exelink>
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="b">0</exelink>
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="c">1</exelink>
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="d" />
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="e" />
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="f" />
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="g" />
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="h" />
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="i" />
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="j" />
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="!next" />
+   <journal_data recompense="1:4681,2:4682,3:4683,4:4684" quest_title="돌아온 김오크" chapterid="" quest_level="29" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Lodrigo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n98</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>98</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[与高级战士罗德里格对话]]></title>
+         <contents mid="89"><![CDATA[<html>收到兽人金新的挑战书，与高级战士罗德里格对话吧。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→高级战士罗德里格</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[与高级战士罗德里格对话]]></destination>
+         <todo_msg mid="91"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_Orc_Oneeye.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>432,0,0</destination_pos>
+         <destination_mode>custom:431@1,432@3</destination_mode>
+         <statemark_npcid>242</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[与兽人金对话]]></title>
+         <contents mid="94"><![CDATA[<html>根据挑战书兽人金会在黑暗领地守备队据点等着我。为了见兽人金去看一下吧。<BR><BR><FONT color=#086171>黑山山角（黑暗大君主的关卡）</FONT> <FONT color=#a82424>→黑暗领地守备队据点</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[与兽人金对话]]></destination>
+         <todo_msg mid="96"><![CDATA[到黑暗领地守备队据点接受兽人金的挑战吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Lodrigo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n98</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>98</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="97"><![CDATA[与高级战士罗德里格对话]]></title>
+         <contents mid="98"><![CDATA[<html>在黑暗领地守备队据点见到的兽人金似乎失忆了。回去向高级战士罗德里格报告情况吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→高级战士罗德里格</FONT></html>]]></contents>
+         <destination mid="99"><![CDATA[与高级战士罗德里格对话]]></destination>
+         <todo_msg mid="100"><![CDATA[与高级战士罗德里格对话吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>29:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

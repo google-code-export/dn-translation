@@ -1,0 +1,307 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_556_timid_man2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>556</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[胆小的男人Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>133</npcid>
+         <npcename>n133_lena_duglars</npcename>
+         <npckname>레나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>280</npcid>
+         <npcename>n280_saint_guard</npcename>
+         <npckname>왕성 근위병 말콤</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-noquest" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$王城近卫兵马尔肯$<BR><FONT color=#a82424>蕾娜小姐</FONT>说什么？<BR>……如果她拒绝，希望她能把项链还给我……自言自语……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$王城近卫兵$<BR><FONT color=#a82424>马尔肯</FONT>那个家伙怎么还不回来？<BR>
+换岗的时间早就到了。他该不会真的跑了吧？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-a" mid="8"><![CDATA[<html>(说明情况)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$蕾娜小姐${action:Talk}<BR>嗯？名叫<FONT color=#a82424>马尔肯</FONT>的王城近卫兵？……表白？<BR>我不记得了……他是谁啊？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-b" mid="10"><![CDATA[<html>(蕾娜在口袋里翻找)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$蕾娜小姐$<BR>……哎呀，那条项链……<BR>是的，我想起来了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-c" mid="12"><![CDATA[<html>他让你把项链还给他。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$蕾娜小姐$<BR>我去检阅仪仗队的时候，有个精锐士兵把这条项链扔给了我，然后就逃走了。他跟我嘀咕了几句……但是我完全没听清楚。后来就把这件事给忘了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-d" mid="14"><![CDATA[<html>(获取项链)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$蕾娜小姐$<BR>我为什么要自己去啊？<BR>既然你来帮他传话，你帮我把东西送过去好了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-d" image="QW_34.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-e" mid="16"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$蕾娜小姐$<BR>谢谢你。你快到<FONT color=#a82424>下游淹没地</FONT>去吧。<BR>请你帮我把项链还给<FONT color=#a82424>王城近卫兵马尔肯</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-f" mid="18"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$胆小的男人Ⅱ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-f" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$蕾娜小姐$<BR>说真的，那个王城近卫兵真叫人寒心。<BR>他难道不知道不敢正面面对的人，连回答的价值都没有吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1" image="QW_34.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-1-a" mid="21"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$蕾娜小姐$<BR>谢谢你。你快到<FONT color=#a82424>下游淹没地</FONT>去吧。<BR>请你帮我把项链还给<FONT color=#a82424>王城近卫兵马尔肯</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1-a" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$蕾娜小姐${action:Talk}<BR>说真的，那个王城近卫兵真叫人寒心。<BR>他难道不知道不敢正面面对的人，连回答的价值都没有吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$王城近卫兵$<BR><FONT color=#a82424>马尔肯</FONT>那个家伙怎么还不回来？<BR>
+哼，换岗的时间早就到了。他该不会真的跑了吧？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-1" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$王城近卫兵马尔肯$<BR><FONT color=#a82424>蕾娜小姐</FONT>说什么？<BR>……如果她拒绝，希望她能把项链还给我……自言自语……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-2" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$蕾娜小姐$<BR>你快到<FONT color=#a82424>下游淹没地</FONT>去吧。<BR>请你帮我把项链还给<FONT color=#a82424>王城近卫兵马尔肯</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$王城近卫兵$<BR>嗯？<FONT color=#a82424>马尔肯</FONT>那个家伙找到了吗？还好没出什么事。<BR>请你让他快点回来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-2" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n280_saint_guard-2-a" mid="28"><![CDATA[<html>项链拿回来了。</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$王城近卫兵马尔肯$<BR>怎……怎么样了？<FONT color=#a82424>蕾娜小姐</FONT>没来吗？<BR>……项链呢？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-2-a" image="" itemindex="">
+      <talk_answer link_index="n280_saint_guard-2-b" mid="30"><![CDATA[<html>(马尔肯的眼睛里含着泪水，一颗心终于放了下来)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$王城近卫兵马尔肯$<BR>太，太好了……<BR>为了表达我的心意，我花了一个月的工资买了这个东西！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-2-b" image="QS_Default.dds" itemindex="300255">
+      <talk_answer link_index="n280_saint_guard-2-c" mid="32"><![CDATA[<html>太好了……(那你干嘛要表白啊？)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$王城近卫兵马尔肯$<BR>表白失败了，<FONT color=#a82424>项链</FONT>也可能会因此失去，想到这里我就很绝望。<BR>唉～多亏了你，我终于不用挨饿了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-2-c" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n280_saint_guard-2-d" mid="34"><![CDATA[<html>嗯……(当初到底为什么要表白啊！！)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$王城近卫兵马尔肯$<BR>事实上，如果小姐接受了我的表白，也很让人头疼。我的工资怎么能养得起一位贵族小姐呢？唉～现在想想，当初实在是太冲动了。哈哈哈！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-2-d" image="QS_Default.dds" itemindex="300255">
+      <talk_question mid="35"><![CDATA[<html>$王城近卫兵马尔肯$<BR>我得赶快回去，把<FONT color=#a82424>项链</FONT>卖掉才行。好的……再见～<BR><FONT color=#7e12d2>(马尔肯的声音里找不到一丝失恋的悲伤)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-3" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$王城近卫兵马尔肯$<BR>事实上，如果小姐接受了我的表白，也很让人头疼。我的工资怎么能养得起一位贵族小姐呢？唉～现在想想，当初实在是太冲动了。哈哈哈！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$王城近卫兵$<BR>向<FONT color=#a82424>蕾娜小姐</FONT>表白了？马尔肯那个家伙？<BR>……真是个蠢货。他一定是知道那是<FONT color=#a82424>将军道格拉斯</FONT>的女儿，才会去追她的……唉。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-3-a" mid="39"><![CDATA[<html>这好像和桃花运无关。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$蕾娜小姐${action:Talk}<BR><FONT color=#a82424>项链</FONT>还回去了啊？<BR>怎么都是这种无聊的人，我还真是没什么桃花运。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3-a" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-3-b" mid="41"><![CDATA[<html>(蕾娜顽皮地笑了笑)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$蕾娜小姐$<BR>无聊的人向我扔项链，真正喜欢的人，却连一块手帕都不送给我。<BR>……呵呵，开玩笑。还没有什么人能让我看得上。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3-b" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-3-c" mid="43"><![CDATA[<html>(是以白玫瑰的身份追踪龙之追随者吗……)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$蕾娜小姐$<BR>我没时间去关心恋爱和宝石项链。<BR>我有自己的事情要做……其他的事情都跟我没关系。<FONT color=#7e12d2>(蕾娜摆出一副决然的表情)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3-c" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-3-d" mid="45"><![CDATA[<html>(蕾娜郑重地向我道谢)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$蕾娜小姐$<BR>不管怎样，你这次帮我处理了一件烦人的事情。<BR>每次都来麻烦你。我会记住的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3-d" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-3-e" mid="47"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3-e" image="" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$蕾娜小姐${action:Talk}<BR>再见。<BR>你的人情，我总有一天会还给你的。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">556</exe>
+         <exe type="addquestitem" num="1">300255</exe>
+         <exe type="recompense_view">,5561,5562,5563,5564</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300255</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5561,5562,5563,5564</exe>
+         <exe type="complete">556</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="e">2</exelink>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="f">0,1,3,4</exelink>
+   <exelink qstep="1" npc="n133_lena_duglars" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n280_saint_guard" sub="b" />
+   <exelink qstep="2" npc="n280_saint_guard" sub="c" />
+   <exelink qstep="2" npc="n280_saint_guard" sub="d">0,1,2</exelink>
+   <exelink qstep="3" npc="n133_lena_duglars" sub="b" />
+   <exelink qstep="3" npc="n133_lena_duglars" sub="c" />
+   <exelink qstep="3" npc="n133_lena_duglars" sub="d">0</exelink>
+   <exelink qstep="3" npc="n133_lena_duglars" sub="e">1</exelink>
+   <journal_data recompense="1:5561,2:5562,3:5563,4:5564" quest_title="소심한 남자Ⅱ" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="300255">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n133</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>133</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[胆小的男人]]></title>
+         <contents mid="50"><![CDATA[<html>和蕾娜小姐谈论王城近卫兵马尔肯的事情。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 蕾娜小姐</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[和蕾娜小姐对话]]></destination>
+         <todo_msg mid="52"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_34.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>343,n280</destination_pos>
+         <destination_mode>custom:341@1,342@1,343@1</destination_mode>
+         <statemark_npcid>280</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[被忘记的男人]]></title>
+         <contents mid="54"><![CDATA[<html><FONT color=#a82424>蕾娜小姐</FONT>完全不记得马尔肯了。把项链交给王城近卫兵马尔肯吧。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口(下游废墟入口)</FONT> <FONT color=#a82424>→ 下游淹没地</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[和下游淹没地的马尔肯对话]]></destination>
+         <todo_msg mid="56"><![CDATA[请把项链交给下游淹没地的王城近卫兵马尔肯。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n133</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>133</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[蕾娜小姐的恋爱]]></title>
+         <contents mid="58"><![CDATA[<html>找回项链之后，马尔肯很高兴。重新回去向蕾娜小姐报告。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 蕾娜小姐</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[和王城的蕾娜小姐对话]]></destination>
+         <todo_msg mid="60"><![CDATA[把项链还了回去。请回去向蕾娜小姐报告。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>555</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

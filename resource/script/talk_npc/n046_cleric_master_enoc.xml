@@ -1,0 +1,57 @@
+   <talk>
+      <npcename>n046_cleric_master_enoc</npcename>
+      <npcid>46</npcid>
+      <startexe>4</startexe>
+      <npckname mid="1"><![CDATA[高级牧师艾诺]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="8"><![CDATA[<html>[任务]</html>]]></talk_answer>
+         <talk_answer link_index="skill1" mid="9"><![CDATA[<html>[学习技能]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$高级牧师艾诺$<BR>年轻人 <FONT color=#382000>{user_class}</FONT>, 务必要倾听神的旨意，从而选择正确的道路。那才是我们该做的事情。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="15"><![CDATA[<html>[任务]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$高级牧师艾诺$<BR>当世界愈发被谎言和恐惧所掩盖时，我们更需要寻找真实并对其信任。这才是女神的意志….</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="36" link_target="sq11_546_the_place_left.xml"><![CDATA[<html>[Lv24] <FONT color=#086171>离开的位置</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="sq11_497_dark_armor2.xml"><![CDATA[<html>[Lv29] <FONT color=#086171>[称号]「不死Lv3」黑暗盔甲Ⅱ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back1" mid="38"><![CDATA[<html>(返回)</html>]]></talk_answer>
+         <talk_question mid="4"><![CDATA[<html>$高级牧师艾诺$<BR>有什么事要跟我说吗?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="003" image="" itemindex="">
+         <talk_answer link_index="quest" mid="29"><![CDATA[<html>[任务]</html>]]></talk_answer>
+         <talk_answer link_index="skill2" mid="30"><![CDATA[<html>[学习技能]</html>]]></talk_answer>
+         <talk_answer link_index="005" mid="31"><![CDATA[<html>[对话] 关于黑龙之突袭</html>]]></talk_answer>
+         <talk_question mid="20"><![CDATA[<html>$高级牧师艾诺$<BR>
+幸好黑龙冲出黑山之前就得以击退了它。一定是女神的庇护显灵了。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="004" image="" itemindex="">
+         <talk_answer link_index="quest" mid="32"><![CDATA[<html>[任务]</html>]]></talk_answer>
+         <talk_answer link_index="005" mid="33"><![CDATA[<html><FONT size=2 face=Arial>[对话] 关于黑龙之突袭</FONT></html>]]></talk_answer>
+         <talk_question mid="24"><![CDATA[<html>$高级牧师艾诺$<BR>
+在黑山发生的事情不要轻易说出去。真担心单纯的神徒们被自称为龙之追随者的家伙们所骗。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="005" image="" itemindex="">
+         <talk_answer link_index="back2" mid="34"><![CDATA[<html>(返回)</html>]]></talk_answer>
+         <talk_question mid="27"><![CDATA[<html>$高级牧师艾诺$<BR>
+人们都以为在黑龙之突袭最后的战役当中，英雄贝思柯德阵亡了。尽管有些人还认为他还活着。传说也只能在传说当中最美呢。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="0" false="1">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+         <exe type="conexe" true="5" false="2">1</exe>
+         <exe type="conexe" true="6" false="7">0</exe>
+         <exe type="talk">003</exe>
+         <exe type="talk">004</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">4</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 408) == 1</chk>
+      </conditions>
+      <exelink idx="skill1">3</exelink>
+      <exelink idx="back1">4</exelink>
+      <exelink idx="skill2">3</exelink>
+      <exelink idx="back2">4</exelink>
+   </talk>

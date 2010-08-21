@@ -1,0 +1,523 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_453_missing_ring</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>453</qid>
+      <designer>김주연</designer>
+      <qlevel>25</qlevel>
+      <qdesc>300038 검붉은 흙</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>454</nextqid>
+      <nextqname>sq11_454_second_kidnapping</nextqname>
+      <nextqnpc>n042_general_duglars</nextqnpc>
+      <qkname mid="1"><![CDATA[消失的戒指]]></qkname>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>51</npcid>
+         <npcename>n051_alrento_viscount</npcename>
+         <npckname>알렌토 자작</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>52</npcid>
+         <npcename>n052_place_of_trail</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>72</npcid>
+         <npcename>n072_whiterose_lena_blackm</npcename>
+         <npckname>하얀 장미의 기사</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$阿联拓子爵$<BR>
+为什么这个王城里只有这些傻瓜一样的士兵，就没有能好好伺候我的聪明的家伙吗。<BR>
+<FONT color=#7e12d2>(到位于王城内部的将军道格拉斯那里，即可开始执行任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$???$<BR>除了一点灰尘之外，没什么特别的。<BR>
+<FONT color=#7e12d2>(到位于王城内部的将军道格拉斯那里，可开始执行任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$白玫瑰骑士$<BR>
+别给我碍事，快回去吧。<BR>
+<FONT color=#7e12d2>(到位于王城内部的将军道格拉斯那里，可开始执行任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="10"><![CDATA[<html>什么事?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$将军道格拉斯${action:Talk}<BR>总麻烦你，真有点过意不去啊。<BR>方便的话，可否再帮我个忙?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="12"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$将军道格拉斯$<BR>不久前，在王城内发生了<FONT color=#a82424>偷盗事件</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$丢失的戒指$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="16"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$将军道格拉斯$<BR><FONT color=#a82424>白衣打扮的怪人</FONT>偷走了<FONT color=#a82424>阿联拓子爵的戒指</FONT>。<BR>
+幸好，除了戒指之外，好像没有什么再被盗的东西。但是因为与魔王们的战争，没法抽出兵力去调查这件事，不过有你在就好办了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2" mid="18"><![CDATA[<html>明白了。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$将军道格拉斯$<BR>能信任的就只有你了，可否帮我这个忙。<BR>我已经告诉
+<FONT color=#a82424>阿联拓子爵</FONT>会派人过去的，你就去了解一下具体情况吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-1" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$阿联拓子爵$<BR>
+为什么这个王城里只有这些傻瓜一样的士兵，就没有能好好伺候我的聪明的家伙吗。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-1" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(除了一点灰尘之外，没什么特别的。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$白玫瑰骑士$<BR>别给我碍事，赶紧给我回去。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$将军道格拉斯${action:Talk}<BR>此时有你在，真让我觉得踏实啊。<BR>
+我已经告诉
+<FONT color=#a82424>阿联拓子爵</FONT>会派人过去的，你就去了解一下具体情况吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-2-a" mid="24"><![CDATA[<html>受道格拉斯将军的委托而来。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$阿联拓子爵$<BR>你是谁?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2-a" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-2-b" mid="26"><![CDATA[<html>请说一下当时的情况吧?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$阿联拓子爵$<BR>呵呵… 你就是要帮我找<FONT color=#a82424>戒指</FONT>的人吧。<BR>管你是谁，只要能抓到那个小偷就行。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2-b" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-2-c" mid="28"><![CDATA[<html>白衣蒙面的人…</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$阿联拓子爵$<BR>那个家伙，肯定就是元凶。<BR>
+我看得一清二楚。<BR>
+<FONT color=#a82424>白衣</FONT>、 <FONT color=#a82424>蒙面</FONT>和我差不多高吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2-c" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-2-d" mid="30"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$阿联拓子爵$<BR>而且是个<FONT color=#a82424>红头发</FONT>。<BR>虽然有些记不大清，但就是白衣红发的家伙飞快的偷走了我的戒指!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2-d" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-2-e" mid="32"><![CDATA[<html>戒指原来放在哪里的?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$阿联拓子爵$<BR>这件事解决之后，我得跟道格拉斯将军说，王城内部的警备要提高两倍！不，三倍才行。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2-e" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-3" mid="34"><![CDATA[<html>我先过去看一看。</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$阿联拓子爵$<BR>就放在那边的桌子上。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-3" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$阿联拓子爵$<BR>王城内那么多的警卫兵，居然谁也没能抓到那个怪人!<BR>
+哼! 全都是一群废物…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-3" image="QS_01.dds" itemindex="">
+      <talk_answer link_index="n052_place_of_trail-3-get_item" mid="37"><![CDATA[<html>(提取一点泥土)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(存放戒指的位置附近留下了泥脚印)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-4" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(除了一点灰尘之外，没什么特别的)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-4" image="QS_01.dds" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-4-a" mid="40"><![CDATA[<html>(给他看提取的泥土)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$阿联拓子爵$<BR>
+<FONT color=#a82424>泥脚印</FONT>?<BR>
+肯定不是我的。另外我的下人们全天都在家里，没机会踩上泥土啊。更何况没人穿那种印迹的鞋子。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-4-a" image="QW_27.dds" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-4-b" mid="43"><![CDATA[<html>要到黑暗矿山去看看了。</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$阿联拓子爵$<BR>等等!那个红土好像和黑暗矿山的泥土是一样的颜色… <BR><FONT color=#7e12d2>(子爵对着泥土嗅了嗅)</FONT><BR>
+这种味道，分明是<FONT color=#a82424>黑暗矿山</FONT>的魔物们的味道啊！呃，真倒霉!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-4-b" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$阿联拓子爵$<BR>随你便吧。<BR>只是，我丢戒指的事情不要对任何人透露出去啊，知道吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-5" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$阿联拓子爵$<BR>将军倒是派来了像样的人嘛。<BR>就赶紧帮我找回戒指吧。如果没有戒指的话，我就 …</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5" image="" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-a" mid="47"><![CDATA[<html>你就是偷取戒指的小偷啊?!</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$白玫瑰骑士$<BR>你…?!<BR><FONT color=#7e12d2>(怪人稍作惊讶的表情)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-a" image="" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-b" mid="49"><![CDATA[<html>赶紧给我交出戒指。</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$白玫瑰骑士$<BR>哼! 竟然派这种菜鸟冒险家…<BR>看来王城也没像样的人物嘛?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-b" image="" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-c" mid="51"><![CDATA[<html>什么?！</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$白玫瑰骑士$<BR>哈哈哈！真笨！<BR>
+你就是呆头呆脑、任人摆布的稻草人！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-c" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-d" mid="53"><![CDATA[<html>阿联拓子爵就是… 龙之追随者?</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$白玫瑰骑士$<BR>我为了一举歼灭<FONT color=#a82424>龙之追随者</FONT>追了他们很长时间了。被我偷去戒指的那个<FONT color=#a82424>贵族</FONT>也是隐藏身份的<FONT color=#a82424>龙之追随者</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-d" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-e" mid="127"><![CDATA[<html>陷阱，什么意思?</html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$白玫瑰骑士$<BR>
+是的。 以<FONT color=#a82424>那个家伙</FONT>为诱饵，为了引出龙之追随者 专门设置了陷阱。但是，令人遗憾的是，上钩的却是你这种菜鸟冒险家…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-e" image="QS_01.dds" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-f" mid="129"><![CDATA[<html>臭家伙，居然敢骗我们！ 阿联拓子爵怎么样啦?！</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$白玫瑰骑士$<BR>
+难道，你以为在王城留下的<FONT color=#a82424>沾满泥土的脚印</FONT>是我的失误吗?<BR>
+你以为我是谁啊?！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-f" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-g" mid="118"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$白玫瑰骑士$<BR>
+想知道那个<FONT color=#a82424>贵族家伙</FONT>的生死吗?哈哈!<BR>
+不用担心。那个贵族家伙现在还不能死，嘿嘿… 他还有用呢… 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-g" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-h" mid="131"><![CDATA[<html>那是什么意思?</html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$白玫瑰骑士$<BR>
+嗯，也没必要我亲自出手弄脏我的手了。<BR>
+反正他也活不长了…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-h" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="119"><![CDATA[<html>$白玫瑰骑士$<BR>丢失戒指的事要是传到<FONT color=#a82424>龙之追随者</FONT>那里，他基本就没命了。他们的教理就是坚决清除背叛者和无能者，哼！<BR>
+<FONT color=#7e12d2>（回到道格拉斯将军那里，向其报告吧）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-6" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$白玫瑰骑士$<BR>
+还不能杀死他。<BR>
+现在还不能…<BR>
+<FONT color=#7e12d2>（到道格拉斯将军那里，向其报告吧）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-a" mid="59"><![CDATA[<html>从…一开始就是预谋好的事情。</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$将军道格拉斯$<BR>总算回来啦! 你不在的时候，王城发生了一件大事。就是<BR><FONT color=#a82424>阿联拓子爵</FONT>被<FONT color=#a82424>白玫瑰骑士</FONT>劫持了!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-a" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-b" mid="61"><![CDATA[<html>(说明事情原委)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$将军道格拉斯${action:Talk2}<BR>从一开始都是计划好的…? <BR>那个泥土脚印也是故意摆出的样子?<BR>到底是为了什么?<BR>不过，话说回来，你见过那个<FONT color=#a82424>罪犯</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-b" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-c" mid="63"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$将军道格拉斯$<BR>嗯… <FONT color=#a82424>阿联拓子爵</FONT>就是<FONT color=#a82424>龙之追随者</FONT>是吗…<BR>但是，在没有确凿的证据之前，我们依然具有保护好子爵的义务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-d" mid="65"><![CDATA[<html><FONT color=#086171>(获得奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-d" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-!next" mid="136"><![CDATA[<html>有关于劫持地点的信息吗?</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$将军道格拉斯$<BR>反正，这些事情暂时先保密吧。<BR>得先解救被劫持的子爵才是。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-6" image="" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$阿联拓子爵$<BR>还没完成搜索吗?<BR>怎么这么久啊…?<BR>
+不能像其他人透露我丢失<FONT color=#a82424>戒指</FONT>的事，要管好你的嘴啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4531,4532,4533,4534</exe>
+         <exe type="setquest">453</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">300038</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300038</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment>백장미는 대화 후 사라진다.</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4531,4532,4533,4534</exe>
+         <exe type="complete">453</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n051_alrento_viscount" sub="b" />
+   <exelink qstep="2" npc="n051_alrento_viscount" sub="c" />
+   <exelink qstep="2" npc="n051_alrento_viscount" sub="d" />
+   <exelink qstep="2" npc="n051_alrento_viscount" sub="e" />
+   <exelink qstep="2" npc="n051_alrento_viscount" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n052_place_of_trail" sub="get_item">0,1,2</exelink>
+   <exelink qstep="4" npc="n051_alrento_viscount" sub="b">0,1,2</exelink>
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="b" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="c" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="d" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="e" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="f" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="g" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="h">0,1</exelink>
+   <exelink qstep="6" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="6" npc="n042_general_duglars" sub="c">0</exelink>
+   <exelink qstep="6" npc="n042_general_duglars" sub="d">1</exelink>
+   <exelink qstep="6" npc="n042_general_duglars" sub="!next" />
+   <journal_data recompense="1:4531,2:4532,3:4533,4:4534" quest_title="사라진 반지" chapterid="" quest_level="25" quest_mark_type="10" use_item_list="300038">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[偷盗事件]]></title>
+         <contents mid="70"><![CDATA[<html>据说王城内部发生了<FONT color=#a82424>偷盗事件</FONT>。向<FONT color=#a82424>将军道格拉斯</FONT>咨询详细的内容吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城内部</FONT> <FONT color=#a82424>→ 将军道格拉斯</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[偷盗事件]]></destination>
+         <todo_msg mid="72"><![CDATA[新增了任务。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Noble_Man_Pushibal.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n51</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>51</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[与王城内部的阿联拓子爵对话]]></title>
+         <contents mid="74"><![CDATA[<html>被委任侦破戒指被盗事件。去找<FONT color=#a82424>阿联拓子爵</FONT>询问事情的经过吧。<BR><BR><FONT color=#086171>神圣天堂王城内部</FONT> <FONT color=#a82424>→ 阿联拓子爵</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[与王城内部的阿联拓子爵对话]]></destination>
+         <todo_msg mid="76"><![CDATA[与王城内部的阿联拓子爵对话吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_SaintHaven_Inside.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n52</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>52</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[调查存放戒指的位置]]></title>
+         <contents mid="78"><![CDATA[<html><FONT color=#a82424>调查阿联拓子爵存放戒指的桌子</FONT>吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城内部</FONT> <FONT color=#a82424>→ 阿联拓子爵近处的桌子</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[调查存放戒指的位置]]></destination>
+         <todo_msg mid="80"><![CDATA[调查阿联拓子爵近处存放戒指的桌子吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Noble_Man_Pushibal.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n51</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>51</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[与王城内部的阿联拓子爵对话]]></title>
+         <contents mid="82"><![CDATA[<html>在存放戒指的桌子上发现了<FONT color=#a82424>红黑泥脚印</FONT>。与<FONT color=#a82424>阿联拓子爵</FONT>对话吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城内部</FONT> <FONT color=#a82424>→ 阿联拓子爵</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[与王城内部的阿联拓子爵对话]]></destination>
+         <todo_msg mid="84"><![CDATA[与王城内部的阿联拓子爵对话吧。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QW_27.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>274,n72</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@1,274@1</destination_mode>
+         <statemark_npcid>72</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[调查黑暗矿山]]></title>
+         <contents mid="86"><![CDATA[<html><FONT color=#a82424>阿联拓子爵</FONT>说，在存放戒指的地方发现的<FONT color=#a82424>红黑泥土</FONT>是黑暗矿山的。到<FONT color=#a82424>黑暗矿山</FONT>去寻找线索吧。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 黑暗矿山</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[调查黑暗矿山]]></destination>
+         <todo_msg mid="88"><![CDATA[到黑暗矿山调查有无其他线索吧。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[与王城内部的将军道格拉斯对话。]]></title>
+         <contents mid="90"><![CDATA[<html>在<FONT color=#a82424>黑暗矿山</FONT>见到了<FONT color=#a82424>白玫瑰骑士</FONT>。回到王城向<FONT color=#a82424>将军道格拉斯</FONT>报告吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城内部</FONT> <FONT color=#a82424>→将军道格拉斯</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[与王城内部的将军道格拉斯对话。]]></destination>
+         <todo_msg mid="92"><![CDATA[向王城内部的将军道格拉斯报告吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>25:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>452</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

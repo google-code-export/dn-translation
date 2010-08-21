@@ -1,0 +1,432 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_120_money_girl</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>120</qid>
+      <designer>손원호</designer>
+      <qlevel>9</qlevel>
+      <qdesc>오브와 지팡이를 합체해서 현자의 계시를 본다. Lv7에서 Lv9로 성장하면 수정개울 통행증을 받고 다음 지역으로 이동할 수 있다. 
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>201</nextqid>
+      <nextqname>mq08_201_secret_melody</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[值钱的少女]]></qkname>
+      <qnpc>
+         <npcid>11</npcid>
+         <npcename>n011_priest_leonardo</npcename>
+         <npckname>상급 클레릭 레오날드    (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-1" image="QS_Default.dds" itemindex="300028">
+      <talk_answer link_index="n011_priest_leonardo-1-a" mid="7"><![CDATA[<html>先要报告！</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$高级牧师雷昂纳多$<BR>贤者法杖对于实现启示而言是个必需的物品。所以务必要...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-1-a" image="" itemindex="">
+      <talk_question mid="103"><![CDATA[<html>$高级牧师雷昂纳多$<BR>等会！等会啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2" image="QS_Default.dds" itemindex="300028">
+      <talk_question mid="9"><![CDATA[<html>$高级牧师雷昂纳多${action:Talk}<BR>快... 快把贤者法杖还给我啊。那可是牧师的始祖杰科斯大人的遗物呀。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-a" mid="11"><![CDATA[<html>啊哈哈，相信我没错的。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR>哦，这不就是 <FONT color=#a82424>贤者法杖</FONT>和 <FONT color=#a82424>秘传之球</FONT>吗? <BR>终于还是找回来了。哦...我可爱的家伙。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-b" mid="13"><![CDATA[<html>这都是老师教导有方。</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$高级魔法师辛西亚$<BR>很好，不仅把秘传之球而且还把那些笨蛋牧师们丢失的贤者法杖也找到了，心情真不错呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-c" mid="15"><![CDATA[<html>贤者的启示！</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$高级魔法师辛西亚$<BR>嘿嘿...总之有了这两件神物终于可以看到 <FONT color=#a82424>贤者的启示</FONT>了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-d" mid="17"><![CDATA[<html>（曾经的记忆...）</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$高级魔法师辛西亚$<BR>很久以前，<FONT color=#a82424>贤者</FONT>预言了数百年后的世界末日。相传，世界的末日始于代表先知者的太古之星的出现。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-d" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-e" mid="19"><![CDATA[<html>贤者法杖和秘传之球啊。</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$高级魔法师辛西亚$<BR>不久前，<FONT color=#a82424>太古之星</FONT>出现真容，为了见到贤者的启示，牧师们便找到了此处圣地魔法山脊。而为了见到<FONT color=#a82424>贤者的启示</FONT>所需的两件圣物就是...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-e" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-f" mid="21"><![CDATA[<html>世界的灭亡，果真发生过那种事情?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$高级魔法师辛西亚$<BR>是的，那两件遗物本就出自一个法杖身上。相传当预言发生之时，把两件圣物合在一起，就会看到可以引起这场浩劫的先知者最后的启示。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-f" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-g" mid="23"><![CDATA[<html>原来如此。</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$高级魔法师辛西亚$<BR>嗯，对此我也不大了解。不过既然贤者是我们的祖先马里安大人的师傅，那么肯定比我们更加有智慧更加贤明 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-g" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$高级魔法师辛西亚$<BR>嗯，周围越发躁动不安啊。现在就让我们返还法杖，且把两件遗物合璧，对贤者的启示一探究竟吧。去向<FONT color=#a82424>雷昂纳多老头</FONT>转告我们已经准备好了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR>这个时刻终于到来，向雷昂纳多老头转告，让我们尽快开始仪式吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3" image="QS_Default.dds" itemindex="300028">
+      <talk_answer link_index="n011_priest_leonardo-3-a" mid="28"><![CDATA[<html>还给你，你就消消气吧。</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$高级牧师雷昂纳多${action:Talk}<BR>你这个家伙！还不赶紧把<FONT color=#a82424>贤者法杖</FONT>还给我。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3-a" image="QS_Default.dds" itemindex="300028">
+      <talk_answer link_index="n011_priest_leonardo-3-b" mid="30"><![CDATA[<html>（转告辛西亚大人的话）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$高级牧师雷昂纳多$<BR>你小子可真让我难堪啊，呼...反正既然返还了贤者法杖，我也没法再生气了... 牧师偷去的法杖居然由魔法师找到，这可真讽刺啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3-b" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-3-cutscene" mid="32"><![CDATA[<html>(观看仪式)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$高级牧师雷昂纳多$<BR>哦...看来辛西亚大人原来也知道贤者的启示啊。<BR>我马上开始举行仪式了，你离我稍微远一点。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-4" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$高级牧师雷昂纳多$<BR>哦哦... <FONT color=#a82424>红发少女</FONT>... 她就是…难道说那个少女掌握着未来的命运吗！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-a" mid="35"><![CDATA[<html>红发少女...</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$高级魔法师辛西亚$<BR><FONT color=#a82424>红发少女</FONT>... <BR>难道说那个少女掌握着未来的命运吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-b" mid="37"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$高级魔法师辛西亚$<BR>好好记住贤者的启示吧，将来肯定会影响你前行的道路。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-c" mid="45"><![CDATA[<html>正式... 魔法师！</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$高级魔法师辛西亚$<BR>无论如何，你在这次的事件当中是立了大功的，作为回报，我就解除你的禁忌吧。顺便我也允许你以<FONT color=#a82424>正式魔法师</FONT>重新开始活动。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-d" mid="49"><![CDATA[<html>得开始修炼啊。</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$高级魔法师辛西亚$<BR>是啊，因你这次的功劳，决定任命你为正式的魔法师。虽然很想让你赶快离开魔法山脊并去寻觅<FONT color=#a82424>预言的少女</FONT>，但是以你现在的实力恐怕还不足以胜任此使命呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-d" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-e" mid="51"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$高级魔法师辛西亚$<BR>是的，我相信你，所以尽快修炼到<FONT color=#a82424>Lv9</FONT>之后再来找我吧。到那时我便可以告诉你今天你所看到的预言之意义以及今后你要做的事情。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-e" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$高级魔法师辛西亚$<BR>达到<FONT color=#a82424>Lv9</FONT>的特训由<FONT color=#a82424>塔拉</FONT>负责，先去找她吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-a" mid="55"><![CDATA[<html>是的。</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR>徒儿啊，这段时间实力有所长进没有?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-b" mid="57"><![CDATA[<html>红发少女?</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$高级魔法师辛西亚$<BR>嗯...看来你也该知道关于贤者的启示的事情了。<FONT color=#a82424>红发少女</FONT>是谁...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-c" mid="59"><![CDATA[<html>是古代人吗?</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$高级魔法师辛西亚$<BR>当初在贤者的启示中看到的那位红发少女，<BR>既然是预言中提到的少女，肯定跟世界的灭亡有着紧密的关系。无论如何很可能与<FONT color=#a82424>古代人</FONT>相关。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-d" mid="61"><![CDATA[<html>最后的任务?</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$高级魔法师辛西亚$<BR>他们是曾经生活在神的时代中的具有巨大之力量的种族。 假如少女继承了古代人之血脉，那么说不定她就是有可能会引起世界灾难的钥匙。 <FONT color=#382000>{user_nick}</FONT>！ 交给你最后的任务。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-d" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-e" mid="63"><![CDATA[<html>老师...</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$高级魔法师辛西亚$<BR>离开此地去寻找少女吧。按照你的心所属之方向前进吧。那就是我作为你的老师要授予你的最后一个命令。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-e" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-f" mid="65"><![CDATA[<html>我不大明白啊，您也知道的。</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$高级魔法师辛西亚$<BR>倾听自己的声音吧，是该保护她，还是消灭她。什么才是维护世界的路，什么才是为了自己，好好的思考一下吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-f" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-g" mid="67"><![CDATA[<html>老师...</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$高级魔法师辛西亚$<BR>嗯，既然是你，肯定可以用你那<FONT color=#a82424>清澈之眼</FONT>来正确判断这个世界的。而这也只有你才能完成。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-g" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-h" mid="69"><![CDATA[<html>我是说，开始旅行的话，是需要钱的...</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$高级魔法师辛西亚$<BR>不要过于悲伤。因为你现在已经是合格的魔法师...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-h" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-i" mid="71"><![CDATA[<html>啊哈哈。那么我走了！</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$高级魔法师辛西亚$<BR>哎...不要钱想挨打是吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-i" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-j" mid="73"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-j" image="QN_ranger_fugus.dds" itemindex="">
+      <talk_question mid="74"><![CDATA[<html>$高级魔法师辛西亚$<BR>
+你去<FONT color=#a82424>水晶谷</FONT>见见<FONT color=#a82424>侦察兵福古斯</FONT>。<FONT color=#a82424>凯德拉关卡</FONT>的<FONT color=#a82424>冒险家公会</FONT>会帮助你的。永远不要忘记，爱你的人都在魔法山脊！ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-k" image="" itemindex="">
+      <talk_question mid="76"><![CDATA[<html>$高级魔法师辛西亚$<BR>还没达到<FONT color=#a82424>9级</FONT>就开始骄傲起来啦！还不赶紧滚回去继续修炼！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-5" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="100"><![CDATA[<html>$高级牧师雷昂纳多${action:Talk}<BR>预言中出现的少女关乎世界的命运。去寻找少女吧，现在值得信赖的人唯有你...</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="1">300059</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="custom">api_user_PlayCutScene(userObjID,npcObjID,60);</exe>
+         <exe type="delquestitem" num="1">300028</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">9</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">1200,,,,</exe>
+         <exe type="complete">120</exe>
+         <exe type="addquestitem" num="1">300012</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n012_sorceress_master_cynthia">a</exe>
+         <exe type="talk" npc="n012_sorceress_master_cynthia">k</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n011_priest_leonardo" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="a">2</exelink>
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="e" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="f" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="g">0,1</exelink>
+   <exelink qstep="3" npc="n011_priest_leonardo" sub="a">3</exelink>
+   <exelink qstep="3" npc="n011_priest_leonardo" sub="b" />
+   <exelink qstep="3" npc="n011_priest_leonardo" sub="cutscene">0,1,2</exelink>
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="e">0,1</exelink>
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="a">3</exelink>
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="e" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="f" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="g" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="h" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="i">0</exelink>
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="j">1,2</exelink>
+   <journal_data recompense="1200" quest_title="돈 되는 소녀" chapterid="1" quest_level="9" quest_mark_type="7" use_item_list="300028,300059">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Cl_Leonardo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n11</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>11</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[和高级牧师雷昂纳多对话]]></title>
+         <contents mid="79"><![CDATA[<html>向辛西亚老师报告之前，先向雷昂纳多老头转告杰克的死讯吧。<BR><BR><FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→高级牧师雷昂纳多</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[和高级牧师雷昂纳多对话]]></destination>
+         <todo_msg mid="81"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[和高级魔法师辛西亚对话]]></title>
+         <contents mid="83"><![CDATA[<html>向雷昂纳多老头转告了杰克的死讯。现在回到辛西亚老师那里给他看贤者法杖和秘传之球吧。<BR>
+ <BR>
+<FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→高级魔法师辛西亚</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[和高级魔法师辛西亚对话]]></destination>
+         <todo_msg mid="85"><![CDATA[向辛西亚老师报告吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Cl_Leonardo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n11</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>11</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[和高级牧师雷昂纳多对话]]></title>
+         <contents mid="87"><![CDATA[<html>贤者法杖和秘传之球均已找到，现在就开启贤者的启示吧。向雷昂纳多老头转告开始进行仪式吧。<BR>
+ <BR>
+<FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→高级牧师雷昂纳多</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[和高级牧师雷昂纳多对话]]></destination>
+         <todo_msg mid="89"><![CDATA[到高级牧师雷昂纳多那里对两件物品进行合璧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[和高级魔法师辛西亚对话]]></title>
+         <contents mid="91"><![CDATA[<html>回到辛西亚老师那里接收秘传之球。<BR>
+ <BR>
+<FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→高级魔法师辛西亚</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[和高级魔法师辛西亚对话]]></destination>
+         <todo_msg mid="93"><![CDATA[回到辛西亚那里与之对话。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[与高级魔法师辛西亚对话（9级）]]></title>
+         <contents mid="95"><![CDATA[<html>给辛西亚老师展示修炼的成果。<BR>
+ <BR>
+<FONT color=#a82424>※ 觉得达到9级以上才能进入下一阶段。</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[高级与魔法师辛西亚对话 （9级）]]></destination>
+         <todo_msg mid="97"><![CDATA[达到9级之后，再来找辛西亚老师吧！]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>119</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,70 @@
+   <talk>
+      <npcename>n408_guild_board</npcename>
+      <npcid>408</npcid>
+      <startexe>6</startexe>
+      <npckname mid="1"><![CDATA[冒险家公会公告板:死亡森林]]></npckname>
+      <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="6" link_target="gq08_3051_n408_death_forest_normal.xml"><![CDATA[<html>[Lv12] <FONT color=#086171>安息</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="gq08_3052_n408_death_forest_hunt.xml"><![CDATA[<html>[Lv12] <FONT color=#086171>新型流感</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="gq08_3053_n408_death_forest_drop.xml"><![CDATA[<html>[Lv12] <FONT color=#086171>弹力肌肤的秘诀</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="gq08_3054_n408_death_forest_hard.xml"><![CDATA[<html>[Lv12] <FONT color=#086171>小收藏家凯文Ⅱ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="gq08_3131_n408_basin_normal.xml"><![CDATA[<html>[Lv20] <FONT color=#086171>毒性研究</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="13" link_target="gq08_3132_n408_basin_hunt.xml"><![CDATA[<html>[Lv20] <FONT color=#086171>挑战者召集结束</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="14" link_target="gq08_3133_n408_basin_drop.xml"><![CDATA[<html><FONT face=Arial size=2>[Lv20] <FONT color=#086171>重新使用</FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="15" link_target="gq08_3134_n408_basin_hard.xml"><![CDATA[<html><FONT face=Arial size=2>[Lv20] <FONT color=#086171>小收藏家凯文Ⅹ</FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="16" link_target="gq08_3135_n408_basin_boss.xml"><![CDATA[<html><FONT face=Arial><FONT size=2>[Lv20] <FONT color=#086171>夏萝莉的噩梦</FONT></FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="31" link_target="gq08_3140_n408_basin_rank.xml"><![CDATA[<html>[Lv20] <FONT color=#7e12d2>逆袭：死亡盆地</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="32" link_target="gq08_3059_n408_death_forest_abyss.xml"><![CDATA[<html>[Lv15] <FONT color=#7e12d2>向着深渊：讨伐波尔德尼斯</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="33" link_target="gq08_3139_n408_basin_abyss.xml"><![CDATA[<html>[Lv23] <FONT color=#7e12d2>向着深渊：讨伐死神</FONT></html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$冒险家公会公告板${action:Talk} <BR>
+目前接收的任务如下</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="_no_quest" image="QN_guild_board.dds" itemindex="">
+         <talk_question mid="23"><![CDATA[<html>$冒险家公会公告板${action:Talk}<BR>
+目前没有接收的任务。 <BR><BR><FONT color=#086171> 肚子饿！by 阿尔杰塔</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">gq08_3051_n408_death_forest_normal</exe>
+         <exe type="enterquest">gq08_3052_n408_death_forest_hunt</exe>
+         <exe type="enterquest">gq08_3053_n408_death_forest_drop</exe>
+         <exe type="enterquest">gq08_3054_n408_death_forest_hard</exe>
+         <exe type="enterquest">gq08_3131_n408_basin_normal</exe>
+         <exe type="conexe" true="1" false="7">0</exe>
+         <exe type="conexe" true="2" false="8">1</exe>
+         <exe type="conexe" true="3" false="9">2</exe>
+         <exe type="conexe" true="4" false="10">3</exe>
+         <exe type="conexe" true="5" false="16">4</exe>
+         <exe type="enterquest">gq08_3132_n408_basin_hunt</exe>
+         <exe type="enterquest">gq08_3133_n408_basin_drop</exe>
+         <exe type="enterquest">gq08_3134_n408_basin_hard</exe>
+         <exe type="enterquest">gq08_3135_n408_basin_boss</exe>
+         <exe type="enterquest">gq08_3136_n408_basin_prop</exe>
+         <exe type="conexe" true="11" false="17">5</exe>
+         <exe type="conexe" true="12" false="18">6</exe>
+         <exe type="conexe" true="13" false="19">7</exe>
+         <exe type="conexe" true="14" false="20">8</exe>
+         <exe type="conexe" true="15" false="22">9</exe>
+         <exe type="enterquest">gq08_3140_n408_basin_rank</exe>
+         <exe type="conexe" true="21" false="25">10</exe>
+         <exe type="enterquest">gq08_3059_n408_death_forest_abyss</exe>
+         <exe type="enterquest">gq08_3139_n408_basin_abyss</exe>
+         <exe type="conexe" true="23" false="26">11</exe>
+         <exe type="conexe" true="24" false="0">12</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">3051</chk>
+         <chk type="hasquest">3052</chk>
+         <chk type="hasquest">3053</chk>
+         <chk type="hasquest">3054</chk>
+         <chk type="hasquest">3131</chk>
+         <chk type="hasquest">3132</chk>
+         <chk type="hasquest">3133</chk>
+         <chk type="hasquest">3134</chk>
+         <chk type="hasquest">3135</chk>
+         <chk type="hasquest">3136</chk>
+         <chk type="hasquest">3137</chk>
+         <chk type="hasquest">3059</chk>
+         <chk type="hasquest">3139</chk>
+      </conditions>
+   </talk>

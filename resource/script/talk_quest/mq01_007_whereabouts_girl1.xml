@@ -1,0 +1,243 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_007_whereabouts_girl1</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>7</qid>
+      <designer>김주연</designer>
+      <qlevel>5</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>8</nextqid>
+      <nextqname>mq01_008_whereabouts_girl2</nextqname>
+      <nextqnpc>n004_guard_steave</nextqnpc>
+      <qkname mid="1"><![CDATA[少女的下落Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>145</npcid>
+         <npcename>n145_prairie_guard_pesent</npcename>
+         <npckname>프레리 타운 자경단원(mq039_카타콤 배치)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>146</npcid>
+         <npcename>n146_prairie_guard_pesent</npcename>
+         <npckname>프레리 타운 자경단원(mq039_카타콤 배치)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QW_3.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2" mid="6"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$自卫团长史蒂夫${action:Talk}<BR>难道……我担心他们是不是没能离开<FONT color=#a82424>墓穴</FONT>。我得让自卫团员去<FONT color=#a82424>墓穴</FONT>调查一下。冒险家，你愿意一起参加吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n145_prairie_guard_pesent-1" image="" itemindex="">
+      <talk_question mid="89"><![CDATA[<html>$普雷利镇自卫团员$<BR>多亏了你，我们村终于获得了和平！真的非常感谢！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n145_prairie_guard_pesent-1-a" image="" itemindex="">
+      <talk_question mid="95"><![CDATA[<html>$普雷利镇自卫团员$<BR>刚才经过确认，在这边也没看到<FONT color=#a82424>箩丝</FONT>和<FONT color=#a82424>提摩西</FONT>……应该到更深的地方去找找看。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n145_prairie_guard_pesent-1-b" image="QN_Guard_Timose.dds" itemindex="">
+      <talk_question mid="91"><![CDATA[<html>$普雷利镇自卫团员$<BR><FONT color=#a82424>提摩西</FONT>那个家伙到底去哪儿了？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n145_prairie_guard_pesent-1-c" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$普雷利镇自卫团员$<BR>村长因为担心<FONT color=#a82424>箩丝</FONT>，连觉都睡不着。<BR>他的身体本来就不好，真让人担心。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n145_prairie_guard_pesent-1-d" image="" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$普雷利镇自卫团员$<BR>执……执勤中，未发现任何异常！<FONT color=#a82424>箩丝</FONT>和<FONT color=#a82424>提摩西</FONT>好像不在附近！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n145_prairie_guard_pesent-1-e" image="" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$普雷利镇自卫团员$<BR>这里没有发现<FONT color=#a82424>箩丝</FONT>和<FONT color=#a82424>提摩西</FONT>。到底去哪儿了……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n146_prairie_guard_pesent-1" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_answer link_index="n146_prairie_guard_pesent-1-a" mid="99"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$普雷利镇自卫团员$<BR>墓穴任何地方都没有发现<FONT color=#a82424>箩丝</FONT>和<FONT color=#a82424>提摩西</FONT>的痕迹……他们到底去哪儿了呢……凭我们的实力，对付<FONT color=#a82424>牛头怪</FONT><FONT color=#a82424></FONT><FONT color=#a82424>翁拉克</FONT>会有点吃力。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n146_prairie_guard_pesent-1-a" image="" itemindex="">
+      <talk_question mid="100"><![CDATA[<html>$普雷利镇自卫团员$<BR>冒险家，请你清理掉里面的魔物，然后搜索一下。我们会回到入口处，重新仔细搜查一遍。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="QW_3.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$自卫团长史蒂夫${action:Talk}<BR>谢谢你的帮助。<BR>请你搜查一遍<FONT color=#a82424>墓穴</FONT>，看看<FONT color=#a82424>箩丝</FONT>和<FONT color=#a82424>提摩西</FONT>是否在里面。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-a" mid="81"><![CDATA[<html>发生了什么事请？</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$自卫团长史蒂夫${action:Talk}<BR>欢迎光临，冒险家！我正在等你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-a" image="QN_Npc_Guard_Dalcy.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-b" mid="83"><![CDATA[<html>被什么东西追赶？</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$自卫团长史蒂夫$<BR>在你和自卫团员们搜索墓穴的时候，我从<FONT color=#a82424>狂风森林</FONT>的<FONT color=#a82424>卫兵迪金森</FONT>那里收到了消息。据迪金森说，<FONT color=#a82424>箩丝</FONT>和<FONT color=#a82424>提摩西</FONT>被什么东西追赶，向<FONT color=#a82424>阴影森林</FONT>方向去了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-b" image="QN_Npc_Guard_Dalcy.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-c" mid="85"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$自卫团长史蒂夫$<BR>是的，不过他好像没能看清楚。如果箩丝和提摩西向阴影森林方向去了的话，派驻在<FONT color=#a82424>阴影森林</FONT>的<FONT color=#a82424>卫兵达尔西</FONT>说不定会看到。请你去向达尔西询问箩丝和提摩西的行踪。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-c" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-!next" mid="87"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,5,4">148</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="random_coice" rand="10,20,30,40">7,8,9,10</exe>
+         <exe type="talk" npc="n145_prairie_guard_pesent">1</exe>
+         <exe type="talk" npc="n145_prairie_guard_pesent">a</exe>
+         <exe type="talk" npc="n145_prairie_guard_pesent">b</exe>
+         <exe type="talk" npc="n145_prairie_guard_pesent">c</exe>
+         <exe type="talk" npc="n145_prairie_guard_pesent">d</exe>
+         <exe type="talk" npc="n145_prairie_guard_pesent">e</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,71,72,72,72</exe>
+         <exe type="complete">7</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n004_guard_steave" sub="2">2,0,1</exelink>
+   <exelink qstep="1" npc="n145_prairie_guard_pesent">6</exelink>
+   <exelink qstep="3" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="3" npc="n004_guard_steave" sub="c">0</exelink>
+   <exelink qstep="3" npc="n004_guard_steave" sub="!next">1</exelink>
+   <journal_data recompense="1:71,2:72" quest_title="소녀의 행방Ⅰ" chapterid="1" quest_level="5" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>자경단장 스티브</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>자경단장 스티브</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[与卫兵史蒂夫对话]]></title>
+         <contents mid="53"><![CDATA[<html><FONT color=#a82424>自卫团长史蒂夫</FONT>告诉我箩丝和提摩西没有回到村里。和史蒂夫对话。<BR><BR><FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→ 自卫团长史蒂夫</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[与卫兵史蒂夫对话]]></destination>
+         <todo_msg mid="55"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_3.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>64,0,0</destination_pos>
+         <destination_mode>custom:61@1,62@1,64@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>자경단장 스티브</start_npc>
+         <desc_location>카타콤</desc_location>
+         <step_action>사냥</step_action>
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster>카타콤 미노타우르스 1</hunt_monster>
+         <hunt_monsterindex>148</hunt_monsterindex>
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[搜索墓穴]]></title>
+         <contents mid="57"><![CDATA[<html>史蒂夫说他怀疑箩丝和提摩西没有离开墓穴，让我去搜索墓穴。<BR>前往<FONT color=#a82424>墓穴</FONT>搜索<FONT color=#a82424>箩丝</FONT>和<FONT color=#a82424>提摩西</FONT>的行踪。</FONT><BR><BR><FONT color=#086171>狂风森林(墓穴入口)</FONT> <FONT color=#a82424>→ 墓穴</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[搜索墓穴]]></destination>
+         <todo_msg mid="59"><![CDATA[请到墓穴去寻找箩丝和提摩西的行踪。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>카타콤</get_location>
+         <start_npc />
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>자경단장 스티브</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[与卫兵史蒂夫对话]]></title>
+         <contents mid="61"><![CDATA[<html>搜索了整个墓穴，但没能找到箩丝和提摩西的痕迹。<BR>回到普雷利镇，向<FONT color=#a82424>自卫团长史蒂夫</FONT>报告。<BR><BR><FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→ 自卫团长史蒂夫</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[与卫兵史蒂夫对话]]></destination>
+         <todo_msg mid="63"><![CDATA[没能找到提摩西和箩丝。请回到自卫团长史蒂夫那里。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>6</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

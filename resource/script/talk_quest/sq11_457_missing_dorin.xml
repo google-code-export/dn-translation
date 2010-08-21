@@ -1,0 +1,242 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_457_missing_dorin</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>457</qid>
+      <designer>김주연</designer>
+      <qlevel>26</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[消失的武器商人]]></qkname>
+      <qnpc>
+         <npcid>49</npcid>
+         <npcename>n049_sainthaven_kid</npcename>
+         <npckname>까치머리 꼬마</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>61</npcid>
+         <npcename>n061_kidnaped_trader_dorin</npcename>
+         <npckname>대장장이 도린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>您接受的任务过多，无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$铁匠道林$<BR>晕，怎么还不碎啊，啊啊~ 呸。<BR><FONT color=#7e12d2>（到位于神圣天堂的乱发小孩处，可开始执行任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-a" mid="7"><![CDATA[<html>嗯? 什么事啊?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$乱发小孩$<BR>
+喂！<BR>
+请帮一下好吗。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-b" mid="9"><![CDATA[<html>嗯，好吧。</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$乱发小孩$<BR>我在附近捡到了这个，但是无法打开啊。<BR>里边装有很漂亮的<FONT color=#a82424>纸</FONT>，可否帮我拿出来啊？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-acceptted" mid="54"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$消失的武器商人$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-1" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-1-a" mid="13"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$乱发小孩$<BR><FONT color=#7e12d2>（玻璃瓶一开启，就飞快的抢了过去）</FONT><BR>哎 …这是什么啊。就是涂鸦过的纸嘛…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-1-a" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-1-b" mid="15"><![CDATA[<html>字迹? 让我看看?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$乱发小孩$<BR>好像是比我写字更差的小孩留下的吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-1-b" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-1-c" mid="17"><![CDATA[<html>像是求救信息。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$皱起的纸张$<BR><FONT color=#7e12d2>（字迹凌乱的就像是用脚写的似的，只能看得懂几个单词）</FONT><BR><FONT color=#a82424>孤岛</FONT>… 救命 …。可恶的家伙 …我是<FONT color=#a82424>道林</FONT>…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-1-c" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-2" mid="19"><![CDATA[<html>以防万一还是去看一下吧。</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$乱发小孩$<BR>这就是一涂鸦而已！<BR><FONT color=#7e12d2>（卷起扔到了垃圾桶里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-1" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$铁匠道林$<BR>晕，怎么还不碎啊，啊啊~ 呸。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-2" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$乱发小孩$<BR>真的要到<FONT color=#a82424>孤岛</FONT>去救出什么<FONT color=#a82424>道林</FONT>?<BR>肯定是开玩笑的啦。<BR>
+<FONT color=#7e12d2>（只有在单人状态下方可进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-2" image="" itemindex="">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-2-a" mid="24"><![CDATA[<html>是我，我啊！放心吧。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$铁匠道林$<BR>啊，不管了，我不行了。<BR><FONT color=#7e12d2>（似乎被折磨的够呛）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-2-a" image="" itemindex="">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-2-b" mid="26"><![CDATA[<html>啊，到这种地方来干什么啊?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$铁匠道林$<BR>哎呀，上天保佑怎么现在才来啊。<BR>我丢下<FONT color=#a82424>玻璃瓶</FONT>已经整整一天啦！差点都饿死了，快走，快走吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-2-b" image="" itemindex="">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-2-c" mid="28"><![CDATA[<html>什么能力?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$铁匠道林$<BR>喂，你以为我喜欢来这里啊?<BR>我是被羡慕我能力的怪物们劫持而来的啊，明白的话对我尊重一点啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-2-c" image="" itemindex="">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-2-d" mid="30"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$铁匠道林$<BR>哦，它们想让我给它们打碎一个坚硬的戒指…<BR>似乎是想从它那里拿出什么东西来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-2-d" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-2-e" mid="32"><![CDATA[<html>给打碎戒指?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$铁匠道林$<BR>呸！像我这样有能力而且出名的铁匠，竟然会因打碎戒指的事而被劫持 …可恶的家伙们！ <FONT color=#7e12d2>（用小手挠着帽子。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-2-e" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-2-f" mid="34"><![CDATA[<html>那知不知道那里边到底有什么呢?</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$铁匠道林$<BR>是啊?！把我丢到这里，连饭也不给，一直威胁我呢。 <BR>可恶的 …###，呸！ 直接好好的送点钱让我办就可以的事！ 以为自己是通缉犯还是什么啊！ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-2-f" image="" itemindex="">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-2-g" mid="36"><![CDATA[<html>那么还记得其中内容吗?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$铁匠道林$<BR>那个白色的小纸片上尽是我哥写的乱七八糟的字迹呢。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-2-g" image="" itemindex="">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-2-h" mid="50"><![CDATA[<html>纸条上的内容现在就可以告诉我。</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$铁匠道林$<BR>
+啊，难道你在怀疑我的记忆力吗?我的IQ可是450啊，这些对我而言只是小意思。你要是回到王城的话，我就把纸条还给你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-2-h" image="" itemindex="">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-2-i" mid="52"><![CDATA[<html>啊，知道啦。那我就先回神圣天堂了。</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$铁匠道林$<BR>
+咳，呸。你现在是在怀疑我吗?你个臭小子….<BR>
+<FONT color=#7e12d2>（道林的喋喋不休长达1小时30分钟）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-2-i" image="" itemindex="">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-2-j" mid="38"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-2-j" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$铁匠道林$<BR>嗯，现在回去吧。<BR>这我可不想再呆下去了。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4571,4572,4573,4574</exe>
+         <exe type="setquest">457</exe>
+         <exe type="talk" npc="n049_sainthaven_kid">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4571,4572,4573,4574</exe>
+         <exe type="complete">457</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n049_sainthaven_kid" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n049_sainthaven_kid" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n049_sainthaven_kid" sub="b" />
+   <exelink qstep="1" npc="n049_sainthaven_kid" sub="c" />
+   <exelink qstep="1" npc="n049_sainthaven_kid" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n061_kidnaped_trader_dorin" sub="b" />
+   <exelink qstep="2" npc="n061_kidnaped_trader_dorin" sub="c" />
+   <exelink qstep="2" npc="n061_kidnaped_trader_dorin" sub="d" />
+   <exelink qstep="2" npc="n061_kidnaped_trader_dorin" sub="e" />
+   <exelink qstep="2" npc="n061_kidnaped_trader_dorin" sub="f" />
+   <exelink qstep="2" npc="n061_kidnaped_trader_dorin" sub="g" />
+   <exelink qstep="2" npc="n061_kidnaped_trader_dorin" sub="h" />
+   <exelink qstep="2" npc="n061_kidnaped_trader_dorin" sub="i">0</exelink>
+   <exelink qstep="2" npc="n061_kidnaped_trader_dorin" sub="j">1</exelink>
+   <journal_data recompense="1:4571,2:4572,3:4573,4:4574" quest_title="사라진 무기상인" chapterid="" quest_level="26" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_boy_tei.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n49</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>49</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[与神圣天堂的乱发小孩对话。]]></title>
+         <contents mid="42"><![CDATA[<html>偶然碰到的<FONT color=#a82424>乱发小孩</FONT>让我帮他打开瓶盖。与小孩对话吧。<BR><FONT color=#7e12d2>（只有在单人状态下方可进行）</FONT><BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 乱发小孩</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[（单人）与神圣天堂的乱发小孩对话]]></destination>
+         <todo_msg mid="44"><![CDATA[新增了任务]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_30.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>301,0,0</destination_pos>
+         <destination_mode>custom:301@4</destination_mode>
+         <statemark_npcid>61</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[去孤岛确认求救信息是否是真的]]></title>
+         <contents mid="46"><![CDATA[<html>小孩给的玻璃瓶内有个<FONT color=#a82424>小纸条</FONT>。纸条上写着的似乎是<FONT color=#a82424>道林的求救信息</FONT>。不妨 <FONT color=#2b2723>到孤岛去找找<FONT color=#a82424>道林</FONT>吧</FONT>。<BR>
+<FONT color=#7e12d2>（只有在单人状态下方可进行）</FONT><BR><BR><FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 孤岛</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[（单人）到孤岛确认求救信息的真假]]></destination>
+         <todo_msg mid="48"><![CDATA[去孤岛确认求救信息是否是真的吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>26:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>456</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

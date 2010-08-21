@@ -1,0 +1,827 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_268_fame_of_david</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>268</qid>
+      <designer>김인정</designer>
+      <qlevel>22</qlevel>
+      <qdesc>아르젠타에게 의뢰 수락
+수정개울에서 데이비드와 대화
+캐더락관문 데커드, 메이, 티아나와 대화.
+수정개울에서 데이비드와 대화
+수정개울에서 퍼거스와 대화
+다크스프림 퇴치
+퍼거스와 대화
+데이비드와 대화
+아르젠타에게 보고. 보상.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[吹牛大王的评价]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>202</npcid>
+         <npcename>n202_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드(수정개울)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>23</npcid>
+         <npcename>n023_ranger_fugus</npcename>
+         <npckname>정찰병 퍼거스     (수정개울)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이   (캐더락 잡화상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나 (캐더락 소서리 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$牛皮冒险家戴维$<BR>呵呵呵。 现在该看清楚我这至高无上的名声了吧?<BR><FONT color=#7e12d2>（从灰色废墟的阿尔杰塔接受任务，方可继续进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$冒险家公会长戴卡德$<BR>银发女剑士怎么样了?过得好吗?<BR><FONT color=#7e12d2>（从灰色废墟的阿尔杰塔接受任务，方可继续进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$侦察兵福古斯$<BR>嘘... 要随时保持警惕。<BR><FONT color=#7e12d2>（从灰色废墟的阿尔杰塔接受任务，方可继续进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$商人梅伊$<BR>嗯?有什么要事找我吗?<BR><FONT color=#7e12d2>（从灰色废墟的阿尔杰塔接受任务，方可继续进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$高级魔法师缇娜$<BR>没话说的话，快给我闪开。<BR><FONT color=#7e12d2>（从灰色废墟的阿尔杰塔接受任务，方可继续进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-clevel" mid="11"><![CDATA[<html>（搭话）</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$阿尔杰塔$<BR><FONT color=#7e12d2>(阿尔杰塔的表情好像比平常还要不快。</FONT><BR>
+<FONT color=#7e12d2>看上去好像非常不高兴)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-a" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$阿尔杰塔$<BR>你，要做的事不是很多的吗?先处理这个吧。<BR><FONT color=#7e12d2>（这是需要完成更多的主线和子任务，方可执行的任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-b" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-c" mid="14"><![CDATA[<html>啊... 是指戴维吗?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$阿尔杰塔$<BR>你啊，恰好也在等你呢。<BR>最近在这周围晃荡的那个<FONT color=#a82424>菜鸟</FONT>，就是你带来的跟班是吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-c" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-d" mid="16"><![CDATA[<html>呃！这，就有点...！！</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$阿尔杰塔$<BR>我怎么可能知道名字啊? 每次都说着让人听不懂的话，还到处瞎晃荡，本想一把抓住并吃掉他，但又怕不好吃就忍下了。 …干吗?干脆吃掉他如何?这样就安静了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-e" mid="18"><![CDATA[<html>我不知道他在哪哦。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$阿尔杰塔$<BR>反正，其不分时机的到处晃荡，可真让人厌恶啊，你过去好好解决一下回来吧。<BR>解铃还须系铃人嘛。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-e" image="QW_CristalStream.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-f" mid="20"><![CDATA[<html>水晶谷...?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$阿尔杰塔$<BR>难道，还要让我手把手教你不成?<BR>…刚才他不是又猥琐的走过去了嘛，脚步声在<FONT color=#a82424>水晶谷</FONT>方向就停下来了，肯定就会在那里的嘛。还不给我去看看。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-f" image="QW_CristalStream.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-g" mid="22"><![CDATA[<html>反正我就到水晶谷看看吧。</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$阿尔杰塔$<BR>肯定能完成的吧?<BR>真的，就你一个人够让我烦的，你还带着这种尾巴。还不快给我去解决！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-acceptted" mid="24"><![CDATA[<html><FONT color=#086171>(接受任务)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$吹牛大王的评价$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QW_CristalStream.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$阿尔杰塔$<BR>你可真是多嘴的<FONT color=#382000>{user_nick}</FONT>奴隶啊?<BR>还不快去 <FONT color=#a82424>水晶谷</FONT>给我好好教训一下那个家伙。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$侦察兵福古斯$<BR>早就听说<FONT color=#a82424>戴维</FONT>大人有着不凡身手。似乎比起传闻中更厉害呢。正好我也有事相托 …正考虑委托给<FONT color=#a82424>戴维</FONT>大人呢， 哈哈。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-a" mid="28"><![CDATA[<html>（不管他，先说阿尔杰塔的事）</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$牛皮冒险家戴维${action:talk}<BR>哦~这是谁啊? 不正是<FONT color=#a82424>伟大的冒险家戴维</FONT> 大人最忠实的追随者<FONT color=#382000>{user_nick}</FONT>吗? 呵呵呵。 很高兴见到你啊！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-b" mid="30"><![CDATA[<html>…不，她是让你赶紧消失。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$牛皮冒险家戴维$<BR><FONT color=#a82424>阿尔杰塔</FONT>小姐终于开始关注我这<FONT color=#a82424>戴维</FONT>大人了吧 ！ 呵…虽然比预计的要晚一些，不过像这般有气质的女士就应该矜持一点才可爱嘛，呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-c" mid="32"><![CDATA[<html>呃……(爱幻想也是一种病)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$牛皮冒险家戴维$<BR>啧啧，你还真嫩啊， <FONT color=#382000>{user_nick}</FONT>！ 都这个时候了还要像<FONT color=#a82424>菜鸟</FONT>的样子吗，呵呵呵。我可都知道！！ <FONT color=#a82424>阿尔杰塔</FONT>小姐害羞的背后隐藏着的<FONT color=#a82424>柔弱、善良、强烈的爱</FONT>！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-c" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-d" mid="34"><![CDATA[<html>（戴维已经深陷空想的泥潭）</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$牛皮冒险家戴维$<BR>呵呵呵。你怎么可能懂得高傲的女士对爱的那种复杂美妙的情感表达? 你就羡慕我<FONT color=#a82424>伟大的恋爱</FONT>干自卑吧！ 呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-d" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-e" mid="36"><![CDATA[<html>我为何要那样做啊?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$牛皮冒险家戴维$<BR>好！！趁这个机会，也明确的告诉你吧！ 你再怎么是菜鸟，总会知道那凯德拉关卡的<FONT color=#a82424>冒险家公会长戴卡德</FONT>吧? 到那里去确认我声名远播的名声吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-e" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-f" mid="38"><![CDATA[<html>（虽然有点麻烦，不过去一趟看看也无妨?）</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$牛皮冒险家戴维$<BR>呵呵呵。 确认过之后你也不会像现在这样小瞧我了。在阿尔杰塔小姐面前想称颂我还来不及呢? 呵…嗯，还不快去！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-f" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$牛皮冒险家戴维${action:talk}<BR>别忘了！！ 是在凯德拉关卡赫赫有名的冒险家公会长！！ <FONT color=#a82424>冒险家公会长戴卡德</FONT>！我不是随便与他人作比较的~！！ 呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="167"><![CDATA[<html>$冒险家公会长戴卡德$<BR>银发女剑士怎么样了? 过的好吧?<BR><FONT color=#7e12d2>（要去找水晶谷的戴维）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="168"><![CDATA[<html>$商人梅伊$<BR>嗯? 找我有什么要事吗?<BR><FONT color=#7e12d2>（要去找水晶谷的戴维）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="169"><![CDATA[<html>$高级魔法师缇娜$<BR>没什么话，就给我闪一边去。<BR><FONT color=#7e12d2>（要去找水晶谷的戴维）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-2" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$牛皮冒险家戴维$<BR>别忘了！！ 是在凯德拉关卡赫赫有名的冒险家公会长！！ <FONT color=#a82424>冒险家公会长戴卡德</FONT>！我不是随便与他人作比较的~！！ 呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="43"><![CDATA[<html>按他本人的话说是伟大的冒险家呢。</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$冒险家公会长戴卡德$<BR>我还以为要问什么事呢... 谁? <FONT color=#a82424>戴维</FONT>?<BR>戴维... 啊，就那个人啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="45"><![CDATA[<html>有不错的评价?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$冒险家公会长戴卡德$<BR>嗯? 是啊，这倒不大清楚呢。但他似乎也不是什么问题分子，对他的评价似乎也不坏。难不成还是个不错的冒险家呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-c" mid="47"><![CDATA[<html>…很意外嘛。</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$冒险家公会长戴卡德$<BR>干嘛这种惊讶的表情啊? 呵呵。 接受的委托完成的也不错，而且还经常为村庄居民去办那些琐碎的小事。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-c" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$冒险家公会长戴卡德$<BR>不相信的话，不妨直接去听大家怎么说。正好我听说他在不久前很好的完成了<FONT color=#a82424>消耗品商人梅伊</FONT>小姐委托的事情，就去问下她吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$冒险家公会长戴卡德$<BR>似乎你很关注大家对戴维的评价，去听<FONT color=#a82424>消耗品商人梅伊</FONT>小姐是怎么说的吧 。最好的方法就是直接听取委托事情的人的意见。呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="51"><![CDATA[<html>真的帮助过你吗?</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$消耗品商人梅伊$<BR>嗯? <FONT color=#a82424>戴维</FONT> 是吗? 啊~ 当然知道啦！！<BR>
+昨天还帮过我的商店了呢~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-b" mid="53"><![CDATA[<html>...原来如此。（意外哦）</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$消耗品商人梅伊$<BR>天，真是难以置信呢~难道说我委托冒险家办事情，他没办好的话，我能给报酬吗?肯定是~办好了我才会给报酬的嘛~！！ 呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-c" mid="55"><![CDATA[<html>好像没那种流行的吧。</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$消耗品商人梅伊$<BR>特别是~上次我让他带来一只<FONT color=#a82424>猎犬</FONT>，还真是干净利索的带来了呢，呵呵。 虽然浑身被<FONT color=#a82424>蜘蛛网</FONT>所缠绕…但是听说这在<FONT color=#a82424>神圣天堂</FONT>却是很<FONT color=#a82424>流行</FONT>的一种给猎犬的沐浴方法呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-d" mid="57"><![CDATA[<html>…与其叫他是个冒险家，还不如说他是个伙计呢。</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$消耗品商人梅伊$<BR>还有，他还非常会做<FONT color=#a82424>花束</FONT> ，还有…帮我捡来树果，嗯... 还有... 嗯...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-d" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$消耗品商人梅伊${action:talk}<BR>反正~是个很不错的人呢，呵呵。因为 <FONT color=#a82424>高级魔法师缇娜</FONT>正在需要人帮忙，我也把他介绍给了她。您不妨也向<FONT color=#a82424>缇娜</FONT>打听一下看看吧 ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$消耗品商人梅伊$<BR>好像<FONT color=#a82424>高级魔法师缇娜</FONT>也委托<FONT color=#a82424>戴维</FONT>办事了呢。如果对戴维依然感到怀疑的话，不妨也听一听缇娜的意见?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4" image="QS_Default.dds" itemindex="300064">
+      <talk_answer link_index="n035_soceress_master_tiana-4-a" mid="61"><![CDATA[<html>认识倒是认识...</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$高级魔法师缇娜$<BR>啊。原来是帮我取得过<FONT color=#a82424>纯白的宝珠</FONT>的冒险家啊? 但你为何问<FONT color=#a82424>戴维</FONT>的事情呢? 你俩认识?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-a" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-b" mid="63"><![CDATA[<html>真…让人意外啊...</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$高级魔法师缇娜$<BR>是吗?那个家伙，<FONT color=#2b2723>虽然看起来油嘴滑舌的样子，但其实还是不错的人哦。如果不是<FONT color=#a82424>梅伊</FONT>小姐给我介绍的话，我也不会向他委托的... 还算凑合吧。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-b" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-c" mid="65"><![CDATA[<html>不，只是... （真的感到很意外...）</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$高级魔法师缇娜$<BR>怎么那种怀疑的表情啊?难道，他没有还跟你借的钱吗?<BR>反正~我不知道你到底想听什么，单是我委托的事情他办的还不错啦。就是那个叫<FONT color=#a82424>戴维</FONT>的家伙。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-c" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-d" mid="67"><![CDATA[<html>（还是与其叫他是个冒险家，还不如说他是个伙计呢。）</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$高级魔法师缇娜$<BR>给稻田浇水啦、除杂草啦、晒药草啦、分三份包装啦... 还是做得蛮仔细的?那个家伙。<BR>而且料理做得也不错。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-d" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-e" mid="69"><![CDATA[<html>不是，不是那样的。</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$高级魔法师缇娜$<BR>居然用散发难闻气味的蓝纹乳酪，还有用腐烂前的萝卜做出了不错的料理。还是很不错的嘛。<BR>怎么了?你也要委托他办事吗 ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-e" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$高级魔法师缇娜$<BR>嗯... 无聊的家伙，没什么其他事吧?那就忙你的去吧 。<BR><FONT color=#7e12d2>（要回到水晶谷的戴维那里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-5" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$冒险家公会长戴卡德$<BR>对戴维的评价了解的怎么样了? …怎么还是那种可疑的表情啊， 哈哈。<BR><FONT color=#7e12d2>（要回到水晶谷戴维那里和他对话）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$消耗品商人梅伊$<BR>戴维是个不错的冒险家呢。我都想雇他作为我们商店的专用伙计呢? 呵呵。<BR><FONT color=#7e12d2>（要回到水晶谷戴维那里和他对话）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$高级魔法师缇娜$<BR>到底为何到处问戴维相关的事情啊? 你个无聊的家伙。<BR><FONT color=#7e12d2>（要回到水晶谷戴维那里和他对话）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-5" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-5-a" mid="75"><![CDATA[<html>嗯，似乎是比想象中的还不错的人呢。</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$牛皮冒险家戴维$<BR>怎么样? 了解大家对我的评价了吧? 呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-5-a" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-5-b" mid="77"><![CDATA[<html>（戴维更加气焰嚣张起来）</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$牛皮冒险家戴维${action:talk}<BR>现在已经知道了吧?！ 呵呵呵。终于还是看出我的伟大了吧，我可以专门饶恕你！ 呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-5-b" image="QN_ranger_fugus.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-6" mid="79"><![CDATA[<html>不，我也不感到什么稀奇的啊...</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$牛皮冒险家戴维$<BR>刚才我还和旁边的<FONT color=#a82424>侦察兵福古斯</FONT>针对我的伟大进行了一次伟大的对话，呵呵呵。 想听侦察兵福古斯是怎么评价我身手的吗? 呵…嗯，我就特别允许你向他咨询！ 呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-6" image="QN_ranger_fugus.dds" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$牛皮冒险家戴维$<BR>呵…我太有人气了，呵呵呵。 去听听<FONT color=#a82424>侦察兵福古斯</FONT>怎么说，你就可以更加清楚的知道我是多么出色的一个人啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-6" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-6-a" mid="83"><![CDATA[<html>啊，嗯... 我是想了解那个叫戴维的人...</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$侦察兵福古斯$<BR>啊，<FONT color=#382000>{user_class}</FONT> <FONT color=#382000>{user_nick}</FONT> 大人啊。对于您经常为凯德拉关卡帮忙出力，我再次表示感谢啊。多亏有您，我们侦察兵比以前轻松多了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-6-a" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-6-b" mid="85"><![CDATA[<html>原来如此...</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$侦察兵福古斯$<BR>关于冒险家 <FONT color=#a82424>戴维</FONT>的传闻我也有所耳闻。我由于一直坚守这边的水晶谷，所以确实不大了解，但是村庄里的人对他的评价似乎还挺不错的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-6-b" image="QW_25.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-6-c" mid="87"><![CDATA[<html>…他本人怎么说?</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$侦察兵福古斯$<BR>所以我也向他委托了一件事。那就是消灭<FONT color=#a82424>圣域中心</FONT>里的<FONT color=#a82424>暗影</FONT>，向他那种有好口碑的冒险家的话应该可以做的很好吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-6-c" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-6-d" mid="89"><![CDATA[<html>（不好的预感哟）</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$侦察兵福古斯$<BR>他说这种程度是事情简直是轻而易举，哈哈。那我也就放心了。不过他说独自行动有点那个，最好能再有一位能够协助他处理一些<FONT color=#a82424>杂事</FONT>…您要是方便的话，就<FONT color=#a82424>当做打发时间</FONT>跟着他一起过去如何?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-6-d" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="90"><![CDATA[<html>$侦察兵福古斯$<BR>啊，刚刚<FONT color=#a82424>戴维</FONT>大人也露出了满意的笑容了呢， 哈哈。似乎对与<FONT color=#382000>{user_nick}</FONT>您一起过去还挺高兴呢。还想立刻出发呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-7" image="QW_25.dds" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$侦察兵福古斯$<BR>既然<FONT color=#a82424>戴维</FONT>大人去消灭 <FONT color=#a82424>圣域中心</FONT>的暗影... 您也不去帮一下忙? 刚才不是那样决定了吗... 去和<FONT color=#a82424>戴维</FONT>大人确认一下吧 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-7" image="QW_25.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-7-a" mid="94"><![CDATA[<html>不，还是你一个人过去吧。</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$牛皮冒险家戴维${action:talk}<BR>呵…现在正打算前往<FONT color=#a82424>圣域中心</FONT>呢。我可以<FONT color=#a82424>专门</FONT>带你过去的，呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-7-a" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-7-b" mid="96"><![CDATA[<html>嗯，所以你一个人过去不就得了吗。</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$牛皮冒险家戴维$<BR>这，这是什么话！我要是独自去了，万一被<FONT color=#a82424>暗影死灵</FONT>所伤，难不成还让你在一边看我的笑话不成！ 我…我不是<FONT color=#a82424>怕那些暗影死灵才带你过去的</FONT>！！！可别误会啊！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-7-b" image="QW_25.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-7-c" mid="171"><![CDATA[<html>哎（还得我过去啊?）</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$牛皮冒险家戴维$<BR>你这个没人情味的家伙！！你难道还要让那位对我们充满期待的侦察兵福古斯大失所望吗?！赶快一起前往<FONT color=#a82424>圣域中心</FONT>吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-7-c" image="QW_25.dds" itemindex="">
+      <talk_question mid="172"><![CDATA[<html>$牛皮冒险家戴维$<BR>呵呵呵。<BR>
+…我会<FONT color=#a82424>紧随其后</FONT>，你就放心的出发吧。<BR>
+<FONT color=#7e12d2>（在深渊级的难度下无法进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-8" image="QW_25.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-8-a" mid="173"><![CDATA[<html>哎。（还不是让我去做啊！）</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$牛皮冒险家戴维$<BR>我还没准备好。你倒是先到<FONT color=#a82424>圣域中心</FONT>去消灭<FONT color=#a82424>暗影死灵</FONT>看…看啊！！我会像划过的彗星一般，眨眼间就能消灭它们！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-8-a" image="QW_25.dds" itemindex="">
+      <talk_question mid="174"><![CDATA[<html>$牛皮冒险家戴维$<BR>我一说过去，你就感动的都掉了眼泪啦? 呵呵呵。嗯，赶紧前往<FONT color=#a82424>圣域中心</FONT>吧。<BR>
+<FONT color=#7e12d2>（在深渊级的难度下无法进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-9" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-9-a" mid="102"><![CDATA[<html>嗯? 那都是在吹牛！！</html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$侦察兵福古斯$<BR>刚从<FONT color=#a82424>戴维</FONT>大人那里得知，已经消灭暗影了? 哈哈。戴维大人的身手果然不凡啊。听说 <FONT color=#382000>{user_nick}</FONT>您怕的直哆嗦，都晕过去了... 现在好了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-9-a" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-9-b" mid="104"><![CDATA[<html>（冤死了！！消灭它们的是我啊！！）</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$侦察兵福古斯$<BR>哈哈哈，没必要害羞。哈哈，即便是个出色的冒险家该害怕的时候也会害怕的嘛。没关系的~不过唯一不变的是<FONT color=#382000>{user_nick}</FONT>大人无疑就是凯德拉的英雄。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-9-b" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="105"><![CDATA[<html>$侦察兵福古斯$<BR>都要哭出来了哇，有那么害怕吗? 哈哈。 <FONT color=#a82424>戴维</FONT>大人倒是蛮担心<FONT color=#382000>{user_nick}</FONT>您的，反正安全回来了就好 …不过<FONT color=#a82424>戴维</FONT>大人可真厉害啊~真让我佩服~！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-9" image="QN_ranger_fugus.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-9-a" mid="107"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$牛皮冒险家戴维$<BR>呵呵呵。去向 <FONT color=#a82424>侦察兵福古斯</FONT>确认啊。<BR>
+你这个家伙晚了一步咯！ 呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-9-a" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-9-b" mid="109"><![CDATA[<html>做事的是我，他怎么就...?</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$牛皮冒险家戴维$<BR>你再怎么用那种埋怨的眼神看我也没用！ 这就是 <FONT color=#a82424>战争</FONT>... 没错！作为冒险家最重要的就是<FONT color=#a82424>舆论指向</FONT>！名誉！呵呵呵…我可不会输给不知此中玄妙的家伙！ 呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-9-b" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-9-c" mid="111"><![CDATA[<html>到底谁输谁不输啊?</html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$牛皮冒险家戴维${action:talk}<BR>这就叫<FONT color=#a82424>螳螂捕蝉，黄雀在后</FONT> ！ 呵呵呵。连这种<FONT color=#a82424>浅显易懂</FONT>的方法也不知道的家伙，还冒充自己是冒险家在那到处显摆，我都没语言再说你什么了，呵。我是不会输给菜鸟的！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-9-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-9-d" mid="113"><![CDATA[<html>那你去跟阿尔杰塔理论啊，干吗和我...</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$牛皮冒险家戴维$<BR>居然胆敢让我在<FONT color=#a82424>阿尔杰塔</FONT>小姐身边消失，我一定会让你付出代价的！ 呵呵呵，咱们等着瞧~！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-9-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="114"><![CDATA[<html>$牛皮冒险家戴维$<BR>呵呵呵。 希望你可以向我那美丽的女士<FONT color=#a82424>阿尔杰塔</FONT>问候一声。等我<FONT color=#a82424>戴维</FONT>大人一口气把你这个<FONT color=#382000>{user_nick}</FONT>菜鸟解决完之后，再亲自去看望她~ 呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-10" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="115"><![CDATA[<html>$牛皮冒险家戴维$<BR>呵呵呵。 希望你可以向我那美丽的女士<FONT color=#a82424>阿尔杰塔</FONT>问候一声。等我<FONT color=#a82424>戴维</FONT>大人一口气把你这个<FONT color=#382000>{user_nick}</FONT>菜鸟解决完之后，再亲自去看望她~ 呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10" image="QW_25.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-a" mid="117"><![CDATA[<html>（说明情况）</html>]]></talk_answer>
+      <talk_question mid="116"><![CDATA[<html>$阿尔杰塔$<BR>来啦，菜鸟。听到从<FONT color=#a82424>水晶谷</FONT>方向响起的你的脚步声，我就估摸着你该到了。<BR>怎么啦? 难道你，一直被骗到了<FONT color=#a82424>圣域中心</FONT>之后才<FONT color=#a82424>独自</FONT>回来的?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-a" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-b" mid="119"><![CDATA[<html>不是被骗的啊…不，难道真被骗了...</html>]]></talk_answer>
+      <talk_question mid="118"><![CDATA[<html>$阿尔杰塔$<BR>这世界怎么都是一群<FONT color=#a82424>傻瓜</FONT> 啊? 像你这种菜鸟<FONT color=#a82424>傻瓜</FONT>，还有那个叫戴…什么的奇怪的<FONT color=#a82424>傻瓜</FONT>。但是在这些<FONT color=#a82424>傻瓜</FONT>当中你应该算是最笨的<FONT color=#a82424>傻瓜</FONT>啦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-b" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-c" mid="121"><![CDATA[<html>（真是冤死了...）</html>]]></talk_answer>
+      <talk_question mid="120"><![CDATA[<html>$阿尔杰塔$<BR>既然如此，也没办法了。反正都要去<FONT color=#a82424>神圣天堂</FONT>了，那种傻瓜就过滤掉吧。<BR>这都是你这种奴隶没好好做事的缘故。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-d" mid="123"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-d" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="124"><![CDATA[<html>$阿尔杰塔$<BR>你真是麻烦事不断啊，烦的我真要命，让我老是放心不下的? 所以呢，在你去 <FONT color=#a82424>神圣天堂</FONT>之前，得找找<FONT color=#a82424>新的奴隶</FONT>了。不过在这之前，还得给乖乖的听命于我才是。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 267 ) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 217 ) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="conexe" true="3" false="2">1</exe>
+         <exe type="talk" npc="n164_argenta_wounded">a</exe>
+         <exe type="talk" npc="n164_argenta_wounded">b</exe>
+         <exe type="setquest">268</exe>
+         <exe type="recompense_view">,2681,2682,2683,2684</exe>
+         <exe type="talk" npc="n164_argenta_wounded">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">8</exe>
+         <exe type="setjornal">8</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5,3,4">712</exe>
+         <exe type="setstep">9</exe>
+         <exe type="setjornal">9</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="8">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="9">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">10</exe>
+         <exe type="setjornal">10</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="10">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2681,2682,2683,2684</exe>
+         <exe type="complete">268</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="clevel">0</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="g">5</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="acceptted">4,6</exelink>
+   <exelink qstep="1" npc="n202_slave_david" sub="b" />
+   <exelink qstep="1" npc="n202_slave_david" sub="c" />
+   <exelink qstep="1" npc="n202_slave_david" sub="d" />
+   <exelink qstep="1" npc="n202_slave_david" sub="e" />
+   <exelink qstep="1" npc="n202_slave_david" sub="f">0,1</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="c">0,1</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="b" />
+   <exelink qstep="3" npc="n026_trader_may" sub="c" />
+   <exelink qstep="3" npc="n026_trader_may" sub="d">0,1</exelink>
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="c" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="d" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="e">0,1</exelink>
+   <exelink qstep="5" npc="n202_slave_david" sub="b" />
+   <exelink qstep="5" npc="n202_slave_david" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n023_ranger_fugus" sub="b" />
+   <exelink qstep="6" npc="n023_ranger_fugus" sub="c" />
+   <exelink qstep="6" npc="n023_ranger_fugus" sub="d">0,1</exelink>
+   <exelink qstep="7" npc="n202_slave_david" sub="b" />
+   <exelink qstep="7" npc="n202_slave_david" sub="c">2,0,1</exelink>
+   <exelink qstep="9" npc="n023_ranger_fugus" sub="b" />
+   <exelink qstep="9" npc="n202_slave_david" sub="b" />
+   <exelink qstep="9" npc="n202_slave_david" sub="c" />
+   <exelink qstep="9" npc="n202_slave_david" sub="d">0,1</exelink>
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="c">0</exelink>
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="d">1</exelink>
+   <journal_data recompense="1:2681,2:2682,3:2683,4:2684" quest_title="허풍선이의 평판" chapterid="" quest_level="22" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_CristalStream.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n202</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>202</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="127"><![CDATA[阿尔杰塔的忧虑]]></title>
+         <contents mid="128"><![CDATA[<html><FONT color=#a82424>阿尔杰塔</FONT>似乎因在其周围晃悠的<FONT color=#a82424>戴维</FONT> 心情很不好。到<FONT color=#a82424>水晶谷</FONT>与戴维对话吧。<BR>
+ <BR>
+<FONT color=#086171>水晶谷</FONT> <FONT color=#a82424>→ 戴维</FONT></html>]]></contents>
+         <destination mid="129"><![CDATA[与水晶谷的戴维对话]]></destination>
+         <todo_msg mid="130"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="131"><![CDATA[戴维的口碑炫耀 I]]></title>
+         <contents mid="132"><![CDATA[<html><FONT color=#a82424>戴维</FONT>让我到凯德拉关卡的<FONT color=#a82424>冒险家公会长戴卡德</FONT>那里调查关于他的评价。为了让他认真面对现实，虽有些麻烦，但还是过去一趟吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 冒险家公会长戴卡德</FONT></html>]]></contents>
+         <destination mid="133"><![CDATA[与凯德拉关卡的戴卡德对话]]></destination>
+         <todo_msg mid="134"><![CDATA[请和和冒险家公会会长戴卡德对话。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-4179,2192</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="135"><![CDATA[戴维的口碑炫耀 II]]></title>
+         <contents mid="136"><![CDATA[<html>戴卡德建议对戴维的评价相关，最好还是问一问直接委托他办事的人们。去听一听<FONT color=#a82424>消耗品商人梅伊</FONT>对他的评价吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 消耗品商人梅伊</FONT></html>]]></contents>
+         <destination mid="137"><![CDATA[与凯德拉关卡的梅伊对话]]></destination>
+         <todo_msg mid="138"><![CDATA[与消耗品商人梅伊对话吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2265,1121</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="139"><![CDATA[戴维的口碑炫耀 III]]></title>
+         <contents mid="140"><![CDATA[<html>对戴维的评价似乎还不错很意外。但是其委托的内容，与其是冒险家做的事情，倒不如说是普通伙计做的事。反正按照梅伊的话，去找<FONT color=#a82424>高级魔法师缇娜</FONT>最后再了解一下吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级魔法师缇娜</FONT></html>]]></contents>
+         <destination mid="141"><![CDATA[与凯德拉关卡的缇娜对话]]></destination>
+         <todo_msg mid="142"><![CDATA[与高级魔法师缇娜对话吧。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n202</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>202</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="143"><![CDATA[戴维的口碑炫耀 IV]]></title>
+         <contents mid="144"><![CDATA[<html>现在已经充分的听取了关于<FONT color=#a82424>戴维</FONT>的评价。就回到<FONT color=#a82424>水晶谷</FONT>的戴维那里吧。<BR>
+ <BR>
+<FONT color=#086171>水晶谷</FONT> <FONT color=#a82424>→ 戴维</FONT></html>]]></contents>
+         <destination mid="145"><![CDATA[与水晶谷的戴维对话]]></destination>
+         <todo_msg mid="146"><![CDATA[与水晶谷的戴维报告吧。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_ranger_fugus.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n23</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>23</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="147"><![CDATA[戴维的口碑炫耀 V]]></title>
+         <contents mid="148"><![CDATA[<html>戴维在这期间似乎也颇受<FONT color=#a82424>侦察兵福古斯</FONT>的爱戴。虽有些麻烦过去与<FONT color=#a82424>福古斯</FONT>对话看看吧。<BR>
+ <BR>
+<FONT color=#086171>水晶谷</FONT> <FONT color=#a82424>→ 侦察兵福古斯</FONT></html>]]></contents>
+         <destination mid="149"><![CDATA[和侦察兵福古斯对话]]></destination>
+         <todo_msg mid="150"><![CDATA[与水晶谷的侦察兵福古斯对话吧。]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n202</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>202</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="151"><![CDATA[戴维的豪言壮语]]></title>
+         <contents mid="152"><![CDATA[<html>按照侦察兵福古斯的话说，<FONT color=#a82424>戴维</FONT>擅作主张要带我一起到<FONT color=#a82424>圣域中心</FONT>。去找戴维确认一下吧。<BR>
+ <BR>
+<FONT color=#086171>水晶谷</FONT> <FONT color=#a82424>→ 戴维</FONT></html>]]></contents>
+         <destination mid="153"><![CDATA[与水晶谷的戴维对话]]></destination>
+         <todo_msg mid="154"><![CDATA[与水晶谷的戴维确认情况吧。]]></todo_msg>
+      </journal>
+      <journal index="8">
+         <title_image />
+         <contents_image>QW_25.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>254,0,0</destination_pos>
+         <destination_mode>custom:251@1,252@1,253@1,254@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="155"><![CDATA[可疑的出发]]></title>
+         <contents mid="156"><![CDATA[<html>不得不到<FONT color=#a82424>圣域</FONT> <FONT color=#a82424>中心</FONT>去消灭  <FONT color=#a82424>暗影</FONT><FONT color=#a82424>死灵</FONT>。戴维虽说会马上跟过来，但还是别做什么期待的好。<BR><FONT color=#7e12d2>※ 在深渊级难度下无法执行</FONT><BR><BR><FONT color=#086171>灰色废墟（被侵犯的圣域入口）</FONT> <FONT color=#a82424>→ 圣域中心</FONT></html>]]></contents>
+         <destination mid="157"><![CDATA[消灭暗影死灵]]></destination>
+         <todo_msg mid="158"><![CDATA[消灭圣域中心的暗影死灵吧。]]></todo_msg>
+      </journal>
+      <journal index="9">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n202</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>202</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="159"><![CDATA[卑鄙的戴维]]></title>
+         <contents mid="160"><![CDATA[<html>说是要来圣域中心的戴维最终还是没有过来。回到<FONT color=#a82424>水晶</FONT> <FONT color=#a82424>谷</FONT>向<FONT color=#a82424>戴维</FONT>问个究竟。<BR>
+ <BR>
+<FONT color=#086171>水晶谷</FONT> <FONT color=#a82424>→ 戴维</FONT></html>]]></contents>
+         <destination mid="161"><![CDATA[与水晶谷的戴维对话]]></destination>
+         <todo_msg mid="162"><![CDATA[回到水晶谷与戴维对话吧。]]></todo_msg>
+      </journal>
+      <journal index="10">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="163"><![CDATA[晚了一步！]]></title>
+         <contents mid="164"><![CDATA[<html>由于戴维抢先一步回来编了个谎，大家都把戴维视为勇敢的冒险家。虽然很冤，但也没办法，只能回到<FONT color=#a82424>灰色废墟</FONT>向<FONT color=#a82424>阿尔杰塔</FONT>报告情况。<BR>
+ <BR>
+<FONT color=#086171>灰色废墟</FONT> <FONT color=#a82424>→ 阿尔杰塔</FONT></html>]]></contents>
+         <destination mid="165"><![CDATA[与灰色废墟的阿尔杰塔对话]]></destination>
+         <todo_msg mid="166"><![CDATA[向灰色废墟的阿尔杰塔报告情况吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>22:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>267</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

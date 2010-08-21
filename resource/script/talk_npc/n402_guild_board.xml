@@ -1,0 +1,54 @@
+   <talk>
+      <npcename>n402_guild_board</npcename>
+      <npcid>402</npcid>
+      <startexe>15</startexe>
+      <npckname mid="1"><![CDATA[冒险家公会公告板:风之森林神殿入口]]></npckname>
+      <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="6" link_target="gq01_3001_n402_dig_normal.xml"><![CDATA[<html>[Lv8] <FONT color=#086171>勇者之路Ⅰ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="gq01_3002_n402_dig_hunt.xml"><![CDATA[<html>[Lv8] <FONT color=#086171>粉碎的神剑</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="gq08_3081_n402_worship_normal.xml"><![CDATA[<html>[Lv16] <FONT color=#086171>可怜的少女</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="gq08_3082_n402_worship_hunt.xml"><![CDATA[<html>[Lv16] <FONT color=#086171>消灭盗贼窝</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="gq08_3083_n402_worship_drop.xml"><![CDATA[<html>[Lv16] <FONT color=#086171>分析小精灵的制造装置</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="13" link_target="gq08_3084_n402_worship_hard.xml"><![CDATA[<html>[Lv16] <FONT color=#086171>小收藏家凯文Ⅴ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="14" link_target="gq08_3090_n402_worship_rank.xml"><![CDATA[<html>[Lv16] <FONT color=#7e12d2>逆袭:神殿礼拜堂</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="19" link_target="gq08_3089_n402_worship_abyss.xml"><![CDATA[<html>[Lv23] <FONT color=#7e12d2>向着深渊:讨伐小石</FONT></html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$冒险家公会公告板${action:Talk} <BR>
+目前接收的任务如下</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="_no_quest" image="QN_guild_board.dds" itemindex="">
+         <talk_question mid="16"><![CDATA[<html>$冒险家公会公告板${action:Talk}<BR>
+目前没有接收的任务。 <BR><BR><FONT color=#086171> 夏萝莉粉丝团招募！现在加入可获得夏萝莉的纪念T恤一件！ 夏萝莉夏季演唱会 "与龙共舞" 门票一张！ 哦！</FONT> </html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">gq01_3001_n402_dig_normal</exe>
+         <exe type="enterquest">gq01_3002_n402_dig_hunt</exe>
+         <exe type="enterquest">gq08_3081_n402_worship_normal</exe>
+         <exe type="enterquest">gq08_3082_n402_worship_hunt</exe>
+         <exe type="enterquest">gq08_3083_n402_worship_drop</exe>
+         <exe type="conexe" true="1" false="7">0</exe>
+         <exe type="conexe" true="2" false="8">1</exe>
+         <exe type="conexe" true="3" false="9">2</exe>
+         <exe type="conexe" true="4" false="10">3</exe>
+         <exe type="conexe" true="5" false="13">4</exe>
+         <exe type="enterquest">gq08_3084_n402_worship_hard</exe>
+         <exe type="enterquest">gq08_3090_n402_worship_rank</exe>
+         <exe type="conexe" true="11" false="14">5</exe>
+         <exe type="conexe" true="12" false="17">6</exe>
+         <exe type="conexe" true="16" false="6">7</exe>
+         <exe type="enterquest">sq01_063_enter_adventure</exe>
+         <exe type="conexe" true="18" false="0">8</exe>
+         <exe type="enterquest">gq08_3089_n402_worship_abyss</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">3001</chk>
+         <chk type="hasquest">3002</chk>
+         <chk type="hasquest">3081</chk>
+         <chk type="hasquest">3082</chk>
+         <chk type="hasquest">3083</chk>
+         <chk type="hasquest">3084</chk>
+         <chk type="hasquest">3090</chk>
+         <chk type="hasquest">63</chk>
+         <chk type="hasquest">3089</chk>
+      </conditions>
+   </talk>

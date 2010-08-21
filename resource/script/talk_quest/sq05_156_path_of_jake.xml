@@ -1,0 +1,279 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq05_156_path_of_jake</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>156</qid>
+      <designer>곽노찬</designer>
+      <qlevel>8</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>157</nextqid>
+      <nextqname>sq05_157_the_reverse</nextqname>
+      <nextqnpc>n013_cleric_tomas</nextqnpc>
+      <qkname mid="1"><![CDATA[杰克的行踪]]></qkname>
+      <qnpc>
+         <npcid>13</npcid>
+         <npcename>n013_cleric_tomas</npcename>
+         <npckname>클레릭 토마스 (마나리지 클레릭 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>179</npcid>
+         <npcename>n179_light_pole</npcename>
+         <npckname>빛 기둥_(서리바람 숲)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n179_light_pole-noquest" image="" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(闪烁着奇怪的光芒)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-a" mid="6"><![CDATA[<html>很有可能。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$牧师托马斯$<BR><FONT color=#a82424>杰克</FONT>从一开始就是为了得到运送到<FONT color=#a82424>魔法山脊</FONT>的<FONT color=#a82424>贤者之杖</FONT>。<BR>这么说，把杰克派到这里的人，难道和<FONT color=#a82424>龙之追随者</FONT>有关系？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-b" mid="8"><![CDATA[<html>是不是应该回王城一趟？</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$牧师托马斯$<BR>但是把我们派遣到<FONT color=#a82424>魔法山脊</FONT>的人是<FONT color=#a82424>大主教</FONT>……这纯粹是偶然吗？或者，有人把<FONT color=#a82424>龙之追随者</FONT>的情报泄漏给了大主教？呼……情报实在太少了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-b" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-c" mid="10"><![CDATA[<html>(托马斯轻轻地摇了摇头)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$牧师托马斯$<BR>嗯……就像你所说，我很想马上回到<FONT color=#a82424>神圣天堂</FONT>，找出那些潜伏在教团里的肮脏的<FONT color=#a82424>龙之追随者</FONT>。但如果没有他们的情报，我们很可能反被他们暗算。所以不能着急。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-acceptted" mid="12"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$杰克的行踪$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1" image="QS_Default.dds" itemindex="300145">
+      <talk_answer link_index="n013_cleric_tomas-1-a" mid="14"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$牧师托马斯$<BR>幕后黑手就先放在一边……那个在<FONT color=#a82424>霜风峡谷</FONT>发现的<FONT color=#a82424>龙之追随者的面具</FONT>，当时没来得及细想，它为什么会掉在霜风峡谷呢？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-a" image="QS_Default.dds" itemindex="300144">
+      <talk_answer link_index="n013_cleric_tomas-1-b" mid="16"><![CDATA[<html>是不是为了转移我们的视线呢？</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$牧师托马斯$<BR><FONT color=#a82424>牧师的圣珠</FONT>可能是不小心掉落的。但面具只有摘下来才能丢掉，怎么会不小心掉在那里呢？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-b" image="QS_Default.dds" itemindex="300145">
+      <talk_answer link_index="n013_cleric_tomas-1-c" mid="18"><![CDATA[<html>嗯……听上去好像确实是这样。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$牧师托马斯$<BR>把<FONT color=#a82424>面具</FONT>扔在那里是为了转移人们的视线？<BR>有点说不太通。发现圣珠的时候，我们就已经开始<FONT color=#a82424>怀疑</FONT>了，面具只不过是由怀疑变成<FONT color=#a82424>确信</FONT>的决定性证据。一定还有什么别的原因。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-c" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n013_cleric_tomas-1-d" mid="20"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$牧师托马斯$<BR>哎呀……不但没找到头绪，反而越来越复杂了……<BR>不仅如此，<FONT color=#a82424>秘传之球</FONT><FONT color=#a82424>被盗</FONT>的事情也很可疑。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-d" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-e" mid="22"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$牧师托马斯$<BR>从之前<FONT color=#a82424>杰克的行踪</FONT>来看，自己直接去做更方便，为什么非得利用魔物呢？搞得那么复杂。让人感觉好像是故意不想碰到我们一样。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-e" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-f" mid="24"><![CDATA[<html>是不是急于抢回秘传之球呢？</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$牧师托马斯$<BR>但是在偷<FONT color=#a82424>辛西亚</FONT>保管的<FONT color=#a82424>秘传之球</FONT>的时候又显露了身份。为什么前后反差这么大呢……？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-f" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-g" mid="26"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$牧师托马斯$<BR>如果是那样的话，为什么不干脆等<FONT color=#a82424>贤者之杖</FONT>和<FONT color=#a82424>秘传之球</FONT>一起到达<FONT color=#a82424>魔法山脊</FONT>之后再偷呢？那样会容易得多，也会快得多。看来一定有什么隐藏的秘密……啊……？！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-g" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-h" mid="29"><![CDATA[<html>你想起什么了吗？</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$牧师托马斯$<BR>不……不可能……怎，怎么会……<BR><FONT color=#7e12d2>(托马斯一脸惊慌地叫了起来)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-h" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-i" mid="31"><![CDATA[<html>你在说什么啊？</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$牧师杰克$<BR>是的……<FONT color=#a82424>龙之追随者</FONT>不是一个人……！<BR>除了<FONT color=#a82424>杰克</FONT>之外，至少还有<FONT color=#a82424>一个人</FONT>！该死！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-i" image="QW_10.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2" mid="33"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$牧师托马斯$<BR>秘传之球被盗的那个晚上，追赶龙之追随者的<FONT color=#a82424>追击队</FONT>中，<FONT color=#a82424>杰克</FONT>也在其中。<BR>直到搜索队散开之前，从魔法山脊到<FONT color=#a82424>霜风森林</FONT>附近，我们一直和他在一起。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n179_light_pole-1" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(闪烁着奇怪的光芒)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2" image="QW_10.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$牧师托马斯$<BR>我们之中唯一亲眼见到那个人的只有你……你去<FONT color=#a82424>霜风森林</FONT>找找有没有什么情报。只要是和那个家伙有关的，不管什么都行。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n179_light_pole-2" image="" itemindex="">
+      <talk_answer link_index="n179_light_pole-2-cutscene" mid="37"><![CDATA[<html>(回想过去)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$大地的记忆$<BR><FONT color=#7e12d2>(龙之追随者藏身的地方)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-3-a" mid="39"><![CDATA[<html>那……好像是赛德瑞的脸。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$牧师托马斯$<BR>你想起了<FONT color=#a82424>龙之追随者</FONT>的<FONT color=#a82424>脸</FONT>？<BR>好的，跟我说说他长得什么样子。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3-a" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-3-!next" mid="41"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n179_light_pole-3" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$大地的记忆$<BR><FONT color=#7e12d2>(龙之追随者藏身的地方)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">1560,,,,</exe>
+         <exe type="talk" npc="n013_cleric_tomas">1</exe>
+         <exe type="setquest">156</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1560,,,,</exe>
+         <exe type="complete">156</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n013_cleric_tomas" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n013_cleric_tomas" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="b" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="c" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="d" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="e" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="f" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="g" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="h" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="i" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n179_light_pole" sub="cutscene">0,1</exelink>
+   <exelink qstep="3" npc="n013_cleric_tomas" sub="a">0</exelink>
+   <exelink qstep="3" npc="n013_cleric_tomas" sub="!next">1</exelink>
+   <journal_data recompense="0:1560" quest_title="제이크의 행적" chapterid="" quest_level="8" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[和牧师托马斯对话]]></title>
+         <contents mid="46"><![CDATA[<html>和牧师托马斯讲述杰克的行踪。<BR>
+ <BR>
+<FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→牧师托马斯</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[和牧师托马斯对话]]></destination>
+         <todo_msg mid="48"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_10.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>98,0,0</destination_pos>
+         <destination_mode>custom:96@1,97@1,98@4</destination_mode>
+         <statemark_npcid>179</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[回想在霜风森林被龙之追随者逃走时的情景]]></title>
+         <contents mid="50"><![CDATA[<html>移动到霜风森林，调查龙之追随者逃跑的秘密的门，回想当时的情景。<BR>
+ <BR>
+<FONT color=#086171>雪霜坡道(霜风森林入口)</FONT> <FONT color=#a82424>→ 霜风森林</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[回想在霜风森林被龙之追随者逃走时的情景]]></destination>
+         <todo_msg mid="52"><![CDATA[请移动到霜风森林，回想龙之追随者逃走当时的情景。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[和牧师托马斯对话]]></title>
+         <contents mid="55"><![CDATA[<html>回想当时的情景，想起了龙之追随者的脸。<BR><FONT color=#a82424>龙之追随者</FONT>的脸虽然感觉上有点不同，但应该是<FONT color=#a82424>牧师赛德瑞</FONT>的脸。<BR>回到魔法山脊，向牧师托马斯报告。<BR><BR><FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→牧师托马斯</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[和牧师托马斯对话]]></destination>
+         <todo_msg mid="57"><![CDATA[请回去向牧师托马斯报告。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>155</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

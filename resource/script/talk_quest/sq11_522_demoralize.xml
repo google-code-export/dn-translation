@@ -1,0 +1,200 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_522_demoralize</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>522</qid>
+      <designer>곽노찬</designer>
+      <qlevel>28</qlevel>
+      <qdesc>300245 냄새나는 막대</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[士气低下]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>您接受的任务过多，无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="6"><![CDATA[<html>鼓声?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$冒险家公会长冈特$<BR>听到那个鼓声了吗?<BR>
+在这里都能听到小妖精的鼓声啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="20"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$冒险家公会长冈特$<BR>
+小妖精的鼓声可让周围的魔物变得更强，而且还可以不断的召唤出同伴。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="22"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$冒险家公会长冈特$<BR>
+但是，到战场的贵族们可不知道这种最基本的兵法，在没把握好战况的情况下，一味的展开消耗战而已。只是，冲向敌阵的士兵因此而一个个战死沙场。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="8"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$冒险家公会长冈特$<BR>
+在战场上军队的士气可是很重要的。<BR>
+即便有兵力上的差异，但是如果是有充分的士气的话。亦可以以少胜多。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-e" mid="24"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$冒险家公会长冈特$<BR>
+要是按照现在的样子继续和魔物们周旋的话，我军的士气肯定会下降，而魔物们肯定也会更加嚣张。但是，那些愚蠢的贵族们却听不进这些内容，所以只能由我们自己…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-f" mid="26"><![CDATA[<html>明白了。</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$冒险家公会长冈特$<BR>
+到黑暗大君主的领地去消灭打鼓小妖精回来吧。鼓声会不断的召唤它们的同伴出来，所以最好先消灭它们。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$士气低下$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="QS_Default.dds" itemindex="300245">
+      <talk_question mid="16"><![CDATA[<html>$冒险家公会长冈特$<BR>
+消灭打鼓小妖精，并从它们身上收集<FONT color=#a82424>5个</FONT> <FONT color=#a82424>有异味的棒子</FONT>回来吧。不能让其他小妖精得到它后继续击鼓</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-a" mid="32"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$冒险家公会长冈特$<BR>
+鼓声有所减弱了，看来你完成的不错。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-b" mid="34"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$任务奖励$<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-b" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$冒险家公会长冈特$<BR>
+与黑暗军队的战斗现在才开始。<BR>
+今后可能还有需要你帮助的时候，你可要随时做好准备哦。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">522</exe>
+         <exe type="recompense_view">,5221,5222,5223,5224</exe>
+         <exe type="talk" npc="n036_adventurer_guildmaster_gunter">1</exe>
+         <exe type="huntitem" num="5" exe="4,5,6" onexe="">300245</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5221,5222,5223,5224</exe>
+         <exe type="delquestitem" num="-1">300245</exe>
+         <exe type="complete">522</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="f">1</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">0,2,3</exelink>
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="a">0</exelink>
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="b">2,1</exelink>
+   <journal_data recompense="1:5221,2:5222,3:5223,4:5224" quest_title="사기 저하" chapterid="" quest_level="28" quest_mark_type="10" use_item_list="300245">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_43.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>432,0,0</destination_pos>
+         <destination_mode>custom:431@1,432@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[士气低下]]></title>
+         <contents mid="38"><![CDATA[<html>消灭打鼓小妖精，并收集<FONT color=#a82424>5个</FONT><FONT color=#a82424>有异味的棒子</FONT>吧。<BR>
+ <BR>
+<FONT color=#086171>黑山山角（黑暗大君主的关卡）</FONT> <FONT color=#a82424>→ 黑暗领地守备队据点</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[收集5个有异味的棒子]]></destination>
+         <todo_msg mid="40"><![CDATA[新增了任务。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[与冒险家公会长冈特对话。]]></title>
+         <contents mid="43"><![CDATA[<html>收集了5个有异味的棒子。回到冒险家公会长冈特那里吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 冒险家公会长冈特</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[与冒险家公会长冈特对话。]]></destination>
+         <todo_msg mid="45"><![CDATA[收集了5个有异味的棒子。回到冒险家公会长冈特那里吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>28:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>404</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

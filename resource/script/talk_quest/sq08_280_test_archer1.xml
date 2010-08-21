@@ -1,0 +1,324 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_280_test_archer1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>280</qid>
+      <designer>김주연</designer>
+      <qlevel>15</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>281</nextqid>
+      <nextqname>sq08_281_test_archer2</nextqname>
+      <nextqnpc>n033_archer_master_adellin</nextqnpc>
+      <qkname mid="1"><![CDATA[[转职] 特雷西亚Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>33</npcid>
+         <npcename>n033_archer_master_adellin</npcename>
+         <npckname>상급 아처 아델린  (캐더락 아쳐 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-a" mid="7"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$高级弓箭手艾德琳${action:Talk}<BR>精灵自出生后的20年间，为了领悟自己的<FONT color=#a82424>宿命</FONT>而要进行长时间的旅行。人类把这种精灵们的传统称为成人礼，但我们自己却称它为 '<FONT color=#a82424>特雷西亚</FONT>' 即，宿命的旅程。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-b" mid="74"><![CDATA[<html>艾德琳大人的宿命是什么样的?</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$高级弓箭手艾德琳$<BR><FONT color=#382000>{user_nick}</FONT>，你开始自己的旅程也已经1年多了吧。我也很期待，会有什么样的宿命等待着你呢。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-c" mid="77"><![CDATA[<html>宿命该如何领悟呢?</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$高级弓箭手艾德琳$<BR>这是风告诉我的，我的宿命就是要引导踏上旅程的精灵们选择正确的方向。此后我便在这凯德拉落脚，向年幼的精灵们提供帮助。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-d" mid="79"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$高级弓箭手艾德琳$<BR>领悟宿命这种话，或许多少会让人感到陌生吧。领悟宿命，亦可以理解为即将获得新的名称。而每个精灵获得这种名称的方式都各自不同，所以，确实也很难向你解释该如何获得呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-e" mid="81"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$高级弓箭手艾德琳$<BR><FONT color=#a82424>内尔文女王</FONT>在50年前的黑龙之突袭时获得了<FONT color=#a82424>纳尔希亚</FONT>名称后，继而成为女王陛下。我也是在10年前，通过在凯德拉与魔物们的战斗获得了<FONT color=#a82424>阿德莱德</FONT>的名字，从而开始踏上了指引者的道路。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-f" mid="9"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$高级弓箭手艾德琳$<BR><FONT color=#382000>{user_nick}</FONT>，我也已经感受到，你已经到了即将要解开<FONT color=#a82424>特雷西亚</FONT>第一道难题的时候了。在此，可否听我几句忠告。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$[转职] 旅行者的关卡 Ⅰ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-1-a" mid="15"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$高级弓箭手艾德琳$<BR>从现在起，我会提出几个问题。 <BR><FONT color=#382000>{user_nick}，你只要</FONT>把自己感受到的答案说出来就行了。 把自己全身心的交给大自然，努力倾听精灵之间的低语吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1-a" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-1-b" mid="84"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$高级弓箭手艾德琳$<BR>这些只是为了想了解你的想法而问的问题而已，你无须有什么负担。那么，提问马上开始了哦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1-b" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-1-me1" mid="17"><![CDATA[<html>承担同伴的全部行李。</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-1-me2" mid="18"><![CDATA[<html>承担同伴的部分行李。</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-1-me3" mid="19"><![CDATA[<html>把行李扔掉，直接搀扶同伴。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$高级弓箭手艾德琳$<BR>你旁边有一位负伤的同伴。你可以承担他的行李以减轻他的痛苦，但是与此同时你也会变得行动不便而在发生危机时有可能无法及时采取适当的措施。你会承担同伴的行李吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-2-a" mid="37"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$高级弓箭手艾德琳$<BR>
+原来如此。 精灵之石开始发光了。<BR>接着回答下一道题吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2-a" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-2-b" mid="39"><![CDATA[<html>远距离发射弓箭。</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-2-b" mid="40"><![CDATA[<html>近距离使用体术。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$高级弓箭手艾德琳$<BR>在丛林里发现的猎物。<BR>
+你会优先选择哪种方式打猎呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2-b" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-3" mid="43"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$高级弓箭手艾德琳$<BR>精灵之石散发着越发强烈的光芒。<BR>该是提问最重要的问题了。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-3" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-3-a" mid="45"><![CDATA[<html>与魔物保持距离，看准时机进而攻之。</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-3-b" mid="46"><![CDATA[<html>接近魔物，扰乱魔物的神志。</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$高级弓箭手艾德琳$<BR>
+当你独自面对巨大魔物时会如何打败它？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-3-a" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-3-d" mid="49"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$高级弓箭手艾德琳$<BR><FONT color=#382000>你</FONT>似乎很适合用弓。精灵之中可以自如地使用弓箭的人，往往会踏上<FONT color=#a82424>箭神</FONT>之路，箭神是可以在远距离发挥强大力量的超级后援。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-3-b" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-3-d" mid="51"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$高级弓箭手艾德琳$<BR><FONT color=#382000>{user_nick}</FONT>看得出你有精灵们特有的敏捷。我们把那些可以利用快速的移动以及绚烂的动作，来去自如的指挥战斗的精灵称之为 <FONT color=#a82424>游侠</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-3-c" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-3-d" mid="54"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$高级弓箭手艾德琳$<BR>
+--猎人说明--</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-3-d" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4" mid="89"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$高级弓箭手艾德琳$<BR>与<FONT color=#a82424>精灵之石</FONT>之间的感应先到此为止吧。现在只是为了简单的了解<FONT color=#382000>{user_nick}</FONT>你一下而已，稍后让我们真正选择属于你自己的道路吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4-member1" mid="91"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$高级弓箭手艾德琳$<BR>现在我们还要考验一下你的实力，看看你是否已经做好了迎接宿命的准备。现在介绍给你的<FONT color=#a82424>清晨的房间</FONT>是小精灵们专门练习提高弓箭熟练度的练习场。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-a" image="" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$高级弓箭手艾德琳$<BR>
+清晨的房间不能带着同伴一起进去。<BR>
+考验要以自己的力量通过才行。<BR>
+<FONT color=#7e12d2>（转职任务在组队状态下无法进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-b" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4-changemap1" mid="94"><![CDATA[<html>（进入清晨的房间）</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$高级弓箭手艾德琳$<BR>在<FONT color=#a82424>清晨的房间</FONT>射击快速移动的猎犬吧。 但是，如果射中<FONT color=#a82424>白色雪原猎犬</FONT>时会<FONT color=#a82424>扣分</FONT>，因此一定要好好区分射击。 {user_nick}的集中力和用弓的准确性可以在这里得到进一步的验证。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-5" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-5-a" mid="96"><![CDATA[<html>何时能够领悟到宿命呢?</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$高级弓箭手艾德琳$<BR>在<FONT color=#a82424>清晨的房间</FONT>目睹了你的能力。看来你的能力非常出色呢，似乎已经做好了迎接宿命的准备，只等迎接领悟了啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-5-a" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-5-b" mid="98"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$高级弓箭手艾德琳$<BR>请不要着急。这次必须得到的，是在迎接你的宿命的时候可以保护你的力量。可以说是迎接宿命的第一步。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-5-b" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-5-!next" mid="100"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">280</exe>
+         <exe type="recompense_view">2800,,,,</exe>
+         <exe type="talk" npc="n033_archer_master_adellin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="talk" npc="n033_archer_master_adellin">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>헌터 : 덫을 놓고 사냥감을 유인하겠습니다.</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>헌터 : 주변의 동물들과 정령들에게 도움을 구하겠어요.
+</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="talk" npc="n033_archer_master_adellin">a</exe>
+         <exe type="talk" npc="n033_archer_master_adellin">b</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13007,1);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">280</exe>
+         <exe type="recompense">2800,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="f">1</exelink>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n033_archer_master_adellin" sub="b" />
+   <exelink qstep="1" npc="n033_archer_master_adellin" sub="me1">0,1</exelink>
+   <exelink qstep="1" npc="n033_archer_master_adellin" sub="me2">0,1</exelink>
+   <exelink qstep="1" npc="n033_archer_master_adellin" sub="me3">0,1</exelink>
+   <exelink qstep="2" npc="n033_archer_master_adellin" sub="b" />
+   <exelink qstep="2" npc="n033_archer_master_adellin" sub="b" />
+   <exelink qstep="2" npc="n033_archer_master_adellin" sub="3">0</exelink>
+   <exelink qstep="3" npc="n033_archer_master_adellin" sub="d" />
+   <exelink qstep="3" npc="n033_archer_master_adellin" sub="d" />
+   <exelink qstep="3" npc="n033_archer_master_adellin" sub="d" />
+   <exelink qstep="3" npc="n033_archer_master_adellin" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="member1">0</exelink>
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="changemap1">3</exelink>
+   <exelink qstep="5" npc="n033_archer_master_adellin" sub="b">1</exelink>
+   <exelink qstep="5" npc="n033_archer_master_adellin" sub="!next">0</exelink>
+   <journal_data recompense="2800" quest_title="[전직] 텔레지아Ⅰ" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Adellin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n33</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>33</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[天资确认]]></title>
+         <contents mid="60"><![CDATA[<html>高级弓箭手艾德琳引导着踏上旅程的小精灵们走向正确的道路。<BR>与
+<FONT color=#a82424>高级弓箭手艾德琳</FONT>对话吧。<BR><BR><FONT color=#086171>凯德拉关卡</FONT><FONT color=#a82424> → 高级弓箭手艾德琳</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[与高级弓箭手艾德琳对话]]></destination>
+         <todo_msg mid="62"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Adellin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n33</destination_pos>
+         <destination_mode>custom:13007@2</destination_mode>
+         <statemark_npcid>33</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[清晨的房间]]></title>
+         <contents mid="64"><![CDATA[<html><FONT color=#a82424>高级弓箭手艾德琳</FONT>想通过 <FONT color=#a82424>清晨的房间</FONT>考验我是否已经做好迎接宿命的准备。<BR>
+与艾德琳对话并进入清晨的房间，完成考验吧。<BR>
+<BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级弓箭手艾德琳</FONT> </html>]]></contents>
+         <destination mid="65"><![CDATA[与高级弓箭手艾德琳对话]]></destination>
+         <todo_msg mid="66"><![CDATA[通过高级弓箭手艾德琳进入清晨的房间吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Adellin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n33</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>33</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[和高级弓箭手艾德琳对话]]></title>
+         <contents mid="68"><![CDATA[<html>通过了清晨的房间。<BR>与
+<FONT color=#a82424>高级弓箭手艾德琳</FONT>对话吧。<BR>
+<BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级弓箭手艾德琳</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[和高级弓箭手艾德琳对话]]></destination>
+         <todo_msg mid="70"><![CDATA[通过了清晨的房间，与 高级弓箭手艾德琳对话吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class>2</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

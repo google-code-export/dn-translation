@@ -1,0 +1,505 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_415_stopgap</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>415</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>416</nextqid>
+      <nextqname>mq11_416_dig_for_minerals</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[临时措施]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$主教伊格纳西奥$<BR><FONT color=#a82424>先知</FONT>大人还好吧？就算有<FONT color=#a82424>杰兰特</FONT>照顾，但没有眼见为实，总还是觉得有些不放心。<BR>呵呵……人老了，总是瞎操心。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$将军道格拉斯$<BR><FONT color=#a82424>高级弓箭手伊西莉安</FONT>是参加过50年前那场战争的勇士。<BR>有她那样的人在帮助那些受伤的士兵，我也放心。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$杰兰特$<BR>你又来看<FONT color=#a82424>古代人的后裔</FONT>了？<BR>
+相信我，这里除了你和阿尔杰塔，没人能进来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="QN_archer_nerwin_silhouette.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-a" mid="10"><![CDATA[<html>(伊西莉安喃喃自语道)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>现在还没有发现什么有效的<FONT color=#a82424>治疗方法</FONT>。<BR>要是有那种治疗方法的话，<FONT color=#a82424>那位大人</FONT>也不会是那种命运了……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-a" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-b" mid="12"><![CDATA[<html>那我们该怎么办？</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>对不起，突然说了些奇怪的话，吓到你了吧？<BR>反正现在以<FONT color=#a82424>卡拉秋</FONT>大人为首的许多人都在研究这种病的治疗方法，只是一直都没有什么进展。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-c" mid="14"><![CDATA[<html>什么药？</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>虽然现在还无法完全治愈，但也能用临时措施<FONT color=#a82424>遏制住症状</FONT>。<BR>但临时措施能遏制多长时间就不清楚了，这就因个人精神承受力的不同而不同了。不过，能用药遏制一会儿总是好的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-c" image="QS_Default.dds" itemindex="300246">
+      <talk_question mid="15"><![CDATA[<html>$高级弓箭手伊西莉安$<BR><FONT color=#a82424>精灵坟墓</FONT>一带能够搜集到<FONT color=#a82424>精灵的眼泪</FONT>。<BR>只要有那个，我就能做出药来。<BR>
+我知道处方。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="QS_Default.dds" itemindex="300246">
+      <talk_question mid="18"><![CDATA[<html>$高级弓箭手伊西莉安${action:talk}<BR>请去<FONT color=#a82424>精灵坟墓</FONT>搜集一些<FONT color=#a82424>精灵的眼泪</FONT>来。虽然水精灵已经消失很久了，但那一带强悍的魔物身上仍然带有他们的眼泪。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-a" mid="21"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$高级弓箭手伊西莉安${action:talk}<BR>我来制作那种药。<BR>做好以后，我会立刻分发给负伤的士兵服用的。你去向<FONT color=#a82424>道格拉斯将军</FONT>报告吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-a" image="QM_black_Dragon.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$高级弓箭手伊西莉安$<BR><FONT color=#a82424>黑龙</FONT>流出的血，污染了大地，殃及了许多无辜的生命，还给女神的大地带来了混乱。<BR>
+为了结束这种恶性循环，说什么也得赶紧研究能够治愈这种病的办法。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>多亏了你，为我节省了这么多时间。<BR>药做好了以后，我会立刻分发给受伤的士兵，你去向<FONT color=#a82424>道格拉斯将军</FONT>报告吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-a" mid="25"><![CDATA[<html>说是因为黑龙的血。</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$将军道格拉斯$<BR><FONT color=#a82424>高级弓箭手伊西莉安</FONT>查出那种病的原因了吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-a" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-b" mid="27"><![CDATA[<html>现在似乎还……没有什么其他的办法。</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$将军道格拉斯${action:Talk}<BR>我们在打击魔物的同时，自己损失的也不小啊。<BR>多亏了她，降低了我军士兵的得病率。但如果没办法完全治愈那种病的话，就只能用临时措施了？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-c" mid="29"><![CDATA[<html>(道格拉斯将军下定了决心)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$将军道格拉斯$<BR>我道格拉斯一定会对自己的士兵负责到底的。<BR>
+我不会放弃的。一定要找出有效的治疗办法。<BR>要是放任那些负伤的士兵们不管，将来还有谁会出来保护国家？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-c" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-d" mid="31"><![CDATA[<html>过奖了。</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$将军道格拉斯$<BR>这次又多亏了你。真是谢谢了。<BR>
+<FONT color=#7e12d2>(将军道格拉斯用力地握住了我的手)</FONT><BR>
+我不会忘记你的忠诚的。<BR>
+我总算明白<FONT color=#a82424>伊格纳西奥</FONT>大人为什么一直对你赞不绝口了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-d" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$将军道格拉斯$<BR>你深得伊格纳西奥大人的信任，平时事情肯定很多，还能帮我们这么多忙，真是太感谢了。我没什么事情了，去找<FONT color=#a82424>主教伊格纳西奥</FONT>大人吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-5" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$将军道格拉斯$<BR>嗯？你不是去见<FONT color=#a82424>主教伊格纳西奥</FONT>大人了吗？<BR>呵呵，他似乎挺器重你的，经常去看看他吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-a" mid="35"><![CDATA[<html>为什么而苦恼？</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$主教伊格纳西奥${action:Talk}<BR>快过来，<FONT color=#a82424>神圣天堂</FONT>的真正的朋友。<BR>我今天仍然很苦恼。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-b" mid="37"><![CDATA[<html>请相信杰兰特。</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$主教伊格纳西奥$<BR>要是有什么人趁我们的<FONT color=#a82424>先知</FONT>沉睡的时候袭击她可怎么办？当然，我知道<FONT color=#a82424>杰兰特</FONT>一直都陪在她的身边。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-b" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-c" mid="39"><![CDATA[<html>那倒也是。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$主教伊格纳西奥$<BR>我当然相信他。不过，上次黑龙的巢穴不也能够用<FONT color=#a82424>古代祭司长的符文</FONT>削弱吗？<BR>要是再发生类似的事情怎么办？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-c" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$主教伊格纳西奥$<BR>所以你现在去找<FONT color=#a82424>杰兰特</FONT>问问这事。<BR>小问题如果不及时确认，最终可能会铸成大错，所以请他不要介意。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-6-a" mid="42"><![CDATA[<html>哦，原来是担心这个啊。</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$主教伊格纳西奥${action:Talk}<BR>我是担心可能有人入侵<FONT color=#a82424>金龙的巢穴</FONT>嘛。毕竟用古代祭司长的符文就能够削弱黑龙的巢穴，谁敢保证类似的事情不会再次发生呢？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6-a" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$主教伊格纳西奥$<BR>所以请你再去找<FONT color=#a82424>杰兰特</FONT>问问清楚。<BR>小问题如果不及时确认，最终可能会铸成大错，所以请他不要介意。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-6-a" mid="45"><![CDATA[<html>难道你不同吗？</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$杰兰特$<BR>用不着担心古代祭司长的符文之类的。<BR>无论是现在的还是50年前的黑龙，都是借助<FONT color=#a82424>古代人</FONT>的力量形成的，因此才会被古代祭司长的符文削弱力量。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-6-b" mid="47"><![CDATA[<html>我们？你是说你和阿尔杰塔？</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$杰兰特$<BR>他们那些<FONT color=#a82424>混沌龙的后代</FONT>与我们是不同的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6-b" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-6-c" mid="49"><![CDATA[<html>原来如此。(原来阿尔杰塔也是龙啊)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$杰兰特$<BR>没错。<FONT color=#a82424>古代龙的后代</FONT>只有阿尔杰塔和我而已。<BR>就我所知道的而言。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6-c" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$杰兰特$<BR>
+你似乎没别的事情了。<BR>
+那就回去找派你来的那个人吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-7" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$杰兰特$<BR>你回去转告他，<FONT color=#a82424>巢穴</FONT>是无法被入侵的领域。只要它的<FONT color=#a82424>主人</FONT>还活着，入侵者就无法在其内部发挥自己全部的力量。<BR>因此，人类没什么可担心的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-a" mid="53"><![CDATA[<html>他说不用担心。</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$主教伊格纳西奥${action:Talk}<BR>你回来了。<BR><FONT color=#a82424>杰兰特</FONT>说什么？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-b" mid="55"><![CDATA[<html>(主教格外慈祥地笑了起来)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$主教伊格纳西奥$<BR>唔……原来如此，不同的力量对不同的龙，效果也不同。<BR>我知道了。看来用<FONT color=#a82424>古代祭司长的符文</FONT>之类的东西是不可能进入他的巢穴的。这下我放心了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-c" mid="57"><![CDATA[<html>(给他看杰兰特的吊坠)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$主教伊格纳西奥$<BR>让你能够进入那里的……怎么说呢？是不是因为<FONT color=#a82424>杰兰特</FONT>所给的什么东西呢？<BR>能让我看看吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7-c" image="QS_Default.dds" itemindex="300022">
+      <talk_answer link_index="n039_bishop_ignasio-7-d" mid="59"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$主教伊格纳西奥$<BR>制作的非常精巧。没想到竟然能亲眼看到龙的东西，真是难忘的经历。<BR>请好好保管，不要弄丢了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-!next" mid="61"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="4">1007</exe>
+         <exe type="huntitem" num="1" exe="" onexe="5,6,7">300246</exe>
+         <exe type="addquestitem" num="1">300246</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="1">300246</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4151,4152,4153,4154</exe>
+         <exe type="complete">415</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="c">0,2,3,1</exelink>
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="a">0,1,2</exelink>
+   <exelink qstep="4" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="4" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="4" npc="n042_general_duglars" sub="d">0,1</exelink>
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="c">0,1</exelink>
+   <exelink qstep="6" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="6" npc="n216_geraint_wounded" sub="c">0,1</exelink>
+   <exelink qstep="7" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="7" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="7" npc="n039_bishop_ignasio" sub="d">0</exelink>
+   <exelink qstep="7" npc="n039_bishop_ignasio" sub="!next">1</exelink>
+   <journal_data recompense="1:4151,2:4152,3:4153,4:4154" quest_title="임시방편" chapterid="5" quest_level="32" quest_mark_type="7" use_item_list="300246">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[治疗药所在的地方]]></title>
+         <contents mid="64"><![CDATA[<html>和高级弓箭手伊西莉安谈谈有关<FONT color=#a82424>治疗药</FONT>的事情。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 高级弓箭手伊西莉安</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[和高级弓箭手伊西莉安对话]]></destination>
+         <todo_msg mid="66"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_37.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>374,0,0</destination_pos>
+         <destination_mode>custom:371@1,372@1,373@1,374@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[搜集精灵的眼泪]]></title>
+         <contents mid="68"><![CDATA[<html>去<FONT color=#a82424>精灵坟墓</FONT>搜集<FONT color=#a82424>精灵的眼泪</FONT>。用它好像可以制作成治疗药，好像在最强的怪物身上可以找到。<BR><BR><FONT color=#7e12d2>※ 在深渊难度下无法执行。</FONT><BR><BR><FONT color=#086171>赫尔马岱港口(下游废墟入口)</FONT> <FONT color=#a82424>→ 精灵坟墓</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[去精灵坟墓搜集精灵的眼泪]]></destination>
+         <todo_msg mid="70"><![CDATA[请到精灵坟墓去搜集精灵的眼泪。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[高级弓箭手伊西莉安的药]]></title>
+         <contents mid="72"><![CDATA[<html>搜集到了<FONT color=#a82424>精灵的眼泪</FONT>，回去向高级弓箭手伊西莉安报告。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂 </FONT>→ 高级弓箭手伊西莉安</html>]]></contents>
+         <destination mid="73"><![CDATA[和高级弓箭手伊西莉安对话]]></destination>
+         <todo_msg mid="74"><![CDATA[请把精灵的眼泪交给高级弓箭手伊西莉安。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="75"><![CDATA[向将军报告]]></title>
+         <contents mid="76"><![CDATA[<html><FONT color=#a82424>高级弓箭手伊西莉安</FONT>说会帮着制作治疗药。去向将军道格拉斯报告情况。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> → 将军道格拉斯</html>]]></contents>
+         <destination mid="77"><![CDATA[和将军道格拉斯对话]]></destination>
+         <todo_msg mid="78"><![CDATA[委托完成，请向将军道格拉斯报告。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[其他事情]]></title>
+         <contents mid="80"><![CDATA[<html>没有其他事可做了，再去见见主教伊格纳西奥。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[和主教伊格纳西奥对话]]></destination>
+         <todo_msg mid="82"><![CDATA[请和主教伊格纳西奥对话，看看有没有别的事。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[向杰兰特询问]]></title>
+         <contents mid="84"><![CDATA[<html>用<FONT color=#a82424>古代祭司长的符文</FONT>可以弱化杰兰特的巢穴吗？主教伊格纳西奥对此很担心，去向<FONT color=#a82424>杰兰特</FONT>确认一下吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂(地下秘密地区)</FONT> <FONT color=#a82424>→ 杰兰特</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[和杰兰特对话]]></destination>
+         <todo_msg mid="86"><![CDATA[向杰兰特转达主教伊格纳西奥的疑问。]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="87"><![CDATA[龙的应答]]></title>
+         <contents mid="88"><![CDATA[<html>向主教伊格纳西奥转告杰兰特的回答。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="89"><![CDATA[和主教伊格纳西奥对话]]></destination>
+         <todo_msg mid="90"><![CDATA[请向主教伊格纳西奥转述杰兰特的回答。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>414</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

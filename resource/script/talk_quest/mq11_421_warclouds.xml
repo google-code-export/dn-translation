@@ -1,0 +1,331 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_421_warclouds</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>421</qid>
+      <designer>김인정</designer>
+      <qlevel>26</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>404</nextqid>
+      <nextqname>mq11_404_return_of_fatality</nextqname>
+      <nextqnpc>n042_general_duglars</nextqnpc>
+      <qkname mid="1"><![CDATA[战云]]></qkname>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>您接受的任务过多，无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>好像是叫杰兰特吧。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$主教伊格纳西奥$<BR>总之，那个与名叫<FONT color=#a82424>阿尔杰塔</FONT>的女人在一起的金发剑士叫什么来着?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="8"><![CDATA[<html>而且黑骑士的名字好像是叫贝思柯德。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$主教伊格纳西奥$<BR>
+杰…兰特?呵呵… 有点意思了。<BR>
+也是… 50年前，龙之突袭以后，只要是谁生了金发的男孩，都会给他起<FONT color=#a82424>杰兰特</FONT>这个名字，所以也无需大惊小怪的…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="60"><![CDATA[<html>他们不会真的是50年的英雄们吧?</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$主教伊格纳西奥$<BR>贝思柯德? 黑骑士就是贝思柯德吗…?<BR><FONT color=#a82424>阿尔杰塔</FONT>还有<FONT color=#a82424>杰兰特</FONT>和<FONT color=#a82424>贝思柯德</FONT>…呵呵… 50年前龙之突袭的主角都登场啦…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="63"><![CDATA[<html>与事实有出入? 那么，他们就是真的英雄咯?</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$主教伊格纳西奥$<BR>嗯… 其实，50年前龙之突袭之后，被世人流传的内容与事实有些不符…特别是，知道关于<FONT color=#a82424>杰兰特</FONT>和 <FONT color=#a82424>贝思柯德</FONT>的内幕的除了六大英雄之外，只有极少数的人才知道一点而已…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-d" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-e" mid="10"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$主教伊格纳西奥$<BR>嗯… 亲爱的<FONT color=#382000> {user_nick}</FONT>，如果<FONT color=#a82424>黑骑士</FONT>就是50年前的英雄，与<FONT color=#a82424>贝思柯德</FONT>一样的人… 那么你你很快就会知道内幕了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-e" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-f" mid="66"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$主教伊格纳西奥$<BR>只是，被世人所知的<FONT color=#a82424>贝思柯德</FONT>却在50年前的龙之突袭中阵亡。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-f" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-g" mid="68"><![CDATA[<html>明白了。</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$主教伊格纳西奥$<BR>遗憾的是，如果<FONT color=#a82424>贝思柯德</FONT>的事被透露出去的话…肯定会发生大乱的。所以对平民暂时保密<FONT color=#a82424>黑骑士</FONT>相关的事吧。另外，在事态扩大之前一定要赶紧解决掉它。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-g" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-h" mid="14"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$主教伊格纳西奥${action:talk}<BR>谢谢你的理解。<BR>但是当前最要紧的问题是我们无法进入<FONT color=#a82424>黑骑士</FONT>藏匿的地方 …真让人棘手啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-h" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$主教伊格纳西奥$<BR>对此 <FONT color=#a82424>道格拉斯将军</FONT> 说了什么没有?<BR>似乎想到了什么措施了吧，快讲讲看啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$道格拉斯将军$<BR>把你看到听到的事情最好也向<FONT color=#a82424>主教伊格纳西奥</FONT>大人报告一下为好。<BR><FONT color=#7e12d2>（要与主教伊格纳西奥对话）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$主教伊格纳西奥${action:talk}<BR>去向指挥出兵的<FONT color=#a82424>道格拉斯将军</FONT>咨询有无什么好的对策。<BR>总不能在这里干等下去吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-a" mid="20"><![CDATA[<html>过奖了。</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$道格拉斯将军${action:talk}<BR>这次的出兵你的功劳最大。<BR>
+我一度还对你<FONT color=#a82424>凯德拉关卡</FONT>的守护者的身份产生了怀疑，但是现在不得不承认这一点了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-b" mid="22"><![CDATA[<html>应该有什么办法吧?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$道格拉斯将军$<BR>一定程度上侦查到黑骑士的根据地里的情况，这已经很了不起了。<BR>只是，还是没有找到<FONT color=#a82424>先知</FONT>…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-b" image="QW_43.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-c" mid="24"><![CDATA[<html>其他的办法?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$道格拉斯将军$<BR>我们无法立即攻入<FONT color=#a82424>黑暗领地守备队据点</FONT>这你也知道。擅自进入的话，很可能全军覆没呢。<BR>但我们也不能束手待毙，得想想其他办法。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-c" image="QW_28.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-d" mid="26"><![CDATA[<html>我也参加。</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$道格拉斯将军$<BR>是的，一边我们派兵不断骚扰<FONT color=#a82424>黑暗大君主的领地</FONT>魔物们的同时，我计划再找出一条可以偷偷进去的小路。<BR>得好好探索一下有没有可以进入的地方啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-d" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-e" mid="28"><![CDATA[<html>是，明白了。</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$道格拉斯将军$<BR>可以吗?<BR>那么我就单独给你<FONT color=#a82424>任务</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-e" image="QM_Gargoyle_Red.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-f" mid="30"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$道格拉斯将军$<BR>你也应该有所了解，<FONT color=#a82424>黑暗大君主的领地</FONT>内的<FONT color=#a82424>崇拜者布洛怪火焰法师</FONT>可是个非常让人头痛的家伙。<BR>它们可以源源不断的召唤出<FONT color=#a82424>火焰虫</FONT>给我们造成很大的伤害。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-f" image="QM_Gargoyle_Red.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-g" mid="32"><![CDATA[<html>明白了！</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$道格拉斯将军$<BR>所以为了将来的进攻，去消灭那些可以召唤出<FONT color=#a82424>火焰虫</FONT>的<FONT color=#a82424>崇拜者布洛怪火焰法师</FONT>就是你本次的任务。<BR>尽管会比较困难，但是希望你能与其他战士们一起消灭<FONT color=#a82424>10只</FONT>左右回来就好。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-g" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$道格拉斯将军${action:talk}<BR>很好。<BR>我也会在这里努力扩充预备兵力和物资，拜托你了！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="QW_28.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$道格拉斯将军$<BR>所以为了将来的进攻，去消灭那些可以召唤出火焰虫的<FONT color=#a82424>崇拜者布洛怪火焰法师</FONT>就是你本次的任务。<BR>尽管会比较困难，但是希望你能与其他战士们一起消灭 <FONT color=#a82424>10只</FONT> 左右回来就好。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="QW_28.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$主教伊格纳西奥${action:talk}<BR>你是指<FONT color=#a82424>黑暗大君主的领地</FONT>的<FONT color=#a82424>崇拜者布洛怪火焰法师</FONT>? 嗯… 可是较难对付的哦，如果再多几个像你这样的勇敢的人应该就可以了。想法不错嘛！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-a" mid="37"><![CDATA[<html>（道格拉斯将军很满意）</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$道格拉斯将军$<BR>哦，<FONT color=#382000>{user_nick} </FONT>是你啊！<BR>
+多亏你的帮助，我们的士兵也更加得心应手了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-a" image="QW_28.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-b" mid="39"><![CDATA[<html>那么现在可以追击黑骑士了吗。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$道格拉斯将军$<BR>经过仔细调查<FONT color=#a82424>黑暗大君主的领地</FONT>，已经找到了不错的线路，看来今后可以进一步减少伤亡了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-!next" mid="41"><![CDATA[<html><FONT color=#a94407>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="10" party="1" exe="3,4,5" onexe="">825</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4211,4212,4213,4214</exe>
+         <exe type="complete">421</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="e" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="f" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="g" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="h">0,1</exelink>
+   <exelink qstep="2" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="d" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="e" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="f" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="g">1,0,2</exelink>
+   <exelink qstep="4" npc="n042_general_duglars" sub="b">0</exelink>
+   <exelink qstep="4" npc="n042_general_duglars" sub="!next">1</exelink>
+   <journal_data recompense="1:4211,2:4212,3:4213,4:4214" quest_title="전운" chapterid="4" quest_level="26" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[商讨对策]]></title>
+         <contents mid="44"><![CDATA[<html>与主教伊格纳西奥商讨对策吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> → 主教伊格纳西奥</html>]]></contents>
+         <destination mid="45"><![CDATA[与主教伊格纳西奥对话。]]></destination>
+         <todo_msg mid="46"><![CDATA[新增了任务。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[道格拉斯将军的策略]]></title>
+         <contents mid="48"><![CDATA[<html>要想进入黑暗大君主的关卡深处去追击<FONT color=#a82424>黑骑士</FONT>，现在暂时还不行。向<FONT color=#a82424>道格拉斯将军</FONT>咨询还有没有其他办法吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 道格拉斯将军</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[与道格拉斯将军商讨对策]]></destination>
+         <todo_msg mid="50"><![CDATA[问道格拉斯将军还有无其他对策吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_28.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>284,0,0</destination_pos>
+         <destination_mode>custom:281@1,282@1,283@1,284@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[消灭崇拜者布洛怪火焰法师]]></title>
+         <contents mid="52"><![CDATA[<html><FONT color=#a82424>道格拉斯将军</FONT>想让我帮他。在<FONT color=#a82424>黑暗</FONT> <FONT color=#a82424>大君主的</FONT><FONT color=#a82424>领地</FONT>消灭<FONT color=#a82424>10只</FONT>可以召唤火焰虫的<FONT color=#a82424>崇拜者布洛怪火焰法师</FONT>吧。<BR><FONT color=#7e12d2>（在深渊级的难度下无法进行）</FONT><BR><BR><FONT color=#086171>黑山（黑暗大君主的关卡）</FONT> <FONT color=#a82424>→ 黑暗大君主的领地</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[消灭崇拜者布洛怪火焰法师]]></destination>
+         <todo_msg mid="54"><![CDATA[在黑暗大君主的领地消灭崇拜者布洛怪火焰法师吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[完成任务]]></title>
+         <contents mid="56"><![CDATA[<html>崇拜者布洛怪火焰法师也消灭了，通往黑暗大君主的领地的道路也侦查到了，就回到<FONT color=#a82424>道格拉斯将军</FONT>那里向其报告吧。<BR><BR><FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 道格拉斯将军</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[向王城的道格拉斯将军报告]]></destination>
+         <todo_msg mid="58"><![CDATA[完成了任务，向道格拉斯将军报告吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>403</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

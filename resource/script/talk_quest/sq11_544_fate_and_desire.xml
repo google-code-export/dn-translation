@@ -1,0 +1,212 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_544_fate_and_desire</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>544</qid>
+      <designer>나은하</designer>
+      <qlevel>24</qlevel>
+      <qdesc>매표원 소렌느는 아처의 이름을 묻고는 상급 아처 이실리엔이 잠깐 보기를 원한다는 말을 한다. 이실리엔에게 가면, 숙명으로 이끌어주는 힘은 소망에서 나온다는 말을 해준다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[高贵的宿命]]></qkname>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>70</npcid>
+         <npcename>n070_plane_ticketer_sorene</npcename>
+         <npckname>매표원 소렌느</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>风在动。 <BR>似乎要发生什么事情。<BR><FONT color=#7e12d2>（要与售票员索兰娜完成对话）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$售票员索兰娜$<BR>希望你在神圣天堂过得快乐。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-accepting" image="" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-accepting-a" mid="8"><![CDATA[<html>嗯，是的。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$售票员索兰娜${action:Talk}<BR>是<FONT color=#382000>{user_nick}</FONT>吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-accepting-a" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-accepting-b" mid="10"><![CDATA[<html>伊西莉安?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$售票员索兰娜$<BR>这里的<FONT color=#a82424>高级弓箭手伊西莉安</FONT>想见你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-accepting-c" mid="12"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$售票员索兰娜$<BR>
+嗯，详细的内容我也不知道。<BR>
+她说只有同族之间说的一些话。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$宿命和希望$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-1" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$售票员索兰娜${action:Talk}<BR><FONT color=#a82424>高级弓箭手伊西莉安</FONT>就在周围，回去时顺便经过为好。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-a" mid="18"><![CDATA[<html>你好，伊西莉安。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$高级弓箭手伊西莉安${action:Talk}<BR>欢迎光临，小姐妹。<BR>
+我是这里的向导<FONT color=#a94407>伊西莉安</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-b" mid="20"><![CDATA[<html>嗯，伊西莉安，叫我有什么事吗?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>这里的人们都叫我伊西莉安，反正怎么叫我都行。<BR><FONT color=#7e12d2>（高级弓箭手伊西莉安慈爱的微笑着。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-c" mid="28"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>我是为了帮助你能够顺利踏上宿命之路而找你的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-c" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-d" mid="56"><![CDATA[<html>高贵的… 宿命?</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>
+你的宿命… 似乎非常特殊。<BR>
+它很像，从我们的女王<FONT color=#a82424>纳尔希亚</FONT>感受到的<FONT color=#a82424>高贵的宿命</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-d" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-e" mid="59"><![CDATA[<html>原来如此….</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>
+是的，精灵当中非常罕见的某种特殊气息。<BR>
+但是，它也是一种可能性的小种子而已，而当你达到宿命之时，就不知道它会演变成何种样子。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-e" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-f" mid="30"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>
+被赋予高贵的宿命的他们也必然要承受与之相应的牺牲。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-f" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-g" mid="76"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>
+而你也会面临无数的苦难、逆境、历练以及痛苦。而且在经历它的过程当中也会失去很多东西。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-g" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-h" mid="62"><![CDATA[<html>但是，想到会失去什么，就有点害怕啊。</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>
+但是，你却不要逃避它。<BR>
+你也不必在赋予你的苦难和试炼面前屈服。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-h" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-i" mid="36"><![CDATA[<html>我的愿望？</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>通过<FONT color=#a82424>丧失的经验</FONT>你会懂得什么是有<FONT color=#a82424>价值</FONT>的事情。。而且也会懂得该守住什么，该寻找什么。而它就会成为<FONT color=#a82424>你的希望</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-i" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-j" mid="38"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>是的。希望达成目标的<FONT color=#a82424>你的意志</FONT>会指引着你。而且在那路程的最后一程，你会碰到自己的宿命。那些就是谁也无法代替的自己的路。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-j" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-k" mid="40"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>记住吧。 看到在长久的战斗中倒下的同伴而悲伤时，在无法避免的苦难中痛苦时。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-k" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-l" mid="42"><![CDATA[<html>我的愿望……</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>像你一样获取大树生命的我们，都会为你祈祷的。忘记痛苦、折磨吧。<BR>
+另外经过这种过程寻找<FONT color=#a82424>自己的希望</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-l" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2" mid="44"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$高级弓箭手伊西莉安$<BR><FONT color=#a82424>派拉特雷西亚，</FONT><BR>高贵宿命的探索者，如果需要我帮助的话，可随时来找我。愿世界树之祝福永远伴随着你…。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">5440,,,,</exe>
+         <exe type="setquest">544</exe>
+         <exe type="talk" npc="n070_plane_ticketer_sorene">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">5440,,,,</exe>
+         <exe type="complete">544</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n070_plane_ticketer_sorene" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n070_plane_ticketer_sorene" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="d" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="e" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="f" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="g" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="h" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="i" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="j" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="k" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="l">0</exelink>
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="2">1</exelink>
+   <journal_data recompense="5440" quest_title="고귀한 숙명" chapterid="" quest_level="24" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[与高级弓箭手伊西莉安的会面]]></title>
+         <contents mid="24"><![CDATA[<html>去找<FONT color=#a82424>高级弓箭手伊西莉安</FONT>吧。.<BR><BR><FONT color=#086171>神圣天堂 </FONT><FONT color=#a82424>→ </FONT><FONT color=#a82424>高级弓箭手伊西莉安</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[与高级弓箭手伊西莉安对话]]></destination>
+         <todo_msg mid="26"><![CDATA[与高级弓箭手伊西莉安对话吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class>2</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>
