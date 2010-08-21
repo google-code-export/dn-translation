@@ -1,0 +1,219 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_484_catastrophic_rain4</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>484</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[灾难之雨 IV]]></qkname>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting" image="QW_35.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-a" mid="6"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$纹章学者斯塔西$<BR>你还记得上次你去过的<FONT color=#a82424>枯竭的玛丽莎泉</FONT>吗? 那里有不少叫做 <FONT color=#a82424>月牙碎片</FONT>的奇异的石头。已成废墟的那里，处处都能发现到很久以前古代人在那里进行过实验的痕迹。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-b" mid="8"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$纹章学者斯塔西$<BR>特别是那些珍贵的<FONT color=#a82424>月牙碎片</FONT>很可能与<FONT color=#a82424>那次事故</FONT>有着很深的关联。到底在那里发生了什么事情，虽然谁也不知其真象，但是传说倒是在满天飞啊。什么东西爆炸了，古代人的内部争权，等等。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-c" mid="10"><![CDATA[<html>武器? 会是什么武器呢?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$纹章学者斯塔西$<BR>但是大多数的学者都倾向于在制造 <FONT color=#a82424>某种武器</FONT>的过程中爆炸的结论。<FONT color=#7e12d2>（斯塔西连续翻阅着自己的记录，正在思索着什么）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-d" mid="12"><![CDATA[<html>难以置信。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$纹章学者斯塔西$<BR>我觉得那就是黑龙。<FONT color=#7e12d2>（斯塔西小心的环顾周围）</FONT> …嘘！这是我的假设，如同上回所说。结合各种情况，我觉得 <FONT color=#a82424>50年前</FONT>的黑龙与某种<FONT color=#a82424>人工生命体</FONT>很相似。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-e" mid="14"><![CDATA[<html>明白了。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$纹章学者斯塔西$<BR>我也觉得这非常匪夷所思。但是我为了找那种 <FONT color=#a82424>证据</FONT>一直持续着研究。<BR>
+你可否帮我一回啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$灾难之雨 IV$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="QW_35.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$纹章学者斯塔西${action:talk}<BR>那么赶紧到 <FONT color=#a82424>枯竭的玛丽莎泉</FONT>收集5个左右<FONT color=#a82424>月牙碎片</FONT>回来吧。<BR>我要通过它把可能变为现实。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="20"><![CDATA[<html>（斯塔西环顾着周围压低了声音）</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$纹章学者斯塔西$<BR>王城想把不久前与魔物之间的决战一笔带过，但是我可是参与过<FONT color=#a82424>50年前</FONT> 大战的人，所以听到的消息也比较多。我也知道你也参与过这次的战斗。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="22"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$纹章学者斯塔西${action:talk}<BR>我在50年前亲眼目睹过。王国骑士<FONT color=#a82424>贝思柯德</FONT>背叛的情形…我真是难以置信我亲眼所看到的一切。<BR>但是那件事就这样被埋藏在黑暗当中，人们反而视其为 <FONT color=#a82424>英雄</FONT>? 但是我又不能在那样的氛围下，说出真相。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-c" mid="24"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$纹章学者斯塔西$<BR>因战争饱受创伤的百姓们，更需要的是英雄呢。<BR>但是，当初见过的<FONT color=#a82424>黑龙</FONT>的 样子，还有那个家伙倒下去时流下的被污染的血…这所有的一切都在我的脑海中一直挥之不散 。总觉的在哪里见过似的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-d" mid="26"><![CDATA[<html>原来如此。</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$纹章学者斯塔西$<BR>那就是在我学生时期学过的关于<FONT color=#a82424>灾难之雨</FONT>，就是它。<BR>在这种混乱当中<FONT color=#a82424>贝思柯德</FONT>消失了，我很长一段时间内深陷于各种谜一般的资料当中，无法自拔。所以我一度还被怀疑为<FONT color=#a82424>龙之追随者</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-e" mid="28"><![CDATA[<html>假设?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$纹章学者斯塔西$<BR>但是我得到了这次出现的<FONT color=#a82424>黑龙</FONT>其实就是 <FONT color=#a82424>贝思柯德</FONT>的情报。他只是占有黑龙的宝玉之后，利用古代人的力量成为黑龙而已。<BR>从而我可以进一步整理我的假设。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-f" mid="30"><![CDATA[<html>那么古代发生的所谓的事故也是?！</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$纹章学者斯塔西$<BR>那就是之前我也说过的、50年前的 <FONT color=#a82424>黑龙</FONT> 依然是人工存在的假设。<BR>就如同贝思柯德一样，50年前的那条黑龙，很可能也是利用很久以前<FONT color=#a82424>古代人的力量</FONT>而制作出来的东西。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-f" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-g" mid="32"><![CDATA[<html>嗯…真让人惊讶啊。</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$纹章学者斯塔西$<BR>是的。我觉得就是那个<FONT color=#a82424>实验</FONT>的影响所造成的。<BR>而且，这次虽然得以击退黑龙，但是我们不像以前那样损失惨重，所以或许那个家伙还没有死。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-g" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-h" mid="34"><![CDATA[<html>（斯塔西开始翻开口袋）</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$纹章学者斯塔西$<BR>所有的龙都是制作出来的?这还不知道。拥有龙的<FONT color=#a82424>宝玉</FONT>之后，再想变成龙的话，还需要什么呢，为何古代的实验造成那么惨烈的<FONT color=#a82424>废墟</FONT>… 现在开始得研究这些内容了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-h" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-i" mid="36"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-i" image="" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$纹章学者斯塔西${action:talk}<BR>总算是向你说出来了，舒服多了！<BR>非常感谢你帮我这么多，后会有期啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4841,4842,4843,4844</exe>
+         <exe type="huntitem" num="5" exe="2,3,4" onexe="">300020</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n088_scholar_starshy">1</exe>
+         <exe type="setquest">484</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300020</exe>
+         <exe type="recompense">,4841,4842,4843,4844</exe>
+         <exe type="complete">484</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="acceptted">6,1,5</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="g" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="h">1</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="i">0,2</exelink>
+   <journal_data recompense="1:4841,2:4842,3:4843,4:4844" quest_title="재앙의 비 IV" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="300020">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_35.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>354,0,0</destination_pos>
+         <destination_mode>custom:351@1,352@1,353@1,354@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[收集月牙碎片]]></title>
+         <contents mid="40"><![CDATA[<html>在枯竭的玛丽莎泉收集5个月牙碎片。<BR>
+ <BR>
+<FONT color=#086171>黑山山角（阴森的丛林路）</FONT> → 枯竭的玛丽莎泉</html>]]></contents>
+         <destination mid="41"><![CDATA[收集月牙碎片]]></destination>
+         <todo_msg mid="42"><![CDATA[在枯竭的玛丽莎泉收集月牙碎片吧。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[某种假说]]></title>
+         <contents mid="44"><![CDATA[<html>月牙碎片收集完毕。交给纹章学者斯塔西，听其进一步讲述吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 纹章学者斯塔西</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[向纹章学者斯塔西报告]]></destination>
+         <todo_msg mid="46"><![CDATA[把月牙碎片交给纹章学者斯塔西吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>481</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

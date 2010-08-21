@@ -1,0 +1,189 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_335_guard_over_fire</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>335</qid>
+      <designer>김인정</designer>
+      <qlevel>17</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[小心火]]></qkname>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-a" mid="6"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$高级牧师杰梅因${action:Talk}<BR>现在四周都被<FONT color=#a82424>魔物</FONT>所包围，真担心这样的状况会一直维持下去。<BR>每天专注于每天的事情当中，方能对得起<FONT color=#a82424>牧师</FONT>的称号啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-b" mid="8"><![CDATA[<html>遗迹? 是指寂静修道院的吗。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$高级牧师杰梅因$<BR>我的老师 <FONT color=#a82424>威廉</FONT> 大人在魔物抗争时期，比起任何人都要勇敢，同时也没有放松祈祷和学习，而且他还经常教导我们，守护不远处的<FONT color=#a82424>遗迹</FONT>是我们应尽的义务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-b" image="QW_19.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-c" mid="10"><![CDATA[<html>原来如此。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$高级牧师杰梅因$<BR>当然，那里对我们而言，也是颇有渊源的地方。但是他还教导我们，不能忘记<FONT color=#a82424>神殿礼拜堂</FONT> 。<BR><FONT color=#a82424>古代人的遗迹</FONT>对我们而言，是解开世界秘密的重要资料。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-d" mid="12"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$高级牧师杰梅因$<BR>不过你也知道，现在那里却变成了魔物们的巢穴。<BR>对我而言，很难独自前往那里，所以才一直期待着冒险家的降临。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-d" image="QM_GoblinRed.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-e" mid="14"><![CDATA[<html>明白了。.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$高级牧师杰梅因$<BR>冒险家大人，希望您协助我保护<FONT color=#a82424>神殿礼拜堂</FONT>之遗物。 就拜托您惩治那些<FONT color=#a82424>盗墓贼突击小妖精</FONT>，不能再让它们为所欲为了… 就拜托您了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$小心火$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QW_19.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$高级牧师杰梅因$<BR>消灭5只<FONT color=#a82424>神殿礼拜堂</FONT> 的<FONT color=#a82424>盗墓贼突击小妖精</FONT>吧。<BR>
+可千万要小心，它们动不动就会烧毁周围所有的一切。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-a" mid="20"><![CDATA[<html><FONT size=2 face=Arial>过奖了。</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$高级牧师杰梅因${action:Talk}<BR>回来啦，您真厉害。<BR>如果像您这样的人再多一些的话，遗迹中的魔物们几乎就可以扫荡出去了</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-a" image="QM_GoblinRed.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-b" mid="22"><![CDATA[<html>（有点担心杰梅因啊）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$高级牧师杰梅因$<BR>虽然暂时削弱了 <FONT color=#a82424>盗墓贼突击 小妖精</FONT>们的气焰，但是还未能完全清除掉它们，所以我们依然不能掉以轻心。<BR>今后还得小心的看守遗迹才行啊。希望我们能抵挡住魔物的攻击。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-c" mid="24"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-c" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$高级牧师杰梅因$<BR>虽然现在还有些困难，但我坚信一定会有那么一天可以一举消灭魔物们，并且夺回我们的遗迹。<BR>我要继承老师的意志，坚持到那个时候，为了 <FONT color=#a82424>凯德拉</FONT>奋斗终生。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3351,3352,3353,3354</exe>
+         <exe type="setquest">335</exe>
+         <exe type="huntmon" num="5" party="1" exe="3,4,5" onexe="">468</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3351,3352,3353,3354</exe>
+         <exe type="complete">335</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="acceptted">1,6,2</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="b">0</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="c">1</exelink>
+   <journal_data recompense="1:3351,2:3352,3:3353,4:3354" quest_title="불조심" chapterid="" quest_level="17" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_19.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>144,0,0</destination_pos>
+         <destination_mode>custom:141@3,142@3,143@3,144@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[杰梅因的忧虑]]></title>
+         <contents mid="27"><![CDATA[<html><FONT color=#a82424>高级牧师杰梅因</FONT>担心神殿礼拜堂被火烧。消灭盗墓贼突击小妖精，让他安心吧。<BR>
+ <BR>
+<FONT color=#7e12d2>※ 深渊难度下无法进行<BR></FONT><BR>
+<FONT color=#086171>水晶谷 → 狂风森林（狂风森林神殿入口）</FONT> <FONT color=#a82424>→ 神殿礼拜堂</FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[消灭神殿礼拜堂的魔物]]></destination>
+         <todo_msg mid="29"><![CDATA[消灭神殿礼拜堂的盗墓贼突击小妖精吧。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[报告]]></title>
+         <contents mid="31"><![CDATA[<html>完成高级牧师杰梅因的委托。回去报告吧。
+<FONT color=#7e12d2></FONT> <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级牧师杰梅因</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[向高级牧师杰梅因报告]]></destination>
+         <todo_msg mid="33"><![CDATA[向高级牧师杰梅因报告吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>17:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

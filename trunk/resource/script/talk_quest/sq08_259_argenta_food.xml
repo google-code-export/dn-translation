@@ -1,0 +1,347 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_259_argenta_food</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>259</qid>
+      <designer>김인정</designer>
+      <qlevel>15</qlevel>
+      <qdesc>300113(죽음의 숲 진액)
+선행: 206퀘스트(메인)
+데커드에게 퀘스트 받기.
+죽음의 숲에서 버섯 쳐서 진액 10개 수집.
+아르젠타에게 보고.
+데커드 최종 보고.
+(바로 2번 퀘스트로 연결)
+
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>260</nextqid>
+      <nextqname>sq08_260_argenta_flower</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[阿尔杰塔的保健食品]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-noquest" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$阿尔杰塔$<BR>…干嘛? 看什么看? 你，没理由在这里瞎逛啊?<BR><FONT color=#7e12d2>（从冒险家公会长戴卡德接受任务方可继续进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="7"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$冒险家公会长戴卡德${action:Talk}<BR>我很担心那个<FONT color=#a82424>银发女剑客</FONT>。<BR>上次听说她救了你，我还有点怀疑。听说她受了伤，我感到很不安。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="9"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$冒险家公会长戴卡德$<BR>而且听说那个女剑客是个<FONT color=#a82424>大美人</FONT>？见过她的人都说眼珠快要掉下来了……上次因为黑骑士的事情见到她的时候，她带着面纱，所以没能看清楚。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="109"><![CDATA[<html>美人和受伤又有什么关系……</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$冒险家公会长戴卡德$<BR>原来这么漂亮啊……<BR>
+啊，<FONT color=#a82424>美人</FONT>受了伤的话，该多么痛苦啊？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-d" mid="11"><![CDATA[<html>所以说美人和负伤有什么关系...</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$冒险家公会长戴卡德$<BR>不管怎样，受了伤就要保养。<BR>伤没有治好，吃得又不好的话，对<FONT color=#a82424>美人</FONT>的身体会不太好！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-e" mid="13"><![CDATA[<html>（总算是搞明白了）</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$冒险家公会长戴卡德$<BR>这种情况下，欠个人情的你不妨找些保健食品送去给她啊?<BR>她可是你的救命恩人呢，这种报答应该要做的吧！！ 这才是做人的基本道理啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-e" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-f" mid="15"><![CDATA[<html>找一些给她不就完了...</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$冒险家公会长戴卡德$<BR>去<FONT color=#a82424>死亡森林</FONT>采集<FONT color=#a82424>蓝蘑菇</FONT>，切碎后做成<FONT color=#a82424>死亡森林津液</FONT>，你觉得怎么样？只要一点就够了。<BR>
+因为是毒蘑菇的津液，吃多了反而对身体不好。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$阿尔杰塔的保健食品$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QS_Default.dds" itemindex="300113">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="60"><![CDATA[<html>（明白了）</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$冒险家公会长戴卡德$<BR>必须搜集5个<FONT color=#a82424>死亡森林津液</FONT>才行。应该不难吧？<BR>希望你快去快回。<BR>对于自己的救命恩人，这点小事总应该做吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QS_Default.dds" itemindex="300113">
+      <talk_question mid="61"><![CDATA[<html>$冒险家公会长戴卡德$<BR>虚弱的美人和保健食品... 不错。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$阿尔杰塔$<BR>…看什么看啊?<BR>你，没理由在这里瞎逛啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QS_Default.dds" itemindex="300113">
+      <talk_question mid="21"><![CDATA[<html>$冒险家公会长戴卡德$<BR>必须搜集5个<FONT color=#a82424>死亡森林津液</FONT>才行。应该不难吧？希望你快去快回。<BR>对于自己的救命恩人，这点小事总应该做吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$阿尔杰塔$<BR>…干嘛? …看什么看啊?<BR>你，没理由在这里瞎逛啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QS_Default.dds" itemindex="300113">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-a" mid="32"><![CDATA[<html>交给阿尔杰塔就可以吧?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$冒险家公会长戴卡德$<BR>哦～<FONT color=#a82424>死亡森林津液</FONT>……嗯，真不错。香气扑鼻！一看就是适合美人吃的补品。<BR>嗯，虽然有些毒性，但少吃一点就是一种良药。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$冒险家公会长戴卡德$<BR>好的。<BR>快把补品给受伤的<FONT color=#a82424>美人</FONT>送过去吧。<BR>别忘了说是我让你送过去的！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3" image="QS_Default.dds" itemindex="300113">
+      <talk_answer link_index="n164_argenta_wounded-3-a" mid="62"><![CDATA[<html>冒险家公会长戴卡德让我送补品……</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html><FONT color=#2b2723>$阿尔杰塔$<BR>嗯……？这是什么啊？<BR>是吃的吗？</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-a" image="QS_Default.dds" itemindex="300113">
+      <talk_answer link_index="n164_argenta_wounded-3-b" mid="64"><![CDATA[<html>（果真一口气吃完了）</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$阿尔杰塔$<BR>补品？<FONT color=#a82424>补品</FONT>当然应该是肉，不是吗？啧啧……真没诚意。<BR>
+<FONT color=#7e12d2>(阿尔杰塔一口把死亡森林津液喝了个底朝天)</FONT><BR>
+……这点东西，只够塞牙缝。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-c" mid="66"><![CDATA[<html>(这可是好不容易才搞到的……)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$阿尔杰塔$<BR>啊……该死，搞得我都没胃口了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-d" mid="85"><![CDATA[<html>所以我为了报答...</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$阿尔杰塔$<BR>
+干嘛……现在才来担心我吗？<BR>像你这么弱的人，是因为谁才能活到现在的啊？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-d" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="67"><![CDATA[<html><FONT color=#a82424><FONT color=#2b2723>$阿尔杰塔$<BR>哦～是想报答恩人吗？<BR>那我就却之不恭了。</FONT></FONT><BR><FONT color=#a82424><FONT color=#2b2723>你马上跑回去去告诉<FONT color=#a82424>戴卡德</FONT>，让他死了这条心，然后马上</FONT>回来。</FONT>知道了吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$阿尔杰塔$<BR>这么快就回来啦？<BR>…我还没想好让你做什么呢。你过会再过来吧<BR>
+<FONT color=#7e12d2>(应该去向冒险家公会长戴卡德报告)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-a" mid="68"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html><FONT color=#2b2723>$冒险家公会长戴卡德$<BR>怎么样？银发女剑客应该很高兴吧? </FONT><FONT color=#2b2723>多亏了我，你才能报答恩人的恩情，一定很高兴吧。哇哈哈！<BR>不用感谢我。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-b" mid="70"><![CDATA[<html>让你别瞎操心。</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$冒险家公会长戴卡德$<BR>美丽的女剑客怎么说？<BR>
+你告诉她是我戴卡德……<BR>不，虽然我没有让你一定要提到我……嗯哼。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-c" mid="87"><![CDATA[<html>(怎么可能……)</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$冒险家公会长戴卡德${action:Talk}<BR>什么？！……真是的，真搞不懂女人的心思。<BR>
+听说最近<FONT color=#a82424>神圣天堂</FONT>流行心里高兴，但表面装不高兴……说不定是类似的情况。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-c" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-d" mid="89"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-!next" mid="91"><![CDATA[<html>嗯，好吧。</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$冒险家公会长戴卡德$<BR>总之辛苦你了。<BR>不妨再代我向那位 <FONT color=#a82424>银发女剑士</FONT>问候一下吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,2591,2592,2593,2594</exe>
+         <exe type="setquest">259</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntitem" num="5" exe="5,3,4" onexe="">300113</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300113</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">259</exe>
+         <exe type="recompense">,2591,2592,2593,2594</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="f">0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="a">0,1,2</exelink>
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="d">0,1,2</exelink>
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="c">1</exelink>
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="d">0</exelink>
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="!next" />
+   <journal_data recompense="1:2591,2:2592,3:2593,4:2594" quest_title="아르젠타의 보양식" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="300113">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>모험자 길드장 데커드</start_npc>
+         <desc_location>죽음의 숲</desc_location>
+         <step_action>수집</step_action>
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item>죽음의 숲 진액 10개</collect_item>
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[戴卡德的关怀]]></title>
+         <contents mid="44"><![CDATA[<html><FONT color=#a82424>冒险家公会长戴卡德</FONT>提议给受伤的<FONT color=#a82424>阿尔杰塔</FONT>送点补品过去。去戴卡德那里听听详细的建议吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 冒险家公会长戴卡德</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[和冒险家公会长戴卡德对话]]></destination>
+         <todo_msg mid="46"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_17.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>134,0,0</destination_pos>
+         <destination_mode>custom:131@3,132@3,133@3,134@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[采集死亡森林津液]]></title>
+         <contents mid="95"><![CDATA[<html>不管是什么理由，总之是救命恩人。为了阿尔杰塔，去<FONT color=#086171><FONT color=#a82424>死亡森林</FONT></FONT>采集<FONT color=#a82424>蓝蘑菇</FONT>，切碎后搜集<FONT color=#a82424>死亡森林津液</FONT>吧。<BR><BR><FONT color=#086171>灰色废墟 → 堆满落叶的湖岸(死亡森林入口)</FONT> <FONT color=#a82424>→ 死亡森林</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[搜集死亡森林津液]]></destination>
+         <todo_msg mid="97"><![CDATA[请到死亡森林去搜集5个死亡森林津液。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,n164</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="98"><![CDATA[为了阿尔杰塔]]></title>
+         <contents mid="99"><![CDATA[<html>按照<FONT color=#a82424>冒险家公会长戴卡德</FONT>的委托，搜集到了阿尔杰塔的补品。把补品交给<FONT color=#a82424>阿尔杰塔</FONT>本人吧。<BR><BR><FONT color=#086171>灰色废墟</FONT> <FONT color=#a82424>→ 阿尔杰塔</FONT></html>]]></contents>
+         <destination mid="100"><![CDATA[和灰色废墟的阿尔杰塔对话]]></destination>
+         <todo_msg mid="101"><![CDATA[请把死亡森林津液交给灰色废墟的阿尔杰塔。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="102"><![CDATA[阿尔杰塔的反应]]></title>
+         <contents mid="103"><![CDATA[<html>把补品交给了<FONT color=#a82424>阿尔杰塔</FONT>，但她好像不怎么喜欢。回到<FONT color=#a82424>冒险家公会长</FONT><FONT color=#a82424>戴卡德</FONT>那里，报告结果吧。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 冒险家公会长戴卡德</FONT></html>]]></contents>
+         <destination mid="104"><![CDATA[和冒险家公会长戴卡德对话]]></destination>
+         <todo_msg mid="105"><![CDATA[请向冒险家公会长戴卡德报告。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>206</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item>300003</have_symbol_item>
+   </condition_data>
+</quest>

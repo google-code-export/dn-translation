@@ -1,0 +1,297 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_456_stolen_books</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>456</qid>
+      <designer>김주연</designer>
+      <qlevel>26</qlevel>
+      <qdesc>왕성 비망록 400098
+세인트 헤이븐 연감 400099
+무기개발론 400100
+궁중 요리법 400101
+마물 도감 400102</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[被盗的书籍]]></qkname>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>您接受的任务过多，无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="6"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$将军道格拉斯$<BR> 最近，关于王城内部武器相关的文件频繁被盗，我们收到重要的线索，打算寻找合适的人去调查。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="38"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$将军道格拉斯$<BR>被盗现场虽很凌乱，但我们却意外发现了白玫瑰饰物。这似乎与你之前调查过的怪人有某种联系啊。那次那个怪人也不正带着白玫瑰饰物的吗。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-c" mid="40"><![CDATA[<html>（似乎在看我的反应）</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$将军道格拉斯$<BR>
+而且仓库中保存下来的书籍当中，还发现了与当初劫持阿联拓子爵的时候发现的一模一样的脚印。结合这些证据，我敢说这次的被盗事件也是那个白衣怪人所为。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-d" mid="8"><![CDATA[<html>是，明白了。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$将军道格拉斯$<BR>现在我们这里就只有你最值得信赖了。而且只有你最适合去处理那种棘手的事情... 可否协助我回收被盗的书籍，查明他的犯罪动机呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="10"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$被盗的书籍$<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2" mid="12"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$将军道格拉斯$<BR>根据报告，在<FONT color=#a82424>孤岛</FONT>发现了一些书籍，很像被盗的那些书。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$将军道格拉斯$<BR>
+不妨到<FONT color=#a82424>孤岛</FONT>去把书籍收集回来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="15"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$将军道格拉斯$<BR>书籍已经都收集完了吗?<BR>哦，还好，重要的书籍基本已经找回了。看来还得加强书库的警卫了。光顾着外部警卫，反倒对内部疏忽大意了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-b" mid="17"><![CDATA[<html>什么记录啊?</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$将军道格拉斯$<BR>啊！还落了一些非常重要的书本了啊！<BR>都是关于龙之追随者的记录。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-c" mid="19"><![CDATA[<html>暗语?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$将军道格拉斯$<BR>主要是记载与整理关于龙之追随者们的历史，事件，还有他们的<FONT color=#a82424>暗语</FONT>的报告。你回收来的书籍当中并无解码本，所以估计那个白衣怪人所要的也是那本书啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-d" mid="21"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$将军道格拉斯$<BR>
+他们都是秘密活动的团体，所以经常用隐含暗语的文章联络。但谁也不曾知道我们可以对其进行解读！失败啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-d" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-e" mid="23"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$任务奖励$<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-e" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-f" mid="41"><![CDATA[<html>王室重要的书籍被盗了，这可真麻烦啊。</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$将军道格拉斯$<BR>话说回来，那个白衣怪人想从阿联拓子爵的戒指当中获取些什么线索是吧?看来那个怪人是为了获取与戒指相关的信息，才盗取了解码本的啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-f" image="" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$将军道格拉斯$<BR>
+嗯，虽然王室的物品丢失可是一件大事，但是更令人奇怪的是，那个怪人怎么会悄无声息的进入王室内部了呢。他盗取那些书籍会做什么，应该通过他下一步的行动就可以看得出来吧。那么，我们就等待他接下来的举动吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4561,4562,4563,4564</exe>
+         <exe type="setquest">456</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>(아이템 등록 필요)
+왕성 비망록(500) / 세인트 헤이븐 연감(510) / 무기개발론(514) / 궁중 요리법(517) / 마물 도감(533)
+
+왕성 내부에서 일어나는 정치적 사건이나 중요한 문제에 대하여 기록한 책.
+세인트 헤이븐의 초대왕인 카시우스에 대한 내용부터 여러 왕들에 관련된 사건등이 기록된 책.
+지금까지 사용된 무기들의 문제점을 보완하여 새로운 무기를 만들어내고자 학자들이 기록한 책.
+왕에게만 올려졌던 각종 요리법들이 기록되어있는 책.
+학계에 보고된 마물들의 종류와 그들의 무기 그리고 생태등을 기록한 책.
+
+
+</comment>
+      <conditions>
+         <chk type="questitem" num="2" op="]=">400098</chk>
+         <chk type="questitem" num="2" op="]=">400099</chk>
+         <chk type="questitem" num="2" op="]=">400100</chk>
+         <chk type="questitem" num="2" op="]=">400101</chk>
+         <chk type="questitem" num="1" op="]=">400102</chk>
+      </conditions>
+      <executions>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10,21">871</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="12,21">863</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="14,21">862</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="16,21">864</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="18,21">869</exe>
+         <exe type="huntitem" num="2" exe="" onexe="21">400098</exe>
+         <exe type="huntitem" num="2" exe="" onexe="21">400099</exe>
+         <exe type="huntitem" num="2" exe="" onexe="21">400100</exe>
+         <exe type="huntitem" num="2" exe="" onexe="21">400101</exe>
+         <exe type="huntitem" num="1" exe="" onexe="21">400102</exe>
+         <exe type="conexe" true="" false="11">0</exe>
+         <exe type="addquestitem" num="1">400098</exe>
+         <exe type="conexe" true="" false="13">1</exe>
+         <exe type="addquestitem" num="1">400099</exe>
+         <exe type="conexe" true="" false="15">2</exe>
+         <exe type="addquestitem" num="1">400100</exe>
+         <exe type="conexe" true="" false="17">3</exe>
+         <exe type="addquestitem" num="1">400101</exe>
+         <exe type="conexe" true="" false="19">4</exe>
+         <exe type="addquestitem" num="1">400102</exe>
+         <exe type="comment">이 아래는 모든 아이템이 수집 되었나 확인하는 체크</exe>
+         <exe type="conexe" true="22,23,24" false="">0 and 1 and 2 and 3 and 4</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>*퀘스트 아이템 등록되면 삭제하고, 포기시에도 삭제될 수 있도록 넣어야함.</comment>
+      <conditions />
+      <executions>
+         <exe type="recompense">,4561,4562,4563,4564</exe>
+         <exe type="complete">456</exe>
+         <exe type="delquestitem" num="-1">400098</exe>
+         <exe type="delquestitem" num="-1">400099</exe>
+         <exe type="delquestitem" num="-1">400100</exe>
+         <exe type="delquestitem" num="-1">400101</exe>
+         <exe type="delquestitem" num="-1">400102</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="2">25,0,1,2,3,4,5,6,7,8,9,26</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="d">0</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="e">1,2,3,4,5,6</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="f" />
+   <journal_data recompense="1:4561,2:4562,3:4563,4:4564" quest_title="도난당한 책들" chapterid="" quest_level="26" quest_mark_type="10" use_item_list="400098,400099,400100,400101,400102&#xD;&#xA;">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[被盗的书籍]]></title>
+         <contents mid="26"><![CDATA[<html>据说在神圣天堂丢失的书本在<FONT color=#a82424>孤岛</FONT>被发现。到<FONT color=#a82424>将军道格拉斯</FONT>那里听听详细的情况吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城内部</FONT> <FONT color=#a82424>→将军道格拉斯</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[被盗的书籍]]></destination>
+         <todo_msg mid="28"><![CDATA[新增了任务。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_30.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>301,0,0</destination_pos>
+         <destination_mode>custom:301@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="29"><![CDATA[回收孤岛上的王城书籍]]></title>
+         <contents mid="30"><![CDATA[<html>根据<FONT color=#a82424>冒险家公会长冈特</FONT>的报告，在<FONT color=#a82424>孤岛</FONT>发现了被盗的<FONT color=#a82424>书籍</FONT>。到孤岛把它们回收过来吧。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 孤岛</FONT></html>]]></contents>
+         <destination mid="31"><![CDATA[回收孤岛上的王城书籍]]></destination>
+         <todo_msg mid="32"><![CDATA[回收孤岛上的王城书籍吧]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[与王城内部的将军道格拉斯对话。]]></title>
+         <contents mid="34"><![CDATA[<html><FONT color=#a82424>被盗的书籍</FONT>基本已经找回。回到王城内部向 <FONT color=#a82424>将军道格拉斯</FONT>报告吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城内部</FONT> <FONT color=#a82424>→将军道格拉斯</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[与王城内部的将军道格拉斯对话。]]></destination>
+         <todo_msg mid="36"><![CDATA[向王城内部的将军道格拉斯报告吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>26:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>455</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

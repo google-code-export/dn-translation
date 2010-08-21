@@ -1,0 +1,361 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_489_merchant_study4</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>489</qid>
+      <designer>김주연</designer>
+      <qlevel>34</qlevel>
+      <qdesc>불사의 결정	400160
+황금이 담긴 주머니	400161
+
+
+썩은 사과를 진흙을 바꾸기는 했다. 이제 진흙을 황금으로 바꾸기만 하면 되는데 …. 
+ 진흙을 채취했다고하는 상급 소서리스 스텔라는 그 진흙을 젊어지는 묘약을 제조하는 데 사용한다고 한다.
+또 다른 재료인 불사의 결정을 구해오면 황금하고 바꿔줄 수도 있다고 하는데 ….</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[商人课程Ⅳ]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-noquest" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$奸商波普$<BR>
+腐烂的苹果可以换成黄金！怎么可能？<BR>
+<FONT color=#7e12d2>(必须和高级魔法师斯泰拉对话)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-a" mid="7"><![CDATA[<html>有个东西我想交换成黄金。</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$魔法师斯泰拉$<BR>咦？可爱的冒险家找我有什么事吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-b" mid="9"><![CDATA[<html>(用这个交换黄金，果然不行吗？)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$魔法师斯泰拉$<BR>这……不是泥块吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-c" mid="11"><![CDATA[<html>嗯？这个东西很珍贵吗？</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$魔法师斯泰拉$<BR>而且是很难搞到的黑山山角的泥土！！！这么珍贵的东西你是从哪里找到的？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-d" mid="13"><![CDATA[<html>你愿意用黄金和我交换吗？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$魔法师斯泰拉$<BR>呵呵，用它制作成让人变年轻的灵药的话，可以让人看上去年轻10岁。因此深受王宫里的大妈们的欢迎。当然，对于不知道它的价值的人来说，只不过是个发臭的泥块罢了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-e" mid="15"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$魔法师斯泰拉$<BR>嗯……黄金？<BR>虽然这种泥土非常珍贵，但想交换到黄金还是差了一点。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-f" mid="17"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$魔法师斯泰拉$<BR>但是也不是没有办法。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-g" mid="19"><![CDATA[<html>真的吗？</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$魔法师斯泰拉$<BR>制作灵药还需要不死结晶。那个东西也很珍贵……如果你能把<FONT color=#a82424>不死结晶</FONT>一起交给我，我就用黄金跟你交换。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="21"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$商人课程Ⅳ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="QW_46.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="23"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$魔法师斯泰拉$<BR>不死结晶可以在沉没的货船附近打猎怪物获得。听说<FONT color=#a82424>鹰身人女头目坎娜</FONT>吸取了死去的船员们的怨念，在体内形成了<FONT color=#a82424>不死结晶</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$魔法师斯泰拉$<BR><FONT color=#a82424>两个不死结晶</FONT>换黄金！你要记好了。<BR>祝你好运，可爱的冒险家。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$奸商波普$<BR>把腐烂的苹果换成黄金，期限是3天。如果你能把它换成黄金，就算你获胜。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_46.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$魔法师斯泰拉$<BR>不死结晶可以在<FONT color=#a82424>沉没的货船</FONT>附近的<FONT color=#a82424>鹰身人女头目坎娜</FONT>身上找到。听说鹰身人女头目坎娜吸取了死去的船员们的怨念，在体内形成了不死结晶。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-a" mid="28"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$魔法师斯泰拉$<BR>不死结晶找到了吗？真是个了不起的孩子。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-b" mid="30"><![CDATA[<html><FONT face=Arial size=2>(获取黄金)</FONT></html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$魔法师斯泰拉$<BR>按照约定，我把黄金给你。虽然不知道你要用它来干什么，不过希望你能好好使用。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-b" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$魔法师斯泰拉$<BR>希望我们能再见面，可爱的冒险家。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$魔法师斯泰拉$<BR>你不是说要用黄金去做什么事情吗？我们之间的事情好像已经结束了啊……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4" image="" itemindex="400161">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-a" mid="34"><![CDATA[<html>(拿出黄金)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$奸商波普$<BR>什么？你该不会真的用腐烂的苹果交换到黄金了吧？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-b" mid="36"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$奸商波普$<BR>这……这！真的是黄金！<BR>你……真了不起。竟然真的用腐烂的苹果交换到了黄金！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-c" mid="38"><![CDATA[<html>呼……太好了。</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$奸商波普$<BR>这种才能浪费掉的话，就太可惜了。<BR>不过我说话算数，我们之间的债务就一笔勾销了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-c" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-d" mid="40"><![CDATA[<html>破剑……难道是飞速圣剑？</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$奸商波普$<BR>这真的是很划算的生意。<BR>用区区<FONT color=#a82424>15银币</FONT>的破剑交换到了黄金。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-d" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-e" mid="42"><![CDATA[<html>呃呃……忍无可忍！</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$奸商波普$<BR>哈哈哈！人生就是这个样子。<BR><FONT color=#a82424>飞速圣剑</FONT>这个名字都是我瞎起的。没想到你竟然会上当。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-e" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-f" mid="44"><![CDATA[<html>真是气死了！</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$奸商波普$<BR>等……等等，镇静！Relex！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-f" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-g" mid="46"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$奸商波普$<BR>现在发火也太晚了。交易就是交易，我不能把黄金还给你……但是我把这个送给你，你先消消气。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-g" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-h" mid="48"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-h" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-i" mid="50"><![CDATA[<html>够了。</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$奸商波普$<BR>好了，我们已经两清了……你想看看别的东西吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-i" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-j" mid="52"><![CDATA[<html>够了！</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$奸商波普$<BR>看看这个东西，这是古代人使用的<FONT color=#a82424>暴风三弦</FONT>……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-j" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$奸商波普$<BR>有什么需要的话，请随时来找我！哈哈哈！</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment>n045_soceress_master_stella</comment>
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4891,4892,4893,4894</exe>
+         <exe type="setquest">489</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="2" op="]=">400160</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="2" exe="" onexe="">400160</exe>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="8">1197</exe>
+         <exe type="conexe" true="5,6,7" false="">0</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="conexe" true="5,6,7" false="9,4">0</exe>
+         <exe type="addquestitem" num="1">400160</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>400161</comment>
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400160</exe>
+         <exe type="addquestitem" num="1">400161</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4891,4892,4893,4894</exe>
+         <exe type="complete">489</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="a">0,2,3,1</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="b">0,1,2,3</exelink>
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="b" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="c" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="d" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="e" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="f" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="g">0</exelink>
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="h">1</exelink>
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="i" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="j" />
+   <journal_data recompense="1:4891,2:4892,3:4893,4:4894" quest_title="상인 수업Ⅳ" chapterid="" quest_level="34" quest_mark_type="10" use_item_list="400160,400161">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[和高级魔法师斯泰拉对话]]></title>
+         <contents mid="55"><![CDATA[<html>可以用泥土交换黄金。但必须搜集到制作让人变年轻的药所需的其他材料，才能交换。和<FONT color=#a82424>高级魔法师斯泰拉</FONT>对话。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 高级魔法师斯泰拉</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[和高级魔法师斯泰拉对话]]></destination>
+         <todo_msg mid="57"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_46.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>462,0,0</destination_pos>
+         <destination_mode>custom:461@3,462@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[去沉没的货船消灭鹰身人女头目坎娜]]></title>
+         <contents mid="59"><![CDATA[<html>斯泰拉说如果我能去沉没的货船附近搜集到不死结晶，就用黄金和我交换。消灭沉没的货船附近出没的<FONT color=#a82424>鹰身人女头目坎娜</FONT>搜集<FONT color=#a82424>2个</FONT>不死结晶吧。<BR>
+<FONT color=#7e12d2>(在深渊难度下无法执行)</FONT><BR>
+<FONT color=#086171></FONT> <BR>
+<FONT color=#086171>赫尔马岱港口(孤岛运输船)</FONT> <FONT color=#a82424>→ 沉没的货船</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[去沉没的货船消灭鹰身人女头目坎娜]]></destination>
+         <todo_msg mid="61"><![CDATA[请到沉没的货船去消灭鹰身人女头目坎娜。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[和高级魔法师斯泰拉对话]]></title>
+         <contents mid="63"><![CDATA[<html>搜集到了不死结晶。把它交给<FONT color=#a82424>高级魔法师斯泰拉</FONT>，交换黄金吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 高级魔法师斯泰拉</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[和高级魔法师斯泰拉对话]]></destination>
+         <todo_msg mid="65"><![CDATA[请回到高级魔法师斯泰拉那里。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n277</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>277</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[和奸商波普对话]]></title>
+         <contents mid="67"><![CDATA[<html>终于成功地用腐烂的苹果交换到了黄金。回到赫尔马岱港口的<FONT color=#a82424>奸商波普</FONT>那里去。<BR><BR><FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 奸商波普</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[和奸商波普对话]]></destination>
+         <todo_msg mid="69"><![CDATA[请回到奸商波普那里去。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>34:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>488</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

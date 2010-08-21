@@ -1,0 +1,480 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_203_black_knight_tracking</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>203</qid>
+      <designer>김주연</designer>
+      <qlevel>12</qlevel>
+      <qdesc>[퀘스트 플로우]
+1. 퍼거스와의 대화, 데커드에게 상황을 보고해달라고 함.
+2. 데커드와 대화, 검은 기사에 대한 추가정보 획득, 검은 기사가 숲의 성역으로 향했다는 정보를 입수.
+3. 숲의 성역에는 널부러진 모험자들만 있음. 보스를 물리치면 벨스커드가 로제를 이용해서 힘을 획득하고 사라짐.
+
+수행 레벨은 12, 퀘스트 표시가 끊기지 않게 하기 위해 11로 적음</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>204</nextqid>
+      <nextqname>mq08_204_swordwoman_with_siverblond</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[追踪黑骑士]]></qkname>
+      <qnpc>
+         <npcid>108</npcid>
+         <npcename>n010_velskud</npcename>
+         <npckname>검은 기사 (벨스커드)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>23</npcid>
+         <npcename>n023_ranger_fugus</npcename>
+         <npckname>정찰병 퍼거스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>31</npcid>
+         <npcename>n031_adventurer_wilber</npcename>
+         <npckname>숲의 성역에 쓰러진 모험자 길드원. 윌버</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>53</npcid>
+         <npcename>n053_adventurer_wounded</npcename>
+         <npckname>부상당한 모험자</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>6</npcid>
+         <npcename>n006_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-1-levelcheck" mid="6"><![CDATA[<html>我也可以帮忙。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$侦察兵福古斯$<BR>黑骑士也在觊觎<FONT color=#a82424>古代人的力量</FONT>啊……<BR>
+这样下去可不行。必须马上和冒险家公会取得联系，追踪<FONT color=#a82424>黑骑士</FONT>的行踪。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-a" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$侦察兵福古斯$<BR>
+谢谢。请你把这个消息转告<FONT color=#a82424>凯德拉关卡</FONT>的<FONT color=#a82424>冒险家公会会长戴卡德</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-b" image="" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$侦察兵福古斯$<BR>谢谢你，但是你似乎还没有做好对付这里的魔物的准备。你最好再积累一些经验，然后再来帮我们。<BR>
+<FONT color=#7e12d2>（必须达到12级以上才能执行任务。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_ranger_fugus.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>你去见见水晶谷的<FONT color=#a82424>侦察兵福古斯</FONT>吧</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n031_adventurer_wilber-1" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$冒险家公会成员韦伯$<BR>嗯……谁……谁啊？<BR><FONT color=#7e12d2>(因为受了伤，所以脸色不太好)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n053_adventurer_wounded-1" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$受伤的冒险家$<BR><FONT color=#7e12d2> (看上去好像失去了意识)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n010_velskud-1" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$黑骑士$<BR>让开，别妨碍我！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n006_rose-1" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$箩丝$<BR><FONT color=#7e12d2> (眼睛茫然无神，看上去好像受到了黑骑士的支配)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-2" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$侦察兵福古斯$<BR>请你赶快把这个消息告诉凯德拉关卡的<FONT color=#a82424>冒险家公会会长戴卡德</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="15"><![CDATA[<html>是的…….</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>你来的正好。<BR>听说<FONT color=#a82424>黑骑士</FONT>出现，把少女劫走了？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="17"><![CDATA[<html>(询问黑骑士的事情)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$冒险家公会会长戴卡德${action:Refusal}<BR>嗯……因为有<FONT color=#a82424>神圣天堂</FONT>和<FONT color=#a82424>魔法山脊</FONT>的眼线，我想尽可能依靠冒险家悄悄地把事情解决掉……看来这是个错误。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-c" mid="19"><![CDATA[<html>(询问龙之追随者的事情)</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-e" mid="20"><![CDATA[<html>(询问龙的手下的事情)</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-f" mid="21"><![CDATA[<html>(询问更多有关黑骑士的情况)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>黑骑士是最近出现的身份不明的人物。<BR>有人说黑骑士是<FONT color=#a82424>龙之追随者</FONT>或者<FONT color=#a82424>龙的手下</FONT>，不过可能只是一个传闻。他的行踪非常可疑。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-c" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-d" mid="23"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$冒险家公会会长戴卡德$<BR><FONT color=#a82424>龙之追随者</FONT>吗？就像字面所说的那样，是追随龙的集团。他们的教义是服从龙才能得到真正的救赎，是一群狂热的疯子。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-d" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="25"><![CDATA[<html>(询问其他事情)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$冒险家公会会长戴卡德${action:Talk}<BR>遗憾的是，这种疯狂的团体在王室的力量无法企及的偏远之地招摇过市，光明正大地四处活动。<BR>唉，世界为什么会变成这样……啧啧……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-e" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="27"><![CDATA[<html>(询问其他事情)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$冒险家公会会长戴卡德${action:Talk}<BR>对于<FONT color=#a82424>龙的手下</FONT>，我们知道的不多。<BR>据说是龙对人或魔物洗脑之后，将其作为自己的心腹。因此有人说龙之追随者教团的创始者是龙的手下。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-f" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-g" mid="29"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>最近神圣天堂的军队和黑山的魔物们经常发生冲突，他是个经常会在冲突现场出现的危险人物。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-g" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-h" mid="91"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>
+而且，将2艘从神圣天堂开往凯德拉的飞艇破坏掉的人也是他。虽然不知道黑骑士为什么要袭击村庄，但有一点很明确。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-h" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="31"><![CDATA[<html>(询问其他事情)</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-i" mid="32"><![CDATA[<html><FONT color=#a82424>黑骑士</FONT>现在在哪？</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>他非常觊觎<FONT color=#a82424>古代人的力量</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-i" image="QW_15.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-ix" mid="34"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$冒险家公会会长戴卡德${action:Refusal}<BR>公会的侦查小组看到黑骑士正在向<FONT color=#a82424>森林圣域</FONT>方向移动。<BR>所以我派人设下了埋伏。等着看吧……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-j" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-k" mid="36"><![CDATA[<html>……应该去<FONT color=#a82424>森林圣域</FONT>看一看。</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$冒险家公会会长戴卡德${action:Talk}<BR>嗯……现在……现在也许已经抓住黑骑士，把少女救出来了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-k" image="QW_15.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>
+那就去一趟吧。<BR>
+<FONT color=#a82424>森林圣域</FONT>可以通过凯德拉北门的<FONT color=#a82424>灰色废墟</FONT>到达。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-l" image="QW_15.dds" itemindex="">
+      <talk_question mid="83"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>你还没有在<FONT color=#a82424>森林圣域</FONT>生存下来的实力。<BR>你先去凯德拉做好准备，积累更多的经验，然后再来找我……<BR><FONT color=#a82424>(12级以上可以执行。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QW_15.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>黑骑士会经过森林圣域。<BR>沿着凯德拉的北门一直走，经过<FONT color=#a82424>灰色废墟</FONT>之后就能到达<FONT color=#a82424>森林圣域</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-3" image="QW_15.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-3-a" mid="40"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$侦察兵福古斯$<BR>听说黑骑士正在向<FONT color=#a82424>森林圣域</FONT>方向移动。<BR>冒险家公会成员们在森林圣域设下了埋伏，不知道会不会出问题。<BR><FONT color=#387206>{user_nick}</FONT>，请你去那里看一看。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-3-a" image="QW_15.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$侦察兵福古斯$<BR><FONT color=#a82424>森林圣域</FONT>可以通过凯德拉北门的<FONT color=#a82424>灰色废墟</FONT>到达。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n031_adventurer_wilber-4" image="" itemindex="">
+      <talk_answer link_index="n031_adventurer_wilber-4-a" mid="43"><![CDATA[<html>我是从凯德拉来的。怎么样了？</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$冒险家公会成员韦伯$<BR>嗯……谁……谁啊？<BR><FONT color=#7e12d2>(因为受了伤，所以脸色不太好)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n031_adventurer_wilber-4-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n031_adventurer_wilber-4-b" mid="45"><![CDATA[<html>少女没事吗？</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$冒险家公会成员韦伯$<BR>是公会派来的人吗？呃……我们埋伏在这里，想要伏击黑骑士，但全都不是他的对手。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n031_adventurer_wilber-4-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n031_adventurer_wilber-4-c" mid="47"><![CDATA[<html>你没事吧？</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$冒险家公会成员韦伯$<BR>你是说和黑骑士在一起的红头发少女吗？<BR>黑骑士带着她往寺院里面去了……之后的事情我就不知道了……呃……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n031_adventurer_wilber-4-c" image="" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$冒险家公会成员韦伯$<BR>嗯……我没事，你去帮帮里面的公会成员吧……<BR><FONT color=#7e12d2>(由于受伤，说话好像很吃力)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n053_adventurer_wounded-4" image="" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$受伤的冒险家$<BR>我没事，你去帮助往里追赶黑骑士的同伴们吧……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n031_adventurer_wilber-5" image="" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$冒险家公会成员韦伯$<BR>我没事，你去帮帮里面的公会成员吧……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-6" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-6-a" mid="52"><![CDATA[<html>(把事情从头到尾说明一遍)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$冒险家公会会长戴卡德${action:Refusal}<BR>嗯……埋伏部队不会全灭了吧……<BR>看来<FONT color=#a82424>黑骑士</FONT>比我预想的强得多。<BR>你没事吧？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-6-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-6-b" mid="88"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-6-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-6-!next" mid="90"><![CDATA[<html>认识的人吗?</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>你被黑骑士打倒之后，是一位穿着红色长袍的银发女剑客救了你？<BR><FONT color=#a82424>银发的女剑客</FONT>的话，应该是她……</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">12</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="0,1,4" false="3">0</exe>
+         <exe type="talk" npc="n023_ranger_fugus">b</exe>
+         <exe type="talk" npc="n023_ranger_fugus">a</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">12</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">j</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">l</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="msg" msg_type="" substring="" />
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="6,4,5">395</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">203</exe>
+         <exe type="recompense">,2031,2032,2033,2034</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="levelcheck">2</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="c" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="e" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="f" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="d" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="g" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="h" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="i" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="ix">2</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="k">0,1</exelink>
+   <exelink qstep="4" npc="n031_adventurer_wilber" sub="b" />
+   <exelink qstep="4" npc="n031_adventurer_wilber" sub="c">3,1,2</exelink>
+   <exelink qstep="6" npc="n024_adventurer_guildmaster_decud" sub="a">1</exelink>
+   <exelink qstep="6" npc="n024_adventurer_guildmaster_decud" sub="b">0</exelink>
+   <exelink qstep="6" npc="n024_adventurer_guildmaster_decud" sub="!next" />
+   <journal_data recompense="1:2031,2:2032,3:2033,4:2034" quest_title="검은 기사 추적" chapterid="2" quest_level="12" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_ranger_fugus.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,335,-26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>23</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>수정 개울</get_location>
+         <start_npc>정찰병 퍼거스</start_npc>
+         <desc_location>수정 개울</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>정찰병 퍼거스</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[和侦察兵福古斯对话]]></title>
+         <contents mid="58"><![CDATA[<html>告诉水晶谷的<FONT color=#a82424>侦察兵福古斯</FONT>黑骑士出现了。<BR><FONT color=#7e12d2>※ 12级以上才能执行任务。</FONT><BR><FONT color=#086171></FONT><BR><FONT color=#086171>水晶谷 </FONT><FONT color=#a82424>→ 侦察兵福古斯</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[（Lv12）与侦察兵福古斯对话]]></destination>
+         <todo_msg mid="60"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>수정 개울</get_location>
+         <start_npc>정찰병 퍼거스</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>모험자 길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[和冒险家公会会长戴卡德对话]]></title>
+         <contents mid="62"><![CDATA[<html>把黑骑士出现的消息告诉凯德拉关卡的<FONT color=#a82424>冒险家公会会长戴卡德</FONT>。<BR><BR><FONT color=#086171>凯德拉关卡 </FONT><FONT color=#a82424>→ 冒险家公会会长戴卡德</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[和冒险家公会会长戴卡德对话]]></destination>
+         <todo_msg mid="64"><![CDATA[请去见见冒险家公会会长戴卡德。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_15.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>121,-1240.67,-1940.76</destination_pos>
+         <destination_mode>custom:121@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>모험자 길드장 데커드</start_npc>
+         <desc_location>숲의 성역</desc_location>
+         <step_action>지역 이동(숲의 성역 진입)</step_action>
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[进入森林圣域]]></title>
+         <contents mid="66"><![CDATA[<html>据说黑骑士带着少女，前往了森林圣域。<BR>通过凯德拉关卡的北门，穿过<FONT color=#a82424>灰色废墟</FONT>，移动到<FONT color=#a82424>森林圣域</FONT>。<BR><BR><FONT color=#086171>灰色废墟(遭到侵略的圣域入口)</FONT> <FONT color=#a82424>→ 森林圣域</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[进入森林圣域]]></destination>
+         <todo_msg mid="68"><![CDATA[请前往森林圣域追踪黑骑士。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Adventure_Wilber.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>121,27,3133</destination_pos>
+         <destination_mode>custom:121@1</destination_mode>
+         <statemark_npcid>31</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>숲의 성역 (진입 입구)</get_location>
+         <start_npc />
+         <desc_location>숲의 성역</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>모험자 길드원 윌버</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[去森林圣域和冒险家公会成员韦伯对话]]></title>
+         <contents mid="70"><![CDATA[<html>和埋伏在<FONT color=#a82424>森林圣域</FONT>的<FONT color=#a82424>冒险家公会成员韦伯</FONT>对话，询问黑骑士的行踪。<BR><BR><FONT color=#086171>灰色废墟(遭到侵略的圣域入口)</FONT><FONT color=#a82424> → 森林圣域</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[去森林圣域和冒险家公会成员韦伯对话]]></destination>
+         <todo_msg mid="72"><![CDATA[请和追击黑骑士的冒险家公会成员韦伯对话。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QM_GargoyleGray.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>124,-142.62,767.80</destination_pos>
+         <destination_mode>custom:121@1,122@1,123@1,124@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location>숲의 성역</get_location>
+         <start_npc>모험자 길드원 윌버</start_npc>
+         <desc_location>숲의 성역</desc_location>
+         <step_action>사냥</step_action>
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster>가고일</hunt_monster>
+         <hunt_monsterindex>395</hunt_monsterindex>
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[去森林圣域追踪黑骑士]]></title>
+         <contents mid="74"><![CDATA[<html>据说黑骑士带着少女进入了森林圣域。<BR>去<FONT color=#a82424>森林圣域</FONT>里面追踪黑骑士。<BR><BR><FONT color=#086171>灰色废墟(遭到侵略的圣域入口)</FONT> <FONT color=#a82424>→ 森林圣域</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[去森林圣域追踪黑骑士]]></destination>
+         <todo_msg mid="76"><![CDATA[请前往森林圣域追踪黑骑士。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>숲의 성역</get_location>
+         <start_npc />
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>모험자 길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[向冒险家公会会长戴卡德报告]]></title>
+         <contents mid="78"><![CDATA[<html>遇到了黑骑士，但遭到黑骑士的攻击，失去了意识，被送到了凯德拉关卡。<BR>向<FONT color=#a82424>冒险家公会会长戴卡德</FONT>询问自始至终的情况。 <BR><BR><FONT color=#086171>凯德拉关卡 </FONT><FONT color=#a82424>→ 冒险家公会会长戴卡德</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[向冒险家公会会长戴卡德报告]]></destination>
+         <todo_msg mid="80"><![CDATA[请向冒险家公会会长戴卡德报告。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level>-1:-1</user_worldzone_level>
+      <user_class />
+      <prev_quest>202</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,23 @@
+   <talk>
+      <npcename>n066_skill_of_battle01_notice</npcename>
+      <npcid>66</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[小淑（sq461）]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="23"><![CDATA[<html>[任务]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$小淑$<BR>人类当中也有老实的人类咯。<BR>我认识那个老实的人类咯。我要是变得强大的话，一定会去救他的咯。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="24" link_target="sq11_461_skill_of_battle_01.xml"><![CDATA[<html>[Lv27] <FONT color=#086171>孤身一人的小淑</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="25"><![CDATA[<html>(返回)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$小淑$<BR>人类当中也有老实的人类咯。<BR>我认识那个老实的人类咯。我要是变得强大的话，一定会去救他的咯。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="enterquest">sq11_461_skill_of_battle_01</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">461</chk>
+      </conditions>
+   </talk>

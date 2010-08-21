@@ -1,0 +1,402 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_471_for_mama</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>471</qid>
+      <designer>손원호</designer>
+      <qlevel>29</qlevel>
+      <qdesc>엄마의 불치병을 고치기 위해 약을 구하는 소년 테이를 만날 수 있다. 소년은 효심이 가득하고, 부모를 위해 고사리 같은 손에 굳은 살이 베기도록 열심히 일한다. 부모의 은혜를 갚기 위해, 진정 효도하고 싶어하는 소년의 마음이 전해져 유저는 무지개 방울꽃을 찾아 강하류 폐허로 간다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[为了母亲]]></qkname>
+      <qnpc>
+         <npcid>244</npcid>
+         <npcename>n244_tei</npcename>
+         <npckname>테이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>245</npcid>
+         <npcename>n245_mandra_son</npcename>
+         <npckname>만드라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>249</npcid>
+         <npcename>n249_saint_guard</npcename>
+         <npckname>왕성 근위병 로이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$特伊$<BR>
+母亲…我的母亲生病了，怎么办?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$曼德拉$<BR>
+呵，我是，自然的王子！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-a" mid="8"><![CDATA[<html>什么事?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$王城近卫兵劳尔$<BR>要是刚才帮一把就好啦...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-b" mid="10"><![CDATA[<html>小孩?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$王城近卫军劳尔$<BR>吓我一跳，原来是你啊。<BR>
+呼，没别的，我是想起了刚才经过的小孩。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-b" image="QN_boy_tei.dds" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-c" mid="12"><![CDATA[<html>不要担心，我去看看吧。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$王城近卫兵劳尔$<BR>是在<FONT color=#a82424>赫尔马岱港口</FONT>见到的小孩，正在为治母亲的病找药呢。我作为王城近卫兵要坚守在岗位上，所以就直接过来了。但是还是放心不下啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$为了母亲$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-1" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-1-a" mid="16"><![CDATA[<html>明白了。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$王城近卫军劳尔$<BR>可以去帮他吗? 那我就放心了。<BR>
+王城的警卫你就放心吧！<BR>
+我会瞪大眼睛好好守卫的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-1-a" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$王城近卫军劳尔$<BR>那个少年应该还在<FONT color=#a82424>赫尔马岱港口</FONT>。<BR>
+快去帮助那个少年吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-1" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$特伊$<BR>
+母亲…我的母亲生病了，怎么办?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-2" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$王城近卫兵劳尔$<BR>少年的母亲似乎病情很重，赶紧动身过去吧。就在<FONT color=#a82424>赫尔马岱港口</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-a" mid="21"><![CDATA[<html>就是帮你来了，不要担心。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$特伊$<BR>冒险家大人！我的母亲病情很重啊。请帮我一下吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-a" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-b" mid="23"><![CDATA[<html>我能帮你什么?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$特伊$<BR>真的吗？谢谢你。我母亲很早就得了<FONT color=#a82424>重病</FONT>。本想为了母亲去求些良药，但或许是我不够虔诚，母亲的病依然没有好转。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-b" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n244_tei-2-c" mid="25"><![CDATA[<html>彩虹灯笼花?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$特伊$<BR>我已经试过了我能找到的所有药物，但只有<FONT color=#a82424>彩虹灯笼花</FONT>没办法找到。现在只有这一个希望了……如果能找到，母亲的病应该就会好起来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-c" image="QW_32.dds" itemindex="">
+      <talk_answer link_index="n244_tei-2-d" mid="27"><![CDATA[<html>卖多钱啊?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$特伊$<BR>嗯，那是非常珍贵的药材之花，只听说在<FONT color=#a82424>江下游废墟</FONT>生长。尽管我冒着生命危险去过几次，但是怎么也找不到啊 。但我也不能因为这样，买那么贵重的药啊...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-d" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-e" mid="29"><![CDATA[<html>（还真贵哦...） 我帮你去找吧。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$特伊$<BR>上次听商人说，需要<FONT color=#a82424>1000金币</FONT> 就可以买到……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-e" image="QW_32.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$特伊$<BR>真是非常感谢。 听说在<FONT color=#a82424>江下游废墟</FONT>出没着很多可怕的魔物，请务必要小心啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-3" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$特伊$<BR>呜呜... 母亲快点好起来吧...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-a" mid="35"><![CDATA[<html>你是谁?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$曼德拉$<BR>
+呼，本来我想消灭这些魔物，<BR>
+却让你占了先手，哈哈哈哈。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-a" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-b" mid="37"><![CDATA[<html>大地之王还长的这样啊...</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$曼德拉$<BR>我叫曼德拉。<BR>
+是这片广阔大地的王子。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-b" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-c" mid="39"><![CDATA[<html>（无语）</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$曼德拉$<BR>你竟然被外表所迷惑，看不到真实的内心。<BR>
+真是遗憾。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-c" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-d" mid="42"><![CDATA[<html>这是什么?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$曼德拉$<BR>反正，既然替我消灭了吸收山之精气的魔物，怎么也得向你表示感谢才是。那就收下这个吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-d" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-e" mid="44"><![CDATA[<html>我可不想要那种...</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$曼德拉$<BR>这是我最喜爱的<FONT color=#a82424>夜光短裤</FONT>。<BR>
+一到晚上就会发出闪烁的光。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-e" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-f" mid="46"><![CDATA[<html>我在找彩虹灯笼花...</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$曼德拉$<BR>竟然不知道夜光短裤的魅力。<BR>
+真是遗憾。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-f" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-g" mid="48"><![CDATA[<html>不是我要用... （讲述少年的事）</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$曼德拉$<BR><FONT color=#a82424>彩虹灯笼花</FONT>吗？我当然知道。但是我不能把大自然的宝物随便交给冒险家。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-g" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-h" mid="50"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$曼德拉$<BR>嗯，为了母亲！<BR>
+看来人类也和我们曼陀罗草一样孝顺啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-h" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n245_mandra_son-3-i" mid="86"><![CDATA[<html>(虽然有点恶心，但还是收下吧)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$曼德拉$<BR>没办法。本来我想当作零食吃掉的……<BR><FONT color=#7e12d2></FONT><BR>
+<FONT color=#7e12d2>(曼德拉把彩虹灯笼花一个个从内裤里掏出来)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-i" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n245_mandra_son-3-j" mid="52"><![CDATA[<html>谢谢。（虽有些脏）</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$曼德拉$<BR>我虽然知道这种花对健康有益，但是不知道可不可以治病。反正希望能帮的上忙吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-j" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$曼德拉$<BR>虽然见面的时间很短，但很愉快。<BR>
+不知道夜光短裤的魅力的朋友啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-4" image="" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$曼德拉$<BR>虽然见面的时间很短，但很愉快。<BR>
+不知道夜光短裤的魅力的朋友啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4" image="" itemindex="">
+      <talk_answer link_index="n244_tei-4-a" mid="57"><![CDATA[<html>彩虹灯笼花拿来了。</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$特伊$<BR>母亲得快点好起来啊... 真让我担心呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4-a" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n244_tei-4-b" mid="59"><![CDATA[<html>啊哈哈... 本来就那样。</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$特伊$<BR>这……就是<FONT color=#a82424>彩虹灯笼花</FONT>？<BR>
+但是……怎么有股怪味……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4-b" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n244_tei-4-c" mid="61"><![CDATA[<html>嗯，但愿如此。</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$特伊$<BR>... 苦味良药嘛... 既然味道这么难闻，那肯定是有超级疗效的吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4-c" image="" itemindex="">
+      <talk_answer link_index="n244_tei-4-d" mid="63"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4-d" image="" itemindex="">
+      <talk_answer link_index="n244_tei-4-e" mid="65"><![CDATA[<html>愿你的母亲尽快康复。</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$特伊$<BR>谢谢你的帮助。<BR>
+我得赶紧回家让母亲吃下去！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4-e" image="" itemindex="">
+      <talk_question mid="66"><![CDATA[<html><FONT color=#7e12d2>（特伊双手小心翼翼的收下了彩虹灯笼花。由于为了母亲不分昼夜的忙碌而显得非常疲惫的特伊，却高兴的笑着。我看着他的脸，真心的希望特伊的母亲能够康复起来。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4711,4712,4713,4714</exe>
+         <exe type="setquest">471</exe>
+         <exe type="talk" npc="n249_saint_guard">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300075</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">300075</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="1">300075</exe>
+         <exe type="recompense">,4711,4712,4713,4714</exe>
+         <exe type="complete">471</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n249_saint_guard" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n249_saint_guard" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n249_saint_guard" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n244_tei" sub="b" />
+   <exelink qstep="2" npc="n244_tei" sub="c" />
+   <exelink qstep="2" npc="n244_tei" sub="d" />
+   <exelink qstep="2" npc="n244_tei" sub="e">0,2,1</exelink>
+   <exelink qstep="3" npc="n245_mandra_son" sub="b" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="c" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="d" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="e" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="f" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="g" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="h" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="i">2</exelink>
+   <exelink qstep="3" npc="n245_mandra_son" sub="j">0,1</exelink>
+   <exelink qstep="4" npc="n244_tei" sub="a">0</exelink>
+   <exelink qstep="4" npc="n244_tei" sub="b" />
+   <exelink qstep="4" npc="n244_tei" sub="c">1</exelink>
+   <exelink qstep="4" npc="n244_tei" sub="d">2</exelink>
+   <exelink qstep="4" npc="n244_tei" sub="e" />
+   <journal_data recompense="1:4711,2:4712,3:4713,4:4714" quest_title="어머니를 위하여" chapterid="" quest_level="29" quest_mark_type="10" use_item_list="300075">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n249</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>249</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[与王城近卫兵劳尔对话]]></title>
+         <contents mid="69"><![CDATA[<html>王城近卫兵劳尔似乎有话要说。与劳尔对话吧。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→王城近卫兵劳尔</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[与王城近卫兵劳尔对话]]></destination>
+         <todo_msg mid="71"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_boy_tei.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n244</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>244</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[与少年特伊对话]]></title>
+         <contents mid="73"><![CDATA[<html>王城近卫兵劳尔说特伊的母亲得了重病。到赫尔马岱港口去见特伊吧。<BR><BR><FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→特伊</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[与少年特伊对话]]></destination>
+         <todo_msg mid="75"><![CDATA[到赫尔马岱港口去见特伊吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_32.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>324,0,0</destination_pos>
+         <destination_mode>custom:321@1,322@1,323@1,324@3</destination_mode>
+         <statemark_npcid>245</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[获取彩虹灯笼花]]></title>
+         <contents mid="77"><![CDATA[<html>为了救特伊的母亲需要彩虹灯笼花。到江下游废墟获取彩虹灯笼花吧。<BR><BR><FONT color=#086171>赫尔马岱港口（江下游废墟入口）</FONT> <FONT color=#a82424>→江下游废墟</FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[获取彩虹灯笼花]]></destination>
+         <todo_msg mid="79"><![CDATA[到江下游废墟获取彩虹灯笼花吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_boy_tei.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n244</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>244</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="80"><![CDATA[与少年特伊对话]]></title>
+         <contents mid="81"><![CDATA[<html>因曼德拉的协助得到了彩虹灯笼花。回到赫尔马岱港口把花交给特伊吧。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→特伊</FONT></html>]]></contents>
+         <destination mid="82"><![CDATA[与少年特伊对话]]></destination>
+         <todo_msg mid="83"><![CDATA[向赫尔马岱港口的特伊送花吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>29:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

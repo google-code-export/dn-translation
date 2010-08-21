@@ -1,0 +1,557 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_481_catastrophic_rain3</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>481</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>오염된 토양표본(300016)
+오염된 나무줄기(300017)
+군터와 대화
+스타쉬와 대화
+강하류 수몰지로 가서 모험자 길드원과 대화
+3인의 npc중 결백한 사람을 알려줌
+다시 스타쉬와 대화.
+군터에게 최종 보고.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[灾难之雨 III]]></qkname>
+      <qnpc>
+         <npcid>225</npcid>
+         <npcename>n225_sainthaven_prison</npcename>
+         <npckname>감옥에 갇힌 마을 사람1 (세인트헤이븐_281퀘스트용)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>226</npcid>
+         <npcename>n226_sainthaven_prison</npcename>
+         <npckname>감옥에 갇힌 마을 사람2 (세인트헤이븐_281퀘스트용)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>227</npcid>
+         <npcename>n227_sainthaven_prison</npcename>
+         <npckname>감옥에 갇힌 마을 사람3 (세인트헤이븐_281퀘스트용)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>228</npcid>
+         <npcename>n228_adventurer</npcename>
+         <npckname>모험자 길드원 (세인트헤이븐_281퀘스트용)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$纹章学者斯塔西$<BR>即将到了核实我的假设的时候了！ 我，就知道会有这么一天的。<BR><FONT color=#7e12d2>（从冒险家公会长冈特那里接受任务方可继续进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="12"><![CDATA[<html>那怎么可能...</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$冒险家公会长冈特$<BR>他说委托收到的那些标本都被抢走了。闯进一群看似是龙之追随者的可疑的团伙，不管三七二十一的全部抢走了，唔，晕...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="14"><![CDATA[<html>（冈特愤怒的瞪大了眼睛）</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$冒险家公会长冈特$<BR>王城内有他们的眼线吧。发生了那种暴力事件，居然也不会被抓，真是难以置信啊。可恶的龙之追随者啊！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="16"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$冒险家公会长冈特$<BR>你赶紧回到<FONT color=#a82424>纹章学者斯塔西</FONT>那里确认一下情况，然后尽快追击龙之追随者吧。我也会即刻派人过去的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="18"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$灾难之雨 III$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$冒险家公会长冈特$<BR><FONT color=#a82424>纹章学者斯塔西</FONT>该多伤心啊。好不容易拿到的标本...<BR>而且龙之追随者的影响力都已经渗透到了王城内，真具有冲击力啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-a" mid="23"><![CDATA[<html>那怎么可能...</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$冒险家公会长冈特$<BR>他说委托收到的那些标本都被抢走了。闯进一群看似是龙之追随者的可疑的团伙，不管三七二十一的全部抢走了，唔，晕...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-a" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-b" mid="25"><![CDATA[<html>（冈特愤怒的瞪大了眼睛）</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$冒险家公会长冈特$<BR>王城内有他们的眼线吧。发生了那种暴力事件，居然也不会被抓，真是难以置信啊。可恶的龙之追随者啊！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-b" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-c" mid="27"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$冒险家公会长冈特$<BR>你赶紧回到<FONT color=#a82424>纹章学者斯塔西</FONT>那里确认一下情况，然后尽快追击龙之追随者吧。我也会即刻派人过去的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2" mid="29"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$灾难之雨 III$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n225_sainthaven_prison-1" image="" itemindex="">
+      <talk_question mid="134"><![CDATA[<html>$丹尼斯$<BR>不是我！！ 哎，到底这是怎么搞的嘛? 哎...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-1" image="" itemindex="">
+      <talk_question mid="135"><![CDATA[<html>$莫利斯$<BR>放…放我回家…不是我…真的...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n227_sainthaven_prison-1" image="" itemindex="">
+      <talk_question mid="136"><![CDATA[<html>$霍利斯$<BR>不是我！听我说啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-1" image="" itemindex="">
+      <talk_question mid="137"><![CDATA[<html>$冒险家公会成员$<BR>当前正在执行任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$冒险家公会长冈特$<BR><FONT color=#a82424>纹章学者斯塔西</FONT>该多伤心啊。好不容易拿到的标本...<BR>而且龙之追随者的影响力都已经渗透到了王城内，真具有冲击力啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="35"><![CDATA[<html>报警了没有?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$纹章学者斯塔西$<BR>标... 标本丢了啊！！你前脚刚走，他们后脚就闯进来把东西全部抢走了！唔...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="37"><![CDATA[<html>（斯塔西生气的直哆嗦）</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$纹章学者斯塔西$<BR>已经向道格拉斯将军和冒险家公会长报告了。虽说会派追兵过来，但到底能不能抓的住呢…看来城内真有龙之追随者的帮手啊！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3" mid="39"><![CDATA[<html>追兵去了哪里?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$纹章学者斯塔西$<BR>即便抓住了夺去标本的那些家伙，贵族当中肯定有人会保他们。那样好不容易抓到的龙之追随者，也说不准就那样又放出去了呢，真让人担心啊...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="QW_34.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$纹章学者斯塔西$<BR>可能到<FONT color=#a82424>江下游淹没地</FONT>了吧。<BR>可以的话，你也帮我去找回标本吧，拜托了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n225_sainthaven_prison-3" image="" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$丹尼斯$<BR>不是我啊！！ 哎，到底这是怎么搞的嘛?哎... <BR><FONT color=#7e12d2>（要与冒险家公会成员对话）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-3" image="" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$莫利斯$<BR>放…放我回家…不是我…真的...<BR><FONT color=#7e12d2>（要与冒险家公会成员对话）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n227_sainthaven_prison-3" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$霍利斯$<BR>不是我！听我说啊。<BR><FONT color=#7e12d2>（要与冒险家公会成员对话）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-3" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_answer link_index="n228_adventurer-3-a" mid="46"><![CDATA[<html>小事…什么小事?</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$冒险家公会成员$<BR>啊，是<FONT color=#382000>{user_nick}</FONT>大人吗? 听<FONT color=#a82424>冈特</FONT>大人提起过您。我们刚刚逮捕了逃向这里的可疑的团伙，但是因为发生了小问题而无法押送回去。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-3-a" image="QN_Npc_PrairieTown_Man_Prison.dds" itemindex="">
+      <talk_answer link_index="n228_adventurer-3-b" mid="48"><![CDATA[<html>嗯... 直接都带过去不行吗?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$冒险家公会成员$<BR>那三个人当中有一个<FONT color=#a82424>被逼从盗的人</FONT>。可能遭胁迫之后，也拿了标本。某种程度上也算是受害者吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-3-b" image="" itemindex="">
+      <talk_answer link_index="n228_adventurer-3-c" mid="50"><![CDATA[<html>看来有什么难言之隐嘛。</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$冒险家公会成员$<BR>抓无罪的人那是会有问题的。而且王城不知怎么搞的，也不大配合我们。如果不带走确凿的坏人，肯定会造成什么是非的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-3-c" image="" itemindex="">
+      <talk_answer link_index="n228_adventurer-3-d" mid="52"><![CDATA[<html>那怎么区分呢?</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$冒险家公会成员$<BR>嗯，我们冒险家公会反而会变得更加被动。<BR>为了不产生什么意外，只能在这里把<FONT color=#a82424>无辜的人</FONT>放掉。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-3-d" image="" itemindex="">
+      <talk_answer link_index="n228_adventurer-4" mid="55"><![CDATA[<html>嗯，让我来试试。</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$冒险家公会成员$<BR>龙之追随者很会<FONT color=#a82424>说谎</FONT>。 但是... 到底谁在说谎还真难辨别啊。要不…您过来帮我们一下啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-4" image="QN_Npc_PrairieTown_Man_Prison.dds" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$冒险家公会成员$<BR>三个人当中只有一个人是无辜的。剩下两个人肯定是能言善辩的龙之追随者。请找出<FONT color=#a82424>无罪之人</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n225_sainthaven_prison-4" image="" itemindex="">
+      <talk_answer link_index="n225_sainthaven_prison-4-a" mid="58"><![CDATA[<html>听听其它人怎么说吧。</html>]]></talk_answer>
+      <talk_answer link_index="n225_sainthaven_prison-4-b" mid="59"><![CDATA[<html>选择！他是正直的人！</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$丹尼斯$<BR>我?不是我！！求求你放过我吧！！ 喂，你也应该看得出来?！我绝对不是啊！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n225_sainthaven_prison-4-a" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$丹尼斯$<BR>…磨蹭什么?！快点啊！！不相信我啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n225_sainthaven_prison-4-b" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$丹尼斯${sound:UI_QUIZ_X.wav}<BR>啊！? …咳，啊，抱歉，我不由自主的就想笑... 嘿嘿。我的演技看来还不错?！ 骗你那是轻而易举的事情！ 嘿嘿。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-4" image="" itemindex="">
+      <talk_answer link_index="n226_sainthaven_prison-4-a" mid="64"><![CDATA[<html>听听其它人怎么说吧。</html>]]></talk_answer>
+      <talk_answer link_index="n226_sainthaven_prison-4-b" mid="65"><![CDATA[<html>选择！他是正直的人！</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$莫利斯$<BR>那…那个... 龙之追随者是我旁边的丹尼斯…真的…一定要相信我啊...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-4-a" image="" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$莫利斯$<BR>那个…快，快点选择啊…我，我是真的啊...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-4-b" image="" itemindex="">
+      <talk_answer link_index="n226_sainthaven_prison-4-c" mid="68"><![CDATA[<html>拿着标本的吧?</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$莫利斯${sound:UI_QUIZ_O.wav}<BR>谢，谢你能够相信…相信我！<BR>差点减了十年寿啊，呼...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-4-c" image="" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$莫利斯$<BR>嗯，在这里。<BR>啊... 真的，那些可恶的家伙，硬逼我拿这些奇怪的东西... 呼.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n227_sainthaven_prison-4" image="" itemindex="">
+      <talk_answer link_index="n227_sainthaven_prison-4-a" mid="72"><![CDATA[<html>听听其它人怎么说吧。</html>]]></talk_answer>
+      <talk_answer link_index="n227_sainthaven_prison-4-b" mid="73"><![CDATA[<html>选择！他是正直的人！</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$霍利斯$<BR>啊，我要疯掉了！！ 看看那个<FONT color=#a82424>莫利斯</FONT>演技吧? 真是不知害臊啊…我都看出来了。莫利斯才是真正的龙之追随者。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n227_sainthaven_prison-4-a" image="" itemindex="">
+      <talk_question mid="74"><![CDATA[<html>$霍利斯$<BR>好好想想吧。你也会明白的，当然。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n227_sainthaven_prison-4-b" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_question mid="75"><![CDATA[<html>$霍利斯${sound:UI_QUIZ_X.wav}<BR>啊哈哈哈！！ 上当啦！！你个菜鸟！ 啊哈哈。像你这种家伙怎么可能区分出来呢！ 哈哈哈！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n225_sainthaven_prison-5" image="" itemindex="">
+      <talk_question mid="77"><![CDATA[<html>$丹尼斯$<BR>啊！！ 真是！！！ 赶紧放了我啊！！<BR><FONT color=#7e12d2>（任务失败。请重新开始通关吧）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-5" image="" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$莫利斯$<BR>要是好好，听我说的话…就能知道的啊... 但是...<BR><FONT color=#7e12d2>（任务失败。请重新开始通关吧）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n227_sainthaven_prison-5" image="" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$霍利斯$<BR>哎，麻烦啊！ 真是。<BR><FONT color=#7e12d2>（任务失败。请重新开始通关吧）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-5" image="" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$冒险家公会成员$<BR>我还一直相信你呢... 看来冈特大人看错人了，呼...<BR><FONT color=#7e12d2>（任务失败。请重新开始通关吧）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n225_sainthaven_prison-6" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="81"><![CDATA[<html>$丹尼斯$<BR>切，居然栽在小毛孩手上，咱们走着瞧！！<BR><FONT color=#7e12d2>（要回到纹章学者斯塔西那里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-6" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$莫利斯$<BR>谢谢你相信我…不过我得赶紧回去...<BR><FONT color=#7e12d2>（要回到纹章学者斯塔西那里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n227_sainthaven_prison-6" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="83"><![CDATA[<html>$霍利斯$<BR>走着瞧！！ 我们龙之追随者不会因为这事就到此为止的！！<BR><FONT color=#7e12d2>（要回到纹章学者斯塔西那里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-6" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="84"><![CDATA[<html>$冒险家公会成员$<BR>真了不起！<FONT color=#a82424>冈特</FONT> 大人推荐的人就是不一样啊！那些龙之追随者我会押送回去的，您就先回吧。<BR><FONT color=#7e12d2>（要回到纹章学者斯塔西那里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-6" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="85"><![CDATA[<html>$冒险家公会长冈特$<BR>嗯? 夺回标本的话，先把它交给<FONT color=#a82424>纹章学者斯塔西</FONT>后再回来吧。<BR><FONT color=#7e12d2>（要回到纹章学者斯塔西那里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-a" mid="87"><![CDATA[<html>在这里。</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$纹章学者斯塔西$<BR>标本?！<FONT color=#a82424>标本</FONT>拿回来了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-a" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-b" mid="89"><![CDATA[<html>（斯塔西的眼眶湿润起来了）</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$纹章学者斯塔西$<BR>看来！相信对人了！！多亏<FONT color=#a82424>冈特</FONT>派来了不错的人。<BR>就这些对于我的研究可以派上大用场了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-c" mid="91"><![CDATA[<html>在阴森的丛林会发生什么事呢?</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$纹章学者斯塔西$<BR><FONT color=#a82424>邪恶的龙死亡之时一定会引发灾难之雨</FONT>... 这只是我的假说。但是并非所有的龙都是邪恶的。另外发生在古代，阴森的丛林中的污染事件却是与<FONT color=#a82424>黑龙</FONT>是有些关联的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-d" mid="93"><![CDATA[<html>嗯?！ 龙是被造出来的?</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$纹章学者斯塔西$<BR>那就不知道了。 但是…根据某个<FONT color=#a82424>传说</FONT>，黑龙是在那里 <FONT color=#a82424>诞生</FONT>的。相传都说龙是一开始就存在的，但按照那个传说的话，就意味着龙是被造出来的... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-7" mid="95"><![CDATA[<html>（斯塔西爱惜的望着标本。）</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$纹章学者斯塔西$<BR>也是一种<FONT color=#a82424>假说</FONT>而已。而且还是个天大的假说。也就是在阴森的丛林古代的黑龙被消灭的，而在那时又降下了灾难之雨。就像50年前或不久前在这里发生的一样。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-7" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$纹章学者斯塔西$<BR>总之这件事有劳你了。现在就回到<FONT color=#a82424>冒险家公会长冈特</FONT>那里吧。<BR>我的委托费会马上送过去的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-7-a" mid="99"><![CDATA[<html>（斯塔西的差事员速度倒是蛮快的）</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$冒险家公会长冈特$<BR>恰巧刚才纹章学者斯塔西派来的人也到了，哈哈。看来冈特大人看人很准嘛?！哈哈。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-7-b" mid="101"><![CDATA[<html>那个... 龙之突袭?</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$冒险家公会长冈特$<BR>听说一直在做什么灾难之雨相关的研究…那个人倒是挺有韧性的嘛?！总是不忘<FONT color=#a82424>龙之突袭</FONT>而 <FONT color=#a82424>依然</FONT>专注于龙的事情啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-7-c" mid="103"><![CDATA[<html>原来如此，真没想到。</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$冒险家公会长冈特$<BR>啊，你还不知道吧。纹章学者斯塔西也是在50多年前<FONT color=#a82424>六大英雄</FONT>去消灭黑龙的时期的人呢。虽然没在前线战斗，但也是支持过后援的人呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-7-d" mid="105"><![CDATA[<html>（冈特似乎很兴奋的样子）</html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>$冒险家公会长冈特$<BR>虽然六大英雄全部消失在了传说当中... 但那个人却依然没有忘记那时的恐怖的情形。虽然大家都把龙视为传说中的故事，但是，这次黑龙还不是照样出现了?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7-d" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-7-e" mid="107"><![CDATA[<html>我也大概能理解了。</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$冒险家公会长冈特$<BR>所以说龙依然是我们神圣天堂的现实问题！哪怕只遭遇一次龙，就很难摆脱它的阴影呢。所以我能理解斯塔西。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7-e" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-7-f" mid="109"><![CDATA[<html>（冈特沉浸在回忆当中）</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$冒险家公会长冈特$<BR>其实，我也见过六大英雄。虽然是发生在很久以前，但就像昨天发生的事情一样。无论年轻而又潇洒的英雄们的模样... 还是对龙的恐惧...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7-f" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-7-g" mid="111"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7-g" image="" itemindex="">
+      <talk_question mid="112"><![CDATA[<html>$冒险家公会长冈特$<BR>斗了那么久，我们到现在还不知道关于龙更多的信息。照这样继续受迫害的话，总有一天会面对它。知己知彼才能百战不殆，你可要记住了。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4811,4812,4813,4814</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setquest">481</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4811,4812,4813,4814</exe>
+         <exe type="setquest">481</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="3,5">300016,300017</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300016</exe>
+         <exe type="delquestitem" num="-1">300017</exe>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4811,4812,4813,4814</exe>
+         <exe type="complete">481</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="d">2,1</exelink>
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="b" />
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="c">0</exelink>
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="2">1,2</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n228_adventurer" sub="b" />
+   <exelink qstep="3" npc="n228_adventurer" sub="c" />
+   <exelink qstep="3" npc="n228_adventurer" sub="d" />
+   <exelink qstep="3" npc="n228_adventurer" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n225_sainthaven_prison" sub="b">0</exelink>
+   <exelink qstep="4" npc="n226_sainthaven_prison" sub="c">3,1,2</exelink>
+   <exelink qstep="4" npc="n227_sainthaven_prison" sub="b">0</exelink>
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="7">0,1,2,3</exelink>
+   <exelink qstep="7" npc="n036_adventurer_guildmaster_gunter" sub="b" />
+   <exelink qstep="7" npc="n036_adventurer_guildmaster_gunter" sub="c" />
+   <exelink qstep="7" npc="n036_adventurer_guildmaster_gunter" sub="d" />
+   <exelink qstep="7" npc="n036_adventurer_guildmaster_gunter" sub="e" />
+   <exelink qstep="7" npc="n036_adventurer_guildmaster_gunter" sub="f">0</exelink>
+   <exelink qstep="7" npc="n036_adventurer_guildmaster_gunter" sub="g">1</exelink>
+   <journal_data recompense="1:4811,2:4812,3:4813,4:4814" quest_title="재앙의 비 III" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="300016, 300017">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="114"><![CDATA[斯塔西的伤心]]></title>
+         <contents mid="115"><![CDATA[<html>纹章学者斯塔西陷入深深的痛苦当中。问问到底是怎么回事吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→纹章学者斯塔西</FONT></html>]]></contents>
+         <destination mid="116"><![CDATA[与纹章学者斯塔西对话]]></destination>
+         <todo_msg mid="117"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_34.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>344,n228</destination_pos>
+         <destination_mode>custom:341@1,342@1,343@1,344@1</destination_mode>
+         <statemark_npcid>228</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="118"><![CDATA[标本追踪]]></title>
+         <contents mid="119"><![CDATA[<html>追击偷去标本的龙之追随者到江下游淹没地吧。<BR><BR><FONT color=#086171>赫尔马岱港口（江下游废墟）</FONT> <FONT color=#a82424>→江下游淹没地</FONT></html>]]></contents>
+         <destination mid="120"><![CDATA[在江下游淹没地找回标本]]></destination>
+         <todo_msg mid="121"><![CDATA[到江下游淹没地找回标本吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_PrairieTown_Man_Prison.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>344,n228</destination_pos>
+         <destination_mode>custom:341@1,342@1,343@1,344@4</destination_mode>
+         <statemark_npcid>228</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="122"><![CDATA[说出真相]]></title>
+         <contents mid="123"><![CDATA[<html>三个人当中只有一个人知道真相。找出无辜的人吧。<BR>
+ <BR>
+<FONT color=#086171>江下游淹没地</FONT> <FONT color=#a82424>→被关在监狱的村里人</FONT></html>]]></contents>
+         <destination mid="124"><![CDATA[找出说真话的人]]></destination>
+         <todo_msg mid="125"><![CDATA[找出说出真话的人吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist>300016,300017</need_itemlist>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="126"><![CDATA[转交标本]]></title>
+         <contents mid="127"><![CDATA[<html>标本找到了。纹章学者斯塔西正在着急的等待，赶紧去交给他吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→纹章学者斯塔西</FONT></html>]]></contents>
+         <destination mid="128"><![CDATA[与纹章学者斯塔西对话]]></destination>
+         <todo_msg mid="129"><![CDATA[把标本交给纹章学者斯塔西吧。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="130"><![CDATA[无法忘记的事]]></title>
+         <contents mid="131"><![CDATA[<html>完成了委托，重新回到冒险家公会长冈特那里报告吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> →冒险家公会长冈特</html>]]></contents>
+         <destination mid="132"><![CDATA[与冒险家公会长冈特对话]]></destination>
+         <todo_msg mid="133"><![CDATA[向冒险家公会长冈特报告吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>480</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

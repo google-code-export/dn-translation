@@ -1,0 +1,489 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_265_argenta_spider</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>265</qid>
+      <designer>김인정</designer>
+      <qlevel>19</qlevel>
+      <qdesc>독주머니(400091)
+독주머니 10개 수집. 수집되는 아이템 아니고, 스테이지를 제대로 진행하면 마지막 보스전 후 npc에게 습득하게 되어 있음. 이하 진행 개요.
+아르젠타에게 퀘스트 수락.
+1번 필드에서 데이비드와 대화.
+3번 필드에서 데이비드와 대화.
+보스 클리어 후 데이비드와 대화.
+데이비드에게 독 주머니 10개 습득.
+아르젠타에게 보고.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[阿尔杰塔的毒囊]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>189</npcid>
+         <npcename>n189_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드(페어리스타 마법연구소)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$牛皮冒险家戴维$<BR>看来是需要我的签名啊。倒是可以免费签一次，呵。<BR><FONT color=#7e12d2>（从灰色废墟的阿尔杰塔接受任务，方可继续进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-a" mid="8"><![CDATA[<html>这次又有什么事情啊?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$阿尔杰塔$<BR>让菜鸟办差还真累啊。<BR>
+但还得继续啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-a" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-party1" mid="10"><![CDATA[<html>（咨询要做的事）</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$阿尔杰塔$<BR>不是要去<FONT color=#a82424>佩奥里斯塔魔法研究所</FONT>办事情的吗?<BR>
+反正都是去，顺便把我的事情也办了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-b" image="" itemindex="">
+      <talk_question mid="102"><![CDATA[<html>$阿尔杰塔$<BR>就这点事，还想带人过去啊?<BR>我又不是让你去抓什么龙?一个人过去吧。<BR><FONT color=#7e12d2>（组队状态下无法进行该任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-c" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n164_argenta_wounded-accepting-d" mid="12"><![CDATA[<html>一点...? 一点是多少啊?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$阿尔杰塔$<BR>这次的事连猎犬都能不费吹灰之力的完成。也就是带一点<FONT color=#a82424>毒囊</FONT>回来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-d" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-e" mid="14"><![CDATA[<html>我去试试看吧。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$阿尔杰塔$<BR><FONT color=#a82424>一定</FONT>就是<FONT color=#a82424>一点</FONT>啊。小小年纪计较什么数量啊? 真没品。反正就是到<FONT color=#a82424>佩奥里斯塔魔法研究所</FONT>抓几只魔物回来的事，容易吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-f" mid="16"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$阿尔杰塔和毒囊$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-f" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$阿尔杰塔$<BR>我不会等你太久的?<BR>
+你就自己看着办吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-party2" mid="20"><![CDATA[<html>所以，要做什么?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$阿尔杰塔$<BR>不是要去<FONT color=#a82424>佩奥里斯塔魔法研究所</FONT>办事情的吗?<BR>反正都是去，顺便把我的事情也办了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-a" image="" itemindex="">
+      <talk_question mid="103"><![CDATA[<html>$阿尔杰塔$<BR>就这点事，还想带人过去啊?<BR>我又不是让你去抓什么龙? 一个人过去吧。<BR><FONT color=#7e12d2>（组队状态下无法进行该任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-b" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n164_argenta_wounded-1-c" mid="22"><![CDATA[<html>一点...? 一点是多少啊?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$阿尔杰塔$<BR>这次的事连猎犬都能不费吹灰之力的完成。也就是带一点<FONT color=#a82424>毒囊</FONT>回来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-c" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-d" mid="24"><![CDATA[<html>我去试试看吧。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$阿尔杰塔$<BR><FONT color=#a82424>一定</FONT>就是 <FONT color=#a82424>一点</FONT>啊。小小年纪计较什么数量啊? 真没品。反正就是到<FONT color=#a82424>佩奥里斯塔魔法研究所</FONT>抓几只魔物回来的事，容易吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-2" mid="26"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$阿尔杰塔和毒囊$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="100"><![CDATA[<html>$牛皮冒险家戴维$<BR>哈，你能不能不要跟在我屁股后面啊？哈，哈，哈。<BR><FONT color=#7e12d2>(必须和灰色废墟的阿尔杰塔对话)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2" image="" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$阿尔杰塔$<BR>我不会等你太久的?<BR>
+你就自己看着办吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-2" image="" itemindex="">
+      <talk_answer link_index="n189_slave_david-2-a" mid="30"><![CDATA[<html>（很想不管他的事。）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$戴维$<BR>呵呵呵。 又多了一位 <FONT color=#a82424>伟大的冒险家戴维</FONT>大人的追随者啊！ 呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-2-a" image="" itemindex="">
+      <talk_answer link_index="n189_slave_david-2-b" mid="32"><![CDATA[<html>为了取毒囊...</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$戴维$<BR>这次又以什么<FONT color=#a82424>借口</FONT><FONT color=#a82424>跟着我</FONT>来的啊? 呵。<BR>
+小事我还是可以处理的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-2-b" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n189_slave_david-2-c" mid="34"><![CDATA[<html>啊? 为何?</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$戴维${action:Talk}<BR>啊? <FONT color=#7e12d2>（戴维嘲笑道）</FONT> <BR>呵。 这可真是很傻的理由啊。<BR>菜鸟，在这里是无法获得<FONT color=#a82424>毒囊</FONT>的！ 呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-2-c" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$戴维$<BR>其中原因还是你<FONT color=#a82424>直接</FONT>去了解吧！ 呵呵呵。<BR><FONT color=#7e12d2>（戴维开始装腔作势）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-3" image="QS_Default.dds" itemindex="400091">
+      <talk_question mid="36"><![CDATA[<html>$戴维$<BR>想在这里获取<FONT color=#a82424>毒囊</FONT>... 看来还是菜鸟啊！ 呵呵呵。<BR><FONT color=#7e12d2>（戴维开始装腔作势）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n189_slave_david-4-a" mid="38"><![CDATA[<html>（荒唐的无言以对。）</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$戴维$<BR>呵呵呵。 为何无法在这里获取<FONT color=#a82424>毒囊</FONT>呢，看来你很想知道是吧，好吧。没法啊，既然我这么<FONT color=#a82424>可怜</FONT>你，就让我 <FONT color=#a82424>专门</FONT>！ 告诉你吧！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-a" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n189_slave_david-4-b" mid="40"><![CDATA[<html>…指使我的人是这么说的啊。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$戴维${action:Talk}<BR>有<FONT color=#a82424>毒囊的</FONT>地方不是这里，而是在<FONT color=#a82424>死亡盆地</FONT>！ 呵。 连这都不知道，还想找什么毒囊啊... 菜鸟就是菜鸟啊。我这<FONT color=#a82424>伟大的戴维</FONT>大人可不会做出这种事情呢！ 呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-b" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n189_slave_david-4-c" mid="42"><![CDATA[<html>但我可没钱给你。</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$戴维$<BR>呦呦呦，还要赖别人啊?你要这种态度可绝对成不了<FONT color=#a82424>伟大的冒险家</FONT>，呵。不过放心，菜鸟！我正好有收集好的 <FONT color=#a82424>毒囊</FONT>， 呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-c" image="" itemindex="">
+      <talk_answer link_index="n189_slave_david-4-d" mid="44"><![CDATA[<html>...一点? 什么条件?</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$戴维$<BR>我伟大的冒险家！ 难道就会为了贪图那点<FONT color=#a82424>小钱</FONT>而把毒囊交给你吗? 真是? 呵呵呵。我会<FONT color=#a82424>免费</FONT>给你的。虽然有<FONT color=#a82424>一点</FONT>条件。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-d" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_answer link_index="n189_slave_david-4-e" mid="46"><![CDATA[<html>说谎的吧?</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$戴维$<BR>我刚刚清除完里边的<FONT color=#a82424>女王蜘蛛</FONT>..... 但是，<FONT color=#a82424>打的太累所以暂时出来休息一会</FONT> ！ 就差 <FONT color=#a82424>一步</FONT>了！！，只不过因为手太滑了而没能全部打出去，呵。 女王蜘蛛运气可不是一般的好啊? 呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-e" image="" itemindex="">
+      <talk_answer link_index="n189_slave_david-4-f" mid="48"><![CDATA[<html>并非先见之明而是偶然的吧。</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$戴维$<BR>真，是真的！ 呵，你见过我说谎吗? 呵呵呵。 我可是个<FONT color=#382000>伟大、</FONT> <FONT color=#7e12d2>超专业、</FONT> <FONT color=#a94407>强力、</FONT> <FONT color=#086171>正直</FONT>的冒险家。 你就没看得出来，我是为了你这般 <FONT color=#a82424>菜鸟</FONT>而先见之明的拿来了<FONT color=#a82424>毒囊</FONT>的? 呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-f" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_answer link_index="n189_slave_david-4-g" mid="50"><![CDATA[<html>无奈的欲哭无泪。</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$戴维$<BR>反正！ <FONT color=#a82424>就剩一步</FONT>了！！ 那个女王蜘蛛就！！ 最后一步！！ 我就把这个送给你，呵。 如何? <FONT color=#a82424>也就！ 就最后一步！！！</FONT> 就可以拿到毒囊，这不就是你梦寐以求的吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-g" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$戴维$<BR>不要太感动~ 呵。 嗯，那么赶紧过去<FONT color=#a82424>就给它！！一下！！！</FONT>彻底清除<FONT color=#a82424>女王蜘蛛</FONT>吧！ 呵呵呵。<BR><FONT color=#7e12d2>（戴维依然装腔作势）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-5" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$戴维$<BR>呼... <FONT color=#a82424>女王蜘蛛</FONT>好吓人，我的武器都脱手了，切... 没人看见我吧?<BR><FONT color=#7e12d2>（戴维颤抖着自言自语。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-6" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_answer link_index="n189_slave_david-6-a" mid="55"><![CDATA[<html>不是一下就能解决的啊。</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$戴维$<BR>呵呵呵。 菜鸟 <FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>！！<BR>面对<FONT color=#a82424>一下</FONT>就能解决的<FONT color=#a82424>女王蜘蛛</FONT>，你菜鸟级别的对抗，可是被我一览无余啊！！ 呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-6-a" image="" itemindex="">
+      <talk_answer link_index="n189_slave_david-6-b" mid="57"><![CDATA[<html>…说大话吧?</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$戴维$<BR>那…那都是你这个家伙<FONT color=#a82424>太过于软弱</FONT> ！！ 如果是我的话！别说是一下...  <FONT color=#a82424>只！！半下！！</FONT>就可以轻而易举的解决它，呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-6-b" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n189_slave_david-6-c" mid="59"><![CDATA[<html>（拿到毒囊）</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$戴维$<BR>我反正不会食言的！ <FONT color=#a82424>伟大的冒险家</FONT>就得像我这样. …对你而言，是不是觉得太深奥了?<BR>呵。总之我会坚守<FONT color=#a82424>诺言</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-6-c" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$戴维$<BR>呵呵呵。 再见啦！ 菜鸟！<BR><FONT color=#7e12d2>（戴维摆起望着天空的POSE）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-7" image="" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$戴维$<BR>呵呵呵。 再见啦！ 菜鸟！<BR><FONT color=#7e12d2>（戴维摆起望着天空的POSE）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n164_argenta_wounded-7-a" mid="63"><![CDATA[<html>（提交）</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$阿尔杰塔$<BR>才来啊? 菜鸟 <FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>。<BR>毒囊带回来了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-b" mid="65"><![CDATA[<html>那…那可是剧毒啊...！</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$阿尔杰塔$<BR>你，依然还是那个<FONT color=#a82424>菜鸟</FONT>啊? 居然这次也<FONT color=#a82424>只有</FONT>10个。<BR><FONT color=#7e12d2>（阿尔杰塔一口气把毒囊吃了下去）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-c" mid="67"><![CDATA[<html>吃了会死的！</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$阿尔杰塔$<BR>嗯? 何须惊讶啊? <FONT color=#a82424>小毒</FONT>也是药，你不知道吗?<BR>
+人类也会把微弱的毒掺进食物一起食用。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-d" mid="69"><![CDATA[<html>那个只有死亡盆地才有的啊。</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$阿尔杰塔$<BR>我不会死的，你看，我死了吗?<BR>…不过你为何用那种不满的眼神看着我?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-e" mid="71"><![CDATA[<html>你不是说产自佩奥里斯塔魔法研究所的吗。</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$阿尔杰塔$<BR>哦?那又如何?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-f" mid="73"><![CDATA[<html>啊... 嗯...</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$阿尔杰塔$<BR><FONT color=#a82424>不久前</FONT>我不是也说过嘛，... 魔物自己也有腿，难道就不会搬家的啊。你怎么总是纠结于这种<FONT color=#a82424>小事</FONT>当中呢? 我看你很 <FONT color=#a82424>没品</FONT>啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-f" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-g" mid="75"><![CDATA[<html>（真的很无语了）</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$阿尔杰塔$<BR>就你还是个小屁孩儿呢，有点分寸行不?赶紧回去，该干吗干吗去。<BR>…不过或许等会还需要你，那个时候还得乖乖的过来哦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-g" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-h" mid="77"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-h" image="" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$阿尔杰塔$<BR>嗯?我不是让你免费办差的啊?可从来没有做这种便宜事儿的<FONT color=#a82424>奴隶</FONT>呢，所以你得感谢我才是。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">265</exe>
+         <exe type="setstep">2</exe>
+         <exe type="recompense_view">,2651,2652,2653,2654</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n164_argenta_wounded">c</exe>
+         <exe type="talk" npc="n164_argenta_wounded">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="recompense_view">,2651,2652,2653,2654</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n164_argenta_wounded">b</exe>
+         <exe type="talk" npc="n164_argenta_wounded">a</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="10">400091</exe>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400091</exe>
+         <exe type="recompense">,2651,2652,2653,2654</exe>
+         <exe type="complete">265</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="party1">3</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="e">2</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="f">0,1</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="party2">2</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="d">1</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="2">0</exelink>
+   <exelink qstep="2" npc="n189_slave_david" sub="b" />
+   <exelink qstep="2" npc="n189_slave_david" sub="c">0,1</exelink>
+   <exelink qstep="4" npc="n189_slave_david" sub="b" />
+   <exelink qstep="4" npc="n189_slave_david" sub="c" />
+   <exelink qstep="4" npc="n189_slave_david" sub="d" />
+   <exelink qstep="4" npc="n189_slave_david" sub="e" />
+   <exelink qstep="4" npc="n189_slave_david" sub="f" />
+   <exelink qstep="4" npc="n189_slave_david" sub="g">0,1</exelink>
+   <exelink qstep="6" npc="n189_slave_david" sub="b" />
+   <exelink qstep="6" npc="n189_slave_david" sub="c">0,1,2</exelink>
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="d" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="e" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="f" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="g">1</exelink>
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="h">0,2</exelink>
+   <journal_data recompense="1:2651,2:2652,3:2653,4:2654" quest_title="아르젠타의 독주머니" chapterid="" quest_level="19" quest_mark_type="10" use_item_list="400091">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_21.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>152,n189</destination_pos>
+         <destination_mode>custom:151@1,152@1</destination_mode>
+         <statemark_npcid>189</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="80"><![CDATA[阿尔杰塔的差事]]></title>
+         <contents mid="81"><![CDATA[<html>必须按照阿尔杰塔的吩咐，去佩奥里斯塔魔法研究所搜集<FONT color=#a82424>毒囊</FONT>。现在还不知道获得的方法，先去<FONT color=#a82424>佩奥里斯塔魔法研究所</FONT>看看吧。<BR>
+<FONT color=#7e12d2>(在组队状态下无法进行该任务)<BR></FONT><BR><FONT color=#086171>水晶谷 → 融解森林（魔法师之路）</FONT> <FONT color=#a82424>→ 佩奥里斯塔魔法研究所</FONT></html>]]></contents>
+         <destination mid="82"><![CDATA[（单人）探索佩奥里斯塔魔法研究所]]></destination>
+         <todo_msg mid="83"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_21.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>153,n189</destination_pos>
+         <destination_mode>custom:152@3,153@1</destination_mode>
+         <statemark_npcid>189</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[可疑的冒险家戴维]]></title>
+         <contents mid="85"><![CDATA[<html>碰到名叫<FONT color=#a82424>戴维</FONT>的可疑的人。他似乎知道如何获取<FONT color=#a82424>毒囊</FONT>，但现在好像不肯告诉我。或许再深处进入的话，说不准就可以知道获得的方法吧，再前进看看吧。<BR>
+ <BR>
+<FONT color=#086171>融解森林（魔法师之路）</FONT> <FONT color=#a82424>→ 佩奥里斯塔魔法研究所</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[探索佩奥里斯塔魔法研究所]]></destination>
+         <todo_msg mid="87"><![CDATA[为了获得毒囊再往深处前进吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QM_Queen_Spider.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>154,0,0</destination_pos>
+         <destination_mode>custom:153@1,154@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[戴维的提案]]></title>
+         <contents mid="89"><![CDATA[<html>戴维说可以提供毒囊，但是要代他消灭<FONT color=#a82424>女王蜘蛛</FONT>才行。戴维说自己差不多解决完，就差最后一步了，虽然对此不大相信，但还是按照他的提案做做看吧。 <BR>
+ <BR>
+<FONT color=#086171>融解森林（魔法师之路）</FONT> <FONT color=#a82424>→ 佩奥里斯塔魔法研究所</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[消灭女王蜘蛛]]></destination>
+         <todo_msg mid="91"><![CDATA[请消灭女王蜘蛛拉兰。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image />
+         <need_itemlist />
+         <destination_pos>154,n189</destination_pos>
+         <destination_mode>custom:154@1</destination_mode>
+         <statemark_npcid>189</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[吹牛大王戴维]]></title>
+         <contents mid="93"><![CDATA[<html>女王蜘蛛已被消灭。与 <FONT color=#a82424>戴维</FONT>对话，得按照诺言拿到毒囊才行。<BR>
+ <BR>
+<FONT color=#086171>佩奥里斯塔魔法研究所</FONT> <FONT color=#a82424>→ 牛皮冒险家戴维</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[与戴维对话]]></destination>
+         <todo_msg mid="95"><![CDATA[女王蜘蛛已被消灭，与戴维对话吧。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist>400091</need_itemlist>
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="96"><![CDATA[获得毒囊]]></title>
+         <contents mid="97"><![CDATA[<html>戴维给了我毒囊。现在就把<FONT color=#a82424>毒囊</FONT>交给 <FONT color=#a82424>灰色废墟</FONT>的<FONT color=#a82424>阿尔杰塔</FONT>吧。<BR>
+ <BR>
+<FONT color=#086171>灰色废墟</FONT> <FONT color=#a82424>→ 阿尔杰塔</FONT></html>]]></contents>
+         <destination mid="98"><![CDATA[向阿尔杰塔报告]]></destination>
+         <todo_msg mid="99"><![CDATA[获得了毒囊，向灰色废墟的阿尔杰塔报告吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>19:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>264</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

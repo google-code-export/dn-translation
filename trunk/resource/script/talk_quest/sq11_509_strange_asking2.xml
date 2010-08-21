@@ -1,0 +1,488 @@
+﻿<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_509_strange_asking2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>509</qid>
+      <designer>김주연</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[奇怪的委托Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>249</npcid>
+         <npcename>n249_saint_guard</npcename>
+         <npckname>왕성 근위병 로이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>73</npcid>
+         <npcename>n073_woman_stephany</npcename>
+         <npckname>스테파니</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>74</npcid>
+         <npcename>n074_porter_harber</npcename>
+         <npckname>짐꾼 하버</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$王城近卫兵劳尔$<BR>在执勤时不能闲聊。<BR><FONT color=#7e12d2>(必须和冒险家公会会长冈特对话。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$斯蒂芬妮$<BR>对不起，我没什么好和你说的。<BR><FONT color=#7e12d2>(必须和冒险家公会会长冈特对话。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n074_porter_harber-noquest" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$脚夫哈勃$<BR>今天的天气很适合航海。<BR><FONT color=#7e12d2>(必须和冒险家公会会长冈特对话。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="11"><![CDATA[<html>奇怪的信？</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$冒险家公会会长冈特$<BR>啊，谢谢你之前帮我救出了遇难者。<BR>
+但是在那之后，我又收到了一封奇怪的信。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="13"><![CDATA[<html>(收下并阅读书信)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$冒险家公会会长冈特$<BR>是的，你先看看吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="15"><![CDATA[<html>这又是什么意思呢？</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$奇怪的信$<BR><FONT color=#7e12d2>你没有答应我的委托。这是我给你的最后一个委托。<BR>不要跟着我。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="17"><![CDATA[<html>好的，我去调查一下。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$冒险家公会会长冈特$<BR>这个嘛，估计那个人是没事找事。不过我觉得必须弄清楚是谁寄来了这些奇怪的信。怎么样？你能去调查一下写信的人吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="19"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$奇怪的委托Ⅱ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-a" mid="21"><![CDATA[<html>新的信？</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$冒险家公会会长冈特$<BR>事实上，你走了之后，我又收到了一封信。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-b" mid="23"><![CDATA[<html>(收下并阅读书信)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$冒险家公会会长冈特$<BR>是的，你先看看吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-c" mid="25"><![CDATA[<html>这又是什么意思呢？</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$奇怪的信$<BR><FONT color=#7e12d2>你没有答应我的委托。这是我给你的最后一个委托。<BR>不要跟着我。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2" mid="27"><![CDATA[<html>嗯，不过还是很奇怪，我想有必要调查一下。</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$冒险家公会会长冈特$<BR>这个嘛，估计那个人是没事找事。不过我觉得必须弄清楚是谁寄来了这些奇怪的信。怎么样？你能去调查一下写信的人吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-1" image="" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$斯蒂芬妮$<BR>对不起，我没什么好和你说的。<BR>
+<FONT color=#7e12d2>(必须和冒险家公会会长冈特对话。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n074_porter_harber-1" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$脚夫哈勃$<BR>今天的天气很适合航海。<BR>
+<FONT color=#7e12d2>(必须和冒险家公会会长冈特对话。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-1" image="" itemindex="">
+      <talk_question mid="111"><![CDATA[<html>$王城近卫兵劳尔$<BR>在执勤时不能闲聊。<BR><FONT color=#7e12d2>(必须和冒险家公会会长冈特对话。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$冒险家公会会长冈特$<BR>这些信是<FONT color=#a82424>王城近卫兵劳尔</FONT>送来的，你先去向他了解一下寄信人的情况吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-2" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-2-a" mid="32"><![CDATA[<html>我只想问个简单的问题。</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$王城近卫兵劳尔$<BR>在执勤时禁止闲谈。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-2-a" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-2-b" mid="34"><![CDATA[<html>不久前，有个人给你送来了几封信，对吧？</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$王城近卫兵劳尔$<BR>好的，我就简单地回答一下。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-2-b" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-2-c" mid="36"><![CDATA[<html>(鼓膜都快震破了)那个人是什么人？去了哪里？</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$王城近卫兵劳尔$<BR>是的，没错！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-2-c" image="QW_HermaltePort.dds" itemindex="">
+      <talk_answer link_index="n249_saint_guard-2-d" mid="38"><![CDATA[<html>赫尔马岱港口那边吗？</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$王城近卫兵劳尔$<BR><FONT color=#7e12d2>(压低声音说)</FONT>那些信是一个姑娘给我的。她把信交给我之后，就往<FONT color=#a82424>赫尔马岱港口 </FONT>那边去了。港口那边的事情，<FONT color=#a82424>脚夫哈勃</FONT>应该会很清楚。你可以去问问他。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-2-d" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-3" mid="40"><![CDATA[<html>(啊，耳朵疼)那么再见。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$王城近卫兵劳尔$<BR>是的，没错！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-3" image="" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$王城近卫兵劳尔$<BR><FONT color=#7e12d2>(突然正色说道)</FONT>我正在负责王城的警戒工作！<BR>
+有事的话，请在下班之后再来找我。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n074_porter_harber-3" image="" itemindex="">
+      <talk_answer link_index="n074_porter_harber-3-a" mid="43"><![CDATA[<html>你有没有在这里见到一个姑娘？</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$脚夫哈勃$<BR>有什么事吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n074_porter_harber-3-a" image="QW_33.dds" itemindex="">
+      <talk_answer link_index="n074_porter_harber-4" mid="45"><![CDATA[<html>上了孤岛运输船？</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$脚夫哈勃$<BR>姑娘？我看到有个小姑娘在打听怎么去<FONT color=#a82424>孤岛中心</FONT>，然后匆匆忙忙地上了孤岛输送船。不知道那么小的姑娘到那种危险的地方去干什么。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n074_porter_harber-4" image="QW_33.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$脚夫哈勃$<BR>是的。我应该阻止她的。她一副不怕死的表情。她是坐上一班输送船走的，现在去<FONT color=#a82424>孤岛中心</FONT>的话，说不定还能找到那个小姑娘。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-a" mid="52"><![CDATA[<html>有人有危险的话，我难道不应该帮助他吗？</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$斯蒂芬妮${action:Talk}<BR>你连我的最后一个委托都不答应吗？<BR>我不是让你不要跟着我的吗？怎么跟着我过来了？！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-a" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-b" mid="54"><![CDATA[<html>我得亲眼确认到底有没有用。</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$斯蒂芬妮$<BR>笨蛋，要是知道没用的话，我想你也不会到这里来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-b" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-c" mid="56"><![CDATA[<html>你可以预知未来？</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$斯蒂芬妮$<BR>你这样的人也许会这么想。<BR>
+但是我拥有预知未来的能力，所以我可以看到未来发生的事情。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-c" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-d" mid="58"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$斯蒂芬妮$<BR><FONT color=#a82424>因为我是可以看到女神的梦的人</FONT>。<BR>牧师们把我这样的人称作预言者(Seer)。我知道你救的那个人会让我遭遇不幸，所以我才让你不要去救他。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-d" image="QW_HermaltePort.dds" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-e" mid="60"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$斯蒂芬妮$<BR>但是你做了傻事，因此给我带来了不幸。在经过<FONT color=#a82424>赫尔马岱港口</FONT>的时候，我会遇到他，然后爱上他。这对我来说，是命中注定的事情。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-e" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-f" mid="62"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$斯蒂芬妮$<BR>我会被他抛弃。因此我会在很长的时间内遭遇不幸。但是如果今天我没有见到他，一切就都不会发生。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-f" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-g" mid="64"><![CDATA[<html>那不要爱上他不就行了？</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$斯蒂芬妮$<BR>你可能无法理解。我知道今后会发生什么事，但却束手无策。就像我知道父母会被魔物杀死，我却只能眼睁睁地看着事情发生一样。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-g" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-h" mid="66"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$斯蒂芬妮$<BR>命运就像是无数齿轮组成的集合体。我今天到赫尔马岱港口去，只不过是那个集合体中非常微小的一个齿轮在转动。但是与之相连的齿轮就会因此转动，给我带来不幸。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-h" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-i" mid="68"><![CDATA[<html>虽然是命中注定的事情，但爱情就是爱情。</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$斯蒂芬妮$<BR>你认为因为那样的事件而产生的感情可以说是爱情吗？那些事情不是出于我的意志，而是被命运的车轮所带动的一些事情。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-i" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-j" mid="70"><![CDATA[<html>爱情是两个人的意志和感情，不是吗？</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$斯蒂芬妮$<BR>因为命中注定要相爱，从而彼此相爱，这也是爱情吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-j" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-k" mid="72"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$斯蒂芬妮$<BR><FONT color=#7e12d2>(斯蒂芬妮好像领悟了什么，埋着头沉思了好一会儿)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-k" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-l" mid="74"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$斯蒂芬妮$<BR>
+是的，那是我的感情和意志。<BR>
+我的幸福和不幸都是我的。一想到未来的不幸，我就忘记了眼前的幸运。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-l" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-5" mid="76"><![CDATA[<html>虽然无法理解，不过你能决定回去就好。</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$斯蒂芬妮$<BR>我在这里躲避那个人，只是在躲避我的不幸，但却把我的幸福也一起放弃了。我要回到赫尔马岱港口去，享受我的命运。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-5" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-5-a" mid="78"><![CDATA[<html>什么？</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$斯蒂芬妮$<BR>你为我指点了迷津，作为报答，我告诉你一件事。<FONT color=#a82424>那个被称为先知的少女无法醒来的原因</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-5-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-5-b" mid="80"><![CDATA[<html>害怕自己？</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$斯蒂芬妮$<BR><FONT color=#a82424>命运的少女</FONT>，她其实比任何人都清楚将来会发生在自己眼前的事情，所以她害怕自己。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-5-b" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="81"><![CDATA[<html>$斯蒂芬妮$<BR>我不能告诉你更多的事情。<BR>现在请你回到<FONT color=#a82424>神圣天堂</FONT>去吧。我也要回到<FONT color=#2b2723>赫尔马岱港口去和他见面了。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-a" mid="83"><![CDATA[<html>(讲述期间发生的事情)</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$冒险家公会会长冈特$<BR>怎么样？找到写信的人了吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-b" mid="85"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$冒险家公会会长冈特$<BR>嗯，我到了这个年纪，有时也会想，如果我明知道会失败就不去尝试的话，可能现在什么都不是。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-c" mid="87"><![CDATA[<html>谢谢你的称赞。请不要试图混过去。</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$冒险家公会会长冈特$<BR>呵呵，是的！挑战精神是年轻的象征，所以我觉得你很好。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-d" mid="89"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-d" image="" itemindex="">
+      <talk_question mid="90"><![CDATA[<html>$冒险家公会会长冈特$<BR>啧，最近的年轻人真是太厉害了。<BR>
+辛苦你了。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5091,5092,5093,5094</exe>
+         <exe type="setquest">509</exe>
+         <exe type="talk" npc="n036_adventurer_guildmaster_gunter">2</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5091,5092,5093,5094</exe>
+         <exe type="complete">509</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">1,3,2,4</exelink>
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="b" />
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="c">0,1</exelink>
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="2" />
+   <exelink qstep="2" npc="n249_saint_guard" sub="b" />
+   <exelink qstep="2" npc="n249_saint_guard" sub="c" />
+   <exelink qstep="2" npc="n249_saint_guard" sub="d" />
+   <exelink qstep="2" npc="n249_saint_guard" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n074_porter_harber" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n073_woman_stephany" sub="b" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="c" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="d" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="e" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="f" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="g" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="h" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="i" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="j" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="k" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="l" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n073_woman_stephany" sub="b" />
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="b" />
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="c">0</exelink>
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="d">1</exelink>
+   <journal_data recompense="1:5091,2:5092,3:5093,4:5094" quest_title="이상한 부탁Ⅱ" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[和冒险家公会会长冈特对话]]></title>
+         <contents mid="92"><![CDATA[<html>和<FONT color=#a82424>冒险家公会会长冈特</FONT>谈谈奇怪的信的事情。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 冒险家公会会长冈特</FONT></html>]]></contents>
+         <destination mid="93"><![CDATA[和冒险家公会会长冈特对话]]></destination>
+         <todo_msg mid="94"><![CDATA[请和冒险家公会会长冈特对话。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n249</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>249</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="95"><![CDATA[和王城近卫兵劳尔对话]]></title>
+         <contents mid="96"><![CDATA[<html>向神圣天堂<FONT color=#a82424>王城近卫兵劳尔</FONT>了解寄信人的情况。王城近卫兵劳尔就在<FONT color=#a82424>赫尔马岱港口方向出口附近</FONT>。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 王城近卫兵劳尔</FONT></html>]]></contents>
+         <destination mid="97"><![CDATA[和王城近卫兵劳尔对话]]></destination>
+         <todo_msg mid="98"><![CDATA[请和王城近卫兵劳尔对话。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n74</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>74</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="99"><![CDATA[和赫尔马岱港口的脚夫哈勃对话]]></title>
+         <contents mid="100"><![CDATA[<html>向赫尔马岱港口的<FONT color=#a82424>脚夫哈勃</FONT>了解寄信的小姑娘的行踪。<BR><BR><FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 脚夫哈勃</FONT></html>]]></contents>
+         <destination mid="101"><![CDATA[和赫尔马岱港口的脚夫哈勃对话]]></destination>
+         <todo_msg mid="102"><![CDATA[请和赫尔马岱港口的脚夫哈勃对话。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_33.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>331,n73</destination_pos>
+         <destination_mode>custom:331@1</destination_mode>
+         <statemark_npcid>73</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="103"><![CDATA[去孤岛中心和寄信人对话]]></title>
+         <contents mid="104"><![CDATA[<html>去<FONT color=#a82424>孤岛中心</FONT>和寄信的姑娘对话。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口(孤岛运输船)</FONT> <FONT color=#a82424>→ 孤岛中心</FONT></html>]]></contents>
+         <destination mid="105"><![CDATA[去孤岛中心和寄信人对话]]></destination>
+         <todo_msg mid="106"><![CDATA[请到孤岛中心去和寄信人对话。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="107"><![CDATA[和冒险家公会会长冈特对话]]></title>
+         <contents mid="108"><![CDATA[<html>向神圣天堂的<FONT color=#a82424>冒险家公会会长冈特</FONT>报告期间发生的事情。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 冒险家公会会长冈特</FONT><BR>
+ <BR>
+ </html>]]></contents>
+         <destination mid="109"><![CDATA[和冒险家公会会长冈特对话]]></destination>
+         <todo_msg mid="110"><![CDATA[请和神圣天堂的冒险家公会会长冈特对话。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>508</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,257 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_253_first_defense</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>253</qid>
+      <designer>김주연</designer>
+      <qlevel>13</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[第一次水晶谷防御战]]></qkname>
+      <qnpc>
+         <npcid>208</npcid>
+         <npcename>n208_event_ranger_fugus</npcename>
+         <npckname>정찰병 퍼거스     (수정개울_방어전)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>23</npcid>
+         <npcename>n023_ranger_fugus</npcename>
+         <npckname>정찰병 퍼거스     (수정개울)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n208_event_ranger_fugus-noquest" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$侦察兵福古斯${action:Refusal}<BR>嘘！不要大声，来，轻点说话吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-accepting" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-accepting-a" mid="6"><![CDATA[<html>有什么事啊?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$侦察兵福古斯$<BR>啊，冒险家大人，有个紧急情况想跟您说一下。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-accepting-b" mid="8"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$侦察兵福古斯$<BR>出去侦查的公会队员传来了紧急情报。在叹息峡谷方向  魔物正在大举行动。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-accepting-c" mid="10"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$侦察兵福古斯$<BR>似乎很快要攻打水晶谷呢，情况紧急，可否帮助我们参与<FONT color=#a82424>水晶谷防御战</FONT>呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-accepting-acceptted" mid="12"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$第一次水晶谷防御战$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-1-move1" mid="15"><![CDATA[<html>（移动至活动地图）</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$侦察兵福古斯$<BR>
+向水晶谷转移中的补给物资和部分伤员也未能及时撤离。顺便也保护一下他们吧。<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n208_event_ranger_fugus-1" image="" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$侦察兵福古斯$<BR><FONT color=#7e12d2>[参考：水晶谷防御战会根据组队队员数量调整难度。执行水晶谷防御战任务的队员越多时，会自动移动至低等级的任务地图。]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-2" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-2-move2" mid="19"><![CDATA[<html>（移动至活动地图）</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$侦察兵福古斯$<BR><FONT color=#7e12d2>[参考：水晶谷防御战会根据组队队员数量调整难度。执行水晶谷防御战任务的队员越多时，会自动移动至低等级的任务地图。]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n208_event_ranger_fugus-3" image="" itemindex="">
+      <talk_answer link_index="n208_event_ranger_fugus-3-a" mid="21"><![CDATA[<html>哈哈。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$侦察兵福古斯$<BR><FONT color=#382000>{user_nick}</FONT>您太厉害了。水晶谷防御战中的魔物们想必也是吓得魂飞魄散了吧，心里好痛快啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n208_event_ranger_fugus-3-a" image="" itemindex="">
+      <talk_answer link_index="n208_event_ranger_fugus-3-b" mid="24"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n208_event_ranger_fugus-3-b" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$侦察兵福古斯$<BR>真是名不虚传啊，以后也拜托您啦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-3" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-3-a" mid="38"><![CDATA[<html>哈哈。</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$侦察兵福古斯$<BR><FONT color=#382000>{user_nick}</FONT>您太厉害了。水晶谷防御战中的魔物们想必也是吓得魂飞魄散了吧，心里好痛快啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-3-a" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-3-b" mid="40"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-3-b" image="" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$侦察兵福古斯$<BR>真是名不虚传啊，以后也拜托您啦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n208_event_ranger_fugus-4" image="" itemindex="">
+      <talk_answer link_index="n208_event_ranger_fugus-4-a" mid="44"><![CDATA[<html>哈哈。</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$侦察兵福古斯$<BR><FONT color=#382000>{user_nick}</FONT>您太厉害了。水晶谷防御战中的魔物们想必也是吓得魂飞魄散了吧，心里好痛快啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n208_event_ranger_fugus-4-a" image="" itemindex="">
+      <talk_answer link_index="n208_event_ranger_fugus-4-b" mid="46"><![CDATA[<html>（获得奖励）</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n208_event_ranger_fugus-4-b" image="" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$侦察兵福古斯$<BR>真是名不虚传啊，以后也拜托您啦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-4" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-4-a" mid="49"><![CDATA[<html>哈哈。</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$侦察兵福古斯$<BR><FONT color=#382000>{user_nick}</FONT>您太厉害了。水晶谷防御战中的魔物们想必也是吓得魂飞魄散了吧，心里好痛快啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-4-a" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-4-b" mid="51"><![CDATA[<html>（获得奖励）</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-4-b" image="" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$侦察兵福古斯$<BR>真是名不虚传啊，以后也拜托您啦。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_trigger_GetPartyCount(g_room) > 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">253</exe>
+         <exe type="recompense_view">,2531,2532,2533,2534</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n023_ranger_fugus">2</exe>
+         <exe type="talk" npc="n023_ranger_fugus">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_trigger_GetPartyCount(g_room) > 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n023_ranger_fugus">2</exe>
+         <exe type="talk" npc="n023_ranger_fugus">1</exe>
+         <exe type="custom">api_user_ChangeMap( userObjID, 13006, 1);</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_user_ChangeMap( userObjID, 13006, 1);</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">253</exe>
+         <exe type="recompense">,2531,2532,2533,2534</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">253</exe>
+         <exe type="recompense">,2531,2532,2533,2534</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n023_ranger_fugus" sub="c">1</exelink>
+   <exelink qstep="accepting" npc="n023_ranger_fugus" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n023_ranger_fugus">0,4</exelink>
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="move1">4,3</exelink>
+   <exelink qstep="2" npc="n023_ranger_fugus" sub="move2">1,0</exelink>
+   <exelink qstep="3" npc="n208_event_ranger_fugus" sub="a">1</exelink>
+   <exelink qstep="3" npc="n208_event_ranger_fugus" sub="b">0</exelink>
+   <exelink qstep="3" npc="n023_ranger_fugus" sub="a">1</exelink>
+   <exelink qstep="3" npc="n023_ranger_fugus" sub="b">0</exelink>
+   <exelink qstep="4" npc="n208_event_ranger_fugus" sub="a">1</exelink>
+   <exelink qstep="4" npc="n208_event_ranger_fugus" sub="b">0</exelink>
+   <exelink qstep="4" npc="n023_ranger_fugus" sub="a">1</exelink>
+   <exelink qstep="4" npc="n023_ranger_fugus" sub="b">0</exelink>
+   <journal_data recompense="1:2531,2:2532,3:2533,4:2534" quest_title="1차 수정 개울 방어전" chapterid="" quest_level="13" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_CristalStream.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n23</destination_pos>
+         <destination_mode>custom:4@1,13006@3</destination_mode>
+         <statemark_npcid>23</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[第一次水晶谷防御战]]></title>
+         <contents mid="28"><![CDATA[<html><FONT color=#a82424>侦察兵福古斯</FONT>说接到了怪物们正向水晶谷方向涌入的情报，所以希望得到我的支援。保护向凯德拉转移中的<FONT color=#a82424>补给物资和伤员</FONT>吧。<FONT color=#7e12d2>（丢失3个以上伤员或补给物资时，视为失败）</FONT><BR>
+<FONT color=#7e12d2></FONT> <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 水晶谷（活动地图）</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[保护伤员以及补给物资]]></destination>
+         <todo_msg mid="30"><![CDATA[保护伤员以及补给物资吧。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_ranger_fugus.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13006,2492,1324</destination_pos>
+         <destination_mode>custom:4@0,13006@1</destination_mode>
+         <statemark_npcid>208</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[和侦察兵福古斯对话]]></title>
+         <contents mid="32"><![CDATA[<html>终于击退了怪物们的进攻，并成功守住了<FONT color=#a82424>水晶谷的防线</FONT>。与<FONT color=#a82424>侦察兵福古斯</FONT>对话吧。<BR><BR><FONT color=#086171>水晶谷</FONT> <FONT color=#a82424>→ 侦察兵福古斯</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[和侦察兵福古斯对话]]></destination>
+         <todo_msg mid="34"><![CDATA[守住了补给物资和伤员。与侦察兵福古斯对话吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>13:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>205</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

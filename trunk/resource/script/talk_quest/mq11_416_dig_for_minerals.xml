@@ -1,0 +1,301 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_416_dig_for_minerals</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>416</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc>1. 주교와 대화
+2. 죽은 도시의 길목에서 화석 채취
+3. 주교에게 보고
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>417</nextqid>
+      <nextqname>mq11_417_deserted_david</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[采集化石]]></qkname>
+      <qnpc>
+         <npcid>276</npcid>
+         <npcename>n276_invisible_thef</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>(主教埋头思考，并瞟了这边一眼)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$主教伊格纳西奥${action:Talk}<BR>虽然先知现在由<FONT color=#a82424>杰兰特</FONT>保护着，但我很担心神圣天堂的防御。<BR>黑龙虽然消失了，但还有很多<FONT color=#a82424>魔物</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-level" mid="8"><![CDATA[<html>我可以帮得上忙吗？</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$主教伊格纳西奥$<BR>本来他们就是些邪恶的东西，现在失去了头目，就更加没有人可以控制他们了。但是我军在上次的激战中损失很大，<FONT color=#a82424>军需物资</FONT>也消耗殆尽，不知道什么时候才能补充上来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$主教伊格纳西奥$<BR>你愿意提供帮助，我就放心了。我马上去武器库看看，你先休息一下。<BR><FONT color=#7e12d2>(34级以后才能执行下一阶段任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="10"><![CDATA[<html>什么地方才能找到炸药呢？</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$主教伊格纳西奥$<BR>我去武器库视察了一下，目前最缺少的是<FONT color=#a82424>炸药</FONT>。<BR>
+要是由于王城没有足够的炸药而造成防线溃败，后悔就来不及了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-e" mid="37"><![CDATA[<html>好的。</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$主教伊格纳西奥$<BR>只要搜集制作炸药的材料<FONT color=#a82424>化石</FONT>，就可以加工成炸药。<BR>
+军队里有专门的兵站负责这件事，所以不用担心。<BR>你能去帮他们采集足够的<FONT color=#a82424>化石</FONT>吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-e" image="QW_38.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$主教伊格纳西奥$<BR>那你快去<FONT color=#a82424>死亡城市路口</FONT>采集化石吧。<BR>那里的某个地方好像有丢弃的<FONT color=#a82424>炸弹开关</FONT>，只要把它引爆就可以了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n276_invisible_thef-1" image="" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(好像有什么东西，但什么都看不见)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-2-a" mid="39"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$主教伊格纳西奥$<BR>啊，对了，我得叮嘱你一句。这件事是我们之间的<FONT color=#a82424>秘密</FONT>。<BR>如果被其他贵族知道的话，一定会被他们说三道四的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2-a" image="QW_38.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$主教伊格纳西奥$<BR>那你快去<FONT color=#a82424>死亡城市路口</FONT>采集化石吧。<BR>那里的某个地方好像有丢弃的<FONT color=#a82424>炸弹开关</FONT>，只要把它引爆就可以了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="QW_38.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$主教伊格纳西奥$<BR><FONT color=#a82424>化石</FONT>好像还不够。虽然看起来有很多……<BR>好像还不够，麻烦你继续去<FONT color=#a82424>死亡城市路口</FONT>搜集化石。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n276_invisible_thef-3" image="" itemindex="">
+      <talk_answer link_index="n276_invisible_thef-3-a" mid="43"><![CDATA[<html>(重新确认一下)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(好像有什么东西，但什么都看不见)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n276_invisible_thef-3-a" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(仍然什么都没有发现。好像只是风声。</FONT><BR>
+<FONT color=#7e12d2>好像没有可以搜集的化石了。赶快回去报告吧。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n276_invisible_thef-4" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(什么都没有)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-a" mid="47"><![CDATA[<html>这不算什么。</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$主教伊格纳西奥${action:Talk}<BR>嗯？这么快就回来啦？<BR>哎呀……真是……快拍拍身上的灰尘。<BR>真是辛苦你了。我会记住你的功劳的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-b" mid="49"><![CDATA[<html>(主教对我大加称赞)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$主教伊格纳西奥$<BR>现在先不要考虑别的，先把<FONT color=#a82424>神圣天堂</FONT>最紧迫的问题解决掉再说。<BR>能够让我信任的人并不多，有你这样的人才在我身边，我感到很欣慰。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-b" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-c" mid="51"><![CDATA[<html>嗯？什么事情呢？</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$主教伊格纳西奥$<BR>有件事，虽然有点困难，但必须确认一下……<BR>你能帮我这个忙吗？除了你之外，我就没什么可以信任的人了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-!next" mid="53"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">34</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="4" false="3">0</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">b</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">c</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300022</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4161,4162,4163,4164</exe>
+         <exe type="complete">416</exe>
+         <exe type="delquestitem" num="-1">300025</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="level">2</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="e">0,1</exelink>
+   <exelink qstep="3" npc="n276_invisible_thef" sub="a">0,1,2</exelink>
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="c">0</exelink>
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="!next">2,1</exelink>
+   <journal_data recompense="1:4161,2:4162,3:4163,4:4164" quest_title="화석 채취" chapterid="5" quest_level="34" quest_mark_type="7" use_item_list="300025">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[伊格纳西奥的担忧]]></title>
+         <contents mid="24"><![CDATA[<html>正在为仪式做准备的主教伊格纳西奥又有了其他担心的事。去问问他看吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[和主教伊格纳西奥对话]]></destination>
+         <todo_msg mid="26"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_38.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>384,0,0</destination_pos>
+         <destination_mode>custom:381@4,382@4,383@4,384@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[采集化石]]></title>
+         <contents mid="28"><![CDATA[<html>到死亡城市路口去，搜集用作炸药材料的化石。<BR><BR><FONT color=#086171>赫尔马岱港口(黑暗矿山入口)</FONT> <FONT color=#a82424>→ 死亡城市路口</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[去死亡城市路口采集化石]]></destination>
+         <todo_msg mid="30"><![CDATA[请到死亡城市路口去采集化石。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_38.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>383,n276</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>276</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[奇怪的东西]]></title>
+         <contents mid="55"><![CDATA[<html>搜集用作炸药材料的化石。发现什么奇怪的东西的话，仔细确认一下，不要留下一块化石。<BR>
+ <BR>
+<FONT color=#086171>死亡城市路口</FONT> <FONT color=#a82424>→ ???</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[去死亡城市路口采集化石]]></destination>
+         <todo_msg mid="57"><![CDATA[附近好像有什么东西。请确认一下。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[主教的称赞]]></title>
+         <contents mid="59"><![CDATA[<html>好像没有更多的化石了。把搜集到的化石交给<FONT color=#a82424>主教伊格纳西奥</FONT>吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[把化石交给主教伊格纳西奥]]></destination>
+         <todo_msg mid="61"><![CDATA[请把搜集到的化石交给主教伊格纳西奥。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>415</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

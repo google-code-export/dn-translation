@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n220_elite_soldier_wounded</npcename>
+      <npcid>220</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[受伤的精锐士兵]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="2"><![CDATA[<html>$受伤的精锐士兵$<BR><FONT color=#7e12d2>(昏迷中，似乎伤得不轻。)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">mq11_428_revive_serpentra.xml</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">428</chk>
+      </conditions>
+   </talk>

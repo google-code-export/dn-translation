@@ -1,0 +1,314 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_311_strange_score</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>311</qid>
+      <designer>곽노찬</designer>
+      <qlevel>9</qlevel>
+      <qdesc>400118 이상한 악보
+400119 또 다른 이상한 악보</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[奇怪的乐谱]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-noquest" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$纹章学者贝利$<BR>
+最近因为<FONT color=#a82424>梅伊</FONT>小姐的演奏，凯德拉关卡的人都很苦恼。<BR>我们得想办法让她停止演奏才行啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="7"><![CDATA[<html>嗯，是人都会有自己的才华，但是…</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$消耗品商人梅伊$<BR><FONT color=#7e12d2>（梅伊开始演奏奇怪的旋律。不能这样听之任之啊）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="9"><![CDATA[<html>（名字似乎更长了吧，但是还是算了吧）</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$消耗品商人梅伊$<BR>少废话！！<BR>嗯，有什么地方不大对劲。天才音乐家<FONT color=#a82424>梅伊 肖邦 贝多芬 莫扎特 柴可夫斯基 亨德尔</FONT>的演奏怎么可能这么差呢…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="11"><![CDATA[<html>貌似不只是乐谱的问题吧。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$消耗品商人梅伊$<BR>嗯?我还觉得奇怪呢，这里还有画着声法的乐谱嘛。所以，就很难正常演奏啊。<BR>这都是因为<FONT color=#382000>{user_nick}</FONT>你没有拿回完整的乐谱的缘故嘛！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="13"><![CDATA[<html>眼光倒是不清楚，我觉得是才华问题。</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$消耗品商人梅伊$<BR>啊?你现在是在怀疑我对音乐的眼光吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-e" mid="15"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$奇怪的乐谱$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-e" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="20"><![CDATA[<html>好，那就交给他看看吧。</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$消耗品商人梅伊$<BR>那么，我们就确认到底谁对谁错如何?<BR>这个村庄有位万事通博士<FONT color=#a82424>纹章学者贝利</FONT>。<BR>向他考证乐谱是不是完整的如何?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$消耗品商人梅伊$<BR>好的，快把那个可疑的乐谱交给<FONT color=#a82424>纹章学者贝利</FONT>看看吧。<BR>我说的肯定没错。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="23"><![CDATA[<html>喂，贝利?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$纹章学者贝利$<BR>
+…………<BR>
+<FONT color=#7e12d2>（纹章学者贝利似乎还未注意到我在叫他）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="25"><![CDATA[<html>（敲一敲贝利的肩膀看看）</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$纹章学者贝利$<BR>
+……………………<BR>
+<FONT color=#7e12d2>（贝利依然埋头看着书）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-b" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-c" mid="27"><![CDATA[<html>（详细说明）</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$纹章学者贝利$<BR>嗯?啊，是<FONT color=#382000>{user_nick}</FONT>啊。<BR><FONT color=#7e12d2>（贝利从耳中掏出耳塞）</FONT><BR>…有什么事吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2" mid="29"><![CDATA[<html>是，请确认一下乐谱吧。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$纹章学者贝利$<BR>哦…原来梅伊小姐正用黑暗精灵的乐谱演奏是吗。嗯…假如我验证那个乐谱的话，无异于是在消除<FONT color=#a82424>噪音公害</FONT>嘛?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-a" mid="32"><![CDATA[<html>有问题?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$纹章学者贝利$<BR><FONT color=#7e12d2>（纹章学者贝利带起眼镜，仔细端详着乐谱）</FONT><BR>嗯?这个…有点问题啊….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-b" mid="34"><![CDATA[<html>那第二个问题呢?</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$纹章学者贝利$<BR>两个问题。首先，与其说这是<FONT color=#a82424>黑暗精灵</FONT>的乐谱，倒不如说是它们传送信息的暗语。它们似乎正在计划着什么阴谋啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-c" mid="36"><![CDATA[<html>呃… 那，那该如何是好…?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$纹章学者贝利$<BR><FONT color=#7e12d2>（贝利重新带起眼镜，眉头紧锁着）</FONT><BR>那就是如梅伊小姐所说的那样，这个乐谱不正常，所以现在依然无法阻止梅伊小姐想成为音乐家的梦想….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-d" mid="38"><![CDATA[<html>自灭就有点夸张了吧….</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$纹章学者贝利$<BR>小到噪音公害，大到守护凯德拉关卡…要这样下去的话，人们在被黑暗精灵的阴谋害死之前，就先因梅伊小姐的噪音崩溃而死了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-e" mid="41"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$纹章学者贝利$<BR><FONT color=#382000>{user_nick}</FONT>你不也听过了嘛?<BR>
+那个地狱魔兽声音一般的演奏….<BR>反正，知道这个乐谱有问题的事，现在就只有你我。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-e" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3" mid="43"><![CDATA[<html>要…那样做吗…</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$纹章学者贝利$<BR>你要是守住关于这个乐谱的秘密的话，我就告诉梅伊小姐说这个乐谱没问题。另外，再向冒险家公会会长戴卡德转告，我们发现了黑暗精灵们的暗语。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3" image="QS_Default.dds" itemindex="400119">
+      <talk_question mid="44"><![CDATA[<html>$纹章学者贝利$<BR>只靠这些乐谱还很难把握黑暗精灵的阴谋。请到<FONT color=#a82424>袭击者巢穴</FONT>的<FONT color=#a82424>黑暗精灵暗杀者莉迪亚</FONT>那里夺回余下的部分乐谱回来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$消耗品商人梅伊$<BR>
+那个乐谱有问题…，真是让人难以置信….<BR>嗯，嗯…看来我的才华不在演奏上，而是在声乐方面啊。啊~♩ 啊~♬ 啊~ ♪<BR>
+<FONT color=#7e12d2>（得赶紧溜之大吉啊）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-4" image="QS_Default.dds" itemindex="400119">
+      <talk_answer link_index="n028_scholar_bailey-4-a" mid="48"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$纹章学者贝利$<BR>
+取回乐谱啦，辛苦了。<BR>
+我得需要一些时间破解黑暗精灵们的暗语，等我成功破解之后再叫你吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-4-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-4-b" mid="50"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-4-b" image="" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$纹章学者贝利$<BR>
+话说回来，梅伊小姐这次要搞声乐啊，这可大事不好啊 。<BR>
+凯德拉的危机依旧持续不断啊….<BR>
+<FONT color=#7e12d2>（纹章学者贝利又堵起耳朵）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3111,3112,3113,3114</exe>
+         <exe type="setquest">311</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+         <exe type="addquestitem" num="1">400118</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="delquestitem" num="-1">400118</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">350</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">400119</exe>
+         <exe type="addquestitem" num="1">400119</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">311</exe>
+         <exe type="recompense">,3111,3112,3113,3114</exe>
+         <exe type="delquestitem" num="-1">400119</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="e">1,3</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">2</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="e" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="3">0,1,2,3</exelink>
+   <exelink qstep="4" npc="n028_scholar_bailey" sub="a">1</exelink>
+   <exelink qstep="4" npc="n028_scholar_bailey" sub="b">0,2</exelink>
+   <journal_data recompense="1:3111,2:3112,3:3113,4:3114" quest_title="이상한 악보" chapterid="" quest_level="9" quest_mark_type="10" use_item_list="400118,400119">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[与纹章学者贝利对话]]></title>
+         <contents mid="56"><![CDATA[<html>商人梅伊希望让纹章学者贝利确认乐谱有何异常。与纹章学者贝利对话看看吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 纹章学者贝利</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[与纹章学者贝利对话]]></destination>
+         <todo_msg mid="58"><![CDATA[新增了任务。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_DarkelfGray.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>114,0,0</destination_pos>
+         <destination_mode>custom:111@1,112@1,113@1,114@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[收集另外一份可疑的乐谱]]></title>
+         <contents mid="60"><![CDATA[<html>在袭击者巢穴消灭黑暗精灵暗杀者莉迪亚，并获取另外一份可疑的乐谱吧。<BR>
+ <BR>
+<FONT color=#086171>水晶谷 （袭击者巢穴入口）</FONT> <FONT color=#a82424>→ 袭击者巢穴</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[收集另外一份可疑的乐谱]]></destination>
+         <todo_msg mid="62"><![CDATA[在袭击者巢穴收集另外一份可疑的乐谱吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[向纹章学者贝利递交乐谱]]></title>
+         <contents mid="65"><![CDATA[<html>向纹章学者贝利递交另外一份可疑的乐谱吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 纹章学者贝利</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[向纹章学者贝利递交乐谱]]></destination>
+         <todo_msg mid="67"><![CDATA[获得了乐谱。回到纹章学者贝利那里吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>9:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>310</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

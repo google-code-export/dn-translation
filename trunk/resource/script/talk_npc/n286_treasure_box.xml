@@ -1,0 +1,25 @@
+   <talk>
+      <npcename>n286_treasure_box</npcename>
+      <npcid>286</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[宝物箱]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$陌生的箱子$<BR>
+<FONT color=#7e12d2>(无法打开。</FONT><BR>
+<FONT color=#7e12d2>好像需要什么东西，才能把它打开)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="3" false="1">0</exe>
+         <exe type="conexe" true="4" false="2">1</exe>
+         <exe type="conexe" true="5" false="6">2</exe>
+         <exe type="enterquest">sq11_554_pirate_treasure3</exe>
+         <exe type="enterquest">sq11_553_pirate_treasure2</exe>
+         <exe type="enterquest">sq11_552_pirate_treasure1</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">554</chk>
+         <chk type="hasquest">553</chk>
+         <chk type="hasquest">552</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n055_elite_soldier</npcename>
+      <npcid>55</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[精锐士兵]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="2"><![CDATA[<html>$精锐士兵克林德$<BR>虽然任务失败了，但要尽量把受伤的士兵们活着带回去。必须把杀害士兵的元凶给…！</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="4">0</exe>
+         <exe type="enterquest">mq08_207_scattered_components</exe>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq08_218_awakened_guardian</exe>
+         <exe type="conexe" true="3" false="2">1</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">207</chk>
+         <chk type="hasquest">218</chk>
+      </conditions>
+   </talk>

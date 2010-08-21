@@ -1,0 +1,178 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_524_effective_attack</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>524</qid>
+      <designer>곽노찬</designer>
+      <qlevel>28</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[有效的攻击]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>您接受的任务过多，无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="6"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$冒险家公会长冈特$<BR>多亏你的协助，我军的士气提升了很多。但是，胜利多半还在魔物一方。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="17"><![CDATA[<html>擒贼先擒王如何?</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$冒险家公会长冈特$<BR>
+为了扭转战局，我们需要另辟蹊径… 我也想不出什么好办法。你有什么想法 ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="19"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$冒险家公会长冈特$<BR>
+擒王… 对啊。先消灭指挥下级魔物们的头领，肯定会给它们的指挥系统产生致命的影响。趁那个机会再集中攻击的话，就可以一举扭转局势了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="8"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$有效的攻击$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$冒险家公会长冈特$<BR>
+到<FONT color=#a82424>黑暗领地守备队据点</FONT>去消灭领导下级魔物们的<FONT color=#a82424>崇拜者中将兽人</FONT>回来吧。消灭<FONT color=#a82424>20只</FONT>左右应该就可以让它们自乱阵脚了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-a" mid="11"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$冒险家公会长冈特$<BR>
+辛苦了。我感觉到战局正向我们有利的方向转变。看来我们很快就能击退据点的魔物 ，继而可以进入<FONT color=#a82424>黑暗大君主的练兵场</FONT>了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-b" mid="13"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-b" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$冒险家公会长冈特$<BR>
+与魔物们的战争也即将进入尾声了吧… </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5241,5242,5243,5244</exe>
+         <exe type="setquest">524</exe>
+         <exe type="talk" npc="n036_adventurer_guildmaster_gunter">1</exe>
+         <exe type="huntmon" num="20" party="1" exe="4,5,6" onexe="">1127</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">524</exe>
+         <exe type="recompense">,5241,5242,5243,5244</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">1,2,3</exelink>
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="a">1</exelink>
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="b">0</exelink>
+   <journal_data recompense="1:5241,2:5242,3:5243,4:5244" quest_title="효과적인 공격" chapterid="" quest_level="28" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_43.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>432,0,0</destination_pos>
+         <destination_mode>custom:431@3,432@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[击退崇拜者中将兽人]]></title>
+         <contents mid="27"><![CDATA[<html>在<FONT color=#a82424>黑暗领地守备队据点</FONT>消灭<FONT color=#a82424>20只左右</FONT>统帅下级魔物们的<FONT color=#a82424>崇拜者中将兽人</FONT>吧。<BR>
+ <BR>
+<FONT color=#086171>黑山山角（黑暗大君主的关卡）</FONT> <FONT color=#a82424>→ 黑暗领地守备队据点</FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[击退20只崇拜者中将兽人]]></destination>
+         <todo_msg mid="29"><![CDATA[新增了任务。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[与冒险家公会长冈特对话。]]></title>
+         <contents mid="31"><![CDATA[<html>消灭了崇拜者中将兽人。回到冒险家公会长冈特那里吧。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 冒险家公会长冈特</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[与冒险家公会长冈特对话。]]></destination>
+         <todo_msg mid="33"><![CDATA[回到冒险家公会长冈特那里吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>28:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>522</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,299 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_314_entity_of_the_darkness</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>314</qid>
+      <designer>곽노찬</designer>
+      <qlevel>12</qlevel>
+      <qdesc>400120 오염된 마물의 신체</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[黑暗气息的实体]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-noquest" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$纹章学者贝利$<BR>大家都很担心先知少女啊，得赶紧找到她才好。<BR>
+<FONT color=#7e12d2>（可在高级牧师杰梅因处接受任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-a" mid="7"><![CDATA[<html>那个怪物是从哪里来的呢?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$高级牧师杰梅因$<BR>
+看来，老师变成食尸鬼可能就是因为当时黑暗魔物们所喷发的毒气吧。我还是第一次看见能喷发那样超强毒气的魔物啊….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-a" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-b" mid="9"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$高级牧师杰梅因$<BR>我也对它们进行了长期的调查。如果能够查清那些魔物们的根源的话 ，我相信<FONT color=#a82424>死亡森林</FONT>也可以得以净化呢。但是，很遗憾，到目前为止我们还未能查出它们的由来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-b" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-c" mid="11"><![CDATA[<html>好吧。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$高级牧师杰梅因$<BR>最后，我们不得不请求<FONT color=#a82424>纹章学者贝利</FONT>的帮助。不好意思啊，可否协助他一起调查关于死亡森林的气息啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$黑暗气息的实体$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$高级牧师杰梅因$<BR>我已经向<FONT color=#a82424>纹章学者贝利</FONT>打过招呼了。<BR>
+去找贝利，他会告诉你需要什么帮助的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="16"><![CDATA[<html>是的，需要我做什么呢?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$纹章学者贝利$<BR>哦，<FONT color=#382000>{user_nick}</FONT>。 <BR><FONT color=#a82424>杰梅因</FONT> 神父说会派一名帮手，原来就是你啊。我正等着呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="19"><![CDATA[<html>身体的…一部分?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$纹章学者贝利$<BR>嗯…，首先得到<FONT color=#a82424>死亡森林</FONT>去获取一些亡者的一部分身体。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2" mid="21"><![CDATA[<html>（有点毛骨悚然）那，那好吧….</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$纹章学者贝利$<BR>是，依我看 <FONT color=#a82424>食尸鬼</FONT>挺合适的。<BR>
+当然，我不是说让你取它们的脖子啊胳膊之类的回来。我的意思是说，我要利用他们的身体做实验样品。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QS_Default.dds" itemindex="400120">
+      <talk_question mid="22"><![CDATA[<html>$纹章学者贝利$<BR>那么，就到死亡森林抓捕<FONT color=#a82424>受到污染的食尸鬼</FONT>和<FONT color=#a82424>食尸鬼波尔德尼斯</FONT>并收集一些部分<FONT color=#a82424>被污染的魔物身体</FONT>回来吧。样品需要<FONT color=#a82424>10个</FONT>左右即可。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3" image="QS_Default.dds" itemindex="400120">
+      <talk_answer link_index="n028_scholar_bailey-3-a" mid="25"><![CDATA[<html>嗯。 （快甩给他吧）</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$纹章学者贝利$<BR>实验用样品<FONT color=#a82424>被污染的魔物身体</FONT>拿回来了啊，真是辛苦你了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-b" mid="27"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$纹章学者贝利$<BR><FONT color=#7e12d2>（贝利仔细的端详着样品，且使用了某种奇妙的试药）</FONT><BR>嗯…，这个真让人惊奇啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-c" mid="29"><![CDATA[<html>吞噬生命的怪物?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$纹章学者贝利$<BR>
+<FONT color=#7e12d2>（贝利翻阅着画有各种生命体的书籍）</FONT><BR>
+这个与古代人的书籍中记录的被<FONT color=#a82424>吞噬生命的怪物</FONT>所害的人类非常相似。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-d" mid="31"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$纹章学者贝利$<BR>
+是的。吞噬生命的怪物，是堕落的古代人用黑暗魔法制作的邪恶的生命体。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-e" mid="33"><![CDATA[<html>那么…那些都是人…是吗？</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$纹章学者贝利$<BR>
+相传，堕落的古代人在古代人内战时，为了把毫无能力的人类当做兵器，用黑暗魔法把他们变异成为黑暗军队。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-e" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-f" mid="35"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$纹章学者贝利$<BR>
+很遗憾，就是人类。<BR>
+不同于食尸鬼或自然生长的魔物，他们是专为战争而生成的魔物。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-f" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-g" mid="37"><![CDATA[<html>那有没有净化已变成魔物的人的方法啊?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$纹章学者贝利$<BR>
+其实，据说<FONT color=#a82424>吞噬生命的怪物</FONT>的力量并非想象中的强大。它们害怕的就是吞噬生命的力量，即把被怪物所害的人类魔物化的传染性。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-g" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-h" mid="40"><![CDATA[<html>现在看来似乎没有什么其他办法啊….</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$纹章学者贝利$<BR>
+根据记录，古代祭祀长中的一些人拥有可以净化黑暗生命体的力量。或许流淌着古代人之血的先知，应该会有这种能力吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-h" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-i" mid="42"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$纹章学者贝利$<BR>很遗憾，就是这样的…。我会对<BR><FONT color=#a82424>杰梅因</FONT>说的。<BR>另外，说不准我们还能查清魔物抗争时，非常难以对付它们的原因吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-i" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-j" mid="44"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-j" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$纹章学者贝利$<BR>
+据传，魔物抗争时，黑暗魔物们大多没受多大损失就撤回去了… 真担心它们会再次出没啊，呼…</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3141,3142,3143,3144</exe>
+         <exe type="setquest">314</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="prob">700</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">429</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">433</exe>
+         <exe type="huntitem" num="10" exe="7,8,9" onexe="">400120</exe>
+         <exe type="addquestitem" num="1">400120</exe>
+         <exe type="conexe" true="5" false="">0</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3141,3142,3143,3144</exe>
+         <exe type="complete">314</exe>
+         <exe type="delquestitem" num="-1">400120</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="2">0,1,2,3,4</exelink>
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="e" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="f" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="g" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="h" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="i">0</exelink>
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="j">1,2</exelink>
+   <journal_data recompense="1:3141,2:3142,3:3143,4:3144" quest_title="검은 기운의 실체" chapterid="" quest_level="12" quest_mark_type="10" use_item_list="400120">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[与纹章学者贝利对话]]></title>
+         <contents mid="48"><![CDATA[<html>向纹章学者贝利问询需要我做什么吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 纹章学者贝利</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[与纹章学者贝利对话]]></destination>
+         <todo_msg mid="50"><![CDATA[新增了任务。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_17.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>134,0,0</destination_pos>
+         <destination_mode>custom:131@3,132@3,133@3,134@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[收集10具被污染的魔物身体]]></title>
+         <contents mid="52"><![CDATA[<html>在死亡森林抓捕受到污染的食尸鬼和食尸鬼波尔德尼斯，收集<FONT color=#a82424>10具被污染的魔物身体</FONT>回来吧。<BR><BR><FONT color=#086171>堆满落叶的湖岸（死亡森林入口）</FONT> <FONT color=#a82424>→ 死亡森林</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[收集10具被污染的魔物身体]]></destination>
+         <todo_msg mid="54"><![CDATA[在死亡森林收集被污染的魔物身体吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[与纹章学者贝利对话]]></title>
+         <contents mid="56"><![CDATA[<html>被污染的魔物身体收集完毕。回到凯德拉关卡交给纹章学者贝利吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 纹章学者贝利</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[与纹章学者贝利对话]]></destination>
+         <todo_msg mid="58"><![CDATA[被污染的魔物身体收集完毕。回到贝利那里吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>205</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

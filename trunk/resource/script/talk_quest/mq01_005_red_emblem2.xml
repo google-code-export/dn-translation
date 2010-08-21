@@ -1,0 +1,294 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_005_red_emblem2</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>5</qid>
+      <designer>김주연</designer>
+      <qlevel>3</qlevel>
+      <qdesc>300009 붉은 인장 파편
+
+1. 마을로 돌아와 촌장 해롤드와 이야기하면 카타콤에는 마물들이 어떤 장치를 해두어 일반인이 접근하면 크게 몸을 다친다는 이야기를 하며, 트랩을 해제 하는 방법은 문장학자 스타쉬에게 물어보라고 함.
+
+2. 스타쉬는 트랩을 해제하기 위해 붉은 인장이 필요하다고 알려준다.
+ - 더불어 로제가 과거에 자신을 도와줬던 일을 알려줌.
+   - 발굴지에서 고대 유물을 발굴하는데 로제가 도움을 준 적이 있음 ( 로제가 신비하게도 유물이 어디쯤에 위치하고 있는지 척척 알아맞췄더라는 이야기... 하지만 마을로 돌아가서 촌장에게 혼났었다는 뒷이야기.
+3. 고대의 신전 유적지의 트롤 2마리를 사냥해서 인장 2개를 모아서 문장학자에게 감. </qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>6</nextqid>
+      <nextqname>mq01_006_escape_of_the_catacomb</nextqname>
+      <nextqnpc>n129_scholar_bunstain</nextqnpc>
+      <qkname mid="1"><![CDATA[红色印章 Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드   (프레리)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>129</npcid>
+         <npcename>n129_scholar_bunstain</npcename>
+         <npckname>문장학자 번스테인 (프레리)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-noquest" image="" itemindex="">
+      <talk_question mid="84"><![CDATA[<html>$纹章学者伯恩施坦$<BR>最近魔物们在墓穴前设置了陷阱，我正在对此进行研究。相信很快就能找到解除陷阱的方法……<BR> <FONT color=#7e12d2>(必须完成红色印章Ⅰ任务后才可以执行)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-noquest" image="" itemindex="">
+      <talk_question mid="86"><![CDATA[<html>$村长海洛德$<BR>
+找...找箩丝是吧...?咳咳咳...<BR>
+<FONT color=#7e12d2>（需完成红色的印章Ⅰ任务方可进行 ）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-1-a" mid="7"><![CDATA[<html>箩丝好像被移送到了墓穴那边。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$村长海洛德$<BR>咳咳咳咳……谢谢你拯救了村民……你能救出村民，一定也能救出箩丝。我相信你。你让我重新燃起了希望。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-a" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-1-b" mid="43"><![CDATA[<html>我一定会把箩丝带回来。</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$村长海洛德$<BR>箩丝在<FONT color=#a82424>墓穴</FONT>……？<BR>墓穴是以凶残闻名的<FONT color=#a82424>牛头怪</FONT><FONT color=#a82424>翁拉克</FONT>守卫的危险的地方。咳咳咳咳……希望她能安然无事……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-b" image="QW_3.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-1-c" mid="45"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$村长海洛德$<BR>谢谢你……<FONT color=#a82424>牛头怪</FONT><FONT color=#a82424>翁拉克</FONT>所在的<FONT color=#a82424>墓穴</FONT>的入口处，有魔物们设置的强力<FONT color=#a82424>陷阱</FONT>。据说那个陷阱非常危险……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-c" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$村长海洛德$<BR>听说<FONT color=#a82424>纹章学者伯恩施坦</FONT>正在研究解除陷阱的方法。纹章学者伯恩施坦就在<FONT color=#a82424>门的附近</FONT>，请你去向他询问一下<FONT color=#a82424>解除陷阱的方法</FONT>，然后再进去。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-1" image="QN_Elder_Harold.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$纹章学者伯恩施坦$<BR><FONT color=#387206>{user_nick}</FONT>，村长好像在找你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-2" image="QS_Default.dds" itemindex="300010">
+      <talk_answer link_index="n129_scholar_bunstain-2-a" mid="49"><![CDATA[<html>红色印章？是这个吗？</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$纹章学者伯恩施坦$<BR>你要去<FONT color=#a82424>墓穴</FONT>？我刚好正在研究入口处的陷阱，但研究资料<FONT color=#a82424>红色印章</FONT>不足，我无法进行进一步的研究。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-2-a" image="QS_Default.dds" itemindex="300010">
+      <talk_answer link_index="n129_scholar_bunstain-2-b" mid="51"><![CDATA[<html>箩丝帮助过你？</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$纹章学者伯恩施坦$<BR>就是这个。<FONT color=#a82424>红色印章</FONT>！我推测怪物们是用它通过陷阱的，所以我正在对它进行研究。从前在箩丝的帮助下，很容易就能从发掘场找到。但现在我得直接从魔物身上采集……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-2-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n129_scholar_bunstain-3" mid="54"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$纹章学者伯恩施坦$<BR>啊……<FONT color=#a82424>箩丝每次去发掘场的时候，每次都能找到各种遗物</FONT>，真的很神奇。从这一点看，箩丝应该算是个很特别的孩子。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$村长海洛德$<BR><FONT color=#a82424>墓穴</FONT>里设置有<FONT color=#a82424>强力的陷阱</FONT>，必须去问问<FONT color=#a82424>纹章学者伯恩施坦</FONT>解除陷阱的方法。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-3" image="QM_TrollBlue.dds" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$纹章学者伯恩施坦$<BR>没时间磨蹭了！请你快去<FONT color=#a82424>古代神殿遗迹</FONT>除掉<FONT color=#a82424>巨人 </FONT><FONT color=#a82424>朱克阿诺</FONT>，搜集<FONT color=#a82424>2个</FONT> <FONT color=#a82424>红色印章碎片</FONT>。组成一个印章，一共需要<FONT color=#a82424>3个</FONT>碎片。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-4" image="QS_Default.dds" itemindex="300010">
+      <talk_answer link_index="n129_scholar_bunstain-4-a" mid="62"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$纹章学者伯恩施坦$<BR>辛苦你了。请稍等一下，我会为你合成一个完整的<FONT color=#a82424>红色印章</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-4-a" image="" itemindex="">
+      <talk_answer link_index="n129_scholar_bunstain-4-!next" mid="64"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="3" op="]=">300009</chk>
+      </conditions>
+      <executions>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">129</exe>
+         <exe type="huntitem" num="3" exe="9" onexe="">300009</exe>
+         <exe type="addquestitem" num="1">300009</exe>
+         <exe type="conexe" true="9" false="2">0</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="conexe" true="6,7,8" false="">0</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment xml:space="preserve">
+</comment>
+      <conditions />
+      <executions>
+         <exe type="recompense">,51,52,52,52</exe>
+         <exe type="complete">5</exe>
+         <exe type="delquestitem" num="-1">300009</exe>
+         <exe type="addquestitem" num="1">300010</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n001_elder_harold" sub="b" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n129_scholar_bunstain" sub="b" />
+   <exelink qstep="2" npc="n129_scholar_bunstain" sub="3">0,1,4,5</exelink>
+   <exelink qstep="4" npc="n129_scholar_bunstain" sub="a">0</exelink>
+   <exelink qstep="4" npc="n129_scholar_bunstain" sub="!next">1,2,3</exelink>
+   <journal_data recompense="1:51,2:52" quest_title="붉은 인장 Ⅱ" chapterid="1" quest_level="3" quest_mark_type="7" use_item_list="300009">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Elder_Harold.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-1390,-629</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>촌장 해롤드</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>촌장 해롤드</step_action>
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[和村长海洛德对话]]></title>
+         <contents mid="68"><![CDATA[<html><FONT color=#a82424>村长海洛德</FONT>说我救出了村民，相信我一定也可以救出<FONT color=#a82424>箩丝</FONT>，并说有关于<FONT color=#a82424>墓穴</FONT>的事情要和我说。去听听详细的情况吧。<BR> 
+<BR> 
+<FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→ 村长海洛德</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[和村长海洛德对话]]></destination>
+         <todo_msg mid="70"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,1628,1078</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>129</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>촌장 해롤드</start_npc>
+         <desc_location>프레리 트운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>문장학자 번스테인</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[和纹章学者伯恩施坦对话]]></title>
+         <contents mid="72"><![CDATA[<html>据说<FONT color=#a82424>墓穴</FONT>入口处有魔物们设置的<FONT color=#a82424>强力的陷阱</FONT>。去<FONT color=#a82424>纹章学者伯恩施坦</FONT>那里问问安全通过陷阱的方法。<BR><BR><FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→ 纹章学者伯恩施坦</FONT></html>]]></contents>
+         <destination mid="73"><![CDATA[和纹章学者伯恩施坦对话]]></destination>
+         <todo_msg mid="74"><![CDATA[请和纹章学者伯恩施坦对话]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_2.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>58,0,0</destination_pos>
+         <destination_mode>custom:56@1,57@1,58@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>문장학자 번스테인</start_npc>
+         <desc_location>고대의 시넌 유적지</desc_location>
+         <step_action>사냥</step_action>
+         <complete_npc>문장학자 번스테인</complete_npc>
+         <get_item>붉은 인장 파편</get_item>
+         <get_itemindex>30009</get_itemindex>
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="75"><![CDATA[从巨人身上搜集红色印章碎片]]></title>
+         <contents mid="76"><![CDATA[<html>要想使<FONT color=#a82424>墓穴</FONT>的陷阱失去作用，需要魔物们使用的红色印章。去<FONT color=#a82424>古代神殿遗迹</FONT>除掉<FONT color=#a82424>巨人 </FONT><FONT color=#a82424>朱克阿诺</FONT>，搜集<FONT color=#a82424>2个</FONT><FONT color=#a82424>红色印章碎片</FONT>。<BR><BR><FONT color=#086171>狂风森林(狂风森林神殿入口) <FONT color=#a82424>→ 古代神殿遗迹</FONT></FONT></html>]]></contents>
+         <destination mid="77"><![CDATA[收集2块红色印章碎片]]></destination>
+         <todo_msg mid="78"><![CDATA[请去古代神殿遗迹搜集红色印章碎片。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,1628,1078</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>129</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>고대의 신전 유적지</get_location>
+         <start_npc>문장학자 번스테인</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>문장학자 번스테인</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[和纹章学者伯恩施坦对话]]></title>
+         <contents mid="80"><![CDATA[<html><FONT color=#a82424>红色印章碎片</FONT>已经全部搜集到。回到普雷利镇，交给纹章学者伯恩施坦。<BR><BR><FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→ 纹章学者伯恩施坦</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[和纹章学者伯恩施坦对话]]></destination>
+         <todo_msg mid="82"><![CDATA[请回到普雷利镇，和纹章学者伯恩施坦对话。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>3:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1:2</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

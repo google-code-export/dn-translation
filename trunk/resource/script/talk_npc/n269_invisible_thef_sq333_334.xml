@@ -1,0 +1,23 @@
+   <talk>
+      <npcename>n269_invisible_thef_sq333_334</npcename>
+      <npcid>269</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[看不见的小偷（不归之路）]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$???$<BR>….<BR><FONT color=#7e12d2>（总觉得有什么东西）</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="conexe" true="3" false="6">1</exe>
+         <exe type="enterquest">sq08_333_invisible_body1</exe>
+         <exe type="enterquest">sq08_334_invisible_body2</exe>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">sq08_336_invisible_body3</exe>
+         <exe type="conexe" true="5" false="4">2</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">333</chk>
+         <chk type="hasquest">334</chk>
+         <chk type="hasquest">336</chk>
+      </conditions>
+   </talk>

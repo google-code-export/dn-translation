@@ -1,0 +1,186 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_008_whereabouts_girl2</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>8</qid>
+      <designer>김주연</designer>
+      <qlevel>5</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9</nextqid>
+      <nextqname>mq01_009_please_save_my_girl</nextqname>
+      <nextqnpc>n124_guard_sam</nextqnpc>
+      <qkname mid="1"><![CDATA[少女的下落Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>124</npcid>
+         <npcename>n124_guard_sam</npcename>
+         <npckname>가드 샘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브   (프레리)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>56</npcid>
+         <npcename>n056_guard_pesent_dalcy</npcename>
+         <npckname>가드 달시        (그늘 숲)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QN_Npc_Guard_Dalcy.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$自卫团长史蒂夫${action:Talk}<BR>请你去向<FONT color=#a82424>阴影森林</FONT>的<FONT color=#a82424>卫兵达尔西</FONT>询问<FONT color=#a82424>箩丝</FONT>和<FONT color=#a82424>提摩西</FONT>的行踪。他们应该是跑到了<FONT color=#a82424>阴影森林小径</FONT>的什么地方。希望他们能平安无事……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-1" image="QW_4.dds" itemindex="">
+      <talk_answer link_index="n056_guard_pesent_dalcy-1-a" mid="9"><![CDATA[<html>阴影森林中心？</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$卫兵达尔西$<BR>欢……欢迎光临。<FONT color=#387206>{user_class}{user_nick}</FONT> ！刚才我看见箩丝和提摩西向<FONT color=#a82424>阴影森林中心</FONT>跑了过去！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-1-a" image="QW_4.dds" itemindex="">
+      <talk_answer link_index="n056_guard_pesent_dalcy-2" mid="11"><![CDATA[<html>谢谢。看来我得去阴影森林中心一趟。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$卫兵达尔西$<BR>是，是的。因为事发突然，所以没来得及阻拦，眼睁睁地看着他们跑了过去……有个长着红色翅膀的魔物正在追赶他们……和我一起巡逻的<FONT color=#a82424>卫兵山姆</FONT>跟着箩丝他们，到<FONT color=#a82424>阴影森林中心</FONT>去了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-1" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$卫兵山姆$<BR>竟然打倒了那个强大的怪物……<BR>虽经常听到你的事迹，但没想到你的实力这么强。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-2" image="QN_Npc_Guard_Dalcy.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$卫兵达尔西$<BR>希望你能小心。<BR>到<FONT color=#a82424>阴影森林中心</FONT>去，找到我们的自卫团员<FONT color=#a82424>卫兵山姆</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-2" image="" itemindex="">
+      <talk_answer link_index="n124_guard_sam-2-a" mid="15"><![CDATA[<html>箩丝和提摩西在哪？</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$卫兵山姆$<BR>
+嗬……嗬……竟然打倒了那个强大的怪物……<BR>
+虽经常听到你的事迹，但没想到你的实力这么强。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-2-a" image="QM_GoblinRed.dds" itemindex="">
+      <talk_answer link_index="n124_guard_sam-2-b" mid="17"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$卫兵山姆$<BR>对不起……我在阴影森林看到箩丝和提摩西被人追赶，所以跟在后面来到了这里……但因为那些<FONT color=#a82424>小妖精</FONT><FONT color=#a82424>头目加扎</FONT>的妨碍，我没能跟上他们。呃……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-2-b" image="QM_HarpyRed.dds" itemindex="">
+      <talk_answer link_index="n124_guard_sam-2-c" mid="20"><![CDATA[<html>你看到他们往哪边去了吗？</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$卫兵山姆$<BR>抓走箩丝的魔物是一个长着<FONT color=#a82424>红色羽毛</FONT>的<FONT color=#a82424>鹰身人</FONT>。提摩西在后面追赶……之后的事情我就不知道了……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-2-c" image="QM_HarpyRed.dds" itemindex="">
+      <talk_answer link_index="n124_guard_sam-2-d" mid="22"><![CDATA[<html>古代神殿发掘场吗……知道了。</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$卫兵山姆$<BR>听狂风森林的卫兵迪金森说，那个<FONT color=#a82424>红色鹰身人情妇</FONT>向<FONT color=#a82424>古代神殿发掘场</FONT>方向飞过去了。箩丝被劫持还没多久，如果快点追过去的话，一定可以把箩丝救出来！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-2-d" image="" itemindex="">
+      <talk_answer link_index="n124_guard_sam-2-!next" mid="26"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">8</exe>
+         <exe type="recompense">,81,82,82,82</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n056_guard_pesent_dalcy" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n124_guard_sam" sub="b" />
+   <exelink qstep="2" npc="n124_guard_sam" sub="c" />
+   <exelink qstep="2" npc="n124_guard_sam" sub="d">1</exelink>
+   <exelink qstep="2" npc="n124_guard_sam" sub="!next">0</exelink>
+   <journal_data recompense="1:81,2:82" quest_title="소녀의 행방Ⅱ" chapterid="1" quest_level="5" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Guard_Dalcy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>2,-742,1636</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>56</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[被人追赶的少女]]></title>
+         <contents mid="28"><![CDATA[<html>从卫兵迪金森处收到了消息，说箩丝和提摩西被怪物追赶，向阴影森林方向跑去了。<BR>向<FONT color=#a82424>阴影森林</FONT>的<FONT color=#a82424>卫兵达尔西</FONT>询问箩丝和提摩西的方向。<BR><BR><FONT color=#086171>阴影森林</FONT> <FONT color=#a82424>→ 卫兵达尔西</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[和阴影森林的卫兵达尔西对话]]></destination>
+         <todo_msg mid="30"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Guard_Dalcy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>68,-580.80,727.18</destination_pos>
+         <destination_mode>custom:66@1,67@1,68@1</destination_mode>
+         <statemark_npcid>124</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[乌云压城]]></title>
+         <contents mid="34"><![CDATA[<html>找到跟随箩丝进入<FONT color=#a82424>阴影森林中心</FONT>的<FONT color=#a82424>卫兵山姆</FONT>，询问箩丝和提摩西的行踪。<BR><BR><FONT color=#086171>阴影森林(阴影森林小径)</FONT> <FONT color=#a82424>→ 阴影森林中心</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[去阴影森林中心和卫兵山姆对话]]></destination>
+         <todo_msg mid="36"><![CDATA[请到阴影森林中心去寻找卫兵山姆。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>7</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

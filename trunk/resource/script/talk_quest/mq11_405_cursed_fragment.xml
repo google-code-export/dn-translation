@@ -1,0 +1,343 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_405_cursed_fragment</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>405</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>1. 아르젠타와 대화
+2. 말라버린 마리사의 샘에서 룬의 파편 수집
+3. 아르젠타에게 보고
+4. 주교에게 돌아가 보고.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>406</nextqid>
+      <nextqname>mq11_406_guard_of_munition</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[被诅咒的碎片]]></qkname>
+      <qnpc>
+         <npcid>212</npcid>
+         <npcename>n212_argenta</npcename>
+         <npckname>아르젠타(검은 산자락)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-1-check" mid="7"><![CDATA[<html>首先...得收集月牙碎片。</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$阿尔杰塔$<BR>要制作<FONT color=#a82424>古代祭司长的月牙</FONT>，得先收集月牙碎片。然后用碎片组合成完整的月牙，并找到可注入力量的砂芯，助其成为一体。<BR>知道自己该做什么事了吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1-a" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$阿尔杰塔$<BR>不错嘛。不过看你现在弱不禁风的样子，哪还能去收集什么月牙碎片啊? 在捡到之前，你的小命都难保得住呢。<BR><FONT color=#7e12d2>（30级之后才能进行下一阶段。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1-b" image="QS_Default.dds" itemindex="300020">
+      <talk_answer link_index="n212_argenta-1-c" mid="10"><![CDATA[<html>去哪里才能得到?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$阿尔杰塔$<BR>挺积极的嘛。也是，古代人近在咫尺，却无法追寻，肯定着急了吧。<BR>那就赶紧去收集<FONT color=#a82424>月牙</FONT> <FONT color=#a82424>碎片</FONT>回来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1-c" image="QW_35.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-1-d" mid="12"><![CDATA[<html>是，去去就回！</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$阿尔杰塔$<BR>你到底知道什么啊。知道<FONT color=#a82424>枯竭的玛丽莎泉</FONT>这个地方吗? 不久前，那里曾出现了可吸纳黑暗力量的某种装置。所以现在或许还残留着月牙碎片。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1-d" image="QW_35.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$阿尔杰塔$<BR>仔细找的话会找到的。<BR>给我仔仔细细的找出<FONT color=#a82424>10个</FONT>回来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$主教伊格纳西奥$<BR>过去办的事情如何啦? 贵族们会由我来说服，你就放心吧。<BR><FONT color=#7e12d2>（要去见黑山山角的阿尔杰塔）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-2" image="QW_35.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$阿尔杰塔$<BR>在<FONT color=#a82424>枯竭的玛丽莎泉</FONT>仔细寻找的话会找到月牙碎片的。虽然是个破碎的<FONT color=#a82424>碎片</FONT> ，但是收集起来就可以做成完整的月牙，所以瞪大眼睛仔细找哦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-a" mid="17"><![CDATA[<html>（递交月牙碎片）</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$阿尔杰塔$<BR>嗯...不错嘛，反正这种事连猴子都能完成。我的意思说，你辛苦了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-a" image="QS_Default.dds" itemindex="300020">
+      <talk_answer link_index="n212_argenta-3-b" mid="19"><![CDATA[<html>有什么事吗?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$阿尔杰塔$<BR>人类无论从前还是现在一直没什么变化。古代人还有现在的人类，在我看来没什么两样。<FONT color=#7e12d2>（阿尔杰塔摸着月牙）</FONT> 这枚月牙原来也是完整无损的，只是愚蠢的人类把它糟蹋成了这个样子。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-b" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-c" mid="21"><![CDATA[<html>（阿尔杰塔皱起眉头）</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$阿尔杰塔$<BR>或许古代人当中有人开始存有异心，他们开始进行<FONT color=#a82424>被禁止的</FONT> <FONT color=#a82424>实验</FONT>。嗯，这世界上不是总有一种人喜欢做不让做的事而闯下大祸的吗？ 如果都是像你这种单纯的笨瓜的话，也不会发生这种事情了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-c" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-d" mid="23"><![CDATA[<html>是，非常感谢。</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$阿尔杰塔$<BR>总之我会用这些制作<FONT color=#a82424>古代祭司长的月牙</FONT>。把碎片合成一个的事情，就跟拼图一样。即便小孩都可以，但你却不能吗？ 所以我才帮你做，感谢我吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-d" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-e" mid="25"><![CDATA[<html>那么我先回王城报告完再回来。</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$阿尔杰塔$<BR>哼。说的倒轻巧. ...你不知道好事多磨的道理吗。即便是我也需要一些时间。<BR>趁这段时间你就好好修炼吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-e" image="QW_SaintHaven_Inside.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-3-f" mid="27"><![CDATA[<html>哎，不要每件事都想的那么悲观。</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$阿尔杰塔$<BR><FONT color=#a82424>报告</FONT>? 随便你。你也够可怜的，还对人类抱有幻想啊? 你要尝到什么苦头才会醒过来呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-f" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-g" mid="29"><![CDATA[<html>...啊? 那时?！</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$阿尔杰塔$<BR>不是说否定什么，而是你还是个不知天高地厚的小子。假如人类都像你所想的那样单纯，至少在那个时候 ...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-g" image="QW_SaintHaven_Inside.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$阿尔杰塔$<BR>...我得集中精力做事了。跟你吵也够烦的。<BR>那么到<FONT color=#a82424>王城</FONT>去报告还是请求就随你便吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-4" image="QW_SaintHaven_Inside.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$阿尔杰塔$<BR>...我得集中精力做事了。跟你吵也够烦的。<BR>那么到<FONT color=#a82424>王城</FONT>去报告还是请求就随你便吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-a" mid="34"><![CDATA[<html>贤者的... 眼?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$主教伊格纳西奥$<BR>我已经知道巢穴已经筑成。虽然我们没法亲眼去证实巢穴，但我有 <FONT color=#a82424>贤者之</FONT> <FONT color=#a82424>眼</FONT>啊。 <FONT color=#7e12d2>（伊格纳西奥拿出独特形状的宝珠）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-b" mid="36"><![CDATA[<html>神奇的物品哦。</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$主教伊格纳西奥$<BR>这是在50年前的龙之突袭中使用过的很有来历的物品哦。当周围形成超强<FONT color=#a82424>结界</FONT>的瞬间，这颗宝珠会散发强烈的光芒。巢穴也是种无比强大的结界，所以它的形成亦可用这颗宝珠来确认。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-b" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-c" mid="38"><![CDATA[<html>其实... 黑龙已经复活。</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$主教伊格纳西奥$<BR>制作<FONT color=#a82424>巢穴</FONT>的是谁呢?<BR>
+难道是劫持先知者的<FONT color=#a82424>黑暗骑士</FONT>吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-d" mid="40"><![CDATA[<html>（主教叹息着合起双手）</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$主教伊格纳西奥$<BR>什么?！黑... <FONT color=#a82424>黑龙</FONT>再次苏醒?！<BR>这...可真是大难临头啊。哦...愿神保佑我们的神圣天堂吧...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-e" mid="42"><![CDATA[<html>知道古代祭司长的月牙?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$主教伊格纳西奥$<BR>事情越来越棘手了。看来已经很难避免正面冲突了。所幸阿尔杰塔会做<FONT color=#a82424>古代祭司长的月牙</FONT>，我们稍微可以放下心了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-e" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-f" mid="44"><![CDATA[<html>要不再去救援的话...</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$主教伊格纳西奥$<BR>当然知道啊。那是在<FONT color=#a82424>50年前为了攻破黑龙的巢穴</FONT>所使用的物品。<BR>黑龙再次苏醒，真担心先知者的安危啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-f" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-g" mid="46"><![CDATA[<html>（主教陷入了沉思，正望着这里）</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$主教伊格纳西奥$<BR>而且黑龙也已苏醒，神圣天堂王城随时存在遭受魔物入侵的危险。所以在那之前必须得找到先知者。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-g" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-h" mid="48"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-h" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-!next" mid="50"><![CDATA[<html>是，明白了。</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$主教伊格纳西奥$<BR>我会继续说服其他贵族和国王陛下，动员神殿骑士团早做战争的准备。<BR>我知道你很着急，但请相信我，再等等看看吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">30</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="talk" npc="n212_argenta">a</exe>
+         <exe type="talk" npc="n212_argenta">b</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="10" exe="6,7,8" onexe="">300020</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300020</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4051,4052,4053,4054</exe>
+         <exe type="complete">405</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n212_argenta" sub="check">0</exelink>
+   <exelink qstep="1" npc="n212_argenta" sub="c" />
+   <exelink qstep="1" npc="n212_argenta" sub="d">3,4,5</exelink>
+   <exelink qstep="3" npc="n212_argenta" sub="b" />
+   <exelink qstep="3" npc="n212_argenta" sub="c" />
+   <exelink qstep="3" npc="n212_argenta" sub="d" />
+   <exelink qstep="3" npc="n212_argenta" sub="e" />
+   <exelink qstep="3" npc="n212_argenta" sub="f" />
+   <exelink qstep="3" npc="n212_argenta" sub="g">2,0,1</exelink>
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="e" />
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="f" />
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="g">0</exelink>
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="h">1</exelink>
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="!next" />
+   <journal_data recompense="1:4051,2:4052,3:4053,4:4054" quest_title="저주받은 파편들" chapterid="4" quest_level="30" quest_mark_type="7" use_item_list="300020">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13,n212</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>212</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[古代祭司长的月牙]]></title>
+         <contents mid="53"><![CDATA[<html>要想进入巢穴就需要古代祭司长的月牙。向<FONT color=#a82424>阿尔杰塔</FONT>咨询制作方法吧。<BR><FONT color=#7e12d2>(30级以上才能执行任务)</FONT><BR>
+
+<BR><FONT color=#086171>黑山山角</FONT> <FONT color=#a82424>→ 阿尔杰塔</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[(Lv30) 与黑山山角的阿尔杰塔对话]]></destination>
+         <todo_msg mid="55"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_35.dds</contents_image>
+         <need_itemlist>300020</need_itemlist>
+         <destination_pos>354,0,0</destination_pos>
+         <destination_mode>custom:351@4,352@4,353@4,354@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[月牙碎片]]></title>
+         <contents mid="57"><![CDATA[<html>在枯竭的玛丽莎泉搜集 <FONT color=#a82424>月牙碎片</FONT>吧。<BR><BR><FONT color=#086171>黑山山角（阴森的丛林路）</FONT> <FONT color=#a82424>→枯竭的玛丽莎泉</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[收集月牙碎片]]></destination>
+         <todo_msg mid="59"><![CDATA[在枯竭的玛丽莎泉收集月牙碎片吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist>300020</need_itemlist>
+         <destination_pos>13,n212</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>212</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[完成收集]]></title>
+         <contents mid="61"><![CDATA[<html>已经完成<FONT color=#a82424>月牙碎片</FONT>的收集。向阿尔杰塔报告吧。<BR><BR><FONT color=#086171>黑山山角</FONT> <FONT color=#a82424>→阿尔杰塔</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[与黑山山角的阿尔杰塔对话]]></destination>
+         <todo_msg mid="63"><![CDATA[完成了收集。向黑山山角的 阿尔杰塔报告吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[报告情况]]></title>
+         <contents mid="65"><![CDATA[<html>阿尔杰塔在合成月牙碎片之时，回到神圣天堂王城向<FONT color=#a82424>主教伊格纳西奥</FONT>报告情况吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[与主教伊格纳西奥对话]]></destination>
+         <todo_msg mid="67"><![CDATA[向主教伊格纳西奥报告情况吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>404</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

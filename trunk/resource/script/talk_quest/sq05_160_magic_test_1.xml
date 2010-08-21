@@ -1,0 +1,548 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq05_160_magic_test_1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>160</qid>
+      <designer>손원호</designer>
+      <qlevel>8</qlevel>
+      <qdesc>타라의 특훈 1단계! 요즘 잘나가는 소서리스들의 필수품인 매직 마스터 시험을 보라고 하는데… 실기 시험을 보기 전에 일단 필기 시험에 도전해보자. 퀴즈 형식의 퀘스트. mq119완료후 수행 가능.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>161</nextqid>
+      <nextqname>sq05_161_magic_test_2</nextqname>
+      <nextqnpc>n012_sorceress_master_cynthia</nextqnpc>
+      <qkname mid="1"><![CDATA[取得大师级资格证吧!（书面考试）]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라   (마나리지)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-noquest" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="217"><![CDATA[<html>$高级魔法师辛西亚$<BR>想考取大师级资格证? <BR>先到<FONT color=#a82424>塔拉</FONT>那里学习学习吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-a" mid="165"><![CDATA[<html>嗯。</html>]]></talk_answer>
+      <talk_question mid="164"><![CDATA[<html>$魔法师塔拉${action:Talk}<BR>前辈！祝贺你。<BR>很快解脱了嘛?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-b" mid="167"><![CDATA[<html>真碍事呢。</html>]]></talk_answer>
+      <talk_question mid="166"><![CDATA[<html>$魔法师塔拉$<BR>怎么，似乎不大高兴的样子嘛? 事情也解决了，也重新得到了辛西亚大人的认可，从而可以继续成为<FONT color=#a82424>正式魔法师</FONT>了，也还不高兴吗...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-c" mid="169"><![CDATA[<html>大师级资格证?</html>]]></talk_answer>
+      <talk_question mid="168"><![CDATA[<html>$魔法师塔拉$<BR>哎~怎么还那样啊。既然已经重新成为了辛西亚大人的正式弟子，怎么着不还得比之前更加努力才行啊。<BR>
+<FONT color=#a82424>大师级资格证</FONT>已经获得的话，不妨开始学一学高级魔法如何?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-d" mid="171"><![CDATA[<html>首次听说。</html>]]></talk_answer>
+      <talk_question mid="170"><![CDATA[<html>$魔法师塔拉$<BR>难道，到现在还没有的得到<FONT color=#a82424>大师级资格证</FONT>的吧?最近有出息的魔法师们大多都已经取得了至少两三个专业资格证呢。而且这还是其中基础中的基础啊...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-e" mid="173"><![CDATA[<html>是是。我在反省。</html>]]></talk_answer>
+      <talk_question mid="172"><![CDATA[<html>$魔法师塔拉$<BR>哎...真是的。谁让你在神圣天堂的赌场消耗时光的啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-e" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-f" mid="175"><![CDATA[<html>啊...知道啦。</html>]]></talk_answer>
+      <talk_question mid="174"><![CDATA[<html>$魔法师塔拉$<BR>没空和你开玩笑呢。<FONT color=#a82424>辛西亚</FONT>大人微笑着留下话了，要是没能在一周之内把前辈的实力提高一大截，后果自负。难道你不知道辛西亚大人笑的时候才是最可怕的时候吗? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-g" mid="177"><![CDATA[<html>如何才能获得资格证?</html>]]></talk_answer>
+      <talk_question mid="176"><![CDATA[<html>$魔法师塔拉$<BR>我可是相信前辈的能力呢。前辈已经具备了魔法师的实力，所以就把它当做巩固基础的训练好了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-h" mid="179"><![CDATA[<html>光听有点不耐烦啊...</html>]]></talk_answer>
+      <talk_question mid="178"><![CDATA[<html>$魔法师塔拉$<BR>资格证考试分为书面考试和实战考试。要想进入实战考试就必须得通过书面考试才行，所以呢先跟我学一下关于<FONT color=#a82424>魔法师的历史</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-acceptted" mid="183"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="182"><![CDATA[<html>$获取大师级资格证吧！（书面考试）$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-a" mid="6"><![CDATA[<html>嗯。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$魔法师塔拉$<BR>哎呦，前辈，你要是老这样，我可要向辛西亚老师打报告了！集中精神啊。那么，你肯定又忘光了吧。反正我先跟你说说关于魔法师的历史吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-a" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-b" mid="25"><![CDATA[<html> 贤者与黑暗灾难</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-1-f" mid="26"><![CDATA[<html> 魔法师的起源</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-1-j" mid="27"><![CDATA[<html> 龙之突袭</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-1-m" mid="28"><![CDATA[<html> 佩奥里斯塔</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-1-p" mid="29"><![CDATA[<html>完全掌握啦！</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$魔法师塔拉$<BR>在这些目录中选择一个吧，我会择取重点给你讲解的！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-b" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-c" mid="31"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$魔法师塔拉$<BR>很久以前，有一位 <FONT color=#a82424>贤者</FONT>。贤者受到女神的启示，给予了人类很多知识。人类用贤者授予的知识发展自己，过着更加富饶的生活。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-c" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-d" mid="33"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$魔法师塔拉$<BR>贤者虽受人类的爱戴，但是却成了龙的眼中钉。被称作黑色灾难的<FONT color=#a82424>黑龙</FONT>决定消灭贤者，两者终于开始了激烈的交战。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-d" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-e" mid="35"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$魔法师塔拉$<BR>战斗幸亏以贤者的胜利结束。但是受到致命伤的他也随即死去，临死之前他向自己的两名徒弟留下了可以预言未来之灾难的<FONT color=#a82424>秘传之球</FONT>和 <FONT color=#a82424>贤者法杖</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-e" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-a" mid="37"><![CDATA[<html>想听其他的故事！</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$魔法师塔拉$<BR>而前辈这次找到的秘传之球和贤者法杖就是贤者留下的两件遗物。如何，难道不神奇吗? 前辈...? 别打盹啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-f" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-g" mid="39"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$魔法师塔拉$<BR>贤者有两名弟子，其中的一名就是后来成为牧师之起源的<FONT color=#a82424>杰科斯</FONT>大人，另外一位就是我们魔法师的始祖 <FONT color=#a82424>马里安</FONT>大人。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-g" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-h" mid="41"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$魔法师塔拉$<BR>马里安大人以贤者的知识为基础发展了新的魔法。他主张女神创造了世界，但是在于她之前魔力早已存在，等于从此树立了<FONT color=#a82424>秘传魔法</FONT>的理论基础。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-h" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-i" mid="43"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$魔法师塔拉$<BR>而杰科斯却不屑于马里安大人的解释自己深陷在了<FONT color=#a82424>神圣魔法</FONT>的研究当中。结果，由于意见分歧，双方选择了相互不同的发展道路。是不是很傻啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-i" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-a" mid="45"><![CDATA[<html>想听其他的故事！</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$魔法师塔拉$<BR>现在魔法师使用的所有魔法均起源于马里安大人的秘传魔法。位于融解森林的<FONT color=#a82424>马里安殿堂</FONT>就是为了纪念伟大的魔法师马里安大人而建造的。遗憾的是现在却成为了怪物们的巢穴。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-j" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-k" mid="47"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$魔法师塔拉$<BR>在与贤者的决斗中负伤的<FONT color=#a82424>黑龙</FONT>经过长时间的恢复，又重新出山。黑龙的复活给当时的人们带去了极大的恐慌，实际上很多人类遭到的黑龙的毒手。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-k" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-l" mid="49"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$魔法师塔拉$<BR>人们为了消灭黑龙，决定组建讨伐队伍。各地的英雄们开始聚集，而魔法师们的活化石<FONT color=#a82424>卡拉秋</FONT>大人也正是在那时加入了讨伐队伍。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-l" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-a" mid="51"><![CDATA[<html>想听其他的故事。</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$魔法师塔拉$<BR>卡拉秋大人经过与黑龙殊死战斗，终于将其消灭。但是却被黑龙所喷出的黑暗气息所伤，现在只能隐居在<FONT color=#a82424>莲花沼泽</FONT>，实在是让人惋惜呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-m" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-n" mid="53"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$魔法师塔拉$<BR>如果说魔法师的起源就是马里安大人的话，那么魔法师的鼎盛期就是<FONT color=#a82424>佩奥里斯塔</FONT>家族了。他们的魔法能力原本就声名远播，而因为参与龙之突袭的<FONT color=#a82424>卡拉秋</FONT>大人，更是成为了一个神话。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-n" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-o" mid="55"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$魔法师塔拉$<BR>以佩奥里斯塔为姓氏的魔法师们都具有超强的能力。当然在他们其中最闻名的当属<FONT color=#a82424>卡拉秋 佩奥里斯塔</FONT>大人了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-o" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-a" mid="57"><![CDATA[<html>想听其他的故事！</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$魔法师塔拉$<BR>卡拉秋大人到现在还被视为所有魔法师们的精神支柱。成为正式魔法师之后，之所以出行去见卡拉秋大人，都是为了这一点。虽然前辈因为深陷赌博而没有去见他... 前辈！别打盹啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-p" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-q" mid="59"><![CDATA[<html>嗯！完美。</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-1-a" mid="60"><![CDATA[<html>想再听一遍。</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$魔法师塔拉$<BR>真的吗? 就您整天打盹，还想全部记住?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-q" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-r" mid="62"><![CDATA[<html>相信我啦！</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$魔法师塔拉$<BR>那么就去找<FONT color=#a82424>辛西亚</FONT>大人进行书面考试吧。<BR>只要答错一道题，就得重新开始，可要慎重解答哦！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-r" image="" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$魔法师塔拉$<BR>哎，一听到那种话，我就更不安啦。<BR>要是想再听一次刚才那些事情，可以随时来找我！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="" itemindex="">
+      <talk_question mid="219"><![CDATA[<html>$高级魔法师辛西亚$<BR>想考取大师级资格证？<BR>先找<FONT color=#a82424>塔拉</FONT>学习去吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="66"><![CDATA[<html>抱歉，再说一次吧！</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$魔法师塔拉${action:Talk}<BR>还想听一遍?哎…我就知道会这样... 瞧你老是打盹，又忘光了吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-a" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-b" mid="99"><![CDATA[<html> 贤者与黑暗灾难</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-2-f" mid="100"><![CDATA[<html> 魔法师的起源</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-2-j" mid="101"><![CDATA[<html> 龙之突袭</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-2-m" mid="102"><![CDATA[<html> 佩奥里斯塔</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-2-p" mid="103"><![CDATA[<html>完全掌握啦！</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$魔法师塔拉$<BR>在这些目录中选择一个吧，我会择取重点给你讲解的！ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-b" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-c" mid="72"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$魔法师塔拉$<BR>很久以前，有一位<FONT color=#a82424>贤者</FONT>。 贤者受到女神的启示，给予了人类很多知识。人类用贤者授予的知识发展自己，过着更加富饶的生活。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-c" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-d" mid="74"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$魔法师塔拉$<BR>贤者虽受人类的爱戴，但是却成了龙的眼中钉。被称作黑色灾难的<FONT color=#a82424>黑龙</FONT>决定消灭贤者，两者终于开始了激烈的交战。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-d" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-e" mid="76"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$魔法师塔拉$<BR>战斗幸亏以贤者的胜利结束。但是受到致命伤的他也随即死去，临死之前他向自己的两名徒弟留下了可以预言未来之灾难的<FONT color=#a82424>秘传之球</FONT>和<FONT color=#a82424>贤者法杖</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-e" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="78"><![CDATA[<html>想听其他的故事！</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$魔法师塔拉$<BR>而前辈这次找到的秘传之球和贤者法杖就是贤者留下的两件遗物。如何，难道不神奇吗? 前辈...? 别打盹啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-f" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-g" mid="80"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$魔法师塔拉$<BR>贤者有两名弟子，其中的一名就是后来成为牧师之起源的<FONT color=#a82424>杰科斯</FONT>大人，另外一位就是我们魔法师的始祖 <FONT color=#a82424>马里安</FONT>大人。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-g" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-h" mid="82"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$魔法师塔拉$<BR>马里安大人以贤者的知识为基础发展了新的魔法。他主张女神创造了世界，但是在于她之前魔力早已存在，等于从此树立了<FONT color=#a82424>秘传魔法</FONT>的理论基础。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-h" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-i" mid="84"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$魔法师塔拉$<BR>而杰科斯却不屑于马里安大人的解释自己深陷在了<FONT color=#a82424>神圣魔法</FONT>的研究当中。结果，由于意见分歧，双方选择了相互不同的发展道路。是不是很傻啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-i" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="86"><![CDATA[<html>想听其他的故事！</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$魔法师塔拉$<BR>现在魔法师使用的所有魔法均起源于马里安大人的秘传魔法。位于融解森林的<FONT color=#a82424>马里安殿堂</FONT>就是为了纪念伟大的魔法师马里安大人而建造的。遗憾的是现在却成为了怪物们的巢穴。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-j" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-k" mid="88"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$魔法师塔拉$<BR>在与贤者的决斗中负伤的<FONT color=#a82424>黑龙</FONT>经过长时间的恢复，又重新出山。黑龙的复活给当时的人们带去了极大的恐慌，实际上很多人类遭到的黑龙的毒手。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-k" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-l" mid="90"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$魔法师塔拉$<BR>人们为了消灭黑龙，决定组建讨伐队伍。各地的英雄们开始聚集，而魔法师们的活化石<FONT color=#a82424>卡拉秋</FONT>大人也正是在那时加入了讨伐队伍。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-l" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="92"><![CDATA[<html>想听其他的故事！</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$魔法师塔拉$<BR>卡拉秋大人经过与黑龙殊死战斗，终于将其消灭。但是却被黑龙所喷出的黑暗气息所伤，现在只能隐居在<FONT color=#a82424>莲花沼泽</FONT>，实在是让人惋惜呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-m" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-n" mid="94"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$魔法师塔拉$<BR>如果说魔法师的起源就是马里安大人的话，那么魔法师的鼎盛期就是<FONT color=#a82424>佩奥里斯塔</FONT>家族了。他们的魔法能力原本就声名远播，而因为参与龙之突袭的卡拉秋大人，更是成为了一个神话。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-n" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-o" mid="96"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$魔法师塔拉$<BR>以佩奥里斯塔为姓氏的魔法师们都具有超强的能力。当然在他们其中最闻名的当属<FONT color=#a82424>卡拉秋 佩奥里斯塔</FONT>大人了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-o" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="105"><![CDATA[<html>想听其他的故事！</html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>$魔法师塔拉$<BR>卡拉秋大人到现在还被视为所有魔法师们的精神支柱。成为正式魔法师之后，之所以出行去见卡拉秋大人，都是为了这一点。虽然前辈因为深陷赌博而没有去见他... 前辈！别打盹啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-p" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-q" mid="107"><![CDATA[<html>嗯！完美。</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="108"><![CDATA[<html>想再听一遍。</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$魔法师塔拉$<BR>真的吗? 就您整天打盹，还想全部记住?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-q" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-r" mid="110"><![CDATA[<html>相信我啦！</html>]]></talk_answer>
+      <talk_question mid="109"><![CDATA[<html>$魔法师塔拉$<BR>那么就去找 <FONT color=#a82424>辛西亚</FONT>大人进行书面考试吧。<BR>只要答错一道题，就得重新开始，可要慎重解答哦！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-r" image="" itemindex="">
+      <talk_question mid="111"><![CDATA[<html>$魔法师塔拉$<BR>哎，一听到那种话，我就更不安啦。<BR>要是想再听一次刚才那些事情，可以随时来找我！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-a" mid="116"><![CDATA[<html>我要挑战魔法大师级书面考试！</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR>我是让你去积累实力，你又瞎逛什么。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-b" mid="118"><![CDATA[<html>我不是石头脑袋！</html>]]></talk_answer>
+      <talk_question mid="117"><![CDATA[<html>$高级魔法师辛西亚$<BR>... 我说。可爱的徒儿啊。我这个当老师的真心的劝你一句，就你这个石头脑袋肯定过不了的，放弃算了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-c" mid="120"><![CDATA[<html>当然啊。</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$高级魔法师辛西亚$<BR>实战考试倒罢了，你还真能通得过书面考试不成?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-d" mid="122"><![CDATA[<html>我要挑战。</html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$高级魔法师辛西亚$<BR>你那么坚持的话，就考考吧。不过只要答错一道题就得重新开始，所以呢，要是答题的过程中确实有什么不明白的地方，还是乖乖的回到塔拉那里做好功课再回来吧。<FONT color=#a82424>嗯，那么确定要开始吗?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-d" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-e" mid="124"><![CDATA[<html>（开始魔法大师级书面考试）</html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$高级魔法师辛西亚$<BR>那么<FONT color=#a82424> 魔法大师级书面考试 </FONT>马上开始咯。<BR>好好听过之后回答哦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-e" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="126"><![CDATA[<html> 神圣魔法</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-f" mid="134"><![CDATA[<html> 秘传魔法</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="135"><![CDATA[<html> 暗黑魔法</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="136"><![CDATA[<html> 童贞魔法 （20岁为止保持童子身即可使用）</html>]]></talk_answer>
+      <talk_question mid="125"><![CDATA[<html>$魔法大师级书面考试卷$<BR><FONT color=#382000>以下哪种魔法为魔法师的基本魔法？</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-f" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-g" mid="206"><![CDATA[<html>呼，没问题！</html>]]></talk_answer>
+      <talk_question mid="205"><![CDATA[<html>$高级魔法师辛西亚$<BR>呵呵，不错嘛。不过下一道题只有更难，可不要紧张哦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-g" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="128"><![CDATA[<html> 草龙</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="138"><![CDATA[<html> 金龙</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-h" mid="139"><![CDATA[<html> 黑龙</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="140"><![CDATA[<html> 透明龙</html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html>$魔法大师级书面考试卷$<BR><FONT color=#382000>以下哪一种龙是曾与贤者决斗过的被称为黑色灾难的龙?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-h" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-i" mid="208"><![CDATA[<html>进入下一道题吧！</html>]]></talk_answer>
+      <talk_question mid="207"><![CDATA[<html>$高级魔法师辛西亚$<BR>
+嗯，都提示了黑色灾难，哪个笨蛋还会选择草龙或金龙呢。嗯，看来这点常识你还是具备的嘛。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-i" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="130"><![CDATA[<html> 马里奥</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-j" mid="141"><![CDATA[<html> 马里安</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="142"><![CDATA[<html> 马里亚</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="143"><![CDATA[<html> 马里昂</html>]]></talk_answer>
+      <talk_question mid="129"><![CDATA[<html>$魔法大师级书面考试卷$<BR><FONT color=#382000>以下作为贤者的弟子，哪位被称为魔法师的始祖?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-j" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-k" mid="210"><![CDATA[<html>赶快进入下一道题吧！</html>]]></talk_answer>
+      <talk_question mid="209"><![CDATA[<html>$高级魔法师辛西亚$<BR>
+呵呵，太阳从西边出来啦。居然还能记住马里安大人的名字。<BR>
+那就看看下一道题? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-k" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-l" mid="132"><![CDATA[<html> 卡拉秋</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="144"><![CDATA[<html> 巴尔纳</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="145"><![CDATA[<html> 杰兰特</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="146"><![CDATA[<html> 内尔文</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$魔法大师级书面考试卷$<BR><FONT color=#382000>以下哪位魔法师英雄曾与复活的黑龙战斗过?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-l" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-m" mid="212"><![CDATA[<html>进入下一道题吧！</html>]]></talk_answer>
+      <talk_question mid="211"><![CDATA[<html>$高级魔法师辛西亚$<BR>作为魔法师的话，肯定不会忘记卡拉秋 佩奥里斯塔的名字吧。她可是我们魔法师当中最高贵的存在。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-m" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="154"><![CDATA[<html> 魔法山脊</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="155"><![CDATA[<html> 凯德拉关卡</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="156"><![CDATA[<html> 神圣天堂</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-n" mid="157"><![CDATA[<html> 莲花沼泽</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$魔法大师级书面考试卷$<BR><FONT color=#382000>以下哪个地方是魔法师的英雄卡拉秋 佩奥里斯塔隐居的地方?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-n" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-o" mid="214"><![CDATA[<html>哦！（最后一道题了）</html>]]></talk_answer>
+      <talk_question mid="213"><![CDATA[<html>$高级魔法师辛西亚$<BR>没错。卡拉秋大人隐居的地方就是沼泽地区的莲花沼泽。或许你现在对那里还比较陌生，但是总有一天会有机会前往那里的。嗯，现在该是最后一道题了！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-o" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="158"><![CDATA[<html> 卡拉秋</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="159"><![CDATA[<html> 马里安</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-r" mid="160"><![CDATA[<html> 奶白色 辛西亚</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="161"><![CDATA[<html> 塔拉</html>]]></talk_answer>
+      <talk_question mid="148"><![CDATA[<html>$魔法大师级书面考试卷$<BR>
+<FONT color=#382000>历代魔法师中最美的魔法师是?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-p" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-d" mid="162"><![CDATA[<html>重新挑战书面考试。</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-q" mid="163"><![CDATA[<html>回到塔拉那里继续复习。</html>]]></talk_answer>
+      <talk_question mid="149"><![CDATA[<html>$高级魔法师辛西亚$<BR>啊！连这个都不知道！赶紧回到<FONT color=#a82424>塔拉</FONT>那里好好复习后再回来吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-q" image="" itemindex="">
+      <talk_question mid="150"><![CDATA[<html>$高级魔法师辛西亚$<BR>嗯，我可爱的徒儿就是个石头脑袋瓜嘛。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-r" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-s" mid="184"><![CDATA[<html>这种程度太简单啦。</html>]]></talk_answer>
+      <talk_question mid="151"><![CDATA[<html>$高级魔法师辛西亚$<BR>不，怎么可能。<BR>
+就凭这种石头脑瓜，居然还能通过书面考试... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-s" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-t" mid="188"><![CDATA[<html>实战考试?</html>]]></talk_answer>
+      <talk_question mid="187"><![CDATA[<html>$高级魔法师辛西亚$<BR>反正你已经对魔法师的历史多少掌握了一些，现在再通过<FONT color=#a82424>实战考试</FONT>就可以了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-t" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-u" mid="200"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="199"><![CDATA[<html>$高级魔法师辛西亚$<BR>实战考试是来评价魔法应用能力的 …嗯，魔法大师级实战考试…啊！就在这里。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-u" image="QW_10.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-v" mid="202"><![CDATA[<html>是的!</html>]]></talk_answer>
+      <talk_question mid="201"><![CDATA[<html>$高级魔法师辛西亚$<BR><FONT color=#a82424>霜风森林 </FONT><FONT color=#a82424>完成通关。</FONT> <BR>嗯…这个对我亲爱的徒儿应该不是问题吧? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-v" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-!next" mid="216"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="215"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">1600,,,,</exe>
+         <exe type="setquest">160</exe>
+         <exe type="talk" npc="n015_sorceress_tara">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1600,,,,</exe>
+         <exe type="complete">160</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n015_sorceress_tara" sub="h">0</exelink>
+   <exelink qstep="accepting" npc="n015_sorceress_tara" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="f" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="j" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="m" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="p" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="c" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="d" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="e" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="g" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="h" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="i" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="k" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="l" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="n" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="o" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="q" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="r">0,1</exelink>
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="f" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="j" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="m" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="p" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="c" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="d" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="e" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="g" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="h" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="i" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="k" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="l" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="n" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="o" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="q" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="r" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="e" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="f" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="g" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="h" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="i" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="j" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="k" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="l" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="m" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="n" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="o" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="r" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="q" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="s" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="t" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="u" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="v">0</exelink>
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="!next">1</exelink>
+   <journal_data recompense="0:1600" quest_title="매직 마스터 자격증을 따자! (필기)" chapterid="" quest_level="8" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n15</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>15</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="190"><![CDATA[和魔法师塔拉对话]]></title>
+         <contents mid="191"><![CDATA[<html>达到Lv9之前决定与塔拉一起进行特训。到魔法师塔拉那里开始特训吧。！<BR><BR><FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→ 魔法师塔拉</FONT></html>]]></contents>
+         <destination mid="192"><![CDATA[和魔法师塔拉对话]]></destination>
+         <todo_msg mid="193"><![CDATA[到魔法师塔拉那里接受特训吧。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="195"><![CDATA[和高级魔法师辛西亚对话]]></title>
+         <contents mid="196"><![CDATA[<html>到辛西亚老师那里进行魔法大师级书面考试吧。学习的内容记不大清的话，重新向塔拉请教吧。<BR>
+ <BR>
+<FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→高级魔法师辛西亚</FONT></html>]]></contents>
+         <destination mid="197"><![CDATA[和高级魔法师辛西亚对话]]></destination>
+         <todo_msg mid="198"><![CDATA[到辛西亚老师那里考试吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>8:-1</user_level>
+      <user_worldzone_level />
+      <user_class>3</user_class>
+      <prev_quest>119</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

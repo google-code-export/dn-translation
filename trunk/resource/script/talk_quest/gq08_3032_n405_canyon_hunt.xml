@@ -1,0 +1,181 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>gq08_3032_n405_canyon_hunt</qename>
+      <qtype>venturerquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>3032</qid>
+      <designer>곽노찬</designer>
+      <qlevel>10</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[公会委托] 古代人的后裔]]></qkname>
+      <qnpc>
+         <npcid>405</npcid>
+         <npcename>n405_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n405_guild_board-accepting" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n405_guild_board-accepting-a" mid="6"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$冒险家公会公告板$<BR>哈哈... 我就说嘛。你听说过没，据说出现了被认为是古代人后裔的少女先知。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n405_guild_board-accepting-a" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n405_guild_board-accepting-b" mid="98"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$冒险家公会公告板$<BR>或许可以借助古代人的后裔，我就可以使用这神剑了呢。如果实在没什么办法的话，我想就取那么一丁点... 古代人的血。为此至少先要找到那个少女才行。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n405_guild_board-accepting-b" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n405_guild_board-accepting-c" mid="100"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$冒险家公会公告板$<BR>从冒险家公会得知少女被监禁在<FONT color=#a82424>叹息峡谷</FONT>中。但是如果实力不行的话，<FONT color=#a82424>刀风泰迪斯</FONT>还是个……非常可怕的对手。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n405_guild_board-accepting-c" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n405_guild_board-accepting-d" mid="102"><![CDATA[<html>消灭刀风泰迪斯</html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$冒险家公会公告板$<BR>求一位能在我悄悄去见少女的时候，顺便可消灭刀风泰迪斯的实力超凡的冒险家。<BR><FONT color=#a82424><BR></FONT><FONT color=#7e12d2> 委托人：想成为古代人的冒险家</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n405_guild_board-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n405_guild_board-accepting-e" mid="11"><![CDATA[<html><FONT color=#086171>（接受委托）</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$委托奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n405_guild_board-accepting-e" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$[公会委托] 古代人的后裔$<BR>你接受了公会委托。<BR>消灭<FONT color=#a82424>叹息峡谷</FONT>中的 <FONT color=#a82424>刀风泰迪斯</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n405_guild_board-1" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$冒险家公会公告板$<BR>目前正在执行<FONT color=#a82424>[公会委托]古代人的后裔</FONT>。<BR><BR>※ <FONT color=#7e12d2>在同一公告板中只能执行一个公会委托。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n405_guild_board-2" image="GQ_hunt_end.dds" itemindex="">
+      <talk_answer link_index="n405_guild_board-2-a" mid="22"><![CDATA[<html>[委托完成] <FONT color=#086171>古代人的后裔</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$冒险家公会公告板$<BR>完成委托的冒险家，请在如下委托书上加盖完成图章。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n405_guild_board-2-a" image="" itemindex="">
+      <talk_answer link_index="n405_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$委托奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n405_guild_board-2-b" image="GQ_hunt_end.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$冒险家公会公告板$<BR>冒险家公会的委托已完成。<BR><BR><FONT color=#a82424>[冒险家公会协会]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,3032, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">30320,,,,</exe>
+         <exe type="huntmon" num="1" party="1" exe="5,6,7" onexe="">371</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">30320,,,,</exe>
+         <exe type="complete">3032</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n405_guild_board" sub="d">3</exelink>
+   <exelink qstep="accepting" npc="n405_guild_board" sub="e">0,1,4,2</exelink>
+   <exelink qstep="2" npc="n405_guild_board" sub="a">0</exelink>
+   <exelink qstep="2" npc="n405_guild_board" sub="b">1</exelink>
+   <journal_data recompense="30320" quest_title="[길드의뢰] 고대인의 후예" chapterid="" quest_level="10" quest_mark_type="19" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_14.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>119,0,0</destination_pos>
+         <destination_mode>custom:116@1,117@1,118@1,119@3</destination_mode>
+         <statemark_npcid>405</statemark_npcid>
+         <statemark_type>20</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[消灭叹息峡谷中的刀风泰迪斯]]></title>
+         <contents mid="43"><![CDATA[<html>去叹息峡谷消灭刀风泰迪斯。<BR><BR><FONT color=#086171>水晶谷(叹息峡谷入口)</FONT><FONT color=#a82424>→ 叹息峡谷</FONT><BR>
+<FONT color=#a82424></FONT> <BR>
+<FONT color=#7e12d2>※ 无法在深渊级难度下执行。</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[消灭刀风泰迪斯]]></destination>
+         <todo_msg mid="45"><![CDATA[新增了冒险家公会委托。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_guild_board.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n405</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>405</statemark_npcid>
+         <statemark_type>21</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[向冒险家公告板报告委托完成]]></title>
+         <contents mid="47"><![CDATA[<html>向位于水晶谷的叹息峡谷入口处的冒险家公会公告板报告委托完成。<BR><BR><FONT color=#086171>水晶谷 </FONT><FONT color=#a82424>→ 冒险家公会公告板</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[向冒险家公告板报告委托完成]]></destination>
+         <todo_msg mid="49"><![CDATA[完成冒险家公会委托。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>10:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>3031</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

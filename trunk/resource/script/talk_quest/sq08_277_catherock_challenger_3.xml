@@ -1,0 +1,445 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_277_catherock_challenger_3</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>277</qid>
+      <designer>손원호</designer>
+      <qlevel>22</qlevel>
+      <qdesc>276 선행퀘 완료시 자동으로 이어짐.
+문장학자에게 오크 영웅 타이푼의 비화를 듣고, 챈들러에게 돌아오면 새로운 도전장이 도착해 있다. 기도하는 자의 안식처로 가서 오크 3형제를 해치우면 완료된다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[挑战者兽人金 Ⅲ]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>32</npcid>
+         <npcename>n032_warrior_master_chandler</npcename>
+         <npckname>상급 워리어 챈들러 (캐더락 워려 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-noquest" image="" itemindex="">
+      <talk_question mid="125"><![CDATA[<html>$纹章学者贝利$<BR>
+我正忙着呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-a" mid="7"><![CDATA[<html>10年前的战斗?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$高级战士钱德勒${action:Talk}<BR>看到你现在的表现，我的心情也非常激动。<BR>啊啊……这让我想起了那个时候。<BR>10年前的那场战斗可是无比壮烈的啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-b" mid="9"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$高级战士钱德勒$<BR>10年前怪物袭击凯德拉的时候，我曾经在最前方和他们战斗过。那时，我遇到了一个很厉害的家伙。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-c" mid="11"><![CDATA[<html>胜负结果怎么样了?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$高级战士钱德勒$ <BR>
+嗯，如此看来，那个家伙也是兽人呢。<BR>虽然是敌人，但确实非常厉害。<BR>闪电般快速的攻击和铜墙铁壁般的防御真是一绝啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-d" mid="13"><![CDATA[<html>那么，赢了吧?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$高级战士钱德勒$<BR>
+啊哈哈！我怎么可能会输呢！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-e" mid="15"><![CDATA[<html>一只眼睛…难道是兽人金?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$高级战士钱德勒$<BR>不对！我赢过他，啊哈哈！<BR>我们只是交换了一只眼神。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-e" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-f" mid="17"><![CDATA[<html>这倒是。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$高级战士钱德勒$<BR>哈哈哈！要是<FONT color=#a82424>兽人金</FONT>就是他的话，你现在就不可能活着回来。那个家伙和我旗鼓相当，怎么可能会败给你呢！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-g" mid="19"><![CDATA[<html>什么事情啊?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$高级战士钱德勒$<BR>不过，或许真的有某种联系也说不准。<BR>菜鸟！可否帮我做一件事?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-g" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-h" mid="21"><![CDATA[<html>嗯，明白了。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$高级战士钱德勒$<BR>要说怪物相关的事情，没人比<FONT color=#a82424>贝利</FONT> 那个家伙知道的更多了。虽然还是个小屁孩儿，但掌握的知识却比老人还多呢。到他那里问一问<FONT color=#a82424>兽人金</FONT>的底细回来吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-acceptted" mid="23"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$挑战者兽人金 Ⅲ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-i" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$高级战士钱德勒$<BR><FONT color=#a82424>纹章学者贝利</FONT>就在桥的另一头，就不要瞎找了！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$高级战士钱德勒$<BR><FONT color=#a82424>纹章学者贝利</FONT>就在桥的另一头，就不要瞎找了！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="45"><![CDATA[<html>在读什么呢?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$纹章学者贝利$<BR><FONT color=#387206>“女兽人喘着粗气，像章鱼一样缠上了男兽人的身体……”<BR></FONT>啊！你怎么能突然闯进来呢？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="47"><![CDATA[<html>有事想请教。</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$纹章学者贝利$<BR>啊哈哈... 没什么。只是在看从遗忘寺院发掘到的古书。可不是什么不堪入目的内容哦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-c" mid="49"><![CDATA[<html>你认识兽人金吗?</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$纹章学者贝利$<BR>哦。那来的正好。 <BR>世界上的所有知识，都包含在了书本当中哦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-d" mid="51"><![CDATA[<html>(稍等一下)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$纹章学者贝利$<BR>是叫<FONT color=#a82424>兽人金</FONT>吗？还真是个奇怪的名字。<BR>我倒是听说过黑魔金，但是兽人金……请稍等一下。我得查一下兽人百科辞典。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-d" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-e" mid="53"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$纹章学者贝利$<BR>斯洛金…不是他... 啊！在这里。<FONT color=#a82424>兽人金</FONT>。根据兽人百科全书中的记载，似乎还是个非常有名的兽人呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-e" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-f" mid="128"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html>$纹章学者贝利$<BR>嗯。经我仔细查看，不是<FONT color=#a82424>兽人金</FONT>有名，而是他的父亲独眼龙<FONT color=#a82424>兽人战士塔朋金</FONT>才真正有名啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-f" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-g" mid="55"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$纹章学者贝利$<BR>因为他像暴风一样快速且又强大，所以都叫他<FONT color=#a82424>塔朋金</FONT>，也算是传说中的兽人了，因曾经在凯德拉战争中夺去了<FONT color=#a82424>钱德勒</FONT>的一只眼而变得更加出名。当然 ，那个时候<FONT color=#a82424>塔朋金</FONT>也失去了一只眼睛… <FONT color=#a82424>兽人金</FONT>原来是他的<FONT color=#a82424>儿子</FONT>啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-g" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-h" mid="57"><![CDATA[<html>老是给我发来挑战书呢。</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$纹章学者贝利$<BR> 但是<FONT color=#a82424>兽人金</FONT>可不像他的父亲一样那般厉害，反而是个更喜欢十字绣或者针织的奇怪的兽人呢。确实是个非常奇怪的兽人呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-h" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-i" mid="59"><![CDATA[<html>但为何只挑战我呢?</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$纹章学者贝利$<BR>我也听说了一些。虽然我也不知道是何原因，或许<FONT color=#a82424>兽人金</FONT>就是为了继承父亲的名声而选择了挑战者的道路了呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-i" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-j" mid="61"><![CDATA[<html>是吗？我知道了。</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$纹章学者贝利$<BR>是啊，我也不大清楚啊，反正把{user_nick}您当做真正的对手了吧?既然有他父亲的血统，他也算留着相同的热血啊 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-j" image="" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$纹章学者贝利$<BR>并不是所有的怪物都是坏蛋。 <BR>希望您可以用自己清澈的双眼看清我们的世界。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QN_NPC_Warrior_Chandler.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$纹章学者贝利$<BR>除了这些也没什么其他的信息了。虽然我是建议您赶紧到<FONT color=#a82424>钱德勒</FONT>大人那里去，但…我不是为了继续看小说而撵你走的哦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-a" mid="66"><![CDATA[<html>(转述从贝利那里听到的事情)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$高级战士钱德勒$<BR>嗯? 向贝利打听清楚了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-a" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-b" mid="68"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$高级战士钱德勒$<BR>嗯... 原来<FONT color=#a82424>兽人金</FONT>就是<FONT color=#a82424>那个家伙</FONT>的儿子啊。<BR>倒也算继承了其父的永不放弃的韧劲了嘛...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-c" mid="70"><![CDATA[<html>我不是你的徒弟。</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$高级战士钱德勒$<BR>哈哈哈！总之这不很好吗！<BR>那个家伙的<FONT color=#a82424>儿子</FONT>和我弟子的对决。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-d" mid="72"><![CDATA[<html>真是坚持不懈啊。</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$高级战士钱德勒$<BR>啊哈哈！不是说一日为师，终生为父！<BR>不过这种小事就算了……对了！你不在的时候，又来了一封挑战书。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-e" mid="74"><![CDATA[<html>(阅读挑战书)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$高级战士钱德勒$<BR>当然啦！这种永不停歇的韧劲和勇气！ <BR>如果你是留着热血的勇士的话，肯定要收下才是！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-f" mid="76"><![CDATA[<html>这……是挑战书吗？</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$高级战士钱德勒$<BR><FONT color=#382000>跟我交往吧！我好喜欢你！<BR>我一直对你……</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-f" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-g" mid="78"><![CDATA[<html>(阅读挑战书)</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$高级战士钱德勒$<BR>这…这，哈哈哈！不是这个。 <BR>还给我，是这个！ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-g" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-h" mid="80"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$兽人金的挑战书$<BR><FONT color=#382000>{user_nick}，很抱歉之前一直小看你了。<BR>我要说的是，到目前为止，我只是用1%的力气对待你而已。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-h" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-i" mid="82"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html><FONT color=#2b2723>$兽人金的挑战书$<BR></FONT><FONT color=#382000>由于我的傲慢，我连续两次输给了你。 <BR>不，准确的说，是我力量的1%输给了你。<BR>总之，我不会再小看你了。</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-i" image="QM_Orc_Three_brothers.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-j" mid="84"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$兽人金的挑战书$<BR><FONT color=#382000>我害怕一旦使出100%的力量，会给世界带来危险，因此一直忍而不发。这次我决定全力和你战斗。另外还有件不是很重要的事，这次比我稍微强一些的兽人哥哥们会来帮我。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-j" image="QM_Orc_Three_brothers.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-k" mid="86"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$兽人金的挑战书$<BR><FONT color=#382000>我们是3兄弟，从来都荣辱与共。因此别以为3:1就对你不利。你感受到我隐藏着的黑暗的力量了吗！希望你不要因为害怕而逃走……</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-k" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-l" mid="88"><![CDATA[<html>(和勇士钱德勒对话)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$兽人金的挑战书$<BR><FONT color=#382000>呵呵呵，我对我们在祈祷者安息处的战斗非常期待。<BR></FONT><FONT color=#a82424></FONT><BR><FONT color=#a82424> 隐藏的力量全部解放出来的无敌兽人力量之王兽人金留名</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-l" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-m" mid="90"><![CDATA[<html>接受挑战。</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$高级战士钱德勒$<BR><FONT color=#2b2723>我就不说废话了。挑战者就是兽人英雄<FONT color=#a82424>塔朋金</FONT>的儿子，<FONT color=#a82424>兽人金</FONT>。作为你的对手还算配得上吧。</FONT><BR><FONT color=#2b2723>要接受挑战吗！</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-m" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-n" mid="92"><![CDATA[<html>你教过我什么啊...</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$高级战士钱德勒$<BR>去尽情发挥我授予你的技术吧！<BR>既然他这次以100%的力量对付你，你也要做好准备才是！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-n" image="QW_26.dds" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$高级战士钱德勒$<BR>这种小事就不计较了！ 啊哈哈！<BR>对方就在<FONT color=#a82424>祈祷者安息处</FONT>，赶紧行动吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3" image="QW_26.dds" itemindex="">
+      <talk_question mid="94"><![CDATA[<html>$高级战士钱德勒$<BR>对方就在<FONT color=#a82424>祈祷者安息处</FONT>，赶紧行动吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-4" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-4-a" mid="96"><![CDATA[<html>艰难的赢了他。</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$高级战士钱德勒$<BR>嗯！ 结果呢?结果如何?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-4-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-4-b" mid="98"><![CDATA[<html>不是你的弟子啊...</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$高级战士钱德勒$<BR>啊哈哈！ 嗯，我就知道会那样。<BR>不愧是我的徒弟啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-4-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-4-c" mid="100"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$高级战士钱德勒$<BR>这种小事就不要计较了吧！<BR>现在应该庆祝胜利才对！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-4-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-4-d" mid="102"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-4-d" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-4-e" mid="104"><![CDATA[<html>我也那么想。</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$高级战士钱德勒$<BR>但是千万不能放松警惕！<BR>兽人金是绝对不会放弃的……<BR>
+他一定会变得更强，然后再来挑战的！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-4-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-4-f" mid="106"><![CDATA[<html>（赶紧闪人吧）</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$高级战士钱德勒$<BR>啊啊，这是多么热情而又美好的景象啊！ <BR>
+青春！ 挑战！<BR>喂！路过的菜鸟！ <BR>不来一下吗? 冒险。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-4-f" image="" itemindex="">
+      <talk_question mid="107"><![CDATA[<html><FONT color=#7e12d2>(虽然最终获得了胜利，但从兽人金的背后，看到了传说中的英雄塔朋金的影子。兽人金还会继续来挑战。可以确定，总有一天他会变得更强，然后回来找我的)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,2771,2772,2773,2774</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID,277, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">i</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="1" party="1" exe="3,4,5" onexe="">21019</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2771,2772,2773,2774</exe>
+         <exe type="complete">277</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="h">0</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="acceptted">1,2,3,4</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="e" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="f" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="g" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="h" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="i" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="j">0,1</exelink>
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="b" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="c" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="d" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="e" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="f" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="g" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="h" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="i" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="j" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="k" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="l" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="m">0,2,1</exelink>
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="n" />
+   <exelink qstep="4" npc="n032_warrior_master_chandler" sub="b" />
+   <exelink qstep="4" npc="n032_warrior_master_chandler" sub="c">0</exelink>
+   <exelink qstep="4" npc="n032_warrior_master_chandler" sub="d">1</exelink>
+   <exelink qstep="4" npc="n032_warrior_master_chandler" sub="e" />
+   <exelink qstep="4" npc="n032_warrior_master_chandler" sub="f" />
+   <journal_data recompense="1:2771,2:2772,3:2773,4:2774" quest_title="도전자 김오크 Ⅲ" chapterid="" quest_level="22" quest_mark_type="10" use_item_list="276 선행퀘 완료시 자동으로 이어짐.&#xD;&#xA;도전자 3형제를 처치하면 완료된다.">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="108"><![CDATA[和纹章学者贝利对话]]></title>
+         <contents mid="109"><![CDATA[<html>去找凯德拉关卡的纹章学者贝利咨询关于兽人金的事情。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→</FONT> <FONT color=#a82424>纹章学者贝利</FONT></html>]]></contents>
+         <destination mid="110"><![CDATA[和纹章学者贝利对话]]></destination>
+         <todo_msg mid="111"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="112"><![CDATA[向高级战士钱德勒报告]]></title>
+         <contents mid="113"><![CDATA[<html>向凯德拉关卡的高级战士钱德勒报告兽人金相关的调查内容。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→</FONT> <FONT color=#a82424>高级战士钱德勒</FONT></html>]]></contents>
+         <destination mid="114"><![CDATA[向高级战士钱德勒报告]]></destination>
+         <todo_msg mid="115"><![CDATA[向高级战士钱德勒报告吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QM_Orc_Three_brothers.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>264,0,0</destination_pos>
+         <destination_mode>custom:261@1,262@1,263@1,264@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="116"><![CDATA[打败挑战者兽人金]]></title>
+         <contents mid="117"><![CDATA[<html>到祈祷者安息处击退挑战者兽人金第三次挑战吧！<BR><BR><FONT color=#086171>堆满落叶的湖岸（遗忘寺院入口）</FONT> <FONT color=#a82424>→</FONT> <FONT color=#a82424>祈祷者安息处</FONT></html>]]></contents>
+         <destination mid="118"><![CDATA[打败挑战者兽人金]]></destination>
+         <todo_msg mid="119"><![CDATA[到祈祷者安息处去击退兽人金吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="121"><![CDATA[向高级战士钱德勒报告]]></title>
+         <contents mid="122"><![CDATA[<html>向凯德拉关卡的高级战士钱德勒报告胜利了吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→</FONT> <FONT color=#a82424>高级战士钱德勒</FONT></html>]]></contents>
+         <destination mid="123"><![CDATA[向高级战士钱德勒报告]]></destination>
+         <todo_msg mid="124"><![CDATA[击退了挑战者。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>22:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>276</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

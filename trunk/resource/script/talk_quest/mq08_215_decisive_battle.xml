@@ -1,0 +1,210 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_215_decisive_battle</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>215</qid>
+      <designer>김주연</designer>
+      <qlevel>20</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>216</nextqid>
+      <nextqname>mq08_216_argentas_kiss</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[决战]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="38"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>好的，有你参与进来，对我们将会有很大的帮助。事实上，我已经猜到污染物质被送到什么地方去了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="11"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>好的，有你参与进来，对我们将会有很大的帮助。事实上，我已经猜到污染物质被送到什么地方去了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="13"><![CDATA[<html><FONT face=Arial size=2>(继续)</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>福古斯报告说，他在<FONT color=#a82424>不归之路</FONT>附近巡逻的时候，看到一个穿着红色衣服的黑暗精灵，好像是<FONT color=#a82424>埃雷娜</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QW_23.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>如果福古斯看到的真的是埃雷娜，那埃雷娜<FONT color=#a82424>选择的散布污染物质的地点</FONT>一定就是不归之路。<BR>你快去那里阻止污染物质的散布。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QW_23.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>好，你快到<FONT color=#a82424>不归之路</FONT>去吧！凯德拉现在正面临巨大的危机！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-a" mid="16"><![CDATA[<html><FONT face=Arial size=2>(继续)</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>哈……我们把因为飞艇坠落而受伤的王城精锐士兵都派上了……凯德拉到底会怎么样呢？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-!next" mid="18"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n024_adventurer_guildmaster_decud-1-a", npc_talk_target);</exe>
+         <exe type="setquest">215</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>300103</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4">612</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">300103</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">215</exe>
+         <exe type="recompense">,2151,2152,2153,2154</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">1,0</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b">2,0,1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="a">1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="!next">0</exelink>
+   <journal_data recompense="1:2151,2:2152,3:2153,4:2154" quest_title="决战" chapterid="3" quest_level="20" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[和冒险家公会会长戴卡德对话]]></title>
+         <contents mid="24"><![CDATA[<html>冒险家公会成员的情报网发现<FONT color=#a82424>污染物质正在被运往什么地方</FONT>。和<FONT color=#a82424>冒险家公会会长戴卡德</FONT>对话。<BR> <BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 冒险家公会会长戴卡德</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[和冒险家公会会长戴卡德对话]]></destination>
+         <todo_msg mid="26"><![CDATA[请和和冒险家公会会长戴卡德对话。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_Ellena.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>174,0,0</destination_pos>
+         <destination_mode>custom:171@1,172@1,173@1,174@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[去不归之路阻止埃雷娜]]></title>
+         <contents mid="28"><![CDATA[<html>王城派遣的精锐士兵已经在<FONT color=#a82424>不归之路</FONT>待命。帮助他们<FONT color=#a82424>阻止企图散布污染物质的埃雷娜</FONT>。<BR><BR><FONT color=#086171>水晶谷(叹息峡谷入口)</FONT><FONT color=#a82424>→ 不归之路</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[去不归之路阻止埃雷娜]]></destination>
+         <todo_msg mid="30"><![CDATA[请去不归之路阻止企图散布污染物质的埃雷娜。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[向冒险家公会会长戴卡德报告结果]]></title>
+         <contents mid="32"><![CDATA[<html>埃雷娜把污染物质倾倒在自己身上，掉下了悬崖。向冒险家公会会长戴卡德报告散布到凯德拉的污染物质的情况。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 冒险家公会会长戴卡德</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[向冒险家公会会长戴卡德报告结果]]></destination>
+         <todo_msg mid="34"><![CDATA[请回去向冒险家公会会长戴卡德报告。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>214</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

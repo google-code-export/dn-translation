@@ -1,0 +1,236 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_406_guard_of_munition</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>406</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>1. 주교와 대화
+2. 43-3맵에서 사로잡힌 병사 3인을 풀어줌.
+3. 주교에게 보고.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>407</nextqid>
+      <nextqname>mq11_407_the_zero_hour</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[护卫运送物资]]></qkname>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>当然。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$主教伊格纳西奥$<BR>看来... 战争即将要打响了。绝不能让威胁神圣天堂的敌人存活在这个世上。希望你也是同样的想法。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="8"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$主教伊格纳西奥$<BR>不过现在很有可能在本就不足的兵力基础上还要抽调过去，因此很担心<FONT color=#a82424>王城</FONT>的安全啊。不好好准备的话可不行啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="10"><![CDATA[<html>那倒是。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$主教伊格纳西奥$<BR>这个地方地理位置已经很孤立了，所以一旦发生战争，就要特别注意物资的准备。所以事前一定要有充分的准备才行。仅仅采取防御措施是坚持不了多久的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="QW_34.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="12"><![CDATA[<html>（主教面带苦涩的表情）</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$主教伊格纳西奥$<BR>所以由我亲自组建的补给部队在<FONT color=#a82424>江下游淹没地</FONT>正负责运送重要的补给品。但却被魔物们生擒活捉过去了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-e" mid="14"><![CDATA[<html>我能提供什么帮助吗...?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$主教伊格纳西奥$<BR>那个补给部队是我私下组建的部队，所以要是其他将校知道此事的话，肯定会有所不满。在我应付他们的时候，说不定我的那些被生擒的部队早就被魔物们所杀害了呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-e" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-f" mid="16"><![CDATA[<html>我来帮你吧。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$主教伊格纳西奥$<BR>魔物们的行动比想象的还要迅速啊。似乎是在听从谁的指挥一般，整齐划一的行动呢。哦，对了。你应该有能力营救那些士兵吧… <FONT color=#7e12d2>（瞄了</font> <FONT color=#382000>{user_nick}</FONT><FONT color=#7e12d2>一眼之后，立即转过了头）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-f" image="QW_34.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$主教伊格纳西奥${action:talk}<BR><FONT color=#7e12d2>（啪！的一声拍了拍膝盖）</FONT>好！ 虽然我一直没看错你，但今天的你更是让我欣赏。快，没时间磨蹭了。<FONT color=#a82424>士兵们</FONT>被囚禁的地方就是<FONT color=#a82424>江下游淹没地</FONT>。到那里可与他们会合。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_34.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$主教伊格纳西奥$<BR>补给部队请求救助的地方是在<FONT color=#a82424>江下游淹没地</FONT>。<BR>
+现在就过去吧，我等你的好消息。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-a" mid="21"><![CDATA[<html>还好能和补给部队一起回来了。</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$主教伊格纳西奥${action:talk}<BR>快，报告下情况。<BR>
+怎么样了?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-b" mid="23"><![CDATA[<html>哦，不，这种奖励...</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$主教伊格纳西奥$<BR>做的不错，很好。我就认命你为我的直属部下。你要是还想得到其他奖励的话，我也会尽力满足你的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-b" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-c" mid="25"><![CDATA[<html>（主教欣喜的翻开口袋）</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$主教伊格纳西奥$<BR>作为主教也不能不表示什么，把这个收下吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-d" mid="27"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-!next" mid="29"><![CDATA[<html>那么，王城已经决定出兵了吗？</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$主教伊格纳西奥$<BR>你可真是难得的人才啊。以后要是有什么需求，随时可以跟我提。<BR>我会尽力满足你的。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4061,4062,4063,4064</exe>
+         <exe type="complete">406</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="e" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="f">0,1</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="c">0</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="d">1</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="!next" />
+   <journal_data recompense="1:4061,2:4062,3:4063,4:4064" quest_title="운송물자 호위" chapterid="4" quest_level="30" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[主教的准备]]></title>
+         <contents mid="32"><![CDATA[<html>与主教伊格纳西奥对话后，准备与黑暗骑士的战争。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[与主教伊格纳西奥对话]]></destination>
+         <todo_msg mid="34"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_34.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>343,0,0</destination_pos>
+         <destination_mode>custom:341@1,342@1,343@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[护卫补给部队]]></title>
+         <contents mid="38"><![CDATA[<html>到<FONT color=#a82424>江下游淹没地</FONT>去解救被俘的士兵。<BR><BR><FONT color=#086171>赫尔马岱港口（江下游废墟）</FONT> <FONT color=#a82424>→江下游淹没地</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[在江下游淹没地护卫补给部队]]></destination>
+         <todo_msg mid="40"><![CDATA[到江下游淹没地解救被俘的士兵们吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[完成护卫]]></title>
+         <contents mid="42"><![CDATA[<html>完成了补给部队的护卫任务。向<FONT color=#a82424>主教</FONT> <FONT color=#a82424>伊格纳西奥</FONT>报告吧。<BR>
+<BR><FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[与主教伊格纳西奥对话]]></destination>
+         <todo_msg mid="44"><![CDATA[完成了任务，向主教伊格纳西奥报告吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>405</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

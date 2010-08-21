@@ -1,0 +1,223 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_298_fear_of_abyss1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>298</qid>
+      <designer>김인정</designer>
+      <qlevel>23</qlevel>
+      <qdesc>둘째 고돌이의 변형된 보옥(300127)
+반루하의 변형된 보옥(300128)
+라렌의 변형된 보옥(300130)
+카레라의 변형된 보옥(300131)
+1. 베일리와 대화
+2. 4군데 어비스를 돌아 보옥 습득
+3. 베일리에게 보고</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>299</nextqid>
+      <nextqname>sq08_299_fear_of_abyss2</nextqname>
+      <nextqnpc>n028_scholar_bailey</nextqnpc>
+      <qkname mid="1"><![CDATA[深渊级的恐怖 I]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-a" mid="6"><![CDATA[<html>有什么担心的情况？</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$纹章学者贝利$<BR>呼... 又发生了这种情况...<BR>真让人担心啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-b" mid="9"><![CDATA[<html>这次又是哪个地区?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$纹章学者贝利${action:Talk}<BR>啊，是<FONT color=#382000>{user_nick}</FONT> 您啊。其实…又发生了。就是那个<BR><FONT color=#a82424>深渊级</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-c" mid="11"><![CDATA[<html>比上次还多啊。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$纹章学者贝利$<BR><FONT color=#a82424>神殿礼拜堂</FONT>，<FONT color=#a82424>墓穴集会场</FONT>，<FONT color=#a82424>佩奥里斯塔魔法研究所</FONT> 还有 <FONT color=#a82424>寂静修道院正殿</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-d" mid="13"><![CDATA[<html>我可以帮助你们。</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$纹章学者贝利$<BR>嗯，难道这个世界要愈发陷入混沌…真令人担心啊。那里不是什么都可以随便进去的地方，使得研究所需的宝玉也很难收集到呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$深渊级的恐怖 I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="17"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$纹章学者贝利${action:Talk}<BR>那么就请在 <FONT color=#a82424>神殿礼拜堂</FONT>获取小精灵小石的变形的宝玉，在<FONT color=#a82424>墓穴集会场</FONT>获取班鲁哈的变形的宝玉，在<FONT color=#a82424>佩奥里斯塔魔法研究所</FONT>获取拉兰变形的宝玉，在<FONT color=#a82424>寂静修道院正殿</FONT>获取卡雷拉的变形的宝玉回来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$纹章学者贝利$<BR>我再次重复一遍，必须要进入<FONT color=#a82424>深渊级</FONT>才能获得<FONT color=#a82424>变形的宝玉</FONT>，请务必牢记。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-a" mid="23"><![CDATA[<html>变形的宝玉拿回来了。</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$纹章学者贝利$<BR>正在急剧增加毫无防备的接近深渊级地区而轻易受伤的冒险家呢。我还在担心您的安全，看到您安全归来，我真高兴啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-b" mid="25"><![CDATA[<html>再没有出现其他深渊级地区吗?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$纹章学者贝利${action:Talk}<BR>女神的<FONT color=#a82424>恶梦</FONT>之力量忽然变化的原因到现在还没能查明。或许…作为人类的我们对此确实也是无能为力。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-c" mid="27"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-!next" mid="29"><![CDATA[<html>什么报告?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$纹章学者贝利$<BR>其实在你收集变形的宝玉的时候，我又得到了新的情报。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="prob">1000</chk>
+         <chk type="questitem" num="1" op="]=">300127</chk>
+         <chk type="questitem" num="1" op="]=">300128</chk>
+         <chk type="questitem" num="1" op="]=">300130</chk>
+         <chk type="questitem" num="1" op="]=">300131</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">298</exe>
+         <exe type="recompense_view">,2981,2982,2983,2984</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200472</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200492</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200510</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200559</exe>
+         <exe type="conexe" true="22" false="18">1</exe>
+         <exe type="conexe" true="22" false="19">2</exe>
+         <exe type="conexe" true="22" false="20">3</exe>
+         <exe type="conexe" true="22" false="21">4</exe>
+         <exe type="addquestitem" num="1">300127</exe>
+         <exe type="addquestitem" num="1">300128</exe>
+         <exe type="addquestitem" num="1">300130</exe>
+         <exe type="addquestitem" num="1">300131</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300127</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300128</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300130</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300131</exe>
+         <exe type="conexe" true="10,22" false="">0</exe>
+         <exe type="conexe" true="11,22" false="">0</exe>
+         <exe type="conexe" true="12,22" false="">0</exe>
+         <exe type="conexe" true="13,22" false="">0</exe>
+         <exe type="conexe" true="23,24,25" false="">1 and 2 and 3 and 4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n028_scholar_bailey">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2981,2982,2983,2984</exe>
+         <exe type="delquestitem" num="-1">300127</exe>
+         <exe type="delquestitem" num="-1">300128</exe>
+         <exe type="delquestitem" num="-1">300130</exe>
+         <exe type="delquestitem" num="-1">300131</exe>
+         <exe type="complete">298</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="d">1</exelink>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="acceptted">0,26,14,15,16,17,2,3,4,5</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="b">0</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="c">1,2,3,4,5</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="!next" />
+   <journal_data recompense="1:2981,2:2982,3:2983,4:2984" quest_title="어비스의 공포 I" chapterid="" quest_level="23" quest_mark_type="10" use_item_list="300127,300128,300130,300131">
+      <journal index="1">
+         <title_image />
+         <contents_image />
+         <need_itemlist>300127,300128,300130,300131</need_itemlist>
+         <destination_pos />
+         <destination_mode>hide</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[不断扩散的恐怖]]></title>
+         <contents mid="32"><![CDATA[<html>要进入<FONT color=#a82424>深渊级</FONT>的神殿礼拜堂，墓穴集会场，佩奥里斯塔魔法研究所，寂静修道院正殿。从其<FONT color=#a82424>头领</FONT>身上获取<FONT color=#a82424>变形的宝玉</FONT>才行。<BR><BR><FONT color=#086171>狂风森林（狂风森林神殿入口）</FONT> <FONT color=#a82424>→ 神殿礼拜堂</FONT><BR><FONT color=#086171>狂风森林（墓穴入口）</FONT> <FONT color=#a82424>→ 墓穴集会场</FONT><BR><FONT color=#086171>融解森林（魔法师之路）</FONT> <FONT color=#a82424>→ 佩奥里斯塔魔法研究所<BR></FONT><FONT color=#086171>融解森林（寂静修道院正门）</FONT> <FONT color=#a82424>→ 寂静修道院正殿</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[收集变形的宝玉]]></destination>
+         <todo_msg mid="34"><![CDATA[在扩散的深渊级地区收集变形的宝玉。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist>300127,300128,300130,300131</need_itemlist>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[贝利的苦恼]]></title>
+         <contents mid="36"><![CDATA[<html>收集完变形的宝玉。把它交给<FONT color=#a82424>纹章学者贝利</FONT>吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 纹章学者贝利</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[和纹章学者贝利对话]]></destination>
+         <todo_msg mid="38"><![CDATA[拿着变形的宝玉到纹章学者贝利那里吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>23:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

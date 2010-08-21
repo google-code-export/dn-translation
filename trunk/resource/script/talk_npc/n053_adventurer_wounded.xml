@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n053_adventurer_wounded</npcename>
+      <npcid>53</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[受伤的冒险家]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$受伤的冒险家$<BR>
+我没事，赶紧去地牢里帮帮其他人吧！</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="enterquest">mq08_203_black_knight_tracking</exe>
+         <exe type="conexe" true="0" false="2">0</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">203</chk>
+      </conditions>
+   </talk>

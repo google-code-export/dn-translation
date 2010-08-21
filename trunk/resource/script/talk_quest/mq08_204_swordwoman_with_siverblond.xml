@@ -1,0 +1,349 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_204_swordwoman_with_siverblond</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>204</qid>
+      <designer>김주연</designer>
+      <qlevel>12</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>205</nextqid>
+      <nextqname>mq08_205_ancient_relic</nextqname>
+      <nextqnpc>n028_scholar_bailey</nextqnpc>
+      <qkname mid="1"><![CDATA[银发女剑客]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>27</npcid>
+         <npcename>n027_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="6"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$冒险家公会会长戴卡德${action:Talk}<BR>这个嘛……那是个不知道是敌是友的人物。<BR>详细的我也不知道，据说是在黑骑士出现之后开始活动的冒险家。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="8"><![CDATA[<html>在哪里能见到那个女剑客呢？</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$冒险家公会会长戴卡德${action:Refusal}<BR>黑骑士在森林圣域中出现的情报也是从那个银发女剑客那里获得的。<BR>凯德拉冒险家公会的一半兵力也因此受损……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QW_15.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-c" mid="10"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>我从派去收拾现场的公会成员那里收到了报告，说在<FONT color=#a82424>森林圣域</FONT>有一位银发女剑客。<BR>现在出发的话，说不定还能见到她。不知道她有没有出发去追踪黑骑士。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$冒险家公会会长戴卡德${action:Refusal}<BR>如果你在<FONT color=#a82424>森林圣域</FONT>见到那位<FONT color=#a82424>银发女剑客</FONT>，请代表冒险家公会委托她帮着追踪黑骑士。冒险家公会目前必须集中精力恢复力量。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$纹章学者贝利$<BR><FONT color=#387206> {user_nick}</FONT>，<FONT color=#a82424>冒险家公会会长戴卡德</FONT>好像正在找你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$阿尔杰塔$<BR>你还没清醒吗？别在这里闲逛，赶快回家吧。<BR><FONT color=#7e12d2>(银发女剑客不耐烦地说)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QW_15.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>据公会成员报告说，银发女剑客就在<FONT color=#a82424>森林圣域</FONT>。<BR>现在出发的话，说不定还能见到她。不知道她有没有出发去追踪黑骑士。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2" image="" itemindex="">
+      <talk_answer link_index="n027_argenta-2-a" mid="16"><![CDATA[<html>听说你在追踪黑骑士。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$阿尔杰塔$<BR>你来这儿干嘛，小毛孩？<BR><FONT color=#7e12d2>(银发女剑客不耐烦地说)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-a" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-2-b" mid="18"><![CDATA[<html>(询问黑骑士的事情)</html>]]></talk_answer>
+      <talk_answer link_index="n027_argenta-2-c" mid="19"><![CDATA[<html>(询问少女的事情)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$阿尔杰塔$<BR><FONT color=#a82424>黑骑士</FONT>？呵呵……你的实力好像太差了吧，还来关心<FONT color=#a82424>黑骑士</FONT>？<BR>上次差点死了，幸亏我救了你。你还真不知道什么叫害怕。快回去吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-b" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-2-a" mid="21"><![CDATA[<html>(返回)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$阿尔杰塔$<BR>不知道你为什么对<FONT color=#a82424>黑骑士</FONT>这么感兴趣，不过我要给你一个忠告。<BR>你最好少打听，如果你想活下去的话……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-2-d" mid="23"><![CDATA[<html>(询问少女的事情)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$阿尔杰塔$<BR>少女？那个<FONT color=#a82424>黑骑士</FONT>带着到处走的红发小女孩吗？我也不知道她现在怎么样了……？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-d" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-2-e" mid="25"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$阿尔杰塔$<BR>什……什么？<BR>那个女孩是<FONT color=#a82424>古代人的后裔</FONT>……看来我迟到了一步。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-e" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-2-f" mid="27"><![CDATA[<html>我答应别人一定要把少女救出来。</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$阿尔杰塔$<BR>(女剑客皱起眉头)<BR>如果真的如你所说，那个女孩真的是 <FONT color=#a94407>古代人的后裔</FONT>，事情就不同了。<BR>但是，你为什么要追踪<FONT color=#a82424>黑骑士</FONT>呢？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-f" image="" itemindex="">
+      <talk_answer link_index="n027_argenta-2-g" mid="29"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$阿尔杰塔$<BR>答应别人……？哼，什么破约定……<BR>我怀疑你在面对无法拒绝的诱惑时，是否还能遵守这个约定。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-g" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-2-h" mid="31"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$阿尔杰塔$<BR>好吧！反正我也没什么时间了，就姑且接受你的帮助。<BR><FONT color=#a82424>黑骑士</FONT>现在应该在<FONT color=#a82424>沉睡者神殿</FONT>那边。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-h" image="QS_Default.dds" itemindex="300030">
+      <talk_answer link_index="n027_argenta-2-i" mid="33"><![CDATA[<html>顺从吊坠从哪里才能找到呢？</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$阿尔杰塔$<BR>那个家伙在古代遗迹游荡的时候，我还觉得不可能……这下可以肯定了。你去寻找<FONT color=#a82424>顺从吊坠</FONT>。那家伙手上有少女，所以不需要那个东西。但我们需要有遗忘寺院的钥匙。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-i" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$阿尔杰塔$<BR>这种事情你去问<FONT color=#a82424>冒险家公会</FONT>！找到吊坠之后，你到<FONT color=#a82424>沉睡者神殿</FONT>找我。<BR>必须赶快找到那个少女。<BR>再见，小毛孩。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$纹章学者贝利${action:Talk}<BR><FONT color=#387206>{user_nick}</FONT>，听说救了你的冒险家在<FONT color=#a82424>森林圣域</FONT>。<BR>(请到森林圣域去见见银发女剑客<FONT color=#a82424>阿尔杰塔</FONT>)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$纹章学者贝利$<BR><FONT color=#387206> {user_nick}</FONT>，<FONT color=#a82424>冒险家公会会长戴卡德</FONT>正在找你。<BR><FONT color=#7e12d2>(请和冒险家公会会长戴卡德对话)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-a" mid="38"><![CDATA[<html>(把事情从头到尾说明一遍)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$冒险家公会会长戴卡德${action:Talk}<BR>找到银发女剑客了吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-a" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-b" mid="40"><![CDATA[<html>好像是的。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$冒险家公会会长戴卡德${action:Refusal}<BR>黑骑士去了<FONT color=#a82424>沉睡者神殿</FONT>……看来他确实是在寻找古代人的力量。<BR>对了，阿尔杰塔看上去对少女感兴趣吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-c" mid="42"><![CDATA[<html>她看上去不像是坏人。</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>是吗？嗯……不知道她是不是也觊觎着古代人的力量，或者属于觊觎古代人力量的某个集团。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-c" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-d" mid="44"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>
+你好像太容易相信人了。<BR>
+你要记住，并不是所有的人都和你一样。<BR>
+说不定什么时候就会吃大亏。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-d" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$冒险家公会会长戴卡德${action:Talk}<BR>就说到这里吧……<FONT color=#a82424>顺从吊坠</FONT>嘛……<FONT color=#a82424>纹章学者贝利</FONT>应该知道。你去向他请求帮助吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-3" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$阿尔杰塔$<BR><FONT color=#a82424>顺从吊坠</FONT>的事情你去问<FONT color=#a82424>冒险家公会会长</FONT>！<BR>找到吊坠之后，你到<FONT color=#a82424>沉睡者神殿</FONT>找我。<BR>再见，小毛孩。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$冒险家公会会长戴卡德$<BR><FONT color=#a82424>顺从吊坠</FONT>的话，<FONT color=#a82424>纹章学者贝利</FONT>应该知道。你可以向他请求帮助。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-4" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-4-a" mid="49"><![CDATA[<html>好像已经没事了。</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$纹章学者贝利${action:Talk}<BR>啊，是参加这次黑骑士追击战的<FONT color=#387206>{user_class}{user_nick}</FONT>啊。<BR>你的身体怎么样了？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-4-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-4-b" mid="51"><![CDATA[<html>(询问顺从吊坠的事情)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$纹章学者贝利$<BR>幸好没事。那找我有什么事情吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-4-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-4-!next" mid="53"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">204</exe>
+         <exe type="recompense">,2041,2042,2043,2044</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n027_argenta" sub="b" />
+   <exelink qstep="2" npc="n027_argenta" sub="c" />
+   <exelink qstep="2" npc="n027_argenta" sub="a" />
+   <exelink qstep="2" npc="n027_argenta" sub="d" />
+   <exelink qstep="2" npc="n027_argenta" sub="e" />
+   <exelink qstep="2" npc="n027_argenta" sub="f" />
+   <exelink qstep="2" npc="n027_argenta" sub="g" />
+   <exelink qstep="2" npc="n027_argenta" sub="h" />
+   <exelink qstep="2" npc="n027_argenta" sub="i">0,1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="c" />
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="d">0,1</exelink>
+   <exelink qstep="4" npc="n028_scholar_bailey" sub="b">1</exelink>
+   <exelink qstep="4" npc="n028_scholar_bailey" sub="!next">0</exelink>
+   <journal_data recompense="1:2041,2:2042,3:2043,4:2044" quest_title="은발의 여검사" chapterid="2" quest_level="12" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>모험자 길드장 데커드</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>모험자 길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[和冒险家公会会长戴卡德对话]]></title>
+         <contents mid="55"><![CDATA[<html>向<FONT color=#a82424>冒险家公会会长戴卡德</FONT>询问有关救了自己的银发女剑客的事情。<BR><BR>
+<FONT color=#086171>凯德拉关卡</FONT><FONT color=#a82424> → 冒险家公会会长戴卡德</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[和冒险家公会会长戴卡德对话]]></destination>
+         <todo_msg mid="57"><![CDATA[请和冒险家公会会长戴卡德对话。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>124, -556,-706</destination_pos>
+         <destination_mode>custom:121@1,122@1,123@1,124@2</destination_mode>
+         <statemark_npcid>27</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>모험자 길드장 데커드</start_npc>
+         <desc_location>숲의 성역</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>아르젠타</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[和银发女剑客对话]]></title>
+         <contents mid="59"><![CDATA[<html>去<FONT color=#a82424>森林圣域</FONT>见见<FONT color=#a82424>银发女剑客</FONT>，询问黑骑士和少女的行踪。<BR><BR><FONT color=#086171>灰色废墟(遭到侵略的圣域入口)</FONT><FONT color=#a82424> → 森林圣域</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[和银发女剑客对话]]></destination>
+         <todo_msg mid="61"><![CDATA[请到森林圣域去寻找银发女剑客。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>숲의 성역</get_location>
+         <start_npc>아르젠타</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>모험자 길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[和冒险家公会会长戴卡德对话]]></title>
+         <contents mid="63"><![CDATA[<html>见到了银发女剑客阿尔杰塔，得知黑骑士的下一个目的地是沉睡者神殿。<BR>回去向<FONT color=#a82424>冒险家公会会长戴卡德</FONT>报告事情的经过。<BR><BR><FONT color=#086171>凯德拉关卡</FONT><FONT color=#a82424> → 冒险家公会会长戴卡德</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[和冒险家公会会长戴卡德对话]]></destination>
+         <todo_msg mid="65"><![CDATA[请回去向戴卡德报告。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2694,-3175</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[和纹章学者贝利对话]]></title>
+         <contents mid="94"><![CDATA[<html>为了找到银发女剑客阿尔杰塔所说的<FONT color=#a82424>顺从吊坠</FONT>，去向<FONT color=#a82424>纹章学者贝利</FONT>请求帮助。<BR><BR><FONT color=#086171>凯德拉关卡</FONT><FONT color=#a82424> → 纹章学者贝利</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[和纹章学者贝利对话]]></destination>
+         <todo_msg mid="96"><![CDATA[请去见见纹章学者贝利。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level>-1:-1</user_worldzone_level>
+      <user_class />
+      <prev_quest>203</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,307 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_412_cure_of_fairystar</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>412</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>413</nextqid>
+      <nextqname>mq11_413_dreaming_rose</nextqname>
+      <nextqnpc>n038_royal_magician_kalaen</nextqnpc>
+      <qkname mid="1"><![CDATA[佩奥里斯塔的药]]></qkname>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>你还在和那个<FONT color=#a82424>浣熊</FONT>在混？<BR>哼，谁是浣熊？当然是那位阴险狡猾的<FONT color=#a82424>主教老头子</FONT>，不然还能有谁？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="8"><![CDATA[<html>您看起来挺忙的。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$主教伊格纳西奥$<BR>我得想想其他的办法。<BR>
+要安慰那些在战场上受伤的士兵，还得跟上层汇报……真是忙死我了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="10"><![CDATA[<html>是卡拉安大人吗？</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$主教伊格纳西奥$<BR>像你这样的人才能够在这种时候出现，简直就是女神对我们的额外关照。<BR>对了，<FONT color=#a82424>宫廷魔法师卡拉安</FONT>似乎在找你……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$主教伊格纳西奥${action:Talk}<BR>是的，也许卡拉安也在研究唤醒<FONT color=#a82424>先知</FONT>的办法。<BR>希望她那边能有点成果。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$主教伊格纳西奥$<BR>你去见了<FONT color=#a82424>宫廷魔法师卡拉安</FONT>大人了吗？<BR>为了唤醒先知，她似乎也在研究佩奥里斯塔的古书。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-a" mid="14"><![CDATA[<html>(这是怎么回事……)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>你还有时间在这种地方闲晃？<BR>……我说，你赶紧该干嘛干嘛去！<BR>
+真是个愣头愣脑的家伙，哼！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-b" mid="16"><![CDATA[<html>没有，她没有醒来。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>听说那个老<FONT color=#a82424>浣熊</FONT> 打算自己偷偷立功，把你给叫去了？说是做了什么<FONT color=#a82424>圣水</FONT>之类的给你了……<BR>
+有效吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-b" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-c" mid="18"><![CDATA[<html>(卡拉安猛烈地抨击主教)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$宫廷魔法师卡拉安${action:Talk}<BR>哦～呵呵呵呵。我早就知道会是这样！哈哈哈！全都被我猜到了！！我就知道那只笨蛋浣熊肯定搞不定。哼，以为洒点什么水就能唤醒<FONT color=#a82424>先知</FONT>，真是可笑。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-c" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-d" mid="20"><![CDATA[<html>(似乎她也要找我帮忙了)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>呵呵，现在心里痛快多了。<BR>不论如何，你！我就给你个特别的机会，见识一下我<FONT color=#a82424>佩奥里斯塔</FONT>的惊人能力！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-d" image="QS_Default.dds" itemindex="300251">
+      <talk_question mid="21"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>你赶紧去<FONT color=#a82424>孤岛中心</FONT>给我弄些<FONT color=#a82424>梦幻草</FONT>回来。<BR>
+我需要那种能够在魔物的肚子里发芽成长的东西，消灭孤岛中心的强大魔物就能获得。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3" image="QS_Default.dds" itemindex="300251">
+      <talk_question mid="23"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>怎么回事？现在还没走？去<FONT color=#a82424>孤岛中心</FONT>找些<FONT color=#a82424>梦幻草</FONT>回来。我就让你见识见识<BR>佩奥里斯塔的伟大力量！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-a" mid="25"><![CDATA[<html>你打算用这个做什么？</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>唔，看你弱不禁风的，没想到还蛮能干的嘛？<BR>我劝你还是醒醒吧，和那个<FONT color=#a82424>浣熊</FONT>一样的主教撇清关系。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-a" image="QS_Default.dds" itemindex="300251">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-b" mid="27"><![CDATA[<html>(怎么又开始自以为是了)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>急什么急？沉睡的先知又不会跑掉？<BR>现在我要用这<FONT color=#a82424>梦幻草</FONT>来制作<FONT color=#a82424>梦粉</FONT>。<BR>
+你知道梦粉是什么吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-b" image="QS_Default.dds" itemindex="300083">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-c" mid="29"><![CDATA[<html>(看来关键还是方便)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$宫廷魔法师卡拉安${action:Talk}<BR>呵呵呵呵，我告诉你吧，你可要听好了。这是<FONT color=#a82424>能够让你进入别人梦境</FONT>的魔粉。沉睡不醒大多是精神意识上的问题引起的，因此要解决问题，最快的办法就是直接进入她的梦境问问她本人。<BR>当然这种方法也很方便。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-c" image="QS_Default.dds" itemindex="300083">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-d" mid="31"><![CDATA[<html>我不吃……</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>这种东西不能经常使用，我可是特别为你制作的，你应该感到无比荣幸才对！<BR><FONT color=#7e12d2>(卡拉安将各种调料和梦幻草搅拌在一起)</FONT><BR>
+这个东西闻起来会很香，你可千万不能吃！记住了吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-d" image="QS_Default.dds" itemindex="300083">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-e" mid="34"><![CDATA[<html>(获取梦粉)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>好了，都做好了。<BR>
+<FONT color=#7e12d2>(她将香喷喷的草研磨了一下，便包了一把给我)<BR></FONT>拿去吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-e" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-!next" mid="36"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">931</exe>
+         <exe type="addquestitem" num="1">300251</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntitem" num="1" exe="" onexe="4,5,6">300251</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300251</exe>
+         <exe type="addquestitem" num="1">300083</exe>
+         <exe type="recompense">,4121,4122,4123,4124</exe>
+         <exe type="complete">412</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="c" />
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="d">0,2,7,1</exelink>
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="c" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="d" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="e">2</exelink>
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="!next">0,1,3</exelink>
+   <journal_data recompense="1:4121,2:4122,3:4123,4:4124" quest_title="페어리스타의 약" chapterid="5" quest_level="32" quest_mark_type="7" use_item_list="300083,300251">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[别的方法]]></title>
+         <contents mid="39"><![CDATA[<html>圣水没有作用，与主教伊格纳西奥谈谈别的方法。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[和主教伊格纳西奥对话]]></destination>
+         <todo_msg mid="41"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[卡拉安的方法]]></title>
+         <contents mid="43"><![CDATA[<html>宫廷魔法师卡拉安也想试着唤醒<FONT color=#a82424>先知</FONT>。去见她，与她对话。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 宫廷魔法师卡拉安</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[和宫廷魔法师卡拉安对话]]></destination>
+         <todo_msg mid="45"><![CDATA[请和宫廷魔法师卡拉安对话。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_33.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>331,0,0</destination_pos>
+         <destination_mode>custom:331@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[梦幻草]]></title>
+         <contents mid="47"><![CDATA[<html>去<FONT color=#a82424>孤岛中心</FONT>搜集梦幻草。从最强大的魔物身上获得梦幻草的几率更大。<BR><BR><FONT color=#7e12d2>※ 在深渊难度下无法执行。</FONT><BR><BR><FONT color=#086171>赫尔马岱港口(孤岛运输船)</FONT> <FONT color=#a82424>→ 孤岛中心</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[去孤岛中心搜集梦幻草]]></destination>
+         <todo_msg mid="49"><![CDATA[请去孤岛中心搜集梦幻草。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[报告]]></title>
+         <contents mid="51"><![CDATA[<html>找到梦幻草后，回去找宫廷魔法师卡拉安报告。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 宫廷魔法师卡拉安</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[和宫廷魔法师卡拉安对话]]></destination>
+         <todo_msg mid="53"><![CDATA[将梦幻草转交给宫廷魔法师卡拉安。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>411</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

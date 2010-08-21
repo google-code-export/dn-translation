@@ -1,0 +1,332 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_598_lord_manticore_2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>598</qid>
+      <designer>곽노찬</designer>
+      <qlevel>40</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[吞噬光的魔兽Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-noquest" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$铁匠柏林$<BR>昨天我梦见有个像房子一样大的金块向我滚来，后来就醒了。那时，刚好听到赫尔马岱港口传来了毛骨悚然的声音。这这一定是个好兆头！<BR>
+<FONT color=#7e12d2>(可以从纹章学者斯塔西那里接受任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting" image="QS_Default.dds" itemindex="337838593">
+      <talk_answer link_index="n088_scholar_starshy-accepting-a" mid="7"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$纹章学者斯塔西$<BR>要想进入狮蝎领主的巢穴，需要<FONT color=#a82424>海神的眼泪</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-acceptted" mid="9"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$吞噬光的魔兽Ⅱ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="QM_Manticore_black.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2" mid="11"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$纹章学者斯塔西$<BR>
+好了，快到狮蝎巢穴去，打倒<FONT color=#a82424>狮蝎领主克雷姆</FONT>。如果你觉得它与之前的狮蝎和地狱犬差不多而小看它的话，我劝你还是趁早收手。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$铁匠柏林$<BR>昨天我梦见有个像房子一样大的金块向我滚来，后来就醒了。那时，刚好听到赫尔马岱港口传来了毛骨悚然的声音。这这一定是个好兆头！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="16"><![CDATA[<html>(听取注意事项)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$纹章学者斯塔西$<BR>当然，如果你不要命的话，我也不会拦你。不过如果你想活得久一点，最好召集同伴一起去。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="QS_Default.dds" itemindex="337838593">
+      <talk_question mid="17"><![CDATA[<html>$吞噬光的魔兽Ⅱ$<BR>
+※ <FONT color=#7e12d2>狮蝎巢穴的推荐人数是4人。</FONT><BR>※ <FONT color=#7e12d2>要想进入狮蝎巢穴，需要海神的眼泪。<BR></FONT>※ <FONT color=#7e12d2>海神的眼泪可以通过每日任务获得。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="QM_Manticore_black.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-a" mid="22"><![CDATA[<html>是的，打倒了。</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$纹章学者斯塔西$<BR>
+我听到赫尔马岱港口那边传来了嘈杂的声音……<BR>
+怎么样？你把<FONT color=#a82424>狮蝎领主克雷姆</FONT>打倒了吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4" mid="24"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$纹章学者斯塔西$<BR>
+呵呵……真了不起。我以为就算你再怎么厉害，也要花上一点时间，没想到这么快就完成了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$纹章学者斯塔西$<BR>
+对了，铁匠柏林不知道从哪里听到了消息，说等你回来之后，一定要到他那里去一趟。<BR>
+你去见见<FONT color=#a82424>铁匠柏林</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4-a" mid="28"><![CDATA[<html>呃……？干嘛？！</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$铁匠柏林$<BR>
+哦～My <FONT color=#a82424>friend</FONT>~! <BR>
+哦～My <FONT color=#a82424>Muse</FONT>~!<BR>
+哦～My <FONT color=#a82424>hope</FONT>~!<BR>
+哦哦哦哦～My……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4-b" mid="31"><![CDATA[<html>你找我有什么事吗？</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$铁匠柏林$<BR>
+切，装什么蒜？<BR>
+你不是做事一向很爽快的吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4-b" image="QM_Manticore_black.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4-c" mid="33"><![CDATA[<html>纪念品……？</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$铁匠柏林$<BR>
+我的消息一向很灵通，呵呵……<BR>
+对了，捕捉<FONT color=#a82424>狮蝎领主</FONT>得到的底纪念品拿来了吧？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4-c" image="QM_Manticore_black.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4-d" mid="35"><![CDATA[<html>啊啊……</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$铁匠柏林$<BR>嗯哼！我们之间干嘛还这样……？<BR>捉到<FONT color=#a82424>狮蝎</FONT>的话，一定会得到皮毛、爪子、尾巴之类的东西，不是吗？<BR>
+你该不会空着手回来了吧？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4-d" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4-e" mid="37"><![CDATA[<html>(啊……女神……)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$铁匠柏林$<BR>呵呵……只要有足够的材料，我一定可以制造出比上次制造的<FONT color=#a82424>炼狱之地狱犬A级物品</FONT>更好的东西。想想就让人兴奋！哈哈哈哈……<BR><FONT color=#7e12d2>(柏林的脸涨得通红)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4-e" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4-f" mid="39"><![CDATA[<html>(看起来很危险。先退后一步……)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$铁匠柏林$<BR>
+呵呵呵呵……哈哈哈哈……<BR>
+好了！快把狮蝎领主的材料给我看看！快！马上！<BR>
+<FONT color=#7e12d2>(柏林把涨得通红的脑袋凑了过来)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4-f" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4-g" mid="42"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$铁匠柏林$<BR>
+嗯～你要去哪！<BR>
+我是<FONT color=#a82424>铁匠柏林</FONT>！<BR>
+我不会害你的～？！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4-g" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4-h" mid="44"><![CDATA[<html><FONT color=#086171>(获得奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4-h" image="QM_Manticore_black.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4-opencompounditem" mid="46"><![CDATA[<html>[制作A级物品]</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$铁匠柏林$<BR>呵呵，玩笑就到这里……我在这里等你把狮蝎领主的材料拿回来。狮蝎领主材料可以制作的物品是<FONT color=#a82424>黎明之狮蝎A级套装</FONT>。<BR>
+去之前，你可以先转一转。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5981,5982,5983,5984</exe>
+         <exe type="setquest">598</exe>
+         <exe type="talk" npc="n088_scholar_starshy">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="3,4,5">235117</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5981,5982,5983,5984</exe>
+         <exe type="complete">598</exe>
+         <exe type="custom">api_ui_OpenCompoundItem(userObjID, 102);</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="2">0,1,2</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n091_trader_bellin" sub="b" />
+   <exelink qstep="4" npc="n091_trader_bellin" sub="c" />
+   <exelink qstep="4" npc="n091_trader_bellin" sub="d" />
+   <exelink qstep="4" npc="n091_trader_bellin" sub="e" />
+   <exelink qstep="4" npc="n091_trader_bellin" sub="f" />
+   <exelink qstep="4" npc="n091_trader_bellin" sub="g">0</exelink>
+   <exelink qstep="4" npc="n091_trader_bellin" sub="h">1</exelink>
+   <exelink qstep="4" npc="n091_trader_bellin" sub="opencompounditem">2</exelink>
+   <journal_data recompense="1:5981,2:5982,3:5983,4:5984" quest_title="빛을 삼키는 마수Ⅱ" chapterid="" quest_level="40" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[与纹章学者斯塔西对话]]></title>
+         <contents mid="51"><![CDATA[<html>据说赫尔马岱港口出现了狮蝎巢穴。去纹章学者斯塔西那里听听狮蝎巢穴的注意事项吧。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 纹章学者斯塔西</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[与纹章学者斯塔西对话]]></destination>
+         <todo_msg mid="53"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_Manticore_black.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>14011,0,0</destination_pos>
+         <destination_mode>custom:14011@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[打猎狮蝎领主]]></title>
+         <contents mid="55"><![CDATA[<html>从赫尔马岱港口附近移动到狮蝎巢穴，打倒<FONT color=#a82424>狮蝎领主克雷姆</FONT>。<BR><BR><FONT color=#086171>赫尔马岱港口 (狮蝎巢穴入口)</FONT> <FONT color=#a82424>→ 狮蝎巢穴</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[打猎狮蝎领主]]></destination>
+         <todo_msg mid="57"><![CDATA[请到狮蝎巢穴去打猎狮蝎领主。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[与纹章学者斯塔西对话]]></title>
+         <contents mid="59"><![CDATA[<html>打倒了<FONT color=#a82424>狮蝎领主</FONT>。把这一事实告诉神圣天堂的<FONT color=#a82424>纹章学者斯塔西</FONT>。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 纹章学者斯塔西</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[与纹章学者斯塔西对话]]></destination>
+         <todo_msg mid="61"><![CDATA[请和纹章学者斯塔西对话。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[与铁匠柏林对话]]></title>
+         <contents mid="63"><![CDATA[<html>消息灵通的铁匠柏林好像听说了我去打猎狮蝎领主的事情。<BR>
+去问问铁匠柏林为什么找你吧。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 铁匠柏林</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[与铁匠柏林对话]]></destination>
+         <todo_msg mid="65"><![CDATA[请和铁匠柏林对话。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>40:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>597</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,353 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_480_catastrophic_rain2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>480</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>오염된 토양표본(300016)
+오염된 나무줄기(300017)
+
+군터와 대화
+말라버린 마리사의 샘에서 오염된 나무줄기 채집
+군터에게 보고
+스타쉬와 대화
+다시 군터에게.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[灾难之雨 II]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$纹章学者斯塔西$<BR>干吗? 为何用那种眼神看着我?！难道，不会是来监视我的吧? 嗯?<BR><FONT color=#7e12d2>（从冒险家公会长冈特接受任务方可继续进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="30"><![CDATA[<html>原来如此啊。</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$冒险家公会长冈特$<BR><FONT color=#a82424>纹章学者斯塔西</FONT>正在进行关于<FONT color=#a82424>灾难之雨</FONT>的研究。正在研究巨型魔物死亡时冒出的物质和周围环境污染相关的研究。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="32"><![CDATA[<html>原来如此。我可以做什么?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$冒险家公会长冈特$<BR>虽然似乎还未到更深层次的研究，但是因为标本不足，迟迟得不到结果呢。<FONT color=#a82424>阴森的丛林路 </FONT>被污染太久，所以研究似乎并不理想呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="36"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$灾难之雨 II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-a" mid="41"><![CDATA[<html>原来如此啊。</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$冒险家公会长冈特$<BR>纹章学者斯塔西正在进行关于<FONT color=#a82424>灾难之雨</FONT>的研究。正在研究巨型魔物死亡时冒出的物质和周围环境污染相关的研究。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-a" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-b" mid="43"><![CDATA[<html>原来如此。我可以做什么?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$冒险家公会长冈特$<BR>虽然似乎还未到更深层次的研究，但是因为标本不足，迟迟得不到结果呢。<FONT color=#a82424>阴森的丛林路 </FONT>被污染太久，所以研究似乎并不理想呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-b" image="QW_35.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2" mid="45"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$冒险家公会长冈特$<BR>让纹章学者斯塔西可以继续进行研究，你就到 <FONT color=#a82424>枯竭的玛丽莎泉</FONT>取些被污染的树枝回来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="QW_35.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$冒险家公会长冈特$<BR>在<FONT color=#a82424>枯竭的玛丽莎泉</FONT>可以看到具有奇特颜色和形状的干枯的树墩，把它拆开来拿些回来即可。<BR>等着你哟。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$纹章学者斯塔西$<BR>自言自语…总有一天会让大家明白我研究的重要性的，自言自语。<BR><FONT color=#7e12d2>（斯塔西全神贯注的独自研究 ）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-3" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-3-a" mid="53"><![CDATA[<html>（冈特爽快的笑着）</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$冒险家公会长冈特$<BR>这么快就回来啦?你的身手真不错嘛。在神圣天堂可是很难得一见哦，我对你抱有期望哦，哈哈。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-3-a" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$冒险家公会长冈特$<BR>这些标本与其给我，你还不如直接去交给<FONT color=#a82424>纹章学者斯塔西</FONT>吧。因为是很久之前的委托，他可能忘记了吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-4" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$冒险家公会长冈特$<BR>嗯?还没到<FONT color=#a82424>纹章学者斯塔西</FONT>那里吗?<BR>那个被污染的标本…带在身上指不定会有什么负面效果呢，最好赶紧过去交给他吧。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-a" mid="57"><![CDATA[<html>嗯?！什么话啊...?</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$纹章学者斯塔西$<BR>呵呵。又是<FONT color=#a82424>冒险家公会长冈特</FONT>派来的差事员吧?<BR>…你不会是要把我推向陷阱的女神教团的调查员那样的人吧? 嗯?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-b" mid="59"><![CDATA[<html>（斯塔西正色辩解道）</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$纹章学者斯塔西$<BR>啊，还是算啦。虽然我确实对龙的痕迹或历史感兴趣，但也不要为此把我和龙之追随者绑在一块啊。这…这些东西我也只是为了做学问而必需的东西而已。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-c" mid="61"><![CDATA[<html>（斯塔西仔细的观看标本）</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$纹章学者斯塔西$<BR>反正先给我吧。<FONT color=#7e12d2>（斯塔西飞快的拿走我手上的东西）</FONT> 哦哦…这是从阴森的丛林拿回的树枝标本... 还不错嘛。哦，这是从出现黑龙的黑暗大君主的关卡拿来的泥土吗? 嗯嗯...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-d" mid="63"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$纹章学者斯塔西$<BR>嗯，你知道<FONT color=#a82424>灾难之雨</FONT>吗? 50余年前，由六大英雄消灭黑龙之后，那一带爆发了大范围的污染。大家公认为那是因为消灭黑龙的时候落下的污染物质所致，人们称它为灾难之雨。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-e" mid="65"><![CDATA[<html>嗯? 那跟阴森的丛林...?</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$纹章学者斯塔西$<BR>根据记载连<FONT color=#a82424>六大英雄</FONT>也遭受到了黑龙的灾难之雨的巨大伤害。这次的黑龙事件似乎也是相似的情况... 我正在研究它呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-f" mid="67"><![CDATA[<html>那是什么意思?</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$纹章学者斯塔西$<BR>相传阴森的丛林地区因古代某种<FONT color=#a82424>无法获知的原因</FONT><FONT color=#a82424>爆发了污染</FONT>。我认为那场污染与因灾难之雨造成的污染情况非常相似。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-f" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-g" mid="69"><![CDATA[<html>原来如此。（尽管我不大了解...）</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$纹章学者斯塔西$<BR>我的假设要是正确的话，在<FONT color=#a82424>阴森的丛林发生的古代人做的实验可能就与黑龙有某种关联</FONT>。不然就不会产生相同属性的污染。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-g" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$纹章学者斯塔西$<BR>50多年前的标本和这次黑龙的灾难之雨的标本... 还有阴森的丛林的标本，现在材料已经很充足了。嗯，现在得开始分析作业了，你可以回到冈特那边了。<FONT color=#7e12d2>（斯塔西麻烦的挥手示意）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5" image="" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$纹章学者斯塔西$<BR>还不回去干吗呢?我会很快派人过去的，当你到那的时候，就可以联系上了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-a" mid="73"><![CDATA[<html>刚刚回来的啊。</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$冒险家公会长冈特$<BR>嗯，怎么样了?！<BR>不是去纹章学者斯塔西那里的吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-b" mid="75"><![CDATA[<html>嗯?怎么...?</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$冒险家公会长冈特$<BR>我也是这么认为的…不过够失败的<BR>居然和他派来的差役几乎在同一时间到达。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-c" mid="77"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-next_quest" mid="79"><![CDATA[<html>到底是什么事情?</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$冒险家公会长冈特$<BR>连同感谢信一起还拿来了委托费呢... 还说另外派过去的差事员很多事儿，我，真是…无语了。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4801,4802,4803,4804</exe>
+         <exe type="setquest">480</exe>
+         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n036_adventurer_guildmaster_gunter-1-b", npc_talk_target);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4801,4802,4803,4804</exe>
+         <exe type="setstep">2</exe>
+         <exe type="huntitem" num="5" exe="3,4,5" onexe="">300017</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="3,5">300016,300017</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300016</exe>
+         <exe type="delquestitem" num="-1">300017</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4801,4802,4803,4804</exe>
+         <exe type="complete">480</exe>
+         <exe type="custom">api_npc_NextScript(userObjID, npcObjID, "n036_adventurer_guildmaster_gunter-1", "sq11_481_catastrophic_rain3.xml");</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="b" />
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="2">1,2</exelink>
+   <exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="a">0,1</exelink>
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="g">0,1,2,3</exelink>
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="b">0</exelink>
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="c">1</exelink>
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="next_quest">2</exelink>
+   <journal_data recompense="1:4801,2:4802,3:4803,4:4804" quest_title="재앙의 비 II" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="300016,300017">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_35.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>354,0,0</destination_pos>
+         <destination_mode>custom:351@4,352@4,353@4,354@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[其它标本]]></title>
+         <contents mid="82"><![CDATA[<html>在枯竭的玛丽莎泉采集被污染的树枝吧。敲碎枯竭的树木即可获得。<BR><BR><FONT color=#086171>黑山山角（阴森的丛林路）</FONT> <FONT color=#a82424>→枯竭的玛丽莎泉</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[采集被污染的树枝]]></destination>
+         <todo_msg mid="84"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <need_itemlist>300017</need_itemlist>
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[完成标本的采集]]></title>
+         <contents mid="86"><![CDATA[<html>回去向冒险家公会长冈特报告吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→冒险家公会长冈特</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[与冒险家公会长冈特对话]]></destination>
+         <todo_msg mid="88"><![CDATA[向冒险家公会长冈特报告吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist>300017,300016</need_itemlist>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[斯塔西的假设]]></title>
+         <contents mid="90"><![CDATA[<html>把标本交给纹章学者斯塔西。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→纹章学者斯塔西</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[与纹章学者斯塔西对话]]></destination>
+         <todo_msg mid="92"><![CDATA[把标本交给纹章学者斯塔西吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[意外的结果]]></title>
+         <contents mid="94"><![CDATA[<html>完成了委托，重新回到冒险家公会长冈特那里向其报告吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→冒险家公会长冈特</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[与冒险家公会长冈特对话]]></destination>
+         <todo_msg mid="96"><![CDATA[再次向冒险家公会长冈特报告吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>479</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

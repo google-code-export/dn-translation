@@ -1,0 +1,34 @@
+   <talk>
+      <npcename>n011_priest_leonardo</npcename>
+      <npcid>11</npcid>
+      <startexe>2</startexe>
+      <npckname mid="20"><![CDATA[高级牧师雷昂纳多]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="24"><![CDATA[<html>[任务]</html>]]></talk_answer>
+         <talk_question mid="21"><![CDATA[<html>$高级牧师雷昂纳多$<BR>愿女神保佑你...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="26" link_target="mq05_101_lost_sacred_object1.xml"><![CDATA[<html>[Lv1] <FONT color=#a94407>被抢的物品Ⅰ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="mq05_110_girl_of_destiny.xml"><![CDATA[<html>[Lv9] <FONT color=#a94407>命运的少女</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="34" link_target="mq05_112_doubt.xml"><![CDATA[<html>[Lv1] <FONT color=#a94407>可疑的气息</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="35" link_target="mq05_113_orb_of_vision1.xml"><![CDATA[<html>[Lv3] <FONT color=#a82424>秘传之球Ⅰ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="mq05_118_snatch_orb.xml"><![CDATA[<html>[Lv5] <FONT color=#a94407>被盗的宝珠</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="mq05_119_prospect.xml"><![CDATA[<html>[Lv8] <FONT color=#a94407>早知如此</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="mq05_120_money_girl.xml"><![CDATA[<html>[Lv9] <FONT color=#a94407>值钱的少女</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="sq05_154_gurafinder2.xml"><![CDATA[<html>[Lv6] <FONT color=#086171>谎言探测器Ⅱ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="sq05_168_hound_watched.xml"><![CDATA[<html>[Lv7] <FONT color=#086171>猎犬看着呢</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="sq05_162_good_arbeit.xml"><![CDATA[<html>[Lv8] <FONT color=#086171>不错的兼职</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="47"><![CDATA[<html>(返回)</html>]]></talk_answer>
+         <talk_question mid="25"><![CDATA[<html>$高级牧师雷昂纳多$<BR>
+没有无意义的试练。<BR>
+不要失去信仰。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq05_101_lost_sacred_object1</exe>
+         <exe type="conexe" true="1" false="0">0</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">101</chk>
+      </conditions>
+   </talk>

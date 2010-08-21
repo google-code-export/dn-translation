@@ -1,0 +1,195 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_320_strong_insecticide</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>320</qid>
+      <designer>곽노찬</designer>
+      <qlevel>20</qlevel>
+      <qdesc>400125 오염된 이끼</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[强力的杀虫剂]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="6"><![CDATA[<html>（不祥的预感）</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$消耗品商人梅伊$<BR>啊，来的正好！<BR>你不知道我多么盼望着<FONT color=#382000>{user_nick}</FONT>您过来呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="8"><![CDATA[<html>杀虫剂的话，猎犬营养剂不挺好的嘛。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$消耗品商人梅伊$<BR>自那个叫埃雷娜还是什么的黑暗精灵的骚乱之后，森林中飞来的虫子，都要把我的东西都给毁坏殆尽啊。所以我正想制作能够驱逐那些飞虫的杀虫剂。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="10"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$消耗品商人梅伊$<BR>呃，说什么呢?<BR>虽然是猎犬吃的食物，但不能用食物（?）来开这种玩笑吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="QS_Default.dds" itemindex="400125">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="12"><![CDATA[<html>要30个啊?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$消耗品商人梅伊$<BR>根据去年女神保佑夏季特刊中所记载，用<FONT color=#a82424>青苔食尸鬼</FONT>的青苔制作的杀虫剂具有非常好的效果。所以就到<FONT color=#a82424>死亡盆地</FONT>收集30个<FONT color=#a82424>被污染的青苔</FONT>回来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$强力的杀虫剂$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QS_Default.dds" itemindex="400125">
+      <talk_question mid="16"><![CDATA[<html>$消耗品商人梅伊$<BR>由于虫子过多，得准备充分才行啊。<BR><FONT color=#a82424>被污染的青苔</FONT>可以从<FONT color=#a82424>死亡盆地</FONT>的<FONT color=#a82424>被污染的青苔食尸鬼</FONT>那里轻易获取。<BR>就请快去快回吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="QS_Default.dds" itemindex="400125">
+      <talk_answer link_index="n026_trader_may-2-a" mid="35"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$消耗品商人梅伊$<BR>嗯…所以得这么混合，那么混合….<BR><FONT color=#7e12d2>（梅伊把被污染的青苔与各种奇怪的材料一起混合）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-b" mid="22"><![CDATA[<html>还要试啊?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$消耗品商人梅伊$<BR>完成啦！<FONT color=#a82424>梅伊牌强力杀虫剂</FONT>！<BR>
+那我先试试看吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-b" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-c" mid="24"><![CDATA[<html>啊- 呸呸！干什么呢？！</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$消耗品商人梅伊$<BR>恩，做测试。<BR><FONT color=#7e12d2>（梅伊忽然把杀虫剂喷向这里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-d" mid="37"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-d" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$消耗品商人梅伊$<BR>
+哦，不死啊，没什么效果嘛。<BR>
+<FONT color=#7e12d2>（梅伊耸耸肩，又失望的翻阅起杂志）</FONT><BR>
+看来还得再做其他药了。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3201,3202,3203,3204</exe>
+         <exe type="setquest">320</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">659</exe>
+         <exe type="huntitem" num="30" exe="5,6,7" onexe="">400125</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">400125</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3201,3202,3203,3204</exe>
+         <exe type="complete">320</exe>
+         <exe type="delquestitem" num="-1">400125</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2,3,4</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="b" />
+   <exelink qstep="2" npc="n026_trader_may" sub="c">0</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="d">1,2</exelink>
+   <journal_data recompense="1:3201,2:3202,3:3203,4:3204" quest_title="강력한 살충제" chapterid="" quest_level="20" quest_mark_type="10" use_item_list="400125">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_24.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>244,0,0</destination_pos>
+         <destination_mode>custom:241@3,242@3,243@3,244@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[收集30个被污染的青苔]]></title>
+         <contents mid="28"><![CDATA[<html>到死亡盆地消灭被污染的青苔食尸鬼并收集被污染的青苔回来吧。<BR>
+ <BR>
+<FONT color=#7e12d2>(深渊难度下无法进行。)</FONT><BR><BR><FONT color=#086171>堆满落叶的湖岸（死亡森林入口）</FONT> <FONT color=#a82424>→ 死亡盆地</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[收集30个被污染的青苔]]></destination>
+         <todo_msg mid="30"><![CDATA[新增了任务。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[与消耗品商人梅伊对话]]></title>
+         <contents mid="32"><![CDATA[<html>被污染的青苔收集完毕。回到凯德拉关卡的消耗品商人梅伊那里吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 消耗品商人梅伊</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[与消耗品商人梅伊对话]]></destination>
+         <todo_msg mid="34"><![CDATA[被污染的青苔收集完毕。回到消耗品商人梅伊那里吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>20:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

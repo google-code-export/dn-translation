@@ -1,0 +1,413 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_207_scattered_components</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>207</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc>300040 비행선 부품
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>208</nextqid>
+      <nextqname>mq08_208_depleting_fuel</nextqname>
+      <nextqnpc>n099_engineer_hubert</nextqnpc>
+      <qkname mid="1"><![CDATA[散落的零件]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드의 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>54</npcid>
+         <npcename>n054_elite_soldier_wounded</npcename>
+         <npckname>부상당한 정예병사1</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>55</npcid>
+         <npcename>n055_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행정 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n054_elite_soldier_wounded-noquest" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$受伤的精锐士兵$<BR>啊……事故是瞬间发生的。我听到咣的一声，然后就失去了意识。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-noquest" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$精锐士兵克林德$<BR>为了救活受伤的士兵，我必须回去。我一定要把伤害士兵的罪魁祸首……！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-noquest" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$飞艇工程师休伯特$<BR>什么？光是这个该死的飞艇就已经够忙的了，别和我说话。走开！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="35"><![CDATA[<html>我无话可说……</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$冒险家公会会长戴卡德${action:Talk}<BR>最终还是让<FONT color=#a82424>黑骑士</FONT>逃跑了……<BR>
+女剑客受了伤，而且<FONT color=#a82424>先知</FONT>还是什么的<FONT color=#a82424>少女</FONT>还在那个家伙的魔爪之中……啧啧……<BR>
+真是，事情越闹越大了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="37"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>这个嘛……虽然不能说没关系，但也不能说是你的责任。<BR>对了……她让你去<FONT color=#a82424>神圣天堂</FONT>寻找<FONT color=#a82424>金发剑客</FONT>？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2" mid="39"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$冒险家公会会长戴卡德$<BR><FONT color=#a82424>神圣天堂</FONT>嘛……<BR>要想前往<FONT color=#a82424>王城</FONT>，必须乘坐飞艇才行……但是飞艇也被<FONT color=#a82424>黑骑士</FONT>破坏了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$飞艇工程师休伯特$<BR>什么？光是这个该死的飞艇就已经够忙的了，别和我说话。走开！<BR>有事的话，去找凯德拉的<<FONT color=#a82424>冒险家公会会长戴卡德</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-1" image="" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$精锐士兵克林德$<BR>一定要救活我受伤的士兵啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n054_elite_soldier_wounded-1" image="" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$受伤的精锐士兵$<BR>啊……事故是瞬间发生的。我听到咣的一声，然后就失去了意识。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-a" mid="44"><![CDATA[<html>对……对不起。</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$飞艇工程师休伯特$<BR>什么？飞艇的状态？哈，你是来火上浇油的吗……！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-a" image="QW_AirShip.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$飞艇工程师休伯特$<BR><FONT color=#a82424>飞艇暂停运营</FONT>，你走吧。为什么暂停运营？这个问题我已经听了几百遍了。你去问旁边的士兵吧。我很忙，别再和我说话！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>你只能自己去确认一下，状态到底有多不好。<BR>
+去码头见见<FONT color=#a82424>飞艇工程师休伯特</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3" image="QP_AirShip_part .dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$飞艇工程师休伯特$<BR>啊，真的要疯了。没有库存，换都没得换。又不能去<FONT color=#a82424>死亡森林</FONT>回收<FONT color=#a82424>散落的零件</FONT>……<BR>
+有问题的话，你可以问旁边的士兵。我得修理飞艇。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-3" image="" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-3-a" mid="49"><![CDATA[<html>啊……我是<FONT color=#419300>{user_nick}</FONT>。</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$精锐士兵克林德$<BR><FONT color=#7e12d2>(冲士兵大声说道。)</FONT><BR>
+好，大家加油。飞艇很快就能修好了。<BR>
+你干嘛一直在这里晃头晃脑的？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-3-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-3-b" mid="51"><![CDATA[<html>没有前往神圣天堂的方法了吗？</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$精锐士兵克林德$<BR> 啊，你是那个正在追踪<FONT color=#a82424>黑骑士</FONT>的冒险家吧？我们也因为那个黑骑士而不得不待在这里。我们接到任务，从王城派遣到了这里，就像你看到的那样……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-3-b" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-3-c" mid="53"><![CDATA[<html>我去问问他需不需要帮忙。</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$精锐士兵克林德$<BR>就目前而言，除了修好飞艇之外就没有别的方法了。<BR>虽然我很想帮着修理飞艇，不过……喂！大家小心不要碰到伤口！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-3-c" image="" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$精锐士兵克林德$<BR>
+好的。我还得照看受伤的士兵，我先失礼了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-4" image="" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$精锐士兵克林德$<BR>好了，等飞艇修好之后，我们就回王城去！大家不要松懈！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-a" mid="57"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$飞艇工程师休伯特$<BR>你想帮我修理飞艇？<BR>真让人高兴。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-a" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-b" mid="59"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$飞艇工程师休伯特$<BR>据我所知，两艘飞艇在向这边移动的时候遭到了袭击。其中一艘坠落在死亡森林，另一艘紧急迫降在了这里。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-b" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-5" mid="61"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$飞艇工程师休伯特$<BR>要修好飞艇，需要搜集散落在<FONT color=#a82424>死亡森林</FONT>的零件。我的技术可是一流的……不管怎样，有人能帮我，真是太好了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5" image="QW_17.dds" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$飞艇工程师休伯特$<BR><FONT color=#a82424>死亡森林</FONT>的<FONT color=#2b2723><FONT color=#a82424>蜘蛛</FONT>和<FONT color=#a82424>食尸鬼</FONT>是</FONT>非常危险的怪物。但像你这样的冒险家，应该足以对付。请你帮我搜集<FONT color=#a82424>3个</FONT><FONT color=#a82424>飞艇零件</FONT>。飞艇零件应该就散落在那个地区。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-6-a" mid="65"><![CDATA[<html>您过奖了。</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$飞艇工程师休伯特$<BR>真了不起。这是这次事情的答谢，请你收下。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6-a" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-6-!next" mid="67"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="3" op="]=">300040</chk>
+      </conditions>
+      <executions>
+         <exe type="huntitem" num="3" exe="" onexe="1">300040</exe>
+         <exe type="conexe" true="4,5,6" false="">0</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2071,2072,2073,2074</exe>
+         <exe type="complete">207</exe>
+         <exe type="delquestitem" num="-1">300040</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="a">0,1</exelink>
+   <exelink qstep="3" npc="n055_elite_soldier" sub="b" />
+   <exelink qstep="3" npc="n055_elite_soldier" sub="c">0,1</exelink>
+   <exelink qstep="4" npc="n099_engineer_hubert" sub="b" />
+   <exelink qstep="4" npc="n099_engineer_hubert" sub="5">0,2,3</exelink>
+   <exelink qstep="6" npc="n099_engineer_hubert" sub="a">0</exelink>
+   <exelink qstep="6" npc="n099_engineer_hubert" sub="!next">1,2</exelink>
+   <journal_data recompense="1:2071,2:2072,3:2073,4:2074" quest_title="흩어진 부품들" chapterid="3" quest_level="14" quest_mark_type="7" use_item_list="300040">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location xml:space="preserve"> </get_location>
+         <start_npc xml:space="preserve"> </start_npc>
+         <desc_location xml:space="preserve"> </desc_location>
+         <step_action xml:space="preserve"> </step_action>
+         <complete_npc xml:space="preserve"> </complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="20"><![CDATA[前往神圣天堂的方法]]></title>
+         <contents mid="21"><![CDATA[<html>据说前往<FONT color=#a82424>神圣天堂</FONT>的唯一方法是在凯德拉乘坐飞艇。去了解一下详细的情况吧。<BR><BR><FONT color=#086171>凯德拉关卡</FONT><FONT color=#a82424> → 冒险家公会长戴卡德</FONT></html>]]></contents>
+         <destination mid="22"><![CDATA[和冒险家公会会长戴卡德对话]]></destination>
+         <todo_msg mid="23"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[和飞艇工程师休伯特对话]]></title>
+         <contents mid="71"><![CDATA[<html>冒险家公会会长戴卡德说要想前往神圣天堂，必须乘坐损坏的飞艇阿尔巴特罗号。向飞艇工程师<FONT color=#a82424>休伯特</FONT>询问是否可以乘坐飞艇。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 飞艇工程师休伯特</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[和飞艇工程师休伯特对话]]></destination>
+         <todo_msg mid="73"><![CDATA[请去见见工程师休伯特。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n55</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>55</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[和精锐士兵克林德对话]]></title>
+         <contents mid="75"><![CDATA[<html><FONT color=#a82424>工程师休伯特</FONT>说自己很忙，让我去向乘坐飞艇的精锐士兵们了解飞艇损坏的经过。和营舍前面的<FONT color=#a82424>精锐士兵克林德</FONT>对话。</html>]]></contents>
+         <destination mid="76"><![CDATA[和精锐士兵克林德对话]]></destination>
+         <todo_msg mid="77"><![CDATA[请和精锐士兵克林德对话。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[和工程师休伯特对话]]></title>
+         <contents mid="79"><![CDATA[<html>冒险家公会会长戴卡德说要想前往神圣天堂，必须修好损坏的飞艇阿尔巴特罗号。<BR>帮助飞艇工程师<FONT color=#a82424>休伯特</FONT>修理飞艇。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 飞艇工程师休伯特</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[和工程师休伯特对话]]></destination>
+         <todo_msg mid="81"><![CDATA[请去见见工程师休伯特。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QW_17.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>134,0,0</destination_pos>
+         <destination_mode>custom:131@4,132@4,133@4,134@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[去死亡森林搜集飞艇零件]]></title>
+         <contents mid="83"><![CDATA[<html>按照休伯特的委托，搜集散落在<FONT color=#a82424>死亡森林</FONT>的<FONT color=#a82424>3个飞艇部件</FONT><BR><BR><FONT color=#086171>堆满落叶的湖岸(死亡森林</FONT><FONT color=#086171>入口)</FONT> <FONT color=#a82424>→ 死亡森林</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[去死亡森林搜集飞艇零件]]></destination>
+         <todo_msg mid="85"><![CDATA[请到死亡森林去搜索飞艇的零件。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QP_AirShip_part .dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[找回的零件]]></title>
+         <contents mid="87"><![CDATA[<html>飞艇部件全部找到了。<BR>把它们交给<FONT color=#a82424>凯德拉关卡</FONT>的<FONT color=#a82424>工程师休伯特</FONT>。<FONT color=#a82424></FONT><BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 飞艇工程师休伯特</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[和飞艇工程师休伯特对话]]></destination>
+         <todo_msg mid="89"><![CDATA[请把零件交给休伯特。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1;-1</user_level>
+      <user_worldzone_level>-1;-1</user_worldzone_level>
+      <user_class />
+      <prev_quest>206</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

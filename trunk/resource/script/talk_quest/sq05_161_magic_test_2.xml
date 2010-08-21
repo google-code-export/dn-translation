@@ -1,0 +1,345 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq05_161_magic_test_2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>161</qid>
+      <designer>손원호</designer>
+      <qlevel>8</qlevel>
+      <qdesc>타라의 특훈 2단계! 가장 난관이었던 필기 시험을 마치고 드디어 매직 마스터 실기 시험! 하지만 실기시험을 잘 치러도 스승 신시아가 순순히 자격증을 줄 지는 미지수!
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[获取魔法大师级资格证吧！（实战考试）]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라   (마나리지)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-noquest" image="" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$魔法师塔拉$<BR>
+前辈想要摘取资格证，比登天还难吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-accepting" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-accepting-a" mid="6"><![CDATA[<html>实战考试是什么?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$高级魔法师辛西亚$<BR>还是幸运的通过了书面考试啦。反正你已经对魔法师的历史多少掌握了一些，现在再通过 <FONT color=#a82424>实战考试</FONT>就可以了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-accepting-b" mid="8"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$高级魔法师辛西亚$<BR>实战考试是来评价魔法应用能力的 …嗯，魔法大师级实战考试…啊！就在这里。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-accepting-c" mid="10"><![CDATA[<html>是的!</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$高级魔法师辛西亚$<BR><FONT color=#a82424>霜风森林完成通关</FONT>。嗯…这个对我亲爱的徒儿应该不是问题吧?  </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-accepting-acceptted" mid="12"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$获得魔法大师级资格证吧！（实战考试）$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="QW_10.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-a" mid="108"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$高级魔法师辛西亚$<BR>嗯，你是属于实战型的徒儿吧。<BR><FONT color=#a82424>霜风森林</FONT>闪电般的完成通关吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-a" image="QW_10.dds" itemindex="">
+      <talk_question mid="110"><![CDATA[<html>$高级魔法师辛西亚$<BR>
+别磨蹭，赶紧出发啊。你不会是怕到<FONT color=#a82424>霜风森林</FONT>吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$魔法师塔拉$<BR>书面考试通过啦? 真了不起啊！<BR>
+那么实战考试也一鼓作气过关吧！加油！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="QW_10.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR>实战考试的课题是 <FONT color=#a82424>霜风森林</FONT>完成通关。<BR>还不赶紧出发？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-3-a" mid="36"><![CDATA[<html>这种程度小意思啦。</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR>还真是闪电一样快啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-3-b" mid="38"><![CDATA[<html>资格证呢?</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$高级魔法师辛西亚$<BR>到此为止，你总算是通过了魔法大师级书面考试和实战考试。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-3-c" mid="75"><![CDATA[<html>是的。</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$高级魔法师辛西亚$<BR>不好意思啊，我的徒儿，其实没什么资格证。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-3-d" mid="77"><![CDATA[<html>什…什么?</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$高级魔法师辛西亚$<BR>其实，我担心你这个笨脑瓜无法通过书面考试，所以本老师就偷偷的作弊让你以通过处理了。所以呢，你其实早就是魔法大师级了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3-d" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-3-e" mid="79"><![CDATA[<html>这怎么可以。</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$高级魔法师辛西亚$<BR>呵呵。简单说，你其实没必要拿什么资格证之类的东西。不过，我实在不忍心打断你专心学习的样子…所以就一直没说穿。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3-e" image="QN_SoceressTara.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-3-f" mid="81"><![CDATA[<html>老师，好讨厌！ </html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$高级魔法师辛西亚$<BR>呵呵呵呵，是你说要考试，所以我才让你考的。要埋怨的话，就去埋怨<FONT color=#a82424>塔拉</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3-f" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$高级魔法师辛西亚$<BR>真是永远忽悠不完的人啊，呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-a" mid="84"><![CDATA[<html>抽泣。(说明事情的来龙去脉)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$魔法师塔拉${action:Talk}<BR>如何啊?考试及格了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4-a" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-b" mid="86"><![CDATA[<html>不是啦，也不是说完全没用。</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$魔法师塔拉$<BR>什么? 哦…不好意思，因为我。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4-b" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-c" mid="88"><![CDATA[<html>所以就给我挨100下吧！</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$魔法师塔拉$<BR>前辈...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4-c" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-d" mid="90"><![CDATA[<html>啊，什么嘛...</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$魔法师塔拉$<BR>呜呜…这…给你这个，帮我看下吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4-d" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-e" mid="92"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4-e" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-f" mid="94"><![CDATA[<html>别哭，人生还不都这样。</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$魔法师塔拉$<BR>呜呜... 前辈好讨厌。我只是想帮前辈而已嘛... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4-f" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-g" mid="96"><![CDATA[<html>嗯，嗯，明白了。</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$魔法师塔拉$<BR>毕竟掌握了魔法师的历史的话，以后肯定会有用的，我保证。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4-g" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-h" mid="98"><![CDATA[<html>雷昂纳多老头?</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$魔法师塔拉$<BR>切…哦，对了，<FONT color=#a82424>雷昂纳多</FONT> 好像在找前辈呢? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4-h" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-i" mid="100"><![CDATA[<html>嗯，谢谢啦。</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$魔法师塔拉$<BR>嗯，看上去很着急的样子，快去看看吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4-i" image="" itemindex="">
+      <talk_question mid="101"><![CDATA[<html>$魔法师塔拉$<BR>呼…老实还是调皮还真看不出来啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="102"><![CDATA[<html>$高级魔法师辛西亚$<BR>呵呵呵呵。要埋怨的话，就去埋怨<FONT color=#a82424>塔拉</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,161, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="talk" npc="n012_sorceress_master_cynthia">1</exe>
+         <exe type="recompense_view">1610,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="checkStageClearRank" rand="6" num="98" onexe="5,3,4" true="[=" xsi:nil="true" />
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1610,,,,</exe>
+         <exe type="complete">161</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n012_sorceress_master_cynthia" sub="c">4</exelink>
+   <exelink qstep="accepting" npc="n012_sorceress_master_cynthia" sub="acceptted">0,1,2,3</exelink>
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="a">0,1,2</exelink>
+   <exelink qstep="3" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="3" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="3" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="3" npc="n012_sorceress_master_cynthia" sub="e" />
+   <exelink qstep="3" npc="n012_sorceress_master_cynthia" sub="f">0,1</exelink>
+   <exelink qstep="4" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="4" npc="n015_sorceress_tara" sub="c" />
+   <exelink qstep="4" npc="n015_sorceress_tara" sub="d">0</exelink>
+   <exelink qstep="4" npc="n015_sorceress_tara" sub="e">1</exelink>
+   <exelink qstep="4" npc="n015_sorceress_tara" sub="f" />
+   <exelink qstep="4" npc="n015_sorceress_tara" sub="g" />
+   <exelink qstep="4" npc="n015_sorceress_tara" sub="h" />
+   <exelink qstep="4" npc="n015_sorceress_tara" sub="i" />
+   <journal_data recompense="0:1610" quest_title="매직 마스터 자격증을 따자! (실기)" chapterid="" quest_level="8" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[和高级魔法师辛西亚对话]]></title>
+         <contents mid="56"><![CDATA[<html>针对魔法大师级实战考试与辛西亚老师对话。<BR><BR><FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→高级魔法师辛西亚</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[和高级魔法师辛西亚对话]]></destination>
+         <todo_msg mid="58"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_10.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>98,0,0</destination_pos>
+         <destination_mode>custom:96@1,97@1,98@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[霜风森林完成通关]]></title>
+         <contents mid="61"><![CDATA[<html>魔法大师级实战考试！为了考取资格证，霜风森林完成通关吧。<BR><BR><FONT color=#086171>雪霜坡道（霜风峡谷入口）</FONT> <FONT color=#a82424>→ 霜风森林</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[霜风森林完成通关]]></destination>
+         <todo_msg mid="63"><![CDATA[霜风森林完成通关吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[和高级魔法师辛西亚对话]]></title>
+         <contents mid="66"><![CDATA[<html>通过了魔法大师级实战考试！回到魔法山脊辛西亚老师那里获取资格证吧。<BR><BR><FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→高级魔法师辛西亚</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[和高级魔法师辛西亚对话]]></destination>
+         <todo_msg mid="68"><![CDATA[通过了魔法大师级考试。回到辛西亚老师那里吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n15</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>15</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="104"><![CDATA[和魔法师塔拉对话]]></title>
+         <contents mid="105"><![CDATA[<html>虽然通过了魔法大师级考试，但其实是被辛西亚老师给忽悠了。向塔拉喊冤去吧。<BR><BR><FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→魔法师塔拉</FONT></html>]]></contents>
+         <destination mid="106"><![CDATA[和魔法师塔拉对话]]></destination>
+         <todo_msg mid="107"><![CDATA[与塔拉对话吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>160</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

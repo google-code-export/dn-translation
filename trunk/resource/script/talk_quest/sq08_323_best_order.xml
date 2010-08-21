@@ -1,0 +1,285 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_323_best_order</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>323</qid>
+      <designer>김주연</designer>
+      <qlevel>13</qlevel>
+      <qdesc>다크엘프의 알약	400112
+붉은 치즈	400113
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>324</nextqid>
+      <nextqname>sq08_324_huberts_recipe</nextqname>
+      <nextqnpc>n026_trader_may</nextqnpc>
+      <qkname mid="1"><![CDATA[优秀杂货店]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="6"><![CDATA[<html>嗯? 要向我推销什么吗?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$消耗品商人梅伊$<BR>冒险家！冒险家！听过那个消息了吗?<BR>啊，也许你还不知道呢，这可是我秘密打听到的消息哦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="8"><![CDATA[<html>嗯…?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$消耗品商人梅伊$<BR><FONT color=#7e12d2>（正色）</FONT>凯德拉关卡的杂货店可是以合理的价格销售高品质物品的知名商店！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="49"><![CDATA[<html>啊… 嗯，知道了。</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$消耗品商人梅伊${action:Talk}<BR>每个产品都有自己的身价，所以与其卖低端货，还不如卖高端…<BR>
+<FONT color=#7e12d2>（梅伊估计可以说出100多种理由出来）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="10"><![CDATA[<html>普雷利镇?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$消耗品商人梅伊$<BR>
+你不对我的消息感兴趣吗?<BR>
+这个消息可是从普雷利镇我最好的朋友那里打听到的哦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-e" mid="12"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$消耗品商人梅伊$<BR>嗯！我听说有人会光顾各个村庄里的杂货店，从中评选出<FONT color=#a82424>优秀杂货店</FONT>颁发荣誉招牌。如果我的杂货店要是当选优秀的话，肯定会吸引更多的商团的！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-e" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-f" mid="14"><![CDATA[<html>嗯，凯德拉真没什么合适的。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$消耗品商人梅伊$<BR>但是，以我现在的商品还不足以炫耀成为<FONT color=#a82424>最高服务</FONT>。<BR>
+多莉丝倒是对她的猎犬营养剂期待很高的样子…。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-g" mid="16"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$消耗品商人梅伊$<BR>所以，我早有想到的东西！<BR>
+我需要几种材料，可否帮我一下啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="18"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$优秀杂货店$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-a" mid="21"><![CDATA[<html>貌似有点道理。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$消耗品商人梅伊$<BR>做别人做过的事，永远无法成为最优秀的。所以我要以凯德拉的古老的特产决出胜负！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-a" image="QW_15.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$消耗品商人梅伊$<BR>
+所需的材料就是黑暗精灵的丹药和小妖精们的红色乳酪。那些可以在<FONT color=#a82424>森林圣域</FONT>获取。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="QW_15.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$消耗品商人梅伊$<BR>我能再提供线索的就是，黑暗精灵的身体！就这些了。<BR>快到<FONT color=#a82424>森林圣域</FONT>去收集一些黑暗精灵的丹药和<FONT color=#a82424> </FONT>小妖精的红色乳酪回来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="25"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$消耗品商人梅伊$<BR>嗯…就期待吧。<BR>
+<FONT color=#7e12d2>（在已经准备好的水当中，倒入了那些材料）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-b" mid="27"><![CDATA[<html>（会是什么呢?反正肯定不会是吃的了…）</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$消耗品商人梅伊$<BR>苗条的黑暗精灵的丹药，极具营养的红色乳酪都放进去了，肯定又能减肥，又能强健…<BR>
+<FONT color=#7e12d2>（就像默念咒语一样的，一边倒入材料）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-c" mid="29"><![CDATA[<html>哦…不要，谢谢了。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$消耗品商人梅伊$<BR>呀！ '<FONT color=#a82424>变漂亮的乳酪汤</FONT>'终于做成了。<BR>要不要尝一下啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-d" mid="31"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-e" mid="33"><![CDATA[<html>那我就告辞….</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$消耗品商人梅伊$<BR>嗯，虽然味道有些难闻，但还好啦。<BR>要不先给理解我的<FONT color=#a82424>飞艇工程师休伯特</FONT>大叔?<BR>
+<FONT color=#7e12d2>（已经倒入盘里开始分了）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-e" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-!next" mid="35"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$消耗品商人梅伊$<BR>这么快就要走啊?<BR>顺便把它交给<FONT color=#a82424>飞艇工程师休伯特</FONT> 大叔可以吗，呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3231,3232,3233,3234</exe>
+         <exe type="setquest">323</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="10" op="]=">400112</chk>
+         <chk type="questitem" num="20" op="]=">400113</chk>
+         <chk type="prob">500</chk>
+         <chk type="prob">700</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">389</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">385</exe>
+         <exe type="huntitem" num="10" exe="" onexe="">400112</exe>
+         <exe type="huntitem" num="20" exe="" onexe="">400113</exe>
+         <exe type="conexe" true="13" false="16">0</exe>
+         <exe type="conexe" true="13" false="15">1</exe>
+         <exe type="addquestitem" num="1">400112</exe>
+         <exe type="addquestitem" num="1">400113</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="10,11,12" false="">1 and 0</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">384</exe>
+         <exe type="conexe" true="9,13" false="">2</exe>
+         <exe type="conexe" true="8,13" false="">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>,</comment>
+      <conditions />
+      <executions>
+         <exe type="recompense">,3231,3232,3233,3234</exe>
+         <exe type="complete">323</exe>
+         <exe type="delquestitem" num="-1">400112</exe>
+         <exe type="delquestitem" num="-1">400113</exe>
+         <exe type="addquestitem" num="1">400132</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n026_trader_may" sub="a">0,2,3,4,5,1,14</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="b" />
+   <exelink qstep="3" npc="n026_trader_may" sub="c">0</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="d">4,1,2,3</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="e" />
+   <exelink qstep="3" npc="n026_trader_may" sub="!next" />
+   <journal_data recompense="1:3231,2:3232,3:3233,4:3234" quest_title="우수 잡화점" chapterid="" quest_level="13" quest_mark_type="10" use_item_list="400112,400113">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[优秀杂货店]]></title>
+         <contents mid="37"><![CDATA[<html><FONT color=#a82424>消耗品商人梅伊</FONT>从普雷利镇的多莉丝那里得到了选拔优秀杂货店的消息。去听详细的内容吧<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 消耗品商人梅伊</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[与消耗品商人梅伊对话]]></destination>
+         <todo_msg mid="39"><![CDATA[新增了任务。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_15.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>123,0,0</destination_pos>
+         <destination_mode>custom:121@3,122@3,123@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[在森林圣域收集材料]]></title>
+         <contents mid="41"><![CDATA[<html>为了成为优秀杂货店，打算制作凯德拉古老特产的梅伊。从<FONT color=#a82424>森林圣域</FONT>收集她委托的材料吧。（<FONT color=#a82424>黑暗精灵的丹药</FONT>，<FONT color=#a82424>小妖精的红色乳酪</FONT>）<BR><BR><FONT color=#086171>灰色废墟（被侵犯的圣域入口）</FONT> <FONT color=#a82424>→ 森林圣域</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[在森林圣域收集材料]]></destination>
+         <todo_msg mid="43"><![CDATA[在森林圣域收集梅伊委托的材料吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[与消耗品商人梅伊对话]]></title>
+         <contents mid="45"><![CDATA[<html>梅伊委托的材料收集完毕。回到<FONT color=#a82424>凯德拉关卡</FONT>交出材料吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 消耗品商人梅伊</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[与消耗品商人梅伊对话]]></destination>
+         <todo_msg mid="47"><![CDATA[所有材料收集完毕。回到凯德拉关卡与梅伊对话吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>13:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,521 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_303_ring_thief3</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>303</qid>
+      <designer>김인정</designer>
+      <qlevel>14</qlevel>
+      <qdesc>안 보이는 도둑과 대화.
+상인 메이와 대화.
+습격자들의 매복지에서 코볼트 퇴치.
+메이와 대화.
+메이에게 받은 세제를 안 보이는 도둑에게 전달.
+케빈과 대화.
+끝.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[戒指被盗 III]]></qkname>
+      <qnpc>
+         <npcid>255</npcid>
+         <npcename>n255_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>29</npcid>
+         <npcename>n029_crew_kevin</npcename>
+         <npckname>자칭 승무원 케빈</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$乘务员凯文$<BR>父亲的戒指还没找到吗? 我就知道没什么戏了...<BR>
+<FONT color=#7e12d2>（要到精锐士兵棚屋附近的看不见的小偷那里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$飞艇工程师休伯特$<BR>抓小偷的事情有眉目了没有? 最好能尽早抓住把凯文的宝物找回来<BR><FONT color=#7e12d2>（要到精锐士兵棚屋附近的看不见的小偷那里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$消耗品商人梅伊$<BR>真搞不懂铁匠考林大叔为何突然说虐待猎犬什么的…发生什么事了。 <BR><FONT color=#7e12d2>（要到精锐士兵棚屋附近的看不见的小偷那里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting" image="QS_Default.dds" itemindex="300213">
+      <talk_answer link_index="n255_invisible_thief-accepting-a" mid="11"><![CDATA[<html>快把凯文的戒指还给我。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$看不见的小偷$<BR>是拿<FONT color=#a82424>戒指</FONT>来的吗? 冒险家先生?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-b" mid="13"><![CDATA[<html>所以?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$看不见的小偷$<BR>喂，别那么催嘛，就因为那个破戒指我的损失也大了去了。怎么擦也擦不掉的这个可恶的<FONT color=#a82424>味道</FONT>怎么也无法消失啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-c" mid="15"><![CDATA[<html>我可不会帮小偷的</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$看不见的小偷$<BR>所以什么所以啊? 你好，我好…才是真的好，如果你要是帮我，从这个危难中把我解救出来的话，那个破戒指我立马还给你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-c" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n255_invisible_thief-accepting-d" mid="17"><![CDATA[<html>嗯... 那个，我倒是知道它的发明者...</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$看不见的小偷$<BR>谁让你帮我偷东西了？呵呵，我就是让你帮我把这个可恶的味道消除而已。我看你似乎很了解这个<FONT color=#a82424>绿色液体的情况</FONT>的嘛，<FONT color=#a82424>消除味道的方法</FONT>也应该知道的吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-e" mid="19"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$戒指被盗 III$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-e" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$看不见的小偷$<BR>那么就去找那个 <FONT color=#a82424>发明者</FONT>不就得了！反正如果无法提供消除味道的方法，你也甭想得到戒指了。你反正也无法抓到看不见的我，随你便了? 嘿嘿。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$乘务员凯文$<BR>父亲的戒指还没找到吗? 我就知道没什么戏了...<BR>
+<FONT color=#7e12d2>（要到精锐士兵棚屋附近的看不见的小偷那里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$消耗品商人梅伊$<BR>真搞不懂铁匠考林大叔为何突然说虐待猎犬什么的…发生什么事了。 <BR><FONT color=#7e12d2>（要到精锐士兵棚屋附近的看不见的小偷那里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$飞艇工程师休伯特$<BR>抓小偷的事情有眉目了没有? 最好能尽早抓住把凯文的宝物找回来<BR><FONT color=#7e12d2>（要到精锐士兵棚屋附近的看不见的小偷那里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-a" mid="25"><![CDATA[<html>所以?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$看不见的小偷$<BR>喂，别那么催嘛，就因为那个破戒指我的损失也大了去了。怎么擦也擦不掉的这个可恶的<FONT color=#a82424>味道</FONT>怎么也无法消失啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-b" mid="27"><![CDATA[<html>我可不会帮小偷的</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$看不见的小偷$<BR>所以什么所以啊? 你好，我好…才是真的好，如果你要是帮我，从这个危难中把握解救出来的话，那个破戒指我立马还给你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-b" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n255_invisible_thief-1-c" mid="29"><![CDATA[<html>嗯... 那个，我倒是知道它的发明者...</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$看不见的小偷$<BR>谁让你帮我偷东西了？呵呵，我就是让你帮我把这个<FONT color=#a82424>可恶的味道</FONT>消除而已。我看你似乎很了解这个<FONT color=#a82424>绿色液体的情况</FONT>的嘛，<FONT color=#a82424>消除味道的方法</FONT>也应该知道的吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-c" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-d" mid="31"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$戒指被盗 III$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-d" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$看不见的小偷$<BR>那么就去找那个<FONT color=#a82424>发明者</FONT>不就得了！反正如果无法提供消除味道的方法，你也甭想得到戒指了。你反正也无法抓到看不见的我，随你便了? 嘿嘿。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-2" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$看不见的小偷$<BR>快到 <FONT color=#a82424>做出这可恶的绿色液体的人</FONT>那里看看啊。如果提供不了消除味道的方法，我也不会还你戒指的，嘿嘿。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-a" mid="36"><![CDATA[<html>猎犬的营养餐...</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$消耗品商人梅伊$<BR>哎呀，好久不见~ 冒险家大人，<BR>有什么需要的吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-a" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n026_trader_may-2-b" mid="39"><![CDATA[<html>（梅伊嘟囔着）</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$消耗品商人梅伊$<BR>嗯? 让我替你消除那个味道? 嗯... 因为味道实在是很难消除，我干脆就连桶都卖给了休伯特大叔了呢。哎，哪个笨蛋傻瓜踩到它了?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-c" mid="41"><![CDATA[<html>那么赶紧做给我那个洗剂啊。</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$消耗品商人梅伊$<BR>不过，如果需要的话，我还是希望自己能够善始善终的，所以帮就帮吧。用<FONT color=#a82424>超强力洗剂</FONT>使劲擦应该就可以了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-c" image="QW_18.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-d" mid="43"><![CDATA[<html>要带些什么?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$消耗品商人梅伊$<BR>您可以帮我的吧？可否到<FONT color=#a82424>袭击者埋伏点</FONT>拿些东西回来?<BR>我也会做相应的准备的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-d" image="QS_Default.dds" itemindex="300129">
+      <talk_question mid="44"><![CDATA[<html>$消耗品商人梅伊${action:talk}<BR>就是那边的<FONT color=#a82424>袭击者地精弓箭手</FONT>们所持有的，<FONT color=#a82424>发酵的树果</FONT>！不仅酸性强而且也很有香气，用那个消除恶臭应该没问题。我需要五个左右。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QW_18.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$消耗品商人梅伊${action:talk}<BR>就是那边的<FONT color=#a82424>袭击者地精弓箭手</FONT>们所持有的，<FONT color=#a82424>发酵的树果</FONT>！不仅酸性强而且也很有香气，用那个消除恶臭应该没问题。我需要五个左右。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-a" mid="47"><![CDATA[<html>赶紧做洗剂看看吧。</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$消耗品商人梅伊$<BR>哎呀~ 连十步之外都是这种味道啊。闻着都让人流口水了。怎么也得这种程度才能消除恶臭吧? 呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-a" image="QS_Default.dds" itemindex="300129">
+      <talk_answer link_index="n026_trader_may-4-b" mid="49"><![CDATA[<html>（红色液体开始烧开）</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$消耗品商人梅伊$<BR>知道啦，我也都做好准备了，请稍等片刻。<FONT color=#7e12d2>（梅伊在巨大的碗中搅拌着红色液体）</FONT> …在这里倒入<FONT color=#a82424>发酵的树果</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-b" image="QS_Default.dds" itemindex="300215">
+      <talk_question mid="50"><![CDATA[<html>$消耗品商人梅伊$<BR>喏！好了。 <FONT color=#7e12d2>（梅伊递交有着奇特香味的液体） </FONT>呼~ 真累啊！那就后会有期了！下次再来的时候得买东西哦 ~ 呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5" image="" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$消耗品商人梅伊$<BR>超强力洗剂不已经给您了吗…还有什么事呢? 要买什么吗?<BR><FONT color=#7e12d2>（要到精锐士兵棚屋附近的看不见的小偷那里）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5" image="QS_Default.dds" itemindex="300215">
+      <talk_answer link_index="n255_invisible_thief-5-a" mid="54"><![CDATA[<html>（递交超强力洗剂）</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$看不见的小偷$<BR>哇！穿了什么糖衣了吗?哪来的味道?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-b" mid="56"><![CDATA[<html>（恶臭味道已经完全消失）</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$看不见的小偷$<BR>洗剂? 你确认这个真的可以消除? <FONT color=#7e12d2>（超强力洗剂在半空中悬浮）</FONT> ...哦！真的啊? 可真神奇哦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-b" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-c" mid="58"><![CDATA[<html>倒是把戒指坏给我啊。</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$看不见的小偷$<BR>不错，还行?嗯，既然如此，我也跟你说下我的事情吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-c" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-d" mid="60"><![CDATA[<html>休班? 大怪盗?</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$看不见的小偷$<BR>着什么急啊，这可不是随便什么人都可以听到的事， 哼。你知道发明过测谎仪等诸多奇异工具的<FONT color=#a82424>传说中的大怪盗</FONT> <FONT color=#a82424>休班</FONT>吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-d" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-e" mid="62"><![CDATA[<html>（似乎挺得意自己透明的样子）</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$看不见的小偷$<BR>不知道?虽然最近在<FONT color=#a82424>神圣天堂</FONT>有个叫什么<FONT color=#a82424>怪盗白玫瑰</FONT>的挺火，但是要说是怪盗的话，当属是休班。我也是为了成为像他一样的人，才选择了怪盗的道路。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-e" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-f" mid="64"><![CDATA[<html>所以?</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$看不见的小偷$<BR>本来呢，我为了想成为魔法师而一直自学来着。使用 <FONT color=#a82424>秘传魔法</FONT>的男人几乎就没有。可能就是因为曾经作为<FONT color=#a82424>佩奥里斯塔</FONT>继承人的<FONT color=#a82424>卡拉汉</FONT>以那种方式改变了自己…才导致了意外情况的发生。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-f" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-g" mid="66"><![CDATA[<html>（…一开始就是小偷嘛）</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$看不见的小偷$<BR>我学习了一段时间…但没什么效果。为了更快的达到目标，我就悄悄的偷了<FONT color=#a82424>宫廷魔法师</FONT>正在实验中的药水。结果它却<FONT color=#a82424>爆炸</FONT>?！当我睁开眼睛一看，就成了现在这种透明的样子？真~是。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-g" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-h" mid="69"><![CDATA[<html>嗯... 反正先还给我戒指吧。</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$看不见的小偷$<BR>既然都这样了，我就想发挥一下这种特点。所以我决心要成为像休班那样的怪盗，才随着那些<FONT color=#a82424>精锐士兵</FONT>们跟随<FONT color=#a82424>飞艇</FONT>到此…尽管我没想到中途会坠机，差点就一命呜呼了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-h" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-6" mid="71"><![CDATA[<html>（只听到一声快速移动的声音）</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$看不见的小偷$<BR>嗯~ 那就再见了，冒险家先生。 <FONT color=#7e12d2>（不给戒指，反而装作漠不关心的样子）</FONT> 这个地方没什么可偷的东西，我得到其他地方了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-6" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$看不见的小偷$<BR>... <FONT color=#7e12d2>（好像逃之夭夭了，被骗了。到飞艇工程师休伯特或乘务员凯文那里确认一下吧）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$飞艇工程师休伯特$<BR>哇~ <FONT color=#a82424>凯文</FONT>那小子说，戒指已经找到了。你可真厉害啊。尽管小偷得以逃脱，但是既然东西能找得回来，就已经很不错啊，快到凯文那里看看吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6" image="QS_Default.dds" itemindex="300213">
+      <talk_answer link_index="n029_crew_kevin-6-a" mid="76"><![CDATA[<html>（凯文炫耀着戒指）</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$乘务员凯文$<BR>啊~ 冒险家大人！<BR>戒指找到啦！ 你看~！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6-a" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-6-b" mid="78"><![CDATA[<html>啊... 是吗?</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$乘务员凯文$<BR>不久前被装在盘子里回来啦。而且还捆有大大的装饰带。嘿嘿。可能是因为冒险家您，小偷得以反省的样子。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6-b" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-6-c" mid="80"><![CDATA[<html>（读取信）</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$乘务员凯文$<BR>这里还有一封<FONT color=#a82424>信</FONT>呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6-c" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-6-d" mid="82"><![CDATA[<html>（…似乎没什么反省嘛。）</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$信$<BR><FONT color=#a82424>戒指还给你。为了成为像怪盗休班那样的人，我要踏上新的旅程。这里已经没什么东西可偷的了。大家可要提高警惕的生活哦！</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6-d" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-6-e" mid="84"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6-e" image="QS_Default.dds" itemindex="300066">
+      <talk_question mid="85"><![CDATA[<html>$乘务员凯文$<BR>现在我一定会好好保管父亲的这枚戒指。<BR>…不过盘里边似乎还散发着<FONT color=#a82424>猎犬的营养餐</FONT> 味道。是不是我的错觉呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">303</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="recompense_view">3030,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3031,3032,3033,3034</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="5" party="1" exe="4,5,6" onexe="3">444</exe>
+         <exe type="addquestitem" num="1">300129</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntitem" num="5" exe="" onexe="">300129</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300129</exe>
+         <exe type="addquestitem" num="1">300215</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300215</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3031,3032,3033,3034</exe>
+         <exe type="complete">303</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="d">3</exelink>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="e">0,1,2</exelink>
+   <exelink qstep="1" npc="n255_invisible_thief" sub="b" />
+   <exelink qstep="1" npc="n255_invisible_thief" sub="c">0</exelink>
+   <exelink qstep="1" npc="n255_invisible_thief" sub="d">1,2</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="b" />
+   <exelink qstep="2" npc="n026_trader_may" sub="c" />
+   <exelink qstep="2" npc="n026_trader_may" sub="d">0,1,2,7</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="b">0,1,2,3</exelink>
+   <exelink qstep="5" npc="n255_invisible_thief" sub="b" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="c" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="d" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="e" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="f" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="g" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="h" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="6">0,1,2</exelink>
+   <exelink qstep="6" npc="n029_crew_kevin" sub="b" />
+   <exelink qstep="6" npc="n029_crew_kevin" sub="c" />
+   <exelink qstep="6" npc="n029_crew_kevin" sub="d">0</exelink>
+   <exelink qstep="6" npc="n029_crew_kevin" sub="e">1</exelink>
+   <journal_data recompense="1:3031,2:3032,3:3033,4:3034" quest_title="반지 도둑 III" chapterid="" quest_level="14" quest_mark_type="10" use_item_list="300129,300215">
+      <journal index="1">
+         <title_image />
+         <contents_image />
+         <need_itemlist />
+         <destination_pos>8,n255</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>255</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[看不见的小偷]]></title>
+         <contents mid="89"><![CDATA[<html>与精锐士兵棚屋上方的看不见的小偷对话吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 看不见的小偷</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[与凯德拉关卡的看不见的小偷对话]]></destination>
+         <todo_msg mid="91"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[可消除味道的人]]></title>
+         <contents mid="93"><![CDATA[<html>看不见的小偷说，如果帮他消除<FONT color=#a82424>猎犬的营养餐</FONT>味道的话，就把东西还给我。到<FONT color=#a82424>消耗品商人梅伊</FONT>那里问一问可以消除味道的方法吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 消耗品商人梅伊</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[与消耗品商人梅伊对话]]></destination>
+         <todo_msg mid="95"><![CDATA[向消耗品商人梅伊咨询可以消除味道的方法吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_18.dds</contents_image>
+         <need_itemlist>300129</need_itemlist>
+         <destination_pos>139,0,0</destination_pos>
+         <destination_mode>custom:136@3,137@3,138@1,239@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="96"><![CDATA[发酵的树果]]></title>
+         <contents mid="97"><![CDATA[<html>在<FONT color=#a82424>袭击者埋伏点</FONT>消灭袭击者地精弓箭手并获取<FONT color=#a82424>发酵的树果</FONT>回来吧。<BR>
+<FONT color=#7e12d2>(在深渊级难度下无法进行)<BR></FONT><BR><FONT color=#086171>水晶谷（袭击者巢穴入口）</FONT> <FONT color=#a82424>→ 袭击者埋伏点</FONT></html>]]></contents>
+         <destination mid="98"><![CDATA[消灭袭击者埋伏点的地精]]></destination>
+         <todo_msg mid="99"><![CDATA[收集袭击者埋伏点的发酵的树果吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist>300129</need_itemlist>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="100"><![CDATA[报告]]></title>
+         <contents mid="101"><![CDATA[<html>获得了发酵的树果。向<FONT color=#a82424>消耗品商人梅伊</FONT>报告吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 消耗品商人梅伊</FONT></html>]]></contents>
+         <destination mid="102"><![CDATA[与消耗品商人梅伊对话]]></destination>
+         <todo_msg mid="103"><![CDATA[向消耗品商人梅伊递交发酵的树果吧。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image />
+         <need_itemlist />
+         <destination_pos>8,n255</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>255</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="104"><![CDATA[恶党的缘由]]></title>
+         <contents mid="105"><![CDATA[<html>获得了<FONT color=#a82424>超强力洗剂</FONT>。去交给精锐士兵棚屋 上的看不见的小偷吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 看不见的小偷</FONT></html>]]></contents>
+         <destination mid="106"><![CDATA[与看不见的小偷对话]]></destination>
+         <todo_msg mid="107"><![CDATA[把超强力洗剂交给看不见的小偷吧。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_crew_kevin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n29</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>29</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="108"><![CDATA[结语]]></title>
+         <contents mid="109"><![CDATA[<html>看不见的小偷没有把偷走的东西还回来，而是消失了。说不定会直接把东西还给主人，去向<FONT color=#a82424>乘务员凯文</FONT>确认一下吧。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 乘务员凯文</FONT></html>]]></contents>
+         <destination mid="110"><![CDATA[与乘务员凯文对话]]></destination>
+         <todo_msg mid="111"><![CDATA[到乘务员凯文那里确认一下吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>14:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>302</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

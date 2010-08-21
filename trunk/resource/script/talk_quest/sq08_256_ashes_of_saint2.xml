@@ -1,0 +1,306 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_256_ashes_of_saint2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>256</qid>
+      <designer>김주연</designer>
+      <qlevel>13</qlevel>
+      <qdesc>낡은 가방	300014
+낡은 일지 300008
+천 조각 300007
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>257</nextqid>
+      <nextqname>sq08_257_ashes_of_saint3</nextqname>
+      <nextqnpc>n034_cleric_master_germain</nextqnpc>
+      <qkname mid="1"><![CDATA[老师的遗骸Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인  (캐더락 클레릭 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-a" mid="106"><![CDATA[<html>（解释关于起死回生的威廉尸体的事）</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$高级牧师杰梅因$<BR>老师的遗骸解决了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-acceptted" mid="160"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="159"><![CDATA[<html>$老师的遗骸Ⅱ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-a" mid="38"><![CDATA[<html>那个叫雷安的是什么人啊？</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$高级牧师杰梅因$<BR>他还在等待着那个人呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-b" mid="40"><![CDATA[<html>(继续听故事)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$高级牧师杰梅因$<BR>
+<FONT color=#a82424>雷安</FONT>嘛……<BR>
+话说起来可就长了……如果你不介意的话，我就告诉你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-c" mid="45"><![CDATA[<html>事实并非如此……是会出现什么不好的事吗？</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$高级牧师杰梅因$<BR>10年前，在大陆的北方出现了<FONT color=#a82424>闪耀的星星</FONT>。<BR>
+那是<FONT color=#a82424>贤者的预言中</FONT>提到的星星。<BR>大家都认为那是吉兆，但事实并非如此。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-d" mid="47"><![CDATA[<html>（咨询关于黑色怪物的事）</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$高级牧师杰梅因$<BR>
+是的。自从那颗星星出现之后，从大陆的北方陆续开始发生魔物们的骚乱。其中还出现了迄今为止从未见过的<FONT color=#a82424>黑色怪物</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-d" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-e" mid="53"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$高级牧师杰梅因$<BR>为了对黑色怪物进行调查，教团向各地派遣了调查员。根据他们的调查，怪物们正从北方向南方移动，目标是<FONT color=#a82424>凯德拉</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-e" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-f" mid="54"><![CDATA[<html>（咨询关于被追踪的家族的事）</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$高级牧师杰梅因$<BR>所以我和老师被派到了这里，开始调查黑色怪物的幕后黑手。结果我们发现了惊人的事实。那就是<FONT color=#a82424>黑色怪物在追赶一家人</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-f" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-g" mid="60"><![CDATA[<html>为什么要追他们呢？</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$高级牧师杰梅因$<BR>他们就是名叫<FONT color=#a82424>雷安</FONT>的男人和名叫<FONT color=#a82424>克拉拉</FONT>的女人，以及<FONT color=#a82424>夫妇俩年幼的女儿</FONT>。刚开始我们还以为他们是不是惹恼了魔物们，才引起了骚乱。但是魔物们却一直追着他们不放。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-g" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-h" mid="62"><![CDATA[<html>似乎都是很勇敢的人嘛。</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$高级牧师杰梅因$<BR>那我们就无从得知了。<FONT color=#a82424>老师好像察觉到了什么</FONT>，但是他什么都没有说。他们逃到这个村庄之后，村庄就和魔物们发生了激烈的战斗。那个名叫雷安的男人站到了战斗的第一线。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-h" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-i" mid="64"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$高级牧师杰梅因$<BR>是的，刚开始还有很多人埋怨是他们招来了魔物，但后来逐渐被他们的态度所感动。<BR>
+虽然大家都勇敢地参加战斗，但战斗却进行得非常艰苦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-i" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-j" mid="66"><![CDATA[<html>似乎很像死亡森林的情形嘛。</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$高级牧师杰梅因$<BR>一来是因为率领魔物的<FONT color=#a82424>穿红衣服的黑暗精灵</FONT>太狡猾，二来是因为<FONT color=#a82424>黑色怪物死去时产生的毒气</FONT>非常致命。在他们死去的地方，很长一段时间内所有的生物都无法生存。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-j" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-k" mid="68"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$高级牧师杰梅因$<BR>你还挺聪明的嘛，没错。<FONT color=#a82424>死亡森林曾经是将怪物们引入埋伏圈一网打尽的地方</FONT>。如果把他们消灭在一个地方，就可以最大限度的降低污染源。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-k" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-l" mid="70"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$高级牧师杰梅因$<BR>而在引诱怪物们的过程中牺牲了很多人。<BR>那绝对是一场伤亡惨重的战斗。虽然付出了很多牺牲，但战局还是逐渐开始向魔物那边倾斜。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-l" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-m" mid="72"><![CDATA[<html>此后事情如何发展的?</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$高级牧师杰梅因$<BR>雷安让妻子和女儿离开之后，和老师说了几句话，并把身上的<FONT color=#a82424>吊坠</FONT>交给了老师。<BR>
+然后他冲出了魔物的包围，独自向森林圣域跑去。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-m" image="QW_15.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-n" mid="74"><![CDATA[<html>(询问应该干什么)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$高级牧师杰梅因$<BR>之后就再也没有他的消息了。或许在<FONT color=#a82424>森林圣域</FONT>发生了什么事情……我按照老师的命令从战斗中撤了下来，但是老师却坚守到了最后。他应该是一直在那里等待着雷安，直到牺牲。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-n" image="QW_15.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2" mid="78"><![CDATA[<html>嗯，就试着调查森林圣域吧。</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$高级牧师杰梅因$<BR>不好意思，又要麻烦你了……你能去<FONT color=#a82424>森林圣域</FONT>，确认一下雷安的最终下落吗？要是能知道他的下落，老师应该就能瞑目了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="QW_15.dds" itemindex="">
+      <talk_question mid="83"><![CDATA[<html>$高级牧师杰梅因$<BR>雷安最后去的地方是<FONT color=#a82424>森林圣域</FONT>。<BR>
+请你到森林圣域各处仔细搜索，寻找和他有关的东西。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-a" mid="87"><![CDATA[<html>（解释在森林圣域发生的事）</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$高级牧师杰梅因$<BR>在森林圣域找到 <FONT color=#a82424>雷安的线索</FONT>了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-b" mid="89"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-b" image="QS_12239.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-!next" mid="93"><![CDATA[<html>（把雷安的旅行日志交给杰梅因）</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$高级牧师杰梅因$<BR>发现的物品当中还有旅行日志? 嗯，想要知道他在森林圣域做过什么，不妨看一下他的<FONT color=#a82424>日志</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">256</exe>
+         <exe type="recompense_view">,2561,2562,2563,2564</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="qcount">.</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">256</exe>
+         <exe type="recompense_view">,2561,2562,2563,2564</exe>
+         <exe type="conexe" true="3" false="0">0</exe>
+         <exe type="fullquest">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300014</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300008</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300007</exe>
+         <exe type="huntall">10,11,12</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>낡은 의복	300013
+낡은 가방	300014
+낡은 일지 300008
+천 조각    300007
+
+</comment>
+      <conditions />
+      <executions>
+         <exe type="recompense">,2561,2562,2563,2564</exe>
+         <exe type="complete">256</exe>
+         <exe type="delquestitem" num="-1">300014</exe>
+         <exe type="delquestitem" num="-1">300008</exe>
+         <exe type="delquestitem" num="-1">300007</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="a">1</exelink>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="c" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="d" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="e" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="f" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="g" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="h" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="i" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="j" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="k" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="l" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="m" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="n" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="2">6,7,8,9,4,5</exelink>
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="a">0</exelink>
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="b">1</exelink>
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="!next">1,2,3,4</exelink>
+   <journal_data recompense="1:2561,2:2562,3:2563,4:2564" quest_title="스승의 유해Ⅱ" chapterid="" quest_level="13" quest_mark_type="10" use_item_list="300014,300008,300007">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="99"><![CDATA[与高级牧师杰梅因对话]]></title>
+         <contents mid="100"><![CDATA[<html>起死回生的威廉的亡灵似乎还在等待着<FONT color=#a82424>雷安</FONT>。向高级牧师杰梅因咨询关于雷安的事吧。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级牧师杰梅因</FONT></html>]]></contents>
+         <destination mid="101"><![CDATA[与高级牧师杰梅因对话]]></destination>
+         <todo_msg mid="102"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_15.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>123,0,0</destination_pos>
+         <destination_mode>custom:121@1,122@1,123@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="149"><![CDATA[在森林圣域搜索雷安的遗物]]></title>
+         <contents mid="150"><![CDATA[<html>杰梅因的老师牧师威廉在确认雷安的最终下落之前，似乎很难瞑目。去<FONT color=#a82424>森林圣域</FONT>寻找可以确认雷安的最终下落的<FONT color=#a82424>物品</FONT>吧。<BR><BR><FONT color=#086171>灰色废墟(遭到侵略的圣域入口)</FONT> <FONT color=#a82424>→ 森林圣域</FONT></html>]]></contents>
+         <destination mid="151"><![CDATA[在森林圣域搜索雷安的遗物]]></destination>
+         <todo_msg mid="152"><![CDATA[在森林圣域搜索雷安的遗物吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="154"><![CDATA[与高级牧师杰梅因对话]]></title>
+         <contents mid="155"><![CDATA[<html><FONT color=#a82424>雷安的遗物</FONT>找到了。把它拿到凯德拉关卡的高级牧师杰梅因那里吧。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级牧师杰梅因</FONT></html>]]></contents>
+         <destination mid="156"><![CDATA[与高级牧师杰梅因对话吧。]]></destination>
+         <todo_msg mid="157"><![CDATA[拿着雷安的遗物与高级牧师杰梅因对话吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>13:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>255</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

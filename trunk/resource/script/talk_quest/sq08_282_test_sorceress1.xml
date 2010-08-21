@@ -1,0 +1,484 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_282_test_sorceress1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>282</qid>
+      <designer>나은하</designer>
+      <qlevel>15</qlevel>
+      <qdesc>15레벨이 된 소서리스
+티아나와 대화로 퀘스트를 시작한다.
+
+티아나에게 말을 걸면, 마나리지의 소서리스 타라가 초급 소서리스 시험을 치기 위해서 오고 있으니, 수정개울로 마중을 가라고 한다. 티아나는 소서리스를 보고 당연히 너도 초급시험 정도는 치러겠지라고 묻는다.
+
+그러나 소서리스는 질풍노도의 유년기를 보내느라 초급시험조차 치르지 못했다.
+과거의 비행들을 떠올리며 아련한 감회에 젖는 소서리스.
+티아나는 우물쭈물하지 말고 후배 마중을 가라고 다그치고, 소서리스는 타라를 마중하러 간다.
+
+소서리스 타라는 이미 수정개울에 도착해 있었다.
+타라는 오랜만에 뵙는다고 인사를 하고, 자신도 드디어 초급 소서리스 시험을 치르게 되었다고 좋아한다. 
+
+"선배같은 천재에게는 초급시험을 패스하는 건, 식은 죽 먹기로 쉬웠겠죠? 하지만 전 정말 이 시험을 위해서 오랫동안 준비를 해왔답니다. 시험 준비를 위해서 이론서뿐 아니라 많은 실전 훈련도 해왔어요. 이론 논술 시험을 위해서, 초급 시험 이후 소서리스들이 나아갈 길들에 대해서도 공부했는데 제가 암기한 것들을 테스트하는 걸 도와주시지 않으시겠어요?"
+
+소서리스는 진땀을 흘리며, 타라와 1차 전직 클래스에 대한 질답을 한다.
+틀린 질문을 하면 타라가 이상한 표정을 짓기 때문에, 재빨리 답을 수정하는 식으로 위기를 모면한다. 
+
+타라는 질답이 끝나면 응용 시험에 대해서 말한다. 
+
+"방금 전에 실전 시험을 통과했어요. 실전 시험은 비전의 방에서 마물들을 싸워 물리치는 것입니다."
+
+타라에게 자극을 받은 소서리스는 후배에게 계속 잘난 척을 하기 위해서 자신도 초급 소서리스 시험을 치기로 한다. 그리고 타라에게 비전의 방의 위치를 묻는다. 미심쩍은 듯하단 표정을 짓는 타라. 소서리스는 다시 임기응변을 발휘해서 시련의 방으로 입장한다. (바보 타라)</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>283</nextqid>
+      <nextqname>sq08_283_test_sorceress2</nextqname>
+      <nextqnpc>n035_soceress_master_tiana</nextqnpc>
+      <qkname mid="1"><![CDATA[重新找到的路Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>229</npcid>
+         <npcename>n229_sorceress_tara</npcename>
+         <npckname>소서리스 타라 (수정개울_소서리스전직용)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나 (캐더락 소서리 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$魔法师塔拉$<BR>考试临近了，总觉的有些紧张啊。<BR><FONT color=#7e12d2>（从高级魔法师缇娜处接受任务。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-a" mid="8"><![CDATA[<html>呃，又有什么麻烦事啊?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$高级魔法师缇娜$<BR>你来的正好，正有事情做呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-a" image="QN_SoceressTara.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-b" mid="10"><![CDATA[<html>你是指那个魔法山脊的后辈，塔拉吗?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$高级魔法师缇娜$<BR>嘿嘿，让你这种问题儿童做事，你应该感谢我才是?<BR>你知道<FONT color=#a82424>塔拉</FONT>这个人吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-b" image="QN_SoceressTara.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-c" mid="12"><![CDATA[<html>考试还要来这种地方啊?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$高级魔法师缇娜$<BR>嗯，据说那个孩子这次为了魔法师初级考试，正赶往凯德拉关卡。你去接一下他吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-c" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-d" mid="14"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$高级魔法师缇娜$<BR><FONT color=#7e12d2>（高级魔法师缇娜惊诧的望着我）</FONT><BR>那还不是因为他是<FONT color=#a82424>辛西亚</FONT>大人的弟子啊? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-e" mid="16"><![CDATA[<html>啊，是啊... 嘿嘿...</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$高级魔法师缇娜$<BR>魔法师们的考试必须要得到其他高级魔法师们的认可，而不是教自己的老师，难道你连这个也不知道?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-f" mid="18"><![CDATA[<html>初级考试...</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$高级魔法师缇娜$<BR>像你这般已经通过初级考试的人，这种程度应该也有所了解才是?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-g" mid="20"><![CDATA[<html>... {user_nick}！</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>${user_nick}$<BR>（初级考试…当初留学莲花沼泽的时候，在神圣天堂深陷赌博泥潭而输光旅费，导致我的学业也一时中断... 啊啊，我那华丽而又让人怀念的过去哟...）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-g" image="QW_CristalStream.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-h" mid="22"><![CDATA[<html>啊，嗯? （连回忆也不允许的大婶啊）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$高级魔法师缇娜$<BR><FONT color=#382000>{user_nick}</FONT>！ 还愣着干嘛?<BR>别磨蹭，赶紧去<FONT color=#a82424>水晶谷</FONT>啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-h" image="QW_CristalStream.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-i" mid="24"><![CDATA[<html>嗯嗯... 马上出发。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$高级魔法师缇娜$<BR>你不会是没有听我刚才说的话吧?<BR><FONT color=#a82424>塔拉</FONT>正准备在<FONT color=#a82424>水晶谷</FONT>进行实战考试，你还不赶紧去接他?！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-acceptted" mid="26"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$重新找到的路Ⅰ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QW_CristalStream.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$高级魔法师缇娜$<BR><FONT color=#a82424>塔拉</FONT>在<FONT color=#a82424>水晶谷</FONT>估计等你很久了。<BR>你还这么磨蹭的话，我就不给你赏金了，还不快去快回。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-1" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-1-a" mid="30"><![CDATA[<html>嗯嗯…祝贺你。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$魔法师塔拉$<BR>天啊，<FONT color=#382000>{user_nick}</FONT> 前辈，好久不见。<BR>你还好吗?我也终于可以通过初级魔法师考试了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-1-a" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-1-b" mid="32"><![CDATA[<html>哦...当然！ 简单的用脚都可以解答了！</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$魔法师塔拉$<BR>像前辈这样的天才而言，这种初级考试应该是易如反掌的吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-1-b" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-1-c" mid="34"><![CDATA[<html>多大事儿哦，不值一提嘛... 呵呵呵~</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$魔法师塔拉$<BR>还是！ <FONT color=#7e12d2>（羡慕的眼光望着我）<BR></FONT>其实自从我成为魔法师开始就一直羡慕前辈呢！<BR>秘传魔法界里的风云人物！ <FONT color=#a82424>卡拉秋</FONT>之后的天才魔法师！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-1-c" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-1-d" mid="36"><![CDATA[<html>那…怎么啦?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$魔法师塔拉$<BR>老师也认为前辈终究能成为凌驾于老师之上的魔法师呢。<BR>呼... 考试对于像前辈这种人当然很简单咯，但我可是为此准备了好久哦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-1-d" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2" mid="38"><![CDATA[<html>啊嗯...? 那，嗯... （哎... 我怎么自找麻烦）</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$魔法师塔拉$<BR>不仅仅是理论背诵，还有众多的应用练习和实战训练。<BR>我还复习了魔法师们即将选择的道路相关内容，您可否协助我复习一遍呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-2" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2-b" mid="43"><![CDATA[<html>当然！尽管问我吧~</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-2-a" mid="44"><![CDATA[<html>初级考试?好久以前的事哦，都想不起来了?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$魔法师塔拉$<BR>嗯，经过第一次考试的魔法师可以选择2种上位职业。 <BR>您应该知道各职业的特点吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-2-a" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2-b" mid="46"><![CDATA[<html>玩，开玩笑啦！ 呵呵~</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$魔法师塔拉$<BR><FONT color=#7e12d2>（魔法师塔拉满脸惊诧）<BR></FONT>嗯?奇怪哦?您不会真的不知道吧...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-2-b" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2-c" mid="48"><![CDATA[<html>嗯，没错... （哦…原来如此...）</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$魔法师塔拉$<BR>
+魔法师的能力可以分为擅长使用火与冰的<FONT color=#a82424>元素系魔法</FONT>，以及以意念和时空为核心的<FONT color=#a82424>操魔系魔法</FONT>。使用<FONT color=#a82424>元素系魔法</FONT>的上位职业叫做<FONT color=#a82424>元素师</FONT>，而使用<FONT color=#a82424>意念</FONT>的职业叫做 <FONT color=#a82424>魔导师</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-2-c" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2-d" mid="52"><![CDATA[<html>擅长火与冰的属性攻击</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-2-d" mid="53"><![CDATA[<html>能够给予实质性的伤害</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-2-d" mid="54"><![CDATA[<html>火力型职业</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-2-e" mid="55"><![CDATA[<html>对时空带来影响</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$魔法师塔拉$<BR>那么，以下哪些内容与<FONT color=#a82424>元素师</FONT><FONT color=#a82424>没有任何关联</FONT>呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-2-d" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2-c" mid="58"><![CDATA[<html>啊，抱歉…我在想别的…再说一下吧。</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$魔法师塔拉$<BR>嗯? 啊，是不是对我的提问产生误会了?<BR>我不是指不属于魔导师的是哪个选项，而是指不属于<FONT color=#a82424>元素师</FONT>的<FONT color=#a82424>错误</FONT>的说明是哪个选项。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-2-e" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2-f" mid="60"><![CDATA[<html>擅长超能力与时空魔法</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-2-f" mid="61"><![CDATA[<html>以使用意念的魔法和时空魔法施加伤害。</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-3" mid="62"><![CDATA[<html>擅长火与冰的属性攻击</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-2-f" mid="63"><![CDATA[<html>可提高我军速度，亦可降低敌军速度。</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$魔法师塔拉$<BR>那么以下内容当中与<FONT color=#a82424>魔导师</FONT>的说明<FONT color=#a82424>相违背</FONT>的是哪个?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-2-f" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2-e" mid="66"><![CDATA[<html>（啊，冒汗...） 有意思吗？ 嘿嘿…再说一次吧。</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$魔法师塔拉$<BR>嗯? 前辈可真会开玩笑啊，呵呵。<BR>这不是关于元素师的问题，而是关于<FONT color=#a82424>魔导师</FONT>的提问啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-3" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-3-a" mid="70"><![CDATA[<html>啊... 哈哈，哈…不值一提...</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$魔法师塔拉$<BR>哎，这种问题对前辈而言，也过于简单无聊是吧?<BR>居然完全正确，真了不起啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-3-a" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-3-b" mid="72"><![CDATA[<html>嗯...应用考试?</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$魔法师塔拉$<BR>多亏有前辈，我对理论考试的信心更足了。<BR>其实我在无聊的等待前辈的前来时候，我已经完成了<FONT color=#a82424>应用考试</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-3-b" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-3-c" mid="74"><![CDATA[<html>最紧急的情况?听起来颇有意思的嘛?</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$魔法师塔拉$<BR><FONT color=#a82424>应用考试</FONT>是，把魔法理论与战斗魔法<FONT color=#a82424>应用在如同实战的战斗考场</FONT>，从而考核其能力的考试。考场基本还是<FONT color=#a82424>重现了</FONT>实战中<FONT color=#a82424>最紧迫</FONT>且又<FONT color=#a82424>最危险的情况</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-3-c" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-3-d" mid="76"><![CDATA[<html>开玩笑啦，呵呵…我也难得想再考取一次呢...</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$魔法师塔拉$<BR>觉得很有意思吗? 呵呵，前辈可真是...<BR>
+真像<FONT color=#a82424>从来没有考过</FONT>应用考试的人一样，还那么爱开玩笑啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-3-d" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-3-e" mid="78"><![CDATA[<html>（晕） 只是想回忆一下当初而已...? 啊哈哈...</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$魔法师塔拉$<BR>前辈既然已经考完试了就没必要再进入应用考试的<FONT color=#a82424>秘传房间</FONT>了吧，怎么还要想去呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-3-e" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-4" mid="80"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$魔法师塔拉$<BR>你又恢复了进取心，前辈果然了不起/1<BR>你应该知道，进入那个房间需要特殊的移动装置吧？幸好我刚参加了考试，所以有那个装置。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-4" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-4-member1" mid="88"><![CDATA[<html>ok，现在就去。</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-4-c" mid="89"><![CDATA[<html>等，等会…先让我好好休息一下。</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$魔法师塔拉$<BR>
+现在就要进入<FONT color=#a82424>秘传房间</FONT>吗?<BR>
+ <BR>
+<FONT color=#7e12d2>※ 转职任务在组队状态下无法进行。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-4-a" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-4-changemap1" mid="131"><![CDATA[<html>（进入秘传房间）</html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$魔法师塔拉$<BR>
+那么就请进入秘传房间吧。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-4-b" image="" itemindex="">
+      <talk_question mid="90"><![CDATA[<html>$魔法师塔拉$<BR>哎呀... 前辈您似乎还和同伴在一起呢。<FONT color=#a82424>秘传房间</FONT>无法与同伴一起进去呢。请退出组队后，再来找我吧。<BR>
+<FONT color=#7e12d2>※ 转职任务在组队状态下无法进行。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-4-c" image="" itemindex="">
+      <talk_question mid="91"><![CDATA[<html>$魔法师塔拉$<BR>啊，似乎您很忙啊，不忙的时候再来找我吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-5-a" mid="96"><![CDATA[<html>我可没玩呢！我也在秘传房间考完试回来的！</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$高级魔法师缇娜$<BR><FONT color=#a82424>塔拉</FONT>不久前完成考试之后回到魔法山脊了。<BR>我让你去接塔拉，你却到哪里疯玩去啦?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-5-b" mid="98"><![CDATA[<html>切，居…然被发现了...</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$高级魔法师缇娜$<BR>进入<FONT color=#a82424>秘传房间</FONT>考试?<BR>呵，从塔拉的言语当中，还觉得挺可疑的... 你，原来连初级魔法师考试也没考啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-5-!next" mid="100"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-5" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="133"><![CDATA[<html>$魔法师塔拉$<BR><FONT color=#a82424>秘传房间</FONT>怎么样啊?是不是非常简单啊? 呵呵...<BR>啊，对了，<FONT color=#a82424>高级魔法师缇娜</FONT>大人还在找您呢... 前辈... 您不是又闯了什么大祸了吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">2820,,,,</exe>
+         <exe type="setquest">282</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>
+스테이지를 클리어하면 퀘스트 스텝을 5로, 퀘스트 저널을 5로 바꾼다.</comment>
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n229_sorceress_tara">a</exe>
+         <exe type="talk" npc="n229_sorceress_tara">b</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13010,1);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">282</exe>
+         <exe type="recompense">2820,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="i">0</exelink>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="acceptted">1,2,3,4</exelink>
+   <exelink qstep="1" npc="n229_sorceress_tara" sub="b" />
+   <exelink qstep="1" npc="n229_sorceress_tara" sub="c" />
+   <exelink qstep="1" npc="n229_sorceress_tara" sub="d" />
+   <exelink qstep="1" npc="n229_sorceress_tara" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="b" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="c" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="d" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="d" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="d" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="e" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="c" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="f" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="f" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="3">0,1</exelink>
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="f" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="e" />
+   <exelink qstep="3" npc="n229_sorceress_tara" sub="b" />
+   <exelink qstep="3" npc="n229_sorceress_tara" sub="c" />
+   <exelink qstep="3" npc="n229_sorceress_tara" sub="d" />
+   <exelink qstep="3" npc="n229_sorceress_tara" sub="e" />
+   <exelink qstep="3" npc="n229_sorceress_tara" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n229_sorceress_tara" sub="member1">0</exelink>
+   <exelink qstep="4" npc="n229_sorceress_tara" sub="changemap1">3</exelink>
+   <exelink qstep="5" npc="n035_soceress_master_tiana" sub="b">1</exelink>
+   <exelink qstep="5" npc="n035_soceress_master_tiana" sub="!next">0</exelink>
+   <journal_data recompense="2820" quest_title="다시 찾은 길Ⅰ" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n229</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>229</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>상급 소서리스 티아나</start_npc>
+         <desc_location>수정 개울</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>소서리스 타라</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="102"><![CDATA[和魔法师塔拉对话]]></title>
+         <contents mid="103"><![CDATA[<html>去接<FONT color=#a82424>水晶谷</FONT>的<FONT color=#a82424>魔法师塔拉</FONT>吧。<BR>
+ <BR>
+<FONT color=#086171>水晶谷</FONT> <FONT color=#a82424>→ 魔法师塔拉</FONT></html>]]></contents>
+         <destination mid="104"><![CDATA[和魔法师塔拉对话]]></destination>
+         <todo_msg mid="105"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n229</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>229</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>수정 개울</get_location>
+         <start_npc>소서리스 타라</start_npc>
+         <desc_location>수정 개울</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>소서리스 타라</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="106"><![CDATA[和魔法师塔拉对话]]></title>
+         <contents mid="107"><![CDATA[<html>帮助魔法师塔拉背诵理论吧<BR>
+ <BR>
+<FONT color=#086171>水晶谷</FONT><FONT color=#a82424> → 魔法师塔拉</FONT></html>]]></contents>
+         <destination mid="108"><![CDATA[和魔法师塔拉对话]]></destination>
+         <todo_msg mid="109"><![CDATA[请和魔法师塔拉对话]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n229</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>229</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>수정 개울</get_location>
+         <start_npc>소서리스 타라</start_npc>
+         <desc_location>수정 개울</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>소서리스 타라</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="110"><![CDATA[和魔法师塔拉对话]]></title>
+         <contents mid="111"><![CDATA[<html>听魔法师塔拉怎么说<FONT color=#a82424>秘传房间</FONT>吧。<BR>
+ <BR>
+<FONT color=#086171>水晶谷</FONT> <FONT color=#a82424>→ 魔法师塔拉</FONT></html>]]></contents>
+         <destination mid="112"><![CDATA[和魔法师塔拉对话]]></destination>
+         <todo_msg mid="113"><![CDATA[请和魔法师塔拉对话]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n229</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>229</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>수정 개울</get_location>
+         <start_npc>소서리스 타라</start_npc>
+         <desc_location>비전의 방</desc_location>
+         <step_action>사냥</step_action>
+         <complete_npc>소서리스 티아나</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string>소서리스 시험용 맵 비전의 방으로 이동</trigger_string>
+         <maptool_index />
+         <title mid="115"><![CDATA[进入秘传房间]]></title>
+         <contents mid="116"><![CDATA[<html>委托<FONT color=#a82424>魔法师塔拉</FONT>进入可以进行应用考试的<FONT color=#a82424>秘传房间</FONT>吧。 完成考试后向高级魔法师缇娜报告吧。<BR>似乎还是个不那么简单的考试，好好准备一下吧！<BR><BR><FONT color=#086171>水晶谷（魔法师塔拉）</FONT> <FONT color=#a82424>→ 秘传房间</FONT></html>]]></contents>
+         <destination mid="117"><![CDATA[和魔法师塔拉对话]]></destination>
+         <todo_msg mid="118"><![CDATA[通过魔法师塔拉进入秘传房间吧。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location>비전의 방</get_location>
+         <start_npc />
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>상급 소서리스 티아나</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="121"><![CDATA[和高级魔法师缇娜对话]]></title>
+         <contents mid="122"><![CDATA[<html>完成秘传房间的应用考试。<BR>向高级魔法师缇娜报告吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡 →</FONT> <FONT color=#a82424>高级魔法师缇娜</FONT></html>]]></contents>
+         <destination mid="123"><![CDATA[和高级魔法师缇娜对话]]></destination>
+         <todo_msg mid="124"><![CDATA[与高级魔法师缇娜对话]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class>3</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

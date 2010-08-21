@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n285_saint_guard</npcename>
+      <npcid>285</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[王城近卫兵]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$王城近卫军$<BR>执勤时不能随意交谈。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="enterquest">sq11_459_complete_decode</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">459</chk>
+      </conditions>
+   </talk>

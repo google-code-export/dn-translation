@@ -1,0 +1,445 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_488_merchant_study3</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>488</qid>
+      <designer>김주연</designer>
+      <qlevel>34</qlevel>
+      <qdesc>썩은 사과	400158
+냄새나는 진흙 덩어리	400159
+불사의 결정	400160
+
+
+어마어마한 빚을 없애주는 대신에 내기를 하자는 상인 포프. 그가 건네주는 썩은 사과를 황금으로 교환해와야 하는데… </qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>489</nextqid>
+      <nextqname>sq11_489_merchant_study4</nextqname>
+      <nextqnpc>n045_soceress_master_stella</nextqnpc>
+      <qkname mid="1"><![CDATA[商人课程Ⅲ]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>279</npcid>
+         <npcename>n279_orc_oneeye</npcename>
+         <npckname>김오크</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-noquest" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$高级魔法师斯泰拉$<BR>
+再在我面前瞎晃，我就把你变成青蛙。<BR>
+<FONT color=#7e12d2>(和奸商波普对话，可以接受任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-noquest" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$兽人金$<BR>我想吃……苹果！腐烂的苹果！<BR>
+<FONT color=#7e12d2>(和奸商波普对话，可以接受任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$纹章学者斯塔西$<BR>…. <BR>
+<FONT color=#a82424>(聚精会神地看书，理都不理我)</FONT><BR>
+<FONT color=#7e12d2>(和奸商波普对话，可以接受任务)</FONT><BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-a" mid="9"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$奸商波普$<BR>嗯，我说，我看你很有做生意的天赋，干脆你就拜在我的门下吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-b" mid="11"><![CDATA[<html>我不能放弃冒险。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$奸商波普$<BR>如果你愿意做我的徒弟，成为商人，我们之间的债就一笔勾销。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-c" mid="13"><![CDATA[<html>梦想是无法用金钱买到的。</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$奸商波普$<BR>……我是爱惜你的才能。<BR>与其去追杀龙，跟我做生意会赚得更多。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-d" mid="15"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$奸商波普$<BR>哼，我还以为你的头脑很活络呢，没想到只不过是个普通的家伙。<BR>……那么，这么办如何？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-e" mid="17"><![CDATA[<html>怎么打赌？</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$奸商波普$<BR>我来和你打个赌。如果我赢了，你就做我的徒弟，成为一名商人。如果你赢了，欠的债就一笔勾销。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-f" mid="19"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$奸商波普$<BR>你拿着这个腐烂的苹果，把它交换成黄金。不能用钱购买黄金，只能用腐烂的苹果变出黄金。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-g" mid="21"><![CDATA[<html>(答应和他打赌)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$奸商波普$<BR>与其一辈子做我的奴隶，这个建议不是很好吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-acceptted" mid="23"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$商人课程Ⅲ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-a" mid="25"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$奸商波普$<BR>把腐烂的苹果换成黄金，期限是3天。如果你能把它换成黄金，就算你获胜。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-a" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$奸商波普$<BR>如果你不知道怎么办的话，就去问问怪癖的<FONT color=#a82424>斯塔西</FONT>！当然不知道他知不知道怎么把腐烂的苹果换成黄金，哈哈哈！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$魔法师斯泰拉$<BR>再在我面前瞎晃，我就把你变成青蛙。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-1" image="" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$兽人金$<BR>我想吃…… 苹果！腐烂的苹果！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$纹章学者斯塔西$<BR>……<BR><FONT color=#7e12d2>(聚精会神地看书，看都不看我一眼)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-2" image="" itemindex="400158">
+      <talk_question mid="30"><![CDATA[<html>$奸商波普$<BR>竟然用腐烂的苹果换到了黄金？这是不可能的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="32"><![CDATA[<html>(询问用腐烂的苹果交换到黄金的方法)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$纹章学者斯塔西$<BR><FONT color=#7e12d2>(聚精会神地看书，看都不看我一眼)</FONT><BR><FONT color=#2b2723>啊！……我光顾着看书，都不知道有人来了。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="34"><![CDATA[<html>没办法吗？</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$纹章学者斯塔西$<BR>嗯？用腐烂的苹果交换黄金？哈哈，书里面怎么可能有那种荒唐的事情……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-c" mid="36"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$纹章学者斯塔西$<BR>嗯，现有的书里面好像没有相关的内容。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-c" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-d" mid="38"><![CDATA[<html>但是……</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$纹章学者斯塔西$<BR>我想腐烂的苹果之类的东西<FONT color=#a82424>兽人</FONT>也许会喜欢。对于普通人来说，根本一点价值都没有……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-d" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-e" mid="40"><![CDATA[<html>在哪里可以见到兽人呢？</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$纹章学者斯塔西$<BR>嗯……兽人的胃口非常独特，听说越是烂得厉害的苹果，他们越喜欢吃。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-e" image="QW_40.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-f" mid="44"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$纹章学者斯塔西$<BR>到<FONT color=#a82424>黑暗大君主之塔</FONT>去的话，应该很容易就能找到兽人。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-f" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-g" mid="46"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$纹章学者斯塔西$<BR>你该不会真的要去找<FONT color=#a82424>兽人</FONT>吧？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-g" image="" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$纹章学者斯塔西$<BR>说真的，这样太危险了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$纹章学者斯塔西$<BR>我得找找看，书上是否有“把腐烂的苹果交换成黄金”的记载。不过我认为这种理论基本上是不存在的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3" image="" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-a" mid="50"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$兽人金$<BR>我想吃…… 苹果！腐烂的苹果！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-a" image="" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-b" mid="52"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$兽人金$<BR>怎么回事？这不是我宿命中的对手<FONT color=#382000>{user_nick}</FONT>吗！<BR>
+我闻到了好闻的味道。这是……一定是腐烂的苹果的味道？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-b" image="" itemindex="400158">
+      <talk_answer link_index="n279_orc_oneeye-3-c" mid="54"><![CDATA[<html>我们来交换吧。</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$兽人金$<BR>如果你带来了腐烂的苹果，最好在领教我的最新必杀技之前。快点交出来！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-c" image="" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-d" mid="56"><![CDATA[<html>黄金就可以。</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$兽人金$<BR>什么？交换？<BR>要我给你什么？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-d" image="" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-e" mid="58"><![CDATA[<html>算了……不管什么东西都可以。</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$兽人金$<BR><FONT color=#a82424>黄金</FONT>？那是什么东西？好吃吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-e" image="" itemindex="400158">
+      <talk_answer link_index="n279_orc_oneeye-3-f" mid="60"><![CDATA[<html>(和兽人金交换东西)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$兽人金$<BR>这是我心爱的东西……我就用它来交换腐烂的苹果吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-f" image="" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-g" mid="62"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$兽人金$<BR><FONT color=#7e12d2>(兽人金拿出了一块散发出臭味的泥团！)</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-g" image="" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-h" mid="64"><![CDATA[<html>这能用来干什么啊……</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$兽人金$<BR>干嘛！那个表情！拿到了我兽人金心爱的泥土，你还不表现得高兴一些！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-h" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-i" mid="66"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$兽人金$<BR>不知道，这不关我的事。对了，昨天晚上我看见一个好像叫<FONT color=#a82424>斯泰拉</FONT>的<FONT color=#a82424>魔法师</FONT>从这附近取走了一些泥土……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-i" image="" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-j" mid="68"><![CDATA[<html>(先去见见魔法师斯泰拉吧)</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$兽人金$<BR>我也不知道她想用它来干什么。我什么都不知道。啊哈哈哈！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-j" image="" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$兽人金$<BR>今天看在<FONT color=#a82424>腐烂的苹果</FONT>的份上，先放你一马。下次别让我撞到你！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-4" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$兽人金$<BR>苹果……！我还想吃！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-a" mid="72"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$魔法师斯泰拉$<BR>哎呀，可爱的冒险家找我有什么事吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-a" image="" itemindex="400159">
+      <talk_answer link_index="n045_soceress_master_stella-4-b" mid="74"><![CDATA[<html>(用这个交换黄金，果然不行吗？)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$魔法师斯泰拉$<BR>这……不是泥块吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-b" image="" itemindex="400159">
+      <talk_answer link_index="n045_soceress_master_stella-4-c" mid="76"><![CDATA[<html>嗯？这个东西很珍贵吗？</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$魔法师斯泰拉$<BR>而且是很难搞到的<FONT color=#a82424>黑山山角的泥土</FONT>！！！这么珍贵的东西你是从哪里找到的？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-c" image="" itemindex="400159">
+      <talk_answer link_index="n045_soceress_master_stella-4-d" mid="78"><![CDATA[<html>你愿意用黄金和我交换吗？</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$魔法师斯泰拉$<BR>呵呵，用它制作成让人变年轻的灵药的话，可以让人看上去年轻10岁。因此深受王宫里的大妈们的欢迎。当然，对于不知道它的价值的人来说，只不过是个发臭的泥块罢了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-e" mid="80"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$魔法师斯泰拉$<BR>嗯……黄金？<BR>虽然这种泥土非常珍贵，但想交换到黄金还是差了一点。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-e" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-f" mid="82"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$魔法师斯泰拉$<BR>但是也不是没有办法。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-f" image="" itemindex="400160">
+      <talk_answer link_index="n045_soceress_master_stella-4-g" mid="84"><![CDATA[<html>真的吗？</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$魔法师斯泰拉$<BR>制作灵药还需要<FONT color=#a82424>不死结晶</FONT>。那个东西也很珍贵……如果你能把不死结晶一起交给我，我就用黄金跟你交换。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-g" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-!next" mid="86"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4881,4882,4883,4884</exe>
+         <exe type="setquest">488</exe>
+         <exe type="talk" npc="n277_bluff_dealers_pope">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">400158</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="1">400158</exe>
+         <exe type="addquestitem" num="1">400159</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4881,4882,4883,4884</exe>
+         <exe type="complete">488</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="a">0,1,2</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="g">0,1</exelink>
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="b" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="c" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="d" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="e" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="f" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="g" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="h" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="i" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="j">0,1,2,3</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="f" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="g">0</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="!next">1</exelink>
+   <journal_data recompense="1:4881,2:4882,3:4883,4:4884" quest_title="상인수업Ⅲ" chapterid="" quest_level="34" quest_mark_type="10" use_item_list="400158,400159,400160">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n277</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>27</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="87"><![CDATA[和奸商波普对话]]></title>
+         <contents mid="88"><![CDATA[<html>波普说和我打个赌，如果我赢了，就算两清了。但是如果输了，就要做他的徒弟。和<FONT color=#a82424>奸商波普</FONT>对话。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 奸商波普</FONT></html>]]></contents>
+         <destination mid="89"><![CDATA[和奸商波普对话]]></destination>
+         <todo_msg mid="90"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[和纹章学者斯塔西对话]]></title>
+         <contents mid="92"><![CDATA[<html>奸商波普说如果我能用腐烂的苹果交换成黄金，欠他的债就一笔勾销。先去咨询一下<FONT color=#a82424>纹章学者斯塔西</FONT>吧。</html>]]></contents>
+         <destination mid="93"><![CDATA[和纹章学者斯塔西对话]]></destination>
+         <todo_msg mid="94"><![CDATA[去向纹章学者斯塔西咨询。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QM_Orc_Oneeye.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>403,n279</destination_pos>
+         <destination_mode>custom:401@1,402@1,403@1,,404@0</destination_mode>
+         <statemark_npcid>279</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="95"><![CDATA[去黑暗大君主之塔寻找兽人]]></title>
+         <contents mid="96"><![CDATA[<html>纹章学者斯塔西说虽然有点荒唐，但听说兽人喜欢吃腐烂的苹果。去<FONT color=#a82424>黑暗大君主之塔</FONT>寻找兽人吧。<BR><BR><FONT color=#086171>黑山山角(黑暗大君主的关卡)</FONT> <FONT color=#a82424>→黑暗大君主之塔</FONT></html>]]></contents>
+         <destination mid="97"><![CDATA[去黑暗大君主之塔寻找兽人]]></destination>
+         <todo_msg mid="98"><![CDATA[请到黑暗大君主之塔去寻找可以对话的兽人。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="99"><![CDATA[和高级魔法师斯泰拉对话]]></title>
+         <contents mid="100"><![CDATA[<html>用腐烂的苹果和兽人金交换到了泥土。兽人金说看见高级魔法师斯泰拉取走了一些泥土。先去见见<FONT color=#a82424>高级魔法师斯泰拉</FONT>吧。</html>]]></contents>
+         <destination mid="101"><![CDATA[和高级魔法师斯泰拉对话]]></destination>
+         <todo_msg mid="102"><![CDATA[请带着泥土，去见见高级魔法师斯泰拉。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>34:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>487</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>
