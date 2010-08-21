@@ -1,0 +1,299 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_285_test_cleric2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>285</qid>
+      <designer>곽노찬</designer>
+      <qlevel>15</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[转职] 缘分Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>183</npcid>
+         <npcename>n183_cleric_jake</npcename>
+         <npckname>클레릭 제이크</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-noquest" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$牧师杰克$<BR>正等着你呢，我的兄弟，我的分身... 我的<FONT color=#382000>{user_nick}</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-a" mid="6"><![CDATA[<html>嗯... 好像是...</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$高级牧师杰梅因$<BR>在<FONT color=#a82424>试炼的房间</FONT>悟到自己的缘分了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-b" mid="8"><![CDATA[<html>我一开始就得到了我自己的缘分。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$高级牧师杰梅因$<BR>
+好像是...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-c" mid="10"><![CDATA[<html>（杰梅因静静的望着我）</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$高级牧师杰梅因$<BR>每个人都是如此。领悟到之后才会发觉，其实所有的真知，早已存在于自己的内心深处。我们只是抛开了阴暗的混沌与谎言，取出最终剩下的那一点而已。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-d" mid="12"><![CDATA[<html>应该在袭击者埋伏点。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$高级牧师杰梅因$<BR>那么…你的<FONT color=#a82424>缘分</FONT>是在哪里的呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$[转职] 缘分Ⅱ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QW_18.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$高级牧师杰梅因$<BR>那么，就请坚定的前往属于你的<FONT color=#a82424>缘分</FONT>之处吧。前往<FONT color=#a82424>袭击者埋伏点</FONT>...<BR>要及时选择属于自己的道路。<BR>
+<FONT color=#7e12d2>※ 转职任务在组队状态下无法进行。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-a" mid="19"><![CDATA[<html>为什么…要如此选择?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$牧师杰克$<BR>正等着你呢，我的兄弟，我的分身... 我的<FONT color=#382000>{user_nick}</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-a" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-b" mid="21"><![CDATA[<html>不后悔吗?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$牧师杰克$<BR>那就是我的<FONT color=#a82424>缘分</FONT>，我的选择。你走你的路吧，无论是走向光明的路，还是走向寒冷而又孤独的路…如果这一切都是女神的旨意，这种选择是不会让你后悔的。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-b" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-c" mid="23"><![CDATA[<html>（杰克轻轻的拍着我的肩膀）</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$牧师杰克$<BR>能后悔什么呢? 后悔见到你?后悔把自己隐藏在红色的面具背后 ? 还是，出生在这混沌的时代...? <FONT color=#382000>{user_nick}</FONT>，我不后悔，所以你也不要后悔。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-c" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-d" mid="25"><![CDATA[<html>怎么可能完全抛去过去呢?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$牧师杰克$<BR>亲爱的朋友，我的存在对于你而言只是心中的印记而已，冲破它向未来前进吧。<BR>
+谁也无法阻止你的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-d" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-e" mid="27"><![CDATA[<html>大哥...</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$牧师杰克$<BR>无法忘却的痛楚就刻在内心深处，无法隐忍的怨恨就深埋在记忆深处吧。<BR>终会有天降大任于斯人也的那一天，并给予你自由的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-e" image="" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$牧师杰克$<BR>去吧，愿在你选择的道路最后能够找到你所梦想的东西。记住，我时刻会在你的身边。<BR><FONT color=#7e12d2>（杰克的笑容没有一丝阴霾。道别过后，他慢慢的消失在了记忆当中）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-2" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$牧师杰克$<BR><FONT color=#7e12d2>（杰克的笑容没有一丝阴霾。道别过后，他慢慢的消失在了记忆当中）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-a" mid="31"><![CDATA[<html>这果真是件好事吗...</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$高级牧师杰梅因$<BR>气色好多了，兄弟，你好像完全变了一个人似的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-b" mid="33"><![CDATA[<html>我要选择<FONT color=#a82424>贤者</FONT>之路。</html>]]></talk_answer>
+      <talk_answer link_index="n034_cleric_master_germain-2-c" mid="34"><![CDATA[<html>我要选择<FONT color=#a82424>祭司</FONT>之路。</html>]]></talk_answer>
+      <talk_answer link_index="n034_cleric_master_germain-2-e" mid="35"><![CDATA[<html>我还没有决定好。</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$高级牧师杰梅因$<BR>不断的变化意味着成长。<BR>希望你的身体新得到的力量，能够顺从女神的意志。选择好今后的道路了吗？<BR>
+<FONT color=#7e12d2>※ 选择职业后，将无法反悔。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-a" mid="37"><![CDATA[<html>（选择另外的道路）</html>]]></talk_answer>
+      <talk_answer link_index="n034_cleric_master_germain-2-change_class1" mid="38"><![CDATA[<html>我要成为<FONT color=#a82424>贤者</FONT>。</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$高级牧师杰梅因$<BR><FONT color=#a82424>贤者</FONT>是擅长<FONT color=#a82424>防御</FONT>和<FONT color=#a82424>灵气（Aura）</FONT>的牧师职业。他主要发挥着把他人的攻击转化为防御，最大限度的降低伤害的作用。<BR>
+要选择<FONT color=#a82424>贤者</FONT>之路吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-a" mid="40"><![CDATA[<html>（选择另外的道路）</html>]]></talk_answer>
+      <talk_answer link_index="n034_cleric_master_germain-2-change_class2" mid="41"><![CDATA[<html>我要成为<FONT color=#a82424>祭司</FONT>。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$高级牧师杰梅因$<BR><FONT color=#a82424>祭司</FONT>是擅长<FONT color=#a82424>光属性攻击魔法</FONT>和<FONT color=#a82424>恢复</FONT>，<FONT color=#a82424>增益魔法</FONT>的职业。他更注重魔法攻击力，主要使用的武器是魔杖。<BR>
+要选择祭司之路吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-d" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-a" mid="53"><![CDATA[<html>（选择另外的道路）</html>]]></talk_answer>
+      <talk_answer link_index="n034_cleric_master_germain-2-change_class3" mid="54"><![CDATA[<html>我要成为<FONT color=#a82424>僧侣</FONT>。</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$高级牧师杰梅因$<BR><FONT color=#a82424>僧侣</FONT>在牧师的转职中是具有最强<FONT color=#a82424>物理攻击力</FONT>的职业。 他们主要使用权杖和连枷，技能也是根据使用的武器专精技能。<BR>要选择<FONT color=#a82424>僧侣</FONT>之路吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-e" image="" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$高级牧师杰梅因$<BR>当排除一切混乱，决定好了之后再来找我吧。<BR>愿女神保佑你...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-f" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-g" mid="44"><![CDATA[<html>神之侍 {user_nick}，愿意接受。</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$高级牧师杰梅因$<BR>望你能坚定的走下去。<BR>愿你能够领悟到女神天降于你的命运。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-g" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-complete_quest" mid="46"><![CDATA[<html>谢谢。</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$高级牧师杰梅因$<BR>为了祝福你即将踏上全新的征程，我想把这件老师交给我的武器送给你，请收下吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-h" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-complete_quest1" mid="49"><![CDATA[<html><FONT color=#086171>（转职成为贤者）</FONT></html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$[转职] 贤者$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-i" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-complete_quest2" mid="57"><![CDATA[<html><FONT color=#086171>（转职成为祭司）</FONT></html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$[转职] 祭司$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-j" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-complete_quest3" mid="59"><![CDATA[<html><FONT color=#086171>（转职成为僧侣）</FONT></html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$[转职] 僧侣$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-k" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-l" mid="68"><![CDATA[<html>(杰梅因用热切的眼神看着我)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$高级牧师杰梅因$<BR>转职之后，为了重新学习所有技能，<FONT color=#a82424>技能点数将会初始化</FONT>。请你记住。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-l" image="" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$高级牧师杰梅因$<BR>我们不得不分别了。希望和你之间的<FONT color=#a82424>缘分</FONT>，能将你引向正确的道路。请别忘了，在你的身边永远有一根<FONT color=#a82424>缘分的红绳</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">285</exe>
+         <exe type="recompense_view">2850,,,,</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 1) == 1</chk>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 1) == 2</chk>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 1) == 3</chk>
+      </conditions>
+      <executions>
+         <exe type="complete">285</exe>
+         <exe type="recompense">2851,,,,</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 1, 1);</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 1, 2);</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 1, 3);</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">f</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">h</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">i</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">j</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">k</exe>
+         <exe type="conexe" true="6,1" false="11">0</exe>
+         <exe type="conexe" true="7,16" false="12">1</exe>
+         <exe type="conexe" true="8,1" false="8">2</exe>
+         <exe type="custom">api_user_SetUserJobID(userObjID, 20);</exe>
+         <exe type="custom">api_user_SetUserJobID(userObjID, 21);</exe>
+         <exe type="custom">api_user_SetUserJobID(userObjID, 22);</exe>
+         <exe type="recompense">2852,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="d">1</exelink>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n183_cleric_jake" sub="b" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="c" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="d" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="e">0,1</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="c" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="e" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="a" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="change_class1">2,5</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="a" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="change_class2">3,5</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="a" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="change_class3">4,5</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="g" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="complete_quest">10</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="complete_quest1">13,0,9</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="complete_quest2">15,0,9</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="complete_quest3">14,0,9</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="l" />
+   <journal_data recompense="2850" quest_title="[전직] 인연Ⅱ" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>139,n183</destination_pos>
+         <destination_mode>custom:136@1,137@1,138@1,139@1</destination_mode>
+         <statemark_npcid>183</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[与袭击者埋伏点的牧师杰克对话]]></title>
+         <contents mid="61"><![CDATA[<html>与<FONT color=#a82424>袭击者埋伏点</FONT>的 <FONT color=#a82424>牧师杰克</FONT>对话。<BR>
+ <BR>
+<FONT color=#7e12d2>※ 转职任务在组队状态下无法进行。</FONT><BR><BR><FONT color=#086171>水晶谷（袭击者巢穴入口） </FONT><FONT color=#a82424>→ 袭击者埋伏点</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[与袭击者埋伏点的牧师杰克对话]]></destination>
+         <todo_msg mid="63"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[和高级牧师杰梅因对话]]></title>
+         <contents mid="65"><![CDATA[<html>在袭击者埋伏点见面的杰克微笑着和我道别。<BR>
+离开杰克后去寻找<FONT color=#a82424>高级牧师杰梅因</FONT>。为了获得全新的力量...<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级牧师杰梅因</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[和高级牧师杰梅因对话]]></destination>
+         <todo_msg mid="67"><![CDATA[回到凯德拉关卡并与高级牧师杰梅因对话吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>284</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

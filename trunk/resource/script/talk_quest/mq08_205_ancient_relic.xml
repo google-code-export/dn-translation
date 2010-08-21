@@ -1,0 +1,320 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_205_ancient_relic</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>205</qid>
+      <designer>김주연</designer>
+      <qlevel>12</qlevel>
+      <qdesc>300030 순종의 팬던트는 당장 지우지 않음</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>206</nextqid>
+      <nextqname>mq08_206_surprise_attack</nextqname>
+      <nextqnpc>n034_cleric_master_germain</nextqnpc>
+      <qkname mid="1"><![CDATA[古代人的遗物]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인  (캐더락 클레릭 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QS_Default.dds" itemindex="300030">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="6"><![CDATA[<html>好的，明白了。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$纹章学者贝利${action:Talk}<BR><FONT color=#a82424>顺从吊坠</FONT>是过去的牧师威廉的东西。你去问问他的弟子高级牧师杰梅因，应该就能知道它的下落。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="8"><![CDATA[<html>(询问古代人的遗物的情况)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$纹章学者贝利$<BR><FONT color=#a82424>顺从吊坠</FONT>嘛……黑骑士好像对<FONT color=#a82424>古代人的遗物</FONT>很感兴趣啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2" mid="10"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$纹章学者贝利$<BR>古代人的遗物是信仰女神的古代人们留下的遗产。<BR>古代人是获得女神的恩宠，在<FONT color=#a82424>纹章</FONT>和<FONT color=#a82424>宝玉</FONT>方面有着丰富知识的人。后来不知道因为什么原因，只留下遗物和遗迹，从世上消失了踪迹。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$高级牧师杰梅因$<BR><FONT color=#a82424>纹章学者贝利</FONT>学识非常渊博。<BR>你可以去问问他。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$纹章学者贝利$<BR>你去问问牧师威廉的弟子<FONT color=#a82424>高级牧师杰梅因</FONT>，应该就能知道它的下落。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-a" mid="16"><![CDATA[<html>顺从吊坠在你那儿吗？</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$高级牧师杰梅因$<BR>你好，冒险家。<BR>一想到<FONT color=#a82424>先知</FONT>被黑骑士劫走，正在经历痛苦，我的心就感觉被撕裂了一样。<BR>必须尽快把先知救出来，要不然就糟了……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-a" image="QS_Default.dds" itemindex="300030">
+      <talk_answer link_index="n034_cleric_master_germain-2-b" mid="18"><![CDATA[<html>威廉在哪里？</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$高级牧师杰梅因$<BR>顺从吊坠……那是我的老师<FONT color=#a82424>高级牧师威廉</FONT>曾经拥有的东西……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-b" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-c" mid="24"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$高级牧师杰梅因${action:Talk}<BR>老师他……很久以前，他在参加<FONT color=#a82424>死亡森林</FONT>对抗怪物的战争时，受到女神的呼唤，光荣殉教了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-c" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-d" mid="26"><![CDATA[<html>那我直接去死亡森林找找看。</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$高级牧师杰梅因$<BR>当时由于魔物们的剧毒气息，大地荒废，人们无法靠近，所以连老师的尸身都没来得及收拾。有些人说他的尸身中了毒，变成了凶恶的食尸鬼的模样……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-d" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3" mid="65"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$高级牧师杰梅因$<BR>必须把他的遗骸收起来才行，这样下去，心里总不是滋味。<BR>有时间的话，请你帮着收拾老师的遗骸。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3" image="QW_17.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$高级牧师杰梅因$<BR>老师的遗物<FONT color=#a82424>顺从吊坠</FONT>应该就在<FONT color=#a82424>死亡森林</FONT>的某个地方。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4" image="QS_Default.dds" itemindex="300030">
+      <talk_answer link_index="n034_cleric_master_germain-4-a" mid="30"><![CDATA[<html>(讲述死亡森林里发生的事情)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$高级牧师杰梅因$<BR>找到<FONT color=#a82424>顺从吊坠</FONT>吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-a" image="QM_GhoulBlue.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-b" mid="32"><![CDATA[<html>它不愿意放开顺从吊坠……</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$高级牧师杰梅因$<BR>什么……？你在说什么啊？<BR><FONT color=#a82424>食尸鬼波尔德尼斯</FONT>的脖子上挂着<FONT color=#a82424>顺从吊坠</FONT>？<BR>亡灵怎么可能戴着顺从吊坠呢！那到底是……？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-c" mid="34"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$高级牧师杰梅因$<BR>啊……怎么会这样……<BR><FONT color=#7e12d2>(杰梅因开始抽泣)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-d" mid="36"><![CDATA[<html>你是说那个蓝色食尸鬼是威廉吗？</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$高级牧师杰梅因$<BR>呜呜呜……怎么会成了在地狱徘徊的亡灵了呢？老师……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-d" image="QM_GhoulBlue.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-e" mid="38"><![CDATA[<html>是吗……对不起。我不知道，所以……</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$高级牧师杰梅因$<BR>如果不是那样的话，食尸鬼的脖子上怎么会戴着神圣的<FONT color=#a82424>顺从吊坠</FONT>呢……<BR>只有像老师这样生前对女神充满了信仰的人，在成为亡灵之后，才不会对神圣力起抗拒反应。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-e" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-f" mid="40"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$高级牧师杰梅因${action:Talk}<BR>没关系……威廉老师现在应该已经得到了安息，回到了女神的身边。<BR>威廉老师，希望你能安息……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-f" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-5" mid="46"><![CDATA[<html><FONT color=#a94407>（获取奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-5" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-5-a" mid="78"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$高级牧师杰梅因$<BR>要先找到竟如此陷害老师的元凶。虽说可能会因为对世界的怨恨或怜悯，偶尔也会有亡者出没于这个世间，但是圣职者中间居然也会发生这种事，真是让人难以置信。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-5-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-5-!next" mid="80"><![CDATA[<html>（杰梅因恳切的望着我）</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$高级牧师杰梅因$<BR>
+肯定是那些疯狂的魔法师或是堕落的魔物们搞的鬼。<BR>一定要找到他们，要让它们为此付出代价。 <BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>300030 - 순종의 팬던트 
+</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">433</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300030</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">300030</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2051,2052,2053,2054</exe>
+         <exe type="setstep">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">205</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="c" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="d" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="3">2,3,0,1</exelink>
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="c" />
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="d" />
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="e" />
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="f">0</exelink>
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="5">1</exelink>
+   <exelink qstep="5" npc="n034_cleric_master_germain" sub="!next">0</exelink>
+   <journal_data recompense="1:2051,2:2052,3:2053,4:2054" quest_title="고대인의 유물" chapterid="2" quest_level="12" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2694,-3175</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>문장학자 베일리</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>문장학자 베일리</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[和纹章学者贝利对话]]></title>
+         <contents mid="48"><![CDATA[<html>向<FONT color=#a82424>纹章学者贝利</FONT>询问可以打开沉睡者神殿之门的<FONT color=#a82424>顺从吊坠</FONT>的情况。<BR><BR><FONT color=#086171>凯德拉关卡</FONT><FONT color=#a82424> → 纹章学者贝利</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[和纹章学者贝利对话]]></destination>
+         <todo_msg mid="50"><![CDATA[请和纹章学者贝利对话。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2383,2325</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>문장학자 베일리</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>상급 클레릭 저메인</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[和高级牧师杰梅因对话]]></title>
+         <contents mid="52"><![CDATA[<html>向<FONT color=#a82424>高级牧师杰梅因</FONT>询问古代人的遗物顺从吊坠的事情。<BR><BR><FONT color=#086171>凯德拉关卡</FONT><FONT color=#a82424> → 高级牧师杰梅因</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[和高级牧师杰梅因对话]]></destination>
+         <todo_msg mid="54"><![CDATA[请去见见高级牧师杰梅因。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QM_GhoulBlue.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>134,-11.58,698.30</destination_pos>
+         <destination_mode>custom:131@1,132@1,133@1,134@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>상급 클레릭 저메인</start_npc>
+         <desc_location>죽음의 숲</desc_location>
+         <step_action>사냥/수집</step_action>
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster>볼드니스</hunt_monster>
+         <hunt_monsterindex>433</hunt_monsterindex>
+         <collect_item>순종의 팬던트</collect_item>
+         <collect_itemindex>30</collect_itemindex>
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[寻找顺从吊坠]]></title>
+         <contents mid="56"><![CDATA[<html>去<FONT color=#a82424>死亡森林</FONT>寻找杰梅因的老师威廉的<FONT color=#a82424>遗骸</FONT>和<FONT color=#a82424>顺从吊坠</FONT>。<BR><BR><FONT color=#086171>堆满落叶的湖岸(死亡森林入口)</FONT><FONT color=#a82424> → 死亡森林</FONT><BR><FONT color=#a82424></FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[寻找顺从吊坠]]></destination>
+         <todo_msg mid="58"><![CDATA[请去死亡森林去搜索顺从吊坠。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2383,2325</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>죽음의 숲</get_location>
+         <start_npc />
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>상급 클레릭 저메인</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[和高级牧师杰梅因对话]]></title>
+         <contents mid="60"><![CDATA[<html>从在死亡森林徘徊的食尸鬼身上获得了顺从吊坠。<BR>回到<FONT color=#a82424>凯德拉关卡</FONT>，和<FONT color=#a82424>高级牧师杰梅因</FONT><FONT color=#a82424></FONT>对话。<BR><BR><FONT color=#086171>凯德拉关卡</FONT><FONT color=#a82424> → 高级牧师杰梅因</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[和高级牧师杰梅因对话]]></destination>
+         <todo_msg mid="62"><![CDATA[获得了顺从吊坠。请回去见见高级牧师杰梅因。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>204</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

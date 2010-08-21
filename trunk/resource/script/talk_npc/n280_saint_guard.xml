@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n280_saint_guard</npcename>
+      <npcid>280</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[王城近卫军马尔肯]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$王城近卫军马尔肯$<BR>小姐还没来吗……自言自语……要是遇到魔物该怎么办呢……自言自语。<BR><FONT color=#7e12d2>(好像在等谁)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="enterquest">sq11_555_timid_man1</exe>
+         <exe type="enterquest">sq11_556_timid_man2</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">555</chk>
+         <chk type="hasquest">556</chk>
+      </conditions>
+   </talk>

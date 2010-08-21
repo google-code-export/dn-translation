@@ -1,0 +1,223 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_001_lost_girl2</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>11</qid>
+      <designer>김주연</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>2</nextqid>
+      <nextqname>mq01_002_scattered_evidence</nextqname>
+      <nextqnpc>n004_guard_steave</nextqnpc>
+      <qkname mid="1"><![CDATA[失踪的少女Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-noquest" image="QN_Lily.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$村长海洛德$<BR>你就是救出我孙女的冒险家吧。真的非常感谢。不知道怎样才能报答你的大恩大德……咳咳咳咳……<BR><FONT color=#7e12d2>(必须从莉莉那里接受任务后才可以进行。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-noquest" image="QN_Lily.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$卫兵史蒂夫$<BR>听说是你救了莉莉。刚才莉莉好像已经醒了。你不去和莉莉说说话吗？<BR><FONT color=#7e12d2>(必须从莉莉那里接受任务后才可以进行。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QS_Default.dds" itemindex="302132232">
+      <talk_answer link_index="n004_guard_steave-2" mid="238"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="237"><![CDATA[<html>$自卫团长史蒂夫${action:Talk}<BR>送给你的药品，请在打开背包<FONT color=#a82424>[I]</FONT>后，拖动物品，添加到画面下方的快捷栏中，即可使用。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="239"><![CDATA[<html>$村长海洛德$<BR>在去<FONT color=#a82424>阴影森林山麓</FONT>之前，你先去见见<FONT color=#a82424>自卫团长史蒂夫</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="QM_OrcGreen.dds" itemindex="">
+      <talk_question mid="240"><![CDATA[<html>$自卫团长史蒂夫$<BR>准备好了之后，请你赶快去<FONT color=#a82424>阴影森林山麓</FONT>消灭<FONT color=#a82424>兽人</FONT><FONT color=#a82424>克洛西</FONT>，寻找<FONT color=#a82424>箩丝</FONT>的下落。<BR>那就祝你好运。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2" image="" itemindex="">
+      <talk_question mid="241"><![CDATA[<html>$村长海洛德$<BR><FONT color=#a82424>阴影森林山麓</FONT>在村外阴影森林的左侧的<FONT color=#a82424>阴影森林小径</FONT>那边。<BR>请你一定要救出箩丝……咳咳咳……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-a" mid="243"><![CDATA[<html>(把地图碎片拿给自卫团长史蒂夫看。)</html>]]></talk_answer>
+      <talk_question mid="242"><![CDATA[<html>$自卫团长史蒂夫${action:Talk}<BR>你好，冒险家。<BR><FONT color=#a82424>箩丝</FONT>……看来是还没找到吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-a" image="QS_Default.dds" itemindex="300057">
+      <talk_answer link_index="n004_guard_steave-3-b" mid="245"><![CDATA[<html>这是在阴影森林的兽人身上发现的。</html>]]></talk_answer>
+      <talk_question mid="244"><![CDATA[<html>$自卫团长史蒂夫$<BR>这是什么……？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-b" image="QM_OrcGreen.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-c" mid="247"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="246"><![CDATA[<html>$自卫团长史蒂夫$<BR>嗯……看起来似乎就是一张普通的<FONT color=#a82424>地图碎片</FONT>……但如果是从<FONT color=#a82424>兽人</FONT><FONT color=#a82424>克洛西</FONT>身上发现的地图……说不定能从中找到一些有关<FONT color=#a82424>箩丝</FONT>和失踪村民的线索。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-c" image="QS_Default.dds" itemindex="300057">
+      <talk_answer link_index="n004_guard_steave-3-d" mid="249"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="248"><![CDATA[<html>$自卫团长史蒂夫$<BR>首先得复原这张地图。有一名自卫团成员听说<FONT color=#a82424>箩丝</FONT>失踪的消息后，就去了<FONT color=#a82424>阴影森林山麓</FONT>。请冒险家和那位自卫团员一起寻找剩下的<FONT color=#a82424>地图碎片</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-d" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-!next" mid="251"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="250"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="1,4,5,6">104</exe>
+         <exe type="addquestitem" num="1">300057</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">11</exe>
+         <exe type="recompense">11,11,12,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n004_guard_steave" sub="2">0,2,3</exelink>
+   <exelink qstep="3" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="3" npc="n004_guard_steave" sub="c" />
+   <exelink qstep="3" npc="n004_guard_steave" sub="d">1</exelink>
+   <exelink qstep="3" npc="n004_guard_steave" sub="!next">0</exelink>
+   <journal_data recompense="1:11,2:12" quest_title="실종된 소녀Ⅱ" chapterid="1" quest_level="1" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="252"><![CDATA[卫兵史蒂夫]]></title>
+         <contents mid="253"><![CDATA[<html>普雷利镇的村长海洛德拜托我救出被劫持的箩丝，并让我去见见自卫团长史蒂夫。<BR>和<FONT color=#a82424>自卫团长史蒂夫</FONT>对话，听听他的建议。<BR><BR><FONT color=#086171>普雷利镇</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>→ 自卫团长史蒂夫</FONT></FONT></html>]]></contents>
+         <destination mid="254"><![CDATA[与卫兵史蒂夫对话]]></destination>
+         <todo_msg mid="255"><![CDATA[请与卫兵史蒂夫对话]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_OrcGreen.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>53,-46.66,-10.48</destination_pos>
+         <destination_mode>53,-46.66,-10.48</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="256"><![CDATA[消灭阴影森林山麓的克洛西]]></title>
+         <contents mid="257"><![CDATA[<html>去<FONT color=#a82424>阴影森林山麓</FONT>消灭<FONT color=#a82424>兽人</FONT><FONT color=#a82424>克洛西</FONT>，寻找箩丝的踪迹。<BR><BR><FONT color=#2b2723><FONT color=#086171>阴影森林(阴影森林小径)</FONT> </FONT><FONT color=#a82424>→ 阴影森林山麓</FONT></html>]]></contents>
+         <destination mid="258"><![CDATA[消灭阴影森林山麓的克洛西]]></destination>
+         <todo_msg mid="259"><![CDATA[请消灭阴影森林山麓的克洛西。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="260"><![CDATA[地图碎片]]></title>
+         <contents mid="261"><![CDATA[<html>搜索了<FONT color=#a82424>阴影森林山麓</FONT>，但并未发现箩丝和被绑架的村民们的下落。<BR>带着从<FONT color=#a82424>克洛西</FONT>身上获得的<FONT color=#a82424>地图碎片</FONT>去找普雷利镇的<FONT color=#a82424>自卫团长史蒂夫</FONT>。<BR><BR><FONT color=#086171>普雷利镇</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>→ 自卫团长史蒂夫</FONT></html>]]></contents>
+         <destination mid="262"><![CDATA[与卫兵史蒂夫对话]]></destination>
+         <todo_msg mid="263"><![CDATA[从克洛西身上获得了地图碎片。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level>-1:-1</user_worldzone_level>
+      <user_class>1:2</user_class>
+      <prev_quest>1</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

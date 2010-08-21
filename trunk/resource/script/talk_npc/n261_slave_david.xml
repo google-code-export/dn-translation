@@ -1,0 +1,26 @@
+   <talk>
+      <npcename>n261_slave_david</npcename>
+      <npcid>261</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[戴维]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$戴维$<BR>找我戴维大人有事吗？呵呵呵。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq11_419_where_argenta</exe>
+         <exe type="conexe" true="1" false="4">0</exe>
+         <exe type="enterquest">mq11_403_meet_argenta_again</exe>
+         <exe type="conexe" true="3" false="5">1</exe>
+         <exe type="conexe" true="7" false="6">2</exe>
+         <exe type="conexe" true="8" false="0">3</exe>
+         <exe type="enterquest">mq11_418_curious_david</exe>
+         <exe type="enterquest">mq11_417_deserted_david</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">419</chk>
+         <chk type="hasquest">403</chk>
+         <chk type="hasquest">418</chk>
+         <chk type="hasquest">417</chk>
+      </conditions>
+   </talk>

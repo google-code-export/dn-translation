@@ -1,0 +1,369 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_278_test_warrior1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>278</qid>
+      <designer>손원호</designer>
+      <qlevel>15</qlevel>
+      <qdesc>주인공의 무기를 보고, 놀라는 챈들러. "지금까지 이런 장비로 싸워온건가!" 제대로 정식 수련도 받아보지 못한 주인공이 지금까지 살아있는 것은 기적이라고 하며, 앞으로의 모험에는 새로운 힘이 필요할 것이라고 말하는 챈들러. 하지만 강한 힘에는 큰 의지가 필요한 법. 먼저 주인공이 그 힘을 받을 자격이 되어 있는지 확인해야 겠다고 하는데… 워리어 시험의 방으로 보내준다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>279</nextqid>
+      <nextqname>sq08_279_test_warrior2</nextqname>
+      <nextqnpc>n032_warrior_master_chandler</nextqnpc>
+      <qkname mid="1"><![CDATA[[转职] 战士的证明 Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>32</npcid>
+         <npcename>n032_warrior_master_chandler</npcename>
+         <npckname>상급 워리어 챈들러 (캐더락 워려 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-a" mid="7"><![CDATA[<html>干吗忽然说以前的事?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$高级战士钱德勒${action:Talk}<BR>每一个战士，都应该记住两个人的名字。其中的一位就是和黑龙战斗过的传说中的<FONT color=#a82424>佣兵队长巴尔纳</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-b" mid="9"><![CDATA[<html>... 像个恶棍嘛?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$高级战士钱德勒$<BR>乖乖的继续听着啊。还有一位，也得到了所有战士们的尊敬。他不同于一心追求正义的巴尔纳，他是追求强大的力量。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-c" mid="82"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$高级战士钱德勒$<BR>总之，所谓的正义对于每个人而言具有不同的意义吧。他心中的正义就是追求不能输给任何人的强大的力量。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-d" mid="94"><![CDATA[<html>战士的极意?</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$高级战士钱德勒$<BR>他为了追求更强大的力量，不断进行了刻苦的修炼，最终也如愿以偿的到达了其他的战士都未曾达到过的<FONT color=#a82424>战士的极限</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-e" mid="84"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$高级战士钱德勒$<BR>是啊…谁也不知道那究竟代表着什么意思，但是自从留下已经到达了战士的极限的消息之后，便消失在了历史的长河当中。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-f" mid="100"><![CDATA[<html>... 兰伯特！</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$高级战士钱德勒$<BR>追求无穷之力量，他给所有的战士留下的无比强烈的印象，直到现在依然成为一种传说被世人广为流传。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-g" mid="86"><![CDATA[<html>父亲留下来的话...</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$高级战士钱德勒$<BR>
+嗯，这就是你的父亲，<FONT color=#a82424>兰伯特</FONT>的故事。<BR>还有我为了告诉你他留给你的话，才在这里一直等待着你的出现。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-h" mid="88"><![CDATA[<html>（听取遗言）</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$高级战士钱德勒$<BR>他留给你的最后遗言。 <BR>
+你要务必记住。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-i" mid="90"><![CDATA[<html>... 父亲。</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$高级战士钱德勒$<BR><FONT color=#7e12d2>不断的强大起来吧。</FONT><BR><FONT color=#7e12d2>当你终于有一天达到某种高度<FONT color=#7e12d2>的时候...</FONT> </FONT><BR><FONT color=#7e12d2>就可以见到我了。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-j" mid="92"><![CDATA[<html>如何才能变得更加强大?</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$高级战士钱德勒$<BR>
+要想见到他的话，继续变得强大起来吧。<BR>只有这样，才能见到他。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-j" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-k" mid="11"><![CDATA[<html>转职?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$高级战士钱德勒$<BR>你现在的本领是战士们使用的最基本的技术而已。 为了变得更加强大，就需要学习更强大的技术。而要想学习新的技术就必须要<FONT color=#a82424>转职</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-k" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-l" mid="15"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$高级战士钱德勒$<BR>简单的说，像你这种新手战士如果想更进一步就需要<FONT color=#a82424>转职</FONT><FONT color=#2b2723>呢</FONT>。如果说战士就是靠那几种技术胡闹的小屁孩的话，转职就是要变成擅长战斗的骑士。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-l" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$战士的证明 Ⅰ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-m" image="" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$高级战士钱德勒$<BR>嗯... 你周围还有其他人，这个事情只能告诉你一个人，所以先<FONT color=#a82424>退出组队</FONT>后再来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-a" mid="20"><![CDATA[<html>资格?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$高级战士钱德勒$<BR>按照与你父亲的承诺，就让我来引导你至那条道路吧。不过强大的力量需要与之相应的意志，在进行转职之前，还得确认你是否具备了 <FONT color=#a82424>与之匹配的资格</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-b" mid="22"><![CDATA[<html>是何种考验。</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$高级战士钱德勒$<BR>你也不必过于紧张。虽然对于菜鸟而言，会感到有些困难，但是如果你顺利的走过以往的战士之路的话，应该可以很容易通过的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-c" mid="24"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$高级战士钱德勒$<BR>要想瞬间提高力量还得到<FONT color=#a82424>试炼房间</FONT>。从无数涌入的魔物们的身上应该可以感受到你自身不断强大起来的那种力量。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-d" mid="26"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$高级战士钱德勒$<BR>试炼房间内<FONT color=#a82424> 魔物聚集的过多就会失败</FONT>，因此要尽快消灭暴雨一般冒出的怪物才行。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-member1" mid="28"><![CDATA[<html>（现在就挑战）</html>]]></talk_answer>
+      <talk_answer link_index="n032_warrior_master_chandler-1-g" mid="29"><![CDATA[<html>（下次再挑战）</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$高级战士钱德勒$<BR><FONT color=#a82424>挥起你的剑</FONT>斩落敌人吧，一刻也不能休息。 <BR>
+战士之路，就在挥舞的刀尖之上！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-go_test_room" mid="70"><![CDATA[<html>（移动至试炼房间）</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$高级战士钱德勒$<BR>那么一起到<FONT color=#a82424>试炼房间</FONT>如何?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-f" image="" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$高级战士钱德勒$<BR><FONT color=#a82424>试炼房间</FONT>不能带组队队员一起进去。 就<BR>
+<FONT color=#a82424>独自</FONT>进入吧！<BR>
+<FONT color=#7e12d2>(组队状态下无法进行)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-g" image="" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$高级战士钱德勒$<BR>真是个胆小的家伙。 <BR>
+那么准备好了的时候再来吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-member1" mid="32"><![CDATA[<html>（现在就挑战）</html>]]></talk_answer>
+      <talk_answer link_index="n032_warrior_master_chandler-2-c" mid="33"><![CDATA[<html>（下次再挑战）</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$高级战士钱德勒$<BR>还磨蹭什么，已经做好挑战<FONT color=#a82424>转职考验</FONT>的准备了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-go_test_room" mid="76"><![CDATA[<html>（移动至试炼房间）</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$高级战士钱德勒$<BR>那么一起到<FONT color=#a82424>试炼房间</FONT>如何?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-b" image="" itemindex="">
+      <talk_question mid="77"><![CDATA[<html>$高级战士钱德勒$<BR><FONT color=#a82424>试炼房间</FONT>不能带组队队员一起进去。 就<BR>
+<FONT color=#a82424>独自</FONT>进入吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-c" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$高级战士钱德勒$<BR>真是个胆小的家伙。 <BR>
+那么准备好了的时候再来吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-a" mid="36"><![CDATA[<html>下一个考验是什么?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$高级战士钱德勒$<BR>果然配得上传说中的战士，兰伯特的儿子啊。 <BR>
+身手不错啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-b" mid="38"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$高级战士钱德勒$<BR>
+在这之前还有个问题想问你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-c" mid="40"><![CDATA[<html>... 嗯！</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$高级战士钱德勒$<BR><FONT color=#a82424>兰伯特</FONT>为了追寻更强大的力量而抛弃了你。 <BR>你愿意见到他吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-d" mid="42"><![CDATA[<html>没关系。</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$高级战士钱德勒$<BR>嗯... 如果说那就是你所选择的道路的话，我也没法阻拦你了。不过从现在开始更加荆棘的道路会等待着你，你真的可以吗? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-e" mid="44"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$高级战士钱德勒$<BR>啊哈哈！选择荆棘之路，不愧是兰伯特的儿子啊。也是，与他见面的唯一的方法，就是成为最强的战士... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-f" mid="46"><![CDATA[<html>明白了！</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$高级战士钱德勒$<BR>你要坚定的走下去才行。 <BR>他会在你前行的那一端等待着你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-f" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-g" mid="48"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$高级战士钱德勒$<BR>又说了不少废话。 <BR>
+那么现在就开始<FONT color=#a82424>第二个考验</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-g" image="QS_Default.dds" itemindex="300072">
+      <talk_answer link_index="n032_warrior_master_chandler-3-h" mid="50"><![CDATA[<html>勇气的心脏石?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$高级战士钱德勒$<BR>想要使用新的力量就需要与之匹配的武器才行。我会在这里委托铁匠做一把适合你携带的新的武器，而你就设法找些<FONT color=#a82424>勇气的心脏石</FONT>回来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-h" image="QS_Default.dds" itemindex="300072">
+      <talk_answer link_index="n032_warrior_master_chandler-3-i" mid="52"><![CDATA[<html>明白了。</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$高级战士钱德勒$<BR>那是为了唤醒你潜力的一种<FONT color=#a82424>催化剂</FONT>而已，我打算用它来把你体内的力量一步步激发出来。干嘛呢? 还不快去给我拿来！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-i" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-!next" mid="54"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense_view">2780,,,,</exe>
+         <exe type="setquest">278</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">1</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">a</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">m</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>전직 시험
+스탭 3, 저널 3으로 변경</comment>
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13009,1);</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">e</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">f</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="custom">api_user_ChangeMap(userObjID,13009,1);</exe>
+         <exe type="conexe" true="2" false="3">0</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">a</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2780,,,,</exe>
+         <exe type="complete">278</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="a">3</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="l">0</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="b" />
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="c" />
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="d">0,1</exelink>
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="member1">3</exelink>
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="g" />
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="go_test_room">2</exelink>
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="member1">1</exelink>
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="go_test_room">0</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="b" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="c" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="d" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="e" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="f" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="g" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="h" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="i">0</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="!next">1</exelink>
+   <journal_data recompense="2780" quest_title="[전직] 전사의 증명 Ⅰ" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[与高级战士钱德勒对话]]></title>
+         <contents mid="57"><![CDATA[<html>为了获得全新的力量与高级战士钱德勒对话。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级战士钱德勒</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[与高级战士钱德勒对话]]></destination>
+         <todo_msg mid="59"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom:13009@2</destination_mode>
+         <statemark_npcid>250</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[通过试炼房间]]></title>
+         <contents mid="61"><![CDATA[<html>到试炼房间完成转职考验吧。 试炼房间可以通过高级战士钱德勒进入。<BR><FONT color=#7e12d2></FONT><BR>
+<FONT color=#7e12d2>※ 试炼房间在组队状态下无法进入。</FONT><BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级战士钱德勒</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[通过试炼房间]]></destination>
+         <todo_msg mid="63"><![CDATA[通过试炼房间吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[与高级战士钱德勒对话]]></title>
+         <contents mid="65"><![CDATA[<html>通过了试炼房间！ 去找高级战士钱德勒接受第二个转职考验吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级战士钱德勒</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[与高级战士钱德勒对话]]></destination>
+         <todo_msg mid="67"><![CDATA[通过了试炼房间，回到高级战士钱德勒那里吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

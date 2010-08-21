@@ -1,0 +1,582 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_452_meet_lena</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>452</qid>
+      <designer>김주연</designer>
+      <qlevel>25</qlevel>
+      <qdesc>300037 레나의 손수건</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[与小姐的见面]]></qkname>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>47</npcid>
+         <npcename>n047_unknown_girl_lena</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>48</npcid>
+         <npcename>n048_maid_of_lena</npcename>
+         <npckname>왕성 하녀</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>50</npcid>
+         <npcename>n050_lena_of_hermalte</npcename>
+         <npckname>레나 아가씨</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>67</npcid>
+         <npcename>n067_lenas_hankie</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n047_unknown_girl_lena-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$好问的小姐$<BR>
+…请，不要管我。<BR>
+<FONT color=#7e12d2>(到位于王城内部的将军道格拉斯那里，可开始执行任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$王城婢女$<BR>
+得赶紧出发呢，但是小姐为何还不回来呢。<BR>
+<FONT color=#7e12d2>(到位于王城内部的将军道格拉斯那里，可开始执行任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n067_lenas_hankie-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$???$<BR>似乎没什么特别的。<BR>
+<FONT color=#7e12d2>(到位于王城内部的将军道格拉斯那里，可开始执行任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n050_lena_of_hermalte-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$好问的小姐$<BR>
+请不要跟任何人说我在这里。<BR>
+<FONT color=#7e12d2>(到位于王城内部的将军道格拉斯那里，可开始执行任务)</FONT><BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="11"><![CDATA[<html>嗯? 什么意思?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$将军道格拉斯$<BR>不知蕾娜有没有安全到达… <BR><FONT color=#7e12d2>(自言自语)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$与小姐的见面$<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="16"><![CDATA[<html>是个慈祥的父亲啊。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$将军道格拉斯$<BR>我的那个<FONT color=#a82424>女儿</FONT>啊。<BR>因为最近治安很差，所以送她到了安全的地方进行疗养，只是没去送她很让我过意不去啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-b" mid="18"><![CDATA[<html>我帮您带她过来如何?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$将军道格拉斯$<BR>呵呵，慈祥哪敢当啊。<BR>我总是以忙碌为借口，老是冷落了她。<BR>
+虽想见她，却没法抽身啊…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-b" image="QW_HermaltePort.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2" mid="20"><![CDATA[<html>明白了。</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$将军道格拉斯$<BR>可以吗?<BR>要是你的话，我肯定会相信你的。她现在估计已经到了<FONT color=#a82424>赫尔马岱港口</FONT>了吧。就请转告她“我是想念她的”。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n067_lenas_hankie-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>（似乎没什么特别的）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-1" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$王城婢女$<BR>得赶紧出发呢，但是小姐怎么还不来啊…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n047_unknown_girl_lena-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$好问的小姐$<BR>
+…请，不要管我。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n050_lena_of_hermalte-1" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$好问的小姐$<BR>
+请不要跟任何人说我在这里。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$将军道格拉斯$<BR><FONT color=#a82424>蕾娜</FONT>是与<FONT color=#a82424>婢女</FONT>一起走的。<BR>到<FONT color=#a82424>赫尔马岱港口</FONT>去寻找穿着玫瑰花装饰服装的少女吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-2" image="" itemindex="">
+      <talk_answer link_index="n048_maid_of_lena-2-a" mid="27"><![CDATA[<html>小姐一个人? 去了哪里?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$王城婢女$<BR>请…帮我一下。 <FONT color=#a82424>小姐</FONT>孤身一人进去了已经有三四个小时，但还是不见她出来啊。<BR>
+该不会是出了什么事故了吧…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-2-a" image="QW_27.dds" itemindex="">
+      <talk_answer link_index="n048_maid_of_lena-3" mid="29"><![CDATA[<html>我去找她，请不要过于担心。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$王城婢女$<BR>我看到她往<FONT color=#a82424>黑暗矿山</FONT> 方向走去，我因为害怕魔物而没能跟过去。她说去找什么丢了的东西，该如何是好啊…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-3" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$王城婢女$<BR>我的小姐是<FONT color=#a82424>红头发</FONT>白皮肤的模样。<BR>
+请务必要找到她啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n047_unknown_girl_lena-3" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n047_unknown_girl_lena-3-a" mid="32"><![CDATA[<html>不…你是在找什么东西吧?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$好问的小姐$<BR>谁啊? 难道是… 强盗?！<BR><FONT color=#7e12d2>（红发、白皮肤，还有玫瑰服饰）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n047_unknown_girl_lena-3-a" image="QS_Default.dds" itemindex="300037">
+      <talk_answer link_index="n047_unknown_girl_lena-4" mid="34"><![CDATA[<html>手绢…那就一起找找看吧。</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$好问的小姐$<BR>丢了<FONT color=#a82424>手绢</FONT>。<BR>那可是<FONT color=#a82424>母亲留下的唯一的遗物</FONT>，在找到它之前，我是不会回去的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n047_unknown_girl_lena-4" image="QS_Default.dds" itemindex="300037">
+      <talk_question mid="35"><![CDATA[<html>$好问的小姐$<BR>
+谢谢。<BR>
+肯定就在这附近。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n067_lenas_hankie-4" image="QS_Default.dds" itemindex="300037">
+      <talk_answer link_index="n067_lenas_hankie-4-get_item" mid="115"><![CDATA[<html>（捡起手绢）</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(地上掉落着手绢)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n067_lenas_hankie-5" image="" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(手绢掉落的地方，没有其他特别的)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n047_unknown_girl_lena-5" image="QS_Default.dds" itemindex="300037">
+      <talk_answer link_index="n047_unknown_girl_lena-6" mid="39"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$好问的小姐$<BR>找到了吗!<BR>
+就是那个<FONT color=#a82424>手绢</FONT>，谢谢你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n047_unknown_girl_lena-6" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$好问的小姐$<BR>既然已经找到手绢了，我得回去了。<BR>在<FONT color=#a82424>赫尔马岱港口</FONT> ，我的<FONT color=#a82424>婢女</FONT>肯定在担心我呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-6" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n048_maid_of_lena-6-a" mid="44"><![CDATA[<html>那位小姐就是道格拉斯将军的女儿?</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$王城婢女$<BR>小姐安全回来了。<BR>听说手绢是您找到的?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-6-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n048_maid_of_lena-6-b" mid="46"><![CDATA[<html>正好。我还有想转告的话呢。</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$王城婢女$<BR>你认识我们的小姐吗?<BR>是，没错。就是<FONT color=#a82424>道格拉斯</FONT>大人的女儿<FONT color=#a82424>蕾娜</FONT>小姐。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-6-b" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$王城婢女$<BR>风太大，小姐就躲那边去了。<BR>她还说想和您简单聊一聊呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-7" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$王城婢女$<BR>
+这次真是辛苦您了。<BR>
+非常感谢您把小姐给带回来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n050_lena_of_hermalte-7" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n050_lena_of_hermalte-7-a" mid="50"><![CDATA[<html>是，我知道。</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$蕾娜$<BR>在<FONT color=#a82424>黑暗矿山</FONT>发生的事，谢谢你帮了我。<BR>我叫<FONT color=#a82424>蕾娜道格拉斯</FONT>。是<FONT color=#a82424>道格拉斯将军</FONT>收养的女儿。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n050_lena_of_hermalte-7-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n050_lena_of_hermalte-7-b" mid="52"><![CDATA[<html>将军大人让我给你传话，路上要小心。</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$蕾娜$<BR>哦，是吗?<BR>你既然知道我的名字，看来和我的<FONT color=#a82424>父亲</FONT>关系匪浅呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n050_lena_of_hermalte-7-b" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n050_lena_of_hermalte-7-c" mid="54"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$蕾娜$<BR>就为了传一句话而来到这么远的地方吗?<BR>嗯… 我还以为<FONT color=#a82424>父亲</FONT>总是那么忙碌而早就把我给忘记了呢。看来是我想错了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n050_lena_of_hermalte-7-c" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$蕾娜$<BR>总之，您就向<FONT color=#a82424>父亲</FONT>转告，我会小心的。再替我向他表示感谢吧。为我您真是辛苦了，希望以后有机会我能报答您。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n050_lena_of_hermalte-8" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$蕾娜$<BR>那么，我得走了。<BR>请向我的<FONT color=#a82424>父亲</FONT>转告我的谢意吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-8" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-8-a" mid="58"><![CDATA[<html>其实… (转告所发生的事)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$将军道格拉斯$<BR>
+去接人倒是花了不少时间嘛。发生什么事情了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-8-a" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-8-b" mid="60"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$僵局道格拉斯$<BR>如你所知，她是我的<FONT color=#a82424>养女</FONT>。<BR>她非常珍惜圣母的遗物。但是不久前却在<FONT color=#a82424>发生过劫持事件的</FONT>那个地方丢了手绢 …差点出了大事。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-8-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-8-c" mid="62"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$将军道格拉斯$<BR>本以为向你委托了再简单不过的事，但是还是辛苦你了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-8-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-8-d" mid="64"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-8-d" image="" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$将军道格拉斯$<BR>谢谢你能够帮我这个忙。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4521,4522,4523,4524</exe>
+         <exe type="setquest">452</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="addquestitem" num="1">300037</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300037</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">8</exe>
+         <exe type="setjornal">8</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="8">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4521,4522,4523,4524</exe>
+         <exe type="complete">452</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n048_maid_of_lena" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n047_unknown_girl_lena" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n067_lenas_hankie" sub="get_item">0,1,2</exelink>
+   <exelink qstep="5" npc="n047_unknown_girl_lena" sub="6">0,1,2</exelink>
+   <exelink qstep="6" npc="n048_maid_of_lena" sub="b">0,1</exelink>
+   <exelink qstep="7" npc="n050_lena_of_hermalte" sub="b" />
+   <exelink qstep="7" npc="n050_lena_of_hermalte" sub="c">0,1</exelink>
+   <exelink qstep="8" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="8" npc="n042_general_duglars" sub="c">0</exelink>
+   <exelink qstep="8" npc="n042_general_duglars" sub="d">1</exelink>
+   <journal_data recompense="1:4521,2:4522,3:4523,4:4524" quest_title="아가씨와의 만남" chapterid="" quest_level="25" quest_mark_type="10" use_item_list="300037">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[将军道格拉斯的委托]]></title>
+         <contents mid="69"><![CDATA[<html><FONT color=#a82424>将军道格拉斯</FONT>说昨晚做了个恶梦，想委托我护送女儿一程。与<FONT color=#a82424>将军道格拉斯</FONT>详谈一下吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城内部</FONT> <FONT color=#a82424>→将军道格拉斯</FONT><BR>
+ </html>]]></contents>
+         <destination mid="70"><![CDATA[将军道格拉斯的委托]]></destination>
+         <todo_msg mid="71"><![CDATA[新增了任务。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n48</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>48</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[在赫尔马岱港口寻找蕾娜]]></title>
+         <contents mid="73"><![CDATA[<html>据说道格拉斯将军的女儿<FONT color=#a82424>蕾娜</FONT>小姐已经到了赫尔马岱港口。到那里告诉<FONT color=#a82424>将军道格拉斯</FONT>吧。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 王城婢女</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[在赫尔马岱港口寻找蕾娜一行人]]></destination>
+         <todo_msg mid="75"><![CDATA[在赫尔马岱港口寻找蕾娜小姐一行人吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_27.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>273,n47</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@1,274@0</destination_mode>
+         <statemark_npcid>47</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[在黑暗矿山内部寻找小姐]]></title>
+         <contents mid="77"><![CDATA[<html>根据寻求帮助的女子的话，小姐孤身一人进入了<FONT color=#a82424>黑暗矿山内部</FONT>。到黑暗矿山去找她吧。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 黑暗矿山</FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[在黑暗矿山内部寻找小姐]]></destination>
+         <todo_msg mid="79"><![CDATA[去寻找进入黑暗矿山内部的小姐吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_27.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>273,n67</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@4,274@0</destination_mode>
+         <statemark_npcid>67</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="80"><![CDATA[在黑暗矿山寻找手绢]]></title>
+         <contents mid="81"><![CDATA[<html>孤身一人进入<FONT color=#a82424>黑暗矿山</FONT>的<FONT color=#a82424>好问的小姐</FONT>说丢了<FONT color=#a82424>手绢</FONT>。她说如果找不到就不回去，所以在周围找找看吧。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 黑暗矿山</FONT></html>]]></contents>
+         <destination mid="82"><![CDATA[在黑暗矿山寻找手绢]]></destination>
+         <todo_msg mid="83"><![CDATA[调查周围吧。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>273,n47</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@1,274@0</destination_mode>
+         <statemark_npcid>47</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[与好问的小姐对话。]]></title>
+         <contents mid="85"><![CDATA[<html>找到了似乎是<FONT color=#a82424>好问的小姐</FONT>的<FONT color=#a82424>手绢</FONT>。去还给她吧。<BR><BR><FONT color=#086171>赫尔马岱港口 → 黑暗矿山</FONT><FONT color=#a82424> → 好问的小姐</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[与好问的小姐对话。]]></destination>
+         <todo_msg mid="87"><![CDATA[找到了手绢。与小姐对话吧。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n48</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>48</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[与赫尔马岱港口的王城婢女对话。]]></title>
+         <contents mid="89"><![CDATA[<html>找手绢的<FONT color=#a82424>小姐似乎就是</FONT><FONT color=#a82424>将军道格拉斯</FONT>所指的蕾娜小姐。先回到<FONT color=#a82424>赫尔马岱港口</FONT><FONT color=#a82424>王城婢女</FONT>那里确认小姐是否安全归来吧。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 王城婢女</FONT><BR>
+ </html>]]></contents>
+         <destination mid="90"><![CDATA[与赫尔马岱港口的王城婢女对话。]]></destination>
+         <todo_msg mid="91"><![CDATA[与赫尔马岱港口的王城婢女对话吧。]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <title_image />
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n50</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>50</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[与赫尔马岱港口的蕾娜对话。]]></title>
+         <contents mid="93"><![CDATA[<html>在<FONT color=#a82424>黑暗矿山</FONT>见过的<FONT color=#a82424>蕾娜</FONT>小姐想对我表示谢意。过去与她对话吧，顺便也向她转告<FONT color=#a82424>将军道格拉斯</FONT>的话。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 蕾娜 小姐</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[与赫尔马岱港口的蕾娜对话。]]></destination>
+         <todo_msg mid="95"><![CDATA[与在赫尔马岱港口等待中的蕾娜小姐对话吧。]]></todo_msg>
+      </journal>
+      <journal index="8">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="96"><![CDATA[与王城内部的将军道格拉斯对话。]]></title>
+         <contents mid="97"><![CDATA[<html>按照<FONT color=#a82424>将军道格拉斯</FONT>的委托传话了。回到王城向其报告吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城内部</FONT> <FONT color=#a82424>→将军道格拉斯</FONT></html>]]></contents>
+         <destination mid="98"><![CDATA[与王城内部的将军道格拉斯对话。]]></destination>
+         <todo_msg mid="99"><![CDATA[与王城内部的将军道格拉斯对话吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>25:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>451</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

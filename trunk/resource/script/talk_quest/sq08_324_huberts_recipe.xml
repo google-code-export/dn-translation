@@ -1,0 +1,420 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_324_huberts_recipe</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>324</qid>
+      <designer>김주연</designer>
+      <qlevel>13</qlevel>
+      <qdesc>거미의 독샘	400114
+비행선 엔지니어 휴버트의 레시피	400115
+예뻐져요 치즈 스프	400132
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[休伯特的推荐食谱]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-noquest" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$飞艇工程师休伯特$<BR>
+最近梅伊好像在紧张的制作什么东西啊。<BR>
+千万不要做奇怪的料理再叫我了 …。<BR>
+<FONT color=#7e12d2>（可与消耗品商人梅伊对话，接受任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="QM_DarkelfGray.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="7"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$消耗品商人梅伊$<BR>苗条的黑暗精灵的丹药，极具营养的红色乳酪都放进去了，肯定又能减肥，又能强健…
+<FONT color=#7e12d2>（就像默念咒语一样的，一边倒入材料）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="9"><![CDATA[<html>（不会是要给人品尝吧?）</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$消耗品商人梅伊$<BR>嗯，虽然味道有些难闻，但还好啦。<BR>要不先给理解我的<FONT color=#a82424>飞艇工程师休伯特</FONT>大叔?<BR>
+<FONT color=#7e12d2>（已经倒入盘里开始分了）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="11"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$消耗品商人梅伊$<BR>冒险家！还在呢?<BR>回去的时候，顺便给<FONT color=#a82424>休伯特</FONT>大叔这些食物吧，呵呵</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$休伯特的推荐食谱$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2" mid="81"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$消耗品商人梅伊$<BR><FONT color=#a82424>飞艇工程师休伯特</FONT> 大叔的话，会说出中肯意见的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="QS_Default.dds" itemindex="400132">
+      <talk_answer link_index="n099_engineer_hubert-2" mid="87"><![CDATA[<html>是梅伊委托给的食品。</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$飞艇工程师休伯特$<BR>哎呀，这是什么味道啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-a" mid="16"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$飞艇工程师休伯特$<BR>…又得拉肚子了。<BR>幸好我提前准备好了消化药，哈哈！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-a" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-b" mid="18"><![CDATA[<html>（述说优秀杂货店相关的事）</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$飞艇工程师休伯特$<BR>不过为何又突然开始做料理啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-b" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-c" mid="20"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$飞艇工程师休伯特$<BR>呵呵呵，真是的…原来这个料理是开始的第一步啊?<BR>
+难得听到令人为之一振的话啊…。<BR>
+总之， 要是真的像<FONT color=#a82424>梅伊</FONT>所说，凯德拉杂货店来很多神圣天堂的商团的话，对村庄也是个好事呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-c" image="QS_Default.dds" itemindex="400132">
+      <talk_answer link_index="n099_engineer_hubert-2-d" mid="22"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$飞艇工程师休伯特$<BR>那就不防尝尝看。<BR>…………<BR>
+<FONT color=#7e12d2>（休伯特盛一勺汤，吃了下去）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-d" image="QS_Default.dds" itemindex="400132">
+      <talk_answer link_index="n099_engineer_hubert-2-e" mid="24"><![CDATA[<html>已经是那种程度吗？</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$飞艇工程师休伯特$<BR>呸！<BR>这，要是俩人吃下去，还不都得死啊。<BR>尽管为了她品尝了一下，不过，哎。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-e" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-f" mid="26"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$飞艇工程师休伯特$<BR>
+呼….要这样还给她的话，肯定会让她伤心的。<BR>
+<FONT color=#7e12d2>（休伯特陷入沉思当中）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-f" image="QS_Default.dds" itemindex="400115">
+      <talk_answer link_index="n099_engineer_hubert-2-g" mid="28"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$飞艇工程师休伯特$<BR>对了！没错！<BR>我得教她我们家族流传40多年的传统秘密料理方法。<BR>不过，真说不准梅伊能不能做得出那种独特的味道来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-g" image="QS_Default.dds" itemindex="400115">
+      <talk_answer link_index="n099_engineer_hubert-2-h" mid="30"><![CDATA[<html>那是什么?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$飞艇工程师休伯特$<BR>不过话说回来，那个料理之法当中有个最重要的食材， 梅伊可能很难搞到。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-h" image="QS_Default.dds" itemindex="400114">
+      <talk_answer link_index="n099_engineer_hubert-2-i" mid="32"><![CDATA[<html>蜘…蛛的毒液?！</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$飞艇工程师休伯特$<BR>
+那是只能从<FONT color=#a82424>死亡森林</FONT>的蜘蛛身上方能获取的！<BR>
+<FONT color=#a82424>蜘蛛的毒液</FONT>！<BR>
+而且需要很多！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-i" image="QS_Default.dds" itemindex="400114">
+      <talk_answer link_index="n099_engineer_hubert-2-j" mid="34"><![CDATA[<html>（怎么一个比一个奇怪啊）</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$飞艇工程师休伯特$<BR>那是加工从<FONT color=#a82424>蜘蛛的毒液</FONT>多次提炼而出的果酱的料理！它具有超强的香味和令人回味的味道。这就是40年前休伯特家族的秘密料理之法！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-j" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-k" mid="36"><![CDATA[<html>我吗?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$飞艇工程师休伯特$<BR>要是听清楚的话，你得到<FONT color=#a82424> 死亡森林</FONT>去一趟了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-k" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-3" mid="38"><![CDATA[<html>话虽如此，但是 ….</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$飞艇工程师休伯特$<BR>那难道是我吗？难道，你喜欢看那梅伊被那些凶恶的魔物欺负不成?<BR>
+这样你还能安心入睡吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$消耗品商人梅伊$<BR>
+所以说，休伯特大叔无论说什么话，都要谦虚的接受为好。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3" image="QM_Spider_Yellow.dds" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$飞艇工程师休伯特$<BR>到<FONT color=#a82424>死亡森林</FONT>从 <FONT color=#a82424>被污染的斑纹蜘蛛</FONT>身上获取即可。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4" image="QS_Default.dds" itemindex="400114">
+      <talk_answer link_index="n099_engineer_hubert-4-a" mid="40"><![CDATA[<html>这点够了吧?</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$飞艇工程师休伯特$<BR>
+啊，小心小心！<BR>
+虽说是食材，但也是剧毒啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-a" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-b" mid="42"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$飞艇工程师休伯特$<BR>嗯，这些就可以了。<BR>把它和食谱一起交给 <FONT color=#a82424>梅伊</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-b" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-c" mid="44"><![CDATA[<html>明白了。</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$飞艇工程师休伯特$<BR>千万不要提什么'汤'，让<FONT color=#a82424>梅伊</FONT>伤心哦，就说你得到了可制作流传40年的感动之派的方法什么的就好了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-c" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$飞艇工程师休伯特$<BR>按照食谱照做的话，优秀杂货店的归属就轻而易举了！<BR>
+哈哈哈！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$飞艇工程师休伯特$<BR>
+呼，现在无需再吃刺鼻味道的食品啦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-5-a" mid="48"><![CDATA[<html>（交出拿来的东西）</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$消耗品商人梅伊$<BR>怎么样?说什么了吗?<BR>是不是流下了感动的眼泪? 没错吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5-a" image="QS_Default.dds" itemindex="400115">
+      <talk_answer link_index="n026_trader_may-5-b" mid="50"><![CDATA[<html>休伯特家族流传下来的40年传统 ….</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$消耗品商人梅伊$<BR>
+嗯?这是什么?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5-b" image="QS_Default.dds" itemindex="400115">
+      <talk_answer link_index="n026_trader_may-5-c" mid="52"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$消耗品商人梅伊$<BR>这是！'<FONT color=#a82424>酸鼻子的巧克力派</FONT>！' <BR>我吃过这个！居然为了我提供这么贵重的食谱….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5-c" image="QS_Default.dds" itemindex="400115">
+      <talk_answer link_index="n026_trader_may-5-d" mid="54"><![CDATA[<html>（当我不存在啊…）</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$消耗品商人梅伊$<BR>小时候，一吃这个，鼻子就会酸的、往往就会流下感动的眼泪。<BR>原来其中的秘密就是蜘蛛的毒液啊！<BR>
+<FONT color=#7e12d2>（仔细翻阅食谱）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5-d" image="QS_Default.dds" itemindex="400115">
+      <talk_answer link_index="n026_trader_may-5-e" mid="56"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$消耗品商人梅伊$<BR>和3次，再往左折叠，然后 …啊…原来如此。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-5-f" mid="58"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5-f" image="QS_Default.dds" itemindex="400115">
+      <talk_question mid="59"><![CDATA[<html>$消耗品商人梅伊$<BR><FONT color=#7e12d2>（只顾着看食谱）</FONT><BR><FONT color=#2b2723>真是谢谢你啊~。别忘了以后过来品尝啊。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3241,3242,3243,3243</exe>
+         <exe type="setquest">324</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+         <exe type="addquestitem" num="1">400132</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="1" op="]=">400132</chk>
+      </conditions>
+      <executions>
+         <exe type="addquestitem" num="1">400132</exe>
+         <exe type="conexe" true="" false="0">0</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>400114</comment>
+      <conditions>
+         <chk type="prob">500</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="10" exe="5,6,7" onexe="">400114</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">427</exe>
+         <exe type="addquestitem" num="1">400114</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="-1">400132</exe>
+         <exe type="conexe" true="4" false="">0</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">400115</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3241,3242,3243,3244</exe>
+         <exe type="complete">324</exe>
+         <exe type="delquestitem" num="-1">400114</exe>
+         <exe type="delquestitem" num="-1">400115</exe>
+         <exe type="delquestitem" num="-1">400132</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2,3,4</exelink>
+   <exelink qstep="1" npc="n026_trader_may" sub="2">1</exelink>
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="b" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="c" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="d" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="e" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="f" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="g" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="h" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="i" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="j" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="k" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="3">0,1,2,3,8</exelink>
+   <exelink qstep="4" npc="n099_engineer_hubert" sub="b" />
+   <exelink qstep="4" npc="n099_engineer_hubert" sub="c">0,1,2</exelink>
+   <exelink qstep="5" npc="n026_trader_may" sub="b" />
+   <exelink qstep="5" npc="n026_trader_may" sub="c" />
+   <exelink qstep="5" npc="n026_trader_may" sub="d" />
+   <exelink qstep="5" npc="n026_trader_may" sub="e">0</exelink>
+   <exelink qstep="5" npc="n026_trader_may" sub="f">1,2,3,4</exelink>
+   <journal_data recompense="1:3241,2:3242,3:3243,4:3244" quest_title="휴버트의 추천 레시피" chapterid="" quest_level="13" quest_mark_type="10" use_item_list="400114,400115,400132">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[委托品尝]]></title>
+         <contents mid="66"><![CDATA[<html><FONT color=#a82424>消耗品商人梅伊</FONT>用黑暗精灵的丹药和蓝色乳酪做成了 '<FONT color=#a82424>变漂亮啦乳酪汤</FONT>'。 把它交给飞艇工程师休伯特，让他品尝一下吧。<BR>
+<BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 飞艇工程师休伯特</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[与飞艇工程师休伯特对话]]></destination>
+         <todo_msg mid="68"><![CDATA[把料理交给飞艇工程师休伯特吧。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_17.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>133,0,0</destination_pos>
+         <destination_mode>custom:131@3,132@3,133@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[在死亡森林收集蜘蛛的毒液]]></title>
+         <contents mid="70"><![CDATA[<html><FONT color=#a82424>飞艇工程师休伯特</FONT>品尝了梅伊的料理后，打算教她40年传统秘密料理之法。只是因为核心材料很难搞到，我就替他从<FONT color=#a82424>死亡森林</FONT>获取蜘蛛的毒液回来吧。<BR><BR><FONT color=#086171>堆满落叶的湖岸（死亡森林入口）</FONT> <FONT color=#a82424>→ 死亡森林</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[在死亡森林收集蜘蛛的毒液]]></destination>
+         <todo_msg mid="72"><![CDATA[在死亡森林收集蜘蛛的毒液吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[与飞艇工程师休伯特对话]]></title>
+         <contents mid="74"><![CDATA[<html>40年传统秘密料理之法的材料已经收集完毕。回到<FONT color=#a82424>飞艇工程师休伯特处</FONT>与其对话吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 飞艇工程师休伯特</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[与飞艇工程师休伯特对话]]></destination>
+         <todo_msg mid="76"><![CDATA[回到飞艇工程师休伯特那里与其对话吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[与消耗品商人梅伊对话]]></title>
+         <contents mid="78"><![CDATA[<html>把从飞艇工程师休伯特那里得到的食谱和材料全部交给消耗品商人梅伊吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 消耗品商人梅伊</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[与消耗品商人梅伊对话]]></destination>
+         <todo_msg mid="80"><![CDATA[与消耗品商人梅伊对话吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>13:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>323</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

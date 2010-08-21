@@ -1,0 +1,22 @@
+   <talk>
+      <npcename>n126_cleric_cedric</npcename>
+      <npcid>126</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[赛德瑞(教程用)]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$牧师赛德瑞$<BR>(似乎已经失去了意识。必须赶紧送回村子才行。)</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="0,2,3,4" false="0,5,6,7">0</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID,111, 2);</exe>
+         <exe type="custom">api_quest_SetQuestStep(userObjID, 111,1);</exe>
+         <exe type="custom">api_quest_SetJournalStep(userObjID, 111, 1);</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID,101, 2);</exe>
+         <exe type="custom">api_quest_SetQuestStep(userObjID, 101,1);</exe>
+         <exe type="custom">api_quest_SetJournalStep(userObjID, 101, 1);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+   </talk>

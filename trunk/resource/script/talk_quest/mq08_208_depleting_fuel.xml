@@ -1,0 +1,324 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_208_depleting_fuel</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>208</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc>300103 부유장치</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>209</nextqid>
+      <nextqname>mq08_209_red_eyes_darkelf</nextqname>
+      <nextqnpc>n167_charging_point</nextqnpc>
+      <qkname mid="1"><![CDATA[枯竭的能源]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>167</npcid>
+         <npcename>n167_charging_point</npcename>
+         <npckname>투명NPC(이름 없음)(잠든자의 신전 이벤트 맵)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-1-cutscene" mid="49"><![CDATA[<html>哇～</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$飞艇工程师休伯特$<BR>阿尔巴特罗号终于修好了。<BR> 好了，你退后一点。 咳咳……阿尔巴特罗号～起飞～！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$阿尔杰塔$<BR>去神圣天堂找到金发剑客，告诉他之前发生的事情。<BR>然后请求他的帮助。<BR>他一定可以阻止黑骑士。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-a" mid="54"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$飞艇工程师休伯特$<BR>哎呀！！到底是怎么回事？！引擎爆炸了，一定什么地方出错了！到底是什么？什么地方出错了呢？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-a" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n099_engineer_hubert-2-b" mid="87"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$飞艇工程师休伯特$<BR>呼……果然还是动力的问题。不然就想不到其他问题了。阿尔巴特罗号使用的是只能在神圣天堂补充能源的特殊驱动装置。这里没有可以启动它的设备。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-b" image="QW_AirShip.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$飞艇工程师休伯特$<BR>呼……看来飞艇暂时是不能动了。<BR>不好意思，让你失望了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-a" mid="57"><![CDATA[<html>(说明飞艇出故障的经过)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$阿尔杰塔$<BR>什么？！你这家伙，我拜托你去做事，怎么还在这里？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-b" mid="59"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$阿尔杰塔$<BR>那该死的黑骑士…...？！切，竟然被他先下手了。没办法，看来只能等飞艇修好之后再去了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-b" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n164_argenta_wounded-3-c" mid="61"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$阿尔杰塔$<BR>对了，那个<FONT color=#a82424>悬浮装置</FONT>，也许可以用这里剩余的力量充能。我们可以使用过去黑骑士留下的东西，虽然有点屈辱。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-c" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-d" mid="63"><![CDATA[<html>沉睡者神殿吗？</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$阿尔杰塔$<BR><FONT color=#387206>{user_nick}</FONT>！！你还记得过去黑骑士<FONT color=#a82424>偷走古代人力量的那个地方</FONT>吧？你带着<FONT color=#a82424>悬浮装置</FONT>去那里，确认一下是否可以注入力量。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-d" image="QW_16.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$阿尔杰塔$<BR>啊，嘴巴疼！我是伤者，别磨磨蹭蹭的，快把<FONT color=#a82424>悬浮装置</FONT>带到<FONT color=#a82424>沉睡者神殿</FONT>去吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$飞艇工程师休伯特$<BR>能补充能量的地方果然只有<FONT color=#a82424>神圣天堂</FONT>。呼……看来飞艇暂时是动不了了。<BR>不好意思，让你失望了……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-a" mid="67"><![CDATA[<html>好像还有其他办法。</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$飞艇工程师休伯特$<BR>看来飞艇暂时无法起飞了。<BR>你不也看到了吗……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-a" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-party" mid="69"><![CDATA[<html>你先把悬浮装置给我。</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$飞艇工程师休伯特$<BR>其他方法？！有不用去神圣天堂也能提高引擎动力的方法？！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-b" image="QS_Default.dds" itemindex="300103">
+      <talk_question mid="70"><![CDATA[<html>$飞艇工程师休伯特$<BR>好的，我也不多问了，就全靠你了！我只要飞艇能飞起来就行。详细的事情你以后再告诉我吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-c" image="" itemindex="">
+      <talk_question mid="85"><![CDATA[<html>$飞艇工程师休伯特$<BR>好的，我也不多问了，就全靠你了！我只要飞艇能飞起来就行。啊，好像你身边还有一些和这件事无关的人，补充能量一个人就足够了吧？<FONT color=#7e12d2>(组队状态下无法执行任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$阿尔杰塔$<BR>啊，嘴巴疼！我是伤者，别磨磨蹭蹭的，快把<FONT color=#a82424>悬浮装置</FONT>带到<FONT color=#a82424>沉睡者神殿</FONT>去吧！当然，悬浮装置得从<FONT color=#a82424>工程师休伯特</FONT>那里拿到，这你总该知道吧？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-5" image="QW_16.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$阿尔杰塔$<BR>你怎么还在磨磨蹭蹭的？快带着<FONT color=#a82424>悬浮装置</FONT>去<FONT color=#a82424>沉睡者神殿</FONT>，现在马上。听到了吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5" image="QS_Default.dds" itemindex="300103">
+      <talk_question mid="73"><![CDATA[<html>$飞艇工程师休伯特$<BR><FONT color=#a82424>悬浮装置充满能量</FONT>之后，阿尔巴特罗号就能起飞了！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n167_charging_point-5" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n167_charging_point-5-a" mid="75"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html><FONT color=#a82424><FONT color=#2b2723>$悬浮装置$</FONT></FONT><BR>
+<html><FONT color=#7e12d2>(悬浮装置正在充能。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n167_charging_point-5-a" image="" itemindex="">
+      <talk_answer link_index="n167_charging_point-5-b" mid="77"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n167_charging_point-5-b" image="QS_Default.dds" itemindex="300103">
+      <talk_question mid="95"><![CDATA[<html><FONT color=#a82424>
+<FONT color=#a82424><FONT color=#2b2723>$悬浮装置$</FONT></FONT><BR>
+<html><FONT color=#7e12d2>(悬浮装置充能完成。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_user_PlayCutScene(userObjID,npcObjID,61);</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>잠든자의 신전에서 부유장치를 충전한 뒤, 컷신 출력(71)</comment>
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="addquestitem" num="1">300103</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n099_engineer_hubert">b</exe>
+         <exe type="talk" npc="n099_engineer_hubert">c</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment>퀘스트 완료후, 컷씬 보기, 18-BossA맵으로 이동 순으로 실행됨.
+</comment>
+      <conditions />
+      <executions>
+         <exe type="complete">208</exe>
+         <exe type="recompense">,2081,2082,2083,2084</exe>
+         <exe type="delquestitem" num="-1">300103</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="cutscene">0,1</exelink>
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="d">0,1</exelink>
+   <exelink qstep="4" npc="n099_engineer_hubert" sub="party">0,1,2,3</exelink>
+   <exelink qstep="5" npc="n167_charging_point" sub="a">1</exelink>
+   <exelink qstep="5" npc="n167_charging_point" sub="b">0,2</exelink>
+   <journal_data recompense="1:2081,2:2082,3:2083,4:2084" quest_title="고갈된 에너지" chapterid="3" quest_level="14" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,3959,3392</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>엔지니어 휴버트</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>엔지니어 휴버트</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[和飞艇工程师休伯特对话 1]]></title>
+         <contents mid="37"><![CDATA[<html>把零件交给<FONT color=#a82424>休伯特</FONT>之后，他说阿尔巴特罗号很快就能重新飞起来。和他对话。<BR>
+<BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 飞艇工程师休伯特</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[和飞艇工程师休伯特对话]]></destination>
+         <todo_msg mid="39"><![CDATA[阿尔巴特罗号重新启动！]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Argenta_wounded.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>엔지니어 휴버트</start_npc>
+         <desc_location>숲의 성역</desc_location>
+         <step_action>수집</step_action>
+         <complete_npc>엔지니어 휴버트</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item>상급 정화석 6개</collect_item>
+         <collect_itemindex>42</collect_itemindex>
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[和灰色废墟的阿尔杰塔对话]]></title>
+         <contents mid="41"><![CDATA[<html>在前往<FONT color=#a82424>神圣天堂</FONT>寻找<FONT color=#a82424>金发剑客</FONT>的途中，得知唯一的交通工具<FONT color=#a82424>阿尔巴特罗号</FONT>损坏了。去和阿尔杰塔对话。<BR><FONT color=#a82424></FONT><BR><FONT color=#a82424><FONT color=#086171>灰色废墟</FONT> → 阿尔杰塔</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[和灰色废墟的阿尔杰塔对话]]></destination>
+         <todo_msg mid="43"><![CDATA[请把飞艇爆炸的消息告诉阿尔杰塔。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,3959,3392</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>숲의 성역</get_location>
+         <start_npc />
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>엔지니어 휴버트</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[和飞艇工程师休伯特对话 1]]></title>
+         <contents mid="45"><![CDATA[<html>阿尔巴特罗号由于动力不足，飞行宣告失败。去拿阿尔巴特罗号的悬浮装置。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 飞艇工程师休伯特</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[和飞艇工程师休伯特对话]]></destination>
+         <todo_msg mid="47"><![CDATA[去工程师休伯特那里拿阿尔巴特罗号的悬浮装置。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_16.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>130,0,0</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@1,130@4,13005@3</destination_mode>
+         <statemark_npcid>167</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[用古代人的力量给悬浮装置充能]]></title>
+         <contents mid="82"><![CDATA[<html>带着<FONT color=#a82424>悬浮装置</FONT>前往<FONT color=#a82424>沉睡者神殿</FONT>。据说那里还残留有黑骑士偷走的古代人的力量，说不定可以为悬浮装置充能。<FONT color=#7e12d2>(组队状态下无法执行任务)<BR><BR></FONT><FONT color=#086171>堆满落叶的湖岸(遗忘寺院入口)</FONT><FONT color=#a82424> → 沉睡者神殿</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[(单人任务)用古代人的力量给悬浮装置充能]]></destination>
+         <todo_msg mid="84"><![CDATA[请去沉睡者神殿给悬浮装置充能。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level>-1:-1</user_worldzone_level>
+      <user_class />
+      <prev_quest>207</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

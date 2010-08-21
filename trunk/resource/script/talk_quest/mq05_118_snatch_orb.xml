@@ -1,0 +1,295 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_118_snatch_orb</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>118</qid>
+      <designer>손원호</designer>
+      <qlevel>5</qlevel>
+      <qdesc>오브를 훔쳐간 자가 세드릭이라는 것을 알게 된 소서리스. 가면을 쓴 자가 서리바람 숲으로 갔다는 정보를 얻고 쫓아가지만 괴한은 문 뒤로 사라진다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>119</nextqid>
+      <nextqname>mq05_119_prospect</nextqname>
+      <nextqnpc>n012_sorceress_master_cynthia</nextqnpc>
+      <qkname mid="1"><![CDATA[被盗的宝珠]]></qkname>
+      <qnpc>
+         <npcid>11</npcid>
+         <npcename>n011_priest_leonardo</npcename>
+         <npckname>상급 클레릭 레오날드    (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-a" mid="7"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$高级魔法师辛西亚$<BR>去找<FONT color=#a82424>雷昂纳多老头</FONT>吧，他会提供关于失踪的牧师的线索。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-b" mid="9"><![CDATA[<html>（靠近辛西亚）</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$高级魔法师辛西亚$<BR>...还有告诉你个秘密。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-c" mid="11"><![CDATA[<html>啊，干吗呢，都起鸡皮疙瘩啦。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$高级魔法师辛西亚$<BR>我是一直相信你的。<BR>
+到现在为止，一直。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-c" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$高级魔法师辛西亚$<BR>嗯，快到<FONT color=#a82424>雷昂纳多</FONT>老头那里确认牧师真正的底细吧！全都交给你了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR>其实我们一直在支持着你的哦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n011_priest_leonardo-2-a" mid="15"><![CDATA[<html>有可疑的牧师。</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$高级牧师雷昂纳多${action:Talk}<BR><FONT color=#a82424>秘传之球</FONT>被盗的事已经听说了。<BR>
+要我帮你什么?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-a" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-c" mid="17"><![CDATA[<html>杰克很可疑。</html>]]></talk_answer>
+      <talk_answer link_index="n011_priest_leonardo-2-b" mid="18"><![CDATA[<html>赛德瑞很可疑。</html>]]></talk_answer>
+      <talk_answer link_index="n011_priest_leonardo-2-d" mid="19"><![CDATA[<html>元凶就是你雷昂纳多！</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$高级牧师雷昂纳多$<BR>经过对上次收到的牧师的圣珠的调查，我们确定那就是我们教团的物品。那么，你怀疑的牧师是谁呢? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-b" image="QN_Npc_Cl_Fallen_Cedric.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-e" mid="22"><![CDATA[<html>追他，要到哪里去呢?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$高级牧师雷昂纳多$<BR>没错，和我想的一样。当初缩减马车的护卫兵，以及袭击抢夺贤者法杖的事，都是<FONT color=#a82424>赛德瑞</FONT>在搞鬼。我们教团也在缉拿赛德瑞呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-c" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-a" mid="24"><![CDATA[<html>那么... 就是...</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$高级牧师雷昂纳多$<BR><FONT color=#a82424>杰克</FONT>...如此看来，他也不见踪影了呢。虽然一直注意他的举动，但是在没有确凿证据之前，还不能对他怎么样呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-d" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-a" mid="26"><![CDATA[<html>那么...就是...</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$高级牧师雷昂纳多$<BR>啊?！ 我...我是元凶?你看侦探小说看迷糊了吧。这可是个真实的游戏，就别无理取闹了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-e" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-f" mid="30"><![CDATA[<html>不要担心。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$高级牧师雷昂纳多$<BR>稍等片刻。<FONT color=#7e12d2>（批复传令兵文书的雷昂纳多）<BR></FONT><FONT color=#a82424>霜风森林</FONT>！报告说有人目击过戴面具的人曾入此地，赶紧行动吧。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-f" image="QW_10.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$高级牧师雷昂纳多$<BR>真没想到牧师里出了个叛徒... <BR>
+赶快到<FONT color=#a82424>霜风森林</FONT>去看看吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3" image="QW_10.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$高级牧师雷昂纳多${action:Talk}<BR>虽然现在还不知道戴面具的是不是赛德瑞，但可以确认的是确实是有人进入了霜风森林。快到<FONT color=#a82424>霜风森林</FONT>去追他啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3" image="QW_10.dds" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR><FONT color=#a82424>霜风森林</FONT>... 得赶紧过去。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4" image="QS_22.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-a" mid="34"><![CDATA[<html>（在门口报告落下的事）</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$高级魔法师辛西亚$<BR>哦? <FONT color=#a82424>秘传之球</FONT>找到了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-!next" mid="36"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>스테이지 보스방에 입장하여 컷씬 본 후, 4스텝/4저널로 바꿔주도록 변경</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1180,,,,</exe>
+         <exe type="complete">118</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="c" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="b" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="d" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="e" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="a" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="a" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="f">0,1</exelink>
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="a">0</exelink>
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="!next">1</exelink>
+   <journal_data recompense="1180" quest_title="도난당한 오브" chapterid="1" quest_level="5" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[和高级魔法师辛西亚对话]]></title>
+         <contents mid="39"><![CDATA[<html>秘传之球遗失，我被怀疑。到辛西亚老师那里喊冤去！<BR><BR><FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→高级魔法师辛西亚</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[和高级魔法师辛西亚对话]]></destination>
+         <todo_msg mid="41"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Cl_Leonardo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n11</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>11</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[和高级牧师雷昂纳多对话]]></title>
+         <contents mid="45"><![CDATA[<html>偷走秘传之球的恐怕就是失去踪影的牧师。找雷昂纳多老头去查找相关牧师的线索吧。<BR>
+ <BR>
+<FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→高级牧师雷昂纳多</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[和高级牧师雷昂纳多对话]]></destination>
+         <todo_msg mid="47"><![CDATA[找到雷昂纳多询问关于失踪的牧师之事]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_10.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>98,0,0</destination_pos>
+         <destination_mode>custom:96@1,97@1,98@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string>보스맵 입장 
+컷씬 : 문 뒤로 사라지는 가면쓴 클레릭</trigger_string>
+         <maptool_index />
+         <title mid="48"><![CDATA[追击消失在霜风森林的牧师]]></title>
+         <contents mid="49"><![CDATA[<html>怀疑是叫赛德瑞的那个失踪的牧师隐匿在了霜风森林。赶紧去追踪他吧。<BR>
+ <BR>
+<FONT color=#086171>雪霜坡道（霜风峡谷入口）</FONT> <FONT color=#a82424>→霜风森林</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[追击消失在霜风森林的牧师]]></destination>
+         <todo_msg mid="51"><![CDATA[追击消失在霜风森林的戴面具的牧师吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[和高级魔法师辛西亚对话]]></title>
+         <contents mid="53"><![CDATA[<html>即将快要追到牧师的时候，遗憾的在门口跟丢了。还是向辛西亚老师请求帮助吧。<BR><BR><FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→高级魔法师辛西亚</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[和高级魔法师辛西亚对话]]></destination>
+         <todo_msg mid="55"><![CDATA[跟丢了逃跑的牧师。回到村庄寻求帮助吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>117</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

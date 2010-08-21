@@ -1,0 +1,415 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_486_merchant_study1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>486</qid>
+      <designer>김주연</designer>
+      <qlevel>34</qlevel>
+      <qdesc>작은 상자	400156
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>487</nextqid>
+      <nextqname>sq11_487_merchant_study2</nextqname>
+      <nextqnpc>n277_bluff_dealers_pope</nextqnpc>
+      <qkname mid="1"><![CDATA[商人课程Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>278</npcid>
+         <npcename>n278_lady_darkelf</npcename>
+         <npckname>다크엘프 소녀</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-noquest" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$黑暗精灵少女$<BR>### ? #### !?<BR>
+<FONT color=#7e12d2>(和奸商波普对话，可以接受任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-a" mid="7"><![CDATA[<html>(那就看一看吧。)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$奸商波普$<BR>你好，干嘛这么着急啊？过来休息一下吧。<BR>从海里的人鱼头发，到龙的心脏，这里什么都有。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-b" mid="9"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$奸商波普$<BR>好的，请慢慢欣赏。看看又不需要钱，不是吗？这里有很多其他地方看不到的珍贵东西，请尽情欣赏。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-c" mid="11"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$奸商波普$<BR>这是让人长高的药草，怎么样？<BR>
+这里还有让眼睛变大的软膏。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-d" mid="14"><![CDATA[<html>剑的名字叫什么？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$奸商波普$<BR>你觉得这把剑怎么样？<BR>
+像你这样的冒险家，应该配一把传说中的名剑。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-e" mid="16"><![CDATA[<html>感觉好像是刚造出来的……</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$奸商波普$<BR>剑的名字？嗯……这是传说中的剑，当然有自己的名字……嗯……<FONT color=#a82424>飞速圣剑</FONT>，是的……这就是剑的名字。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-f" mid="18"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$奸商波普$<BR>哈哈哈，是你的错觉。<BR>
+来，你拿着试试看。用你的身体感受一下剑的威力。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-g" mid="20"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$奸商波普$<BR>很好，很不错。<BR>
+挥舞一下又会有什么问题呢，哈哈哈。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-h" mid="22"><![CDATA[<html>一般般……</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$奸商波普$<BR>怎么样？拿着传说中的飞速圣剑，心情一定很激动吧？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-i" mid="24"><![CDATA[<html>锅盖怎么能做盾牌！</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$奸商波普$<BR>现在马上购买的话，只需<FONT color=#a82424>100万金币</FONT>！嗯？太贵了？那样的话，可以<FONT color=#a82424>240个月分期付款</FONT>。而且还奉送传说中的盾牌<FONT color=#a82424>锅盖</FONT>！机会难得。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-j" mid="26"><![CDATA[<html>(拒绝)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$奸商波普$<BR>没关系，没关系。请在合同这里签名。我做了40年生意，从来没有这么便宜卖过。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-j" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-k" mid="28"><![CDATA[<html>(拒绝)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$奸商波普$<BR>啊，那是错觉。如果你现在购买<FONT color=#a82424>飞速圣剑</FONT>，只需<FONT color=#a82424>50万金币</FONT>。绝对不能再低了！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-k" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-l" mid="30"><![CDATA[<html>(拒绝)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$奸商波普$<BR>好吧好吧！你还真会做生意。只要<FONT color=#a82424>10万金币</FONT>，怎么样？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-l" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-m" mid="32"><![CDATA[<html>(拒绝)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$奸商波普$<BR>那<FONT color=#a82424>5万金币</FONT>呢……？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-m" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-n" mid="34"><![CDATA[<html>(太便宜了！很可疑！)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$奸商波普$<BR>40年以来破天荒的超低折扣！<FONT color=#a82424>500金币</FONT>，怎么样？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-n" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-o" mid="36"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$奸商波普$<BR>啊呀，原来是个身无分文的穷冒险家啊。看你长得还像个人样，以为会有点钱呢……别妨碍我做生意，快走开！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-o" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-p" mid="38"><![CDATA[<html>(还回去之前，再挥舞一次试试)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$奸商波普$<BR>等等，你得先把<FONT color=#a82424>飞速圣剑</FONT>还给我。你想偷偷拿走吗……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-p" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-q" mid="40"><![CDATA[<html>啊！</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$奸商波普$<BR>啪。<BR><FONT color=#7e12d2>(飞速圣剑一下子折断了)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-q" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-r" mid="42"><![CDATA[<html>对不起。</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$奸商波普$<BR>啊啊啊啊啊！！<BR>我的飞速圣剑！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-r" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-s" mid="44"><![CDATA[<html>哈，刚才还说是500金币……</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$奸商波普$<BR>说对不起就行了吗！你把我们家祖传的宝物飞速圣剑弄断了……这可怎么办啊！值<FONT color=#a82424>500万金币</FONT>的飞速圣剑断了……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-s" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-t" mid="46"><![CDATA[<html>(先镇静一下)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$奸商波普$<BR>现在不讨论那个问题！<BR>
+这可怎么办呢！快交出<FONT color=#a82424>500万金币</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-t" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-u" mid="48"><![CDATA[<html>这个……(说明全部财产)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$奸商波普$<BR>嗯……光冲你发火也不是办法。<BR>
+对了，你身上有多少钱？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-u" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-v" mid="50"><![CDATA[<html>暂时……</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$奸商波普$<BR>……只有这些？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-v" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-w" mid="52"><![CDATA[<html>人？！</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$奸商波普$<BR>这点钱连<FONT color=#a82424>飞速圣剑</FONT>的装饰都不够！<BR>
+没办法了，你只能把人抵押给我了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-w" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-x" mid="54"><![CDATA[<html>怎么能这么不讲理呢……</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$奸商波普$<BR>从今天开始，你必须帮我去跑腿。如果不愿意的话，就交出<FONT color=#a82424>500万金币</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-x" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-y" mid="56"><![CDATA[<html>(呼……什么时候才能还清啊)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$奸商波普$<BR>好了，不要浪费时间。<BR>要想付清<FONT color=#a82424>500万金币</FONT>，大概得为我工作<FONT color=#a82424>60年</FONT>。你要做好心理准备。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-y" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-z" mid="58"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$奸商波普$<BR>第一项工作是简单的配送任务。那里有点黑，所以没人愿意去，真是太好了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-z" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-acceptted" mid="60"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$商人课程Ⅰ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1" image="QW_38.dds" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-a" mid="63"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$奸商波普$<BR>在<FONT color=#a82424>死亡城市路口</FONT>可以看到一个<FONT color=#a82424>黑暗精灵</FONT>。<BR>
+你只要把箱子交给她就行了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-b" mid="65"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$奸商波普$<BR>对于配送来说，时间就是生命。给我跑快点！<BR>
+干嘛？一脸不满意的样子？不愿意的话，就付清<FONT color=#a82424>500万金币</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-b" image="QW_38.dds" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$奸商波普$<BR>不要到别的地方去晃悠，快到<FONT color=#a82424>死亡城市路口</FONT>去！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-1" image="" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$黑暗精灵少女$<BR>### ? #### !?<BR>
+<FONT color=#7e12d2>(必须和奸商波普对话。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-2" image="QW_38.dds" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$奸商波普$<BR>怎么？这么快就开始偷懒了吗！<BR>
+还不快点到<FONT color=#a82424>死亡城市路口</FONT>去！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-2" image="" itemindex="">
+      <talk_answer link_index="n278_lady_darkelf-2-a" mid="71"><![CDATA[<html>不知道在说什么话。</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$黑暗精灵少女$<BR>### ? #### !?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-2-a" image="" itemindex="">
+      <talk_answer link_index="n278_lady_darkelf-2-b" mid="73"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$黑暗精灵少女$<BR>怎么……你不懂精灵语吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-2-b" image="" itemindex="">
+      <talk_answer link_index="n278_lady_darkelf-2-c" mid="75"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$黑暗精灵少女$<BR>怎么这么慢！我订了多长时间了……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-2-c" image="" itemindex="">
+      <talk_answer link_index="n278_lady_darkelf-2-d" mid="77"><![CDATA[<html>给你。</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$黑暗精灵少女$<BR>算了，钱我已经付过了，快把东西给我。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-2-d" image="" itemindex="">
+      <talk_answer link_index="n278_lady_darkelf-2-e" mid="79"><![CDATA[<html>(黑暗精灵用美白霜……)</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$黑暗精灵少女$<BR>让我看看。美白霜3种，还有可以让发质变软的弹力蛋白香波，最新款的连衣裙，全都在这里。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-2-e" image="" itemindex="">
+      <talk_answer link_index="n278_lady_darkelf-2-f" mid="81"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$黑暗精灵少女$<BR>干嘛？为什么用那种眼神看着我？第一次看见黑暗精灵涂美白霜吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-2-f" image="" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$黑暗精灵少女$<BR>哼，下次快点给我送过来。再晚了的话，我一定不会放过你！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-3" image="" itemindex="">
+      <talk_question mid="83"><![CDATA[<html>$黑暗精灵少女$<BR>有新的商品目录出来的话，一定要给我送过来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-a" mid="85"><![CDATA[<html>(点头)</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$奸商波普$<BR>配送完成了吧？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-b" mid="87"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$奸商波普$<BR>我不是那么无情的人。<BR>
+我会记在账上的，别担心。让我看看……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-c" mid="89"><![CDATA[<html>只有1金币？</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$奸商波普$<BR>你走了这么远的路，加上特殊津贴，一共是<FONT color=#a82424>1金币</FONT>。就配送工作而言，这已经是很丰厚的报酬了。希望那个你能知道。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-c" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-d" mid="91"><![CDATA[<html>是要给我吗？</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$奸商波普$<BR>干嘛？吃饱了吗？你去地上挖挖看，哪里可以挖到1金币。<BR>好的，<FONT color=#a82424>10银币</FONT>……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-d" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-e" mid="93"><![CDATA[<html>唉……</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$奸商波普$<BR>怎么可能？当然要从欠我的钱里面扣除。<BR>
+扣除1金币的话……让我看看，还有<FONT color=#a82424>499万9999金币</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-e" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-f" mid="95"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$奸商波普$<BR>哈哈哈，别担心。没剩多少了，加油。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-f" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-g" mid="97"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="96"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-g" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-h" mid="99"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$奸商波普$<BR>应该休息够了吧？下面是第二件事情。<BR>
+还有时间休息？你以为赚钱那么容易吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-h" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-!next" mid="101"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$奸商波普$<BR>这次的事情是帮王宫里的贵族采购东西。委托费很丰厚，如果你能努力做事，我绝不会亏待你的。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4861,4862,4863,4864</exe>
+         <exe type="setquest">486</exe>
+         <exe type="talk" npc="n277_bluff_dealers_pope">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">400156</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="1">400156</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4861,4862,4863,4864</exe>
+         <exe type="complete">486</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="z">0</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="b">0,1,2</exelink>
+   <exelink qstep="2" npc="n278_lady_darkelf" sub="b" />
+   <exelink qstep="2" npc="n278_lady_darkelf" sub="c" />
+   <exelink qstep="2" npc="n278_lady_darkelf" sub="d" />
+   <exelink qstep="2" npc="n278_lady_darkelf" sub="e" />
+   <exelink qstep="2" npc="n278_lady_darkelf" sub="f">0,1,2</exelink>
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="b" />
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="c" />
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="d" />
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="e" />
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="f">0</exelink>
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="g">1</exelink>
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="h" />
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="!next" />
+   <journal_data recompense="1:4861,2:4862,3:4863,4:4864" quest_title="상인수업Ⅰ" chapterid="" quest_level="34" quest_mark_type="10" use_item_list="400156">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n277</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>277</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="102"><![CDATA[折断的飞速圣剑]]></title>
+         <contents mid="103"><![CDATA[<html>只是稍微挥动了一下。奸商波普的剑就坏了。他让我赔偿<FONT color=#a82424>500万金币</FONT>。和<FONT color=#a82424>奸商波普</FONT>谈谈吧。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 奸商波普</FONT></html>]]></contents>
+         <destination mid="104"><![CDATA[和奸商波普对话]]></destination>
+         <todo_msg mid="105"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_38.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>383,n278</destination_pos>
+         <destination_mode>custom:381@1,382@1,383@4</destination_mode>
+         <statemark_npcid>278</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="106"><![CDATA[去死亡城市路口配送东西]]></title>
+         <contents mid="107"><![CDATA[<html>不得不偿还折断飞速圣剑的价钱500万金币。先按照奸商波普的指示，把东西给死亡城市路口的黑暗精灵送过去。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口(黑暗矿山入口)</FONT> <FONT color=#a82424>→ 死亡城市路口</FONT></html>]]></contents>
+         <destination mid="108"><![CDATA[去死亡城市路口配送东西]]></destination>
+         <todo_msg mid="109"><![CDATA[请到死亡城市路口去配送东西。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n277</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>277</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="110"><![CDATA[和奸商波普对话]]></title>
+         <contents mid="111"><![CDATA[<html>死亡城市路口的黑暗精灵配送完成。回去向<FONT color=#a82424>奸商波普</FONT>报告。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 奸商波普</FONT></html>]]></contents>
+         <destination mid="112"><![CDATA[和奸商波普对话]]></destination>
+         <todo_msg mid="113"><![CDATA[请回到奸商波普那里。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>34:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

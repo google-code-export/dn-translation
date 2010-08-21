@@ -1,0 +1,482 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_218_awakened_guardian</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>218</qid>
+      <designer>김주연</designer>
+      <qlevel>22</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>401</nextqid>
+      <nextqname>mq11_401_castle_sainthaven</nextqname>
+      <nextqnpc>n099_engineer_hubert</nextqnpc>
+      <qkname mid="1"><![CDATA[苏醒的守护者]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나 (캐더락 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>55</npcid>
+         <npcename>n055_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트     (캐더락 관문)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QS_Default.dds" itemindex="300063">
+      <talk_answer link_index="n035_soceress_master_tiana-1-a" mid="7"><![CDATA[<html>终于拿到了启动钥匙！</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$高级魔法师缇娜$<BR>好了，只有伦理教课书上才会出现的内容就不要再说了，我们来说说应该做的事情。要想激活净化装置，需要有<FONT color=#a82424>净化装置的启动钥匙</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-a" image="QW_26.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-b" mid="9"><![CDATA[<html>狮蝎嘛……</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$高级魔法师缇娜$<BR>如果你的榆木脑袋还存在一些记忆力的话，应该知道去哪里找吧？<BR>钥匙在<FONT color=#a82424>祈祷者安息处</FONT>的<FONT color=#a82424>狮蝎克鲁鲁</FONT>身上。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-b" image="QM_Manticore.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-c" mid="11"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$高级魔法师缇娜$<BR><FONT color=#a82424>狮蝎</FONT>是古代文明和魔法结合诞生的创造物。通常是狮子的头、羊的身子、蛇的尾巴等混合拼凑而成，属于奇美拉的一种。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-c" image="QM_Manticore.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-d" mid="13"><![CDATA[<html>哼……估计是的。</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$高级魔法师缇娜$<BR><FONT color=#a82424>祈祷者安息处</FONT>的狮蝎克鲁鲁好像是比较高级的魔兽。<FONT color=#a82424>古代人把它作为守护遗迹的守护者</FONT>，估计会相当难对付。</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-d" image="QM_Manticore.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2" mid="15"><![CDATA[<html>是的!</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$高级魔法师缇娜${action:talk}<BR><FONT color=#387206>{user_nick}</FONT>，你之前展现的能力虽然不强，但至少还能有战胜古代魔兽的一线希望。<BR>你做好和狮蝎克鲁鲁战斗的准备了吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$阿尔杰塔$<BR>一开始食人魔吞掉悬浮装置，后来埃雷娜释放毒素形成毒雾，不让我走的方法还真多。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$飞艇工程师休伯特$<BR>到处弥漫着不明的雾……在雾散开之前，飞艇无法安全出发。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-1" image="" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$精锐士兵克林德$<BR>任务虽然失败了，但希望受伤的士兵能安然回来。我绝不会放过那个让我损失士兵的凶手……！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="QM_Manticore.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$高级魔法师缇娜$<BR>去<FONT color=#a82424>祈祷者安息处</FONT>打倒狮蝎克鲁鲁，<FONT color=#a82424>用启动钥匙启动净化装置</FONT>，应该就能净化散布在凯德拉的污染物质。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-3-a" mid="21"><![CDATA[<html>嘿嘿。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$高级魔法师缇娜$<BR>你好像比想象的要厉害一些。没想到竟然能打倒狮蝎克鲁鲁。而且你证明了我老师的研究价值，我应该谢谢你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3-a" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$高级魔法师缇娜$<BR>虽然这么说有点肉麻……不过算了，从今天起，我会把你称为<FONT color=#a82424>拯救凯德拉的英雄</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$飞艇工程师休伯特$<BR>太好了，干得好！现在只要等雾散开就行了！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$阿尔杰塔$<BR>很好，很好。<BR>我对你这次的表现表示满意。你打倒了狮蝎克鲁鲁，作为对你的认可，以后我就叫你<FONT color=#a82424>好用的奴隶</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-4-a" mid="28"><![CDATA[<html>好用的？！奴……隶……呼</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$阿尔杰塔$<BR>很好，很好。<BR>你打倒了狮蝎克鲁鲁，我对你这次的表现表示认可。<BR>我就给你一个<FONT color=#a82424>好用的奴隶的称号</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-4-b" mid="30"><![CDATA[<html>不管怎样，总算净化了凯德拉。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$阿尔杰塔$<BR>人总是不知道满足。<BR>
+被我称做“好用的”，你应该感到惶恐才对。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-b" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-4-c" mid="32"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$阿尔杰塔$<BR>要是那样就好了。还有一些地方没有被净化。这非常奇怪。<BR>对了，你什么时候去神圣天堂啊？！！飞艇现在应该能飞了吧？你去确认一下。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-c" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$阿尔杰塔$<BR>要是敢偷懒的话，小心我打屁股！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$高级魔法师缇娜$<BR>你完成了了不起的任务。你是拯救凯德拉的真正的英雄！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-5-a" mid="36"><![CDATA[<html>真是太好了。</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$飞艇工程师休伯特$<BR>雾开始消散了<BR>
+马上就能去<FONT color=#a82424>神圣天堂</FONT>了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-5-b" mid="68"><![CDATA[<html>精锐士兵克林德吗？</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$飞艇工程师休伯特$<BR>
+但是刚才<FONT color=#a82424>精锐士兵克林德</FONT>过来了，说一定要见见你。他们好像是想回去了，可能是有什么话要和你说。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5-b" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$飞艇工程师休伯特${action:talk}<BR>
+雾还没有完全消散，你去见见<FONT color=#a82424>精锐士兵克林德</FONT>吧。说不定有什么重要的事情。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-6" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-6-a" mid="71"><![CDATA[<html>你太客气了……</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$精锐士兵克林德$<BR>听说<FONT color=#a82424>飞艇</FONT>差不多修好了。身为神圣天堂派来的精锐士兵，竟然要接受冒险家的帮助。真是惭愧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-6-a" image="" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-6-b" mid="73"><![CDATA[<html>什么事啊？</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$精锐士兵克林德$<BR>我们打算坐飞艇回<FONT color=#a82424>神圣天堂</FONT>……但<FONT color=#382000>{user_nick}</FONT>，你是凯德拉关卡的守护者，我有件事想拜托你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-6-b" image="" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-6-c" mid="75"><![CDATA[<html>嗯？我吗？！</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$精锐士兵克林德$<BR>回去之后，我必须马上向<FONT color=#a82424>卡西乌斯国王</FONT>陛下报告。<FONT color=#382000>{user_nick}</FONT>，我想和你这个凯德拉关卡的守护者同行，让你帮我一起进行报告。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-6-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-6-d" mid="77"><![CDATA[<html>好的。</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$精锐士兵克林德$<BR><FONT color=#a82424>先知</FONT>的情况怎样，<FONT color=#a82424>黑骑士</FONT>又如何厉害，光我一个人报告口说无凭。你为了保卫凯德拉，和魔物们进行了很多次的战斗，希望你能帮助我。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-6-d" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$精锐士兵克林德$<BR>真是谢谢你。那我们在<FONT color=#a82424>神圣天堂</FONT>见。请你快去向<FONT color=#a82424>飞艇工程师休伯特</FONT>确认一下，飞艇是不是修好了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$飞艇工程师休伯特${action:talk}<BR>
+雾还没有完全消散，你去见见<FONT color=#a82424>精锐士兵克林德</FONT>吧。说不定有什么重要的事情。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-7" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n099_engineer_hubert-7-a" mid="81"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$飞艇工程师休伯特$<BR>雾开始消散了！！！光顾着留心雾，都忘了修理飞艇了。<FONT color=#a82424>悬浮装置</FONT>拿来了吗？快快，快点给我。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-7-a" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-7-!next" mid="95"><![CDATA[<html><FONT color=#a94407>(获得奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-7" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$精锐士兵克林德$<BR>真是谢谢你。那我们在<FONT color=#a82424>神圣天堂</FONT>见。请你快去向<FONT color=#a82424>飞艇工程师休伯特</FONT>确认一下，飞艇是不是修好了。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>300063 (정화장치 가동열쇠)</comment>
+      <conditions />
+      <executions>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5,6">762</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">300063</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>300064 (순백의 오브)
+300063 (정화장치 가동열쇠)
+</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300064</exe>
+         <exe type="delquestitem" num="-1">300063</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment>300103 부유장치
+노예의 증표는 아르젠타 서브퀘 전부 완료했을 때 삭제(아르젠타의 노예 퀘스트)</comment>
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300103</exe>
+         <exe type="complete">218</exe>
+         <exe type="recompense">,2181,2182,2183,2184</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="c" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="d" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="2">2,0,1</exelink>
+   <exelink qstep="3" npc="n035_soceress_master_tiana" sub="a">0,1,2,3</exelink>
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="c">0,1</exelink>
+   <exelink qstep="5" npc="n099_engineer_hubert" sub="b">0,1</exelink>
+   <exelink qstep="6" npc="n055_elite_soldier" sub="b" />
+   <exelink qstep="6" npc="n055_elite_soldier" sub="c" />
+   <exelink qstep="6" npc="n055_elite_soldier" sub="d">0,1</exelink>
+   <exelink qstep="7" npc="n099_engineer_hubert" sub="a">2</exelink>
+   <exelink qstep="7" npc="n099_engineer_hubert" sub="!next">0,1</exelink>
+   <journal_data recompense="1:2181,2:2182,3:2183,4:2184" quest_title="깨어난 수호자" chapterid="3" quest_level="22" quest_mark_type="7" use_item_list="300064,300063">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2265,1121</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[和高级魔法师缇娜对话]]></title>
+         <contents mid="44"><![CDATA[<html>获得<FONT color=#a82424>纯白之球</FONT>之后，下面要做的事情是和高级魔法师缇娜商议。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级魔法师缇娜</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[和高级魔法师缇娜对话]]></destination>
+         <todo_msg mid="46"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_Manticore.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>264,0,0</destination_pos>
+         <destination_mode>custom:261@1,262@1,263@1,264@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[祈祷者安息处的狮蝎和净化装置]]></title>
+         <contents mid="48"><![CDATA[<html>据说<FONT color=#a82424>净化装置的启动钥匙</FONT>在<FONT color=#a82424>祈祷者安息处</FONT>的狮蝎身上。打倒<FONT color=#a82424>狮蝎克鲁鲁</FONT>，找到净化装置的启动钥匙，启动净化装置。<BR><BR><FONT color=#086171>堆满落叶的湖岸(遗忘寺院入口)</FONT> <FONT color=#a82424>→ 祈祷者安息处</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[打败祈祷者安息处的狮蝎]]></destination>
+         <todo_msg mid="50"><![CDATA[请打倒祈祷者安息处的狮蝎，找到净化装置的启动钥匙。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2265,1121</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[净化装置启动！向高级魔法师缇娜报告]]></title>
+         <contents mid="53"><![CDATA[<html>打倒了狮蝎，<FONT color=#a82424>启动了净化装置</FONT>。把所有的消息向<FONT color=#a82424>高级魔法师缇娜</FONT>报告。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级魔法师缇娜</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[和高级魔法师缇娜对话]]></destination>
+         <todo_msg mid="55"><![CDATA[打倒了狮蝎，启动了净化装置。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[和灰色废墟的阿尔杰塔对话]]></title>
+         <contents mid="58"><![CDATA[<html>启动了净化装置，飞艇好像可以起飞了。把这段时间的事迹告诉阿尔杰塔。<BR>
+ <BR>
+<FONT color=#086171>灰色废墟</FONT> <FONT color=#a82424>→ 阿尔杰塔</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[和灰色废墟的阿尔杰塔对话]]></destination>
+         <todo_msg mid="60"><![CDATA[请把之前所做的事情告诉阿尔杰塔。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,3959,3392</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[和飞艇工程师休伯特对话]]></title>
+         <contents mid="64"><![CDATA[<html>毒雾好像开始消散了，问问工程师休伯特是否可以出发前往<FONT color=#a82424>神圣天堂</FONT>了。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 飞艇工程师休伯特</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[和飞艇工程师休伯特对话]]></destination>
+         <todo_msg mid="66"><![CDATA[请和飞艇工程师休伯特对话。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n55</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>55</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[精锐士兵克林德的委托]]></title>
+         <contents mid="85"><![CDATA[<html>精锐士兵克林德好像有话要和我说。在等待毒雾消散的时候，去见见他并和他对话。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 精锐士兵克林德</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[和精锐士兵克林德对话]]></destination>
+         <todo_msg mid="87"><![CDATA[请和精锐士兵克林德对话。]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[毒雾消散之日]]></title>
+         <contents mid="89"><![CDATA[<html>决定和精锐士兵克林德一起，前往神圣天堂王城。去问问<FONT color=#a82424>飞艇工程师休伯特</FONT>是否可以出发前往<FONT color=#a82424>神圣天堂</FONT>了。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 飞艇工程师休伯特</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[和飞艇工程师休伯特对话]]></destination>
+         <todo_msg mid="91"><![CDATA[请和飞艇工程师休伯特对话。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>217</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,1 @@
+quickbms -f "*.xml" dragonnest.bms Resource01.pak .

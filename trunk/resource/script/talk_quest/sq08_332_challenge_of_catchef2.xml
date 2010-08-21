@@ -1,0 +1,255 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_332_challenge_of_catchef2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>332</qid>
+      <designer>김주연</designer>
+      <qlevel>19</qlevel>
+      <qdesc>뉴 끈적끈적 파스타	400135
+냥냥의 샐러드	400136
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[料理师喵喵的挑战书Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>268</npcid>
+         <npcename>n268_catchef_note</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n268_catchef_note-noquest" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$料理师喵喵的纸条$<BR>我的料理不仅我的小姐，连这里的布洛怪也会对它垂涎三尺喵。<BR><FONT color=#7e12d2>（与凯德拉关卡的消耗品商人梅伊对话可接受任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="7"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$消耗品商人梅伊$<BR><FONT color=#7e12d2>（在巨大的刷子上沾上布洛怪的食粮）</FONT><BR>啦啦 ♪ 啦啦啦~ ♪</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="9"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$消耗品商人梅伊$<BR>稍等片刻，估计马上能够做完了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="11"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$料理师喵喵的挑战书Ⅱ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2" mid="13"><![CDATA[<html>是，马上就去。（适应完毕）</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$消耗品商人梅伊$<BR>完成啦！<BR>料理变凉之前，得赶紧送到布洛怪它们那里！<BR><FONT color=#7e12d2>（梅伊又向我眨巴着眼睛）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$消耗品商人梅伊$<BR>真遗憾，我不能亲眼看到<FONT color=#a82424>寂静修道院正殿</FONT>的布洛怪们对我的食品欢呼的场面啊！<BR>赶紧出发吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n268_catchef_note-2" image="QS_Default.dds" itemindex="400135">
+      <talk_answer link_index="n268_catchef_note-2-a" mid="16"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$料理师喵喵的纸条$<BR>虽不想承认，但<FONT color=#a82424>梅伊的料理</FONT>一出现，这里的布洛怪就变得更加可怕了。<BR>连布洛怪竟然都拒绝了我的料理….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n268_catchef_note-2-a" image="QS_Default.dds" itemindex="400135">
+      <talk_answer link_index="n268_catchef_note-3" mid="18"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$料理师喵喵的纸条$<BR>拿来的梅伊的料理似乎连牛头怪也能吸引过来。<BR>那些布洛怪太可怕了，我得先走了喵</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n268_catchef_note-3" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$料理师喵喵的纸条$<BR>我会留下我的料理，麻烦请求您一件事喵。<BR>今天的对决，可要对我的小姐保密啊喵。<BR>因为最近找工作很难喵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="21"><![CDATA[<html>我回来了。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$消耗品商人梅伊$<BR><FONT color=#7e12d2>（正微笑着似乎已经预感到胜利了）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-b" mid="23"><![CDATA[<html>（我还什么都没说呢）</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$消耗品商人梅伊$<BR>哈哈哈哈。 <BR>我就知道会这样的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-c" mid="25"><![CDATA[<html>（给出喵喵的料理）</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$消耗品商人梅伊$<BR>布洛怪的反应很高涨吧? <BR>不过那是什么啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-c" image="QS_Default.dds" itemindex="400136">
+      <talk_answer link_index="n026_trader_may-3-d" mid="27"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$消耗品商人梅伊$<BR>原来是我的对手 <FONT color=#a82424>喵喵的色拉</FONT>啊。 嗯，这个也不坏嘛。<BR>只因我与生俱来的料理实力，一名善良的料理师却受到了伤害….<BR>为了喵喵，只好保守这次的秘密了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-e" mid="29"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-e" image="" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$消耗品商人梅伊$<BR>真是辛苦你了。<BR>今后要是收到新产品的话，我会第一时间通知你的，后会有期啦~.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3321,3322,3323,3324</exe>
+         <exe type="setquest">332</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>냥냥의 셀러드 습득.</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">400136</exe>
+         <exe type="delquestitem" num="-1">400135</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3321,3322,3323,3324</exe>
+         <exe type="complete">332</exe>
+         <exe type="delquestitem" num="-1">400135</exe>
+         <exe type="delquestitem" num="-1">400136</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n026_trader_may" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n268_catchef_note" sub="3">0,1,2,3</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="b" />
+   <exelink qstep="3" npc="n026_trader_may" sub="c" />
+   <exelink qstep="3" npc="n026_trader_may" sub="d">0</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="e">1,2,3</exelink>
+   <journal_data recompense="1:3321,2:3322,3:3323,4:3324" quest_title="요리사 냥냥의 도전장Ⅱ" chapterid="" quest_level="19" quest_mark_type="10" use_item_list="400135,400136">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="32"><![CDATA[与消耗品商人梅伊对话]]></title>
+         <contents mid="33"><![CDATA[<html>完成了料理。与 <FONT color=#a82424>消耗品商人梅伊</FONT>对话吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 与消耗品商人梅伊对话</FONT></html>]]></contents>
+         <destination mid="34"><![CDATA[与消耗品商人梅伊对话]]></destination>
+         <todo_msg mid="35"><![CDATA[新增了任务。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_22.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>163,n268</destination_pos>
+         <destination_mode>custom:161@1,162@1,163@4</destination_mode>
+         <statemark_npcid>268</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[在寂静修道院正殿比较料理的反应]]></title>
+         <contents mid="37"><![CDATA[<html><FONT color=#a82424>消耗品商人梅伊</FONT>想和料理师喵喵的料理做比较，看谁的料理更受再布洛怪的欢迎。拿梅伊的料理到<FONT color=#a82424>寂静修道院正殿</FONT>看其反应如何吧。<BR><BR><FONT color=#086171>融解森林（寂静修道院正门）</FONT> <FONT color=#a82424>→ 寂静修道院正殿</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[在寂静修道院正殿比较料理的反应]]></destination>
+         <todo_msg mid="39"><![CDATA[到寂静修道院正殿看看梅伊的料理对布洛怪有何反应吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[与消耗品商人梅伊对话]]></title>
+         <contents mid="41"><![CDATA[<html>梅伊的料理引起了布洛怪的<FONT color=#a82424>疯狂的反应</FONT>。料理师喵喵害怕布洛怪针对梅伊料理狂暴反应，留下自己的料理之后先行逃走了。告诉梅伊这个消息吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 消耗品商人梅伊</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[与消耗品商人梅伊对话]]></destination>
+         <todo_msg mid="43"><![CDATA[回去向消耗品商人梅伊讲述布洛怪的反应吧]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>19:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>331</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

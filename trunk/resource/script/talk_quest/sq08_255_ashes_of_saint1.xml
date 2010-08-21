@@ -1,0 +1,304 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_255_ashes_of_saint1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>255</qid>
+      <designer>김주연</designer>
+      <qlevel>13</qlevel>
+      <qdesc>300006 성수가 든 병</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>256</nextqid>
+      <nextqname>sq08_256_ashes_of_saint2</nextqname>
+      <nextqnpc>n034_cleric_master_germain</nextqnpc>
+      <qkname mid="1"><![CDATA[老师的遗骸Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>186</npcid>
+         <npcename>n186_awakened_willem</npcename>
+         <npckname>저메인의 스승 윌리엄 구울</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인  (캐더락 클레릭 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$起死回生的威廉尸体$<BR>哦哦…眼前怎么这般漆黑啊。我到底在哪里啊 ...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-a" mid="7"><![CDATA[<html>什么事啊？</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$高级牧师杰梅因$<BR>嗯，可否帮我一个忙?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-b" mid="9"><![CDATA[<html>那么得找到尸体完成葬礼吧。</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$高级牧师杰梅因$<BR><FONT color=#a82424>食尸鬼波尔德尼斯</FONT>被击退，这事儿我倒是听说过，但是<FONT color=#a82424>死亡森林</FONT>已经被污染。所以那里的亡者不时的会复活。一想到老师的遗骸被弃在那种污染之地，我实在是不放心啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-c" mid="11"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$高级牧师杰梅因$<BR>是，本来应该是我去那里把<FONT color=#a82424>老师的遗骸</FONT>收回来的。但是因为那里散发的毒气，一时让我无法接近啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-d" mid="13"><![CDATA[<html>尸体该如何净化呢？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$高级牧师杰梅因$<BR>不过<FONT color=#382000>{user_nick}</FONT>您似乎能够抵御那种毒气呢。所以才拜托您的。可否烦请您到死亡森林<FONT color=#a82424>净化威廉的尸体</FONT>再回来好吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-e" mid="15"><![CDATA[<html>要做什么事情?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$高级牧师杰梅因$<BR>净化尸体的仪式本来需要很多步骤。但也可简化处理。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-f" mid="17"><![CDATA[<html>嗯，试试看吧。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$高级牧师杰梅因$<BR>消灭<FONT color=#a82424>食尸鬼波尔德尼斯</FONT>之后，在那里洒下我交给你的圣水。虽然简易了点，但这点仪式怎么也得准备下吧。可以吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-s" mid="19"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$老师的遗骸 I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QM_GhoulBlue.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$高级牧师杰梅因$<BR>到死亡森林消灭<FONT color=#a82424>食尸鬼波尔德尼斯</FONT>之后，在他牺牲的地方洒下交给你的圣水。然后拜托您再解决一下尸体吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-1" image="" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$起死回生的威廉尸体$<BR>哦哦…眼前怎么这般漆黑啊。我到底在哪里啊 ...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-2" image="" itemindex="">
+      <talk_answer link_index="n186_awakened_willem-2-a" mid="22"><![CDATA[<html>牧师威廉大人，您已经是这里的亡者了。</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$起死回生的威廉尸体$<BR>哦哦…眼前怎么这般漆黑啊。我到底在哪里啊 ...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-2-a" image="" itemindex="">
+      <talk_answer link_index="n186_awakened_willem-2-b" mid="24"><![CDATA[<html>镇静。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$起死回生的威廉尸体${sound:Ghoul_Skill_SelfExplosion_01_Shout.wav}<BR>我…我已经死了? <BR><FONT color=#7e12d2>（成为食尸鬼的威廉撕心裂肺的尖叫着）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-2-b" image="" itemindex="">
+      <talk_answer link_index="n186_awakened_willem-2-c" mid="26"><![CDATA[<html>雷安? 他是谁啊?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$起死回生的威廉尸体$<BR>黑暗魔物们…怎么样了?<BR>他... 雷安成功了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-2-c" image="" itemindex="">
+      <talk_answer link_index="n186_awakened_willem-2-d" mid="28"><![CDATA[<html>从来没有听说过有这样一个人。</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$起死回生的威廉尸体$<BR>说是为了解开从<FONT color=#a82424>北方来的那个人</FONT>... 可解救凯德拉的... <FONT color=#a82424>守护者封印</FONT>... 而去... 他…难道他没有成功?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-2-d" image="" itemindex="">
+      <talk_answer link_index="n186_awakened_willem-2-e" mid="30"><![CDATA[<html>守护者?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$起死回生的威廉尸体$<BR>…要复活 <FONT color=#a94407>命运的存在</FONT>... 可把这世界从灾难中解救出来的... <FONT color=#a82424>守护者</FONT>啊...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-2-e" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$起死回生的威廉尸体${sound:Ghoul_Skill_SelfExplosion_01_Shout.wav}<BR><FONT color=#a82424>雷安</FONT>… 在他回来之前…我决不能倒下… 你们这些该受诅咒的黑暗魔物们啊… <BR><FONT color=#7e12d2>（威廉的亡灵开始悲鸣。似乎很难再和他对话了）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="QM_GhoulBlue.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$高级牧师杰梅因$<BR>到<FONT color=#a82424>死亡森林</FONT>消灭<FONT color=#a82424> 食尸鬼波尔德尼斯</FONT>之后，在他死去的地方洒下这个圣水吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-3" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$起死回生的威廉尸体$<BR><FONT color=#7e12d2>（威廉的亡灵开始悲鸣。似乎很难再和他对话了）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-a" mid="36"><![CDATA[<html>（告诉关于起死回生的威廉尸体相关事情）</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$高级牧师杰梅因$<BR>老师的遗骸解决了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-!next" mid="40"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="qcount">.</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="fullquest">.</exe>
+         <exe type="recompense_view">,2551,2552,2553,2554</exe>
+         <exe type="setquest">255</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">1</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300006</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300006</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2551,2552,2553,2554</exe>
+         <exe type="complete">255</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="f">0</exelink>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="s">3,4,5,6,7</exelink>
+   <exelink qstep="1" npc="n034_cleric_master_germain">0,1,2</exelink>
+   <exelink qstep="2" npc="n186_awakened_willem" sub="b" />
+   <exelink qstep="2" npc="n186_awakened_willem" sub="c" />
+   <exelink qstep="2" npc="n186_awakened_willem" sub="d" />
+   <exelink qstep="2" npc="n186_awakened_willem" sub="e">0,1</exelink>
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="a">0</exelink>
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="!next">1</exelink>
+   <journal_data recompense="1:2551,2:2552,3:2553,4:2554" quest_title="스승의 유해Ⅰ" chapterid="" quest_level="13" quest_mark_type="10" use_item_list="300006">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[与高级牧师杰梅因对话]]></title>
+         <contents mid="44"><![CDATA[<html><FONT color=#a82424>高级牧师杰梅因</FONT>说非常担心被弃在<FONT color=#a82424>死亡森林</FONT>的老师的遗骸。听他仔细道来吧。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级牧师杰梅因</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[与高级牧师杰梅因对话]]></destination>
+         <todo_msg mid="46"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_17.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>134,-327,1180</destination_pos>
+         <destination_mode>custom:131@1,132@1,133@1,134@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[消灭死亡森林的食尸鬼波尔德尼斯]]></title>
+         <contents mid="48"><![CDATA[<html>在<FONT color=#a82424>死亡森林</FONT>消灭<FONT color=#a82424>食尸鬼波尔德尼斯</FONT>之后，在他牺牲的地方洒下圣水，净化牧师杰梅因老师的尸体吧。<BR><BR><FONT color=#086171>灰色废墟 → 堆满落叶的湖岸（死亡森林入口）</FONT> <FONT color=#a82424>→ 死亡森林</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[消灭死亡森林的食尸鬼波尔德尼斯后，在有武器的地方洒圣水]]></destination>
+         <todo_msg mid="50"><![CDATA[消灭死亡森林的食尸鬼波尔德尼斯后，在有武器的地方洒下圣水吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QM_GhoulBlue.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>134,n186</destination_pos>
+         <destination_mode>custom:131@1,132@1,133@1,134@1</destination_mode>
+         <statemark_npcid>186</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[与起死回生的威廉尸体对话]]></title>
+         <contents mid="55"><![CDATA[<html>在<FONT color=#a82424>死亡森林</FONT>插有<FONT color=#a82424>威廉武器的地方</FONT>洒下圣水后，出现了起死回生的威廉尸体。与他对话吧。<BR><BR><FONT color=#086171>灰色废墟 → 堆满落叶的湖岸（死亡森林入口）</FONT> <FONT color=#a82424>→ 死亡森林</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[与起死回生的威廉尸体对话]]></destination>
+         <todo_msg mid="57"><![CDATA[与起死回生的威廉尸体对话吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[与高级牧师杰梅因对话吧。]]></title>
+         <contents mid="60"><![CDATA[<html>似乎没法再和起死回生的威廉尸体对话了。回到<FONT color=#a82424>凯德拉关卡</FONT>的<FONT color=#a82424>高级牧师杰梅因</FONT>了解一下更详细的情况吧。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级牧师杰梅因</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[与高级牧师杰梅因对话]]></destination>
+         <todo_msg mid="62"><![CDATA[与高级牧师杰梅因对话吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>13:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>205</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n125_lily</npcename>
+      <npcid>lily</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[莉莉(教程)]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$莉莉$<BR>(少女看起来像是失去了意识。必须赶紧送回村子。)</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID, 1, 2);</exe>
+         <exe type="custom">api_quest_SetJournalStep(userObjID, 1, 1);</exe>
+         <exe type="custom">api_quest_SetQuestStep(userObjID,1, 1);</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,1,8);</exe>
+      </executions>
+      <conditions />
+   </talk>

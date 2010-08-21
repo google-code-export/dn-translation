@@ -1,0 +1,45 @@
+   <talk>
+      <npcename>n070_plane_ticketer_sorene</npcename>
+      <npcid>70</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[售票员索兰娜]]></npckname>
+      <talk_paragraph index="001" image="QW_AirShip.dds" itemindex="">
+         <talk_answer link_index="quest" mid="10"><![CDATA[<html><FONT face=Arial size=2>[任务]</FONT></html>]]></talk_answer>
+         <talk_answer link_index="changemap" mid="11"><![CDATA[<html>[乘坐飞艇]</html>]]></talk_answer>
+         <talk_answer link_index="completecutscene" mid="20"><![CDATA[<html></html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$售票员索兰娜$<BR>欢迎光临。飞往<FONT color=#a82424>凯德拉关卡</FONT>的飞艇已经准备就绪。<BR><FONT color=#a82424>机票</FONT>的价格为<FONT color=#a82424>5 银币</FONT> 。<BR>您确定要乘坐飞艇吗?<BR>
+※ <FONT color=#7e12d2>无法在组队状态下乘坐飞艇。</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="QW_AirShip.dds" itemindex="">
+         <talk_question mid="6"><![CDATA[<html>$售票员索兰娜$<BR>非常抱歉，冒险家先生。您的金额不够购买机票。<FONT color=#a82424>机票</FONT>的价格为 <FONT color=#a82424>5 银币</FONT> 。请确认您的余额。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="12" link_target="mq11_401_castle_sainthaven.xml"><![CDATA[<html>[Lv24] <FONT color=#a94407>王城神圣天堂</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="35" link_target="sq11_543_blue_wolf_on_the_desert.xml"><![CDATA[<html>[Lv24] <FONT color=#086171>沙漠中的蓝狼</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="sq11_544_fate_and_desire.xml"><![CDATA[<html>[Lv24] <FONT color=#086171>高贵的宿命</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="sq11_545_vain_dream.xml"><![CDATA[<html>[Lv24] <FONT color=#086171>空想</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="sq11_546_the_place_left.xml"><![CDATA[<html>[Lv24] <FONT color=#086171>离开的位置</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="39"><![CDATA[<html>(返回)</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$售票员索兰娜$<BR>还有其他要事吗?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="party_member" image="" itemindex="">
+         <talk_question mid="23"><![CDATA[<html>$售票员索兰娜$<BR>
+非常抱歉，冒险家先生。在组队状态下无法乘坐飞艇。<BR>请暂时脱离同班之后，再乘坐飞艇。<BR>※ <FONT color=#7e12d2>无法在组队状态下乘坐飞艇。</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="6" false="1">0</exe>
+         <exe type="custom">api_user_DelCoin( userObjID, 500 );</exe>
+         <exe type="custom">api_user_PlayCutScene(userObjID,npcObjID,95,true);</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,8,1);</exe>
+         <exe type="conexe" true="3,4" false="7">1</exe>
+         <exe type="talk">party_member</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_user_GetCoin( userObjID ) >= 500</chk>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <exelink idx="changemap">2</exelink>
+      <exelink idx="completecutscene">5</exelink>
+   </talk>

@@ -1,0 +1,221 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_557_spread_of_abyss1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>557</qid>
+      <designer>김인정</designer>
+      <qlevel>39</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>558</nextqid>
+      <nextqname>sq11_558_spread_of_abyss2</nextqname>
+      <nextqnpc>n088_scholar_starshy</nextqnpc>
+      <qkname mid="1"><![CDATA[深渊的扩散Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-a" mid="61"><![CDATA[<html>我叫<FONT color=#382000>{user_nick}</FONT>。</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$纹章学者斯塔西$<BR>这不是上次帮助我解开深渊的真相的<FONT color=#382000>{user_class}</FONT>吗？脸很熟，不过你的名字是……是什么来着？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-b" mid="63"><![CDATA[<html>又……扩散了？</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$纹章学者斯塔西${action:Talk}<BR>哦，是的！<FONT color=#382000>{user_nick}</FONT>，你来的正好。不好意思，你能再帮我一个忙吗？事实上，本以为情况有所好转的<FONT color=#a82424>深渊</FONT>现象，现在正在向其他地区扩散。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-c" mid="65"><![CDATA[<html>(斯塔西好像很痛苦)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$纹章学者斯塔西$<BR>是的。这件事真的很麻烦。我还没搜集到足以证明上次的假说的证据，在找到对策之前，没想到会发生这种情况……真让人痛苦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-d" mid="68"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$纹章学者斯塔西$<BR>这次你能再去帮我搜集深渊魔物的<FONT color=#a82424>变形的宝玉</FONT>吗？<BR>
+除了你，我再也没有别的人可以信任了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-acceppted" mid="70"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$深渊的扩散Ⅰ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-a" mid="72"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$纹章学者斯塔西$<BR>你只要消灭掉<FONT color=#a82424>孤岛中心</FONT>的{monster:200931}、<FONT color=#a82424>精灵坟墓</FONT>的{monster:201007}、<FONT color=#a82424>死亡城市路口</FONT>的{monster:201028}、<FONT color=#a82424>沉没的货船</FONT>的{monster:201197}，以及<FONT color=#a82424>黑暗大君主之塔</FONT>的{monster:201078}，帮我搜集变形的宝玉就可以了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-a" image="" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$纹章学者斯塔西$<BR>
+如果不把那些地方的头目除掉，就无法获得变形的宝玉。请你一定要记住。必须是<FONT color=#a82424>深渊级</FONT>难度才行。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="75"><![CDATA[<html>给你。</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$纹章学者斯塔西$<BR>是你啊。怎么样？拿来了吗？<BR>
+<FONT color=#a82424>变形的宝玉</FONT>？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="77"><![CDATA[<html>是什么东西呢？</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$纹章学者斯塔西${action:Talk}<BR>从个人的角度看，我确信是受到<FONT color=#a82424>某种东西</FONT>的影响，魔物们才会变得狂暴，形成深渊地区。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-c" mid="79"><![CDATA[<html>原来如此。</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$纹章学者斯塔西$<BR>现在还不太清楚。虽然我从王城获得了一些情报，但暂时还无法得出确切的结论。但是我们不能否定存在这种可能性。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-!next" mid="81"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="1" op="]=">300263</chk>
+         <chk type="questitem" num="1" op="]=">300264</chk>
+         <chk type="questitem" num="1" op="]=">300265</chk>
+         <chk type="questitem" num="1" op="]=">300266</chk>
+         <chk type="questitem" num="1" op="]=">300267</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">557</exe>
+         <exe type="recompense_view">,5571,5572,5573,5574</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200931</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">201007</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">201028</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10">201197</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="11">201078</exe>
+         <exe type="conexe" true="17" false="12,17">0</exe>
+         <exe type="conexe" true="17" false="13,17">1</exe>
+         <exe type="conexe" true="17" false="14,17">2</exe>
+         <exe type="conexe" true="17" false="15,17">3</exe>
+         <exe type="conexe" true="17" false="16,17">4</exe>
+         <exe type="addquestitem" num="1">300263</exe>
+         <exe type="addquestitem" num="1">300264</exe>
+         <exe type="addquestitem" num="1">300265</exe>
+         <exe type="addquestitem" num="1">300266</exe>
+         <exe type="addquestitem" num="1">300267</exe>
+         <exe type="conexe" true="18,19,20" false="">0 and 1 and 2 and 3 and 4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n088_scholar_starshy">1</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300263</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300264</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300265</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300266</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300267</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">557</exe>
+         <exe type="recompense">,5571,5572,5573,5574</exe>
+         <exe type="delquestitem" num="1">300263</exe>
+         <exe type="delquestitem" num="1">300264</exe>
+         <exe type="delquestitem" num="1">300265</exe>
+         <exe type="delquestitem" num="1">300266</exe>
+         <exe type="delquestitem" num="1">300267</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="d">1</exelink>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="acceppted">0,2,3,4,5,6,22,23,24,25,26,21</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="c">1</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="!next">2,3,4,5,6,0</exelink>
+   <journal_data recompense="1:5571,2:5572,3:5573,4:5574" quest_title="어비스의 확산Ⅰ" chapterid="" quest_level="39" quest_mark_type="10" use_item_list="300263,300264,300265,300266,300267">
+      <journal index="1">
+         <title_image />
+         <contents_image />
+         <need_itemlist />
+         <destination_pos />
+         <destination_mode>hide</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[搜集变形的宝玉]]></title>
+         <contents mid="52"><![CDATA[<html>消灭<FONT color=#a82424>深渊</FONT>地区的<FONT color=#a82424>头目</FONT>，搜集变形的宝玉。<BR><BR><FONT color=#086171>赫尔马岱港口(孤岛运输船)</FONT> <FONT color=#a82424>→ 孤岛中心</FONT><BR><FONT color=#086171>赫尔马岱港口(江下游废墟入口)<FONT color=#2b2723> </FONT><FONT color=#a82424>→ 精灵坟墓</FONT></FONT><BR><FONT color=#086171>赫尔马岱港口(黑暗矿山入口)</FONT> <FONT color=#a82424>→ 死亡城市路口<BR></FONT><FONT color=#086171>赫尔马岱港口(孤岛运输船)<FONT color=#2b2723> </FONT><FONT color=#a82424>→ 沉没的货船</FONT></FONT><BR><FONT color=#086171>黑山山角(黑暗大君主的关卡)</FONT> <FONT color=#a82424>→黑暗大君主之塔</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[搜集变形的宝玉]]></destination>
+         <todo_msg mid="54"><![CDATA[请到深渊地区去搜集变形的宝玉。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location>`</get_location>
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[宝玉搜集完成]]></title>
+         <contents mid="57"><![CDATA[<html>把搜集到的变形的宝玉交给纹章学者斯塔西。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 纹章学者斯塔西</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[和纹章学者斯塔西对话]]></destination>
+         <todo_msg mid="59"><![CDATA[请把变形的宝玉交给纹章学者斯塔西。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>39:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

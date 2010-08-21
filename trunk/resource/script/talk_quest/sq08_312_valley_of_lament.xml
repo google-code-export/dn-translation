@@ -1,0 +1,236 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_312_valley_of_lament</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>312</qid>
+      <designer>곽노찬</designer>
+      <qlevel>10</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[峡谷遗迹]]></qkname>
+      <qnpc>
+         <npcid>270</npcid>
+         <npcename>n270_invisible</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n270_invisible-noquest" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$古代文字$<BR>
+<FONT color=#7e12d2>（写有看不懂的文字，向凯德拉关卡的纹章学者贝利问问看吧）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-a" mid="6"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$纹章学者贝利$<BR>我已经解出了黑暗精灵的暗语。<BR>
+它的内容是这样子的。<BR>
+<FONT color=#7e12d2>（贝利给出了文件）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-b" mid="8"><![CDATA[<html>难道是想利用遗迹判断是不是古代人?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$暗语$<BR>"<FONT color=#a82424>确认被视为古代人的后裔的少女</FONT>"<BR>
+"<FONT color=#a82424>确认叹息峡谷遗迹的真伪</FONT>"</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-c" mid="10"><![CDATA[<html>嗯，那么那个遗迹发挥什么功能啊?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$纹章学者贝利$<BR>相传古代的祭司长都具有可以控制所有遗迹和兵器的力量。如果那个少女真的是古代人的后裔的话，遗迹会呈现某种反应。魔物们可能就是想确认那种反应吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-c" image="QW_14.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-d" mid="12"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$纹章学者贝利$<BR>其实，我就是想拜托你去核实一下这个问题。就是可否去调查位于<FONT color=#a82424>叹息峡谷</FONT>中的<FONT color=#a82424>遗迹</FONT>用途啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-e" mid="27"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$峡谷遗迹$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-e" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$纹章学者贝利$<BR>遗迹某处肯定会有暗示其功能的<FONT color=#a82424>古代文字</FONT>或纹路。请仔细调查看看，然后回来告诉我。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QW_14.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$纹章学者贝利$<BR>那么，就去调查看看<FONT color=#a82424>叹息峡谷</FONT>的<FONT color=#a82424>遗迹</FONT>是否有<FONT color=#a82424>古代文字</FONT>火纹路吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n270_invisible-1" image="" itemindex="">
+      <talk_answer link_index="n270_invisible-2" mid="28"><![CDATA[<html>（临摹文字）</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$古代文字$<BR><FONT color=#7e12d2>（写有看不懂的文字。似乎就是纹章学者贝利所指的古代文字）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n270_invisible-2" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$古代文字$<BR><FONT color=#7e12d2>（已经记录好了古代文字，给纹章学者贝利看看吧）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-a" mid="32"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$纹章学者贝利$<BR>回来啦。<BR>查清遗迹中的文字了吗。<BR>
+<FONT color=#7e12d2>（贝利解释古代文字）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-b" mid="41"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$古代文字的内容$<BR><FONT color=#a82424>命运之轮将在先知降临之时，重新发出光芒。</FONT><BR><FONT color=#a82424>唯有继承者知道那个日子唷。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-c" mid="45"><![CDATA[<html>明白是什么意思吗?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$古代文字的内容$<BR><FONT color=#a82424>勇敢的后裔，从卑鄙的红色团伙和黑色翅膀帮里拯救先知吧。</FONT><BR><FONT color=#a82424></FONT><BR>- <FONT color=#7e12d2>比萨斯 阿罗诺比乌斯</FONT> -</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-d" mid="47"><![CDATA[<html>另外的预言?</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$纹章学者贝利$<BR>比萨斯在古代语是指<FONT color=#a82424>贤者</FONT>，阿罗诺比乌斯是指<FONT color=#a94407>贤者阿罗诺</FONT>的名字。<BR>真让人惊讶…。<BR>这是贤者留下的另外一个<FONT color=#a82424>预言</FONT>呢</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-e" mid="34"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$纹章学者贝利$<BR>是的。这里的<FONT color=#a82424>命运之轮发挥光芒</FONT>的语句是指先知与遗迹产生反应时的时期。而<BR><FONT color=#a82424>继承者</FONT>是指继承贤者法杖的弟子们。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-e" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-f" mid="37"><![CDATA[<html>是不是指劫持先知的黑骑士啊?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$纹章学者贝利$<BR>不过，不知<FONT color=#a82424>黑色翅膀</FONT>是指什么。卑鄙的红色团伙应该是指红色鹰身人和魔物们吧，但是黑色翅膀的话…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-f" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-g" mid="50"><![CDATA[<html>黑骑士和红色团伙是什么关系呢…。</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$纹章学者贝利$<BR>目前情况下，那是最合理的推测了。贤者留下的警告预言，却在事情发生后才被发现，真不是滋味啊。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-g" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-h" mid="52"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$纹章学者贝利$<BR>是啊…文中既然提起了红色团伙和黑色翅膀，那黑骑士肯定是和魔物同流合污的。不过现在还不能肯定啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-h" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-i" mid="54"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-i" image="" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$纹章学者贝利$<BR>呼… 隐藏在遗迹中的秘密虽然得以解开，但是很遗憾我们并没有查清遗迹的真正价值。<BR>
+要是不找到流淌着古代人之血的先知的话，峡谷遗迹依然会充满疑问…。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">312</exe>
+         <exe type="recompense_view">,3121,3122,3123,3124</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">312</exe>
+         <exe type="recompense">,3121,3122,3123,3124</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="d">1</exelink>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="e">0</exelink>
+   <exelink qstep="1" npc="n270_invisible" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="e" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="f" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="g" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="h">1</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="i">0</exelink>
+   <journal_data recompense="1:3121,2:3122,3:3123,4:3124" quest_title="협곡의 유적" chapterid="" quest_level="10" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_14.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>119,n270</destination_pos>
+         <destination_mode>custom:116@1,117@1,118@1,119@1</destination_mode>
+         <statemark_npcid>270</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[峡谷遗迹]]></title>
+         <contents mid="60"><![CDATA[<html>到叹息峡谷调查少女箩丝曾经被困的遗迹吧。<BR>
+ <BR>
+<FONT color=#086171>水晶谷 （叹息峡谷入口）</FONT> <FONT color=#a82424>→ 叹息峡谷</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[调查叹息峡谷的遗迹]]></destination>
+         <todo_msg mid="62"><![CDATA[新增了任务。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[遗迹的秘密]]></title>
+         <contents mid="64"><![CDATA[<html>已经记录好了遗迹中的古代文字。回到凯德拉关卡的纹章学者贝利那里吧。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡 →</FONT> <FONT color=#a82424>纹章学者贝利</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[与纹章学者贝利对话]]></destination>
+         <todo_msg mid="66"><![CDATA[回到凯德拉关卡的纹章学者贝利那里吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>202:311</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

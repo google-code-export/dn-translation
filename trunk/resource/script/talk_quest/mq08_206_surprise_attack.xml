@@ -1,0 +1,295 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_206_surprise_attack</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>206</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>207</nextqid>
+      <nextqname>mq08_207_scattered_components</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[突然袭击]]></qkname>
+      <qnpc>
+         <npcid>128</npcid>
+         <npcename>n128_argenta</npcename>
+         <npckname>아르젠타 (이벤트 씬 용)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>27</npcid>
+         <npcename>n027_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인  (캐더락 클레릭 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-level1" mid="58"><![CDATA[<html>是，准备好了。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$高级牧师杰梅因${action:Talk}<BR>目的地为沉睡者神殿，已经做好准备了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-a" image="" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$高级牧师 杰梅因$<BR>不过，冒然出击的话，肯定会吃大亏的，所以得充分的做好准备才行。<BR><FONT color=#7e12d2>（14级以上才能执行任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-b" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$高级牧师 杰梅因$<BR>最好赶紧到<FONT color=#a82424>沉睡者神殿</FONT>看一看吧。黑骑士陷害先知大人之前，拜托你一定要救出她啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1" image="" itemindex="">
+      <talk_answer link_index="n027_argenta-1-a" mid="7"><![CDATA[<html>因为要寻找顺从吊坠，所以迟到了。</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$阿尔杰塔$<BR>你这个呆子！为什么这么慢！<BR>你知道黑骑士进入神殿已经多久了吗？！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1-a" image="QS_Default.dds" itemindex="300030">
+      <talk_answer link_index="n027_argenta-1-b" mid="9"><![CDATA[<html>(拿出顺从吊坠)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$阿尔杰塔$<BR>好了，顺从吊坠找到了吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1-b" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-1-c" mid="11"><![CDATA[<html>夺……回？少女又不是被占领的要塞，夺回……</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$阿尔杰塔$<BR>嗯……很好。接下来我们要袭击黑骑士，将他打倒，夺回少女！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1-c" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-1-d" mid="13"><![CDATA[<html>……？就这样吗？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$阿尔杰塔$<BR>别废话，集中精神！<BR>你先进去，吸引黑骑士的注意力。<BR>然后我会从黑骑士的背后发动袭击。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1-d" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-1-e" mid="15"><![CDATA[<html>就是让我去做诱饵对吧……</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$阿尔杰塔$<BR>对。很抱歉，正面对决的话，我不敢保证一定可以战胜黑骑士。<BR>因此只能寻找破绽，发动突然袭击。<BR>
+希望你能让他露出破绽。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1-e" image="" itemindex="">
+      <talk_answer link_index="n027_argenta-2" mid="17"><![CDATA[<html>…知道了。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$阿尔杰塔$<BR>要往好的地方想，不过是作战计划而已，别想得太多。<BR>好了，你先进去。我会寻找机会，随后过去。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-1" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$阿尔杰塔$<BR>该死……呃……<BR><FONT color=#7e12d2>(好像是阿尔杰塔痛苦的呻吟)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$冒险家公会会长戴卡德${action:Talk}<BR>你怎么还在这里晃悠呢？<BR>你和<FONT color=#a82424>银发女剑客</FONT>约定在<FONT color=#a82424>沉睡者神殿</FONT>见面的事情怎么样了？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$阿尔杰塔$<BR>别皱着一副眉头。抓紧时间。<BR>这样做全都是为了救出那个少女。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2" image="" itemindex="">
+      <talk_answer link_index="n128_argenta-2-a" mid="23"><![CDATA[<html>你没事吧？</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$阿尔杰塔$<BR>该死……呃……<BR><FONT color=#7e12d2>(好像是阿尔杰塔痛苦的呻吟)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2-a" image="" itemindex="">
+      <talk_answer link_index="n128_argenta-2-b" mid="25"><![CDATA[<html>你的伤势好像很重，先回村里治疗一下吧……</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$阿尔杰塔$<BR>你觉得我像没事的样子吗？呃……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2-b" image="" itemindex="">
+      <talk_answer link_index="n128_argenta-2-c" mid="27"><![CDATA[<html>你说吧。</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$阿尔杰塔$<BR>不，我自己……呃……<BR>我自己走，你一个人回去吧。<BR>有件事我想拜托你……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2-c" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n128_argenta-2-d" mid="29"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$阿尔杰塔$<BR>你去<FONT color=#a82424>神圣天堂</FONT>找一个名叫<FONT color=#a82424>杰兰特</FONT>的<FONT color=#a82424>金发剑客</FONT>。告诉他之前发生的一切。<BR>然后请求他的帮助。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2-d" image="" itemindex="">
+      <talk_answer link_index="n128_argenta-2-e" mid="54"><![CDATA[<html>你好像和黑骑士认识……</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$阿尔杰塔$<BR><FONT color=#a82424>杰兰特</FONT>正在<FONT color=#a82424>黑山</FONT>附近搜索，他应该还不知道这里的消息……我恢复之后，会去<FONT color=#a82424>莲花沼泽镇</FONT>请求其他人的协助。<BR>拜托你了，小毛孩……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2-e" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$阿尔杰塔$<BR>这是非常冗长而复杂的孽缘……咳咳……<BR>以后我再讲给你听。从现在开始你就是我的奴隶，去做好前往<FONT color=#a82424>神圣天堂</FONT>的准备吧。你先去见见<FONT color=#a82424>戴卡德</FONT>，说明之前发生的事情。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$高级牧师杰梅因${action:Talk}<BR>我以为你去<FONT color=#a82424>沉睡者神殿</FONT>了呢。原来在这里啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$高级牧师杰梅因${action:Talk}<BR>你没事吧？没想到黑骑士竟然那么强……<BR><FONT color=#a82424>冒险家公会会长戴卡德</FONT>正在等你，你去见见他吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-a" mid="33"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$冒险家公会会长戴卡德${action:Refusal}<BR>我听说了……你们没能战胜<FONT color=#a82424>黑骑士</FONT>。<BR>你……我真不知道该怎么说，可以说很了不起。<BR>你碰到了<FONT color=#a82424>黑骑士</FONT>两次，却能够安然无恙……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-b" mid="35"><![CDATA[<html>(把事情从头到尾说明一遍)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>那个<FONT color=#a82424>银发女剑客</FONT>怎么样了？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-!next" mid="37"><![CDATA[<html><FONT face=Arial color=#a94407 size=2>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-3" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$阿尔杰塔$<BR>你去<FONT color=#a82424>神圣天堂</FONT>找到<FONT color=#a82424>金发剑客</FONT>，告诉他之前发生的一切。<BR>然后请求他的帮助。<BR>>他应该可以阻止黑骑士，救出那个少女。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>n027_argenta 아르젠타는 기본형
+n128_argenta 는 이벤트 씬 용(다친 상태)</comment>
+      <conditions>
+         <chk type="lvl" op="]=">14</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="4" false="3">0</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">a</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>300003 노예의 증거 아이템</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300003</exe>
+         <exe type="delquestitem" num="-1">300030</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">206</exe>
+         <exe type="recompense">,2061,2062,2063,2064</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="level1">2</exelink>
+   <exelink qstep="1" npc="n027_argenta" sub="b" />
+   <exelink qstep="1" npc="n027_argenta" sub="c" />
+   <exelink qstep="1" npc="n027_argenta" sub="d" />
+   <exelink qstep="1" npc="n027_argenta" sub="e" />
+   <exelink qstep="1" npc="n027_argenta" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n128_argenta" sub="b" />
+   <exelink qstep="2" npc="n128_argenta" sub="c" />
+   <exelink qstep="2" npc="n128_argenta" sub="d" />
+   <exelink qstep="2" npc="n128_argenta" sub="e">3,2,0,1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="b">1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="!next">0</exelink>
+   <journal_data recompense="1:2061,2:2062,3:2063,4:2064" quest_title="의표를 찔러라" chapterid="2" quest_level="14" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>129,n27</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@1</destination_mode>
+         <statemark_npcid>27</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>상급 클레릭 저메인</start_npc>
+         <desc_location>잠든 자의 신전</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>아르젠타</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[和银发女剑客阿尔杰塔对话]]></title>
+         <contents mid="40"><![CDATA[<html>带着银发女剑客所说的纯正的吊坠，去<FONT color=#a82424>沉睡者神殿</FONT>见见她吧。<BR><FONT color=#7e12d2>※ 14级以上才能执行任务。</FONT><BR><BR><FONT color=#086171>堆满落叶的湖岸（遗忘寺院入口） </FONT><FONT color=#a82424>→ 沉睡者神殿</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[（Lv14）与银发女剑客阿尔杰塔对话]]></destination>
+         <todo_msg mid="42"><![CDATA[请到沉睡者神殿去和银发女剑客见面。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>130,n128</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@1,130@1</destination_mode>
+         <statemark_npcid>128</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>잠든 자의 신전</get_location>
+         <start_npc>아르젠타</start_npc>
+         <desc_location>잠든 자의 신전 안쪽 제단</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>아르젠타</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[以智取胜]]></title>
+         <contents mid="44"><![CDATA[<html>去<FONT color=#a82424>沉睡者神殿</FONT>见见<FONT color=#a82424>阿尔杰塔</FONT>，然后移动到<FONT color=#a82424>神殿内部祭坛</FONT>，和黑骑士战斗。<BR><BR><FONT color=#086171>堆满落叶的湖岸(遗忘寺院入口)</FONT><FONT color=#a82424> → 沉睡者神殿</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[移动到神殿内侧祭坛和阿尔杰塔对话]]></destination>
+         <todo_msg mid="46"><![CDATA[在沉睡者神殿里找到并击退黑骑士。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>잠든 자의 신전 안쪽 제단</get_location>
+         <start_npc>아르젠타</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>모험자 길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[和冒险家公会会长戴卡德对话]]></title>
+         <contents mid="48"><![CDATA[<html>打算袭击黑骑士的阿尔杰塔的意图被看穿，反而受到了黑骑士的逆袭，受了重伤。<BR>回去向<FONT color=#a82424>冒险家公会会长戴卡德</FONT>报告情况。<BR><BR><FONT color=#086171>凯德拉关卡</FONT><FONT color=#a82424> → 冒险家公会会长戴卡德</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[和冒险家公会会长戴卡德对话]]></destination>
+         <todo_msg mid="50"><![CDATA[请回去见见冒险家公会会长戴卡德。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>205</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

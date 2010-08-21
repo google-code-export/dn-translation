@@ -1,0 +1,45 @@
+   <talk>
+      <npcename>n002_trader_dorin</npcename>
+      <npcid>2</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Blacksmith Dorin]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="wbuy" mid="4"><![CDATA[<html>[Trade/Repair]</html>]]></talk_answer>
+         <talk_answer link_index="itemupgrade" mid="5"><![CDATA[<html>[Item Enhancement]</html>]]></talk_answer>
+         <talk_answer link_index="opencompounditem1" mid="24"><![CDATA[<html>[Item Creation]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Blacksmith Dorin$<BR>What do you want? Anything related to blacksmith, I'm the right person to go to.</html>]]></talk_question> <!--找我有什么事？只要是和打铁有关的，找我就对了。-->
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="10" link_target="sq01_051_nourishing_meal.xml"><![CDATA[<html>[Lv2] <FONT color=#086171>猎犬的营养食品</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="21" link_target="sq01_053_hound_digester.xml"><![CDATA[<html>[Lv5] <FONT color=#086171>猎犬的消化剂</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="sq01_059_dorins_amazing_box1.xml"><![CDATA[<html>[Lv7] <FONT color=#086171>道林的遗物盒Ⅰ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="sq01_060_dorins_amazing_box2.xml"><![CDATA[<html>[Lv7] <FONT color=#086171>道林的遗物盒Ⅱ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="33" link_target="sq01_065_shoddy_statue.xml"><![CDATA[<html>[Lv7] <FONT color=#086171>虚假工程的痕迹</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="sq01_062_secret_health_dorin.xml"><![CDATA[<html>[Lv8] <FONT color=#086171>[称号]「不死Lv1」道林的健康秘诀</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="42"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="9"><![CDATA[<html>$Blacksmith Dorin$<BR>Anything related to blacksmith, I'm the right person to go to.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="openshop">1</exe>
+         <exe type="openshop">2</exe>
+         <exe type="openshop">3</exe>
+         <exe type="openshop">4</exe>
+         <exe type="conexe" true="1" false="6">0</exe>
+         <exe type="conexe" true="2" false="7">1</exe>
+         <exe type="conexe" true="3" false="8">2</exe>
+         <exe type="conexe" true="4" false="0">3</exe>
+         <exe type="custom">api_ui_OpenUpgradeItem(userObjID);</exe>
+         <exe type="custom">api_ui_OpenCompoundItem(userObjID, 1);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <exelink idx="wbuy">5</exelink>
+      <exelink idx="itemupgrade">9</exelink>
+      <exelink idx="opencompounditem1">10</exelink>
+   </talk>

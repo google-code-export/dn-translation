@@ -1,0 +1,177 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>gq08_3135_n408_basin_boss</qename>
+      <qtype>venturerquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>3135</qid>
+      <designer>곽노찬</designer>
+      <qlevel>20</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[公会委托] 夏萝莉的恶梦]]></qkname>
+      <qnpc>
+         <npcid>408</npcid>
+         <npcename>n408_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n408_guild_board-accepting" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n408_guild_board-accepting-a" mid="6"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$冒险家公会公告板$<BR>呜呜呜！ <FONT color=#a82424>夏萝莉</FONT>~ 晚上我做了一个十分恐怖的梦呢。夏萝莉的粉红之城忽然倒塌，随即出现很多幽灵怪物在扫荡着我的城市！ 所以夏萝莉就痛苦万分。呜呜~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n408_guild_board-accepting-a" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n408_guild_board-accepting-b" mid="122"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$冒险家公会公告板$<BR>我问了算命奶奶，她说夏萝莉做恶梦就是因为<FONT color=#a82424>死亡盆地</FONT>中的<FONT color=#a82424>血腥死神</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n408_guild_board-accepting-b" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n408_guild_board-accepting-c" mid="124"><![CDATA[<html>消灭血腥死神</html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$冒险家公会公告板$<BR>为了不让夏萝莉继续做更恐怖的梦，希望夏萝莉的粉丝们一鼓作气去消灭<FONT color=#a82424>血腥死神</FONT>吧。夏萝莉的委托，千万不要忘记哦~！<BR><FONT color=#7e12d2> 委托人：美少女夏萝莉 </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n408_guild_board-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n408_guild_board-accepting-d" mid="11"><![CDATA[<html><FONT color=#086171>（接受委托）</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$委托奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n408_guild_board-accepting-d" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$[公会委托] 挑战 Ⅲ$<BR>你接受了公会委托。<BR>消灭<FONT color=#a82424>死亡盆地</FONT>中的<FONT color=#a82424>血腥死神</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n408_guild_board-1" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$冒险家公会公告板$<BR>目前正在执行<FONT color=#a82424>[公会委托]夏萝莉的恶梦</FONT>。<BR><BR>※ <FONT color=#7e12d2>在同一公告板中只能执行一个公会委托。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n408_guild_board-2" image="GQ_hunt_end.dds" itemindex="">
+      <talk_answer link_index="n408_guild_board-2-a" mid="22"><![CDATA[<html>[委托完成] <FONT color=#086171>夏萝莉的恶梦</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$冒险家公会公告板$<BR>完成委托的冒险家，请在如下委托书上加盖完成图章。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n408_guild_board-2-a" image="" itemindex="">
+      <talk_answer link_index="n408_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$委托奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n408_guild_board-2-b" image="GQ_hunt_end.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$冒险家公会公告板$<BR>冒险家公会的委托已完成。<BR><BR><FONT color=#a82424>[冒险家公会协会]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,3135, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">31350,,,,</exe>
+         <exe type="huntmon" num="1" party="1" exe="5,6,7" onexe="">664</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">31350,,,,</exe>
+         <exe type="complete">3135</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n408_guild_board" sub="c">3</exelink>
+   <exelink qstep="accepting" npc="n408_guild_board" sub="d">0,1,4,2</exelink>
+   <exelink qstep="2" npc="n408_guild_board" sub="a">0</exelink>
+   <exelink qstep="2" npc="n408_guild_board" sub="b">1</exelink>
+   <journal_data recompense="31350" quest_title="[길드의뢰] 하로리의 악몽" chapterid="" quest_level="20" quest_mark_type="19" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_24.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>244,0,0</destination_pos>
+         <destination_mode>custom:241@1,242@1,243@1,244@3</destination_mode>
+         <statemark_npcid>408</statemark_npcid>
+         <statemark_type>20</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[消灭血腥死神]]></title>
+         <contents mid="43"><![CDATA[<html>去死亡盆地消灭血腥死神。<BR><BR><FONT color=#086171>堆满落叶的湖岸(死亡森林入口)</FONT><FONT color=#a82424>→ 死亡盆地</FONT><BR>
+<FONT color=#a82424></FONT> <BR>
+<FONT color=#7e12d2>※ 无法在深渊级难度下执行。</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[消灭死亡盆地中的血腥死神]]></destination>
+         <todo_msg mid="45"><![CDATA[新增了冒险家公会委托。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_guild_board.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>10,n408</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>408</statemark_npcid>
+         <statemark_type>21</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[向冒险家公告板报告委托完成]]></title>
+         <contents mid="47"><![CDATA[<html>向位于堆满落叶的湖岸死亡森林入口处的冒险家公会公告板报告委托完成。<BR><BR><FONT color=#086171>堆满落叶的湖岸</FONT><FONT color=#a82424>→ 冒险家公会公告板</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[向冒险家公告板报告委托完成]]></destination>
+         <todo_msg mid="49"><![CDATA[完成冒险家公会委托。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>20:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>3132</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

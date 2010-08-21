@@ -1,0 +1,459 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_496_dark_armor1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>496</qid>
+      <designer>손원호</designer>
+      <qlevel>29</qlevel>
+      <qdesc>세인트 헤이븐의 대장장이 앞을 지나가면, 유저가 특이한 갑옷을 입고 있다는 것을 눈치챈다. 꼬치꼬치 캐뭍는 벨린. 캐더락의 코린이 강철 피부를 완성했다는 사실에 경쟁의식을 느끼는데… 강철 피부 따위보다 훨씬 견고한, 그것은 어둠의 방패라고 이야기하는데. 어떤 재료로 갑옷을 만드는 것이 아니라, 어떤 기운을 모아 갑옷을 만드는 만큼 제작에 큰 어려움이 있다고 한다. 군말없이 그를 돕자. 
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>497</nextqid>
+      <nextqname>sq11_497_dark_armor2</nextqname>
+      <nextqnpc>n091_trader_bellin</nextqnpc>
+      <qkname mid="1"><![CDATA[[称号]「不死Lv3」黑暗盔甲Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-noquest" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$高级魔法师斯泰拉$<BR>和大胡子的大叔相比，我更喜欢小孩子。<BR>
+<FONT color=#7e12d2>(在铁匠柏林那里可以接受任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-a" mid="8"><![CDATA[<html>啊……你好。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$铁匠柏林$<BR>啊?有什么事吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-b" mid="10"><![CDATA[<html>（真是刻薄的人啊...）</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$铁匠柏林$<BR>看你就是菜鸟冒险家啊。我不想在你这种小毛孩身上浪费时间，赶紧在我面前消失吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-c" mid="12"><![CDATA[<html>什么啊?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$铁匠柏林$<BR>嗯? 等会，给我站住！ ... 那是什么?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-d" mid="14"><![CDATA[<html>这是从凯德拉得到的不死 Lv2。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$铁匠柏林$<BR>你这个家伙<FONT color=#a82424>穿在身上的</FONT>啊。像个羽毛…是在保护着你嘛。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-e" mid="16"><![CDATA[<html>凯德拉的铁匠考林...</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$铁匠柏林$<BR>啊... 像你这种家伙居然还带着<FONT color=#a82424>不死的称号</FONT>！太阳从西边出来了吧... 是谁给你的?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-f" mid="18"><![CDATA[<html>我干嘛要说谎……</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$铁匠柏林$<BR><FONT color=#a82424>考林</FONT>，那个臭铁匠能做出这个来? <BR>
+骗我的话，绝饶不了你！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-g" mid="20"><![CDATA[<html>有什么问题吗?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$铁匠柏林$<BR>嗯，想必也是，嗯... 是考林做出来的是吧。难道他先于我达到了<FONT color=#a82424>不死 Lv2</FONT>啦... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-h" mid="22"><![CDATA[<html>黑暗盔甲?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$铁匠柏林$<BR>没有！会有什么问题啊……我怎么会输给考林呢？啊，我正在制作的<FONT color=#a82424>黑暗盔甲</FONT>才含有完美的不死的力量！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-i" mid="24"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$铁匠柏林$<BR>哼。只有愚蠢的铁匠才会认为用更好的材料做出更好的盔甲。但是为了领先于不死的称号就得颠覆以往的常识才行。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-j" mid="26"><![CDATA[<html>厉害，但这可能吗?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$铁匠柏林$<BR><FONT color=#a82424>黑暗盔甲</FONT>顾名思义，就是把黑暗包裹在身上，保护自身的盔甲。黑暗可以把自己隐藏在敌人之间，潜伏到更深的黑暗当中，从而可以躲避敌人的攻击。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-j" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-k" mid="28"><![CDATA[<html>获得黑暗的方法?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$铁匠柏林$<BR>啊? 你是在怀疑我吗！当然可以啦……但是……还到迄今为止谁也未曾做出黑暗盔甲出来。那是因为谁也找不到搜集黑暗的方法。但是我却找到了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-k" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-l" mid="30"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$铁匠柏林$<BR>嗯... 要在以往这么做我会有些不安，但还是让你帮我一下看看? 我就告诉你<FONT color=#a82424发>获得黑暗的方法</FONT>，你就替我办一件事情呗，如何? 而且如果这次的实验成功的话，我就给你进一步<FONT color=#a82424>强化的不死的称号</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-l" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-acceptted" mid="32"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$黑暗盔甲$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-a" mid="42"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$铁匠柏林$<BR>一般的黑暗得有一些光才能看到。但是我听说最近在<FONT color=#a82424>塌陷的矿山</FONT>出没的名为自以为是的黑烟的怪物可以喷出黑暗呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-a" image="QS_Default.dds" itemindex="300081">
+      <talk_answer link_index="n091_trader_bellin-1-b" mid="44"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$铁匠柏林$<BR>如果是像这种有形态的黑暗，肯定可以用 <FONT color=#a82424>葫芦瓶</FONT>装。这是专门从出了名的魔法师那里定做的，肯定不会漏的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-b" image="QW_29.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-c" mid="117"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$铁匠柏林$<BR>你去<FONT color=#a82424>塌陷的矿山</FONT>消灭自以为是的黑烟，并在这个葫芦瓶装满<FONT color=#a82424>黑烟</FONT>回来！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-c" image="" itemindex="">
+      <talk_question mid="118"><![CDATA[<html>$铁匠柏林$<BR>
+自以为是的黑烟位于塌陷的矿山的<FONT color=#a82424>隐藏的路</FONT>上，所以得选好路才是！ 我们决不能输给考林那个家伙，赶紧行动吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="">
+      <talk_question mid="112"><![CDATA[<html>$高级魔法师斯泰拉$<BR>最近我倒是觉得小孩比长胡子的大叔更好。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2" image="QW_29.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$铁匠柏林$<BR>不能输给考林啊... 还不快到<FONT color=#a82424>塌陷的矿山</FONT>啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$高级魔法师斯泰拉$<BR>真是个吝啬鬼，我还以为是铁匠都有点钱呢，拿走那么贵重的葫芦瓶居然才给我10银币?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3" image="QS_Default.dds" itemindex="300081">
+      <talk_answer link_index="n091_trader_bellin-3-a" mid="51"><![CDATA[<html>（交出葫芦瓶）</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$铁匠柏林$<BR>看你的样子，好像是发生了很激烈的战斗吧。<BR>
+对了，<FONT color=#a82424>黑烟</FONT>带回来了吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-b" mid="53"><![CDATA[<html>（等待）</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$铁匠柏林$<BR>嗯... 这就是黑暗吧。现在就把它装在桶里之后抽出黑暗，造出形态出来就行了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-c" mid="120"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$铁匠柏林$<BR>
+… … 嗯?<BR>
+<FONT color=#7e12d2>（摇晃葫芦瓶的柏林）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-d" mid="55"><![CDATA[<html>什么事啊?</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$铁匠柏林$<BR>……哎呀！<BR>这些不够！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-d" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-e" mid="57"><![CDATA[<html>我可是用葫芦瓶装满的啊。</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$铁匠柏林$<BR>什么事?就这点烟顶多能做巴掌大的盔甲而已！这还算是烟吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-e" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-f" mid="59"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$铁匠柏林$<BR>嗯...<FONT color=#a82424>斯泰拉</FONT>，这个骗子魔法师... 说这是什么都能装的葫芦瓶，结果连个老鼠尾巴也装不上。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-f" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-g" mid="61"><![CDATA[<html>应该去找谁呢……</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$铁匠柏林$<BR>赶紧过去拿<FONT color=#a82424>新的葫芦瓶</FONT>回来啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-g" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-h" mid="63"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$铁匠柏林$<BR>你这个笨蛋，这个神圣天堂还能有几个魔法师啊... 我是从<FONT color=#a82424>高级魔法师斯泰拉</FONT>那里买来的，赶紧到那换新的回来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-h" image="" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$铁匠柏林$<BR>考林... 走着瞧。我肯定会做出黑暗盔甲来的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$铁匠柏林$<BR>你该不是不知道<FONT color=#a82424>斯泰拉</FONT>在哪里的吧? 不就在那里吗！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-a" mid="68"><![CDATA[<html>我是受铁匠柏林的委托而来。</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$高级魔法师斯泰拉$<BR>呵呵，好可爱的朋友?有什么事吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-b" mid="70"><![CDATA[<html>说葫芦瓶是次品，让我来换的。</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$高级魔法师斯泰拉$<BR>哼。那个憨厚的固执老头会有什么事情呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-c" mid="72"><![CDATA[<html>那个…只能装一点...</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$高级魔法师斯泰拉$<BR>什么?真不像话…我给他的肯定是能装任何东西的葫芦瓶，还能有什么问题呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-d" mid="74"><![CDATA[<html>就是啊。</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$高级魔法师斯泰拉$<BR>那应该早跟我说啊?在做之前应该说清楚，要做<FONT color=#a82424>要装多少就能装多少的葫芦瓶</FONT>才是啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-e" mid="76"><![CDATA[<html>谢…谢谢。</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$高级魔法师斯泰拉$<BR>呼，我冲你撒气又有什么用……本来还得收额外的费用，但你长得比较讨人喜欢，我就破例免费帮你做吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-e" image="QS_Default.dds" itemindex="300081">
+      <talk_answer link_index="n045_soceress_master_stella-4-f" mid="78"><![CDATA[<html>谢谢。</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$高级魔法师斯泰拉$<BR><FONT color=#7e12d2>（缇娜默念咒文之后向葫芦瓶吹了一口气 ）</FONT><BR><BR>嗯，这样的话，肯定能装很多，再也不用担心了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-f" image="" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$高级魔法师斯泰拉$<BR>你去告诉那个老头。<BR>
+从下次开始，我不会再免费帮他做了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-5" image="" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$高级魔法师斯泰拉$<BR>
+最近我倒是觉得小孩比长胡子的大叔更好。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5-a" mid="84"><![CDATA[<html>下次就不会免费啦。</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$铁匠柏林$<BR>嗯，那个骗子给了你没有?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5-b" mid="86"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$铁匠柏林$<BR>那倒是，反正都是斤斤计较的狐狸精，这事儿要是完成的话，我再也不会和他们交易了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5-!next" mid="88"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">4960,,,,</exe>
+         <exe type="setquest">496</exe>
+         <exe type="talk" npc="n091_trader_bellin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5,6">849</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300079</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">300081</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300079</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300079</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4960,,,,</exe>
+         <exe type="complete">496</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="l">0</exelink>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n091_trader_bellin" sub="a">7</exelink>
+   <exelink qstep="1" npc="n091_trader_bellin" sub="b">0,8,2,1</exelink>
+   <exelink qstep="1" npc="n091_trader_bellin" sub="c" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="a">2</exelink>
+   <exelink qstep="3" npc="n091_trader_bellin" sub="b" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="c" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="d" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="e" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="f" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="g" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="h">0,1</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="f">0,1</exelink>
+   <exelink qstep="5" npc="n091_trader_bellin" sub="b">0</exelink>
+   <exelink qstep="5" npc="n091_trader_bellin" sub="!next">1</exelink>
+   <journal_data recompense="0:4960" quest_title="[칭호]「불사Lv3」어둠의 갑옷Ⅰ" chapterid="" quest_level="29" quest_mark_type="10" use_item_list="300079&#xD;&#xA;">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[与铁匠柏林对话]]></title>
+         <contents mid="91"><![CDATA[<html>铁匠柏林正在研究新的不死称号。与柏林对话吧。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→铁匠柏林</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[与铁匠柏林对话]]></destination>
+         <todo_msg mid="93"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_29.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>294,0,0</destination_pos>
+         <destination_mode>custom:291@1,292@1,293@1,294@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[装满黑烟]]></title>
+         <contents mid="95"><![CDATA[<html>柏林的研究需要用到黑烟。去塌陷的矿山消灭自以为是的黑烟，并搜集黑烟吧。<BR>
+<FONT color=#7e12d2>※ 自以为是的黑烟位于塌陷的矿山之隐藏的路。<BR><BR><FONT color=#086171>赫尔马岱港口（黑暗矿山入口）</FONT> <FONT color=#a82424>→ 塌陷的矿山</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[装满黑烟]]></destination>
+         <todo_msg mid="97"><![CDATA[到塌陷的矿山获取黑烟回来吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="99"><![CDATA[与铁匠柏林对话]]></title>
+         <contents mid="100"><![CDATA[<html>黑烟已经装进葫芦瓶内。回到神圣天堂把它交给铁匠柏林吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→铁匠柏林</FONT></html>]]></contents>
+         <destination mid="101"><![CDATA[与铁匠柏林对话]]></destination>
+         <todo_msg mid="102"><![CDATA[黑烟已经装进葫芦瓶内，回到铁匠柏林那里吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="104"><![CDATA[与高级魔法师斯泰拉对话]]></title>
+         <contents mid="105"><![CDATA[<html>由于葫芦瓶太小无法正常装满黑烟。到高级魔法师斯泰拉那里拿更大的葫芦瓶吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→高级魔法师斯泰拉</FONT></html>]]></contents>
+         <destination mid="106"><![CDATA[与高级魔法师斯泰拉对话]]></destination>
+         <todo_msg mid="107"><![CDATA[去找高级魔法师斯泰拉拿回更大的葫芦瓶吧。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="108"><![CDATA[与铁匠柏林对话]]></title>
+         <contents mid="109"><![CDATA[<html>依靠斯泰拉的魔法，获得了可以尽情装东西的葫芦瓶。回去向铁匠柏林报告吧。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 铁匠柏林</FONT></html>]]></contents>
+         <destination mid="110"><![CDATA[与铁匠柏林对话]]></destination>
+         <todo_msg mid="111"><![CDATA[回到铁匠柏林那里吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>29:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>289</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

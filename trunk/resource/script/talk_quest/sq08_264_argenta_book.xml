@@ -1,0 +1,528 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_264_argenta_book</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>264</qid>
+      <designer>김인정</designer>
+      <qlevel>18</qlevel>
+      <qdesc>300119(그 용은 멋있었다)
+아르젠타에게 퀘스트 습득
+1번맵 들어가면 데이비드 있음. 대화.
+3번 맵에서 보스문 앞에 데이비드. 대화
+보스맵에서 술통 깨뜨리면 실패 메시지.
+보스맵에서 술통 깨뜨리지 않고, 보스 클리어
+보스맵에서 데이비드와 대화.
+아르젠타에게 보고.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[阿尔杰塔的书籍]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>188</npcid>
+         <npcename>n188_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드(고요한 수도원 본당)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$牛皮冒险家戴维$<BR>看来是需要我的签名啊。倒是可以免费签一次，呵。<BR><FONT color=#7e12d2>（从灰色废墟的阿尔杰塔接受任务，方可继续进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-a" mid="7"><![CDATA[<html>没有啊...</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$阿尔杰塔$<BR>怎么使唤你呢?<BR>你，不是说过。我是你的恩人就<FONT color=#a82424>尽管使唤你</FONT>的吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-b" mid="9"><![CDATA[<html>我又不是什么奴隶...</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$阿尔杰塔$<BR>没错。<BR>
+你，难道还想耍我?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-b" image="QS_Default.dds" itemindex="300003">
+      <talk_answer link_index="n164_argenta_wounded-accepting-party1" mid="11"><![CDATA[<html>（刻有奴隶的证明）啊！</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$阿尔杰塔$<BR>你就是 <FONT color=#a82424>奴隶</FONT> 啊。<FONT color=#a82424>我的奴隶</FONT>。<BR>你倒是好好看看你脖子上戴的<FONT color=#a82424>项链</FONT>吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-c" image="" itemindex="">
+      <talk_question mid="109"><![CDATA[<html>$阿尔杰塔$<BR>知道就好。活的像个奴隶一点吧。别总想着带着人去，<FONT color=#a82424>独自</FONT>过去吧。<BR><FONT color=#7e12d2>（在组队状态下无法进行该任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-e" mid="13"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$阿尔杰塔$<BR>你这菜鸟。<BR>...啊，说到<FONT color=#a82424>菜鸟</FONT>倒让我想起来一个差事。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-e" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n164_argenta_wounded-accepting-f" mid="15"><![CDATA[<html>什么书啊?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$阿尔杰塔$<BR>拿出一本书来。 <FONT color=#a82424>不久前</FONT>在集市捡到一本<FONT color=#a82424>流行</FONT>的书，结果有个家伙看了之后反而发起火来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-f" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-g" mid="17"><![CDATA[<html>一般不会那样子吧。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$阿尔杰塔$<BR>那是叫做<FONT color=#a82424>威武之龙</FONT>的故事书。但是 <FONT color=#a82424>杰兰特</FONT> 那个家伙看过之后，说它是<FONT color=#a82424>充满误会与偏见的不健康的书籍</FONT>，并没有还给我就直接扔了. …不合自己的心意就要这样子吗?还真是奇怪的家伙啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-g" image="QW_22.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-h" mid="19"><![CDATA[<html>先去寂静修道院正殿看看吧。</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$阿尔杰塔$<BR>不过听说有谁在<FONT color=#a82424>寂静修道院正殿</FONT>见过一模一样的书? 我也对书中的内容感兴趣啊，你就去给我拿来好了，容易吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-acceptted" mid="21"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$阿尔杰塔的书籍$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$阿尔杰塔$<BR>杰兰特那个家伙扔掉我的书，我应该发火才对 ，就因为那个时候正好有急事，所以给耽误了。这次要是见到他一定不会饶他。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-1" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-1-david123" mid="24"><![CDATA[<html>（传出不祥的笑声）</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$牛皮冒险家戴维${action:Talk}<BR>哈，哈，哈。跟在<FONT color=#a82424>伟大的冒险家戴维</FONT>屁股后面的菜鸟！给我站住。<BR>哈，哈，哈。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-1-a" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-1-b" mid="26"><![CDATA[<html>这次是想找书...</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$牛皮冒险家戴维$<BR>今天又想拿什么<FONT color=#a82424>借口</FONT>来跟着我啊?<BR>恩…要是什么不错的借口的话，<FONT color=#a82424>专门</FONT>照顾你也无妨， 呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-1-b" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n188_slave_david-1-c" mid="28"><![CDATA[<html>难道你也是为书而来?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$牛皮冒险家戴维$<BR>啊?书... <FONT color=#a82424>书</FONT>是吗? <FONT color=#7e12d2>（戴维惊讶状）</FONT><BR>哦…原来如此... <FONT color=#a82424>书</FONT>啊...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-1-c" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-1-d" mid="30"><![CDATA[<html>…书怎么了。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$牛皮冒险家戴维$<BR><FONT color=#7e12d2>（戴维惊讶的躲避着我的视线）</FONT> 我…我可是击退邪恶的布洛怪的<FONT color=#a82424>正义的使者</FONT>啊！失礼于我这伟大冒险家的话就不要提了，呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-1-d" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$牛皮冒险家戴维$<BR>那么以后再见了！ 呵呵呵。<BR><FONT color=#7e12d2>（戴维猥琐的欲要躲藏）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-1-e" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-1-a" mid="106"><![CDATA[<html>（现在越发没劲了）</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$牛皮冒险家戴维$<BR>啊！ <FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>！ 怎么又追来了啊?！ 倒是挺佩服你的<FONT color=#a82424>韧劲</FONT>啊。<BR>呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-1-f" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-1-a" mid="108"><![CDATA[<html>（真是不想搭理）</html>]]></talk_answer>
+      <talk_question mid="107"><![CDATA[<html>$牛皮冒险家戴维$<BR>呵呵呵。 我可是<FONT color=#a82424>伟大的冒险家戴维</FONT>！！ 你是不是一直追到我这里来的啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-2" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$牛皮冒险家戴维$<BR>我不是为了躲藏！我是为了想让你看到随时可以消灭魔物的我<FONT color=#a82424>勇猛</FONT>的英姿啊！<BR><FONT color=#7e12d2>（戴维以快速果敢的动作藏了起来）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-3" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-3-a" mid="35"><![CDATA[<html>何时保护过我的啊...</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$牛皮冒险家戴维$<BR>还是安全的到了这里了！ <FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>！<BR>受到我的保护当然的啦， 呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-3-a" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-3-b" mid="37"><![CDATA[<html>提案?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$牛皮冒险家戴维${action:Talk}<BR>不要不好意思，我只是为了让你感谢我而做的而已，呵呵呵。<BR>不过，我倒是对你有个<FONT color=#a82424>提议</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-3-b" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-3-c" mid="39"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$牛皮冒险家戴维$<BR>那里边是被 <FONT color=#a82424>布洛怪</FONT> 的<FONT color=#a82424>头领</FONT>所占领的，你应该知道吧? 在那种非常危险的地方，我打算<FONT color=#7e12d2>果断的、</FONT> <FONT color=#382000>勇敢的、</FONT> <FONT color=#a94407>专业的</FONT>亲自为你 ，找到那本书！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-3-c" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-3-d" mid="41"><![CDATA[<html>…就是让我过去打是吧?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$牛皮冒险家戴维$<BR>不过你得<FONT color=#a82424>暂时</FONT>为我抵挡那些怪物才行！明白吗? 不会让你抵挡太久的，也就<FONT color=#a82424>暂时</FONT>，在我搜寻书的时候抵挡一下即可， 呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-3-d" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-3-e" mid="43"><![CDATA[<html>最后还是我去打嘛。</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$牛皮冒险家戴维$<BR>嗯！可别误会！我会亲自用酒桶搭起防御网之后，再去搜寻书籍 。 <FONT color=#a82424>你可要注意酒桶可不能被打碎</FONT>啊，嗯。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-3-e" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-3-f" mid="45"><![CDATA[<html>没有接收你的队伍啊?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$牛皮冒险家戴维$<BR><FONT color=#a82424>菜鸟</FONT>冒险家这样可够呛啊，难道你不知道<FONT color=#a82424>相辅相成</FONT>的道理吗?<BR>
+你要这样，以后肯定不会有接收你的队伍的，呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-3-f" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$牛皮冒险家戴维$<BR>麻，麻烦啊！反正！我再重复一次，<FONT color=#a82424>酒桶防御网不能被打碎</FONT> <FONT color=#a82424>千万要注意</FONT>啊！ 我会去找书籍的，呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-4" image="" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$牛皮冒险家戴维$<BR>在我找书的时候，<FONT color=#a82424>酒桶防御网不能被打碎</FONT> <FONT color=#a82424>千万要注意</FONT>啊！ 呵呵呵。 假如要是 <FONT color=#a82424>失败</FONT>了，都是因为你，<FONT color=#a82424>得重新再开始</FONT>！ 呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-5" image="QW_22.dds" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$牛皮冒险家戴维${action:Talk}<BR>居然还真打碎了 <FONT color=#a82424>酒桶</FONT>...！这次只能战略后退了！！ <FONT color=#a82424>要想拿到书籍，就得重新开始</FONT>！我也要回到地穴入口了， 呵。<BR><FONT color=#7e12d2>（任务失败，需重新开始。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-6" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n188_slave_david-6-a" mid="51"><![CDATA[<html>啊，原来在找书啊？</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$牛皮冒险家戴维$<BR>看到了吗！！ 我这<FONT color=#a82424>戴维</FONT>大人超强的本领！ 呵呵呵。<BR><FONT color=#7e12d2>（戴维有模有样的拿出一本书）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-6-a" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n188_slave_david-6-b" mid="53"><![CDATA[<html>（翻开书看看。）</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$牛皮冒险家戴维${action:Talk}<BR>呵呵呵。 如何?我这戴维大人的本事? 你可不要太感动哦~<BR>呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-6-b" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n188_slave_david-6-c" mid="55"><![CDATA[<html>（…似乎确实有点奇怪）</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$威武之龙$<BR>金黄色的龙开始吼叫。59211只魔物瞬间消失。金黄色的龙超强无比。<BR><FONT color=#7e12d2>（金黄色的龙把916834个世界化为了灰烬，并开始了与施展暴风三弦琴的数万古代人之间史诗般对决的一幕）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-6-c" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n188_slave_david-6-d" mid="57"><![CDATA[<html>欠人情的似乎是他吧...</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$牛皮冒险家戴维$<BR>尽管我不知道你为何想要拿走这些 <FONT color=#a82424>以前的故事书</FONT>…但是我至少是履行了我的<FONT color=#a82424>承诺</FONT>，明白吗，菜鸟?<BR>可别忘了你还欠我的<FONT color=#a82424>人情</FONT>哦！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-6-d" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-6-e" mid="59"><![CDATA[<html>那些书也不会是一起的吧?</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$牛皮冒险家戴维${action:Talk}<BR>嗯? 你小子似乎还对我有所<FONT color=#a82424>误会</FONT>，反正我<FONT color=#a82424>宽宏大量</FONT>就<FONT color=#a82424>饶恕</FONT>你这次， 呵呵呵。 那么我忙我的事去了！ <BR><FONT color=#7e12d2>（戴维往自己的怀里也塞了几本书）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-6-e" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$牛皮冒险家戴维$<BR>参，参考 <FONT color=#a82424>资料</FONT>而已！ 可不是 <FONT color=#a82424>为了想卖出去</FONT>！！！<BR><FONT color=#7e12d2>（似乎那些书也是戴维的目标）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-7" image="" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$牛皮冒险家戴维$<BR>这些书只，只是参考 <FONT color=#a82424>资料</FONT>而已！ 绝对不是<FONT color=#a82424>为了想卖出去</FONT>的！！！<BR><FONT color=#7e12d2>（似乎那些书也是戴维的目标）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-a" mid="63"><![CDATA[<html>哎，不是啦，误会了。</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$阿尔杰塔$<BR>你是不是故意这么久才回来的啊?嗯?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-a" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n164_argenta_wounded-7-b" mid="65"><![CDATA[<html>（递交书籍。）</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$阿尔杰塔$<BR>...哼。因为是菜鸟没办法啊，反正，我说的那本<FONT color=#a82424>书</FONT>拿来了吗?<BR>连这点事都做不了，可别怪我对你不客气哦！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-b" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n164_argenta_wounded-7-c" mid="67"><![CDATA[<html>（50年前已经很久了好吧...）</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$阿尔杰塔$<BR>也就是<FONT color=#a82424>不久前</FONT>的书而已，怎么这么旧啊？奇怪。 <FONT color=#a82424>顶多就是50年前</FONT>的书呗。<BR><FONT color=#7e12d2>（阿尔杰塔翻开书本）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-c" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n164_argenta_wounded-7-d" mid="69"><![CDATA[<html>（内容确实有点奇怪）</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$阿尔杰塔$<BR>这是什么?不可能啊? 喂，这书本里的龙都是笨蛋吗?龙为何被黄金所诱骗?龙又为何喜欢吃小孩呢？奇怪啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-d" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n164_argenta_wounded-7-e" mid="71"><![CDATA[<html>(到底哪点像古代人啊...)</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$阿尔杰塔$<BR>还真是，幼稚的没谱啊。这个古代人的主人公，一点也~不像古代人啊，不是吗?真是的...<BR>
+<FONT color=#7e12d2>（阿尔杰塔嘟囔着继续读着书）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-e" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-f" mid="73"><![CDATA[<html>…嗯?</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$阿尔杰塔$<BR>啊~什么啊！都是些<FONT color=#a82424>胡说八道</FONT>的内容，就是<FONT color=#a82424>傻瓜</FONT>一样的 <FONT color=#a82424>小说</FONT>嘛？真没意思。这种烂东西还不给看，杰兰特这个家伙！！ …不过你也一样！ <FONT color=#086171>{user_nick}</FONT>！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-f" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n164_argenta_wounded-7-g" mid="75"><![CDATA[<html>（无言以对）</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$阿尔杰塔$<BR>干吗拿这种 <FONT color=#a82424>无聊的书</FONT>过来啊?<BR>
+白白浪费我的时间。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-g" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-h" mid="77"><![CDATA[<html>（获得奖励）</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-h" image="" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$阿尔杰塔$<BR>嗯，这事儿就到此为止了，把这本书扔了算了。不过我又开始饿了，等会再为我办一次<FONT color=#a82424>差事</FONT>啊。<FONT color=#a82424>肯定</FONT>会做的吧?<BR>
+<FONT color=#7e12d2>（19级以上方可接收下一阶段的任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">264</exe>
+         <exe type="recompense_view">,2641,2642,2643,2644</exe>
+         <exe type="talk" npc="n164_argenta_wounded">1</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n164_argenta_wounded">d</exe>
+         <exe type="talk" npc="n164_argenta_wounded">c</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 263 ) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 260 ) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="4" false="3">0</exe>
+         <exe type="conexe" true="4" false="5">1</exe>
+         <exe type="talk" npc="n188_slave_david">e</exe>
+         <exe type="talk" npc="n188_slave_david">f</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="addquestitem" num="1">300119</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300119</exe>
+         <exe type="complete">264</exe>
+         <exe type="recompense">,2641,2642,2643,2644</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="party1">3</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="h">1</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n188_slave_david" sub="david123">2</exelink>
+   <exelink qstep="1" npc="n188_slave_david" sub="b" />
+   <exelink qstep="1" npc="n188_slave_david" sub="c" />
+   <exelink qstep="1" npc="n188_slave_david" sub="d">0,1</exelink>
+   <exelink qstep="1" npc="n188_slave_david" sub="a" />
+   <exelink qstep="1" npc="n188_slave_david" sub="a" />
+   <exelink qstep="3" npc="n188_slave_david" sub="b" />
+   <exelink qstep="3" npc="n188_slave_david" sub="c" />
+   <exelink qstep="3" npc="n188_slave_david" sub="d" />
+   <exelink qstep="3" npc="n188_slave_david" sub="e" />
+   <exelink qstep="3" npc="n188_slave_david" sub="f">0,1</exelink>
+   <exelink qstep="6" npc="n188_slave_david" sub="b" />
+   <exelink qstep="6" npc="n188_slave_david" sub="c" />
+   <exelink qstep="6" npc="n188_slave_david" sub="d" />
+   <exelink qstep="6" npc="n188_slave_david" sub="e">0,1,2</exelink>
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="d" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="e" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="f" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="g">2</exelink>
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="h">0,1</exelink>
+   <journal_data recompense="1:2641,2:2642,3:2643,4:2644" quest_title="아르젠타의 독서" chapterid="" quest_level="18" quest_mark_type="10" use_item_list="300119">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_22.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>161,n188</destination_pos>
+         <destination_mode>custom:161@1</destination_mode>
+         <statemark_npcid>188</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[阿尔杰塔和书]]></title>
+         <contents mid="82"><![CDATA[<html><FONT color=#a82424>阿尔杰塔</FONT>好像想阅读很久以前有所耳闻的一本书。为了找到她突然想要的书，必须到<FONT color=#a82424>寂静修道院正殿</FONT>去。<BR>
+<FONT color=#7e12d2>(在组队状态下无法进行该任务)<BR></FONT><BR><FONT color=#086171>水晶谷 → 融解森林（寂静修道院正门）</FONT> <FONT color=#a82424>→ 寂静修道院正殿</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[（单人）探索寂静修道院正殿]]></destination>
+         <todo_msg mid="84"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_22.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>163,n188</destination_pos>
+         <destination_mode>custom:162@3,163@1</destination_mode>
+         <statemark_npcid>188</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[与戴维的遭遇]]></title>
+         <contents mid="86"><![CDATA[<html>碰见名叫<FONT color=#a82424>戴维</FONT>的奇怪的人。虽然<FONT color=#a82424>自称为冒险家</FONT>，但还是觉得很可疑。不过这里没有阿尔杰塔所要求的书籍，得向更深的地方探索。<BR>
+ <BR>
+<FONT color=#086171>融解森林（寂静修道院正门）</FONT> <FONT color=#a82424>→ 寂静修道院正殿</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[探索寂静修道院正殿]]></destination>
+         <todo_msg mid="88"><![CDATA[这里没有书，向更深的地方继续前进吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>163,n188</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>188</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[戴维的提案]]></title>
+         <contents mid="90"><![CDATA[<html><FONT color=#a82424>戴维</FONT>似乎有什么话要想说。兴许他了解阿尔杰塔所提及的书，和他聊聊看吧。<BR>
+ <BR>
+<FONT color=#086171>寂静修道院正殿</FONT> <FONT color=#a82424>→ 戴维</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[与戴维对话]]></destination>
+         <todo_msg mid="92"><![CDATA[与戴维对话吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_22.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>164,0,0</destination_pos>
+         <destination_mode>custom:164@3</destination_mode>
+         <statemark_npcid>188</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[消灭布洛怪头领]]></title>
+         <contents mid="94"><![CDATA[<html>虽不是本意，但还是接受了<FONT color=#a82424>戴维</FONT>的委托。 戴维搜寻书的时候，不能打碎他<FONT color=#a82424>周围的酒桶</FONT>并成功抵挡怪物们的攻击即可。话虽这么说，但在戴维不来帮忙的情况下，看来还得<FONT color=#a82424>消灭布洛怪头领和其他怪物</FONT>才行。<BR>
+ <BR>
+<FONT color=#086171>融解森林（寂静修道院正门）</FONT> <FONT color=#a82424>→ 寂静修道院正殿</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[消灭布洛怪卡雷拉]]></destination>
+         <todo_msg mid="96"><![CDATA[按照戴维的提案消灭布洛怪头领吧。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>164,n188</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>188</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="97"><![CDATA[戴维和书]]></title>
+         <contents mid="98"><![CDATA[<html>布洛怪头领已被消灭。与 <FONT color=#a82424>戴维</FONT>对话，看他是否按照约定找到了书。<BR>
+ <BR>
+<FONT color=#086171>寂静修道院正殿</FONT> <FONT color=#a82424>→ 戴维</FONT></html>]]></contents>
+         <destination mid="99"><![CDATA[与戴维对话]]></destination>
+         <todo_msg mid="100"><![CDATA[布洛怪头领已被消灭。与戴维对话吧。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist>300119</need_itemlist>
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="101"><![CDATA[破旧的书]]></title>
+         <contents mid="102"><![CDATA[<html>拿到了阿尔杰塔所提起的书。戴维自行拿走了几本貌似比较值钱的古书，我还是把它交给 <FONT color=#a82424>阿尔杰塔</FONT>吧。<BR>
+ <BR>
+<FONT color=#086171>灰色废墟</FONT> <FONT color=#a82424>→ 阿尔杰塔</FONT></html>]]></contents>
+         <destination mid="103"><![CDATA[与灰色废墟的阿尔杰塔对话]]></destination>
+         <todo_msg mid="104"><![CDATA[书已经找到。向灰色废墟的阿尔杰塔报告吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>18:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>263</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item>300003</have_symbol_item>
+   </condition_data>
+</quest>

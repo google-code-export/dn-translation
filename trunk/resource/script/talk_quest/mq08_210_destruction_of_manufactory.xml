@@ -1,0 +1,221 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_210_destruction_of_manufactory</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>210</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc>[퀘스트 개요]
+1. 아르젠타는 엘레나에게 모든 것을 자백했다는 말을 들으면 플레이어를 쓸모 없는 노예라고 구박한다. 그녀는 그 제조시설은 그대로 두면 곧 캐더락 전체에 홉고블린들이 날뛰게 될 거라면서 제조시설을 파괴하라고 명령한다. 그녀에게 엘레나와의 관계를 물으면 엘레나를 무시하는 발언을 하면서, 생물체를 변형시키거나 오염시키는 것이 엘레나의 특기란 정보도 준다.
+
+2. 습격자들의 매복지에서 제조시설 파괴.
+
+3. 캐더락으로 귀환 후, 잿빛폐허로 이동.
+
+4. 아르젠타에게 보고하면 아르젠타는 엘레나가 그 정도로 일을 허술하게 하진 않을 테니 다른 대비를 하라며, 데커드에게 가서도 엘레나의 움직임에 대한 정보가 있는지 알아보라고 함</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>211</nextqid>
+      <nextqname>mq08_211_red_army</nextqname>
+      <nextqnpc>n164_argenta_wounded</nextqnpc>
+      <qkname mid="1"><![CDATA[破坏制造工厂]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-a" mid="35"><![CDATA[<html>(讲述遭到胁迫时的情况)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$阿尔杰塔$<BR>哼……那个女人是怎么胁迫你的？你该不会都告诉她了吧？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-a" image="QM_Ogre_white.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-b" mid="37"><![CDATA[<html>但是，我真的……差点死了</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$阿尔杰塔$<BR>嗯？连被食人魔攻击的事情你都和她说？！你有毛病吧？那个女人以前就这样，一发脾气就到处惹事生非！哼，但是她为什么会到这里来呢？该不会是在跟踪我吧……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-c" mid="39"><![CDATA[<html>你们俩认识吗？</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$阿尔杰塔$<BR>哼！要是我的话，她根本不可能动我一根汗毛！算了，和你说是对牛弹琴！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-c" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-d" mid="41"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$阿尔杰塔$<BR>埃雷娜？之前她带着你看到的那些小妖精准备出来惹事，被我狠狠教训了一顿。还不到20年，她就又出来捣乱了……这次她好像想对小妖精进行变形，再施展一番拳脚。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-d" image="QP_hobgoblin_maker.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-e" mid="47"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$阿尔杰塔$<BR>不快点把制造设施破坏掉的话，整个凯德拉就要变成小精灵的天下了！你是在袭击者埋伏点见到的？必须尽快赶到那里，把<FONT color=#a82424>制造设施破坏掉</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-e" image="" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$阿尔杰塔$<BR>干嘛？还不快去？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2" image="QW_18.dds" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$阿尔杰塔$<BR>你是在<FONT color=#a82424>袭击者埋伏点</FONT>看到她的吧？不知道她来这里干什么……别磨蹭，快去把制造设施破坏掉！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-a" mid="51"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-a" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-!next" mid="54"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$阿尔杰塔$<BR>辛苦了。<FONT color=#a82424>埃雷娜</FONT>拥有<FONT color=#a82424>让生物变成各种形态，或者对生物进行污染</FONT>的能力。制造设施虽然已经破坏掉了，不过既然知道她在这附近，我就得好好教训教训她。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">210</exe>
+         <exe type="recompense">,2101,2102,2103,2104</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="d" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="e">0,1</exelink>
+   <exelink qstep="3" npc="n164_argenta_wounded">1</exelink>
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="a">0</exelink>
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="!next" />
+   <journal_data recompense="1:2101,2:2102,3:2103,4:2104" quest_title="제조공장 파괴" chapterid="3" quest_level="14" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="22"><![CDATA[向阿尔杰塔报告]]></title>
+         <contents mid="23"><![CDATA[<html>必须把在受到胁迫和劫持的过程中看到和听到的告诉阿尔杰塔。<BR>
+ <BR>
+<FONT color=#086171>灰色废墟</FONT> <FONT color=#a82424>→ 阿尔杰塔</FONT></html>]]></contents>
+         <destination mid="24"><![CDATA[向阿尔杰塔报告]]></destination>
+         <todo_msg mid="25"><![CDATA[请和阿尔杰塔对话。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QP_hobgoblin_maker.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>139,1782.59,-497.14</destination_pos>
+         <destination_mode>custom:136@1,137@1,138@1,139@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[去袭击者埋伏点破坏小精灵制造工厂]]></title>
+         <contents mid="27"><![CDATA[<html>去<FONT color=#a82424>袭击者埋伏点</FONT>击退魔物，破坏<FONT color=#a82424>小精灵</FONT><FONT color=#a82424>制造工厂</FONT>。<BR><BR><FONT color=#086171>水晶谷(袭击者巢穴入口)</FONT> <FONT color=#a82424>→ 袭击者埋伏点</FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[去袭击者埋伏点破坏小精灵制造工厂]]></destination>
+         <todo_msg mid="29"><![CDATA[请到袭击者埋伏点去破坏小精灵制造工厂。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[回去向阿尔杰塔报告]]></title>
+         <contents mid="31"><![CDATA[<html>击退了魔物，破坏了制造工厂。向灰色废墟的<FONT color=#a82424>阿尔杰塔</FONT>报告情况。<BR>
+<FONT color=#086171> <BR>
+<FONT color=#086171>灰色废墟</FONT> <FONT color=#a82424>→ 阿尔杰塔</FONT><BR></FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[回去向阿尔杰塔报告]]></destination>
+         <todo_msg mid="33"><![CDATA[请回到灰色废墟，向阿尔杰塔报告。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>209</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

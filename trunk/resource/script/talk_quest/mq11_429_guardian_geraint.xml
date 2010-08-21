@@ -1,0 +1,293 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_429_guardian_geraint</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>429</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc>1. (주교에게 퀘스트 받음) 제레인트와 대화
+2. 솔로로, 해적들의 동굴로 감.
+클리어 후 이벤트 전투맵으로 이동.
+3. 씨드래곤과 잠시 전투한 후, 컷신을 보고 나서 제레인트와 대화.
+4. 왕성 지하 비밀구역으로 와서 벨스커드와 대화.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>430</nextqid>
+      <nextqname>mq11_430_trace_apostle</nextqname>
+      <nextqnpc>n219_velskud</nextqnpc>
+      <qkname mid="1"><![CDATA[守护者杰兰特]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>부상당한 제레인트(왕성 비밀장소)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>219</npcid>
+         <npcename>n219_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$主教伊格纳西奥$<BR><FONT color=#a82424>杰兰特</FONT>应该不会回避自己的义务。<BR>赶紧走吧！在神圣天堂被残忍的魔物所攻占之前……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$国王卡西乌斯$<BR>这种时候，朕……朕到底该怎么办才好？<BR>
+呜呜呜呜……怎么总发生些这类的事情？呜呜。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$公爵斯图尔特$<BR>亲爱的<FONT color=#382000> {user_class}</FONT>……听说出现了新的魔物，请你与将军一起好好守护神圣天堂。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>嗯？有未知魔物出现？所以呢？它也许就是刚巧路过神圣天堂罢了吧。反正不是我召唤来的，跟我没关系。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$道格拉斯将军$<BR>魔物对我军造成了很多损失。许多忠诚的士兵都不得不集中精力恢复元气。作为国王的朋友，请你也为这个国家尽一份力量吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n219_velskud-1" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(看到了原本不可能在这里见到的人)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-party1" mid="13"><![CDATA[<html>(再对现在的状况进行说明)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$杰兰特$<BR>……我听到脚步声越来越近。果然和我预料的一样，出事了。<BR>这附近有一种力量正在不断靠近。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-b" mid="15"><![CDATA[<html>但它还是出现了。</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$杰兰特$<BR>我真是搞不明白。<BR>明明50多年前就已经击败了的家伙，明明已经是不可能从沉睡中醒来的家伙，怎么可能在这里重新出现？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-b" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-c" mid="17"><![CDATA[<html>有没有我能帮忙的事情？</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$杰兰特$<BR>是啊，所以很诡异。现在的状况我已经明白了。<BR>我要出发了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-c" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-e" mid="19"><![CDATA[<html>没问题！！</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$杰兰特$<BR>现在我的<FONT color=#a82424>视力</FONT>还不足以发挥我全部的战斗实力，虽然依靠其他的感知器官仍然能够战斗，不过为了以防万一，我希望你能<FONT color=#a82424>和我一起去</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-d" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$杰兰特$<BR>……太吵了。我听不清楚你的声音。先帮忙让周围安静下来。<BR><FONT color=#7e12d2>(在组队状态下无法执行的任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-e" image="QW_39.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$杰兰特$<BR>现在，有股强烈的力量在<FONT color=#a82424>海贼洞窟</FONT>附近波动。<BR>我们去那里。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$主教伊格纳西奥$<BR>赶紧去请求<FONT color=#a82424>杰兰特</FONT>拯救神圣天堂！<BR>这是他应尽的义务！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2" image="QW_39.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$杰兰特$<BR>不知因为什么原因，过去早就被消灭了的海龙又重新出现了。<BR>现在我能感到这股强大的力量来自<FONT color=#a82424>海贼洞窟</FONT>方向，我们应该去那里。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$国王卡西乌斯$<BR>怎么会发生这种事情……先知到底怎么样了……（自言自语）伟大的国王卡西乌斯大人……我到底该怎么做？（自言自语）……<BR><FONT color=#7e12d2>(必须去王城地下秘密场所确认萝丝是否安全)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$公爵斯图尔特$<BR>真可惜。到最后才发现，先知不过是个用不了的武器。<BR><FONT color=#7e12d2>(必须去王城地下秘密场所确认萝丝是否安全)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>哼，所以说就不能相信老浣熊的鬼话。你想想卡拉安大人不是警告过你很多遍了？！现在好了！王城这帮家伙们。<BR><FONT color=#7e12d2>(必须去王城地下秘密场所确认萝丝是否安全)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$道格拉斯将军$<BR>还没有斥候兵的报告吗？那里，刚才的命令到底怎么样了？！<BR><FONT color=#7e12d2>(必须去王城地下秘密场所确认萝丝是否安全)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n219_velskud-3" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n219_velskud-3-a" mid="57"><![CDATA[<html>咦……你怎么会在这里？！</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$贝思柯德$<BR>……哼。<BR>看来这个<FONT color=#a82424>巢穴的主人</FONT>到底是死了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n219_velskud-3-a" image="" itemindex="">
+      <talk_answer link_index="n219_velskud-3-b" mid="59"><![CDATA[<html>(原来因为杰兰特死了，巢穴才崩溃了……)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$贝思柯德$<BR>大门敞开着，我似乎没什么理由不能进来吧。<BR>多亏了某个大傻瓜，这个<FONT color=#a82424>巢穴</FONT>才能终于被毁掉了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n219_velskud-3-b" image="" itemindex="">
+      <talk_answer link_index="n219_velskud-3-!next" mid="61"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$主教伊格纳西奥$<BR>呵呵呵。辛苦你了，这段时间一直在替我跑腿。真是愚不可及的人啊……<BR><FONT color=#7e12d2>(虽然愤怒，现在却无法抓住他)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="talk" npc="n216_geraint_wounded">d</exe>
+         <exe type="talk" npc="n216_geraint_wounded">a</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4291,4292,4293,4294</exe>
+         <exe type="complete">429</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="party1">0</exelink>
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="e">3,4</exelink>
+   <exelink qstep="3" npc="n219_velskud" sub="b">0</exelink>
+   <exelink qstep="3" npc="n219_velskud" sub="!next">1</exelink>
+   <journal_data recompense="1:4291,2:4292,3:4293,4:4294" quest_title="수호자 제레인트" chapterid="5" quest_level="38" quest_mark_type="7" use_item_list="400070">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[请求救援]]></title>
+         <contents mid="44"><![CDATA[<html>要击退<FONT color=#a82424>萨芬特拉</FONT>，就不得不请求杰兰特的帮助。向正在养伤的杰兰特说明情况，请求他的帮助。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城(地下秘密地区)</FONT> <FONT color=#a82424>→ 杰兰特</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[和王城地下秘密地区的杰兰特对话]]></destination>
+         <todo_msg mid="46"><![CDATA[请去请求王城地下秘密地区的杰兰特帮忙。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_39.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>391,0,0</destination_pos>
+         <destination_mode>custom:391@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[守护者杰兰特]]></title>
+         <contents mid="49"><![CDATA[<html>和杰兰特一起去击退萨芬特拉。<BR><FONT color=#7e12d2></FONT><BR>
+<FONT color=#7e12d2>※在组队状态下无法执行的任务</FONT><BR><BR><FONT color=#086171>赫尔马岱港口(孤岛运输船)</FONT> <FONT color=#a82424>→ 海贼洞窟</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[(1人)在海贼洞窟里击退萨芬特拉]]></destination>
+         <todo_msg mid="51"><![CDATA[请进入海贼洞窟，击退萨芬特拉。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Rose.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13014,n219</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>219</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[巢穴的崩溃]]></title>
+         <contents mid="53"><![CDATA[<html>杰兰特消失了，他所创造的<FONT color=#a82424>巢穴</FONT>可能也要崩溃了。很担心萝丝的安危。先回到她原来所在的位置去保护她。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→王城地下秘密地区</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[了解王城地下秘密地区的状况]]></destination>
+         <todo_msg mid="55"><![CDATA[请去王城地下，确认先知的安危。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>428</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

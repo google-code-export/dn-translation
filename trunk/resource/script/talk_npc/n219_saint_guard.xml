@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n219_saint_guard</npcename>
+      <npcid>219</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[王城近卫兵]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$王城近卫兵$<BR>我正在执行重要的任务。胆小的冒险家们就闪一边去吧。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">mq11_417_guardian_geraint</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="enterquest">mq11_418_go_lotusmash</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">417</chk>
+         <chk type="hasquest">418</chk>
+      </conditions>
+   </talk>

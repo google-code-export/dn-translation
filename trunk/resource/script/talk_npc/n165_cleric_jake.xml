@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n165_cleric_jake</npcename>
+      <npcid>165</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[牧师杰克]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$牧师杰克$<BR>咳咳…呼呼…<BR>(杰克艰难地喘着气)</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq05_109_betrayal_of_the_wounds</exe>
+         <exe type="conexe" true="1" false="3">0</exe>
+         <exe type="conexe" true="4" false="0">1</exe>
+         <exe type="enterquest">mq05_119_prospect</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">109</chk>
+         <chk type="hasquest">119</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,393 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_417_deserted_david</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>417</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>418</nextqid>
+      <nextqname>mq11_418_curious_david</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[留下的人]]></qkname>
+      <qnpc>
+         <npcid>261</npcid>
+         <npcename>n261_slave_david</npcename>
+         <npckname>아르젠타의 노예 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>287</npcid>
+         <npcename>n287_blackdragons_wing</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-1" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$戴维$<BR>羡慕我戴维大人的人，世界上多的是！<BR>你只不过是其中的一个！哈哈哈。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="8"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$主教伊格纳西奥${action:Talk}<BR>是有关<FONT color=#a82424>黑龙</FONT>的事情。虽然这里有金龙的保护，但听说在之前的战斗中，两条龙打得难分上下。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="83"><![CDATA[<html>杰兰特也这么说。</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$主教伊格纳西奥$<BR>
+虽然<FONT color=#a82424>黑龙</FONT>折断了翅膀，坠下了悬崖，但应该不会就这样死去。可能是我太多虑了……不过我觉得他可能还没死，也许正躲在什么地方治疗伤势……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QM_black_Dragon.dds" itemindex="w">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="10"><![CDATA[<html>明白了。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$主教伊格纳西奥$<BR>
+哈哈……是吗？嗯，要是<FONT color=#a82424>黑龙</FONT>再次出现，那就遭了……我们不能这样坐以待毙。<BR>
+必须找到黑龙的下落，看看他到底藏在什么地方。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="QW_40.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$主教伊格纳西奥$<BR>我想派你去<FONT color=#a82424>黑暗</FONT><FONT color=#a82424>大君主之塔</FONT>侦察。<BR>你到最中心去确认一下，看看有没有什么奇怪的征兆。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-1" image="" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(被邪恶力量所围绕的黑色翅膀碎片。</FONT><BR>
+<FONT color=#7e12d2>周围散布着血迹一样的东西)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_40.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$主教伊格纳西奥${action:Talk}<BR>我想派你去<FONT color=#a82424>黑暗大君主之塔</FONT>侦察。我担心黑龙会不会躲在那里。<BR>你到那里的中心去确认一下，看看有没有什么奇怪的征兆。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-a" mid="16"><![CDATA[<html>嗯……？你怎么在这里？</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$戴维${action:Stand01}<BR>我不是在等你。不过既然好不容易遇到了，我想和你说说话！<BR>哈哈哈，你应该感到荣幸～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-a" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-b" mid="18"><![CDATA[<html>阿尔杰塔已经走了，你怎么还在这里？</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$戴维$<BR>为什么会在这里？你这不是明知故问吗？哈哈哈。<BR>
+你该不会忘了我是谁了吧！我是<FONT color=#a82424>阿尔杰塔</FONT>大人唯一的奴隶！永远的同伴！<BR>
+<FONT color=#a82424>戴维</FONT>大人是也！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-c" mid="20"><![CDATA[<html>(好像受到了很大的打击)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$戴维$<BR>什……什么？阿尔杰塔大人走了？<BR>嗯？<FONT color=#382000>{user_nick}</FONT>！你在说什么啊？<FONT color=#a82424>阿尔杰塔</FONT>大人走了？！她走了？！？！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-d" mid="23"><![CDATA[<html>是动作太慢了吧？</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$戴维$<BR>我接到了<FONT color=#a82424>阿尔杰塔</FONT>大人的指示出来办事，暂时在这里休息～休息一下而已～没想到阿尔杰塔大人却抛下我走了……怎么会这样……！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-e" mid="25"><![CDATA[<html>听说去了莲花沼泽。</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$戴维$<BR>咕嘟！<FONT color=#7e12d2>(戴维装作漠不关心的样子)</FONT><BR>
+我……我来问你。<FONT color=#a82424>阿尔杰塔</FONT>大人去哪里了？<BR>当……当然，我都知道！虽然我知道，但是……咳！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-e" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-f" mid="30"><![CDATA[<html>事情做完了吗？</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$戴维$<BR>这么说，现在还不算太晚！！马上去赫尔马岱港口坐船到<FONT color=#a82424>莲花沼泽</FONT>去的话，一定还能见到她。哈。<BR>
+请稍等一下！阿尔杰塔大人！<BR>
+我是戴维～！<FONT color=#7e12d2>(大声地喊)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-f" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-g" mid="32"><![CDATA[<html>我怎么了？</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$戴维${action:Stand01}<BR>呃！！……嗯……这……这可怎么办呢……<BR>
+<FONT color=#7e12d2>(戴维忐忑不安)</FONT><BR>这，这全都是因为你！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-g" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-h" mid="34"><![CDATA[<html>……(别去理他)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$戴维$<BR>你是装不知道吗？因为你没有帮我，所以<FONT color=#a82424>阿尔杰塔</FONT>大人……我<FONT color=#a94407>美丽</FONT><FONT color=#086171>可爱</FONT><FONT color=#7e12d2>优雅</FONT>的阿尔杰塔大人！！<BR>
+最终抛弃了我，一个人孤独地离开了。<BR>
+你这个冷酷的家伙！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-h" image="QW_40.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$戴维${action:Stand01}<BR>总之你得帮帮我！明白了吗？你现在好像有急事。等你做完之后，一定要回到这里来！一定！！<BR>……我们说好了！<FONT color=#7e12d2>(焦急地喊道)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-4" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$戴维$<BR>怎么去了这么长时间？<BR>
+我不是让你办完事情之后快点来找我的吗！<BR>现在可怜的<FONT color=#a82424>阿尔杰塔</FONT>大人一定正在哭着等我！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-4" image="" itemindex="">
+      <talk_answer link_index="n287_blackdragons_wing-4-a" mid="73"><![CDATA[<html>(查看)</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(被邪恶力量所围绕的黑色翅膀碎片。</FONT><BR><FONT color=#7e12d2>周围散布着血迹一样的东西)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-4-a" image="" itemindex="">
+      <talk_question mid="74"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(是黑龙折断的翅膀。好像是在和金龙的战斗中掉在这里的。周围只能看到一些血迹，没有看到翅膀的主人)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-5" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$戴维$<BR>怎么去了这么长时间？快去把手上的事情做完，然后回来找我！！<BR>现在可怜的<FONT color=#a82424>阿尔杰塔</FONT>大人一定正在哭着等我！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-a" mid="40"><![CDATA[<html>找到了黑龙折断的翅膀。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$主教伊格纳西奥$<BR>回来啦。发现<FONT color=#a82424>黑龙</FONT>的痕迹了吗？<BR>你去了之后，我一直都很担心……<BR>
+我一直都在为你祈祷。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-a" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-b" mid="76"><![CDATA[<html>是的，但没有看见黑龙。</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$主教伊格纳西奥$<BR><FONT color=#a82424>黑龙的翅膀</FONT>……吗？<BR>掉在塔的附近吗……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-b" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-c" mid="42"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$主教伊格纳西奥${action:Talk}<BR>是吗……？<BR>如果能发现尸体的话，就能放心了。不过这不太可能，嗯……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-c" image="QS_Default.dds" itemindex="300022">
+      <talk_answer link_index="n039_bishop_ignasio-5-d" mid="44"><![CDATA[<html>啊……这是……？</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$主教伊格纳西奥$<BR>啊，对了，这个<FONT color=#a82424>吊坠</FONT>是你的东西吗？<BR>
+<FONT color=#7e12d2>(主教拿出了什么东西)</FONT><BR>你出发之后，它就掉在附近的地上。侍女们把它交给了我。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-d" image="QS_Default.dds" itemindex="300022">
+      <talk_answer link_index="n039_bishop_ignasio-5-e" mid="46"><![CDATA[<html>谢谢。 (什么时候掉了呢……？)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$主教伊格纳西奥$<BR>我觉得它应该是你给我看过的<FONT color=#a82424>杰兰特的吊坠</FONT>。这么重要的东西，应该好好保管才对。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-e" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-!next" mid="48"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-5" image="" itemindex="">
+      <talk_question mid="77"><![CDATA[<html>$黑龙的翅膀碎片$<BR><FONT color=#7e12d2>(黑龙的折断的翅膀。<BR>被黑色邪恶力量所围绕)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300022</exe>
+         <exe type="recompense">,4171,4172,4173,4174</exe>
+         <exe type="complete">417</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c">0,1</exelink>
+   <exelink qstep="3" npc="n261_slave_david" sub="b" />
+   <exelink qstep="3" npc="n261_slave_david" sub="c" />
+   <exelink qstep="3" npc="n261_slave_david" sub="d" />
+   <exelink qstep="3" npc="n261_slave_david" sub="e" />
+   <exelink qstep="3" npc="n261_slave_david" sub="f" />
+   <exelink qstep="3" npc="n261_slave_david" sub="g" />
+   <exelink qstep="3" npc="n261_slave_david" sub="h">0,1</exelink>
+   <exelink qstep="4" npc="n287_blackdragons_wing" sub="a">0,1</exelink>
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="e">1</exelink>
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="!next">0,2</exelink>
+   <journal_data recompense="1:4171,2:4172,3:4173,4:4174" quest_title="남겨진 사람" chapterid="5" quest_level="34" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[主教的担心]]></title>
+         <contents mid="51"><![CDATA[<html>主教伊格纳西奥好像还有话要和我说。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[和主教伊格纳西奥对话]]></destination>
+         <todo_msg mid="53"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_40.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13,n261</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[侦察命令]]></title>
+         <contents mid="55"><![CDATA[<html>主教伊格纳西奥说担心黑龙躲在什么地方。去对<FONT color=#a82424>黑暗大君主之塔</FONT>进行侦察。<BR><BR><FONT color=#086171>黑山山角(黑暗大君主的关卡)</FONT> <FONT color=#a82424>→ 黑暗大君主之塔</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[侦察黑暗大君主之塔]]></destination>
+         <todo_msg mid="57"><![CDATA[请对黑暗大君主之塔进行侦察。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13,n261</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>261</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[等在那里的男人]]></title>
+         <contents mid="68"><![CDATA[<html>在黑山山角遇到了正在看着这边的<FONT color=#a82424>戴维</FONT>。就那样走过去的话，他一定会跟过来，还是先和他说话吧。<BR><BR><FONT color=#086171>黑山山角(黑暗大君主的关卡)</FONT> <FONT color=#a82424>→ 戴维</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[和戴维对话]]></destination>
+         <todo_msg mid="70"><![CDATA[发现了戴维。请和他说话。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_40.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>403,n287</destination_pos>
+         <destination_mode>custom:401@1,402@1,403@1</destination_mode>
+         <statemark_npcid>287</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[必须先完成的事]]></title>
+         <contents mid="59"><![CDATA[<html>先对<FONT color=#a82424>黑暗大君主之塔</FONT>进行侦察。等事情完成之后再去见戴维。<BR>
+ <BR>
+<FONT color=#086171>黑山山角(黑暗大君主的关卡)</FONT> <FONT color=#a82424>→ 黑暗大君主之塔</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[侦察黑暗大君主之塔]]></destination>
+         <todo_msg mid="61"><![CDATA[请对黑暗大君主之塔进行侦察。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[你好]]></title>
+         <contents mid="63"><![CDATA[<html>侦察完成了。只发现了<FONT color=#a82424>黑龙的翅膀碎片</FONT>没能发现黑龙的本体。回去向<FONT color=#a82424>主教伊格纳西奥</FONT>报告。<BR><BR><FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[和主教伊格纳西奥对话]]></destination>
+         <todo_msg mid="65"><![CDATA[侦察完成。请回去向主教伊格纳西奥报告。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>416</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

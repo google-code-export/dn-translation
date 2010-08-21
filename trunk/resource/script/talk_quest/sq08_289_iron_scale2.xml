@@ -1,0 +1,269 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_289_iron_scale2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>289</qid>
+      <designer>손원호</designer>
+      <qlevel>11</qlevel>
+      <qdesc>단단한 하피 깃털로 제작하는 코린. 하지만 만든 갑옷은 금새 찢어지고 실험은 실패. 다시 고민에 빠지는 코린. 바람에 눕는 갈대를 떠올리며 이번엔 부드러운 깃털을 써보자고 제안한다. 다시 부드러운 깃털을 얻으러 탄식의 협곡으로 가자. 부드러운 하피 깃털로 피부와 같은 얇은 갑옷을 제작하는데 성공하는 코린. 그 답례로 주인공에게 입혀준다. 불사 Lv2 칭호 획득.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[称号]「不死Lv2」钢铁皮肤Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>25</npcid>
+         <npcename>n025_trader_corin</npcename>
+         <npckname>대장장이 코린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-a" mid="6"><![CDATA[<html>杂草?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$铁匠考林${action:Talk}<BR>哈啊。 你怎么可能了解铁匠们的心情呢？对不死称号的那种火热的心情……即使失败，仍能像<FONT color=#a82424>杂草</FONT>一样重新站起来……杂草……没错！杂草……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-b" mid="8"><![CDATA[<html>领悟到什么了吗?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$铁匠考林$<BR>是啊！ 杂草之所以不被强风所折腰，不是因为抵抗力强，而是可以随风起舞的缘故啊！ 嗯，就按照那个原理做做看吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-c" mid="10"><![CDATA[<html>那么这次就用柔软的鹰身人羽毛?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$铁匠考林$<BR>其实很简单。这次的失败肯定是因为是使用了坚硬的鹰身人羽毛。坚硬的鹰身人羽毛虽然很轻，但一碰到超强的冲击就很容易被击碎。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-d" mid="12"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$铁匠考林$<BR>嗯！看来你还蛮聪明的嘛。这次就不要坚硬的鹰身人羽毛了，而是只取一些<FONT color=#a82424>柔软的</FONT>回来吧。用它做肯定会成功的！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$钢铁皮肤 Ⅱ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1" image="QW_14.dds" itemindex="">
+      <talk_answer link_index="n025_trader_corin-1-a" mid="17"><![CDATA[<html>不要担心！</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$铁匠考林$<BR>和刚才一样，你去<FONT color=#a82424>叹息峡谷</FONT>消灭刀风泰迪斯。这次需要的是柔软的鹰身人羽毛。千万不要搞错啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-a" image="QS_Default.dds" itemindex="300078">
+      <talk_question mid="18"><![CDATA[<html>$铁匠考林$<BR>嗯... <FONT color=#a82424>柔软的鹰身人羽毛</FONT>应该肯定能行！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2" image="QW_14.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$铁匠考林$<BR>在那里磨蹭什么? 还不快到<FONT color=#a82424>叹息峡谷</FONT>获取<FONT color=#a82424>柔软的鹰身人羽毛</FONT>回来！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3" image="QS_Default.dds" itemindex="300078">
+      <talk_answer link_index="n025_trader_corin-3-a" mid="21"><![CDATA[<html>（递交柔软的鹰身人羽毛）</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$铁匠考林$<BR>挺快的嘛，赶紧拿来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-a" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-b" mid="23"><![CDATA[<html>别…别看我啊！</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$铁匠考林$<BR>果然……虽然很柔软，但是看上去却很坚韧，绝对不会断掉。加之羽毛本来就很轻……但是我还是得先做一下实验。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-b" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-c" mid="26"><![CDATA[<html>（逃跑算了...）</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$铁匠考林$<BR>嗯，稍等片刻。<BR>
+<BR><FONT color=#7e12d2>（做羽毛马甲的考林）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-c" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-d" mid="28"><![CDATA[<html>和刚才一模一样嘛！ 等…等会...</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$铁匠考林$<BR>嗯，就这样从后边…穿上去即可。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-d" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-e" mid="30"><![CDATA[<html>啊? （不疼）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$铁匠考林$<BR>噗！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-e" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-f" mid="32"><![CDATA[<html>不疼！还真不错啊?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$铁匠考林$<BR>如何?疼吗? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-f" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-g" mid="34"><![CDATA[<html>祝贺你！ </html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$铁匠考林$<BR>哦哦哦哦！ 终于…终于成功啦！像风一样轻盈，不会被刀剑刺穿的不死之盔甲！ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-g" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-h" mid="36"><![CDATA[<html>谢谢。</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$铁匠考林$<BR>哈哈。这都是亏得有你啊，收下它吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-h" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-i" mid="38"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-i" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-j" mid="40"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$铁匠考林$<BR>从此你的<FONT color=#a82424>不死称号晋升了一个阶段</FONT> ！ 今后要是到了新的城镇，到铁匠那里多多帮助他们的研究吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-j" image="" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$铁匠考林$<BR>终有一天当你完成不死称号的时候，也就不用再怕被龙咬了。我期待那一天早日到来， 哦哈！</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">2890,,,,</exe>
+         <exe type="setquest">289</exe>
+         <exe type="talk" npc="n025_trader_corin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>300078</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5,6,7,8">371</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5,6,7,8">372</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300078</exe>
+         <exe type="addquestitem" num="1">300078</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="1">300078</exe>
+         <exe type="recompense">2890,,,,</exe>
+         <exe type="complete">289</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n025_trader_corin" sub="a">0,1,2,3,4</exelink>
+   <exelink qstep="3" npc="n025_trader_corin" sub="b" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="c" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="d" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="e" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="f" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="g" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="h">1</exelink>
+   <exelink qstep="3" npc="n025_trader_corin" sub="i">0,2</exelink>
+   <exelink qstep="3" npc="n025_trader_corin" sub="j" />
+   <journal_data recompense="0:2890" quest_title="[칭호]「불사Lv2」강철 피부Ⅱ" chapterid="" quest_level="11" quest_mark_type="10" use_item_list="300078">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n25</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>25</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[与铁匠考林对话]]></title>
+         <contents mid="47"><![CDATA[<html>用坚硬的鹰身人羽毛无法制作考林所希望的盔甲。与戴维对话，了解一下是否需要其他材料。<BR>
+ <BR>
+<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 铁匠考林</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[与铁匠考林对话]]></destination>
+         <todo_msg mid="49"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_14.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>119,0,0</destination_pos>
+         <destination_mode>custom:116@1,117@1,118@1,119@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[获取柔软的鹰身人羽毛]]></title>
+         <contents mid="52"><![CDATA[<html>坚硬的鹰身人羽毛虽然失败，但如果是柔软的鹰身人羽毛就有可能会成功。到叹息峡谷消灭刀风泰迪斯并获取羽毛回来吧。<BR><BR><FONT color=#086171>水晶谷（叹息峡谷入口）</FONT> <FONT color=#a82424>→ 叹息峡谷</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[获取柔软的鹰身人羽毛]]></destination>
+         <todo_msg mid="54"><![CDATA[到叹息峡谷获取柔软的鹰身人羽毛吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n25</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>25</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[与铁匠考林对话]]></title>
+         <contents mid="57"><![CDATA[<html>消灭了刀风泰迪斯并得到了柔软的鹰身人羽毛。把它交给凯德拉关卡的铁匠考林吧。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 铁匠考林</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[与铁匠考林对话]]></destination>
+         <todo_msg mid="59"><![CDATA[获得了柔软的鹰身人羽毛。把它交给铁匠考林吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>11:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>288</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

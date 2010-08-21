@@ -1,0 +1,412 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq05_155_remember</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>155</qid>
+      <designer>곽노찬</designer>
+      <qlevel>8</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>156</nextqid>
+      <nextqname>sq05_156_path_of_jake</nextqname>
+      <nextqnpc>n013_cleric_tomas</nextqnpc>
+      <qkname mid="1"><![CDATA[记忆]]></qkname>
+      <qnpc>
+         <npcid>13</npcid>
+         <npcename>n013_cleric_tomas</npcename>
+         <npckname>클레릭 토마스 (마나리지 클레릭 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>159</npcid>
+         <npcename>n159_light_pole</npcename>
+         <npckname>빛 기둥_(ID는 빈공란)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>170</npcid>
+         <npcename>n170_cl_saintheaven</npcename>
+         <npckname>신전 기사단 클레릭(해빙의 숲/서브퀘)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>172</npcid>
+         <npcename>n172_cleric_tomas</npcename>
+         <npckname>클레릭 토마스(해빙의 숲)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>173</npcid>
+         <npcename>n173_cleric_jake</npcename>
+         <npckname>클레릭 제이크(해빙의 숲)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>174</npcid>
+         <npcename>n174_cleric_jake</npcename>
+         <npckname>용추종자 제이크(튜토리얼)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-a" mid="6"><![CDATA[<html>你有什么烦恼吗？</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$牧师托马斯$<BR>嗯……<BR><FONT color=#7e12d2>(托马斯在出神地想着什么)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-a" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-b" mid="8"><![CDATA[<html>杰克的问题？</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$牧师托马斯$<BR>是你啊？<BR>不是别的，我在想<FONT color=#a82424>杰克</FONT>的问题。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-b" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-c" mid="10"><![CDATA[<html>杰克的事情不是已经告一段落了吗？</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$牧师托马斯${action:Talk}<BR>我好像还是有点无法释然……<BR>虽然不知道到底什么地方让我无法释然。<BR>感觉好像遗漏了什么重要的东西。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-c" image="QW_ManaRidge.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-d" mid="12"><![CDATA[<html>从头开始调查吗？</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$牧师托马斯$<BR>话是那么说……我想我们还需要调查一下。<BR>
+必须从我们刚到<FONT color=#a82424>魔法山脊</FONT>的时候开始调查。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-d" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-e" mid="14"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$牧师托马斯$<BR>是的。对<FONT color=#a82424>杰克</FONT>的足迹进行追踪，应该可以找到一些线索……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-e" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-f" mid="58"><![CDATA[<html>告诉我应该怎么做。</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$牧师托马斯$<BR>知道整件事的只有我和你两个人。<BR>
+你和我，都不想<FONT color=#a82424>杰克</FONT>的事情被别人知道。虽然会有点麻烦，不过希望你能接受这个任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$杰克的行踪$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1" image="QW_BlizzardPlain.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$牧师托马斯${action:Talk}<BR>好的，你先从<FONT color=#a82424>融解森林</FONT>开始，沿着记忆一路调查。<BR>
+从<FONT color=#a82424>杰克</FONT>指使魔物，袭击<FONT color=#a82424>雷昂纳多</FONT>和<FONT color=#a82424>赛德瑞</FONT>的马车的时间开始，一点一点进行调查。<BR>
+<FONT color=#7e12d2>※ 在组队状态下无法执行。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n159_light_pole-1" image="" itemindex="">
+      <talk_answer link_index="n159_light_pole-1-a1" mid="20"><![CDATA[<html>(回忆过去)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$大地的记忆$<BR><FONT color=#7e12d2>(神殿骑士团到达魔法山脊后集结的地方)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n170_cl_saintheaven-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$神殿骑士团牧师$<BR>愿女神的恩宠与你同在……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n170_cl_saintheaven-1-a" image="QW_ManaRidge.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$神殿骑士团牧师$<BR>这就是<FONT color=#a82424>魔法山脊</FONT>啊。<BR>真是段漫长的旅程。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n170_cl_saintheaven-1-b" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$神殿骑士团牧师$<BR>必须把违背女神的意志的、邪恶的<FONT color=#a82424>龙之追随者</FONT>斩草除根。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n172_cleric_tomas-1" image="QN_Jake.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$牧师托马斯${action:Talk}<BR><FONT color=#419300>{user_nick}</FONT>，你和<FONT color=#a82424>杰克</FONT>最辛苦。<BR>多亏了你们，我们才能到达<FONT color=#a82424>魔法山脊</FONT>。哈哈～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n173_cleric_jake-1" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$牧师杰克${action:Talk}<BR>辛苦了。第一个任务你就做的这么出色。呵呵……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n174_cleric_jake-1" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$牧师杰克$<BR><FONT color=#7e12d2>(杰克正在向魔物们下达指示)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n172_cleric_tomas-2" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n172_cleric_tomas-2-a" mid="28"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$牧师托马斯${action:Talk}<BR>女神的仆人们啊，为了找出<FONT color=#a82424>龙之追随者</FONT>，你们和我一起度过了艰苦的旅程。本团长在此对你们表示衷心的感谢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n172_cleric_tomas-2-a" image="" itemindex="">
+      <talk_answer link_index="n172_cleric_tomas-2-b" mid="30"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$牧师托马斯$<BR>本团长也和诸位一样，很想一解漫长的旅途的疲劳。<BR>但是，请大家暂时先别放松下来。为了对<FONT color=#a82424>魔法山脊</FONT>附近地区进行调查，以便应对紧急状况，我们必须执行<FONT color=#a82424>侦察</FONT>任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n172_cleric_tomas-2-b" image="QW_FrostHill.dds" itemindex="">
+      <talk_answer link_index="n172_cleric_tomas-2-c" mid="62"><![CDATA[<html>告诉我应该怎么做。</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$牧师托马斯${action:Talk}<BR>我们将在<FONT color=#a82424>侦察</FONT>工作结束后，在<FONT color=#a82424>雪霜坡道</FONT>休息。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n172_cleric_tomas-2-c" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n172_cleric_tomas-3" mid="36"><![CDATA[<html>不，我也要参加侦察行动。</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$牧师托马斯$<BR>啊，<FONT color=#419300>{user_nick}</FONT>。<BR>从<FONT color=#a82424>神圣天堂大圣堂</FONT>开始，直到现在的漫长旅程中，你和<FONT color=#a82424>杰克</FONT>是最辛苦的。你先回<FONT color=#a82424>魔法山脊</FONT>休息去吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n173_cleric_jake-3" image="QW_ManaRidge.dds" itemindex="">
+      <talk_answer link_index="n173_cleric_jake-4" mid="39"><![CDATA[<html>我要和大家一起行动。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$牧师杰克$<BR>听明白<FONT color=#a82424>托马斯</FONT>团长的话了吧？<BR>从现在开始，我们要在<FONT color=#a82424>魔法山脊</FONT>附近<FONT color=#a82424>侦察</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n172_cleric_tomas-3" image="QN_Jake.dds" itemindex="">
+      <talk_question mid="98"><![CDATA[<html>$牧师托马斯$<BR>哈哈……没人会阻止你。<BR>好吧，你和<FONT color=#a82424>杰克</FONT>一起去魔法山脊附近进行侦察。<BR>
+注意别太勉强了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n174_cleric_jake-4" image="" itemindex="">
+      <talk_answer link_index="n174_cleric_jake-4-a" mid="44"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$牧师杰克$<BR>不久之后，护送<FONT color=#a82424>贤者之杖</FONT>的<FONT color=#a82424>牧师一行</FONT>就会从这里经过。<BR><FONT color=#7e12d2>(杰克向魔物下达指令)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n174_cleric_jake-4-a" image="" itemindex="">
+      <talk_answer link_index="n174_cleric_jake-5" mid="79"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$牧师杰克$<BR>你们在这里袭击护送队伍，吸引他们的注意，把抢到的<FONT color=#a82424>贤者之杖</FONT>送到<FONT color=#a82424>霜风峡谷</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n173_cleric_jake-4" image="QW_ManaRidge.dds" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$牧师杰克${action:Talk}<BR>我们分头行动，争取尽快完成<FONT color=#a82424>侦察</FONT>，回到<FONT color=#a82424>魔法山脊</FONT>。<BR>好了，诸位迅速前往各自负责的地区进行侦察！解散！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-5" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-5-a" mid="82"><![CDATA[<html>很有可能。</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$牧师托马斯$<BR>这可能只是我的猜测，从正常角度看，<FONT color=#a82424>杰克</FONT>从一开始就是为了得到运送到魔法山脊的<FONT color=#a82424>贤者之杖</FONT>。<BR>这么说，把杰克派到这里的人，难道和<FONT color=#a82424>龙之追随者</FONT>有关系？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-5-a" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-5-b" mid="84"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$牧师托马斯$<BR>呼……真想马上回到王城，除掉<FONT color=#a82424>教团</FONT>内部的<FONT color=#a82424>龙之追随者</FONT>……<BR><FONT color=#7e12d2>(托马斯摇了摇头)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-5-b" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-5-!next" mid="88"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n174_cleric_jake-5" image="" itemindex="">
+      <talk_question mid="81"><![CDATA[<html>$牧师杰克${action:Stand1}<BR>不允许有任何的失误。<BR>大家要尽自己的全力，不能辜负主君的期待。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">155</exe>
+         <exe type="recompense_view">1550,,,,</exe>
+         <exe type="talk" npc="n013_cleric_tomas">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>2. 해빙의 숲 퀘스트 이벤트 존으로 이동</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13004,1);</exe>
+         <exe type="random_coice" rand="10,10,10">4,5,6</exe>
+         <exe type="talk" npc="n170_cl_saintheaven">1</exe>
+         <exe type="talk" npc="n170_cl_saintheaven">a</exe>
+         <exe type="talk" npc="n170_cl_saintheaven">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>맵툴에서 4스텝을 체크해서 10여초간 딜레이 후, 마나리지 튜토리얼 존으로 이동시킨다.</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>맵툴에서 존 이동 시켜줌</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1550,,,,</exe>
+         <exe type="complete">155</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n013_cleric_tomas" sub="f">1</exelink>
+   <exelink qstep="accepting" npc="n013_cleric_tomas" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n159_light_pole" sub="a1">0,1,2</exelink>
+   <exelink qstep="1" npc="n170_cl_saintheaven">3</exelink>
+   <exelink qstep="2" npc="n172_cleric_tomas" sub="b" />
+   <exelink qstep="2" npc="n172_cleric_tomas" sub="c" />
+   <exelink qstep="2" npc="n172_cleric_tomas" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n173_cleric_jake" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n174_cleric_jake" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n013_cleric_tomas" sub="b">0</exelink>
+   <exelink qstep="5" npc="n013_cleric_tomas" sub="!next">1</exelink>
+   <journal_data recompense="0:1550" quest_title="기억" chapterid="" quest_level="8" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_BlizzardPlain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>7,-1848,257</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>159</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[在融解森林回想集结当时的情形]]></title>
+         <contents mid="65"><![CDATA[<html>去<FONT color=#a82424>融解森林</FONT>，从<FONT color=#a82424>神殿骑士团</FONT>到达魔法山脊的时间点开始回忆，追踪<FONT color=#a82424>杰克</FONT>的行踪。<BR>
+ <BR>
+<FONT color=#7e12d2>※ 在组队状态下无法执行。</FONT><BR><FONT color=#086171>融解森林</FONT> <FONT color=#a82424>→ 大地的记忆</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[移动到最初的集结地点融解森林，回想当时的情况]]></destination>
+         <todo_msg mid="67"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13004,-2231,266</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>172</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[去融解森林和牧师托马斯对话]]></title>
+         <contents mid="69"><![CDATA[<html>和率领<FONT color=#a82424>神殿骑士团</FONT>的团长<FONT color=#a82424>牧师托马斯</FONT>对话，听取他的指示。<BR>
+ <BR>
+<FONT color=#086171>融解森林</FONT> <FONT color=#a82424>→牧师托马斯</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[去融解森林和牧师托马斯对话]]></destination>
+         <todo_msg mid="71"><![CDATA[请和牧师托马斯对话。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13004,-2289,132</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>173</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[去融解森林和牧师杰克对话]]></title>
+         <contents mid="74"><![CDATA[<html>和<FONT color=#a82424>牧师杰克</FONT>对话，听取侦察任务的具体细节。<BR><BR><FONT color=#086171>融解森林</FONT> <FONT color=#a82424>→牧师杰克</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[去融解森林和牧师杰克对话]]></destination>
+         <todo_msg mid="76"><![CDATA[请和牧师杰克对话。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13003,2560,-4220</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>174</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[和魔法山脊附近的牧师杰克对话]]></title>
+         <contents mid="91"><![CDATA[<html>在赛德瑞遭到魔物袭击的魔法山脊附近追踪<FONT color=#a82424>牧师杰克</FONT>的行踪。<BR>
+ <BR>
+<FONT color=#086171>魔法山脊附近</FONT> <FONT color=#a82424>→牧师杰克</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[和魔法山脊附近的牧师杰克对话]]></destination>
+         <todo_msg mid="93"><![CDATA[去魔法山脊附近和牧师杰克对话。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[和牧师托马斯对话]]></title>
+         <contents mid="95"><![CDATA[<html>和牧师托马斯对话。<BR>
+ <BR>
+<FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→牧师托马斯</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[和牧师托马斯对话]]></destination>
+         <todo_msg mid="97"><![CDATA[请和牧师托马斯对话。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>8:-1</user_level>
+      <user_worldzone_level />
+      <user_class>4</user_class>
+      <prev_quest>109</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,352 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq01_051_nourishing_meal</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>51</qid>
+      <designer>김주연</designer>
+      <qlevel>2</qlevel>
+      <qdesc>300065(하운드의 먹이),300066(하운드 영양식)</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[猎犬的营养食品]]></qkname>
+      <qnpc>
+         <npcid>2</npcid>
+         <npcename>n002_trader_dorin</npcename>
+         <npckname>대장장이 도린 (프레리 무기상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>3</npcid>
+         <npcename>n003_trader_dolis</npcename>
+         <npckname>상인 도리스 (프레리 잡화상)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-noquest" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$商人多莉丝$<BR>你好，冒险家。找我有什么事吗？<BR><FONT color=#7e12d2>(必须从</FONT><FONT color=#a82424>铁匠道林</FONT><FONT color=#7e12d2>那里接受任务后才可以进行)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-a" mid="7"><![CDATA[<html>你有什么事吗？</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$铁匠道林$<BR>你现在有时间吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-b" mid="9"><![CDATA[<html>有，你说吧。</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$铁匠道林$<BR>啊，不是别的，我有件私事……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-b" image="QM_HoundNormal_2.dds" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-c" mid="11"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$铁匠道林$<BR>谢谢。几天前，我在杂货店的<FONT color=#a82424>商人多莉丝</FONT>那里买了一只<FONT color=#a82424>野生猎犬</FONT>。但回来才发现，这家伙连走路都走不动。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-c" image="QM_HoundNormal_2.dds" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-d" mid="13"><![CDATA[<html>是吗……</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$铁匠道林$<BR>据多莉丝说，这是在阴影森林捕获的<FONT color=#a82424>活蹦乱跳的野生猎犬</FONT>。这算什么嘛……我也是商人，商人说话也得有诚信才行嘛。我觉得好像被多莉丝骗了，但却没有证据。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-d" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-e" mid="15"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$铁匠道林$<BR>所以……你能帮我去<FONT color=#a82424>多莉丝</FONT>那里一趟，把这只路都走不动的猎犬<FONT color=#a82424>退掉</FONT>，或者<FONT color=#a82424>换</FONT>一只别的猎犬吗？我不能离开铁匠铺，所以想请你帮个忙。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$猎犬的营养食品$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$铁匠道林$<BR>那就拜托了。你把我的话转告<FONT color=#a82424>商人多莉丝</FONT>，让她<FONT color=#a82424>看着办</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-a" mid="20"><![CDATA[<html>道林说想退货或者换一只猎犬。</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$商人多莉丝${action:Talk}<BR><FONT color=#a82424>铁匠铺道林</FONT>购买的<FONT color=#a82424>猎犬</FONT>的状态不好吗？<BR>不可能啊。我们商店只出售<FONT color=#a82424>高品质</FONT>的<FONT color=#a82424>名牌商品</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-a" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-b" mid="22"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$商人多莉丝${action:Talk}<BR>啊！退货，换货！<BR>你不知道我们商店的规矩是<FONT color=#a82424>换货</FONT>、<FONT color=#a82424>退款</FONT>、<FONT color=#a82424>退货</FONT>、<FONT color=#a82424>赊账</FONT><FONT color=#a82424>一律谢绝</FONT>吗？不好意思，请转告道林，这是不可能的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-b" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-c" mid="24"><![CDATA[<html>(………………)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$商人多莉丝$<BR>你还在干什么？快点回去告诉他不行。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-c" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-d" mid="26"><![CDATA[<html>(………………………)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$商人多莉丝$<BR>喂……你听到我说话了吗？我让你快回去。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-d" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-e" mid="28"><![CDATA[<html>(躺在地上)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$商人多莉丝$<BR>喂，请别妨碍我做生意。你快回去吧～！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-e" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-f" mid="30"><![CDATA[<html>那你想怎么办呢？退钱吗？</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$商人多莉丝$<BR>呵！喂……喂！你……你在干什么！我知道了，你快站起来。好了！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-f" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-g" mid="32"><![CDATA[<html>(躺在地上)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$商人多莉丝${action:Talk}<BR>你还真是难缠……但是退款或换货肯定是不行的。<BR>这关系到<FONT color=#a82424>我10年从商经历</FONT>的<FONT color=#a82424>自尊心</FONT>。我不能为了这种事情而破坏自己的商道……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-g" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-h" mid="34"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$商人多莉丝$<BR>喂……喂！呼……你听我把话说完嘛！虽然不能退换货，但我会帮你想其他办法。我想<FONT color=#a82424>猎犬</FONT>走不动路的原因，可能是因为<FONT color=#a82424>思乡病</FONT>的缘故。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-h" image="QW_1.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-i" mid="36"><![CDATA[<html>……说到底还是要我来解决吗？</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$商人多莉丝${action:Talk}<BR>所以只要让它感受到<FONT color=#a82424>故乡的味道</FONT>，它就可以恢复往日的力气了。捕获那只猎犬的地方是在<FONT color=#a82424>阴影森林山麓</FONT>，请你去<FONT color=#a82424>阴影森林山麓</FONT>搜集一些猎犬们吃的食物。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-i" image="QW_1.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-2" mid="38"><![CDATA[<html>…知道了。</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$商人多莉丝$<BR>你在说什么啊？你搜集来的东西只是材料中的一种。我会用我的<FONT color=#a82424>秘方</FONT>，制作出可以让猎犬感觉到故乡的味道的<FONT color=#a82424>猎犬营养食品</FONT>。请快去搜集材料吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2" image="QW_1.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$商人多莉丝${action:Talk}<BR>请你去<FONT color=#a82424>阴影森林山麓</FONT>除掉<FONT color=#a82424>猎犬</FONT>，搜集猎犬的食物。<BR>我会在这里做好营养食品的制作准备。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-3" image="QS_Default.dds" itemindex="300065">
+      <talk_answer link_index="n003_trader_dolis-3-a" mid="41"><![CDATA[<html>给你。(拿出猎犬的食物)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$商人多莉丝$<BR>猎犬的食物拿回来了吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-3-a" image="QS_Default.dds" itemindex="300065">
+      <talk_answer link_index="n003_trader_dolis-3-b" mid="43"><![CDATA[<html>(多莉丝正在制作一种奇怪的化学物质……)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$商人多莉丝$<BR>辛苦了。把食物放进去……搅拌均匀……然后再这样炒熟……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-3-b" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n003_trader_dolis-4" mid="45"><![CDATA[<html>(拿到了一种奇怪的物质)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$商人多莉丝$<BR>好了，做好了。拿去给<FONT color=#a82424>铁匠铺道林</FONT>家的<FONT color=#a82424>猎犬</FONT>吃下去，它就会重新变得生龙活虎了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-4" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$商人多莉丝${action:Talk}<BR>好了，请把它交给<FONT color=#a82424>铁匠铺的道林</FONT>。<BR>这样我的信用就更高了。呵呵呵～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-4-a" mid="48"><![CDATA[<html>(把事情从头到尾说明一遍)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$铁匠道林$<BR>多莉丝怎么说？肯定会说绝对不能退货或换货吧……？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-a" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-4-b" mid="50"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$铁匠道林$<BR>果然不出我所料……不管怎样，你做得很不错。<BR>谢谢你帮我，这是给你的一点 <FONT color=#a82424>答谢</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-b" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-4-c" mid="52"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-c" image="QM_HoundNormal_2.dds" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$铁匠道林$<BR>谢谢。下次再见。<BR><FONT color=#7e12d2>(铁匠道林拿着猎犬营养食品向猎犬走去)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment xml:space="preserve">
+</comment>
+      <conditions />
+      <executions>
+         <exe type="setquest">51</exe>
+         <exe type="recompense_view">,511,512,512,512</exe>
+         <exe type="talk" npc="n002_trader_dorin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="">111</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">105</exe>
+         <exe type="huntitem" num="10" exe="7,5,6" onexe="">300065</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">300065</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300065</exe>
+         <exe type="addquestitem" num="1">300066</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,511,512,512,512</exe>
+         <exe type="delquestitem" num="-1">300066</exe>
+         <exe type="complete">51</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n002_trader_dorin" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n002_trader_dorin" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n003_trader_dolis" sub="b" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="c" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="d" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="e" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="f" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="g" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="h" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="i" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="2">1,2,3,4</exelink>
+   <exelink qstep="3" npc="n003_trader_dolis" sub="b" />
+   <exelink qstep="3" npc="n003_trader_dolis" sub="4">0,1,2,3</exelink>
+   <exelink qstep="4" npc="n002_trader_dorin" sub="b">0</exelink>
+   <exelink qstep="4" npc="n002_trader_dorin" sub="c">1,2</exelink>
+   <journal_data recompense="1:511,2:512" quest_title="하운드의 영양식" chapterid="" quest_level="2" quest_mark_type="10" use_item_list="300065,300066">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_Doris.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,755.95,1811.22</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>3</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>대장장이 도린</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>상인 도리스</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[多莉丝的固执]]></title>
+         <contents mid="55"><![CDATA[<html><FONT color=#a82424>铁匠道林</FONT>说他不久前在<FONT color=#a82424>商人多莉丝</FONT>那里购买的<FONT color=#a82424>猎犬</FONT>走不动路，让我去向多莉丝要求退款或换货。<BR>
+ <BR>
+<FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→ 商人多莉丝</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[和商人多莉丝对话]]></destination>
+         <todo_msg mid="57"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_1.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>52,0,0</destination_pos>
+         <destination_mode>custom:51@3,52@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>상인 도리스</start_npc>
+         <desc_location>그늘 숲 기슭</desc_location>
+         <step_action>사냥/수집</step_action>
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster>하운드</hunt_monster>
+         <hunt_monsterindex>103,105</hunt_monsterindex>
+         <collect_item>하운드 먹이 10개</collect_item>
+         <collect_itemindex>300065</collect_itemindex>
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[营养食品的材料]]></title>
+         <contents mid="59"><![CDATA[<html>商人多莉丝说铁匠道林购买的猎犬好像得了思乡病，说会为猎犬准备营养食品。<BR> 
+去<FONT color=#a82424>阴影森林山麓</FONT>捕捉<FONT color=#a82424>猎犬</FONT>，搜集猎犬的食物。<BR> 
+<BR> 
+<FONT color=#086171>阴影森林(阴影森林小径)</FONT> <FONT color=#a82424>→ 阴影森林山麓</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[去阴影森林山麓搜集猎犬的食物]]></destination>
+         <todo_msg mid="61"><![CDATA[请到阴影森林山麓去搜集猎犬的食物。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_Doris.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,755.95,1811.22</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>3</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>그늘 숲 기슭</get_location>
+         <start_npc />
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>상인 도리스</complete_npc>
+         <get_item>하운드의 영양식</get_item>
+         <get_itemindex>300066</get_itemindex>
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[猎犬的营养食品Ⅰ]]></title>
+         <contents mid="63"><![CDATA[<html>把在阴影森林山麓搜集到的猎犬食物交给<FONT color=#a82424>商人多莉丝</FONT>。<BR><BR><FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→ 商人多莉丝</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[和商人多莉丝对话]]></destination>
+         <todo_msg mid="65"><![CDATA[猎犬的食物搜集完成。回去见见商人多莉丝。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-962.33,49.29</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>2</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>상인 도리스</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>대장장이 도린</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[猎犬的营养食品Ⅱ]]></title>
+         <contents mid="67"><![CDATA[<html>把多莉丝制作的<FONT color=#a82424>猎犬营养食品</FONT>交给<FONT color=#a82424>铁匠道林</FONT>。<BR><BR><FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→ 铁匠道林</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[和铁匠道林对话]]></destination>
+         <todo_msg mid="69"><![CDATA[请把多莉丝制作的猎犬营养食品交给铁匠道林。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>2:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1:2</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

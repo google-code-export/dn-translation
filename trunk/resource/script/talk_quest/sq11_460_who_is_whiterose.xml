@@ -1,0 +1,539 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_460_who_is_whiterose</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>460</qid>
+      <designer>김인정</designer>
+      <qlevel>27</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[白玫瑰的身份]]></qkname>
+      <qnpc>
+         <npcid>133</npcid>
+         <npcename>n133_lena_duglars</npcename>
+         <npckname>레나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>64</npcid>
+         <npcename>n064_whilerose_lena</npcename>
+         <npckname>하얀 장미의 기사</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-noquest" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$白玫瑰骑士$<BR>干嘛？我和你没什么好说的，快走开。<BR><FONT color=#7e12d2>(在纹章学者斯塔西那里可以接受任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-noquest" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$公爵斯图尔特${action:Talk}<BR>呵……那个让人不快的罪犯的身份一定会大白于天下。我确信。<BR><FONT color=#7e12d2>(在纹章学者斯塔西那里可以接受任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-noquest" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$蕾娜小姐${action:Talk}<BR>遇到了非常麻烦的事情，我现在没时间和你对话。<BR><FONT color=#7e12d2>(在纹章学者斯塔西那里可以接受任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$将军道格拉斯${action:Talk}<BR>公爵斯图尔特的疑心病非常重。真是麻烦。<BR><FONT color=#7e12d2>(在纹章学者斯塔西那里可以接受任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-a" mid="10"><![CDATA[<html>(你能为我担心，我很感激，不过……)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$纹章学者斯塔西$<BR>因为那个叫<FONT color=#a82424>白玫瑰骑士</FONT>还是什么的罪犯给你送来了<FONT color=#a82424>恐吓信</FONT>，我一直非常担心。<BR>不过看到你安然无事，我就放心了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-a" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-b" mid="13"><![CDATA[<html>公爵斯图尔特吗？</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$纹章学者斯塔西$<BR>听说<FONT color=#a82424>公爵斯图尔特</FONT>在寻找怪盗的行踪，我想应该很快就会有结果。<BR>但是对普通人不构成危害的罪犯是罪犯吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-c" mid="16"><![CDATA[<html>(不知道是什么事情……)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$纹章学者斯塔西$<BR>是的。这次他好像找到了什么线索。<BR>刚才我听到精锐士兵回来之后向他报告。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-d" mid="18"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$白玫瑰的身份$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-d" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$纹章学者斯塔西${action:Talk}<BR>嗯？什么线索？<BR>嗯……这我也不知道。想知道的话，你可以直接去问问<FONT color=#a82424>公爵斯图尔特</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-a" mid="21"><![CDATA[<html>公爵斯图尔特吗？</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$纹章学者斯塔西$<BR>听说<FONT color=#a82424>公爵斯图尔特</FONT>在寻找怪盗的行踪，我想应该很快就会有结果。<BR>但是对普通人不构成危害的罪犯是罪犯吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-b" mid="24"><![CDATA[<html>(不知道是什么事情……)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$纹章学者斯塔西$<BR>是的。这次他好像找到了什么线索。<BR>刚才我听到精锐士兵回来之后向他报告。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-b" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$纹章学者斯塔西${action:Talk}<BR>我也不知道是什么证据。<BR>
+想知道的话，你可以直接去问问<FONT color=#a82424>斯图尔特公爵</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="">
+      <talk_question mid="126"><![CDATA[<html>$公爵斯图尔特$<BR>呵……那个让人不快的罪犯的身份一定会大白于天下。我确信。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_question mid="127"><![CDATA[<html>$将军道格拉斯$<BR><FONT color=#a82424>公爵斯图尔特</FONT>的疑心病非常重。<BR>我担心他会把我们家<FONT color=#a82424>蕾娜</FONT>抓走。呼……真是麻烦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1" image="" itemindex="">
+      <talk_question mid="128"><![CDATA[<html>$蕾娜小姐${action:Talk}<BR><FONT color=#a82424>公爵斯图尔特</FONT>正在怀疑我，暂时我不能和别人对话。<BR>以免引起不必要的误会。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-1" image="" itemindex="">
+      <talk_question mid="129"><![CDATA[<html>$白玫瑰骑士${action:Talk}<BR>现在我什么都不想说。<BR>你去一边说去吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$纹章学者斯塔西${action:Talk}<BR>嗯？什么证据？<BR>嗯……这我也不知道。想知道的话，你可以直接去问问<FONT color=#a82424>公爵斯图尔特</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$将军道格拉斯$<BR><FONT color=#a82424>公爵斯图尔特</FONT>的疑心病非常重。<BR>我担心他会把我们家<FONT color=#a82424>蕾娜</FONT>抓走。呼……真是麻烦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-2" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$蕾娜小姐${action:Talk}<BR><FONT color=#a82424>公爵斯图尔特</FONT>正在怀疑我，暂时我不能和别人对话。<BR>以免引起不必要的误会。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-2" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$白玫瑰骑士${action:Talk}<BR>现在我什么都不想说。<BR>你去一边说去吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-a" mid="33"><![CDATA[<html>(公爵摆出一副得意的样子)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$公爵斯图尔特$<BR>也许我们很快就能抓到那个<FONT color=#a82424>罪犯</FONT>了。<BR>你和这件事很有缘分，我就破例告诉你吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-b" mid="36"><![CDATA[<html>那块手帕是白玫瑰的东西吗？</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$公爵斯图尔特${action:Talk}<BR>呼……这次我们找到了一块贵族女性使用的<FONT color=#a82424>手帕</FONT>。<BR>就是在你受到怪盗白玫瑰胁迫的那个地方！！呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-b" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-c" mid="38"><![CDATA[<html>(公爵的脸上浮现了得意的微笑)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$公爵斯图尔特$<BR>没错。而且士兵们拿回来的手帕是<FONT color=#a82424>我认识的一位小姐</FONT>的东西。<BR>我偷偷观察了一下<FONT color=#a82424>手帕的主人</FONT>，她好像还不知道弄丢了手帕。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-c" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-d" mid="41"><![CDATA[<html>(我好像知道手帕的主人是谁了)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$公爵斯图尔特$<BR>呵呵，那个东西一定是到过那里的人留下的，所以手帕的主人非常可疑。<BR>她说之前从来没有去过那里，这样她就完全没有不在场证明了，呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-d" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-e" mid="43"><![CDATA[<html>什么？蕾娜小姐？</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$公爵斯图尔特$<BR>没想到让人头疼的罪犯，就是<FONT color=#a82424>将军道格拉斯的养女</FONT>。<BR>女人真是个可怕的东西，呵呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-e" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-f" mid="45"><![CDATA[<html>那……那条手帕是我的东西。</html>]]></talk_answer>
+      <talk_answer link_index="n041_duke_stwart-2-f" mid="46"><![CDATA[<html>不是蕾娜小姐的东西。</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$公爵斯图尔特$<BR>干嘛这么吃惊？<BR><FONT color=#7e12d2>(公爵看着这边。这样下去的话，他可能马上会逮捕蕾娜小姐)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-f" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-g" mid="49"><![CDATA[<html>手帕是我弄丢的。</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$公爵斯图尔特$<BR>你在说什么啊？<BR>
+<FONT color=#7e12d2>(公爵大声嚷嚷道)</FONT><BR>你倒是说说看。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-g" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-h" mid="51"><![CDATA[<html>是蕾娜小姐送给我的。</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$公爵斯图尔特$<BR>什么？！<BR>你怎么会有贵族小姐的东西呢？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-h" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-i" mid="53"><![CDATA[<html>是一块绣着玫瑰的手帕吧？大小差不多这么大。颜色是……</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$公爵斯图尔特$<BR>你怎么能信口雌黄呢……嗯嗯嗯……怎，怎么可能！<BR><FONT color=#7e12d2>(公爵非常惊慌失措)</FONT><BR>
+拿出证据！证据！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-i" image="QS_Default.dds" itemindex="300037">
+      <talk_answer link_index="n041_duke_stwart-2-j" mid="55"><![CDATA[<html>(公爵一脸不快地把手帕揉成了一团)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$公爵斯图尔特$<BR><FONT color=#7e12d2>(公爵一脸狼狈地拿出手帕来看。样子就跟我说的一样)<BR></FONT>该死……这个东西不是罪犯的，而是你的吗？有这么巧的事情！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-j" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-k" mid="57"><![CDATA[<html>(很失望的样子)对不起。</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$公爵斯图尔特$<BR>真让人不敢相信！呃……但是既然你这么说，看来暂时没办法逮捕<FONT color=#a82424>蕾娜</FONT>了。<BR>只能把她作为<FONT color=#a82424>嫌疑人</FONT>进行调查。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-k" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$公爵斯图尔特$<BR>
+算了。你退下吧！<BR>……我还向<FONT color=#a82424>道格拉斯将军</FONT>夸下了海口。这下全完了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$公爵斯图尔特$<BR>快退下吧！你别想和<FONT color=#a82424>蕾娜</FONT>串通。<BR>哼……我还向<FONT color=#a82424>将军道格拉斯</FONT>夸下了海口。没想到搞得这么狼狈。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$蕾娜小姐$<BR>……他们对我的怀疑还没有完全解开。<BR>如果不想引起误会，请你先去见见我父亲。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="62"><![CDATA[<html>(将军一点好像一点都不怀疑)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$将军道格拉斯$<BR>哦，听说你在<FONT color=#a82424>公爵斯图尔特</FONT>那里为我们蕾娜做了辩护！<BR>这才对嘛……蕾娜那样软弱的少女，怎么可能做出那么可怕的事情呢？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-b" mid="64"><![CDATA[<html>那样就好。</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$将军道格拉斯${action:Talk}<BR>我会让<FONT color=#a82424>蕾娜</FONT>在城里面小心一点的。<BR>虽然暂时还需要接受调查，但那种怀疑很快就会解开的，呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-b" image="QS_Default.dds" itemindex="300037">
+      <talk_answer link_index="n042_general_duglars-4" mid="67"><![CDATA[<html>(将军摇了摇头)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$将军道格拉斯$<BR>但是……不知道我们家<FONT color=#a82424>蕾娜</FONT>为什么要把手帕送给你。真是……<BR>蕾娜很少送东西给陌生人。这可真奇怪。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$将军道格拉斯$<BR>不管怎样，这次多谢你了。<BR><FONT color=#a82424>蕾娜</FONT>也会对你表示感谢的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-4" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-4-a" mid="70"><![CDATA[<html>什么意思啊？</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$蕾娜小姐${action:Talk}<BR>你能理解我一下吗？<BR><FONT color=#a82424>怪盗白玫瑰</FONT>可能会大声嚷嚷，但<FONT color=#a82424>贵妇人</FONT>不会。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-4-a" image="QW_28.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$蕾娜小姐$<BR>我是说我们呆在一起的话，公爵会怀疑我们。我没什么好和你说的。<BR>……但是如果你在公爵的士兵们<FONT color=#a82424>发现手帕的地方</FONT>见到怪盗的话，请帮我向她问好。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-5" image="QW_28.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$蕾娜小姐${action:Talk}<BR>如果你见到了<FONT color=#a82424>怪盗</FONT>，能帮我向她问好吗？<BR>
+如果你在公爵的士兵们捡到手帕的<FONT color=#a82424>黑暗大君主的领地</FONT>见到她的话。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-a" mid="74"><![CDATA[<html>果然是蕾娜小姐。</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$白玫瑰骑士${action:Talk}<BR>我来正式介绍一下。<BR>我的名字叫<FONT color=#a82424>蕾娜</FONT>。<BR>
+是<FONT color=#a82424>道格拉斯将军</FONT>的养女。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-a" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-b" mid="76"><![CDATA[<html>我不是想抓住你，只是想知道真相。</html>]]></talk_answer>
+      <talk_answer link_index="n064_whilerose_lena-5-c" mid="77"><![CDATA[<html>因为你说不会再劫持人质了。</html>]]></talk_answer>
+      <talk_answer link_index="n064_whilerose_lena-5-e" mid="78"><![CDATA[<html>我只是觉得我应该那么做。</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$白玫瑰骑士$<BR>你已经猜到了吧？真是讨厌的家伙。<BR>……我想问你一个问题。<BR>
+你为什么要帮我？你不是想抓住我吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-b" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-g" mid="80"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$白玫瑰骑士$<BR>哼……还挺像那么回事的。<BR>好吧，我把我知道的事情告诉你。<BR>
+关于那张<FONT color=#a82424>戒指里的纸条</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-c" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-d" mid="82"><![CDATA[<html>为什么会没有意义了呢？</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$白玫瑰骑士$<BR>哼，你还记得我说过的话啊。<BR>
+是的，我不想再继续追查并劫持龙之追随者了。<BR>因为那对我来说已经没有意义了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-d" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-g" mid="84"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$白玫瑰骑士$<BR>我的目的是为父母报仇，查明他们真正的死因。<BR>
+我终于找到了方法。那就是通过那张<FONT color=#a82424>戒指里的纸条</FONT>……好吧，我把我了解到的事情告诉你。你给我听好了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-e" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-f" mid="86"><![CDATA[<html>我不是这个意思……</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$白玫瑰骑士$<BR>干、干嘛？……奇怪的家伙。<BR>
+你是觉得我是个软弱的女孩子，所以看不起我吗？真可笑。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-f" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-g" mid="88"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$白玫瑰骑士$<BR>如果你觉得我很感激你，就大错特错了。<BR>……我就破例把我了解到的事情告诉你吧。<BR>
+关于那张<FONT color=#a82424>戒指里的纸条</FONT>的事情。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-g" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-h" mid="90"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$白玫瑰骑士$<BR>那张戒指里的纸条，是<FONT color=#a82424>龙之追随者</FONT>们的<FONT color=#a82424>名单</FONT>。上面用别名揭露了特定的时代和地位。要想知道上面记录的是哪些人，需要王城的人事名单。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-h" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-i" mid="92"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$白玫瑰骑士$<BR>然后在人事名单找到还活着的人，然后逐一进行追踪。通过这种方法……我终于知道了15年前杀害我父母的凶手。他们中的几个人已经离开了这里，还有几个人失踪了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-i" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-j" mid="94"><![CDATA[<html>你想从他们那里知道什么？</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$白玫瑰骑士$<BR>不过还有几个人还住在这里。<BR>
+他们拥有合法的职业，假装成普通的人类。<BR>我找到了龙之追随者之中想要收手的人，想要<FONT color=#a82424> 收买</FONT>他。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-j" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-k" mid="96"><![CDATA[<html>(她的眼睛燃烧着愤怒的火焰)</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$白玫瑰骑士$<BR>不是很清楚吗？我想知道的是<FONT color=#a82424>15年前那个</FONT><FONT color=#a82424>事件</FONT>的主谋……在龙之追随者中也有<FONT color=#a82424>干部</FONT>级的人存在。<BR>找到小兵对我来说没什么用。<BR>
+我想找到是谁下令杀死我的父母的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-k" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-l" mid="98"><![CDATA[<html>所以你才说没有必要继续劫持了？</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$白玫瑰骑士$<BR>他们为什么要杀害我的父母，<BR>
+我父母到底犯了什么罪，<BR>我一定要查清楚……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-l" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-m" mid="100"><![CDATA[<html>(好像对我还挺关心的)</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$白玫瑰骑士$<BR>是的，追踪什么都不知道的走卒是没有意义的。<BR>
+必须找到<FONT color=#a82424>龙之追随者</FONT>集团的<FONT color=#a82424>首领</FONT>才行。<BR>你不要再来管我的事情了……<BR>
+我不想再让你陷入危险……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-m" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-n" mid="102"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-n" image="" itemindex="">
+      <talk_question mid="103"><![CDATA[<html>$白玫瑰骑士${action:Talk}<BR>你虽然帮了我，但我不会因此<FONT color=#a82424>感谢</FONT>你的。<BR>不过总有一天，我会还清欠你的这份<FONT color=#a82424>人情</FONT>的。<BR>
+我保证……</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4601,4602,4603,4604</exe>
+         <exe type="setquest">460</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4601,4602,4603,4604</exe>
+         <exe type="complete">460</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="d">1,2,3</exelink>
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="c" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="d" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="e" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="f" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="f" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="g" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="h" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="i" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="j" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="k">0,1</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n133_lena_duglars" sub="a">0,1</exelink>
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="b" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="c" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="e" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="g" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="d" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="g" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="f" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="g" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="h" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="i" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="j" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="k" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="l" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="m">0</exelink>
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="n">1</exelink>
+   <journal_data recompense="1:4601,2:4602,3:4603,4:4604" quest_title="백장미의 정체" chapterid="" quest_level="27" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="106"><![CDATA[怪盗的行踪]]></title>
+         <contents mid="107"><![CDATA[<html>和纹章学者斯塔西谈论怪盗的事情。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 纹章学者斯塔西</FONT></html>]]></contents>
+         <destination mid="108"><![CDATA[和纹章学者斯塔西对话]]></destination>
+         <todo_msg mid="109"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="110"><![CDATA[致命的证据]]></title>
+         <contents mid="111"><![CDATA[<html>公爵斯图尔特说得到了和怪盗白玫瑰有关的证据。去和公爵斯图尔特对话吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 公爵斯图尔特</FONT></html>]]></contents>
+         <destination mid="112"><![CDATA[和公爵斯图尔特对话]]></destination>
+         <todo_msg mid="113"><![CDATA[请向公爵斯图尔特询问找到的证据到底是什么。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="114"><![CDATA[伪证]]></title>
+         <contents mid="115"><![CDATA[<html>蕾娜小姐是怪盗白玫瑰的证据就这样消失了。去见见将军道格拉斯和蕾娜小姐。<BR><BR><FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 将军道格拉斯</FONT></html>]]></contents>
+         <destination mid="116"><![CDATA[和将军道格拉斯对话]]></destination>
+         <todo_msg mid="117"><![CDATA[蕾娜的嫌疑被排除了。请和将军道格拉斯对话。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n133</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>133</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="118"><![CDATA[蕾娜小姐的手帕]]></title>
+         <contents mid="119"><![CDATA[<html>和蕾娜小姐本人谈论手帕的事情。<BR><BR><FONT color=#086171>神圣天堂王城</FONT> <FONT color=#086171>→ 蕾娜小姐</FONT></html>]]></contents>
+         <destination mid="120"><![CDATA[和蕾娜小姐对话]]></destination>
+         <todo_msg mid="121"><![CDATA[请和雷娜小姐谈论手帕的事情。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QW_28.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>283,n64</destination_pos>
+         <destination_mode>custom:281@1,282@1,283@1</destination_mode>
+         <statemark_npcid>64</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="122"><![CDATA[等待的人]]></title>
+         <contents mid="123"><![CDATA[<html>公爵的士兵们发现手帕的地方，是上次见到怪盗白玫瑰的地方。去那里看看吧。<BR>
+ <BR>
+<FONT color=#086171>黑山山角(黑暗大君主的关卡)</FONT> <FONT color=#a82424>→黑暗大君主的领地</FONT></html>]]></contents>
+         <destination mid="124"><![CDATA[探索黑暗大君主的领地]]></destination>
+         <todo_msg mid="125"><![CDATA[请到黑暗大君主的领地去见见某个人。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>27:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>459</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

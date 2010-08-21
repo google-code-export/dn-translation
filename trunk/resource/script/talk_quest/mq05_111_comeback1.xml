@@ -1,0 +1,242 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_111_comeback1</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>111</qid>
+      <designer>손원호</designer>
+      <qlevel>1</qlevel>
+      <qdesc>오랜 만에 마나리지로 돌아온 소서리스. 우연히 습격당한 마차를 구한다. 스승 신시아는 방탕한 소서리스에게 근신을 명하고 소서리스는 심심풀이로 세드릭의 부탁을 들어준다. 빼앗긴 상자를 되찾아 오지만 상자는 비어있고 허탕을 친다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>122</nextqid>
+      <nextqname>mq05_122_comeback2</nextqname>
+      <nextqnpc>n015_sorceress_tara</nextqnpc>
+      <qkname mid="1"><![CDATA[回来的话匣子Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라   (마나리지)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-noquest" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="123"><![CDATA[<html>$魔法师塔拉${action:Talk}<BR>迷路了吗？<BR>似乎是第一次到这里的吧，最好先去见见<FONT color=#a82424>辛西亚</FONT>大人吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-accepting" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-accepting-acceptted" mid="125"><![CDATA[<html>师傅，好久不见。</html>]]></talk_answer>
+      <talk_question mid="124"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR>这，这是谁啊?<BR>不是我看花眼了吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-a" mid="7"><![CDATA[<html>师傅，好久不见。</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR>这，这是谁啊?<BR>不是我看花眼了吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-b" mid="9"><![CDATA[<html>...啊哈哈。</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$高级魔法师辛西亚$<BR>这不就是被我使唤去做一件事情，便消失5年之久的那位弟子吗? 我听说你被什么海盗俘虏，在遥远的大海中的孤岛抓虾的消息呢...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-c" mid="11"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$高级魔法师辛西亚$<BR>现在还笑得出来！ <BR>忘却作为魔法师的使命，深陷赌博，你以为我不知道啊。而且也不是正大光明的回来，而是为了躲避债主逃到魔法山脊来啦，真丢脸啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-d" mid="13"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$高级魔法师辛西亚$<BR>哎...都怪我太溺爱你啊。就你那点魔法能力，我还一个劲儿的称赞你什么 <FONT color=#a82424>卡拉秋</FONT>大人后继有人啊，小天才啊，太溺爱你咯。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-d" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-e" mid="15"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$高级魔法师辛西亚$<BR>哼，听说牧师们有个很重要的东西被怪物们抢去了。别傻站在那里，赶紧去了解具体情况回来啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-e" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$高级魔法师辛西亚$<BR>
+详细的内容去听<FONT color=#a82424>塔拉</FONT>跟你细说。<BR>
+如果还像以前那样不守规矩的话，这次我可饶不了你，给我记住咯！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="121"><![CDATA[<html>$魔法师塔拉${action:Talk}<BR>迷路了吗?<BR>似乎是第一次到这里的吧，最好先去见见 <FONT color=#a82424>辛西亚</FONT>大人吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR>不赶紧到 <FONT color=#a82424>塔拉</FONT>那里还在磨蹭什么！ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="19"><![CDATA[<html>塔拉，我，是我！</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$魔法师塔拉${action:Talk}<BR>迷路了吗?<BR>不介意的话，让我来帮你吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-a" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-b" mid="21"><![CDATA[<html>好久不见。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$魔法师塔拉$<BR>天啊... <FONT color=#382000>{user_nick}</FONT>前辈?！<BR>真的是前辈啊?怎么回事?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-b" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-c" mid="23"><![CDATA[<html>嗯，那个是因为... </html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$魔法师塔拉$<BR>到底去了哪里，干了什么啊。<BR>见到
+<FONT color=#a82424>卡拉秋</FONT>大人了吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-c" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-d" mid="25"><![CDATA[<html>哦...哦哦... （我还没说什么呢...）</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$魔法师塔拉$<BR>嗯?！！ <FONT color=#a82424>卡拉秋</FONT>大人没见到，反而掉进神圣天堂赌场的泥坑还欠下<FONT color=#a82424>200亿Gold</FONT>的赌债?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-d" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-e" mid="27"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$魔法师塔拉$<BR>哎...照那样下去，真要被魔法师驱逐也说不准呢。难道你不知道 <FONT color=#a82424>辛西亚</FONT>大人是多么可怕的人物吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-e" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-f" mid="134"><![CDATA[<html>好的。</html>]]></talk_answer>
+      <talk_question mid="133"><![CDATA[<html>$魔法师塔拉$<BR>
+如果能顺利完成这次任务，辛西亚的火气说不定就会消一些了。请你打起精神，努力执行任务吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-f" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-g" mid="29"><![CDATA[<html>贤者的预言?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$魔法师塔拉$<BR>根据我的调查，前不久牧师们在运送途中丢失的物品可是与<FONT color=#a82424>贤者的预言</FONT>相关的非常重要的东西呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-g" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-h" mid="117"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$魔法师塔拉$<BR>是不是时间久的都忘记了啊? 很久以前伟大的贤者留下的最后一个预言。就是关于<FONT color=#a82424>世界的危机</FONT>相关的预言啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-h" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-i" mid="130"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="129"><![CDATA[<html>$魔法师塔拉$<BR>
+前辈的任务就是去确认牧师们到底丢了什么，还有我们该如何帮助他们才好。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-i" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-j" mid="132"><![CDATA[<html>嗯，谢谢了。</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$魔法师塔拉$<BR>
+先收下这个。以后冒险时会有帮助的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-j" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-!next" mid="120"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">111</exe>
+         <exe type="custom">npc_talk_index = "n012_sorceress_master_cynthia-1-a";</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1110,,,,</exe>
+         <exe type="complete">111</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n012_sorceress_master_cynthia" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="e">0,1</exelink>
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="c" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="d" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="e" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="f" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="g" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="h" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="i" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="j">0</exelink>
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="!next">1</exelink>
+   <journal_data recompense="0:1110" quest_title="돌아온 말썽꾼 Ⅰ" chapterid="1" quest_level="1" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="80"><![CDATA[向高级魔法师辛西亚报告]]></title>
+         <contents mid="81"><![CDATA[<html>与高级魔法师辛西亚对话。<BR><BR><FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→ 高级魔法师辛西亚</FONT></html>]]></contents>
+         <destination mid="82"><![CDATA[向高级魔法师辛西亚报告]]></destination>
+         <todo_msg mid="83"><![CDATA[与魔法师辛西亚对话吧。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n15</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>15</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[和魔法师塔拉对话]]></title>
+         <contents mid="85"><![CDATA[<html>久违了的魔法山脊显得有点混乱。找后辈魔法师塔拉对话。<BR><BR><FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→ 魔法师塔拉</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[和魔法师塔拉对话]]></destination>
+         <todo_msg mid="87"><![CDATA[请和魔法师塔拉对话]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>3</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,411 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq05_168_hound_watched</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>168</qid>
+      <designer>김인정</designer>
+      <qlevel>7</qlevel>
+      <qdesc>보린과 대화
+레오날드, 신시아, 타라와 대화
+산타운드와 대화
+보린과 대화</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[猎犬看着呢]]></qkname>
+      <qnpc>
+         <npcid>11</npcid>
+         <npcename>n011_priest_leonardo</npcename>
+         <npckname>상급 클레릭 레오날드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>16</npcid>
+         <npcename>n016_trader_borin</npcename>
+         <npckname>대장장이 보린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>193</npcid>
+         <npcename>n193_santaund</npcename>
+         <npckname>산타운드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-noquest" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$高级牧师雷昂纳多$<BR>愿在女神的庇护下重新回归和平...<BR><FONT color=#7e12d2>（接受铁匠宝林任务方可继续进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-noquest" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$高级魔法师辛西亚$<BR>没事还在这里晃荡什么?<BR><FONT color=#7e12d2>（接受铁匠宝林的任务方可继续进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-noquest" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$魔法师塔拉$<BR>今天有点冷啊，不是吗?<BR><FONT color=#7e12d2>（接受铁匠宝林的任务方可继续进行）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>（似乎不会在这种地方，可能是我的错觉吧）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-a" mid="10"><![CDATA[<html>（宝林一直胡说八道了2个多小时）</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$铁匠宝林$<BR>喂，喂！ <FONT color=#382000>{user_class} {user_nick}</FONT>，对，就是你。给我停下！赶紧的！<BR>…啊，长辈在叫你，干嘛不快跑过来呢?嗯?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-a" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-b" mid="12"><![CDATA[<html>没做。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$铁匠宝林$<BR>…说到哪来着? 我在梦中见到<FONT color=#a82424>猎犬</FONT>的事说了没有?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-c" mid="14"><![CDATA[<html>嗯…干嘛忽然说做梦的事啊...?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$铁匠宝林$<BR>那就让我说那个事情嘛，茫茫然的干什么呢? 就为了看长辈说破嘴吗... 所以说现在的年轻人啊，啧啧。我年轻的时候，还被称作<FONT color=#a82424>雪霜坡道的</FONT> <FONT color=#a82424>铁锤</FONT>了呢...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-c" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-d" mid="16"><![CDATA[<html>不会是因为饿着自己饲养的猎犬的吧?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$铁匠宝林$<BR>对，猎犬！其实， 最近我在梦中老梦见猎犬。每天晚上都能听得到<FONT color=#a82424>猎犬的悲鸣声</FONT>，所以总是无法入睡啊。这可真是...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-d" image="QM_HoundNormal_2.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-e" mid="18"><![CDATA[<html>嗯。为何会听得到那种声音呢?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$铁匠宝林$<BR>胡说什么！！ 即使我饿着，对<FONT color=#a82424>猎犬</FONT>我可是每天三顿餐餐不落的啊！你看看它们在那刨土的动作，哪看出来是饿了 ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-f" mid="20"><![CDATA[<html><FONT color=#382000>{user_class}</FONT>... 何时成为了妖怪专家啦?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$铁匠宝林$<BR>是不是我被猎犬妖怪盯上啦？嗯？你怎么看？你也作为一名<FONT color=#382000>{user_class}</FONT>！ 什么专家应该有什么自己的见解吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-g" mid="22"><![CDATA[<html>具体要做什么才行啊?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$铁匠宝林$<BR>哼。原来是<FONT color=#a82424>菜鸟</FONT>啊，貌似什么都不懂嘛？没啥实力就赶紧一边呆着去吧。总之最近的年轻人都…啧啧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-acceptted" mid="24"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$猎犬看着呢$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$铁匠宝林$<BR>这个<FONT color=#a82424>猎犬</FONT>的声音到底出自哪里，可否帮我查一查原因。要是还摸不着头脑…啊，对了！不妨请教一下<FONT color=#a82424>高级牧师雷昂纳多</FONT>大人看看。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-1" image="" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>（似乎不会在这种地方，可能是我的错觉吧）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-1" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-1-a" mid="30"><![CDATA[<html>还是那样想的啊。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$高级牧师雷昂纳多$<BR><FONT color=#a82424>铁匠宝林</FONT>还有那种事情。嗯…不过被<FONT color=#a82424>猎犬</FONT>妖怪所骚扰，这种说法我可是闻所未闻呢。怎么会发生这种奇异的事情呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-1-a" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-1-b" mid="32"><![CDATA[<html>嗯... 简直没道理嘛。</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$高级牧师雷昂纳多${action:Talk}<BR>当然啦。<FONT color=#a82424>铁匠宝林</FONT>也可能是因为被不安的现实所困扰，以致产生什么错觉了吧。惑世诬民的迷信就是这样产生的啊，嗯嗯。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-1-b" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$高级牧师雷昂纳多$<BR>
+那些魔法师不知是怎么想的，非说什么猎犬鬼怪之类不切实际的话。你最好去见见<FONT color=#a82424>高级魔法师辛西亚</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-class" mid="37"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$高级魔法师辛西亚$<BR>什么? <FONT color=#a82424>猎犬妖怪</FONT>? ...哼。这种无聊的话都能说得出来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-c" mid="39"><![CDATA[<html>不过还是想找到理由嘛。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR>别鬼话连篇啦。有时间还不如去好好学习。铁匠铺老是虐待<FONT color=#a82424>猎犬</FONT>，所以才会做这种梦。真是……这不明摆着嘛。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-c" mid="41"><![CDATA[<html>消除人们的不安情绪也是我们份内的事。</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$高级魔法师辛西亚${action:Talk}<BR>别鬼话连篇啦。还不如去好好做任务呢。平常吹嘘自己会使用<FONT color=#a82424>神圣魔法</FONT>，还害怕什么鬼怪……哼。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-c" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$高级魔法师辛西亚$<BR>啊，算了……这种荒唐的事，你去找<FONT color=#a82424>魔法师塔拉</FONT>好了。她心地善良，说不定会帮你出主意的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-a" mid="44"><![CDATA[<html>(塔拉好像真的很担心)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$魔法师塔拉$<BR>有什么事吗？……嗯？<FONT color=#a82424>铁匠宝林</FONT>做了这种梦？哎呀，这可真让人担心。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-a" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-b" mid="46"><![CDATA[<html>……(不知该做何反应)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$魔法师塔拉$<BR>嗯……好像哪里传来了猎犬的声音？我想……嗯……嗯……<FONT color=#7e12d2>(塔拉好像在认真思索)</FONT><BR>
+啊！对啦，<FONT color=#a82424>是不是什么地方真的藏着一只猎犬</FONT>？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-b" image="QW_ManaRidge.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-c" mid="48"><![CDATA[<html>藏匿的地方?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$魔法师塔拉${action:Talk}<BR>哦，是不是想的太简单啦? 不好意思... 不过圈养的<FONT color=#a82424>猎犬</FONT>当中不是丢失了一两只的吗，说不准就是藏在什么地方了呢? 魔法山脊可<FONT color=#a82424>藏匿的地方</FONT>也有不少呢，调查一下的话，肯定会找得到吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-c" image="QW_ManaRidge.dds" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$魔法师塔拉$<BR>非常<FONT color=#a82424>不显眼而人们不会光顾的地方</FONT>啦，<FONT color=#a82424>屋顶上</FONT>啦等等。跨过栏杆上去或许可以看到与平时不一样的情形呢 …怎么样? 有帮助吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="95"><![CDATA[<html>隐藏的地方？</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$魔法师塔拉${action:Talk}<BR>铁匠宝林要是真的听到猎犬声音的话～说不定什么地方真的有<FONT color=#a82424>猎犬</FONT>。没有猎犬的话，应该不会有声音啊？所以，仔细搜索<FONT color=#a82424>隐藏的地方</FONT>，一定可以找到原因。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-a" image="" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$魔法师塔拉$<BR>比如说……屋顶上。怎么样？都说<FONT color=#a82424>烟囱里面黑</FONT>，不是吗？<FONT color=#7e12d2>(塔拉耸起了肩，好像在努力地想着什么)</FONT>啊……不是吗？是<FONT color=#a82424>灯下黑</FONT>吗？嗯～总之，原因一定在隐秘的地方。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n193_santaund-2-a" mid="52"><![CDATA[<html>这种地方真的有猎犬……</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$???${sound:Hound_Stand_b.wav}<BR>咳勒勒～咳勒勒～<BR>
+<FONT color=#086171>(你好？终于遇到能看到我的人了……)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2-a" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-2-b" mid="54"><![CDATA[<html>（仔细查看）</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$???${sound:Hound_Bark_a.wav}<BR>
+咳勒勒～吭吭～<BR><FONT color=#086171>(我的名字叫</FONT><FONT color=#a82424>圣诞猎犬</FONT><FONT color=#086171>，是一只想给不哭的猎犬送去梦想和希望的可怜的猎犬。但是……就像你看到的那样，我被卡在了烟囱里，进退不得……)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2-b" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-2-c" mid="56"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$圣诞猎犬${sound:Hound_Bark_Attack_a.wav}<BR>呜！呜！<BR>
+<FONT color=#7e12d2>(圣诞猎犬发出悲鸣。好像真的被卡住了，没法出来)</FONT> <BR>
+<FONT color=#086171></FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2-c" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-2-d" mid="109"><![CDATA[<html>到底怎么会变成这样的？</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$圣诞猎犬${sound:Hound_Stand_c.wav}<BR>咳勒勒……咳勒勒……<BR>
+<FONT color=#086171>(放、放手……！如果这样就能出去的话，我就不会卡在这里了……</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2-d" image="QM_HoundNormal_2.dds" itemindex="">
+      <talk_answer link_index="n193_santaund-2-e" mid="58"><![CDATA[<html>……所以被卡在了烟囱里……</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$圣诞猎犬${sound:Hound_Stand_c.wav}<BR><FONT color=#086171>(我不是说过了嘛，我本来是想派发梦想和礼物的。我拿着很多猎犬的食品来到了这间铁匠铺的。就是为了给被锁链拴着，</FONT><FONT color=#a82424>每天被人压榨的同族</FONT><FONT color=#086171>送一点食物。结果却！)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2-e" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-2-f" mid="60"><![CDATA[<html>(当初你为什么要从烟囱进去啊……)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$圣诞猎犬${sound:Hound_Stand_c.wav}<BR>
+咳勒勒～嗬嗬……咳勒勒……<BR><FONT color=#086171>(呼，我是想像</FONT> <FONT color=#a82424>圣诞老人</FONT><FONT color=#086171>那样从</FONT><FONT color=#a82424>烟囱</FONT><FONT color=#086171>里爬进去的……每天晚上发出凄凉的悲鸣，等着有人来救我……最后反倒适应了这烟囱的热度……)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2-f" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-3" mid="62"><![CDATA[<html>好……好吧。(不管怎样，只要不是烟囱就好)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$圣诞猎犬${sound:Hound_Stand_b.wav}<BR>
+嗬嗬～咳勒勒～吭吭～<BR>
+<FONT color=#086171>(不是有句话，叫做</FONT><FONT color=#a82424>心向往的地方就是故乡</FONT><FONT color=#086171>吗？我在炎热的烟囱里获得了重生，所以无法再回到寒冷的雪原去了。呼……你也快点像我这样，找到自己的故乡吧)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-3" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$圣诞猎犬${sound:Hound_Bark_a.wav}<BR>
+咳勒勒～吭吭～<BR>嗯，那就再见了。替我跟这<FONT color=#a82424>铁匠铺的主人</FONT>问个好，说给他添麻烦了。<BR>
+<FONT color=#7e12d2>(圣诞猎犬卡在烟囱里，努力摆出一副郑重的模样)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3" image="QM_Hound_ice.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$高级牧师雷昂纳多$<BR>呵呵...烟囱里有<FONT color=#a82424>猎犬</FONT>? 那可真是阿尔泰亚女神降临的造化啊。居然有东西还能适应那里并活到现在。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-3-a" mid="66"><![CDATA[<html>（辛西亚显得很无语）</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$高级魔法师辛西亚$<BR>啊? <FONT color=#a82424>猎犬</FONT>就夹在烟囱里边? 那是什么猎犬啊? …哦，难道真被夹住不成? 晕，我无语了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3-a" image="QW_ManaRidge.dds" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$高级魔法师辛西亚${action:Talk2}<BR>…反正！反正这都是<FONT color=#a82424>牧师</FONT>们污染我们<FONT color=#a82424>圣地</FONT>造成的后果！！这是不正常的！你应该明白！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3" image="QM_Hound_ice.dds" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$魔法师塔拉${action:Talk}<BR>天啊，真的是<FONT color=#a82424>猎犬</FONT>被夹在烟囱里了吗？这事可够神奇的。总之能够帮上忙是我的荣幸，呵呵。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-a" mid="70"><![CDATA[<html>是，明白了。</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$铁匠宝林$<BR>怎么样，了解到了吗? 这个<FONT color=#a82424>不祥的现象</FONT>之原因啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-a" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-b" mid="72"><![CDATA[<html>其实那个烟囱里夹着猎犬。</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$铁匠宝林$<BR>哦！是吗！好，好啊。看你刚才跑到我们铁匠铺上边跑来跑去的样子，让我来瞧瞧，什么问题啊?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-b" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-c" mid="74"><![CDATA[<html>催啥催啊...</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$铁匠宝林$<BR>什么？<FONT color=#a82424>猎犬</FONT>？<BR>
+<FONT color=#7e12d2>(宝林非常惊讶)</FONT><BR>
+天哪！<FONT color=#a82424>猎犬</FONT>怎么会卡在那种地方？你该不会是在跟我开玩笑吧？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-c" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-d" mid="76"><![CDATA[<html>让我向主人问候。</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$铁匠宝林$<BR><FONT color=#7e12d2>(宝林不知道该说什么话，看着烟囱。由于腿短，踮着脚尖好像也看不太清楚)</FONT> <BR>
+……真是，好好的烟囱里卡了一只<FONT color=#a82424>猎犬</FONT>……我说怎么烧火的时候烟都往屋里冒。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-d" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-e" mid="78"><![CDATA[<html>（似乎要发生血光之灾）</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$铁匠宝林$<BR><FONT color=#a82424>非法占据</FONT>别人家烟囱的家伙，干嘛还假惺惺地跟我问好啊？这个可恶的<FONT color=#a82424>猎犬</FONT>……！！给我等着 ！！ 别以为我腿短就没办法对付你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-e" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-f" mid="80"><![CDATA[<html><FONT color=#086171>(获得奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-f" image="" itemindex="">
+      <talk_question mid="81"><![CDATA[<html>$铁匠宝林$<BR>总之辛苦你了。 我还以为有什么猎犬鬼怪呢，吓得我够呛。今天开始可要好好睡上一觉了！</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,1681,1682,1683,1684</exe>
+         <exe type="setquest">168</exe>
+         <exe type="talk" npc="n016_trader_borin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="4">0</exe>
+         <exe type="talk" npc="n012_sorceress_master_cynthia">a</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n012_sorceress_master_cynthia">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,1681,1682,1683,1684</exe>
+         <exe type="complete">168</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n016_trader_borin" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n016_trader_borin" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n011_priest_leonardo" sub="b" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="class">0</exelink>
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="c">2,3</exelink>
+   <exelink qstep="2" npc="n193_santaund" sub="b" />
+   <exelink qstep="2" npc="n193_santaund" sub="c" />
+   <exelink qstep="2" npc="n193_santaund" sub="d" />
+   <exelink qstep="2" npc="n193_santaund" sub="e" />
+   <exelink qstep="2" npc="n193_santaund" sub="f" />
+   <exelink qstep="2" npc="n193_santaund" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n016_trader_borin" sub="b" />
+   <exelink qstep="3" npc="n016_trader_borin" sub="c" />
+   <exelink qstep="3" npc="n016_trader_borin" sub="d" />
+   <exelink qstep="3" npc="n016_trader_borin" sub="e">0</exelink>
+   <exelink qstep="3" npc="n016_trader_borin" sub="f">1</exelink>
+   <journal_data recompense="1:1681,2:1682,3:1683,4:1684" quest_title="하운드는 보고 있다" chapterid="" quest_level="7" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_ManaRidge.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n11</destination_pos>
+         <destination_mode>custom:5@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[宝林的不安]]></title>
+         <contents mid="84"><![CDATA[<html><FONT color=#a82424>铁匠宝林</FONT>说好像有猎犬鬼怪，终日惶惶不安。帮他查清<FONT color=#a82424>猎犬悲鸣的秘密</FONT>吧。<BR><BR><FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→ 高级牧师雷昂纳多<BR></FONT><FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→ 高级魔法师辛西亚<BR></FONT><FONT color=#086171>魔法山脊 </FONT><FONT color=#a82424>→ 魔法师塔拉</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[寻找猎犬悲鸣的原因]]></destination>
+         <todo_msg mid="86"><![CDATA[向村庄里的人咨询关于宝林不安的事情。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_ManaRidge.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n193</destination_pos>
+         <destination_mode>custom:5@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="87"><![CDATA[猎犬悲鸣的秘密]]></title>
+         <contents mid="88"><![CDATA[<html>如果确实听到猎犬悲鸣的话，估计有一处<FONT color=#a82424>藏匿的地方</FONT>而<FONT color=#a82424>猎犬</FONT>就在那里。调查一下村庄吧。<BR>
+ <BR>
+<FONT color=#086171>魔法山脊</FONT> <FONT color=#a82424>→ ???</FONT></html>]]></contents>
+         <destination mid="89"><![CDATA[寻找隐藏在村庄里的猎犬]]></destination>
+         <todo_msg mid="90"><![CDATA[寻找隐藏在村庄里的猎犬吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n16</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>16</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[猎犬悲鸣的真相]]></title>
+         <contents mid="92"><![CDATA[<html>铁匠铺烟囱当中夹着一条猎犬。告诉<FONT color=#a82424>铁匠</FONT> <FONT color=#a82424>宝林</FONT>真想吧。<BR>
+ <BR>
+<FONT color=#086171>魔法山脊</FONT> → 铁匠宝林</html>]]></contents>
+         <destination mid="93"><![CDATA[和铁匠宝林对话]]></destination>
+         <todo_msg mid="94"><![CDATA[向铁匠宝林转告烟囱里有一条猎犬吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>7:-1</user_level>
+      <user_worldzone_level />
+      <user_class>3:4</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

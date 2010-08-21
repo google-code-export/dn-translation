@@ -1,0 +1,233 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_425_missing_spirits</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>425</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>426</nextqid>
+      <nextqname>mq11_426_sea_monsters_insignia</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[消失的怪兽的灵魂]]></qkname>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>需要什么祭品呢？</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$主教伊格纳西奥${action:Talk}<BR>为了获得力量，我需要一些祭品。我研究了一下古书，要想举行大规模的仪式，就必须有相应的<FONT color=#a82424>祭品</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="9"><![CDATA[<html>(主教热情地给我说明)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$主教伊格纳西奥$<BR>我想了很久，能够和黑龙比肩的魔物很难找到。<BR>我想用比较容易找到的<FONT color=#a82424>海怪</FONT>应该就可以了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="11"><![CDATA[<html>嗯？脖子？</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$主教伊格纳西奥$<BR><FONT color=#a82424>海怪</FONT>是很久以前对神圣天堂造成威胁的怪物，后来被杀死了。你先去<FONT color=#a82424>孤岛</FONT>附近，把丢弃在那里的海怪的脖子拿回来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="13"><![CDATA[<html>(主教拿出了一个葫芦瓶)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$主教伊格纳西奥$<BR>哈哈，怎么可能把脖子整个拿回来呢。现在应该已经腐烂，只剩下了骨头，但还是非常巨大，没办法带回来。你去怪物的头上搜集<FONT color=#a82424>思念体</FONT>……也就是<FONT color=#a82424>灵魂</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-d" image="QW_46.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$主教伊格纳西奥$<BR>这是我们教团传下来的<FONT color=#a82424>水晶葫芦瓶</FONT>。你带着它，到<FONT color=#a82424>沉没的货船</FONT>去寻找，搜集蕴藏在怪物们体内的灵魂。拜托你了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_46.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$主教伊格纳西奥$<BR>你去用<FONT color=#a82424>水晶葫芦瓶</FONT>搜集海怪的灵魂。<BR>到<FONT color=#a82424>沉没的货船</FONT>仔细寻找，搜集蕴藏在怪物们体内的灵魂。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="QS_Default.dds" itemindex="300023">
+      <talk_answer link_index="n039_bishop_ignasio-3-a" mid="18"><![CDATA[<html>给你。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$主教伊格纳西奥${action:Talk}<BR>你来啦。<BR>海怪的灵魂全部搜集到了吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-b" mid="20"><![CDATA[<html>(主教非常高兴，抓住了我的手)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$主教伊格纳西奥$<BR>真了不起。<BR>你一定是神派来拯救<FONT color=#a82424>神圣天堂</FONT>的。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-c" mid="22"><![CDATA[<html>(主教用感激的眼神看着水晶葫芦瓶)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$主教伊格纳西奥$<BR>如果能把邪恶的气息净化掉，<FONT color=#a82424>杰兰特</FONT>一定会很高兴的。<BR>
+为了神圣天堂，为了为我们而战的杰兰特，我们必须加油！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-d" mid="24"><![CDATA[<html>好的。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$主教伊格纳西奥$<BR>下面应该去搜集<FONT color=#a82424>海怪的纹章</FONT>了。因为海怪被切成了碎片，因此必须分好几次才行。虽然有点麻烦，但希望你能帮我。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-!next" mid="26"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300023</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6">1197</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4251,4252,4253,4254</exe>
+         <exe type="delquestitem" num="-1">300023</exe>
+         <exe type="complete">425</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d">0,2,3,1</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="d">0</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="!next">1,2</exelink>
+   <journal_data recompense="1:4251,2:4252,3:4253,4:4254" quest_title="사라진 괴수의 혼" chapterid="5" quest_level="34" quest_mark_type="7" use_item_list="300023">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="28"><![CDATA[需要的东西]]></title>
+         <contents mid="29"><![CDATA[<html>回收到了黑暗果核，和主教对话，看看还需要别的什么东西。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="30"><![CDATA[和主教伊格纳西奥对话]]></destination>
+         <todo_msg mid="31"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_46.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>462,0,0</destination_pos>
+         <destination_mode>custom:461@3,462@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="32"><![CDATA[搜集海怪的灵魂]]></title>
+         <contents mid="33"><![CDATA[<html>他说准备举行仪式，净化黑龙的气息，因此需要祭品。先到<FONT color=#a82424>沉没的货船</FONT>去，用<FONT color=#a82424>水晶葫芦瓶</FONT>搜集海怪的灵魂吧。<BR>
+ <BR>
+<FONT color=#7e12d2>※ 在深渊难度下无法执行。</FONT><BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口(孤岛运输船)</FONT> <FONT color=#a82424>→ 沉没的货船</FONT></html>]]></contents>
+         <destination mid="34"><![CDATA[去沉没的货船消灭魔物]]></destination>
+         <todo_msg mid="35"><![CDATA[请到沉没的货船去搜集海怪的灵魂。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[搜集完成]]></title>
+         <contents mid="37"><![CDATA[<html>搜集到了海怪的灵魂，把水晶葫芦瓶交给主教伊格纳西奥。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 主教伊格纳西奥</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[和主教伊格纳西奥对话]]></destination>
+         <todo_msg mid="39"><![CDATA[请把水晶葫芦瓶交给主教伊格纳西奥。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>424</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

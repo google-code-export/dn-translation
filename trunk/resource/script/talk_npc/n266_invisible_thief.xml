@@ -1,0 +1,21 @@
+   <talk>
+      <npcename>n266_invisible_thief</npcename>
+      <npcid>266</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[看不见的偷盗]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="6"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>（感觉有什么在动。</FONT><BR>
+<FONT color=#7e12d2>散发着非常刺鼻，但有有些熟悉的恶臭）</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="enterquest">sq08_309_hapless_thief</exe>
+         <exe type="enterquest">sq08_308_strange_smell</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">309</chk>
+         <chk type="hasquest">308</chk>
+      </conditions>
+   </talk>

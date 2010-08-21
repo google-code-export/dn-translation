@@ -1,0 +1,263 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq01_061_lets_party</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>61</qid>
+      <designer>김주연</designer>
+      <qlevel>7</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[夫妻蘑菇的眼泪]]></qkname>
+      <qnpc>
+         <npcid>3</npcid>
+         <npcename>n003_trader_dolis</npcename>
+         <npckname>상인 도리스 (프레리 잡화상)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-a" mid="6"><![CDATA[<html>你好！</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$商人多莉丝$<BR>
+“……而那个眼泪，可以让无法实现的爱情成真……”<BR>
+<FONT color=#7e12d2>(多莉丝好像在全神贯注地阅读什么东西)</FONT><BR>
+没错！就是这个！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-b" mid="8"><![CDATA[<html>是的，见到你很高兴。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$商人多莉丝$<BR>如果你是来买东西的，请慢慢挑……<BR>
+啊？！<FONT color=#382000>{user_nick}</FONT>，是你吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-c" mid="10"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$商人多莉丝$<BR><FONT color=#382000> </FONT><FONT color=#382000>{user_class} {user_nick}</FONT>，听说你能像暴风一样，把怪物一扫而净！<BR>
+最近在普雷利镇，<FONT color=#382000>{user_nick}</FONT>你的名气很响亮啊。呵呵～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-d" mid="12"><![CDATA[<html>到底……是什么事……</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$商人多莉丝$<BR>我有一件事想拜托你，但是……<BR><FONT color=#7e12d2>(多莉丝的眼睛里含满了眼泪)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$夫妻蘑菇的眼泪$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1" image="QS_Default.dds" itemindex="300201">
+      <talk_answer link_index="n003_trader_dolis-1-a" mid="16"><![CDATA[<html>(到底在看什么书呢……)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$商人多莉丝$<BR>刚才我在书里看到，两人只要喝了<FONT color=#a82424>夫妻蘑菇的眼泪</FONT>，他们的爱情就会成真。<BR>
+所以我想寻找那个东西。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-a" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-b" mid="18"><![CDATA[<html>好像所有人都知道了……</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$商人多莉丝$<BR>这是我的秘密……<BR>
+其实我很喜欢<FONT color=#a82424>史蒂夫</FONT>，呵呵呵呵～<BR>
+哎呀，真丢人……你可不能和别人说啊！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-b" image="QS_Default.dds" itemindex="300201">
+      <talk_answer link_index="n003_trader_dolis-1-c" mid="20"><![CDATA[<html>找到之后，能分我一点吗？</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$商人多莉丝$<BR>呵呵……总之我需要<FONT color=#a82424>夫妻蘑菇的眼泪</FONT>。<BR>
+听说在<FONT color=#a82424>阴影森林中心</FONT>有结成夫妻的蘑菇。在那种蘑菇身上可以找到。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-c" image="QS_Default.dds" itemindex="300201">
+      <talk_answer link_index="n003_trader_dolis-1-d" mid="24"><![CDATA[<html>看来不同的人醒来的时间也会不同，对吧？</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$商人多莉丝$<BR><FONT color=#7e12d2>(好像没听见……)</FONT><BR>夫妻蘑菇原来是用来制作安眠药的睡眠蘑菇，攻击它们的时候可能会暂时睡着。但是有些人会很快醒来，请不要担心。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-d" image="QS_Default.dds" itemindex="300201">
+      <talk_answer link_index="n003_trader_dolis-1-e" mid="52"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$商人多莉丝$<BR>
+是的，据书上说……哪里来着，稍等。<BR>
+<FONT color=#7e12d2>(多莉丝开始翻书。书的封面上的书名是</FONT><FONT color=#a82424>“女神，我的天～第2部/100种可以实现爱情的神药"</FONT><FONT color=#7e12d2>……)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-e" image="QS_Default.dds" itemindex="300201">
+      <talk_answer link_index="n003_trader_dolis-1-f" mid="53"><![CDATA[<html>(好像在隐藏着些什么……)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$商人多莉丝$<BR>
+啊，在这里。睡眠蘑菇少则可以让人沉睡几秒，长则……嗯……长则……<BR>
+上面就……就写着会睡上较长的时、时间……<BR>
+呵……呵呵呵……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-f" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$商人多莉丝$<BR>
+……好了，事不宜迟，快点出发吧～呵呵～<BR>
+请你快去<FONT color=#a82424>阴影森林中心</FONT>，采集<FONT color=#a82424> 夫妻蘑菇的眼泪</FONT>吧。拜托你了，冒险家～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2" image="" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$商人多莉丝$<BR>
+……好了，请你快去<FONT color=#a82424>阴影森林中心</FONT>，采集<FONT color=#a82424> 夫妻蘑菇的眼泪</FONT>吧。拜托你了，冒险家～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-3" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-3-a" mid="29"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-3-a" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-3-b" mid="31"><![CDATA[<html>我只要一滴...</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$商人多莉丝$<BR>哎呀！这就是夫妻蘑菇的眼泪吗？我终于可以结束单相思了！呵呵～<BR><FONT color=#7e12d2>(望着天空露出意味深长的笑容)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-3-b" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$商人多莉丝$<BR>切！不行！先让我确认一下传说是不是真的，然后再告诉你吧。<BR>
+不管怎样，我得谢谢你！</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">61</exe>
+         <exe type="recompense_view">,611,612,612,612</exe>
+         <exe type="talk" npc="n003_trader_dolis">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,611,612,612,612</exe>
+         <exe type="complete">61</exe>
+         <exe type="delquestitem" num="-1">300201</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n003_trader_dolis" sub="d">1</exelink>
+   <exelink qstep="accepting" npc="n003_trader_dolis" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n003_trader_dolis" sub="b" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="c" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="d" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="e" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="f">0,1</exelink>
+   <exelink qstep="3" npc="n003_trader_dolis">0</exelink>
+   <exelink qstep="3" npc="n003_trader_dolis" sub="a">1,2</exelink>
+   <exelink qstep="3" npc="n003_trader_dolis" sub="b" />
+   <journal_data recompense="1:611,2:612" quest_title="부부 버섯의 눈물" chapterid="" quest_level="7" quest_mark_type="10" use_item_list="300201">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_Doris.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,n3</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>3</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[多莉丝的委托]]></title>
+         <contents mid="36"><![CDATA[<html><FONT color=#a82424>商人多莉丝</FONT>说需要某样东西，让我帮着搜集。去<FONT color=#a82424>商人多莉丝</FONT>那里了解详细的情况吧。<BR><BR><FONT color=#086171>普雷利镇</FONT><FONT color=#a82424> → 商人多莉丝</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[和商人多莉丝对话]]></destination>
+         <todo_msg mid="38"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_4.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>66,0,0</destination_pos>
+         <destination_mode>custom:66@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[采集夫妻蘑菇的眼泪]]></title>
+         <contents mid="40"><![CDATA[<html><FONT color=#a82424>商人多莉丝</FONT>需要的东西是<FONT color=#a82424>夫妻蘑菇的眼泪</FONT>。攻击像夫妻一样并排生长的蘑菇，采集<FONT color=#a82424>夫妻蘑菇的眼泪</FONT>吧。<BR><BR><FONT color=#086171>阴影森林(阴影森林中心)</FONT> <FONT color=#a82424>→ 阴影森林中心</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[去阴影森林中心采集夫妻蘑菇的眼泪]]></destination>
+         <todo_msg mid="42"><![CDATA[从生长在阴影森林中心的蘑菇夫妻身上提取蘑菇夫妻的眼泪吧。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_Doris.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,n3</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>3</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[和商人多莉丝对话]]></title>
+         <contents mid="44"><![CDATA[<html><FONT color=#a82424>蘑菇夫妻的眼泪</FONT>成功提取。把它交给<FONT color=#a82424>商人多莉丝</FONT>吧。<BR><BR><FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→商人多莉丝</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[和商人多莉丝对话]]></destination>
+         <todo_msg mid="46"><![CDATA[与商人多莉丝对话吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>7:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1:2</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

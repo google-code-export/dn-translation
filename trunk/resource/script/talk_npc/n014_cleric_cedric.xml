@@ -1,0 +1,26 @@
+   <talk>
+      <npcename>n014_cleric_cedric</npcename>
+      <npcid>14</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[牧师赛德瑞]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="4"><![CDATA[<html>[任务]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$牧师赛德瑞$<BR>(脸色不好，被怪物所造的伤害似乎还未痊愈。)</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="6" link_target="mq05_122_comeback2.xml"><![CDATA[<html>[Lv1] <FONT color=#a94407>回来的话匣子 Ⅱ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="mq05_116_arrest.xml"><![CDATA[<html>[Lv5] <FONT color=#a94407>不可饶恕!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="mq05_117_love_money.xml"><![CDATA[<html>[Lv5] <FONT color=#a94407>还是富人好</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="9"><![CDATA[<html>(返回)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$牧师赛德瑞$<BR>
+痛苦…依然没有减轻。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq05_106_find_the_orb</exe>
+         <exe type="conexe" true="1" false="0">0</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">106</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,70 @@
+   <talk>
+      <npcename>n405_guild_board</npcename>
+      <npcid>405</npcid>
+      <startexe>6</startexe>
+      <npckname mid="1"><![CDATA[冒险家公会公告板:叹息峡谷入口]]></npckname>
+      <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="6" link_target="gq08_3031_n405_canyon_normal.xml"><![CDATA[<html>[Lv10] <FONT color=#086171>勇者之路Ⅲ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="gq08_3032_n405_canyon_hunt.xml"><![CDATA[<html>[Lv10] <FONT color=#086171>古代人的后裔</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="gq08_3033_n405_canyon_drop.xml"><![CDATA[<html>[Lv10] <FONT color=#086171>兰花</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="gq08_3034_n405_canyon_hard.xml"><![CDATA[<html>[Lv10] <FONT color=#086171>胜负Ⅰ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="gq08_3121_n405_unreturn_normal.xml"><![CDATA[<html>[Lv20] <FONT color=#086171>侦查兼职</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="13" link_target="gq08_3122_n405_unreturn_hunt.xml"><![CDATA[<html>[Lv20] <FONT color=#086171>给小精灵的零食</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="14" link_target="gq08_3123_n405_unreturn_drop.xml"><![CDATA[<html>[Lv20] <FONT color=#086171>预感好运</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="15" link_target="gq08_3124_n405_unreturn_hard.xml"><![CDATA[<html>[Lv20] <FONT color=#086171>小收藏家凯文Ⅸ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="16" link_target="gq08_3125_n405_unreturn_boss.xml"><![CDATA[<html>[Lv20] <FONT color=#086171>一个拳头距离的食人魔</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="gq08_3130_n405_unreturn_rank.xml"><![CDATA[<html>[Lv20] <FONT color=#7e12d2>逆袭：不归之路</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="30" link_target="gq08_3039_n405_canyon_abyss.xml"><![CDATA[<html>[Lv15] <FONT color=#7e12d2>向着深渊：讨伐刀风泰迪斯</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="31" link_target="gq08_3129_n405_unreturn_abyss.xml"><![CDATA[<html>[Lv23] <FONT color=#7e12d2>向着深渊：讨伐朱巴卡</FONT> </html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$冒险家公会公告板$<BR>
+目前接收的任务如下</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="_no_quest" image="QN_guild_board.dds" itemindex="">
+         <talk_question mid="23"><![CDATA[<html>$冒险家公会公告板${action:Talk}<BR>
+目前没有接收的任务。 <BR><BR><FONT color=#086171> 急招可撰写任务的人，无论国籍，宗族，用脚写亦可。</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">gq08_3031_n405_canyon_normal</exe>
+         <exe type="enterquest">gq08_3032_n405_canyon_hunt</exe>
+         <exe type="enterquest">gq08_3033_n405_canyon_drop</exe>
+         <exe type="enterquest">gq08_3034_n405_canyon_hard</exe>
+         <exe type="enterquest">gq08_3121_n405_unreturn_normal</exe>
+         <exe type="conexe" true="1" false="7">0</exe>
+         <exe type="conexe" true="2" false="8">1</exe>
+         <exe type="conexe" true="3" false="9">2</exe>
+         <exe type="conexe" true="4" false="10">3</exe>
+         <exe type="conexe" true="5" false="16">4</exe>
+         <exe type="enterquest">gq08_3122_n405_unreturn_hunt</exe>
+         <exe type="enterquest">gq08_3123_n405_unreturn_drop</exe>
+         <exe type="enterquest">gq08_3124_n405_unreturn_hard</exe>
+         <exe type="enterquest">gq08_3125_n405_unreturn_boss</exe>
+         <exe type="enterquest">gq08_3126_n405_unreturn_prop</exe>
+         <exe type="conexe" true="11" false="17">5</exe>
+         <exe type="conexe" true="12" false="18">6</exe>
+         <exe type="conexe" true="13" false="19">7</exe>
+         <exe type="conexe" true="14" false="20">8</exe>
+         <exe type="conexe" true="15" false="22">9</exe>
+         <exe type="enterquest">gq08_3130_n405_unreturn_rank</exe>
+         <exe type="conexe" true="21" false="25">10</exe>
+         <exe type="enterquest">gq08_3039_n405_canyon_abyss</exe>
+         <exe type="enterquest">gq08_3129_n405_unreturn_abyss</exe>
+         <exe type="conexe" true="23" false="26">11</exe>
+         <exe type="conexe" true="24" false="0">12</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">3031</chk>
+         <chk type="hasquest">3032</chk>
+         <chk type="hasquest">3033</chk>
+         <chk type="hasquest">3034</chk>
+         <chk type="hasquest">3121</chk>
+         <chk type="hasquest">3122</chk>
+         <chk type="hasquest">3123</chk>
+         <chk type="hasquest">3124</chk>
+         <chk type="hasquest">3125</chk>
+         <chk type="hasquest">3126</chk>
+         <chk type="hasquest">3130</chk>
+         <chk type="hasquest">3039</chk>
+         <chk type="hasquest">3129</chk>
+      </conditions>
+   </talk>

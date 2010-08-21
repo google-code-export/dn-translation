@@ -1,0 +1,475 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq01_060_dorins_amazing_box2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>60</qid>
+      <designer>곽노찬</designer>
+      <qlevel>7</qlevel>
+      <qdesc>300152 바랄라이카 부스러기
+300153	복고풍 대검의 도안
+300154	복고풍 망치의 도안
+300155	복고풍 도끼의 도안
+300156	복고풍 숏보우의 도안
+300157	복고풍 롱보우의 도안
+300158	복고풍 크로스보우의 도안
+536938497 복고풍 대검
+537987073 복고풍 망치
+537462785 복고풍 도끼
+539035649 복고풍 숏보우
+539559937 복고풍 롱보우
+540084225 복고풍 크로스보우</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[道林的遗物盒Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>2</npcid>
+         <npcename>n002_trader_dorin</npcename>
+         <npckname>대장장이 도린 (프레리 무기상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>3</npcid>
+         <npcename>n003_trader_dolis</npcename>
+         <npckname>상인 도리스 (프레리 잡화상)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-noquest" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$商人多莉丝${action:Talk}<BR>你找我有什么事吗？<BR><FONT color=#7e12d2>(必须从铁匠道林处接受任务才可以执行)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n002_trader_dorin-accepting-a" mid="7"><![CDATA[<html>嗯？这是分解物品得到的残骸……</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$铁匠道林$<BR>
+…<BR>………<BR>……………<BR>…………………这是什么啊？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-a" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n002_trader_dorin-accepting-b" mid="9"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$铁匠道林$<BR> ……<BR>不，我是说……<BR><FONT color=#dc5a00>暴风三弦琴</FONT>分解之后，怎么会出来这些东西？<BR> 这是什么……？嗯？为什么都是些<FONT color=#a82424>垃圾</FONT>啊～！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-b" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n002_trader_dorin-accepting-c" mid="11"><![CDATA[<html>你和我说又有什么用……</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$铁匠道林$<BR>为了制作<FONT color=#dc5a00>暴风三弦琴</FONT>，我们祖先不知道用掉了多少纹章、宝玉、黄金和宝石？！！<BR>为什么只有这些东西？？这像话吗？！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-c" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n002_trader_dorin-accepting-d" mid="13"><![CDATA[<html>……(原来还有这种计划……)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$铁匠道林$<BR>啊～！我本来想制造一个超越<FONT color=#dc5a00>暴风三弦琴</FONT>的、<FONT color=#a82424>壮观的</FONT>、<FONT color=#086171>惊人的</FONT>、<FONT color=#dc5a00>东方的</FONT>、<FONT color=#7e12d2>绝美的</FONT>、<FONT color=#419300>百万吨级的</FONT>、<FONT color=#a82424>充满悬念的</FONT>、<FONT color=#dc5a00>唯一的</FONT>物品！！啊啊啊～～～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$道林的遗物盒Ⅱ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-2" mid="18"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$铁匠道林$<BR>呼……人算不如天算，没想到会发生这种<FONT color=#a82424>惨事</FONT>……死了之后，我都没脸去见祖先了。看来我<FONT color=#a82424>只能一直活下去了</FONT>……呵呵……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$商人多莉丝${action:Talk}<BR>你找我有什么事吗？<BR><FONT color=#7e12d2>(请和铁匠道林对话)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$铁匠道林$<BR>
+不过约定就是约定，我会为你制造一件好武器。材料我自己想办法，这些东西还能凑合用用。你去帮我弄一张<FONT color=#a82424>武器图纸</FONT>。你去向<FONT color=#a82424>商人多莉丝</FONT>要<FONT color=#a82424>武器图纸</FONT>，她就会给你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-2-a" mid="24"><![CDATA[<html>铁匠道林……</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$商人多莉丝${action:Talk}<BR>
+你找我有什么事吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2-a" image="QM_HoundNormal_1.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-2-b" mid="26"><![CDATA[<html>……不是的，他让我来拿武器图纸。</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$商人多莉丝$<BR>
+他又？！哎呀，真是……<BR>
+这次又有什么事？<BR>
+<FONT color=#a82424>猎犬</FONT>吃了<FONT color=#a82424>消化剂</FONT>死掉了吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2-b" image="QS_Default.dds" itemindex="300153">
+      <talk_answer link_index="n003_trader_dolis-2-c" mid="28"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$商人多莉丝${action:Talk}<BR>
+<FONT color=#a82424>武器图纸</FONT>……？<BR>
+我们这里不卖<FONT color=#a82424>武器图纸</FONT>之类的东西啊？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2-c" image="QS_Default.dds" itemindex="300153">
+      <talk_answer link_index="n003_trader_dolis-2-d" mid="30"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$商人多莉丝$<BR>等等……啊……他说的可能是那个东西。<BR>你等一下。<BR><FONT color=#7e12d2>(商人多莉丝在商店里翻找起来)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2-d" image="QS_Default.dds" itemindex="300153">
+      <talk_answer link_index="n003_trader_dolis-3" mid="32"><![CDATA[<html>谢谢。</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$商人多莉丝$<BR>
+给你。反正也不是我们商店出售的东西，之前他也帮过我很多忙，我就破例送给你吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-3" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$商人多莉丝$<BR>好了，我很忙，不好意思～<BR> 请你帮我向<FONT color=#a82424>道林</FONT>问好～</html>
+<FONT color=#7e12d2>(请和铁匠道林对话。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-4" mid="35"><![CDATA[<html>……嗯？</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$铁匠道林$<BR>
+没想到<FONT color=#a82424>多莉丝</FONT>会这么爽快地把东西拿出来……<BR>
+唉……之前她一直不愿意拿出来……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4" image="QS_Default.dds" itemindex="300153">
+      <talk_answer link_index="n002_trader_dorin-4-opencompounditem1" mid="39"><![CDATA[<html>[制作物品]</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$铁匠道林$<BR>好了。不管怎样，<FONT color=#a82424>图纸</FONT>总算拿到了，我们来制作东西吧。你把<FONT color=#a82424>想要制作的武器图纸</FONT>和<FONT color=#a82424>三弦琴碎渣</FONT>放到<FONT color=#a82424>物品制作</FONT>窗口，然后开始<FONT color=#a82424>制作</FONT>。制作好之后，再来和我说话。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-a" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-4-b" mid="42"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$铁匠道林$<BR>哎呀……怎么制作出的是这么难看、能力又差的武器啊……出去都不好意思说是我制作的……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-b" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-4-c" mid="44"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$铁匠道林$<BR>
+看在我们<FONT color=#a82424>忠贞的友情</FONT>(?)的份上，我破例为你在<FONT color=#a82424>武器</FONT>上附加一些<FONT color=#a82424>属性</FONT>。不然就太不够意思了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-c" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-4-d" mid="46"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$任务奖励$<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-d" image="" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$铁匠道林$<BR>这样你该满意了吧？<BR>好了，没事的话，你走吧。别忘了<FONT color=#a82424>欠我的钱</FONT>～呵呵……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-e" image="QS_Default.dds" itemindex="300152">
+      <talk_question mid="67"><![CDATA[<html>$铁匠道林$<BR>
+<FONT color=#a82424>三弦琴碎渣</FONT>弄丢了……？怎么这么毛手毛脚的。我再给你一次，快去制作你要的东西！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-f" image="QS_Default.dds" itemindex="300153">
+      <talk_answer link_index="n002_trader_dorin-4-opencompounditem2" mid="83"><![CDATA[<html>[制作物品]</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$铁匠道林$<BR> <FONT color=#a82424>图纸</FONT>又去哪儿了？<BR> 我再给你一个，快去制作你要的东西！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-g" image="" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$铁匠道林$<BR>嘿嘿...啥事儿都别想瞒过我。<BR>藏在仓库里边，你以为我不知道啊?<BR><FONT color=#7e12d2>（把制作的道具存放在背包的状态下与道林对话吧。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-h" image="" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$铁匠道林$<BR>啧...着什么急啊，给我看看完成后的武器啊。<BR>
+让我来给你看看，到底做的怎么样啊。<BR><FONT color=#7e12d2>（把制作的道具存放在背包的状态下与道林对话吧）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,600,607,607,607</exe>
+         <exe type="setquest">60</exe>
+         <exe type="talk" npc="n002_trader_dorin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="additem" num="1">300152</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>300153	복고풍 대검의 도안
+300154	복고풍 망치의 도안
+300155	복고풍 도끼의 도안
+300156	복고풍 숏보우의 도안
+300157	복고풍 롱보우의 도안
+300158	복고풍 크로스보우의 도안</comment>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="3,0,1" false="4,0,1">0</exe>
+         <exe type="additem" num="1,1,1">300153,300154,300155</exe>
+         <exe type="additem" num="1,1,1">300156,300157,300158</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>0 커스텀 코드 : 아이템 조합 UI 여는 것.
+
+트리거 정보
+만든 아이템을 인벤에 보관중인지 체크 / 만든 아이템을 착용중인지 체크 / 만든 아이템을 창고에 보관중인지 체크</comment>
+      <conditions>
+         <chk type="item" num="1" op="]=">536938497</chk>
+         <chk type="item" num="1" op="]=">537987073</chk>
+         <chk type="item" num="1" op="]=">537462785</chk>
+         <chk type="item" num="1" op="]=">539035649</chk>
+         <chk type="item" num="1" op="]=">539559937</chk>
+         <chk type="item" num="1" op="]=">540084225</chk>
+         <chk type="class" op="=">1</chk>
+         <chk type="item" num="1" op="]=">300152</chk>
+         <chk type="item" num="1" op="]=">300153</chk>
+         <chk type="item" num="1" op="]=">300154</chk>
+         <chk type="item" num="1" op="]=">300155</chk>
+         <chk type="item" num="1" op="]=">300156</chk>
+         <chk type="item" num="1" op="]=">300157</chk>
+         <chk type="item" num="1" op="]=">300158</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 536938497, 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 537987073, 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 537462785, 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 539035649, 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 539559937, 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 540084225, 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemEquip(userObjID, 536938497) == 1</chk>
+         <chk type="custom">api_user_HasItemEquip(userObjID, 537987073) == 1</chk>
+         <chk type="custom">api_user_HasItemEquip(userObjID, 537462785) == 1</chk>
+         <chk type="custom">api_user_HasItemEquip(userObjID, 539035649) == 1</chk>
+         <chk type="custom">api_user_HasItemEquip(userObjID, 539559937) == 1</chk>
+         <chk type="custom">api_user_HasItemEquip(userObjID, 540084225) == 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300152, 1) >= 1</chk>
+      </conditions>
+      <executions>
+         <exe type="custom">api_ui_OpenCompoundItem(userObjID, 1001);</exe>
+         <exe type="conexe" true="7" false="55">0</exe>
+         <exe type="conexe" true="7" false="56">1</exe>
+         <exe type="conexe" true="7" false="57">2</exe>
+         <exe type="conexe" true="7" false="58">3</exe>
+         <exe type="conexe" true="7" false="59">4</exe>
+         <exe type="conexe" true="7" false="60">5</exe>
+         <exe type="talk" npc="n002_trader_dorin">a</exe>
+         <exe type="talk" npc="n002_trader_dorin">4</exe>
+         <exe type="conexe" true="1" false="4">6</exe>
+         <exe type="conexe" true="11" false="14">6</exe>
+         <exe type="conexe" true="17" false="12">0</exe>
+         <exe type="conexe" true="18" false="13">1</exe>
+         <exe type="conexe" true="19" false="19">2</exe>
+         <exe type="conexe" true="20" false="15">3</exe>
+         <exe type="conexe" true="21" false="16">4</exe>
+         <exe type="conexe" true="22" false="22">5</exe>
+         <exe type="recompense">601,,,,</exe>
+         <exe type="recompense">602,,,,</exe>
+         <exe type="recompense">603,,,,</exe>
+         <exe type="recompense">604,,,,</exe>
+         <exe type="recompense">605,,,,</exe>
+         <exe type="recompense">606,,,,</exe>
+         <exe type="complete">60</exe>
+         <exe type="delitem" num="-1">300153</exe>
+         <exe type="delitem" num="-1">300154</exe>
+         <exe type="delitem" num="-1">300155</exe>
+         <exe type="delitem" num="-1">300156</exe>
+         <exe type="delitem" num="-1">300157</exe>
+         <exe type="delitem" num="-1">300158</exe>
+         <exe type="delitem" num="-1">536938497</exe>
+         <exe type="delitem" num="-1">537987073</exe>
+         <exe type="delitem" num="-1">537462785</exe>
+         <exe type="delitem" num="-1">539035649</exe>
+         <exe type="delitem" num="-1">539559937</exe>
+         <exe type="delitem" num="-1">540084225</exe>
+         <exe type="conexe" true="37" false="69">7</exe>
+         <exe type="conexe" true="40" false="41">6</exe>
+         <exe type="additem" num="1">300152</exe>
+         <exe type="talk" npc="n002_trader_dorin">e</exe>
+         <exe type="conexe" true="8" false="42">8 and 9 and 10</exe>
+         <exe type="conexe" true="8" false="45">11 and 12 and 13</exe>
+         <exe type="conexe" true="43" false="48,43">8</exe>
+         <exe type="conexe" true="44" false="49,44">9</exe>
+         <exe type="conexe" true="54" false="50,54">10</exe>
+         <exe type="conexe" true="46" false="51,46">11</exe>
+         <exe type="conexe" true="47" false="52,47">12</exe>
+         <exe type="conexe" true="54" false="53,54">13</exe>
+         <exe type="additem" num="1">300153</exe>
+         <exe type="additem" num="1">300154</exe>
+         <exe type="additem" num="1">300155</exe>
+         <exe type="additem" num="1">300156</exe>
+         <exe type="additem" num="1">300157</exe>
+         <exe type="additem" num="1">300158</exe>
+         <exe type="talk" npc="n002_trader_dorin">f</exe>
+         <exe type="conexe" true="67" false="61">14</exe>
+         <exe type="conexe" true="67" false="62">15</exe>
+         <exe type="conexe" true="67" false="63">16</exe>
+         <exe type="conexe" true="67" false="64">17</exe>
+         <exe type="conexe" true="67" false="65">18</exe>
+         <exe type="conexe" true="67" false="66">19</exe>
+         <exe type="conexe" true="68" false="2">20</exe>
+         <exe type="conexe" true="68" false="3">21</exe>
+         <exe type="conexe" true="68" false="36">22</exe>
+         <exe type="conexe" true="68" false="5">23</exe>
+         <exe type="conexe" true="68" false="6">24</exe>
+         <exe type="conexe" true="68" false="36">25</exe>
+         <exe type="talk" npc="n002_trader_dorin">g</exe>
+         <exe type="talk" npc="n002_trader_dorin">h</exe>
+         <exe type="conexe" true="67" false="38,39">26</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n002_trader_dorin" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n002_trader_dorin" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n002_trader_dorin" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n003_trader_dolis" sub="b" />
+   <exelink qstep="2" npc="n003_trader_dolis" sub="c" />
+   <exelink qstep="2" npc="n003_trader_dolis" sub="d" />
+   <exelink qstep="2" npc="n003_trader_dolis" sub="3">2</exelink>
+   <exelink qstep="3" npc="n002_trader_dorin" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n002_trader_dorin">9</exelink>
+   <exelink qstep="4" npc="n002_trader_dorin" sub="opencompounditem1">0</exelink>
+   <exelink qstep="4" npc="n002_trader_dorin" sub="b" />
+   <exelink qstep="4" npc="n002_trader_dorin" sub="c">10</exelink>
+   <exelink qstep="4" npc="n002_trader_dorin" sub="d">23,24,25,26,27,28,29,30,31,32,33,34,35</exelink>
+   <exelink qstep="4" npc="n002_trader_dorin" sub="opencompounditem2">0</exelink>
+   <journal_data recompense="1:600,2:607" quest_title="도린의 유물함Ⅱ" chapterid="" quest_level="7" quest_mark_type="10" use_item_list="300152,300153,300154,300155,300156,300157,300158,536938497,537987073,537462785,539035649,539559937,540084225">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-952,65</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>2</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[和铁匠道林对话]]></title>
+         <contents mid="50"><![CDATA[<html><FONT color=#a82424>分解</FONT>了<FONT color=#dc5a00>暴风三弦琴</FONT>，获得了<FONT color=#a82424>三弦琴碎渣</FONT>。<BR> 
+和普雷利镇的<FONT color=#a82424>铁匠道林</FONT>对话。<BR><BR><FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→ 铁匠道林</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[和铁匠道林对话]]></destination>
+         <todo_msg mid="52"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_Doris.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,749,1808</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>3</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[和商人多莉丝对话]]></title>
+         <contents mid="54"><![CDATA[<html>铁匠道林让我去<FONT color=#a82424>商人多莉丝</FONT>那里拿制作武器所需的<FONT color=#a82424>武器图纸</FONT>。<BR>
+和商人多莉丝对话。<BR>
+ <BR>
+<FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→ 商人多莉丝</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[和商人多莉丝对话]]></destination>
+         <todo_msg mid="56"><![CDATA[请去商人多莉丝那里拿武器图纸。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-952,65</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>2</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[和铁匠道林对话]]></title>
+         <contents mid="58"><![CDATA[<html>从<FONT color=#a82424>商人多莉丝</FONT>那里拿到了3种<FONT color=#a82424>武器图纸</FONT>。<BR>
+回到<FONT color=#a82424>铁匠道林</FONT>那里。<BR>
+ <BR>
+<FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→ 铁匠道林</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[和铁匠道林对话]]></destination>
+         <todo_msg mid="60"><![CDATA[获得了武器图纸。请回到铁匠道林那里。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-952,65</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>2</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[和铁匠道林对话]]></title>
+         <contents mid="62"><![CDATA[<html>铁匠道林让我自己选择图纸，制作想要的武器。<BR>
+<FONT color=#a82424>制作</FONT><FONT color=#a82424>物品</FONT>后，和<FONT color=#a82424>铁匠道林</FONT>对话。<BR>
+ <BR>
+<FONT color=#086171>普雷利镇</FONT> <FONT color=#a82424>→ 铁匠道林</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[和铁匠道林对话]]></destination>
+         <todo_msg mid="64"><![CDATA[制作好物品后，请和铁匠道林对话。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>59</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

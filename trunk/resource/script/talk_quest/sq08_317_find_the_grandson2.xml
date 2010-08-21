@@ -1,0 +1,333 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_317_find_the_grandson2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>317</qid>
+      <designer>곽노찬</designer>
+      <qlevel>16</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[寻找小淑Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>185</npcid>
+         <npcename>n185_goblin_grandfather</npcename>
+         <npckname>고블린 할배</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>274</npcid>
+         <npcename>n274_hopgoblinold</npcename>
+         <npckname>홉 고블린 할배</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>275</npcid>
+         <npcename>n275_houndnormal</npcename>
+         <npckname>고블린 할배의 하운드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>56</npcid>
+         <npcename>n056_guard_pesent_dalcy</npcename>
+         <npckname>가드 달시</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>57</npcid>
+         <npcename>n057_guard_pesent_dikinson</npcename>
+         <npckname>가드 디킨슨</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n274_hopgoblinold-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$小精灵老头$<BR>咳咳咳！！小石…，小峰… 小朗…，小石… 小淑…<BR>我的孙儿们…我的孙儿们啊… 咳咳咳~！<BR><FONT color=#7e12d2>（似乎已经失去了理性，很难再与之对话了）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n275_houndnormal-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$小妖精老头的猎犬$<BR><FONT color=#7e12d2>（小妖精老头的猎犬泪汪汪的样子。 小妖精老头已经不见踪影）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-noquest" image="QN_Npc_Goblin_Grandfa.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$卫兵达尔西$<BR>魔物们都到村庄附近了。真是让人担心啊。<BR>
+<FONT color=#7e12d2>（可在狂风森林的小妖精老头那里接受任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n057_guard_pesent_dikinson-noquest" image="QN_Npc_Goblin_Grandfa.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$卫兵迪金森$<BR>得时刻监视魔物们的行动。<BR>
+<FONT color=#7e12d2>（可在狂风森林的小妖精老头那里接受任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-accepting" image="QN_Npc_Goblin_Grandfa.dds" itemindex="">
+      <talk_answer link_index="n185_goblin_grandfather-accepting-a" mid="10"><![CDATA[<html>或许是跑掉了，我去问周围的卫兵们。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$小妖精老头$<BR>
+小淑… 咳咳…<BR><FONT color=#7e12d2>（小妖精老头似乎一刻都不会停止痛哭）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n185_goblin_grandfather-accepting-acceptted" mid="12"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$寻找小淑II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-1" image="QN_Npc_Goblin_Grandfa.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$小妖精老头$<BR>可真是个善良的人类啊咕咕….<BR><FONT color=#7e12d2>（小妖精老头感激的、悲伤的，又开始哭起来了）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n274_hopgoblinold-1" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$小精灵老头$<BR>咳咳咳！！小石…，小峰… 小朗…，小石… 小淑…<BR>我的孙儿… 我的孙儿… 咳咳咳~！<BR><FONT color=#7e12d2>（似乎已经失去了理性，很难再与之对话了）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n275_houndnormal-1" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$小妖精老头的猎犬$<BR><FONT color=#7e12d2>（小妖精老头的猎犬泪汪汪的样子。 小妖精老头已经不见踪影）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-1" image="QM_goblin_son04.dds" itemindex="">
+      <talk_answer link_index="n056_guard_pesent_dalcy-2" mid="21"><![CDATA[<html>（询问关于小淑的下落）</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$卫兵达尔西$<BR>
+ <FONT color=#a82424>小妖精</FONT>都已经接近村庄了，真是让人担心啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n057_guard_pesent_dikinson-1" image="QM_goblin_son04.dds" itemindex="">
+      <talk_answer link_index="n057_guard_pesent_dikinson-2" mid="22"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$卫兵迪金森$<BR><FONT color=#a82424>长头发的小妖精</FONT>吗?<BR>是啊，似乎见过…又没见过…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-2" image="QM_goblin_son04.dds" itemindex="">
+      <talk_answer link_index="n056_guard_pesent_dalcy-2-a" mid="23"><![CDATA[<html>呃！那你知不知道那个小妖精跑哪去了?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$卫兵达尔西$<BR><FONT color=#a82424>长头发的小妖精</FONT>吗?<BR>嗯…，是，就是它。 <BR>也不穿什么裤子，就在村庄附近活蹦乱跳的，所以就过去教训了它一顿。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-2-a" image="QM_goblin_son04.dds" itemindex="">
+      <talk_answer link_index="n056_guard_pesent_dalcy-2-b" mid="29"><![CDATA[<html>（看来是想寻求我的帮助呢）</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$卫兵达尔西$<BR>是啊…我也想不起来了。好像它在村庄附近正在找什么人呢。这样想来那个小妖精好像在喊着和<FONT color=#382000>{user_nick}</FONT>你的名字一样的话呢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-2-b" image="" itemindex="">
+      <talk_answer link_index="n056_guard_pesent_dalcy-3" mid="31"><![CDATA[<html>啊，不是的。下次要是见到它的话，一定要告诉我啊。</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$卫兵达尔西$<BR>怎么那种表情啊?<BR>难道有什么问题…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n057_guard_pesent_dikinson-2" image="QN_Npc_Guard_Dalcy.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$卫兵迪金森$<BR>
+嗯…我好像也见过一只向阴影森林方向跑去的小妖精… 最好向阴影森林的<FONT color=#a82424>卫兵达尔西</FONT>问一问的好。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-3" image="QN_Npc_Guard_Dalcy.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$卫兵达尔西$<BR>嗯，好的。<BR><FONT color=#7e12d2>（卫兵达尔西似乎明白的点了点头）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n275_houndnormal-3" image="QN_Npc_Goblin_Grandfa.dds" itemindex="">
+      <talk_answer link_index="n275_houndnormal-3-a" mid="33"><![CDATA[<html>小妖精老头去哪里了呢?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$小妖精老头的猎犬$<BR>
+<FONT color=#7e12d2>（小妖精老头不见踪影）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n275_houndnormal-3-a" image="QW_19.dds" itemindex="">
+      <talk_answer link_index="n275_houndnormal-4" mid="35"><![CDATA[<html>这…！难道！</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$小妖精老头的猎犬$<BR>哇哇哇，啊呜呜呜~。<BR><FONT color=#7e12d2>（猎犬泪汪汪的的望着神殿礼拜堂的方向悲鸣着）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n275_houndnormal-4" image="QW_19.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$小妖精老头的猎犬$<BR>呜呜呜~。<BR><FONT color=#7e12d2>（在小妖精老头出大事之前，最好还是赶紧到神殿礼拜堂看一看的好）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n274_hopgoblinold-4" image="" itemindex="">
+      <talk_answer link_index="n274_hopgoblinold-4-a" mid="39"><![CDATA[<html>老爷爷，小淑找到了！快醒一醒啊！</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$小精灵老头$<BR>咳咳咳！！<BR>
+小石…，小峰… 小朗…，小石… 小淑…<BR>我的孙儿… 我的孙儿… 咳咳咳~！<BR>
+<FONT color=#7e12d2>（小妖精老头似乎已经失去了理智）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n274_hopgoblinold-4-a" image="" itemindex="">
+      <talk_answer link_index="n274_hopgoblinold-4-b" mid="41"><![CDATA[<html>（获得奖励）</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n274_hopgoblinold-4-b" image="" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$小精灵老头$<BR>咳咳咳！！一定要为孙儿们…报仇！咳咳咳！<BR><FONT color=#a82424>埃~ 雷~~ 娜啊啊啊~~~~~~~~~</FONT>！！！！！！<BR><FONT color=#7e12d2>（小妖精老头似乎只剩下了对埃雷娜的仇恨）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3171,3172,3173,3174</exe>
+         <exe type="setquest">317</exe>
+         <exe type="talk" npc="n185_goblin_grandfather">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3171,3172,3173,3174</exe>
+         <exe type="complete">317</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n185_goblin_grandfather" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n185_goblin_grandfather" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n057_guard_pesent_dikinson" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n056_guard_pesent_dalcy" sub="b" />
+   <exelink qstep="2" npc="n056_guard_pesent_dalcy" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n275_houndnormal" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n274_hopgoblinold" sub="a">0</exelink>
+   <exelink qstep="4" npc="n274_hopgoblinold" sub="b">1</exelink>
+   <journal_data recompense="1:3171,2:3172,3:3173,4:3174" quest_title="고숙이를 찾아라Ⅱ" chapterid="" quest_level="16" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Guard_Dalcy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>3,n57</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>57</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[与卫兵迪金森对话]]></title>
+         <contents mid="45"><![CDATA[<html>为了给小妖精老头把小淑找回来吧。首先向狂风森林的卫兵迪金森问问小淑的下落吧。<BR>
+ <BR>
+<FONT color=#086171>狂风森林</FONT> <FONT color=#a82424>→ 卫兵迪金森</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[与卫兵迪金森对话]]></destination>
+         <todo_msg mid="47"><![CDATA[新增了任务。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image>QN_Npc_Goblin_Grandfa.dds</title_image>
+         <contents_image>QN_Npc_Guard_Dalcy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>2,n56</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>56</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[与卫兵达尔西对话]]></title>
+         <contents mid="49"><![CDATA[<html>狂风森林的卫兵迪金森好像也没看清楚。去问问阴影森林的卫兵达尔西吧。<BR><BR><FONT color=#086171>阴影森林</FONT> <FONT color=#a82424>→ 卫兵达尔西</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[与卫兵达尔西对话]]></destination>
+         <todo_msg mid="51"><![CDATA[请向卫兵达尔西询问小淑的行踪。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Goblin_Grandfa.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>3,n275</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>275</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[与小妖精老头对话]]></title>
+         <contents mid="54"><![CDATA[<html>向卫兵达尔西询问之后，得知小淑没有变成小精灵，而是安全地逃走了。<BR>虽然没有找到小淑，但是已经确认了她的生死。先回到小妖精老头那里，说明情况吧。<BR><BR><FONT color=#086171>狂风森林</FONT> <FONT color=#a82424>→ 小妖精老头</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[与小妖精老头对话]]></destination>
+         <todo_msg mid="56"><![CDATA[确认了小淑的生死。回到小妖精老头那里吧。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_19.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>142,n274</destination_pos>
+         <destination_mode>custom:141@1,142@1</destination_mode>
+         <statemark_npcid>274</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[与神殿礼拜堂的小妖精老头对话]]></title>
+         <contents mid="59"><![CDATA[<html>在阴影森林向卫兵达尔西询问小淑下落的时候，小妖精老头等不及我的消息便直接进入了<FONT color=#a82424>神殿礼拜堂</FONT>。赶紧去找小妖精老头回来吧。<BR>
+ <BR>
+<FONT color=#086171>狂风森林（狂风森林神殿入口）</FONT> <FONT color=#a82424>→ 神殿礼拜堂</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[在神殿礼拜堂与小妖精老头对话]]></destination>
+         <todo_msg mid="61"><![CDATA[在神殿礼拜堂寻找小妖精老头吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>16:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>316</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

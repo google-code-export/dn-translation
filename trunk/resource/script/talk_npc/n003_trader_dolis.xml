@@ -1,0 +1,28 @@
+   <talk>
+      <npcename>n003_trader_dolis</npcename>
+      <npcid>3</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Trader Dolis]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="buy" mid="4"><![CDATA[<html>[Trade/Repair]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Trader Dolis${action:Talk}<BR>你好？冒险家。请问你需要什么呢？</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="6" link_target="sq01_051_nourishing_meal.xml"><![CDATA[<html>[Lv2] <FONT color=#086171>猎犬的营养食品</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="sq01_052_find_the_perfume.xml"><![CDATA[<html>[Lv3] <FONT color=#086171>寻找香水</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="12" link_target="sq01_064_healthy_doris.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv4]</FONT> </FONT><FONT color=#086171>关注健康的多莉丝</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="15" link_target="sq01_053_hound_digester.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv5] </FONT><FONT color=#086171>猎犬的消化药</FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="sq01_061_lets_party.xml"><![CDATA[<html>[Lv7] <FONT color=#086171>夫妻蘑菇的眼泪</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="34" link_target="sq01_060_dorins_amazing_box2.xml"><![CDATA[<html>[Lv7] <FONT color=#086171>道林的遗物盒Ⅱ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="39" link_target="sq01_065_shoddy_statue.xml"><![CDATA[<html>[Lv7] <FONT color=#086171>虚假工程的痕迹</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="40"><![CDATA[<html>(返回)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Trader Dolis$<BR>你好？冒险家。请问你需要什么呢？</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="openshop">10</exe>
+      </executions>
+      <conditions />
+      <exelink idx="buy">1</exelink>
+   </talk>

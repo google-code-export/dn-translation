@@ -1,0 +1,21 @@
+   <talk>
+      <npcename>n167_charging_point</npcename>
+      <npcid>167</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[要放进悬浮装置充电支架里的npc]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$???$<BR>
+未知的结构。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="enterquest">mq08_208_depleting_fuel</exe>
+         <exe type="conexe" true="0" false="3">0</exe>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="4" false="2">1</exe>
+         <exe type="enterquest">mq08_209_red_eyes_darkelf</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">208</chk>
+         <chk type="hasquest">209</chk>
+      </conditions>
+   </talk>

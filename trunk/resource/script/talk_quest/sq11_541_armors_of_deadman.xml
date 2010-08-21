@@ -1,0 +1,187 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_541_armors_of_deadman</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>541</qid>
+      <designer>김주연</designer>
+      <qlevel>28</qlevel>
+      <qdesc>다크 스켈레톤의 갑옷 400148
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[死者的盔甲]]></qkname>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="6"><![CDATA[<html>难关?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$将军道格拉斯$<BR>搜寻先知的工作正按部就班的进行。<BR>
+但是还有几个难关。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="8"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$将军道格拉斯$<BR>黑山山脚的的魔物不同于其他魔物，它们穿着更加坚固的盔甲。所以消灭它们就更加困难了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-c" mid="10"><![CDATA[<html>收集盔甲….</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$将军道格拉斯$<BR>所以我想调查它们的盔甲，寻找盔甲的弱点。其中最容易调查的是崇拜者黑暗巨人的盔甲。你可否协助我们收集它们的盔甲啊 ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="12"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$死者的盔甲$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QW_43.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$将军道格拉斯$<BR>崇拜者黑暗巨人主要的出没地点就是<FONT color=#a82424>黑暗领地守卫队据点</FONT>。<BR>在那里收集15个黑暗巨人的盔甲回来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="" itemindex="400148">
+      <talk_answer link_index="n042_general_duglars-2-a" mid="15"><![CDATA[<html>（把拿来的都交了出来）</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$将军道格拉斯$<BR>黑暗巨人的盔甲都收集回来啦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-b" mid="17"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-b" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$将军道格拉斯$<BR>我得用它来进行研究，看看能不能找到破坏它的方法。<BR>辛苦你了。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="15" op="]=">400148</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense_view">,5411,5412,5413,5414</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID,541, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">1128</exe>
+         <exe type="huntitem" num="15" exe="" onexe="11">400148</exe>
+         <exe type="conexe" true="8,9,10" false="7,14">0</exe>
+         <exe type="addquestitem" num="1">400148</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="conexe" true="8,9,10" false="">0</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">1129</exe>
+         <exe type="conexe" true="8,9,10" false="">0</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5411,5412,5413,5414</exe>
+         <exe type="complete">541</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">1,2,4,5,3,12,13</exelink>
+   <exelink qstep="2" npc="n042_general_duglars" sub="a">0</exelink>
+   <exelink qstep="2" npc="n042_general_duglars" sub="b">1</exelink>
+   <journal_data recompense="1:5411,2:5412,3:5413,4:5414" quest_title="죽은자의 갑옷" chapterid="" quest_level="28" quest_mark_type="10" use_item_list="400148">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_43.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>432,0,0</destination_pos>
+         <destination_mode>custom:431@3,432@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="19"><![CDATA[有效的盔甲]]></title>
+         <contents mid="20"><![CDATA[<html>消灭<FONT color=#a82424>黑暗领地守卫队据点</FONT>出没的追随者黑暗巨人，并收集15个<FONT color=#a82424>黑暗巨人的盔甲</FONT>吧。<BR>
+ <BR>
+<FONT color=#086171>黑山山角（黑暗大君主的关卡）</FONT> <FONT color=#a82424>→ 黑暗领地守卫队据点</FONT></html>]]></contents>
+         <destination mid="21"><![CDATA[在黑暗领地守卫队据点收集盔甲]]></destination>
+         <todo_msg mid="22"><![CDATA[到黑暗领地守卫队据点吧。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[与将军道格拉斯对话]]></title>
+         <contents mid="24"><![CDATA[<html>15个黑暗巨人的盔甲收集完毕。把它交给神圣天堂王城内部的<FONT color=#a82424>将军道格拉斯</FONT吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城内部</FONT> <FONT color=#a82424>→ 将军道格拉斯</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[与将军道格拉斯对话]]></destination>
+         <todo_msg mid="26"><![CDATA[回到将军道格拉斯那里交出盔甲吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>28:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>523</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>
