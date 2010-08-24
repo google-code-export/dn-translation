@@ -2,15 +2,13 @@
 = Translation Helper =
 Created by apqoo (whatisqoo)
 
-
-*Link to latest version:* 
-http://dn-translation.googlecode.com/svn/trunk/translation-helper/index.html
+=== Latest Version ===
+URL: http://dn-translation.googlecode.com/svn/trunk/translation-helper/index.html
 
 If your browser can display the page directly, then you can just use it online. If not, right click on the link and save the page to your computer. When you open it, you need to allow any permissions it asks for.
 
-<hr>
-
-*Usage:* Copy and paste the contents of an XML file into the left text box ("Source"), then click on the buttons labeled "1", "2" and "3", in that order.
+=== Usage ===
+Copy and paste the contents of an XML file into the left text box ("Source"), then click on the buttons labeled "1", "2" and "3", in that order.
 
   # Extract: Extracts all the translatable text from source
   # Translate: Use Google Translate AJAX API to perform translation on all extracted text
@@ -18,15 +16,14 @@ If your browser can display the page directly, then you can just use it online. 
 
 On the bottom of the page, you can also do single translations by entering what you want into the box then click on "Translate This".
 
-<hr>
-
-*Text Extraction Methods:* There are two methods you can choose from to extract text from the input source. Please try them both and see which produces better translations for the portions you are working on.
+=== Text Extraction Methods ===
+There are two methods you can choose from to extract text from the input source. Please try them both and see which produces better translations for the portions you are working on.
   * Unicode: This method extracts text using the character code range that contains most Chinese characters. Using this method, the extracted text does not contain any symbols and usually produces short phrases and text fragments. 
 
   * CDATA: This method extracts the contents of all CDATA tags from the source. The results are longer, more complete sentences, but also contain HTML tags. The HTML tags are sent to translation with the text.
 
-<hr> 
+=== Remarks ===
 
-*Note:* The script will probably not able to take the entire uistring.xml (or any other large files) at once. It will probably make your computer explode if you try. So when it comes to large files, you should just copy in and process a few lines at a time.
+*Note 1:* The script will probably not able to take the entire uistring.xml (or any other large files) at once. It will probably make your computer explode if you try. So when it comes to large files, you should just copy in and process a few lines at a time.
 
-*Note:* If, for some reason, the latest version is not working properly, you can find older version [http://code.google.com/p/dn-translation/source/list?path=/trunk/translation-helper/index.html here]. Please report any bugs either here on Google Code (create a new issue), or post on forums.
+*Note 2:* If, for some reason, the latest version is not working properly, you can find older version [http://code.google.com/p/dn-translation/source/list?path=/trunk/translation-helper/index.html here]. Please report any bugs either here on Google Code (create a new issue), or post on forums.
