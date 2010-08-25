@@ -31,6 +31,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -161,12 +164,13 @@
       <executions>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
-         <exe type="huntitem" num="1" exe="" onexe="">400150</exe>
-         <exe type="huntmon" num="30000" party="1" exe="" onexe="7,4,5,6">1159</exe>
+         <exe type="huntitem" num="1" exe="4,5,6" onexe="">400150</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">1159</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
          <exe type="delcount">.</exe>
          <exe type="addquestitem" num="1">400150</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">201159</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -184,7 +188,7 @@
    </qstep_change>
    <exelink qstep="accepting" npc="n088_scholar_starshy" sub="l">0</exelink>
    <exelink qstep="accepting" npc="n088_scholar_starshy" sub="acceptted">1,2</exelink>
-   <exelink qstep="1" npc="n088_scholar_starshy" sub="a">0,2,3,1</exelink>
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="a">0,2,3,8,1</exelink>
    <exelink qstep="3" npc="n088_scholar_starshy" sub="b">0</exelink>
    <exelink qstep="3" npc="n088_scholar_starshy" sub="c">1</exelink>
    <exelink qstep="3" npc="n088_scholar_starshy" sub="d" />
@@ -259,8 +263,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="66"><![CDATA[去无名暴君之墓寻找古代复原之书]]></title>
-         <contents mid="67"><![CDATA[<html>斯塔西说要想使用古代人的文件复原技术，需要有古代复原之书。根据盗墓贼的情报，古代复原之书在<FONT color=#a82424>无名暴君之墓</FONT>好像可以找到。去寻找书吧。<BR><FONT color=#7e12d2>(在深渊难度下无法执行)</FONT><BR>
-<BR><FONT color=#086171>赫尔马岱港口(黑暗矿山入口)</FONT> <FONT color=#a82424>→ 无名暴君之墓</FONT></html>]]></contents>
+         <contents mid="67"><![CDATA[<html>斯塔西说要想使用古代人的文件复原技术，需要有古代复原之书。根据盗墓贼的情报，古代复原之书在<FONT color=#a82424>无名暴君之墓</FONT>好像可以找到。去寻找书吧。<BR><BR><FONT color=#086171>赫尔马岱港口(黑暗矿山入口)</FONT> <FONT color=#a82424>→ 无名暴君之墓</FONT></html>]]></contents>
          <destination mid="68"><![CDATA[寻找古代复原之书]]></destination>
          <todo_msg mid="69"><![CDATA[请到无名暴君之墓去寻找古代复原之书。]]></todo_msg>
       </journal>

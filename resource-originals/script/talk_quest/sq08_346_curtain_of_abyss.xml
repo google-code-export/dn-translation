@@ -1,0 +1,248 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_346_curtain_of_abyss</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>346</qid>
+      <designer>김인정</designer>
+      <qlevel>20</qlevel>
+      <qdesc>심연의 장막 아이템 처리에 따라 변경.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>347</nextqid>
+      <nextqname>sq08_347_decuman_filed</nextqname>
+      <nextqnpc>n199_darklair_castia</nextqnpc>
+      <qkname mid="1"><![CDATA[深渊屏障]]></qkname>
+      <qnpc>
+         <npcid>199</npcid>
+         <npcename>n199_darklair_castia</npcename>
+         <npckname>어둠의 여신관 카스티아</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-a" mid="6"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>这里就像是光明世界的影子，是女神中的毒沉积的地方。<BR>我们用魔法屏障将这里围了起来，不让外界受到污染。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting-a" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-acceppted" mid="8"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>但是以我们的力量，再也无法维持住封印了。所以我们开始向外界有能力的冒险家发出邀请。请你……一定要帮助我们守护<FONT color=#a82424>黑暗边界</FONT>的封印。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-a" mid="10"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>这里就像是光明世界的影子，是女神中的毒沉积的地方。<BR>我们用<FONT color=#a82424>魔法屏障</FONT>将这里围了起来，不让外界受到污染。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-a" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-b" mid="12"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$黑暗女神官卡斯提亚${action:Talk}<BR>事实上……之前也有人来帮助过我们。但是接触到堕落的恶梦的瞬间，他们都变成了魔物。我们经过研究之后，制作出了特殊的护身符。终于可以防止那样的事情不再发生。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-b" image="QS_Default.dds" itemindex="337772545">
+      <talk_answer link_index="n199_darklair_castia-1-c" mid="14"><![CDATA[<html>黑暗女神官休？知道了。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>要想进入恶梦，需要名叫<FONT color=#a82424>深渊屏障</FONT>的特殊的护身符。你可以从<FONT color=#a82424>黑暗女神官休</FONT>那里获得。请你带着深渊屏障，到憎恨恶梦中去，净化无尽的恶梦。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-c" image="QN_darklair_chou.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-d" mid="19"><![CDATA[<html>(理解了条件)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$深渊屏障$<BR><FONT color=#7e12d2>※ 黑暗边界——憎恨恶梦推荐4人组队游戏。<BR>※ 要想进入黑暗边界，需要深渊屏障。</FONT><BR><FONT color=#7e12d2>※ 深渊屏障可以在黑暗女神官休那里获得。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-d" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2" mid="21"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$深渊屏障$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2-a" mid="22"><![CDATA[<html>啊？深渊屏障可以从哪里获得呢？</html>]]></talk_answer>
+      <talk_answer link_index="n199_darklair_castia-2-b" mid="43"><![CDATA[<html>什么是回合？</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>我们守护的黑暗边界是可以通过<FONT color=#a82424>恶梦之门</FONT>进入的憎恨恶梦。你的现在的目标，是到达<FONT color=#a82424>憎恨恶梦</FONT>的<FONT color=#a82424>第5回合</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-a" image="QN_darklair_chou.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>深渊屏障可以通过<FONT color=#a82424>黑暗女神官休</FONT>获得。<BR><FONT color=#a82424>每天可以领取2张</FONT>，希望你能记住。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-b" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2-c" mid="45"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>在堕落的恶梦中，很难找到前进的路。你需要做的就是和不断出现的魔物战斗。将一次出现的魔物<FONT color=#a82424>全部净化</FONT>，就完成了<FONT color=#a82424>一个回合</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-c" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2-d" mid="47"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>不断地重复这样的回合，就可以到达恶梦更深处的土地。然后又会有众多魔物出现。能坚持几个回合……就全看你的能力了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-d" image="QW_DarkLair.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$黑暗女神官卡斯提亚${action:Talk}<BR>啊，有一点需要注意。每五个回合，会出现比平常更强的魔物。请一定要保持警惕。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-a" mid="26"><![CDATA[<html>(卡斯提亚脸上露出了微笑)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$黑暗女神官卡斯提亚${action:Talk}<BR>啊，冒险家！<BR>看到你没有被可怕的恶梦侵蚀，我感到由衷的高兴。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-a" image="QS_Default.dds" itemindex="337772545">
+      <talk_answer link_index="n199_darklair_castia-3-b" mid="28"><![CDATA[<html>今后？还没完吗？</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>即使你拥有<FONT color=#a82424>深渊屏障</FONT>，不小心的话也可能会变成魔物。<BR>希望今后你能安然无事。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-b" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-!next" mid="30"><![CDATA[<html><FONT color=#086171>(获得奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n199_darklair_castia-1-a", npc_talk_target);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="recompense_view">3460,,,,</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="4,5,6">100128</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="setquest">346</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3460,,,,</exe>
+         <exe type="complete">346</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n199_darklair_castia" sub="acceppted">0</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="b" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="c" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="d">2</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="2">7,0,3,1</exelink>
+   <exelink qstep="2" npc="n199_darklair_castia" sub="c" />
+   <exelink qstep="2" npc="n199_darklair_castia" sub="d" />
+   <exelink qstep="3" npc="n199_darklair_castia" sub="b">0</exelink>
+   <exelink qstep="3" npc="n199_darklair_castia" sub="!next">1</exelink>
+   <journal_data recompense="3460" quest_title="심연의 장막" chapterid="" quest_level="20" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>23,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@0,11@0</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[黑暗巢穴的第一件事]]></title>
+         <contents mid="32"><![CDATA[<html>去黑暗边界舒尔帕岗楼和<FONT color=#a82424>黑暗女神官卡斯提亚</FONT>对话，了解委托内容。<BR><BR><FONT color=#086171>黑暗边界舒尔帕岗楼</FONT> <FONT color=#a82424>→ 黑暗女神官卡斯提亚</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[和黑暗女神官卡斯提亚对话]]></destination>
+         <todo_msg mid="34"><![CDATA[任务已添加。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_DarkLair.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12004,0,0</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@0,11@0,12004@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[第五片土地]]></title>
+         <contents mid="36"><![CDATA[<html>黑暗边界 净化憎恨恶梦5回合以上。<BR><BR><FONT color=#7e12d2>※ 黑暗边界推荐4人组队游戏。<BR>※ 要想进入黑暗边界，需要深渊屏障。<BR>※ 深渊屏障可以在黑暗女神官休那里获得。</FONT><BR><BR><FONT color=#086171>恶梦之门</FONT> <FONT color=#a82424>→ 憎恨恶梦第5回合</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[突破憎恨恶梦第5回合]]></destination>
+         <todo_msg mid="38"><![CDATA[请突破黑暗边界的憎恨恶梦第5回合以上。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>23,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@0,11@0</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[向黑暗女神官卡斯提亚报告]]></title>
+         <contents mid="40"><![CDATA[<html>委托完成。回去向黑暗女神官卡斯提亚报告吧。<BR><BR><FONT color=#086171>黑暗边界舒尔帕岗楼</FONT> <FONT color=#a82424>→ 黑暗女神官卡斯提亚</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[和黑暗女神官卡斯提亚对话]]></destination>
+         <todo_msg mid="42"><![CDATA[委托完成。请向黑暗女神官卡斯提亚报告。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>345</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

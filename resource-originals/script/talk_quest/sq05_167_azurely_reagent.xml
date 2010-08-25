@@ -32,6 +32,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -75,7 +78,7 @@
       <executions>
          <exe type="recompense_view">,1671,1671,1671,1672</exe>
          <exe type="setquest">167</exe>
-         <exe type="huntmon" num="1" party="1" exe="3,4,5,6" onexe="">248</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5,6">248</exe>
          <exe type="addquestitem" num="1">300096</exe>
          <exe type="delcount">.</exe>
          <exe type="setstep">2</exe>
@@ -108,7 +111,7 @@
          <contents_image>QW_8.dds</contents_image>
          <need_itemlist>300096</need_itemlist>
          <destination_pos>88,0,0</destination_pos>
-         <destination_mode>custom:86@3,87@3,88@3</destination_mode>
+         <destination_mode>custom:86@1,87@1,88@3</destination_mode>
          <statemark_npcid />
          <statemark_type>12</statemark_type>
          <get_location />

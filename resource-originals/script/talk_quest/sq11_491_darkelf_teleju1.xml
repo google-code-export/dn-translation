@@ -37,6 +37,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -197,6 +200,7 @@
          <exe type="setjornal">4</exe>
          <exe type="delcount">.</exe>
          <exe type="conexe" true="6,7,8" false="">0</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201081</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="3">
@@ -228,7 +232,7 @@
    <exelink qstep="1" npc="n281_darkelf_teleju" sub="2">0,1</exelink>
    <exelink qstep="2" npc="n092_trader_kelly" sub="b" />
    <exelink qstep="2" npc="n092_trader_kelly" sub="c" />
-   <exelink qstep="2" npc="n092_trader_kelly" sub="d">0,2,3,1</exelink>
+   <exelink qstep="2" npc="n092_trader_kelly" sub="d">0,2,10,3,1</exelink>
    <exelink qstep="4" npc="n092_trader_kelly" sub="b">0,1,2</exelink>
    <exelink qstep="5" npc="n281_darkelf_teleju" sub="b" />
    <exelink qstep="5" npc="n281_darkelf_teleju" sub="c" />

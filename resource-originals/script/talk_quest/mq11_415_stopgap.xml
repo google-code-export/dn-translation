@@ -45,6 +45,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -187,12 +190,13 @@
       <executions>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
-         <exe type="huntmon" num="1" party="1" exe="" onexe="4">1007</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">1007</exe>
          <exe type="huntitem" num="1" exe="" onexe="5,6,7">300246</exe>
          <exe type="addquestitem" num="1">300246</exe>
          <exe type="delcount">.</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201007</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -242,7 +246,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="1" npc="n044_archer_master_ishilien" sub="b" />
-   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="c">0,2,3,1</exelink>
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="c">0,2,8,3,1</exelink>
    <exelink qstep="3" npc="n044_archer_master_ishilien" sub="a">0,1,2</exelink>
    <exelink qstep="4" npc="n042_general_duglars" sub="b" />
    <exelink qstep="4" npc="n042_general_duglars" sub="c" />
@@ -318,7 +322,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="67"><![CDATA[搜集精灵的眼泪]]></title>
-         <contents mid="68"><![CDATA[<html>去<FONT color=#a82424>精灵坟墓</FONT>搜集<FONT color=#a82424>精灵的眼泪</FONT>。用它好像可以制作成治疗药，好像在最强的怪物身上可以找到。<BR><BR><FONT color=#7e12d2>※ 在深渊难度下无法执行。</FONT><BR><BR><FONT color=#086171>赫尔马岱港口(下游废墟入口)</FONT> <FONT color=#a82424>→ 精灵坟墓</FONT></html>]]></contents>
+         <contents mid="68"><![CDATA[<html>去<FONT color=#a82424>精灵坟墓</FONT>搜集<FONT color=#a82424>精灵的眼泪</FONT>。用它好像可以制作成治疗药，好像在最强的怪物身上可以找到。<BR><BR><FONT color=#086171>赫尔马岱港口(下游废墟入口)</FONT> <FONT color=#a82424>→ 精灵坟墓</FONT></html>]]></contents>
          <destination mid="69"><![CDATA[去精灵坟墓搜集精灵的眼泪]]></destination>
          <todo_msg mid="70"><![CDATA[请到精灵坟墓去搜集精灵的眼泪。]]></todo_msg>
       </journal>

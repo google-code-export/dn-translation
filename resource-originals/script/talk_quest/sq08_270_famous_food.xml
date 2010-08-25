@@ -36,6 +36,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -113,13 +116,14 @@
       <executions>
          <exe type="setquest">270</exe>
          <exe type="recompense_view">,2701,2702,2703,2704</exe>
-         <exe type="huntmon" num="5" party="1" exe="4,5,6" onexe="7">382</exe>
-         <exe type="huntitem" num="5" exe="" onexe="">300065</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">382</exe>
+         <exe type="huntitem" num="5" exe="4,5,6" onexe="">300065</exe>
          <exe type="delcount">.</exe>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
          <exe type="addquestitem" num="1">300065</exe>
          <exe type="talk" npc="n026_trader_may">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200382</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -158,7 +162,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n026_trader_may" sub="c">1</exelink>
-   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">0,8,3,2</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">0,2,9,3,8</exelink>
    <exelink qstep="2" npc="n026_trader_may" sub="classc">0</exelink>
    <exelink qstep="2" npc="n026_trader_may" sub="c" />
    <exelink qstep="2" npc="n026_trader_may" sub="c" />
@@ -174,7 +178,7 @@
          <contents_image>QW_15.dds</contents_image>
          <need_itemlist>300065</need_itemlist>
          <destination_pos>124,0,0</destination_pos>
-         <destination_mode>custom:121@3,122@3,123@3,124@3</destination_mode>
+         <destination_mode>custom:121@1,122@3,123@3,124@3</destination_mode>
          <statemark_npcid />
          <statemark_type>12</statemark_type>
          <get_location />
@@ -197,8 +201,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="38"><![CDATA[梅伊的挑战]]></title>
-         <contents mid="39"><![CDATA[<html>消灭<FONT color=#a82424>森林圣域</FONT>的猎犬，并获取猎犬的食物吧。<BR><FONT color=#7e12d2>(在深渊级难度下无法进行)</FONT><BR>
-<BR><FONT color=#086171>灰色废墟（被侵犯的圣域 ）</FONT> <FONT color=#a82424>→ 森林圣域</FONT></html>]]></contents>
+         <contents mid="39"><![CDATA[<html>消灭<FONT color=#a82424>森林圣域</FONT>的猎犬，并搜集猎犬的食物吧。<BR><BR><FONT color=#086171>灰色废墟(遭到侵略的圣域)</FONT> <FONT color=#a82424>→ 森林圣域</FONT></html>]]></contents>
          <destination mid="40"><![CDATA[在森林圣域收集猎犬的食物]]></destination>
          <todo_msg mid="41"><![CDATA[任务已添加。]]></todo_msg>
       </journal>

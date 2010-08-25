@@ -1,0 +1,204 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_345_call_to_darkvillage</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>345</qid>
+      <designer>김인정</designer>
+      <qlevel>20</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[黑暗边界舒尔帕]]></qkname>
+      <qnpc>
+         <npcid>199</npcid>
+         <npcename>n199_darklair_castia</npcename>
+         <npckname>어둠의 여신관 카스티아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-noquest" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>我们的力量已经达到了极限……<BR>
+女神给予我们的苦难却好像还没结束。<BR><FONT color=#7e12d2>(在冒险家公会会长戴卡德那里可以接受任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-class1" mid="7"><![CDATA[<html>有什么事吗?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>……对了！！我怎么把你给忘了呢！！<BR><FONT color=#387206>{user_nick}</FONT>，像你这样的冒险家，应该可以胜任这件事情。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="9"><![CDATA[<html>好像隐约听说过。</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>这是只有很少一部分人才知道的名字。你听说过<FONT color=#a82424>黑暗女神官</FONT>吗？<BR>当然，<FONT color=#387206>{user_class}</FONT>，也许你对她们没什么好印象……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="11"><![CDATA[<html>黑暗女神官？不知道……</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>这是只有很少一部分人才知道的名字。你听说过<FONT color=#a82424>黑暗女神官</FONT>吗？<BR>她们和女神教团有很大的不同，也许你不会知道……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="QW_DarkVillage.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-d" mid="14"><![CDATA[<html>是吗？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>如果说女神教团象征着阿尔泰亚女神的光，那么<FONT color=#a82424>黑暗女神官</FONT>们就象征着<FONT color=#a82424>女神的黑暗</FONT>。她们在非常危险的地方执行危险的任务，坚持着自己的信仰。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-d" image="QN_darklair_castia.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-e" mid="16"><![CDATA[<html>去哪好啊?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>我想交给你的事情，就是去见见那些<FONT color=#a82424>黑暗女神官</FONT>。<BR>
+她们不喜欢抛头露面，不知道为什么突然联系到我，说需要冒险家的帮助。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-e" image="QW_DarkVillage.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-f" mid="18"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$冒险家公会会长戴卡德${action:Talk}<BR>只要到<FONT color=#a82424>黑暗边界舒尔帕岗楼</FONT>去就行了。如果你去过竞技场，就应该知道方法。这次也一样。通过<FONT color=#a82424>右上方</FONT>的<FONT color=#a82424>切换频道按钮</FONT>，可以移动到<FONT color=#a82424>黑暗边界舒尔帕</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceppted" mid="20"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$黑暗边界舒尔帕$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_darklair_castia.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="24"><![CDATA[<html>(听取去的方法)</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="25"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>好了，你快去黑暗边界舒尔帕岗楼见见<FONT color=#a82424>黑暗女神官卡斯提亚</FONT>。<BR>她们竟然会向外界请求帮助，真是奇怪。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QW_DarkVillage.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="27"><![CDATA[<html>(右上方的切换频道按钮……)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>我再说明一下。如果你去过竞技场，就应该知道方法。这次也一样。通过<FONT color=#a82424>右上方</FONT>的<FONT color=#a82424>切换频道按钮</FONT>，可以移动到<FONT color=#a82424>黑暗边界舒尔帕</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>我正在发愁派什么人去才好，正好你就来了。<BR>请一路小心。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-a" mid="30"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$黑暗女神官卡斯提亚${action:Talk}<BR>你是从<FONT color=#a82424>冒险家公会</FONT>来的？<BR>我一直都在等你。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-a" image="QN_darklair_castia.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-b" mid="33"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>我来正式介绍一下。我是<FONT color=#a82424>黑暗女神官卡斯提亚</FONT>。<BR>是派遣到黑暗边界舒尔帕岗楼的三位女神官的代表。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-b" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-c" mid="35"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>我之所以破例向外界人员请求帮助，是为了阻止<FONT color=#a82424>黑暗边界</FONT>的堕落。<BR>
+就像我说的那样，这里是受到女神的恶梦影响最大的地方，充满了各种危险的东西。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-c" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-d" mid="37"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>我们的体内都有<FONT color=#a82424>宝玉</FONT>，我们希望通过牺牲自己，阻止黑暗入侵外面那光明的世界。但是……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-d" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-e" mid="47"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>
+虽然我们很努力，但堕落的力量逐渐强大，超出了我们的能力范围。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-e" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-f" mid="50"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>
+不仅如此……黑暗的力量正在侵蚀光明的世界，深渊正在那里不断扩散。<BR>
+因此我们黑暗教团为了解决这次的事态，做出了一个重要的决定。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-f" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-g" mid="39"><![CDATA[<html>我应该怎么做呢？</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$黑暗女神官卡斯提亚$<BR>
+那就是恢复和外部世界的联系，借助外界的优秀冒险家的力量。<BR>
+请你……一定要帮助我们守护<FONT color=#a82424>黑暗边界</FONT>的封印。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-g" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-!next" mid="41"><![CDATA[<html><FONT color=#086171>(获得奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">a</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">b</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+         <exe type="setquest">345</exe>
+         <exe type="recompense_view">3450,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3450,,,,</exe>
+         <exe type="complete">345</exe>
+         <exe type="custom">api_npc_NextScript(userObjID, npcObjID, "n199_darklair_castia-1", "sq08_346_curtain_of_abyss.xml");</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="class1">0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="f">5</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceppted">4,3</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="b" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="c" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="d" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="e" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="f" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="g">0</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="!next">1,2</exelink>
+   <journal_data recompense="3450" quest_title="어둠의 경계 수르파" chapterid="" quest_level="20" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>23,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@0,11@0</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[黑暗边界舒尔帕岗楼]]></title>
+         <contents mid="43"><![CDATA[<html>通过切换频道，移动到<FONT color=#a82424>黑暗边界舒尔帕岗楼</FONT>，和黑暗女神官卡斯提亚对话。<BR><BR><FONT color=#7e12d2>※ 通过右上方的频道选择窗口，选择黑暗边界舒尔帕，就可以移动到那里。</FONT><BR><BR><FONT color=#086171>黑暗边界舒尔帕频道</FONT> <FONT color=#a82424>→ 黑暗女神官卡斯提亚</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[和黑暗女神官卡斯提亚对话]]></destination>
+         <todo_msg mid="45"><![CDATA[请移动到黑暗边界舒尔帕，和黑暗女神官卡斯提亚对话。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>20:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,259 +1,260 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Sam (IMCGames Co., Ltd) -->
 <quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-   <quest_desc>
-      <qename>sq11_508_strange_asking1</qename>
-      <qtype>subquest</qtype>
-      <qcomtype>ONCE</qcomtype>
-      <qchapter>-1</qchapter>
-      <qid>508</qid>
-      <designer>김주연</designer>
-      <qlevel>32</qlevel>
-      <qdesc>구급상자	400162</qdesc>
-      <qdifficulty>1</qdifficulty>
-      <nextqid>509</nextqid>
-      <nextqname>sq11_509_strange_asking2</nextqname>
-      <nextqnpc>n036_adventurer_guildmaster_gunter</nextqnpc>
-      <qkname mid="1"><![CDATA[奇怪的委托Ⅰ]]></qkname>
-      <qnpc>
-         <npcid>36</npcid>
-         <npcename>n036_adventurer_guildmaster_gunter</npcename>
-         <npckname>모험자 길드장 군터</npckname>
-      </qnpc>
-      <qnpc>
-         <npcid>75</npcid>
-         <npcename>n075_wounded_huntingturn</npcename>
-         <npckname>조난자 헌팅턴</npckname>
-      </qnpc>
-   </quest_desc>
-   <talk_paragraph index="q_enter" />
-   <talk_paragraph index="!quit" />
-   <talk_paragraph index="_no_quest">
-      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="_full_quest">
-      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="_full_inventory">
-      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="_daily_quest_fail">
-      <talk_question mid="99998"><![CDATA[<html> $알림$<br>(퀘스트를 받을 수 있는 기간이 아니거나, 보유 퀘스트 한도를 초과하였습니다)</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="_full_Qinventory">
-      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n075_wounded_huntingturn-noquest" image="" itemindex="">
-      <talk_question mid="5"><![CDATA[<html>$遇难者亨廷顿$<BR>呃呃……<BR><FONT color=#7e12d2>(失去了意识，好像无法和他对话)</FONT></html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="" itemindex="">
-      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="7"><![CDATA[<html>有什么事吗？</html>]]></talk_answer>
-      <talk_question mid="6"><![CDATA[<html>$冒险家公会会长冈特$<BR>啊，你来的正好。我正想找你呢。</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
-      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="9"><![CDATA[<html>(收下并阅读书信)</html>]]></talk_answer>
-      <talk_question mid="8"><![CDATA[<html>$冒险家公会会长冈特$<BR>有一封寄给你的奇怪的信。<BR>
+	<quest_desc>
+		<qename>sq11_508_strange_asking1</qename>
+		<qtype>subquest</qtype>
+		<qcomtype>ONCE</qcomtype>
+		<qchapter>-1</qchapter>
+		<qid>508</qid>
+		<designer>김주연</designer>
+		<qlevel>32</qlevel>
+		<qdesc>구급상자	400162</qdesc>
+		<qdifficulty>1</qdifficulty>
+		<nextqid>509</nextqid>
+		<nextqname>sq11_509_strange_asking2</nextqname>
+		<nextqnpc>n036_adventurer_guildmaster_gunter</nextqnpc>
+		<qkname mid="1"><![CDATA[奇怪的委托Ⅰ]]></qkname>
+		<qnpc>
+			<npcid>36</npcid>
+			<npcename>n036_adventurer_guildmaster_gunter</npcename>
+			<npckname>모험자 길드장 군터</npckname>
+		</qnpc>
+		<qnpc>
+			<npcid>75</npcid>
+			<npcename>n075_wounded_huntingturn</npcename>
+			<npckname>조난자 헌팅턴</npckname>
+		</qnpc>
+	</quest_desc>
+	<talk_paragraph index="q_enter"/>
+	<talk_paragraph index="!quit"/>
+	<talk_paragraph index="_no_quest">
+		<talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_full_quest">
+		<talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_full_inventory">
+		<talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_daily_quest_fail">
+		<talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_full_Qinventory">
+		<talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n075_wounded_huntingturn-noquest" image="" itemindex="">
+		<talk_question mid="5"><![CDATA[<html>$遇难者亨廷顿$<BR>呃呃……<BR><FONT color=#7e12d2>(失去了意识，好像无法和他对话)</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="" itemindex="">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="7"><![CDATA[<html>有什么事吗？</html>]]></talk_answer>
+		<talk_question mid="6"><![CDATA[<html>$冒险家公会会长冈特$<BR>啊，你来的正好。我正想找你呢。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="9"><![CDATA[<html>(收下并阅读书信)</html>]]></talk_answer>
+		<talk_question mid="8"><![CDATA[<html>$冒险家公会会长冈特$<BR>有一封寄给你的奇怪的信。<BR>
 你先打开看看吧。</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="12074">
-      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="11"><![CDATA[<html>到底是什么意思啊？</html>]]></talk_answer>
-      <talk_question mid="10"><![CDATA[<html>$奇怪的信$<BR><FONT color=#7e12d2>看到这封信之后，我想你一定会很惊讶。</FONT><BR>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="12074">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="11"><![CDATA[<html>到底是什么意思啊？</html>]]></talk_answer>
+		<talk_question mid="10"><![CDATA[<html>$奇怪的信$<BR><FONT color=#7e12d2>看到这封信之后，我想你一定会很惊讶。</FONT><BR>
 <FONT color=#7e12d2>但是为了我的未来，请不要到精灵坟墓去救遇难的人。拜托你了。</FONT></html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
-      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="13"><![CDATA[<html>(继续)</html>]]></talk_answer>
-      <talk_question mid="12"><![CDATA[<html>$冒险家公会会长冈特$<BR><FONT color=#7e12d2>(冈特耸了耸肩)</FONT><BR>谁知道呢？这封信也许是个恶作剧，但是上面说有人遇难了，我有点不太放心。</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="QW_37.dds" itemindex="">
-      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-e" mid="15"><![CDATA[<html>精灵坟墓…….</html>]]></talk_answer>
-      <talk_question mid="14"><![CDATA[<html>$冒险家公会会长冈特$<BR>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="13"><![CDATA[<html>(继续)</html>]]></talk_answer>
+		<talk_question mid="12"><![CDATA[<html>$冒险家公会会长冈特$<BR><FONT color=#7e12d2>(冈特耸了耸肩)</FONT><BR>谁知道呢？这封信也许是个恶作剧，但是上面说有人遇难了，我有点不太放心。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="QW_37.dds" itemindex="">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-e" mid="15"><![CDATA[<html>精灵坟墓…….</html>]]></talk_answer>
+		<talk_question mid="14"><![CDATA[<html>$冒险家公会会长冈特$<BR>
 有时间的话，你能去<FONT color=#a82424>精灵坟墓</FONT>看看有没有遇难者吗？</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-e" image="" itemindex="">
-      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
-      <talk_question mid="16"><![CDATA[<html>$奇怪的委托Ⅰ$</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="" itemindex="QW_37.dds">
-      <talk_question mid="18"><![CDATA[<html>$冒险家公会会长冈特$<BR><FONT color=#a82424>精灵坟墓</FONT>就在赫尔马岱港口的下游废墟附近。你去哪里看看有没有遇难者。如果发现遇难者的话，只要使用那个<FONT color=#a82424>急救箱</FONT>就行了。</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n075_wounded_huntingturn-1" image="" itemindex="">
-      <talk_answer link_index="n075_wounded_huntingturn-2" mid="20"><![CDATA[<html>(好像找到了遇难者。使用急救箱吧)</html>]]></talk_answer>
-      <talk_question mid="19"><![CDATA[<html>$遇难者亨廷顿$<BR>呃呃……</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n075_wounded_huntingturn-2" image="" itemindex="">
-      <talk_answer link_index="n075_wounded_huntingturn-2-a" mid="22"><![CDATA[<html>你醒啦。你怎么会倒在这种地方？</html>]]></talk_answer>
-      <talk_question mid="21"><![CDATA[<html>$遇难者亨廷顿$<BR>这是……什么地方？</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n075_wounded_huntingturn-2-a" image="" itemindex="">
-      <talk_answer link_index="n075_wounded_huntingturn-2-b" mid="24"><![CDATA[<html>还好没事。你可以走吗？</html>]]></talk_answer>
-      <talk_question mid="23"><![CDATA[<html>$遇难者亨廷顿$<BR>我和同伴们一起来这里调查……但是……同伴们全都死了。我……想寻找出口……结果却在这里……晕了过去。</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n075_wounded_huntingturn-2-b" image="" itemindex="">
-      <talk_answer link_index="n075_wounded_huntingturn-3" mid="26"><![CDATA[<html>请沿着那边的路出去。那里应该不会再出现魔物了。</html>]]></talk_answer>
-      <talk_question mid="25"><![CDATA[<html>$遇难者亨廷顿$<BR>可以……我只是太累了，昏了过去而已。</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n075_wounded_huntingturn-3" image="" itemindex="">
-      <talk_question mid="27"><![CDATA[<html>$遇难者亨廷顿$<BR>谢谢。如果一直在这种地方昏迷不醒，一定会变成怪物们的晚餐。<BR>好的，我先回去了。</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n036_adventurer_guildmaster_gunter-3" image="" itemindex="">
-      <talk_answer link_index="n036_adventurer_guildmaster_gunter-3-a" mid="29"><![CDATA[<html>没什么。</html>]]></talk_answer>
-      <talk_question mid="28"><![CDATA[<html>$冒险家公会会长冈特$<BR>那里真的有遇难者吗？<BR>嗯，不管怎样，辛苦你了。</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n036_adventurer_guildmaster_gunter-3-a" image="" itemindex="">
-      <talk_answer link_index="n036_adventurer_guildmaster_gunter-3-!next" mid="31"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
-      <talk_question mid="30"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
-   </talk_paragraph>
-   <qstep_change qstep="accepting">
-      <comment />
-      <conditions />
-      <executions>
-         <exe type="recompense_view">,5081,5082,5083,5084</exe>
-         <exe type="setquest">508</exe>
-         <exe type="addquestitem" num="1">400162</exe>
-         <exe type="talk" npc="n036_adventurer_guildmaster_gunter">1</exe>
-      </executions>
-   </qstep_change>
-   <qstep_change qstep="1">
-      <comment />
-      <conditions />
-      <executions>
-         <exe type="setstep">2</exe>
-         <exe type="setjornal">2</exe>
-         <exe type="delquestitem" num="1">400162</exe>
-      </executions>
-   </qstep_change>
-   <qstep_change qstep="2">
-      <comment />
-      <conditions />
-      <executions>
-         <exe type="setstep">3</exe>
-         <exe type="setjornal">3</exe>
-      </executions>
-   </qstep_change>
-   <qstep_change qstep="3">
-      <comment />
-      <conditions />
-      <executions>
-         <exe type="recompense">,5081,5082,5083,5084</exe>
-         <exe type="complete">508</exe>
-      </executions>
-   </qstep_change>
-   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="e">0</exelink>
-   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">1,2,3</exelink>
-   <exelink qstep="1" npc="n075_wounded_huntingturn" sub="2">0,1,2</exelink>
-   <exelink qstep="2" npc="n075_wounded_huntingturn" sub="b" />
-   <exelink qstep="2" npc="n075_wounded_huntingturn" sub="3">0,1</exelink>
-   <exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="a">0</exelink>
-   <exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="!next">1</exelink>
-   <journal_data recompense="1:5081,2:5082,3:5083,4:5084" quest_title="奇怪的委托Ⅰ" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="400162">
-      <journal index="1">
-         <title_image />
-         <contents_image>QW_37.dds</contents_image>
-         <need_itemlist />
-         <destination_pos>373,n75</destination_pos>
-         <destination_mode>custom:371@1,372@1,373@1,374@0</destination_mode>
-         <statemark_npcid>75</statemark_npcid>
-         <statemark_type>11</statemark_type>
-         <get_location />
-         <start_npc />
-         <desc_location />
-         <step_action />
-         <complete_npc />
-         <get_item />
-         <get_itemindex />
-         <hunt_monster />
-         <hunt_monsterindex />
-         <collect_item />
-         <collect_itemindex />
-         <comp_symbol />
-         <comp_symbolindex />
-         <comp_item />
-         <comp_itemindex />
-         <comp_exp />
-         <comp_money />
-         <trigger_string />
-         <maptool_index />
-         <title mid="32"><![CDATA[搜索精灵坟墓]]></title>
-         <contents mid="33"><![CDATA[<html>去<FONT color=#a82424>精灵坟墓</FONT>寻找遇难者吧。<BR>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-e" image="" itemindex="">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+		<talk_question mid="16"><![CDATA[<html>$奇怪的委托Ⅰ$</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="" itemindex="QW_37.dds">
+		<talk_question mid="18"><![CDATA[<html>$冒险家公会会长冈特$<BR><FONT color=#a82424>精灵坟墓</FONT>就在赫尔马岱港口的下游废墟附近。你去哪里看看有没有遇难者。如果发现遇难者的话，只要使用那个<FONT color=#a82424>急救箱</FONT>就行了。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n075_wounded_huntingturn-1" image="" itemindex="">
+		<talk_answer link_index="n075_wounded_huntingturn-2" mid="20"><![CDATA[<html>(好像找到了遇难者。使用急救箱吧)</html>]]></talk_answer>
+		<talk_question mid="19"><![CDATA[<html>$遇难者亨廷顿$<BR>呃呃……</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n075_wounded_huntingturn-2" image="" itemindex="">
+		<talk_answer link_index="n075_wounded_huntingturn-2-a" mid="22"><![CDATA[<html>你醒啦。你怎么会倒在这种地方？</html>]]></talk_answer>
+		<talk_question mid="21"><![CDATA[<html>$遇难者亨廷顿$<BR>这是……什么地方？</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n075_wounded_huntingturn-2-a" image="" itemindex="">
+		<talk_answer link_index="n075_wounded_huntingturn-2-b" mid="24"><![CDATA[<html>还好没事。你可以走吗？</html>]]></talk_answer>
+		<talk_question mid="23"><![CDATA[<html>$遇难者亨廷顿$<BR>我和同伴们一起来这里调查……但是……同伴们全都死了。我……想寻找出口……结果却在这里……晕了过去。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n075_wounded_huntingturn-2-b" image="" itemindex="">
+		<talk_answer link_index="n075_wounded_huntingturn-3" mid="26"><![CDATA[<html>请沿着那边的路出去。那里应该不会再出现魔物了。</html>]]></talk_answer>
+		<talk_question mid="25"><![CDATA[<html>$遇难者亨廷顿$<BR>可以……我只是太累了，昏了过去而已。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n075_wounded_huntingturn-3" image="" itemindex="">
+		<talk_question mid="27"><![CDATA[<html>$遇难者亨廷顿$<BR>谢谢。如果一直在这种地方昏迷不醒，一定会变成怪物们的晚餐。<BR>好的，我先回去了。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-3" image="" itemindex="">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-3-a" mid="29"><![CDATA[<html>没什么。</html>]]></talk_answer>
+		<talk_question mid="28"><![CDATA[<html>$冒险家公会会长冈特$<BR>那里真的有遇难者吗？<BR>嗯，不管怎样，辛苦你了。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-3-a" image="" itemindex="">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-3-!next" mid="31"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+		<talk_question mid="30"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+	</talk_paragraph>
+	<qstep_change qstep="accepting">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="recompense_view">,5081,5082,5083,5084</exe>
+			<exe type="setquest">508</exe>
+			<exe type="addquestitem" num="1">400162</exe>
+			<exe type="talk" npc="n036_adventurer_guildmaster_gunter">1</exe>
+		</executions>
+	</qstep_change>
+	<qstep_change qstep="1">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="setstep">2</exe>
+			<exe type="setjornal">2</exe>
+			<exe type="delquestitem" num="1">400162</exe>
+		</executions>
+	</qstep_change>
+	<qstep_change qstep="2">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="setstep">3</exe>
+			<exe type="setjornal">3</exe>
+		</executions>
+	</qstep_change>
+	<qstep_change qstep="3">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="recompense">,5081,5082,5083,5084</exe>
+			<exe type="complete">508</exe>
+		</executions>
+	</qstep_change>
+	<exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="e">0</exelink>
+	<exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">1,2,3</exelink>
+	<exelink qstep="1" npc="n075_wounded_huntingturn" sub="2">0,1,2</exelink>
+	<exelink qstep="2" npc="n075_wounded_huntingturn" sub="b"/>
+	<exelink qstep="2" npc="n075_wounded_huntingturn" sub="3">0,1</exelink>
+	<exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="a">0</exelink>
+	<exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="!next">1</exelink>
+	<journal_data recompense="1:5081,2:5082,3:5083,4:5084" quest_title="이상한 부탁Ⅰ" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="400162">
+		<journal index="1">
+			<title_image/>
+			<contents_image>QW_37.dds</contents_image>
+			<need_itemlist/>
+			<destination_pos>373,n75</destination_pos>
+			<destination_mode>custom:371@1,372@1,373@1,374@0</destination_mode>
+			<statemark_npcid>75</statemark_npcid>
+			<statemark_type>11</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="32"><![CDATA[搜索精灵坟墓]]></title>
+			<contents mid="33"><![CDATA[<html>去<FONT color=#a82424>精灵坟墓</FONT>寻找遇难者吧。<BR>
  <BR>
 <FONT color=#086171>赫尔马岱港口(下游废墟)</FONT> <FONT color=#a82424>→ 精灵坟墓</FONT></html>]]></contents>
-         <destination mid="34"><![CDATA[搜索精灵坟墓]]></destination>
-         <todo_msg mid="35"><![CDATA[请到精灵坟墓去搜索遇难者。]]></todo_msg>
-      </journal>
-      <journal index="2">
-         <title_image />
-         <contents_image>QW_SaintHaven.dds</contents_image>
-         <need_itemlist />
-         <destination_pos>373,n75</destination_pos>
-         <destination_mode>custom:371@1,372@1,373@1,374@0</destination_mode>
-         <statemark_npcid>75</statemark_npcid>
-         <statemark_type>11</statemark_type>
-         <get_location />
-         <start_npc />
-         <desc_location />
-         <step_action />
-         <complete_npc />
-         <get_item />
-         <get_itemindex />
-         <hunt_monster />
-         <hunt_monsterindex />
-         <collect_item />
-         <collect_itemindex />
-         <comp_symbol />
-         <comp_symbolindex />
-         <comp_item />
-         <comp_itemindex />
-         <comp_exp />
-         <comp_money />
-         <trigger_string />
-         <maptool_index />
-         <title mid="37"><![CDATA[和遇难者亨廷顿对话]]></title>
-         <contents mid="38"><![CDATA[<html>找到了<FONT color=#a82424>遇难者亨廷顿</FONT>。把他送回<FONT color=#a82424>神圣天堂</FONT>去吧。<BR>
+			<destination mid="34"><![CDATA[搜索精灵坟墓]]></destination>
+			<todo_msg mid="35"><![CDATA[请到精灵坟墓去搜索遇难者。]]></todo_msg>
+		</journal>
+		<journal index="2">
+			<title_image/>
+			<contents_image>QW_SaintHaven.dds</contents_image>
+			<need_itemlist/>
+			<destination_pos>373,n75</destination_pos>
+			<destination_mode>custom:371@1,372@1,373@1,374@0</destination_mode>
+			<statemark_npcid>75</statemark_npcid>
+			<statemark_type>11</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="37"><![CDATA[和遇难者亨廷顿对话]]></title>
+			<contents mid="38"><![CDATA[<html>找到了<FONT color=#a82424>遇难者亨廷顿</FONT>。把他送回<FONT color=#a82424>神圣天堂</FONT>去吧。<BR>
  <BR>
 <FONT color=#086171>赫尔马岱港口(下游废墟)</FONT> <FONT color=#a82424>→ 精灵坟墓</FONT></html>]]></contents>
-         <destination mid="39"><![CDATA[和遇难者亨廷顿对话]]></destination>
-         <todo_msg mid="40"><![CDATA[请和遇难者亨廷顿对话。]]></todo_msg>
-      </journal>
-      <journal index="3">
-         <title_image />
-         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
-         <need_itemlist />
-         <destination_pos>11,n36</destination_pos>
-         <destination_mode>custom</destination_mode>
-         <statemark_npcid>36</statemark_npcid>
-         <statemark_type>12</statemark_type>
-         <get_location />
-         <start_npc />
-         <desc_location />
-         <step_action />
-         <complete_npc />
-         <get_item />
-         <get_itemindex />
-         <hunt_monster />
-         <hunt_monsterindex />
-         <collect_item />
-         <collect_itemindex />
-         <comp_symbol />
-         <comp_symbolindex />
-         <comp_item />
-         <comp_itemindex />
-         <comp_exp />
-         <comp_money />
-         <trigger_string />
-         <maptool_index />
-         <title mid="41"><![CDATA[和冒险家公会会长冈特对话]]></title>
-         <contents mid="42"><![CDATA[<html>遇难者亨廷顿回神圣天堂去了。去向神圣天堂的<FONT color=#a82424>冒险家公会会长冈特</FONT>报告情况吧。<BR>
+			<destination mid="39"><![CDATA[和遇难者亨廷顿对话]]></destination>
+			<todo_msg mid="40"><![CDATA[请和遇难者亨廷顿对话。]]></todo_msg>
+		</journal>
+		<journal index="3">
+			<title_image/>
+			<contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+			<need_itemlist/>
+			<destination_pos>11,n36</destination_pos>
+			<destination_mode>custom</destination_mode>
+			<statemark_npcid>36</statemark_npcid>
+			<statemark_type>12</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="41"><![CDATA[和冒险家公会会长冈特对话]]></title>
+			<contents mid="42"><![CDATA[<html>遇难者亨廷顿回神圣天堂去了。去向神圣天堂的<FONT color=#a82424>冒险家公会会长冈特</FONT>报告情况吧。<BR>
  <BR>
 <FONT color=#086171>神圣天堂 </FONT><FONT color=#a82424>→ 冒险家公会会长冈特</FONT></html>]]></contents>
-         <destination mid="43"><![CDATA[和冒险家公会会长冈特对话]]></destination>
-         <todo_msg mid="44"><![CDATA[请向冒险家公会会长冈特报告。]]></todo_msg>
-      </journal>
-   </journal_data>
-   <condition_data>
-      <user_level>50:-1</user_level>
-      <user_worldzone_level />
-      <user_class />
-      <prev_quest />
-      <have_normal_item />
-      <complete_mission />
-      <have_symbol_item />
-   </condition_data>
+			<destination mid="43"><![CDATA[和冒险家公会会长冈特对话]]></destination>
+			<todo_msg mid="44"><![CDATA[请向冒险家公会会长冈特报告。]]></todo_msg>
+		</journal>
+	</journal_data>
+	<condition_data>
+		<user_level>50:-1</user_level>
+		<user_worldzone_level/>
+		<user_class/>
+		<prev_quest/>
+		<have_normal_item/>
+		<complete_mission/>
+		<have_symbol_item/>
+	</condition_data>
 </quest>

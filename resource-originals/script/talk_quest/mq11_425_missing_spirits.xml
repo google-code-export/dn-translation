@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -92,6 +95,8 @@
          <exe type="delcount">.</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">201197</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1197);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -110,7 +115,7 @@
    </qstep_change>
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
-   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d">0,2,3,1</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d">0,2,7,3,1</exelink>
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="b" />
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="c" />
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="d">0</exelink>
@@ -144,7 +149,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="28"><![CDATA[需要的东西]]></title>
-         <contents mid="29"><![CDATA[<html>回收到了黑暗果核，和主教对话，看看还需要别的什么东西。<BR>
+         <contents mid="29"><![CDATA[<html>回收到了黑暗之核，和主教对话，看看还需要别的什么东西。<BR>
  <BR>
 <FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 主教伊格纳西奥</FONT></html>]]></contents>
          <destination mid="30"><![CDATA[和主教伊格纳西奥对话]]></destination>
@@ -179,10 +184,7 @@
          <maptool_index />
          <title mid="32"><![CDATA[搜集海怪的灵魂]]></title>
          <contents mid="33"><![CDATA[<html>他说准备举行仪式，净化黑龙的气息，因此需要祭品。先到<FONT color=#a82424>沉没的货船</FONT>去，用<FONT color=#a82424>水晶葫芦瓶</FONT>搜集海怪的灵魂吧。<BR>
- <BR>
-<FONT color=#7e12d2>※ 在深渊难度下无法执行。</FONT><BR>
- <BR>
-<FONT color=#086171>赫尔马岱港口(孤岛运输船)</FONT> <FONT color=#a82424>→ 沉没的货船</FONT></html>]]></contents>
+<BR><FONT color=#086171>赫尔马岱港口(孤岛运输船)</FONT> <FONT color=#a82424>→ 沉没的货船</FONT></html>]]></contents>
          <destination mid="34"><![CDATA[去沉没的货船消灭魔物]]></destination>
          <todo_msg mid="35"><![CDATA[请到沉没的货船去搜集海怪的灵魂。]]></todo_msg>
       </journal>

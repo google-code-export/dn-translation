@@ -40,16 +40,19 @@
    <talk_paragraph index="q_enter" />
    <talk_paragraph index="!quit" />
    <talk_paragraph index="_no_quest">
-      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_quest">
-      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_inventory">
-      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
-      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
       <talk_question mid="5"><![CDATA[<html>$主教伊格纳西奥$<BR>与<FONT color=#a82424>道格拉斯将军</FONT>一起辛苦了。<BR>请务必救出<FONT color=#a82424>先知</FONT>，我只相信你。</html>]]></talk_question>
@@ -61,11 +64,11 @@
       <talk_question mid="46"><![CDATA[<html>$阿尔杰塔$<BR>不要想着去找<FONT color=#a82424>杰兰特</FONT>了吧。<BR>...当然，你要是一意孤行的话，我也不会拦你。反正是你的自由。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n042_general_duglars-1" image="QW_43.dds" itemindex="">
-      <talk_answer link_index="n042_general_duglars-1-level1" mid="60"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_answer link_index="n042_general_duglars-1-b" mid="60"><![CDATA[<html>（继续）</html>]]></talk_answer>
       <talk_question mid="59"><![CDATA[<html>$道格拉斯将军$<BR>士兵们已经准备就绪。为了到黑骑士消失的<FONT color=#a82424>黑暗领地守备队据点</FONT>，计划兵分多路前往那里。你要是也准备好的话，就赶紧出发吧。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n042_general_duglars-1-a" image="" itemindex="">
-      <talk_question mid="61"><![CDATA[<html>$道格拉斯将军$<BR>但是以你现在的实力，似乎有些牵强。等充分的准备好之后再出发也好啊。<BR><FONT color=#7e12d2>（28级之后方可进行下一阶段。）</FONT></html>]]></talk_question>
+      <talk_question mid="61"><![CDATA[<html>$道格拉斯将军$<BR>但是以你现在的实力，似乎有些勉强。等做好充分准备之后再出发也不迟。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n042_general_duglars-1-b" image="QW_43.dds" itemindex="">
       <talk_answer link_index="n042_general_duglars-1-c" mid="63"><![CDATA[<html>明白了。</html>]]></talk_answer>
@@ -146,13 +149,8 @@
    </qstep_change>
    <qstep_change qstep="1">
       <comment />
-      <conditions>
-         <chk type="lvl" op="[">28</chk>
-      </conditions>
+      <conditions />
       <executions>
-         <exe type="conexe" true="1" false="2">0</exe>
-         <exe type="talk" npc="n042_general_duglars">a</exe>
-         <exe type="talk" npc="n042_general_duglars">b</exe>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
       </executions>
@@ -173,8 +171,7 @@
          <exe type="complete">404</exe>
       </executions>
    </qstep_change>
-   <exelink qstep="1" npc="n042_general_duglars" sub="level1">0</exelink>
-   <exelink qstep="1" npc="n042_general_duglars" sub="c">3,4</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="c">0,1</exelink>
    <exelink qstep="2" npc="n037_geraint" sub="b">0,1</exelink>
    <exelink qstep="3" npc="n212_argenta" sub="b" />
    <exelink qstep="3" npc="n212_argenta" sub="c" />
@@ -215,8 +212,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="47"><![CDATA[复苏的黑暗灾难 I]]></title>
-         <contents mid="48"><![CDATA[<html>与<FONT color=#a82424>道格拉斯将军</FONT>商议对策吧。<BR><FONT color=#7e12d2>(28级以上才能执行任务)</FONT><BR><BR><FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 道格拉斯将军</FONT></html>]]></contents>
-         <destination mid="49"><![CDATA[(Lv28)与道格拉斯将军对话]]></destination>
+         <contents mid="48"><![CDATA[<html>去和<FONT color=#a82424>道格拉斯将军</FONT>商量对策吧。<BR><BR><FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 道格拉斯将军</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[与道格拉斯将军对话]]></destination>
          <todo_msg mid="50"><![CDATA[任务已添加。]]></todo_msg>
       </journal>
       <journal index="2">

@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
    </talk_paragraph>
@@ -87,6 +90,8 @@
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
          <exe type="talk" npc="n034_cleric_master_germain">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200468</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 468);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -103,7 +108,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="e">0</exelink>
-   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="acceptted">1,6,2</exelink>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="acceptted">1,6,2,7</exelink>
    <exelink qstep="2" npc="n034_cleric_master_germain" sub="b">0</exelink>
    <exelink qstep="2" npc="n034_cleric_master_germain" sub="c">1</exelink>
    <journal_data recompense="1:3351,2:3352,3:3353,4:3354" quest_title="불조심" chapterid="" quest_level="17" quest_mark_type="10" use_item_list="">
@@ -135,10 +140,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="26"><![CDATA[杰梅因的忧虑]]></title>
-         <contents mid="27"><![CDATA[<html><FONT color=#a82424>高级牧师杰梅因</FONT>担心神殿礼拜堂被火烧。消灭盗墓贼突击小妖精，让他安心吧。<BR>
- <BR>
-<FONT color=#7e12d2>※ 深渊难度下无法进行<BR></FONT><BR>
-<FONT color=#086171>水晶谷 → 狂风森林（狂风森林神殿入口）</FONT> <FONT color=#a82424>→ 神殿礼拜堂</FONT></html>]]></contents>
+         <contents mid="27"><![CDATA[<html><FONT color=#a82424>高级牧师杰梅因</FONT>担心神殿礼拜堂被火烧。消灭盗墓贼突击小妖精，让他安心吧。<FONT color=#7e12d2><BR></FONT><BR><FONT color=#086171>水晶谷 → 狂风森林(狂风森林神殿入口)</FONT> <FONT color=#a82424>→ 神殿礼拜堂</FONT></html>]]></contents>
          <destination mid="28"><![CDATA[消灭神殿礼拜堂的魔物]]></destination>
          <todo_msg mid="29"><![CDATA[消灭神殿礼拜堂的盗墓贼突击小妖精吧。]]></todo_msg>
       </journal>
@@ -170,9 +172,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="30"><![CDATA[报告]]></title>
-         <contents mid="31"><![CDATA[<html>完成高级牧师杰梅因的委托。回去报告吧。
-<FONT color=#7e12d2></FONT> <BR>
-<FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级牧师杰梅因</FONT></html>]]></contents>
+         <contents mid="31"><![CDATA[<html>完成了高级牧师杰梅因的委托。回去报告吧。<BR>
+<BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级牧师杰梅因</FONT></html>]]></contents>
          <destination mid="32"><![CDATA[向高级牧师杰梅因报告]]></destination>
          <todo_msg mid="33"><![CDATA[向高级牧师杰梅因报告吧。]]></todo_msg>
       </journal>

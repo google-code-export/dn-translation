@@ -40,6 +40,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
    </talk_paragraph>
@@ -185,6 +188,7 @@
          <exe type="setjornal">3</exe>
          <exe type="setstep">4</exe>
          <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="1">200507</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="3">
@@ -224,7 +228,7 @@
    <exelink qstep="1" npc="n035_soceress_master_tiana" sub="a">0,1</exelink>
    <exelink qstep="2" npc="n026_trader_may" sub="b" />
    <exelink qstep="2" npc="n026_trader_may" sub="c" />
-   <exelink qstep="2" npc="n026_trader_may" sub="d">4,0,2,5</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="d">4,0,8,2,5</exelink>
    <exelink qstep="4" npc="n026_trader_may" sub="5">0,1,2,3</exelink>
    <exelink qstep="5" npc="n266_invisible_thief" sub="6">0,1,2</exelink>
    <exelink qstep="6" npc="n035_soceress_master_tiana" sub="b" />

@@ -64,6 +64,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -278,21 +281,18 @@
       <talk_question mid="95"><![CDATA[<html>$牛皮冒险家戴维$<BR>这，这是什么话！我要是独自去了，万一被<FONT color=#a82424>暗影死灵</FONT>所伤，难不成还让你在一边看我的笑话不成！ 我…我不是<FONT color=#a82424>怕那些暗影死灵才带你过去的</FONT>！！！可别误会啊！！！</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n202_slave_david-7-b" image="QW_25.dds" itemindex="">
-      <talk_answer link_index="n202_slave_david-7-c" mid="171"><![CDATA[<html>哎（还得我过去啊?）</html>]]></talk_answer>
+      <talk_answer link_index="n202_slave_david-7-c" mid="171"><![CDATA[<html>哎。（还得我过去啊?）</html>]]></talk_answer>
       <talk_question mid="97"><![CDATA[<html>$牛皮冒险家戴维$<BR>你这个没人情味的家伙！！你难道还要让那位对我们充满期待的侦察兵福古斯大失所望吗?！赶快一起前往<FONT color=#a82424>圣域中心</FONT>吧！</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n202_slave_david-7-c" image="QW_25.dds" itemindex="">
-      <talk_question mid="172"><![CDATA[<html>$牛皮冒险家戴维$<BR>呵呵呵。<BR>
-…我会<FONT color=#a82424>紧随其后</FONT>，你就放心的出发吧。<BR>
-<FONT color=#7e12d2>（在深渊级的难度下无法进行）</FONT></html>]]></talk_question>
+      <talk_question mid="172"><![CDATA[<html>$牛皮冒险家戴维$<BR>哈哈哈。<BR>……我会<FONT color=#a82424>跟着过去</FONT>的，你就放心出发吧。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n202_slave_david-8" image="QW_25.dds" itemindex="">
       <talk_answer link_index="n202_slave_david-8-a" mid="173"><![CDATA[<html>哎。（还不是让我去做啊！）</html>]]></talk_answer>
       <talk_question mid="99"><![CDATA[<html>$牛皮冒险家戴维$<BR>我还没准备好。你倒是先到<FONT color=#a82424>圣域中心</FONT>去消灭<FONT color=#a82424>暗影死灵</FONT>看…看啊！！我会像划过的彗星一般，眨眼间就能消灭它们！</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n202_slave_david-8-a" image="QW_25.dds" itemindex="">
-      <talk_question mid="174"><![CDATA[<html>$牛皮冒险家戴维$<BR>我一说过去，你就感动的都掉了眼泪啦? 呵呵呵。嗯，赶紧前往<FONT color=#a82424>圣域中心</FONT>吧。<BR>
-<FONT color=#7e12d2>（在深渊级的难度下无法进行）</FONT></html>]]></talk_question>
+      <talk_question mid="174"><![CDATA[<html>$牛皮冒险家戴维$<BR>我一说过去，你就感动的都掉了眼泪了啊？哈哈哈。快到<FONT color=#a82424>圣域中心</FONT>去吧。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n023_ranger_fugus-9" image="QN_Slave_David.dds" itemindex="">
       <talk_answer link_index="n023_ranger_fugus-9-a" mid="102"><![CDATA[<html>嗯? 那都是在吹牛！！</html>]]></talk_answer>
@@ -417,10 +417,12 @@
       <executions>
          <exe type="setstep">8</exe>
          <exe type="setjornal">8</exe>
-         <exe type="huntmon" num="30000" party="1" exe="" onexe="5,3,4">712</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="5,3,4">712</exe>
          <exe type="setstep">9</exe>
          <exe type="setjornal">9</exe>
          <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200712</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 712);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="8">
@@ -467,7 +469,7 @@
    <exelink qstep="6" npc="n023_ranger_fugus" sub="c" />
    <exelink qstep="6" npc="n023_ranger_fugus" sub="d">0,1</exelink>
    <exelink qstep="7" npc="n202_slave_david" sub="b" />
-   <exelink qstep="7" npc="n202_slave_david" sub="c">2,0,1</exelink>
+   <exelink qstep="7" npc="n202_slave_david" sub="c">2,6,0,1</exelink>
    <exelink qstep="9" npc="n023_ranger_fugus" sub="b" />
    <exelink qstep="9" npc="n202_slave_david" sub="b" />
    <exelink qstep="9" npc="n202_slave_david" sub="c" />
@@ -742,7 +744,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="155"><![CDATA[可疑的出发]]></title>
-         <contents mid="156"><![CDATA[<html>不得不到<FONT color=#a82424>圣域</FONT> <FONT color=#a82424>中心</FONT>去消灭  <FONT color=#a82424>暗影</FONT><FONT color=#a82424>死灵</FONT>。戴维虽说会马上跟过来，但还是别做什么期待的好。<BR><FONT color=#7e12d2>※ 在深渊级难度下无法执行</FONT><BR><BR><FONT color=#086171>灰色废墟（被侵犯的圣域入口）</FONT> <FONT color=#a82424>→ 圣域中心</FONT></html>]]></contents>
+         <contents mid="156"><![CDATA[<html>不得不到<FONT color=#a82424>圣域</FONT><FONT color=#a82424>中心</FONT>去消灭了<FONT color=#a82424>暗影</FONT><FONT color=#a82424>死灵</FONT>。戴维虽说会马上跟过来，但还是别做什么期待的好。<BR><BR><FONT color=#086171>灰色废墟(遭到侵略的圣域入口)</FONT> <FONT color=#a82424>→ 圣域中心</FONT></html>]]></contents>
          <destination mid="157"><![CDATA[消灭暗影死灵]]></destination>
          <todo_msg mid="158"><![CDATA[消灭圣域中心的暗影死灵吧。]]></todo_msg>
       </journal>

@@ -22,23 +22,19 @@
    <talk_paragraph index="q_enter" />
    <talk_paragraph index="!quit" />
    <talk_paragraph index="_no_quest">
-      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_quest">
-      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_inventory">
-      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_daily_quest_fail">
-      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
-      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
-      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="38"><![CDATA[<html>(继续)</html>]]></talk_answer>
-      <talk_question mid="37"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>好的，有你参与进来，对我们将会有很大的帮助。事实上，我已经猜到污染物质被送到什么地方去了。</html>]]></talk_question>
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
       <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="11"><![CDATA[<html>(继续)</html>]]></talk_answer>
@@ -65,10 +61,7 @@
    <qstep_change qstep="accepting">
       <comment />
       <conditions />
-      <executions>
-         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n024_adventurer_guildmaster_decud-1-a", npc_talk_target);</exe>
-         <exe type="setquest">215</exe>
-      </executions>
+      <executions />
    </qstep_change>
    <qstep_change qstep="1">
       <comment>300103</comment>
@@ -79,6 +72,8 @@
          <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4">612</exe>
          <exe type="delcount">.</exe>
          <exe type="addquestitem" num="1">300103</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200612</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 612);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -94,11 +89,10 @@
          <exe type="recompense">,2151,2152,2153,2154</exe>
       </executions>
    </qstep_change>
-   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">1,0</exelink>
-   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b">2,0,1</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b">0,2,5,1</exelink>
    <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="a">1</exelink>
    <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="!next">0</exelink>
-   <journal_data recompense="1:2151,2:2152,3:2153,4:2154" quest_title="决战" chapterid="3" quest_level="20" quest_mark_type="7" use_item_list="">
+   <journal_data recompense="1:2151,2:2152,3:2153,4:2154" quest_title="결전" chapterid="3" quest_level="20" quest_mark_type="7" use_item_list="">
       <journal index="1">
          <title_image />
          <contents_image>QN_Master_Decud.dds</contents_image>

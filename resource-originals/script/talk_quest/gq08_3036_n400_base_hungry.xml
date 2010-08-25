@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -84,6 +87,8 @@
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
          <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="11">200329</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 329);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -101,7 +106,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n400_guild_board" sub="c">3</exelink>
-   <exelink qstep="accepting" npc="n400_guild_board" sub="d">0,4,6,1,2</exelink>
+   <exelink qstep="accepting" npc="n400_guild_board" sub="d">0,4,10,6,1,2</exelink>
    <exelink qstep="2" npc="n400_guild_board" sub="a">0</exelink>
    <exelink qstep="2" npc="n400_guild_board" sub="b">1,2</exelink>
    <journal_data recompense="30360" quest_title="[길드의뢰] 배고파" chapterid="" quest_level="10" quest_mark_type="19" use_item_list="400164">
@@ -110,7 +115,7 @@
          <contents_image>QW_12.dds</contents_image>
          <need_itemlist />
          <destination_pos>107,0,0</destination_pos>
-         <destination_mode>custom:106@3,107@3</destination_mode>
+         <destination_mode>custom:106@3,107@0</destination_mode>
          <statemark_npcid>400</statemark_npcid>
          <statemark_type>20</statemark_type>
          <get_location />
@@ -133,10 +138,9 @@
          <trigger_string />
          <maptool_index />
          <title mid="23"><![CDATA[去兽人袭击队据点打猎袭击队警备牛头犬]]></title>
-         <contents mid="24"><![CDATA[<html>去兽人袭击队据点打猎袭击队警备牛头犬，搜集3个特级猎犬肋排。<BR><BR><FONT color=#086171>融解森林(魔法师之路) </FONT><FONT color=#a82424>→ 兽人袭击队据点</FONT><BR>
-<FONT color=#a82424></FONT> <BR>
-<FONT color=#7e12d2>※ 无法在深渊级难度下执行。</FONT></html>]]></contents>
-         <destination mid="25"><![CDATA[搜集3个特级猎犬肋排]]></destination>
+         <contents mid="24"><![CDATA[<html>去兽人袭击队据点消灭袭击队警备牛头犬，搜集3个特级猎犬肋排。<BR><BR><FONT color=#086171>融解森林(魔法师之路) </FONT><FONT color=#a82424>→ 兽人袭击队据点</FONT><BR>
+</html>]]></contents>
+         <destination mid="25"><![CDATA[[搜集]兽人袭击队据点]]></destination>
          <todo_msg mid="26"><![CDATA[冒险家公会委托添加完成。]]></todo_msg>
       </journal>
       <journal index="2">

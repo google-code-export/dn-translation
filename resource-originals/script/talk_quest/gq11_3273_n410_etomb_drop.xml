@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -94,6 +97,8 @@
          <exe type="delcount">.</exe>
          <exe type="addquestitem" num="1">400168</exe>
          <exe type="conexe" true="7,8,9" false="">0</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="13">201002</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1002);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -110,7 +115,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n410_guild_board" sub="e">3</exelink>
-   <exelink qstep="accepting" npc="n410_guild_board" sub="f">0,1,4,5,2</exelink>
+   <exelink qstep="accepting" npc="n410_guild_board" sub="f">0,1,4,12,5,2</exelink>
    <exelink qstep="2" npc="n410_guild_board" sub="a">0</exelink>
    <exelink qstep="2" npc="n410_guild_board" sub="b">1</exelink>
    <journal_data recompense="32730" quest_title="[길드의뢰] 고향의 맛을 찾아서" chapterid="" quest_level="32" quest_mark_type="19" use_item_list="400168">
@@ -119,7 +124,7 @@
          <contents_image>QW_37.dds</contents_image>
          <need_itemlist />
          <destination_pos>374,0,0</destination_pos>
-         <destination_mode>custom:371@3,372@3,373@3,374@3</destination_mode>
+         <destination_mode>custom:371@3,372@0,373@0,374@0</destination_mode>
          <statemark_npcid>410</statemark_npcid>
          <statemark_type>20</statemark_type>
          <get_location />
@@ -142,8 +147,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="42"><![CDATA[去精灵坟墓搜集蜥蜴尾巴]]></title>
-         <contents mid="43"><![CDATA[<html>去精灵坟墓打猎掠夺者蓝鳞蜥蜴人，搜集蜥蜴尾巴。<BR><BR><FONT color=#086171>赫尔马岱港口(下游废墟入口) </FONT><FONT color=#a82424>→ 精灵坟墓</FONT><BR><BR><FONT color=#7e12d2>※ 无法在深渊级难度下执行。</FONT></html>]]></contents>
-         <destination mid="44"><![CDATA[搜集蜥蜴尾巴]]></destination>
+         <contents mid="43"><![CDATA[<html>去精灵坟墓打猎掠夺者蓝鳞蜥蜴人，搜集蜥蜴尾巴。<BR><BR><FONT color=#086171>赫尔马岱港口(下游废墟入口) </FONT><FONT color=#a82424>→ 精灵坟墓</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[搜集]精灵坟墓]]></destination>
          <todo_msg mid="45"><![CDATA[冒险家公会委托添加完成。]]></todo_msg>
       </journal>
       <journal index="2">

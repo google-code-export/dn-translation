@@ -12,10 +12,10 @@
 검은 대군주의 연병장(30~32)에서 오염된 표본을 채집해 전염병을 퍼뜨리려는 용추종자들이 있다고 한다. 가서 일망타진해 달라는 의뢰.
 용추종자들을 해치우고 오염된 표본을 압수해 온다.</qdesc>
       <qdifficulty>1</qdifficulty>
-      <nextqid>480</nextqid>
-      <nextqname>sq11_480_catastrophic_rain2</nextqname>
-      <nextqnpc>n036_adventurer_guildmaster_gunter</nextqnpc>
-      <qkname mid="1"><![CDATA[灾难之雨 I]]></qkname>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[灾殃之雨 I]]></qkname>
       <qnpc>
          <npcid>36</npcid>
          <npcename>n036_adventurer_guildmaster_gunter</npcename>
@@ -32,6 +32,9 @@
    </talk_paragraph>
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
@@ -63,11 +66,11 @@
    </talk_paragraph>
    <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-f" image="QW_36.dds" itemindex="">
       <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-g" mid="14"><![CDATA[<html>知道了。</html>]]></talk_answer>
-      <talk_question mid="13"><![CDATA[<html>$冒险家公会长冈特$<BR>据说龙之追随者的余党正在<FONT color=#a82424>黑暗大君主的练兵场</FONT>收集污染物质，欲传染疾病。要是率领士兵浩浩荡荡的过去扫荡的话，肯定会逃跑的，所以你悄无声息的过去解决吧。</html>]]></talk_question>
+      <talk_question mid="13"><![CDATA[<html>$冒险家公会长冈特$<BR>据说龙之追随者的余党正在<FONT color=#a82424>黑暗大君主练兵场</FONT>收集污染物质，欲传染疾病。要是率领士兵浩浩荡荡的过去扫荡的话，肯定会逃跑的，所以你悄无声息的过去解决吧。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-g" image="" itemindex="">
       <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
-      <talk_question mid="15"><![CDATA[<html>$灾难之雨 I$</html>]]></talk_question>
+      <talk_question mid="15"><![CDATA[<html>$灾殃之雨 I$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="QS_Default.dds" itemindex="300016">
       <talk_question mid="17"><![CDATA[<html>$冒险家公会长冈特${action:talk}<BR>它们身上会有收集到的<FONT color=#a82424>被污染的土壤标本</FONT>，彻底消灭之后，把它夺回来吧。<BR>千万要小心啊。</html>]]></talk_question>
@@ -89,7 +92,7 @@
       <talk_question mid="25"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-d" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
-      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-!next" mid="28"><![CDATA[<html>嗯? 什么事?</html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-next_quest" mid="28"><![CDATA[<html>嗯? 什么事?</html>]]></talk_answer>
       <talk_question mid="27"><![CDATA[<html>$冒险家公会长冈特$<BR>啊... 提起<FONT color=#a82424>斯塔西</FONT>倒让我想起来了，上次有向我委托的事情呢。顺便连那个事情一起做完如何啊?</html>]]></talk_question>
    </talk_paragraph>
    <qstep_change qstep="accepting">
@@ -119,6 +122,7 @@
          <exe type="recompense">,4791,4792,4793,4794</exe>
          <exe type="complete">479</exe>
          <exe type="delquestitem" num="-1">300016</exe>
+         <exe type="custom">api_npc_NextScript(userObjID, npcObjID, "n036_adventurer_guildmaster_gunter-1", "sq11_480_catastrophic_rain2.xml");</exe>
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="g">1</exelink>
@@ -126,7 +130,7 @@
    <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="b" />
    <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="c">0</exelink>
    <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="d">1,2</exelink>
-   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="!next" />
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="next_quest">3</exelink>
    <journal_data recompense="1:4791,2:4792,3:4793,4:4794" quest_title="재앙의 비 I" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="300016">
       <journal index="1">
          <title_image />
@@ -156,9 +160,9 @@
          <trigger_string />
          <maptool_index />
          <title mid="31"><![CDATA[凌乱的情况]]></title>
-         <contents mid="32"><![CDATA[<html>到黑暗大君主的练兵场去消灭<FONT color=#a82424>龙之追随者</FONT>，并收集被污染的土壤标本吧。<BR><BR><FONT color=#086171>黑山山角（黑暗大君主的关卡）</FONT> <FONT color=#a82424>→黑暗大君主的练兵场</FONT></html>]]></contents>
+         <contents mid="32"><![CDATA[<html>到黑暗大君主练兵场去消灭<FONT color=#a82424>龙之追随者</FONT>，并收集被污染的土壤标本吧。<BR><BR><FONT color=#086171>黑山山角（黑暗大君主的关卡）</FONT> <FONT color=#a82424>→黑暗大君主练兵场</FONT></html>]]></contents>
          <destination mid="33"><![CDATA[回收被污染的土壤标本]]></destination>
-         <todo_msg mid="34"><![CDATA[在黑暗大君主的练兵场消灭龙之追随者吧。]]></todo_msg>
+         <todo_msg mid="34"><![CDATA[在黑暗大君主练兵场消灭龙之追随者吧。]]></todo_msg>
       </journal>
       <journal index="2">
          <title_image />

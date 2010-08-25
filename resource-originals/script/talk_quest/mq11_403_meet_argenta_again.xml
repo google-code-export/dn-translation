@@ -60,6 +60,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -96,7 +99,7 @@
       <talk_question mid="12"><![CDATA[<html>$道格拉斯将军$<BR>要是他们准备好的话，就回来告诉我吧。<BR>我得继续打探 <FONT color=#a82424>黑暗矿山</FONT>的情况，同时为了与<FONT color=#a82424>黑骑士</FONT>的对战，要开始准备兵站的事了。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n209_elite_soldier-2" image="" itemindex="">
-      <talk_answer link_index="n209_elite_soldier-2-level1" mid="15"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_answer link_index="n209_elite_soldier-2-c" mid="15"><![CDATA[<html>（继续）</html>]]></talk_answer>
       <talk_question mid="14"><![CDATA[<html>$精锐士兵克林德$<BR>得到了紧急召集的命令，现在神圣天堂可参战的兵力正迅速集结当中。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n209_elite_soldier-2-a" image="" itemindex="">
@@ -104,7 +107,7 @@
       <talk_question mid="16"><![CDATA[<html>$精锐士兵克林德$<BR>但是，与魔物们的持久战过后，城内的预备兵力要比想象的还少呢。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n209_elite_soldier-2-b" image="" itemindex="">
-      <talk_question mid="126"><![CDATA[<html>$精锐士兵克林德$<BR>所以现在已经向派往其他地方的士兵下达了紧急撤离的命令。<BR>你也做好相应准备，等下一步的通知吧。<BR><FONT color=#7e12d2>（达到26级之后，方可开始下一阶段。）</FONT></html>]]></talk_question>
+      <talk_question mid="126"><![CDATA[<html>$精锐士兵克林德$<BR>所以现在已经向派往其他地方的士兵下达了紧急撤离的命令。<BR>你也做好相应准备，等下一步的通知吧。<BR><FONT color=#7e12d2>(</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n209_elite_soldier-2-c" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
       <talk_question mid="20"><![CDATA[<html>$精锐士兵克林德$<BR>以当前召集的兵力，姑且可以出兵了。<BR>请向<FONT color=#a82424>将军大人</FONT>禀告后，等待下一步的命令吧。</html>]]></talk_question>
@@ -344,13 +347,8 @@
    </qstep_change>
    <qstep_change qstep="2">
       <comment />
-      <conditions>
-         <chk type="lvl" op="[">26</chk>
-      </conditions>
+      <conditions />
       <executions>
-         <exe type="conexe" true="1" false="2,3,4">0</exe>
-         <exe type="talk" npc="n209_elite_soldier">a</exe>
-         <exe type="talk" npc="n209_elite_soldier">c</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
       </executions>
@@ -410,7 +408,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="1" npc="n042_general_duglars" sub="a">0,1</exelink>
-   <exelink qstep="2" npc="n209_elite_soldier" sub="level1">0</exelink>
+   <exelink qstep="2" npc="n209_elite_soldier" sub="c">0,1</exelink>
    <exelink qstep="2" npc="n209_elite_soldier" sub="b" />
    <exelink qstep="3" npc="n042_general_duglars" sub="party">2</exelink>
    <exelink qstep="3" npc="n042_general_duglars" sub="b" />
@@ -503,9 +501,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="40"><![CDATA[克林德的情况]]></title>
-         <contents mid="41"><![CDATA[<html><FONT color=#a82424>精锐士兵克林德</FONT>正在召集可参战的兵力。去了解一下情况吧。<BR>
-<FONT color=#7e12d2>(Lv26以上才能执行任务)<BR></FONT><BR><FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 精锐士兵克林德</FONT></html>]]></contents>
-         <destination mid="42"><![CDATA[(Lv26)与精锐士兵克林德对话]]></destination>
+         <contents mid="41"><![CDATA[<html>听说<FONT color=#a82424>精锐士兵克林德</FONT>正在召集可参战的兵力。去了解一下情况吧。<BR><BR><FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 精锐士兵克林德</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[和精锐士兵克林德对话]]></destination>
          <todo_msg mid="43"><![CDATA[到精锐士兵克林德那里了解召集兵力的情况。]]></todo_msg>
       </journal>
       <journal index="3">

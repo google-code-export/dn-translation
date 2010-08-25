@@ -45,6 +45,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -114,8 +117,7 @@
    </talk_paragraph>
    <talk_paragraph index="n099_engineer_hubert-5" image="QW_SaintHaven.dds" itemindex="">
       <talk_answer link_index="n099_engineer_hubert-5-a" mid="36"><![CDATA[<html>真是太好了。</html>]]></talk_answer>
-      <talk_question mid="35"><![CDATA[<html>$飞艇工程师休伯特$<BR>雾开始消散了<BR>
-马上就能去<FONT color=#a82424>神圣天堂</FONT>了。</html>]]></talk_question>
+      <talk_question mid="35"><![CDATA[<html>$飞艇工程师休伯特$<BR>雾开始消散了。<BR>马上就能去<FONT color=#a82424>神圣天堂</FONT>了。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n099_engineer_hubert-5-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
       <talk_answer link_index="n099_engineer_hubert-5-b" mid="68"><![CDATA[<html>精锐士兵克林德吗？</html>]]></talk_answer>
@@ -176,6 +178,8 @@
          <exe type="setjornal">3</exe>
          <exe type="delcount">.</exe>
          <exe type="addquestitem" num="1">300063</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200762</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 762);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -232,7 +236,7 @@
    <exelink qstep="1" npc="n035_soceress_master_tiana" sub="b" />
    <exelink qstep="1" npc="n035_soceress_master_tiana" sub="c" />
    <exelink qstep="1" npc="n035_soceress_master_tiana" sub="d" />
-   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="2">2,0,1</exelink>
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="2">2,7,0,1</exelink>
    <exelink qstep="3" npc="n035_soceress_master_tiana" sub="a">0,1,2,3</exelink>
    <exelink qstep="4" npc="n164_argenta_wounded" sub="b" />
    <exelink qstep="4" npc="n164_argenta_wounded" sub="c">0,1</exelink>

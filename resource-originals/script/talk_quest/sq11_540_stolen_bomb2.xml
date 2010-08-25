@@ -31,6 +31,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
    </talk_paragraph>
@@ -75,7 +78,7 @@
    </talk_paragraph>
    <talk_paragraph index="n042_general_duglars-3-d" image="" itemindex="">
       <talk_answer link_index="n042_general_duglars-3-e" mid="39"><![CDATA[<html>（继续）</html>]]></talk_answer>
-      <talk_question mid="38"><![CDATA[<html>$将军道格拉斯$<BR>他们还有个小孩子，而詹姆斯可怜他所以把他当作自己的儿子收养了他。那个孩子就是爱德华。不过最近他好像知道了自己的亲生父母。</html>]]></talk_question>
+      <talk_question mid="38"><![CDATA[<html>$将军道格拉斯$<BR>他们还有个小孩子，而詹姆斯可怜他所以把他当作自己的儿子收养了。那个孩子就是爱德华。不过最近他好像知道了自己的亲生父母。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n042_general_duglars-3-e" image="" itemindex="">
       <talk_answer link_index="n042_general_duglars-3-f" mid="41"><![CDATA[<html>原来还有这种事情啊。</html>]]></talk_answer>
@@ -84,7 +87,7 @@
    </talk_paragraph>
    <talk_paragraph index="n042_general_duglars-3-f" image="" itemindex="">
       <talk_answer link_index="n042_general_duglars-3-g" mid="43"><![CDATA[<html>父亲之爱….</html>]]></talk_answer>
-      <talk_question mid="42"><![CDATA[<html>$将军道格拉斯$<BR>詹姆斯为了救自己的儿子，递交了请愿书，但却无法改变爱德华受处罚的命运。虽然只是养子，但在这种困境中仍然不离不弃。真是伟大的父爱。/html>]]></talk_question>
+      <talk_question mid="42"><![CDATA[<html>$将军道格拉斯$<BR>詹姆斯为了救自己的儿子，递交了请愿书，但却无法改变爱德华受处罚的命运。虽然只是养子，但在这种困境中仍然不离不弃。真是伟大的父爱。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n042_general_duglars-3-g" image="" itemindex="">
       <talk_answer link_index="n042_general_duglars-3-h" mid="45"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
@@ -118,6 +121,8 @@
          <exe type="delcount">.</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200822</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200824</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -136,7 +141,7 @@
    <exelink qstep="accepting" npc="n042_general_duglars" sub="a">0</exelink>
    <exelink qstep="accepting" npc="n042_general_duglars" sub="b">1</exelink>
    <exelink qstep="accepting" npc="n042_general_duglars" sub="accpetted">2</exelink>
-   <exelink qstep="1" npc="n042_general_duglars" sub="2">0,1,2,3,4</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="2">0,1,2,3,10,11,4</exelink>
    <exelink qstep="3" npc="n042_general_duglars" sub="b" />
    <exelink qstep="3" npc="n042_general_duglars" sub="c" />
    <exelink qstep="3" npc="n042_general_duglars" sub="d" />

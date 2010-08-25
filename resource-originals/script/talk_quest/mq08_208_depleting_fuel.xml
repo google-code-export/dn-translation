@@ -40,6 +40,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -48,7 +51,7 @@
       <talk_question mid="48"><![CDATA[<html>$飞艇工程师休伯特$<BR>阿尔巴特罗号终于修好了。<BR> 好了，你退后一点。 咳咳……阿尔巴特罗号～起飞～！</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n164_argenta_wounded-1" image="QN_Npc_Geraint.dds" itemindex="">
-      <talk_question mid="50"><![CDATA[<html>$阿尔杰塔$<BR>去神圣天堂找到金发剑客，告诉他之前发生的事情。<BR>然后请求他的帮助。<BR>他一定可以阻止黑骑士。</html>]]></talk_question>
+      <talk_question mid="50"><![CDATA[<html>$阿尔杰塔$<BR>去<FONT color=#a82424>神圣天堂</FONT>找到金发剑客，告诉他之前发生的事情。<BR>然后请求他的帮助。<BR>他一定可以阻止黑骑士。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n099_engineer_hubert-2" image="" itemindex="">
       <talk_answer link_index="n099_engineer_hubert-2-a" mid="54"><![CDATA[<html>(继续)</html>]]></talk_answer>
@@ -307,14 +310,15 @@
          <trigger_string />
          <maptool_index />
          <title mid="81"><![CDATA[用古代人的力量给悬浮装置充能]]></title>
-         <contents mid="82"><![CDATA[<html>带着<FONT color=#a82424>悬浮装置</FONT>前往<FONT color=#a82424>沉睡者神殿</FONT>。据说那里还残留有黑骑士偷走的古代人的力量，说不定可以为悬浮装置充能。<FONT color=#7e12d2>(组队状态下无法执行任务)<BR><BR></FONT><FONT color=#086171>堆满落叶的湖岸(遗忘寺院入口)</FONT><FONT color=#a82424> → 沉睡者神殿</FONT></html>]]></contents>
-         <destination mid="83"><![CDATA[(单人任务)用古代人的力量给悬浮装置充能]]></destination>
+         <contents mid="82"><![CDATA[<html>带着<FONT color=#a82424>悬浮装置</FONT>前往<FONT color=#a82424>沉睡者神殿</FONT>。据说那里还残留有黑骑士偷走的古代人的力量，说不定可以为悬浮装置充能。<BR>
+<FONT color=#7e12d2>(组队状态下无法执行任务)<BR><BR></FONT><FONT color=#086171>堆满落叶的湖岸(遗忘寺院入口)</FONT><FONT color=#a82424> → 沉睡者神殿</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[(1人)用古代人的力量给悬浮装置充能]]></destination>
          <todo_msg mid="84"><![CDATA[请去沉睡者神殿给悬浮装置充能。]]></todo_msg>
       </journal>
    </journal_data>
    <condition_data>
-      <user_level>-1:-1</user_level>
-      <user_worldzone_level>-1:-1</user_worldzone_level>
+      <user_level />
+      <user_worldzone_level />
       <user_class />
       <prev_quest>207</prev_quest>
       <have_normal_item />

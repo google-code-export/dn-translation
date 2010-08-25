@@ -38,6 +38,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -46,11 +49,11 @@
       <talk_question mid="5"><![CDATA[<html>$主教伊格纳西奥${action:Talk}<BR>虽然先知现在由<FONT color=#a82424>杰兰特</FONT>保护着，但我很担心神圣天堂的防御。<BR>黑龙虽然消失了，但还有很多<FONT color=#a82424>魔物</FONT>。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-a" image="" itemindex="">
-      <talk_answer link_index="n039_bishop_ignasio-1-level" mid="8"><![CDATA[<html>我可以帮得上忙吗？</html>]]></talk_answer>
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="8"><![CDATA[<html>我可以帮得上忙吗？</html>]]></talk_answer>
       <talk_question mid="7"><![CDATA[<html>$主教伊格纳西奥$<BR>本来他们就是些邪恶的东西，现在失去了头目，就更加没有人可以控制他们了。但是我军在上次的激战中损失很大，<FONT color=#a82424>军需物资</FONT>也消耗殆尽，不知道什么时候才能补充上来。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-b" image="" itemindex="">
-      <talk_question mid="35"><![CDATA[<html>$主教伊格纳西奥$<BR>你愿意提供帮助，我就放心了。我马上去武器库看看，你先休息一下。<BR><FONT color=#7e12d2>(34级以后才能执行下一阶段任务)</FONT></html>]]></talk_question>
+      <talk_question mid="35"><![CDATA[<html>$主教伊格纳西奥$<BR>你愿意帮我，我就放心了。我先去武器库看看，你先休息一下。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-c" image="" itemindex="">
       <talk_answer link_index="n039_bishop_ignasio-1-d" mid="10"><![CDATA[<html>什么地方才能找到炸药呢？</html>]]></talk_answer>
@@ -112,15 +115,10 @@
    </qstep_change>
    <qstep_change qstep="1">
       <comment />
-      <conditions>
-         <chk type="lvl" op="]=">34</chk>
-      </conditions>
+      <conditions />
       <executions>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
-         <exe type="conexe" true="4" false="3">0</exe>
-         <exe type="talk" npc="n039_bishop_ignasio">b</exe>
-         <exe type="talk" npc="n039_bishop_ignasio">c</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -146,7 +144,7 @@
          <exe type="delquestitem" num="-1">300025</exe>
       </executions>
    </qstep_change>
-   <exelink qstep="1" npc="n039_bishop_ignasio" sub="level">2</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="e">0,1</exelink>
    <exelink qstep="3" npc="n276_invisible_thef" sub="a">0,1,2</exelink>

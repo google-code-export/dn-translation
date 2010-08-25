@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
    </talk_paragraph>
@@ -104,6 +107,8 @@
          <exe type="delcount">.</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200558</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200559</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -122,7 +127,7 @@
    </qstep_change>
    <exelink qstep="accepting" npc="n026_trader_may" sub="e">0</exelink>
    <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2</exelink>
-   <exelink qstep="1" npc="n026_trader_may" sub="2">0,2,3,4,1</exelink>
+   <exelink qstep="1" npc="n026_trader_may" sub="2">0,2,3,11,12,4,1</exelink>
    <exelink qstep="3" npc="n026_trader_may" sub="a">1</exelink>
    <exelink qstep="3" npc="n026_trader_may" sub="b">2,0</exelink>
    <journal_data recompense="1:3271,2:3272,3:3273,4:3274" quest_title="최고의 향신료" chapterid="" quest_level="18" quest_mark_type="10" use_item_list="400111">

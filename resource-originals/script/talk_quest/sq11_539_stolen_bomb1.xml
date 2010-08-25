@@ -31,6 +31,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
    </talk_paragraph>
@@ -96,6 +99,7 @@
          <exe type="delcount">.</exe>
          <exe type="setjornal">1</exe>
          <exe type="talk" npc="n042_general_duglars">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200827</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -120,7 +124,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n042_general_duglars" sub="g">0</exelink>
-   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">1,2,3,4,10,9</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">1,2,3,4,11,10,9</exelink>
    <exelink qstep="2" npc="n042_general_duglars" sub="3">0,1</exelink>
    <exelink qstep="3" npc="n042_general_duglars" sub="a">0</exelink>
    <exelink qstep="3" npc="n042_general_duglars" sub="!next">1</exelink>

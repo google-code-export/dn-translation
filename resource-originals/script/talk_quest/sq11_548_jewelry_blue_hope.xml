@@ -31,6 +31,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -157,6 +160,7 @@
          <exe type="setjornal">3</exe>
          <exe type="addquestitem" num="1">400154</exe>
          <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 1, 1);</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">201215</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -185,7 +189,7 @@
    </qstep_change>
    <exelink qstep="accepting" npc="n277_bluff_dealers_popo" sub="g">0</exelink>
    <exelink qstep="accepting" npc="n277_bluff_dealers_popo" sub="acceptted">1,2</exelink>
-   <exelink qstep="1" npc="n277_bluff_dealers_popo" sub="a">0,2,3,1,7</exelink>
+   <exelink qstep="1" npc="n277_bluff_dealers_popo" sub="a">0,2,8,3,1,7</exelink>
    <exelink qstep="2" npc="n277_bluff_dealers_popo" sub="haveitem1">0</exelink>
    <exelink qstep="2" npc="n277_bluff_dealers_popo" sub="b" />
    <exelink qstep="2" npc="n277_bluff_dealers_popo" sub="c" />
@@ -203,7 +207,7 @@
          <title_image />
          <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
          <need_itemlist />
-         <destination_pos>12,n277</destination_pos>
+         <destination_pos>11,n277</destination_pos>
          <destination_mode>custom</destination_mode>
          <statemark_npcid>277</statemark_npcid>
          <statemark_type>11</statemark_type>
@@ -227,9 +231,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="51"><![CDATA[和奸商波普对话]]></title>
-         <contents mid="52"><![CDATA[<html><FONT color=#a82424>奸商波普</FONT>说想告诉我贵族之间流行的蓝色希望的事情。看看他到底在打什么主意。<BR>
- <BR>
-<FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 奸商波普</FONT></html>]]></contents>
+         <contents mid="52"><![CDATA[<html><FONT color=#a82424>奸商波普</FONT>说想告诉我贵族之间流行的蓝色希望的事情。看看他到底在打什么主意。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 奸商波普</FONT></html>]]></contents>
          <destination mid="53"><![CDATA[和奸商波普对话]]></destination>
          <todo_msg mid="54"><![CDATA[任务已添加。]]></todo_msg>
       </journal>
@@ -261,7 +263,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="55"><![CDATA[去遗忘时间废墟搜集蓝色矿石]]></title>
-         <contents mid="56"><![CDATA[<html>奸商波普说如果我能帮他搜集到<FONT color=#a82424>蓝色矿石</FONT>，他可以帮我鉴定，如果有蓝色希望的话，可以给我丰厚的报酬。去<FONT color=#2b2723><FONT color=#a82424>遗忘时间废墟</FONT>的<FONT color=#a82424>蜥蜴人白尾巴鲁巴</FONT>身上搜集</FONT> 蓝色矿石。可以搜集多个，然后同时进行鉴定。<BR><FONT color=#7e12d2>(在深渊难度下无法执行。)</FONT><BR><FONT color=#2b2723></FONT><BR><FONT color=#2b2723><FONT color=#086171>赫尔马岱港口(下游废墟入口)</FONT> </FONT><FONT color=#a82424>→ 遗忘时间废墟</FONT> <FONT color=#7e12d2></FONT></html>]]></contents>
+         <contents mid="56"><![CDATA[<html>奸商波普说如果我能帮他搜集到<FONT color=#a82424>蓝色矿石</FONT>，他可以帮我鉴定，如果有蓝色希望的话，可以给我丰厚的报酬。去<FONT color=#2b2723><FONT color=#a82424>遗忘时间废墟</FONT>的<FONT color=#a82424>蜥蜴人白尾巴鲁巴</FONT>身上搜集</FONT> 蓝色矿石。可以搜集多个，然后同时进行鉴定。<BR><FONT color=#2b2723></FONT><BR><FONT color=#2b2723><FONT color=#086171>赫尔马岱港口(下游废墟入口)</FONT> </FONT><FONT color=#a82424>→ 遗忘时间废墟</FONT> <FONT color=#7e12d2></FONT></html>]]></contents>
          <destination mid="57"><![CDATA[去遗忘时间废墟搜集蓝色矿石]]></destination>
          <todo_msg mid="58"><![CDATA[请到遗忘时间废墟去搜集蓝色矿石。]]></todo_msg>
       </journal>
@@ -269,7 +271,7 @@
          <title_image />
          <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
          <need_itemlist />
-         <destination_pos>12,n277</destination_pos>
+         <destination_pos>11,n277</destination_pos>
          <destination_mode>custom</destination_mode>
          <statemark_npcid>277</statemark_npcid>
          <statemark_type>12</statemark_type>
@@ -293,7 +295,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="59"><![CDATA[去奸商波普那里鉴定宝石]]></title>
-         <contents mid="60"><![CDATA[<html>搜集到了蓝色矿石。把它交给<FONT color=#a82424>奸商波普</FONT>，鉴定是否有蓝色希望吧。蓝色矿石可以从<FONT color=#a82424>遗忘时间废墟</FONT><FONT color=#2b2723>的</FONT><FONT color=#a82424>蜥蜴人白尾巴鲁巴</FONT><FONT color=#2b2723>身上</FONT>搜集到。<BR><FONT color=#a82424>(蓝色矿石不是蓝色希望时，必须重新搜集)</FONT><BR><FONT color=#a82424></FONT><BR><FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 奸商波普</FONT></html>]]></contents>
+         <contents mid="60"><![CDATA[<html>搜集到了蓝色矿石。把它交给<FONT color=#a82424>奸商波普</FONT>，鉴定是否有蓝色希望吧。蓝色矿石可以从<FONT color=#a82424>遗忘时间废墟</FONT><FONT color=#2b2723>的</FONT><FONT color=#a82424>蜥蜴人白尾巴鲁巴</FONT><FONT color=#2b2723>身上</FONT>搜集到。<BR><FONT color=#a82424>(蓝色矿石不是蓝色希望时，必须重新搜集)</FONT><BR><FONT color=#a82424></FONT><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→  奸商波普</FONT></html>]]></contents>
          <destination mid="61"><![CDATA[去奸商波普那里鉴定宝石]]></destination>
          <todo_msg mid="62"><![CDATA[请到奸商波普那里去鉴定蓝色矿石。]]></todo_msg>
       </journal>

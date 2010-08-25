@@ -38,15 +38,18 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n212_argenta-1" image="" itemindex="">
-      <talk_answer link_index="n212_argenta-1-check" mid="7"><![CDATA[<html>首先...得收集月牙碎片。</html>]]></talk_answer>
+      <talk_answer link_index="n212_argenta-1-b" mid="7"><![CDATA[<html>首先...得收集月牙碎片。</html>]]></talk_answer>
       <talk_question mid="6"><![CDATA[<html>$阿尔杰塔$<BR>要制作<FONT color=#a82424>古代祭司长的月牙</FONT>，得先收集月牙碎片。然后用碎片组合成完整的月牙，并找到可注入力量的砂芯，助其成为一体。<BR>知道自己该做什么事了吧?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n212_argenta-1-a" image="" itemindex="">
-      <talk_question mid="8"><![CDATA[<html>$阿尔杰塔$<BR>不错嘛。不过看你现在弱不禁风的样子，哪还能去收集什么月牙碎片啊? 在捡到之前，你的小命都难保得住呢。<BR><FONT color=#7e12d2>（30级之后才能进行下一阶段。）</FONT></html>]]></talk_question>
+      <talk_question mid="8"><![CDATA[<html>$阿尔杰塔$<BR>不错嘛。不过看你现在弱不禁风的样子，哪还能去搜集什么符文碎片啊? 在捡到之前，你的小命都难保得住呢。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n212_argenta-1-b" image="QS_Default.dds" itemindex="300020">
       <talk_answer link_index="n212_argenta-1-c" mid="10"><![CDATA[<html>去哪里才能得到?</html>]]></talk_answer>
@@ -180,7 +183,6 @@
          <exe type="complete">405</exe>
       </executions>
    </qstep_change>
-   <exelink qstep="1" npc="n212_argenta" sub="check">0</exelink>
    <exelink qstep="1" npc="n212_argenta" sub="c" />
    <exelink qstep="1" npc="n212_argenta" sub="d">3,4,5</exelink>
    <exelink qstep="3" npc="n212_argenta" sub="b" />
@@ -226,10 +228,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="52"><![CDATA[古代祭司长的月牙]]></title>
-         <contents mid="53"><![CDATA[<html>要想进入巢穴就需要古代祭司长的月牙。向<FONT color=#a82424>阿尔杰塔</FONT>咨询制作方法吧。<BR><FONT color=#7e12d2>(30级以上才能执行任务)</FONT><BR>
-
-<BR><FONT color=#086171>黑山山角</FONT> <FONT color=#a82424>→ 阿尔杰塔</FONT></html>]]></contents>
-         <destination mid="54"><![CDATA[(Lv30) 与黑山山角的阿尔杰塔对话]]></destination>
+         <contents mid="53"><![CDATA[<html>要想进入巢穴需要古代祭司长的符文。向 <FONT color=#a82424>阿尔杰塔</FONT>询问制作方法吧。<BR><BR><FONT color=#086171>黑山山角</FONT> <FONT color=#a82424>→ 阿尔杰塔</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[与黑山山角的阿尔杰塔对话]]></destination>
          <todo_msg mid="55"><![CDATA[任务已添加。]]></todo_msg>
       </journal>
       <journal index="2">
@@ -332,7 +332,7 @@
       </journal>
    </journal_data>
    <condition_data>
-      <user_level>-1:-1</user_level>
+      <user_level />
       <user_worldzone_level />
       <user_class />
       <prev_quest>404</prev_quest>

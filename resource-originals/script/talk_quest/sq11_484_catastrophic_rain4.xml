@@ -12,7 +12,7 @@
       <nextqid />
       <nextqname />
       <nextqnpc />
-      <qkname mid="1"><![CDATA[灾难之雨 IV]]></qkname>
+      <qkname mid="1"><![CDATA[灾殃之雨 IV]]></qkname>
       <qnpc>
          <npcid>88</npcid>
          <npcename>n088_scholar_starshy</npcename>
@@ -29,6 +29,9 @@
    </talk_paragraph>
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
@@ -56,7 +59,7 @@
    </talk_paragraph>
    <talk_paragraph index="n088_scholar_starshy-accepting-e" image="" itemindex="">
       <talk_answer link_index="n088_scholar_starshy-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
-      <talk_question mid="15"><![CDATA[<html>$灾难之雨 IV$</html>]]></talk_question>
+      <talk_question mid="15"><![CDATA[<html>$灾殃之雨 IV$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n088_scholar_starshy-1" image="QW_35.dds" itemindex="">
       <talk_question mid="18"><![CDATA[<html>$纹章学者斯塔西${action:talk}<BR>那么赶紧到 <FONT color=#a82424>枯竭的玛丽莎泉</FONT>收集5个左右<FONT color=#a82424>月牙碎片</FONT>回来吧。<BR>我要通过它把可能变为现实。</html>]]></talk_question>
@@ -75,7 +78,7 @@
    </talk_paragraph>
    <talk_paragraph index="n088_scholar_starshy-2-c" image="" itemindex="">
       <talk_answer link_index="n088_scholar_starshy-2-d" mid="26"><![CDATA[<html>原来如此。</html>]]></talk_answer>
-      <talk_question mid="25"><![CDATA[<html>$纹章学者斯塔西$<BR>那就是在我学生时期学过的关于<FONT color=#a82424>灾难之雨</FONT>，就是它。<BR>在这种混乱当中<FONT color=#a82424>贝思柯德</FONT>消失了，我很长一段时间内深陷于各种谜一般的资料当中，无法自拔。所以我一度还被怀疑为<FONT color=#a82424>龙之追随者</FONT>。</html>]]></talk_question>
+      <talk_question mid="25"><![CDATA[<html>$纹章学者斯塔西$<BR>那就是在我学生时期学过的关于<FONT color=#a82424>灾殃之雨</FONT>，就是它。<BR>在这种混乱当中<FONT color=#a82424>贝思柯德</FONT>消失了，我很长一段时间内深陷于各种谜一般的资料当中，无法自拔。所以我一度还被怀疑为<FONT color=#a82424>龙之追随者</FONT>。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n088_scholar_starshy-2-d" image="" itemindex="">
       <talk_answer link_index="n088_scholar_starshy-2-e" mid="28"><![CDATA[<html>假设?</html>]]></talk_answer>
@@ -105,12 +108,14 @@
       <conditions />
       <executions>
          <exe type="recompense_view">,4841,4842,4843,4844</exe>
-         <exe type="huntitem" num="5" exe="2,3,4" onexe="">300020</exe>
+         <exe type="huntitem" num="5" exe="2,3,4" onexe="">400193</exe>
          <exe type="delcount">.</exe>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
          <exe type="talk" npc="n088_scholar_starshy">1</exe>
-         <exe type="setquest">484</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID,484, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -122,13 +127,13 @@
       <comment />
       <conditions />
       <executions>
-         <exe type="delquestitem" num="-1">300020</exe>
+         <exe type="delquestitem" num="-1">400193</exe>
          <exe type="recompense">,4841,4842,4843,4844</exe>
          <exe type="complete">484</exe>
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n088_scholar_starshy" sub="e">0</exelink>
-   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="acceptted">6,1,5</exelink>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="acceptted">6,7,1,8,5</exelink>
    <exelink qstep="2" npc="n088_scholar_starshy" sub="b" />
    <exelink qstep="2" npc="n088_scholar_starshy" sub="c" />
    <exelink qstep="2" npc="n088_scholar_starshy" sub="d" />
@@ -137,13 +142,13 @@
    <exelink qstep="2" npc="n088_scholar_starshy" sub="g" />
    <exelink qstep="2" npc="n088_scholar_starshy" sub="h">1</exelink>
    <exelink qstep="2" npc="n088_scholar_starshy" sub="i">0,2</exelink>
-   <journal_data recompense="1:4841,2:4842,3:4843,4:4844" quest_title="재앙의 비 IV" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="300020">
+   <journal_data recompense="1:4841,2:4842,3:4843,4:4844" quest_title="재앙의 비 IV" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="400193">
       <journal index="1">
          <title_image />
          <contents_image>QW_35.dds</contents_image>
          <need_itemlist />
          <destination_pos>354,0,0</destination_pos>
-         <destination_mode>custom:351@1,352@1,353@1,354@4</destination_mode>
+         <destination_mode>custom:351@4,352@4,353@4,354@4</destination_mode>
          <statemark_npcid />
          <statemark_type>12</statemark_type>
          <get_location />
@@ -166,9 +171,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="39"><![CDATA[收集月牙碎片]]></title>
-         <contents mid="40"><![CDATA[<html>在枯竭的玛丽莎泉收集5个月牙碎片。<BR>
- <BR>
-<FONT color=#086171>黑山山角（阴森的丛林路）</FONT> → 枯竭的玛丽莎泉</html>]]></contents>
+         <contents mid="40"><![CDATA[<html>去枯竭的玛丽莎泉搜集5个符文碎片。<BR><BR><FONT color=#086171>黑山山角(阴森的丛林路)</FONT> <FONT color=#a82424>→ 枯竭的玛丽莎泉</FONT></html>]]></contents>
          <destination mid="41"><![CDATA[收集月牙碎片]]></destination>
          <todo_msg mid="42"><![CDATA[在枯竭的玛丽莎泉收集月牙碎片吧。]]></todo_msg>
       </journal>

@@ -50,6 +50,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -194,11 +197,11 @@
 这也是我想拜托你的事情。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n044_archer_master_ishilien-5-d" image="QW_36.dds" itemindex="">
-      <talk_question mid="70"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>现在我们还有士兵被派去<FONT color=#a82424>黑暗大君主的练兵场</FONT>消灭魔物的残党。<BR>请你去那边，帮助消灭残余的魔物，并搜集一些<FONT color=#a82424>被污染的土壤标本</FONT>带回来。</html>]]></talk_question>
+      <talk_question mid="70"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>现在我们还有士兵被派去<FONT color=#a82424>黑暗大君主练兵场</FONT>消灭魔物的残党。<BR>请你去那边，帮助消灭残余的魔物，并搜集一些<FONT color=#a82424>被污染的土壤标本</FONT>带回来。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n044_archer_master_ishilien-6" image="QW_36.dds" itemindex="">
       <talk_answer link_index="n044_archer_master_ishilien-6-chkitem" mid="111"><![CDATA[<html>(继续)</html>]]></talk_answer>
-      <talk_question mid="71"><![CDATA[<html>$高级弓箭手伊西莉安$<BR><FONT color=#a82424>黑暗大君主的练兵场</FONT>内还有不少魔物残党。<BR>如果能对它们身上所沾有的土壤标本进行调查想必一定能有所收获。</html>]]></talk_question>
+      <talk_question mid="71"><![CDATA[<html>$高级弓箭手伊西莉安$<BR><FONT color=#a82424>黑暗大君主练兵场</FONT>内还有不少魔物残党。<BR>如果能对它们身上所沾有的土壤标本进行调查想必一定能有所收获。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n044_archer_master_ishilien-6-a" image="QW_36.dds" itemindex="">
       <talk_question mid="112"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>
@@ -277,13 +280,13 @@
       <executions>
          <exe type="setstep">6</exe>
          <exe type="setjornal">6</exe>
-         <exe type="huntmon" num="30000" party="0" exe="" onexe="4">982</exe>
-         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">987</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200987</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">987</exe>
          <exe type="addquestitem" num="1">300252</exe>
          <exe type="delcount">.</exe>
          <exe type="setstep">7</exe>
          <exe type="setjornal">7</exe>
-         <exe type="huntitem" num="1" exe="" onexe="">300252</exe>
+         <exe type="huntitem" num="1" exe="" onexe="5,6,7">300252</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="6">
@@ -322,7 +325,7 @@
    <exelink qstep="4" npc="n042_general_duglars" sub="d">0,1</exelink>
    <exelink qstep="5" npc="n044_archer_master_ishilien" sub="b" />
    <exelink qstep="5" npc="n044_archer_master_ishilien" sub="c" />
-   <exelink qstep="5" npc="n044_archer_master_ishilien" sub="d">0,3,8,1</exelink>
+   <exelink qstep="5" npc="n044_archer_master_ishilien" sub="d">0,3,2,8,1</exelink>
    <exelink qstep="6" npc="n044_archer_master_ishilien" sub="chkitem">0</exelink>
    <exelink qstep="7" npc="n044_archer_master_ishilien" sub="b" />
    <exelink qstep="7" npc="n044_archer_master_ishilien" sub="c" />
@@ -527,13 +530,9 @@
          <trigger_string />
          <maptool_index />
          <title mid="103"><![CDATA[被污染的土壤标本]]></title>
-         <contents mid="104"><![CDATA[<html>去黑暗大君主的练兵场搜集<FONT color=#a82424>被污染的土壤标本</FONT>。<BR>
- <BR>
-<FONT color=#7e12d2>※ 在深渊难度下无法执行。</FONT><BR>
- <BR>
-<FONT color=#086171>黑山山角(黑暗大君主的关卡)</FONT> <FONT color=#a82424>→ 黑暗大君主的练兵场</FONT></html>]]></contents>
-         <destination mid="105"><![CDATA[在黑暗大君主的练兵场采集标本]]></destination>
-         <todo_msg mid="106"><![CDATA[请到黑暗大君主的练兵场去搜集被污染的土壤标本。]]></todo_msg>
+         <contents mid="104"><![CDATA[<html>去黑暗大君主练兵场搜集<FONT color=#a82424>污染的土壤样本</FONT>。好像就粘在最强的魔物身上。<BR><BR><FONT color=#086171>黑山山角(黑暗大君主的关卡)</FONT> <FONT color=#a82424>→ 黑暗大君主练兵场</FONT></html>]]></contents>
+         <destination mid="105"><![CDATA[在黑暗大君主练兵场采集标本]]></destination>
+         <todo_msg mid="106"><![CDATA[请到黑暗大君主练兵场去搜集被污染的土壤标本。]]></todo_msg>
       </journal>
       <journal index="7">
          <title_image />

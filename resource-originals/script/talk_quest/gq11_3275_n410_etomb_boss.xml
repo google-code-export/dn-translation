@@ -1,4 +1,4 @@
-﻿<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <quest_desc>
       <qename>gq11_3275_n410_etomb_boss</qename>
       <qtype>venturerquest</qtype>
@@ -29,6 +29,9 @@
    </talk_paragraph>
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
@@ -78,6 +81,8 @@
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
          <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">201007</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1007);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -94,7 +99,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n410_guild_board" sub="c">3</exelink>
-   <exelink qstep="accepting" npc="n410_guild_board" sub="d">0,1,4,2</exelink>
+   <exelink qstep="accepting" npc="n410_guild_board" sub="d">0,1,4,8,2</exelink>
    <exelink qstep="2" npc="n410_guild_board" sub="a">0</exelink>
    <exelink qstep="2" npc="n410_guild_board" sub="b">1</exelink>
    <journal_data recompense="32750" quest_title="[길드의뢰] 현상수배 : 가고일 녹시어스" chapterid="" quest_level="32" quest_mark_type="19" use_item_list="">
@@ -126,8 +131,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="42"><![CDATA[消灭精灵坟墓的剧毒石像鬼]]></title>
-         <contents mid="43"><![CDATA[<html>消灭精灵坟墓的剧毒石像鬼。<BR><FONT color=#086171></FONT><BR><FONT color=#086171>赫尔马岱港口(江下游废墟入口) </FONT><FONT color=#a82424>→ 精灵坟墓</FONT><BR><FONT color=#a82424></FONT><BR><FONT color=#7e12d2>※ 无法在深渊级难度下执行。</FONT></html>]]></contents>
-         <destination mid="44"><![CDATA[消灭精灵坟墓的剧毒石像鬼]]></destination>
+         <contents mid="43"><![CDATA[<html>消灭精灵坟墓的剧毒石像鬼。<BR><FONT color=#086171></FONT><BR><FONT color=#086171>赫尔马岱港口(下游废墟入口) </FONT><FONT color=#a82424>→ 精灵坟墓</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[打猎]精灵坟墓]]></destination>
          <todo_msg mid="45"><![CDATA[冒险家公会委托添加完成。]]></todo_msg>
       </journal>
       <journal index="2">
@@ -170,6 +175,6 @@
       <prev_quest>3272</prev_quest>
       <have_normal_item />
       <complete_mission />
-      <have_symbol_item>10:21:33</have_symbol_item>
+      <have_symbol_item />
    </condition_data>
 </quest>

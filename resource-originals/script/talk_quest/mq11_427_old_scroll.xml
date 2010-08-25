@@ -33,6 +33,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -104,6 +107,8 @@
          <exe type="delcount">.</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">201096</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1096);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -123,7 +128,7 @@
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
-   <exelink qstep="1" npc="n039_bishop_ignasio" sub="e">0,2,4,1</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="e">0,2,8,4,1</exelink>
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="b" />
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="c" />
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="d" />
@@ -192,10 +197,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="31"><![CDATA[古代人的卷轴]]></title>
-         <contents mid="32"><![CDATA[<html>去枯叶林爆炸地区寻找<FONT color=#a82424>古代人的卷轴</FONT>。<BR><BR>
-<FONT color=#7e12d2>※ 在深渊难度下无法执行。</FONT><BR>
-<BR><FONT color=#086171>黑山山角(阴森的丛林路)</FONT> <FONT color=#a82424>→ 枯叶林爆炸地区</FONT></html>]]></contents>
-         <destination mid="33"><![CDATA[搜集古代人的卷轴]]></destination>
+         <contents mid="32"><![CDATA[<html>去枯叶林爆炸地区寻找<FONT color=#a82424>古代人的卷轴</FONT>。<BR><BR><FONT color=#086171>黑山山角(阴森的丛林路)</FONT> <FONT color=#a82424>→ 枯叶林爆炸地区</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[探索枯叶林爆炸地区]]></destination>
          <todo_msg mid="34"><![CDATA[请到枯叶林爆炸地区去寻找古代人的卷轴。]]></todo_msg>
       </journal>
       <journal index="3">

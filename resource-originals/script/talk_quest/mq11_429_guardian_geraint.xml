@@ -64,6 +64,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -75,7 +78,7 @@
 呜呜呜呜……怎么总发生些这类的事情？呜呜。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="">
-      <talk_question mid="8"><![CDATA[<html>$公爵斯图尔特$<BR>亲爱的<FONT color=#382000> {user_class}</FONT>……听说出现了新的魔物，请你与将军一起好好守护神圣天堂。</html>]]></talk_question>
+      <talk_question mid="8"><![CDATA[<html>$公爵斯图尔特$<BR>亲爱的<FONT color=#382000> <FONT color=#387206>{user_class}</FONT></FONT>……听说出现了新的魔物，请你与将军一起好好守护神圣天堂。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n038_royal_magician_kalaen-1" image="" itemindex="">
       <talk_question mid="9"><![CDATA[<html>$宫廷魔法师卡拉安$<BR>嗯？有未知魔物出现？所以呢？它也许就是刚巧路过神圣天堂罢了吧。反正不是我召唤来的，跟我没关系。</html>]]></talk_question>
@@ -106,13 +109,13 @@
       <talk_question mid="20"><![CDATA[<html>$杰兰特$<BR>……太吵了。我听不清楚你的声音。先帮忙让周围安静下来。<BR><FONT color=#7e12d2>(在组队状态下无法执行的任务)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n216_geraint_wounded-1-e" image="QW_39.dds" itemindex="">
-      <talk_question mid="21"><![CDATA[<html>$杰兰特$<BR>现在，有股强烈的力量在<FONT color=#a82424>海贼洞窟</FONT>附近波动。<BR>我们去那里。</html>]]></talk_question>
+      <talk_question mid="21"><![CDATA[<html>$杰兰特$<BR>在<FONT color=#a82424>船长达兰特的根据地</FONT>方向，我感觉到了一股强大的力量。<BR>我们去那里看看吧。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-2" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
       <talk_question mid="24"><![CDATA[<html>$主教伊格纳西奥$<BR>赶紧去请求<FONT color=#a82424>杰兰特</FONT>拯救神圣天堂！<BR>这是他应尽的义务！</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n216_geraint_wounded-2" image="QW_39.dds" itemindex="">
-      <talk_question mid="25"><![CDATA[<html>$杰兰特$<BR>不知因为什么原因，过去早就被消灭了的海龙又重新出现了。<BR>现在我能感到这股强大的力量来自<FONT color=#a82424>海贼洞窟</FONT>方向，我们应该去那里。</html>]]></talk_question>
+      <talk_question mid="25"><![CDATA[<html>$杰兰特$<BR>不知因为什么原因，过去早就被消灭了的海龙又重新出现了。<BR>现在我能感到这股强大的力量来自<FONT color=#a82424>船长达兰特的根据地</FONT>方向，我们应该去那里看看。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n040_king_casius-3" image="QN_Rose.dds" itemindex="">
       <talk_question mid="26"><![CDATA[<html>$国王卡西乌斯$<BR>怎么会发生这种事情……先知到底怎么样了……（自言自语）伟大的国王卡西乌斯大人……我到底该怎么做？（自言自语）……<BR><FONT color=#7e12d2>(必须去王城地下秘密场所确认萝丝是否安全)</FONT></html>]]></talk_question>
@@ -241,10 +244,9 @@
          <trigger_string />
          <maptool_index />
          <title mid="48"><![CDATA[守护者杰兰特]]></title>
-         <contents mid="49"><![CDATA[<html>和杰兰特一起去击退萨芬特拉。<BR><FONT color=#7e12d2></FONT><BR>
-<FONT color=#7e12d2>※在组队状态下无法执行的任务</FONT><BR><BR><FONT color=#086171>赫尔马岱港口(孤岛运输船)</FONT> <FONT color=#a82424>→ 海贼洞窟</FONT></html>]]></contents>
-         <destination mid="50"><![CDATA[(1人)在海贼洞窟里击退萨芬特拉]]></destination>
-         <todo_msg mid="51"><![CDATA[请进入海贼洞窟，击退萨芬特拉。]]></todo_msg>
+         <contents mid="49"><![CDATA[<html>和杰兰特一起去击退萨芬特拉。<BR><FONT color=#7e12d2></FONT><BR><FONT color=#7e12d2>※在组队状态下无法执行的任务</FONT><BR><BR><FONT color=#086171>赫尔马岱港口(孤岛运输船)</FONT> <FONT color=#a82424>→ 船长达兰特的根据地</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[(1人)去船长达兰特的根据地击退萨芬特拉]]></destination>
+         <todo_msg mid="51"><![CDATA[请到船长达兰特的根据地去，击退萨芬特拉。]]></todo_msg>
       </journal>
       <journal index="3">
          <title_image />

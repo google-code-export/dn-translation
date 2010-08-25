@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -44,18 +47,18 @@
    </talk_paragraph>
    <talk_paragraph index="n410_guild_board-accepting-b" image="GQ_hunt.dds" itemindex="">
       <talk_answer link_index="n410_guild_board-accepting-c" mid="100"><![CDATA[<html>(继续)</html>]]></talk_answer>
-      <talk_question mid="99"><![CDATA[<html>$冒险家公会公告栏$<BR>我想见见捕捉到精灵坟墓的掠夺者草地威瑟的冒险家，从他们身上获取灵感。这次我一定要写一本完美、壮美、浪漫的故事。</html>]]></talk_question>
+      <talk_question mid="99"><![CDATA[<html>$冒险家公会公告栏$<BR>我想见见捕捉到精灵坟墓的掠夺者草地魔灵的冒险家，从他们身上获取灵感。这次我一定要写一本完美、壮美、浪漫的故事。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n410_guild_board-accepting-c" image="GQ_hunt.dds" itemindex="">
-      <talk_answer link_index="n410_guild_board-accepting-d" mid="102"><![CDATA[<html>消灭3个掠夺者草地威瑟</html>]]></talk_answer>
-      <talk_question mid="101"><![CDATA[<html>$冒险家公会公告栏$<BR><FONT color=#2b2723>请到精灵坟墓消灭掠夺者草地威瑟。为了不朽的名作！</FONT><BR><FONT color=#7e12d2> 委托人：中流小说家丹奇娜</FONT></html>]]></talk_question>
+      <talk_answer link_index="n410_guild_board-accepting-d" mid="102"><![CDATA[<html>消灭3个掠夺者草地魔灵</html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$冒险家公会公告栏$<BR><FONT color=#2b2723>请到精灵坟墓消灭掠夺者草地魔灵。为了不朽的名作！</FONT><BR><FONT color=#7e12d2> 委托人：中流小说家丹奇娜</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n410_guild_board-accepting-d" image="" itemindex="">
       <talk_answer link_index="n410_guild_board-accepting-e" mid="11"><![CDATA[<html><FONT color=#086171>(接受委托)</FONT></html>]]></talk_answer>
       <talk_question mid="10"><![CDATA[<html>$委托奖励$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n410_guild_board-accepting-e" image="GQ_hunt.dds" itemindex="">
-      <talk_question mid="14"><![CDATA[<html>$[公会委托]为了奇妙的灵感$<BR>已接受公会的委托。<BR>请到<FONT color=#2b2723><FONT color=#a82424>精灵坟墓</FONT>去消灭<FONT color=#a82424>掠夺者草地威瑟</FONT></FONT>。</html>]]></talk_question>
+      <talk_question mid="14"><![CDATA[<html>$[公会委托]为了奇妙的灵感$<BR>已接受公会的委托。<BR>请到<FONT color=#2b2723><FONT color=#a82424>精灵坟墓</FONT>去消灭<FONT color=#a82424>掠夺者草地魔灵</FONT></FONT>。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n410_guild_board-1" image="GQ_hunt.dds" itemindex="">
       <talk_question mid="20"><![CDATA[<html>$冒险家公会公告栏$<BR>现在正在执行<FONT color=#a82424>[公会委托]为了奇妙的灵感</FONT>。<BR><BR>※ <FONT color=#7e12d2>同一公告栏中，只能接受一个公会委托。</FONT></html>]]></talk_question>
@@ -83,6 +86,8 @@
          <exe type="delcount">.</exe>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">201009</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1009);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -99,7 +104,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n410_guild_board" sub="d">3</exelink>
-   <exelink qstep="accepting" npc="n410_guild_board" sub="e">0,1,4,2</exelink>
+   <exelink qstep="accepting" npc="n410_guild_board" sub="e">0,1,4,8,2</exelink>
    <exelink qstep="2" npc="n410_guild_board" sub="a">1</exelink>
    <exelink qstep="2" npc="n410_guild_board" sub="b">0</exelink>
    <journal_data recompense="32720" quest_title="[길드의뢰] 스팩타클한 영감을 위해" chapterid="" quest_level="32" quest_mark_type="19" use_item_list="">
@@ -108,7 +113,7 @@
          <contents_image>QW_37.dds</contents_image>
          <need_itemlist />
          <destination_pos>374,0,0</destination_pos>
-         <destination_mode>custom:371@3,372@3,373@3,374@3</destination_mode>
+         <destination_mode>custom:371@3,372@3,373@3,374@0</destination_mode>
          <statemark_npcid>410</statemark_npcid>
          <statemark_type>20</statemark_type>
          <get_location />
@@ -130,10 +135,10 @@
          <comp_money />
          <trigger_string />
          <maptool_index />
-         <title mid="42"><![CDATA[去精灵坟墓消灭掠夺者草地威瑟]]></title>
-         <contents mid="43"><![CDATA[<html>去精灵坟墓消灭3个掠夺者草地威瑟。<BR><FONT color=#7e12d2>※ 无法在深渊级难度下执行。</FONT><BR>
-<BR><FONT color=#086171>赫尔马岱港口(江下游废墟入口) </FONT><FONT color=#a82424>→ 精灵坟墓</FONT></html>]]></contents>
-         <destination mid="44"><![CDATA[消灭掠夺者草地威瑟]]></destination>
+         <title mid="42"><![CDATA[去精灵坟墓消灭掠夺者草地魔灵]]></title>
+         <contents mid="43"><![CDATA[<html>去精灵坟墓消灭3个掠夺者草地魔灵。<BR>
+<BR><FONT color=#086171>赫尔马岱港口(下游废墟入口) </FONT><FONT color=#a82424>→ 精灵坟墓</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[打猎]精灵坟墓]]></destination>
          <todo_msg mid="45"><![CDATA[冒险家公会委托添加完成。]]></todo_msg>
       </journal>
       <journal index="2">

@@ -39,6 +39,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -86,13 +89,13 @@
    </talk_paragraph>
    <talk_paragraph index="n212_argenta-3-b" image="QN_Npc_Geraint.dds" itemindex="">
       <talk_answer link_index="n212_argenta-3-c" mid="24"><![CDATA[<html>是！！马上就过去！！</html>]]></talk_answer>
-      <talk_question mid="23"><![CDATA[<html>$阿尔杰塔$<BR>再怎么傻，也不敢丢失这种东西吧? 不放心的话，绑在什么地方也好。<BR>那我就去<FONT color=#a82424>黑暗大君主的练兵场</FONT>与<FONT color=#a82424>杰兰特</FONT>会合，你就带着那个人类过来吧。</html>]]></talk_question>
+      <talk_question mid="23"><![CDATA[<html>$阿尔杰塔$<BR>再怎么傻，也不敢丢失这种东西吧? 不放心的话，绑在什么地方也好。<BR>那我就去<FONT color=#a82424>黑暗大君主练兵场</FONT>与<FONT color=#a82424>杰兰特</FONT>会合，你就带着那个人类过来吧。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n212_argenta-3-c" image="QW_36.dds" itemindex="">
       <talk_question mid="25"><![CDATA[<html>$阿尔杰塔$<BR>嗯，快点吧。<BR>我可不会等你。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n212_argenta-4" image="QW_36.dds" itemindex="">
-      <talk_question mid="26"><![CDATA[<html>$阿尔杰塔$<BR>我会在<FONT color=#a82424>黑暗大君主的练兵场</FONT>与<FONT color=#a82424>杰兰特</FONT>会合后，再去找黑龙决一死战，你也带着人类赶紧过来吧，我可不会等你的哦。 </html>]]></talk_question>
+      <talk_question mid="26"><![CDATA[<html>$阿尔杰塔$<BR>我会在<FONT color=#a82424>黑暗大君主练兵场</FONT>与<FONT color=#a82424>杰兰特</FONT>会合后，再去找黑龙决一死战，你也带着人类赶紧过来吧，我可不会等你的哦。 </html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-4" image="" itemindex="">
       <talk_answer link_index="n039_bishop_ignasio-4-a" mid="28"><![CDATA[<html>（显示古代祭司长的月牙）</html>]]></talk_answer>
@@ -130,12 +133,13 @@
       <executions>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
-         <exe type="huntmon" num="1" party="1" exe="3,4,5,6" onexe="">951</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">951</exe>
          <exe type="addquestitem" num="1">300021</exe>
          <exe type="delcount">.</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
-         <exe type="huntitem" num="1" exe="" onexe="">300021</exe>
+         <exe type="huntitem" num="1" exe="4,5,6" onexe="">300021</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">200951</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -171,7 +175,7 @@
    </qstep_change>
    <exelink qstep="1" npc="n212_argenta" sub="b" />
    <exelink qstep="1" npc="n212_argenta" sub="c" />
-   <exelink qstep="1" npc="n212_argenta" sub="d">0,1,2,7</exelink>
+   <exelink qstep="1" npc="n212_argenta" sub="d">0,1,2,8,7</exelink>
    <exelink qstep="3" npc="n212_argenta" sub="b" />
    <exelink qstep="3" npc="n212_argenta" sub="c">2,0,1,2</exelink>
    <exelink qstep="4" npc="n039_bishop_ignasio" sub="b" />
@@ -316,7 +320,7 @@
       </journal>
    </journal_data>
    <condition_data>
-      <user_level>-1:-1</user_level>
+      <user_level />
       <user_worldzone_level />
       <user_class />
       <prev_quest>406</prev_quest>

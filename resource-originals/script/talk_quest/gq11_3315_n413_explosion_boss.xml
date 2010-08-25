@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -85,6 +88,8 @@
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
          <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">201081</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1081);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -101,7 +106,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n413_guild_board" sub="d">3</exelink>
-   <exelink qstep="accepting" npc="n413_guild_board" sub="e">0,1,4,2</exelink>
+   <exelink qstep="accepting" npc="n413_guild_board" sub="e">0,1,4,8,2</exelink>
    <exelink qstep="2" npc="n413_guild_board" sub="a">0</exelink>
    <exelink qstep="2" npc="n413_guild_board" sub="b">1</exelink>
    <journal_data recompense="33150" quest_title="[길드의뢰] 현상수배 : 사이클롭스 패치워크" chapterid="" quest_level="36" quest_mark_type="19" use_item_list="">
@@ -133,8 +138,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="42"><![CDATA[去枯叶林爆炸地区消灭独眼巨人修补工人]]></title>
-         <contents mid="43"><![CDATA[<html>消灭枯叶林爆炸地区的头目独眼巨人修补工人。<BR><FONT color=#086171></FONT><BR><FONT color=#086171>黑山山角(阴森的丛林路) </FONT><FONT color=#a82424>→ 枯叶林爆炸地区 </FONT><BR><FONT color=#a82424></FONT><BR><FONT color=#7e12d2>※ 无法在深渊级难度下执行。</FONT></html>]]></contents>
-         <destination mid="44"><![CDATA[消灭独眼巨人修补工人]]></destination>
+         <contents mid="43"><![CDATA[<html>消灭枯叶林爆炸地区的头目独眼巨人修补工人。<BR><FONT color=#086171></FONT><BR><FONT color=#086171>黑山山角(阴森的丛林路) </FONT><FONT color=#a82424>→ 枯叶林爆炸地区 </FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[打猎]枯叶林爆炸地区]]></destination>
          <todo_msg mid="45"><![CDATA[冒险家公会委托添加完成。]]></todo_msg>
       </journal>
       <journal index="2">
@@ -177,6 +182,6 @@
       <prev_quest>3312</prev_quest>
       <have_normal_item />
       <complete_mission />
-      <have_symbol_item>10:21:33</have_symbol_item>
+      <have_symbol_item />
    </condition_data>
 </quest>

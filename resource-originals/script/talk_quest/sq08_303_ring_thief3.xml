@@ -51,6 +51,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -245,12 +248,13 @@
       <executions>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
-         <exe type="huntmon" num="5" party="1" exe="4,5,6" onexe="3">444</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">444</exe>
          <exe type="addquestitem" num="1">300129</exe>
          <exe type="delcount">.</exe>
          <exe type="setstep">4</exe>
          <exe type="setjornal">4</exe>
-         <exe type="huntitem" num="5" exe="" onexe="">300129</exe>
+         <exe type="huntitem" num="5" exe="4,5,6" onexe="">300129</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">200444</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="3">
@@ -292,7 +296,7 @@
    <exelink qstep="1" npc="n255_invisible_thief" sub="d">1,2</exelink>
    <exelink qstep="2" npc="n026_trader_may" sub="b" />
    <exelink qstep="2" npc="n026_trader_may" sub="c" />
-   <exelink qstep="2" npc="n026_trader_may" sub="d">0,1,2,7</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="d">0,2,8,7,1</exelink>
    <exelink qstep="4" npc="n026_trader_may" sub="b">0,1,2,3</exelink>
    <exelink qstep="5" npc="n255_invisible_thief" sub="b" />
    <exelink qstep="5" npc="n255_invisible_thief" sub="c" />
@@ -403,8 +407,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="96"><![CDATA[发酵的树果]]></title>
-         <contents mid="97"><![CDATA[<html>在<FONT color=#a82424>袭击者埋伏点</FONT>消灭袭击者地精弓箭手并获取<FONT color=#a82424>发酵的树果</FONT>回来吧。<BR>
-<FONT color=#7e12d2>(在深渊级难度下无法进行)<BR></FONT><BR><FONT color=#086171>水晶谷（袭击者巢穴入口）</FONT> <FONT color=#a82424>→ 袭击者埋伏点</FONT></html>]]></contents>
+         <contents mid="97"><![CDATA[<html>去<FONT color=#a82424>袭击者埋伏点</FONT>消灭袭击者地精弓箭手，搜集<FONT color=#a82424>发酵的树果</FONT>。<FONT color=#7e12d2><BR></FONT><BR><FONT color=#086171>水晶谷(袭击者巢穴入口)</FONT> <FONT color=#a82424>→ 袭击者埋伏点</FONT></html>]]></contents>
          <destination mid="98"><![CDATA[消灭袭击者埋伏点的地精]]></destination>
          <todo_msg mid="99"><![CDATA[收集袭击者埋伏点的发酵的树果吧。]]></todo_msg>
       </journal>

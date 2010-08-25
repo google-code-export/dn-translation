@@ -1,0 +1,182 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_559_healing_tears</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>559</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[治疗的眼泪]]></qkname>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-a" mid="6"><![CDATA[<html>你太客气了。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>多亏你找到了治疗药，才避免了很多人的牺牲。<BR>真的非常感谢。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-b" mid="8"><![CDATA[<html>有什么可以帮你的吗？</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>但是现在还有很多的伤兵。有些人接受了治疗，但伤势仍在恶化，因此现在药品非常缺乏。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-c" mid="10"><![CDATA[<html>好的。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>你能这么说，实在太感谢了。不好意思，我想请你帮忙。<BR>因为<FONT color=#a82424>精灵的眼泪</FONT>非常珍贵，搜集起来非常困难。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-acceppted" mid="12"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$治疗的眼泪$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="QW_37.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>请你再去一趟<FONT color=#a82424>精灵坟墓</FONT>，帮我搜集精灵的眼泪。<BR>我接到报告，说在<FONT color=#a82424>蜥蜴人</FONT>身上可以找到小的碎片，请你帮我搜集10个。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-a" mid="16"><![CDATA[<html>(伊西莉安叹了一口气)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>搜集到了吗！<BR>这段期间牺牲者的人数又增加了，让我非常担心。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-b" mid="18"><![CDATA[<html>希望能尽快找到治疗药。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>虽然有了药，但这不是彻底的<FONT color=#a82424>治疗药</FONT>，只能暂时阻止症状进一步恶化。<BR>其他的就要看士兵们自己的毅力了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-c" mid="20"><![CDATA[<html><FONT color=#086171>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-c" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>很遗憾……我的能力有限，所以只能期待<FONT color=#a82424>莲花沼泽</FONT>的<FONT color=#a82424>卡拉秋</FONT>。<BR>希望她能快点给我回信，在这之前，我只能做自己力所能及的事情。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">559</exe>
+         <exe type="recompense_view">,5591,5592,5593,5594</exe>
+         <exe type="talk" npc="n044_archer_master_ishilien">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">1001</exe>
+         <exe type="addquestitem" num="1">300246</exe>
+         <exe type="huntitem" num="10" exe="6,7,8" onexe="">300246</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300246</exe>
+         <exe type="recompense">,5591,5592,5593,5594</exe>
+         <exe type="complete">559</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="c">1</exelink>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="acceppted">0,3,5,2</exelink>
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="b">1</exelink>
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="c">0,2</exelink>
+   <journal_data recompense="1:5591,2:5592,3:5593,4:5594" quest_title="치료하는 눈물" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="300246">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_37.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>374,0,0</destination_pos>
+         <destination_mode>custom:371@3,372@3,373@3,374@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[精灵的眼泪]]></title>
+         <contents mid="24"><![CDATA[<html>接到了高级弓箭手伊西莉安的委托。去精灵坟墓从蜥蜴人身上搜集<FONT color=#a82424>精灵的眼泪</FONT>。<BR><BR>
+<FONT color=#7e12d2>※ 在深渊难度下无法执行。</FONT><BR>
+<BR><FONT color=#086171>赫尔马岱港口(下游废墟入口)</FONT> <FONT color=#a82424>→ 精灵坟墓</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[搜集精灵的眼泪]]></destination>
+         <todo_msg mid="26"><![CDATA[请到精灵坟墓去搜集精灵的眼泪。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[向高级弓箭手伊西莉安报告]]></title>
+         <contents mid="28"><![CDATA[<html>搜集到了精灵的眼泪。去向<FONT color=#a82424>高级弓箭手伊西莉安</FONT>报告。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 高级弓箭手伊西莉安</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[向高级弓箭手伊西莉安报告]]></destination>
+         <todo_msg mid="30"><![CDATA[精灵的眼泪搜集完成。请回去向高级弓箭手伊西莉安报告。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>415</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

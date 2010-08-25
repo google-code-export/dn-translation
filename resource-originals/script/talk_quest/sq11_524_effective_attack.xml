@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
    </talk_paragraph>
@@ -53,12 +56,12 @@
    </talk_paragraph>
    <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="" itemindex="">
       <talk_question mid="9"><![CDATA[<html>$冒险家公会长冈特$<BR>
-到<FONT color=#a82424>黑暗领地守备队据点</FONT>去消灭领导下级魔物们的<FONT color=#a82424>崇拜者中将兽人</FONT>回来吧。消灭<FONT color=#a82424>20只</FONT>左右应该就可以让它们自乱阵脚了。</html>]]></talk_question>
+到<FONT color=#a82424>黑暗领地守备队据点</FONT>去消灭领导下级魔物们的<FONT color=#a82424>崇拜者重装兽人</FONT>回来吧。消灭<FONT color=#a82424>20只</FONT>左右应该就可以让它们自乱阵脚了。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="" itemindex="">
       <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-a" mid="11"><![CDATA[<html>（继续）</html>]]></talk_answer>
       <talk_question mid="10"><![CDATA[<html>$冒险家公会长冈特$<BR>
-辛苦了。我感觉到战局正向我们有利的方向转变。看来我们很快就能击退据点的魔物 ，继而可以进入<FONT color=#a82424>黑暗大君主的练兵场</FONT>了。</html>]]></talk_question>
+辛苦了。我感觉到战局正向我们有利的方向转变。看来我们很快就能击退据点的魔物 ，继而可以进入<FONT color=#a82424>黑暗大君主练兵场</FONT>了。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-a" image="" itemindex="">
       <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-b" mid="13"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
@@ -79,6 +82,8 @@
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
          <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">201127</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1127);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -95,7 +100,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="c">0</exelink>
-   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">1,2,3</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">1,2,3,7</exelink>
    <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="a">1</exelink>
    <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="b">0</exelink>
    <journal_data recompense="1:5241,2:5242,3:5243,4:5244" quest_title="효과적인 공격" chapterid="" quest_level="28" quest_mark_type="10" use_item_list="">
@@ -126,11 +131,11 @@
          <comp_money />
          <trigger_string />
          <maptool_index />
-         <title mid="26"><![CDATA[击退崇拜者中将兽人]]></title>
-         <contents mid="27"><![CDATA[<html>在<FONT color=#a82424>黑暗领地守备队据点</FONT>消灭<FONT color=#a82424>20只左右</FONT>统帅下级魔物们的<FONT color=#a82424>崇拜者中将兽人</FONT>吧。<BR>
+         <title mid="26"><![CDATA[击退崇拜者重装兽人]]></title>
+         <contents mid="27"><![CDATA[<html>在<FONT color=#a82424>黑暗领地守备队据点</FONT>消灭<FONT color=#a82424>20只左右</FONT>统帅下级魔物们的<FONT color=#a82424>崇拜者重装兽人</FONT>吧。<BR>
  <BR>
 <FONT color=#086171>黑山山角（黑暗大君主的关卡）</FONT> <FONT color=#a82424>→ 黑暗领地守备队据点</FONT></html>]]></contents>
-         <destination mid="28"><![CDATA[击退20只崇拜者中将兽人]]></destination>
+         <destination mid="28"><![CDATA[击退20只崇拜者重装兽人]]></destination>
          <todo_msg mid="29"><![CDATA[新增了任务。]]></todo_msg>
       </journal>
       <journal index="2">
@@ -161,7 +166,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="30"><![CDATA[与冒险家公会长冈特对话。]]></title>
-         <contents mid="31"><![CDATA[<html>消灭了崇拜者中将兽人。回到冒险家公会长冈特那里吧。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 冒险家公会长冈特</FONT></html>]]></contents>
+         <contents mid="31"><![CDATA[<html>消灭了崇拜者重装兽人。回到冒险家公会长冈特那里吧。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 冒险家公会长冈特</FONT></html>]]></contents>
          <destination mid="32"><![CDATA[与冒险家公会长冈特对话。]]></destination>
          <todo_msg mid="33"><![CDATA[回到冒险家公会长冈特那里吧。]]></todo_msg>
       </journal>

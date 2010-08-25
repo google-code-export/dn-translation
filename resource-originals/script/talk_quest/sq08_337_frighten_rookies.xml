@@ -31,6 +31,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -79,6 +82,8 @@
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
          <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200321</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 321);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -95,7 +100,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="d">0</exelink>
-   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">1,2,6</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">1,2,7,6</exelink>
    <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="a">0</exelink>
    <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b">1</exelink>
    <journal_data recompense="1:3371,2:3372,3:3373,4:3374" quest_title="신참 겁주기" chapterid="" quest_level="10" quest_mark_type="10" use_item_list="">

@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -85,6 +88,8 @@
          <exe type="delcount">.</exe>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">201072</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1072);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -101,7 +106,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n412_guild_board" sub="d">3</exelink>
-   <exelink qstep="accepting" npc="n412_guild_board" sub="e">0,1,4,2</exelink>
+   <exelink qstep="accepting" npc="n412_guild_board" sub="e">0,1,8,4,2</exelink>
    <exelink qstep="2" npc="n412_guild_board" sub="a">1</exelink>
    <exelink qstep="2" npc="n412_guild_board" sub="b">0</exelink>
    <journal_data recompense="33020" quest_title="[길드의뢰] 용추종자 구함" chapterid="" quest_level="34" quest_mark_type="19" use_item_list="">
@@ -110,7 +115,7 @@
          <contents_image>QW_40.dds</contents_image>
          <need_itemlist />
          <destination_pos>404,0,0</destination_pos>
-         <destination_mode>custom:401@3,402@3,403@3,404@3</destination_mode>
+         <destination_mode>custom:401@1,402@3,403@3,404@0</destination_mode>
          <statemark_npcid>412</statemark_npcid>
          <statemark_type>20</statemark_type>
          <get_location />
@@ -133,9 +138,9 @@
          <trigger_string />
          <maptool_index />
          <title mid="42"><![CDATA[去黑暗大君主之塔消灭崇拜者黑暗骷髅人]]></title>
-         <contents mid="43"><![CDATA[<html>去黑暗大君主之塔消灭3个崇拜者黑暗骷髅人。<BR><FONT color=#7e12d2>※ 无法在深渊级难度下执行。</FONT><BR>
+         <contents mid="43"><![CDATA[<html>去黑暗大君主之塔消灭3个崇拜者黑暗骷髅人。<BR>
 <FONT color=#7e12d2></FONT><BR><FONT color=#086171>黑山山角(黑暗大君主的关卡) </FONT><FONT color=#a82424>→ 黑暗大君主之塔</FONT></html>]]></contents>
-         <destination mid="44"><![CDATA[消灭崇拜者黑暗骷髅人]]></destination>
+         <destination mid="44"><![CDATA[[打猎]黑暗大君主之塔]]></destination>
          <todo_msg mid="45"><![CDATA[冒险家公会委托添加完成。]]></todo_msg>
       </journal>
       <journal index="2">

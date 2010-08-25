@@ -43,6 +43,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
    </talk_paragraph>
@@ -249,6 +252,7 @@
          <exe type="delcount">.</exe>
          <exe type="setstep">5</exe>
          <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200825</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="4">
@@ -300,7 +304,7 @@
    <exelink qstep="1" npc="n252_saint_guard" sub="f" />
    <exelink qstep="1" npc="n252_saint_guard" sub="g">0,1,2</exelink>
    <exelink qstep="2" npc="n088_scholar_starshy" sub="3">0,1</exelink>
-   <exelink qstep="3" npc="n088_scholar_starshy" sub="b">0,2,3,1</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="b">0,2,3,8,1</exelink>
    <exelink qstep="5" npc="n088_scholar_starshy" sub="6">0,1</exelink>
    <exelink qstep="6" npc="n088_scholar_starshy" sub="b" />
    <exelink qstep="6" npc="n088_scholar_starshy" sub="c" />
@@ -339,7 +343,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="73"><![CDATA[与王城近卫兵乔尔对话]]></title>
-         <contents mid="74"><![CDATA[<html>向<FONT color=#a82424>王城近卫兵乔尔</FONT>询问火灾事故发生当天的具体情况。<BR><BR><FONT color=#086171>神圣天堂王城内部</FONT> <FONT color=#a82424>→ 王城近卫兵乔尔</FONT><BR></html>]]></contents>
+         <contents mid="74"><![CDATA[<html>向<FONT color=#a82424>王城近卫兵乔尔</FONT>询问火灾事故发生当天的具体情况。<BR><BR><FONT color=#086171>神圣天堂王城内部</FONT> <FONT color=#a82424>→ 王城近卫兵乔尔</FONT></html>]]></contents>
          <destination mid="75"><![CDATA[与王城近卫兵乔尔对话]]></destination>
          <todo_msg mid="76"><![CDATA[新增了任务。]]></todo_msg>
       </journal>

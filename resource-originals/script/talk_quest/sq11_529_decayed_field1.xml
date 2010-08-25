@@ -1,0 +1,193 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_529_decayed_field1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>529</qid>
+      <designer>김인정</designer>
+      <qlevel>29</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>530</nextqid>
+      <nextqname>sq11_530_decayed_field2</nextqname>
+      <nextqnpc>n044_archer_master_ishilien</nextqnpc>
+      <qkname mid="1"><![CDATA[变化的 Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-a" mid="12"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$高级弓箭手伊西莉安${action:talk}<BR>人类和精灵乍一看很像，但是在很多方面存在差异。精灵很长寿，而且记忆力超强。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-a" image="QW_32.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-b" mid="14"><![CDATA[<html>水之精灵…?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>我还记得很久以前，在 <FONT color=#a82424>江下游废墟</FONT>还不是魔物们的横行之地的时候。<BR>年幼的你可能还不知，其实那里就是 <FONT color=#a82424>水之精灵</FONT>们的家园。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-c" mid="16"><![CDATA[<html>（伊西莉安低声叹息）</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>是的。就像水一样清澈无暇的存在…. 与大自然协调发展，成为了一个善良的种族。<BR>现如今，它们的家园却被<FONT color=#a82424>魔物</FONT>们所占领，每况愈下。真是让我心痛啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-d" mid="18"><![CDATA[<html>我能做什么?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>我一直认为要做就要做让人不能忘却的事情，所以想尽自己的一份力保护那里的环境。<BR>而你可否协助我呢?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-d" image="QW_32.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-e" mid="20"><![CDATA[<html>明白了。.</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>毁坏<FONT color=#a82424>江下游废墟</FONT>环境的是，无视大自然所赋予的光和黑暗，只会散发其凶恶之光的<FONT color=#a82424>草地魔灵</FONT> 的缘故。它们以草和树木的形态伪装自己，请帮我对自然构成威胁的它们消灭掉。。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-acceptted" mid="22"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$变化的 Ⅰ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="QW_32.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>你现在要开始做的事情就是，到<FONT color=#a82424>江下游废墟</FONT>去消灭<FONT color=#a82424>强盗草地魔灵</FONT>。<BR>如果消灭10只左右的话，或许多少还能弥补自然界的均衡。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-a" mid="26"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$高级弓箭手伊西莉安${action:talk}<BR>回来啦。 <FONT color=#7e12d2>（伊西莉安聚精会神的注视着）</FONT><BR>你的身上还散发着魔物的味道啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-b" mid="28"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>很久以前那里可是充满了绿油油的野草味和从精灵的身体上散发的香气。<BR>现在却只有堕落和悲伤。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-c" mid="30"><![CDATA[<html>还有什么事吗?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$高级弓箭手伊西莉安$<BR>如果还有时间的话，可否再帮我一下?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-c" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-!next" mid="32"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5291,5292,5293,5294</exe>
+         <exe type="setquest">529</exe>
+         <exe type="huntmon" num="10" party="1" exe="3,4,5" onexe="">906</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n044_archer_master_ishilien">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200906</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 906);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5291,5292,5293,5294</exe>
+         <exe type="complete">529</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="acceptted">1,6,2,7</exelink>
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="c">0</exelink>
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="!next">1</exelink>
+   <journal_data recompense="1:5291,2:5292,3:5293,4:5294" quest_title="변하는 것 Ⅰ" chapterid="" quest_level="29" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_32.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>324,0,0</destination_pos>
+         <destination_mode>custom:321@1,322@1,323@3,324@0</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[伊西莉安的叹息]]></title>
+         <contents mid="36"><![CDATA[<html>高级弓箭手伊西莉安对<FONT color=#a82424>下游废墟</FONT>越发恶劣的环境悲伤不已。帮她去消灭<FONT color=#a82424>强盗草地魔灵</FONT>吧。<BR>
+<BR><FONT color=#086171>赫尔马岱港口(下游废墟入口)</FONT> <FONT color=#a82424>→ 下游废墟</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[在江下游废墟消灭魔物]]></destination>
+         <todo_msg mid="38"><![CDATA[在江下游废墟消灭强盗草地魔灵吧。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[报告]]></title>
+         <contents mid="40"><![CDATA[<html>已经完成了在<FONT color=#a82424>江下游废墟</FONT>消灭魔物的委托。回去向<FONT color=#a82424>高级弓箭手伊西莉安</FONT> 报告吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 高级弓箭手伊西莉安</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[向高级弓箭手伊西莉安报告]]></destination>
+         <todo_msg mid="42"><![CDATA[已经消灭了魔物，向高级弓箭手伊西莉安报告吧。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>29:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

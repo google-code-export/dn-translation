@@ -45,15 +45,18 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n034_cleric_master_germain-1" image="QW_16.dds" itemindex="">
-      <talk_answer link_index="n034_cleric_master_germain-1-level1" mid="58"><![CDATA[<html>是，准备好了。</html>]]></talk_answer>
+      <talk_answer link_index="n034_cleric_master_germain-1-b" mid="58"><![CDATA[<html>是，准备好了。</html>]]></talk_answer>
       <talk_question mid="5"><![CDATA[<html>$高级牧师杰梅因${action:Talk}<BR>目的地为沉睡者神殿，已经做好准备了吗?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n034_cleric_master_germain-1-a" image="" itemindex="">
-      <talk_question mid="59"><![CDATA[<html>$高级牧师 杰梅因$<BR>不过，冒然出击的话，肯定会吃大亏的，所以得充分的做好准备才行。<BR><FONT color=#7e12d2>（14级以上才能执行任务）</FONT></html>]]></talk_question>
+      <talk_question mid="59"><![CDATA[<html>$高级牧师 杰梅因$<BR>不过，冒然出击的话，肯定会吃大亏的，所以得充分的做好准备才行。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n034_cleric_master_germain-1-b" image="" itemindex="">
       <talk_question mid="60"><![CDATA[<html>$高级牧师 杰梅因$<BR>最好赶紧到<FONT color=#a82424>沉睡者神殿</FONT>看一看吧。黑骑士陷害先知大人之前，拜托你一定要救出她啊。</html>]]></talk_question>
@@ -106,7 +109,7 @@
    </talk_paragraph>
    <talk_paragraph index="n128_argenta-2-c" image="QW_SaintHaven.dds" itemindex="">
       <talk_answer link_index="n128_argenta-2-d" mid="29"><![CDATA[<html>(继续)</html>]]></talk_answer>
-      <talk_question mid="28"><![CDATA[<html>$阿尔杰塔$<BR>你去<FONT color=#a82424>神圣天堂</FONT>找一个名叫<FONT color=#a82424>杰兰特</FONT>的<FONT color=#a82424>金发剑客</FONT>。告诉他之前发生的一切。<BR>然后请求他的帮助。</html>]]></talk_question>
+      <talk_question mid="28"><![CDATA[<html>$阿尔杰塔$<BR>你去<FONT color=#a82424>神圣天堂</FONT>找一个名叫<FONT color=#a82424>杰兰特</FONT>的<FONT color=#a82424>金发剑客</FONT>，告诉他之前发生的一切。<BR>然后请求他的帮助。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n128_argenta-2-d" image="" itemindex="">
       <talk_answer link_index="n128_argenta-2-e" mid="54"><![CDATA[<html>你好像和黑骑士认识……</html>]]></talk_answer>
@@ -144,15 +147,10 @@
    <qstep_change qstep="1">
       <comment>n027_argenta 아르젠타는 기본형
 n128_argenta 는 이벤트 씬 용(다친 상태)</comment>
-      <conditions>
-         <chk type="lvl" op="]=">14</chk>
-      </conditions>
+      <conditions />
       <executions>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
-         <exe type="conexe" true="4" false="3">0</exe>
-         <exe type="talk" npc="n034_cleric_master_germain">a</exe>
-         <exe type="talk" npc="n034_cleric_master_germain">b</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -173,7 +171,6 @@ n128_argenta 는 이벤트 씬 용(다친 상태)</comment>
          <exe type="recompense">,2061,2062,2063,2064</exe>
       </executions>
    </qstep_change>
-   <exelink qstep="1" npc="n034_cleric_master_germain" sub="level1">2</exelink>
    <exelink qstep="1" npc="n027_argenta" sub="b" />
    <exelink qstep="1" npc="n027_argenta" sub="c" />
    <exelink qstep="1" npc="n027_argenta" sub="d" />
@@ -214,8 +211,8 @@ n128_argenta 는 이벤트 씬 용(다친 상태)</comment>
          <trigger_string />
          <maptool_index />
          <title mid="39"><![CDATA[和银发女剑客阿尔杰塔对话]]></title>
-         <contents mid="40"><![CDATA[<html>带着银发女剑客所说的纯正的吊坠，去<FONT color=#a82424>沉睡者神殿</FONT>见见她吧。<BR><FONT color=#7e12d2>※ 14级以上才能执行任务。</FONT><BR><BR><FONT color=#086171>堆满落叶的湖岸（遗忘寺院入口） </FONT><FONT color=#a82424>→ 沉睡者神殿</FONT></html>]]></contents>
-         <destination mid="41"><![CDATA[（Lv14）与银发女剑客阿尔杰塔对话]]></destination>
+         <contents mid="40"><![CDATA[<html>带着银发女剑客所说的顺从吊坠，去<FONT color=#a82424>沉睡者神殿</FONT>见见她吧。<BR><BR><FONT color=#086171>堆满落叶的湖岸(遗忘寺院入口) </FONT><FONT color=#a82424>→ 沉睡者神殿</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[去沉睡者神殿和阿尔杰塔对话]]></destination>
          <todo_msg mid="42"><![CDATA[请到沉睡者神殿去和银发女剑客见面。]]></todo_msg>
       </journal>
       <journal index="2">
