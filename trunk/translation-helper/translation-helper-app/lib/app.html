@@ -210,7 +210,6 @@
       
       var s = strings[translationProgress];
       log('Original: '+s);
-      s = customEncode(s);
       
       callTranslationService(s, function(r) {
         strings_translated.push(r);
