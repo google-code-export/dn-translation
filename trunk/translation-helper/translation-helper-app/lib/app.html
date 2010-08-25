@@ -6,9 +6,9 @@
 <title>Translation Helper by apqoo</title>
 
 <style type="text/css">
-  html, body { padding:10px; }
+  html, body { padding:10px; width:1000px; overflow:hidden; }
   body, input, textarea { font-family:arial,serif; font-size:15px; }
-  textarea { width:400px; height:250px; overflow:scroll; }
+  textarea { width:400px; height:250px; overflow:scroll; padding:5px; margin-right:5px; }
   .titlespan { width:400px; display:inline-block; padding:3px; }
   input[type=button] { padding:5px 8px; }
 </style>
@@ -64,7 +64,10 @@
       return e.name.match(/.xml$/); 
     });
     
-    $('text-log-overall').update('Number of XML files in input folder: ' + filesList.length);
+    var s = 'Number of XML files in input folder: ' + filesList.length;
+    s += '\n\nWarning: Files in input folder will be *deleted* once they have been successfully translated.';
+    
+    $('text-log-overall').update(s);
     
   }
 
@@ -74,18 +77,27 @@
     
     var loader = new air.URLLoader();
     var request = new air.URLRequest(translationServiceURL+sourceText);
-    var refererHeader = new air.URLRequestHeader('Referer', httpReferer);
     
-    request.requestHeaders.push(refererHeader);
+    //var refererHeader = new air.URLRequestHeader('Referer', httpReferer);
+    //request.requestHeaders.push(refererHeader);
     
     loader.addEventListener(air.Event.COMPLETE, function(event){
 
       var loader = air.URLLoader(event.target);      
-      //air.trace(loader.data);
+      var r = loader.data.evalJSON();
       
-      var t = loader.data.evalJSON().responseData.translatedText;
-      t = customDecode(t);
-      callback(t);
+      if(r.responseStatus == 200){
+        
+        var t = r.responseData.translatedText;
+        t = customDecode(t);
+        callback(t);
+        
+      } else {
+        
+        air.trace('Server Error:');
+        air.trace(' Status: ' + r.responseStatus);
+        air.trace(' Details: ' + r.responseDetails);
+      }
       
     });
 
@@ -287,6 +299,7 @@
     var f = air.File.applicationDirectory.resolvePath(outputFolder+"/"+currentFileName);
     saveFile(translated_text, f.nativePath);
     
+    deleteCurrentFile();
     processNextFile();
   }
   
@@ -302,6 +315,38 @@
     
     } catch(e){
       air.trace('File Write Error:');
+      air.trace(e);
+      air.trace(e.message);
+    }
+    
+  }
+  
+  // This is not working!
+  // function moveCurrentFile(){
+  //   
+  //   try {
+  //     
+  //     var file = new air.File(filesList[currentFileIdx].nativePath);
+  //     var target = air.File.applicationDirectory.resolvePath(finishedFolder+"/"+currentFileName);
+  //     
+  //     file.moveTo(target, true);
+  //   
+  //   } catch(e){
+  //     air.trace('File Move Error:');
+  //     air.trace(e);
+  //   }
+  //     
+  // }
+  
+  function deleteCurrentFile(){
+    
+    try {
+      
+      var file = new air.File(filesList[currentFileIdx].nativePath);
+      file.deleteFile();
+    
+    } catch(e){
+      air.trace('File Delete Error:');
       air.trace(e);
     }
     
@@ -343,7 +388,7 @@
 <body>
 
 <textarea id="text-source" wrap="off" style="display:none;"></textarea> 
-<textarea id="text-log-overall" wrap="off"></textarea>
+<textarea id="text-log-overall"></textarea>
 <textarea id="text-log" wrap="off"></textarea>
 
 <br/><br/>
