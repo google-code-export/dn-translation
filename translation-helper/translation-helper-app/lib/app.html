@@ -37,6 +37,7 @@
   var filesList = [];
   var currentFileIdx = -1;
   var currentFileName = "";
+  var numTransReqs = 0;
 
   Event.observe(window, 'load', function(){
     
@@ -220,7 +221,8 @@
     var s = 'Translation in progress...\n\n';
     s += 'Current file:\n ' + currentFileName + '\n\n';
     s += 'Current file progress:\n ' + (translationProgress+1) + ' / ' + stringsSize + '\n\n';
-    s += 'Overall progress:\n ' + (currentFileIdx+1) + ' / ' + filesList.length;
+    s += 'Overall progress:\n ' + (currentFileIdx+1) + ' / ' + filesList.length + '\n\n';
+    s += 'Number of translation requests: ' + (++numTransReqs);
     
     $('text-log-overall').update(s);
     
@@ -323,7 +325,12 @@
     } else {
       
       clearlog();
-      $('text-log-overall').update('Translation complete.\n\nNumber of files translated: ' + filesList.length);
+      
+      var s = 'Translation complete.\n\n';
+      s += 'Number of files translated: ' + filesList.length + '\n\n';
+      s += 'Number of translation requests: ' + numTransReqs;
+      
+      $('text-log-overall').update(s);
       
     }
     
