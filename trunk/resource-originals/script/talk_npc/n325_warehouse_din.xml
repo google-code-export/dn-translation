@@ -1,0 +1,21 @@
+   <talk>
+      <npcename>n325_warehouse_din</npcename>
+      <npcid>325</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[仓库管理员丁]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="warehouse" mid="3"><![CDATA[<html>[仓库]</html>]]></talk_answer>
+         <talk_answer link_index="what" mid="4"><![CDATA[<html>[对话] 仓库是个什么地方？</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$仓库管理员丁${action:Talk}<BR>貌似有很多行李嘛。 <BR>要想管理好战利品，背包可要时刻清理才行哦。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="what" image="" itemindex="">
+         <talk_answer link_index="001" mid="6"><![CDATA[<html>(返回)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$仓库管理员丁$<BR>冒险时经常会发生装满背包的时候，那时就可以到这里来暂时保存背包物品。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenWareHouse(userObjID);</exe>
+      </executions>
+      <conditions />
+      <exelink idx="warehouse">1</exelink>
+   </talk>

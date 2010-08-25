@@ -1,0 +1,321 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_561_busy_bellin</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>561</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[忙碌的铁匠]]></qkname>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(没有符合条件的任务)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$通知$<br>拥有的任务太多，无法接受更多的任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-noquest" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$铁匠柏林$<BR>唉，我都快忙死了，什么人都来找我！<BR>真是……<BR><FONT color=#7e12d2>(在公爵斯图尔特那里可以接受任务)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-a" mid="7"><![CDATA[<html>我？为什么……</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$公爵斯图尔特$<BR>为了增强百姓们对王国的忠诚，我准备建立一座<FONT color=#a82424>金龙</FONT>的雕像。<BR>你也是相关人员之一，希望你能负起责任来。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-a" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-b" mid="9"><![CDATA[<html>好的。</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$公爵斯图尔特$<BR>我向<FONT color=#a82424>铁匠柏林</FONT>下了订单，但现在还没收到消息。<BR>你能帮我去催催他，然后把定做的东西取回来吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-acceppted" mid="11"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$忙碌的铁匠$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$公爵斯图尔特$<BR>你去<FONT color=#a82424>铁匠柏林</FONT>那里确认一下情况。<BR>我以为制作铜像应该很快的，真是……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="QM_HoundNormal_2.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-a" mid="14"><![CDATA[<html>(柏林不停地唠叨)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$铁匠柏林$<BR>忙死了，忙死了！！就算长了十只手也不够啊。<BR>又不能随便抓只<FONT color=#a82424>猎犬</FONT>来，让它帮我干活。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-a" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-b" mid="16"><![CDATA[<html>他问你什么时候能做好。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$铁匠柏林$<BR>你找我有事吗？……嗯？公爵？铜像？<FONT color=#7e12d2> (柏林抠着鼻孔)</FONT><BR>啊～铜像！我还以为是<FONT color=#a82424>公爵</FONT>心血来潮呢。是真的吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-c" mid="18"><![CDATA[<html>(柏林开始工作)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$铁匠柏林$<BR>什么时候做好？你去告诉他，再有十年应该就差不多了！<BR>……不，这样的话，公爵一定会派人把我抓走的……嗯，让我来看看，呸呸！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-d" mid="20"><![CDATA[<html>那倒是。</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$铁匠柏林$<BR>因为这次战争，我必须优先修理各种武器。不知道魔物们什么时候会过来，用破破烂烂的枪和刀怎么能保卫<FONT color=#a82424>神圣天堂</FONT>呢？不是吗？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-d" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-e" mid="22"><![CDATA[<html>需要我帮忙吗？</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$铁匠柏林$<BR>现在连修理武器的材料都没有，哪来什么铜像啊？真是痴人说梦。<BR>现在仅是搜集可以重新利用的武器的人手都不够！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-e" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-2" mid="24"><![CDATA[<html>好的。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$铁匠柏林$<BR>嗯？当然好啦！我都恨不得让猎犬出去把能用的东西捡回来。像你这样的冒险家，当然更好了。咳咳，太好了！你快去帮我搜集一些<FONT color=#a82424>破碎的废铁碎片</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2" image="QW_33.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$铁匠柏林$<BR>你快去<FONT color=#a82424>孤岛中心</FONT>消灭海盗沼泽蜥蜴人，把他们的<FONT color=#a82424>破碎的废铁碎片</FONT>拿回来。搜集蜥蜴人的枪刃之类的东西就行。不需要很多，只要10个，就能帮上大忙。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-a" mid="27"><![CDATA[<html>(把东西一把抢了过去)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$铁匠柏林$<BR>哦！回来啦。我等得眼珠子都要掉出来了！<BR>快把<FONT color=#a82424>破碎的废铁碎片</FONT>交给我吧！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4" mid="29"><![CDATA[<html>知道了。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$铁匠柏林$<BR>现在情况非常糟糕，我们都不得不回收魔物的东西重新利用。<BR>你就回去这样告诉<FONT color=#a82424>公爵斯图尔特</FONT>。铜像什么的，现在根本没功夫。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4" image="" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$铁匠柏林$<BR>那么再见。<BR>没事的话，你就快走吧。<FONT color=#7e12d2>(柏林不停地敲敲打打)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-4-a" mid="32"><![CDATA[<html>是的，我刚从孤岛……(说明情况)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$公爵斯图尔特$<BR>怎么去了这么久？我只是让你去把铜像取回来。<BR>让你去见<FONT color=#a82424>铁匠</FONT>，你怎么好像去了<FONT color=#a82424>孤岛</FONT>啊。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-a" image="QW_33.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-4-b" mid="34"><![CDATA[<html>(公爵叹了一口气)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$公爵斯图尔特$<BR>为了这种事情去了<FONT color=#a82424>孤岛中心</FONT>？你可真行。<BR>哼哼，不过冒险家都是这个样子。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-b" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-4-c" mid="36"><![CDATA[<html>其他办法？</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$公爵斯图尔特$<BR>总之，据你了解的情况，现在铁块不足，没办法制作铜像，是吗？<BR>嗯……没有材料的话，就算再催促，也不会从天上掉下来。看来我得想想别的办法了。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-c" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-4-d" mid="38"><![CDATA[<html>(获取奖励)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-d" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$公爵斯图尔特$<BR>我得看看有没有办法搜集到铁块。辛苦你了。<BR>你先退下吧。需要的话，我会再找你的。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">561</exe>
+         <exe type="recompense_view">,5611,5612,5613,5614</exe>
+         <exe type="talk" npc="n041_duke_stwart">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">923</exe>
+         <exe type="addquestitem" num="1">300275</exe>
+         <exe type="huntitem" num="10" exe="5,6,7" onexe="">300275</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300275</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5611,5612,5613,5614</exe>
+         <exe type="complete">561</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="b">1</exelink>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="acceppted">0,2</exelink>
+   <exelink qstep="1" npc="n091_trader_bellin" sub="b" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="c" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="d" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="e" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="2">0,2,4,1</exelink>
+   <exelink qstep="3" npc="n091_trader_bellin" sub="4">0,1,2</exelink>
+   <exelink qstep="4" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="4" npc="n041_duke_stwart" sub="c">0</exelink>
+   <exelink qstep="4" npc="n041_duke_stwart" sub="d">1</exelink>
+   <journal_data recompense="1:5611,2:5612,3:5613,4:5614" quest_title="분주한 대장장이" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="300275">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[铁匠柏林的工作情况]]></title>
+         <contents mid="41"><![CDATA[<html>去向神圣天堂的铁匠柏林确认公爵斯图尔特的订单情况。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 铁匠柏林</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[和铁匠柏林对话]]></destination>
+         <todo_msg mid="43"><![CDATA[请向铁匠柏林确认铜像的制作情况。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_33.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>331,0,0</destination_pos>
+         <destination_mode>custom:331@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[搜集破碎的废铁碎片]]></title>
+         <contents mid="45"><![CDATA[<html>去<FONT color=#a82424>孤岛中心</FONT>消灭海盗沼泽蜥蜴人，搜集破碎的废铁碎片。<BR>
+ <BR>
+<FONT color=#7e12d2>※ 在深渊难度下无法执行。</FONT><BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口(孤岛运输船)</FONT> <FONT color=#a82424>→ 孤岛中心</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[搜集破碎的废铁碎片]]></destination>
+         <todo_msg mid="47"><![CDATA[请到孤岛中心去搜集破碎的废铁碎片。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[铁匠柏林的回答]]></title>
+         <contents mid="49"><![CDATA[<html>搜集到了<FONT color=#a82424>破碎的废铁碎片</FONT>。回到神圣天堂，交给铁匠柏林吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 铁匠柏林</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[向铁匠柏林报告]]></destination>
+         <todo_msg mid="51"><![CDATA[请把搜集到的东西交给铁匠柏林。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[向公爵斯图尔特报告]]></title>
+         <contents mid="53"><![CDATA[<html>回去向公爵斯图尔特报告铁匠柏林的工作情况。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂王城</FONT> <FONT color=#a82424>→ 公爵斯图尔特</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[向公爵斯图尔特报告]]></destination>
+         <todo_msg mid="55"><![CDATA[请向公爵斯图尔特报告工作的进展情况。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>414</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,4 +1,4 @@
-﻿<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <quest_desc>
       <qename>gq11_3287_n409_cityfront_master</qename>
       <qtype>venturerquest</qtype>
@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -44,20 +47,16 @@
  </html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-b" image="GQ_master.dds" itemindex="">
-      <talk_answer link_index="n409_guild_board-accepting-c" mid="68"><![CDATA[<html>(继续)</html>]]></talk_answer>
-      <talk_question mid="67"><![CDATA[<html>$冒险家公会公告栏$<BR>我不行……<BR>所以比我更弱的你也不行……</html>]]></talk_question>
+      <talk_answer link_index="n409_guild_board-accepting-c" mid="66"><![CDATA[<html>死亡城市路口，大师级难度以上通关</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$冒险家公会公告栏$<BR>我不行……<BR>所以比我更弱的你也不行……<BR>
+<FONT color=#7e12d2>  委托人：自暴自弃的兽人金</FONT></html>]]></talk_question>
    </talk_paragraph>
-   <talk_paragraph index="n409_guild_board-accepting-c" image="GQ_master.dds" itemindex="">
-      <talk_answer link_index="n409_guild_board-accepting-d" mid="66"><![CDATA[<html>死亡城市路口，大师级难度以上通关</html>]]></talk_answer>
-      <talk_question mid="65"><![CDATA[<html>$冒险家公会公告栏$<BR>为了让自暴自弃的兽人金鼓起勇气，请以大师级难度以上通关<FONT color=#a82424>死亡城市路口</FONT>。<BR>
-<FONT color=#7e12d2> 委托人：自暴自弃的兽人金</FONT></html>]]></talk_question>
-   </talk_paragraph>
-   <talk_paragraph index="n409_guild_board-accepting-d" image="" itemindex="">
-      <talk_answer link_index="n409_guild_board-accepting-e" mid="11"><![CDATA[<html><FONT color=#086171>(接受委托)</FONT></html>]]></talk_answer>
+   <talk_paragraph index="n409_guild_board-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n409_guild_board-accepting-d" mid="11"><![CDATA[<html><FONT color=#086171>(接受委托)</FONT></html>]]></talk_answer>
       <talk_question mid="10"><![CDATA[<html>$委托奖励$</html>]]></talk_question>
    </talk_paragraph>
-   <talk_paragraph index="n409_guild_board-accepting-e" image="GQ_master.dds" itemindex="">
-      <talk_question mid="52"><![CDATA[<html>$[公会委托]你比我更弱Ⅱ$<BR>已接受公会的委托。<BR>请以<FONT color=#a82424>大师级</FONT>以上难度通关<FONT color=#a82424>死亡城市路口</FONT>。</html>]]></talk_question>
+   <talk_paragraph index="n409_guild_board-accepting-d" image="GQ_master.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$[公会委托]你比我更弱Ⅱ$<BR>为了让自暴自弃的兽人金恢复勇气，请以大师级以上难度通关<FONT color=#a82424>死亡城市路口</FONT>。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-1" image="GQ_master.dds" itemindex="">
       <talk_question mid="20"><![CDATA[<html>$冒险家公会公告栏$<BR>现在正在执行<FONT color=#a82424>[公会委托] 你比我更弱Ⅱ</FONT><FONT color=#2b2723><FONT color=#2b2723></FONT></FONT>。<BR><BR>※ <FONT color=#7e12d2>同一公告栏中，只能接受一个公会委托。</FONT></html>]]></talk_question>
@@ -103,8 +102,8 @@
          <exe type="complete">3287</exe>
       </executions>
    </qstep_change>
-   <exelink qstep="accepting" npc="n409_guild_board" sub="d">3</exelink>
-   <exelink qstep="accepting" npc="n409_guild_board" sub="e">0,1,4,2</exelink>
+   <exelink qstep="accepting" npc="n409_guild_board" sub="c">3</exelink>
+   <exelink qstep="accepting" npc="n409_guild_board" sub="d">0,1,4,2</exelink>
    <exelink qstep="2" npc="n409_guild_board" sub="a">0</exelink>
    <exelink qstep="2" npc="n409_guild_board" sub="b">1</exelink>
    <journal_data recompense="32870" quest_title="[길드 의뢰] 나보다 더 약한 너Ⅱ" chapterid="" quest_level="34" quest_mark_type="19" use_item_list="">
@@ -137,7 +136,7 @@
          <maptool_index />
          <title mid="42"><![CDATA[死亡城市路口大师级难度以上通关]]></title>
          <contents mid="43"><![CDATA[<html>请以大师级难度以上通关死亡城市路口。<BR><FONT color=#086171></FONT><BR><FONT color=#086171>赫尔马岱港口(黑暗矿山入口) </FONT><FONT color=#a82424>→ 死亡城市路口</FONT></html>]]></contents>
-         <destination mid="44"><![CDATA[死亡城市路口大师级难度以上通关]]></destination>
+         <destination mid="44"><![CDATA[[大师级]死亡城市路口]]></destination>
          <todo_msg mid="45"><![CDATA[冒险家公会委托添加完成。]]></todo_msg>
       </journal>
       <journal index="2">
@@ -180,6 +179,6 @@
       <prev_quest>3284</prev_quest>
       <have_normal_item />
       <complete_mission />
-      <have_symbol_item>10:21:33</have_symbol_item>
+      <have_symbol_item />
    </condition_data>
 </quest>

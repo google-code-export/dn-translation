@@ -55,6 +55,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -237,6 +240,8 @@
          <exe type="delcount">.</exe>
          <exe type="setstep">6</exe>
          <exe type="setjornal">6</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">201159</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1159);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="5">
@@ -259,7 +264,7 @@
    <exelink qstep="3" npc="n042_general_duglars" sub="c">0,1</exelink>
    <exelink qstep="4" npc="n041_duke_stwart" sub="" />
    <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="b" />
-   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="c">0,2,1</exelink>
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="c">0,2,6,1</exelink>
    <exelink qstep="6" npc="n038_royal_magician_kalaen" sub="b" />
    <exelink qstep="6" npc="n042_general_duglars" sub="b" />
    <exelink qstep="6" npc="n042_general_duglars" sub="c" />
@@ -431,10 +436,7 @@
          <maptool_index />
          <title mid="90"><![CDATA[追踪行踪]]></title>
          <contents mid="91"><![CDATA[<html>追踪主教伊格纳西奥的行踪，前往<FONT color=#a82424>无名暴君之墓</FONT>。<BR>
- <BR>
-<FONT color=#7e12d2>※ 在深渊难度下无法执行。</FONT><BR>
- <BR>
-<FONT color=#086171>赫尔马岱港口(黑暗矿山入口)</FONT> <FONT color=#a82424>→ 无名暴君之墓</FONT></html>]]></contents>
+<BR><FONT color=#086171>赫尔马岱港口(黑暗矿山入口)</FONT> <FONT color=#a82424>→ 无名暴君之墓</FONT></html>]]></contents>
          <destination mid="92"><![CDATA[探索无名暴君之墓]]></destination>
          <todo_msg mid="93"><![CDATA[请到无名暴君之墓去寻找主教伊格纳西奥的行踪。]]></todo_msg>
       </journal>

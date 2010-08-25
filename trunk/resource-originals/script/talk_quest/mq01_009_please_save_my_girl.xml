@@ -6,7 +6,7 @@
       <qchapter>1</qchapter>
       <qid>9</qid>
       <designer>김주연</designer>
-      <qlevel>8</qlevel>
+      <qlevel>1</qlevel>
       <qdesc />
       <qdifficulty>1</qdifficulty>
       <nextqid>10</nextqid>
@@ -40,6 +40,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -50,8 +53,7 @@
       <talk_question mid="8"><![CDATA[<html>$村长海洛德$<BR>咳咳咳咳……<FONT color=#a82424>自卫团长史蒂夫/FONT>好像正在等你。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n124_guard_sam-1" image="" itemindex="">
-      <talk_question mid="59"><![CDATA[<html>$卫兵山姆$<BR><FONT color=#a82424>古代神殿发掘场</FONT>可以通过<FONT color=#a82424> 狂风森林</FONT>的<FONT color=#a82424>狂风森林神殿入口</FONT>到达。请你一定要救出……箩丝。<FONT color=#387206>{user_nick}</FONT>，拜托你了。<BR>
-※ <FONT color=#7e12d2>古代神殿发掘场是8级以上才能进入的关卡。</FONT></html>]]></talk_question>
+      <talk_question mid="59"><![CDATA[<html>$卫兵山姆$<BR><FONT color=#a82424>古代神殿发掘场</FONT>可以通过<FONT color=#a82424> 狂风森林</FONT>的<FONT color=#a82424>狂风森林神殿入口</FONT>到达。请你一定要救出……箩丝。<FONT color=#387206>{user_nick}</FONT>，拜托你了。<BR>※ <FONT color=#7e12d2>古代神殿发掘场是8Lv以上才能进入的关卡。</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n004_guard_steave-2" image="" itemindex="">
       <talk_answer link_index="n004_guard_steave-2-a" mid="61"><![CDATA[<html>对不起……提摩西他……</html>]]></talk_answer>
@@ -111,7 +113,7 @@
    <exelink qstep="2" npc="n004_guard_steave" sub="3">0</exelink>
    <exelink qstep="3" npc="n004_guard_steave" sub="a">0</exelink>
    <exelink qstep="3" npc="n004_guard_steave" sub="!next">1</exelink>
-   <journal_data recompense="1:91,2:92" quest_title="그녀를 부탁해" chapterid="1" quest_level="8" quest_mark_type="7" use_item_list="">
+   <journal_data recompense="1:91,2:92" quest_title="그녀를 부탁해" chapterid="1" quest_level="1" quest_mark_type="7" use_item_list="">
       <journal index="1">
          <title_image />
          <contents_image>QW_5.dds</contents_image>
@@ -140,8 +142,8 @@
          <trigger_string>맵에서 9번퀘스트에 1번 스텝이면 몬스터 전멸시 동영상 출력 -> 스텝, 저널(1 -> 2) 변경 </trigger_string>
          <maptool_index>73</maptool_index>
          <title mid="43"><![CDATA[到古代神殿发掘场去拯救箩丝和提摩西]]></title>
-         <contents mid="44"><![CDATA[<html>前往<FONT color=#a82424>古代神殿发掘场</FONT>救出处于危险之中的箩丝和提摩西。<BR>※ <FONT color=#7e12d2>古代神殿发掘场是8级以上才能进入的关卡。</FONT><BR><FONT color=#086171></FONT><BR><FONT color=#086171>狂风森林(狂风森林神殿入口)</FONT><FONT color=#a82424>→ 古代神殿发掘场</FONT></html>]]></contents>
-         <destination mid="45"><![CDATA[(Lv8)到古代神殿发掘场去拯救箩丝和提摩西]]></destination>
+         <contents mid="44"><![CDATA[<html>前往<FONT color=#a82424>古代神殿发掘场</FONT>救出处于危险之中的箩丝和提摩西。<BR><BR><FONT color=#086171>狂风森林(狂风森林神殿入口) </FONT><FONT color=#a82424>→ 古代神殿发掘场</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[到古代神殿发掘场去拯救箩丝和提摩西]]></destination>
          <todo_msg mid="46"><![CDATA[任务已添加。]]></todo_msg>
       </journal>
       <journal index="2">

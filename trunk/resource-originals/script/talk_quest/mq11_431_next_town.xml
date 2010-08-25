@@ -60,6 +60,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -204,6 +207,8 @@
          <exe type="delcount">.</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">201172</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1172);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -239,7 +244,7 @@
    <exelink qstep="1" npc="n044_archer_master_ishilien" sub="b" />
    <exelink qstep="1" npc="n044_archer_master_ishilien" sub="c" />
    <exelink qstep="1" npc="n044_archer_master_ishilien" sub="d" />
-   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="e">0,2,4,1</exelink>
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="e">0,2,8,4,1</exelink>
    <exelink qstep="3" npc="n044_archer_master_ishilien" sub="b" />
    <exelink qstep="3" npc="n044_archer_master_ishilien" sub="c" />
    <exelink qstep="3" npc="n044_archer_master_ishilien" sub="d" />
@@ -314,11 +319,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="146"><![CDATA[凄凉森林化石碎片]]></title>
-         <contents mid="147"><![CDATA[<html>好像和被黑龙的血污染的人们一样，我好像受到了萨芬特拉的血的污染。为了缓解病情，必须制作治疗药。去<FONT color=#a82424>凄凉森林幽灵村</FONT>搜集<FONT color=#a82424>凄凉森林化石碎片</FONT>吧。<BR>
- <BR>
-<FONT color=#7e12d2>※ 在深渊难度下无法执行。</FONT><BR>
- <BR>
-<FONT color=#086171>黑山山角(阴森的丛林路)</FONT> <FONT color=#a82424>→ 凄凉森林幽灵村</FONT></html>]]></contents>
+         <contents mid="147"><![CDATA[<html>好像和被黑龙的血污染的人们一样，我好像受到了萨芬特拉的血的污染。为了缓解病情，必须制作治疗药。去<FONT color=#a82424>凄凉森林幽灵村</FONT>搜集<FONT color=#a82424>凄凉森林化石碎片</FONT>吧。<BR><BR><FONT color=#086171>黑山山角(阴森的丛林路)</FONT> <FONT color=#a82424>→ 凄凉森林幽灵村</FONT></html>]]></contents>
          <destination mid="148"><![CDATA[搜集凄凉森林化石碎片]]></destination>
          <todo_msg mid="149"><![CDATA[请到凄凉森林幽灵村去搜集凄凉森林化石碎片。]]></todo_msg>
       </journal>

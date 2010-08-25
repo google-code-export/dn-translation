@@ -1,25 +1,49 @@
-   <talk>
+﻿   <talk>
       <npcename>n277_bluff_dealers_pope</npcename>
       <npcid>277</npcid>
-      <startexe>0</startexe>
+      <startexe>2</startexe>
       <npckname mid="1"><![CDATA[奸商波普]]></npckname>
       <talk_paragraph index="001" image="" itemindex="">
          <talk_answer link_index="quest" mid="4"><![CDATA[<html>[任务]</html>]]></talk_answer>
          <talk_question mid="3"><![CDATA[<html>$奸商波普$<BR>1个铜币可以汇聚成1银币，1个金币可以增加我的财富。</html>]]></talk_question>
       </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="45"><![CDATA[<html>[任务]</html>]]></talk_answer>
+         <talk_answer link_index="open_shop" mid="46"><![CDATA[<html>[深渊商店交易]</html>]]></talk_answer>
+         <talk_question mid="44"><![CDATA[<html>$奸商波普$<BR>1个铜币可以汇聚成1银币，1个金币可以增加我的财富。</html>]]></talk_question>
+      </talk_paragraph>
       <talk_paragraph index="quest" image="" itemindex="">
-         <talk_answer link_index="q_enter" mid="6" link_target="sq11_486_merchant_study1.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv34] </FONT><FONT color=#086171>商人课程Ⅰ</FONT></FONT></html>]]></talk_answer>
-         <talk_answer link_index="q_enter" mid="7" link_target="sq11_487_merchant_study2.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv34] </FONT><FONT color=#086171>商人课程Ⅱ</FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="sq11_603_tears_of_goddess.xml"><![CDATA[<html>[Lv31]<FONT color=#086171>女神的眼泪</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="6" link_target="sq11_486_merchant_study1.xml"><![CDATA[<html>[Lv34] <FONT color=#086171>商人课程Ⅰ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="sq11_487_merchant_study2.xml"><![CDATA[<html>[Lv34] <FONT color=#086171>商人课程Ⅱ</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="8" link_target="sq11_488_merchant_study3.xml"><![CDATA[<html>[Lv34] <FONT color=#086171>商人课程Ⅲ</FONT></html>]]></talk_answer>
-         <talk_answer link_index="q_enter" mid="22" link_target="sq11_489_merchant_study4.xml"><![CDATA[<html>[Lv34]<FONT color=#086171> 商人课程Ⅳ</FONT><FONT color=#086171></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="22" link_target="sq11_489_merchant_study4.xml"><![CDATA[<html>[Lv34] <FONT color=#086171>商人课程Ⅳ</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="23" link_target="sq11_547_jewelry_red_tears.xml"><![CDATA[<html>[Lv36]<FONT color=#086171>宝石鉴定：红色眼泪</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="24" link_target="sq11_548_jewelry_blue_hope.xml"><![CDATA[<html>[Lv36] <FONT color=#086171>宝石鉴定：蓝色希望</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="25" link_target="sq11_549_jewelry_black_sigh.xml"><![CDATA[<html>[Lv36] <FONT color=#086171>宝石鉴定：黑色叹息</FONT></html>]]></talk_answer>
-         <talk_answer link_index="001" mid="26"><![CDATA[<html>(返回)</html>]]></talk_answer>
+         <talk_answer link_index="back_1" mid="38"><![CDATA[<html>(返回)</html>]]></talk_answer>
          <talk_question mid="5"><![CDATA[<html>$奸商波普$<BR>在苹果树下张嘴等着，只会让肚子更饿。钱是不会从天上掉下来的。还不如来帮我做事。当然，我这里也不可能永远都有事情做。</html>]]></talk_question>
       </talk_paragraph>
       <executions>
          <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="1" false="0">0</exe>
+         <exe type="openshop">15001</exe>
+         <exe type="openshop">15002</exe>
+         <exe type="openshop">15003</exe>
+         <exe type="openshop">15004</exe>
+         <exe type="conexe" true="3" false="8">1</exe>
+         <exe type="conexe" true="4" false="9">2</exe>
+         <exe type="conexe" true="5" false="10">3</exe>
+         <exe type="conexe" true="6" false="6">4</exe>
       </executions>
-      <conditions />
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 603) == 1</chk>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <exelink idx="open_shop">7</exelink>
+      <exelink idx="back_1">2</exelink>
    </talk>

@@ -7,7 +7,7 @@
       <qid>315</qid>
       <designer>곽노찬</designer>
       <qlevel>14</qlevel>
-      <qdesc>400121 홉고블린의 피</qdesc>
+      <qdesc>400188  홉고블린의 피</qdesc>
       <qdifficulty>1</qdifficulty>
       <nextqid />
       <nextqname />
@@ -34,6 +34,9 @@
    </talk_paragraph>
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
@@ -76,23 +79,23 @@
       <talk_answer link_index="n028_scholar_bailey-2" mid="22"><![CDATA[<html>（继续）</html>]]></talk_answer>
       <talk_question mid="21"><![CDATA[<html>$纹章学者贝利$<BR>我很想亲自研究用于生成<FONT color=#a82424>小精灵</FONT>的物质，也很想确认一下那些物质在小妖精的体内是如何产生变异从而演变成小精灵的。</html>]]></talk_question>
    </talk_paragraph>
-   <talk_paragraph index="n028_scholar_bailey-2" image="QS_Default.dds" itemindex="400121">
+   <talk_paragraph index="n028_scholar_bailey-2" image="QS_Default.dds" itemindex="400188">
       <talk_question mid="23"><![CDATA[<html>$纹章学者贝利$<BR>到<FONT color=#a82424>袭击者埋伏点</FONT>收集2瓶<FONT color=#a82424>小精灵之血</FONT>回来吧。<BR>
 那就辛苦你了。</html>]]></talk_question>
    </talk_paragraph>
-   <talk_paragraph index="n028_scholar_bailey-3" image="QS_Default.dds" itemindex="400121">
+   <talk_paragraph index="n028_scholar_bailey-3" image="QS_Default.dds" itemindex="400188">
       <talk_answer link_index="n028_scholar_bailey-3-a" mid="26"><![CDATA[<html>（继续）</html>]]></talk_answer>
       <talk_question mid="25"><![CDATA[<html>$纹章学者贝利$<BR>研究材料都已经收集好了吧。<BR>都交给我吧。</html>]]></talk_question>
    </talk_paragraph>
-   <talk_paragraph index="n028_scholar_bailey-3-a" image="QS_Default.dds" itemindex="400121">
+   <talk_paragraph index="n028_scholar_bailey-3-a" image="QS_Default.dds" itemindex="400188">
       <talk_answer link_index="n028_scholar_bailey-3-b" mid="28"><![CDATA[<html>（继续）</html>]]></talk_answer>
       <talk_question mid="27"><![CDATA[<html>$纹章学者贝利$<BR>嗯，这是…?<BR>请稍等片刻。</html>]]></talk_question>
    </talk_paragraph>
-   <talk_paragraph index="n028_scholar_bailey-3-b" image="QS_Default.dds" itemindex="400121">
+   <talk_paragraph index="n028_scholar_bailey-3-b" image="QS_Default.dds" itemindex="400188">
       <talk_answer link_index="n028_scholar_bailey-3-c" mid="30"><![CDATA[<html>怎么样啦?</html>]]></talk_answer>
       <talk_question mid="29"><![CDATA[<html>$纹章学者贝利$<BR>嗯，把试药混合在这个和那个里。<BR><FONT color=#7e12d2>（贝利在小精灵之血瓶内和奇怪的瓶子内倒入了各种试药）</FONT></html>]]></talk_question>
    </talk_paragraph>
-   <talk_paragraph index="n028_scholar_bailey-3-c" image="QS_Default.dds" itemindex="400121">
+   <talk_paragraph index="n028_scholar_bailey-3-c" image="QS_Default.dds" itemindex="400188">
       <talk_answer link_index="n028_scholar_bailey-3-d" mid="32"><![CDATA[<html>（继续）</html>]]></talk_answer>
       <talk_question mid="31"><![CDATA[<html>$纹章学者贝利$<BR>和我估计的没错，<FONT color=#a82424>小精灵之血</FONT>当中包含着死亡森林中的毒气类似的成分。看来威胁凯德拉关卡的敌人，还掌握着制造吞噬生命的怪物的技术啊。</html>]]></talk_question>
    </talk_paragraph>
@@ -131,11 +134,12 @@
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
          <exe type="huntmon" num="30000" party="1" exe="" onexe="7">450</exe>
-         <exe type="huntitem" num="2" exe="4,5,6" onexe="">400121</exe>
+         <exe type="huntitem" num="2" exe="4,5,6" onexe="">400188</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
          <exe type="delcount">.</exe>
-         <exe type="addquestitem" num="1">400121</exe>
+         <exe type="addquestitem" num="1">400188</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200450</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -149,21 +153,21 @@
       <executions>
          <exe type="recompense">,3151,3152,3153,3154</exe>
          <exe type="complete">315</exe>
-         <exe type="delquestitem" num="-1">400121</exe>
+         <exe type="delquestitem" num="-1">400188</exe>
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="c">0</exelink>
    <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">1,2</exelink>
    <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
    <exelink qstep="1" npc="n028_scholar_bailey" sub="c" />
-   <exelink qstep="1" npc="n028_scholar_bailey" sub="2">0,1,2,3</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="2">0,1,2,8,3</exelink>
    <exelink qstep="3" npc="n028_scholar_bailey" sub="b" />
    <exelink qstep="3" npc="n028_scholar_bailey" sub="c" />
    <exelink qstep="3" npc="n028_scholar_bailey" sub="d" />
    <exelink qstep="3" npc="n028_scholar_bailey" sub="e" />
    <exelink qstep="3" npc="n028_scholar_bailey" sub="f">0</exelink>
    <exelink qstep="3" npc="n028_scholar_bailey" sub="g">1,2</exelink>
-   <journal_data recompense="1:3151,2:3152,3:3153,4:3154" quest_title="수수께끼의 물질" chapterid="" quest_level="14" quest_mark_type="10" use_item_list="400121">
+   <journal_data recompense="1:3151,2:3152,3:3153,4:3154" quest_title="수수께끼의 물질" chapterid="" quest_level="14" quest_mark_type="10" use_item_list="400188,400121">
       <journal index="1">
          <title_image />
          <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>

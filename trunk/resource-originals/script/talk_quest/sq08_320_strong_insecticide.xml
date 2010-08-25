@@ -30,12 +30,15 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n026_trader_may-accepting" image="" itemindex="">
       <talk_answer link_index="n026_trader_may-accepting-a" mid="6"><![CDATA[<html>（不祥的预感）</html>]]></talk_answer>
-      <talk_question mid="5"><![CDATA[<html>$消耗品商人梅伊$<BR>啊，来的正好！<BR>你不知道我多么盼望着<FONT color=#382000>{user_nick}</FONT>您过来呢?</html>]]></talk_question>
+      <talk_question mid="5"><![CDATA[<html>$消耗品商人梅伊$<BR>啊，你来的正好！<BR><FONT color=#382000><FONT color=#387206>{user_nick}</FONT> </FONT>，你知道我有多么急切地盼望你回来吗？</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
       <talk_answer link_index="n026_trader_may-accepting-b" mid="8"><![CDATA[<html>杀虫剂的话，猎犬营养剂不挺好的嘛。</html>]]></talk_answer>
@@ -92,6 +95,7 @@
          <exe type="setjornal">2</exe>
          <exe type="delcount">.</exe>
          <exe type="addquestitem" num="1">400125</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200659</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -109,7 +113,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n026_trader_may" sub="d">0</exelink>
-   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2,3,4</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2,3,9,4</exelink>
    <exelink qstep="2" npc="n026_trader_may" sub="b" />
    <exelink qstep="2" npc="n026_trader_may" sub="c">0</exelink>
    <exelink qstep="2" npc="n026_trader_may" sub="d">1,2</exelink>
@@ -142,9 +146,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="27"><![CDATA[收集30个被污染的青苔]]></title>
-         <contents mid="28"><![CDATA[<html>到死亡盆地消灭被污染的青苔食尸鬼并收集被污染的青苔回来吧。<BR>
- <BR>
-<FONT color=#7e12d2>(深渊难度下无法进行。)</FONT><BR><BR><FONT color=#086171>堆满落叶的湖岸（死亡森林入口）</FONT> <FONT color=#a82424>→ 死亡盆地</FONT></html>]]></contents>
+         <contents mid="28"><![CDATA[<html>去死亡盆地消灭受到污染的青苔食尸鬼，搜集被污染的苔藓。<BR><BR><FONT color=#086171>堆满落叶的湖岸(死亡森林入口)</FONT> <FONT color=#a82424>→ 死亡盆地</FONT></html>]]></contents>
          <destination mid="29"><![CDATA[收集30个被污染的青苔]]></destination>
          <todo_msg mid="30"><![CDATA[新增了任务。]]></todo_msg>
       </journal>

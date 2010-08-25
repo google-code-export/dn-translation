@@ -30,15 +30,18 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QM_Broo_White.dds" itemindex="">
-      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-levelcheck" mid="6"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="6"><![CDATA[<html>(继续)</html>]]></talk_answer>
       <talk_question mid="5"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>服从<FONT color=#a82424>埃雷娜</FONT>的命令的怪物中，还有布洛怪？</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QM_Broo_White.dds" itemindex="">
-      <talk_question mid="35"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>知道了。我会进一步调查布洛怪们的动态。<BR><FONT color=#7e12d2>(18级以后可以执行。)</FONT></html>]]></talk_question>
+      <talk_question mid="35"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>知道了。我会进一步调查布洛怪们的动态。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QM_Broo_White.dds" itemindex="">
       <talk_answer link_index="n024_adventurer_guildmaster_decud-1-c" mid="37"><![CDATA[<html>(继续)</html>]]></talk_answer>
@@ -74,9 +77,7 @@
    </qstep_change>
    <qstep_change qstep="1">
       <comment />
-      <conditions>
-         <chk type="lvl" op="]=">18</chk>
-      </conditions>
+      <conditions />
       <executions>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
@@ -84,9 +85,7 @@
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
          <exe type="delcount">.</exe>
-         <exe type="conexe" true="7" false="8">0</exe>
-         <exe type="talk" npc="n024_adventurer_guildmaster_decud">b</exe>
-         <exe type="talk" npc="n024_adventurer_guildmaster_decud">a</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">200559</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -102,9 +101,8 @@
          <exe type="recompense">,2131,2132,2133,2134</exe>
       </executions>
    </qstep_change>
-   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="levelcheck">6</exelink>
    <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c" />
-   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="2">2,0,1</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="2">2,6,0,1</exelink>
    <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="b">1</exelink>
    <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="c">0</exelink>
    <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="!next" />
@@ -113,7 +111,7 @@
          <title_image />
          <contents_image>QN_Master_Decud.dds</contents_image>
          <need_itemlist />
-         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_pos>8,n24</destination_pos>
          <destination_mode>custom</destination_mode>
          <statemark_npcid>24</statemark_npcid>
          <statemark_type>2</statemark_type>
@@ -137,8 +135,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="19"><![CDATA[戴卡德的情报]]></title>
-         <contents mid="20"><![CDATA[<html>在集会场看到了正在听埃雷娜演说的布洛怪，戴卡德说必须对布洛怪进行进一步的调查。<BR><FONT color=#7e12d2>(必须达到18级以上才能执行任务)</FONT><BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 冒险家公会会长戴卡德</FONT></html>]]></contents>
-         <destination mid="21"><![CDATA[（Lv18）与冒险家公会会长戴卡德对话]]></destination>
+         <contents mid="20"><![CDATA[<html>在集会场看到了正在听埃雷娜演说的布洛怪，戴卡德说必须对布洛怪进行进一步的调查。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 冒险家公会会长戴卡德</FONT></html>]]></contents>
+         <destination mid="21"><![CDATA[和冒险家公会会长戴卡德对话]]></destination>
          <todo_msg mid="22"><![CDATA[任务已添加。]]></todo_msg>
       </journal>
       <journal index="2">
@@ -146,7 +144,7 @@
          <contents_image>QW_22.dds</contents_image>
          <need_itemlist />
          <destination_pos>164,0,0</destination_pos>
-         <destination_mode>custom:161@3,162@3,163@3,164@3</destination_mode>
+         <destination_mode>custom:161@1,162@1,163@1,164@3</destination_mode>
          <statemark_npcid />
          <statemark_type>2</statemark_type>
          <get_location />
@@ -177,7 +175,7 @@
          <title_image />
          <contents_image />
          <need_itemlist />
-         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_pos>8,n24</destination_pos>
          <destination_mode>custom</destination_mode>
          <statemark_npcid>24</statemark_npcid>
          <statemark_type>3</statemark_type>

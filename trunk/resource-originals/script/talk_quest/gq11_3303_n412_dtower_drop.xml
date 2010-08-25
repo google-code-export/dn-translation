@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -57,8 +60,7 @@
       <talk_question mid="10"><![CDATA[<html>$委托奖励$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n412_guild_board-accepting-e" image="GQ_item.dds" itemindex="">
-      <talk_question mid="18"><![CDATA[<html>$[公会委托]需要泥土$<BR>
-请到<FONT color=#a82424>黑暗大君主之塔</FONT>去搜集海泥。</html>]]></talk_question>
+      <talk_question mid="18"><![CDATA[<html>$[公会委托]需要泥土$<BR>请到<FONT color=#a82424>黑暗大君主之塔</FONT>去搜集海泥。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n412_guild_board-1" image="GQ_item.dds" itemindex="">
       <talk_question mid="20"><![CDATA[<html>$冒险家公会公告栏$<BR>现在正在执行<FONT color=#a82424>[公会委托]需要泥土</FONT>。<BR><BR>※ <FONT color=#7e12d2>同一公告栏中，只能接受一个公会委托。</FONT></html>]]></talk_question>
@@ -92,6 +94,8 @@
          <exe type="delcount">.</exe>
          <exe type="addquestitem" num="1">400171</exe>
          <exe type="conexe" true="7,8,9" false="">0</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="13">201070</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1070);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -108,7 +112,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n412_guild_board" sub="d">3</exelink>
-   <exelink qstep="accepting" npc="n412_guild_board" sub="e">0,1,4,5,2</exelink>
+   <exelink qstep="accepting" npc="n412_guild_board" sub="e">0,1,4,12,5,2</exelink>
    <exelink qstep="2" npc="n412_guild_board" sub="a">0</exelink>
    <exelink qstep="2" npc="n412_guild_board" sub="b">1</exelink>
    <journal_data recompense="33030" quest_title="[길드의뢰] 진흙이 필요해" chapterid="" quest_level="34" quest_mark_type="19" use_item_list="400171">
@@ -117,7 +121,7 @@
          <contents_image>QW_40.dds</contents_image>
          <need_itemlist />
          <destination_pos>404,0,0</destination_pos>
-         <destination_mode>custom:401@1,402@1,403@1,404@3</destination_mode>
+         <destination_mode>custom:401@3,402@1,403@3,404@0</destination_mode>
          <statemark_npcid>412</statemark_npcid>
          <statemark_type>20</statemark_type>
          <get_location />
@@ -140,8 +144,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="42"><![CDATA[去黑暗大君主之塔搜集海泥]]></title>
-         <contents mid="43"><![CDATA[<html>去黑暗大君主之塔消灭崇拜者食人魔巴巴利安，搜集1个海泥。BR><BR><FONT color=#086171>黑山山角(黑暗大君主的关卡) </FONT><FONT color=#a82424>→ 黑暗大君主之塔</FONT><BR><BR><FONT color=#7e12d2>※ 无法在深渊级难度下执行。</FONT></html>]]></contents>
-         <destination mid="44"><![CDATA[搜集海泥]]></destination>
+         <contents mid="43"><![CDATA[<html>去黑暗大君主之塔消灭崇拜者食人魔巴巴利安，搜集1个海泥。<BR><BR><FONT color=#086171>黑山山角(黑暗大君主的关卡) </FONT><FONT color=#a82424>→ 黑暗大君主之塔</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[搜集]黑暗大君主之塔]]></destination>
          <todo_msg mid="45"><![CDATA[冒险家公会委托添加完成。]]></todo_msg>
       </journal>
       <journal index="2">

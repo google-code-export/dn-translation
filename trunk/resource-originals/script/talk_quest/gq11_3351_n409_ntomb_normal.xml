@@ -1,4 +1,4 @@
-﻿<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <quest_desc>
       <qename>gq11_3351_n409_ntomb_normal</qename>
       <qtype>venturerquest</qtype>
@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -57,14 +60,14 @@
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-2" image="GQ_normal_end.dds" itemindex="">
       <talk_answer link_index="n409_guild_board-2-a" mid="15"><![CDATA[<html>[委托完成] <FONT color=#086171>制作地图XI</FONT></html>]]></talk_answer>
-      <talk_question mid="14"><![CDATA[<html>$冒险家公会公告板$<BR>完成委托的冒险家，请在如下委托书上加盖完成图章。</html>]]></talk_question>
+      <talk_question mid="14"><![CDATA[<html>$冒险家公会公告栏$<BR>完成委托的冒险家，请在如下委托书上加盖完成图章。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-2-a" image="" itemindex="">
       <talk_answer link_index="n409_guild_board-2-b" mid="17"><![CDATA[<html><FONT color=#086171>(获得奖励)</FONT></html>]]></talk_answer>
       <talk_question mid="16"><![CDATA[<html>$委托奖励$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-2-b" image="GQ_normal_end.dds" itemindex="">
-      <talk_question mid="18"><![CDATA[<html>$冒险家公会公告板$<BR>冒险家公会的委托已完成。<BR><BR><FONT color=#a82424>[冒险家公会协会]</FONT></html>]]></talk_question>
+      <talk_question mid="18"><![CDATA[<html>$冒险家公会公告栏$<BR>冒险家公会的委托已完成。<BR><BR><FONT color=#a82424>[冒险家公会协会]</FONT></html>]]></talk_question>
    </talk_paragraph>
    <qstep_change qstep="accepting">
       <comment />
@@ -130,7 +133,7 @@
          <maptool_index />
          <title mid="19"><![CDATA[无名暴君之墓普通难度以上通关]]></title>
          <contents mid="20"><![CDATA[<html><FONT color=#2b2723>请以普通以上难度通关无名暴君之墓。</FONT><BR><FONT color=#086171></FONT><BR><FONT color=#086171>赫尔马岱港口(黑暗矿山入口) </FONT><FONT color=#a82424>→ 无名暴君之墓</FONT></html>]]></contents>
-         <destination mid="21"><![CDATA[无名暴君之墓普通难度以上通关]]></destination>
+         <destination mid="21"><![CDATA[[普通]无名暴君之墓]]></destination>
          <todo_msg mid="22"><![CDATA[新增了冒险家公会委托。]]></todo_msg>
       </journal>
       <journal index="2">

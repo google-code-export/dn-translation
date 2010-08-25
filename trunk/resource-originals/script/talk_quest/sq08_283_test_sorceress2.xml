@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -168,12 +171,13 @@
       <executions>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
-         <exe type="huntmon" num="30000" party="1" exe="" onexe="5,6,3,4">413</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">413</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
          <exe type="addquestitem" num="1">300032</exe>
          <exe type="delcount">.</exe>
-         <exe type="huntitem" num="1" exe="" onexe="">300032</exe>
+         <exe type="huntitem" num="1" exe="6,3,4" onexe="">300032</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200413</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -239,7 +243,7 @@
    <exelink qstep="1" npc="n035_soceress_master_tiana" sub="d" />
    <exelink qstep="1" npc="n035_soceress_master_tiana" sub="e" />
    <exelink qstep="1" npc="n035_soceress_master_tiana" sub="f" />
-   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="g">0,2,7,1</exelink>
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="g">0,2,8,7,1</exelink>
    <exelink qstep="3" npc="n035_soceress_master_tiana" sub="4">0,1,2</exelink>
    <exelink qstep="4" npc="n035_soceress_master_tiana" sub="a_a">0,1</exelink>
    <exelink qstep="4" npc="n035_soceress_master_tiana" sub="b" />
@@ -321,8 +325,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="100"><![CDATA[在沉睡者神殿收集黑暗之珠]]></title>
-         <contents mid="101"><![CDATA[<html>去<FONT color=#a82424>沉睡者神殿</FONT>消灭<FONT color=#a82424>牛头怪</FONT>，搜集<FONT color=#a82424>黑暗之珠</FONT>。<BR><FONT color=#7e12d2>※ 无法在深渊级难度下执行</FONT><BR>
-<FONT color=#7e12d2></FONT><BR><FONT color=#086171>堆满落叶的湖岸(遗忘寺院入口)</FONT> <FONT color=#a82424>→ 沉睡者神殿</FONT></html>]]></contents>
+         <contents mid="101"><![CDATA[<html>去<FONT color=#a82424>沉睡者神殿</FONT>消灭<FONT color=#a82424>牛头怪</FONT>，搜集<FONT color=#a82424>黑暗之珠</FONT>。<BR><FONT color=#7e12d2></FONT><BR><FONT color=#086171>堆满落叶的湖岸(遗忘寺院入口)</FONT> <FONT color=#a82424>→ 沉睡者神殿</FONT></html>]]></contents>
          <destination mid="102"><![CDATA[在沉睡者神殿收集黑暗之珠]]></destination>
          <todo_msg mid="103"><![CDATA[请到沉睡者神殿去打猎牛头怪。]]></todo_msg>
       </journal>

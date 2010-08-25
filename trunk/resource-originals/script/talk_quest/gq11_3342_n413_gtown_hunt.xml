@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -62,14 +65,14 @@
    </talk_paragraph>
    <talk_paragraph index="n413_guild_board-2" image="GQ_hunt_end.dds" itemindex="">
       <talk_answer link_index="n413_guild_board-2-a" mid="22"><![CDATA[<html>[委托完成]<FONT color=#086171>处理库存</FONT></html>]]></talk_answer>
-      <talk_question mid="21"><![CDATA[<html>$冒险家公会公告板$<BR>完成委托的冒险家，请在如下委托书上加盖完成图章。</html>]]></talk_question>
+      <talk_question mid="21"><![CDATA[<html>$冒险家公会公告栏$<BR>完成委托的冒险家，请在如下委托书上加盖完成图章。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n413_guild_board-2-a" image="" itemindex="">
       <talk_answer link_index="n413_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(获得奖励)</FONT></html>]]></talk_answer>
       <talk_question mid="23"><![CDATA[<html>$委托奖励$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n413_guild_board-2-b" image="GQ_hunt_end.dds" itemindex="">
-      <talk_question mid="25"><![CDATA[<html>$冒险家公会公告板$<BR>冒险家公会的委托已完成。<BR><BR><FONT color=#a82424>[冒险家公会协会]</FONT></html>]]></talk_question>
+      <talk_question mid="25"><![CDATA[<html>$冒险家公会公告栏$<BR>冒险家公会的委托已完成。<BR><BR><FONT color=#a82424>[冒险家公会协会]</FONT></html>]]></talk_question>
    </talk_paragraph>
    <qstep_change qstep="accepting">
       <comment />
@@ -83,6 +86,8 @@
          <exe type="delcount">.</exe>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">201164</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1164);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -99,7 +104,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n413_guild_board" sub="d">3</exelink>
-   <exelink qstep="accepting" npc="n413_guild_board" sub="e">0,1,4,2</exelink>
+   <exelink qstep="accepting" npc="n413_guild_board" sub="e">0,1,4,8,2</exelink>
    <exelink qstep="2" npc="n413_guild_board" sub="a">1</exelink>
    <exelink qstep="2" npc="n413_guild_board" sub="b">0</exelink>
    <journal_data recompense="33420" quest_title="[길드의뢰] 재고 처리" chapterid="" quest_level="38" quest_mark_type="19" use_item_list="">
@@ -108,7 +113,7 @@
          <contents_image>QW_45.dds</contents_image>
          <need_itemlist />
          <destination_pos>453,0,0</destination_pos>
-         <destination_mode>custom:451@3,452@3,453@3</destination_mode>
+         <destination_mode>custom:451@3,452@0,453@0</destination_mode>
          <statemark_npcid>413</statemark_npcid>
          <statemark_type>20</statemark_type>
          <get_location />
@@ -131,9 +136,9 @@
          <trigger_string />
          <maptool_index />
          <title mid="42"><![CDATA[消灭追踪者兽人骷髅人]]></title>
-         <contents mid="43"><![CDATA[<html>去凄凉森林幽灵村消灭4个追踪者兽人骷髅人。<BR><FONT color=#7e12d2>※ 无法在深渊级难度下执行。</FONT><BR>
+         <contents mid="43"><![CDATA[<html>去凄凉森林幽灵村消灭4个追踪者兽人骷髅人。<BR>
 <BR><FONT color=#086171>黑山山角(阴森的丛林路) </FONT><FONT color=#a82424>→ 凄凉森林幽灵村</FONT></html>]]></contents>
-         <destination mid="44"><![CDATA[消灭追踪者兽人骷髅人]]></destination>
+         <destination mid="44"><![CDATA[[打猎]凄凉森林幽灵村]]></destination>
          <todo_msg mid="45"><![CDATA[新增了冒险家公会委托。]]></todo_msg>
       </journal>
       <journal index="2">
@@ -164,7 +169,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="46"><![CDATA[向冒险家公告板报告委托完成]]></title>
-         <contents mid="47"><![CDATA[<html>向位于黑山山角的冒险家公会公告板报告委托完成。<BR><BR><FONT color=#086171>黑山山角（阴森的丛林路） </FONT><FONT color=#a82424>→ 冒险家公会公告板</FONT></html>]]></contents>
+         <contents mid="47"><![CDATA[<html>向位于黑山山角的冒险家公会公告栏报告委托完成。<BR><BR><FONT color=#086171>黑山山角（阴森的丛林路） </FONT><FONT color=#a82424>→ 冒险家公会公告栏</FONT></html>]]></contents>
          <destination mid="48"><![CDATA[向冒险家公告板报告委托完成]]></destination>
          <todo_msg mid="49"><![CDATA[完成冒险家公会委托。]]></todo_msg>
       </journal>

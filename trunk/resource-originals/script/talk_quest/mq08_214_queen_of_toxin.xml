@@ -35,6 +35,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -86,7 +89,7 @@
       <talk_question mid="24"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>佩奥里斯塔魔法研究所是毒蜘蛛的根据地？！那里的情况怎么样？</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-4-a" image="" itemindex="">
-      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-levelcheck" mid="27"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-b" mid="27"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
       <talk_question mid="26"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-4-b" image="" itemindex="">
@@ -94,16 +97,15 @@
       <talk_question mid="28"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>一定是用做武器的剧毒物质。它们有动作，说明还有其他计划。从事情的规模看，光交给你一个人去看可能太勉强了。我会动员冒险家公会进行搜索。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-4-c" image="" itemindex="">
-      <talk_question mid="29"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>等有了什么消息之后，我们再采取行动。<BR><FONT color=#7e12d2>(必须达到20级以上，才能执行下一阶段的任务)</FONT></html>]]></talk_question>
+      <talk_question mid="29"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>等有了什么消息之后，我们再采取行动。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n164_argenta_wounded-5" image="" itemindex="">
-      <talk_question mid="30"><![CDATA[<html>$阿尔杰塔$<BR>虽然看到了毒蜘蛛在搬运污染物质，但详细的情况我也不知道。等冒险家公会有消息之后，我们再采取行动。<BR><FONT color=#7e12d2>(必须达到20级以上，才能执行下一阶段的任务)</FONT> </html>]]></talk_question>
+      <talk_question mid="30"><![CDATA[<html>$阿尔杰塔$<BR>虽然看到了毒蜘蛛在搬运污染物质，但详细的情况我也不知道。等冒险家公会有消息之后，我们再采取行动。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-5" image="" itemindex="">
-      <talk_question mid="31"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>我们还不知道他们它们要把污染物质搬到什么地方。再过一段时间，应该就能查清楚了……啊，真让人心急。<BR><FONT color=#7e12d2>(必须达到20级以上才能执行下一阶段的任务)</FONT></html>]]></talk_question>
+      <talk_question mid="31"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>我们还不知道它们要把污染物质搬到什么地方。再过一段时间，应该就能查清楚了……啊，真让人心急。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-5-a" image="" itemindex="">
-      <talk_answer link_index="n024_adventurer_guildmaster_decud-5-!next" mid="57"><![CDATA[<html>请让我一起参加。</html>]]></talk_answer>
       <talk_question mid="56"><![CDATA[<html>$冒险家公会会长戴卡德$<BR>一定是用做武器的剧毒物质。它们有动作，说明还有其他计划。从事情的规模看，光交给你一个人去看可能太勉强了。我会动员冒险家公会进行搜索。</html>]]></talk_question>
    </talk_paragraph>
    <qstep_change qstep="accepting">
@@ -130,6 +132,8 @@
          <exe type="setjornal">4</exe>
          <exe type="delcount">.</exe>
          <exe type="addquestitem" num="1">300051</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200510</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 510);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="3">
@@ -139,41 +143,27 @@
    </qstep_change>
    <qstep_change qstep="4">
       <comment />
-      <conditions>
-         <chk type="lvl" op="]=">20</chk>
-      </conditions>
+      <conditions />
       <executions>
          <exe type="recompense">,2141,2142,2143,2144</exe>
          <exe type="complete">214</exe>
-         <exe type="conexe" true="3,1" false="4,5">0</exe>
-         <exe type="talk" npc="n024_adventurer_guildmaster_decud">b</exe>
-         <exe type="talk" npc="n024_adventurer_guildmaster_decud">c</exe>
-         <exe type="setstep">5</exe>
          <exe type="delquestitem" num="-1">300051</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="5">
       <comment />
-      <conditions>
-         <chk type="lvl" op="]=">20</chk>
-      </conditions>
-      <executions>
-         <exe type="conexe" true="1,2" false="3">0</exe>
-         <exe type="complete">214</exe>
-         <exe type="talk" npc="n024_adventurer_guildmaster_decud">a</exe>
-         <exe type="talk" npc="n024_adventurer_guildmaster_decud">5</exe>
-      </executions>
+      <conditions />
+      <executions />
    </qstep_change>
    <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
    <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c">0,1</exelink>
    <exelink qstep="2" npc="n164_argenta_wounded" sub="b" />
    <exelink qstep="2" npc="n164_argenta_wounded" sub="c" />
-   <exelink qstep="2" npc="n164_argenta_wounded" sub="d">2,0,1</exelink>
+   <exelink qstep="2" npc="n164_argenta_wounded" sub="d">0,2,7,1</exelink>
    <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="a">0</exelink>
-   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="levelcheck">2,6</exelink>
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="b">2,1</exelink>
    <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="!next" />
    <exelink qstep="5" npc="n024_adventurer_guildmaster_decud">0</exelink>
-   <exelink qstep="5" npc="n024_adventurer_guildmaster_decud" sub="!next" />
    <journal_data recompense="1:2141,2:2142,3:2143,4:2144" quest_title="맹독의 여왕" chapterid="3" quest_level="18" quest_mark_type="7" use_item_list="">
       <journal index="1">
          <title_image />
@@ -301,9 +291,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="49"><![CDATA[向冒险家公会会长戴卡德报告情况]]></title>
-         <contents mid="50"><![CDATA[<html>成功击败了<FONT color=#a82424>女王蜘蛛拉兰</FONT>。但污染物质不知道被搬到了什么地方。回去向<FONT color=#a82424>冒险家公会会长</FONT>戴卡德报告目前的情况吧。<BR><FONT color=#7e12d2>※ 20级以上才能执行任务。</FONT><BR>
-<BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 冒险家公会会长戴卡德</FONT></html>]]></contents>
-         <destination mid="51"><![CDATA[（Lv20）向冒险家公会会长戴卡德报告情况]]></destination>
+         <contents mid="50"><![CDATA[<html>成功击败了<FONT color=#a82424>女王蜘蛛拉兰</FONT>。但污染物质不知道被搬到了什么地方。回去向<FONT color=#a82424>冒险家公会会长</FONT>戴卡德报告目前的情况吧。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 冒险家公会会长戴卡德</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[向冒险家公会会长戴卡德报告情况]]></destination>
          <todo_msg mid="52"><![CDATA[获得了线索。请向冒险家公会会长戴卡德报告情况。]]></todo_msg>
       </journal>
    </journal_data>

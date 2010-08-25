@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -52,7 +55,7 @@
       <talk_question mid="11"><![CDATA[<html>$委托奖励$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n400_guild_board-accepting-d" image="GQ_item.dds" itemindex="">
-      <talk_question mid="13"><![CDATA[<html>$[公会委托]帮帮我，塞巴斯蒂安$<BR>已接受公会的委托。<BR>请到<FONT color=#a82424>兽人袭击队据点</FONT>找回姑娘丢失的<FONT color=#a82424>熊娃娃</FONT>。</html>]]></talk_question>
+      <talk_question mid="13"><![CDATA[<html>$[公会委托]帮帮我，塞巴斯蒂安$<BR>已接受公会的委托。<BR>请到<FONT color=#a82424>兽人袭击队据点</FONT>找回小姐丢失的<FONT color=#a82424>熊娃娃</FONT>。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n400_guild_board-1" image="GQ_item.dds" itemindex="">
       <talk_question mid="14"><![CDATA[<html>$冒险家公会公告栏$<BR>现在正在执行<FONT color=#a82424>[公会委托]帮帮我，塞巴斯蒂安</FONT>。<BR><BR>※ <FONT color=#7e12d2>同一公告栏中，只能接受一个公会委托。</FONT></html>]]></talk_question>
@@ -82,6 +85,8 @@
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
          <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="11">200332</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 332);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -99,7 +104,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n400_guild_board" sub="c">3</exelink>
-   <exelink qstep="accepting" npc="n400_guild_board" sub="d">0,1,2,4,6</exelink>
+   <exelink qstep="accepting" npc="n400_guild_board" sub="d">0,1,2,4,10,6</exelink>
    <exelink qstep="2" npc="n400_guild_board" sub="a">0</exelink>
    <exelink qstep="2" npc="n400_guild_board" sub="b">1,2</exelink>
    <journal_data recompense="30350" quest_title="[길드의뢰] 도와줘 세바스챤 " chapterid="" quest_level="10" quest_mark_type="19" use_item_list="400163">
@@ -107,8 +112,8 @@
          <title_image />
          <contents_image>QW_12.dds</contents_image>
          <need_itemlist />
-         <destination_pos>106,0,0</destination_pos>
-         <destination_mode>custom:106@3,107@3</destination_mode>
+         <destination_pos>107,0,0</destination_pos>
+         <destination_mode>custom:106@1,107@3</destination_mode>
          <statemark_npcid>400</statemark_npcid>
          <statemark_type>20</statemark_type>
          <get_location />
@@ -131,10 +136,9 @@
          <trigger_string />
          <maptool_index />
          <title mid="22"><![CDATA[去兽人袭击队据点回收熊娃娃]]></title>
-         <contents mid="23"><![CDATA[<html>去兽人袭击队据点寻找熊娃娃。<BR><BR><FONT color=#086171>融解森林(魔法师之路)</FONT> <FONT color=#a82424>→ 兽人袭击队据点</FONT><BR>
-<FONT color=#a82424></FONT> <BR>
-<FONT color=#7e12d2>※ 无法在深渊级难度下执行。</FONT></html>]]></contents>
-         <destination mid="24"><![CDATA[搜集熊娃娃]]></destination>
+         <contents mid="23"><![CDATA[<html>去兽人袭击队据点寻找熊娃娃吧。<BR><BR><FONT color=#086171>融解森林(魔法师之路)</FONT> <FONT color=#a82424>→ 兽人袭击队据点</FONT><BR>
+</html>]]></contents>
+         <destination mid="24"><![CDATA[[搜集]兽人袭击队据点]]></destination>
          <todo_msg mid="25"><![CDATA[冒险家公会委托添加完成。]]></todo_msg>
       </journal>
       <journal index="2">

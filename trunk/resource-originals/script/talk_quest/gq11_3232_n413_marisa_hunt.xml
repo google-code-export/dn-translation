@@ -22,16 +22,19 @@
    <talk_paragraph index="q_enter" />
    <talk_paragraph index="!quit" />
    <talk_paragraph index="_no_quest">
-      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_quest">
-      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_inventory">
-      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
-      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n413_guild_board-accepting" image="GQ_hunt.dds" itemindex="">
       <talk_answer link_index="n413_guild_board-accepting-a" mid="6"><![CDATA[<html>(继续)</html>]]></talk_answer>
@@ -82,6 +85,8 @@
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
          <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200972</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 972);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -98,16 +103,16 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n413_guild_board" sub="d">3</exelink>
-   <exelink qstep="accepting" npc="n413_guild_board" sub="e">0,1,4,2</exelink>
+   <exelink qstep="accepting" npc="n413_guild_board" sub="e">0,1,4,8,2</exelink>
    <exelink qstep="2" npc="n413_guild_board" sub="a">0</exelink>
    <exelink qstep="2" npc="n413_guild_board" sub="b">1</exelink>
-   <journal_data recompense="32320" quest_title="[길드의뢰] 원한을 갚아줘" chapterid="" quest_level="30" quest_mark_type="19" use_item_list="">
+   <journal_data recompense="32320" quest_title="[公会委托] 替我报仇" chapterid="" quest_level="30" quest_mark_type="19" use_item_list="">
       <journal index="1">
          <title_image />
          <contents_image>QW_35.dds</contents_image>
          <need_itemlist />
-         <destination_pos>354,0,0</destination_pos>
-         <destination_mode>custom:351@1,352@1,353@1,354@3</destination_mode>
+         <destination_pos>353,0,0</destination_pos>
+         <destination_mode>custom:351@1,352@1,353@3</destination_mode>
          <statemark_npcid>413</statemark_npcid>
          <statemark_type>20</statemark_type>
          <get_location />
@@ -170,12 +175,16 @@
       </journal>
    </journal_data>
    <condition_data>
-      <user_level>30:-1</user_level>
+      <user_level>100:-1</user_level>
       <user_worldzone_level />
       <user_class />
       <prev_quest>3231</prev_quest>
       <have_normal_item />
       <complete_mission />
-      <have_symbol_item>10:21:33</have_symbol_item>
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
    </condition_data>
 </quest>

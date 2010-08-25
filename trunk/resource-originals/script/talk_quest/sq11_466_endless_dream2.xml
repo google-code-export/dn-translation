@@ -51,6 +51,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -360,12 +363,13 @@
       <executions>
          <exe type="setstep">7</exe>
          <exe type="setjornal">7</exe>
-         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5,6">827</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">827</exe>
          <exe type="setstep">8</exe>
          <exe type="setjornal">8</exe>
          <exe type="addquestitem" num="1">300074</exe>
          <exe type="delcount">.</exe>
-         <exe type="huntitem" num="1" exe="" onexe="">300074</exe>
+         <exe type="huntitem" num="1" exe="" onexe="3,4,6">300074</exe>
+         <exe type="huntmon" num="30000" party="2" exe="" onexe="5">200827</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="7">
@@ -416,7 +420,7 @@
    <exelink qstep="6" npc="n241_guilian" sub="f" />
    <exelink qstep="6" npc="n241_guilian" sub="g" />
    <exelink qstep="6" npc="n241_guilian" sub="h" />
-   <exelink qstep="6" npc="n241_guilian" sub="i">0,7,2,1</exelink>
+   <exelink qstep="6" npc="n241_guilian" sub="i">0,7,2,8,1</exelink>
    <exelink qstep="8" npc="n241_guilian" sub="b" />
    <exelink qstep="8" npc="n241_guilian" sub="c" />
    <exelink qstep="8" npc="n241_guilian" sub="d" />

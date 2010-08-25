@@ -41,6 +41,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -83,7 +86,7 @@
    </talk_paragraph>
    <talk_paragraph index="n045_soceress_master_stella-1" image="QW_46.dds" itemindex="">
       <talk_answer link_index="n045_soceress_master_stella-1-a" mid="23"><![CDATA[<html>(继续)</html>]]></talk_answer>
-      <talk_question mid="22"><![CDATA[<html>$魔法师斯泰拉$<BR>不死结晶可以在沉没的货船附近打猎怪物获得。听说<FONT color=#a82424>鹰身人女头目坎娜</FONT>吸取了死去的船员们的怨念，在体内形成了<FONT color=#a82424>不死结晶</FONT>。</html>]]></talk_question>
+      <talk_question mid="22"><![CDATA[<html>$魔法师斯泰拉$<BR>不死结晶可以在 <FONT color=#a82424>沉没的货船</FONT>附近打猎怪物获得。听说<FONT color=#a82424>鹰身人女头目坎娜</FONT>吸取了死去的船员们的怨念，在体内形成了<FONT color=#a82424>不死结晶</FONT>。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="">
       <talk_question mid="24"><![CDATA[<html>$魔法师斯泰拉$<BR><FONT color=#a82424>两个不死结晶</FONT>换黄金！你要记好了。<BR>祝你好运，可爱的冒险家。</html>]]></talk_question>
@@ -176,6 +179,7 @@
          <exe type="delcount">.</exe>
          <exe type="conexe" true="5,6,7" false="9,4">0</exe>
          <exe type="addquestitem" num="1">400160</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">201197</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -203,7 +207,7 @@
    </qstep_change>
    <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="g">0</exelink>
    <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">1,2</exelink>
-   <exelink qstep="1" npc="n045_soceress_master_stella" sub="a">0,2,3,1</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="a">0,2,3,10,1</exelink>
    <exelink qstep="3" npc="n045_soceress_master_stella" sub="b">0,1,2,3</exelink>
    <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="b" />
    <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="c" />
@@ -275,10 +279,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="58"><![CDATA[去沉没的货船消灭鹰身人女头目坎娜]]></title>
-         <contents mid="59"><![CDATA[<html>斯泰拉说如果我能去沉没的货船附近搜集到不死结晶，就用黄金和我交换。消灭沉没的货船附近出没的<FONT color=#a82424>鹰身人女头目坎娜</FONT>搜集<FONT color=#a82424>2个</FONT>不死结晶吧。<BR>
-<FONT color=#7e12d2>(在深渊难度下无法执行)</FONT><BR>
-<FONT color=#086171></FONT> <BR>
-<FONT color=#086171>赫尔马岱港口(孤岛运输船)</FONT> <FONT color=#a82424>→ 沉没的货船</FONT></html>]]></contents>
+         <contents mid="59"><![CDATA[<html>斯泰拉说如果我能去沉没的货船附近搜集到不死结晶，就用黄金和我交换。消灭沉没的货船附近出没的<FONT color=#a82424>鹰身人女头目坎娜</FONT>搜集<FONT color=#a82424>2个</FONT>不死结晶吧。<BR><FONT color=#086171></FONT><BR><FONT color=#086171>赫尔马岱港口(孤岛运输船)</FONT> <FONT color=#a82424>→ 沉没的货船</FONT></html>]]></contents>
          <destination mid="60"><![CDATA[去沉没的货船消灭鹰身人女头目坎娜]]></destination>
          <todo_msg mid="61"><![CDATA[请到沉没的货船去消灭鹰身人女头目坎娜。]]></todo_msg>
       </journal>
@@ -320,7 +321,7 @@
          <title_image />
          <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
          <need_itemlist />
-         <destination_pos>12,n277</destination_pos>
+         <destination_pos>11,n277</destination_pos>
          <destination_mode>custom</destination_mode>
          <statemark_npcid>277</statemark_npcid>
          <statemark_type>12</statemark_type>
@@ -344,7 +345,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="66"><![CDATA[和奸商波普对话]]></title>
-         <contents mid="67"><![CDATA[<html>终于成功地用腐烂的苹果交换到了黄金。回到赫尔马岱港口的<FONT color=#a82424>奸商波普</FONT>那里去。<BR><BR><FONT color=#086171>赫尔马岱港口</FONT> <FONT color=#a82424>→ 奸商波普</FONT></html>]]></contents>
+         <contents mid="67"><![CDATA[<html>终于成功地用腐烂的苹果交换到了黄金。回到<FONT color=#a82424>奸商波普</FONT>那里去。<BR><BR><FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 奸商波普</FONT></html>]]></contents>
          <destination mid="68"><![CDATA[和奸商波普对话]]></destination>
          <todo_msg mid="69"><![CDATA[请回到奸商波普那里去。]]></todo_msg>
       </journal>

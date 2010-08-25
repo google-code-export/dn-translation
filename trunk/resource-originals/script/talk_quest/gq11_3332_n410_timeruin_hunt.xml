@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -62,14 +65,14 @@
    </talk_paragraph>
    <talk_paragraph index="n410_guild_board-2" image="GQ_hunt_end.dds" itemindex="">
       <talk_answer link_index="n410_guild_board-2-a" mid="22"><![CDATA[<html>[委托完成] <FONT color=#086171>万应灵药</FONT></html>]]></talk_answer>
-      <talk_question mid="21"><![CDATA[<html>$冒险家公会公告板$<BR>完成委托的冒险家，请在如下委托书上加盖完成图章。</html>]]></talk_question>
+      <talk_question mid="21"><![CDATA[<html>$冒险家公会公告栏$<BR>完成委托的冒险家，请在如下委托书上加盖完成图章。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n410_guild_board-2-a" image="" itemindex="">
       <talk_answer link_index="n410_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(获得奖励)</FONT></html>]]></talk_answer>
       <talk_question mid="23"><![CDATA[<html>$委托奖励$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n410_guild_board-2-b" image="GQ_hunt_end.dds" itemindex="">
-      <talk_question mid="25"><![CDATA[<html>$冒险家公会公告板$<BR>冒险家公会的委托已完成。<BR><BR><FONT color=#a82424>[冒险家公会协会]</FONT></html>]]></talk_question>
+      <talk_question mid="25"><![CDATA[<html>$冒险家公会公告栏$<BR>冒险家公会的委托已完成。<BR><BR><FONT color=#a82424>[冒险家公会协会]</FONT></html>]]></talk_question>
    </talk_paragraph>
    <qstep_change qstep="accepting">
       <comment />
@@ -83,6 +86,8 @@
          <exe type="delcount">.</exe>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">201213</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1213);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -99,7 +104,7 @@
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n410_guild_board" sub="d">3</exelink>
-   <exelink qstep="accepting" npc="n410_guild_board" sub="e">0,1,4,2</exelink>
+   <exelink qstep="accepting" npc="n410_guild_board" sub="e">0,1,4,8,2</exelink>
    <exelink qstep="2" npc="n410_guild_board" sub="a">1</exelink>
    <exelink qstep="2" npc="n410_guild_board" sub="b">0</exelink>
    <journal_data recompense="33320" quest_title="[길드의뢰] 만병통치약" chapterid="" quest_level="36" quest_mark_type="19" use_item_list="">
@@ -108,7 +113,7 @@
          <contents_image>QW_47.dds</contents_image>
          <need_itemlist />
          <destination_pos>474,0,0</destination_pos>
-         <destination_mode>custom:471@3,472@3,473@3,474@3</destination_mode>
+         <destination_mode>custom:471@1,472@3,473@0,474@0</destination_mode>
          <statemark_npcid>410</statemark_npcid>
          <statemark_type>20</statemark_type>
          <get_location />
@@ -131,9 +136,9 @@
          <trigger_string />
          <maptool_index />
          <title mid="42"><![CDATA[消灭追踪者蓝鳞蜥蜴人]]></title>
-         <contents mid="43"><![CDATA[<html>去遗忘时间废墟消灭2个追踪者蓝鳞蜥蜴人。<BR><FONT color=#7e12d2>※ 无法在深渊级难度下执行。</FONT><BR>
-<FONT color=#7e12d2></FONT><BR><FONT color=#086171>赫尔马岱港口(江下游废墟入口) </FONT><FONT color=#a82424>→ 遗忘时间废墟</FONT></html>]]></contents>
-         <destination mid="44"><![CDATA[消灭追踪者蓝鳞蜥蜴人]]></destination>
+         <contents mid="43"><![CDATA[<html>去遗忘时间废墟消灭2个追踪者蓝鳞蜥蜴人。<BR>
+<BR><FONT color=#086171>赫尔马岱港口(下游废墟入口) </FONT><FONT color=#a82424>→ 遗忘时间废墟</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[打猎]遗忘时间废墟]]></destination>
          <todo_msg mid="45"><![CDATA[新增了冒险家公会委托。]]></todo_msg>
       </journal>
       <journal index="2">

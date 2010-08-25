@@ -40,6 +40,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -104,11 +107,11 @@
       <talk_question mid="31"><![CDATA[<html>$高级魔法师缇娜$<BR>谢谢你。咳……最终还是要借别人的手找到。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n035_soceress_master_tiana-5-a" image="" itemindex="">
-      <talk_answer link_index="n035_soceress_master_tiana-5-levelcheck" mid="34"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
+      <talk_answer link_index="n035_soceress_master_tiana-6" mid="34"><![CDATA[<html><FONT color=#a94407>(获取奖励)</FONT></html>]]></talk_answer>
       <talk_question mid="33"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n035_soceress_master_tiana-5-b" image="" itemindex="">
-      <talk_question mid="80"><![CDATA[<html>$高级魔法师缇娜$<BR>解读文件需要一点时间，请稍等一下。<BR>你也别闲着，可以去修炼修炼。<BR>你就趁这功夫好好修炼吧?<BR><FONT color=#7e12d2>（必须达到22级以上才能执行）</FONT></html>]]></talk_question>
+      <talk_question mid="80"><![CDATA[<html>$高级魔法师缇娜$<BR>解读文件需要一点时间，请稍等一下。<BR>你也别闲着，可以去修炼修炼。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n035_soceress_master_tiana-6" image="" itemindex="">
       <talk_answer link_index="n035_soceress_master_tiana-6-a" mid="103"><![CDATA[<html>(继续)</html>]]></talk_answer>
@@ -123,7 +126,7 @@
       <talk_question mid="98"><![CDATA[<html>$高级魔法师缇娜$<BR>据说古代人的知识中，有一种可以解除有毒物质毒性的净化装置。这个文件里记录有和净化装置有关的内容。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n035_soceress_master_tiana-6-c" image="" itemindex="">
-      <talk_question mid="104"><![CDATA[<html>$高级魔法师缇娜$<BR>我马上开始解读文件，可能会花一点时间，请你耐心等待。<BR><FONT color=#7e12d2>（必须达到22级以上才能执行）</FONT></html>]]></talk_question>
+      <talk_question mid="104"><![CDATA[<html>$高级魔法师缇娜$<BR>我马上开始解读文件，可能会花一点时间，请你耐心等待。</html>]]></talk_question>
    </talk_paragraph>
    <qstep_change qstep="accepting">
       <comment />
@@ -158,6 +161,8 @@
          <exe type="setstep">5</exe>
          <exe type="setjornal">5</exe>
          <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200664</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 664);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="4">
@@ -167,15 +172,10 @@
    </qstep_change>
    <qstep_change qstep="5">
       <comment />
-      <conditions>
-         <chk type="lvl" op="]=">22</chk>
-      </conditions>
+      <conditions />
       <executions>
          <exe type="recompense">,2161,2162,2163,2164</exe>
          <exe type="setstep">6</exe>
-         <exe type="conexe" true="1,3" false="1,4">0</exe>
-         <exe type="talk" npc="n035_soceress_master_tiana">6</exe>
-         <exe type="talk" npc="n035_soceress_master_tiana">b</exe>
          <exe type="delquestitem" num="-1">300061</exe>
       </executions>
    </qstep_change>
@@ -196,9 +196,9 @@
    <exelink qstep="2" npc="n035_soceress_master_tiana" sub="b" />
    <exelink qstep="2" npc="n035_soceress_master_tiana" sub="c" />
    <exelink qstep="2" npc="n035_soceress_master_tiana" sub="d">0,1</exelink>
-   <exelink qstep="3" npc="n164_argenta_wounded" sub="cutscene">3,0,2,1</exelink>
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="cutscene">3,8,0,2,1</exelink>
    <exelink qstep="5" npc="n035_soceress_master_tiana" sub="a">0</exelink>
-   <exelink qstep="5" npc="n035_soceress_master_tiana" sub="levelcheck">2,5</exelink>
+   <exelink qstep="5" npc="n035_soceress_master_tiana" sub="6">1,2</exelink>
    <exelink qstep="6" npc="n035_soceress_master_tiana">0</exelink>
    <exelink qstep="6" npc="n035_soceress_master_tiana" sub="b" />
    <exelink qstep="6" npc="n035_soceress_master_tiana" sub="!next">3,4</exelink>
@@ -359,8 +359,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="94"><![CDATA[把找到的日志交给高级魔法师缇娜]]></title>
-         <contents mid="95"><![CDATA[<html>找到了写有魔法师们的研究记录的日志。把它交给凯德拉关卡的<FONT color=#a82424>高级魔法师缇娜</FONT>吧。<BR><FONT color=#7e12d2>※ 22级以上方可进行。</FONT><BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级魔法师缇娜</FONT></html>]]></contents>
-         <destination mid="96"><![CDATA[（22级）把找到的日志交给高级魔法师缇娜]]></destination>
+         <contents mid="95"><![CDATA[<html>找到了写有魔法师们的研究记录的日志。把它交给凯德拉关卡的<FONT color=#a82424>高级魔法师缇娜</FONT>吧。<BR><BR><FONT color=#086171>凯德拉关卡</FONT> <FONT color=#a82424>→ 高级魔法师缇娜</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[把找到的日志交给高级魔法师缇娜]]></destination>
          <todo_msg mid="97"><![CDATA[找到了写有研究记录的日志。请把它交给高级魔法师缇娜。]]></todo_msg>
       </journal>
    </journal_data>

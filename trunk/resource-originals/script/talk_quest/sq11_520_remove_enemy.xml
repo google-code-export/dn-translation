@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
    </talk_paragraph>
@@ -119,6 +122,8 @@
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
          <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200803</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 803);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -136,7 +141,7 @@
    </qstep_change>
    <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="g">1</exelink>
    <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">0,2</exelink>
-   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="b">0,2,1</exelink>
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="b">0,2,6,1</exelink>
    <exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="a">0</exelink>
    <exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="b">1</exelink>
    <exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="c" />

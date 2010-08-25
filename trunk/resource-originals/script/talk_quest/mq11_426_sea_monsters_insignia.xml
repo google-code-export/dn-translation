@@ -32,6 +32,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -45,7 +48,7 @@
 英雄们击败了海怪，然后把它的尸体分成了几个部分，分别封印了起来。并把它的<FONT color=#a82424>力量源泉</FONT>沉到了很深的地方。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-b" image="" itemindex="">
-      <talk_answer link_index="n039_bishop_ignasio-1-level" mid="41"><![CDATA[<html>到底在什么地方呢？</html>]]></talk_answer>
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="41"><![CDATA[<html>到底在什么地方呢？</html>]]></talk_answer>
       <talk_question mid="40"><![CDATA[<html>$主教伊格纳西奥$<BR>那个怪兽在讨伐之前刚刚袭击并击沉了一艘货船，之后就遭到了英雄们的攻击。所以它的脖子还留在<FONT color=#a82424>沉没的货船</FONT>附近。但<FONT color=#a82424>力量源泉</FONT>却被英雄们扔到了很远的地方。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-c" image="" itemindex="">
@@ -108,12 +111,14 @@
          <exe type="talk" npc="n039_bishop_ignasio">d</exe>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
-         <exe type="huntmon" num="30001" party="1" exe="" onexe="6">1215</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">1215</exe>
          <exe type="addquestitem" num="1">300024</exe>
          <exe type="delcount">.</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
          <exe type="huntitem" num="1" exe="" onexe="7,8,9">300024</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="12">201215</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1215);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -131,10 +136,10 @@
       </executions>
    </qstep_change>
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
-   <exelink qstep="1" npc="n039_bishop_ignasio" sub="level">0</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="e" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="f" />
-   <exelink qstep="1" npc="n039_bishop_ignasio" sub="g">3,5,10,4</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="g">3,5,11,10,4</exelink>
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="b" />
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="c">0</exelink>
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="!next">1,2</exelink>
@@ -201,8 +206,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="32"><![CDATA[去沉没的货船]]></title>
-         <contents mid="33"><![CDATA[<html>去遗忘时间废墟寻找<FONT color=#a82424>海怪的纹章</FONT>。<BR><BR><FONT color=#7e12d2>※ 在深渊难度下无法执行。</FONT><BR><BR><FONT color=#086171>赫尔马岱港口(下游废墟入口)</FONT> <FONT color=#a82424>→ 遗忘时间废墟</FONT></html>]]></contents>
-         <destination mid="34"><![CDATA[搜集海怪的纹章]]></destination>
+         <contents mid="33"><![CDATA[<html>去遗忘时间废墟寻找<FONT color=#a82424>海怪的纹章</FONT>。<BR><BR><FONT color=#086171>赫尔马岱港口(下游废墟入口)</FONT> <FONT color=#a82424>→ 遗忘时间废墟</FONT></html>]]></contents>
+         <destination mid="34"><![CDATA[去遗忘时间废墟搜集纹章]]></destination>
          <todo_msg mid="35"><![CDATA[请到遗忘时间废墟去寻找海怪的纹章。]]></todo_msg>
       </journal>
       <journal index="3">

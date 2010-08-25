@@ -50,6 +50,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -92,7 +95,7 @@
    </talk_paragraph>
    <talk_paragraph index="n164_argenta_wounded-accepting-f" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
       <talk_answer link_index="n164_argenta_wounded-accepting-g" mid="19"><![CDATA[<html>知道了。</html>]]></talk_answer>
-      <talk_question mid="18"><![CDATA[<html>$阿尔杰塔$<BR>那你就去那个什么<FONT color=#a82424>消耗品/FONT><FONT color=#a82424>商人</FONT>那里买。<BR>人类的商店里不是有很多东西吗？<BR>
+      <talk_question mid="18"><![CDATA[<html>$阿尔杰塔$<BR>那你就去那个什么<FONT color=#a82424>消耗品</FONT><FONT color=#a82424>商人</FONT>那里买。<BR>人类的商店里不是有很多东西吗？<BR>
 那里应该有吧。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n164_argenta_wounded-accepting-g" image="" itemindex="">
@@ -381,6 +384,7 @@
          <exe type="addquestitem" num="1">300129</exe>
          <exe type="conexe" true="5,3,4" false="">0</exe>
          <exe type="conexe" true="8,9" false="">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200483</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="3">
@@ -462,7 +466,7 @@
    <exelink qstep="2" npc="n026_trader_may" sub="b" />
    <exelink qstep="2" npc="n026_trader_may" sub="c" />
    <exelink qstep="2" npc="n026_trader_may" sub="d" />
-   <exelink qstep="2" npc="n026_trader_may" sub="3">2,6,0,1</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="3">2,11,6,0,1</exelink>
    <exelink qstep="4" npc="n026_trader_may" sub="b" />
    <exelink qstep="4" npc="n026_trader_may" sub="c" />
    <exelink qstep="4" npc="n026_trader_may" sub="d">0,1,2,3</exelink>
@@ -548,7 +552,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="135"><![CDATA[梅伊的食谱]]></title>
-         <contents mid="136"><![CDATA[<html><FONT color=#2b2723>要想按照商人梅伊的配方制作饮料，需要<FONT color=#a82424>发酵的果实</FONT>。去<FONT color=#a82424>墓穴集会场</FONT>把被<FONT color=#a82424>蝙蝠</FONT>们抢走的发酵的果实抢回来。</FONT><BR><FONT color=#7e12d2>(在深渊级难度下无法进行)</FONT><BR><BR><FONT color=#086171>水晶谷 → 狂风森林（墓穴入口）</FONT> <FONT color=#a82424>→ 墓穴集会场</FONT></html>]]></contents>
+         <contents mid="136"><![CDATA[<html><FONT color=#2b2723>要想按照商人梅伊的配方制作饮料，需要<FONT color=#a82424>发酵的果实</FONT>。去<FONT color=#a82424>墓穴集会场</FONT>把被<FONT color=#a82424>蝙蝠</FONT>们抢走的发酵的果实抢回来。</FONT><BR><BR><FONT color=#086171>水晶谷 → 狂风森林(墓穴入口)</FONT> <FONT color=#a82424>→ 墓穴集会场</FONT></html>]]></contents>
          <destination mid="137"><![CDATA[收集5个发酵的树果]]></destination>
          <todo_msg mid="138"><![CDATA[请到墓穴集会场去打猎蝙蝠。]]></todo_msg>
       </journal>

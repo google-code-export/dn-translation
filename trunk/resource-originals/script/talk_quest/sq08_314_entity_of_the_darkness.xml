@@ -35,6 +35,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
    </talk_paragraph>
@@ -156,6 +159,8 @@
          <exe type="delcount">.</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200429</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200450</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -175,7 +180,7 @@
    <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="c">0</exelink>
    <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="acceptted">1,2</exelink>
    <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
-   <exelink qstep="1" npc="n028_scholar_bailey" sub="2">0,1,2,3,4</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="2">0,1,2,3,10,11,4</exelink>
    <exelink qstep="3" npc="n028_scholar_bailey" sub="b" />
    <exelink qstep="3" npc="n028_scholar_bailey" sub="c" />
    <exelink qstep="3" npc="n028_scholar_bailey" sub="d" />

@@ -45,6 +45,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -102,15 +105,14 @@
       <talk_question mid="27"><![CDATA[<html>$飞艇工程师休伯特$<BR>看过了，在<FONT color=#a82424>沉睡者神殿</FONT>方向就消失了。我没有继续进到那里…你要是有把握的话，就进去看一下吧。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n099_engineer_hubert-1-f" image="" itemindex="">
-      <talk_question mid="29"><![CDATA[<html>$飞艇工程师休伯特$<BR>我虽然委托那里的向导，谁从那里出来就向我报告，但到目前为止还没有任何消息。看来好像还在里边没有出来呢！<BR>
-<FONT color=#7e12d2>(在深渊级难度下无法进行)</FONT></html>]]></talk_question>
+      <talk_question mid="29"><![CDATA[<html>$飞艇工程师休伯特$<BR>我拜托那里的卫兵，让他们如果看到有人出来就告诉我，但到目前为止还没有任何消息。我想应该还在里面！！</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n253_peace_of_linen-1" image="" itemindex="">
       <talk_question mid="64"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>（似乎擦拭了很多东西而脏兮兮的布片。在墨绿色粘稠的污水中散发着熟悉的恶臭）</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n099_engineer_hubert-2" image="QW_16.dds" itemindex="">
-      <talk_question mid="30"><![CDATA[<html>$飞艇工程师休伯特$<BR>去过<FONT color=#a82424>沉睡者神殿</FONT>了吗?一定要帮凯文把那个偷取贵重戒指的小偷绳之于法。<BR>
-<FONT color=#7e12d2>(在深渊级难度下无法进行)</FONT></html>]]></talk_question>
+      <talk_question mid="30"><![CDATA[<html>$飞艇工程师休伯特$<BR>去过<FONT color=#a82424>沉睡者神殿</FONT>了吗？<BR>
+一定要帮凯文抓住那个偷走珍贵戒指的小偷。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n029_crew_kevin-2" image="QW_16.dds" itemindex="">
       <talk_question mid="31"><![CDATA[<html>$乘务员凯文$<BR>嗯? 要沿着脚印去<FONT color=#a82424>沉睡者神殿</FONT>? 很危险呢…没关系吗？<BR>请一定要找回父亲的戒指啊~！！</html>]]></talk_question>
@@ -163,6 +165,8 @@
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
          <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200413</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 413);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -194,7 +198,7 @@
    <exelink qstep="1" npc="n099_engineer_hubert" sub="c" />
    <exelink qstep="1" npc="n099_engineer_hubert" sub="d" />
    <exelink qstep="1" npc="n099_engineer_hubert" sub="e" />
-   <exelink qstep="1" npc="n099_engineer_hubert" sub="f">2,0,1</exelink>
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="f">0,2,6,1</exelink>
    <exelink qstep="3" npc="n253_peace_of_linen" sub="a">0,1,2</exelink>
    <exelink qstep="4" npc="n099_engineer_hubert" sub="b" />
    <exelink qstep="4" npc="n099_engineer_hubert" sub="c">1</exelink>
@@ -260,7 +264,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="51"><![CDATA[脚印的行踪]]></title>
-         <contents mid="52"><![CDATA[<html>偷走戒指的小偷留下了沾有猎犬的营养食品的脚印。<FONT color=#a82424>脚印</FONT>一直通向<FONT color=#a82424>沉睡者神殿</FONT>方向。追踪小偷的行踪。<BR><FONT color=#7e12d2>(无法在深渊级难度下执行)<BR></FONT><BR><FONT color=#086171>灰色废墟 → 堆满落叶的湖岸(遗忘寺院)</FONT> <FONT color=#a82424>→ 沉睡者神殿</FONT></html>]]></contents>
+         <contents mid="52"><![CDATA[<html>偷走戒指的小偷留下了沾有猎犬的营养食品的脚印。<FONT color=#a82424>脚印</FONT>一直通向<FONT color=#a82424>沉睡者神殿</FONT>方向。追踪小偷的行踪。<FONT color=#7e12d2><BR></FONT><BR><FONT color=#086171>灰色废墟 → 堆满落叶的湖岸(遗忘寺院)</FONT> <FONT color=#a82424>→ 沉睡者神殿</FONT></html>]]></contents>
          <destination mid="53"><![CDATA[探索沉睡者神殿]]></destination>
          <todo_msg mid="54"><![CDATA[在沉睡者神殿寻找小偷把。]]></todo_msg>
       </journal>

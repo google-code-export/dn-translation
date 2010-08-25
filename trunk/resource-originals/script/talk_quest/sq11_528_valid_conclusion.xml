@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
    </talk_paragraph>
@@ -114,14 +117,15 @@
       <conditions />
       <executions>
          <exe type="recompense_view">,5281,5282,5283,5284</exe>
-         <exe type="huntmon" num="1" party="1" exe="2,6,7,8" onexe="">907</exe>
+         <exe type="huntmon" num="30000" party="1" exe="2" onexe="2">907</exe>
          <exe type="addquestitem" num="1">400106</exe>
-         <exe type="huntitem" num="1" exe="" onexe="">400106</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,7,8">400106</exe>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
          <exe type="delcount">.</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="2">200907</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -143,7 +147,7 @@
    <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
    <exelink qstep="1" npc="n045_soceress_master_stella" sub="c" />
    <exelink qstep="1" npc="n045_soceress_master_stella" sub="d" />
-   <exelink qstep="1" npc="n045_soceress_master_stella" sub="2">1,3,4,5</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="2">1,3,9,4,5</exelink>
    <exelink qstep="3" npc="n045_soceress_master_stella" sub="b" />
    <exelink qstep="3" npc="n045_soceress_master_stella" sub="c" />
    <exelink qstep="3" npc="n045_soceress_master_stella" sub="d">0</exelink>
@@ -210,10 +214,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="49"><![CDATA[无礼的要求]]></title>
-         <contents mid="50"><![CDATA[<html>到江下游废墟抓捕 <FONT color=#a82424>强盗岩石石像鬼</FONT>量其脚印吧。<BR>
-<BR><FONT color=#7e12d2>※ 深渊难度下无法进行</FONT><BR>
- <BR>
-<FONT color=#086171>赫尔马岱港口（江下游废墟入口）</FONT> <FONT color=#a82424>→ 江下游废墟</FONT></html>]]></contents>
+         <contents mid="50"><![CDATA[<html>去下游废墟捕捉<FONT color=#a82424>强盗岩石石像鬼</FONT>，搜集脚印。<BR><BR><FONT color=#086171>赫尔马岱港口(下游废墟入口)</FONT> <FONT color=#a82424>→ 下游废墟</FONT></html>]]></contents>
          <destination mid="51"><![CDATA[在江下游废墟消灭强盗岩石石像鬼]]></destination>
          <todo_msg mid="52"><![CDATA[在江下游废墟消灭强盗岩石石像鬼吧。]]></todo_msg>
       </journal>

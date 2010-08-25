@@ -31,6 +31,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请对背包进行整理)</html>]]></talk_question>
    </talk_paragraph>
@@ -162,13 +165,15 @@
       <executions>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
-         <exe type="huntmon" num="30000" party="1" exe="" onexe="5,6,7,8">371</exe>
-         <exe type="huntmon" num="30000" party="1" exe="" onexe="5,6,7,8">372</exe>
-         <exe type="huntitem" num="1" exe="" onexe="">300077</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">371</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">372</exe>
+         <exe type="huntitem" num="1" exe="6,7,8" onexe="">300077</exe>
          <exe type="addquestitem" num="1">300077</exe>
          <exe type="delcount">.</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200371</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200372</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -187,7 +192,7 @@
    </qstep_change>
    <exelink qstep="accepting" npc="n025_trader_corin" sub="i">0</exelink>
    <exelink qstep="accepting" npc="n025_trader_corin" sub="acceptted">1,2</exelink>
-   <exelink qstep="1" npc="n025_trader_corin" sub="a">0,1,2,3,4</exelink>
+   <exelink qstep="1" npc="n025_trader_corin" sub="a">0,2,3,9,10,4,1</exelink>
    <exelink qstep="3" npc="n025_trader_corin" sub="b" />
    <exelink qstep="3" npc="n025_trader_corin" sub="c" />
    <exelink qstep="3" npc="n025_trader_corin" sub="d" />

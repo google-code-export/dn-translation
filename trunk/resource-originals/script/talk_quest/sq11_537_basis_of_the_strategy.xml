@@ -1,0 +1,238 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_537_basis_of_the_strategy</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>537</qid>
+      <designer>김주연</designer>
+      <qlevel>25</qlevel>
+      <qdesc>고블린 폭탄(30)	400146
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[兵法的基础]]></qkname>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（没有符合条件的任务）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$公告$<br>执行中的任务过多，暂时无法再接受任务。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$铁匠柏林$<BR>最近由于魔物们的骚扰，我的事忽然多了起来。<BR>从军队来了大量的订单了呢。<BR>
+<FONT color=#7e12d2>（在将军道格拉斯处可接受任务）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="7"><![CDATA[<html>是，我就是凯德拉的英雄！</html>]]></talk_answer>
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="8"><![CDATA[<html>只是大家开玩笑起的名字而已。</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$将军道格拉斯$<BR>你就是被称为凯德拉英雄的人吧?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-c" mid="10"><![CDATA[<html>兵法吗?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$将军道格拉斯$<BR>呵呵，可真是充满自信的年轻人啊。<BR>你对<FONT color=#a82424>兵法</FONT>有研究吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-c" mid="12"><![CDATA[<html>兵法?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$将军道格拉斯$<BR>有现在年轻人难得的谦逊的美德啊。<BR><BR>你对<FONT color=#a82424>兵法</FONT>有研究吗?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-e" mid="14"><![CDATA[<html>是补给吧?</html>]]></talk_answer>
+      <talk_answer link_index="n042_general_duglars-accepting-d" mid="15"><![CDATA[<html>留后路吧?</html>]]></talk_answer>
+      <talk_answer link_index="n042_general_duglars-accepting-d" mid="16"><![CDATA[<html>以少胜多？</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$将军道格拉斯$<BR>是啊，就是兵法。不是有谁说兵法就是战争中的艺术的吗。<BR>你认为在战场最重要的是什么？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-f" mid="18"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$将军道格拉斯$<BR>嗯，那个也很重要，但是有比它更重要的。<BR>那就是补给。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-f" mid="20"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$将军道格拉斯$<BR>
+还真是狡猾而现实的朋友啊。<BR>
+是的，战争中最重要的就是补给战争物资。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-g" mid="22"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$将军道格拉斯$<BR>兵法中根据如何确保战争物资，其价值可以这样分类。即所需物资从根据地带来的视为平凡的指挥官，而从当地解决的则视为贤明的指挥官。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-h" mid="24"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$将军道格拉斯$<BR>其中最贤明的人是抢敌人物资归为己有的指挥官。<BR>所以我想委托你件很有趣的事情。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-h" image="QW_27.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-i" mid="26"><![CDATA[<html>你是让我去抢那些废矿小妖精的炮弹是吧。</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$将军道格拉斯$<BR><FONT color=#a82424>黑暗矿山</FONT>的废矿小妖精可都是非常让人头疼的魔物。虽然他们的炮弹有些粗糙和危险，但已经足以对我军造成巨大的伤害。但是一旦好好改造它的话，就可以改造成为安全又威力巨大的炮弹 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-i" image="QS_Default.dds" itemindex="400146">
+      <talk_answer link_index="n042_general_duglars-accepting-j" mid="28"><![CDATA[<html>（继续）</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$将军道格拉斯$<BR>看来你还挺会来事的嘛。<BR>
+到黑暗矿山去收集30个废矿小妖精技能兵身上的<FONT color=#a82424>小妖精炮弹</FONT>回来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-j" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="30"><![CDATA[<html><FONT color=#086171>接受任务</FONT></html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$兵法的基础$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QW_27.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$将军道格拉斯$<BR>通往<FONT color=#a82424>黑暗矿山</FONT>的路就在神圣天堂南部。<BR>经过赫尔马岱港口到达黑暗矿山入口即可。<BR>把收集来的小妖精炮弹交给铁匠柏林即可。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="QW_27.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$铁匠柏林$<BR>将军道格拉斯大人所说的人就是你啊。<BR>到<FONT color=#a82424>黑暗矿山</FONT>从废矿小妖精技能兵身上获取30个 <FONT color=#a82424>小妖精炮弹</FONT>回来吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2" image="QS_Default.dds" itemindex="400146">
+      <talk_answer link_index="n091_trader_bellin-2-a" mid="34"><![CDATA[<html>（交出小妖精炮弹）</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$铁匠柏林$<BR>嗯? 这么快就收集完了<FONT color=#a82424>小妖精炮弹 </FONT>?<BR>
+倒是挺快的嘛。来交给我吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-2-b" mid="36"><![CDATA[<html><FONT color=#086171>（获得奖励）</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$任务奖励$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-b" image="QS_Default.dds" itemindex="400146">
+      <talk_answer link_index="n091_trader_bellin-2-c" mid="38"><![CDATA[<html>呃?那倒不知道。</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$铁匠柏林$<BR>你可真是胆大包天啊。<BR><FONT color=#a82424>小妖精炮弹</FONT>可是非常不稳定的东西，经常会在搬运途中产生爆炸。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-c" image="QS_Default.dds" itemindex="400146">
+      <talk_question mid="39"><![CDATA[<html>$铁匠柏林$<BR>是不是你带着那些危险的炮弹一路轻快的飞来的啊，啧…</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="prob">300</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense_view">,5371,5372,5373,5374</exe>
+         <exe type="setquest">537</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">803</exe>
+         <exe type="huntitem" num="30" exe="5,6,7" onexe="">400146</exe>
+         <exe type="addquestitem" num="1">400146</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+         <exe type="conexe" true="4" false="">0</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200803</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5371,5372,5373,5374</exe>
+         <exe type="complete">537</exe>
+         <exe type="delquestitem" num="-1">400146</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="j">0</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">1,2,10,3,8</exelink>
+   <exelink qstep="2" npc="n091_trader_bellin" sub="a">0</exelink>
+   <exelink qstep="2" npc="n091_trader_bellin" sub="b">1,2</exelink>
+   <exelink qstep="2" npc="n091_trader_bellin" sub="c" />
+   <journal_data recompense="1:5371,2:5372,3:5373,4:5374" quest_title="병법의 기본" chapterid="" quest_level="25" quest_mark_type="10" use_item_list="400146">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_27.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>274,0,0</destination_pos>
+         <destination_mode>custom:271@3,272@3,273@3,274@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[在黑暗矿山收集小妖精炮弹]]></title>
+         <contents mid="62"><![CDATA[<html>从黑暗矿山的废矿小妖精技能兵身上收集30个小妖精炮弹。<BR>
+ <BR>
+<FONT color=#086171>赫尔马岱港口（黑暗矿山入口）</FONT><FONT color=#a82424> → 黑暗矿山</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[在黑暗矿山收集小妖精炮弹]]></destination>
+         <todo_msg mid="64"><![CDATA[在黑暗矿山收集小妖精炮弹回来吧。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[把炮弹交给铁匠柏林]]></title>
+         <contents mid="42"><![CDATA[<html><FONT color=#a82424>小妖精炮弹</FONT>收集完毕。把它交给神圣天堂的<FONT color=#a82424>铁匠柏林</FONT>吧。<BR>
+ <BR>
+<FONT color=#086171>神圣天堂</FONT> <FONT color=#a82424>→ 铁匠柏林  </FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[把收集的炮弹交给铁匠柏林]]></destination>
+         <todo_msg mid="44"><![CDATA[把收集的炮弹交给铁匠柏林吧]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>25:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>452</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

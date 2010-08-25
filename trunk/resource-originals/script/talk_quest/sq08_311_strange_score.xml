@@ -36,6 +36,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$公告$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$公告$<br>任务用的背包已满。<br>（请尽快整理背包）</html>]]></talk_question>
    </talk_paragraph>
@@ -163,12 +166,13 @@
       <executions>
          <exe type="setstep">3</exe>
          <exe type="setjornal">2</exe>
-         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">350</exe>
-         <exe type="huntitem" num="1" exe="" onexe="">400119</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">350</exe>
+         <exe type="huntitem" num="1" exe="5,6,7" onexe="">400119</exe>
          <exe type="addquestitem" num="1">400119</exe>
          <exe type="setstep">4</exe>
          <exe type="setjornal">3</exe>
          <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200350</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="3">
@@ -195,7 +199,7 @@
    <exelink qstep="2" npc="n028_scholar_bailey" sub="c" />
    <exelink qstep="2" npc="n028_scholar_bailey" sub="d" />
    <exelink qstep="2" npc="n028_scholar_bailey" sub="e" />
-   <exelink qstep="2" npc="n028_scholar_bailey" sub="3">0,1,2,3</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="3">0,1,2,8,3</exelink>
    <exelink qstep="4" npc="n028_scholar_bailey" sub="a">1</exelink>
    <exelink qstep="4" npc="n028_scholar_bailey" sub="b">0,2</exelink>
    <journal_data recompense="1:3111,2:3112,3:3113,4:3114" quest_title="이상한 악보" chapterid="" quest_level="9" quest_mark_type="10" use_item_list="400118,400119">

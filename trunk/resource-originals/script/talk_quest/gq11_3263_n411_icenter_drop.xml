@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请在背包中留出空间，以获得奖励。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
    </talk_paragraph>
@@ -47,8 +50,7 @@
    </talk_paragraph>
    <talk_paragraph index="n411_guild_board-accepting-c" image="GQ_item.dds" itemindex="">
       <talk_answer link_index="n411_guild_board-accepting-d" mid="74"><![CDATA[<html>(继续)</html>]]></talk_answer>
-      <talk_question mid="73"><![CDATA[<html>$冒险家公会公告栏$<BR>喵呜老板的秘密笔记本上记着的幽灵花津液可以从<FONT color=#a82424>爱挑衅的海盗幽灵花</FONT>身上找到。<BR>
-<FONT color=#7e12d2> 委托人：猫咪料理师喵喵</FONT></html>]]></talk_question>
+      <talk_question mid="73"><![CDATA[<html>$冒险家公会公告栏$<BR>喵呜老板的秘密笔记本上记着的幽灵花津液可以从<FONT color=#a82424>爱挑衅的海盗幽灵花</FONT>身上找到。<BR><FONT color=#7e12d2> 委托人：猫咪料理师喵喵</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n411_guild_board-accepting-d" image="" itemindex="">
       <talk_answer link_index="n411_guild_board-accepting-e" mid="11"><![CDATA[<html><FONT color=#086171>(接受委托)</FONT></html>]]></talk_answer>
@@ -73,22 +75,19 @@
    </talk_paragraph>
    <qstep_change qstep="accepting">
       <comment />
-      <conditions>
-         <chk type="questitem" num="5" op="]=">400172</chk>
-      </conditions>
+      <conditions />
       <executions>
          <exe type="custom">api_quest_AddQuest(userObjID,3263, 1);</exe>
          <exe type="setstep">1</exe>
          <exe type="setjornal">1</exe>
          <exe type="recompense_view">32630,,,,</exe>
-         <exe type="huntitem" num="5" exe="" onexe="">400172</exe>
-         <exe type="huntmon" num="30001" party="1" exe="" onexe="6">928</exe>
-         <exe type="conexe" true="7,8,9" false="10,11">0</exe>
+         <exe type="huntitem" num="2" exe="6,7,8" onexe="">400172</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">928</exe>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
          <exe type="delcount">.</exe>
          <exe type="addquestitem" num="1">400172</exe>
-         <exe type="conexe" true="7,8,9" false="">0</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200928</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -102,12 +101,13 @@
       <executions>
          <exe type="recompense">32630,,,,</exe>
          <exe type="complete">3263</exe>
+         <exe type="delquestitem" num="-1">400172</exe>
       </executions>
    </qstep_change>
    <exelink qstep="accepting" npc="n411_guild_board" sub="d">3</exelink>
-   <exelink qstep="accepting" npc="n411_guild_board" sub="e">0,1,4,5,2</exelink>
+   <exelink qstep="accepting" npc="n411_guild_board" sub="e">0,1,4,5,10,2</exelink>
    <exelink qstep="2" npc="n411_guild_board" sub="a">0</exelink>
-   <exelink qstep="2" npc="n411_guild_board" sub="b">1</exelink>
+   <exelink qstep="2" npc="n411_guild_board" sub="b">1,2</exelink>
    <journal_data recompense="32630" quest_title="[길드의뢰] 타버린 쨈" chapterid="" quest_level="32" quest_mark_type="19" use_item_list="400172">
       <journal index="1">
          <title_image />
@@ -137,8 +137,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="42"><![CDATA[去孤岛中心采集幽灵花津液]]></title>
-         <contents mid="43"><![CDATA[<html>去孤岛中心打猎爱挑衅的海盗幽灵花，采集幽灵花津液。<BR><BR><FONT color=#086171>赫尔马岱港口(孤岛运输船) </FONT><FONT color=#a82424>→ 孤岛中心</FONT><BR><FONT color=#a82424></FONT><BR><FONT color=#7e12d2>※ 无法在深渊级难度下执行。</FONT></html>]]></contents>
-         <destination mid="44"><![CDATA[采集幽灵花津液]]></destination>
+         <contents mid="43"><![CDATA[<html>孤岛中心打猎爱挑衅的海盗幽灵花，采集幽灵花津液。<BR><BR><FONT color=#086171>赫尔马岱港口(孤岛运输船) </FONT><FONT color=#a82424>→ 孤岛中心</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[搜集]孤岛中心]]></destination>
          <todo_msg mid="45"><![CDATA[冒险家公会委托添加完成。]]></todo_msg>
       </journal>
       <journal index="2">
