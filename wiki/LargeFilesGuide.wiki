@@ -3,6 +3,8 @@
 
 Files over 500 lines long cannot be easily translated automatically. The main problem is the uistring.xml file, which is over 15000 lines. You can still automate the translation process by using a file splitter/joiner. Here is how:
 
+=== Split ===
+
 Download [http://www.gdgsoft.com/files/gsplitp.zip GSplit] file splitter, and use these settings to split the file:
   
   * *Original File:* Select the file you want to split
@@ -10,4 +12,10 @@ Download [http://www.gdgsoft.com/files/gsplitp.zip GSplit] file splitter, and us
   * *Type and Size:* Choose "I want to split after the nth occurrence...", set the number to *400* and pattern to *0x0A* - this will split the file every 400 lines.
   * *Filenames:* Use mask *{orf}-{oru}.xml*
 
-After the file has been split, you should be able to run it through the Translation Helper App without any problem. After translating, you can use GSplit to join the file back again.
+After the file has been split, you should be able to run it through the Translation Helper App without any problem. 
+
+=== Merge ===
+
+Use a text editor and save the following line as *merge.bat* then put it in the folder with all the split pieces. Run the batch file to merge all the XML files.
+
+`FOR %%1 in (*.xml) do type %%1 >> merged.xml`
