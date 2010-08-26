@@ -1,0 +1,13 @@
+#labels Featured
+= How to Automate Translation of Large Files =
+
+Files over 500 lines long cannot be easily translated automatically. The main problem is the uistring.xml file, which is over 15000 lines. You can still automate the translation process by using a file splitter/joiner. Here is how:
+
+Download [http://www.gdgsoft.com/files/gsplitp.zip GSplit] file splitter, and use these settings to split the file:
+  
+  * *Original File:* Select the file you want to split
+  * *Destination Folder:* select an output folder
+  * *Type and Size:* Choose "I want to split after the nth occurrence...", set the number to *400* and pattern to *0x0A* - this will split the file every 400 lines.
+  * *Filenames:* Use mask *{orf}-{oru}.xml*
+
+After the file has been split, you should be able to run it through the Translation Helper App without any problem. After translating, you can use GSplit to join the file back again.
