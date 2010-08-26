@@ -11,28 +11,27 @@ The App is now included in the [http://code.google.com/p/dn-translation/download
 Copy all the XML files you want to translate into the "resource-input" folder. Run run "start.bat" to start the app, then press "Start Translating!". 
 
 === Remarks ===
-*Note 1:* There is no way to pause/resume the process. If it gets stuck for any reason, you need to delete all the completed files from the input folder, then start again. (New version in SVN will automatically delete completed files from the input folder, so you can resume by clicking start again.)
+*Note 1:* Please beware that the app will automatically *delete* completed files from the input folder.
 
-*Note 2:* Make sure you do not have 0 byte (empty) files in the input folder. 
+*Note 2:* Make sure you do not have any 0 byte (empty) files in the input folder. 
 
-*Note 3:* The app is based on the original Translation Helper code, so same limitations apply.
+*Note 3:* The app is based on the original Translation Helper code, so same limitations apply. See [LargeFilesGuide] for tips on how to automate the translation of large files such as uistring.xml
 
-*Note 4:* See [LargeFilesGuide] for tips on how to automate the translation of large files such as uistring.xml
+*Note 4:* If the translation process stops because of an error, you can usually just click start again to resume from the last file. 
+
+*Note 5:* Note that there is a rate limit on the translation web service. If you hit the limit, then the translation will stop. You'll need to wait a while before you can continue again.
 
 === Screenshot ===
 
 http://a.imageshack.us/img843/6099/translationhelperappsup.png
 
-<br>
-
 _Please see below for the original version of the Translation Helper._
-
-<br>
 
 = Translation Helper =
 
 === Latest Version ===
-URL: http://dn-translation.googlecode.com/svn/trunk/translation-helper/index.html
+URL: http://dn-translation.googlecode.com/svn/trunk/translation-helper/index.html <br>
+_This file is also included in the Translation Kit_
 
 If your browser can display the page directly, then you can just use it online. If not, right click on the link and save the page to your computer. When you open it, you need to allow any permissions it asks for.
 
