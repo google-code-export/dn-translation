@@ -1,0 +1,37 @@
+   <talk>
+      <npcename>n033_archer_master_adellin</npcename>
+      <npcid>33</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[<html>(Return)</html>]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="10"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="3"><![CDATA[<html>[Learning Skills]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Senior archer Aide Lin$<BR>Nice to meet you。I am a professor in the Kedella points archer skills Aide Lin。<BR>
+You are to learn the skills you archers？</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="11"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Senior archer Aide Lin$<BR>Nice to meet you。I am a professor in the Kedella points archer skills Aide Lin。<BR>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="20" link_target="mq08_202_rescue_girl.xml"><![CDATA[<html>[Lv10] <FONT color=#a94407>Save the girls</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="23" link_target="sq08_251_melody_of_the_memories1.xml"><![CDATA[<html>[Lv9] <FONT color=#086171>Melody Memory I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="sq08_252_melody_of_the_memories2.xml"><![CDATA[<html>[Lv10] <FONT color=#086171>Melody Memory II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="31" link_target="sq08_280_test_archer1.xml"><![CDATA[<html>[Transfer] <FONT color=#086171>TeresiaⅠ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="32" link_target="sq08_281_test_archer2.xml"><![CDATA[<html>[Transfer]<FONT color=#086171> TeresiaⅡ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="sq08_341_change_job2.xml"><![CDATA[<html>[Lv15] <FONT color=#086171>Irene&#39;s transfer gifts</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back1" mid="39"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Senior archer Aide Lin$<BR>Kedella hurdle for me is joy and sadness mingled with memories of the place…Had met him happy，Split up with him but sad too... <BR>Here is full of memories with him。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="0" false="1">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">2</chk>
+      </conditions>
+      <exelink idx="skill">3</exelink>
+      <exelink idx="back1">2</exelink>
+   </talk>

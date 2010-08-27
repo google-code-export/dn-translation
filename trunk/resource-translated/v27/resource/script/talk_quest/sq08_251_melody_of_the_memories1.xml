@@ -1,0 +1,404 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_251_melody_of_the_memories1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>251</qid>
+      <designer>나은하</designer>
+      <qlevel>9</qlevel>
+      <qdesc>300165 유릭의 노트</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>252</nextqid>
+      <nextqname>sq08_252_melody_of_the_memories2</nextqname>
+      <nextqnpc>n026_trader_may</nextqnpc>
+      <qkname mid="1"><![CDATA[Melody Memory I]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이   (캐더락 잡화상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>33</npcid>
+         <npcename>n033_archer_master_adellin</npcename>
+         <npckname>상급 아처 아델린  (캐더락 아쳐 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-noquest" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Today&#39;s wind very strange。<BR><FONT color=#7e12d2>(Senior Aide Lin archers from there given the task of)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Consumables business Mee$<BR>What items?<BR><FONT color=#7e12d2>（Senior bow and arrow can be given the task of hand-Aide Lin）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-a" mid="9"><![CDATA[<html>Why harp looked at in this?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Senior archer Aide Lin$<BR><FONT color=#7e12d2>（Aide Lin seems sad looking at the Harp）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-b" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Senior archer Aide Lin$<BR>Ah，Reminds me of something former Haier。The man liked to listen to my harp playing。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-b" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-c" mid="103"><![CDATA[<html>Man？</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Senior archer Aide Lin$<BR>
+Every evening when，That person is always<FONT color=#a82424>Bailey</FONT>Come to me with，Listen to me play the harp。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-d" mid="13"><![CDATA[<html>(Aide Lin seemed a little hum and haw)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Senior archer Aide Lin$<BR>Ah，I say nonsense。 <BR>You do not say what emergency? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-e" mid="15"><![CDATA[<html>(Whereabouts<FONT color=#a82424>Bailey</FONT>Inquire about that person&#39;s case it)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Senior archer Aide Lin$<BR>I just have pieces of things that need to be resolved。<BR>If any events, then your，Government try to come after another。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Melody Memory$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Senior archer Aide Lin$<BR>Sorry ah，My things needed urgent。<BR><FONT color=#7e12d2>(Pele or whereabouts of heraldic scholars to understand what it Aide Lin)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="21"><![CDATA[<html>（Consultation on the matter Aide Lin）</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Do you have any questions for me？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="23"><![CDATA[<html>Ah，Make mention of these bad things really sorry。</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Ah，As you said，Aide Lin has been a long time without playing a harp。Accurate to say，Since my friend is after Iulica sacrifice。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-b" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-c" mid="25"><![CDATA[<html>Sure enough there really such a thing ah。</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Not，This is already3Years ago that the。 <BR>Aide Lin is no longer playing the harp is probably because of grief over。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-c" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-d" mid="27"><![CDATA[<html>Ah? Wicked words?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Wish Aide Lin will then suffering from the freed...<BR>Ah，This reminds me of Iulica said those words。He said he was very cruel to the Aide Lin said that if。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-d" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-e" mid="29"><![CDATA[<html>Is this a pain in her...</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Well。Although I do not know what that is，But it seems that the phrase deeply hurt Ai Delin。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-e" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-f" mid="31"><![CDATA[<html>That I can help it，Despite that。</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Ah，So……Come When I first came here, I know people who do this kind of thing a bit wrong，But you do me a favor？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-f" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-g" mid="33"><![CDATA[<html>Ah，So how to understand it?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Aide Lin reason why so sad，Must be because the sentence cruel words。<BR>If we can understand in the end between the two of them what happened，Aide Lin as soon as possible to help recover from the pain。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-g" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2" mid="35"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Heraldic scholars Bailey$<BR>You go and ask<FONT color=#a82424>Mee</FONT>Know this。Aide Lin has been hurt Aimei Yi，So long as they are and the things Aide Lin，Mee is very concerned about。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="94"><![CDATA[<html>$Consumables business Mee$<BR>What you need?<BR><FONT color=#7e12d2>(Should first go to see Bailey，Things to know Aide Lin)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-a" mid="38"><![CDATA[<html>(Try and<FONT color=#a82424>Mee</FONT>Talk with someone)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Heraldic scholars Bailey$<BR>That said Iulica，What if he had an accident，On his behalf to take good care Aide Lin。But I always too busy as an excuse，Never mind what she。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-a" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Really want to play again and moving to hear Aide Lin。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Senior archer Aide Lin$<BR>If you do not learn Archery，Let me alone it。<BR><BR><FONT color=#7e12d2>(Ai Delin meditation seems to be caught)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-a" mid="44"><![CDATA[<html>Today is not to buy things。</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Consumables business Mee$<BR>Come just~ <BR>I happen to<FONT color=#387206>{user_nick}</FONT>We prepare something。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-b" mid="46"><![CDATA[<html>（Consultation on the matter Aide Lin）</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Consumables business Mee$<BR>Hey，That is why from the ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-b" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-c" mid="48"><![CDATA[<html>（Mee frowned overlooking what appears to。）</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Consumables business Mee$<BR>尤利克哥哥 the expense of the day，Aide Lin matter between her sister and 尤利克哥哥...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-c" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-d" mid="51"><![CDATA[<html>Quarrel...?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Consumables business Mee$<BR>Ah，Be，Think of it。Two people are arguing it was。<BR>I remember very clearly，Never reaffirmed the club&#39;s two people from the frame to even noisy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-d" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-e" mid="53"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Consumables business Mee$<BR>Aide Lin said her sister had a terrible，So stop the fight in 尤利克哥哥。Because3Years ago the，More content and I can not remember... Ah...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-e" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-f" mid="56"><![CDATA[<html>Why?</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Consumables business Mee$<BR>Between two people would have perfectly good，But suddenly said 尤利克哥哥，That being the case，Thus breaking up the words for the good of such。 Ah, but also very strange。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-f" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-g" mid="60"><![CDATA[<html>Ah，No matter what other suspicious you?</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Consumables business Mee$<BR>The day before the fight，尤利克哥哥 also bought a ring to give Aide Lin Sister。But why two people got into a fight it? Aide Lin sister seems to have not received the ring。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-g" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-h" mid="63"><![CDATA[<html>What kind of methods?</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Consumables business Mee$<BR>Yes ah，Does have a way to inquire into the reasons that...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-h" image="QS_Default.dds" itemindex="300165">
+      <talk_answer link_index="n026_trader_may-2-i" mid="65"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Consumables business Mee$<BR>尤利克哥哥 like writing poetry，So always carry a booklet。In the book, it will also write diary。Brother after the accident，Although<FONT color=#a82424>Attackers den</FONT>Found his body，But the booklet did not recover。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-i" image="QW_13.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3" mid="67"><![CDATA[<html>Then，Let me go to the den to find the attackers to see that this booklet。</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Consumables business Mee$<BR>I think that things will certainly<FONT color=#a82424>The attackers of the Monster Lair</FONT>Hands?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QW_13.dds" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Consumables business Mee$<BR>Be sure to<FONT color=#a82424>Attackers den</FONT>Found that the<FONT color=#a82424>Booklet</FONT>，Between the two and then find out what happened in the end。In that case，Aide Lin sister might also recover it 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="QS_Default.dds" itemindex="300165">
+      <talk_answer link_index="n026_trader_may-4-level_check" mid="73"><![CDATA[<html>(Diary of a Mee to stole)</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Consumables business Mee$<BR>尤利克哥哥 still got something, ah ！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-c" mid="75"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-d" mid="101"><![CDATA[<html><FONT color=#086171>(Rewarded)</FONT></html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-c" image="QS_Default.dds" itemindex="300165">
+      <talk_question mid="96"><![CDATA[<html>$Consumables business Mee$<BR>I would like to have a look at Diary，After a while you come see me。<BR><FONT color=#7e12d2>(Melody MemoryⅡMust be10Level and above can be implemented)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-d" image="QS_Default.dds" itemindex="300165">
+      <talk_answer link_index="n026_trader_may-4-!next" mid="98"><![CDATA[<html>What it is written？</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Consumables business Mee$<BR><FONT color=#7e12d2>(Mee quickly read the diary)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">251</exe>
+         <exe type="recompense_view">,2511,2512,2513,2514</exe>
+         <exe type="talk" npc="n033_archer_master_adellin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="1">349</exe>
+         <exe type="addquestitem" num="1">300165</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntitem" num="30001" exe="" onexe="2,3,4">300165</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="1">200349</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>퀘스트 진행 유저가 10레벨이 넘을 경우, !next로 다음 퀘스트 진행. 안되면 그냥 여기서 종료.</comment>
+      <conditions>
+         <chk type="lvl" op="]=">10</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">,2511,2512,2513,2514</exe>
+         <exe type="complete">251</exe>
+         <exe type="conexe" true="4" false="3">0</exe>
+         <exe type="talk" npc="n026_trader_may">a</exe>
+         <exe type="talk" npc="n026_trader_may">b</exe>
+         <exe type="custom">api_quest_MarkingCompleteQuest(userObjID, questID);</exe>
+         <exe type="custom">api_quest_CompleteQuest(userObjID, questID, true);</exe>
+         <exe type="delquestitem" num="-1">300165</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="e" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="f" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="g" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="b" />
+   <exelink qstep="2" npc="n026_trader_may" sub="c" />
+   <exelink qstep="2" npc="n026_trader_may" sub="d" />
+   <exelink qstep="2" npc="n026_trader_may" sub="e" />
+   <exelink qstep="2" npc="n026_trader_may" sub="f" />
+   <exelink qstep="2" npc="n026_trader_may" sub="g" />
+   <exelink qstep="2" npc="n026_trader_may" sub="h" />
+   <exelink qstep="2" npc="n026_trader_may" sub="i" />
+   <exelink qstep="2" npc="n026_trader_may" sub="3">0,8,5,6,7</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="level_check">2,0</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="c">5,6,7</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="d">1,7</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="!next" />
+   <journal_data recompense="1:2511,2:2512,3:2513,4:2514" quest_title="추억의 멜로디 I" chapterid="" quest_level="9" quest_mark_type="10" use_item_list="300165">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[And the coat of arms Bailey scholars dialogue]]></title>
+         <contents mid="78"><![CDATA[<html>To<FONT color=#a82424>Heraldic scholars Bailey</FONT>Asked what Aide Lin。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Heraldic scholars Bailey</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[And the coat of arms Bailey scholars dialogue]]></destination>
+         <todo_msg mid="80"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[Dialogue with the consumables business Mee]]></title>
+         <contents mid="82"><![CDATA[<html>See Kedella checkpoints<FONT color=#a82424>Consumables business Mee</FONT>Advice on what it Iulica and Aide Lin。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→Consumables business Mee</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[Dialogue with the consumables business Mee]]></destination>
+         <todo_msg mid="84"><![CDATA[Let the dialogue with the consumables business Mee。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_13.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>114,0,0</destination_pos>
+         <destination_mode>custom:111@1,112@1,113@1,114@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[Search Iulica brochure]]></title>
+         <contents mid="86"><![CDATA[<html>Grasp some<FONT color=#a82424>Attackers den</FONT>The Monster who，Obtain from them<FONT color=#a82424>Iulica brochure</FONT>It。<BR><BR><FONT color=#086171>Crystal Valley（Attackers nest entrance）</FONT> <FONT color=#a82424>→Attackers den</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[Find Iulica diary]]></destination>
+         <todo_msg mid="88"><![CDATA[Hunting monsters in the lair of the attackers，And search Iulica booklet come home。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Dialogue with the consumables business Mee]]></title>
+         <contents mid="91"><![CDATA[<html>Relics found Iulica。It points to the Kedella consumables business mey bar。<BR><BR><FONT color=#086171>Kedella points →</FONT> <FONT color=#a82424>Consumables business Mee</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[Dialogue with the consumables business Mee]]></destination>
+         <todo_msg mid="93"><![CDATA[And Kedella crossing businessmen Mee dialog and consumables。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>201</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

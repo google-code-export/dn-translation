@@ -1,0 +1,260 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_597_lord_manticore_1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>597</qid>
+      <designer>곽노찬</designer>
+      <qlevel>40</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>598</nextqid>
+      <nextqname>sq11_598_lord_manticore_2</nextqname>
+      <nextqnpc>n088_scholar_starshy</nextqnpc>
+      <qkname mid="1"><![CDATA[Eat light of WarcraftⅠ]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Hush！Although the royal family against the soldiers spill the beans，But I got I heard。You go to see Gaunt。<BR><FONT color=#7e12d2>(Society of Gaunt from adventurers who receive task)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="7"><![CDATA[<html>What I do for you？</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Society of Gaunt adventurer$<BR>This really makes people difficult……<BR><FONT color=#7e12d2>(Society of Gunter adventurer like thinking about a problem)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="9"><![CDATA[<html>Ah……？Headache？</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Ah，<FONT color=#387206>{user_nick}</FONT>！<BR>You just come。You should be able to help me solve this headache。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Actually，Royal family issued a secret instruction。<BR><FONT color=#a82424>Duke Stewart</FONT>To commemorate the last Black Dragon raid，Is promoting the construction of Memorial Hall。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="QW_HermaltePort.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="13"><![CDATA[<html>Accident……？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Just in<FONT color=#a82424>Heermadai port</FONT>A piece of land near the right，They are now where the construction of Memorial Hall……<BR>
+But an accident？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-e" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Society of Gaunt adventurer$<BR>
+In order to construct buildings，Necessary excavation foundation……<BR><FONT color=#7e12d2>(Gunter Mozhexiaba，Seemed to find the right words)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-f" mid="17"><![CDATA[<html>Seal……？What seal？</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Society of Gaunt adventurer$<BR>
+In this process,，Accidentally buried in the ground<FONT color=#a82424>Seal</FONT>To destroy the……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-f" image="QM_Manticore.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-g" mid="19"><![CDATA[<html>If the lion scorpion……Is seen that points in the Kedella……？</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Society of Gaunt adventurer$<BR>This……Oh……<BR>Is the ancient seal of Warcraft<FONT color=#a82424>Lion scorpion</FONT>Seal，Ha ha……<BR>
+<FONT color=#7e12d2>(Gunter embarrassed smile)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-g" image="QM_Manticore.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-h" mid="21"><![CDATA[<html>The same species，Totally different？</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Yes。And<FONT color=#a82424>Rest in peace prayer Department</FONT>Of<FONT color=#a82424>Lion scorpion</FONT>The same species……<BR>
+But they are completely different……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="23"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Eat light of WarcraftⅠ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Society of Gaunt adventurer$<BR>
+Details of the content you ask<FONT color=#a82424>Heraldic scholars Stasi</FONT>It。<BR>
+So explain to you than I should be better……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-a" mid="28"><![CDATA[<html>Stasi……？</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Heraldic scholars Stasi$<BR><FONT color=#7e12d2>(Stasi is reading a title[</FONT><FONT color=#a82424>Ancient Warcraft</FONT><FONT color=#7e12d2>]Book，Title of the text is fine)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-b" mid="30"><![CDATA[<html>Yes，I heard the incident occurred Heermadai port……</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Heraldic scholars Stasi$<BR>
+Ah……？Ah，You ah。<BR>
+Is Gunter do you come to my？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-c" mid="32"><![CDATA[<html>You mean you have to quietly deal？</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Heraldic scholars Stasi$<BR>
+Hush！Keep it down。<BR>
+This is the result of an accident royal，If it leaks out，May Daoda Mei。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-c" image="QW_HermaltePort.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-d" mid="34"><![CDATA[<html>Yes，I heard the lion was roused the scorpion。</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Heraldic scholars Stasi$<BR>
+You just so loud，Estimated to spread out soon。But be careful always good，Hum……<BR>
+Actually，This is because the accident，To<FONT color=#a82424>Heermadai port</FONT>Sleeping<FONT color=#a82424>World of Warcraft</FONT>To wake up。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-e" mid="37"><![CDATA[<html>Ah……Good……</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Heraldic scholars Stasi$<BR>
+You already know, ah？Reckless guy who，Makes you chill……<BR>
+Ah，I say……！<BR>
+Ah ha，Just said，When you do not hear it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-e" image="QM_Manticore_black.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-f" mid="41"><![CDATA[<html>Lion Scorpion Lord……Clem……？</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Heraldic scholars Stasi$<BR>
+Oh……<BR>
+<FONT color=#7e12d2>(Stasi turned over that the name[</FONT><FONT color=#a82424>Ancient Warcraft</FONT><FONT color=#7e12d2>]Book)</FONT><BR>
+If this is true, then the contents of the book，Seal where，Should be<FONT color=#a82424>Scorpion lion lord Creme</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-f" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-g" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Long, long ago，Fall of the ancient people found the dragon&#39;s gem。After over a long time，Fall of the ancient people wake-up call<FONT color=#a82424>Black Dragon Callas</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-g" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-h" mid="46"><![CDATA[<html>Sage and Poseidon……？Who is Poseidon？</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Heraldic scholars Stasi$<BR>
+This is powerful black dragon，Enough to suddenly change the war situation。Before the advent of the Sage and Poseidon，Black Dragon hazards can be said too numerous to record。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-h" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-i" mid="50"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Heraldic scholars Stasi$<BR>
+Poseidon……Unfortunately，Compared to what she had done，History does not leave too much about her story。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-i" image="QM_Manticore_black.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-j" mid="52"><![CDATA[<html>Lions owner scorpion lord Creme？</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Heraldic scholars Stasi$<BR>
+<FONT color=#a82424>Poseidon</FONT>Sage&#39;s lover is。<BR>
+Yes，Also<FONT color=#a82424>Scorpion lion lord Creme</FONT>Master。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-j" image="QM_Manticore_black.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-k" mid="54"><![CDATA[<html>Why would seal it in Heermadai port？</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Heraldic scholars Stasi$<BR>You know，Lion scorpion ancient people created to protect the lives of their own body。Lion scorpion has the strongest power in the，Poseidon is created<FONT color=#a82424>Scorpion lion lord Creme</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-k" image="QM_Manticore_black.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-l" mid="56"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Heraldic scholars Stasi$<BR>That is because the fighting and the Black Dragon Callas。And the Black Dragon in battle，Scorpion lion lord of evil breath gradually contaminated。After the defeat of Black Dragon，Lord has a scorpion runaway lion。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-l" image="QM_Manticore_black.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-m" mid="58"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Poseidon does not have the heart to kill his lion scorpion。<BR>
+Because it has been accompanied by a sea god，Her faithful partner……<BR>So she put it seal the port in the vicinity of the present Heermadai。<BR>
+There waiting for her lover in the wake Sage。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-m" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-n" mid="61"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Heraldic scholars Stasi$<BR>She hoped that the ability to Sage，Can purify the fallen lion become scorpion。But Sage wounds sustained in combat too，Soon after he died。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-n" image="QM_Manticore_black.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-o" mid="63"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Lover&#39;s death to the god of the sea caused a huge blow，It is soon followed by Sage left the world。Then<FONT color=#a82424>Lion Scorpion Lord</FONT>On has been sealed with，Port sleeping in Heermadai。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-o" image="QS_Default.dds" itemindex="337838593">
+      <talk_answer link_index="n088_scholar_starshy-1-p" mid="66"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Heraldic scholars Stasi$<BR>To enter<FONT color=#a82424>Lion Scorpion Lord</FONT>Den，Need to have this thing。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-p" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-!next" mid="68"><![CDATA[<html><FONT color=#086171>(Rewarded)</FONT></html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5971,5972,5973,5974</exe>
+         <exe type="setquest">597</exe>
+         <exe type="talk" npc="n036_adventurer_guildmaster_gunter">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5971,5972,5973,5974</exe>
+         <exe type="complete">597</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="h">0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="g" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="h" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="i" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="j" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="k" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="l" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="m" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="n" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="o" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="p">0</exelink>
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="!next">1</exelink>
+   <journal_data recompense="1:5971,2:5972,3:5973,4:5974" quest_title="빛을 삼키는 마수Ⅰ" chapterid="" quest_level="40" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[Heermadai port accident]]></title>
+         <contents mid="71"><![CDATA[<html>Black Dragon is said to commemorate the raid on the construction of the memorial which the accident occurred during the，Heermadai port seal is solved。<BR>
+Go<FONT color=#a82424>Heraldic scholars Stasi</FONT>To find out detailed information it。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Heraldic scholars Stasi</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[Dialogue with the heraldic scholars Stasi]]></destination>
+         <todo_msg mid="73"><![CDATA[Please heraldic scholars Stasi dialogue。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>40:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

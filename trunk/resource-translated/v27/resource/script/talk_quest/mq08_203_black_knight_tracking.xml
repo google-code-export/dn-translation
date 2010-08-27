@@ -1,0 +1,480 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_203_black_knight_tracking</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>203</qid>
+      <designer>김주연</designer>
+      <qlevel>12</qlevel>
+      <qdesc>[퀘스트 플로우]
+1. 퍼거스와의 대화, 데커드에게 상황을 보고해달라고 함.
+2. 데커드와 대화, 검은 기사에 대한 추가정보 획득, 검은 기사가 숲의 성역으로 향했다는 정보를 입수.
+3. 숲의 성역에는 널부러진 모험자들만 있음. 보스를 물리치면 벨스커드가 로제를 이용해서 힘을 획득하고 사라짐.
+
+수행 레벨은 12, 퀘스트 표시가 끊기지 않게 하기 위해 11로 적음</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>204</nextqid>
+      <nextqname>mq08_204_swordwoman_with_siverblond</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[Tracking Black Knight]]></qkname>
+      <qnpc>
+         <npcid>108</npcid>
+         <npcename>n010_velskud</npcename>
+         <npckname>검은 기사 (벨스커드)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>23</npcid>
+         <npcename>n023_ranger_fugus</npcename>
+         <npckname>정찰병 퍼거스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>31</npcid>
+         <npcename>n031_adventurer_wilber</npcename>
+         <npckname>숲의 성역에 쓰러진 모험자 길드원. 윌버</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>53</npcid>
+         <npcename>n053_adventurer_wounded</npcename>
+         <npckname>부상당한 모험자</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>6</npcid>
+         <npcename>n006_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-1-levelcheck" mid="6"><![CDATA[<html>I can help。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Scout Fugu Si$<BR>Black Knight is also coveted<FONT color=#a82424>The power of the ancients</FONT>Ah……<BR>
+This may not work go。Society must be immediately and contact adventurer，Track<FONT color=#a82424>Black Knight</FONT>Whereabouts。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-a" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Scout Fugu Si$<BR>
+Thank you。Please pass this message<FONT color=#a82424>Kedella points</FONT>Of<FONT color=#a82424>Society of Dai Kade adventurer</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-b" image="" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$Scout Fugu Si$<BR>Thank you，But you seem not ready to deal with the preparation of strange creatures here。You&#39;d better have accumulated some experience，Then come back to help us。<BR>
+<FONT color=#7e12d2>（Must be12Level and above to perform tasks。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_ranger_fugus.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Crystal Valley to meet you<FONT color=#a82424>Scout Fugu Si</FONT>It</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n031_adventurer_wilber-1" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Association members adventurer Weber$<BR>Ah……Who……Who？<BR><FONT color=#7e12d2>(Because the injured，So look not so good)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n053_adventurer_wounded-1" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Wounded adventurer$<BR><FONT color=#7e12d2> (Looks like lost consciousness)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n010_velskud-1" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Black Knight$<BR>Step aside，Do not bother me！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n006_rose-1" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Wire basket$<BR><FONT color=#7e12d2> (Eyes blank atheism，Looks like being dominated by black knight)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-2" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Scout Fugu Si$<BR>You quickly to the news to Kedella crossing<FONT color=#a82424>Society of Dai Kade adventurer</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="15"><![CDATA[<html>Yes…….</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>You just come。<BR>Hear<FONT color=#a82424>Black Knight</FONT>Arise，Stole the girl？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="17"><![CDATA[<html>(Black Knight asked what)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Society of Dai Kade adventurer${action:Refusal}<BR>Ah……Because<FONT color=#a82424>Holy Paradise</FONT>And<FONT color=#a82424>Magic Ridge</FONT>The liner，I would like to rely on adventurers and quietly as possible to resolve the matter out……It seems this is a mistake。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-c" mid="19"><![CDATA[<html>(Asked what his followers Dragon)</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-e" mid="20"><![CDATA[<html>(Dragon&#39;s men asked what)</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-f" mid="21"><![CDATA[<html>(Asked more about the situation of the black knight)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Black Knight is the recent unidentified people。<BR>Some say black knights<FONT color=#a82424>Dragon followers</FONT>Or<FONT color=#a82424>Long&#39;s men</FONT>，But may be just a rumor。Very suspicious of his whereabouts。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-c" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-d" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Society of Dai Kade adventurer$<BR><FONT color=#a82424>Dragon followers</FONT>You？As stated in the letter，Group is to follow the dragon。Their teachings are subject to salvation can only be really long，A group of fanatical madman。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-d" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="25"><![CDATA[<html>(Asked about other things)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Society of Dai Kade adventurer${action:Talk}<BR>Unfortunately,，This crazy group in the power of the royal family can not match a remote place through the streets，To move around openly。<BR>Oh，Why would this world……Click one&#39;s tongue……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-e" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="27"><![CDATA[<html>(Asked about other things)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Society of Dai Kade adventurer${action:Talk}<BR>For<FONT color=#a82424>Long&#39;s men</FONT>，We know very little。<BR>Is said to be Long after people or Monster brainwashed，As his confidant。Some say that followers of Dragon Mission was founded by the hands of the dragon。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-f" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-g" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Recent sacred paradise army and Montenegro Monster often conflict，He is a frequent site of conflict emerged in the dangerous。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-g" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-h" mid="91"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>
+And，Will2Paradise from the sacred vessels bound for Kedella the airship destroyed by the person who is also his。Although the Black Knights do not know why the attacks on villages，But one thing is clear。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-h" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="31"><![CDATA[<html>(Asked about other things)</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-i" mid="32"><![CDATA[<html><FONT color=#a82424>Black Knight</FONT>Where now？</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>He is very coveted<FONT color=#a82424>The power of the ancients</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-i" image="QW_15.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-ix" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Society of Dai Kade adventurer${action:Refusal}<BR>Association of the investigation team is to see the Black Knight<FONT color=#a82424>Forest Sanctuary</FONT>Move。<BR>So I sent an ambush set。Wait and see……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-j" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-k" mid="36"><![CDATA[<html>……Should go<FONT color=#a82424>Forest Sanctuary</FONT>Look。</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Society of Dai Kade adventurer${action:Talk}<BR>Ah……Now……It may have to seize the Black Knight，To rescue a young girl。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-k" image="QW_15.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>
+Then go to visit it。<BR>
+<FONT color=#a82424>Forest Sanctuary</FONT>By Kedella North Gate<FONT color=#a82424>Gray ruins</FONT>Arrival。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-l" image="QW_15.dds" itemindex="">
+      <talk_question mid="83"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>You do not<FONT color=#a82424>Forest Sanctuary</FONT>The strength to survive。<BR>You go Kedella ready，More experience，Then come back to me……<BR><FONT color=#a82424>(12And above can perform。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QW_15.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>The Dark Knight will pass through the forest sanctuary。<BR>Along the north gate has been going Kedella，After<FONT color=#a82424>Gray ruins</FONT>Can be reached after<FONT color=#a82424>Forest Sanctuary</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-3" image="QW_15.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-3-a" mid="40"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Scout Fugu Si$<BR>Black Knight is to hear<FONT color=#a82424>Forest Sanctuary</FONT>Move。<BR>Association members adventurer set in the forest sanctuary of the ambush，Do not know will not go wrong。<BR><FONT color=#387206>{user_nick}</FONT>，Please go there to see。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-3-a" image="QW_15.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Scout Fugu Si$<BR><FONT color=#a82424>Forest Sanctuary</FONT>By Kedella North Gate<FONT color=#a82424>Gray ruins</FONT>Arrival。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n031_adventurer_wilber-4" image="" itemindex="">
+      <talk_answer link_index="n031_adventurer_wilber-4-a" mid="43"><![CDATA[<html>I come from Kedella。How like a？</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Association members adventurer Weber$<BR>Ah……Who……Who？<BR><FONT color=#7e12d2>(Because the injured，So look not so good)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n031_adventurer_wilber-4-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n031_adventurer_wilber-4-b" mid="45"><![CDATA[<html>The Right Girl？</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Association members adventurer Weber$<BR>Is the person who sent you the Society？Uh……We ambush here，Want ambushed Black Knight，But all is not his opponents。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n031_adventurer_wilber-4-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n031_adventurer_wilber-4-c" mid="47"><![CDATA[<html>Are you OK？</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Association members adventurer Weber$<BR>You say, and black knight with the red hair girl you？<BR>Black Knight with her to go inside the monastery……After the things I do not know……Uh……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n031_adventurer_wilber-4-c" image="" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Association members adventurer Weber$<BR>Ah……I&#39;m fine，To help you inside the bar association members……<BR><FONT color=#7e12d2>(Because of the accident，Seems very difficult to speak)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n053_adventurer_wounded-4" image="" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$Wounded adventurer$<BR>I&#39;m fine，Look inside you to help catch The Dark Knight companions bar……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n031_adventurer_wilber-5" image="" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Association members adventurer Weber$<BR>I&#39;m fine，To help you inside the bar association members……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-6" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-6-a" mid="52"><![CDATA[<html>(Note once again from beginning to end things)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Society of Dai Kade adventurer${action:Refusal}<BR>Ah……Ambush troops will not Quanmie the bar……<BR>It seems<FONT color=#a82424>Black Knight</FONT>Much better than I expected。<BR>Are you OK？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-6-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-6-b" mid="88"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-6-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-6-!next" mid="90"><![CDATA[<html>You know who?</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>After you are struck down by the black knight，A woman wearing a red robe of silver knight to save you？<BR><FONT color=#a82424>Seniors female swordsman</FONT>If，She should be……</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">12</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="0,1,4" false="3">0</exe>
+         <exe type="talk" npc="n023_ranger_fugus">b</exe>
+         <exe type="talk" npc="n023_ranger_fugus">a</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">12</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">j</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">l</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="msg" msg_type="" substring="" />
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="6,4,5">395</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">203</exe>
+         <exe type="recompense">,2031,2032,2033,2034</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="levelcheck">2</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="c" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="e" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="f" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="d" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="g" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="h" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="i" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="ix">2</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="k">0,1</exelink>
+   <exelink qstep="4" npc="n031_adventurer_wilber" sub="b" />
+   <exelink qstep="4" npc="n031_adventurer_wilber" sub="c">3,1,2</exelink>
+   <exelink qstep="6" npc="n024_adventurer_guildmaster_decud" sub="a">1</exelink>
+   <exelink qstep="6" npc="n024_adventurer_guildmaster_decud" sub="b">0</exelink>
+   <exelink qstep="6" npc="n024_adventurer_guildmaster_decud" sub="!next" />
+   <journal_data recompense="1:2031,2:2032,3:2033,4:2034" quest_title="검은 기사 추적" chapterid="2" quest_level="12" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_ranger_fugus.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,335,-26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>23</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>수정 개울</get_location>
+         <start_npc>정찰병 퍼거스</start_npc>
+         <desc_location>수정 개울</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>정찰병 퍼거스</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[And scout Fugu Si dialogue]]></title>
+         <contents mid="58"><![CDATA[<html>Tell Crystal Valley<FONT color=#a82424>Scout Fugu Si</FONT>Black Knight appeared。<BR><FONT color=#7e12d2>※ 12Level and above to perform tasks。</FONT><BR><FONT color=#086171></FONT><BR><FONT color=#086171>Crystal Valley </FONT><FONT color=#a82424>→ Scout Fugu Si</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[（Lv12）Dialogue with the scout Fugu Si]]></destination>
+         <todo_msg mid="60"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>수정 개울</get_location>
+         <start_npc>정찰병 퍼거스</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>모험자 길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Society of Daika De dialogue and adventurer]]></title>
+         <contents mid="62"><![CDATA[<html>The Black Knight appears and tells Kedella crossing news<FONT color=#a82424>Society of Dai Kade adventurer</FONT>。<BR><BR><FONT color=#086171>Kedella points </FONT><FONT color=#a82424>→ Society of Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Society of Daika De dialogue and adventurer]]></destination>
+         <todo_msg mid="64"><![CDATA[Please to meet Society of Dai Kade adventurer。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_15.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>121,-1240.67,-1940.76</destination_pos>
+         <destination_mode>custom:121@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>모험자 길드장 데커드</start_npc>
+         <desc_location>숲의 성역</desc_location>
+         <step_action>지역 이동(숲의 성역 진입)</step_action>
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[Into the forest sanctuary]]></title>
+         <contents mid="66"><![CDATA[<html>Black Knight with a girl reportedly，Go to the forest sanctuary。<BR>Barriers through the North door Kedella，Pass through<FONT color=#a82424>Gray ruins</FONT>，Move to<FONT color=#a82424>Forest Sanctuary</FONT>。<BR><BR><FONT color=#086171>Gray ruins(The Sacred invasion of entry)</FONT> <FONT color=#a82424>→ Forest Sanctuary</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[Into the forest sanctuary]]></destination>
+         <todo_msg mid="68"><![CDATA[Please go to track black knight forest sanctuary。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Adventure_Wilber.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>121,27,3133</destination_pos>
+         <destination_mode>custom:121@1</destination_mode>
+         <statemark_npcid>31</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>숲의 성역 (진입 입구)</get_location>
+         <start_npc />
+         <desc_location>숲의 성역</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>모험자 길드원 윌버</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[Association of Forest Sanctuary and adventurers to the members of the dialogue Weber]]></title>
+         <contents mid="70"><![CDATA[<html>And lie in wait<FONT color=#a82424>Forest Sanctuary</FONT>Of<FONT color=#a82424>Association members adventurer Weber</FONT>Dialogue，Asked about the whereabouts of the black knight。<BR><BR><FONT color=#086171>Gray ruins(The Sacred invasion of entry)</FONT><FONT color=#a82424> → Forest Sanctuary</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[Association of Forest Sanctuary and adventurers to the members of the dialogue Weber]]></destination>
+         <todo_msg mid="72"><![CDATA[Please chase the black knight member of the Association adventurers Weber dialogue。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QM_GargoyleGray.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>124,-142.62,767.80</destination_pos>
+         <destination_mode>custom:121@1,122@1,123@1,124@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location>숲의 성역</get_location>
+         <start_npc>모험자 길드원 윌버</start_npc>
+         <desc_location>숲의 성역</desc_location>
+         <step_action>사냥</step_action>
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster>가고일</hunt_monster>
+         <hunt_monsterindex>395</hunt_monsterindex>
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[Sacred to the forest to track the black knight]]></title>
+         <contents mid="74"><![CDATA[<html>Black Knight is said to bring girls into the forest sanctuary。<BR>Go<FONT color=#a82424>Forest Sanctuary</FONT>Which track the black knight。<BR><BR><FONT color=#086171>Gray ruins(The Sacred invasion of entry)</FONT> <FONT color=#a82424>→ Forest Sanctuary</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[Sacred to the forest to track the black knight]]></destination>
+         <todo_msg mid="76"><![CDATA[Please go to track black knight forest sanctuary。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>숲의 성역</get_location>
+         <start_npc />
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>모험자 길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Dai Kade report to the Society of Adventurers]]></title>
+         <contents mid="78"><![CDATA[<html>Black Knight met，However, the attack was the black knight，Loss of consciousness，Was sent to the Kedella points。<BR>To<FONT color=#a82424>Society of Dai Kade adventurer</FONT>Asked about the case from beginning to end。 <BR><BR><FONT color=#086171>Kedella points </FONT><FONT color=#a82424>→ Society of Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Dai Kade report to the Society of Adventurers]]></destination>
+         <todo_msg mid="80"><![CDATA[Please report to the adventurer guild Dai Kade。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level>-1:-1</user_worldzone_level>
+      <user_class />
+      <prev_quest>202</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

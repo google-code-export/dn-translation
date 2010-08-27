@@ -1,0 +1,222 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_104_orb_of_vision2</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>104</qid>
+      <designer>곽노찬</designer>
+      <qlevel>3</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>105</nextqid>
+      <nextqname>mq05_105_orb_of_vision3</nextqname>
+      <nextqnpc>n020_sorceress_yullia</nextqnpc>
+      <qkname mid="1"><![CDATA[Secret of the ballⅡ]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>161</npcid>
+         <npcename>n161_sorceress_cecilia</npcename>
+         <npckname>소서리스 세실리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>19</npcid>
+         <npcename>n019_sorceress_fallen</npcename>
+         <npckname>쓰러진 소서리스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>20</npcid>
+         <npcename>n020_sorceress_yullia</npcename>
+         <npckname>소서리스 율리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>21</npcid>
+         <npcename>n021_sorceress_fallen</npcename>
+         <npckname>쓰러진 소서리스02</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>22</npcid>
+         <npcename>n022_sorceress_fallen</npcename>
+         <npckname>쓰러진 소서리스03</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="QW_8.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR>Go<FONT color=#a82424>Paleilinuo rest Department</FONT>Found<FONT color=#a82424>Secret of the ball</FONT>。<BR>Open<FONT color=#a82424>Seal the room</FONT>Of<FONT color=#a82424>Key</FONT>The magician who。<BR>Time to lose，Dragon open the seal in the room before his followers！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n019_sorceress_fallen-1" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Fallen wizard$<BR><FONT color=#7e12d2>(Seems to have lost consciousness)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n161_sorceress_cecilia-1" image="" itemindex="">
+      <talk_answer link_index="n161_sorceress_cecilia-1-a" mid="8"><![CDATA[<html>You wake up you？Is Cynthia I come。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Magician Cecilia$<BR>Uh……You……Who are you……？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n161_sorceress_cecilia-1-a" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n161_sorceress_cecilia-1-b" mid="10"><![CDATA[<html>If no problem。What happened？</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Magician Cecilia$<BR>Ah，<FONT color=#a82424>Cynthia</FONT>……Uh，<FONT color=#a82424>Secret of the ball</FONT>Still do？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n161_sorceress_cecilia-1-b" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n161_sorceress_cecilia-1-c" mid="12"><![CDATA[<html>Red mask……！Dragon followers finally emerged。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Magician Cecilia$<BR>To Paleilinuo rest to recover when the secret of the ball……<BR>Wearing<FONT color=#a82424>Red mask</FONT>People with<FONT color=#a82424>Minotaur</FONT>We attacked。<BR>Uh……Fortunately, they seem to did not make the<FONT color=#a82424>Seal the room</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n161_sorceress_cecilia-1-c" image="QS_Default.dds" itemindex="300146">
+      <talk_answer link_index="n161_sorceress_cecilia-2" mid="14"><![CDATA[<html>Where blue Oath？</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Magician Cecilia$<BR>Ah，It turned out that the individual is<FONT color=#a82424>Dragon followers</FONT>……！Ah……<BR>Open the seal of the door of room，Need to use is called<FONT color=#a82424>Red Contract</FONT>And<FONT color=#a82424>Blue Oath</FONT>The two key。I kept my<FONT color=#a82424>Red Contract</FONT>You。<BR><FONT color=#7e12d2>(Cecilia pulled from the arms of the red contract)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n020_sorceress_yullia-1" image="QW_ManaRidge.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Magician You Liya$<BR>Ah ah………Must quickly return to<FONT color=#a82424>Magic Ridge</FONT>……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n021_sorceress_fallen-1" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Fallen wizard$<BR><FONT color=#7e12d2>(Seems to have lost consciousness)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n022_sorceress_fallen-1" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Fallen wizard$<BR><FONT color=#7e12d2>(Seems to have lost consciousness)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n161_sorceress_cecilia-2" image="QN_Npc_FallenSoceress.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Magician Cecilia$<BR><FONT color=#a82424>Blue Oath</FONT>In<FONT color=#a82424>Magician You Liya</FONT>There。She hid the rest in office outside Paleilinuo，But the injured leg，Should not come to magic mountain ridge。<BR>
+Please go to<FONT color=#a82424>Melting Forest</FONT>Search <FONT color=#a82424>Magician You Liya</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n020_sorceress_yullia-2" image="" itemindex="">
+      <talk_answer link_index="n020_sorceress_yullia-2-a" mid="20"><![CDATA[<html>辛西亚拜托 I have to find the secret of the ball。</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Magician You Liya$<BR>Ha ha……Must quickly return to<FONT color=#a82424>Magic Ridge</FONT>……<BR>……？You，Who are you……？<BR><FONT color=#7e12d2>(You Liya magician cast me wary eye)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n020_sorceress_yullia-2-a" image="" itemindex="">
+      <talk_answer link_index="n020_sorceress_yullia-2-b" mid="22"><![CDATA[<html>(Note once again from beginning to end things)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Magician You Liya$<BR>You look like<FONT color=#a82424>Pastor</FONT>……<BR>The teacher asked you to come to the ball secret？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n020_sorceress_yullia-2-b" image="QN_Npc_FallenSoceress.dds" itemindex="">
+      <talk_answer link_index="n020_sorceress_yullia-2-c" mid="24"><![CDATA[<html>Yes。She told me you were here。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Magician You Liya$<BR><FONT color=#a82424>Dragon followers</FONT>……？Ha ha……<BR><FONT color=#a82424>Cecilia</FONT>……<FONT color=#a82424>Cecilia</FONT>Okay？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n020_sorceress_yullia-2-c" image="QS_Default.dds" itemindex="300147">
+      <talk_answer link_index="n020_sorceress_yullia-2-d" mid="26"><![CDATA[<html>Thank you。</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Magician You Liya$<BR>Ah……Really nice……<BR>
+To open the<FONT color=#a82424>Seal the room</FONT>，Must have the<FONT color=#a82424>Blue Oath</FONT>。I give it to you，Please make sure<FONT color=#a82424>Secret of the ball</FONT>Security sent magic ridge。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n020_sorceress_yullia-2-d" image="" itemindex="">
+      <talk_answer link_index="n020_sorceress_yullia-2-!next" mid="28"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300146</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">104</exe>
+         <exe type="addquestitem" num="1">300147</exe>
+         <exe type="recompense">1040,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n161_sorceress_cecilia" sub="b" />
+   <exelink qstep="1" npc="n161_sorceress_cecilia" sub="c" />
+   <exelink qstep="1" npc="n161_sorceress_cecilia" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n020_sorceress_yullia" sub="b" />
+   <exelink qstep="2" npc="n020_sorceress_yullia" sub="c" />
+   <exelink qstep="2" npc="n020_sorceress_yullia" sub="d">2</exelink>
+   <exelink qstep="2" npc="n020_sorceress_yullia" sub="!next">0,1</exelink>
+   <journal_data recompense="1040" quest_title="비전의 오브Ⅱ" chapterid="1" quest_level="3" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_8.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>88,n161</destination_pos>
+         <destination_mode>custom:86@1,87@1,88@1</destination_mode>
+         <statemark_npcid>161</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="29"><![CDATA[Cecilia dialogue and magician]]></title>
+         <contents mid="30"><![CDATA[<html>Cynthia said that the seal was opened<FONT color=#a82424>Secret of the ball</FONT>Rooms need keys。Keys<FONT color=#a82424>Paleilinuo rest Department</FONT>The magician who fell。<BR><BR><FONT color=#086171>Melting Forest(Magician of the Road)</FONT> <FONT color=#a82424>→ Paleilinuo rest Department</FONT></html>]]></contents>
+         <destination mid="31"><![CDATA[To Paleilinuo rest Cecilia dialogue Department and the magician]]></destination>
+         <todo_msg mid="32"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_FallenSoceress.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>7,n20</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>20</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="34"><![CDATA[To melt the forest and the sorcerer You Liya dialogue]]></title>
+         <contents mid="35"><![CDATA[<html><FONT color=#a82424>Magician Cecilia</FONT>To open the sealed doors that，Needs called<FONT color=#a82424>Red Contract</FONT>And<FONT color=#a82424>Blue Oath</FONT>The two key。<BR><FONT color=#a82424>Blue Oath</FONT>In<FONT color=#a82424>Melting Forest</FONT>Of<FONT color=#a82424>Magician You Liya</FONT>Body。To find her。<BR><BR><FONT color=#086171>Melting Forest</FONT> <FONT color=#a82424>→ Magician You Liya</FONT></html>]]></contents>
+         <destination mid="36"><![CDATA[To melt the forest and the sorcerer You Liya dialogue]]></destination>
+         <todo_msg mid="37"><![CDATA[Please go to the forest and the magician You Liya dialogue melt]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>103</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

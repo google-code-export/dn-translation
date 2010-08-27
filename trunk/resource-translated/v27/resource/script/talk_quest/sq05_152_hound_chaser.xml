@@ -1,0 +1,237 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq05_152_hound_chaser</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>152</qid>
+      <designer>곽노찬</designer>
+      <qlevel>5</qlevel>
+      <qdesc>300090(포획한 하운드)</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Tracking Hound]]></qkname>
+      <qnpc>
+         <npcid>17</npcid>
+         <npcename>n017_trader_jeny</npcename>
+         <npckname>상인 제니  (마나리 잡화상)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-accepting" image="" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-accepting-a" mid="7"><![CDATA[<html>What do you？</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant Jenny$<BR>Ah……This how to do it……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-accepting-a" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-accepting-b" mid="9"><![CDATA[<html>So that……</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant Jenie$<BR>Ah，Adventurer……Not the other，A few days ago bought a blacksmith&#39;s grandfather<FONT color=#a82424>Match type dogs</FONT>……But it bite through the fence to escape the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-accepting-b" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-accepting-c" mid="11"><![CDATA[<html>Ah？ Fled to where they are going？</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant Jenie${action:Talk}<BR>Although we chase out，But since unknowingly ran to the danger zone，So forced back……<BR>The hound is a special order grandfather，Can not be used for other dogs with him，So I am very worried……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-accepting-c" image="QW_9.dds" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-accepting-d" mid="13"><![CDATA[<html>Good，I go and find it。</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant Jenny${action:Talk}<BR>We saw that it ran<FONT color=#a82424>Silent monastery cloister</FONT>，But do not know specifically where。<BR>Adventurer，Can you help me to find what you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Tracking Hound$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-1" image="" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-2" mid="74"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Merchant Jenie$<BR>Ah，Really right？Wow～Thank you！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-2" image="QM_Hound_ice.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Merchant Jenny${action:Talk}<BR>Please go to<FONT color=#a82424>Silent monastery cloister</FONT>Found<FONT color=#a82424>Hound</FONT>，And then brought it back。Be careful you，Do not monster killed by other。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-3" image="QM_Hound_ice.dds" itemindex="">
+      <talk_question mid="105"><![CDATA[<html>$Merchant Jenny${action:Talk}<BR>Please go to<FONT color=#a82424>Silent monastery cloister</FONT>Found<FONT color=#a82424>Hound</FONT>，And then brought it back。Be careful you，Do not monster killed by other。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-4" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-4-a" mid="107"><![CDATA[<html>(Jenny beaten hound)</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$Merchant Jenie${action:Talk}<BR>Ah，You escape<FONT color=#a82424>Hound</FONT>Back 来啦！Adventurer～Really Thank you！Hei hei……<BR>Oops……You this guy！I so worried……Ha，I&#39;ll have to teach you a lesson！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-4-a" image="" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-4-b" mid="111"><![CDATA[<html>Thank you so much</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Merchant Jenie$<BR> Oops，Look at my memory……Almost forgot to give you the payment of the。Ha ha～<BR> To，This is to thank you，Thank you for helping me to find back hound～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-4-b" image="" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-4-c" mid="113"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-4-c" image="" itemindex="">
+      <talk_question mid="114"><![CDATA[<html>$Merchant Jenny$<BR>
+Thank you always to help me。Well，I had to quickly wash it，And then to the blacksmith grandfather sent in the past。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">152</exe>
+         <exe type="recompense_view">,1521,1521,1522,1522</exe>
+         <exe type="talk" npc="n017_trader_jeny">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5">270</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300090</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">3</exe>
+         <exe type="msg" msg_type="6" substring="">1240020</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,1521,1521,1521,1522</exe>
+         <exe type="delquestitem" num="-1">300090</exe>
+         <exe type="complete">152</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n017_trader_jeny" sub="d">1</exelink>
+   <exelink qstep="accepting" npc="n017_trader_jeny" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n017_trader_jeny" sub="2">0,1,2,3</exelink>
+   <exelink qstep="4" npc="n017_trader_jeny" sub="b">0</exelink>
+   <exelink qstep="4" npc="n017_trader_jeny" sub="c">1,2</exelink>
+   <journal_data recompense="3:1521,4:1522" quest_title="하운드 추적" chapterid="" quest_level="5" quest_mark_type="10" use_item_list="300090">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Sonya.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-1019.43,254.18</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>17</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>마나리지</get_location>
+         <start_npc>상인 제니</start_npc>
+         <desc_location>마나리지</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>상인 제니</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Hound escaped!]]></title>
+         <contents mid="55"><![CDATA[<html><FONT color=#a82424>Merchant Jenie</FONT>Order that there shall bite dogs escaped through a fence，I helped to find。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Merchant Jenie</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[Jenny dialogue and businessmen]]></destination>
+         <todo_msg mid="57"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_Hound_ice.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>93,0,0</destination_pos>
+         <destination_mode>custom:91@1,92@1,93@2</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location>마나리지</get_location>
+         <start_npc>상인 제니</start_npc>
+         <desc_location>고요한 수도원 회랑</desc_location>
+         <step_action>사냥</step_action>
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster>하운드</hunt_monster>
+         <hunt_monsterindex />
+         <collect_item>포획한 하운드</collect_item>
+         <collect_itemindex>90</collect_itemindex>
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[Hound escape capture]]></title>
+         <contents mid="59"><![CDATA[<html>Go<FONT color=#a82424>Silent monastery cloister</FONT>Looking for escape<FONT color=#a82424>Hound</FONT>，And then passed<FONT color=#a82424>Merchant Jenie</FONT>。<BR><BR><FONT color=#086171>Melting Forest(Silent monastery entrance)</FONT> <FONT color=#a82424>→ Silent monastery cloister</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[To capture the dogs quiet monastery cloister]]></destination>
+         <todo_msg mid="61"><![CDATA[Go to gallery to capture the dogs quiet monastery。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Sonya.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-1019.43,254.18</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>17</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location>고요한 수도원 회랑</get_location>
+         <start_npc />
+         <desc_location>마나리지</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>상인 제니</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[Capture complete！]]></title>
+         <contents mid="84"><![CDATA[<html>Finally found the escape<FONT color=#a82424>Hound</FONT>，Safe from<FONT color=#a82424>Silent monastery cloister</FONT>Brought back。Hound to the magic of the ridge<FONT color=#a82424>Merchant Jenie</FONT>。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Merchant Jenie</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[Jenny dialogue and businessmen]]></destination>
+         <todo_msg mid="86"><![CDATA[Successfully capture the hound。Please go back to see businessmen Jenny。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>5:-1</user_level>
+      <user_worldzone_level />
+      <user_class>3:4</user_class>
+      <prev_quest>151</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

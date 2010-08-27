@@ -1,0 +1,239 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_312_valley_of_lament</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>312</qid>
+      <designer>곽노찬</designer>
+      <qlevel>10</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Canyon Remains]]></qkname>
+      <qnpc>
+         <npcid>270</npcid>
+         <npcename>n270_invisible</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（The task did not meet the criteria）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Bulletin$<br>Over the task of implementation，Temporarily unable to accept the task of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Bulletin$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Bulletin$<br>Task with a backpack full。<br>（Please order as soon as possible backpack）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n270_invisible-noquest" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Ancient Text$<BR>
+<FONT color=#7e12d2>（Can not read the text written，Points of the heraldic scholars to Kedella ask Kanba Bailey）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-a" mid="6"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Heraldic scholars Bailey$<BR>I have solved the dark wizard&#39;s code word。<BR>
+It is as the Son。<BR>
+<FONT color=#7e12d2>（Bailey gives the file）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-b" mid="8"><![CDATA[<html>Is not want to use the ancient relic to judge people?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Code word$<BR>"<FONT color=#a82424>Confirmed to be regarded as descendants of the ancient people of girls</FONT>"<BR>
+"<FONT color=#a82424>Confirm the authenticity of relics sigh Canyon</FONT>"</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-c" mid="10"><![CDATA[<html>Ah，So that remains of what function ah?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Heraldic scholars Bailey$<BR>According to legend, the ancient priests have to control all the power of relics and weapons。If that girl really is, then the descendants of ancient people，Will show some kind of response remains。Monster, they may just want to confirm that the reaction bar。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-c" image="QW_14.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-d" mid="12"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Heraldic scholars Bailey$<BR>In fact，I just want to please you to check this problem。Is the possibility to investigate in<FONT color=#a82424>Canyon sigh</FONT>In<FONT color=#a82424>Remains</FONT>Use ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-e" mid="27"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Canyon Remains$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-e" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Remains a place of their functions will certainly be implied<FONT color=#a82424>Ancient Text</FONT>Or lines。Please look carefully investigated，Then come back and tell me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QW_14.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Then，Went to investigate to see<FONT color=#a82424>Canyon sigh</FONT>Of<FONT color=#a82424>Remains</FONT>Are there<FONT color=#a82424>Ancient Text</FONT>Let the fire lines。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n270_invisible-1" image="" itemindex="">
+      <talk_answer link_index="n270_invisible-2" mid="28"><![CDATA[<html>（Copying text）</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Ancient Text$<BR><FONT color=#7e12d2>（Can not read the text written。Bailey seems to heraldic scholars referred to the ancient text）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n270_invisible-2" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Ancient Text$<BR><FONT color=#7e12d2>（Has a good record of the ancient text，Bailey to heraldic scholars see it）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-a" mid="32"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Back again。<BR>Identification of remains in the text of the right。<BR>
+<FONT color=#7e12d2>（Bailey explained that ancient text）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-b" mid="41"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$The contents of the ancient text$<BR><FONT color=#a82424>Wheel of Fortune will come in time of the Prophet，Re-issue of light。</FONT><BR><FONT color=#a82424>Only successor to know that day yo。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-c" mid="45"><![CDATA[<html>You know what it means?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$The contents of the ancient text$<BR><FONT color=#a82424>Descendants of the brave，Groups from the mean red and black wings to help in rescue Prophet Bar。</FONT><BR><FONT color=#a82424></FONT><BR>- <FONT color=#7e12d2>Bi Sasi 阿罗诺比乌斯</FONT> -</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-d" mid="47"><![CDATA[<html>Another prediction?</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Bisa Si in the ancient language is<FONT color=#a82424>Sage</FONT>，阿罗诺比乌斯 is<FONT color=#a94407>Sage Aronaud</FONT>Name。<BR>What a surprise…。<BR>This is another left Sage<FONT color=#a82424>Prophecy</FONT>Then</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-e" mid="34"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Yes。Here<FONT color=#a82424>Wheel of Fortune to shine and shine</FONT>The statement refers to react when the Prophet and the remains of the period。And<BR><FONT color=#a82424>Successor</FONT>Refers to the disciples inherited Sage Wand。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-e" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-f" mid="37"><![CDATA[<html>Is not the black knight ah hijacked prophets?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Heraldic scholars Bailey$<BR>But，Unknown<FONT color=#a82424>Black wings</FONT>What does it mean。Dirty red group should be referring to the red eagle body and Monster have it，But if the black wings…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-f" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-g" mid="50"><![CDATA[<html>The Dark Knight and what relationship do the red group…。</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Under the present circumstances，That is the most reasonable estimate of the。Sage left a warning prophecy，Has been found in the incidents have happened before，Ah not really taste。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-g" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-h" mid="52"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Yes ah…Since the paper brought a red and black wings gang，That is definitely the black knight and the Monster in cahoots。But still not sure ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-h" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-i" mid="54"><![CDATA[<html><FONT color=#086171>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-i" image="" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Call… The secret hidden in the ruins to unlock though，But unfortunately we did not find out the true value remains。<BR>
+If people do not find the flowing blood of the ancient prophets，Canyon would still be full of doubt remains…。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">312</exe>
+         <exe type="recompense_view">,3121,3122,3123,3124</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">312</exe>
+         <exe type="recompense">,3121,3122,3123,3124</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="d">1</exelink>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="e">0</exelink>
+   <exelink qstep="1" npc="n270_invisible" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="e" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="f" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="g" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="h">1</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="i">0</exelink>
+   <journal_data recompense="1:3121,2:3122,3:3123,4:3124" quest_title="협곡의 유적" chapterid="" quest_level="10" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_14.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>119,n270</destination_pos>
+         <destination_mode>custom:116@1,117@1,118@1,119@1</destination_mode>
+         <statemark_npcid>270</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Canyon Remains]]></title>
+         <contents mid="60"><![CDATA[<html>Sigh valley girl baskets to investigate the remains of silk it was trapped。<BR>
+ <BR>
+<FONT color=#086171>Crystal Valley （Sigh Canyon entrance）</FONT> <FONT color=#a82424>→ Canyon sigh</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Investigation remains sigh Canyon]]></destination>
+         <todo_msg mid="62"><![CDATA[Add a task。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[Remains secret]]></title>
+         <contents mid="64"><![CDATA[<html>Well, have been recorded in ancient remains of the text。Back Kedella barrier coat of arms, where it academics Bailey。<BR>
+ <BR>
+<FONT color=#086171>Kedella points →</FONT> <FONT color=#a82424>Heraldic scholars Bailey</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[Dialogue with the coat of arms Bailey Scholars]]></destination>
+         <todo_msg mid="66"><![CDATA[Back Kedella barrier coat of arms, where it academics Bailey。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>202:311</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

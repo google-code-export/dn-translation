@@ -1,0 +1,452 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_309_hapless_thief</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>309</qid>
+      <designer>김인정</designer>
+      <qlevel>18</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Unlucky thief]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>266</npcid>
+         <npcename>n266_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（The task did not meet the criteria）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Bulletin$<br>Over the task of implementation，Temporarily unable to accept the task of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Bulletin$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Bulletin$<br>Task with a backpack full。<br>（Please order as soon as possible backpack）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Consumables business Mee$<BR>Hum~The guy stole my food，If I caught it by ！！<BR><FONT color=#7e12d2>（Tina in high office given the task of the magician）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-noquest" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Stealth thief$<BR>This abominable taste，How to do it Well? In the end who is doing the kind of strange dishes！Why！Ah such a food will do！<BR><FONT color=#7e12d2>（Tina in high office given the task of the magician）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-a" mid="8"><![CDATA[<html>Me？</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Senior magician Tina${action:talk}<BR>Magician who really can not tolerate the Holy Land<FONT color=#a82424>佩奥里斯塔 Magic Institute</FONT>Emit that smell ah。<BR>I 倒是 also heard that a thief by the…Although some reluctance，You may wish to do<FONT color=#a82424>Odor remover</FONT>How ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-a" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-b" mid="10"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Senior magician Tina$<BR>This is fairly trivial matter thief，The key is<FONT color=#a82424>佩奥里斯塔 Magic Institute</FONT> It is not a garbage dump，Can not allow this to go on the taste of any of its distribution?<BR>I will give you unpaid。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-c" mid="12"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Unlucky thief$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-c" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Senior magician Tina$<BR>Odor remover by<FONT color=#a82424>Consumables business Mee</FONT>Make。<BR>But recently she was very keen on making dishes then，Not know who she has no time to do。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-a" mid="16"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Senior magician Tina$<BR>Odor remover by<FONT color=#a82424>Consumables business Mee</FONT>Make。<BR>But recently she was very keen on making dishes then，Not know who she has no time to do。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-a" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Senior magician Tina${action:talk}<BR>Last is<FONT color=#a82424>Consumables business Mee</FONT>Did the dog&#39;s feeding，To cause very much trouble here…。<BR>Who is doing the kind of thing in the end ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Consumables business Mee$<BR>Hum~The guy stole my food，If I caught it by！！<BR><FONT color=#7e12d2>（Dialogue with senior magician Tina）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-1" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Stealth thief$<BR>This abominable taste，How to do it Well? In the end who is doing the kind of strange dishes！Why！Ah such a food will do！<BR><FONT color=#7e12d2>（Need to dialogue with the senior magician Tina）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Senior magician Tina$<BR>Last is<FONT color=#a82424>Consumables business Mee</FONT>Did the dog&#39;s feeding，To cause very much trouble here…。<BR>Who is doing the kind of thing in the end ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-a" mid="22"><![CDATA[<html>（Mee bow and thinking about）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Consumables business Mee${action:talk}<BR>Ah? <FONT color=#a82424>The dog&#39;s feeding</FONT>?<BR>…God，I have not done the kind of food ah，Who is it in the end? Who Should be<FONT color=#a82424>Pourailly town</FONT>Of<FONT color=#a82424>Doris</FONT>The cheat，Bought her recipe not a?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-b" mid="24"><![CDATA[<html>（Mee read the book strange dishes）</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Consumables business Mee$<BR>In short，I will do<FONT color=#a82424>Ultra-strong lotion</FONT>。<BR>But this time things may make you eat ah，I need some…。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-b" image="QS_Default.dds" itemindex="400108">
+      <talk_answer link_index="n026_trader_may-2-c" mid="26"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Consumables business Mee$<BR><FONT color=#7e12d2>（Mee taken together the「Goddess Recommended~Butter food life~」）<BR></FONT>Can I get some help<FONT color=#a82424>Blizzard dwarf spider liquid</FONT>Ah? I am too busy to get away it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-d" mid="28"><![CDATA[<html>So that，Where to go out ah?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Consumables business Mee${action:Angry}<BR>Ah~What a fool I was cooking the General Assembly to prepare to steal the whole thing?<BR>
+See how I pack up his！！Damn thieves！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-d" image="QM_Spider_Black.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Consumables business Mee$<BR>In<FONT color=#a82424>佩奥里斯塔 Magic Institute</FONT>Captured<FONT color=#a82424>Blizzard dwarf tarantula</FONT>Can the。<BR>If you get20Or so it，I can do them for you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QW_21.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Consumables business Mee$<BR>In<FONT color=#a82424>佩奥里斯塔 Magic Institute</FONT>Captured<FONT color=#a82424>Blizzard dwarf tarantula</FONT>Can the。<BR>If you get20Or so it，I can do them for you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3" image="QW_21.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Senior magician Tina$<BR>Looked for the right Mee?<BR>In short，Must prevent<FONT color=#a82424>佩奥里斯塔 Magic Institute</FONT>Continue to disseminate <FONT color=#a82424>The dog&#39;s feeding</FONT>Flavor，Go nuts。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-3" image="" itemindex="">
+      <talk_answer link_index="n266_invisible_thief-3-a" mid="33"><![CDATA[<html>Are trying to do，Endure it no longer brook 1。</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Stealth thief$<BR>Hum~The smell of this abominable haunt me …I can either stealth，Monster had long been eaten。<BR>
+Really！！How like a lotion?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-3-a" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Stealth thief$<BR>I will patiently wait for，You can Kuaidian A！Ah~Monster go again，Indeed the。<BR><FONT color=#7e12d2>（Ah really is a cheeky thief）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-a" mid="36"><![CDATA[<html>（Submit spider liquid）</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Consumables business Mee${action:talk}<BR>Ah~Busy，忙死 the~<BR>It was quickly made dishes Caixing~ Hey，In the end who stole my food ah?If you want to eat，Well like I say。Hey~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-a" image="QS_Default.dds" itemindex="300215">
+      <talk_answer link_index="n026_trader_may-5" mid="38"><![CDATA[<html>（Seems humans can not eat）</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Consumables business Mee$<BR>Ah！Wait a moment~ Almost done… <FONT color=#7e12d2>（The suspect in the boiling liquid in the free liquid into a spider，Begin to change color）</FONT> …Rights to complete！Oh, there may be side effects，I would not have done experiments，Hei hei。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5" image="QW_21.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Consumables business Mee$<BR>It Goodbye~<BR><FONT color=#7e12d2>（Institute was then 佩奥里斯塔 magic go stealthy thief）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-5" image="" itemindex="">
+      <talk_answer link_index="n266_invisible_thief-5-a" mid="41"><![CDATA[<html>This…. （The taste is also Hong ah?！）</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Stealth thief$<BR>Back again? What<FONT color=#a82424>Fragrance</FONT>Then，It should bring it?<BR>Is to me from this<FONT color=#a82424>Stench</FONT>Were rescued lotion ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-5-a" image="" itemindex="">
+      <talk_answer link_index="n266_invisible_thief-6" mid="43"><![CDATA[<html>（It also called reflection ah！！）</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Stealth thief$<BR>Finally can live up！Call…You do not know，When I think of my life I have and the kind of stench as partners，How desperate ah。<BR>I&#39;ll<FONT color=#a82424>Reflect</FONT>Own，After only<FONT color=#a82424>Honest</FONT>The conduct of theft。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-6" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Stealth thief$<BR>Good night, then！Little Adventurers。<BR>Affinity for words，We will meet，Ha ha ha~ <FONT color=#7e12d2>（Step further away slowly crescendos）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-6-a" mid="46"><![CDATA[<html>The food was stolen Mee then。</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Senior magician Tina$<BR>The stench of<FONT color=#a82424>Thief</FONT>How like a?<BR>Ah?For other places? …Ah，Although he failed to grasp，Fortunately, however, did not steal anything。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-6-b" mid="48"><![CDATA[<html>Uh。（Speechless）</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Senior magician Tina${action:talk}<BR>Eh?That is not him caught ah?<BR>So put him on the Rights…Fool。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6-b" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-6-c" mid="50"><![CDATA[<html>（Tina showed expression of satisfaction）</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Senior magician Tina$<BR>In short，Fortunately,<FONT color=#a82424>佩奥里斯塔 Magic Institute</FONT>There&#39;s nothing foul smell。<BR>You&#39;ve worked hard。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6-c" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-6-d" mid="52"><![CDATA[<html><FONT color=#086171>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6-d" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Senior magician Tina${action:talk}<BR>Ah…Having said that，That<FONT color=#a82424>Thief</FONT>Where they went to go?<BR>This could be nothing near what is worth stealing Well。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3091,3092,3093,3094</exe>
+         <exe type="setquest">309</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="20" party="1" exe="" onexe="1">507</exe>
+         <exe type="addquestitem" num="1">400108</exe>
+         <exe type="huntitem" num="20" exe="3,6,7" onexe="">400108</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="1">200507</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400108</exe>
+         <exe type="addquestitem" num="1">300215</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300215</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3091,3092,3093,3094</exe>
+         <exe type="complete">309</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="c">1,2,3</exelink>
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="b" />
+   <exelink qstep="2" npc="n026_trader_may" sub="c" />
+   <exelink qstep="2" npc="n026_trader_may" sub="d">4,0,8,2,5</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="5">0,1,2,3</exelink>
+   <exelink qstep="5" npc="n266_invisible_thief" sub="6">0,1,2</exelink>
+   <exelink qstep="6" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="6" npc="n035_soceress_master_tiana" sub="c">0</exelink>
+   <exelink qstep="6" npc="n035_soceress_master_tiana" sub="d">1</exelink>
+   <journal_data recompense="1:3091,2:3092,3:3093,4:3094" quest_title="불운한 도둑" chapterid="" quest_level="18" quest_mark_type="10" use_item_list="400108,300215">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Tina&#39;s commission]]></title>
+         <contents mid="56"><![CDATA[<html>Senior magician Tina seems 佩奥里斯塔 Institute foul magic has something to say。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior magician Tina</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Dialogue with senior magician Tina]]></destination>
+         <todo_msg mid="58"><![CDATA[Add a task。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Mee&#39;s Arcane]]></title>
+         <contents mid="60"><![CDATA[<html>Together with the consumables business Mee discuss odor remover method of making it。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Consumables business Mee</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Dialogue with the consumables business Mee]]></destination>
+         <todo_msg mid="62"><![CDATA[Let the dialogue with the consumables business Mee。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_21.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>154,0,0</destination_pos>
+         <destination_mode>custom:151@3,152@3,153@3,154@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Blizzard dwarf spider liquid]]></title>
+         <contents mid="65"><![CDATA[<html>Institute eliminate 佩奥里斯塔 magic snowstorm snowstorm dwarf dwarf spider wolf spiders and get it solution。<BR>
+ <BR>
+<FONT color=#086171>Crystal Valley → Melting Forest（Magician of the Road）</FONT> <FONT color=#a82424>→ 佩奥里斯塔 Magic Institute</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Institute of Monster eliminate 佩奥里斯塔 Magic]]></destination>
+         <todo_msg mid="67"><![CDATA[Institute of elimination 佩奥里斯塔 blizzard magic dwarf tarantula it。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Ultra-strong lotion]]></title>
+         <contents mid="69"><![CDATA[<html>To submit a blizzard where consumables business Mee dwarf spider after liquid，It was super strong lotion。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Consumables business Mee</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Dialogue with the consumables business Mee]]></destination>
+         <todo_msg mid="71"><![CDATA[Completion of the commissioned。Report it to the consumables business Mee。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QW_21.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>153,n266</destination_pos>
+         <destination_mode>custom:151@1,152@1,153@1</destination_mode>
+         <statemark_npcid>266</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Odor Removal]]></title>
+         <contents mid="73"><![CDATA[<html>Mee get from super strong lotion。Back 佩奥里斯塔 Institute magic to stealth thief bar。<BR>
+ <BR>
+<FONT color=#086171>Crystal Valley → Melting Forest（Magician of the Road）</FONT> <FONT color=#a82424>→ 佩奥里斯塔 Magic Institute</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[Dialogue with the stealth of a thief]]></destination>
+         <todo_msg mid="75"><![CDATA[Institute of stealth and 佩奥里斯塔 magic thief dialog and。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[Task]]></title>
+         <contents mid="77"><![CDATA[<html>Success of the Institute of odor removal 佩奥里斯塔 magic。Senior magician Tina back where it。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior magician Tina</FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[Dialogue with senior magician Tina]]></destination>
+         <todo_msg mid="79"><![CDATA[Report to the senior bar magician Tina。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>18:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>308</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

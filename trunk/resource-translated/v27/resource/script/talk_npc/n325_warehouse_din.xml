@@ -1,0 +1,21 @@
+   <talk>
+      <npcename>n325_warehouse_din</npcename>
+      <npcid>325</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Warehouse Manager Ding]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="warehouse" mid="3"><![CDATA[<html>[Warehouse]</html>]]></talk_answer>
+         <talk_answer link_index="what" mid="4"><![CDATA[<html>[Dialogue] Warehouse is where？</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Warehouse Manager Ding${action:Talk}<BR>Well looks like a lot of baggage。 <BR>To manage the spoils of war，Oh, time will happen in clean Caixing backpack。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="what" image="" itemindex="">
+         <talk_answer link_index="001" mid="6"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Warehouse Manager Ding$<BR>Risk often occurs when filled backpack，Then you can come here for temporary storage bag items。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenWareHouse(userObjID);</exe>
+      </executions>
+      <conditions />
+      <exelink idx="warehouse">1</exelink>
+   </talk>

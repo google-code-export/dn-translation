@@ -1,0 +1,49 @@
+   <talk>
+      <npcename>n277_bluff_dealers_pope</npcename>
+      <npcid>277</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Profiteer Pope]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="4"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Profiteer Pope$<BR>1A coin can be gathered into1Silver，1Gold coins can increase my wealth。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="45"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="open_shop" mid="46"><![CDATA[<html>[Abyss store transactions]</html>]]></talk_answer>
+         <talk_question mid="44"><![CDATA[<html>$Profiteer Pope$<BR>1A coin can be gathered into1Silver，1Gold coins can increase my wealth。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="41" link_target="sq11_603_tears_of_goddess.xml"><![CDATA[<html>[Lv31]<FONT color=#086171>Goddess of tears</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="6" link_target="sq11_486_merchant_study1.xml"><![CDATA[<html>[Lv34] <FONT color=#086171>Business coursesⅠ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="sq11_487_merchant_study2.xml"><![CDATA[<html>[Lv34] <FONT color=#086171>Business coursesⅡ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="sq11_488_merchant_study3.xml"><![CDATA[<html>[Lv34] <FONT color=#086171>Business coursesⅢ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="22" link_target="sq11_489_merchant_study4.xml"><![CDATA[<html>[Lv34] <FONT color=#086171>Business coursesⅣ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="23" link_target="sq11_547_jewelry_red_tears.xml"><![CDATA[<html>[Lv36]<FONT color=#086171>Gem Identification：Red tears</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="sq11_548_jewelry_blue_hope.xml"><![CDATA[<html>[Lv36] <FONT color=#086171>Gem Identification：Blue hope</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="25" link_target="sq11_549_jewelry_black_sigh.xml"><![CDATA[<html>[Lv36] <FONT color=#086171>Gem Identification：Black sigh</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_1" mid="38"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Profiteer Pope$<BR>Mouth waiting under the apple tree，Would only be more hungry stomach。That money is not from heaven。Might as well do something to help me。Of course，I can not always be here for things to do。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="1" false="0">0</exe>
+         <exe type="openshop">15001</exe>
+         <exe type="openshop">15002</exe>
+         <exe type="openshop">15003</exe>
+         <exe type="openshop">15004</exe>
+         <exe type="conexe" true="3" false="8">1</exe>
+         <exe type="conexe" true="4" false="9">2</exe>
+         <exe type="conexe" true="5" false="10">3</exe>
+         <exe type="conexe" true="6" false="6">4</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 603) == 1</chk>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <exelink idx="open_shop">7</exelink>
+      <exelink idx="back_1">2</exelink>
+   </talk>

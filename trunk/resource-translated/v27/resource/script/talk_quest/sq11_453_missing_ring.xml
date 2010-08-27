@@ -1,0 +1,526 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_453_missing_ring</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>453</qid>
+      <designer>김주연</designer>
+      <qlevel>25</qlevel>
+      <qdesc>300038 검붉은 흙</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>454</nextqid>
+      <nextqname>sq11_454_second_kidnapping</nextqname>
+      <nextqnpc>n042_general_duglars</nextqnpc>
+      <qkname mid="1"><![CDATA[The ring disappeared]]></qkname>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>51</npcid>
+         <npcename>n051_alrento_viscount</npcename>
+         <npckname>알렌토 자작</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>52</npcid>
+         <npcename>n052_place_of_trail</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>72</npcid>
+         <npcename>n072_whiterose_lena_blackm</npcename>
+         <npckname>하얀 장미의 기사</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Viscount United Arab Extension$<BR>
+Why is the king of town, only those soldiers, like a fool，Would not be able to properly serve my smart guy you。<BR>
+<FONT color=#7e12d2>(Located within the city to the king, where General Douglas，Begin implementation of the tasks)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$???$<BR>Apart from a little dust but，Nothing special。<BR>
+<FONT color=#7e12d2>(Located within the city to the king, where General Douglas，Mission can start)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$White Rose Knight$<BR>
+Do not give me get in the way，Go back soon。<BR>
+<FONT color=#7e12d2>(Located within the city to the king, where General Douglas，Mission can start)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="10"><![CDATA[<html>What?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$General Douglas${action:Talk}<BR>General trouble you，Really a little sorry ah。<BR>Is convenient，Please help me again?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$General Douglas$<BR>Not long ago,，Took place in King City<FONT color=#a82424>Theft case</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Lost ring$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$General Douglas$<BR><FONT color=#a82424>Weirdo dressed in white</FONT>Stole<FONT color=#a82424>United Arab Viscount ring extension</FONT>。<BR>
+Fortunately，In addition to outside ring，Nothing like something stolen again。But because their war with the devil，Can not spare troops to investigate this matter，However, there is easier on you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2" mid="18"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$General Douglas$<BR>Can trust only you，Can do this for me。<BR>
+I have told
+<FONT color=#a82424>Viscount United Arab Extension</FONT>Will send someone，You go right to know the specific circumstances。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-1" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Viscount United Arab Extension$<BR>
+Why is the king of town, only those soldiers, like a fool，Would not be able to properly serve my smart guy you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-1" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Apart from a little dust but，Nothing special。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$White Rose Knight$<BR>Do not give me get in the way，Hurry back to me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$General Douglas${action:Talk}<BR>At this point there is you，Really made me feel practical ah。<BR>
+I have told
+<FONT color=#a82424>Viscount United Arab Extension</FONT>Will send someone，You go right to know the specific circumstances。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-2-a" mid="24"><![CDATA[<html>Entrusted by General Douglas from。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Viscount United Arab Extension$<BR>Who are you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2-a" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-2-b" mid="26"><![CDATA[<html>Tell me about the situation at the time it?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Viscount United Arab Extension$<BR>Ha ha… Is to help me find you<FONT color=#a82424>Ring</FONT>People it。<BR>Control who you are，As long as it can catch the thief on the line。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2-b" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-2-c" mid="28"><![CDATA[<html>White masked man…</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Viscount United Arab Extension$<BR>Guy，Sure it is a prime culprit。<BR>
+I see it。<BR>
+<FONT color=#a82424>White</FONT>、 <FONT color=#a82424>Masked</FONT>And I nearly as high as it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2-c" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-2-d" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Viscount United Arab Extension$<BR>It is<FONT color=#a82424>Red hair</FONT>。<BR>Although some do not remember clearly，But is the white guy with red hair flying in the stole my ring!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2-d" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-2-e" mid="32"><![CDATA[<html>Where the original on the ring?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Viscount United Arab Extension$<BR>Matter resolved，I gotta say, General Douglas，Wang guard within the city to triple！Not，Three times 才行。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2-e" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-3" mid="34"><![CDATA[<html>I first look at the past。</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Viscount United Arab Extension$<BR>On the other side of the table on。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-3" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Viscount United Arab Extension$<BR>King of the city so many security forces，No one can actually catch the eccentric!<BR>
+Hum! All are a group of waste…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-3" image="QS_01.dds" itemindex="">
+      <talk_answer link_index="n052_place_of_trail-3-get_item" mid="37"><![CDATA[<html>(Soil extraction point)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Storage ring near the left muddy footprints)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-4" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Apart from a little dust but，Nothing special)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-4" image="QS_01.dds" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-4-a" mid="40"><![CDATA[<html>(To him the soil extraction)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Viscount United Arab Extension$<BR>
+<FONT color=#a82424>Muddy footprints</FONT>?<BR>
+Certainly not my。Also my next one at home all day，No chance to step on the soil ah。Moreover, no one wore shoes that imprinting。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-4-a" image="QW_27.dds" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-4-b" mid="43"><![CDATA[<html>Going to go read the dark mine。</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Viscount United Arab Extension$<BR>Etc.!The red and dark like mine is the same as the color of the soil… <BR><FONT color=#7e12d2>(Viscount sniffed against soil)</FONT><BR>
+This taste，Is clearly<FONT color=#a82424>Dark mine</FONT>The Monster had a taste ah！Uh，Bad luck!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-4-b" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Viscount United Arab Extension$<BR>Do as you please。<BR>Only，I lost my ring things do not disclose to any person out ah，Know?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-5" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Viscount United Arab Extension$<BR>General is the person who sent the decent thing in。<BR>Quickly get my ring on it。If not, then the ring，I …</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5" image="" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-a" mid="47"><![CDATA[<html>You are a thief to steal the ring ah?!</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$White Rose Knight$<BR>You…?!<BR><FONT color=#7e12d2>(Eccentric little surprised expression)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-a" image="" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-b" mid="49"><![CDATA[<html>I rushed to hand over the ring。</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$White Rose Knight$<BR>Hum! Even send such a rookie adventurer…<BR>King City did not seem decent people Well?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-b" image="" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-c" mid="51"><![CDATA[<html>What?！</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$White Rose Knight$<BR>Ha ha ha！Stupid！<BR>
+You are stupid、Mercy of the Scarecrow！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-c" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-d" mid="53"><![CDATA[<html>Rio is United Arab Viscount… Dragon followers?</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$White Rose Knight$<BR>I have to annihilate<FONT color=#a82424>Dragon followers</FONT>Chase them for a long time。I ring that was stolen<FONT color=#a82424>Nobility</FONT>Is also a hidden identity<FONT color=#a82424>Dragon followers</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-d" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-e" mid="127"><![CDATA[<html>Trap，What do you mean?</html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$White Rose Knight$<BR>
+Yes。 With<FONT color=#a82424>Guy</FONT>As bait，Dragon followers to lead to Specifically set a trap。But，Unfortunately,，Hooked are you such a novice adventurer…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-e" image="QS_01.dds" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-f" mid="129"><![CDATA[<html>Stink guy，We actually Gan Pian！ How like the United Arab Viscount Rights Extension?！</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$White Rose Knight$<BR>
+Is，Do you think the king left the city<FONT color=#a82424>Covered with mud footprints</FONT>My mistake you?<BR>
+Who do you think I am?！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-f" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-g" mid="118"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$White Rose Knight$<BR>
+Want to know that<FONT color=#a82424>Noble guy</FONT>You life and death?Haha!<BR>
+Do not worry。That noble guy not die now，Hei hei… He also used it… 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-g" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-h" mid="131"><![CDATA[<html>What does that mean?</html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$White Rose Knight$<BR>
+Ah，I personally did not need to dirty my hands shot。<BR>
+Anyway, he will not live long…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-h" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="119"><![CDATA[<html>$White Rose Knight$<BR>If something is lost ring spread<FONT color=#a82424>Dragon followers</FONT>There，Basically, he would have died。Their doctrine is to resolutely eliminate traitors and incompetence，Hum！<BR>
+<FONT color=#7e12d2>（Back to Douglas, where General，To report it）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-6" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$White Rose Knight$<BR>
+Can not kill him。<BR>
+Is not yet…<BR>
+<FONT color=#7e12d2>（Where to General Douglas，To report it）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-a" mid="59"><![CDATA[<html>From…Beginning premeditated thing。</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$General Douglas$<BR>Finally back again! When you are not，King City, a major event took place。Is<BR><FONT color=#a82424>Viscount United Arab Extension</FONT>Was<FONT color=#a82424>White Rose Knight</FONT>Hijacked!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-a" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-b" mid="61"><![CDATA[<html>(Note what was going on)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$General Douglas${action:Talk2}<BR>Are planned from the beginning…? <BR>Footprints that are deliberately put on the soil looks like?<BR>In the end for what?<BR>But，Having said that，Have you seen that<FONT color=#a82424>Criminal</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-b" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-c" mid="63"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$General Douglas$<BR>Ah… <FONT color=#a82424>Viscount United Arab Extension</FONT>Is<FONT color=#a82424>Dragon followers</FONT>Eh…<BR>But，In the absence of conclusive evidence before，We still have the obligation to protect the Viscount。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-d" mid="65"><![CDATA[<html><FONT color=#086171>(Rewarded)</FONT></html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-d" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-!next" mid="136"><![CDATA[<html>Taking place on the information you?</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$General Douglas$<BR>Anyway，It being the first secret of these things。<BR>Must first save Viscount is hijacked。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-6" image="" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$Viscount United Arab Extension$<BR>Do not complete the search?<BR>How for so long ah…?<BR>
+Can not be like other people said I lost<FONT color=#a82424>Ring</FONT>Thing，To manage your mouth ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4531,4532,4533,4534</exe>
+         <exe type="setquest">453</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">300038</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300038</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment>백장미는 대화 후 사라진다.</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4531,4532,4533,4534</exe>
+         <exe type="complete">453</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n051_alrento_viscount" sub="b" />
+   <exelink qstep="2" npc="n051_alrento_viscount" sub="c" />
+   <exelink qstep="2" npc="n051_alrento_viscount" sub="d" />
+   <exelink qstep="2" npc="n051_alrento_viscount" sub="e" />
+   <exelink qstep="2" npc="n051_alrento_viscount" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n052_place_of_trail" sub="get_item">0,1,2</exelink>
+   <exelink qstep="4" npc="n051_alrento_viscount" sub="b">0,1,2</exelink>
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="b" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="c" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="d" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="e" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="f" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="g" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="h">0,1</exelink>
+   <exelink qstep="6" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="6" npc="n042_general_duglars" sub="c">0</exelink>
+   <exelink qstep="6" npc="n042_general_duglars" sub="d">1</exelink>
+   <exelink qstep="6" npc="n042_general_duglars" sub="!next" />
+   <journal_data recompense="1:4531,2:4532,3:4533,4:4534" quest_title="사라진 반지" chapterid="" quest_level="25" quest_mark_type="10" use_item_list="300038">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[Theft case]]></title>
+         <contents mid="70"><![CDATA[<html>Wang is said to have taken place within the city<FONT color=#a82424>Theft case</FONT>。To<FONT color=#a82424>General Douglas</FONT>Consulting the detailed content of it。<BR>
+ <BR>
+<FONT color=#086171>Paradise City within the sacred king</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[Theft case]]></destination>
+         <todo_msg mid="72"><![CDATA[Add a task。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Noble_Man_Pushibal.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n51</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>51</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[And the king within the city expand Viscount United Arab dialogue]]></title>
+         <contents mid="74"><![CDATA[<html>The detection of the theft ring has been appointed。Go<FONT color=#a82424>Viscount United Arab Extension</FONT>Asked what happened it。<BR><BR><FONT color=#086171>Paradise City within the sacred king</FONT> <FONT color=#a82424>→ Viscount United Arab Extension</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[And the king within the city expand Viscount United Arab dialogue]]></destination>
+         <todo_msg mid="76"><![CDATA[And the king within the city expand Viscount dialog and the United Arab。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_SaintHaven_Inside.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n52</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>52</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Investigate the location of storage ring]]></title>
+         <contents mid="78"><![CDATA[<html><FONT color=#a82424>Survey placed the United Arab Viscount ring extension table</FONT>It。<BR>
+ <BR>
+<FONT color=#086171>Paradise City within the sacred king</FONT> <FONT color=#a82424>→ A joint extension table near Viscount</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Investigate the location of storage ring]]></destination>
+         <todo_msg mid="80"><![CDATA[Viscount survey near the United Arab Extension table storage ring it。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Noble_Man_Pushibal.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n51</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>51</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[And the king within the city expand Viscount United Arab dialogue]]></title>
+         <contents mid="82"><![CDATA[<html>Table in the storage ring found<FONT color=#a82424>Red, black and muddy footprints</FONT>。And<FONT color=#a82424>Viscount United Arab Extension</FONT>Dialog and。<BR>
+ <BR>
+<FONT color=#086171>Paradise City within the sacred king</FONT> <FONT color=#a82424>→ Viscount United Arab Extension</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[And the king within the city expand Viscount United Arab dialogue]]></destination>
+         <todo_msg mid="84"><![CDATA[And the king within the city expand Viscount dialog and the United Arab。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QW_27.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>274,n72</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@1,274@1</destination_mode>
+         <statemark_npcid>72</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[Survey dark mine]]></title>
+         <contents mid="86"><![CDATA[<html><FONT color=#a82424>Viscount United Arab Extension</FONT>Say，Place in the storage ring found<FONT color=#a82424>Red and black soil</FONT>Mine is dark。To<FONT color=#a82424>Dark mine</FONT>To search for clues it。<BR>
+<FONT color=#7e12d2>※ And other tasks can run concurrently。</FONT><BR><BR><FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→ Dark mine</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[Survey dark mine]]></destination>
+         <todo_msg mid="88"><![CDATA[Investigation into the dark mine there other clues it。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[And Wang, General Douglas dialogue within the city。]]></title>
+         <contents mid="90"><![CDATA[<html>In<FONT color=#a82424>Dark mine</FONT>Saw<FONT color=#a82424>White Rose Knight</FONT>。Back to King City<FONT color=#a82424>General Douglas</FONT>Report it。<BR>
+ <BR>
+<FONT color=#086171>Paradise City within the sacred king</FONT> <FONT color=#a82424>→General Douglas</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[And Wang, General Douglas dialogue within the city。]]></destination>
+         <todo_msg mid="92"><![CDATA[King City, to report it within the General Douglas。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>25:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>452</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

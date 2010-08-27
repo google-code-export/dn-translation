@@ -1,0 +1,26 @@
+   <talk>
+      <npcename>n322_warehouse_dunn</npcename>
+      <npcid>322</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Warehouse keeper Don]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="warehouse" mid="3"><![CDATA[<html>[Warehouse]</html>]]></talk_answer>
+         <talk_answer link_index="what" mid="4"><![CDATA[<html>[Dialogue] Warehouse is where？</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Warehouse keeper Don${action:Talk}<BR>It seemed like you kinda sink package。To get a bigger booty, then，Oh, you had better keep clear of the pack。 </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="what" image="" itemindex="">
+         <talk_answer link_index="001" mid="6"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Warehouse keeper Don$<BR>
+4 Adventure，Certainly when the backpack full of。Each time，Temporary storage for items you can place is the warehouse。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="warehouse" image="" itemindex="">
+         <talk_question mid="7"><![CDATA[<html>$Warehouse keeper Don$<BR>
+What things need storage or extraction，Please feel free to come。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenWareHouse(userObjID);</exe>
+      </executions>
+      <conditions />
+      <exelink idx="warehouse">1</exelink>
+   </talk>

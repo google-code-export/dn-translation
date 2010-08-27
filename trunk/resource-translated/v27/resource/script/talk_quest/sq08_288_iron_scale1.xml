@@ -1,0 +1,317 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_288_iron_scale1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>288</qid>
+      <designer>손원호</designer>
+      <qlevel>11</qlevel>
+      <qdesc>캐더락 관문의 코린에게 가면 지금은 불사 실험때문에 바쁘다고 한다. 자신이 바로 불사 칭호자라고 말하면 마침 잘 됐다며 실험 재료 구하는 것을 도와달라고 한다. 튼튼한 몸을 만들기 위해 피부처럼 얇지만 절대 베어지지 않는 갑옷을 연구하고 있는데, 그 재료로 강철같이 단단한 하피의 깃털을 써보면 어떨까 생각하는 코린. 단단하고, 하늘을 날만큼 가벼운 소재. 그럴싸한 이론에 혹해서 도와주게 된다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>289</nextqid>
+      <nextqname>sq08_289_iron_scale2</nextqname>
+      <nextqnpc>n025_trader_corin</nextqnpc>
+      <qkname mid="1"><![CDATA[[Title]「ImmortalLv2」Steel SkinⅠ]]></qkname>
+      <qnpc>
+         <npcid>25</npcid>
+         <npcename>n025_trader_corin</npcename>
+         <npckname>대장장이 코린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-a" mid="7"><![CDATA[<html>What can I do if a big favor?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Blacksmith Colin${action:Talk}<BR>Regret，I&#39;m not empty，You go somewhere else。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-b" mid="9"><![CDATA[<html>I have some idea how much of the immortal title。</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Blacksmith Colin$<BR>Ah，It is a matter of personal troubles…Even if I tell you that we blacksmith who wish<FONT color=#a82424>Immortal</FONT>Title...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-c" mid="11"><![CDATA[<html>That，Anyway...</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Blacksmith Colin$<BR>Not，How can you know it? But the blacksmith who was the secret of the title does...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-d" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Blacksmith Colin$<BR>What a lucky guy。Now that you know the title alive，Then we would be much more convenient to communicate with。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-e" mid="75"><![CDATA[<html>What is it？</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Blacksmith Colin$<BR>In fact, I recently was to create a special title for the dead<FONT color=#a82424>New armor</FONT>，But there is no method to solve a problem how，It makes me very worried。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-f" mid="15"><![CDATA[<html>Harpy&#39;s feathers, how to?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Blacksmith Colin$<BR>I would like to build is available as thin as the skin，But definitely not planning to open the armor。But unfortunately there were no corresponding material。Made of metal so easily broken，Not by the durability of leather...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-g" mid="17"><![CDATA[<html>Feather armor…Should be cool oh。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Blacksmith Colin$<BR>Harpy who? Is the same as long as the birds do Monster? Harpy&#39;s feathers... Indeed as hard as steel，And can in the sky，That must be very light slightly，&#39;m Not sure you can do！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-g" image="QS_Default.dds" itemindex="300077">
+      <talk_answer link_index="n025_trader_corin-accepting-h" mid="19"><![CDATA[<html>Let me go get?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Blacksmith Colin$<BR>Now think，Really want to see it immediately make a，You quickly helped me some Harpy feathers back ah man！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-i" mid="21"><![CDATA[<html>……Be。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Blacksmith Colin$<BR>Could it be that，To me that a lot of people who engage with you? Click one&#39;s tongue…To learn to respect old people ah，Even if the mosquito bite elderly，There is danger that it allowed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-acceptted" mid="23"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Steel Skin Ⅰ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1" image="QW_14.dds" itemindex="">
+      <talk_answer link_index="n025_trader_corin-1-a" mid="26"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Blacksmith Colin$<BR>While everywhere people can see Harpy，But I need the highest quality of eagle feathers and body of people。You go<FONT color=#a82424>Canyon sigh</FONT>，Help me to collect the wind Tai Disi&#39;s knife<FONT color=#a82424>Eagle Feather body of people</FONT>It！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-a" image="QS_Default.dds" itemindex="300077">
+      <talk_question mid="27"><![CDATA[<html>$Blacksmith Colin$<BR>Do not have also brought，I just <FONT color=#a82424>Rigid body who hawk feathers</FONT>。Very hard as steel！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2" image="QW_14.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Blacksmith Colin$<BR>I&#39;m out doing?Is not approaching<FONT color=#a82424>Canyon sigh</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3" image="QS_Default.dds" itemindex="300077">
+      <talk_answer link_index="n025_trader_corin-3-a" mid="30"><![CDATA[<html>（Who presented a hard body Eagle Feathers）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Blacksmith Colin$<BR>Oh！ Is not that<FONT color=#a82424>Eagle Feather body of people</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-a" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-b" mid="32"><![CDATA[<html>Can you do with it？</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Blacksmith Colin$<BR>Sure enough, as hard as steel，And the light almost like to be blown away。Really amazing material ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-b" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-c" mid="34"><![CDATA[<html>（Wait）</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Blacksmith Colin$<BR>Yes ah，First-wide desire for it anyway，Wait a moment。<BR>
+<BR><FONT color=#7e12d2>（Vests are made with feathers, Colin）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-c" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-d" mid="43"><![CDATA[<html>I wear?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Blacksmith Colin$<BR>Ah，May seem simple，But it should be pretty good…Who is wearing it, but give... Right ah！You try coming?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-d" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-e" mid="45"><![CDATA[<html>（Who wear eagle feathers vest body）</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Blacksmith Colin$<BR>Ah，Nothing special，So，Behind the line and then go on it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-e" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-f" mid="47"><![CDATA[<html>Etc.…And so will！</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Blacksmith Colin$<BR>Then I stab will happen now slightly！ Ah ha ha！<BR>
+<BR><FONT color=#7e12d2>（Ju Qiqiang of Colin）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-f" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-g" mid="36"><![CDATA[<html>... ... Pain！！！</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Blacksmith Colin$<BR>Puff。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-g" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-h" mid="38"><![CDATA[<html>"Ah"What ah！Bleeding Rights！Blood！</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Blacksmith Colin$<BR>Ah? <BR>
+<BR><FONT color=#7e12d2>（Gunpoint into the body）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-h" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-i" mid="40"><![CDATA[<html>（Angry） If fear of failure，Should not test people to do early on ah！</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Blacksmith Colin$<BR>Ah，Failed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-i" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-j" mid="49"><![CDATA[<html>Continue to ah。</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Blacksmith Colin$<BR>Sorry ah，But I think that as a hawk&#39;s feathers if body，It certainly was... Is even this will not work... <FONT color=#a82424>The new die title</FONT>Of this to end, you...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-j" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-k" mid="51"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-k" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-l" mid="53"><![CDATA[<html>Weeds?</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Blacksmith Colin$<BR>Ha ah。 How can you know what the feelings of the blacksmith?The title of the immortal mind the kind of hot…Although the failure，However, as<FONT color=#a82424>Weeds</FONT>As a reinvigorated... Weeds... Ah！ Weeds...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-l" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-m" mid="55"><![CDATA[<html>Realized that what you?</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Blacksmith Colin$<BR>Yes ah！ The reason why weed is not strong wind bow，Not because of resistance to strong winds，But with the wind blown down along the sake of ah！ Ah，Wide desire for it in accordance with the principles on！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-m" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-n" mid="57"><![CDATA[<html>Then the eagle on the body of people with a soft feather?</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Blacksmith Colin$<BR>Is simple。This failure is certainly because the use of a hard body who hawk feathers。Eagle feathers were hard though very light body，However, the impact of a super hit easily crushed。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-n" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-!next" mid="59"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Blacksmith Colin$<BR>Ah！Well you seem quite smart。The eagle on the body were not hard feathers of the，But just take a number of<FONT color=#a82424>Soft</FONT>Come back。Would definitely use it successfully！</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">2880,,,,</exe>
+         <exe type="setquest">288</exe>
+         <exe type="talk" npc="n025_trader_corin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">371</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">372</exe>
+         <exe type="huntitem" num="1" exe="6,7,8" onexe="">300077</exe>
+         <exe type="addquestitem" num="1">300077</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200371</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200372</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="1">300077</exe>
+         <exe type="recompense">2880,,,,</exe>
+         <exe type="complete">288</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="i">0</exelink>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n025_trader_corin" sub="a">0,2,3,9,10,4,1</exelink>
+   <exelink qstep="3" npc="n025_trader_corin" sub="b" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="c" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="d" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="e" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="f" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="g" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="h" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="i" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="j">1</exelink>
+   <exelink qstep="3" npc="n025_trader_corin" sub="k">0,2</exelink>
+   <exelink qstep="3" npc="n025_trader_corin" sub="l" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="m" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="n" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="!next" />
+   <journal_data recompense="0:2880" quest_title="[칭호]「불사Lv2」강철 피부Ⅰ" chapterid="" quest_level="11" quest_mark_type="10" use_item_list="300077">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n25</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>25</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[Dialogue with the blacksmith Colin]]></title>
+         <contents mid="63"><![CDATA[<html>Colin said the blacksmith is the title of immortality。To strengthen the immortal title of a dialogue with the Blacksmith Bar Cowlin。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Blacksmith Colin</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[Dialogue with the blacksmith Colin]]></destination>
+         <todo_msg mid="65"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_14.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>119,0,0</destination_pos>
+         <destination_mode>custom:116@1,117@1,118@1,119@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[Who get a hard body Eagle Feather]]></title>
+         <contents mid="67"><![CDATA[<html>David says, to produce lightweight body armor who need hard eagle feather。To destroy the knife to the sighing wind Tai Disi canyon and get the feathers come home。<BR><BR><FONT color=#086171>Crystal Valley（Sigh Canyon entrance）</FONT> <FONT color=#a82424>→ Canyon sigh</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Who get a hard body Eagle Feather]]></destination>
+         <todo_msg mid="69"><![CDATA[To sigh Canyon who access the hard body Eagle feathers it。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n25</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>25</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[Dialogue with the blacksmith Colin]]></title>
+         <contents mid="71"><![CDATA[<html>After the elimination of the knife got wind Tai Disi hard body who hawk feathers。Kedella crossing it to the blacksmith Colin bar。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Blacksmith Colin</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[Dialogue with the blacksmith Colin]]></destination>
+         <todo_msg mid="73"><![CDATA[Won the hard body who hawk feathers。Colin it to the blacksmith。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>11:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

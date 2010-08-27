@@ -1,0 +1,354 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_458_amazing_memory</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>458</qid>
+      <designer>김인정</designer>
+      <qlevel>27</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>459</nextqid>
+      <nextqname>sq11_459_complete_decode</nextqname>
+      <nextqnpc>n133_lena_duglars</nextqnpc>
+      <qkname mid="1"><![CDATA[Amazing memory]]></qkname>
+      <qnpc>
+         <npcid>133</npcid>
+         <npcename>n133_lena_duglars</npcename>
+         <npckname>레나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>61</npcid>
+         <npcename>n061_kidnaped_trader_dorin</npcename>
+         <npckname>대장장이 도린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-noquest" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Leina Miss$<BR>I was helping my father do some things within its power。If you have reported it to the father&#39;s words，Please give me。<BR><FONT color=#7e12d2>(In the blacksmith there accept the Berlin mandate)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$General Douglas$<BR>King recently took place outside the city a lot of terrible events，I am very worried。I did not dare tell<FONT color=#a82424>Leina</FONT>Go outside。<BR><FONT color=#7e12d2>(In the blacksmith there accept the Berlin mandate)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-noquest" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Blacksmith Dowling$<BR>Oops，Really，How do you not go？Feed～Bah<BR><FONT color=#7e12d2>(In the blacksmith there accept the Berlin mandate)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Do you have something wrong？If you are looking for something to do，You to other places to see。<BR><FONT color=#7e12d2>(In the blacksmith there accept the Berlin mandate)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-a" mid="10"><![CDATA[<html>(Ah how the same character……)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Blacksmith Berlin$<BR>I have received contact Dowling，He asked me to tell you。<BR>Although we are brothers，Some problems but he always pushed things to my head。Oh，Real trouble……<BR>
+<FONT color=#7e12d2>(Berlin spit a Koutan)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-a" image="QW_30.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-b" mid="12"><![CDATA[<html>Isolated right？</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Blacksmith Berlin$<BR>Let me think，Dowling told you last make the contents of your letter？He said he would like to up，Let you go<FONT color=#a82424>Island</FONT>And he meet in。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-c" mid="14"><![CDATA[<html>I got an island to me？</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Blacksmith Berlin$<BR>Yes，I do not know what，He seems to have been there。He said there were very quiet，Very suitable for living alone。That guy is the，Po Lam character and ridges, like strange magic。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-acceppted" mid="16"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Amazing memory$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="QW_30.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Blacksmith Berlin$<BR>
+Good，You to<FONT color=#a82424>Island</FONT>Dowling went to see it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-1" image="" itemindex="">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-1-a" mid="21"><![CDATA[<html>What are you here？</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Blacksmith Dowling$<BR>You finally Laila！I so have to eyeball almost fell out。<BR>Ah～Bah～<BR>
+<FONT color=#7e12d2>(Dowling spit a Koutan)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-1-a" image="" itemindex="">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-1-b" mid="23"><![CDATA[<html>Remember the right？</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Blacksmith Dowling$<BR>Last time I was hijacked，Found that very quiet here……Here I stop and study it for。<BR>I started burning the soul of art，Reminds me of<FONT color=#a82424>Ring</FONT>In the contents of the note！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-1-b" image="QS_Default.dds" itemindex="300254">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-1-c" mid="25"><![CDATA[<html>(Dowling arrogance to come up with a piece of paper)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Blacksmith Dowling$<BR>So I called up only then you！Do you think I come that easily to have the name right？<BR>To，Too strong for the soul of art，I write it down directly。You take it,！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-1-c" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Blacksmith Dowling$<BR><FONT color=#7e12d2>(Tao Lin&#39;s writing is illegible，Not see clearly)</FONT><BR>What？Read？Really……To ask you<FONT color=#a82424>Holy Paradise</FONT>Of<FONT color=#a82424>Heraldic scholars</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Leina Miss$<BR>Is to help my father do some things within its power。<BR>
+If you have reported it to the father&#39;s words，Please give me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$General Douglas$<BR>King recently took place outside the city a lot of terrible events，I am very worried。<BR>
+I did not dare tell<FONT color=#a82424>Leina</FONT>Go outside。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Blacksmith Dowling$<BR>Now my soul is burning，I must start work immediately，Go away。<BR>Note the content you can go to ask<FONT color=#a82424>Heraldic scholars</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="33"><![CDATA[<html>You can interpret？</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Heraldic scholars Stasi${action:Talk}<BR>Ah……？This is the piece of paper？<BR>
+What is written above it……？<BR>I thought it was a fig leaf which does little goblins。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="35"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Ah……Let me see。Like someone to think of something random to write down。Because the content is not very complete，So I can only read about the contents inside。This needs to explain it to you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Good……I put a copy here，Original returned to you before。Please give me some time。<BR><FONT color=#7e12d2>(Necessary to note the contents of the report to the General Douglas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Heraldic scholars Stasi$<BR><FONT color=#7e12d2>(Stasi is engrossed in Reading paper。<BR>Should first go to the General Douglas reported the contents of the note)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$General Douglas${action:Talk}<BR>Oh，Do you have anything you want to report？<BR>Very worried about you？……I am sorry，I am now preparing for the emergency meeting，No time。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$General Douglas$<BR>Have something to give my words，To my daughter right before you。<BR>In my busy time，My daughter<FONT color=#a82424>Leina</FONT>My secretary，Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$General Douglas$<BR><FONT color=#a82424>蕾娜</FONT>Age, although small，But the very competent，Are also honest。She is my daughter，I say may not be good，But she is really capable，Ha ha ha。<BR>In short I am now very busy，You first file to<FONT color=#a82424>蕾娜</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-4" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-4-a" mid="43"><![CDATA[<html>Please send this note to the general。</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$蕾娜 Miss${action:Talk}<BR>My father is a busy official who，Although not much help,，But I often do things to help him。<BR>Such as sorting letters and arrange for interviews and things like schedule。If we can<FONT color=#a82424>Father</FONT>Happy，I will be very happy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-4-a" image="QS_Default.dds" itemindex="300254">
+      <talk_answer link_index="n133_lena_duglars-4-b" mid="45"><![CDATA[<html>Good。</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$蕾娜 Miss$<BR>This paper can be really dirty。But……<FONT color=#7e12d2>(Leina frowned，Looked at paper)</FONT>……Although not very clear，But this certainly is an important thing, too。I will give it to<FONT color=#a82424>Father</FONT>Of，Please be assured that。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-4-b" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-4-!next" mid="47"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4581,4582,4583,4584</exe>
+         <exe type="setquest">458</exe>
+         <exe type="talk" npc="n091_trader_bellin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300254</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4581,4582,4583,4584</exe>
+         <exe type="complete">458</exe>
+         <exe type="delquestitem" num="-1">300254</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="acceppted">1,2</exelink>
+   <exelink qstep="1" npc="n061_kidnaped_trader_dorin" sub="b" />
+   <exelink qstep="1" npc="n061_kidnaped_trader_dorin" sub="c">2,0,1</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="a">0,1</exelink>
+   <exelink qstep="4" npc="n133_lena_duglars" sub="b">0</exelink>
+   <exelink qstep="4" npc="n133_lena_duglars" sub="!next">2,1</exelink>
+   <journal_data recompense="1:4581,2:4582,3:4583,4:4584" quest_title="놀라운 기억력" chapterid="" quest_level="27" quest_mark_type="10" use_item_list="300254">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>301,0,0</destination_pos>
+         <destination_mode>custom:301@4</destination_mode>
+         <statemark_npcid>61</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Island of the blacksmith]]></title>
+         <contents mid="50"><![CDATA[<html>Go<FONT color=#a82424>Island</FONT>And the blacksmith meet Dowling，Ring asked the contents of the note found。<BR>
+ <BR>
+<FONT color=#086171>Heermadai port(Island transport ship)</FONT> <FONT color=#a82424>→ Island → Blacksmith Dowling</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[And dialogue blacksmith Dowling]]></destination>
+         <todo_msg mid="52"><![CDATA[Go to an island to the dialogue and blacksmith Dowling。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Interpretation of paper commissioned]]></title>
+         <contents mid="54"><![CDATA[<html>Where to heraldic scholars Stasi，Interpretation of blacksmith so he helped to write the note Dowling。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Heraldic scholars Stasi</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[And heraldic scholar Stasi dialogue]]></destination>
+         <todo_msg mid="56"><![CDATA[Interpretation of Heraldry paper commissioned scholars Stasi。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Report to the General]]></title>
+         <contents mid="58"><![CDATA[<html>Interpretation of paper in the coat of arms, when scholars，Report to the general note of the things Douglas。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> → General Douglas</html>]]></contents>
+         <destination mid="59"><![CDATA[And General Douglas dialogue]]></destination>
+         <todo_msg mid="60"><![CDATA[Please note to General Douglas。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n133</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>133</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[General agent]]></title>
+         <contents mid="62"><![CDATA[<html>To note the general&#39;s daughter to Miss Leina。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ 蕾娜 Miss</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Miss dialogue and Leina]]></destination>
+         <todo_msg mid="64"><![CDATA[Please note to Miss Leina。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>27:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>457:463</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

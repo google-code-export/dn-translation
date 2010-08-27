@@ -1,0 +1,617 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq05_154_gurafinder2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>154</qid>
+      <designer>곽노찬</designer>
+      <qlevel>6</qlevel>
+      <qdesc>300104 구라파인더</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Lie detectorⅡ]]></qkname>
+      <qnpc>
+         <npcid>11</npcid>
+         <npcename>n011_priest_leonardo</npcename>
+         <npckname>상급 클레릭 레오날드    (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>16</npcid>
+         <npcename>n016_trader_borin</npcename>
+         <npckname>대장장이 보린  (마나리 무기상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>17</npcid>
+         <npcename>n017_trader_jeny</npcename>
+         <npckname>상인 제니  (마나리 잡화상)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-noquest" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="145"><![CDATA[<html>$Advanced magician Cynthia$<BR>Your recent frequent thing in access Blacksmith，In the end to bed? Hum，Nobody is allowed to delay work，Advise you to neatly on a good。<BR><FONT color=#7e12d2>（Po Lam Department to accept the task from the blacksmith be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-noquest" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="146"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>Always felt that blacksmith&#39;s forge, the sound came butcher general...Do not go and see what happened?Indeed the，All，Can not concentrate on doing our job。<BR><FONT color=#7e12d2>（Po Lam Department to accept the task from the blacksmith be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-noquest" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="147"><![CDATA[<html>$Merchant Jenny$<BR>Hey...Today, business can be really bleak ah，Hum... <BR>Only，Exclaimed still buzzing flies，Cut...<BR><FONT color=#7e12d2>（Po Lam Department to accept the task from the blacksmith be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Blacksmith Po Lam$<BR>I recorded the effect of your voice has been used up the。<BR>If normal start，Will be to identify<FONT color=#a82424>Dragon followers</FONT>Very helpful。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-a" image="QS_Default.dds" itemindex="300104">
+      <talk_answer link_index="n016_trader_borin-accepting-b" mid="8"><![CDATA[<html>(Accept a lie detector)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Blacksmith Po Lam$<BR>First，The performance of the machine must be<FONT color=#a82424>Test</FONT>。You take<FONT color=#a82424>Lie detector</FONT>，Whereabouts<FONT color=#a82424>Magic Ridge residents</FONT>Several questions were asked，To receive their answers。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-acceptted" mid="10"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Lie detectorⅡ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1" image="QS_Default.dds" itemindex="300105">
+      <talk_answer link_index="n016_trader_borin-2" mid="12"><![CDATA[<html>Be……Eh？</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Blacksmith Po Lam$<BR><FONT color=#a82424>True</FONT>And<FONT color=#a82424>Lie</FONT>By the<FONT color=#a82424>Lie detector</FONT>To distinguish between the effect of sound。If they are saying is<FONT color=#a82424>Truth</FONT>，Will hear<FONT color=#a82424>Dog sounds</FONT>。If that is false，Will hear<FONT color=#a82424>Pig howling sound</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Advanced magician Cynthia$<BR>If you recently frequented Blacksmith，In the end doing ah？Hum，Do not waste effort，Care is a right way to live。<BR><FONT color=#7e12d2>(Please dialogue blacksmith Po Lam)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-1" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>Blacksmith just like a pig howling voice heard……You do not see what happened？Oh，Too noisy，I could hardly concentrate on doing our job。<BR><FONT color=#7e12d2>(Please dialogue blacksmith Po Lam)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-1" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Merchant Jenie$<BR>Oops……Today, no business deal made……<BR>Only flies fly，Cut……<BR><FONT color=#7e12d2>(Please dialogue blacksmith Po Lam)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Blacksmith Po Lam$<BR>You go look around。<BR>Do not know if you heard that，<FONT color=#a82424>Senior Pastor Leiang Na more</FONT>When young，Once in<FONT <color=#a82424>Backstreet sacred paradise King City</FONT>Village dawdle，You to identify what is really。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-a" mid="20"><![CDATA[<html>I heard that you&#39;ve played for some time young……</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>Ah……？I have a question？<BR>Well，What you want to know？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-a" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-b" mid="22"><![CDATA[<html>(Lei Angna more immersed in the memory as if，Looking at distant peaks)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>Ah？Ah……Ha ha，It was a long time ago。Encounter<FONT color=#a82424>Former Pope</FONT><FONT color=#a82424>Benedit pope</FONT>Before，I had<FONT color=#a82424>Backstreet sacred paradise</FONT>Rangers，Live<FONT color=#a82424>Fieldwork</FONT>Life。<BR> 
+Let me think……At that time I was 17 or 18 years to the……Ha ha……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-b" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-c" mid="24"><![CDATA[<html>There are such people ah……</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>At the time<FONT color=#a82424>Holy Paradise</FONT>Of<FONT color=#a82424>Backstreet</FONT>Was a man named<FONT color=#a82424>Scarlet Roffey</FONT>Control of the person。His ferocious temper temper，In King City is and<FONT color=#a82424>Dragon</FONT>Notorious as a dirty guy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-c" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-d" mid="26"><![CDATA[<html>(Sound effects came lie……)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Senior Pastor Leiang Na more${sound:Orc_Dead_a.wav}<BR>Ha ha……In the stormy night，I asked him to a duel。I was very timid，Do not know what fear。I and his<FONT color=#a82424>Holy Paradise</FONT>Nearby<FONT color=#a82424>Montenegro in the foot</FONT>，Hit<FONT color=#a82424>Seven days and nights</FONT>。Finally knocking him down a。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-d" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-e" mid="28"><![CDATA[<html>……Be……Eh。Ah……Haha……</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Senior Pastor Leiang Na more${sound:Orc_Dead_a.wav}<BR>But that dirty guy, after losing in a duel，With16One associates had attacked me。At the time, is<FONT color=#a82424>17 Vs 1</FONT>，But I still put them down one by one all the。Final，I finally succeeded in<FONT color=#a82424>Scarlet Roffey</FONT>Expelled<FONT color=#a82424>Holy Paradise</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-e" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-3" mid="30"><![CDATA[<html>Ah……Nothing。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>After，I have been<FONT color=#a82424>Benedit pope</FONT>In favor，So abandon all，As a<FONT color=#a82424>God&#39;s servant</FONT>。<BR>But why are you suddenly ask me these things？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>Eh？Hum，Know。<BR>If you want to know anything else，Can always come to me，Ha ha～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-a" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Blacksmith Po Lam$<BR>What？Hahaha……<FONT color=#a82424>Scarlet Roffey</FONT>Is a very famous person。Even far away from the city where the king knows what he。<BR>
+But he is a person who likes acting alone。Ha ha……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-a" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-b" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Blacksmith Po Lam$<BR>I&#39;ll summarize，Should be the flower of their time and<FONT color=#a82424>Scarlet Roffey</FONT>Duel over，But lost，Then pull the gang to attack him。Click one&#39;s tongue……Even the riffraff are not as……Ha ha……Good，Our next goal it to determine？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-b" image="QN_Sonya.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-4" mid="39"><![CDATA[<html>Merchant Jenie……I should ask her what？</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Blacksmith Po Lam$<BR>The object……On<FONT color=#a82424>Merchant Jenie</FONT>Well。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-4" image="QN_Sonya.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Blacksmith Po Lam$<BR>Ah，Down nothing particularly want to know……Often hear people say<FONT color=#a82424>Jeni</FONT>Of<FONT color=#a82424>Commercial wrist</FONT>Very clear。I really want to know what she said is true, then，What it is false。<BR>
+How to say we are businessmen，I always worth a place to learn，Not you？Ha ha……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-4" image="" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-4-b" mid="43"><![CDATA[<html>Ah……Hello？</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Merchant Jenie${sound:Orc_Dead_a.wav}<BR>Oops～Magic mountain ridges are so many mature<FONT color=#a82424>Handsome priest</FONT>Ah？Ha ha～<FONT color=#a82424>Jeni&#39;s store</FONT>In，With all the necessities of life magic ridge。Welcome～Ha ha～<BR><FONT color=#7e12d2>(Beginning to hear a loud howling sound pig)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-4-a" image="" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-4-b" mid="45"><![CDATA[<html>(Sound effects came lie……)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Merchant Jenie${sound:Orc_Dead_a.wav}<BR>Oops～Magic ridge there are so many<FONT color=#a82424>Beautiful magician</FONT>Ah？Ha ha～<FONT color=#a82424>Jeni&#39;s store</FONT>In，With all the necessities of life magic ridge。Welcome～Ha ha～<BR><FONT color=#7e12d2>(Beginning to hear a loud howling sound pig)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-4-b" image="" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-4-c" mid="47"><![CDATA[<html>(…………)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Merchant Jenie${sound:Orc_Dead_a.wav}<BR>Ha ha……I have not seen such men，Feel warm in my heart～I would like to……To introduce to you the same<FONT color=#a82424>Something special</FONT>……<BR>Ah，Where to the……<BR><FONT color=#7e12d2>(Deni came up with a thing)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-4-c" image="" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-4-d" mid="49"><![CDATA[<html>Ah……？What is that thing……？</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Merchant Jenie${sound:Orc_Dead_a.wav}<BR>Ha ha～Here～<BR>Come～This thing I do not earn you money～As long as，<FONT color=#a82424>Original Price</FONT>！<BR>I can<FONT color=#a82424>Original Price</FONT>Sell it to you，How 样？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-4-d" image="" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-4-e" mid="51"><![CDATA[<html>Ah ha ha……</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Merchant Jenie${sound:Orc_Dead_a.wav}<BR>To say these things～That was over the mountains，Distant……Ah……Very distant<FONT color=#a82424>Four cardinal points of a place</FONT>Can be found<FONT color=#a82424>Very rare special items</FONT>。To<FONT color=#a82424>Something like</FONT>With<FONT color=#a82424>This price</FONT>Sell it to you，Really<FONT color=#a82424>Rare</FONT>！Jiugen<FONT color=#a82424>White pick</FONT>As。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-4-e" image="" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-4-f" mid="53"><![CDATA[<html>(Deceive………………)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Merchant Jenie${sound:Orc_Dead_a.wav}<BR>In fact, I was at a loss to sell you。This is my<FONT color=#a82424>The most precious thing</FONT>……But<FONT color=#a82424>Thing</FONT>Also with<FONT color=#a82424>Host</FONT>……<BR> 
+This simply is prepared for you。<BR> 
+Come，<FONT color=#a82424>Magic price</FONT>！As long as<FONT color=#a82424>100Gold</FONT>，You can take。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-4-f" image="" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-4-g" mid="55"><![CDATA[<html>I do not have that much money……</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Merchant Jenie${sound:Orc_Dead_a.wav}<BR><FONT color=#7e12d2>(Deni looked to one side，Observe my face)</FONT><BR>Oops？It seems that you are not<FONT color=#a82424>100Gold</FONT>You……？<BR>Ah……This how to do it？<FONT color=#a82424>100Gold</FONT>I have<FONT color=#a82424>Loss a lot of money</FONT>The……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-4-g" image="" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-4-h" mid="57"><![CDATA[<html>No……</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Merchant Jenie${sound:Orc_Dead_a.wav}<BR>……Oh！Well！I am ready to sacrifice today。<BR>
+You give me<FONT color=#a82424>50Gold</FONT>It！<BR>
+This<FONT color=#a82424>Money</FONT>The bar always has？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-4-h" image="" itemindex="">
+      <talk_answer link_index="n017_trader_jeny-5" mid="59"><![CDATA[<html>(Spread the truth of the effect of sound……)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Merchant Jenie${sound:Hound_Bark_Attack_a.wav}<BR>……You are kidding me？Cut……<FONT color=#a82424>Beggar</FONT>Doing here？Let me busy for so long white？？<BR> Look like<FONT color=#a82424>Hell Hound</FONT>As，Skinny……Click one&#39;s tongue……<BR> Store so much<FONT color=#a82424>Fly</FONT>，Get out！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n017_trader_jeny-5" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Merchant Jenie${sound:Orc_Dead_a.wav}<BR><FONT color=#7e12d2>(Businessman turned Jenie，People waved at passing)<BR></FONT>Oops～Crossing the adventurer～Ah～See you sturdy frame～They have proved themselves<FONT color=#a82424>Heroes</FONT>～Ha ha～Happy Travels～<BR>Be sure to visit shop～Ha ha ha～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-5" image="QN_Sonya.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-6" mid="63"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Blacksmith Po Lam$<BR>Hahaha～Indeed worthy<FONT color=#a82424>Wise Jenie</FONT>！Ha ha……This proves<FONT color=#a82424>Lie detector</FONT>Normal operation of the。<BR> Let us make sure a person。Hei hei……<BR> Good，Last whom to really good～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-6" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Blacksmith Po Lam$<BR>On the，Ask the<FONT color=#a82424>Advanced magician Cynthia</FONT>。I came here a long time ago，However, she had seen who had never seen。But not like<FONT color=#a82424>Single</FONT>……You go ask her if she had dreams，Or have a secret man。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-6" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-6-a" mid="70"><![CDATA[<html>In fact, I have something important，Would like to ask you a few questions。</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Advanced magician Cynthia$<BR>Why are you hanging around in there？<BR>Now mess around，Do you want to just muddle along?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-6-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-6-b" mid="72"><![CDATA[<html>You……A bachelor you？</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Advanced magician Cynthia$<BR><FONT color=#7e12d2>(Cynthia looked at me a look of contempt，Suck a raspberry head)</FONT><BR>Click one&#39;s tongue……Well，If you want my advice，I can help you。<BR>You ask what？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-6-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-6-c" mid="74"><![CDATA[<html>(Sounded the voice of Howl tragic pigs……)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Advanced magician Cynthia${sound:Orc_Dead_a.wav}<BR>……What is the problem ah mess？<BR>You come to me，Is to ask this question？<BR>Hum……I<FONT color=#a82424>Love</FONT>And<FONT color=#a82424>Marry</FONT>This kind<FONT color=#a82424>Childish things</FONT>Not interested。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-6-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-6-d" mid="76"><![CDATA[<html>Ah，Please do not worry about this……</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Advanced magician Cynthia$<BR>The issue<FONT color=#a82424>Thin voice</FONT>Of<FONT color=#a82424>Thing</FONT>What is？<BR>Goose bumps listening to people from a。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-6-d" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-6-e" mid="78"><![CDATA[<html>(……The resounding voice of pig called……)</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Advanced magician Cynthia${sound:Orc_Dead_a.wav}<BR><FONT color=#a82424>Marry</FONT>Be<FONT color=#a82424>Grave life</FONT>。The spirit of the young people who only lived with defective quick to find a good man get married。But for me this<FONT color=#a82424>Elegant woman</FONT>Case，<FONT color=#a82424>Man</FONT>Only a<FONT color=#a82424>Burden</FONT>Only。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-6-e" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-6-f" mid="80"><![CDATA[<html>(Pig howling voice sounds like a bit bleak……)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Advanced magician Cynthia${sound:Orc_Dead_a.wav}<BR>Why is his face looking at me sympathetically？<BR>I<FONT color=#a82424>Bachelor</FONT>！I do not feel lonely！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-6-f" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-7" mid="82"><![CDATA[<html>Good……Then I go。</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Advanced magician Cynthia${sound:Orc_Dead_a.wav}<BR><FONT color=#7e12d2>(Cynthia cried hysterically)</FONT><BR>Grown doubled unpleasant things that turn off！<BR>I do not end because of bad temper and can not be married！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-7" image="" itemindex="">
+      <talk_question mid="85"><![CDATA[<html>$Advanced magician Cynthia$<BR>Call……Do not come after me for this thing！<BR>By then I will give you good-looking！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-7" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-7-a" mid="90"><![CDATA[<html>Are you OK？</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Blacksmith Po Lam$<BR>What？<BR>Ha……Ha……Ha，Oh……Oh……Oh……Ha ha～！<BR><FONT color=#7e12d2>(Po Lam suddenly fell down holding his stomach)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-7-a" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-7-b" mid="92"><![CDATA[<html>………… (Oops，Seems to have gone mad……)</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Blacksmith Po Lam$<BR>Ha ha Ha ha……You……You this guy！Be，Who sent ah？<BR>Be<FONT color=#a82424>Pourailly town</FONT>Of<FONT color=#a82424>Dowling</FONT>You sent the assassin brother？Haha……Haha……<BR>You want me to die laughing ah！You&#39;re ungrateful guy……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-7-b" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-7-c" mid="95"><![CDATA[<html>Be，You really great……I worship you。</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Blacksmith Po Lam$<BR>Ha ha……Whoops，Stomach ache……Ha ha……Now finally a little better……Ha ha……Anyway，This is a significant gain。Well，The three individuals have proven that<FONT color=#a82424>Lie detector</FONT>Have a perfect performance。How 样？I am what I allow you worship～Haha～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-7-c" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-7-d" mid="99"><![CDATA[<html>Ah……This，Well。Seems there is some fault……</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Blacksmith Po Lam${sound:Orc_Dead_a.wav}<BR>………………<BR>…………<BR>……<BR>How？This<FONT color=#a82424>Resonant voice howling pig</FONT>Be……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-7-d" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-7-e" mid="103"><![CDATA[<html>Say……Having said that……</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Blacksmith Po Lam$<BR><FONT color=#a82424>Fault</FONT>？Impossible！This<FONT color=#a82424>Lie detector</FONT>Be<FONT color=#a82424>Modern science and technology</FONT><FONT color=#a82424>Revolution</FONT>Representatives，Be<FONT color=#a82424>Crystallization of the most cutting-edge digital technology</FONT>，Will be a<FONT color=#a82424>Fault</FONT>？You Freeze said！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-7-e" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-7-f" mid="105"><![CDATA[<html>Eh……Ah，Do you have brothers？</html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>$Blacksmith Po Lam$<BR>Well，You ask me a question。<BR>I want to personally confirm whether the machine can work。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-7-f" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-7-g" mid="107"><![CDATA[<html>(Spread the truth of the effect of sound……)</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$Blacksmith Po Lam${sound:Hound_Bark_Attack_a.wav}<BR>What？I&#39;m not sure……<BR>
+Each village has a brother，Count the number of villages can be the right……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-7-g" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-7-h" mid="109"><![CDATA[<html>Ah……You are a virgin you？</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Blacksmith Po Lam$<BR>Do not ask this question。To ask some sharp、Sensitive issues。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-7-h" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-7-i" mid="111"><![CDATA[<html>(…………)</html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$Blacksmith Po Lam${sound:Orc_Dead_a.wav}<BR>What？It also considered the problem？<BR>Of course not！！！<BR> <FONT color=##7e12d2>(Lie detectors pig screaming sounds common，And began to violently shake up)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-7-i" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-7-j" mid="113"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-7-j" image="" itemindex="">
+      <talk_question mid="114"><![CDATA[<html>$Blacksmith Po Lam${sound:Orc_Dead_a.wav}<BR>………………………………………………………………………………………………<BR>………………………………………………<BR>To，To me。It seems like really something wrong。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">154</exe>
+         <exe type="recompense_view">,1541,1541,1541,1542</exe>
+         <exe type="talk" npc="n016_trader_borin">1</exe>
+         <exe type="addquestitem" num="1">300104</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="talk" npc="n017_trader_jeny">4</exe>
+         <exe type="talk" npc="n017_trader_jeny">a</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,1541,1541,1541,1542</exe>
+         <exe type="complete">154</exe>
+         <exe type="delquestitem" num="-1">300104</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n016_trader_borin" sub="b">1</exelink>
+   <exelink qstep="accepting" npc="n016_trader_borin" sub="acceptted">0,2,3</exelink>
+   <exelink qstep="1" npc="n016_trader_borin" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="b" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="c" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="d" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="e" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n016_trader_borin" sub="b" />
+   <exelink qstep="3" npc="n016_trader_borin" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n017_trader_jeny">0</exelink>
+   <exelink qstep="4" npc="n017_trader_jeny" sub="b" />
+   <exelink qstep="4" npc="n017_trader_jeny" sub="c" />
+   <exelink qstep="4" npc="n017_trader_jeny" sub="d" />
+   <exelink qstep="4" npc="n017_trader_jeny" sub="e" />
+   <exelink qstep="4" npc="n017_trader_jeny" sub="f" />
+   <exelink qstep="4" npc="n017_trader_jeny" sub="g" />
+   <exelink qstep="4" npc="n017_trader_jeny" sub="h" />
+   <exelink qstep="4" npc="n017_trader_jeny" sub="5">3,4</exelink>
+   <exelink qstep="5" npc="n016_trader_borin" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="6" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="6" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="6" npc="n012_sorceress_master_cynthia" sub="e" />
+   <exelink qstep="6" npc="n012_sorceress_master_cynthia" sub="f" />
+   <exelink qstep="6" npc="n012_sorceress_master_cynthia" sub="7">0,1</exelink>
+   <exelink qstep="7" npc="n016_trader_borin" sub="b" />
+   <exelink qstep="7" npc="n016_trader_borin" sub="c" />
+   <exelink qstep="7" npc="n016_trader_borin" sub="d" />
+   <exelink qstep="7" npc="n016_trader_borin" sub="e" />
+   <exelink qstep="7" npc="n016_trader_borin" sub="f" />
+   <exelink qstep="7" npc="n016_trader_borin" sub="g" />
+   <exelink qstep="7" npc="n016_trader_borin" sub="h" />
+   <exelink qstep="7" npc="n016_trader_borin" sub="i">0</exelink>
+   <exelink qstep="7" npc="n016_trader_borin" sub="j">1,2</exelink>
+   <journal_data recompense="3:1541,4:1542" quest_title="구라파인더Ⅱ" chapterid="" quest_level="6" quest_mark_type="10" use_item_list="300104">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,538,3380</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>16</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="115"><![CDATA[And dialogue blacksmith Po Lam]]></title>
+         <contents mid="116"><![CDATA[<html>Lam took out the sound effects applied<FONT color=#a82424>Lie detector</FONT>，Let me go to the residents of the ridge where the magic test performance。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Blacksmith Po Lam</FONT></html>]]></contents>
+         <destination mid="117"><![CDATA[And dialogue blacksmith Po Lam]]></destination>
+         <todo_msg mid="118"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Cl_Leonardo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-1194,3978</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>11</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="119"><![CDATA[More dialogue and senior pastor Leiang Na]]></title>
+         <contents mid="120"><![CDATA[<html>Lam said<FONT color=#a82424>Senior Pastor Leiang Na more</FONT>A young man had<FONT color=#a82424>Holy Heaven King City</FONT>Backstreet dawdle，Let me<FONT color=#a82424>Lie detector</FONT>To determine whether the true。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Senior Pastor Leiang Na more</FONT></html>]]></contents>
+         <destination mid="121"><![CDATA[More dialogue and senior pastor Leiang Na]]></destination>
+         <todo_msg mid="122"><![CDATA[Please more dialogue and senior pastor Leiang Na。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,538,3380</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>16</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="123"><![CDATA[And dialogue blacksmith Po Lam]]></title>
+         <contents mid="124"><![CDATA[<html>To the senior pastor who tested more than Leiang Na<FONT color=#a82424>Lie detector</FONT>The findings of the<FONT color=#a82424>Blacksmith Po Lam</FONT>。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Blacksmith Po Lam</FONT></html>]]></contents>
+         <destination mid="125"><![CDATA[And dialogue blacksmith Po Lam]]></destination>
+         <todo_msg mid="126"><![CDATA[Please dialogue blacksmith Po Lam。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Sonya.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-1014,244</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>17</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="127"><![CDATA[Jenny dialogue and businessmen]]></title>
+         <contents mid="128"><![CDATA[<html>Po Lam to let me go<FONT color=#a82424>Magic Ridge</FONT>Commercial means of clever and well-known<FONT color=#a82424>Merchant Jenie</FONT>There，Use<FONT color=#a82424>Lie detector</FONT>Determine the truth and lies。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Merchant Jenie</FONT></html>]]></contents>
+         <destination mid="129"><![CDATA[Jenny dialogue and businessmen]]></destination>
+         <todo_msg mid="130"><![CDATA[Please merchants Dialogue Jenie。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,538,3380</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>16</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="132"><![CDATA[And dialogue blacksmith Po Lam]]></title>
+         <contents mid="133"><![CDATA[<html>To the<FONT color=#a82424>Merchant Jenie</FONT>Body test<FONT color=#a82424>Lie detector</FONT>The findings of the<FONT color=#a82424>Blacksmith Po Lam</FONT>。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Blacksmith Po Lam</FONT></html>]]></contents>
+         <destination mid="134"><![CDATA[And dialogue blacksmith Po Lam]]></destination>
+         <todo_msg mid="135"><![CDATA[Please dialogue blacksmith Po Lam。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-456,4330</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="136"><![CDATA[And senior magician Cynthia dialogue]]></title>
+         <contents mid="137"><![CDATA[<html>Po Lam said that should<FONT color=#a82424>Lie detector</FONT>A final performance test，Let me go<FONT color=#a82424>Advanced magician Cynthia</FONT>Ask her if she had hidden there, man or dreams。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Advanced magician Cynthia</FONT></html>]]></contents>
+         <destination mid="138"><![CDATA[And senior magician Cynthia dialogue]]></destination>
+         <todo_msg mid="139"><![CDATA[Please dialogue with senior magician Cynthia。]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,538,3380</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>16</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="141"><![CDATA[And dialogue blacksmith Po Lam]]></title>
+         <contents mid="142"><![CDATA[<html>To the<FONT color=#a82424>Advanced magician Cynthia</FONT>Body test<FONT color=#a82424>Lie detector</FONT>The findings of the<FONT color=#a82424>Blacksmith Po Lam</FONT>。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Blacksmith Po Lam</FONT></html>]]></contents>
+         <destination mid="143"><![CDATA[And dialogue blacksmith Po Lam]]></destination>
+         <todo_msg mid="144"><![CDATA[Please dialogue blacksmith Po Lam。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>6:-1</user_level>
+      <user_worldzone_level />
+      <user_class>3:4</user_class>
+      <prev_quest>153</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

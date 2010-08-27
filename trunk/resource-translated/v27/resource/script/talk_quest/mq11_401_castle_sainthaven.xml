@@ -1,0 +1,679 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_401_castle_sainthaven</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>401</qid>
+      <designer>김인정</designer>
+      <qlevel>24</qlevel>
+      <qdesc>300028 - 클레릭 메인퀘에서 지우지 못한 퀘스트 아이템(현자의 지팡이) 지우기</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>402</nextqid>
+      <nextqname>mq11_402_town_of_death</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[King City sacred paradise]]></qkname>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드(세인트헤이븐 왕성)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>258</npcid>
+         <npcename>n258_slave_david</npcename>
+         <npckname>자칭 모험가 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>259</npcid>
+         <npcename>n259_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>260</npcid>
+         <npcename>n260_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>55</npcid>
+         <npcename>n055_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>69</npcid>
+         <npcename>n069_plane_ticketer_arnene</npcename>
+         <npckname>매표원 아넨느</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>70</npcid>
+         <npcename>n070_plane_ticketer_sorene</npcename>
+         <npckname>매표원 소렌느</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트     (캐더락 관문)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-1-level_check" mid="58"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Airship engineer Hubert$<BR>
+You&#39;ve worked hard。Ah，Power source is now ready，Estimated start<FONT color=#a82424>阿尔巴特罗</FONT>No. of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-a" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n099_engineer_hubert-1-b" mid="60"><![CDATA[<html>(Tell him out from the mouth of the Ogre)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Airship engineer Hubert$<BR>Ah……Strange……Huh？What&#39;s this？<FONT color=#a82424>Suspension device</FONT>Why so seriously damaged？<BR>How do you keep<FONT color=#a82424>Suspension device</FONT>Of？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-b" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n099_engineer_hubert-1-c" mid="62"><![CDATA[<html>Ah……？What you need？</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Airship engineer Hubert$<BR>Ha……They<FONT color=#a82424>Suspension device</FONT>As something you eat？<BR>Hey……Surface by corrosion，It seems it is difficult to directly use……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-c" image="" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$Airship engineer Hubert$<BR>Do not worry，I can solve this problem。<BR>Just take a little time。Please be patient for a while。<BR><FONT color=#7e12d2>（Reach24After class，Can move to the sacred paradise）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-d" image="QN_Npc_Woman_Tiketer_Arnene.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Airship engineer Hubert$<BR>
+Good。All the preparations are completed！We can immediately take off，You go<FONT color=#a82424>Conductor A Nanna</FONT>Where the handle bar ride procedure。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-e" image="QS_Default.dds" itemindex="300103">
+      <talk_question mid="66"><![CDATA[<html>$Airship engineer Hubert$<BR>
+Before I deal with<FONT color=#a82424>Suspension device</FONT>When the corrosion part，Please be patient for a while。<BR>
+<FONT color=#7e12d2>(Reach24After class，Can be moved to the sacred paradise)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QN_Npc_Woman_Tiketer_Arnene.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Senior magician Tina$<BR>What?Ah not start?Did not mean to <FONT color=#a82424>Sacred</FONT> <FONT color=#a82424>Heaven</FONT>The right?<BR><FONT color=#7e12d2>（A Nanna through the conductor to the sacred paradise）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-1" image="QN_Npc_Woman_Tiketer_Arnene.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Elite soldiers Cleander$<BR>To<FONT color=#a82424>Sacred</FONT> <FONT color=#a82424>Heaven</FONT>His Majesty the King Report。Kedella guardian of checkpoints<FONT color=#382000>{user_nick}</FONT>Adults and peers on with me，Let me complete the report。 <BR><FONT color=#7e12d2>（A Nanna through the conductor to the sacred paradise）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-1" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Conductor Suolan Na$<BR>What can you do to help？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Court magician Kala An$<BR>Hum。If we look down upon<FONT color=#a82424>Magician</FONT>What will happen why bother to go?<BR>...What ah，You，If no events, then，Give me get out of the way。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Bishop Ignacio$<BR>Ah...Appears to be big oh，Event。<BR>The fate of the Kingdom of the wind like a candle guttering in...Extremely worried about it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$King Kaxiwusi$<BR>Omen，Omen...Not to see people casually。&#39;re Busy，Fast for me to step down。 ...<BR>...But you will come to it...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Duke Stewart$<BR>I heard something about you。Well look pretty amazing。<BR>
+
+For your reward，Next time you are ready to give it a chance。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Joel King City Guards$<BR>I am mission。Soon get out of the ordinary，Do not bother me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n069_plane_ticketer_arnene-1" image="QW_AirShip.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Conductor A Nanna$<BR>Hello，Adventurer！<BR>Thanks to you，<FONT color=#a82424>阿尔巴特罗 No.</FONT>Finally repaired，Can be a normal sailing。For your help，I express sincere appreciation。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="" itemindex="">
+      <talk_question mid="111"><![CDATA[<html>$Elite soldiers Cleander$<BR>Now there are many things that need to be reported，I almost weighs the。<BR><FONT color=#7e12d2>(Must complete the task before，To engage in dialogue)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n259_argenta-1" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n259_argenta-1-a" mid="113"><![CDATA[<html>Well……</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Algerita$<BR>Finally to the divine heaven。The construction of so many things do not know what is the use。Hum……Why do humans live crowded together like it？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n259_argenta-1-a" image="" itemindex="">
+      <talk_answer link_index="n259_argenta-1-b" mid="115"><![CDATA[<html>Where are you going ah？</html>]]></talk_answer>
+      <talk_question mid="114"><![CDATA[<html>$Algerita$<BR>The guy is really ignorant。<BR>Well，I excused。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n259_argenta-1-b" image="" itemindex="">
+      <talk_answer link_index="n259_argenta-1-c" mid="117"><![CDATA[<html>I do？</html>]]></talk_answer>
+      <talk_question mid="116"><![CDATA[<html>$Algerita$<BR>Of course, to see<FONT color=#a82424>Geraint</FONT>The。Where can ah？I have much to tell and he said。<BR>Well……You are running a bar of your things。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n259_argenta-1-c" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="118"><![CDATA[<html>$Algerita$<BR>Well，The man was behind the look at you with earnest，He will tell you what to do。<BR><FONT color=#7e12d2>(Algerita pointed to the elite soldiers Cleander)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n259_argenta-1-d" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="119"><![CDATA[<html>$Algerita$<BR>What also dawdling ah？<BR>
+Do not see where the human soldiers do？<BR><FONT color=#7e12d2>(Algerita pointed to the elite soldiers Cleander)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n258_slave_david-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="120"><![CDATA[<html>$Kraft adventurer David$<BR>Ha，Ha，Ha。Do you want to follow in<FONT color=#a82424>Algerita</FONT>Side？<BR>
+That&#39;s what I<FONT color=#a82424>David</FONT>Work！Ha，Ha，Ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n260_elite_soldier-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="121"><![CDATA[<html>$Elite soldiers Cleander$<BR><FONT color=#382000>{user_nick}</FONT>，That beautiful woman is your sister right？She seems to want to say goodbye to you，You go and she finished speaking and then come to me。<BR><FONT color=#7e12d2>(Cleander looked Algerita)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n260_elite_soldier-1-a" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n260_elite_soldier-1-b" mid="125"><![CDATA[<html>Yes，Starting right now？</html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$Elite soldiers Cleander$<BR>I told you before，I must whereabouts<FONT color=#a82424>Kaxiwusi</FONT><FONT color=#a82424>King</FONT> Your majesty。You have not forgotten？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n260_elite_soldier-1-b" image="QN_Npc_Woman_Tiketer_Sorene.dds" itemindex="">
+      <talk_answer link_index="n260_elite_soldier-1-go_saint" mid="133"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$Elite soldiers Cleander$<BR>Yes，I first<FONT color=#a82424>King City</FONT>Go。Formalities will take some time，Before you wander slowly，Prepared after，Go<FONT color=#a82424>Conductor Suolan Na</FONT>On the line。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-2" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-2-a" mid="127"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Conductor Suolan Na$<BR>Ah，<FONT color=#382000>{user_class} {user_nick}</FONT>，You are and<BR><FONT color=#a82424>Elite soldiers Cleander</FONT>1 up，Right？<BR>
+<FONT color=#a82424>Cleander</FONT>King City, which has to go。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-2-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-2-b" mid="129"><![CDATA[<html>Thank you。</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$Conductor Suolan Na$<BR><FONT color=#382000>{user_nick}</FONT>，Cleander after you after finishing things，Once in the past。In<FONT color=#a82424>King City Entrance</FONT>See<FONT color=#a82424>Joel King City Guards</FONT>，You go to see him。He will take you to go inside。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-2-b" image="" itemindex="">
+      <talk_question mid="130"><![CDATA[<html>$Conductor Suolan Na$<BR>Goodbye。<BR>I wish you a pleasant stay in the holy paradise。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-2-c" image="" itemindex="">
+      <talk_question mid="131"><![CDATA[<html>$Conductor Suolan Na$<BR><FONT color=#a82424>Cleander</FONT>Has first<FONT color=#a82424>King City</FONT>Go up，You&#39;d better go over there and see。In<FONT color=#a82424>King City Entrance</FONT>See<FONT color=#a82424>Joel King City Guards</FONT>，You go to see him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2-a" mid="36"><![CDATA[<html>Someone else asked my report to His Majesty the King。</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$King City Guards$<BR>Etc.！Stop！！<BR>Feed，You look very suspicious！Who allows you to incoming？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2-b" mid="38"><![CDATA[<html>You go on it？</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Joel King City Guards$<BR>Ah？……Ah，You are<FONT color=#382000>{user_class} {user_nick}</FONT>It？<BR>I just heard<FONT color=#a82424>Cleander</FONT>Said。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-b" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Joel King City Guards$<BR>네. <FONT color=#a82424>Cleander</FONT>Once you see him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-c" image="" itemindex="">
+      <talk_question mid="190"><![CDATA[<html>$Joel King City Guards$<BR>I am mission。Soon get out of the ordinary，Do not bother me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Joel King City Guards$<BR>Go after，<FONT color=#a82424>Cleander</FONT>Should be on the inside waiting for you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-3" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-3-check_partymember" mid="99"><![CDATA[<html>Directly speak to him on the line right？</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Elite soldiers Cleander$<BR>You 来啦。I have the report finished。<FONT color=#382000>{user_nick}</FONT>，I mentioned the things you。Now you need to direct movement of<FONT color=#a82424>His Majesty the King</FONT>Report again on the line。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-3-a" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="100"><![CDATA[<html>$Elite soldiers Cleander$<BR>Yes。<FONT color=#a82424>Kedella points</FONT>I already have told about the case he said。But on<FONT color=#a82424>Prophet</FONT>The whereabouts of things……I have not personally seen，I hope you can explain the exact circumstances。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-3-b" image="" itemindex="">
+      <talk_question mid="188"><![CDATA[<html>$Elite soldiers Cleander$<BR>
+Good。But，His Majesty the King in the audience keep quiet until。Wang city needs quiet。<BR>
+※ <FONT color=#7e12d2>Team can not be under。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-4" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-4-a" mid="81"><![CDATA[<html>Like……Not very happy the way。</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Elite soldiers Cleander$<BR>Black Knight&#39;s attacks because of，Many companions were injured，<FONT color=#a82424>Prophet</FONT>Also disappeared，I really Meilian Xian who had。<FONT color=#382000>{user_nick}</FONT>，Thanks for your help，We only know the whereabouts of the Prophet，His Majesty the King must be very happy it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-4-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Elite soldiers Cleander$<BR>How will it？Now that the report finished，Hope all goes well things。<BR>His Majesty the King should be to deal with these things。<BR><FONT color=#7e12d2>(Please dialogue with Bishop Ignacio)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-a" mid="84"><![CDATA[<html>Anyway，If you do not find the words of the Prophet……</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Court magician Kala An$<BR>Bishop must be clear cunning plot。<BR>Hum，Sent so many members over the past Temple Knight，But nothing，Who believe ah？<BR>
+Kala An ordinary me as if the magician，Think again。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-a" image="" itemindex="">
+      <talk_question mid="85"><![CDATA[<html>$Court magician Kala An$<BR>You are the magician in the court orders you to？<BR>I said you do not look for a prophet？<BR><FONT color=#a82424>General</FONT>、<FONT color=#a82424>Duke</FONT>And<FONT color=#a82424>Bishop</FONT>Are reduced in later，Why do we have when the deed goes unpunished？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-4-a" mid="183"><![CDATA[<html>There is no other way to do?</html>]]></talk_answer>
+      <talk_question mid="182"><![CDATA[<html>$Duke Stewart$<BR>Ah…Black Knight was quickly catch ah，But can not garrison troops deployed King City…And the court magician, or do not want to leave the Knights of the Temple，This is really…Makes difficult ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-4-b" mid="186"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="184"><![CDATA[<html>$Duke Stewart$<BR>Is so weak because the king，Therefore, the court magician and the bishop knew, for their own safety ah。<BR>
+King of the previous generation，That my brother did not reign so ah…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-b" image="" itemindex="">
+      <talk_question mid="187"><![CDATA[<html>$Duke Stewart$<BR>
+In short，Difficult to act decisively now ah。<BR>
+No help for the busy，Sorry ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-a" mid="167"><![CDATA[<html>Do not quickly find the prophets…</html>]]></talk_answer>
+      <talk_question mid="166"><![CDATA[<html>$Bishop Ignacio$<BR>This is really a great service an ah，{user_nick}。<BR>But for you，We may never find a prophet。<BR>But also assisted <FONT color=#a82424>Kedella points</FONT>，Really great ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-b" mid="169"><![CDATA[<html>I see the clear。</html>]]></talk_answer>
+      <talk_question mid="168"><![CDATA[<html>$Bishop Ignacio$<BR>But the Prophet，<BR>Indeed<FONT color=#a82424>Black Knight</FONT>Take with you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-c" mid="171"><![CDATA[<html>（Bishop sorry for a sigh）</html>]]></talk_answer>
+      <talk_question mid="170"><![CDATA[<html>$Bishop Ignacio$<BR>Ah…Dare to undermine the royal army airship，Also hijacked prophets…Is really a dangerous guy ah。Really worried<FONT color=#a82424>Prophet</FONT>Will not be safe in his hands ah…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-d" mid="173"><![CDATA[<html>Let me help you it。</html>]]></talk_answer>
+      <talk_question mid="172"><![CDATA[<html>$Bishop Ignacio$<BR>
+Although too quickly to find <FONT color=#a82424>Prophet</FONT>，But they are not able to deploy troops，Really not what to do。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-!next" mid="175"><![CDATA[<html><FONT color=#a94407>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="174"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">24</chk>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 1) >= 2</chk>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 1) == 2</chk>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 1) == 3</chk>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 2) == 1</chk>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 3) == 1</chk>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 3) == 2</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="conexe" true="3,7,8" false="4">0</exe>
+         <exe type="talk" npc="n099_engineer_hubert">d</exe>
+         <exe type="talk" npc="n099_engineer_hubert">a</exe>
+         <exe type="talk" npc="n099_engineer_hubert">e</exe>
+         <exe type="conexe" true="3,7,8" false="5">0</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 1, 2);</exe>
+         <exe type="conexe" true="3" false="6">1</exe>
+         <exe type="talk" npc="n069_plane_ticketer_arnene">1</exe>
+         <exe type="talk" npc="n069_plane_ticketer_arnene">c</exe>
+         <exe type="conexe" true="10" false="13">2</exe>
+         <exe type="conexe" true="11" false="10">3</exe>
+         <exe type="talk" npc="n069_plane_ticketer_arnene">d</exe>
+         <exe type="moneyDelete" num="500" onexe="18,20">16</exe>
+         <exe type="talk" npc="n069_plane_ticketer_arnene">e</exe>
+         <exe type="custom" />
+         <exe type="custom" />
+         <exe type="custom" />
+         <exe type="custom">api_user_ChangeMap(userObjID,11,1);</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 1, 4);</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 2, 1);</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 3, 1);</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 3, 2);</exe>
+         <exe type="conexe" true="30,34" false="29">4</exe>
+         <exe type="conexe" true="32" false="28">5</exe>
+         <exe type="conexe" true="33" false="31">6</exe>
+         <exe type="talk" npc="n259_argenta">1</exe>
+         <exe type="talk" npc="n259_argenta">d</exe>
+         <exe type="talk" npc="n260_elite_soldier">1</exe>
+         <exe type="talk" npc="n260_elite_soldier">a</exe>
+         <exe type="talk" npc="n260_elite_soldier">b</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 3) == 2</chk>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 3) == 3</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">7</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n070_plane_ticketer_sorene">2</exe>
+         <exe type="talk" npc="n070_plane_ticketer_sorene">c</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 3, 3);</exe>
+         <exe type="conexe" true="8" false="9">1</exe>
+         <exe type="talk" npc="n252_saint_guard">2</exe>
+         <exe type="talk" npc="n252_saint_guard">c</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="conexe" true="2,0" false="3">0</exe>
+         <exe type="talk" npc="n209_elite_soldier">a</exe>
+         <exe type="talk" npc="n209_elite_soldier">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">401</exe>
+         <exe type="recompense">,4011,4012,4013,4014</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4011,4012,4013,4014</exe>
+         <exe type="complete">401</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n099_engineer_hubert">9</exelink>
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="level_check">2</exelink>
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="b" />
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="c" />
+   <exelink qstep="1" npc="n259_argenta">26</exelink>
+   <exelink qstep="1" npc="n259_argenta" sub="b" />
+   <exelink qstep="1" npc="n259_argenta" sub="c">23,24,34</exelink>
+   <exelink qstep="1" npc="n260_elite_soldier">27</exelink>
+   <exelink qstep="1" npc="n260_elite_soldier" sub="b" />
+   <exelink qstep="1" npc="n260_elite_soldier" sub="go_saint">25,0,1,20</exelink>
+   <exelink qstep="2" npc="n070_plane_ticketer_sorene">3</exelink>
+   <exelink qstep="2" npc="n070_plane_ticketer_sorene" sub="b">2,6</exelink>
+   <exelink qstep="2" npc="n252_saint_guard">7</exelink>
+   <exelink qstep="2" npc="n252_saint_guard" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n209_elite_soldier" sub="check_partymember">1</exelink>
+   <exelink qstep="4" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="d">0</exelink>
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="!next">1</exelink>
+   <journal_data recompense="1:4011,2:4012,3:4013,4:4014" quest_title="왕성 세인트 헤이븐" chapterid="4" quest_level="24" quest_mark_type="7" use_item_list="300028">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Reach]]></title>
+         <contents mid="26"><![CDATA[<html><FONT color=#a82424></FONT>The suspension device to the airship engineer Hubert。And airship engineer Hubert dialog and。<BR>
+<FONT color=#7e12d2>※ 24After class，Can move to the sacred paradise。</FONT><BR>
+<FONT color=#086171></FONT> <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Airship engineer Hubert</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[And airship engineer Hubert dialogue]]></destination>
+         <todo_msg mid="28"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Tiketer_Arnene.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n69</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>69</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="150"><![CDATA[King of heaven to the holy city]]></title>
+         <contents mid="151"><![CDATA[<html>No. airship 阿尔巴特罗 start preparations have been completed。And conductor A Nanna dialogue，Well prepared to take 阿尔巴特罗 No.。<BR>
+<BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Conductor A Nanna</FONT></html>]]></contents>
+         <destination mid="152"><![CDATA[And conductor A Nanna dialogue]]></destination>
+         <todo_msg mid="153"><![CDATA[Please E Nanna dialogue，Take the airship 阿尔巴特罗 No.。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13015,n259</destination_pos>
+         <destination_mode>custom:8@0</destination_mode>
+         <statemark_npcid>259</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="154"><![CDATA[And Algerita goodbye]]></title>
+         <contents mid="155"><![CDATA[<html>Came to the holy heaven。Algerita seems to want to leave，And she say goodbye。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Algerita</FONT></html>]]></contents>
+         <destination mid="156"><![CDATA[And Algerita dialogue]]></destination>
+         <todo_msg mid="157"><![CDATA[Please Algerita goodbye。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13015,n260</destination_pos>
+         <destination_mode>custom:8@0</destination_mode>
+         <statemark_npcid>260</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="158"><![CDATA[Cleander guide]]></title>
+         <contents mid="159"><![CDATA[<html>At the invitation of elite soldiers Cleander，Came to the holy heaven，He goes on to ask what should be。<BR>
+<BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Elite soldiers Cleander</FONT></html>]]></contents>
+         <destination mid="160"><![CDATA[And elite soldiers Cleander dialogue]]></destination>
+         <todo_msg mid="161"><![CDATA[Please elite soldiers Cleander dialogue。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Tiketer_Sorene.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n70</destination_pos>
+         <destination_mode>custom:8@0</destination_mode>
+         <statemark_npcid>70</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="162"><![CDATA[Reach]]></title>
+         <contents mid="163"><![CDATA[<html>At the invitation of elite soldiers Cleander，Came to the holy heaven。The conductor asked him the whereabouts of Suo Lanna。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Conductor Suolan Na</FONT></html>]]></contents>
+         <destination mid="164"><![CDATA[And conductor Suo Lanna dialogue]]></destination>
+         <todo_msg mid="165"><![CDATA[Please move to the sacred paradise，And conductor Suo Lanna dialogue。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n252</destination_pos>
+         <destination_mode>custom:8@0</destination_mode>
+         <statemark_npcid>252</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="29"><![CDATA[In front of King City]]></title>
+         <contents mid="30"><![CDATA[<html>Elite soldiers Cleander seems to have gone to King City。He said he would help me paperwork，Go approaching King City。And in front of King City<FONT color=#a82424>King City Guards</FONT><FONT color=#a82424>Joel</FONT>Dialogue，It is said that he will lead me into King City。<BR><BR><FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Joel King City Guards</FONT></html>]]></contents>
+         <destination mid="31"><![CDATA[Joel dialogue and King City Guards]]></destination>
+         <todo_msg mid="32"><![CDATA[To meet in front of the sacred city of Paradise King Joel King City Guards。]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n209</destination_pos>
+         <destination_mode>custom:8@0</destination_mode>
+         <statemark_npcid>209</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="103"><![CDATA[Cleander report]]></title>
+         <contents mid="104"><![CDATA[<html><FONT color=#a82424>Elite soldiers Cleander</FONT>As if waiting for me inside。Into the King City，Find Cleander。<BR><BR><FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Elite soldiers Cleander</FONT></html>]]></contents>
+         <destination mid="105"><![CDATA[And holy king of heaven within the city&#39;s elite soldiers Cleander dialogue]]></destination>
+         <todo_msg mid="106"><![CDATA[Please enter the sacred city of Paradise King，And elite soldiers Cleander dialogue。]]></todo_msg>
+      </journal>
+      <journal index="8">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,0,0</destination_pos>
+         <destination_mode>custom:21@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="107"><![CDATA[King City chaos]]></title>
+         <contents mid="108"><![CDATA[<html>King seems to be no effort to find the Prophet。Should go and<FONT color=#a82424>Other noble</FONT>And<FONT color=#a82424>Officer</FONT>Talk。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="109"><![CDATA[And holy king of heaven the city nobles dialogue]]></destination>
+         <todo_msg mid="110"><![CDATA[Please call to other nobles and officials。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>22:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>218</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

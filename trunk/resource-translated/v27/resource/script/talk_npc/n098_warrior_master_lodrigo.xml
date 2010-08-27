@@ -1,0 +1,62 @@
+   <talk>
+      <npcename>n098_warrior_master_lodrigo</npcename>
+      <npcid>98</npcid>
+      <startexe>4</startexe>
+      <npckname mid="1"><![CDATA[Advanced War 士罗德里奥]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="4"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="skill1" mid="5"><![CDATA[<html>[Learning Skills]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Advanced War 士罗德里奥$<BR>Birds flying at low altitude，Bad premonition….</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="7"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Advanced War 士罗德里奥$<BR>Habits of the age of three to 80 years with，Know？I work hard at practice to play a small，Super good feeling now。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="44" link_target="sq11_543_blue_wolf_on_the_desert.xml"><![CDATA[<html><FONT color=#2b2723>[Lv24] </FONT><FONT color=#086171>Desert Blue Wolf</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="45" link_target="sq11_468_saint_challenger1.xml"><![CDATA[<html><FONT color=#2b2723>[Lv29] </FONT><FONT color=#086171>Return Orc King</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="sq11_469_saint_challenger2.xml"><![CDATA[<html><FONT color=#2b2723>[Lv29] </FONT><FONT color=#086171>Resurrection of the Orc King</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="47" link_target="sq11_470_saint_challenger3.xml"><![CDATA[<html><FONT color=#2b2723>[Lv29] </FONT><FONT color=#086171>The Orc King counteroffensives</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="48" link_target="sq11_531_bad_plants.xml"><![CDATA[<html>[Lv29] <FONT color=#086171>Harmful Plants</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="59" link_target="sq11_499_powerup_mucle1.xml"><![CDATA[<html><FONT face=Arial size=2>[Lv32] <FONT color=#086171>[Title] GladiatorLv2/ Force to strengthen Ⅰ</FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="60" link_target="sq11_500_powerup_mucle2.xml"><![CDATA[<html>[Lv32] <FONT color=#086171>[Title] GladiatorLv2/ Force to strengthen Ⅱ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="61" link_target="sq11_501_powerup_mucle3.xml"><![CDATA[<html><FONT color=#2b2723>[Lv32] </FONT><FONT color=#086171>[Title] GladiatorLv2/ Force to strengthen Ⅲ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back4" mid="62"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Advanced War 士罗德里奥$<BR>Ah，I am looking for something like it?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="003" image="" itemindex="">
+         <talk_answer link_index="quest" mid="26"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="skill2" mid="27"><![CDATA[<html>[Learning Skills]</html>]]></talk_answer>
+         <talk_answer link_index="005" mid="28"><![CDATA[<html>[Dialogue] The raid on the Black Dragon</html>]]></talk_answer>
+         <talk_question mid="17"><![CDATA[<html>$Senior Warrior Rodriguez$<BR>I have heard that Black Dragon again。How could this，That guy early50Years ago <FONT color=#a82424>Ballner</FONT>Severely taught adult meal。And I am here，It also must not appear in the holy paradise，Ha ha Ha ha！</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="004" image="" itemindex="">
+         <talk_answer link_index="quest" mid="29"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="005" mid="30"><![CDATA[<html>[Dialogue] The raid on the Black Dragon</html>]]></talk_answer>
+         <talk_question mid="21"><![CDATA[<html>$Senior Warrior Rodriguez$<BR>
+Ah really nervous。<FONT color=#a82424>Black Dragon</FONT>Again in Montenegro is already a lot of criticisms of the news。But the Black Dragon has long been<FONT color=#a82424>Great Barner</FONT>Adults are repulsed，So now this certainly is only a black lizard only。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="005" image="" itemindex="">
+         <talk_answer link_index="back2" mid="31"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="24"><![CDATA[<html>$Senior Warrior Rodriguez$<BR>
+The raid in the Black Dragon is quite a lot of them Ballner adults can。If I was in that period, then，Will surely be a color to see see that black lizard，What a pity ah。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="0" false="1">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+         <exe type="conexe" true="5" false="2">1</exe>
+         <exe type="conexe" true="6" false="7">0</exe>
+         <exe type="talk">003</exe>
+         <exe type="talk">004</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 408) == 1</chk>
+      </conditions>
+      <exelink idx="skill1">3</exelink>
+      <exelink idx="back4">4</exelink>
+      <exelink idx="skill2">3</exelink>
+      <exelink idx="back2">4</exelink>
+   </talk>

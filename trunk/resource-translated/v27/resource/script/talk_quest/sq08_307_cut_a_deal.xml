@@ -1,0 +1,336 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_307_cut_a_deal</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>307</qid>
+      <designer>김인정</designer>
+      <qlevel>19</qlevel>
+      <qdesc>휴버트와 대화
+티아나와 대화
+고요한 수도원 본당에서 갇힌 소서리스 해방
+티아나에게 보고</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Tina trading proposal]]></qkname>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-noquest" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Senior magician Tina$<BR>You would be so bored?What a run it themselves。<BR><FONT color=#7e12d2>（Hubert received from the airship engineers continued the task before）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-a" mid="7"><![CDATA[<html>Ah？</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Airship engineer Hubert$<BR>In fact... Is I burn you from 佩奥里斯塔 Institute brings back magicFONT color=#a82424>Firewood</FONT>When…It was at that time！Events。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-a" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-b" mid="9"><![CDATA[<html>So?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Airship engineer Hubert$<BR>Is<FONT color=#a82424>Senior magician Tina</FONT> ，Tina Bai！！She saw the magic I used 佩奥里斯塔 Institute bookshelf！ True，Shame ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-c" mid="11"><![CDATA[<html>Really lucky ah。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Airship engineer Hubert$<BR>So what so ah? In anger<FONT color=#a82424>Magician</FONT>Before my hands-on，Ground quickly Bian Lege。She said that since the book moved in，It has only a<FONT color=#a82424>Empty shelves</FONT>The harm to spare my life，I considered less a decade, oh life。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-d" mid="14"><![CDATA[<html>...Ah? What?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Airship engineer Hubert${action:talk}<BR>But<FONT color=#a82424>Senior magician Tina</FONT>I do one thing for her，So I&#39;ll introduce you to her，Come on you can do about it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-e" mid="16"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Tina trading proposal$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-e" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Airship engineer Hubert$<BR>What surprised ah。Commissioned as adventurers should be more happy is more！Anyway…That was it to please your friends。Go <FONT color=#a82424>Senior magician Tina</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Senior magician Tina${action:talk}<BR>You would be so bored?What a run it themselves？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-1-a" mid="20"><![CDATA[<html>So?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Airship engineer Hubert$<BR>Is<FONT color=#a82424>Senior magician Tina</FONT> ，Tina Bai！！She saw the magic I used 佩奥里斯塔 Institute bookshelf！ True，Shame ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-a" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-1-b" mid="22"><![CDATA[<html>Really lucky ah。</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Airship engineer Hubert$<BR>So what so ah? In anger<FONT color=#a82424>Magician</FONT>Before my hands-on，Ground quickly Bian Lege。She said that since the book moved in，It has only a<FONT color=#a82424>Empty shelves</FONT>The harm to spare my life，I considered less a decade, oh life。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-b" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-1-c" mid="24"><![CDATA[<html>...Ah? What?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Airship engineer Hubert${action:talk}<BR>But <FONT color=#a82424>Senior magician Tina</FONT>I do one thing for her，So I&#39;ll introduce you to her，Come on you can do about it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-c" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2" mid="26"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Tina trading proposal$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Airship engineer Hubert$<BR>What surprised ah。Commissioned as adventurers should be more happy is more！Anyway…That was it to please your friends。Go<FONT color=#a82424>Senior magician Tina</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-a" mid="29"><![CDATA[<html>Did not you say what you need to delegate things？</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Senior magician Tina$<BR>Ah，The original is to help<FONT color=#a82424>Airship engineer Hubert</FONT>To do the kind of murderous guy entrusted ah?Really... What I want is the guy to accept the kind of rogue commission。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-b" mid="31"><![CDATA[<html>What ah?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Senior magician Tina${action:talk}<BR>Ah，Is<FONT color=#a82424>Magic Ridge</FONT>The magician had received a request…It is a shame because，People can not easily deliver ah? It is best to solve the quiet and lifeless。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-b" image="QW_22.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-c" mid="33"><![CDATA[<html>（Tina sighed like trouble）</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Senior magician Tina$<BR>Some magicians may be to explore<FONT color=#a82424>Silent monastery temple</FONT>When they were caught。However, the Guard can not formally be commissioned or adventurer Association。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-c" image="QN_Npc_SoceressYulliaPrison.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-d" mid="35"><![CDATA[<html>So that。</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Senior magician Tina$<BR>After all, there is<FONT color=#a82424>Pastor</FONT>Their sacred Well?Even now the ruins，If<FONT color=#a82424>Magician</FONT>If there are，But also what kind of gossip do，It will become more complicated。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-d" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-e" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Senior magician Tina$<BR>You are not very strange why the magician who were there。Where<FONT color=#a82424>Blow strange Carrera Master</FONT>Will use similar magic with the magic secret it。It is necessary to find out in the end as a magician who taught them the kind of magic。So many ways we are investigating the matter it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-e" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-3" mid="39"><![CDATA[<html>Ah。Understand。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Senior magician Tina${action:talk}<BR>Anyway, you can do about the commission。Oh, to be privately resolved。If this matter would run very well，Use a few empty shelves 佩奥里斯塔 magic things Institute，I no longer pursue the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3" image="QW_22.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Senior magician Tina${action:talk}<BR>To<FONT color=#a82424>Silent monastery temple</FONT>To rescue<FONT color=#a82424>Be related</FONT><FONT color=#a82424>Magician</FONT>We ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Airship engineer Hubert$<BR><FONT color=#a82424>Senior magician Tina</FONT>Ah you do? …Secrecy? You dirty guy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4" image="QN_Npc_SoceressYulliaPrison.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-a" mid="43"><![CDATA[<html>Caught not your Cuoa。</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Senior magician Tina${action:talk}<BR>Sounds nice? Back again so soon。Really，While those who are caught are my younger magician，Are enough to dull the，This is not delay, did not 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-b" mid="45"><![CDATA[<html>Nothing。</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Senior magician Tina$<BR>That is quite...<BR>
+Anyway, back to be a human right owed to you，You&#39;ve worked hard。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-c" mid="47"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-c" image="QW_21.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Senior magician Tina${action:talk}<BR>But you can no longer put<FONT color=#a82424>佩奥里斯塔 Magic Institute</FONT>Oh, the things to move out。We will one day recover the Holy Land and repair where，That is the name of those of us gathered in 佩奥里斯塔 their obligations under the magician。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3071,3072,3073,3074</exe>
+         <exe type="setquest">307</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3071,3072,3073,3074</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3071,3072,3073,3074</exe>
+         <exe type="complete">307</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n099_engineer_hubert" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n099_engineer_hubert" sub="e">1,2,3</exelink>
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="b" />
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="c">0</exelink>
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="2">1,2</exelink>
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="c" />
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="d" />
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="e" />
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="3">0,1</exelink>
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="b">0</exelink>
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="c">1</exelink>
+   <journal_data recompense="1:3071,2:3072,3:3073,4:3074" quest_title="티아나의 거래제안" chapterid="" quest_level="19" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[Hubert difficulties]]></title>
+         <contents mid="51"><![CDATA[<html>Airship engineer Hubert seems to have nothing to do commissioned。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Airship engineer Hubert</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[And airship engineer Hubert dialogue]]></destination>
+         <todo_msg mid="53"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Personal commission]]></title>
+         <contents mid="55"><![CDATA[<html>Senior magician Tina said the commission has a private。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior magician Tina</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[And senior magician Tina dialogue]]></destination>
+         <todo_msg mid="57"><![CDATA[Dialogue with senior magician Tina Bar。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_22.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>162,0,0</destination_pos>
+         <destination_mode>custom:161@1,162@4,163@0,164@0</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[The wizard imprisoned]]></title>
+         <contents mid="59"><![CDATA[<html>To silence the monastery temple rescued<FONT color=#a82424>The wizard imprisoned</FONT>。<BR><BR><FONT color=#086171>Crystal Valley → Melting Forest(Silent monastery entrance)</FONT> <FONT color=#a82424>→ Silent monastery temple</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Rescue was held in the main hall of the magician silent monastery]]></destination>
+         <todo_msg mid="61"><![CDATA[Rescue was held in the main hall of the magician it silent monastery。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[Commissioned]]></title>
+         <contents mid="63"><![CDATA[<html>All were rescued off the magician。Go back to<FONT color=#a82424>Senior magician Tina</FONT>Report it。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior magician Tina</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[And senior magician Tina dialogue]]></destination>
+         <todo_msg mid="65"><![CDATA[They rescued the magician，Report to the senior bar magician Tina。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>19:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>306</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

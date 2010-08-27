@@ -1,0 +1,21 @@
+   <talk>
+      <npcename>n303_auction_manger_shylock</npcename>
+      <npcid>303</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Exchange President Shylock]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="auction" mid="3"><![CDATA[<html>[Exchange]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="4"><![CDATA[<html>[Dialogue] Where exchange is？</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Exchange President Shylock$<BR>You want to credit transactions?<BR>Then you come to the right place。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="001" mid="6"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Exchange President Shylock$<BR>This is risky for the busy people to commission sales on behalf of local。And if we need something，May wish to buy。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenMarket(userObjID);</exe>
+      </executions>
+      <conditions />
+      <exelink idx="auction">1</exelink>
+   </talk>

@@ -1,0 +1,321 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_561_busy_bellin</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>561</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Busy blacksmith]]></qkname>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-noquest" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Blacksmith Berlin$<BR>Oh，I almost Mangsi the，What people have come to me！<BR>Really……<BR><FONT color=#7e12d2>(Stewart at Duke, where the task is acceptable)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-a" mid="7"><![CDATA[<html>I？Why……</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Duke Stewart$<BR>To enhance the loyalty of the people are on the Kingdom，I am ready to build a<FONT color=#a82424>Golden Dragon</FONT>Statue。<BR>You are one of the relevant staff，I hope you will take responsibility。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-a" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-b" mid="9"><![CDATA[<html>Good。</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Duke Stewart$<BR>I<FONT color=#a82424>Blacksmith Berlin</FONT>Under the orders，But have not received a message。<BR>Can you help me to Cuicui him，Then customize what you get back？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-acceppted" mid="11"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Busy blacksmith$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Duke Stewart$<BR>You go<FONT color=#a82424>Blacksmith Berlin</FONT>Confirm the situation where。<BR>I thought the statue should be made soon，Really……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="QM_HoundNormal_2.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-a" mid="14"><![CDATA[<html>(Berlin kept nagging)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Blacksmith Berlin$<BR>忙死 the，忙死 the！！Even if the long hand 10 is not enough ah。<BR>Can not easily grasp only<FONT color=#a82424>Hound</FONT>Come，It helped me work。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-a" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-b" mid="16"><![CDATA[<html>He asked when you can do。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Blacksmith Berlin$<BR>What can I do you？……Ah？Duke？Bronze statue？<FONT color=#7e12d2> (Berlin Kouzhe nostril)</FONT><BR>Ah～Bronze statue！I thought it was<FONT color=#a82424>Duke</FONT>Whim it。Is it true？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-c" mid="18"><![CDATA[<html>(Berlin to work)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Blacksmith Berlin$<BR>When do？You go tell him，Another ten years should be on almost the same！<BR>……Not，So，Duke will send someone to take me away to……Ah，Let me see，Pei Pei！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-d" mid="20"><![CDATA[<html>That is quite。</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Blacksmith Berlin$<BR>Because of this war，I have to give priority to repair of weapons。We do not know when it will come Monster，Wretched gun and knife with how to protect<FONT color=#a82424>Holy Paradise</FONT>It？Not you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-d" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-e" mid="22"><![CDATA[<html>I help you？</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Blacksmith Berlin$<BR>Now even the repair of weapons material are not，What would be no statue of ah？Really idiot。<BR>Now only a collection of re-use of the weapons are not enough staff！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-e" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-2" mid="24"><![CDATA[<html>Good。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Blacksmith Berlin$<BR>Ah？Well of course！I can not wait to hound out the things that can be used to retrieve。Adventurers like you，Of course, the better。Eh-hem，Great！You go and help me collect some<FONT color=#a82424>Broken pieces of scrap iron</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2" image="QW_33.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Blacksmith Berlin$<BR>You Go<FONT color=#a82424>Island center</FONT>Elimination of pirates who swamp lizards，Their<FONT color=#a82424>Broken pieces of scrap iron</FONT>Get it back。Lizard&#39;s gun collection and the like blade on the line。Do not need a lot of，As long as10A，To help the busy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-a" mid="27"><![CDATA[<html>(What a rush the past)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Blacksmith Berlin$<BR>Oh！Back again。I can wait to be falling out of the eyeball！<BR>Grown doubled<FONT color=#a82424>Broken pieces of scrap iron</FONT>Leave it to me！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4" mid="29"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Blacksmith Berlin$<BR>Now that the situation is very bad，We all have something to re-use of recycled Monster。<BR>You go back and tell<FONT color=#a82424>Duke Stewart</FONT>。What the statue，There is at present no effort。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4" image="" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Blacksmith Berlin$<BR>So goodbye。<BR>If nothing，You go faster。<FONT color=#7e12d2>(Berlin kept hammering)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-4-a" mid="32"><![CDATA[<html>Yes，I just returned from an island……(Explain the situation)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Duke Stewart$<BR>How to get to for so long？I just let you go to get the statue back。<BR>You see<FONT color=#a82424>Blacksmith</FONT>，How do you like going to the<FONT color=#a82424>Island</FONT>Ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-a" image="QW_33.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-4-b" mid="34"><![CDATA[<html>(Duke with a sigh)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Duke Stewart$<BR>Go to this kind of thing<FONT color=#a82424>Island center</FONT>？You can really OK。<BR>Hum，But adventurers are like this。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-b" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-4-c" mid="36"><![CDATA[<html>Other options？</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Duke Stewart$<BR>In short，According to your understanding of the situation，Iron deficiencies are，No way to make the statue，Eh？<BR>Ah……If there is no material，Even then press，Will not fall from the sky。It seems I have to think about another way of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-c" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-4-d" mid="38"><![CDATA[<html>(Get Award)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-d" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Duke Stewart$<BR>I have to see if there is no way to collect Iron。You&#39;ve worked hard。<BR>Let your first step down。Necessary，I will find you。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">561</exe>
+         <exe type="recompense_view">,5611,5612,5613,5614</exe>
+         <exe type="talk" npc="n041_duke_stwart">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">923</exe>
+         <exe type="addquestitem" num="1">300275</exe>
+         <exe type="huntitem" num="10" exe="5,6,7" onexe="">300275</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300275</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5611,5612,5613,5614</exe>
+         <exe type="complete">561</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="b">1</exelink>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="acceppted">0,2</exelink>
+   <exelink qstep="1" npc="n091_trader_bellin" sub="b" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="c" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="d" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="e" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="2">0,2,4,1</exelink>
+   <exelink qstep="3" npc="n091_trader_bellin" sub="4">0,1,2</exelink>
+   <exelink qstep="4" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="4" npc="n041_duke_stwart" sub="c">0</exelink>
+   <exelink qstep="4" npc="n041_duke_stwart" sub="d">1</exelink>
+   <journal_data recompense="1:5611,2:5612,3:5613,4:5614" quest_title="분주한 대장장이" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="300275">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[Blacksmith work in Berlin]]></title>
+         <contents mid="41"><![CDATA[<html>Whereabouts of the sacred paradise blacksmith Berlin confirmed the orders Duke Stewart。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[And dialogue blacksmith Berlin]]></destination>
+         <todo_msg mid="43"><![CDATA[Please confirm the blacksmith bronze statue of the production situation in Berlin。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_33.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>331,0,0</destination_pos>
+         <destination_mode>custom:331@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[To collect the broken pieces of scrap iron]]></title>
+         <contents mid="45"><![CDATA[<html>Go<FONT color=#a82424>Island center</FONT>Elimination of pirates who swamp lizards，To collect the broken pieces of scrap iron。<BR>
+ <BR>
+<FONT color=#7e12d2>※ Difficulty can not be implemented under the abyss。</FONT><BR>
+ <BR>
+<FONT color=#086171>Heermadai port(Island transport ship)</FONT> <FONT color=#a82424>→ Island center</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[To collect the broken pieces of scrap iron]]></destination>
+         <todo_msg mid="47"><![CDATA[Go island center to collect the broken pieces of scrap iron。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Berlin&#39;s answer to the blacksmith]]></title>
+         <contents mid="49"><![CDATA[<html>Collected to<FONT color=#a82424>Broken pieces of scrap iron</FONT>。Back to the holy heaven，To the blacksmith to Berlin。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Report to the blacksmith Berlin]]></destination>
+         <todo_msg mid="51"><![CDATA[Please bring something to the blacksmith collected Berlin。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Report to the Duke Stewart]]></title>
+         <contents mid="53"><![CDATA[<html>Duke Stewart to report back to the work of the blacksmith Berlin。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Duke Stewart</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Report to the Duke Stewart]]></destination>
+         <todo_msg mid="55"><![CDATA[Please report to the Duke of progress of the work Stewart。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>414</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

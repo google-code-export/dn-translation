@@ -1,0 +1,23 @@
+   <talk>
+      <npcename>n194_invisible</npcename>
+      <npcid>194</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Skew of the statue]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(All in all, people worry about the stone)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_question mid="4"><![CDATA[<html>$Skew of the statue$<BR>Hello，The fate of the people, ah, I。Since you go after，Nobody cares about me。Hum。As a statue of what I can do ?Hum。 <FONT color=#7e12d2>(Stone is still full of sorrow)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="conexe" true="4" false="3">1</exe>
+         <exe type="talk">002</exe>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">sq01_065_shoddy_statue</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 65 ) == 1</chk>
+         <chk type="hasquest">65</chk>
+      </conditions>
+   </talk>

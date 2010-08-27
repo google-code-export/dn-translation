@@ -1,0 +1,883 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_286_argenta_slave</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>286</qid>
+      <designer>김인정</designer>
+      <qlevel>22</qlevel>
+      <qdesc>아르젠타 시작.
+데커드-> 베일리-> 루퍼트-> 메이-> 티아나-> 케빈
+기도하는 자의 안식처 보스전 클리어-> 데이비드 구출
+데이비드와 대화
+잿빛 폐허의 아르젠타와 대화
+요리를 구해온다(향긋한 와인맛 우유)
+아르젠타는 노예의 증거를 가져가고 데이비드를 치료한 후, 새 노예로 임명한다.
+아르젠타의 진정한 노예 타이틀 획득. 끝.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Algerita slaves]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>203</npcid>
+         <npcename>n203_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드(기도하는 자의 안식처)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>205</npcid>
+         <npcename>n205_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드(잿빛 폐허2-부상버전)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이   (캐더락 잡화상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>29</npcid>
+         <npcename>n029_crew_kevin</npcename>
+         <npckname>자칭 승무원 케빈</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>323</npcid>
+         <npcename>n323_warehouse_lupert</npcename>
+         <npckname>창고지기 루퍼트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나 (캐더락 소서리 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n203_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Kraft adventurer David$<BR>See，To see what?！Now…Now it just to save power ！！<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n205_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Kraft adventurer David$<BR>See，To see what?！Now…Now it just to save power ！！<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Consumables business Mee$<BR>Oh~This reminds me of what seems to be that if you want to ~Can not remember~ Rights ah~<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-noquest" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Kevin Crew$<BR>Would like to sit airship，Can not do now！<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-noquest" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Ah... Ah，Work here is not the time delay?<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-noquest" image="" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Senior magician Tina$<BR>Impress，Give me flash to one side。<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-noquest" image="" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>Nothing to keep you？Then please Come back when you&#39;re busy。<BR><FONT color=#7e12d2>(Must be from the gray ruins of Algerita Department can accept the task of implementation)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-q286s" mid="15"><![CDATA[<html>What if you want me?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Algerita$<BR>...Rookie。<BR><FONT color=#7e12d2>（Algerita serious thought，What seems to have anything to say,）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-a" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Algerita$<BR>Hum。I was something，Did not work and talk to you?Why go to the why 。<BR><FONT color=#7e12d2>（Need to be completed Kedella crossing the main line tasks and subtasks Algerita，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-b" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-c" mid="19"><![CDATA[<html>Ah? Me?What I?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Algerita$<BR>I can hear here，The village people are talking about you，You know?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-d" mid="21"><![CDATA[<html>Reasonable person identified around…You?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Algerita$<BR>Are circulating rumors about your poor，You have peace in here swinging blind... I just can not watch anymore，What a rookie。Want to know if，To ask <FONT color=#a82424>Reasonable person identified around</FONT>Ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-acceptted" mid="23"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Algerita slaves$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Algerita$<BR>Ah，On the call<FONT color=#a82424>Daika De</FONT>People ah?I am very hungry，Do not want to pay attention you a，I said so much it has the enough ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="26"><![CDATA[<html>What I do for you?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Ah... I was looking for you，You are directly over a，Really 谢Rights。Recently points you day and night to Kedella help us，I have in mind。But... Ah，Ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="28"><![CDATA[<html>Ah? Traitor? And who?Where?Why?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Although these words，I am also a little hard to say... But now you are circulating a very unfavorable<FONT color=#a82424>Rumor</FONT>。Do not you feel you? Under<FONT color=#a82424>Rumor</FONT>Argument…Say you…You are，<FONT color=#a82424>Traitor</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-c" mid="30"><![CDATA[<html>I have nothing to do with what those Dark Elves。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>That…What that says to the，According to rumors you<FONT color=#a82424>Monster dressed in red</FONT>Is a group of。Not before the spread is highly toxic<FONT color=#a82424>Red</FONT> <FONT color=#a82424>The dark wizard</FONT>You? Perhaps because of this，We are particularly disgusted with the red。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-c" image="QW_15.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-d" mid="32"><![CDATA[<html>Ah? Sanctuary of the bouquet? （Where is heard as...）</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>I&#39;d like to believe you，But the rumors have mentioned are kind of model。See you in the forest said to have been made a sanctuary<FONT color=#a82424>Holy Realm</FONT> <FONT color=#a82424>Bouquet</FONT>，And handed over to<FONT color=#a82424>Red Monster</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-d" image="QN_Npc_Guilian.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Ah，Who has heard of<FONT color=#a82424>Warehouse keeper</FONT> <FONT color=#a82424>Lubo Te</FONT>The warehouse stored the sanctuary of flowers，You ask him to look at it。In order for your reputation，Well also need to investigate some。I also inquired to see if other people 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n203_slave_david-1" image="" itemindex="">
+      <talk_question mid="187"><![CDATA[<html>$Kraft adventurer David$<BR>See，To see what?！ Now…Now it just to save power ！！Can，Not the fear of！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n205_slave_david-1" image="" itemindex="">
+      <talk_question mid="188"><![CDATA[<html>$Kraft adventurer David$<BR>See，To see what?！ Now…Now it just to save power ！！Can，Not the fear of！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="" itemindex="">
+      <talk_question mid="189"><![CDATA[<html>$Consumables business Mee$<BR>Oh~This reminds me of what seems to be that if you want to ~Can not remember~ Rights~<BR><FONT color=#7e12d2>（To find adventurer company president Dai Kade）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-1" image="" itemindex="">
+      <talk_question mid="190"><![CDATA[<html>$Kevin Crew$<BR>Would like to sit airship，Can not do now！<BR><FONT color=#7e12d2>（To find adventurer company president Dai Kade）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1" image="" itemindex="">
+      <talk_question mid="191"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>Well today looks very busy。Nothing to do, adventurers should not have things to keep。<BR><FONT color=#7e12d2>(Adventurers to go to meet President Dai Kade public)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="" itemindex="">
+      <talk_question mid="192"><![CDATA[<html>$Senior magician Tina$<BR>Impress on the flash to one side。<BR><FONT color=#7e12d2>（To find adventurer company president Dai Kade）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QN_Npc_Guilian.dds" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Go<FONT color=#a82424>Warehouse keeper Lu Bote</FONT>Chat bar。Suddenly to spread rumors，I am also sorry goodbye to you，Really...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Consumables business Mee$<BR>Embarrassing，Ah, but no smoke without fire? Ah~ Explore together the words of one，Well certainly there will be wicked。<BR>Oh，I would not really believe that<FONT color=#a82424>Rumor</FONT>，Ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-2" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Kevin Crew$<BR>Ah~ I always thought you were a good guy then，But how will it have the kind of rumors? Could it be that~ Who<FONT color=#a82424>Jealousy</FONT>Deliberately slander you? I guess casual。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Senior magician Tina$<BR>What ah?Do not dawdle said quickly ah。<BR>
+On your way，Strange strange rumors that can not afford it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-2" image="" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-2-a" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>Huh！This is not a lot of heated discussions of the recent transfer<FONT color=#382000>{user_nick}</FONT>You！！Oops～Because those rumors，You must be very very hard？Of course，I do not believe those rumors，Please do not worry。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-2-a" image="QS_Default.dds" itemindex="300136">
+      <talk_answer link_index="n323_warehouse_lupert-2-b" mid="50"><![CDATA[<html>What kind of people, ah?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>Aha，Company president Dai Kade adventurers told you it？Yes，That<FONT color=#a82424>Sanctuary flowers</FONT>What was the temporary custody by me。It gets here the people have said that rumors of you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-2-b" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>Just check the file，Soon found。But I can not reveal the client list。Ask the village ladies bar。<FONT color=#a82424>Consumables business Mee</FONT>Well informed in the village，Maybe she will know。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-3" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>Do not blame me。I will not tell you how it？But then，My not have the qualifications to do the business of。Or to ask you<FONT color=#a82424>Consumables business Mee</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="54"><![CDATA[<html>（Mee straight to the point of asking）</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Consumables business Mee${action:talk}<BR>Oops！！Hear<FONT color=#a82424>Red devil</FONT><FONT color=#a82424>Matter</FONT>Together the，Really then？<BR>It must be false？！Yes？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="QS_Default.dds" itemindex="300136">
+      <talk_answer link_index="n026_trader_may-3-b" mid="56"><![CDATA[<html>Ah? Ancient books? First heard about it...?</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Consumables business Mee$<BR>Whether it is on<FONT color=#a82424>Sanctuary of the bouquet</FONT>，Or someone<FONT color=#a82424>Silent monastery temple</FONT> Seize <FONT color=#a82424>Ancient books</FONT>Matter whether... Light sounds really~Some do not believe！！<FONT color=#382000> {user_nick}</FONT> ！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-b" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n026_trader_may-3-c" mid="58"><![CDATA[<html>Fiction? Ancient books? …I seem to have found...</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Consumables business Mee$<BR>Hey~ It is said that the book back from the hands of thieves snatching back，The person they want it and then sold to fraudsters！！Because，Down some of those just a bit of understanding<FONT color=#a82424>Obsolete fiction</FONT>Only...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-c" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Consumables business Mee$<BR>In addition to，It is said <FONT color=#a82424>Senior magician Tina</FONT> Adults also heard some things~ Ah~ I would not remember the。You may wish to directly ask her? Although<FONT color=#a82424>Tina</FONT> Adults ferocious，Beaten meal can not say oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Consumables business Mee$<BR>Seen<FONT color=#a82424>Senior magician Tina</FONT>Adults do? Ha ha，Is not the fear of being beat ah？Anyway, the rumors that suspicious，Sick and tired of people~ Always can not concentrate on doing it，Ah~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-a" mid="62"><![CDATA[<html>（Tina face looks suspicious）</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Senior magician Tina$<BR>Ah，That<FONT color=#a82424>Rumor</FONT>！！In the end~ How the kind of?<BR>
+While I initially scoffed a。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-a" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-b" mid="64"><![CDATA[<html>But that drug is not free to dispose of, ah...</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Senior magician Tina$<BR>Although you this<FONT color=#a82424>No return</FONT>Very best，But still not fully prevent the spread of toxic not you? Monster or they can continue their，So it appears you are not the enemy<FONT color=#a82424>Traitor</FONT>~ This rumor。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-b" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-c" mid="66"><![CDATA[<html>Ah，That is not a Monster...</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Senior magician Tina$<BR>But not repulse suspected<FONT color=#a82424>Red Dark Elves</FONT>Rights，Even in the village of outward<FONT color=#a82424>Red Monster</FONT>Submit<FONT color=#a82424>Dark Elves</FONT> <FONT color=#a82424>Necklace</FONT>Such rumors。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-c" image="QS_Default.dds" itemindex="300115">
+      <talk_answer link_index="n035_soceress_master_tiana-4-d" mid="68"><![CDATA[<html>Ah，Dark Elves necklace?！ Is...！！</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Senior magician Tina$<BR>
+Everyone is talking about，Non been in ruins<FONT color=#a82424>No return</FONT>Take those<FONT color=#a82424>Dark Elves necklace</FONT>Do it，Considered normal if，Is not very strange?Yes?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-d" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-e" mid="70"><![CDATA[<html>David?</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Senior magician Tina$<BR>This shows that，I would think of it。That lying<FONT color=#a82424>Dark Elf Necklace</FONT>People... You should be aware of it?You do not inquire about him the last message you? He called…What came with...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-e" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Senior magician Tina${action:talk}<BR>Ah，Anyway, the name is similar to the muddle。And look groggy。However, the work neatly Daoting。Guy，Did not seem to find<FONT color=#a82424>Kevin Crew</FONT>The，Perhaps it is still there。You go and look at it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Senior magician Tina$<BR>Ah? And how the?Did not find<FONT color=#a82424>Kevin Crew</FONT>You? Not quickly grasp that spreading rumors of guys，A color to see see！！ In short you face the bar too。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-a" mid="74"><![CDATA[<html>I am not?！！！</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Kevin Crew$<BR>Ah！！！You are<FONT color=#a82424>Red Monster</FONT>The traitor！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-a" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-b" mid="76"><![CDATA[<html>Huh，What traitor、No betrayal。</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Kevin Crew$<BR>Hei hei。In fact, I do not believe that silly rumor。<FONT color=#a82424>Uncle Hubert</FONT>Say，You make the airship to take off again? Adventurer like how it might betray?Yes I said it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-b" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n029_crew_kevin-5-c" mid="78"><![CDATA[<html>Adventurer... Big Brother? Is...?</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Kevin Crew$<BR>Trafficking<FONT color=#a82424>Poison sac</FONT>That<FONT color=#a82424>Adventurer Big Brother</FONT>Say ill of you，Now it seems he would be more suspicious，I do not like his kind of style。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-c" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-d" mid="80"><![CDATA[<html>…Really。（Wait and see，David！！！）</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Kevin Crew$<BR>Ah！！Be <FONT color=#a82424>David</FONT>！！<BR>
+Ah，You know him?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-e" mid="82"><![CDATA[<html>（Is a slave, but not traitors Algerita！ …Really sad。）</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Kevin Crew$<BR>Click one&#39;s tongue，Appears to have a deep hatred Well? That is quite，Otherwise how could it pass the kind of rumor~ Monster of the traitors that are not red or companion，But the Red Monster&#39;s<FONT color=#a82424>Slave</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-e" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-f" mid="84"><![CDATA[<html>Hey... Ah... （Ah still very concerned about！！）</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Kevin Crew$<BR>Because that is said to<FONT color=#a82424>Red Monster</FONT>Kedella it has not been fully purified，Hei hei。I do not believe this！！I would still be a good steward，So<FONT color=#382000>{user_nick}</FONT>You do not care about the kind of rumor。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-f" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-g" mid="86"><![CDATA[<html>But I do not know where。</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Kevin Crew$<BR>Also~Even if the do not care，But it is too Solutions Jiehen，The same as men！！<BR>...Ah，Not you?He hit a short look Rights，Let him kneel for mercy to what you ~ To resolve it face to face。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-g" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-h" mid="88"><![CDATA[<html>What commission?</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Kevin Crew$<BR>I know what he ah~！ Hei hei。<BR>Have also heard that，That is called<FONT color=#a82424>David</FONT>Big brother，Received a heavy~ Entrust。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-h" image="QW_26.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-i" mid="90"><![CDATA[<html>Oh... Ah... Heart of the province to escape Daorang...</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Kevin Crew$<BR>Eliminate<FONT color=#a82424>Rest in peace prayer Department</FONT>Monster&#39;s commission！！ Look like very proud? Hei hei。But back to now no，It seems to have fled？It looks like a coward。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-i" image="" itemindex="">
+      <talk_question mid="91"><![CDATA[<html>$Kevin Crew$<BR>Hey~ He is not stupid fool，How could a person go alone <FONT color=#a82424>Rest in peace prayer Department</FONT>Then?If you so worried if，In the past to see Bai，I bet he ran ！！ Hei hei。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6" image="QW_26.dds" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$Kevin Crew$<BR>That is called<FONT color=#a82424>David</FONT>Big brother，Is not a coward ah? Do not?It could not escape the eyes of Kevin！He certainly did not go<FONT color=#a82424>Rest in peace prayer Department</FONT>，But escaped，Hei hei，Yes。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n203_slave_david-6" image="" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$Kraft adventurer David$<BR>Hum... Me，I&#39;m not afraid of it because it！Hum...<BR>Hum，OMG…I&#39;m afraid！Hum。<BR><FONT color=#7e12d2>（David seems to think mom is coming）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n203_slave_david-7" image="" itemindex="">
+      <talk_answer link_index="n203_slave_david-7-a" mid="95"><![CDATA[<html>It did not hurt?</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Kraft adventurer David$<BR>Me，This fear is not only！Hum…Only，Flame attack but suffered only！！！ Ooo, ooo...<BR>Here is simply another world power ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n203_slave_david-7-a" image="" itemindex="">
+      <talk_answer link_index="n203_slave_david-7-b" mid="97"><![CDATA[<html>The injuries appear。</html>]]></talk_answer>
+      <talk_question mid="96"><![CDATA[<html>$Kraft adventurer David$<BR>Ooo, ooo…Other，Do not think that saved me once that he is very powerful！ Toot toot... Hum，I want to see my mother，Ming。<FONT color=#7e12d2>（David was pale and trembling，Like crazy）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n203_slave_david-7-b" image="" itemindex="">
+      <talk_answer link_index="n203_slave_david-7-c" mid="99"><![CDATA[<html>（What madness that it）</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Kraft adventurer David$<BR>This injury is not…What is not！！ Toot toot...<BR>Ah ah~ <FONT color=#a82424>Great adventurer</FONT> <FONT color=#a82424>David</FONT>So you die！Hum。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n203_slave_david-7-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="100"><![CDATA[<html>$Kraft adventurer David$<BR>After I die，Bury me in the place where the sun exposure，Generations everybody&#39;s lips right！ I was brave David...<BR><FONT color=#7e12d2>（Back to the gray ruins of the bar to ask Algerita）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-8" image="QW_26.dds" itemindex="">
+      <talk_question mid="101"><![CDATA[<html>$Senior magician Tina$<BR>You recently not been<FONT color=#a82424>Rest in peace prayer Department</FONT>The right?How went，Let me jump?！Anyway<FONT color=#382000>{user_nick}</FONT>This guy is not afraid of you O death， Ha ha。If so brave，Rumors that do not have to bear in mind ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-8" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="102"><![CDATA[<html>$Kevin Crew$<BR>Wow~ Really gone? That<FONT color=#a82424>Fool</FONT>Big Brother?！ Wow ah…Really is<FONT color=#a82424>Fool</FONT>Then?<BR>How stupid it might win?Lucky it is not dead。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-8" image="" itemindex="">
+      <talk_question mid="103"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>Ah？Your<FONT color=#a82424>Rumor</FONT>？What is to the？<BR>I have forgotten，Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-8" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="104"><![CDATA[<html>$Consumables business Mee$<BR>Hey~ In short the<FONT color=#a82424>David</FONT> Did not suffer any injury it?Poor。<BR>How it would spread false rumors that。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-8" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-8-a" mid="106"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Heard。That is called<FONT color=#a82424>David</FONT>What&#39;s adventurer，Almost had it on the expired? Ha ha。This is really…To me it does not report on the adventurer, president of the public，Unauthorized actions，Suffer deserve ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-8-a" image="" itemindex="">
+      <talk_question mid="107"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>The previous rumors do not have to bear in mind。I will explain to other people well。Great people like you how could a traitor，<FONT color=#a82424>Monster slaves</FONT>Then... I really do not Xianghua，Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n205_slave_david-8" image="" itemindex="">
+      <talk_answer link_index="n205_slave_david-8-a" mid="109"><![CDATA[<html>This level will not die?</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Kraft adventurer David$<BR>After I die，Bury me in the place where the sun exposure，Generations everybody&#39;s lips right！<BR>
+I am brave
+<FONT color=#a82424>David</FONT>Ah...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n205_slave_david-8-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="110"><![CDATA[<html>$Kraft adventurer David$<BR>Ha ah... The sky can be really good， Oh。 In beautiful<FONT color=#a82424>Algerita</FONT>Miss next to the dead，I can be really happy people, ah，Oh。<BR><FONT color=#7e12d2>（David has not Huiguo Shen）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-a" mid="112"><![CDATA[<html>If injured，Can rule about...</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$Algerita$<BR>Ah? Who，Dirty but this guy trouble?<BR>Is not until around me hanging around<FONT color=#a82424>Rookie</FONT>You?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-b" mid="114"><![CDATA[<html>Do it Well，When saving a human lives on ah?</html>]]></talk_answer>
+      <talk_question mid="113"><![CDATA[<html>$Algerita$<BR>Treatment? …Ah，To treatment。<BR>But why is my?Fana，Not work。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-c" mid="116"><![CDATA[<html>Not to bother watching him go die。</html>]]></talk_answer>
+      <talk_question mid="115"><![CDATA[<html>$Algerita$<BR>Who cares，Dead, there is no way。<BR>But how that guy does so annoying? Ah…Bother，I do not want to see him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-c" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-d" mid="118"><![CDATA[<html>Let me help you get some food。</html>]]></talk_answer>
+      <talk_question mid="117"><![CDATA[<html>$Algerita$<BR>No matter，I empty it，Do not want to move，I rule that<FONT color=#a82424>Rookie</FONT>?<BR>Not work。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-e" mid="120"><![CDATA[<html>Angry，But also saved people, ah。</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Algerita$<BR>Ah? You? ...Ah，If you say so，I would consider to consider。But you really head water Rights?Guy，Is that you do not spread rumors that rookie right，I thought you would be upset。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-f" mid="122"><![CDATA[<html>Anyway, I help out some food for you。</html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$Algerita$<BR>…You can really strange。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-f" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="123"><![CDATA[<html>$Algerita$<BR>Give me some before<FONT color=#a82424>Grape flavored milk</FONT>It。Can not be purchased from the consumables business where you?<BR><FONT color=#7e12d2>（Find consumables business Mee）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-9" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="124"><![CDATA[<html>$Algerita$<BR>In order to run around unfamiliar people，Is not very interesting ah? You are such a strange fellow。<BR><FONT color=#7e12d2>（Find consumables business Mee）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-9" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-9-a" mid="126"><![CDATA[<html>（Mee frowned）</html>]]></talk_answer>
+      <talk_question mid="125"><![CDATA[<html>$Consumables business Mee${action:talk}<BR>Ah～That is called<FONT color=#a82424>David</FONT>People，I heard he was seriously injured？Oh……Men how to do it about face-saving？How to do so in love with bragging？Right？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-9-a" image="QW_26.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-9-b" mid="128"><![CDATA[<html>Treatment click on it。</html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html>$Consumables business Mee$<BR>Actually alone in<FONT color=#a82424>Rest in peace prayer Department</FONT>，Really bragging， Hey。<BR>He，Not seriously injured by what it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-9-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-9-c" mid="130"><![CDATA[<html>That have bought the。</html>]]></talk_answer>
+      <talk_question mid="129"><![CDATA[<html>$Consumables business Mee$<BR>Eh?It&#39;s lucky really unfortunate ah~Also not to mention，Never mind how much I worry about。<BR>Ah，But buy what you just said to the?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-9-c" image="QS_Default.dds" itemindex="300137">
+      <talk_answer link_index="n026_trader_may-9-d" mid="132"><![CDATA[<html>Thank you。</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$Consumables business Mee$<BR>Ah~ <FONT color=#a82424>Grape flavored milk</FONT> Yes? Really should not put that rumor before seriously，This will give you it for free。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-9-d" image="" itemindex="">
+      <talk_question mid="133"><![CDATA[<html>$Consumables business Mee$<BR>Come，In fact, the rest is sold before，Originally wanted to discount deal。The rumor was that bothered for no reason<FONT color=#382000>{user_nick}</FONT>You worked hard enough。<BR>Oh, welcome to visit next time~！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-10" image="" itemindex="">
+      <talk_question mid="134"><![CDATA[<html>$Consumables business Mee$<BR>Hey~ Really~Why did that person do spread this rumor。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-a" mid="136"><![CDATA[<html>…Need，What?</html>]]></talk_answer>
+      <talk_question mid="135"><![CDATA[<html>$Algerita$<BR>Really brought the?Strange guy。<BR>Ah，Yes，Anyway, I just need a。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-a" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-b" mid="138"><![CDATA[<html>（Algerita took the slaves to prove unauthorized）</html>]]></talk_answer>
+      <talk_question mid="137"><![CDATA[<html>$Algerita$<BR>What can ah? <FONT color=#a82424>New slaves</FONT>Bai。You not only boring but also more thing，Annoys me。If to<FONT color=#a82424>Holy Paradise</FONT>With his play this game is also not patronize?So，I have to find honest and obedient as a new rookie slave 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-c" mid="140"><![CDATA[<html>Be。（Liberation of Rights！！）</html>]]></talk_answer>
+      <talk_question mid="139"><![CDATA[<html>$Algerita$<BR>Starting today you are my<FONT color=#a82424>Dismiss</FONT>Rights。Even if you let me take you clamoring for the slave，I will not let，Get it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-c" image="QS_Default.dds" itemindex="300003">
+      <talk_answer link_index="n164_argenta_wounded-10-d" mid="142"><![CDATA[<html>（David Oh good poor...）</html>]]></talk_answer>
+      <talk_question mid="141"><![CDATA[<html>$Algerita$<BR>Also this is my rookie<FONT color=#a82424>The new slaves</FONT>啦。I want to sharpen him until I can use up，Thank me，Rookie。<BR><FONT color=#7e12d2>（Algerita David locked the slaves to prove）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-e" mid="144"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="143"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-e" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="145"><![CDATA[<html>$Algerita$<BR>Well，Now I will treat my stupid slave，You&#39;re ready to go<FONT color=#a82424>Holy Paradise</FONT>It，I will go with with this guy。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 265 ) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 267 ) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 268 ) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 218 ) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="4">0</exe>
+         <exe type="conexe" true="2" false="4">1</exe>
+         <exe type="conexe" true="3" false="4">2</exe>
+         <exe type="conexe" true="5" false="4">3</exe>
+         <exe type="talk" npc="n164_argenta_wounded">a</exe>
+         <exe type="talk" npc="n164_argenta_wounded">b</exe>
+         <exe type="recompense_view">,2861,2862,2863,2864</exe>
+         <exe type="setquest">286</exe>
+         <exe type="talk" npc="n164_argenta_wounded">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">8</exe>
+         <exe type="setjornal">8</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="8">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">9</exe>
+         <exe type="setjornal">9</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="9">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="10">300137</exe>
+         <exe type="setstep">10</exe>
+         <exe type="setjornal">10</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="10">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300137</exe>
+         <exe type="delquestitem" num="-1">300003</exe>
+         <exe type="recompense">,2861,2862,2863,2864</exe>
+         <exe type="complete">286</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="q286s">0</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="d">6</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="acceptted">7,8</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="d">0,1</exelink>
+   <exelink qstep="2" npc="n323_warehouse_lupert" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="b" />
+   <exelink qstep="3" npc="n026_trader_may" sub="c">0,1</exelink>
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="c" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="d" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="e">0,1</exelink>
+   <exelink qstep="5" npc="n029_crew_kevin" sub="b" />
+   <exelink qstep="5" npc="n029_crew_kevin" sub="c" />
+   <exelink qstep="5" npc="n029_crew_kevin" sub="d" />
+   <exelink qstep="5" npc="n029_crew_kevin" sub="e" />
+   <exelink qstep="5" npc="n029_crew_kevin" sub="f" />
+   <exelink qstep="5" npc="n029_crew_kevin" sub="g" />
+   <exelink qstep="5" npc="n029_crew_kevin" sub="h" />
+   <exelink qstep="5" npc="n029_crew_kevin" sub="i">0,1</exelink>
+   <exelink qstep="7" npc="n203_slave_david" sub="b" />
+   <exelink qstep="7" npc="n203_slave_david" sub="c">0,1</exelink>
+   <exelink qstep="8" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="8" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="8" npc="n164_argenta_wounded" sub="d" />
+   <exelink qstep="8" npc="n164_argenta_wounded" sub="e" />
+   <exelink qstep="8" npc="n164_argenta_wounded" sub="f">0,1</exelink>
+   <exelink qstep="9" npc="n026_trader_may" sub="b" />
+   <exelink qstep="9" npc="n026_trader_may" sub="c" />
+   <exelink qstep="9" npc="n026_trader_may" sub="d">0,1,2</exelink>
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="d">2</exelink>
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="e">0,1,3</exelink>
+   <journal_data recompense="1:2861,2:2862,3:2863,4:2864" quest_title="아르젠타의 노예" chapterid="" quest_level="22" quest_mark_type="10" use_item_list="300137">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="147"><![CDATA[Suspicious rumors]]></title>
+         <contents mid="148"><![CDATA[<html>In<FONT color=#a82424>Kedella points</FONT>Rumors circulating of suspicious。To<FONT color=#a82424>Company president adventurer</FONT> <FONT color=#a82424>Daika De</FONT>Check it out。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Company president Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="149"><![CDATA[Points of the Dai Kade dialogue with Kedella]]></destination>
+         <todo_msg mid="150"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Guilian.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n323</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>323</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="151"><![CDATA[Tracking suspicious rumor I]]></title>
+         <contents mid="152"><![CDATA[<html>It seems really suspicious rumors spread。To<FONT color=#a82424>Warehouse keeper</FONT> <FONT color=#a82424>Lubo Te</FONT>Consult it in detail。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Warehouse keeper Lu Bote</FONT></html>]]></contents>
+         <destination mid="153"><![CDATA[Dialogue with the warehouse keeper Lu Bote]]></destination>
+         <todo_msg mid="154"><![CDATA[Lu Bote dialog and with the warehouse keeper。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-4179,2192</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="155"><![CDATA[Tracking suspicious rumor II]]></title>
+         <contents mid="156"><![CDATA[<html><FONT color=#a82424>Consumables business Mee</FONT>News through the village，Seems to be from her to find out some information。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Consumables business Mee</FONT></html>]]></contents>
+         <destination mid="157"><![CDATA[Dialogue with the consumables business Mee]]></destination>
+         <todo_msg mid="158"><![CDATA[Let the dialogue with the consumables business Mee。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2265,1121</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="159"><![CDATA[Tracking suspicious rumor III]]></title>
+         <contents mid="160"><![CDATA[<html>To<FONT color=#a82424>Senior magician</FONT> <FONT color=#a82424>Tina</FONT>Further consultation with the Bar。Seems to be spread around familiar people go on。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior magician Tina</FONT></html>]]></contents>
+         <destination mid="161"><![CDATA[And senior magician Tina dialogue]]></destination>
+         <todo_msg mid="162"><![CDATA[Dialogue with senior magician Tina Bar。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_crew_kevin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,2847,2315</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>29</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="163"><![CDATA[Tracking suspicious rumor IV]]></title>
+         <contents mid="164"><![CDATA[<html>Although the general direction has been made，But not sure。Go<FONT color=#a82424>Kevin Crew</FONT>There to see it。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Kevin Crew</FONT></html>]]></contents>
+         <destination mid="165"><![CDATA[Kevin dialogue with the crew]]></destination>
+         <todo_msg mid="166"><![CDATA[Let the dialogue with the crew Kevin。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QW_26.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>264,n203</destination_pos>
+         <destination_mode>custom:261@3,262@3,263@3,264@1</destination_mode>
+         <statemark_npcid>203</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="167"><![CDATA[Find David]]></title>
+         <contents mid="168"><![CDATA[<html>Really is<FONT color=#a82424>David</FONT>Doing good。But David went alone <FONT color=#a82424>Prayer</FONT><FONT color=#a82424>Rest Service</FONT>。David went there to find it。<BR><BR><FONT color=#086171>Gray ruins → Shore littered with fallen leaves(Forgotten Temple entrance)</FONT> <FONT color=#a82424>→ Rest in peace prayer Department</FONT></html>]]></contents>
+         <destination mid="169"><![CDATA[Rest in peace to explore prayer Department]]></destination>
+         <todo_msg mid="170"><![CDATA[Rest in peace in prayer to find David Bar Office。]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <title_image />
+         <contents_image />
+         <need_itemlist />
+         <destination_pos>264,n203</destination_pos>
+         <destination_mode>custom:264@1</destination_mode>
+         <statemark_npcid>203</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="171"><![CDATA[David near escape]]></title>
+         <contents mid="172"><![CDATA[<html>Rescued from death crisis<FONT color=#a82424>David</FONT>，Let the dialogue with the injured David。<BR>
+ <BR>
+<FONT color=#086171>Rest in peace prayer Department</FONT> <FONT color=#a82424>→ David</FONT></html>]]></contents>
+         <destination mid="173"><![CDATA[Dialogue with David]]></destination>
+         <todo_msg mid="174"><![CDATA[David dialog and with trembling。]]></todo_msg>
+      </journal>
+      <journal index="8">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="175"><![CDATA[David&#39;s rescue by]]></title>
+         <contents mid="176"><![CDATA[<html>In the treatment of the injured David Cai Xing。To<FONT color=#a82424>Gray ruins</FONT>Of<FONT color=#a82424>Algerita</FONT>Ask it。<BR>
+ <BR>
+<FONT color=#086171>Gray ruins</FONT> <FONT color=#a82424>→ Algerita</FONT></html>]]></contents>
+         <destination mid="177"><![CDATA[And the gray ruins of Algerita dialogue]]></destination>
+         <todo_msg mid="178"><![CDATA[Report to the gray ruins of Algerita bar。]]></todo_msg>
+      </journal>
+      <journal index="9">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-4179,2192</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="179"><![CDATA[Grape flavored milk]]></title>
+         <contents mid="180"><![CDATA[<html>To<FONT color=#a82424>Consumables business Mee</FONT>Grape flavored milk get it there。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Consumables business Mee</FONT></html>]]></contents>
+         <destination mid="181"><![CDATA[Mee dialogue with Kedella checkpoints]]></destination>
+         <todo_msg mid="182"><![CDATA[Let the dialogue with the consumables business Mee。]]></todo_msg>
+      </journal>
+      <journal index="10">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist>300137</need_itemlist>
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="183"><![CDATA[The liberation of slaves]]></title>
+         <contents mid="184"><![CDATA[<html>Back <FONT color=#a82424>Gray ruins</FONT>Of<FONT color=#a82424>Algerita</FONT>Where it。<BR>
+ <BR>
+<FONT color=#086171>Gray ruins</FONT> <FONT color=#a82424>→ Algerita</FONT></html>]]></contents>
+         <destination mid="185"><![CDATA[And the gray ruins of Algerita dialogue]]></destination>
+         <todo_msg mid="186"><![CDATA[Report to the gray ruins of Algerita bar。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>22:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>268:218</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

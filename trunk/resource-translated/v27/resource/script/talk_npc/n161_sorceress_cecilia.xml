@@ -1,0 +1,23 @@
+   <talk>
+      <npcename>n161_sorceress_cecilia</npcename>
+      <npcid>161</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Magician Cecilia]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="2"><![CDATA[<html>$Magician Cecilia$<BR>Uh…You…Who are you？</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="2" false="3">0</exe>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq05_104_orb_of_vision2</exe>
+         <exe type="conexe" true="4" false="6">1</exe>
+         <exe type="enterquest">mq05_105_orb_of_vision3</exe>
+         <exe type="enterquest">mq05_113_orb_of_vision1</exe>
+         <exe type="conexe" true="5" false="1">2</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">104</chk>
+         <chk type="hasquest">105</chk>
+         <chk type="hasquest">113</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,414 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_491_darkelf_teleju1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>491</qid>
+      <designer>김주연</designer>
+      <qlevel>36</qlevel>
+      <qdesc>엔틱 자수 손수건	300256
+오우거의 흰 어금니	300257
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>492</nextqid>
+      <nextqname>sq11_492_darkelf_teleju2</nextqname>
+      <nextqnpc>n281_darkelf_teleju</nextqnpc>
+      <qkname mid="1"><![CDATA[Dark Elf tere beadsⅠ]]></qkname>
+      <qnpc>
+         <npcid>281</npcid>
+         <npcename>n281_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>92</npcid>
+         <npcename>n092_trader_kelly</npcename>
+         <npckname>상인 켈리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-noquest" image="QN_Teleju.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Businessman Kelly$<BR>If you want to buy something，Please feel free to tell me。<BR>
+<FONT color=#7e12d2>(Dark Wizard in Heermadai port can accept the task, where Tera beads)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-a" mid="7"><![CDATA[<html>(Seems really happy)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Dark Elf tere beads$<BR>Hello～Have you come to me？<BR>Hei hei，Nice to meet you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-b" mid="9"><![CDATA[<html>(With a melancholy expression on the magazine to show me)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Dark Elf tere beads$<BR>Ah……I want to have a magazine on the latest popular products introduced。<BR>
+But I can not go to the human village，Do not know how to do。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-c" mid="11"><![CDATA[<html>You want to do this handkerchief？</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Goddess Weekly page$<BR><FONT color=#2b2723>Lovely street girls special equipment！Magnificent ancient lace，Rose embroidered with brightly colored！</FONT><BR>
+<FONT color=#7e12d2>(Listed in front of a lot of adjectives)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-d" mid="13"><![CDATA[<html>Let me find Kanba。</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Dark Elf tere beads$<BR>Yes, yes！I want this ancient embroidery handkerchief。<BR>
+Even if only to see a，I would be very happy……How？No right？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Dark Elf tere beadsⅠ$ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-1-a" mid="17"><![CDATA[<html>(With a melancholy expression on the magazine to show me)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Dark Elf tere beads$<BR>Ah……I want to have a magazine on the latest popular products introduced。<BR>
+But I can not go to the human village，There are other ways you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-1-b" mid="19"><![CDATA[<html>You want to do this handkerchief？</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Goddess Weekly page$<BR>Lovely street girls special equipment！Magnificent ancient lace，Rose embroidered with brightly colored！<BR>
+<FONT color=#7e12d2>(Listed in front of a lot of adjectives)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1-b" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-1-c" mid="21"><![CDATA[<html>Let me find Kanba。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Dark Elf tere beads$<BR>Yes, yes！I want this ancient embroidery handkerchief。<BR>
+
+Even if only to see a，I would be very happy……Oh</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1-c" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-2" mid="23"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Dark Elf tere beadsⅠ$ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Businessman Kelly$<BR>If you want to buy something，Please feel free to tell me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-2" image="QN_Sonya.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Dark Elf tere beads$<BR>Really？I am really very, very pleased！<BR>
+Allegedly<FONT color=#a82424>Holy Paradise</FONT>The merchant can buy，Come on you～！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2" image="" itemindex="300256">
+      <talk_answer link_index="n092_trader_kelly-2-a" mid="27"><![CDATA[<html>Difficult to find you！？</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Businessman Kelly${action:talk}<BR>Ah……<FONT color=#a82424>Ancient embroidery handkerchief</FONT>？<BR>
+Not easy to find that thing。If you can，I also want to help you find……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-2-b" mid="29"><![CDATA[<html>No other option you？</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Businessman Kelly$<BR>Yes，In particular, to color the grass。It is said that growth in the use of<FONT color=#a82424>Dark jungle road in the vicinity</FONT>Grass stained color。Where the waste after，Be hard to find。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2-b" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-2-c" mid="31"><![CDATA[<html>I want to buy a handkerchief。</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Businessman Kelly$<BR>Ah，Recently have seen some people have with……However, it is estimated will not easily transfer。Ah……If you must buy that<FONT color=#a82424>Handkerchief</FONT>，Owner must go and consult about。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2-c" image="QW_41.dds" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-2-d" mid="33"><![CDATA[<html>Good。</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Businessman Kelly$<BR>Ah……Since you must buy，That no other way。I need some time。But before，You have to pay the guarantee fee。<BR>To invite you to<FONT color=#a82424>Lin Explosion leaves</FONT>To collect2A Cyclops teeth。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2-d" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Businessman Kelly$<BR>It would please you。During this time，I will help you to discuss the matter handkerchief。<BR>
+<FONT color=#7e12d2>(Kelly rolled up his sleeves，Ready to lay down)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-3" image="" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Businessman Kelly$<BR>Well, slowly，Nothing in a hurry，Ha ha。<BR>As long as you can<FONT color=#a82424>Cyclops teeth</FONT>To me，Should be no problem。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-3" image="" itemindex="300256">
+      <talk_question mid="37"><![CDATA[<html>$Dark Elf tere beads$<BR><FONT color=#a82424>Ancient embroidery handkerchief</FONT>……I want to see a good～<BR>I do not want to lag behind the trend。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-4-a" mid="39"><![CDATA[<html>Be able to do with that thing？</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Businessman Kelly${action:talk}<BR>Buy a handkerchief。Would have to be sold to the aristocratic lady of King City，I have come to be robbed。Ha ha。<BR>Let me help you with<FONT color=#a82424>Cyclops teeth</FONT>Made into brooches。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-4-b" mid="41"><![CDATA[<html>(Kelly proudly took out a handkerchief)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Businessman Kelly$<BR>Of course！How could not do it？Please do not worry。<BR>
+Ha ha，Please take it, you quickly，Lest it be to go back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-b" image="" itemindex="300256">
+      <talk_question mid="42"><![CDATA[<html>$Businessman Kelly$<BR>Really not easy to find this piece of handkerchief。I hope you will treasure。<BR>
+You know？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-5" image="" itemindex="300256">
+      <talk_answer link_index="n281_darkelf_teleju-5-a" mid="44"><![CDATA[<html>(Bring things out)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Dark Elf tere beads$<BR>Ah，What is on your hands ah？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-5-a" image="" itemindex="300256">
+      <talk_answer link_index="n281_darkelf_teleju-5-b" mid="46"><![CDATA[<html>(Tera beads very happy)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Dark Elf tere beads$<BR>Wow～Really get the ah！I am really very happy！！<BR>
+<FONT color=#a82424>Ancient embroidery handkerchief</FONT>……Look and said the same goddess Weekly。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-5-b" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-5-c" mid="48"><![CDATA[<html>(Tera bead eyes exudes splendor，Look at me)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Dark Elf tere beads$<BR>This is lovely street girls special equipment！……You？Amazing～<BR>
+Me，Very very like you！Really grateful！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-5-c" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-5-d" mid="50"><![CDATA[<html>不至于 it……</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Dark Elf tere beads$<BR>I really was happy Dark Elf。<BR>
+I am a little excited too well，I feel like almost fainted，Hei hei。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-5-d" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-5-!next" mid="52"><![CDATA[<html><FONT color=#2b2723><FONT color=#086171>(Get Award)</FONT> </FONT></html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-5" image="" itemindex="300256">
+      <talk_question mid="53"><![CDATA[<html>$Businessman Kelly$<BR>Really not easy to find this piece of handkerchief。I hope you will treasure。<BR>
+You know？</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4911,4912,4913,4914</exe>
+         <exe type="setquest">491</exe>
+         <exe type="talk" npc="n281_darkelf_teleju">2</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="recompense_view">,4911,4910,4913,4914</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="2" op="]=">300257</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="4">1081</exe>
+         <exe type="huntitem" num="2" exe="" onexe="">300257</exe>
+         <exe type="conexe" true="6,7,8" false="5,9">0</exe>
+         <exe type="addquestitem" num="1">300257</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="conexe" true="6,7,8" false="">0</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201081</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="addquestitem" num="1">300256</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4911,4912,4913,4914</exe>
+         <exe type="complete">491</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n281_darkelf_teleju" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n281_darkelf_teleju" sub="acceptted">1,2,3,4</exelink>
+   <exelink qstep="1" npc="n281_darkelf_teleju" sub="b" />
+   <exelink qstep="1" npc="n281_darkelf_teleju" sub="c">2</exelink>
+   <exelink qstep="1" npc="n281_darkelf_teleju" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n092_trader_kelly" sub="b" />
+   <exelink qstep="2" npc="n092_trader_kelly" sub="c" />
+   <exelink qstep="2" npc="n092_trader_kelly" sub="d">0,2,10,3,1</exelink>
+   <exelink qstep="4" npc="n092_trader_kelly" sub="b">0,1,2</exelink>
+   <exelink qstep="5" npc="n281_darkelf_teleju" sub="b" />
+   <exelink qstep="5" npc="n281_darkelf_teleju" sub="c" />
+   <exelink qstep="5" npc="n281_darkelf_teleju" sub="d">0</exelink>
+   <exelink qstep="5" npc="n281_darkelf_teleju" sub="!next">1</exelink>
+   <journal_data recompense="1:4911,2:4912,3:4913,4:4914" quest_title="다크엘프 텔레주Ⅰ" chapterid="" quest_level="36" quest_mark_type="10" use_item_list="300256,300257">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Teleju.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n281</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>281</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[And Dark Elves tere beads dialogue]]></title>
+         <contents mid="55"><![CDATA[<html>Tera beads that you want to50Years ago, magazines articles on the latest trends introduced。To dialogue with her。<BR>
+<FONT color=#a82424></FONT><BR><FONT color=#086171>Heermadai port </FONT><FONT color=#a82424>→Dark Elf tere beads</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[And Dark Elves tere beads dialogue]]></destination>
+         <todo_msg mid="57"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Sonya.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n92</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>92</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[And businessman Kelly dialogue]]></title>
+         <contents mid="59"><![CDATA[<html>Tera beads helped me buy the goddess introduced weekly<FONT color=#a82424>Gorgeous with bright colors of ancient lace handkerchief embroidered roses</FONT>。To holy heaven<FONT color=#a82424>Businessman Kelly</FONT>See if you can buy it there。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Businessman Kelly<BR></FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[And businessman Kelly dialogue]]></destination>
+         <todo_msg mid="61"><![CDATA[Please businessman Kelly asked whether the ancient embroidery handkerchief。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_41.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>413,0,0</destination_pos>
+         <destination_mode>custom:411@1,412@1,413@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[Collection2A Cyclops teeth]]></title>
+         <contents mid="63"><![CDATA[<html>Kelly in the business to collect material when handkerchief，Explosion leaves the forest to collect2A cyclops tooth bar。<BR><BR><FONT color=#086171>Montenegro hill angle(Dark jungle road)</FONT> <FONT color=#a82424>→ Lin Explosion leaves</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[Collection2A Cyclops teeth]]></destination>
+         <todo_msg mid="65"><![CDATA[Explosion leaves to go to forest to collect2A Cyclops teeth。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Sonya.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n92</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>92</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[And businessman Kelly dialogue]]></title>
+         <contents mid="67"><![CDATA[<html>The collected2A Cyclops to the teeth<FONT color=#a82424>Businessman Kelly</FONT>。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Businessman Kelly</FONT> </html>]]></contents>
+         <destination mid="68"><![CDATA[And businessman Kelly dialogue]]></destination>
+         <todo_msg mid="69"><![CDATA[Please collected Cyclops teeth to the businessman Kelly。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Teleju.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n281</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>281</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[And Heermadai port of Dark Elves tere beads dialogue]]></title>
+         <contents mid="71"><![CDATA[<html>Kelly from the merchants there to get to the ancient embroidery handkerchief<FONT color=#a82424>Dark Elf tere beads</FONT>。<BR>
+ <BR><FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→Dark Elf tere beads</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[And Heermadai port of Dark Elves tere beads dialogue]]></destination>
+         <todo_msg mid="73"><![CDATA[Please Heermadai port of Dark Elves tere beads dialogue。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>36:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>490</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

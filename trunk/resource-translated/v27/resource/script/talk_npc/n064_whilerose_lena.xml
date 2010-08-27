@@ -1,0 +1,21 @@
+   <talk>
+      <npcename>n064_whilerose_lena</npcename>
+      <npcid>64</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[White Rose Knight(Dark Overlord territory)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$White Rose Knight$<BR>Hum……<BR>
+I have nothing and you said。Step aside。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="enterquest">sq11_459_complete_decode</exe>
+         <exe type="enterquest">sq11_460_who_is_whiterose</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">459</chk>
+         <chk type="hasquest">460</chk>
+      </conditions>
+   </talk>

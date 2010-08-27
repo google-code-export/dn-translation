@@ -1,0 +1,551 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq05_160_magic_test_1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>160</qid>
+      <designer>손원호</designer>
+      <qlevel>8</qlevel>
+      <qdesc>타라의 특훈 1단계! 요즘 잘나가는 소서리스들의 필수품인 매직 마스터 시험을 보라고 하는데… 실기 시험을 보기 전에 일단 필기 시험에 도전해보자. 퀴즈 형식의 퀘스트. mq119완료후 수행 가능.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>161</nextqid>
+      <nextqname>sq05_161_magic_test_2</nextqname>
+      <nextqnpc>n012_sorceress_master_cynthia</nextqnpc>
+      <qkname mid="1"><![CDATA[Masters qualification certificate obtained it!（Written exam）]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라   (마나리지)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-noquest" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="217"><![CDATA[<html>$Advanced magician Cynthia$<BR>Obtaining the qualification certificate to Master? <BR>First<FONT color=#a82424>Tara</FONT>Learn from it there。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-a" mid="165"><![CDATA[<html>Ah。</html>]]></talk_answer>
+      <talk_question mid="164"><![CDATA[<html>$Magician Tala${action:Talk}<BR>Senior！Congratulate you。<BR>When you&#39;re freed soon?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-b" mid="167"><![CDATA[<html>Really get in the way it。</html>]]></talk_answer>
+      <talk_question mid="166"><![CDATA[<html>$Magician Tala$<BR>How，Well do not seem to look happy? Things settled，Cynthia has been re-authorized adult，Which can continue to be<FONT color=#a82424>Official magician</FONT>The，You are not happy...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-c" mid="169"><![CDATA[<html>Master Qualification Certificate?</html>]]></talk_answer>
+      <talk_question mid="168"><![CDATA[<html>$Magician Tala$<BR>Hey~Also how do ah。Since adults have once again become a formal disciple Cynthia，How was not more effort into a relationship than ever before had to ah。<BR>
+<FONT color=#a82424>Master Qualification Certificate</FONT>Has received so，May wish to start learning how to spell a Higher?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-d" mid="171"><![CDATA[<html>The first time I heard。</html>]]></talk_answer>
+      <talk_question mid="170"><![CDATA[<html>$Magician Tala$<BR>Is，Until now not been<FONT color=#a82424>Master Qualification Certificate</FONT>The Bar?The golden magician who most recently have made at least card then two or three professional qualifications。It is also the basis of which the basic ah...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-e" mid="173"><![CDATA[<html>Yes。I reflect on。</html>]]></talk_answer>
+      <talk_question mid="172"><![CDATA[<html>$Magician Tala$<BR>Hey...Indeed the。Who told you to heaven in the holy consumption of time, ah casino。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-e" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-f" mid="175"><![CDATA[<html>Ah...Rights to know。</html>]]></talk_answer>
+      <talk_question mid="174"><![CDATA[<html>$Magician Tala$<BR>Not empty and you&#39;re kidding。<FONT color=#a82424>Cynthia</FONT>If the adults left behind a smile，If not in one week to increase the strength of their predecessors with a large，Peril。Do not you know Cynthia, when adults are the most horrible laugh when you? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-g" mid="177"><![CDATA[<html>How to get qualification certificates?</html>]]></talk_answer>
+      <talk_question mid="176"><![CDATA[<html>$Magician Tala$<BR>I do however believe that the capacity of senior。Predecessors, has had the strength of the magician，So put it as a good solid foundation training。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-h" mid="179"><![CDATA[<html>Just listen a little impatient ah...</html>]]></talk_answer>
+      <talk_question mid="178"><![CDATA[<html>$Magician Tala$<BR>Qualification Certificate Examination written examination and practical examination is divided into。To enter the actual exam must pass a written exam Caixing，So to begin with what I learned about<FONT color=#a82424>The history of the magician</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-acceptted" mid="183"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="182"><![CDATA[<html>$Certificates in it for Master！（Written exam）$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-a" mid="6"><![CDATA[<html>Ah。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Magician Tala$<BR>Whoops，Senior，If you do the old way，I can report to the teacher of the Cynthia！Concentrate ah。Then，Are you sure it has forgotten the。Anyway, I begin with the history you talk about the magician bar。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-a" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-b" mid="25"><![CDATA[<html> Sage and the dark disaster</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-1-f" mid="26"><![CDATA[<html> Origin magician</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-1-j" mid="27"><![CDATA[<html> Dragon attack</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-1-m" mid="28"><![CDATA[<html> 佩奥里斯塔</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-1-p" mid="29"><![CDATA[<html>Complete control of Rights！</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Magician Tala$<BR>In these directories, select a bar，I will choose to take to you to explain the key！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-b" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-c" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Magician Tala$<BR>A long time ago，A <FONT color=#a82424>Sage</FONT>。Goddess of Inspiration by Sage，To give a lot of knowledge of human。Human knowledge with Sage to develop their own grant，Live a more affluent life。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-c" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-d" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Magician Tala$<BR>Although the subject of human love Sage，However, the dragon has become a thorn in。Called black disaster<FONT color=#a82424>Black Dragon</FONT>Decided to eliminate Sage，Both finally started a fierce war。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-d" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-e" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Magician Tala$<BR>Fortunately, the fighting ended with the victory of Sage。But by the fatal injuries he died immediately，Before dying, he left his two disciples can predict future disasters<FONT color=#a82424>Secret of the ball</FONT>And <FONT color=#a82424>Sage Wand</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-e" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-a" mid="37"><![CDATA[<html>Want to hear other stories！</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Magician Tala$<BR>The predecessor of the ball and find the secret is Sage Sage Wand relics left behind two。How，Do not do magic? Senior...? Do not nap ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-f" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-g" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Magician Tala$<BR>Sage has two disciples，One of them was later to become pastor of the origin of<FONT color=#a82424>Jaycox</FONT>Adult，Another is the ancestor of our magician <FONT color=#a82424>Marian</FONT>Adult。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-g" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-h" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Magician Tala$<BR>Marian Sage adults to the development of knowledge-based new magic。He advocated the Goddess created the world，But the magic is that she has long existed before，Mean that the set<FONT color=#a82424>Secret magic</FONT>The theoretical basis。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-h" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-i" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Magician Tala$<BR>The Jaycox has bothered to explain his deep Marian adults in the<FONT color=#a82424>Divine Magic</FONT>Of which。Result，As differences of opinion，Between the two sides have chosen a different path of development。Is not a silly ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-i" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-a" mid="45"><![CDATA[<html>Want to hear other stories！</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Magician Tala$<BR>Now all the magic magician uses are derived from esoteric magic Marian adults。Melt at the forest<FONT color=#a82424>Mali An Diantang</FONT>Is to commemorate the great magician built Marian adults。Unfortunately, they have now become the monster&#39;s lair。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-j" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-k" mid="47"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Magician Tala$<BR>Sage&#39;s duel with the wounded<FONT color=#a82424>Black Dragon</FONT>After a long recovery，, Returns。Heilongjiang&#39;s resurrection to the people at that time brought a great deal of fear，In fact a lot of the hostility of the human being in the Black Dragon。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-k" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-l" mid="49"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Magician Tala$<BR>People in order to eliminate Black Dragon，Decided to set up crusade team。Heroes began to gather around the，The magician had a living fossil<FONT color=#a82424>Karatyup</FONT>Adults is also in the ranks then joined the crusade against。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-l" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-a" mid="51"><![CDATA[<html>Want to hear other stories。</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Magician Tala$<BR>Kara adults fall through the battle to the death with the Black Dragon，Eventually be eliminated。But was ejected in the dark atmosphere of the Black Dragon injured，Now only in recluse<FONT color=#a82424>Lotus Swamp</FONT>，It really is a pity it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-m" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-n" mid="53"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Magician Tala$<BR>If the magician is the origin of the words of Marian adults，So is the magician of the peak period<FONT color=#a82424>佩奥里斯塔</FONT>Family of。They had the magic ability to fame spread far and wide，And because participation in the Dragon raid<FONT color=#a82424>Karatyup</FONT>Adult，Is becoming a myth。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-n" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-o" mid="55"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Magician Tala$<BR>To 佩奥里斯塔 the name of the magician who has a superior ability。Of course the most famous of them was undoubtedly the<FONT color=#a82424>Karatyup 佩奥里斯塔</FONT>An adult。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-o" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-a" mid="57"><![CDATA[<html>Want to hear other stories！</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Magician Tala$<BR>Carla fall into adults who are also regarded as the spiritual support of all the magician。After becoming the official magician，The reason why adult trip to see karatyup，Are for this。While the older generation because it did not see him caught gambling... Senior！Do not nap ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-p" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-q" mid="59"><![CDATA[<html>Ah！Perfect。</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-1-a" mid="60"><![CDATA[<html>Want to listen again。</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Magician Tala$<BR>Really right? You snooze on the day，Would like all to remember?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-q" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-r" mid="62"><![CDATA[<html>Believe me la！</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Magician Tala$<BR>Then go to<FONT color=#a82424>Cynthia</FONT>Adult bar exam in writing。<BR>Just got the wrong answer a question，Have to re-start，Oh, you had better answer carefully！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-r" image="" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$Magician Tala$<BR>Hey，Heard the words that，I am even more disturbed Rights。<BR>If one just want to listen to those things，Can always come to me！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="" itemindex="">
+      <talk_question mid="219"><![CDATA[<html>$Advanced magician Cynthia$<BR>Obtaining the qualification certificate to Master？<BR>Find someone<FONT color=#a82424>Tara</FONT>Learning Go。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="66"><![CDATA[<html>Regret，Again it！</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Magician Tala${action:Talk}<BR>Also want to hear it again?Hey…I know this... Look you always nap，Also forgot the bar?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-a" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-b" mid="99"><![CDATA[<html> Sage and the dark disaster</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-2-f" mid="100"><![CDATA[<html> Origin magician</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-2-j" mid="101"><![CDATA[<html> Dragon attack</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-2-m" mid="102"><![CDATA[<html> 佩奥里斯塔</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-2-p" mid="103"><![CDATA[<html>Complete control of Rights！</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Magician Tala$<BR>In these directories, select a bar，I will choose to take to you to explain the key！ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-b" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-c" mid="72"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Magician Tala$<BR>A long time ago，A<FONT color=#a82424>Sage</FONT>。 Goddess of Inspiration by Sage，To give a lot of knowledge of human。Human knowledge with Sage to develop their own grant，Live a more affluent life。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-c" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-d" mid="74"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Magician Tala$<BR>Although the subject of human love Sage，However, the dragon has become a thorn in。Called black disaster<FONT color=#a82424>Black Dragon</FONT>Decided to eliminate Sage，Both finally started a fierce war。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-d" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-e" mid="76"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Magician Tala$<BR>Fortunately, the fighting ended with the victory of Sage。But by the fatal injuries he died immediately，Before dying, he left his two disciples can predict future disasters<FONT color=#a82424>Secret of the ball</FONT>And<FONT color=#a82424>Sage Wand</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-e" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="78"><![CDATA[<html>Want to hear other stories！</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Magician Tala$<BR>The predecessor of the ball and find the secret is Sage Sage Wand relics left behind two。How，Do not do magic? Senior...? Do not nap ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-f" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-g" mid="80"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Magician Tala$<BR>Sage has two disciples，One of them was later to become pastor of the origin of<FONT color=#a82424>Jaycox</FONT>Adult，Another is the ancestor of our magician <FONT color=#a82424>Marian</FONT>Adult。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-g" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-h" mid="82"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Magician Tala$<BR>Marian Sage adults to the development of knowledge-based new magic。He advocated the Goddess created the world，But the magic is that she has long existed before，Mean that the set<FONT color=#a82424>Secret magic</FONT>The theoretical basis。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-h" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-i" mid="84"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Magician Tala$<BR>The Jaycox has bothered to explain his deep Marian adults in the<FONT color=#a82424>Divine Magic</FONT>Of which。Result，As differences of opinion，Between the two sides have chosen a different path of development。Is not a silly ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-i" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="86"><![CDATA[<html>Want to hear other stories！</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Magician Tala$<BR>Now all the magic magician uses are derived from esoteric magic Marian adults。Melt at the forest<FONT color=#a82424>Mali An Diantang</FONT>Is to commemorate the great magician built Marian adults。Unfortunately, they have now become the monster&#39;s lair。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-j" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-k" mid="88"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Magician Tala$<BR>Sage&#39;s duel with the wounded<FONT color=#a82424>Black Dragon</FONT>After a long recovery，, Returns。Heilongjiang&#39;s resurrection to the people at that time brought a great deal of fear，In fact a lot of the hostility of the human being in the Black Dragon。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-k" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-l" mid="90"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Magician Tala$<BR>People in order to eliminate Black Dragon，Decided to set up crusade team。Heroes began to gather around the，The magician had a living fossil<FONT color=#a82424>Karatyup</FONT>Adults is also in the ranks then joined the crusade against。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-l" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="92"><![CDATA[<html>Want to hear other stories！</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Magician Tala$<BR>Kara adults fall through the battle to the death with the Black Dragon，Eventually be eliminated。But was ejected in the dark atmosphere of the Black Dragon injured，Now only in recluse<FONT color=#a82424>Lotus Swamp</FONT>，It really is a pity it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-m" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-n" mid="94"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Magician Tala$<BR>If the magician is the origin of the words of Marian adults，So is the magician of the peak period<FONT color=#a82424>佩奥里斯塔</FONT>Family of。They had the magic ability to fame spread far and wide，And because participation in the raid&#39;s Kara Long autumn adults，Is becoming a myth。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-n" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-o" mid="96"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Magician Tala$<BR>To 佩奥里斯塔 the name of the magician who has a superior ability。Of course the most famous of them was undoubtedly the<FONT color=#a82424>Karatyup 佩奥里斯塔</FONT>An adult。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-o" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="105"><![CDATA[<html>Want to hear other stories！</html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>$Magician Tala$<BR>Carla fall into adults who are also regarded as the spiritual support of all the magician。After becoming the official magician，The reason why adult trip to see karatyup，Are for this。While the older generation because it did not see him caught gambling... Senior！Do not nap ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-p" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-q" mid="107"><![CDATA[<html>Ah！Perfect。</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="108"><![CDATA[<html>Want to listen again。</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$Magician Tala$<BR>Really right? You snooze on the day，Would like all to remember?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-q" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-r" mid="110"><![CDATA[<html>Believe me la！</html>]]></talk_answer>
+      <talk_question mid="109"><![CDATA[<html>$Magician Tala$<BR>Then go to <FONT color=#a82424>Cynthia</FONT>Adult bar exam in writing。<BR>Just got the wrong answer a question，Have to re-start，Oh, you had better answer carefully！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-r" image="" itemindex="">
+      <talk_question mid="111"><![CDATA[<html>$Magician Tala$<BR>Hey，Heard the words that，I am even more disturbed Rights。<BR>If one just want to listen to those things，Can always come to me！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-a" mid="116"><![CDATA[<html>I have to challenge the written examination Magic Master！</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR>I allow you to accumulate strength，What you then Xiaguang。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-b" mid="118"><![CDATA[<html>I am not a stone head！</html>]]></talk_answer>
+      <talk_question mid="117"><![CDATA[<html>$Advanced magician Cynthia$<BR>... I said。Ah lovely Disciples。When the teacher my sincere advise you to a，Sure you head on over to this stone can not be，Giving up。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-c" mid="120"><![CDATA[<html>Of course, ah。</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Advanced magician Cynthia$<BR>Actual test back Bale，You&#39;re not a written test to pass too?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-d" mid="122"><![CDATA[<html>I have to challenge。</html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$Advanced magician Cynthia$<BR>So if you insist，Let the Quiz。But as long as the wrong answers a question had to start again，So，If the answer what the process does not understand where，Or obediently return back to Tara, where do your homework Come。<FONT color=#a82424>Ah，Then you sure you want to start?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-d" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-e" mid="124"><![CDATA[<html>（Begin a written examination Magic Master）</html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$Advanced magician Cynthia$<BR>Then<FONT color=#a82424> Written examination Magic Master </FONT>Immediately began to slightly。<BR>Oh well I&#39;ve heard the answer。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-e" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="126"><![CDATA[<html> Divine Magic</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-f" mid="134"><![CDATA[<html> Secret magic</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="135"><![CDATA[<html> Dark Magic</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="136"><![CDATA[<html> Virgin Magic （20Old boy until the body can be used to maintain）</html>]]></talk_answer>
+      <talk_question mid="125"><![CDATA[<html>$Magic Master written examination papers$<BR><FONT color=#382000>Which of the following basic magic spell for the wizard？</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-f" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-g" mid="206"><![CDATA[<html>Call，No problem！</html>]]></talk_answer>
+      <talk_question mid="205"><![CDATA[<html>$Advanced magician Cynthia$<BR>Ha ha，Sounds nice。However, only under a more difficult question，Oh can not stress。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-g" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="128"><![CDATA[<html> Long grass</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="138"><![CDATA[<html> Golden Dragon</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-h" mid="139"><![CDATA[<html> Black Dragon</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="140"><![CDATA[<html> Transparent Long</html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html>$Magic Master written examination papers$<BR><FONT color=#382000>Which of the following Sage duel with the dragon is ever a disaster known as the Black Dragon?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-h" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-i" mid="208"><![CDATA[<html>It into the next problem！</html>]]></talk_answer>
+      <talk_question mid="207"><![CDATA[<html>$Advanced magician Cynthia$<BR>
+Ah，Have prompted a black disaster，What idiot would choose grass dragon or dragon it。Ah，This is common sense seems to still have the thing in your。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-i" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="130"><![CDATA[<html> Mario</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-j" mid="141"><![CDATA[<html> Marian</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="142"><![CDATA[<html> Maria</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="143"><![CDATA[<html> Marion</html>]]></talk_answer>
+      <talk_question mid="129"><![CDATA[<html>$Magic Master written examination papers$<BR><FONT color=#382000>The following as a disciple of Sage，Which is called the ancestor of the magician?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-j" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-k" mid="210"><![CDATA[<html>It quickly into the next problem！</html>]]></talk_answer>
+      <talk_question mid="209"><![CDATA[<html>$Advanced magician Cynthia$<BR>
+Ha ha，From the west comes the sun。Adults can actually remember the name of Marian。<BR>
+Then look at the next problem? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-k" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-l" mid="132"><![CDATA[<html> Karatyup</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="144"><![CDATA[<html> Ballner</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="145"><![CDATA[<html> Geraint</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="146"><![CDATA[<html> Man Neil</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$Magic Master written examination papers$<BR><FONT color=#382000>The following which the magician with the resurrection of the Black Dragon heroes fought?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-l" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-m" mid="212"><![CDATA[<html>It into the next problem！</html>]]></talk_answer>
+      <talk_question mid="211"><![CDATA[<html>$Advanced magician Cynthia$<BR>As a magician, then，Certainly will not forget karatyup 佩奥里斯塔 name it。She&#39;s among our most noble presence magician。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-m" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="154"><![CDATA[<html> Magic Ridge</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="155"><![CDATA[<html> Kedella points</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="156"><![CDATA[<html> Holy Paradise</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-n" mid="157"><![CDATA[<html> Lotus Swamp</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$Magic Master written examination papers$<BR><FONT color=#382000>Which of the following areas is a magician of the heroic karatyup 佩奥里斯塔 seclusion of the place?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-n" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-o" mid="214"><![CDATA[<html>Oh！（Finally a question was）</html>]]></talk_answer>
+      <talk_question mid="213"><![CDATA[<html>$Advanced magician Cynthia$<BR>Yes。Kara autumn retreat where adults lotus swamp marsh area is。Perhaps you now there are still relatively unfamiliar，But one day have the opportunity to go where。Ah，The question now is the last one was！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-o" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="158"><![CDATA[<html> Karatyup</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="159"><![CDATA[<html> Marian</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-r" mid="160"><![CDATA[<html> Milk white Cynthia</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-p" mid="161"><![CDATA[<html> Tara</html>]]></talk_answer>
+      <talk_question mid="148"><![CDATA[<html>$Magic Master written examination papers$<BR>
+<FONT color=#382000>Most beautiful ancient magician magician is?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-p" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-d" mid="162"><![CDATA[<html>Re-challenge of writing test。</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-q" mid="163"><![CDATA[<html>Back to Tara there continue to review。</html>]]></talk_answer>
+      <talk_question mid="149"><![CDATA[<html>$Advanced magician Cynthia$<BR>Ah！Not even know！Hurry back<FONT color=#a82424>Tara</FONT>Come back after a good review there！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-q" image="" itemindex="">
+      <talk_question mid="150"><![CDATA[<html>$Advanced magician Cynthia$<BR>Ah，My lovely head disciple is a rock melon Well。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-r" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-s" mid="184"><![CDATA[<html>This level is too easy Rights。</html>]]></talk_answer>
+      <talk_question mid="151"><![CDATA[<html>$Advanced magician Cynthia$<BR>Not，How could。<BR>
+Thanks to stone their heads，Had been able to through the written test... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-s" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-t" mid="188"><![CDATA[<html>Actual examination?</html>]]></talk_answer>
+      <talk_question mid="187"><![CDATA[<html>$Advanced magician Cynthia$<BR>Anyway, you have the number on the magician&#39;s got some history，Now and through the<FONT color=#a82424>Actual examination</FONT>On it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-t" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-u" mid="200"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="199"><![CDATA[<html>$Advanced magician Cynthia$<BR>Actual test is to evaluate the application ability of magic …Ah，Master Magic actual exam…Ah！Here。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-u" image="QW_10.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-v" mid="202"><![CDATA[<html>Yes!</html>]]></talk_answer>
+      <talk_question mid="201"><![CDATA[<html>$Advanced magician Cynthia$<BR><FONT color=#a82424>霜风 forest </FONT><FONT color=#a82424>Complete clearance。</FONT> <BR>Ah…The beloved disciple to me it should not be a problem? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-v" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-!next" mid="216"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="215"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">1600,,,,</exe>
+         <exe type="setquest">160</exe>
+         <exe type="talk" npc="n015_sorceress_tara">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1600,,,,</exe>
+         <exe type="complete">160</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n015_sorceress_tara" sub="h">0</exelink>
+   <exelink qstep="accepting" npc="n015_sorceress_tara" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="f" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="j" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="m" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="p" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="c" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="d" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="e" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="g" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="h" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="i" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="k" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="l" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="n" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="o" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="q" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="r">0,1</exelink>
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="f" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="j" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="m" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="p" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="c" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="d" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="e" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="g" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="h" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="i" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="k" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="l" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="n" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="o" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="q" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="a" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="r" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="e" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="f" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="g" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="h" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="i" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="j" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="k" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="l" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="m" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="n" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="o" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="r" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="p" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="q" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="s" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="t" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="u" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="v">0</exelink>
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="!next">1</exelink>
+   <journal_data recompense="0:1600" quest_title="매직 마스터 자격증을 따자! (필기)" chapterid="" quest_level="8" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n15</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>15</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="190"><![CDATA[Tara dialogue and magician]]></title>
+         <contents mid="191"><![CDATA[<html>ReachLv9Before the decision to undergo training together with Tara。Gifted to the magician Tara where it started。！<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Magician Tala</FONT></html>]]></contents>
+         <destination mid="192"><![CDATA[Tara dialogue and magician]]></destination>
+         <todo_msg mid="193"><![CDATA[Gifted to the magician who receive it Tara。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="195"><![CDATA[And senior magician Cynthia dialogue]]></title>
+         <contents mid="196"><![CDATA[<html>Cynthia teachers to master the written exam there and it magic。Study the contents of the note is not clear if，Ask it again to Tara。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Advanced magician Cynthia</FONT></html>]]></contents>
+         <destination mid="197"><![CDATA[And senior magician Cynthia dialogue]]></destination>
+         <todo_msg mid="198"><![CDATA[To Cynthia, where the teacher candidate to。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>8:-1</user_level>
+      <user_worldzone_level />
+      <user_class>3</user_class>
+      <prev_quest>119</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

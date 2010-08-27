@@ -1,0 +1,186 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_008_whereabouts_girl2</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>8</qid>
+      <designer>김주연</designer>
+      <qlevel>5</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9</nextqid>
+      <nextqname>mq01_009_please_save_my_girl</nextqname>
+      <nextqnpc>n124_guard_sam</nextqnpc>
+      <qkname mid="1"><![CDATA[The whereabouts of the girlⅡ]]></qkname>
+      <qnpc>
+         <npcid>124</npcid>
+         <npcename>n124_guard_sam</npcename>
+         <npckname>가드 샘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브   (프레리)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>56</npcid>
+         <npcename>n056_guard_pesent_dalcy</npcename>
+         <npckname>가드 달시        (그늘 숲)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QN_Npc_Guard_Dalcy.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Self-defense, head of Steve${action:Talk}<BR>Please you go<FONT color=#a82424>Shadow Forest</FONT>Of<FONT color=#a82424>Guard dulce</FONT>Ask<FONT color=#a82424>Wire basket</FONT>And<FONT color=#a82424>Timothy</FONT>Whereabouts。They should be ran<FONT color=#a82424>Shaded forest paths</FONT>What where。Hope they can safe and sound……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-1" image="QW_4.dds" itemindex="">
+      <talk_answer link_index="n056_guard_pesent_dalcy-1-a" mid="9"><![CDATA[<html>Shadow Forest Centre？</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Guard dulce$<BR>Huan……Welcome。<FONT color=#387206>{user_class}{user_nick}</FONT> ！I saw baskets of silk and Timothy to<FONT color=#a82424>Shadow Forest Centre</FONT>Ran past！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-1-a" image="QW_4.dds" itemindex="">
+      <talk_answer link_index="n056_guard_pesent_dalcy-2" mid="11"><![CDATA[<html>Thank you。I think I&#39;ll go visit the shadow of the forest center。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Guard dulce$<BR>Be，Yes。Because the incident is a sudden，We had enough time to stop，Watched as they ran past……There is a long red wings of the Monster is chasing them……Patrol with me<FONT color=#a82424>Guard Sam</FONT>They followed the wire basket，To<FONT color=#a82424>Shadow Forest Centre</FONT>Go。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-1" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Guard Sam$<BR>Even down a strong monster that……<BR>Although often heard your stories，However, the strength you did not expect such a strong。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-2" image="QN_Npc_Guard_Dalcy.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Guard dulce$<BR>I hope you will carefully。<BR>To<FONT color=#a82424>Shadow Forest Centre</FONT>Go，To find members of our self-defense<FONT color=#a82424>Guard Sam</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-2" image="" itemindex="">
+      <talk_answer link_index="n124_guard_sam-2-a" mid="15"><![CDATA[<html>Wire basket and Timothy where？</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Guard Sam$<BR>
+Ho……Ho……Even down a strong monster that……<BR>
+Although often heard your stories，However, the strength you did not expect such a strong。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-2-a" image="QM_GoblinRed.dds" itemindex="">
+      <talk_answer link_index="n124_guard_sam-2-b" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Guard Sam$<BR>I am sorry……I see a basket in the shadow of the forest being chased wire and Timothy，So, come back here with the……But because those who<FONT color=#a82424>Goblin</FONT><FONT color=#a82424>Leader of Gaza</FONT>Hindrance，I could not keep up with them。Uh……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-2-b" image="QM_HarpyRed.dds" itemindex="">
+      <talk_answer link_index="n124_guard_sam-2-c" mid="20"><![CDATA[<html>You see them where to go right side？</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Guard Sam$<BR>Captured the Monster wire basket with a long<FONT color=#a82424>Red Feather</FONT>Of<FONT color=#a82424>Harpy people</FONT>。Timothy behind to catch up……After the things I do not know……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-2-c" image="QM_HarpyRed.dds" itemindex="">
+      <talk_answer link_index="n124_guard_sam-2-d" mid="22"><![CDATA[<html>Excavation site of ancient temples you……Know。</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Guard Sam$<BR>Listen to the forest guards Dickinson said wind，That<FONT color=#a82424>Red Eagle Mito mistress</FONT>To<FONT color=#a82424>Excavation site of ancient temple</FONT>Passed to put an。How long wire basket is not hijacked，If the words of the past quickly catch，Wire baskets can definitely help out！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-2-d" image="" itemindex="">
+      <talk_answer link_index="n124_guard_sam-2-!next" mid="26"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">8</exe>
+         <exe type="recompense">,81,82,82,82</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n056_guard_pesent_dalcy" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n124_guard_sam" sub="b" />
+   <exelink qstep="2" npc="n124_guard_sam" sub="c" />
+   <exelink qstep="2" npc="n124_guard_sam" sub="d">1</exelink>
+   <exelink qstep="2" npc="n124_guard_sam" sub="!next">0</exelink>
+   <journal_data recompense="1:81,2:82" quest_title="소녀의 행방Ⅱ" chapterid="1" quest_level="5" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Guard_Dalcy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>2,-742,1636</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>56</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[Was chasing young girls]]></title>
+         <contents mid="28"><![CDATA[<html>From the guards received the message Dickinson，Said basket wire and Timothy were monster catch，And ran to the direction of the shadow of the forest。<BR>To<FONT color=#a82424>Shadow Forest</FONT>Of<FONT color=#a82424>Guard dulce</FONT>Wire basket and asked the direction of Timothy。<BR><BR><FONT color=#086171>Shadow Forest</FONT> <FONT color=#a82424>→ Guard dulce</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[And shadow forest guards dulce dialogue]]></destination>
+         <todo_msg mid="30"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Guard_Dalcy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>68,-580.80,727.18</destination_pos>
+         <destination_mode>custom:66@1,67@1,68@1</destination_mode>
+         <statemark_npcid>124</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[Clouds pressure City]]></title>
+         <contents mid="34"><![CDATA[<html>Find a wire basket into the following<FONT color=#a82424>Shadow Forest Centre</FONT>Of<FONT color=#a82424>Guard Sam</FONT>，Wire basket and asked the whereabouts of Timothy。<BR><BR><FONT color=#086171>Shadow Forest(Shaded forest paths)</FONT> <FONT color=#a82424>→ Shadow Forest Centre</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[The shadow of the forest guard to center and Sam dialogue]]></destination>
+         <todo_msg mid="36"><![CDATA[Go to center of the shadow of the forest to look for guard Sam。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>7</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

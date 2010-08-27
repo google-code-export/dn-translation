@@ -1,0 +1,57 @@
+   <talk>
+      <npcename>n046_cleric_master_enoc</npcename>
+      <npcid>46</npcid>
+      <startexe>4</startexe>
+      <npckname mid="1"><![CDATA[Senior Pastor Aino]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="8"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="skill1" mid="9"><![CDATA[<html>[Learning Skills]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Senior Pastor Aino$<BR>Young <FONT color=#382000>{user_class}</FONT>, Be sure to heed the will of God，To choose the correct path。That is what we should do。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="15"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Senior Pastor Aino$<BR>As the world increasingly being overshadowed by the lies and fear when，We need to find the real and its confidence。This is the will of the goddess….</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="36" link_target="sq11_546_the_place_left.xml"><![CDATA[<html>[Lv24] <FONT color=#086171>Left position</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="sq11_497_dark_armor2.xml"><![CDATA[<html>[Lv29] <FONT color=#086171>[Title]「ImmortalLv3」Dark ArmorⅡ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back1" mid="38"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="4"><![CDATA[<html>$Senior Pastor Aino$<BR>What do you want with me?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="003" image="" itemindex="">
+         <talk_answer link_index="quest" mid="29"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="skill2" mid="30"><![CDATA[<html>[Learning Skills]</html>]]></talk_answer>
+         <talk_answer link_index="005" mid="31"><![CDATA[<html>[Dialogue] The raid on the Black Dragon</html>]]></talk_answer>
+         <talk_question mid="20"><![CDATA[<html>$Senior Pastor Aino$<BR>
+Fortunately, the Black Dragon out of Montenegro, to repel it before。Some manifestation of the goddess of the asylum。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="004" image="" itemindex="">
+         <talk_answer link_index="quest" mid="32"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="005" mid="33"><![CDATA[<html><FONT size=2 face=Arial>[Dialogue] The raid on the Black Dragon</FONT></html>]]></talk_answer>
+         <talk_question mid="24"><![CDATA[<html>$Senior Pastor Aino$<BR>
+What happens in Montenegro that will not easily go out。True believers who fear God alone is claimed to be followers of the Dragon guys are cheating。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="005" image="" itemindex="">
+         <talk_answer link_index="back2" mid="34"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="27"><![CDATA[<html>$Senior Pastor Aino$<BR>
+It is thought that the raid in Heilongjiang were the last battle，Killed the hero Beisikede。Although some people still think he is still alive。Legend has it only in legend among the most beautiful。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="0" false="1">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+         <exe type="conexe" true="5" false="2">1</exe>
+         <exe type="conexe" true="6" false="7">0</exe>
+         <exe type="talk">003</exe>
+         <exe type="talk">004</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">4</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 408) == 1</chk>
+      </conditions>
+      <exelink idx="skill1">3</exelink>
+      <exelink idx="back1">4</exelink>
+      <exelink idx="skill2">3</exelink>
+      <exelink idx="back2">4</exelink>
+   </talk>

@@ -1,0 +1,531 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_264_argenta_book</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>264</qid>
+      <designer>김인정</designer>
+      <qlevel>18</qlevel>
+      <qdesc>300119(그 용은 멋있었다)
+아르젠타에게 퀘스트 습득
+1번맵 들어가면 데이비드 있음. 대화.
+3번 맵에서 보스문 앞에 데이비드. 대화
+보스맵에서 술통 깨뜨리면 실패 메시지.
+보스맵에서 술통 깨뜨리지 않고, 보스 클리어
+보스맵에서 데이비드와 대화.
+아르젠타에게 보고.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Algerita books]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>188</npcid>
+         <npcename>n188_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드(고요한 수도원 본당)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Kraft adventurer David$<BR>Appears to require my signature ah。Does fit to sign a free，Oh。<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-a" mid="7"><![CDATA[<html>No ah...</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Algerita$<BR>Dictating to you how it?<BR>You，Not mentioned。I am your benefactor<FONT color=#a82424>While dictating to you</FONT>The right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-b" mid="9"><![CDATA[<html>I was not a slave...</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Algerita$<BR>Yes。<BR>
+You，Do I want playing?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-b" image="QS_Default.dds" itemindex="300003">
+      <talk_answer link_index="n164_argenta_wounded-accepting-party1" mid="11"><![CDATA[<html>（Proof of engraved slave）Ah！</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Algerita$<BR>You are <FONT color=#a82424>Slave</FONT> Ah。<FONT color=#a82424>My slave</FONT>。<BR>You have a good look at your neck wear<FONT color=#a82424>Necklace</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-c" image="" itemindex="">
+      <talk_question mid="109"><![CDATA[<html>$Algerita$<BR>Know like。Live like a slave right thing。Do people always want to go with，<FONT color=#a82424>Alone</FONT>Bygones。<BR><FONT color=#7e12d2>（In the team can not be the task under）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-e" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Algerita$<BR>You&#39;re rookie。<BR>...Ah，Said<FONT color=#a82424>Rookie</FONT>Daorang I think of it a chore。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-e" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n164_argenta_wounded-accepting-f" mid="15"><![CDATA[<html>What book ah?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Algerita$<BR>A book came out。 <FONT color=#a82424>Not long ago,</FONT>Had found one in the market<FONT color=#a82424>Popular</FONT>Book，Results of another fellow, but issued after the fire to read。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-f" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-g" mid="17"><![CDATA[<html>It looks like it normally does not。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Algerita$<BR>It is called<FONT color=#a82424>Mighty dragon</FONT>Story book。But <FONT color=#a82424>Geraint</FONT> Guy after reading，It is<FONT color=#a82424>Full of misunderstanding and prejudice book unhealthy</FONT>，I did not return a direct throw. …Substandard own mind you should like this?Really is a strange guy ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-g" image="QW_22.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-h" mid="19"><![CDATA[<html>First go to the main hall to see if it silent monastery。</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Algerita$<BR>But I heard anyone in the<FONT color=#a82424>Silent monastery temple</FONT>Seen the same book? I am also interested in the contents of the book ah，You go get me a good，Easy it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-acceptted" mid="21"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Algerita books$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Algerita$<BR>Geraint guy throw away my books，I should be angry Caidui ，Because at that time we have this urgent，So for the delay。If this will not spare him to see him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-1" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-1-david123" mid="24"><![CDATA[<html>（Ominous laughter came）</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Kraft adventurer David${action:Talk}<BR>Ha，Ha，Ha。Followed<FONT color=#a82424>The great adventurer David</FONT>Rear end of the rookie！Have nothing to say。<BR>Ha，Ha，Ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-1-a" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-1-b" mid="26"><![CDATA[<html>The book is looking for...</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Kraft adventurer David$<BR>Today want to use now<FONT color=#a82424>Excuse</FONT>Come with me ah?<BR>Grace…If any good excuse, then，<FONT color=#a82424>Specialized</FONT>Take care of you no harm， Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-1-b" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n188_slave_david-1-c" mid="28"><![CDATA[<html>Do you also for the book came?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Kraft adventurer David$<BR>Ah?Book... <FONT color=#a82424>Book</FONT>Eh? <FONT color=#7e12d2>（David surprised like）</FONT><BR>Oh…So that... <FONT color=#a82424>Book</FONT>Ah...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-1-c" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-1-d" mid="30"><![CDATA[<html>…How the book。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Kraft adventurer David$<BR><FONT color=#7e12d2>（David surprised me in the line of sight to avoid）</FONT> Me…I&#39;m the strange defeat evil Pueblo<FONT color=#a82424>The angel of justice</FONT>Ah！Faux pas on my words of the great adventurers do not mention，Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-1-d" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Kraft adventurer David$<BR>Then after the bye！ Ha ha ha。<BR><FONT color=#7e12d2>（David gave him the desire to hide）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-1-e" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-1-a" mid="106"><![CDATA[<html>（Now more and more boring the）</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Kraft adventurer David$<BR>Ah！ <FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>！ How they pursue to the ah?！ That is quite admire your<FONT color=#a82424>Tenacity</FONT>Ah。<BR>Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-1-f" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-1-a" mid="108"><![CDATA[<html>（Who ignores really do not want to）</html>]]></talk_answer>
+      <talk_question mid="107"><![CDATA[<html>$Kraft adventurer David$<BR>Ha ha ha。 But I<FONT color=#a82424>The great adventurer David</FONT>！！ You are not always catch up with me here, ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-2" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Kraft adventurer David$<BR>I am not to hide！Me to want you to see, I can always eliminate Monster<FONT color=#a82424>Brave</FONT>The heroic ah！<BR><FONT color=#7e12d2>（Quick decisive action by David hid）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-3" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-3-a" mid="35"><![CDATA[<html>When protecting me, ah...</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Kraft adventurer David$<BR>Or security to here！ <FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>！<BR>Protected by my friends of course， Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-3-a" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-3-b" mid="37"><![CDATA[<html>Proposal?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Kraft adventurer David${action:Talk}<BR>Do not shy，I just thank me and to let you do it，Ha ha ha。<BR>But，I 倒是 you have<FONT color=#a82424>Proposal</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-3-b" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-3-c" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Kraft adventurer David$<BR>Side there was <FONT color=#a82424>Blow strange</FONT> Of<FONT color=#a82424>Chieftains</FONT>Occupied，You should know it? In that very dangerous place，I intend to<FONT color=#7e12d2>Resolute、</FONT> <FONT color=#382000>Brave、</FONT> <FONT color=#a94407>Professional</FONT>For you personally ，Find the book！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-3-c" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-3-d" mid="41"><![CDATA[<html>…That I used to play, right?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Kraft adventurer David$<BR>But you have to<FONT color=#a82424>Temporarily</FONT>For me to resist that monster Caihang！Get it? Will not allow you to resist for too long，Thus<FONT color=#a82424>Temporarily</FONT>，When I search for the book can withstand about， Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-3-d" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-3-e" mid="43"><![CDATA[<html>Well I finally beat。</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Kraft adventurer David$<BR>Ah！Can not get me wrong！I will personally put up with a barrel after the defense network，Go search for books 。 <FONT color=#a82424>You have to pay attention to barrel can not be broken</FONT>Ah，Ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-3-e" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-3-f" mid="45"><![CDATA[<html>Ah your team does not receive?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Kraft adventurer David$<BR><FONT color=#a82424>Rookie</FONT>This may be enough to choke ah adventurer，Do not you know<FONT color=#a82424>Complementary</FONT>The reason you?<BR>
+To do this you，Would not have received after your team，Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-3-f" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Kraft adventurer David$<BR>Hemp，Trouble ah！Anyway！I repeat，<FONT color=#a82424>Barrel defense network can not be broken</FONT> <FONT color=#a82424>Do pay attention to</FONT>Ah！ I will look for books，Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-4" image="" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Kraft adventurer David$<BR>When I find a book，<FONT color=#a82424>Barrel defense network can not be broken</FONT> <FONT color=#a82424>Do pay attention to</FONT>Ah！ Ha ha ha。 If If <FONT color=#a82424>Failure</FONT>The，All because of you，<FONT color=#a82424>May re-start</FONT>！ Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-5" image="QW_22.dds" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$Kraft adventurer David${action:Talk}<BR>Actually really broken <FONT color=#a82424>Cask</FONT>...！The only strategic retreat of the！！ <FONT color=#a82424>To get the books，Have to re-start</FONT>！I have to return to the entrance of the crypt， Oh。<BR><FONT color=#7e12d2>（Task failure，Need to re-start。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-6" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n188_slave_david-6-a" mid="51"><![CDATA[<html>Ah，Originally looking for a book ah？</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Kraft adventurer David$<BR>See you！！ My<FONT color=#a82424>David</FONT>Adult super skills！ Ha ha ha。<BR><FONT color=#7e12d2>（David has model has come up with a book like）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-6-a" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n188_slave_david-6-b" mid="53"><![CDATA[<html>（Open your books to see。）</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Kraft adventurer David${action:Talk}<BR>Ha ha ha。 How?David adults my ability? Oh you can not be too impressed~<BR>Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-6-b" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n188_slave_david-6-c" mid="55"><![CDATA[<html>（…Does seem a bit strange）</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Mighty dragon$<BR>Golden dragon began to roar。59211Monster only moments away。Super incomparable golden dragon。<BR><FONT color=#7e12d2>（The golden dragon916834To the ashes of the World，And began to display their storm stringed with tens of thousands of ancient epic showdown between the scene）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-6-c" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n188_slave_david-6-d" mid="57"><![CDATA[<html>He seems to be due to human right...</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Kraft adventurer David$<BR>Although I do not know why you want to take these <FONT color=#a82424>Previous stories</FONT>…But at least I fulfilled my<FONT color=#a82424>Commitment</FONT>，Get it，Rookie?<BR>Do not forget you still owe me<FONT color=#a82424>Human</FONT>Oh！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-6-d" image="" itemindex="">
+      <talk_answer link_index="n188_slave_david-6-e" mid="59"><![CDATA[<html>Those books will not be together right?</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Kraft adventurer David${action:Talk}<BR>Ah? Kid seems to me you have<FONT color=#a82424>Misunderstanding</FONT>，Anyway, I<FONT color=#a82424>Generous</FONT>On<FONT color=#a82424>Forgiveness</FONT>You this， Ha ha ha。 Then I went to busy to do my！ <BR><FONT color=#7e12d2>（David to his arms have stuffed a few books）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-6-e" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Kraft adventurer David$<BR>Participate，Reference <FONT color=#a82424>Data</FONT>Only！ Is not <FONT color=#a82424>In order to sell</FONT>！！！<BR><FONT color=#7e12d2>（David also seems to target those books）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n188_slave_david-7" image="" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$Kraft adventurer David$<BR>These books only，Only reference <FONT color=#a82424>Data</FONT>Only！ Definitely not<FONT color=#a82424>In order to sell</FONT>Of！！！<BR><FONT color=#7e12d2>（David also seems to target those books）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-a" mid="63"><![CDATA[<html>Hey，Nah，Misunderstood。</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Algerita$<BR>You are not intentionally so long to come back ah?Ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-a" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n164_argenta_wounded-7-b" mid="65"><![CDATA[<html>（Submit books。）</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Algerita$<BR>...Hum。Ah no way because rookie，Anyway，I said that this<FONT color=#a82424>Book</FONT>Brought the right?<BR>Even this thing can be done，I can not blame Oh you&#39;re welcome！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-b" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n164_argenta_wounded-7-c" mid="67"><![CDATA[<html>（50Well has been a long time ago...）</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Algerita$<BR>Is<FONT color=#a82424>Not long ago,</FONT>Book it，So how old ah？Strange。 <FONT color=#a82424>Is at most50Years ago</FONT>Bai books。<BR><FONT color=#7e12d2>（Algerita opened books）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-c" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n164_argenta_wounded-7-d" mid="69"><![CDATA[<html>（Content is a bit strange）</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Algerita$<BR>What&#39;s this?Can not ah? Feed，This dragon books you are stupid?Why is the gold that lured Long?Long Why do children like to eat？Strange ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-d" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n164_argenta_wounded-7-e" mid="71"><![CDATA[<html>(Which point in the end, as the ancients ah...)</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Algerita$<BR>Really is，Naive ah off the mark。The hero of ancient people，It is also~Unlike the ancient people, ah,，Not you?Indeed the...<BR>
+<FONT color=#7e12d2>（Algerita murmured to read the book）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-e" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-f" mid="73"><![CDATA[<html>…Ah?</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Algerita$<BR>Ah~What ah！These are<FONT color=#a82424>Bullshit</FONT>Content，Is<FONT color=#a82424>Fool</FONT>Same <FONT color=#a82424>Fiction</FONT>Well？Really boring。Not to see this kind of trash，Geraint this guy！！ …But as you！ <FONT color=#086171>{user_nick}</FONT>！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-f" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n164_argenta_wounded-7-g" mid="75"><![CDATA[<html>（Speechless）</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Algerita$<BR>Why take such a <FONT color=#a82424>Silly book</FONT>Come ah?<BR>
+Wasted my time。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-g" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-h" mid="77"><![CDATA[<html>（Rewarded）</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-h" image="" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$Algerita$<BR>Ah，This thing must stop，Forget the book thrown。But I&#39;m hungry again，So will do for me once again<FONT color=#a82424>Errand</FONT>Ah。<FONT color=#a82424>Sure</FONT>Will do it?<BR>
+<FONT color=#7e12d2>（19Level and above to receive the next phase of the task before）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">264</exe>
+         <exe type="recompense_view">,2641,2642,2643,2644</exe>
+         <exe type="talk" npc="n164_argenta_wounded">1</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n164_argenta_wounded">d</exe>
+         <exe type="talk" npc="n164_argenta_wounded">c</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 263 ) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 260 ) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="4" false="3">0</exe>
+         <exe type="conexe" true="4" false="5">1</exe>
+         <exe type="talk" npc="n188_slave_david">e</exe>
+         <exe type="talk" npc="n188_slave_david">f</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="addquestitem" num="1">300119</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300119</exe>
+         <exe type="complete">264</exe>
+         <exe type="recompense">,2641,2642,2643,2644</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="party1">3</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="h">1</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n188_slave_david" sub="david123">2</exelink>
+   <exelink qstep="1" npc="n188_slave_david" sub="b" />
+   <exelink qstep="1" npc="n188_slave_david" sub="c" />
+   <exelink qstep="1" npc="n188_slave_david" sub="d">0,1</exelink>
+   <exelink qstep="1" npc="n188_slave_david" sub="a" />
+   <exelink qstep="1" npc="n188_slave_david" sub="a" />
+   <exelink qstep="3" npc="n188_slave_david" sub="b" />
+   <exelink qstep="3" npc="n188_slave_david" sub="c" />
+   <exelink qstep="3" npc="n188_slave_david" sub="d" />
+   <exelink qstep="3" npc="n188_slave_david" sub="e" />
+   <exelink qstep="3" npc="n188_slave_david" sub="f">0,1</exelink>
+   <exelink qstep="6" npc="n188_slave_david" sub="b" />
+   <exelink qstep="6" npc="n188_slave_david" sub="c" />
+   <exelink qstep="6" npc="n188_slave_david" sub="d" />
+   <exelink qstep="6" npc="n188_slave_david" sub="e">0,1,2</exelink>
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="d" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="e" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="f" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="g">2</exelink>
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="h">0,1</exelink>
+   <journal_data recompense="1:2641,2:2642,3:2643,4:2644" quest_title="아르젠타의 독서" chapterid="" quest_level="18" quest_mark_type="10" use_item_list="300119">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_22.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>161,n188</destination_pos>
+         <destination_mode>custom:161@1</destination_mode>
+         <statemark_npcid>188</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[Algerita and books]]></title>
+         <contents mid="82"><![CDATA[<html><FONT color=#a82424>Algerita</FONT>Seems to have heard a long time ago reading a book。She suddenly wanted to find a book，Have to<FONT color=#a82424>Silent monastery temple</FONT>Go。<BR>
+<FONT color=#7e12d2>(In the team can not be the task under)<BR></FONT><BR><FONT color=#086171>Crystal Valley → Melting Forest（Silent monastery entrance）</FONT> <FONT color=#a82424>→ Silent monastery temple</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[（Single）Explore the quiet temple monastery]]></destination>
+         <todo_msg mid="84"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_22.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>163,n188</destination_pos>
+         <destination_mode>custom:162@3,163@1</destination_mode>
+         <statemark_npcid>188</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[David&#39;s experience with]]></title>
+         <contents mid="86"><![CDATA[<html>Met name<FONT color=#a82424>David</FONT>Strange people。Although<FONT color=#a82424>Claimed to be risk-takers</FONT>，But still felt very suspicious。But there are no required books Algerita，Was to explore the deeper parts of。<BR>
+ <BR>
+<FONT color=#086171>Melting Forest（Silent monastery entrance）</FONT> <FONT color=#a82424>→ Silent monastery temple</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[Explore the quiet temple monastery]]></destination>
+         <todo_msg mid="88"><![CDATA[There is no book，Where to move it deeper。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>163,n188</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>188</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[David&#39;s proposal]]></title>
+         <contents mid="90"><![CDATA[<html><FONT color=#a82424>David</FONT>To say that seems to be nothing。Pleased to hear of his book mentioned about Algerita，And his talk Kanba。<BR>
+ <BR>
+<FONT color=#086171>Silent monastery temple</FONT> <FONT color=#a82424>→ David</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[Dialogue with David]]></destination>
+         <todo_msg mid="92"><![CDATA[Let the dialogue with David。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_22.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>164,0,0</destination_pos>
+         <destination_mode>custom:164@3</destination_mode>
+         <statemark_npcid>188</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[Eliminate Blow strange chieftains]]></title>
+         <contents mid="94"><![CDATA[<html>Although it is not intended to，But still accepted<FONT color=#a82424>David</FONT>Delegate。 Search for the book when David，He can not be broken<FONT color=#a82424>Around the barrel</FONT>Monster who successfully resist an attack can。That being said，But David is not to help the situation，Appears to have to<FONT color=#a82424>Elimination of chieftains and other strange monsters Blow</FONT>Cai Xing。<BR>
+ <BR>
+<FONT color=#086171>Melting Forest（Silent monastery entrance）</FONT> <FONT color=#a82424>→ Silent monastery temple</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[Eliminate Blow strange Carrera]]></destination>
+         <todo_msg mid="96"><![CDATA[Dave&#39;s proposal in accordance with strange chieftains eliminated Pueblo Bar。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>164,n188</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>188</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="97"><![CDATA[Book David and]]></title>
+         <contents mid="98"><![CDATA[<html>Blow chieftains blame has been eliminated。And <FONT color=#a82424>David</FONT>Dialogue，To see if he found a book in accordance with agreed。<BR>
+ <BR>
+<FONT color=#086171>Silent monastery temple</FONT> <FONT color=#a82424>→ David</FONT></html>]]></contents>
+         <destination mid="99"><![CDATA[Dialogue with David]]></destination>
+         <todo_msg mid="100"><![CDATA[Blow chieftains blame has been eliminated。Let the dialogue with David。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist>300119</need_itemlist>
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="101"><![CDATA[Old book]]></title>
+         <contents mid="102"><![CDATA[<html>Got Algerita the book brought。David took a few of the seemingly self more valuable ancient books，I put it to <FONT color=#a82424>Algerita</FONT>It。<BR>
+ <BR>
+<FONT color=#086171>Gray ruins</FONT> <FONT color=#a82424>→ Algerita</FONT></html>]]></contents>
+         <destination mid="103"><![CDATA[And the gray ruins of Algerita dialogue]]></destination>
+         <todo_msg mid="104"><![CDATA[Book have found。Report to the gray ruins of Algerita bar。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>18:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>263</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item>300003</have_symbol_item>
+   </condition_data>
+</quest>

@@ -1,0 +1,326 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_279_test_warrior2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>279</qid>
+      <designer>손원호</designer>
+      <qlevel>15</qlevel>
+      <qdesc>새로운 힘을 사용하기 위해서는 그에 어울리는 무기가 필요하다고 하며 무기의 핵심 재료가 되는 용기의 심장석을 구해오라고 한다. 용기의 심장석을 가져오면 바로 새로운 힘에 대해 알려준다. 검술에 특화된 연계기 위주의 소드마스터와, 파워형 둔기 캐릭터인 머시너리에 대해 설명해주는 챈들러. 각각의 선택지를 클릭하면 설명을 들을 수 있다. 보상으로는 용기의 심장석을 박은 고급 무기 (도끼, 해머, 대검 중 택1)를 건네준다. 언젠가 진정한 강함에 도달하게 되었을 때 바르낙을 만날 수 있을 거라고 말하는 챈들러.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Transfer] Proof of soldiers Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>32</npcid>
+         <npcename>n032_warrior_master_chandler</npcename>
+         <npckname>상급 워리어 챈들러 (캐더락 워려 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-a" mid="25"><![CDATA[<html>Ah！ Ready！</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Senior Warrior Chandler$<BR>Then let&#39;s start the second test bar。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-a" image="QS_Default.dds" itemindex="300072">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-b" mid="27"><![CDATA[<html>Courage in the heart of stone?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Senior Warrior Chandler$<BR>Want to use the power of new weapons will need to match Caixing。I will commission a blacksmith to do here for you to bring a new weapon，And you will tries to get some<FONT color=#a82424>Courage in the heart of stone</FONT>Come back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-b" image="QS_Default.dds" itemindex="300072">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-c" mid="29"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Senior Warrior Chandler$<BR>That is to wake up your potential as a<FONT color=#a82424>Catalyst</FONT>Only，I would like to use it to force your body out of step by step excitation。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-acceptted" mid="31"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Proof of soldiers Ⅱ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-a" mid="59"><![CDATA[<html>Of course！</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Senior Warrior Chandler$<BR><FONT color=#2b2723>Courage in the heart of stone</FONT>It is said that only through<FONT color=#a82424>Sleeper Temple</FONT>To get。You really can do it right？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-a" image="QS_Default.dds" itemindex="300072">
+      <talk_question mid="60"><![CDATA[<html>$Senior Warrior Chandler$<BR>Can you be <FONT color=#a82424>Courage in the heart of stone</FONT>Ah really worth looking forward to！ Ah ha ha ha！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2" image="QW_16.dds" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah ha ha ha！You are not a person in the past you！But the courage and the heart of the stone is only the person with the courage to get over fear。Oil！Ha ha ha！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-a" mid="63"><![CDATA[<html>（Submission of courage in the heart of stone）</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ha ha！Well even faster than thought，You this guy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-a" image="QS_Default.dds" itemindex="300072">
+      <talk_answer link_index="n032_warrior_master_chandler-3-b" mid="65"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Senior Warrior Chandler$<BR>Yes，With this colorful and full of shiny<FONT color=#a82424>Courage in the heart of stone</FONT>，In the wake potential of your ability，Can certainly play a significant role。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-c" mid="67"><![CDATA[<html>（Listen to instructions transfer）</html>]]></talk_answer>
+      <talk_answer link_index="n032_warrior_master_chandler-3-h" mid="75"><![CDATA[<html>（Choice of occupation）</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah，Now the power to choose the time。You do not know their job has<FONT color=#a82424>What capacity</FONT>It，Let me explain it in detail with you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-d" mid="109"><![CDATA[<html><FONT color=#a82424><FONT face=Arial size=2> </FONT>Juggernaut</FONT></html>]]></talk_answer>
+      <talk_answer link_index="n032_warrior_master_chandler-3-f" mid="110"><![CDATA[<html><FONT color=#a82424><FONT size=2 face=Arial> </FONT>Mars</FONT></html>]]></talk_answer>
+      <talk_answer link_index="n032_warrior_master_chandler-3-i" mid="111"><![CDATA[<html>(Choice of occupation)</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Senior Warrior Chandler$<BR>
+Would like to hear what！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-e" mid="69"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Senior Warrior Chandler$<BR>Juggernaut，As the name suggests is the<FONT color=#a82424>Good at making big sword</FONT>Career。Compared with other professions is characterized by<FONT color=#a82424>More rapid attack speed and technology</FONT>。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-c" mid="71"><![CDATA[<html>（Listen to other shows）</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Senior Warrior Chandler$<BR>If it is the pursuit of brisk<FONT color=#a82424>Combo</FONT>And gorgeous <FONT color=#a82424>Combos</FONT>Juggernaut is undoubtedly the best choice is to choose。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-f" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-g" mid="73"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Senior Warrior Chandler$<BR><FONT color=#a82424>Mars</FONT>Is a good use<FONT color=#a82424>Sledge</FONT>And<FONT color=#a82424>Ax</FONT>Career。 <BR>
+As can be seen from the use of weapons，The occupation with terror<FONT color=#a82424>Destructive</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-g" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-c" mid="77"><![CDATA[<html>（Listen to other shows）</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Senior Warrior Chandler$<BR>Want to pursue the overriding<FONT color=#a82424>Most destructive</FONT>If，None other than the non-God of War。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-h" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-i" mid="79"><![CDATA[<html>（Choice of occupation）</html>]]></talk_answer>
+      <talk_answer link_index="n032_warrior_master_chandler-3-c" mid="80"><![CDATA[<html>（Once again to listen to instructions related to job）</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah，Do you have to accept the new forces you to prepare a?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-i" image="QS_Default.dds" itemindex="300072">
+      <talk_answer link_index="n032_warrior_master_chandler-3-change_class1" mid="82"><![CDATA[<html>(Transfer to<FONT color=#a82424>Juggernaut</FONT>)</html>]]></talk_answer>
+      <talk_answer link_index="n032_warrior_master_chandler-3-change_class2" mid="83"><![CDATA[<html>(Transfer to<FONT color=#a82424>Mars</FONT>)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Senior Warrior Chandler$<BR>See your eye color，It seems to have determined the。Let me come to the heart of stone with a piece of courage to wake up your power bar potential！ <BR><BR><FONT color=#7e12d2>※ After the choice of occupation，Will not go back on。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-j" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-k" mid="85"><![CDATA[<html>Thank you。</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah ha ha！ Sure enough, commensurate with your job ah。<BR>
+Hopefully, this force can wish you a helping hand。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-k" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-check_changejob" mid="87"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Senior Warrior Chandler$<BR>Zhe Shirang blacksmith made especially for your arms。What a very good thing if not in，It was still being used with a。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-l" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-complete_quest1" mid="89"><![CDATA[<html><FONT color=#086171>（Qualify as Juggernaut）</FONT></html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$[Transfer] Juggernaut$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-m" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-complete_quest2" mid="98"><![CDATA[<html><FONT color=#086171>（Transfer to the Ares）</FONT></html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$[Transfer] Mars$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-n" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-o" mid="100"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Senior Warrior Chandler$<BR>When the day of your strength is at its peak，May see your father。But before，I hope you continue to accumulate strength。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-o" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-p" mid="112"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$Senior Warrior Chandler$<BR>Powerful forces could devour you at any time， <BR>You must be careful，Must not be devoured by their own anger in mind。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-p" image="" itemindex="">
+      <talk_question mid="113"><![CDATA[<html>$Senior Warrior Chandler$<BR>
+Do not forget, after transfer，In order to re-learn all the skills，<FONT color=#a82424>Skill Points will be initialized</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">279,,,,</exe>
+         <exe type="setquest">279</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">413</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300072</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntitem" num="1" exe="6,3,4" onexe="">300072</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200413</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 1) == 1</chk>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 1) == 2</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">2791,,,,</exe>
+         <exe type="complete">279</exe>
+         <exe type="delquestitem" num="1">300072</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">n</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 1, 1);</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 1, 2);</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">j</exe>
+         <exe type="conexe" true="9,0" false="8">0</exe>
+         <exe type="conexe" true="10,13" false="10,13">1</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">l</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">m</exe>
+         <exe type="custom">api_user_SetUserJobID(userObjID, 11);</exe>
+         <exe type="custom">api_user_SetUserJobID(userObjID, 12);</exe>
+         <exe type="recompense">2792,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="a">0,2,8,7,1</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="a">2</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="b" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="c" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="h" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="d" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="f" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="i" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="e" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="c" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="g" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="c" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="i" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="c" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="change_class1">4,6</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="change_class2">5,6</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="k" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="check_changejob">7</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="complete_quest1">11,1,3</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="complete_quest2">12,1,3</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="o" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="p" />
+   <journal_data recompense="1:2790" quest_title="[전직] 전사의 증명 Ⅱ" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="300072">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[Dialogue with senior soldiers Chandler]]></title>
+         <contents mid="51"><![CDATA[<html>Senior soldiers and checkpoints Kedella Chandler dialogue，Consultation on the second transfer test things right。 <BR>
+<BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior Warrior Chandler</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[Dialogue with senior soldiers Chandler]]></destination>
+         <todo_msg mid="53"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_16.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>129,0,0</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Temple clearance sleeper]]></title>
+         <contents mid="56"><![CDATA[<html>Temple clearance sleeper，Courage in the heart of stone was。<BR><BR><FONT color=#086171>Shore littered with fallen leaves(Forgotten Temple entrance)</FONT> <FONT color=#a82424>→ Sleeper Temple</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Temple clearance sleeper]]></destination>
+         <todo_msg mid="58"><![CDATA[Please clearance sleeper Temple。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[Dialogue with senior soldiers Chandler]]></title>
+         <contents mid="93"><![CDATA[<html>Stone won the heart of courage。It to the senior soldiers Chandler。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior Warrior Chandler</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[Dialogue with senior soldiers Chandler]]></destination>
+         <todo_msg mid="95"><![CDATA[Courage of the heart has been stone。Chandler returned to Kedella checkpoints, where it。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1</user_class>
+      <prev_quest>278</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

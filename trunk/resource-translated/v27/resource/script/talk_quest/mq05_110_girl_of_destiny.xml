@@ -1,0 +1,401 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_110_girl_of_destiny</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>110</qid>
+      <designer>곽노찬</designer>
+      <qlevel>9</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>201</nextqid>
+      <nextqname>mq08_201_secret_melody</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Fate of the girl]]></qkname>
+      <qnpc>
+         <npcid>11</npcid>
+         <npcename>n011_priest_leonardo</npcename>
+         <npckname>상급 클레릭 레오날드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>13</npcid>
+         <npcename>n013_cleric_tomas</npcename>
+         <npckname>클레릭 토마스 (마나리지 클레릭 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2" mid="6"><![CDATA[<html>……Thank you。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Pastor Thomas$<BR>Do not be sad。<FONT color=#a82424>Jack</FONT>Should also do not want to see you like this。<BR><FONT color=#a82424>Jack</FONT>Things……Keeping everything on it by you and me。His track<FONT color=#a82424>Dragon followers</FONT>When，Glorious martyrdom of the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-1" image="QN_Cl_Tomas.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR><FONT color=#a82424>Pastor Thomas</FONT>Looking for you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="QN_Cl_Tomas.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR><FONT color=#a82424>Pastor Thomas</FONT>Is waiting for you，You go and see him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>Well……Grown doubled<FONT color=#a82424> Secret of the ball</FONT>And<FONT color=#a82424>Sage of the stick</FONT>Go back to where owner。They must be anxious, etc.。<BR>
+To retrieve the<FONT color=#a82424>Secret of the ball</FONT>To<FONT color=#a82424>Cynthia</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-a" mid="87"><![CDATA[<html>I&#39;ve only done things to do。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR>
+<FONT color=#a82424>Secret of the ball</FONT>……ZDL。<BR>
+Trouble you two……You&#39;ve worked hard。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-a" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-3" mid="89"><![CDATA[<html>What is Enlightenment Sage？</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Advanced magician Cynthia$<BR>
+Well……Before the offensive for，I apologize……<BR>
+You want to see<FONT color=#a82424>雷昂纳 more</FONT>，Just to<FONT color=#a82424>Sage of the stick</FONT>To Leiang Na more。Seems to achieve more than what Leiang Na<FONT color=#a82424>Inspiration Sage</FONT>Time。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="90"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>Yin、<FONT color=#a82424>Sage of the stick</FONT>Found？<BR>
+Haha……Quickly to<FONT color=#a82424>Secret of the ball</FONT>To<FONT color=#a82424>Cynthia</FONT>。Soon see<FONT color=#a82424>Inspiration Sage</FONT>The……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-3-a" mid="77"><![CDATA[<html>What is Enlightenment Sage？</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Senior Pastor Leiang Na more${action:Talk}<BR> Ah……Sage of the stick and the ball found the secret……Really Thank you。<BR> I will never forget<FONT color=#a82424>Knights of the Temple</FONT>Help us。<BR>Now he can finally implement<FONT color=#a82424>Inspiration Sage</FONT>The……Really nice……Ha ha……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3-a" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-3-b" mid="79"><![CDATA[<html>Prophet……Birth？</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>A long time ago，Sage predicted that in the centuries，When doomsday，Appear<FONT color=#a82424>Two signs</FONT>。Indicate that the Prophet<FONT color=#a82424>Birth</FONT>Of<FONT color=#a82424>Star Birth</FONT>And indicate the Prophet<FONT color=#a82424>Wake</FONT>Of<FONT color=#a82424>Pacific Star</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3-b" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-3-c" mid="81"><![CDATA[<html><FONT face=Arial size=2>(Continue)</FONT></html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Senior Pastor Leiang Na more${action:Talk}<BR>Yes。He predicted that，There will be<FONT color=#a82424>Prophet</FONT>Appear，Rescue of lives of the world。<BR><FONT color=#a82424>Star Birth</FONT>Has appeared in more than ten years ago……Not long ago foreshadowed<FONT color=#a82424>Prophet Awakening</FONT>Of<FONT color=#a82424>Pacific Star</FONT>There have been。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3-c" image="QS_Default.dds" itemindex="300028">
+      <talk_answer link_index="n011_priest_leonardo-3-d" mid="83"><![CDATA[<html>Why not contact the sacred paradise？</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>See<FONT color=#a82424>Pacific Star</FONT>Appear after，<FONT color=#a82424>Te Lama by Pope</FONT>Will<FONT color=#a82424>Sage of the stick</FONT>Over to me。Let me in accordance with the prophecy，In<FONT color=#a82424>Habitat for the magic of the hills</FONT>Sage of the secret of the balls stick together and，Fulfilling prophecy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3-d" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-4" mid="85"><![CDATA[<html>Eh……</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Senior Pastor Leiang Na more${action:Talk}<BR>Pope says……Mission of erosion<FONT color=#a82424>Dragon followers</FONT>Of，Has reached the point beyond the control of。If the contact<FONT color=#a82424>Holy Paradise</FONT>，Information will be leaked to<FONT color=#a82424>Dragon followers</FONT>。So we braved the dangerous secret of the stick delivery Sage。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="91"><![CDATA[<html>$Advanced magician Cynthia$<BR>
+You will know later。<BR>
+Detailed contents，So you<FONT color=#a82424>Sage of the stick</FONT>To<FONT color=#a82424>雷昂纳 more</FONT>When asked his。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-4" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-4-cutscene" mid="86"><![CDATA[<html>(Watch the ceremony)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>
+Ah，Just<FONT color=#a82424>Cynthia</FONT>Come……<BR>
+You are looking at next。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-5" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-6" mid="31"><![CDATA[<html>Should tell Thomas，Knights of the Temple to take action to？</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>Prophecy<FONT color=#a82424>Prophet</FONT>At risk……This can be worse。<BR>Must be immediately put<FONT color=#a82424>Prophet</FONT>Rescue。To whom it should matter……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-6" image="QN_Cl_Tomas.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>Ah……Know。Tell you that the prophecy<FONT color=#a82424>Thomas</FONT>，Then ask them for help。Come on you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-6" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-6-a" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Pastor Thomas$<BR>Well Prophet……Ah，First of all I will contact<FONT color=#a82424>Great Church Holy Paradise</FONT>，Before they issued instructions，Please wait a moment。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-6-a" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>During this period，You need the best equipment installed for。Future travel，Should not be smooth……<BR><FONT color=#7e12d2>(Role of the hierarchy must be9And above，To perform the task of the next stage)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-6-b" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-6-c" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>I have received<FONT color=#a82424>Holy Paradise</FONT>Instructions。In order to rescue the Prophet，Temple will be sent<FONT color=#a82424>S2</FONT>And<FONT color=#a82424>S3Knights</FONT>To<FONT color=#a82424>Kedella points</FONT>。Let us also<FONT color=#a82424>S4Knights</FONT>Also to<FONT color=#a82424>Kedella points</FONT>Assembly……But……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-6-c" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-6-d" mid="40"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Pastor Thomas$<BR>You know，<FONT color=#a82424>Knights of the Temple</FONT>Appeared within<FONT color=#a82424>Dragon followers</FONT>……Knights do not know where the other has the number of latent<FONT color=#a82424>Dragon followers</FONT>。We can not continue to believe that the Temple。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-6-d" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-6-e" mid="42"><![CDATA[<html>……？！Head！What you say？</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Pastor Thomas$<BR>……Call……To give you such a heavy burden，I&#39;m sorry……<BR>From now on……<BR>I want you<FONT color=#a82424>Out</FONT><FONT color=#a82424>Knights of the Temple</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-6-e" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-6-f" mid="44"><![CDATA[<html>……My……Task……？</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Pastor Thomas$<BR>Journey in the future，<FONT color=#a82424>Temple Knight</FONT>Your identity will be binding the hands and feet。You can not……As<FONT color=#a82424>Jack</FONT>Put it，You must be free from any influence、Will not be any forced。Only in this way，You can complete the<FONT color=#a82424>Their task</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-6-f" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-6-g" mid="46"><![CDATA[<html>…God&#39;s servant<FONT color=#382000>{user_nick}</FONT>……Willing to accept this mission……</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Pastor Thomas$<BR><FONT color=#a82424>Rescued Prophet。</FONT><BR>This is your<FONT color=#a82424>The final task</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-6-g" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-6-h" mid="48"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-6-h" image="QN_ranger_fugus.dds" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$Pastor Thomas$<BR>You go<FONT color=#a82424>Crystal Valley</FONT>Meet<FONT color=#a82424>Scout Fugu Si</FONT>。<FONT color=#a82424>Kedella points</FONT>Of<FONT color=#a82424>Adventurers Association</FONT>Will help you。<BR>You Hu and grace like the goddess of the journey with you……Hope……We meet again……</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="delquestitem" num="-1">300059</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="custom">api_user_PlayCutScene(userObjID,npcObjID,60);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">9</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n013_cleric_tomas">b</exe>
+         <exe type="talk" npc="n013_cleric_tomas">6</exe>
+         <exe type="complete">110</exe>
+         <exe type="addquestitem" num="1">300012</exe>
+         <exe type="recompense">1100,,,,</exe>
+         <exe type="delquestitem" num="-1">300028</exe>
+         <exe type="delquestitem" num="-1">300059</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="3">0,1,2</exelink>
+   <exelink qstep="3" npc="n011_priest_leonardo" sub="b" />
+   <exelink qstep="3" npc="n011_priest_leonardo" sub="c" />
+   <exelink qstep="3" npc="n011_priest_leonardo" sub="d" />
+   <exelink qstep="3" npc="n011_priest_leonardo" sub="4">0</exelink>
+   <exelink qstep="4" npc="n011_priest_leonardo" sub="cutscene">0,1,2</exelink>
+   <exelink qstep="5" npc="n011_priest_leonardo" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n013_cleric_tomas">0</exelink>
+   <exelink qstep="6" npc="n013_cleric_tomas" sub="c" />
+   <exelink qstep="6" npc="n013_cleric_tomas" sub="d" />
+   <exelink qstep="6" npc="n013_cleric_tomas" sub="e" />
+   <exelink qstep="6" npc="n013_cleric_tomas" sub="f" />
+   <exelink qstep="6" npc="n013_cleric_tomas" sub="g">5</exelink>
+   <exelink qstep="6" npc="n013_cleric_tomas" sub="h">4,3</exelink>
+   <journal_data recompense="0:1100" quest_title="운명의 소녀" chapterid="1" quest_level="9" quest_mark_type="7" use_item_list="300059,300028">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[And Pastor Thomas dialogue]]></title>
+         <contents mid="53"><![CDATA[<html>And<FONT color=#a82424>Pastor Thomas</FONT>Dialogue。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Pastor Thomas</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[And Pastor Thomas dialogue]]></destination>
+         <todo_msg mid="55"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-456,4330</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[And senior magician Cynthia dialogue]]></title>
+         <contents mid="57"><![CDATA[<html>Thomas, let me<FONT color=#a82424>Secret of the ball</FONT>To Cynthia。<BR>And<FONT color=#a82424>Advanced magician Cynthia</FONT>Dialogue。1<BR><BR><FONT color=#086171>Magic Ridge </FONT><FONT color=#a82424>→ Advanced magician Cynthia</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[And senior magician Cynthia dialogue]]></destination>
+         <todo_msg mid="59"><![CDATA[Please secret of the ball to senior magician Cynthia。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Cl_Leonardo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-1194,3978</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>11</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[More dialogue and senior pastor Leiang Na]]></title>
+         <contents mid="61"><![CDATA[<html>To<FONT color=#a82424>Sage of the stick</FONT>To the<FONT color=#a82424>Senior Pastor Leiang Na more</FONT>，View Sage&#39;s Inspiration。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Senior Pastor Leiang Na more</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[More dialogue and senior pastor Leiang Na]]></destination>
+         <todo_msg mid="63"><![CDATA[Please stick to the sages of the more senior pastor Leiang Na。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Cl_Leonardo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-1194,3978</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>11</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[More dialogue and senior pastor Leiang Na]]></title>
+         <contents mid="66"><![CDATA[<html>Sage&#39;s prophecy of the Prophet danger of the information contained。<BR>And<FONT color=#a82424>Senior Pastor Leiang Na more</FONT>Dialogue。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Senior Pastor Leiang Na more</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[More dialogue and senior pastor Leiang Na]]></destination>
+         <todo_msg mid="68"><![CDATA[Please more dialogue and senior pastor Leiang Na。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[And Pastor Thomas dialogue]]></title>
+         <contents mid="95"><![CDATA[<html>The risks to tell the Prophet<FONT color=#a82424>Pastor Thomas</FONT>。<BR><FONT color=#7e12d2>※ Role of the hierarchy must be9And above，To perform the task of the next stage。</FONT><BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Pastor Thomas</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[And Pastor Thomas dialogue]]></destination>
+         <todo_msg mid="97"><![CDATA[Please dialogue with Pastor Thomas。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>109</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

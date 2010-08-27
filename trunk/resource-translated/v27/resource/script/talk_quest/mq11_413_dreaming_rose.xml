@@ -1,0 +1,375 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_413_dreaming_rose</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>413</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>414</nextqid>
+      <nextqname>mq11_414_odd_sequela</nextqname>
+      <nextqnpc>n038_royal_magician_kalaen</nextqnpc>
+      <qkname mid="1"><![CDATA[Dream of going to the Rose]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>251</npcid>
+         <npcename>n251_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>76</npcid>
+         <npcename>n076_dream_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-a" mid="30"><![CDATA[<html>Actually look at each，Do not feel the same。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Court magician Kala An$<BR>Quickly bring<FONT color=#a82424>Dream Powder</FONT>To see who<FONT color=#a82424>Prophet</FONT>It。<BR>The dream powder sprinkle small lady who&#39;s who，You can enter her dreams。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-b" mid="32"><![CDATA[<html>(Kala An began a self-righteous)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Court magician Kala An${action:Talk}<BR>
+Ohe Oh Oh～Now that we finally experience the powerful magician of the bar？Where our strength is that<FONT color=#a82424>Raccoon old man</FONT>Can par？Ha ha ha ha ha～<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Court magician Kala An$<BR>
+Rush to the dream powder sprinkled upon the Prophet Bar。<BR>
+This magic has been tested many times I，Ease of use it，Absolute security。Do you want to be assured，Ask<FONT color=#a82424>Golden Dragon</FONT>To know。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-1" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Rose$<BR>
+……Do not，I……Do not。I&#39;m tired……<BR>
+Are all……All because I。<BR>
+If it were not my words……So no one……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-1" image="" itemindex="">
+      <talk_answer link_index="n251_rose-1-changemap_1" mid="98"><![CDATA[<html>(Use Dream Powder)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Rose$<BR>……<BR><FONT color=#7e12d2>(As she lay there like a doll，What reaction do not)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-a" mid="99"><![CDATA[<html>If you can wake up quickly like a。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Geraint$<BR><FONT color=#a82424>Descendants of ancient people</FONT>Still sleeping。<BR>She seems to be no more questions……I do not know why in the end。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-b" mid="101"><![CDATA[<html>Dream……？She probably just fell asleep right？</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Geraint$<BR>This……She also might not want to wake up is to be a dream。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-b" image="QS_Default.dds" itemindex="300083">
+      <talk_question mid="102"><![CDATA[<html>$Geraint$<BR>Clear，You want to know，Go directly to ask her the。<BR>If the magician<FONT color=#a82424>Dream Powder</FONT>Might be effective。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-2" image="" itemindex="">
+      <talk_answer link_index="n076_dream_rose-2-a" mid="38"><![CDATA[<html>(Girl whispered, choking back tears，Muttering。)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Rose$<BR>… Do not….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-2-a" image="" itemindex="">
+      <talk_answer link_index="n076_dream_rose-2-b" mid="52"><![CDATA[<html>Not your fault。</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Rose$<BR>
+……Do not……I do not……I&#39;m tired……Are all……All because I。<BR>
+If it were not my words……So no one will die……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-2-b" image="" itemindex="">
+      <talk_answer link_index="n076_dream_rose-2-c" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Rose$<BR>Not，Because I。<BR>
+Because I was born……I live in this world……<BR>
+Because it……All……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-2-c" image="" itemindex="">
+      <talk_answer link_index="n076_dream_rose-2-d" mid="56"><![CDATA[<html>(Even so, it must persuade her wake)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Rose$<BR>I would like to stay here forever。<BR>Where not to go，Do not talk to anyone。<BR>
+So do not……Excuse me again……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-2-d" image="" itemindex="">
+      <talk_answer link_index="n076_dream_rose-2-e" mid="58"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Rose$<BR>I do not want anyone hurt because of me。Why should I have this power？I can not do anything……<BR>
+I never thought of have this power……Why is my？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-2-e" image="" itemindex="">
+      <talk_answer link_index="n076_dream_rose-2-changemap_2" mid="60"><![CDATA[<html>(Increasing the voice of young girls suffering)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Rose$<BR>I am sorry，I now do nothing。<BR>
+Do not want to see anyone……<BR>I&#39;m tired……Will let me……Please a……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-a" mid="62"><![CDATA[<html>This is the girl you dream……？</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Geraint$<BR>
+Descendants of the ancient people let you see her dream？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-b" mid="64"><![CDATA[<html>(Geraint said dismissively)</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Geraint$<BR>Dreams sometimes can be said that dreams were vivid reflection of the life。<BR>
+Those deep in her subconscious life experiences。<BR>
+You hear is the story of her own。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-c" mid="66"><![CDATA[<html>She said that because of their fear that other people are injured，Therefore, resistance has been revived。</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Geraint$<BR>
+I&#39;ve been hope you will awaken the girls。<BR>
+But，She seems to be how are reluctant to wake up look。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-4" mid="68"><![CDATA[<html>To really do like the。</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Geraint$<BR>Wait，Maybe she will wake up。<BR>
+After all, human existence is a kind of very strong……<BR>
+I believe，Someday，She will hear my voice。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-3" image="" itemindex="">
+      <talk_question mid="106"><![CDATA[<html>$Rose$<BR>
+…….<BR><FONT color=#7e12d2>(She seemed normal doll，No response。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$Geraint$<BR>
+Descendants of the ancient people to protect me，You worry，Go fast back to the human world。<BR>
+<FONT color=#7e12d2>(Report back to the court magician Kala An)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-a" mid="72"><![CDATA[<html>She seems unwilling to wake up。</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Court magician Kala An$<BR>
+You have to see the Prophet in a dream a bar？When can you think of the prophets wake up？<BR>
+She does not like to wake up it&#39;ll never sleep？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-b" mid="75"><![CDATA[<html>(Kala An whispered complaints up)</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Court magician Kala An$<BR>What？！Why do we need the Prophet？<BR>
+A prophet can not wake what is the use？<BR>Oh，Me mad！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-b" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-c" mid="77"><![CDATA[<html>Yes，Is not willing to wake up her own。</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Court magician Kala An$<BR>
+But the bishop and the cunning of different，I have also been considered and the Prophet dialogue。I am not a prophet can not wake up，It just did not wake her！Are not you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-c" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-d" mid="79"><![CDATA[<html>(She stopped nervous，Began a self-righteous)</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Court magician Kala An${action:Talk}<BR>Oh Oh Oh～Yes～Is such！Not my fault！Ha ha ha～<BR>In the end is more powerful magician of some！Great！Great！Ha ha ha ha～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-d" image="QS_Default.dds" itemindex="300083">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-e" mid="81"><![CDATA[<html>(Kala An seemed to tired to put down your hands)</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Court magician Kala An$<BR>I did so many things，Also to rest again。<BR>Oh……You do not know，Powder produced such thing as a dream I want to consume much energy！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-e" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-!next" mid="83"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_user_ChangeMap(userObjID,13016,1);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13014,1);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4131,4132,4133,4134</exe>
+         <exe type="complete">413</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="1" npc="n251_rose" sub="changemap_1">0</exelink>
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="2" npc="n076_dream_rose" sub="b" />
+   <exelink qstep="2" npc="n076_dream_rose" sub="c" />
+   <exelink qstep="2" npc="n076_dream_rose" sub="d" />
+   <exelink qstep="2" npc="n076_dream_rose" sub="e" />
+   <exelink qstep="2" npc="n076_dream_rose" sub="changemap_2">0,1,2</exelink>
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="c" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="d" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="e">0</exelink>
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="!next">1</exelink>
+   <journal_data recompense="1:4131,2:4132,3:4133,4:4134" quest_title="로제의 꿈속으로" chapterid="5" quest_level="32" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Rose.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13014,n251</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>251</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[Dream of going to the Rose]]></title>
+         <contents mid="24"><![CDATA[<html>To obtain from the hands of the court magician Kala An dream powder。<BR>To the king of the underground city<FONT color=#a82424>Rose</FONT>Use Dream Powder。<BR><BR><FONT color=#086171>Holy Heaven King City(Secret underground area)</FONT> <FONT color=#a82424>→ Rose</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[(1People)King City, on the ground floor of Ross using the dream powder]]></destination>
+         <todo_msg mid="26"><![CDATA[Please move to the King City area underground secret，The use of dreams in the Rose powder。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Rose.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13016,n76</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>76</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[Dream girl]]></title>
+         <contents mid="86"><![CDATA[<html>Get through from Kala An dream of seeing young girls dream of pink，Dream girl is very painful。And dream of the Rose dialog and。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City(Secret underground area)</FONT> <FONT color=#a82424>→ Rose(Rose&#39;s Dream)</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[And dream of the Rose dialogue]]></destination>
+         <todo_msg mid="88"><![CDATA[Please dream Rose dialogue。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[Reasons do not want to wake up]]></title>
+         <contents mid="90"><![CDATA[<html>Girls refused to wake from a dream。And Geraint dialogue，See no other way。<BR>
+<BR><FONT color=#086171>Holy Heaven King City(Secret underground area)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[To the King City ground and Geraint dialogue]]></destination>
+         <todo_msg mid="92"><![CDATA[Wake up girl failed。Please Geraint dialogue。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[Report to the Kala An]]></title>
+         <contents mid="94"><![CDATA[<html>Told the court magician Kala An，Girls do not want recovered。<BR>
+ <BR>
+<FONT color=#086171>Paradise City within the sacred king</FONT> <FONT color=#a82424>→ Kala An</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[Kala An address to the court magician]]></destination>
+         <todo_msg mid="96"><![CDATA[Please tell the court magician Kala An outcome。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>412</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

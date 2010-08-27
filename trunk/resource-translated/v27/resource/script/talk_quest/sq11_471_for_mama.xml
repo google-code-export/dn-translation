@@ -1,0 +1,407 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_471_for_mama</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>471</qid>
+      <designer>손원호</designer>
+      <qlevel>29</qlevel>
+      <qdesc>엄마의 불치병을 고치기 위해 약을 구하는 소년 테이를 만날 수 있다. 소년은 효심이 가득하고, 부모를 위해 고사리 같은 손에 굳은 살이 베기도록 열심히 일한다. 부모의 은혜를 갚기 위해, 진정 효도하고 싶어하는 소년의 마음이 전해져 유저는 무지개 방울꽃을 찾아 강하류 폐허로 간다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[To Mother]]></qkname>
+      <qnpc>
+         <npcid>244</npcid>
+         <npcename>n244_tei</npcename>
+         <npckname>테이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>245</npcid>
+         <npcename>n245_mandra_son</npcename>
+         <npckname>만드라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>249</npcid>
+         <npcename>n249_saint_guard</npcename>
+         <npckname>왕성 근위병 로이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Tolly$<BR>
+Mother…My mother is sick，How do?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Mandela$<BR>
+Oh，I，Prince nature！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-a" mid="8"><![CDATA[<html>What?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$King City, near the guard Raul$<BR>If just to help a thousand million...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-b" mid="10"><![CDATA[<html>Child?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$King City guards Raul$<BR>Startling，It&#39;s you ah。<BR>
+Call，No other，I was reminded of the children have been。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-b" image="QN_boy_tei.dds" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-c" mid="12"><![CDATA[<html>Do not worry，I go and see。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$King City, near the guard Raul$<BR>Is<FONT color=#a82424>Heermadai port</FONT>To see children，Mother&#39;s illness is looking for the drug treatment does。I, as King City, near the guard to stick in the post，Therefore, directly over the。But still worried about ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$To Mother$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-1" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-1-a" mid="16"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$King City guards Raul$<BR>You can help him? Then I can rest assured。<BR>
+King City, you will be assured of security！<BR>
+I will carefully guard your eyes wide open。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-1-a" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$King City guards Raul$<BR>The juvenile should also<FONT color=#a82424>Heermadai port</FONT>。<BR>
+Let go and help the young。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-1" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Tolly$<BR>
+Mother…My mother is sick，How do?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-2" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$King City, near the guard Raul$<BR>Junior&#39;s mother seemed a heavy disease，Quickly leave the last bar。On<FONT color=#a82424>Heermadai port</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-a" mid="21"><![CDATA[<html>Is to help you come，Do not worry。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Tolly$<BR>Adventurer adults！My mother&#39;s condition heavy ah。Please help me about it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-a" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-b" mid="23"><![CDATA[<html>What can I do for you?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Tolly$<BR>Really？Thank you。My mother got very early<FONT color=#a82424>Ill</FONT>。Wanted some medicine for his mother to seek，But perhaps I&#39;m not pious，Mother&#39;s illness is still not improved。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-b" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n244_tei-2-c" mid="25"><![CDATA[<html>Rainbow lanterns flower?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Tolly$<BR>I&#39;ve tried all the drugs I could find，But only<FONT color=#a82424>Rainbow lanterns flower</FONT>Can not be found。This is the only one hope for now……If you can find，Mother&#39;s illness should feel better。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-c" image="QW_32.dds" itemindex="">
+      <talk_answer link_index="n244_tei-2-d" mid="27"><![CDATA[<html>Sell more 钱啊?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Tolly$<BR>Ah，It is a very precious medicinal flower，Only heard<FONT color=#a82424>River downstream of the ruins</FONT>Growing。Although I&#39;ve been to several times risked their lives，But how could not find ah 。But I can not because it，Ah so expensive to buy drugs...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-d" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-e" mid="29"><![CDATA[<html>（Oh, really expensive...） I help you to find it。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Tolly$<BR>Last listen businessman，Need<FONT color=#a82424>1000Gold</FONT> Can be purchased……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-e" image="QW_32.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Tolly$<BR>Thank you very much。 Heard<FONT color=#a82424>River downstream of the ruins</FONT>Infested with a lot of terrible Monster，Please be careful ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-3" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Tolly$<BR>Hum... Let the mother be better soon...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-a" mid="35"><![CDATA[<html>Who are you?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Mandela$<BR>
+Call，Originally, I would like to eliminate these Monster，<BR>
+Makes you account for the upper hand，Ha ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-a" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-b" mid="37"><![CDATA[<html>King of the earth has a long way ah...</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Mandela$<BR>My name is Mandela。<BR>
+Is the prince of this vast land。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-b" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-c" mid="39"><![CDATA[<html>（Speechless）</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Mandela$<BR>How could you be fooled by appearances，Do not see the true heart。<BR>
+It&#39;s a shame。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-c" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-d" mid="42"><![CDATA[<html>What&#39;s this?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Mandela$<BR>Anyway，Since I have eliminated the absorption for fine mountain air of Monster，How have to thank you is。Then accept that it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-d" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-e" mid="44"><![CDATA[<html>I do not want the kind of...</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Mandela$<BR>This is my favorite<FONT color=#a82424>Luminous shorts</FONT>。<BR>
+One to emit a flashing light at night。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-e" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-f" mid="46"><![CDATA[<html>I&#39;m looking for rainbow lantern flower...</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Mandela$<BR>Did not even know the luminous charm of shorts。<BR>
+It&#39;s a shame。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-f" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-g" mid="48"><![CDATA[<html>I did not use... （Something about the young）</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Mandela$<BR><FONT color=#a82424>Rainbow lanterns flower</FONT>You？I certainly know。But I can not casually to the treasures of nature adventurers。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-g" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-h" mid="50"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Mandela$<BR>Ah，To Mother！<BR>
+It seems that human beings are the same as our grass filial ah Mandala。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-h" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n245_mandra_son-3-i" mid="86"><![CDATA[<html>(Although a bit sick，But still accept it)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Mandela$<BR>No way。Originally, I would like to eat as a snack……<BR><FONT color=#7e12d2></FONT><BR>
+<FONT color=#7e12d2>(Mandela to spend a month rainbow lantern pull out from underwear)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-i" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n245_mandra_son-3-j" mid="52"><![CDATA[<html>Thank you。（Although some dirty）</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Mandela$<BR>Although I know the health benefits of this flower，But do not know if medical treatment。Anyway, hope it can help in the busy！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-j" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Mandela$<BR>Although the short period of time to meet，But it is pleasant。<BR>
+Luminous shorts do not know the charm of friends ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-4" image="" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Mandela$<BR>Although the short period of time to meet，But it is pleasant。<BR>
+Luminous shorts do not know the charm of friends ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4" image="" itemindex="">
+      <talk_answer link_index="n244_tei-4-a" mid="57"><![CDATA[<html>Brought a rainbow flower lantern。</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Tolly$<BR>Mother to hurry up and get better ah... I&#39;m really worried about it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4-a" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n244_tei-4-b" mid="59"><![CDATA[<html>Ah ha ha... Already done。</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Tolly$<BR>This……Is<FONT color=#a82424>Rainbow lanterns flower</FONT>？<BR>
+But……How are stocks smell……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4-b" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n244_tei-4-c" mid="61"><![CDATA[<html>Ah，I hope so。</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Tolly$<BR>... Well bitter medicine... Since such a foul taste，It certainly has the right super-effective。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4-c" image="" itemindex="">
+      <talk_answer link_index="n244_tei-4-d" mid="63"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4-d" image="" itemindex="">
+      <talk_answer link_index="n244_tei-4-e" mid="65"><![CDATA[<html>Wish your mother a speedy recovery。</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Tolly$<BR>Thank you for your help。<BR>
+I have to hurry home to her mother ate！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4-e" image="" itemindex="">
+      <talk_question mid="66"><![CDATA[<html><FONT color=#7e12d2>（Tolly hands lantern cautiously accept the rainbow flower。As the busy day and night to his mother and became very tired of the emu，But happy smile。I looked at his face，Sincerely hopes that the mother could recover up Tolly。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4711,4712,4713,4714</exe>
+         <exe type="setquest">471</exe>
+         <exe type="talk" npc="n249_saint_guard">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300075</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">300075</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="1">300075</exe>
+         <exe type="recompense">,4711,4712,4713,4714</exe>
+         <exe type="complete">471</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n249_saint_guard" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n249_saint_guard" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n249_saint_guard" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n244_tei" sub="b" />
+   <exelink qstep="2" npc="n244_tei" sub="c" />
+   <exelink qstep="2" npc="n244_tei" sub="d" />
+   <exelink qstep="2" npc="n244_tei" sub="e">0,2,1</exelink>
+   <exelink qstep="3" npc="n245_mandra_son" sub="b" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="c" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="d" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="e" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="f" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="g" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="h" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="i">2</exelink>
+   <exelink qstep="3" npc="n245_mandra_son" sub="j">0,1</exelink>
+   <exelink qstep="4" npc="n244_tei" sub="a">0</exelink>
+   <exelink qstep="4" npc="n244_tei" sub="b" />
+   <exelink qstep="4" npc="n244_tei" sub="c">1</exelink>
+   <exelink qstep="4" npc="n244_tei" sub="d">2</exelink>
+   <exelink qstep="4" npc="n244_tei" sub="e" />
+   <journal_data recompense="1:4711,2:4712,3:4713,4:4714" quest_title="어머니를 위하여" chapterid="" quest_level="29" quest_mark_type="10" use_item_list="300075">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n249</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>249</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[King City, near the guard Raul and dialogue]]></title>
+         <contents mid="69"><![CDATA[<html>King City, near the guard Raul seems to have something to say。Let the dialogue with Raul。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→King City, near the guard Raul</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[King City, near the guard Raul and dialogue]]></destination>
+         <todo_msg mid="71"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_boy_tei.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n244</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>244</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Dialogue with young Tolly]]></title>
+         <contents mid="73"><![CDATA[<html>King City, near the guard Raul said Tolly&#39;s mother fell seriously ill。Heermadai port it to see Tolly。<BR><BR><FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→Tolly</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[Dialogue with young Tolly]]></destination>
+         <todo_msg mid="75"><![CDATA[Heermadai port it to see Tolly。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_32.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>324,0,0</destination_pos>
+         <destination_mode>custom:321@1,322@1,323@1,324@3</destination_mode>
+         <statemark_npcid>245</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[Get Rainbow lantern flower]]></title>
+         <contents mid="77"><![CDATA[<html>Tolly needs to save the mother took the rainbow lanterns。Access to the river downstream of the ruins of the rainbow lanterns spend it。<BR>
+<BR>
+<FONT color=#086171>Heermadai port（River downstream of the ruins of the entrance）</FONT> <FONT color=#a82424>→River downstream of the ruins</FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[Get Rainbow lantern flower]]></destination>
+         <todo_msg mid="79"><![CDATA[Access to the river downstream of the ruins of the rainbow lanterns spend it。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_boy_tei.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n244</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>244</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="80"><![CDATA[Dialogue with young Tolly]]></title>
+         <contents mid="81"><![CDATA[<html>Yinmandela help get the rainbow lantern flower。Back Heermadai port to take it to the emu。<BR>
+ <BR>
+<FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→Tolly</FONT></html>]]></contents>
+         <destination mid="82"><![CDATA[Dialogue with young Tolly]]></destination>
+         <todo_msg mid="83"><![CDATA[Send flowers to Heermadai port Tolly Bar。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>29:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

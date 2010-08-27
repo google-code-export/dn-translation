@@ -1,0 +1,457 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_284_test_cleric1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>284</qid>
+      <designer>곽노찬</designer>
+      <qlevel>15</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>285</nextqid>
+      <nextqname>sq08_285_test_cleric2</nextqname>
+      <nextqnpc>n034_cleric_master_germain</nextqnpc>
+      <qkname mid="1"><![CDATA[[Transfer] FateⅠ]]></qkname>
+      <qnpc>
+         <npcid>183</npcid>
+         <npcename>n183_cleric_jake</npcename>
+         <npckname>클레릭 제이크</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-noquest" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Pastor Jack$<BR><FONT color=#382000>{user_nick}</FONT>，As a member of the Knights of the Temple the first time what he thought of a journey ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-a" mid="6"><![CDATA[<html>What is this nonsense?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Senior Pastor Jermaine$<BR>Brothers，I feel in you a familiar atmosphere。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-b" mid="8"><![CDATA[<html>（Jermaine watching my eyes）</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Senior Pastor Jermaine$<BR>From your eyes I felt，People do not believe in the goddess&#39;s anger should have。<BR>Serve as a Goddess，How to do that look with。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-c" mid="10"><![CDATA[<html>Do you mean with William…Adult-related things you?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Senior Pastor Jermaine${action:Talk}<BR>Tell me why you buried in the hearts of grief? I once had a similar situation with your，So I hope I can help you right on the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-c" image="QM_GhoulBlue.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-d" mid="12"><![CDATA[<html>Italian Goddess...</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Senior Pastor Jermaine$<BR>Yes。Although，Death is deeply ominous atmosphere of the impact of forest，But think of the walk in this world，And continue to bear the suffering of the teachers... Would make me rethink what is the goddess of the profound meaning。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-e" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Senior Pastor Jermaine$<BR>Among the most vulnerable human beings into the dark。While it is the goddess of good fortune to the power of the human，But also weakened the power of humanity。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-f" mid="16"><![CDATA[<html>What to do?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Senior Pastor Jermaine${action:Talk}<BR>If you do not promptly remove the anger that deep breath of heart，Of the goddess may have lost faith in the direction of。<BR>Nongbu Hao……Will become like my teacher……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-acceptted" mid="18"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$[Transfer] FateⅠ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-member1" mid="24"><![CDATA[<html>The root causes of anger…You can understand，Me...</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Senior Pastor Jermaine$<BR>For your own mind，Should mirror the general，And purify your heart Perspective，To understand the root causes of their anger bar。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-changemap1" mid="113"><![CDATA[<html>(Looking back over the past)</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Senior Pastor Jermaine${action:Talk}<BR>Do not be afraid，My brother。<BR>We are all human pain and anger is part of the composition of this world。Let us in the great goddess of good fortune for them to understand the power of it right。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-b" image="" itemindex="">
+      <talk_question mid="110"><![CDATA[<html>$Senior Pastor Jermaine$<BR>
+Only time can examine their own。<BR>
+So please leave your companions for the time being it。<BR>
+<FONT color=#7e12d2>（Transfer task in the team can not be under）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-a" mid="27"><![CDATA[<html>Is still some tension，Very strange that everything，Jack。</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Pastor Jack$<BR>Ah，<FONT color=#382000>{user_nick}</FONT>，As<BR><FONT color=#a82424>Knights of the Temple</FONT>A member of the，What he thought of the first journey ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-a" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-b" mid="29"><![CDATA[<html>（Jack kind of looked at me）</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Pastor Jack$<BR>This…Now only you and I，You like it before, call me brother。<BR>
+Are we not under the will of the goddess became deeper than blood brotherhood of you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-b" image="QW_ManaRidge.dds" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-c" mid="31"><![CDATA[<html>No matter where，Goddess&#39;s will never forget。</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Pastor Jack$<BR>To<FONT color=#a82424>Magic Ridge</FONT>After the completion of tasks，We will go our separate ways the bar。<BR>
+According to the wishes of some north Mission…Yihuo was south... Is to communicate around the grace of the Goddess。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-c" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-d" mid="33"><![CDATA[<html>Me…Only hope that we can get the blessings of the goddess...</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Pastor Jack$<BR>Ah，We just before the line in accordance with the will of the goddess of the existence of only slight。So do not upset。<BR>
+But…We are after all human。<FONT color=#382000>{user_nick}</FONT>，Everyone will have a negligible own <FONT color=#a82424>Little Dream</FONT><FONT color=#a82424> </FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-d" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-e" mid="35"><![CDATA[<html>Ah? It is...?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Pastor Jack$<BR>Ha ha ha，Now is not the time to teach Catechism。<BR>Attempt to do me I do not ask you children to school as abruptly answered the question。But ask <FONT color=#a82424>Pastor</FONT>Should choose<FONT color=#a82424>All roads</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-e" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-f" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Pastor Jack$<BR>Although you can not comprehend now，But as you continue to grow，Eventually choose their own path。<BR>
+We call<FONT color=#a82424>Transfer</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-f" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-g" mid="39"><![CDATA[<html>I am interested in Sage。</html>]]></talk_answer>
+      <talk_answer link_index="n183_cleric_jake-1-h" mid="40"><![CDATA[<html>I am interested in priests。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Pastor Jack$<BR>The first to qualify as pastor<FONT color=#a82424>Sage</FONT>And<FONT color=#a82424>Priest</FONT>，The two road。Which do you interest?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-g" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-f" mid="42"><![CDATA[<html>Would like to know other road。</html>]]></talk_answer>
+      <talk_answer link_index="n183_cleric_jake-1-j" mid="43"><![CDATA[<html>Now and want to Sage。</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Pastor Jack$<BR><FONT color=#a82424>Sage</FONT>Is good<FONT color=#a82424>Defense</FONT>And<FONT color=#a82424>Aura（Aura）</FONT>Priest job。He played a major attack into the defense of others，To maximize the role of harm reduction。 Flexible<FONT color=#a82424>Use Shield</FONT>And the tremendous energy of Reiki to others is its biggest gain characteristics。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-h" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-f" mid="45"><![CDATA[<html>Would like to know other road。</html>]]></talk_answer>
+      <talk_answer link_index="n183_cleric_jake-1-j" mid="46"><![CDATA[<html>Now and want to be priests。</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Pastor Jack$<BR><FONT color=#a82424>Priest</FONT>Is good<FONT color=#a82424>Optical properties of attack magic</FONT>And<FONT color=#a82424>Resume</FONT>，<FONT color=#a82424>Gain Magic</FONT>Career。His focus more on magic attack power，Is the main weapons used<FONT color=#a82424>Wand</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-i" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-f" mid="79"><![CDATA[<html>Would like to know other road。</html>]]></talk_answer>
+      <talk_answer link_index="n183_cleric_jake-1-j" mid="80"><![CDATA[<html>Now and want to be monks。</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Pastor Jack$<BR><FONT color=#a82424>Monk</FONT>In the priest&#39;s transfer is strongest<FONT color=#a82424>Physical Attack</FONT>Career。 They are mainly used<FONT color=#a82424>Mace</FONT>And<FONT color=#a82424>Flail</FONT>，Skill is based on the use of weapons specialization skills。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-j" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-k" mid="48"><![CDATA[<html>So when we can choose which roads?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Pastor Jack$<BR>But…Be，I still can not understand，Goddess point where the fate of a long-。<BR>
+Life is more than we can imagine what will happen oh magic。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-k" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-l" mid="50"><![CDATA[<html>Need to adhere to the desires...</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Pastor Jack$<BR>Our strength comes from the grace of the Goddess。<BR>
+However, further enhance the sense of power is more a kind of<FONT color=#a82424>Need to adhere to the desires</FONT>。Immense human desire...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-l" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-m" mid="52"><![CDATA[<html>Where is Jack&#39;s fate is discovered?</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Pastor Jack$<BR>Ah，You have not yet experienced the kind of guarded<FONT color=#a82424>Fate</FONT>，Therefore, I say these words，Is it still foggy feeling。But the event that<FONT color=#a82424>Fate</FONT>When，You will naturally choose their own path。Hei hei。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-m" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Pastor Jack$<BR>My<FONT color=#a82424>Fate</FONT>? Ha ha ha...<BR>My<FONT color=#a82424>Fate</FONT>Are my eyes do not? <FONT color=#382000>{user_nick}</FONT>，My friends。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-2" image="QN_Cl_Tomas.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Pastor Jack$<BR>Hei hei... Go home now。<BR><FONT color=#a82424>Thomas</FONT>Emily is still waiting for you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-a" mid="56"><![CDATA[<html>Fate…This is thought。</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Senior Pastor Jermaine$<BR>…Your expression is very natural then。When you first see the burning hatred has disappeared，But feel that you have deep pain。<BR>
+What makes you so sad then?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-b" mid="58"><![CDATA[<html>That you can only wait any longer?</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Senior Pastor Jermaine${action:Talk}<BR><FONT color=#a82424>Fate</FONT>... Yes ah，We are all in accordance with the goddess&#39;s will need to undergo numerous<FONT color=#a82424>Fate</FONT>，Comprehend the existence of profound meaning in the world。...<BR>
+But，<FONT color=#a82424>Fate</FONT>By the goddess of mercy in our，But human beings can not arbitrarily drawn speculation。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3" mid="60"><![CDATA[<html>What kind of help?</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Senior Pastor Jermaine$<BR>Yes，Can only continue to endure the wait...<BR>
+Only，When there has not realized that met the<FONT color=#a82424>Fate</FONT>When，Does fit help you do to wake it。。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-a" mid="62"><![CDATA[<html>Test of what the room is the place?</html>]]></talk_answer>
+      <talk_answer link_index="n034_cleric_master_germain-3-member2" mid="63"><![CDATA[<html>Please take me to the test of a room with。</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Senior Pastor Jermaine${action:Talk}<BR>That is,<FONT color=#a82424>Trials of the room</FONT>。After the time here，You can gradually realized that their own beliefs and karma。Then in the final fully realize their own checkpoints<FONT color=#a82424>Fate</FONT>。How，You are interested?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-b" mid="102"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Senior Pastor Jermaine$<BR>
+Trials of the room there4Crossings。In the first hurdle you can meet their own beliefs entity of the way。This may have a loss you have。But you have to understand is，Appearance is not the most important。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-c" mid="104"><![CDATA[<html>I see...</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Senior Pastor Jermaine$<BR>
+No matter what form it has，Hold that it is the real test of the content。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-d" mid="106"><![CDATA[<html>Thank you for your advice。</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Senior Pastor Jermaine${action:Talk}<BR>Through the points you want to，Good faith must be guarded and break the walls Caixing。Points from the first to third points，The key is to find the wall cracks，To smash it into the next level。But at the last minute... Directly experience the best for the good。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-d" image="" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Senior Pastor Jermaine$<BR>Want to get into<FONT color=#a82424>Trials of the room</FONT>Can always find me when。<BR>Wish the blessings of the goddess are always with you...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-e" image="" itemindex="">
+      <talk_question mid="111"><![CDATA[<html>$Senior Pastor Jermaine$<BR>
+Trials can only rely on their own strength by Cai Xing。<BR>
+<FONT color=#7e12d2>（Transfer task in the team can not be under）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-f" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-changemap2" mid="115"><![CDATA[<html>（Into trials of the room）</html>]]></talk_answer>
+      <talk_question mid="114"><![CDATA[<html>$Senior Pastor Jermaine$<BR>Then，Now put you to<FONT color=#a82424>Trials of the room</FONT>Village Bar。<BR>Wish the blessings of the goddess are always with you...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-a" mid="67"><![CDATA[<html>Ah... Like...</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Senior Pastor Jermaine$<BR>In<FONT color=#a82424>Trials of the room</FONT>Realized that their fate was right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-b" mid="73"><![CDATA[<html>I began to get my own fate。</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Senior Pastor Jermaine$<BR>Like...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-c" mid="75"><![CDATA[<html>（Jermaine looked at me quietly）</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Senior Pastor Jermaine${action:Talk}<BR>Everyone is so。After realizing that would find，Actually, all true knowledge，Already exists in your heart。We just put aside the dark chaos and lies，Eventually left out of that little bit。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-d" mid="77"><![CDATA[<html>Attackers ambush point should be。</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Senior Pastor Jermaine$<BR>Then…Your<FONT color=#a82424>Fate</FONT>Where it is?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-d" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-!next" mid="69"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">284</exe>
+         <exe type="recompense_view">2840,,,,</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13011,1);</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">a</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="custom">api_user_ChangeMap(userObjID,13008,1);</exe>
+         <exe type="conexe" true="3" false="2">0</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">e</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">f</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">284</exe>
+         <exe type="recompense">2840,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="f">1</exelink>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="member1">3</exelink>
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="changemap1">2</exelink>
+   <exelink qstep="1" npc="n183_cleric_jake" sub="b" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="c" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="d" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="e" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="f" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="g" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="h" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="f" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="j" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="f" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="j" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="f" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="j" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="k" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="l" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="m">0,1</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="member2">1</exelink>
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="c" />
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="d" />
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="changemap2">0</exelink>
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="c" />
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="d">1</exelink>
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="!next">0</exelink>
+   <journal_data recompense="2840" quest_title="[전직] 인연Ⅰ" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom:13011@2</destination_mode>
+         <statemark_npcid>183</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[Jermaine dialogue with memories of the past。]]></title>
+         <contents mid="83"><![CDATA[<html>And<FONT color=#a82424>Senior Pastor Jermaine</FONT>Dialogue ice hindsight。<BR>And once<FONT color=#a82424>Pastor Jack</FONT>Meet and dialogue with。<BR>
+ <BR>
+<FONT color=#7e12d2>※ Transfer task in the team can not be under.</FONT><BR><BR><FONT color=#086171>Kedella points → Senior Pastor Jermaine</FONT> <FONT color=#a82424>→ Pastor Jack</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[Jermaine dialogue with memories of the past。]]></destination>
+         <todo_msg mid="85"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[And Senior Pastor Jermaine dialogue]]></title>
+         <contents mid="87"><![CDATA[<html><FONT color=#a82424>Pastor Jack</FONT>Say <FONT color=#a82424>Fate</FONT>Came when，New forces can be obtained。<BR>
+And
+<FONT color=#a82424>Senior Pastor Jermaine</FONT>Dialogue heard on the <FONT color=#a82424>Fate</FONT>Things right。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior Pastor Jermaine</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[And Senior Pastor Jermaine dialogue]]></destination>
+         <todo_msg mid="89"><![CDATA[Senior Pastor Jermaine back there to talk to it。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_3.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom:13008@2</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[Room through the trials]]></title>
+         <contents mid="92"><![CDATA[<html><FONT color=#a82424>Senior Pastor Jermaine</FONT>That will help me realize my own fate and to introduce<FONT color=#a82424>Trials of the room</FONT>。<BR>Jermaine dialogue with and into<FONT color=#a82424>Trials of the room</FONT>Through the trials it。<BR><BR>
+<FONT color=#7e12d2>※ Transfer task in the team can not be under。</FONT><BR>
+<BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior Pastor Jermaine</FONT></html>]]></contents>
+         <destination mid="93"><![CDATA[Room through the trials]]></destination>
+         <todo_msg mid="94"><![CDATA[Through the trials of the room with。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="95"><![CDATA[And Senior Pastor Jermaine dialogue]]></title>
+         <contents mid="96"><![CDATA[<html>In the trials of the room last met in order to look like followers Dragon Pastor Jack appears。<BR>
+Beat him and through the trials of the room。<BR>
+Back
+<FONT color=#a82424>Senior Pastor Jermaine</FONT>Where it。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior Pastor Jermaine</FONT></html>]]></contents>
+         <destination mid="97"><![CDATA[And Senior Pastor Jermaine dialogue]]></destination>
+         <todo_msg mid="98"><![CDATA[Senior Pastor Jermaine dialogue with it。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class>4</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,295 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_206_surprise_attack</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>206</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>207</nextqid>
+      <nextqname>mq08_207_scattered_components</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[Surprise]]></qkname>
+      <qnpc>
+         <npcid>128</npcid>
+         <npcename>n128_argenta</npcename>
+         <npckname>아르젠타 (이벤트 씬 용)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>27</npcid>
+         <npcename>n027_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인  (캐더락 클레릭 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-level1" mid="58"><![CDATA[<html>Be，Ready。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Senior Pastor Jermaine${action:Talk}<BR>Shrine for the sleeper destination，You have ready?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-a" image="" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Senior Pastor Jermaine$<BR>But，The temerity to attack if，Will certainly face a significant loss，So be fully prepared Caixing。<BR><FONT color=#7e12d2>（14Level and above to perform tasks）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-b" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Senior Pastor Jermaine$<BR>&#39;d Better get to<FONT color=#a82424>Sleeper Temple</FONT>Take a look。The Dark Knight Framed adults before the Prophet，Come on you have to rescue her ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1" image="" itemindex="">
+      <talk_answer link_index="n027_argenta-1-a" mid="7"><![CDATA[<html>Because to find submissive Pendant，So late。</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Algerita$<BR>This fool you！Why so slow！<BR>You know how long the black knight has a right to enter the Temple？！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1-a" image="QS_Default.dds" itemindex="300030">
+      <talk_answer link_index="n027_argenta-1-b" mid="9"><![CDATA[<html>(Show compliance Pendant)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Algerita$<BR>Well，Compliance pendant found any？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1-b" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-1-c" mid="11"><![CDATA[<html>Wins……Return？Girls are not the occupied fortress，Recapture……</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Algerita$<BR>Ah……Well。Next we attack the Black Knight，Him down，Back girl！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1-c" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-1-d" mid="13"><![CDATA[<html>……？So you？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Algerita$<BR>Other nonsense，Concentrate！<BR>You advanced to，To attract the attention of the black knight。<BR>Then I Black Knight from behind the attacks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1-d" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-1-e" mid="15"><![CDATA[<html>Let me do that right bait……</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Algerita$<BR>To。I am sorry，Words clash，I can not guarantee that will beat The Dark Knight。<BR>It can only find flaws，Surprise attack。<BR>
+I hope you let him surprising flaws。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1-e" image="" itemindex="">
+      <talk_answer link_index="n027_argenta-2" mid="17"><![CDATA[<html>…Know。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Algerita$<BR>Nice place to go to，But is the battle plans of the，Do not try too much。<BR>Well，You advanced to。I will look for opportunities，Then in the past。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-1" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Algerita$<BR>Damn……Uh……<BR><FONT color=#7e12d2>(Painful groan like Algerita)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Society of Dai Kade adventurer${action:Talk}<BR>How do you still hanging around here？<BR>You<FONT color=#a82424>Seniors female swordsman</FONT>Agreement in<FONT color=#a82424>Sleeper Temple</FONT>See how things like the？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Algerita$<BR>Do Zhouzhao a brow。Hurry。<BR>This all is to rescue the girl。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2" image="" itemindex="">
+      <talk_answer link_index="n128_argenta-2-a" mid="23"><![CDATA[<html>Are you OK？</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Algerita$<BR>Damn……Uh……<BR><FONT color=#7e12d2>(Painful groan like Algerita)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2-a" image="" itemindex="">
+      <talk_answer link_index="n128_argenta-2-b" mid="25"><![CDATA[<html>You like heavy injuries，Look at it first returned to the village treatment……</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Algerita$<BR>You think I look like nothing you？Uh……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2-b" image="" itemindex="">
+      <talk_answer link_index="n128_argenta-2-c" mid="27"><![CDATA[<html>You talk。</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Algerita$<BR>Not，Myself……Uh……<BR>I have to go，You go back one。<BR>One thing I want to please you……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2-c" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n128_argenta-2-d" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Algerita$<BR>You go<FONT color=#a82424>Holy Paradise</FONT>Find a name<FONT color=#a82424>Geraint</FONT>Of<FONT color=#a82424>Blonde swordsman</FONT>。Tell him what happened before。<BR>Then request his help。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2-d" image="" itemindex="">
+      <talk_answer link_index="n128_argenta-2-e" mid="54"><![CDATA[<html>You seem to know and Black Knight……</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Algerita$<BR><FONT color=#a82424>Geraint</FONT>Is<FONT color=#a82424>Montenegro</FONT>Search nearby，He should not know the news here……After my recovery，Go<FONT color=#a82424>Lotus swamp Town</FONT>Request the assistance of others。<BR>Come on you，Xiao Maohai……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2-e" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Algerita$<BR>This is a very lengthy and complex Nie Yuan……Eh-hem……<BR>Until I tell you。From now on you are my slave，To do to<FONT color=#a82424>Holy Paradise</FONT>Preparation it。You go to see<FONT color=#a82424>Daika De</FONT>，Explain what happened before。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$Senior Pastor Jermaine${action:Talk}<BR>I thought you go<FONT color=#a82424>Sleeper Temple</FONT>The then。Original here ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Senior Pastor Jermaine${action:Talk}<BR>Are you OK？Black Knight actually did not expect such a strong……<BR><FONT color=#a82424>Society of Dai Kade adventurer</FONT>Is waiting for you，You go to see him go。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-a" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Society of Dai Kade adventurer${action:Refusal}<BR>I heard……You could not overcome<FONT color=#a82424>Black Knight</FONT>。<BR>You……I really do not know how to say，Can be very great。<BR>You met<FONT color=#a82424>Black Knight</FONT>Twice，Was able to safe……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-b" mid="35"><![CDATA[<html>(Note once again from beginning to end things)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>That<FONT color=#a82424>Seniors female swordsman</FONT>How like a？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-!next" mid="37"><![CDATA[<html><FONT face=Arial color=#a94407 size=2>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-3" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Algerita$<BR>You go<FONT color=#a82424>Holy Paradise</FONT>Found<FONT color=#a82424>Blonde swordsman</FONT>，Tell him what happened before。<BR>Then request his help。<BR>>He should be able to stop the Black Knight，The girl rescued。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>n027_argenta 아르젠타는 기본형
+n128_argenta 는 이벤트 씬 용(다친 상태)</comment>
+      <conditions>
+         <chk type="lvl" op="]=">14</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="4" false="3">0</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">a</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>300003 노예의 증거 아이템</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300003</exe>
+         <exe type="delquestitem" num="-1">300030</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">206</exe>
+         <exe type="recompense">,2061,2062,2063,2064</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="level1">2</exelink>
+   <exelink qstep="1" npc="n027_argenta" sub="b" />
+   <exelink qstep="1" npc="n027_argenta" sub="c" />
+   <exelink qstep="1" npc="n027_argenta" sub="d" />
+   <exelink qstep="1" npc="n027_argenta" sub="e" />
+   <exelink qstep="1" npc="n027_argenta" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n128_argenta" sub="b" />
+   <exelink qstep="2" npc="n128_argenta" sub="c" />
+   <exelink qstep="2" npc="n128_argenta" sub="d" />
+   <exelink qstep="2" npc="n128_argenta" sub="e">3,2,0,1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="b">1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="!next">0</exelink>
+   <journal_data recompense="1:2061,2:2062,3:2063,4:2064" quest_title="의표를 찔러라" chapterid="2" quest_level="14" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>129,n27</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@1</destination_mode>
+         <statemark_npcid>27</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>상급 클레릭 저메인</start_npc>
+         <desc_location>잠든 자의 신전</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>아르젠타</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[And silver female swordsman Algerita dialogue]]></title>
+         <contents mid="40"><![CDATA[<html>Female knight with a silver pendant pure mentioned，Go<FONT color=#a82424>Sleeper Temple</FONT>To see her right。<BR><FONT color=#7e12d2>※ 14Level and above to perform tasks。</FONT><BR><BR><FONT color=#086171>Shore littered with fallen leaves（Forgotten Temple entrance） </FONT><FONT color=#a82424>→ Sleeper Temple</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[（Lv14）Dialogue with senior citizens woman swordsman Algerita]]></destination>
+         <todo_msg mid="42"><![CDATA[Those who go to sleep and silver female swordsman temple to meet。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>130,n128</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@1,130@1</destination_mode>
+         <statemark_npcid>128</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>잠든 자의 신전</get_location>
+         <start_npc>아르젠타</start_npc>
+         <desc_location>잠든 자의 신전 안쪽 제단</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>아르젠타</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Outwit]]></title>
+         <contents mid="44"><![CDATA[<html>Go<FONT color=#a82424>Sleeper Temple</FONT>Meet<FONT color=#a82424>Algerita</FONT>，And then moved to<FONT color=#a82424>Altar within the Temple</FONT>，And the Black Knight battle。<BR><BR><FONT color=#086171>Shore littered with fallen leaves(Forgotten Temple entrance)</FONT><FONT color=#a82424> → Sleeper Temple</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Moved to the temple inside the altar and Algerita dialogue]]></destination>
+         <todo_msg mid="46"><![CDATA[Found in the sleeper temple and defeat the Black Knight。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>잠든 자의 신전 안쪽 제단</get_location>
+         <start_npc>아르젠타</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>모험자 길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Society of Daika De dialogue and adventurer]]></title>
+         <contents mid="48"><![CDATA[<html>Intend to attack black knight Algerita intention is seen through，Instead, counter-attack by the Black Knight，Seriously injured。<BR>Go back to<FONT color=#a82424>Society of Dai Kade adventurer</FONT>Of reports。<BR><BR><FONT color=#086171>Kedella points</FONT><FONT color=#a82424> → Society of Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Society of Daika De dialogue and adventurer]]></destination>
+         <todo_msg mid="50"><![CDATA[Please go back to see adventurers Association president Dai Kade。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>205</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

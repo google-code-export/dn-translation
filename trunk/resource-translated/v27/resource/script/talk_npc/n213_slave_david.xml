@@ -1,0 +1,23 @@
+   <talk>
+      <npcename>n213_slave_david</npcename>
+      <npcid>213</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Algerita slave David]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$David$<BR>What can I do ah? Ha ha ha。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="3" false="2">0</exe>
+         <exe type="conexe" true="4" false="3">1</exe>
+         <exe type="conexe" true="5" false="6">2</exe>
+         <exe type="enterquest">mq11_431_next_town</exe>
+         <exe type="enterquest">mq11_422_question_of_dragon</exe>
+         <exe type="enterquest">mq11_418_curious_david</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">431</chk>
+         <chk type="hasquest">422</chk>
+         <chk type="hasquest">418</chk>
+      </conditions>
+   </talk>

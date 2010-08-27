@@ -1,0 +1,283 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_315_mystery_matter</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>315</qid>
+      <designer>곽노찬</designer>
+      <qlevel>14</qlevel>
+      <qdesc>400188  홉고블린의 피</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Fans of the material]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（The task did not meet the criteria）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Bulletin$<br>Over the task of implementation，Temporarily unable to accept the task of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Bulletin$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Bulletin$<br>Task with a backpack full。<br>（Please order as soon as possible backpack）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-noquest" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Heraldic scholars Bailey$<BR><FONT color=#a82424>Society of Dai Kade adventurer</FONT>Seems to find<FONT color=#382000>{user_nick}</FONT>。<BR>What if emergency。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="7"><![CDATA[<html>What worried me？</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Society of Dai Kade adventurer$<BR><FONT color=#7e12d2>（Society of Dai Kade adventurer seems to fall into some kind of distress among）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="9"><![CDATA[<html>（Seems to have to order me a…）</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>You&#39;ve seen that name<FONT color=#a82424>Elf</FONT>Monster，Always felt that those who are suspicious of drug elf。So this time we will need<FONT color=#a82424>Heraldic scholars Bailey</FONT>Help ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="11"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>So you went to<FONT color=#a82424>Bailey</FONT>There entrusted him to help us investigate the drugs it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Fans of the material$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>I believe you。<BR>But when your hero material ah。<BR><FONT color=#7e12d2>（Dai Kade compliment good mushy ah）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="16"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Heraldic scholars Bailey$<BR><FONT color=#7e12d2>（Bailey is knuckled down to study his head up）</FONT><BR>Ah，Be<FONT color=#382000>{user_nick}</FONT>Ah。I was waiting for you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="QW_18.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="18"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Heraldic scholars Bailey$<BR>I have heard that<FONT color=#a82424>Attackers ambush point</FONT>There is very cruel monster。I&#39;m just a weak scholar，So even if he wanted to personally investigate the past，Is beyond its capability to ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-b" image="QM_HopGoblinGreen.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-c" mid="20"><![CDATA[<html>（If ever mentioned in which…）</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Want to investigate Monster，Need to do the little wizard&#39;s body。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-c" image="QM_HopGoblinGreen.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2" mid="22"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Heraldic scholars Bailey$<BR>I would like to personally research used to generate<FONT color=#a82424>Elf</FONT>Material，Also like to confirm that the body of material in the goblin is how to evolve into a small mutation wizard。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QS_Default.dds" itemindex="400188">
+      <talk_question mid="23"><![CDATA[<html>$Heraldic scholars Bailey$<BR>To<FONT color=#a82424>Attackers ambush point</FONT>Collect2Bottle<FONT color=#a82424>Blood elf</FONT>Come back。<BR>
+Then you&#39;ve worked hard。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3" image="QS_Default.dds" itemindex="400188">
+      <talk_answer link_index="n028_scholar_bailey-3-a" mid="26"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Research materials have been collected it a day。<BR>All over me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-a" image="QS_Default.dds" itemindex="400188">
+      <talk_answer link_index="n028_scholar_bailey-3-b" mid="28"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Ah，It is…?<BR>Please wait a moment。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-b" image="QS_Default.dds" itemindex="400188">
+      <talk_answer link_index="n028_scholar_bailey-3-c" mid="30"><![CDATA[<html>How kind Rights?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Ah，The reagents are mixed in this and that in。<BR><FONT color=#7e12d2>（Pele elves and strange inside of the bottle collecting health capsules into a variety of reagents within）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-c" image="QS_Default.dds" itemindex="400188">
+      <talk_answer link_index="n028_scholar_bailey-3-d" mid="32"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Heraldic scholars Bailey$<BR>And I guess that&#39;s right，<FONT color=#a82424>Blood elf</FONT>Which contains a similar death in the forest composition of gas。It seems the enemy threat Kedella points，Also holds the life of the monster swallowed manufacturing technology ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-d" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-e" mid="34"><![CDATA[<html>Be，Almost suffered a major loss。</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Heraldic scholars Bailey$<BR>
+Before，I&#39;ve heard you&#39;ve seen<FONT color=#a82424>Wearing a red robe of the Dark Elves</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-e" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-f" mid="36"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Heraldic scholars Bailey$<BR>In10Years ago, Monster protest period，I heard that there are many involved in the fighting Dark Elves。Perhaps the dark wizard who wore Dahongpao hold it produced the technology monster。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-f" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-g" mid="38"><![CDATA[<html><FONT color=#086171>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-g" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Heraldic scholars Bailey$<BR>
+Thanks to you，The secret was able to gradually untie ah。<BR>
+Having said that，Come sample the waste matter to whom it…<BR>
+<FONT color=#7e12d2>（May quickly slip away we go）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3151,3152,3153,3154</exe>
+         <exe type="setquest">315</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">450</exe>
+         <exe type="huntitem" num="2" exe="4,5,6" onexe="">400188</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">400188</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200450</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3151,3152,3153,3154</exe>
+         <exe type="complete">315</exe>
+         <exe type="delquestitem" num="-1">400188</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="2">0,1,2,8,3</exelink>
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="e" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="f">0</exelink>
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="g">1,2</exelink>
+   <journal_data recompense="1:3151,2:3152,3:3153,4:3154" quest_title="수수께끼의 물질" chapterid="" quest_level="14" quest_mark_type="10" use_item_list="400188,400121">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[Dialogue with the coat of arms Bailey Scholars]]></title>
+         <contents mid="42"><![CDATA[<html>Bailey Consulting to heraldic scholars to do it on the elf。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Heraldic scholars Bailey</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Dialogue with the coat of arms Bailey Scholars]]></destination>
+         <todo_msg mid="44"><![CDATA[Add a task。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_HopGoblinGreen.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>139,0,0</destination_pos>
+         <destination_mode>custom:136@1,137@1,138@1,139@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Collect2Bottles of blood elf]]></title>
+         <contents mid="46"><![CDATA[<html>To destroy the attackers ambush points for elf Kusifeide2Bottles of blood elf Come back。<BR>
+ <BR>
+<FONT color=#086171>Crystal Valley（Attackers nest entrance）</FONT> <FONT color=#a82424>→ Attackers ambush point</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Collect2Bottles of blood elf]]></destination>
+         <todo_msg mid="48"><![CDATA[Eliminate the attackers ambush points elf right]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Dialogue with the coat of arms Bailey Scholars]]></title>
+         <contents mid="50"><![CDATA[<html>Elf blood collection is completed。Back Kedella barrier coat of arms, where it academics Bailey。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Heraldic scholars Bailey</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Dialogue with the coat of arms Bailey Scholars]]></destination>
+         <todo_msg mid="52"><![CDATA[Elf blood collection is completed。Back to heraldic scholars Bailey where it。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>14:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>209</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

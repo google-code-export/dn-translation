@@ -1,0 +1,188 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>gq11_3302_n412_dtower_hunt</qename>
+      <qtype>venturerquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>3302</qid>
+      <designer>김주연</designer>
+      <qlevel>34</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Association commission]The recruitment of followers of the Dragon]]></qkname>
+      <qnpc>
+         <npcid>412</npcid>
+         <npcename>n412_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n412_guild_board-accepting" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n412_guild_board-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurers Society Bulletin$<BR>The recruitment of followers of the Dragon。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n412_guild_board-accepting-a" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n412_guild_board-accepting-b" mid="103"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$The followers of the recruitment application form$<BR><FONT color=#a82424>Join conditions：<BR></FONT>- Eliminate3A worshiper who dark skull<BR>- Can24Hours people work</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n412_guild_board-accepting-b" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n412_guild_board-accepting-c" mid="105"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>$Adventurers Society Bulletin$<BR>* No joining fee。<BR>* People who like the Dragon，Anyone can join。<BR>
+<FONT color=#7e12d2> Principal：Dragon followers recruitment consultants</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n412_guild_board-accepting-c" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n412_guild_board-accepting-d" mid="108"><![CDATA[<html>Eliminate3A worshiper who dark skull</html>]]></talk_answer>
+      <talk_question mid="107"><![CDATA[<html>$Adventurers Society Bulletin$<BR>
+Overlord Dark Tower to destroy3After a one admirer dark skull，Applications will be accepted。The number of applicants is too large，It may take some time to deal with them。<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n412_guild_board-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n412_guild_board-accepting-e" mid="11"><![CDATA[<html><FONT color=#086171>(Entrusted)</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Commission award$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n412_guild_board-accepting-e" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$[Association commission]The recruitment of followers of the Dragon$<BR>The commission has accepted the Association。<BR><FONT color=#2b2723>Go<FONT color=#a82424>Overlord Dark Tower</FONT>Go hunting<FONT color=#a82424>Admirer of the dark skeleton man</FONT></FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n412_guild_board-1" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Now being implemented<FONT color=#a82424>[Association commission]The recruitment of followers of the Dragon</FONT>。<BR><BR>※ <FONT color=#7e12d2>Notice the same column，Society can only accept a commission。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n412_guild_board-2" image="GQ_hunt_end.dds" itemindex="">
+      <talk_answer link_index="n412_guild_board-2-a" mid="22"><![CDATA[<html>[Commissioned] <FONT color=#086171>The recruitment of followers of the Dragon</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Commissioned by the adventurer to complete the following instructions, please complete the seal affixed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n412_guild_board-2-a" image="" itemindex="">
+      <talk_answer link_index="n412_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Commission award$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n412_guild_board-2-b" image="GQ_hunt_end.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Association commissioned the adventurer has completed。<BR><BR><FONT color=#a82424>[Adventurers Association]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,3302, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">33020,,,,</exe>
+         <exe type="huntmon" num="3" party="1" exe="5,6,7" onexe="">1072</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">201072</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1072);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">3302</exe>
+         <exe type="recompense">33020,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n412_guild_board" sub="d">3</exelink>
+   <exelink qstep="accepting" npc="n412_guild_board" sub="e">0,1,8,4,2</exelink>
+   <exelink qstep="2" npc="n412_guild_board" sub="a">1</exelink>
+   <exelink qstep="2" npc="n412_guild_board" sub="b">0</exelink>
+   <journal_data recompense="33020" quest_title="[길드의뢰] 용추종자 구함" chapterid="" quest_level="34" quest_mark_type="19" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_40.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>404,0,0</destination_pos>
+         <destination_mode>custom:401@1,402@3,403@3,404@0</destination_mode>
+         <statemark_npcid>412</statemark_npcid>
+         <statemark_type>20</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Overlord Dark Tower to destroy the dark skeleton admirers who]]></title>
+         <contents mid="43"><![CDATA[<html>Overlord Dark Tower to destroy3A worshiper who dark skull。<BR>
+<FONT color=#7e12d2></FONT><BR><FONT color=#086171>Montenegro hill angle(Dark Overlord of the barriers) </FONT><FONT color=#a82424>→ Overlord Dark Tower</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[Hunt]Overlord Dark Tower]]></destination>
+         <todo_msg mid="45"><![CDATA[Add complete adventurer Association commissioned。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_guild_board.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13,n412</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>412</statemark_npcid>
+         <statemark_type>21</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Association bulletin board to report the results adventurer]]></title>
+         <contents mid="47"><![CDATA[<html>Montenegro mountain adventurer to the angle of the Society Bulletin reports the results。<BR><BR><FONT color=#086171>Montenegro hill angle(Dark Overlord of the barriers) </FONT><FONT color=#a82424>→ Adventurers Society Bulletin</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Association bulletin board to report the results adventurer]]></destination>
+         <todo_msg mid="49"><![CDATA[Association commissioned the completion of the adventurer。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>34:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>3301</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

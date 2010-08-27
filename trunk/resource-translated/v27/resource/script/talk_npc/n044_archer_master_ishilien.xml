@@ -1,0 +1,66 @@
+   <talk>
+      <npcename>n044_archer_master_ishilien</npcename>
+      <npcid>44</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Senior archer Yixilian]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="4"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="skill1" mid="5"><![CDATA[<html>[Learning Skills]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Senior archer Yixilian$<BR>Hello，With family friends。From here you can feel <FONT color=#a82424>Naerxiya</FONT> Adults, breath it。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="7"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Senior archer Yixilian$<BR>While not very trust in human wizard… But the most important thing now is with the first human guys who drive out evil。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="41" link_target="mq11_414_odd_sequela.xml"><![CDATA[<html>[Lv32] <FONT color=#a94407>Strange consequences</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="42" link_target="mq11_415_stopgap.xml"><![CDATA[<html>[Lv32] <FONT color=#a94407>Provisional measures</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="mq11_423_doubt_history.xml"><![CDATA[<html>[Lv34] <FONT color=#a94407>Yixilian questions</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="47" link_target="mq11_431_next_town.xml"><![CDATA[<html>[Lv38] <FONT color=#a94407>Pollution</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="53" link_target="sq11_544_fate_and_desire.xml"><![CDATA[<html>[Lv24] <FONT color=#086171>The fate of the noble</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="54" link_target="sq11_529_decayed_field1.xml"><![CDATA[<html>[Lv29] <FONT color=#086171>Change Ⅰ</FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="55" link_target="sq11_530_decayed_field2.xml"><![CDATA[<html>[Lv29] <FONT color=#086171>Change Ⅱ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back1" mid="56"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Senior archer Yixilian$<BR>Elves always do not forget to do things。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="003" image="" itemindex="">
+         <talk_answer link_index="quest" mid="29"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="skill2" mid="30"><![CDATA[<html>[Learning Skills]</html>]]></talk_answer>
+         <talk_answer link_index="0031" mid="31"><![CDATA[<html>[Dialogue] The raid on the Black Dragon</html>]]></talk_answer>
+         <talk_question mid="11"><![CDATA[<html>$Senior archer Yixilian$<BR>
+In Montenegro, felt the ominous sound direction。Fortunately, you have safely return。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0031" image="" itemindex="">
+         <talk_answer link_index="0032" mid="32"><![CDATA[<html>Is a hero Beisikede into Black Dragon...</html>]]></talk_answer>
+         <talk_question mid="15"><![CDATA[<html>$Senior archer Yixilian$<BR>Since you asked about <FONT color=#a82424>Black Dragon of the raid</FONT>Something，It seems you already know what happened that day had it。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0032" image="" itemindex="">
+         <talk_answer link_index="back2" mid="33"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="17"><![CDATA[<html>$Senior archer Yixilian$<BR>
+All life is live with hope。You mention it again，There may be denied the hope of other people。So I do not want you to say arbitrarily around。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="004" image="" itemindex="">
+         <talk_answer link_index="quest" mid="34"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="0031" mid="35"><![CDATA[<html>[Dialogue] The raid on the Black Dragon</html>]]></talk_answer>
+         <talk_question mid="19"><![CDATA[<html>$Senior archer Yixilian$<BR>
+In Montenegro, felt the ominous sound direction。Fortunately, you have safely return。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">1</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="conexe" true="5" false="6">0</exe>
+         <exe type="talk">003</exe>
+         <exe type="talk">004</exe>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">2</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 408) == 1</chk>
+      </conditions>
+      <exelink idx="skill1">7</exelink>
+      <exelink idx="back1">0</exelink>
+      <exelink idx="skill2">7</exelink>
+      <exelink idx="back2">0</exelink>
+   </talk>

@@ -1,0 +1,414 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq05_168_hound_watched</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>168</qid>
+      <designer>김인정</designer>
+      <qlevel>7</qlevel>
+      <qdesc>보린과 대화
+레오날드, 신시아, 타라와 대화
+산타운드와 대화
+보린과 대화</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Hound looking at it]]></qkname>
+      <qnpc>
+         <npcid>11</npcid>
+         <npcename>n011_priest_leonardo</npcename>
+         <npckname>상급 클레릭 레오날드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>16</npcid>
+         <npcename>n016_trader_borin</npcename>
+         <npckname>대장장이 보린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>193</npcid>
+         <npcename>n193_santaund</npcename>
+         <npckname>산타운드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-noquest" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$High priest Leiang Na more$<BR>Goddess willing to return to peace under the protection of re-...<BR><FONT color=#7e12d2>（Po Lam to accept the task before continuing Blacksmith）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-noquest" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Advanced magician Cynthia$<BR>What is still hanging around here all right?<BR><FONT color=#7e12d2>（Blacksmith accepted before continuing the task of Po Lam）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-noquest" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Magician Tala$<BR>Ah a bit cold today，Not you?<BR><FONT color=#7e12d2>（Blacksmith accepted before continuing the task of Po Lam）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>（Does not appear in this place，It may be my illusion）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-a" mid="10"><![CDATA[<html>（Lam has been a nonsense2More than an hour）</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Blacksmith Po Lam$<BR>Feed，Feed！ <FONT color=#382000>{user_class} {user_nick}</FONT>，To，Is your。My back！Hasten the！<BR>…Ah，Elders in the call you，Why do not gallop?Ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-a" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-b" mid="12"><![CDATA[<html>Do not。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Blacksmith Po Lam$<BR>…Said there would be no significant? I dream to see<FONT color=#a82424>Hound</FONT>Do not say?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-c" mid="14"><![CDATA[<html>Ah…Why all of a sudden that dream thing ah...?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Blacksmith Po Lam$<BR>Let me say that things Well，Enveloped in doing it? Just to see the older that you break the mouth... So now the young ah，Click one&#39;s tongue。When I was young，Also known as<FONT color=#a82424>Xueshuang ramp</FONT> <FONT color=#a82424>Hammer</FONT>The then...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-c" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-d" mid="16"><![CDATA[<html>Will not be as hungry hound kept the bar itself?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Blacksmith Po Lam$<BR>To，Hound！In fact， Recently I dreamed in a dream the old hound。Hear it every night<FONT color=#a82424>Moaning sound dogs</FONT>，We always can not sleep ah。This really...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-d" image="QM_HoundNormal_2.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-e" mid="18"><![CDATA[<html>Ah。Why do I hear the sound?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Blacksmith Po Lam$<BR>Nonsense！！ Even if I empty，To<FONT color=#a82424>Hound</FONT>I have three meals a day every meal but do not drop, ah！You see them dig in the earth that moves，Seen which is hungry ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-f" mid="20"><![CDATA[<html><FONT color=#382000>{user_class}</FONT>... Date of such a monster of experts to friends?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Blacksmith Po Lam$<BR>Is not the monster I was eyeing dogs Rights？Ah？How do you see？You as a<FONT color=#382000>{user_class}</FONT>！ What experts what their views should have it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-g" mid="22"><![CDATA[<html>Specifically to do what Caixing ah?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Blacksmith Po Lam$<BR>Hum。Originally<FONT color=#a82424>Rookie</FONT>Ah，Well seemingly do not understand anything？Meisha strength side on the rush go by myself。In short the young people recently…Click one&#39;s tongue。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-acceptted" mid="24"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Hound looking at it$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Blacksmith Po Lam$<BR>This<FONT color=#a82424>Hound</FONT>From where the voice in the end，Could you help me check the reasons。If still puzzled…Ah，On the！May wish to ask about<FONT color=#a82424>High priest Leiang Na more</FONT>Adults look。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-1" image="" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>（Does not appear in this place，It may be my illusion）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-1" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-1-a" mid="30"><![CDATA[<html>Or so thought ah。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$High priest Leiang Na more$<BR><FONT color=#a82424>Blacksmith Po Lam</FONT>There are things that。Ah…But is<FONT color=#a82424>Hound</FONT>Monster by harassment，I never heard this argument but it。Strange how things will happen then?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-1-a" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-1-b" mid="32"><![CDATA[<html>Ah... Well simply unreasonable。</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$High priest Leiang Na more${action:Talk}<BR>Sure。<FONT color=#a82424>Blacksmith Po Lam</FONT>Also may be because the reality has been plagued by unrest，What has it produced so wrong impression。Puzzle World falsely accused people of superstition is the product of such ah，Huh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-1-b" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$High priest Leiang Na more$<BR>
+I do not know how those who think the magician，Ghost hound Non say the words like unrealistic。You better go to meet<FONT color=#a82424>Advanced magician Cynthia</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-class" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Advanced magician Cynthia$<BR>What? <FONT color=#a82424>Hound monster</FONT>? ...Hum。If this can be put out of boredom。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-c" mid="39"><![CDATA[<html>Well, but still want to find reasons。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR>Do Guihualianpian Rights。Might as well have time to learn。Blacksmith always abuse<FONT color=#a82424>Hound</FONT>，So only do this kind of dream。Really……This is not obvious Well。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-c" mid="41"><![CDATA[<html>Eliminate people&#39;s anxiety is also our job to。</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR>Do Guihualianpian Rights。If the task is not to do it properly。Will use the usual boast<FONT color=#a82424>Divine Magic</FONT>，Also afraid of ghosts……Hum。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-c" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Advanced magician Cynthia$<BR>Ah，Forget it……This ridiculous thing，You go<FONT color=#a82424>Magician Tala</FONT>Well。Her good-natured，Maybe will help you come up with ideas of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-a" mid="44"><![CDATA[<html>(Tara seemed really worried)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Magician Tala$<BR>What I do for you？……Ah？<FONT color=#a82424>Blacksmith Po Lam</FONT>Made this dream？Oops，This is really worrying。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-a" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-b" mid="46"><![CDATA[<html>……(Do not know react)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Magician Tala$<BR>Ah……Where as if a hound&#39;s voice came？I would like to……Ah……Ah……<FONT color=#7e12d2>(Tara seemed to think seriously about)</FONT><BR>
+Ah！On the Rights，<FONT color=#a82424>Is not really hide a hunting dog where</FONT>？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-b" image="QW_ManaRidge.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-1-c" mid="48"><![CDATA[<html>Hiding place?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Magician Tala${action:Talk}<BR>Oh，Is it too simple to think friends? Sorry... However captivity<FONT color=#a82424>Hound</FONT>Were not lost one or two of you，&#39;m Not sure what place that is hidden in it? Magic ridge can<FONT color=#a82424>Hiding place</FONT>There are a lot of it，Investigate if，Will definitely find it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1-c" image="QW_ManaRidge.dds" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$Magician Tala$<BR>Very<FONT color=#a82424>Inconspicuous place and people will not patronize</FONT>Rights，<FONT color=#a82424>Roof</FONT>Rights, etc.。Go across the railings may be able to see the situation as it usually does not …How 样? Help me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="95"><![CDATA[<html>Hiding place？</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Magician Tala${action:Talk}<BR>If they heard the hounds blacksmith Lam, then the sound～Where might really<FONT color=#a82424>Hound</FONT>。If not hound，Should not have a voice ah？So，Detailed search<FONT color=#a82424>Hiding place</FONT>，There must be a reason。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-a" image="" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$Magician Tala$<BR>For example,……Roof。How 样？Say<FONT color=#a82424>Inside the black chimney</FONT>，Not you？<FONT color=#7e12d2>(Tara arched the shoulder，What seemed hard to think of)</FONT>Ah……Not you？Be<FONT color=#a82424>Lamp black</FONT>You？Ah～In short，The reasons must be in secret places。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n193_santaund-2-a" mid="52"><![CDATA[<html>This place really hound……</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$???${sound:Hound_Stand_b.wav}<BR>Cough roro～Cough roro～<BR>
+<FONT color=#086171>(Hello？I finally met the person who could see……)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2-a" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-2-b" mid="54"><![CDATA[<html>（Closer look）</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$???${sound:Hound_Bark_a.wav}<BR>
+Cough roro～Hang Hang～<BR><FONT color=#086171>(My name is</FONT><FONT color=#a82424>Christmas Hound</FONT><FONT color=#086171>，Is a cry of the hounds just to send dreams and hopes of the poor hound。But……As you can see，I was stuck in a chimney，Stuck……)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2-b" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-2-c" mid="56"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Christmas Hound${sound:Hound_Bark_Attack_a.wav}<BR>Ming！Ming！<BR>
+<FONT color=#7e12d2>(Christmas Hound issued lament。Really like to be stuck，No way out)</FONT> <BR>
+<FONT color=#086171></FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2-c" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-2-d" mid="109"><![CDATA[<html>How will become so in the end？</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Christmas Hound${sound:Hound_Stand_c.wav}<BR>Cough roro……Cough roro……<BR>
+<FONT color=#086171>(Release、Let go……！If so, then can go out，I would not be stuck in here……</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2-d" image="QM_HoundNormal_2.dds" itemindex="">
+      <talk_answer link_index="n193_santaund-2-e" mid="58"><![CDATA[<html>……So, stuck in a chimney……</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Christmas Hound${sound:Hound_Stand_c.wav}<BR><FONT color=#086171>(Did not I say and be proud，I wanted to dream and gift distribution。I took a lot of the dog&#39;s food to this blacksmith&#39;s forge, the。Chain is to be tied to，</FONT><FONT color=#a82424>Every day the same family being squeezed</FONT><FONT color=#086171>Get some food。The results are！)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2-e" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-2-f" mid="60"><![CDATA[<html>(Why do you go from the chimney had ah……)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Christmas Hound${sound:Hound_Stand_c.wav}<BR>
+Cough roro～Ho ho……Cough roro……<BR><FONT color=#086171>(Call，I imagine</FONT> <FONT color=#a82424>Santa Claus</FONT><FONT color=#086171>As from</FONT><FONT color=#a82424>Chimney</FONT><FONT color=#086171>Climbed in.……Issued bleak lament every night，Waiting for someone to come and save me……Last Fandao adapted to the heat of the chimney……)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2-f" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-3" mid="62"><![CDATA[<html>Good……Well。(Anyway，As long as the chimney like)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Christmas Hound${sound:Hound_Stand_b.wav}<BR>
+Ho ho～Cough roro～Hang Hang～<BR>
+<FONT color=#086171>(Have a saying，Called</FONT><FONT color=#a82424>That want to go home</FONT><FONT color=#086171>You？I got the hot chimney reborn，Could no longer go back to cold snowy。Call……You like me quickly，Find their own home bar)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-3" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$Christmas Hound${sound:Hound_Bark_a.wav}<BR>
+Cough roro～Hang Hang～<BR>Ah，It Goodbye。For me with this<FONT color=#a82424>Blacksmith master</FONT>Good question，Said to him the trouble。<BR>
+<FONT color=#7e12d2>(Christmas hound stuck in chimney，To put on a solemn look)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3" image="QM_Hound_ice.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$High priest Leiang Na more$<BR>Ha ha...There chimney<FONT color=#a82424>Hound</FONT>? It is really coming of good luck ah goddess Eertaiya。Where something can actually adapt and live up to now。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-3-a" mid="66"><![CDATA[<html>（Cynthia seemed very silent）</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Advanced magician Cynthia$<BR>Ah? <FONT color=#a82424>Hound</FONT>Trapped in the chimney on the inside? What hound ah? …Oh，Is not a real being clamped? Dizzy，I Sigh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3-a" image="QW_ManaRidge.dds" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$Advanced magician Cynthia${action:Talk2}<BR>…Anyway！Anyway, this is<FONT color=#a82424>Pastor</FONT>They pollute our<FONT color=#a82424>Shrine</FONT>Consequences！！This is not normal！You should understand that！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3" image="QM_Hound_ice.dds" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$Magician Tala${action:Talk}<BR>God，Really<FONT color=#a82424>Hound</FONT>Caught in the chimney of the right？This can be enough magic。In short can help make that happen is my honor to，Ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-a" mid="70"><![CDATA[<html>Be，Understand。</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Blacksmith Po Lam$<BR>How 样，You learned? This<FONT color=#a82424>The ominous phenomenon</FONT>The reason for ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-a" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-b" mid="72"><![CDATA[<html>Fact that the chimney sandwiched hound。</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Blacksmith Po Lam$<BR>Oh！Eh！Good，Well。We think you just go run around on top the way Blacksmith，Let me look，What is the problem ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-b" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-c" mid="74"><![CDATA[<html>Reminder reminder 啥 ah...</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Blacksmith Po Lam$<BR>What？<FONT color=#a82424>Hound</FONT>？<BR>
+<FONT color=#7e12d2>(Po Lam surprised)</FONT><BR>
+God！<FONT color=#a82424>Hound</FONT>How will be stuck in that place？You should not be in kidding me？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-c" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-d" mid="76"><![CDATA[<html>I regards to the master。</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Blacksmith Po Lam$<BR><FONT color=#7e12d2>(Lam did not know what to say so，Look at the chimney。As the legs are short，Tiptoed not seem to see clearly)</FONT> <BR>
+……Really，Haohao De chimney card has a<FONT color=#a82424>Hound</FONT>……I say smoke all the time how light a fire to the house to take。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-d" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-e" mid="78"><![CDATA[<html>（Seems to happen mass annihilation）</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Blacksmith Po Lam$<BR><FONT color=#a82424>Illegal occupation</FONT>Other family guy chimney，Why ask me also hypocritically Well？Damn<FONT color=#a82424>Hound</FONT>……！！Waiting for me ！！ Do not think I short legs, no way to deal with you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-e" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-f" mid="80"><![CDATA[<html><FONT color=#086171>(Rewarded)</FONT></html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-f" image="" itemindex="">
+      <talk_question mid="81"><![CDATA[<html>$Blacksmith Po Lam$<BR>A word you&#39;ve worked hard。 I thought what dogs do ghosts，Scared me enough to choke。Today should get to sleep the！</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,1681,1682,1683,1684</exe>
+         <exe type="setquest">168</exe>
+         <exe type="talk" npc="n016_trader_borin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="4">0</exe>
+         <exe type="talk" npc="n012_sorceress_master_cynthia">a</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n012_sorceress_master_cynthia">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,1681,1682,1683,1684</exe>
+         <exe type="complete">168</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n016_trader_borin" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n016_trader_borin" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n011_priest_leonardo" sub="b" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="class">0</exelink>
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="1" npc="n015_sorceress_tara" sub="c">2,3</exelink>
+   <exelink qstep="2" npc="n193_santaund" sub="b" />
+   <exelink qstep="2" npc="n193_santaund" sub="c" />
+   <exelink qstep="2" npc="n193_santaund" sub="d" />
+   <exelink qstep="2" npc="n193_santaund" sub="e" />
+   <exelink qstep="2" npc="n193_santaund" sub="f" />
+   <exelink qstep="2" npc="n193_santaund" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n016_trader_borin" sub="b" />
+   <exelink qstep="3" npc="n016_trader_borin" sub="c" />
+   <exelink qstep="3" npc="n016_trader_borin" sub="d" />
+   <exelink qstep="3" npc="n016_trader_borin" sub="e">0</exelink>
+   <exelink qstep="3" npc="n016_trader_borin" sub="f">1</exelink>
+   <journal_data recompense="1:1681,2:1682,3:1683,4:1684" quest_title="하운드는 보고 있다" chapterid="" quest_level="7" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_ManaRidge.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n11</destination_pos>
+         <destination_mode>custom:5@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[Po Lam unrest]]></title>
+         <contents mid="84"><![CDATA[<html><FONT color=#a82424>Blacksmith Po Lam</FONT>That if there is ghost hound，All day the anxious bench。Helped him identify<FONT color=#a82424>Hound the secret lament</FONT>It。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ High priest Leiang Na more<BR></FONT><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Advanced magician Cynthia<BR></FONT><FONT color=#086171>Magic Ridge </FONT><FONT color=#a82424>→ Magician Tala</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[Find the reason dogs lament]]></destination>
+         <todo_msg mid="86"><![CDATA[The village people to consult on matters Po Lam disturbed。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_ManaRidge.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n193</destination_pos>
+         <destination_mode>custom:5@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="87"><![CDATA[Hound the secret lament]]></title>
+         <contents mid="88"><![CDATA[<html>If you do hear the words of lament hound，An estimated 1<FONT color=#a82424>Hiding place</FONT>And<FONT color=#a82424>Hound</FONT>Out there。Investigate the village it。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ ???</FONT></html>]]></contents>
+         <destination mid="89"><![CDATA[Find hidden in the village&#39;s dog]]></destination>
+         <todo_msg mid="90"><![CDATA[Find hidden bar in the village of dogs。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n16</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>16</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[Truth hound sorrow]]></title>
+         <contents mid="92"><![CDATA[<html>Smithy chimney which sandwiched a hound。Tell<FONT color=#a82424>Blacksmith</FONT> <FONT color=#a82424>Po Lam</FONT>Really want it。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> → Blacksmith Po Lam</html>]]></contents>
+         <destination mid="93"><![CDATA[And dialogue blacksmith Po Lam]]></destination>
+         <todo_msg mid="94"><![CDATA[Po Lam to the blacksmith to convey the chimney with a hound it。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>7:-1</user_level>
+      <user_worldzone_level />
+      <user_class>3:4</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

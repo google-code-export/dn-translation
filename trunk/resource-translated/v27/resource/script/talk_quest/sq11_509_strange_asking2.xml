@@ -1,0 +1,491 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_509_strange_asking2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>509</qid>
+      <designer>김주연</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[A strange commissionⅡ]]></qkname>
+      <qnpc>
+         <npcid>249</npcid>
+         <npcename>n249_saint_guard</npcename>
+         <npckname>왕성 근위병 로이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>73</npcid>
+         <npcename>n073_woman_stephany</npcename>
+         <npckname>스테파니</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>74</npcid>
+         <npcename>n074_porter_harber</npcename>
+         <npckname>짐꾼 하버</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Wang city close to the guard Raul$<BR>Can not chat while on duty。<BR><FONT color=#7e12d2>(Society of Gaunt must be dialogue and adventurer。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Stephanie$<BR>I am sorry，I have nothing to say to you。<BR><FONT color=#7e12d2>(Society of Gaunt must be dialogue and adventurer。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n074_porter_harber-noquest" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Feet 夫哈勃$<BR>Today&#39;s weather is very suitable for navigation。<BR><FONT color=#7e12d2>(Society of Gaunt must be dialogue and adventurer。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="11"><![CDATA[<html>Strange letter？</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Ah，Thank you for helping me before a victims rescued。<BR>
+But after that，I received an odd letter。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="13"><![CDATA[<html>(Accept and read the letter)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Yes，You look Kanba。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="15"><![CDATA[<html>This is what this means？</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Strange letter$<BR><FONT color=#7e12d2>I entrust you do not agree。This is my last commission for you。<BR>Do not follow me。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="17"><![CDATA[<html>Good，I went to investigate。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Well，Estimated that the individual is nothing good。But I think we must find out who sent the letter of these strange。How 样？You can go to investigate the person you write？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="19"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$A strange commissionⅡ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-a" mid="21"><![CDATA[<html>The new letter？</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Actually，After you are gone，I received a letter。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-b" mid="23"><![CDATA[<html>(Accept and read the letter)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Yes，You look Kanba。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-c" mid="25"><![CDATA[<html>This is what this means？</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Strange letter$<BR><FONT color=#7e12d2>I entrust you do not agree。This is my last commission for you。<BR>Do not follow me。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2" mid="27"><![CDATA[<html>Ah，But still very strange，I think it is necessary to look into。</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Well，Estimated that the individual is nothing good。But I think we must find out who sent the letter of these strange。How 样？You can go to investigate the person you write？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-1" image="" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Stephanie$<BR>I am sorry，I have nothing to say to you。<BR>
+<FONT color=#7e12d2>(Society of Gaunt must be dialogue and adventurer。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n074_porter_harber-1" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Feet 夫哈勃$<BR>Today&#39;s weather is very suitable for navigation。<BR>
+<FONT color=#7e12d2>(Society of Gaunt must be dialogue and adventurer。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-1" image="" itemindex="">
+      <talk_question mid="111"><![CDATA[<html>$Wang city close to the guard Raul$<BR>Can not chat while on duty。<BR><FONT color=#7e12d2>(Society of Gaunt must be dialogue and adventurer。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Society of Gaunt adventurer$<BR>These letters are<FONT color=#a82424>Wang city close to the guard Raul</FONT>Sent，You get the first look at the return to him the situation it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-2" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-2-a" mid="32"><![CDATA[<html>I just want to ask a simple question。</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Wang city close to the guard Raul$<BR>Ban chat while on duty。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-2-a" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-2-b" mid="34"><![CDATA[<html>Not long ago,，Personal letters sent after you，Right？</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Wang city close to the guard Raul$<BR>Good，I would simply answer this question。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-2-b" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-2-c" mid="36"><![CDATA[<html>(Almost ruptured eardrum)Who that person is？Gone？</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Wang city close to the guard Raul$<BR>Yes，Yes！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-2-c" image="QW_HermaltePort.dds" itemindex="">
+      <talk_answer link_index="n249_saint_guard-2-d" mid="38"><![CDATA[<html>Heermadai port side of me？</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Wang city close to the guard Raul$<BR><FONT color=#7e12d2>(Said a low voice)</FONT>Those letters were given to me by a girl。After she gave it to me，Go out into the<FONT color=#a82424>Heermadai port </FONT>To the other side。Port side of things，<FONT color=#a82424>Feet 夫哈勃</FONT>Should be very clear。You can go ask him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-2-d" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-3" mid="40"><![CDATA[<html>(Ah，Ear pain)So goodbye。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Wang city close to the guard Raul$<BR>Yes，Yes！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-3" image="" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Wang city close to the guard Raul$<BR><FONT color=#7e12d2>(Stern, suddenly said)</FONT>I was responsible for the alert work of King City！<BR>
+If something，Please come see me after work。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n074_porter_harber-3" image="" itemindex="">
+      <talk_answer link_index="n074_porter_harber-3-a" mid="43"><![CDATA[<html>Do you see a girl in here？</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Feet 夫哈勃$<BR>What I do for you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n074_porter_harber-3-a" image="QW_33.dds" itemindex="">
+      <talk_answer link_index="n074_porter_harber-4" mid="45"><![CDATA[<html>Transport ship on the island？</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Feet 夫哈勃$<BR>Girl？I saw a little girl find out how to get in<FONT color=#a82424>Island center</FONT>，And then scramble on the floor of the island boat transportation。Do not know the girl so small to that dangerous place to do。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n074_porter_harber-4" image="QW_33.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Feet 夫哈勃$<BR>Yes。I should stop her。An expression of her fear of death。She sat a group of transport ships to go，Now go to<FONT color=#a82424>Island center</FONT>If，Might even find a little girl。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-a" mid="52"><![CDATA[<html>Some people have a risk，Should not I help him do？</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Stephanie${action:Talk}<BR>You even do not I promise you the last commission？<BR>I do not let you do not follow me？How come I had to follow？！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-a" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-b" mid="54"><![CDATA[<html>I have personally confirmed that in the end there is no use。</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Stephanie$<BR>Fool，If I knew of no use if，I think you would not come here。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-b" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-c" mid="56"><![CDATA[<html>You can predict the future？</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Stephanie$<BR>Someone like you might think so。<BR>
+But I have the ability to predict future，I can see what happens next。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-c" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-d" mid="58"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Stephanie$<BR><FONT color=#a82424>Because I can see the goddess who dream</FONT>。<BR>Priests who called me this predictor(Seer)。I know you will allow me to save the person who suffers misfortune，So I will let you not save him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-d" image="QW_HermaltePort.dds" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-e" mid="60"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Stephanie$<BR>But you do stupid things，So I bring misfortune to。After<FONT color=#a82424>Heermadai port</FONT>When，I met him，And then fell in love with him。This is me，What is the fate。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-e" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-f" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Stephanie$<BR>I would be abandoning him。I will therefore be a very long time misfortune。But if I did not see him today，Everything will happen。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-f" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-g" mid="64"><![CDATA[<html>That do not fall in love he is not on the list？</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Stephanie$<BR>You may not understand。I know what will happen in the future，But they do nothing。As I know parents will be Monster kill，I could only watch as things happen。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-g" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-h" mid="66"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Stephanie$<BR>Fate is like a collection composed of numerous gear。Today I went to the Heermadai port，Only a very small collection that a gear in the rotation。But the gear connected to it will therefore turn，Brought me unfortunately。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-h" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-i" mid="68"><![CDATA[<html>Although the fate of things，But love is love。</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Stephanie$<BR>Do you think that because of events like that can be said to produce feelings of love you？Those things are not out of my will，It was the fate of some of the things driven wheels。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-i" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-j" mid="70"><![CDATA[<html>Love is the will and the feelings of two people，Not you？</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Stephanie$<BR>As destined to fall in love，To love one another，This is love you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-j" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-k" mid="72"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Stephanie$<BR><FONT color=#7e12d2>(Stephanie seems to comprehend what，Mai Zhaotou thought a good while)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-k" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-4-l" mid="74"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Stephanie$<BR>
+Yes，That&#39;s my feelings and will of the。<BR>
+Unfortunately, my happiness and all my。Unfortunately, the thought of the future，I am lucky to forget the present,。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-4-l" image="" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-5" mid="76"><![CDATA[<html>Although it is impossible to understand，But you can decide to go back like。</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Stephanie$<BR>Here I avoid that person，Unfortunately, my only escape，But my happiness with the abandoned。I want to go back to Heermadai port，Enjoy my destiny。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-5" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-5-a" mid="78"><![CDATA[<html>What？</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Stephanie$<BR>I refer you to a maze，In return，I tell you one thing。<FONT color=#a82424>That is known as the Prophet could not wake up because girls</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-5-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n073_woman_stephany-5-b" mid="80"><![CDATA[<html>Afraid？</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Stephanie$<BR><FONT color=#a82424>The fate of young girls</FONT>，In fact, she clearly than anyone else will happen in their own eyes the things that，So she afraid of their own。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n073_woman_stephany-5-b" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="81"><![CDATA[<html>$Stephanie$<BR>I can not tell you more things。<BR>You may now return to<FONT color=#a82424>Holy Paradise</FONT>Go。I have to return to<FONT color=#2b2723>Heermadai the port to meet him。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-a" mid="83"><![CDATA[<html>(About what happened during the)</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Society of Gaunt adventurer$<BR>How 样？You find the person who wrote？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-b" mid="85"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Ah，I went to this old，Sometimes think，You know that if I fail, then not to try，What may now not。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-c" mid="87"><![CDATA[<html>Thank you for your praise。Please do not try to mix in the past。</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Ha ha，Yes！Spirit is a symbol of the challenges young，So I think you very well。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-d" mid="89"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-d" image="" itemindex="">
+      <talk_question mid="90"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Click one&#39;s tongue，Recently young people is really too strong。<BR>
+You&#39;ve worked hard。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5091,5092,5093,5094</exe>
+         <exe type="setquest">509</exe>
+         <exe type="talk" npc="n036_adventurer_guildmaster_gunter">2</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5091,5092,5093,5094</exe>
+         <exe type="complete">509</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">1,3,2,4</exelink>
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="b" />
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="c">0,1</exelink>
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="2" />
+   <exelink qstep="2" npc="n249_saint_guard" sub="b" />
+   <exelink qstep="2" npc="n249_saint_guard" sub="c" />
+   <exelink qstep="2" npc="n249_saint_guard" sub="d" />
+   <exelink qstep="2" npc="n249_saint_guard" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n074_porter_harber" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n073_woman_stephany" sub="b" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="c" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="d" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="e" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="f" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="g" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="h" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="i" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="j" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="k" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="l" />
+   <exelink qstep="4" npc="n073_woman_stephany" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n073_woman_stephany" sub="b" />
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="b" />
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="c">0</exelink>
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="d">1</exelink>
+   <journal_data recompense="1:5091,2:5092,3:5093,4:5094" quest_title="이상한 부탁Ⅱ" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[Society of Gaunt dialogue and adventurer]]></title>
+         <contents mid="92"><![CDATA[<html>And<FONT color=#a82424>Society of Gaunt adventurer</FONT>Strange things about the letter。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Society of Gaunt adventurer</FONT></html>]]></contents>
+         <destination mid="93"><![CDATA[Society of Gaunt dialogue and adventurer]]></destination>
+         <todo_msg mid="94"><![CDATA[Please adventurer dialogue Society of Gaunt。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n249</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>249</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="95"><![CDATA[And King City, near the guard Raul dialogue]]></title>
+         <contents mid="96"><![CDATA[<html>To the sacred paradise<FONT color=#a82424>Wang city close to the guard Raul</FONT>About the return of the circumstances。King City, near the guard Raul on<FONT color=#a82424>Heermadai direction near the exit port</FONT>。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Wang city close to the guard Raul</FONT></html>]]></contents>
+         <destination mid="97"><![CDATA[And King City, near the guard Raul dialogue]]></destination>
+         <todo_msg mid="98"><![CDATA[Please guard Raul dialogue near King City。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n74</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>74</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="99"><![CDATA[And Heermadai dialogue port pin Fu Habo]]></title>
+         <contents mid="100"><![CDATA[<html>Port to Heermadai<FONT color=#a82424>Feet 夫哈勃</FONT>Understand the girl&#39;s whereabouts Yourself。<BR><BR><FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→ Feet 夫哈勃</FONT></html>]]></contents>
+         <destination mid="101"><![CDATA[And Heermadai dialogue port pin Fu Habo]]></destination>
+         <todo_msg mid="102"><![CDATA[Please Heermadai dialogue port pin Fu Habo。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_33.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>331,n73</destination_pos>
+         <destination_mode>custom:331@1</destination_mode>
+         <statemark_npcid>73</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="103"><![CDATA[The return to the island center and dialogue]]></title>
+         <contents mid="104"><![CDATA[<html>Go<FONT color=#a82424>Island center</FONT>And mailing it girl dialogue。<BR>
+ <BR>
+<FONT color=#086171>Heermadai port(Island transport ship)</FONT> <FONT color=#a82424>→ Island center</FONT></html>]]></contents>
+         <destination mid="105"><![CDATA[The return to the island center and dialogue]]></destination>
+         <todo_msg mid="106"><![CDATA[Go island center and the return to dialogue。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="107"><![CDATA[Society of Gaunt dialogue and adventurer]]></title>
+         <contents mid="108"><![CDATA[<html>Heaven to the sacred<FONT color=#a82424>Society of Gaunt adventurer</FONT>What happened during the reporting period。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Society of Gaunt adventurer</FONT><BR>
+ <BR>
+ </html>]]></contents>
+         <destination mid="109"><![CDATA[Society of Gaunt dialogue and adventurer]]></destination>
+         <todo_msg mid="110"><![CDATA[Please sacred paradise of adventurers, and Society of Gaunt dialogue。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>508</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

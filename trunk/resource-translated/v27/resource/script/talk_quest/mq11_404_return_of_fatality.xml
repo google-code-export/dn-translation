@@ -1,0 +1,298 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_404_return_of_fatality</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>404</qid>
+      <designer>김인정</designer>
+      <qlevel>28</qlevel>
+      <qdesc>1. 주교와 대화
+2. 검은 영지 수비대 거점으로 이동
+3. 보스방에서 제레인트와 대화
+4. 검은 산자락의 아르젠타와 대화</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>405</nextqid>
+      <nextqname>mq11_405_cursed_fragment</nextqname>
+      <nextqnpc>n212_argenta</nextqnpc>
+      <qkname mid="1"><![CDATA[Disaster recovery in the dark]]></qkname>
+      <qnpc>
+         <npcid>212</npcid>
+         <npcename>n212_argenta</npcename>
+         <npckname>아르젠타(검은 산자락)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>37</npcid>
+         <npcename>n037_geraint</npcename>
+         <npckname>제레인트(검은 대군주의 수비대 거점)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio$<BR>And<FONT color=#a82424>General Douglas</FONT>With hard work。<BR>Please rescued<FONT color=#a82424>Prophet</FONT>，I believe you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-1" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Geraint$<BR>...Do not bother me。I&#39;m looking for<FONT color=#a82424>He</FONT>Location。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Algerita$<BR>Do not think to look for<FONT color=#a82424>Geraint</FONT>The bar。<BR>...Certainly，If you insist, then，I will not block you。Anyway, you have the freedom。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QW_43.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-level1" mid="60"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$General Douglas$<BR>The soldiers are ready。To the disappearance of the black knight<FONT color=#a82424>Dark Territory garrison base</FONT>，Way to go there plan initiated security。If you are ready, then，To quickly get going。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$General Douglas$<BR>However, the strength to you，Seemed far-fetched。So after fully ready to proceed too Well。<BR><FONT color=#7e12d2>（28Level before the next stage after。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-b" image="QW_43.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-c" mid="63"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$General Douglas$<BR><FONT color=#a82424>Dark Territory garrison base</FONT>However, we do not know the area elite soldiers。<BR>So as not to give full support as before，You have to be careful ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-c" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$General Douglas${action:talk}<BR>Be sure to find<FONT color=#a82424>Prophet</FONT>才行 ah…<BR>For our country。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QW_43.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$General Douglas$<BR>I have sent to the elite soldiers in all directions。<BR>You quickly go<FONT color=#a82424> Dark Territory garrison base</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-2" image="" itemindex="">
+      <talk_answer link_index="n037_geraint-2-a" mid="17"><![CDATA[<html>（Geraint is watching a certain direction）</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Geraint$<BR>...Also late step。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-2-a" image="" itemindex="">
+      <talk_answer link_index="n037_geraint-2-b" mid="19"><![CDATA[<html>Den? What does that mean?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Geraint$<BR>Edge has been formed here<FONT color=#a82424>Den</FONT>，Ah, I can not close。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-2-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Geraint$<BR>Listen<FONT color=#a82424>Algerita</FONT>What to say right。<BR><FONT color=#7e12d2>（Geraint never say one more thing。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_43.dds" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$Bishop Ignacio$<BR>I heard you go by the orders of General<FONT color=#a82424>Dark Territory garrison base</FONT>。<BR>Please rescued<FONT color=#a82424>Prophet</FONT>Ah，Come on you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-3" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Geraint$<BR>…<BR><FONT color=#7e12d2>（Seems not to want to continue a dialogue。May go to Montenegro Angle in Algerita。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-a" mid="23"><![CDATA[<html>There，What is that nest?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Algerita$<BR><FONT color=#a82424>Den</FONT>Have formed what I know，Have just been feeling。<BR>...But now the situation is indeed not good。Now there is no room to maneuver。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-a" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-b" mid="25"><![CDATA[<html>Geraint said to listen to the words of Algerita。</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Algerita$<BR>Guys like you，Have to lay it&#39;s telling you you Caixing?<BR>
+On what basis?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-b" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-3-c" mid="27"><![CDATA[<html>Ah... （Do not have to listen to the words Well Geraint。）</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Algerita$<BR>Ah?Is the guy that&#39;s right?<BR>Hey...It no other way。I&#39;ll teach you once again，Listen ah！ I never said that the second。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-c" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-d" mid="29"><![CDATA[<html>（Though not unfamiliar with，But a name is very strong, oh...）</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Algerita$<BR><FONT color=#a82424>Den</FONT>The existence of super power that has to guard their fields and build the<FONT color=#a82424>Enchantment</FONT>。 Ah...In fact, there is strong，But also contains some hell like dogs or lions rookie Scorpion。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-d" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-e" mid="31"><![CDATA[<html>Ah?！ Black Dragon wake again?！</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Algerita$<BR>However, those<FONT color=#a82424>Den</FONT>Is not built by the newbies into the。But the use of the<FONT color=#a82424>Black Dragon</FONT>Power。<BR>That，That is <FONT color=#a82424>Black Dragon wake again</FONT>。Now understand?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-e" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-f" mid="33"><![CDATA[<html>Do not smash the nest?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Algerita$<BR>Yes。Den for<FONT color=#a82424>In addition to its master all there is</FONT>Superior in terms of displaying<FONT color=#a82424>Resistance</FONT>，To resist the invaders。Want to enter the nest within，Would have to use special power and props。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-f" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-g" mid="35"><![CDATA[<html>Six Heroes and Black Dragon Gekitou when you?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Algerita$<BR>Need to build a nest <FONT color=#a82424>Master fade</FONT>Can。To do this he must enter the nest within。But also<BR><FONT color=#a82424>50Years ago</FONT>In order to open the Black Dragon&#39;s Lair have to try to get<FONT color=#a82424>The chief priests of ancient</FONT> <FONT color=#a82424>Crescent</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-g" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-h" mid="37"><![CDATA[<html>Then...What to do?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Algerita$<BR>Hero or heroes of the six top ten it does not matter。Anyway, now is also the case。Not only the Black Dragon is awake，Nests have been built with a good。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-h" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-i" mid="39"><![CDATA[<html>Is there any way to tell me！</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Algerita$<BR>50Open the Black Dragon&#39;s lair before the method，It is also common。After all, the same guy built into the lair of the same property。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-i" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-j" mid="41"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-j" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-!next" mid="43"><![CDATA[<html>I do！</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Algerita$<BR>Have not told you，<FONT color=#a82424>Long crescent of ancient priests</FONT>。<BR>Although very much like what other methods can provide Geraint，But just in case to be a first<FONT color=#a82424>Long crescent of ancient priests</FONT>Out to be good。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="[">28</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n042_general_duglars">a</exe>
+         <exe type="talk" npc="n042_general_duglars">b</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4041,4042,4043,4044</exe>
+         <exe type="complete">404</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n042_general_duglars" sub="level1">0</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="c">3,4</exelink>
+   <exelink qstep="2" npc="n037_geraint" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n212_argenta" sub="b" />
+   <exelink qstep="3" npc="n212_argenta" sub="c" />
+   <exelink qstep="3" npc="n212_argenta" sub="d" />
+   <exelink qstep="3" npc="n212_argenta" sub="e" />
+   <exelink qstep="3" npc="n212_argenta" sub="f" />
+   <exelink qstep="3" npc="n212_argenta" sub="g" />
+   <exelink qstep="3" npc="n212_argenta" sub="h" />
+   <exelink qstep="3" npc="n212_argenta" sub="i">0</exelink>
+   <exelink qstep="3" npc="n212_argenta" sub="j">1</exelink>
+   <exelink qstep="3" npc="n212_argenta" sub="!next" />
+   <journal_data recompense="1:4041,2:4042,3:4043,4:4044" quest_title="검은 재난의 부활" chapterid="4" quest_level="28" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Disaster recovery in the dark I]]></title>
+         <contents mid="48"><![CDATA[<html>And<FONT color=#a82424>General Douglas</FONT>Discuss countermeasures it。<BR><FONT color=#7e12d2>(28Level and above to perform tasks)</FONT><BR><BR><FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[(Lv28)Dialogue with the General Douglas]]></destination>
+         <todo_msg mid="50"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_43.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>432,n37</destination_pos>
+         <destination_mode>custom:431@1,432@2</destination_mode>
+         <statemark_npcid>37</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Disaster recovery in the dark II]]></title>
+         <contents mid="52"><![CDATA[<html>In order to seize the Dark Knight，At least the first follow Geraint。<FONT color=#a82424>Geraint</FONT>Have to<FONT color=#a82424>Dark Territory garrison base</FONT>。<BR><BR><FONT color=#086171>Montenegro hill angle（Dark Overlord of the barriers）</FONT> <FONT color=#a82424>→Dark Territory garrison base</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Exploring the dark territory garrison base]]></destination>
+         <todo_msg mid="54"><![CDATA[Followed by Geraint to base it dark territory garrison。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13,n212</destination_pos>
+         <destination_mode>custom:432@1,13@1</destination_mode>
+         <statemark_npcid>212</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Disaster recovery in the dark III]]></title>
+         <contents mid="56"><![CDATA[<html>Geraint said<FONT color=#a82424>Den</FONT>What in the end，To<FONT color=#a82424>Algerita</FONT>Ask it。<BR>
+ <BR>
+<FONT color=#086171>Montenegro hill angle</FONT> <FONT color=#a82424>→Algerita</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[And Montenegro Angle in Algerita dialogue]]></destination>
+         <todo_msg mid="58"><![CDATA[And Montenegro Angle in Algerita dialog and。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>421</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

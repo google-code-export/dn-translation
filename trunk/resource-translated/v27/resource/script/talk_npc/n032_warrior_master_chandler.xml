@@ -1,0 +1,45 @@
+   <talk>
+      <npcename>n032_warrior_master_chandler</npcename>
+      <npcid>32</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Senior Warrior Chandler]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="4"><![CDATA[<html>[Learning Skills]</html>]]></talk_answer>
+         <talk_answer link_index="ask_town" mid="5"><![CDATA[<html>[Dialogue] Consultation on the matter Kedella points。</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Senior Warrior Chandler$<BR>Recently there is no decent fighters，Ah very very anxious……<BR>Oh，Have to Jagged fortress known Kedella really want to cry now。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="8"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="ask_town" mid="9"><![CDATA[<html>[Dialogue] Asked about things crossing Kedella</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Senior Warrior Chandler$<BR>Recently there is no decent fighters，Ah very very anxious……<BR>Oh，Have to Jagged fortress known Kedella really want to cry now。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_town" image="" itemindex="">
+         <talk_answer link_index="back1" mid="11"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="10"><![CDATA[<html>$Senior Warrior Chandler$<BR>Looking back，Kedella crossing out the name of good, but soldiers of the colony ah……<BR>Now it，Are all these little children callow comatulid……</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="33" link_target="sq08_278_test_warrior1.xml"><![CDATA[<html><FONT color=#2b2723>[Transfer] </FONT><FONT color=#086171>Proof of soldiersⅠ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="34" link_target="sq08_279_test_warrior2.xml"><![CDATA[<html><FONT color=#2b2723>[Transfer]</FONT><FONT color=#086171> </FONT><FONT color=#086171>Proof of soldiersⅡ</FONT></html>]]></talk_answer>
+        <talk_answer link_index="q_enter" mid="64" link_target="sq08_340_change_job1.xml"><![CDATA[<html>[Lv15] <FONT color=#086171>Irene&#39;s transfer gifts</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="55" link_target="sq08_290_battle_strength1.xml"><![CDATA[<html><FONT color=#2b2723>[Lv17]</FONT><FONT color=#086171> </FONT><FONT color=#086171>[Title]「GladiatorLv1」The basic is to have the fighting forceⅠ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="56" link_target="sq08_291_battle_strength2.xml"><![CDATA[<html><FONT color=#2b2723>[Lv17] </FONT><FONT color=#086171>[Title]「GladiatorLv1」The basic is to have the fighting forceⅡ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="57" link_target="sq08_275_catherock_challenger_1.xml"><![CDATA[<html><FONT color=#2b2723>[Lv22]</FONT><FONT color=#086171> Challenger Orc KingⅠ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="58" link_target="sq08_276_catherock_challenger_2.xml"><![CDATA[<html><FONT color=#2b2723>[Lv22]</FONT><FONT color=#086171> </FONT><FONT color=#086171>Challenger Orc KingⅡ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="59" link_target="sq08_277_catherock_challenger_3.xml"><![CDATA[<html><FONT color=#2b2723>[Lv22] </FONT><FONT color=#086171>Challenger Orc KingⅢ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back2" mid="65"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="12"><![CDATA[<html>$Senior Warrior Chandler$<BR>Recently there is no decent fighters，Ah very very anxious……<BR>Oh，Have to Jagged fortress known Kedella really want to cry now。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="0" false="1">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+      </conditions>
+      <exelink idx="skill">3</exelink>
+      <exelink idx="back1">2</exelink>
+      <exelink idx="back2">2</exelink>
+   </talk>

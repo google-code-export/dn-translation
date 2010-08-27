@@ -1,0 +1,410 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_004_red_emblem1</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>4</qid>
+      <designer>김주연</designer>
+      <qlevel>3</qlevel>
+      <qdesc>300058 지도
+300009 붉은 인장 파편
+(아처 전용 퀘스트)
+1. 고대의 신전 유적지 1층에서 마을 사람과 대화, 사람들이 안에 잡혀 있다는 정보를 입수.
+2. 안쪽의 사람들을 구출하지만 로제가 없다는 사실을 알게 됨.
+3. 티모시는 로제가 카타콤으로 끌려간듯하다는 말을 함.
+4. 프레리 타운의 촌장 해롤드에게 그 사실을 전하면 촌장은 매우 불안해하는 모습을 보임.
+(로제가 고대인의 후예라는 것을 유일하게 알고 있고, 과거에 고대인 부부를 통해 마물들이 고대인을 쫓고 있는 것을 알고 있기 때문에 마물들이 로제의 정체를 알아낸 것은 아닌지 두려워 하는 것.)</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>5</nextqid>
+      <nextqname>mq01_005_red_emblem2</nextqname>
+      <nextqnpc>n001_elder_harold</nextqnpc>
+      <qkname mid="1"><![CDATA[Red SealⅠ]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드   (프레리)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>106</npcid>
+         <npcename>n106_prairie_wounded</npcename>
+         <npckname>부상당한 마을 사람1</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>107</npcid>
+         <npcename>n107_prairie_prison</npcename>
+         <npckname>감옥에 갇힌 마을 사람1</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>120</npcid>
+         <npcename>n120_prairie_prison</npcename>
+         <npckname>감옥에 갇힌 마을 사람2</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>121</npcid>
+         <npcename>n121_prairie_prison</npcename>
+         <npckname>감옥에 갇힌 마을 사람3</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>122</npcid>
+         <npcename>n122_prairie_wounded</npcename>
+         <npckname>부상당한 마을 사람2</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>123</npcid>
+         <npcename>n123_prairie_wounded</npcename>
+         <npckname>부상당한 마을 사람3</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>131</npcid>
+         <npcename>n131_guard_timose</npcename>
+         <npckname>가드 티모시 (mp003)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>5</npcid>
+         <npcename>n005_archer_master_diana</npcename>
+         <npckname>상급 아처 디아나  (프레리 아쳐스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>8</npcid>
+         <npcename>n008_guard_timose</npcename>
+         <npckname>가드 티모시 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-1" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Guard Timothy$<BR>Return、Back to the village，The land、Map to<FONT color=#a82424>Self-defense, head of Steve</FONT>，Then hurry to the<FONT color=#a82424>Ancient temple ruins</FONT>Come……<BR>A、Must quickly come ah！<FONT color=#a82424>Wire basket</FONT>Current、The situation now is very dangerous……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QS_Default.dds" itemindex="300057">
+      <talk_answer link_index="n004_guard_steave-1-a" mid="57"><![CDATA[<html>(The map to Steve)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Self-defense, head of Steve$<BR>
+You have to gather together all the map pieces you have？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-a" image="QN_Guard_Timose.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-1-b" mid="138"><![CDATA[<html>He first went to the ancient ruins of the Temple。</html>]]></talk_answer>
+      <talk_question mid="137"><![CDATA[<html>$Self-defense, head of Steve$<BR>Judging from the map，Arrow points<FONT color=#a82424>Ancient temple ruins</FONT>。Wire basket and missing villagers should be on there……<BR>Ah？But……Did not see how<FONT color=#a82424>Timothy</FONT>。He did not come back right with you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-b" image="QW_2.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2" mid="140"><![CDATA[<html>I can help you。</html>]]></talk_answer>
+      <talk_question mid="139"><![CDATA[<html>$Self-defense, head of Steve$<BR>Eh？Ah……He is a person who know how to take care of their own，I do not really worry about him。But this incident and<FONT color=#a82424>Wire basket</FONT>Related，His action can not be predicted。Must go as soon as possible <FONT color=#a82424>Ancient temple ruins</FONT>See。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-1" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="105"><![CDATA[<html>$Guard Timothy$<BR>Please return、Go back to the village，To map to<FONT color=#a82424>Self-defense, head of Steve</FONT>，And talk about things、What happened……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n009_warrior_master_dunken-1" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="106"><![CDATA[<html>$Senior Warrior Duncan$<BR>
+<FONT color=#a82424>Self-defense, head of Steve</FONT>You just seem to look for……<BR>
+Steve went to see it？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n106_prairie_wounded-1" image="" itemindex="">
+      <talk_question mid="121"><![CDATA[<html>$The villagers were injured$<BR>Thank……Thank you for saving me。<BR>There are other people inside。I does not matter，Go help some other folks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n107_prairie_prison-1" image="" itemindex="">
+      <talk_question mid="122"><![CDATA[<html>$The villagers in jail$<BR>This is under……Saved！Thank you！<BR>Which also was closed。Please do not worry about me，Rush to save other folks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n120_prairie_prison-1" image="" itemindex="">
+      <talk_question mid="123"><![CDATA[<html>$The villagers in jail$<BR>You to save me！ <BR>Thank you……Hum……I thought I was dead……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n121_prairie_prison-1" image="" itemindex="">
+      <talk_question mid="124"><![CDATA[<html>$The villagers in jail$<BR>Call……Thank you for saving me……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n122_prairie_wounded-1" image="" itemindex="">
+      <talk_question mid="125"><![CDATA[<html>$The villagers were injured$<BR>You beat those monsters……This time finally saved！<BR>I will not forget your favor。Thank you！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n123_prairie_wounded-1" image="" itemindex="">
+      <talk_question mid="126"><![CDATA[<html>$The villagers were injured$<BR>Ah……Ah？This……This is where？Why am I in this place？<BR><FONT color=#7e12d2>(Though it had been hijacked when the unconscious)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="" itemindex="">
+      <talk_question mid="155"><![CDATA[<html>$Harold village$<BR>Eh-hem, cough……See you one back，Definitely not find a wire basket……Wire basket you do not know，Has helped look for her willingness to。I do not know how to thank you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="QN_Npc_Archer_Diana.dds" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$Self-defense, head of Steve$<BR>Thank you。Before the last traces，You first go to see<FONT color=#a82424>Adventurers Association</FONT>Sent<FONT color=#a82424>Diana senior archer</FONT>。She will tell<FONT color=#387206>{user_nick}</FONT>You some useful things。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-2" image="QW_2.dds" itemindex="">
+      <talk_answer link_index="n005_archer_master_diana-2-a" mid="142"><![CDATA[<html>Yes。</html>]]></talk_answer>
+      <talk_question mid="141"><![CDATA[<html>$Diana senior archer$<BR>
+Steve said you are a brave adventurer who it？<BR>
+Something you go<FONT color=#a82424>Ancient temple ruins</FONT>？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-2-a" image="QM_TrollBlue.dds" itemindex="">
+      <talk_answer link_index="n005_archer_master_diana-2-b" mid="144"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="143"><![CDATA[<html>$Diana senior archer$<BR>In that case，Remains the leader you have to be careful<FONT color=#a82424>Chu 克阿诺</FONT>。He would love to curl up into the attack suddenly，Even from far away can not be taken lightly。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-2-b" image="QM_TrollBlue.dds" itemindex="">
+      <talk_answer link_index="n005_archer_master_diana-2-c" mid="146"><![CDATA[<html>Good，I will remember。</html>]]></talk_answer>
+      <talk_question mid="145"><![CDATA[<html>$Diana senior archer$<BR>If you see Zhu Ke Enuo of<FONT color=#a82424>Body curled up</FONT>，Attacks must stop，Get away to the side。You know<FONT color=#a82424>Press the two keys</FONT>Or hold down the arrow keys, press[ <FONT color=#a82424>Shift</FONT> ]，You can use<FONT color=#a82424>Evasive action</FONT>It？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-2-c" image="" itemindex="">
+      <talk_answer link_index="n005_archer_master_diana-2-d" mid="148"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$Diana senior archer$<BR>Other，In order to become stronger archer，Do not forget to learn new<FONT color=#a82424>Skill</FONT>Oh。Having said that，<FONT color=#387206><FONT color=#382000>{user_nick}</FONT> </FONT>You also seem to have to learn new skills, the time。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-2-d" image="QM_TrollBlue.dds" itemindex="">
+      <talk_answer link_index="n005_archer_master_diana-2-_skill_trade_1" mid="186"><![CDATA[<html>[Learning Skills]</html>]]></talk_answer>
+      <talk_question mid="178"><![CDATA[<html>$Diana senior archer$<BR>Try to learn skills bar<FONT color=#a82424>Tornado Leg</FONT>It。 Big deal is very effective when Chu Kee Nuo oh。<BR>
+Then，<FONT color=#382000>{user_nick}</FONT>，Wish the blessings of the Tree of Life is always about with your….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3" image="QN_Npc_Archer_Diana.dds" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$Self-defense, head of Steve$<BR>Before the last traces，You first go to see<FONT color=#a82424>Adventurers Association</FONT>Sent<FONT color=#a82424>Diana senior archer</FONT>。She will tell<FONT color=#387206>{user_nick}</FONT>You some useful things。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-3" image="QN_Npc_Archer_Diana.dds" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Guard Timothy$<BR>Ah… Is to find <FONT color=#a82424>Diana senior archer</FONT>Large，Adults is that right? <BR>Diana adults in the village，Ah village。How do you find him here, ah！Fast，Diana adults go back to the village soon，Back  <FONT color=#a82424>Ancient temple ruins</FONT>It！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-3" image="QN_Npc_Archer_Diana.dds" itemindex="">
+      <talk_question mid="129"><![CDATA[<html>$Guard Timothy$<BR> You……Looking for high、<FONT color=#a82424>Diana senior archer</FONT>？<BR> Diana in the village、Village，You are here、What to find here！Fast、Quickly returned to the village，Meet Diana，Then to<FONT color=#a82424>Ancient temple ruins</FONT>Come！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-4" image="QW_2.dds" itemindex="">
+      <talk_question mid="85"><![CDATA[<html>$Diana senior archer$<BR>Well，You is coming<FONT color=#a82424>Ancient temple ruins</FONT>Go。<BR>Many people are waiting<FONT color=#387206>{user_nick}</FONT>Your help。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-4" image="" itemindex="">
+      <talk_answer link_index="n131_guard_timose-4-a" mid="108"><![CDATA[<html>But……Wire baskets do not see how……？</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Guard Timothy$<BR>Ah……You 来啦。Great，Not too late now……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-4-a" image="" itemindex="">
+      <talk_answer link_index="n131_guard_timose-4-b" mid="110"><![CDATA[<html>……Why only the basket of ribbon walked？</html>]]></talk_answer>
+      <talk_question mid="109"><![CDATA[<html>$Guard Timothy$<BR>Good……Like one step too late……<BR><FONT color=#a82424>Bamboo basket</FONT>、<FONT color=#a82424>Wire basket</FONT>Seems to have been taken to different places, and……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-4-b" image="QS_Default.dds" itemindex="300009">
+      <talk_answer link_index="n131_guard_timose-4-c" mid="112"><![CDATA[<html>What&#39;s this？</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$Guard Timothy$<BR>……This，Well……You hold the first。<BR>It is in the<FONT color=#a82424>Chu 克阿诺</FONT>War、When things fall battle。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-4-c" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_answer link_index="n131_guard_timose-4-d" mid="114"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="113"><![CDATA[<html>$Guard Timothy$<BR>This、This is<FONT color=#a82424>Monster&#39;s heraldic pieces</FONT>……From the coat of arms carved Patterns……Should live in the<FONT color=#a82424>Grave</FONT>Cattle……<FONT color=#a82424>Minotaur</FONT><FONT color=#a82424>Dion Lake</FONT>Coat of arms……Bamboo basket……Wire basket may be brought<FONT color=#a82424>Grave</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-4-d" image="QN_Elder_Harold.dds" itemindex="">
+      <talk_question mid="115"><![CDATA[<html>$Guard Timothy$<BR>I first went to<FONT color=#a82424>Grave</FONT>……You go to see the village<FONT color=#a82424>Village head</FONT>。<FONT color=#a82424>Village head</FONT>Should<FONT color=#a82424>Grave</FONT>Of<FONT color=#a82424>Minotaur</FONT><FONT color=#a82424>Dion Lake</FONT>Non-、Very……Understand。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-4" image="QW_2.dds" itemindex="">
+      <talk_question mid="131"><![CDATA[<html>$Guard Timothy$<BR>You……Been to the village the right？<BR>Must、Must go at once<FONT color=#a82424>Ancient temple ruins</FONT>。What are you still here dillydally！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-5" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-5-a" mid="159"><![CDATA[<html>I will find a wire basket。</html>]]></talk_answer>
+      <talk_question mid="158"><![CDATA[<html>$Harold village${action:Talk}<BR>Only the<FONT color=#a82424>Lo Ribbon gone？</FONT>Eh-hem, Eh-hem，Is？No。Ah，How can it be，This can be worse。Monster wire basket they make……Eh-hem, Eh-hem。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-5-a" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-5-!next" mid="161"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="160"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-5" image="QN_Guard_Timose.dds" itemindex="">
+      <talk_question mid="167"><![CDATA[<html>$Self-defense, head of Steve$<BR>I am very worried about Timothy。He usually very shy，However, after taking silk in the basket，He has risked their lives to want to save her。I hope he can take care of his body……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-5" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="168"><![CDATA[<html>$Diana senior archer$<BR>Only the basket wire was taken away？Poor basket Wire……Please go and tell the village chief。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-5" image="QN_Elder_Harold.dds" itemindex="">
+      <talk_question mid="169"><![CDATA[<html>$Guard Timothy$<BR>I first went to<FONT color=#a82424>Grave</FONT>……You go to see the village<FONT color=#a82424>Village head</FONT>。<FONT color=#a82424>Village head</FONT>Should<FONT color=#a82424>Grave</FONT>Of<FONT color=#a82424>Minotaur</FONT><FONT color=#a82424>Dion Lake</FONT>Non-、Very……Understand。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="delquestitem" num="-1">300058</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>감옥에 갇힌 마을사람 프랍 클릭하면 스텝/저널 변경 4->5</comment>
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300009</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">42,,,,</exe>
+         <exe type="complete">4</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="1" npc="n004_guard_steave" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n005_archer_master_diana" sub="b" />
+   <exelink qstep="2" npc="n005_archer_master_diana" sub="c" />
+   <exelink qstep="2" npc="n005_archer_master_diana" sub="d" />
+   <exelink qstep="2" npc="n005_archer_master_diana" sub="_skill_trade_1">0,1,2</exelink>
+   <exelink qstep="4" npc="n131_guard_timose" sub="b" />
+   <exelink qstep="4" npc="n131_guard_timose" sub="c" />
+   <exelink qstep="4" npc="n131_guard_timose" sub="d">0,1,2</exelink>
+   <exelink qstep="5" npc="n001_elder_harold" sub="a">0</exelink>
+   <exelink qstep="5" npc="n001_elder_harold" sub="!next">1</exelink>
+   <journal_data recompense="42" quest_title="붉은 인장Ⅰ" chapterid="1" quest_level="3" quest_mark_type="7" use_item_list="300058">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>자경단장 스티브</start_npc>
+         <desc_location>고대의 신전 유적지</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>가드 티모시</complete_npc>
+         <get_item>검은 문장 파편</get_item>
+         <get_itemindex>9</get_itemindex>
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[Steve dialogue with the guards]]></title>
+         <contents mid="39"><![CDATA[<html>Timothy guards help in the completion of the map。To <FONT color=#a82424>Map</FONT>To Pourailly town<FONT color=#a82424>Self-defense, head of Steve</FONT>。<BR><BR><FONT color=#086171>Pourailly town </FONT><FONT color=#a82424>→ Self-defense, head of Steve</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[Steve dialogue with the guards]]></destination>
+         <todo_msg mid="41"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Diana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-964,1546</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>5</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>고대의 신전 유적지</get_location>
+         <start_npc>가드 티모시</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>자경단장 스티브</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Diana dialogue and advanced archers]]></title>
+         <contents mid="43"><![CDATA[<html>Steve advised me in the head in self-defense to the ruins of ancient temples before，Go to meet<FONT color=#a82424>Diana senior archer</FONT>。<BR>And<FONT color=#a82424>Diana senior archer</FONT>Dialogue。<BR><BR><FONT color=#086171>Pourailly town</FONT> <FONT color=#a82424>→ Diana senior archer</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Diana dialogue and advanced archers]]></destination>
+         <todo_msg mid="45"><![CDATA[Please dialogue with senior archers Diana]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Guard_Timose.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>58,430,924</destination_pos>
+         <destination_mode>custom:56@1,57@1,58@1</destination_mode>
+         <statemark_npcid>131</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>자경단장 스티브</start_npc>
+         <desc_location>고대의 신전 유적지</desc_location>
+         <step_action>심볼 아이템 수집</step_action>
+         <complete_npc>붉은 인장 입수 시</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item>붉은 인장 1(입수 시, 붉은 인장 파편(id:9) 삭제)</collect_item>
+         <collect_itemindex>10</collect_itemindex>
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[And the ancient temple ruins of the guard Timothy dialogue]]></title>
+         <contents mid="47"><![CDATA[<html>Go<FONT color=#a82424>Ancient temple ruins</FONT>Found<FONT color=#a82424>Guard Timothy</FONT>，And its dialogue。<BR><BR><FONT color=#086171>Wind forest(Forest Temple entrance of wind) → Ancient temple ruins </FONT><FONT color=#a82424>→ Guard Timothy</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Remains of the ancient temple guards Timothy Dialogue]]></destination>
+         <todo_msg mid="49"><![CDATA[Ancient temple ruins in the forest looking for wind guard Timothy bar。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Elder_Harold.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-1390,-629</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>고대의 신전 유적지</get_location>
+         <start_npc>가드 티모시</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>촌장 해롤드</complete_npc>
+         <get_item>붉은 인장 파편</get_item>
+         <get_itemindex>300009</get_itemindex>
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="163"><![CDATA[And the village chief Harold dialogue]]></title>
+         <contents mid="164"><![CDATA[<html><FONT color=#a82424>Timothy</FONT>Say<FONT color=#a82424>Wire basket</FONT>Seems to have been taken to the grave。And the village chief Harold dialogue，And conveyed the message。<BR><BR><FONT color=#086171>Pourailly town</FONT> <FONT color=#a82424>→ Harold village</FONT></html>]]></contents>
+         <destination mid="165"><![CDATA[And the village chief Harold dialogue]]></destination>
+         <todo_msg mid="166"><![CDATA[Please return to Pourailly town，And the village chief Harold dialogue。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>2</user_class>
+      <prev_quest>2</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

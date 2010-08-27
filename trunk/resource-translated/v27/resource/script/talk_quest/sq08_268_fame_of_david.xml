@@ -1,0 +1,829 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_268_fame_of_david</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>268</qid>
+      <designer>김인정</designer>
+      <qlevel>22</qlevel>
+      <qdesc>아르젠타에게 의뢰 수락
+수정개울에서 데이비드와 대화
+캐더락관문 데커드, 메이, 티아나와 대화.
+수정개울에서 데이비드와 대화
+수정개울에서 퍼거스와 대화
+다크스프림 퇴치
+퍼거스와 대화
+데이비드와 대화
+아르젠타에게 보고. 보상.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[King&#39;s assessment of bragging]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>202</npcid>
+         <npcename>n202_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드(수정개울)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>23</npcid>
+         <npcename>n023_ranger_fugus</npcename>
+         <npckname>정찰병 퍼거스     (수정개울)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이   (캐더락 잡화상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나 (캐더락 소서리 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Kraft adventurer David$<BR>Ha ha ha。 Now look at my reputation as a supreme right?<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>How like a woman swordsman Seniors?How&#39;re you?<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Scout Fugu Si$<BR>Hush... Should always be vigilant。<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Merchant Mee$<BR>Ah?What events to find me?<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Senior magician Tina$<BR>Impress your words，I get out of the way fast to。<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-clevel" mid="11"><![CDATA[<html>（Get in a word）</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Algerita$<BR><FONT color=#7e12d2>(Algerita expression seems to still unhappy than usual。</FONT><BR>
+<FONT color=#7e12d2>It looks like a very unhappy)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-a" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Algerita$<BR>You，Do not do a lot of you?Deal with this right。<BR><FONT color=#7e12d2>（This is required to complete the main line and sub-tasks more，Tasks before）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-b" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-c" mid="14"><![CDATA[<html>Ah... David is right?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Algerita$<BR>You ah，Just are waiting for you。<BR>Recently that hanging around in the surrounding<FONT color=#a82424>Rookie</FONT>，That the Servant is not it bring you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-c" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-d" mid="16"><![CDATA[<html>Uh！This，A bit...！！</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Algerita$<BR>How can I know the name of ah? Always spoke the words of people do not understand，Also blind sloshing around，The capture and eat him like a，But fear is not that good on Renxia the。 …Why?How does he eat altogether?This quiet。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-e" mid="18"><![CDATA[<html>I do not know where oh。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Algerita$<BR>Anyway，Sloshing everywhere, regardless of its timing，Can really make people hate ah，You look back the past to resolve it properly。<BR>The trouble should end it Well。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-e" image="QW_CristalStream.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-f" mid="20"><![CDATA[<html>Crystal Valley...?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Algerita$<BR>Is，I taught you should not a?<BR>…He is not just another gave him and walked Well，Footsteps<FONT color=#a82424>Crystal Valley</FONT>Direction stopped the，Well there will certainly。Not for me to see。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-f" image="QW_CristalStream.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-g" mid="22"><![CDATA[<html>Anyway, I went to Crystal Valley to see it。</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Algerita$<BR>Sure to complete it?<BR>Really，Enough to make you a man I&#39;m sick of，You with this tail。Not quick for me to solve the！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-acceptted" mid="24"><![CDATA[<html><FONT color=#086171>(Given the task of)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$King&#39;s assessment of bragging$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QW_CristalStream.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Algerita$<BR>You can really talkative<FONT color=#382000>{user_nick}</FONT>Slave ah?<BR>Still not Go <FONT color=#a82424>Crystal Valley</FONT>Give me a good lesson about that guy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Scout Fugu Si$<BR>Had heard<FONT color=#a82424>David</FONT>Adults with extraordinary skill。Seems to be more severe than the rumors of it。I have something for me just …Are considering entrusting<FONT color=#a82424>David</FONT>Adults do， Haha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-a" mid="28"><![CDATA[<html>（Whether he，First thing that Algerita）</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Kraft adventurer David${action:talk}<BR>Oh~Who is that? Not exactly<FONT color=#a82424>The great adventurer David</FONT> Adults and most faithful followers<FONT color=#382000>{user_nick}</FONT>You? Ha ha ha。 Nice to meet you, ah！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-b" mid="30"><![CDATA[<html>…Not，She is to make you disappear quickly。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Kraft adventurer David$<BR><FONT color=#a82424>Algerita</FONT>Miss finally paying attention to me<FONT color=#a82424>David</FONT>Adults the right ！ Oh…Although later than expected number of，However, such a temperament like ladies should be reserved only cute thing in a bit，Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-c" mid="32"><![CDATA[<html>Uh……(Love fantasy is a disease)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Kraft adventurer David$<BR>Click one&#39;s tongue，You really tender ah， <FONT color=#382000>{user_nick}</FONT>！ All the time but also as<FONT color=#a82424>Rookie</FONT>Looks like you，Ha ha ha。I can know！！ <FONT color=#a82424>Algerita</FONT>Miss shy hidden behind<FONT color=#a82424>Weak、Kind-hearted、Intense love</FONT>！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-c" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-d" mid="34"><![CDATA[<html>（David has deep mire of utopian）</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Kraft adventurer David$<BR>Ha ha ha。How can you know Miss Gao Aodi the kind of love the wonderful complexity of emotional expression? I envy you<FONT color=#a82424>Great love</FONT>Dry themselves as inferior！ Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-d" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-e" mid="36"><![CDATA[<html>Why do I have to do ah?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Kraft adventurer David$<BR>Good！！Take advantage of this opportunity，Also clearly tell you！ No matter how you are newbie，Always know Katandra crossing<FONT color=#a82424>Company president Dai Kade adventurer</FONT>It? Go there to confirm my name became widely known reputation for it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-e" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-f" mid="38"><![CDATA[<html>（Although a little trouble，Not the last trip to see it anyway?）</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Kraft adventurer David$<BR>Ha ha ha。 Then you will not be too sure as they are now look down upon me。Miss before the Algerita before I would like to praise it? Oh…Ah，Still not Go！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-f" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Kraft adventurer David${action:talk}<BR>Do not forget！！ Points in the Kedella famous adventurer, president of the public！！ <FONT color=#a82424>Company president Dai Kade adventurer</FONT>！I am not easily comparable with others~！！ Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="167"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>How like a woman swordsman Seniors? Well-off?<BR><FONT color=#7e12d2>（To go to David Crystal Valley）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="168"><![CDATA[<html>$Merchant Mee$<BR>Ah? What events come to me right?<BR><FONT color=#7e12d2>（To go to David Crystal Valley）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="169"><![CDATA[<html>$Senior magician Tina$<BR>No words，Give me flash to one side。<BR><FONT color=#7e12d2>（To go to David Crystal Valley）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-2" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Kraft adventurer David$<BR>Do not forget！！ Points in the Kedella famous adventurer, president of the public！！ <FONT color=#a82424>Company president Dai Kade adventurer</FONT>！I am not easily comparable with others~！！ Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="43"><![CDATA[<html>By his own words, is it a great adventurer。</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>I thought to ask what happens... Who? <FONT color=#a82424>David</FONT>?<BR>David... Ah，On that person ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="45"><![CDATA[<html>A good evaluation?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Ah? Yes ah，This is not quite sure about it。But he is apparently not what the problem elements，His evaluation did not seem bad。Implying it was a good adventurer。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-c" mid="47"><![CDATA[<html>…Well surprised。</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Why this surprised expression on ah? Ha ha。 The commission accepted too well done，Village residents, but also often given charge of those little things。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-c" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Does not believe，May wish to listen to us directly how to say。I heard he just recently completed well<FONT color=#a82424>Consumables business Mee</FONT>Miss something commissioned，Her right to ask the next。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Everyone seems you are very concerned about the assessment of David，Listen<FONT color=#a82424>Consumables business Mee</FONT>Miss is how to say it 。The best way is to directly listen to the views of those who commissioned the things。Ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="51"><![CDATA[<html>Do you really helped?</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Consumables business Mee$<BR>Ah? <FONT color=#a82424>David</FONT> Eh? Ah~ Certainly know friends！！<BR>
+Yesterday, the store also helped me a do~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-b" mid="53"><![CDATA[<html>...So that。（Oh accident）</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Consumables business Mee$<BR>Day，It&#39;s incredible~Could it be that I commissioned adventurers do things，If he did not run，I can give you return?Certainly~I will give good returns in the Well~！！ Ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-c" mid="55"><![CDATA[<html>Not that popular it seems。</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Consumables business Mee$<BR>Particularly~Last time I let him bring a<FONT color=#a82424>Hound</FONT>，Really is a clean and elegant to bring it，Ha ha。 Although the whole body is<FONT color=#a82424>Spiderweb</FONT>The winding…But I heard it in<FONT color=#a82424>Holy Paradise</FONT>It is<FONT color=#a82424>Popular</FONT>A method to do the dog&#39;s bath?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-d" mid="57"><![CDATA[<html>…An adventurer with him，Might as well say he is a boy then。</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Consumables business Mee$<BR>Also，He will do very<FONT color=#a82424>Bouquet</FONT> ，Also…I picked up fruit trees to help，Ah... Also... Ah...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-d" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$Consumables business Mee${action:talk}<BR>Anyway~Is a very nice person then，Ha ha。Because <FONT color=#a82424>Senior magician Tina</FONT>Is need for help，I also introduced him to her。You may also wish to<FONT color=#a82424>Tina</FONT>Some inquiries to see if it ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Consumables business Mee$<BR>Like<FONT color=#a82424>Senior magician Tina</FONT>Also commissioned<FONT color=#a82424>David</FONT>Work of it。If you still doubt the words of David，May also wish to listen to the views of Tina?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4" image="QS_Default.dds" itemindex="300064">
+      <talk_answer link_index="n035_soceress_master_tiana-4-a" mid="61"><![CDATA[<html>Understanding of knowledge Daoshi...</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Senior magician Tina$<BR>Ah。Originally helped me get over<FONT color=#a82424>Pure white Baozhu</FONT>The adventurer ah? But why you ask<FONT color=#a82424>David</FONT>A thing? You both know?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-a" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-b" mid="63"><![CDATA[<html>True…Surprisingly, ah...</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Senior magician Tina$<BR>Eh?Guy，<FONT color=#2b2723>It looks like glib，But the fact is good people oh。If not<FONT color=#a82424>Mee</FONT>Miss me if introduced，I would not have entrusted to him... Make do it fairly。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-b" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-c" mid="65"><![CDATA[<html>Not，Only... （Really surprise...）</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Senior magician Tina$<BR>Ah that cast doubt on how the expression?Is，He did not even told you the money you borrow?<BR>Anyway~I do not know what you want to hear in the end，One thing he commissioned me to do the Not bad。Is the name<FONT color=#a82424>David</FONT>Guy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-c" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-d" mid="67"><![CDATA[<html>（Or with him is a adventurer，Might as well say he is a boy then。）</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Senior magician Tina$<BR>Rights to water the rice fields、Weed Rights、Drying herbs Rights、Sub-three packaging Rights... Or do very careful?Guy。<BR>But do have good food。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-d" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-e" mid="69"><![CDATA[<html>Not，Not like。</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Senior magician Tina$<BR>Actually use the distribution of blue-veined cheese odor，With the rotting radish also made good before cooking。Well still pretty good。<BR>How the?You have entrusted him with the things you ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-e" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Senior magician Tina$<BR>Ah... Boring guy，Nothing else it?Busy then you go 。<BR><FONT color=#7e12d2>（To return to Crystal Valley, where David）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-5" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>David&#39;s assessment of the kind of understanding of how? …How is that suspicious face ah， Haha。<BR><FONT color=#7e12d2>（To return to Crystal Valley, where David and his dialogue）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Consumables business Mee$<BR>David is a good adventurer do。I want to shop hire him as our special boy then? Ha ha。<BR><FONT color=#7e12d2>（To return to Crystal Valley, where David and his dialogue）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$Senior magician Tina$<BR>In the end he asked David why things related to ah? You are a boring guy。<BR><FONT color=#7e12d2>（To return to Crystal Valley, where David and his dialogue）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-5" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-5-a" mid="75"><![CDATA[<html>Ah，Seems to be pretty good people than ever imagined it。</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Kraft adventurer David$<BR>How 样? Read all about my evaluation of the Bar? Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-5-a" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-5-b" mid="77"><![CDATA[<html>（David even more swollen with arrogance up）</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Kraft adventurer David${action:talk}<BR>Now know it?！ Ha ha ha。I finally was great to see a bar，I can forgive you specifically！ Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-5-b" image="QN_ranger_fugus.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-6" mid="79"><![CDATA[<html>Not，I do not feel anything special about the ah...</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Kraft adventurer David$<BR>I also, and next to<FONT color=#a82424>Scout Fugu Si</FONT>For I had a great great dialogue，Ha ha ha。 Want to hear how the evaluation of Fugu Si scout skill of you I? Oh…Ah，I will specifically allow you to get advice！ Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-6" image="QN_ranger_fugus.dds" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$Kraft adventurer David$<BR>Oh…I too have played a，Ha ha ha。 To listen<FONT color=#a82424>Scout Fugu Si</FONT>How that，You know I can be more clearly how great a person ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-6" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-6-a" mid="83"><![CDATA[<html>Ah，Ah... I would like to know that the person named David...</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Scout Fugu Si$<BR>Ah，<FONT color=#382000>{user_class}</FONT> <FONT color=#382000>{user_nick}</FONT> Adults ah。Points for your help and efforts often Kedella，I once again thank ah。Thanks to You，We scout much easier than before。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-6-a" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-6-b" mid="85"><![CDATA[<html>So that...</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Scout Fugu Si$<BR>About adventurer <FONT color=#a82424>David</FONT>I have heard rumors。Since I have been sticking side of the crystal grain，So do not know，But the village people&#39;s appraisal of him seems pretty nice。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-6-b" image="QW_25.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-6-c" mid="87"><![CDATA[<html>…How to say his own?</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Scout Fugu Si$<BR>So I commissioned one thing to him。That is eliminated<FONT color=#a82424>Sacred Center</FONT>Ri<FONT color=#a82424>Shadow</FONT>，He has a good reputation to the kind of adventurer, then it should be able to do very well?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-6-c" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-6-d" mid="89"><![CDATA[<html>（Yo bad premonition）</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Scout Fugu Si$<BR>He said such a degree that is really easy thing，Haha。I also rest assured that。However, he said that alone, a little action，It would not hurt one to help him deal with some<FONT color=#a82424>Chores</FONT>…If the words of your convenience，On<FONT color=#a82424>As to pass the time</FONT>How to follow him in the past?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-6-d" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="90"><![CDATA[<html>$Scout Fugu Si$<BR>Ah，Just<FONT color=#a82424>David</FONT>Adults also revealed a smile of it， Haha。Appears with<FONT color=#382000>{user_nick}</FONT>You are pretty happy with it over the past。Would like to start it immediately?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-7" image="QW_25.dds" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$Scout Fugu Si$<BR>Since<FONT color=#a82424>David</FONT>Adults to eliminate <FONT color=#a82424>Sacred Center</FONT>The Shadow... You do not go and look busy? So do not just decide... To and<FONT color=#a82424>David</FONT>Adults check it out 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-7" image="QW_25.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-7-a" mid="94"><![CDATA[<html>Not，Or are you a person in the past it。</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Kraft adventurer David${action:talk}<BR>Oh…Now intend to<FONT color=#a82424>Sacred Center</FONT>Then。I can<FONT color=#a82424>Specialized</FONT>Take you past the，Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-7-a" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-7-b" mid="96"><![CDATA[<html>Ah，So you do not have to last a person a right。</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Kraft adventurer David$<BR>This，What is this nonsense！If I go alone，What if<FONT color=#a82424>Shadow Necro</FONT>Injured，Implying also let you see me in the side of the joke not a！ Me…I am not<FONT color=#a82424>Afraid of those shadows only take you past Necro</FONT>！！！Can not get me wrong ah！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-7-b" image="QW_25.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-7-c" mid="171"><![CDATA[<html>Hey。（I used to have to ah?）</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Kraft adventurer David$<BR>You are not friendly to this guy！！Do not you also let us who is looking forward to scout Fugu Si disappointed me?！Quickly went to<FONT color=#a82424>Sacred Center</FONT>It！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-7-c" image="QW_25.dds" itemindex="">
+      <talk_question mid="172"><![CDATA[<html>$Kraft adventurer David$<BR>Ha ha ha。<BR>……I will<FONT color=#a82424>Followed in the past</FONT>Of，You can count on it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-8" image="QW_25.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-8-a" mid="173"><![CDATA[<html>Hey。（Ah I do not yet！）</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Kraft adventurer David$<BR>I&#39;m not ready。You Daoshi first<FONT color=#a82424>Sacred Center</FONT>To eliminate<FONT color=#a82424>Shadow Necro</FONT>See…See ah！！I would like a comet across the general，Blink of an eye can eliminate them！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-8-a" image="QW_25.dds" itemindex="">
+      <talk_question mid="174"><![CDATA[<html>$Kraft adventurer David$<BR>I have a say in the past，You are moving away tears, ah？Ha ha ha。Approaching<FONT color=#a82424>Sacred Center</FONT>Go。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-9" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-9-a" mid="102"><![CDATA[<html>Ah? That are in bragging！！</html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$Scout Fugu Si$<BR>Just<FONT color=#a82424>David</FONT>Adults learned，Shadow had been eliminated? Haha。David adults the extraordinary skill ah。Hear <FONT color=#382000>{user_nick}</FONT>You afraid of shaking，Are faint... Well, right now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-9-a" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-9-b" mid="104"><![CDATA[<html>（Aggrieved the！！Eliminate them is that I ah！！）</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Scout Fugu Si$<BR>Ha ha ha，No need to shy。Haha，Even a great adventurers of the time to be afraid of fear Well。It does not matter~But the only constant is<FONT color=#382000>{user_nick}</FONT>Adults no doubt Kedella heroes。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-9-b" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="105"><![CDATA[<html>$Scout Fugu Si$<BR>Have cried out wow，Afraid to do so? Haha。 <FONT color=#a82424>David</FONT>Adults Daoshi very worried<FONT color=#382000>{user_nick}</FONT>Your，Anyway, back like security …But<FONT color=#a82424>David</FONT>Adults can be really powerful ah~I really admire~！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-9" image="QN_ranger_fugus.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-9-a" mid="107"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$Kraft adventurer David$<BR>Ha ha ha。Whereabouts <FONT color=#a82424>Scout Fugu Si</FONT>Sure ah。<BR>
+You&#39;re that guy one step too late slightly！ Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-9-a" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-9-b" mid="109"><![CDATA[<html>I do things，How he would...?</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Kraft adventurer David$<BR>No matter how you complain about with eyes to see that I have no use！ This is <FONT color=#a82424>War</FONT>... Yes！The most important thing as risk-takers<FONT color=#a82424>Public point</FONT>！Reputation！Ha ha ha…I can not lose I do not know the guy herein mysterious！ Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-9-b" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-9-c" mid="111"><![CDATA[<html>Who loses in the end ah who do not lose?</html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$Kraft adventurer David${action:talk}<BR>This is called<FONT color=#a82424>Mantis cicada，Oriole in the post</FONT> ！ Ha ha ha。With this<FONT color=#a82424>Easy to understand</FONT>The method does not know the guy，Also pretending that they are risk-takers in that everywhere Xianbai，I say you what no language，Oh。I will not lose to rookie！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-9-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-9-d" mid="113"><![CDATA[<html>Then you talk to Algerita theory ah，Why me...</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Kraft adventurer David$<BR>Had the temerity to me<FONT color=#a82424>Algerita</FONT>Miss disappeared around，I will let you pay the price！ Ha ha ha，Let&#39;s wait and see~！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-9-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="114"><![CDATA[<html>$Kraft adventurer David$<BR>Ha ha ha。 I hope you can give me that beautiful women<FONT color=#a82424>Algerita</FONT>Greetings soon as。So I<FONT color=#a82424>David</FONT>Adult breath you this<FONT color=#382000>{user_nick}</FONT>Rookie resolved after completing，In person to see her again~ Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-10" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="115"><![CDATA[<html>$Kraft adventurer David$<BR>Ha ha ha。 I hope you can give me that beautiful women<FONT color=#a82424>Algerita</FONT>Greetings soon as。So I<FONT color=#a82424>David</FONT>Adult breath you this<FONT color=#382000>{user_nick}</FONT>Rookie resolved after completing，In person to see her again~ Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10" image="QW_25.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-a" mid="117"><![CDATA[<html>（Explain the situation）</html>]]></talk_answer>
+      <talk_question mid="116"><![CDATA[<html>$Algerita$<BR>Laila，Rookie。Hear from<FONT color=#a82424>Crystal Valley</FONT>The direction of sounds of your footsteps，I reckon you should to。<BR>How friends? Do you，Has been deceived into<FONT color=#a82424>Sacred Center</FONT>After<FONT color=#a82424>Alone</FONT>Back?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-a" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-b" mid="119"><![CDATA[<html>Ah, is not deceived…Not，Are they really cheated...</html>]]></talk_answer>
+      <talk_question mid="118"><![CDATA[<html>$Algerita$<BR>This is how the world is a group of<FONT color=#a82424>Fool</FONT> Ah? Rookie like you<FONT color=#a82424>Fool</FONT>，Dai also told that…What&#39;s strange<FONT color=#a82424>Fool</FONT>。However, these<FONT color=#a82424>Fool</FONT>Which you should be the most stupid<FONT color=#a82424>Fool</FONT>Rights。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-b" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-c" mid="121"><![CDATA[<html>（Really Aggrieved the...）</html>]]></talk_answer>
+      <talk_question mid="120"><![CDATA[<html>$Algerita$<BR>That being the case，There is no way the。Anyway, must go<FONT color=#a82424>Holy Paradise</FONT>The，It would filter out the kind of fool。<BR>This is not good you do things that cause the slave。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-d" mid="123"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-d" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="124"><![CDATA[<html>$Algerita$<BR>You&#39;re constantly trouble ah，I&#39;m terribly tired of the，I always worried about? So，Before you go <FONT color=#a82424>Holy Paradise</FONT>Before，Have 找找<FONT color=#a82424>New slaves</FONT>The。But before，Have to take orders from me to obediently is。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 267 ) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 217 ) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="conexe" true="3" false="2">1</exe>
+         <exe type="talk" npc="n164_argenta_wounded">a</exe>
+         <exe type="talk" npc="n164_argenta_wounded">b</exe>
+         <exe type="setquest">268</exe>
+         <exe type="recompense_view">,2681,2682,2683,2684</exe>
+         <exe type="talk" npc="n164_argenta_wounded">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">8</exe>
+         <exe type="setjornal">8</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="5,3,4">712</exe>
+         <exe type="setstep">9</exe>
+         <exe type="setjornal">9</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200712</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 712);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="8">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="9">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">10</exe>
+         <exe type="setjornal">10</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="10">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2681,2682,2683,2684</exe>
+         <exe type="complete">268</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="clevel">0</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="g">5</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="acceptted">4,6</exelink>
+   <exelink qstep="1" npc="n202_slave_david" sub="b" />
+   <exelink qstep="1" npc="n202_slave_david" sub="c" />
+   <exelink qstep="1" npc="n202_slave_david" sub="d" />
+   <exelink qstep="1" npc="n202_slave_david" sub="e" />
+   <exelink qstep="1" npc="n202_slave_david" sub="f">0,1</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="c">0,1</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="b" />
+   <exelink qstep="3" npc="n026_trader_may" sub="c" />
+   <exelink qstep="3" npc="n026_trader_may" sub="d">0,1</exelink>
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="c" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="d" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="e">0,1</exelink>
+   <exelink qstep="5" npc="n202_slave_david" sub="b" />
+   <exelink qstep="5" npc="n202_slave_david" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n023_ranger_fugus" sub="b" />
+   <exelink qstep="6" npc="n023_ranger_fugus" sub="c" />
+   <exelink qstep="6" npc="n023_ranger_fugus" sub="d">0,1</exelink>
+   <exelink qstep="7" npc="n202_slave_david" sub="b" />
+   <exelink qstep="7" npc="n202_slave_david" sub="c">2,6,0,1</exelink>
+   <exelink qstep="9" npc="n023_ranger_fugus" sub="b" />
+   <exelink qstep="9" npc="n202_slave_david" sub="b" />
+   <exelink qstep="9" npc="n202_slave_david" sub="c" />
+   <exelink qstep="9" npc="n202_slave_david" sub="d">0,1</exelink>
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="c">0</exelink>
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="d">1</exelink>
+   <journal_data recompense="1:2681,2:2682,3:2683,4:2684" quest_title="허풍선이의 평판" chapterid="" quest_level="22" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_CristalStream.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n202</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>202</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="127"><![CDATA[Algerita worries]]></title>
+         <contents mid="128"><![CDATA[<html><FONT color=#a82424>Algerita</FONT>Seems to result in swinging around the<FONT color=#a82424>David</FONT> Very bad mood。To<FONT color=#a82424>Crystal Valley</FONT>Let the dialogue with David。<BR>
+ <BR>
+<FONT color=#086171>Crystal Valley</FONT> <FONT color=#a82424>→ David</FONT></html>]]></contents>
+         <destination mid="129"><![CDATA[Dialogue with the crystal grain of David]]></destination>
+         <todo_msg mid="130"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="131"><![CDATA[Show off David&#39;s reputation I]]></title>
+         <contents mid="132"><![CDATA[<html><FONT color=#a82424>David</FONT>Let me to Kedella crossing<FONT color=#a82424>Company president Dai Kade adventurer</FONT>Investigation on his assessment of where。In order for him to seriously face the reality，Although some problems，However, it is the last trip。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Company president Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="133"><![CDATA[Points of the Dai Kade dialogue with Kedella]]></destination>
+         <todo_msg mid="134"><![CDATA[Please Society of Dai Kade dialogue and adventurers。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-4179,2192</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="135"><![CDATA[Show off David&#39;s reputation II]]></title>
+         <contents mid="136"><![CDATA[<html>Dai Kade David evaluation of the relevant proposed，Best to ask people directly commissioned his work。Listen to a<FONT color=#a82424>Consumables business Mee</FONT>His evaluation of it。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Consumables business Mee</FONT></html>]]></contents>
+         <destination mid="137"><![CDATA[Mee dialogue with Kedella checkpoints]]></destination>
+         <todo_msg mid="138"><![CDATA[Let the dialogue with the consumables business Mee。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2265,1121</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="139"><![CDATA[Show off David&#39;s reputation III]]></title>
+         <contents mid="140"><![CDATA[<html>David&#39;s assessment seems on a good surprise。However, the content of their commission，Instead of adventurers do，Better say that ordinary folks do。Anyway, if according to Mee，Go<FONT color=#a82424>Senior magician Tina</FONT>Finally, look at it。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior magician Tina</FONT></html>]]></contents>
+         <destination mid="141"><![CDATA[And Kedella checkpoints Tina dialogue]]></destination>
+         <todo_msg mid="142"><![CDATA[Dialogue with senior magician Tina Bar。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n202</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>202</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="143"><![CDATA[Show off David&#39;s reputation IV]]></title>
+         <contents mid="144"><![CDATA[<html>Has now been fully briefed on the<FONT color=#a82424>David</FONT>Evaluation。On the back<FONT color=#a82424>Crystal Valley</FONT>David right there。<BR>
+ <BR>
+<FONT color=#086171>Crystal Valley</FONT> <FONT color=#a82424>→ David</FONT></html>]]></contents>
+         <destination mid="145"><![CDATA[Dialogue with the crystal grain of David]]></destination>
+         <todo_msg mid="146"><![CDATA[David and Crystal Valley Report it。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_ranger_fugus.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n23</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>23</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="147"><![CDATA[Show off David&#39;s reputation V]]></title>
+         <contents mid="148"><![CDATA[<html>David also seems popular in this period<FONT color=#a82424>Scout Fugu Si</FONT>Of love。Although some trouble in the past and<FONT color=#a82424>Fugu Si</FONT>Dialogue to see if it。<BR>
+ <BR>
+<FONT color=#086171>Crystal Valley</FONT> <FONT color=#a82424>→ Scout Fugu Si</FONT></html>]]></contents>
+         <destination mid="149"><![CDATA[And scout Fugu Si dialogue]]></destination>
+         <todo_msg mid="150"><![CDATA[And Crystal Valley Scout Fugu Si dialog and。]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n202</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>202</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="151"><![CDATA[David rhetoric]]></title>
+         <contents mid="152"><![CDATA[<html>Fugu Si according to scout the words，<FONT color=#a82424>David</FONT>Decision without authorization to take me to<FONT color=#a82424>Sacred Center</FONT>。David went to check it out。<BR>
+ <BR>
+<FONT color=#086171>Crystal Valley</FONT> <FONT color=#a82424>→ David</FONT></html>]]></contents>
+         <destination mid="153"><![CDATA[Dialogue with the crystal grain of David]]></destination>
+         <todo_msg mid="154"><![CDATA[David Crystal Valley with the situation it confirmed。]]></todo_msg>
+      </journal>
+      <journal index="8">
+         <title_image />
+         <contents_image>QW_25.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>254,0,0</destination_pos>
+         <destination_mode>custom:251@1,252@1,253@1,254@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="155"><![CDATA[Suspicious departure]]></title>
+         <contents mid="156"><![CDATA[<html>Have to<FONT color=#a82424>Sanctuary</FONT><FONT color=#a82424>Center</FONT>To destroy the<FONT color=#a82424>Shadow</FONT><FONT color=#a82424>Necro</FONT>。Although David will be coming soon with，But still do not expect to do better。<BR><BR><FONT color=#086171>Gray ruins(The Sacred invasion of entry)</FONT> <FONT color=#a82424>→ Sacred Center</FONT></html>]]></contents>
+         <destination mid="157"><![CDATA[Necro Shadow elimination]]></destination>
+         <todo_msg mid="158"><![CDATA[Sacred Center Shadow Necro eliminate it。]]></todo_msg>
+      </journal>
+      <journal index="9">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n202</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>202</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="159"><![CDATA[David despicable]]></title>
+         <contents mid="160"><![CDATA[<html>Sacred Center is to come or not come the end of David。Back<FONT color=#a82424>Crystal</FONT> <FONT color=#a82424>Valley</FONT>To<FONT color=#a82424>David</FONT>Ask what happens。<BR>
+ <BR>
+<FONT color=#086171>Crystal Valley</FONT> <FONT color=#a82424>→ David</FONT></html>]]></contents>
+         <destination mid="161"><![CDATA[Dialogue with the crystal grain of David]]></destination>
+         <todo_msg mid="162"><![CDATA[Back to the Crystal Valley and David dialog and。]]></todo_msg>
+      </journal>
+      <journal index="10">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="163"><![CDATA[One step too late！]]></title>
+         <contents mid="164"><![CDATA[<html>As David lies one step ahead to come back Bian Lege，We regarded as the brave adventurer David。Although it is unjust，But there is no way，Can only return to<FONT color=#a82424>Gray ruins</FONT>To<FONT color=#a82424>Algerita</FONT>Of reports。<BR>
+ <BR>
+<FONT color=#086171>Gray ruins</FONT> <FONT color=#a82424>→ Algerita</FONT></html>]]></contents>
+         <destination mid="165"><![CDATA[And the gray ruins of Algerita dialogue]]></destination>
+         <todo_msg mid="166"><![CDATA[To the gray ruins of Algerita reporting it。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>22:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>267</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

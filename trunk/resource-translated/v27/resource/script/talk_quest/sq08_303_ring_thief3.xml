@@ -1,0 +1,524 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_303_ring_thief3</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>303</qid>
+      <designer>김인정</designer>
+      <qlevel>14</qlevel>
+      <qdesc>안 보이는 도둑과 대화.
+상인 메이와 대화.
+습격자들의 매복지에서 코볼트 퇴치.
+메이와 대화.
+메이에게 받은 세제를 안 보이는 도둑에게 전달.
+케빈과 대화.
+끝.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Ring stolen III]]></qkname>
+      <qnpc>
+         <npcid>255</npcid>
+         <npcename>n255_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>29</npcid>
+         <npcename>n029_crew_kevin</npcename>
+         <npckname>자칭 승무원 케빈</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Kevin Crew$<BR>Do not find his father&#39;s ring? I knew nothing of the drama...<BR>
+<FONT color=#7e12d2>（Elite soldiers to go to the nearby hut, where the invisible thief）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Airship engineer Hubert$<BR>Things that catch the thief had not taken shape? Kevin the best as soon as possible to seize the treasure to find back<BR><FONT color=#7e12d2>（Elite soldiers to go to the nearby hut, where the invisible thief）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Consumables business Mee$<BR>Really do not understand why suddenly said Linda Shu blacksmith test what abuse of dogs…What happened。 <BR><FONT color=#7e12d2>（Elite soldiers to go to the nearby hut, where the invisible thief）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting" image="QS_Default.dds" itemindex="300213">
+      <talk_answer link_index="n255_invisible_thief-accepting-a" mid="11"><![CDATA[<html>Kevin grown doubled back my ring。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Invisible thief$<BR>Is to take<FONT color=#a82424>Ring</FONT>To the right? Mr. adventurer?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-b" mid="13"><![CDATA[<html>So?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Invisible thief$<BR>Feed，Well other then the reminder，Just because you break the ring I went to big losses。How clean is also indelible Damn<FONT color=#a82424>Taste</FONT>Ah how can not disappear。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-c" mid="15"><![CDATA[<html>I can not help the thief</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Invisible thief$<BR>So what so ah? Hello，I&#39;m so…Are the really good，If you help me if，From this crisis in the words of my rescue，The broken ring I immediately returned to you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-c" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n255_invisible_thief-accepting-d" mid="17"><![CDATA[<html>Ah... That，I know it it&#39;s inventor...</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Invisible thief$<BR>Who told you to steal things for me？Ha ha，I just let you help me remove this nasty taste it。I see you seem to understand the<FONT color=#a82424>The case of green liquid</FONT>The Well，<FONT color=#a82424>Ways to eliminate taste</FONT>It should also be aware of?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-e" mid="19"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Ring stolen III$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-e" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Invisible thief$<BR>Then find that <FONT color=#a82424>Inventor</FONT>Do not have to the！Anyway, if you can not provide ways to eliminate taste，You have the ring of the keep Junior。Anyway, you can not catch sight of me，As you have the? Hei hei。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Kevin Crew$<BR>Do not find his father&#39;s ring? I knew nothing of the drama...<BR>
+<FONT color=#7e12d2>（Elite soldiers to go to the nearby hut, where the invisible thief）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Consumables business Mee$<BR>Really do not understand why suddenly said Linda Shu blacksmith test what abuse of dogs…What happened。 <BR><FONT color=#7e12d2>（Elite soldiers to go to the nearby hut, where the invisible thief）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Airship engineer Hubert$<BR>Things that catch the thief had not taken shape? Kevin the best as soon as possible to seize the treasure to find back<BR><FONT color=#7e12d2>（Elite soldiers to go to the nearby hut, where the invisible thief）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-a" mid="25"><![CDATA[<html>So?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Invisible thief$<BR>Feed，Well other then the reminder，Just because you break the ring I went to big losses。How clean is also indelible Damn<FONT color=#a82424>Taste</FONT>Ah how can not disappear。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-b" mid="27"><![CDATA[<html>I can not help the thief</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Invisible thief$<BR>So what so ah? Hello，I&#39;m so…Are the really good，If you help me if，From this crisis, then grasp the rescue，The broken ring I immediately returned to you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-b" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n255_invisible_thief-1-c" mid="29"><![CDATA[<html>Ah... That，I know it it&#39;s inventor...</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Invisible thief$<BR>Who told you to steal things for me？Ha ha，I is for you to help me put this<FONT color=#a82424>Nasty taste</FONT>Eliminate it。I see you seem to understand the<FONT color=#a82424>The case of green liquid</FONT>The Well，<FONT color=#a82424>Ways to eliminate taste</FONT>It should also be aware of?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-c" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-d" mid="31"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Ring stolen III$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-d" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Invisible thief$<BR>Then find that<FONT color=#a82424>Inventor</FONT>Do not have to the！Anyway, if you can not provide ways to eliminate taste，You have the ring of the keep Junior。Anyway, you can not catch sight of me，As you have the? Hei hei。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-2" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Invisible thief$<BR>Approaching <FONT color=#a82424>To make this nasty green liquid were</FONT>There to see ah。If you provide no way to eliminate taste，I will not still ring you，Hei hei。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-a" mid="36"><![CDATA[<html>The dog&#39;s feeding...</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Consumables business Mee$<BR>Oops，Long time no see~ Adventurer adults，<BR>What you need?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-a" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n026_trader_may-2-b" mid="39"><![CDATA[<html>（Mee murmured）</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Consumables business Mee$<BR>Ah? I eliminate the smell for you? Ah... Because it is difficult to eliminate taste，I have sold bucket altogether even Uncle Hubert had it。Hey，Which stupid idiot stepped it up?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-c" mid="41"><![CDATA[<html>So hurry to do for me that lotion ah。</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Consumables business Mee$<BR>But，If necessary，I still want to be able to finish the job of，So it helps to help。Use<FONT color=#a82424>Ultra-strong lotion</FONT>Vigorous rubbing should be on it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-c" image="QW_18.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-d" mid="43"><![CDATA[<html>What to bring?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Consumables business Mee$<BR>You can help me it？Whether to<FONT color=#a82424>Attackers ambush point</FONT>Take something back?<BR>I will prepare accordingly。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-d" image="QS_Default.dds" itemindex="300129">
+      <talk_question mid="44"><![CDATA[<html>$Consumables business Mee${action:talk}<BR>Is over there<FONT color=#a82424>Attackers Goblin Archer</FONT>They held，<FONT color=#a82424>Fermented fruit trees</FONT>！Not only acidic, but also very strong aroma，With the elimination of odor problems should not。I need about five。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QW_18.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Consumables business Mee${action:talk}<BR>Is over there<FONT color=#a82424>Attackers Goblin Archer</FONT>They held，<FONT color=#a82424>Fermented fruit trees</FONT>！Not only acidic, but also very strong aroma，With the elimination of odor problems should not。I need about five。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-a" mid="47"><![CDATA[<html>Lotion to see it done quickly。</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Consumables business Mee$<BR>Oops~ Even 10 paces is the smell ah。The smell of all people drooling。How to eliminate this level have to smell it? Ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-a" image="QS_Default.dds" itemindex="300129">
+      <talk_answer link_index="n026_trader_may-4-b" mid="49"><![CDATA[<html>（Red liquid started boiling）</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Consumables business Mee$<BR>Rights to know，I also have ready，Please wait a moment。<FONT color=#7e12d2>（Mee large bowl stir in red liquid）</FONT> …Here into<FONT color=#a82424>Fermented fruit trees</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-b" image="QS_Default.dds" itemindex="300215">
+      <talk_question mid="50"><![CDATA[<html>$Consumables business Mee$<BR>Well！Well。 <FONT color=#7e12d2>（Mee has a peculiar flavor of the liquid to submit） </FONT>Call~ True累 ah！Then Farewell！Next time when to buy a thing oh ~ Ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5" image="" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Consumables business Mee$<BR>Ultra-strong lotion does not have a right to you…What happens there? What you buy?<BR><FONT color=#7e12d2>（Elite soldiers to go to the nearby hut, where the invisible thief）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5" image="QS_Default.dds" itemindex="300215">
+      <talk_answer link_index="n255_invisible_thief-5-a" mid="54"><![CDATA[<html>（Submit super-strong lotion）</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Invisible thief$<BR>Wow！What you wear a sugar-coated?Where&#39;s the flavor?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-b" mid="56"><![CDATA[<html>（Foul smell has completely disappeared）</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Invisible thief$<BR>Lotion? You sure this really can be eliminated? <FONT color=#7e12d2>（Ultra-strong lotion in mid-air suspension）</FONT> ...Oh！Ah really? Oh be amazing。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-b" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-c" mid="58"><![CDATA[<html>Daoshi the ring bad for me ah。</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Invisible thief$<BR>Yes，Okay?Ah，That being the case，I told you I am the right things。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-c" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-d" mid="60"><![CDATA[<html>Duty? Great Pirates of the blame?</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Invisible thief$<BR>Something Jia，This is not just any person can hear things， Hum。Do you know over the polygraph, and many other strange inventions tools<FONT color=#a82424>Legendary big girlfriend</FONT> <FONT color=#a82424>Duty</FONT>It?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-d" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-e" mid="62"><![CDATA[<html>（Seems quite proud of their transparent appearance）</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Invisible thief$<BR>Do not know?While the recent<FONT color=#a82424>Holy Paradise</FONT>What a man named<FONT color=#a82424>Pirates of the blame White Rose</FONT>The 挺火，But to say that is your girlfriend, then，Comes as a duty。I also like him to be the person，We choose the way your girlfriend。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-e" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-f" mid="64"><![CDATA[<html>So?</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Invisible thief$<BR>Originally it，I want to be a magician and have been for self to the。Use <FONT color=#a82424>Secret magic</FONT>Almost no men。May be because once the<FONT color=#a82424>佩奥里斯塔</FONT>Successor<FONT color=#a82424>Callaghan</FONT>That way changed their…Was a result of accidents happen。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-f" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-g" mid="66"><![CDATA[<html>（…Well for a start is a thief）</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Invisible thief$<BR>I learned some time…But no effect。In order to achieve our goals faster，I stole quietly<FONT color=#a82424>Court magician</FONT>Experiments in medicine is。Results it<FONT color=#a82424>Explosion</FONT>?！When I opened my eyes，Became transparent like this now？真~Be。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-g" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-h" mid="69"><![CDATA[<html>Ah... Anyway, back to my first ring it。</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Invisible thief$<BR>That was it，I wanted to take advantage of this feature。So I am determined to be as strange as the Pirates off-duty，Only with those<FONT color=#a82424>Crack troops</FONT>We follow<FONT color=#a82424>Airship</FONT>This…Although I did not think would crash half-way，I almost had expired the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-h" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-6" mid="71"><![CDATA[<html>（Only hear the voice of fast moving）</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Invisible thief$<BR>Ah~ It Goodbye，Mr. adventurer。 <FONT color=#7e12d2>（Not to ring，But pretending to look indifferent）</FONT> This place have nothing to steal things，I got the other place。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-6" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Invisible thief$<BR>... <FONT color=#7e12d2>（Seems to escape the，Fooled。To the airship engineer or crew Kevin Hubert check it out there）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$Airship engineer Hubert$<BR>Wow~ <FONT color=#a82424>Kevin</FONT>That boy said,，Rings have been found。You can really powerful ah。Although the thieves to escape，But since things can get back to find，Already very nice，Kevin is coming there to see it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6" image="QS_Default.dds" itemindex="300213">
+      <talk_answer link_index="n029_crew_kevin-6-a" mid="76"><![CDATA[<html>（Kevin showing off ring）</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Kevin Crew$<BR>Ah~ Adventurer adults！<BR>Ring ZDL！ You see~！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6-a" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-6-b" mid="78"><![CDATA[<html>Ah... Eh?</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Kevin Crew$<BR>Recently been installed in the plate are back。But also tied a big decorated with。Hei hei。May be because your adventurer，To reflect the way the thief。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6-b" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-6-c" mid="80"><![CDATA[<html>（Read letters）</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Kevin Crew$<BR>There is also a<FONT color=#a82424>Believe</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6-c" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-6-d" mid="82"><![CDATA[<html>（…Well nothing seems to reflect。）</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Believe$<BR><FONT color=#a82424>Ring back to you。Pirates to become as strange as the people off-duty，I want to embark on a new journey。Nothing here has had to steal。Members should alert oh life！</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6-d" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-6-e" mid="84"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6-e" image="QS_Default.dds" itemindex="300066">
+      <talk_question mid="85"><![CDATA[<html>$Kevin Crew$<BR>Now I will take good care of his father&#39;s ring。<BR>…But it seems also distributed inside the disk<FONT color=#a82424>The dog&#39;s feeding</FONT> Taste。Is it my illusion?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">303</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="recompense_view">3030,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3031,3032,3033,3034</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">444</exe>
+         <exe type="addquestitem" num="1">300129</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntitem" num="5" exe="4,5,6" onexe="">300129</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">200444</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300129</exe>
+         <exe type="addquestitem" num="1">300215</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300215</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3031,3032,3033,3034</exe>
+         <exe type="complete">303</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="d">3</exelink>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="e">0,1,2</exelink>
+   <exelink qstep="1" npc="n255_invisible_thief" sub="b" />
+   <exelink qstep="1" npc="n255_invisible_thief" sub="c">0</exelink>
+   <exelink qstep="1" npc="n255_invisible_thief" sub="d">1,2</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="b" />
+   <exelink qstep="2" npc="n026_trader_may" sub="c" />
+   <exelink qstep="2" npc="n026_trader_may" sub="d">0,2,8,7,1</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="b">0,1,2,3</exelink>
+   <exelink qstep="5" npc="n255_invisible_thief" sub="b" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="c" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="d" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="e" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="f" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="g" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="h" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="6">0,1,2</exelink>
+   <exelink qstep="6" npc="n029_crew_kevin" sub="b" />
+   <exelink qstep="6" npc="n029_crew_kevin" sub="c" />
+   <exelink qstep="6" npc="n029_crew_kevin" sub="d">0</exelink>
+   <exelink qstep="6" npc="n029_crew_kevin" sub="e">1</exelink>
+   <journal_data recompense="1:3031,2:3032,3:3033,4:3034" quest_title="반지 도둑 III" chapterid="" quest_level="14" quest_mark_type="10" use_item_list="300129,300215">
+      <journal index="1">
+         <title_image />
+         <contents_image />
+         <need_itemlist />
+         <destination_pos>8,n255</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>255</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[Invisible thief]]></title>
+         <contents mid="89"><![CDATA[<html>And elite soldiers huts at the top of the dialogue it invisible thief。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Invisible thief</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[The invisible barriers and Kedella thief dialogue]]></destination>
+         <todo_msg mid="91"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[Remove the taste of the people]]></title>
+         <contents mid="93"><![CDATA[<html>Invisible thief that，If you help him eliminate<FONT color=#a82424>The dog&#39;s feeding</FONT>If taste，Put things back to me。To<FONT color=#a82424>Consumables business Mee</FONT>Ask where the method can eliminate the taste of it。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Consumables business Mee</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[Dialogue with the consumables business Mee]]></destination>
+         <todo_msg mid="95"><![CDATA[Mee advice to the consumables business method can eliminate the taste of it。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_18.dds</contents_image>
+         <need_itemlist>300129</need_itemlist>
+         <destination_pos>139,0,0</destination_pos>
+         <destination_mode>custom:136@3,137@3,138@1,239@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="96"><![CDATA[Fermented fruit trees]]></title>
+         <contents mid="97"><![CDATA[<html>Go<FONT color=#a82424>Attackers ambush point</FONT>Eliminate the attackers Goblin Archer，Collection<FONT color=#a82424>Fermented fruit trees</FONT>。<FONT color=#7e12d2><BR></FONT><BR><FONT color=#086171>Crystal Valley(Attackers nest entrance)</FONT> <FONT color=#a82424>→ Attackers ambush point</FONT></html>]]></contents>
+         <destination mid="98"><![CDATA[Eliminate the attackers ambush points Goblin]]></destination>
+         <todo_msg mid="99"><![CDATA[Collection of attackers ambush point it fermented fruit trees。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist>300129</need_itemlist>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="100"><![CDATA[Report]]></title>
+         <contents mid="101"><![CDATA[<html>Fermented fruit trees obtained。To<FONT color=#a82424>Consumables business Mee</FONT>Report it。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Consumables business Mee</FONT></html>]]></contents>
+         <destination mid="102"><![CDATA[Dialogue with the consumables business Mee]]></destination>
+         <todo_msg mid="103"><![CDATA[Submitted to the consumables business Mee tree fruit bar fermentation。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image />
+         <need_itemlist />
+         <destination_pos>8,n255</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>255</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="104"><![CDATA[The reason the evil party]]></title>
+         <contents mid="105"><![CDATA[<html>Obtained<FONT color=#a82424>Ultra-strong lotion</FONT>。Go to the elite soldiers shed Let the invisible thief。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Invisible thief</FONT></html>]]></contents>
+         <destination mid="106"><![CDATA[Dialogue with an invisible thief]]></destination>
+         <todo_msg mid="107"><![CDATA[The ultra-powerful lotion bar to see the thief。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_crew_kevin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n29</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>29</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="108"><![CDATA[Conclusion]]></title>
+         <contents mid="109"><![CDATA[<html>Invisible thief did not steal things also come back，But disappeared。Maybe things will return directly to the owner，Whereabouts<FONT color=#a82424>Kevin Crew</FONT>Check it out。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Kevin Crew</FONT></html>]]></contents>
+         <destination mid="110"><![CDATA[Kevin dialogue with the crew]]></destination>
+         <todo_msg mid="111"><![CDATA[Kevin there to check it out crew。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>14:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>302</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

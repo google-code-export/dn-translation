@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n031_adventurer_wilber</npcename>
+      <npcid>31</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Weber adventurer Society members]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="2"><![CDATA[<html>$Weber adventurer Society members$<BR>(Injured，Face poor) <BR>Uh……Who，Who is？</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="enterquest">mq08_203_black_knight_tracking</exe>
+         <exe type="conexe" true="0" false="2">0</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">203</chk>
+      </conditions>
+   </talk>

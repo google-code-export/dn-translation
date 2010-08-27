@@ -1,0 +1,210 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_215_decisive_battle</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>215</qid>
+      <designer>김주연</designer>
+      <qlevel>20</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>216</nextqid>
+      <nextqname>mq08_216_argentas_kiss</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[Decisive battle]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="38"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Good，Have you involved，On we will be very helpful。Actually，I have guessed where pollutants were sent to the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Good，Have you involved，On we will be very helpful。Actually，I have guessed where pollutants were sent to the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="13"><![CDATA[<html><FONT face=Arial size=2>(Continue)</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Fugu Si reported，He<FONT color=#a82424>No return</FONT>When patrolling nearby，See a dark wizard dressed in red clothes，Like<FONT color=#a82424>Ai Leina</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QW_23.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>If you really see Fugu Si Ai Leina，That 埃雷娜<FONT color=#a82424>Select the location of the spread of pollutants</FONT>Certainly is no return。<BR>Where you go and stop the spread of pollutants。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QW_23.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Good，You is coming<FONT color=#a82424>No return</FONT>Go！Kedella are now facing a huge crisis！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-a" mid="16"><![CDATA[<html><FONT face=Arial size=2>(Continue)</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Ha……We airship crashed and injured because of King City, elite soldiers are put to the……Kedella in the end what would happen？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-!next" mid="18"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n024_adventurer_guildmaster_decud-1-a", npc_talk_target);</exe>
+         <exe type="setquest">215</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>300103</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4">612</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">300103</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">215</exe>
+         <exe type="recompense">,2151,2152,2153,2154</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">1,0</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b">2,0,1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="a">1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="!next">0</exelink>
+   <journal_data recompense="1:2151,2:2152,3:2153,4:2154" quest_title="Decisive battle" chapterid="3" quest_level="20" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[Society of Daika De dialogue and adventurer]]></title>
+         <contents mid="24"><![CDATA[<html>Association members of the intelligence network adventurer found<FONT color=#a82424>Pollutants are being transported to where</FONT>。And<FONT color=#a82424>Society of Dai Kade adventurer</FONT>Dialogue。<BR> <BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Society of Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[Society of Daika De dialogue and adventurer]]></destination>
+         <todo_msg mid="26"><![CDATA[Please Society of Dai Kade dialogue and adventurers。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_Ellena.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>174,0,0</destination_pos>
+         <destination_mode>custom:171@1,172@1,173@1,174@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[To the point of no return stop Ai Leina]]></title>
+         <contents mid="28"><![CDATA[<html>King City&#39;s elite troops have been sent<FONT color=#a82424>No return</FONT>Standby。To help them<FONT color=#a82424>Attempt to prevent spread of pollutants Ai Leina</FONT>。<BR><BR><FONT color=#086171>Crystal Valley(Sigh Canyon entrance)</FONT><FONT color=#a82424>→ No return</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[To the point of no return stop Ai Leina]]></destination>
+         <todo_msg mid="30"><![CDATA[To the point of no return, please stop trying to spread contaminants Ai Leina。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Society of Dai Kade to report the results adventurer]]></title>
+         <contents mid="32"><![CDATA[<html>Ai Leina the dumping of pollutants in their body，Fall of the cliff。Report to the adventurer guild Dai Kade pollutants spread to the situation Kedella。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Society of Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Society of Dai Kade to report the results adventurer]]></destination>
+         <todo_msg mid="34"><![CDATA[Please go back and report to the adventurer guild Dai Kade。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>214</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

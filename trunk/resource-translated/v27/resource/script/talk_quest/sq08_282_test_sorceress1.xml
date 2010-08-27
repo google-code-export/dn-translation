@@ -1,0 +1,487 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_282_test_sorceress1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>282</qid>
+      <designer>나은하</designer>
+      <qlevel>15</qlevel>
+      <qdesc>15레벨이 된 소서리스
+티아나와 대화로 퀘스트를 시작한다.
+
+티아나에게 말을 걸면, 마나리지의 소서리스 타라가 초급 소서리스 시험을 치기 위해서 오고 있으니, 수정개울로 마중을 가라고 한다. 티아나는 소서리스를 보고 당연히 너도 초급시험 정도는 치러겠지라고 묻는다.
+
+그러나 소서리스는 질풍노도의 유년기를 보내느라 초급시험조차 치르지 못했다.
+과거의 비행들을 떠올리며 아련한 감회에 젖는 소서리스.
+티아나는 우물쭈물하지 말고 후배 마중을 가라고 다그치고, 소서리스는 타라를 마중하러 간다.
+
+소서리스 타라는 이미 수정개울에 도착해 있었다.
+타라는 오랜만에 뵙는다고 인사를 하고, 자신도 드디어 초급 소서리스 시험을 치르게 되었다고 좋아한다. 
+
+"선배같은 천재에게는 초급시험을 패스하는 건, 식은 죽 먹기로 쉬웠겠죠? 하지만 전 정말 이 시험을 위해서 오랫동안 준비를 해왔답니다. 시험 준비를 위해서 이론서뿐 아니라 많은 실전 훈련도 해왔어요. 이론 논술 시험을 위해서, 초급 시험 이후 소서리스들이 나아갈 길들에 대해서도 공부했는데 제가 암기한 것들을 테스트하는 걸 도와주시지 않으시겠어요?"
+
+소서리스는 진땀을 흘리며, 타라와 1차 전직 클래스에 대한 질답을 한다.
+틀린 질문을 하면 타라가 이상한 표정을 짓기 때문에, 재빨리 답을 수정하는 식으로 위기를 모면한다. 
+
+타라는 질답이 끝나면 응용 시험에 대해서 말한다. 
+
+"방금 전에 실전 시험을 통과했어요. 실전 시험은 비전의 방에서 마물들을 싸워 물리치는 것입니다."
+
+타라에게 자극을 받은 소서리스는 후배에게 계속 잘난 척을 하기 위해서 자신도 초급 소서리스 시험을 치기로 한다. 그리고 타라에게 비전의 방의 위치를 묻는다. 미심쩍은 듯하단 표정을 짓는 타라. 소서리스는 다시 임기응변을 발휘해서 시련의 방으로 입장한다. (바보 타라)</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>283</nextqid>
+      <nextqname>sq08_283_test_sorceress2</nextqname>
+      <nextqnpc>n035_soceress_master_tiana</nextqnpc>
+      <qkname mid="1"><![CDATA[Find a way to re-Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>229</npcid>
+         <npcename>n229_sorceress_tara</npcename>
+         <npckname>소서리스 타라 (수정개울_소서리스전직용)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나 (캐더락 소서리 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Magician Tala$<BR>Exam is near，I felt some tension ah。<BR><FONT color=#7e12d2>（Tina from high office given the task of the magician。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-a" mid="8"><![CDATA[<html>Uh，What is the trouble ah?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Senior magician Tina$<BR>You just come，Is it something to do。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-a" image="QN_SoceressTara.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-b" mid="10"><![CDATA[<html>Do you mean that the ridge of the younger generation magic，Tara you?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Senior magician Tina$<BR>Hei hei，Let your children to work this problem，You should thank me is?<BR>You know<FONT color=#a82424>Tara</FONT>Let this person?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-b" image="QN_SoceressTara.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-c" mid="12"><![CDATA[<html>Examinations should come to this place ah?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Senior magician Tina$<BR>Ah，It is said that children in this primary test for the magician，Points are rushing Kedella。You pick up what he bar。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-c" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-d" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Senior magician Tina$<BR><FONT color=#7e12d2>（Senior magician Tina surprise, looked at me）</FONT><BR>That is not because he is<FONT color=#a82424>Cynthia</FONT>Adult disciples ah? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-e" mid="16"><![CDATA[<html>Ah，Yes ah... Hei hei...</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Senior magician Tina$<BR>Examination magician who must be recognized by other top magicians who，Rather than to teach their teachers，Do you even know this is not?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-f" mid="18"><![CDATA[<html>Primary Examination...</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Senior magician Tina$<BR>So like you who have passed the primary examination，This level should also understand is?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-g" mid="20"><![CDATA[<html>... {user_nick}！</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>${user_nick}$<BR>（Primary Examination…Lotus Swamp, when the original study，Deep in the holy paradise lost all gambling quagmire and travel，My studies have led to temporary interruption of... Ah ah，People who cherish the memory of my beautiful past yo...）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-g" image="QW_CristalStream.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-h" mid="22"><![CDATA[<html>Ah，Ah? （Even the memories will not allow the ladies ah）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Senior magician Tina$<BR><FONT color=#382000>{user_nick}</FONT>！ Also distracted with doing?<BR>Do not dawdle，Rush to<FONT color=#a82424>Crystal Valley</FONT>Ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-h" image="QW_CristalStream.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-i" mid="24"><![CDATA[<html>Huh... Starting immediately。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Senior magician Tina$<BR>You do not not listen to me just said bar?<BR><FONT color=#a82424>Tara</FONT>Is prepared<FONT color=#a82424>Crystal Valley</FONT>To actual test，You do not pick him up quickly?！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-acceptted" mid="26"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Find a way to re-Ⅰ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QW_CristalStream.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Senior magician Tina$<BR><FONT color=#a82424>Tara</FONT>In<FONT color=#a82424>Crystal Valley</FONT>Estimated waiting for you for a long time。<BR>So if you scaled the，I will not give you a reward，Not Kuaiqukuaihui。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-1" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-1-a" mid="30"><![CDATA[<html>Huh…Congratulate you。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Magician Tala$<BR>God，<FONT color=#382000>{user_nick}</FONT> Senior，Long time no see。<BR>Are you all right?I finally passed the initial examination of the magician。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-1-a" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-1-b" mid="32"><![CDATA[<html>Oh...Of course！ Simple can be answered with their feet！</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Magician Tala$<BR>Predecessors such as talent is concerned，This initial examination should be easy for it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-1-b" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-1-c" mid="34"><![CDATA[<html>Oh, what thing，Well worth mentioning... Ha ha ha~</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Magician Tala$<BR>Or！ <FONT color=#7e12d2>（Envious eyes at me）<BR></FONT>In fact, a magician since I started it have been the envy of the older generation！<BR>Man of esoteric magic circles！ <FONT color=#a82424>Karatyup</FONT>Days after the wizard！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-1-c" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-1-d" mid="36"><![CDATA[<html>That…How friends?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Magician Tala$<BR>Teachers also believe that eventually could become superior to their predecessors over the magician does the teacher。<BR>Call... Test for such people as the older generation is very simple of course slightly，But I prepared for this for a long time, but oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-1-d" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2" mid="38"><![CDATA[<html>Ah ah...? That，Ah... （Hey... How do I trouble）</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Magician Tala$<BR>Not just memorize theory，There are numerous applications and actual combat training exercises。<BR>I also review the magician who will choose the path related content，Can you help me review it again?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-2" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2-b" mid="43"><![CDATA[<html>Of course！Although asked me~</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-2-a" mid="44"><![CDATA[<html>Primary Examination?Long time ago, oh，Want not up?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Magician Tala$<BR>Ah，After the first test of the wizard can choose2Kind of vocational upper。 <BR>You should know the characteristics of the job right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-2-a" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2-b" mid="46"><![CDATA[<html>Play，Just kidding！ Ha ha~</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Magician Tala$<BR><FONT color=#7e12d2>（Tara magician amazed face）<BR></FONT>Ah?Oh strange?You do not really do not know it...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-2-b" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2-c" mid="48"><![CDATA[<html>Ah，Yes... （Oh…I see...）</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Magician Tala$<BR>
+Magician&#39;s ability to good use can be divided into fire and ice<FONT color=#a82424>Element spells</FONT>，As well as ideas and time and space as the core<FONT color=#a82424>Cao magic spells</FONT>。Use<FONT color=#a82424>Element spells</FONT>The job is called the upper<FONT color=#a82424>Element division</FONT>，Use<FONT color=#a82424>Idea</FONT>Job is called <FONT color=#a82424>Mage</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-2-c" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2-d" mid="52"><![CDATA[<html>Good properties of fire and ice attacks</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-2-d" mid="53"><![CDATA[<html>Can give substantial harm</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-2-d" mid="54"><![CDATA[<html>Of Professional Fire</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-2-e" mid="55"><![CDATA[<html>Impact on the space-time</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Magician Tala$<BR>Then，Which of the following content<FONT color=#a82424>Element division</FONT><FONT color=#a82424>No correlation</FONT>It?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-2-d" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2-c" mid="58"><![CDATA[<html>Ah，Regret…I would like other…To talk about it。</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Magician Tala$<BR>Ah? Ah，Is not a misunderstanding of my question was?<BR>I do not mean do not belong Mage Which option，But that does not belong to<FONT color=#a82424>Element division</FONT>Of<FONT color=#a82424>Error</FONT>Which of the note is。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-2-e" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2-f" mid="60"><![CDATA[<html>Space-time super-ability and good at magic</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-2-f" mid="61"><![CDATA[<html>Using ideas of magic and magic time and space imposed by injury。</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-3" mid="62"><![CDATA[<html>Good properties of fire and ice attacks</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-2-f" mid="63"><![CDATA[<html>Can increase the speed of our army，Can also reduce enemy speed。</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Magician Tala$<BR>Then following them and<FONT color=#a82424>Mage</FONT>Note<FONT color=#a82424>Contrary to the</FONT>Which?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-2-f" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-2-e" mid="66"><![CDATA[<html>（Ah，Sweating...） Interesting to me？ Hei hei…Again it。</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Magician Tala$<BR>Ah? Seniors can really be joking ah，Ha ha。<BR>This is not the issue on the element division，But on<FONT color=#a82424>Mage</FONT>Question ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-3" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-3-a" mid="70"><![CDATA[<html>Ah... Haha，Ha…Not worth mentioning...</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Magician Tala$<BR>Hey，This problem in terms of the senior，Boring is not it too simple?<BR>Even have the right，Really great ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-3-a" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-3-b" mid="72"><![CDATA[<html>Ah...Application Examination?</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Magician Tala$<BR>Thanks to senior，My theory test more confidence。<BR>In fact, I was bored waiting for time to come predecessors，I have completed the<FONT color=#a82424>Application Examination</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-3-b" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-3-c" mid="74"><![CDATA[<html>The most urgent situation?Well it sounds quite meaningless?</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Magician Tala$<BR><FONT color=#a82424>Application Examination</FONT>Be，The theory and battle magic magic<FONT color=#a82424>Used in actual combat, as the examination room</FONT>，Assessment of its ability to test。Basic examination room or<FONT color=#a82424>Reproduce</FONT>Real war<FONT color=#a82424>The most pressing</FONT>And because<FONT color=#a82424>The most dangerous situation</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-3-c" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-3-d" mid="76"><![CDATA[<html>Just kidding，Ha ha…I also would like to obtain a rare it...</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Magician Tala$<BR>You find it interesting? Ha ha，Predecessors, is really...<BR>
+Really like<FONT color=#a82424>Test has never been</FONT>Candidates who apply the same，Also so in love with a joke ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-3-d" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-3-e" mid="78"><![CDATA[<html>（Dizzy） Just want to recall only the beginning...? Ah ha ha...</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Magician Tala$<BR>Now that exam, a senior no need to re-enter the application test<FONT color=#a82424>Secret room</FONT>The bar，How should it want to go?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-3-e" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-4" mid="80"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Magician Tala$<BR>Have you restored the initiative，Seniors really amazing/1<BR>You should know，Into that room it needs special mobile devices？Fortunately, I just took the exam，So have the devices。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-4" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-4-member1" mid="88"><![CDATA[<html>ok，Go now。</html>]]></talk_answer>
+      <talk_answer link_index="n229_sorceress_tara-4-c" mid="89"><![CDATA[<html>Etc.，And so will…Let me have a good rest。</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Magician Tala$<BR>
+Now about to enter<FONT color=#a82424>Secret room</FONT>You?<BR>
+ <BR>
+<FONT color=#7e12d2>※ Transfer task in the team can not be under。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-4-a" image="" itemindex="">
+      <talk_answer link_index="n229_sorceress_tara-4-changemap1" mid="131"><![CDATA[<html>（Into the secret room）</html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$Magician Tala$<BR>
+Then go to the secret room with。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-4-b" image="" itemindex="">
+      <talk_question mid="90"><![CDATA[<html>$Magician Tala$<BR>Oops... Predecessors, together with your peers, and it seems。<FONT color=#a82424>Secret room</FONT>Do not go together with partner。Quit after the team，Then come to me。<BR>
+<FONT color=#7e12d2>※ Transfer task in the team can not be under。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-4-c" image="" itemindex="">
+      <talk_question mid="91"><![CDATA[<html>$Magician Tala$<BR>Ah，Ah it seems you are very busy，When not busy come see me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-5-a" mid="96"><![CDATA[<html>I did not play with！I also came back secret room when the examinations！</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Senior magician Tina$<BR><FONT color=#a82424>Tara</FONT>Recently completed test back to magic after a ridge。<BR>I will let you to pick up Tara，Where you are Fengwanqula?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-5-b" mid="98"><![CDATA[<html>Cut，Residence…However, to be found...</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Senior magician Tina$<BR>Enter<FONT color=#a82424>Secret room</FONT>Test?<BR>Oh，Tara&#39;s speech from among，Also feel very suspicious... You，Even the original test did not test the primary magician ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-5-!next" mid="100"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n229_sorceress_tara-5" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="133"><![CDATA[<html>$Magician Tala$<BR><FONT color=#a82424>Secret room</FONT>How kind ah?Is not very easy ah? Ha ha...<BR>Ah，On the，<FONT color=#a82424>Senior magician Tina</FONT>Adults still looking for you to do... Senior... You are not what they got into big trouble the bar?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">2820,,,,</exe>
+         <exe type="setquest">282</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>
+스테이지를 클리어하면 퀘스트 스텝을 5로, 퀘스트 저널을 5로 바꾼다.</comment>
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n229_sorceress_tara">a</exe>
+         <exe type="talk" npc="n229_sorceress_tara">b</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13010,1);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">282</exe>
+         <exe type="recompense">2820,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="i">0</exelink>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="acceptted">1,2,3,4</exelink>
+   <exelink qstep="1" npc="n229_sorceress_tara" sub="b" />
+   <exelink qstep="1" npc="n229_sorceress_tara" sub="c" />
+   <exelink qstep="1" npc="n229_sorceress_tara" sub="d" />
+   <exelink qstep="1" npc="n229_sorceress_tara" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="b" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="c" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="d" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="d" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="d" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="e" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="c" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="f" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="f" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="3">0,1</exelink>
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="f" />
+   <exelink qstep="2" npc="n229_sorceress_tara" sub="e" />
+   <exelink qstep="3" npc="n229_sorceress_tara" sub="b" />
+   <exelink qstep="3" npc="n229_sorceress_tara" sub="c" />
+   <exelink qstep="3" npc="n229_sorceress_tara" sub="d" />
+   <exelink qstep="3" npc="n229_sorceress_tara" sub="e" />
+   <exelink qstep="3" npc="n229_sorceress_tara" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n229_sorceress_tara" sub="member1">0</exelink>
+   <exelink qstep="4" npc="n229_sorceress_tara" sub="changemap1">3</exelink>
+   <exelink qstep="5" npc="n035_soceress_master_tiana" sub="b">1</exelink>
+   <exelink qstep="5" npc="n035_soceress_master_tiana" sub="!next">0</exelink>
+   <journal_data recompense="2820" quest_title="다시 찾은 길Ⅰ" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n229</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>229</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>상급 소서리스 티아나</start_npc>
+         <desc_location>수정 개울</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>소서리스 타라</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="102"><![CDATA[Tara dialogue and magician]]></title>
+         <contents mid="103"><![CDATA[<html>Pick<FONT color=#a82424>Crystal Valley</FONT>Of<FONT color=#a82424>Magician Tala</FONT>It。<BR>
+ <BR>
+<FONT color=#086171>Crystal Valley</FONT> <FONT color=#a82424>→ Magician Tala</FONT></html>]]></contents>
+         <destination mid="104"><![CDATA[Tara dialogue and magician]]></destination>
+         <todo_msg mid="105"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n229</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>229</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>수정 개울</get_location>
+         <start_npc>소서리스 타라</start_npc>
+         <desc_location>수정 개울</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>소서리스 타라</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="106"><![CDATA[Tara dialogue and magician]]></title>
+         <contents mid="107"><![CDATA[<html>Help magician recite Tara theory it<BR>
+ <BR>
+<FONT color=#086171>Crystal Valley</FONT><FONT color=#a82424> → Magician Tala</FONT></html>]]></contents>
+         <destination mid="108"><![CDATA[Tara dialogue and magician]]></destination>
+         <todo_msg mid="109"><![CDATA[Please magician Tara dialogue]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n229</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>229</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>수정 개울</get_location>
+         <start_npc>소서리스 타라</start_npc>
+         <desc_location>수정 개울</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>소서리스 타라</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="110"><![CDATA[Tara dialogue and magician]]></title>
+         <contents mid="111"><![CDATA[<html>Tara heard the magician how to say<FONT color=#a82424>Secret room</FONT>It。<BR>
+ <BR>
+<FONT color=#086171>Crystal Valley</FONT> <FONT color=#a82424>→ Magician Tala</FONT></html>]]></contents>
+         <destination mid="112"><![CDATA[Tara dialogue and magician]]></destination>
+         <todo_msg mid="113"><![CDATA[Please magician Tara dialogue]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,n229</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>229</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>수정 개울</get_location>
+         <start_npc>소서리스 타라</start_npc>
+         <desc_location>비전의 방</desc_location>
+         <step_action>사냥</step_action>
+         <complete_npc>소서리스 티아나</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string>소서리스 시험용 맵 비전의 방으로 이동</trigger_string>
+         <maptool_index />
+         <title mid="115"><![CDATA[Into the secret room]]></title>
+         <contents mid="116"><![CDATA[<html>Entrust<FONT color=#a82424>Magician Tala</FONT>Can be applied into the examination<FONT color=#a82424>Secret room</FONT>It。 Completed examination report to the senior bar magician Tina。<BR>Seems a not so simple examination，Ready to look at it properly！<BR><BR><FONT color=#086171>Crystal Valley（Magician Tala）</FONT> <FONT color=#a82424>→ Secret room</FONT></html>]]></contents>
+         <destination mid="117"><![CDATA[Tara dialogue and magician]]></destination>
+         <todo_msg mid="118"><![CDATA[Tara by the magician into the secret room with。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location>비전의 방</get_location>
+         <start_npc />
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>상급 소서리스 티아나</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="121"><![CDATA[And senior magician Tina dialogue]]></title>
+         <contents mid="122"><![CDATA[<html>Completed application examination secret room。<BR>Report to the senior bar magician Tina。<BR>
+ <BR>
+<FONT color=#086171>Kedella points →</FONT> <FONT color=#a82424>Senior magician Tina</FONT></html>]]></contents>
+         <destination mid="123"><![CDATA[And senior magician Tina dialogue]]></destination>
+         <todo_msg mid="124"><![CDATA[Dialogue with senior magician Tina]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class>3</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

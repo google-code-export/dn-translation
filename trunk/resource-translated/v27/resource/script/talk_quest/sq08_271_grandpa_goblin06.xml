@@ -1,0 +1,259 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_271_grandpa_goblin06</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>271</qid>
+      <designer>김주연</designer>
+      <qlevel>16</qlevel>
+      <qdesc>ⓠ고블린 영감의 하소연 6
+
+ 신전예배당을 갖다 오면, 고블린 영감이 월드존에 위치하고 있음.
+영감과 대화하면, 신전 예배당에서 자신의 손주들을 보지 못했냐고 물어보며, 잘 좀 찾아봐달라고 부탁한다.
+신전 예배당에서 홉고블린들을 잡아 손주들의 이마에 박힌 보옥을 4개 수집하고 영감에게 돌아가면 영감이 매우 슬퍼함</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Goblins old man&#39;s pain]]></qkname>
+      <qnpc>
+         <npcid>171</npcid>
+         <npcename>n171_goblin_grandfather</npcename>
+         <npckname>고블린 할배 (그늘 숲)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>185</npcid>
+         <npcename>n185_goblin_grandfather</npcename>
+         <npckname>고블린 할배 (그늘 숲)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-noquest" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Goblin old man$<BR>I&#39;m going to<FONT color=#a82424>Wind forest</FONT>Slightly。In<FONT color=#a82424>Wind forest</FONT>Goodbye slightly。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-accepting" image="" itemindex="">
+      <talk_answer link_index="n185_goblin_grandfather-accepting-a" mid="6"><![CDATA[<html>How such a dangerous place in the?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Goblin old man$<BR>Lovely man，Finally meet strategic。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n185_goblin_grandfather-accepting-b" mid="8"><![CDATA[<html>What I do for you？</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Goblin old man$<BR>Ming…Hum...<BR>
+<FONT color=#7e12d2>（Mouth, can not continue then incumbent on）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n185_goblin_grandfather-accepting-c" mid="10"><![CDATA[<html>Like to see，Seems like。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Goblin old man$<BR>Red monster captured all our grandchildren slightly。In<FONT color=#a82424>Shrine Chapel</FONT>My grandson has not seen slightly?<BR><FONT color=#7e12d2>（Cheerful eyes, tears）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n185_goblin_grandfather-accepting-d" mid="12"><![CDATA[<html>Direct you to the past?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Goblin old man$<BR>Is，Red monster like my grandson how the slightly?！ Ah，Will not just let them slightly！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n185_goblin_grandfather-accepting-e" mid="14"><![CDATA[<html>Or am I to find it。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Goblin old man$<BR>I have to find a slightly，Personally find... Kaka Ka。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n185_goblin_grandfather-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Goblins old man&#39;s pain$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-1" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Goblin old man$<BR>Ming…Hum... <BR>
+<FONT color=#7e12d2>（Mouth, can not continue then incumbent on）</FONT><BR>
+Now I believe only you should be slightly…Hum。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-1" image="" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Goblin old man$<BR>Ming……Hum……I do not have time to stay here……<BR><FONT color=#7e12d2>(Must still wind forest goblins when the old man and his dialogue。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-2" image="" itemindex="">
+      <talk_answer link_index="n185_goblin_grandfather-2-a" mid="20"><![CDATA[<html>（He hands the gem to）</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Goblin old man$<BR>Why not join my grandson came back slightly?Not found...?<BR><FONT color=#7e12d2>（The old man&#39;s eyes have been goblins humid）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-2-a" image="" itemindex="">
+      <talk_answer link_index="n185_goblin_grandfather-2-b" mid="22"><![CDATA[<html>When I went to have...</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Goblin old man$<BR>…Poor child... <BR>They have not fed on。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-2-b" image="" itemindex="">
+      <talk_answer link_index="n185_goblin_grandfather-2-c" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Goblin old man${action:Cry}<BR>Snore…Card！！！！Ah！ Kaka！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-2-c" image="" itemindex="">
+      <talk_answer link_index="n185_goblin_grandfather-2-d" mid="26"><![CDATA[<html>I am sorry。</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Goblin old man$<BR>.......</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-2-d" image="" itemindex="">
+      <talk_answer link_index="n185_goblin_grandfather-2-e" mid="28"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-2-e" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Goblin old man$<BR>.......<BR>
+<FONT color=#7e12d2>（Thin shoulders shaking）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment>홉고블린으로 변한 손자 4마리를 잡을 때 마다 보옥을 수집한다.(300005)
+- 어비스에서도 가능.</comment>
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,2711,2712,2713,2714</exe>
+         <exe type="setquest">271</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">463</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">465</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">469</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">472</exe>
+         <exe type="huntitem" num="4" exe="8,9,10" onexe="">300005</exe>
+         <exe type="addquestitem" num="1">300005</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n185_goblin_grandfather">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200463</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200465</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200469</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200472</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>수집한 보옥 삭제(300005)</comment>
+      <conditions />
+      <executions>
+         <exe type="recompense">,2711,2712,2713,2714</exe>
+         <exe type="complete">271</exe>
+         <exe type="delquestitem" num="-1">300005</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n185_goblin_grandfather" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n185_goblin_grandfather" sub="acceptted">1,2,3,4,5,13,14,15,16,6,11,12</exelink>
+   <exelink qstep="2" npc="n185_goblin_grandfather" sub="b" />
+   <exelink qstep="2" npc="n185_goblin_grandfather" sub="c" />
+   <exelink qstep="2" npc="n185_goblin_grandfather" sub="d">0</exelink>
+   <exelink qstep="2" npc="n185_goblin_grandfather" sub="e">1,2</exelink>
+   <journal_data recompense="1:2711,2:2712,3:2713,4:2714" quest_title="고블린 할배의 슬픔" chapterid="" quest_level="16" quest_mark_type="10" use_item_list="300005">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_WindForest.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>3,n185</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>185</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[Disappeared grandchildren]]></title>
+         <contents mid="34"><![CDATA[<html>In<FONT color=#a82424>Wind forest</FONT>Run into the goblins seem to have anything to say old man。And<FONT color=#a82424>Goblin old man</FONT>Dialogue to see if it。<BR><BR><FONT color=#086171>Wind forest</FONT> <FONT color=#a82424>→ Goblin old man</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[Disappeared grandchildren]]></destination>
+         <todo_msg mid="36"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_19.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>144,0,0</destination_pos>
+         <destination_mode>custom:141@3,142@3,143@3,144@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[Temple Church in the old man&#39;s grandson looking goblin]]></title>
+         <contents mid="45"><![CDATA[<html>Winds encountered in the forest<FONT color=#a82424>Goblin old man</FONT>Cried Road，Their grandchildren are gone。To<FONT color=#a82424>Shrine Chapel</FONT>Find grandchildren bar，<BR><BR>Wind forest（Forest Temple entrance of wind） <FONT color=#a82424>→ Shrine Chapel</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[Temple Church in the old man&#39;s grandson looking goblin]]></destination>
+         <todo_msg mid="47"><![CDATA[Chapel in the Temple to find the old man&#39;s grandson, it goblin。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_WindForest.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>3,n185</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>185</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Dialogue with the goblin old man]]></title>
+         <contents mid="49"><![CDATA[<html>Goblins old man&#39;s grandson who has become <FONT color=#a82424>Elf</FONT>。Her grandchildren over their jade<FONT color=#a82424>Goblin old man</FONT>It。<BR><BR><FONT color=#086171>Wind forest</FONT> <FONT color=#a82424>→ Goblin old man</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Dialogue with the goblin old man]]></destination>
+         <todo_msg mid="51"><![CDATA[Back to the wind, where the forest goblins old man bar。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>16:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>211</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

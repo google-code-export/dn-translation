@@ -1,0 +1,187 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>gq11_3212_n410_ruin_hunt</qename>
+      <qtype>venturerquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>3212</qid>
+      <designer>손원호</designer>
+      <qlevel>28</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Association commission] Xialuo Li&#39;s valuables]]></qkname>
+      <qnpc>
+         <npcid>410</npcid>
+         <npcename>n410_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting" image="" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html><FONT color=#2b2723>$Adventurers Society Bulletin$<BR>Ah ah ah ah！ </FONT><BR>
+<FONT color=#2b2723>Xialuo Li <FONT color=#a82424>Valuables</FONT>Lost Rights。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-a" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-b" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Adventurers Society Bulletin$<BR>An abhorrent<FONT color=#a82424>Predators Rock Gargoyle</FONT>Stole the valuables Xialuo Li... Valuables ah，Hum。<FONT color=#2b2723></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-b" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-c" mid="64"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html><FONT color=#2b2723>$Adventurers Society Bulletin$<BR>Xia Luoli What precious thing? </FONT><BR>
+<FONT color=#2b2723>Ooo, ooo。Xialuo Li can not say ah。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-c" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-d" mid="66"><![CDATA[<html>Eliminate1Only predators Rock Gargoyle</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Adventurers Society Bulletin$<BR><FONT color=#2b2723>Gargoyle flew the direction is<FONT color=#a82424>River downstream of the ruins</FONT>，Where harsh lesson to be grateful if those hateful Gargoyle about their。</FONT><BR><FONT color=#7e12d2> Principal：U.S. girl Xialuo Li</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-e" mid="11"><![CDATA[<html><FONT color=#086171>（Entrusted）</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Commission award$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-e" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html><FONT color=#2b2723>$[Association commission] Xialuo Li&#39;s valuables$</FONT><FONT color=#2b2723><BR>You accept the Association commissioned。<BR>Eliminate<FONT color=#a82424>River downstream of the ruins</FONT>Of<FONT color=#a82424>Predators Rock Gargoyle</FONT>。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-1" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Currently being implemented<FONT color=#a82424>[Association commission]</FONT><FONT color=#a82424>Xialuo Li&#39;s valuables</FONT>。<BR><BR>※ <FONT color=#7e12d2>In the same bulletin board can only delegate the implementation of a Society。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-2" image="GQ_hunt_end.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-2-a" mid="22"><![CDATA[<html>[Commissioned] <FONT color=#086171>Xialuo Li&#39;s valuables</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Completion of commissioning of the adventurer，Please complete the following instructions on the seal affixed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-2-a" image="" itemindex="">
+      <talk_answer link_index="n410_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Commission award$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-2-b" image="GQ_hunt_end.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Association commissioned the adventurer has completed。<BR><BR><FONT color=#a82424>[Adventurers Society Association]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,3212, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">32120,,,,</exe>
+         <exe type="huntmon" num="1" party="1" exe="5,6,7" onexe="">907</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200907</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 907);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">32120,,,,</exe>
+         <exe type="complete">3212</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n410_guild_board" sub="d">3</exelink>
+   <exelink qstep="accepting" npc="n410_guild_board" sub="e">0,1,4,8,2</exelink>
+   <exelink qstep="2" npc="n410_guild_board" sub="a">0</exelink>
+   <exelink qstep="2" npc="n410_guild_board" sub="b">1</exelink>
+   <journal_data recompense="32120" quest_title="[길드의뢰] 하로리의 소중한 것" chapterid="" quest_level="28" quest_mark_type="19" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_32.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>323,0,0</destination_pos>
+         <destination_mode>custom:321@1,322@1,323@3,324@0</destination_mode>
+         <statemark_npcid>410</statemark_npcid>
+         <statemark_type>20</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Elimination of river downstream of the ruins of predators rock Gargoyle]]></title>
+         <contents mid="43"><![CDATA[<html>To destroy the ruins of the downstream1A predator Rock Gargoyle。<BR><FONT color=#086171></FONT><BR><FONT color=#086171>Heermadai port(Downstream of the ruins of the entrance) </FONT><FONT color=#a82424>→ Downstream ruins</FONT><BR>
+</html>]]></contents>
+         <destination mid="44"><![CDATA[[Hunt]Downstream ruins]]></destination>
+         <todo_msg mid="45"><![CDATA[Add the adventurer Association commissioned。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_guild_board.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n410</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>410</statemark_npcid>
+         <statemark_type>21</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Report to the board commissioned adventurer]]></title>
+         <contents mid="47"><![CDATA[<html>Port to the adventurer in Heermadai report commissioned by the Society Bulletin。<BR><BR><FONT color=#086171>Heermadai port（River downstream of the ruins of the entrance） </FONT><FONT color=#a82424>→ Adventurers Society Bulletin</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Bulletin Board commissioned the report to the adventurer]]></destination>
+         <todo_msg mid="49"><![CDATA[Association commissioned to complete adventurer。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>28:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>3211</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

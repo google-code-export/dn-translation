@@ -1,0 +1,102 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq_900_quest_test</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>900</qid>
+      <designer>곽노찬</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Task test]]></qkname>
+      <qnpc>
+         <npcid>900</npcid>
+         <npcename>n900_testnpc</npcename>
+         <npckname>릴리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n900_testnpc-accepting" image="" itemindex="">
+      <talk_answer link_index="n900_testnpc-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Lily$<BR>
+Task test。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n900_testnpc-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n900_testnpc-accepting-b" mid="8"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Task reward</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n900_testnpc-accepting-b" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Lily$<BR>
+Return to dialogue，The task can get reward。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n900_testnpc-1" image="" itemindex="">
+      <talk_answer link_index="n900_testnpc-1-reward_1" mid="13"><![CDATA[<html>To receive all cash awards</html>]]></talk_answer>
+      <talk_answer link_index="n900_testnpc-1-reward_2" mid="14"><![CDATA[<html>Receive cash awards1</html>]]></talk_answer>
+      <talk_answer link_index="n900_testnpc-1-reward_3" mid="17"><![CDATA[<html>Receive all general、Cash Reward</html>]]></talk_answer>
+      <talk_answer link_index="n900_testnpc-1-reward_4" mid="18"><![CDATA[<html>Receive general、Cash Reward2</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Lily$<BR>
+Choose Reward。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n900_testnpc-1-a" image="" itemindex="">
+      <talk_answer link_index="n900_testnpc-1-b" mid="16"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n900_testnpc-1-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Lily$<BR>
+End of the test</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">900</exe>
+         <exe type="recompense_view">9000,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">9001,,,,</exe>
+         <exe type="recompense">9002,,,,</exe>
+         <exe type="recompense">9003,,,,</exe>
+         <exe type="recompense">9004,,,,</exe>
+         <exe type="complete">900</exe>
+         <exe type="talk" npc="n900_testnpc">a</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n900_testnpc" sub="a">1</exelink>
+   <exelink qstep="accepting" npc="n900_testnpc" sub="b">0</exelink>
+   <exelink qstep="1" npc="n900_testnpc" sub="reward_1">0,5</exelink>
+   <exelink qstep="1" npc="n900_testnpc" sub="reward_2">1,5</exelink>
+   <exelink qstep="1" npc="n900_testnpc" sub="reward_3">2,5</exelink>
+   <exelink qstep="1" npc="n900_testnpc" sub="reward_4">3,5</exelink>
+   <exelink qstep="1" npc="n900_testnpc" sub="b">4</exelink>
+   <journal_data recompense="9001" quest_title="퀘스트 테스트" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level>1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

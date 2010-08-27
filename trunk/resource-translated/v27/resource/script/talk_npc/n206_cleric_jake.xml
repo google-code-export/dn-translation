@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n206_cleric_jake</npcename>
+      <npcid>206</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Pastor Jack(Silent monastery corridor)]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$Pastor Jack$<BR>
+Some..Tired。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">mq05_117_love_money</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">117</chk>
+      </conditions>
+   </talk>

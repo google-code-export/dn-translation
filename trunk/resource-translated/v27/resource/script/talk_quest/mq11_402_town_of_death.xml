@@ -1,0 +1,304 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_402_town_of_death</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>402</qid>
+      <designer>김인정</designer>
+      <qlevel>24</qlevel>
+      <qdesc>1. 주교와 대화.
+2. 버려진 윌든 할로우로.
+3. 벨스커드 vs 제레인트 싸움을 목격.
+4. 주교에게 돌아와 보고.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>419</nextqid>
+      <nextqname>mq11_419_where_argenta</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[Death Village]]></qkname>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드(세인트헤이븐 왕성)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-check" mid="6"><![CDATA[<html>What to me to help you?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio$<BR>Oh，Really helped me?<BR>Anyway, can not do waiting for the support of King City，Simply let us join forces to find <FONT color=#a82424>Prophet</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio$<BR>Ah... Although you want to get help，But you seem to have very tired。<BR><FONT color=#7e12d2>（24Level to the next stage after。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="9"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Bishop Ignacio$<BR>In fact, I got a very annoying reports。<BR>Knights of the Temple, said intelligence agents，Not long ago, had witnessed that may be <FONT color=#a82424>Black Knight</FONT>Guy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="62"><![CDATA[<html>If it is so dark knight，I am running a。</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Bishop Ignacio$<BR>
+Only，Should not see in<FONT color=#a82424>Black Knight</FONT>Side of the Prophet。Therefore, in order to further confirm the situation，Shall be represented by individuals in the past。However, due to circumstances unknown，Ah so annoyed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-d" image="QW_31.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-2" mid="15"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Bishop Ignacio$<BR>Witnessed the Temple Knights <FONT color=#a82424>Black Knight</FONT>Place on<FONT color=#a82424>Montenegro hill angle</FONT>。<BR>Said to have suspicious to the<FONT color=#a82424>Abandoned 韦尔顿哈鲁</FONT>Direction passed，May wish to go there to see it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$King Kaxiwusi$<BR>Well，Alas。Things on the Prophet，I will be back in the General Douglas negotiate with him after the decision。 <BR>Then...Next...Next time will come, right?<BR><FONT color=#7e12d2>（Dialogue with the Bishop Ignacio）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-a" mid="20"><![CDATA[<html>But if do not find the words...</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Duke Stewart$<BR>I know have to go to the Prophet，But I have to guard the young king could not get out，So very sorry，Ah you can not help the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Duke Stewart$<BR>Although it is regrettable，But I hope you can understand。Prophet confirmed the whereabouts of the time，I will send troops over the past。Today no harm to let it go。<BR><FONT color=#7e12d2>（Dialogue with the Bishop Ignacio）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-a" mid="23"><![CDATA[<html>If you do not find the words of the prophet who...</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Court magician Kala An$<BR>I will expose those same raccoon <FONT color=#a82424>Bishop</FONT>True colors。Hum。4 sent the Temple Knights，Actually also nothing，Who would believe ah? If so look down upon me Kala An，Count he Daoda Mei Rights。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-b" mid="25"><![CDATA[<html>Well the most important thing is not the order of。</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Court magician Kala An$<BR>You are right in the order the court magician？<BR>
+I dare ignore？Who says we do not go to the prophet？<BR>
+General、Duke、Bishops are shirk，On what basis must we first go？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-b" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Court magician Kala An$<BR>I can be all men of the magician to one when the 100。So, how can I force into this endless war of attrition which it？！Hum！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$General Douglas$<BR>Now received another command，That is why I returned to King City。I also know the details，That there was no empty talk to you ah<BR><FONT color=#7e12d2>（Dialogue with the Bishop Ignacio）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-1-a" mid="29"><![CDATA[<html>Looks...Not very happy the way。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Elite soldiers Cleander$<BR>The Dark Knight because of the attacks，Injured companions injured，And with the lost prophets，Mo Lianxian people really ah。However, as<FONT color=#382000>{user_nick}</FONT>Your presence，At least learn the whereabouts of the Prophet，His Majesty the King will be pleased。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Elite soldiers Cleander$<BR>Will certainly。My report has been submitted，Hope everything goes well。<BR>His Majesty the King will be decisively dealt with。<BR><FONT color=#7e12d2>（Dialogue with the Bishop Ignacio）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_31.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>Abandoned</FONT> <FONT color=#a82424>韦尔顿哈鲁</FONT>Power was eroded by dubious to become a wasteland。If<FONT color=#a82424>Black Knight</FONT>Really went there，S going on they really do not know。In short it is willing to bless us luck。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-a" mid="33"><![CDATA[<html>（Something about the witness）</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Bishop Ignacio$<BR>What? <FONT color=#a82424>Black Knight</FONT>Really went there?<BR>How&#39;s going on in the end。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-b" mid="35"><![CDATA[<html>The King City Knights will not be right?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Bishop Ignacio$<BR>One<FONT color=#a82424>Blonde Swordsman</FONT>With<FONT color=#a82424>Black Knight</FONT>Combat is not it。<BR>
+Ah…It seems the prophet stared at the blond swordsman also do，Yihuo……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-b" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-c" mid="37"><![CDATA[<html>So that。</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Bishop Ignacio$<BR>Can not ah，Not to mention that with the<FONT color=#a82424>Black Knight</FONT>Few rival swordsmen，And even if he is sent to the person，General Douglas certainly will report to me, ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-d" mid="39"><![CDATA[<html>Seem…Some people know about the whereabouts of the black knight。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Bishop Ignacio$<BR>We do not know<FONT color=#a82424>Black Knight</FONT>Where is the hidden prophet，So I can only continue to pursue him。But，We do not know his purpose or line trace… </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-e" mid="41"><![CDATA[<html>Ah，She has been in pursuit of Black Knight。</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Bishop Ignacio$<BR>Actually there know the whereabouts of the black knight?<BR>
+
+That Really? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-e" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-f" mid="69"><![CDATA[<html>Her name was Algerita。</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Bishop Ignacio$<BR>
+She… That does not mean that you get points in Kedella<FONT color=#a82424>Seniors Female Swordsman</FONT>Help that she ah，What is the name she was?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-f" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-!next" mid="43"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">24</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">b</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">a</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4021,4022,4023,4024</exe>
+         <exe type="complete">402</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="check">0</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="2">3,4</exelink>
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="e" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="f">0</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="!next">1</exelink>
+   <journal_data recompense="1:4021,2:4022,3:4023,4:4024" quest_title="죽음의 마을" chapterid="4" quest_level="24" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Witnesses to talk]]></title>
+         <contents mid="48"><![CDATA[<html>And bishops to talk about the rescue of the Prophet Ignacio things。<BR><FONT color=#7e12d2></FONT><BR><FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[（24Level）Dialogue with the Bishop Ignacio]]></destination>
+         <todo_msg mid="50"><![CDATA[Add a task。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_31.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>314,0,0</destination_pos>
+         <destination_mode>custom:311@1,312@1,313@1,314@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Abandoned 韦尔顿哈鲁]]></title>
+         <contents mid="54"><![CDATA[<html>Bishop Ignacio learned from there to the dark knight<FONT color=#a82424>Abandoned 韦尔顿哈鲁</FONT>Direction information。<BR><BR><FONT color=#086171>Montenegro hill angle（Dark jungle road）</FONT> <FONT color=#a82424>→Abandoned 韦尔顿哈鲁</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Chase abandoned 韦尔顿哈鲁 the Dark Knight]]></destination>
+         <todo_msg mid="56"><![CDATA[Chase abandoned the dark knight it 韦尔顿哈鲁。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom:21@1</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Another Knight]]></title>
+         <contents mid="58"><![CDATA[<html>While witnessing the Dark Knight and X-Fighters situation blond knight，But still with the lost。May wish to return to<FONT color=#a82424>Holy Heaven King City</FONT>And<FONT color=#a82424>Bishop Ignacio</FONT>Discuss it。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Report to the Bishop Ignacio]]></destination>
+         <todo_msg mid="60"><![CDATA[Bishop Ignacio to witness to the contents of the report。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>401</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

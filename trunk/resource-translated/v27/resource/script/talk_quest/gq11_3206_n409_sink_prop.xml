@@ -1,0 +1,179 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>gq11_3206_n409_sink_prop</qename>
+      <qtype>venturerquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>3206</qid>
+      <designer>손원호</designer>
+      <qlevel>28</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Association commission] The obligations of survivors]]></qkname>
+      <qnpc>
+         <npcid>409</npcid>
+         <npcename>n409_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting" image="GQ_prop.dds" itemindex="">
+      <talk_answer link_index="n409_guild_board-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html><FONT color=#2b2723><FONT color=#2b2723>$Adventurers Society Bulletin$<BR>How do we comfort the mine collapse had been crushed to death when hundreds of lives were? Although the Miner family members who wanted to search their remains，But because they have occupied this monster mine，There is no way to make our。</FONT><FONT color=#a82424></FONT></FONT><FONT color=#a82424></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting-a" image="GQ_prop.dds" itemindex="">
+      <talk_answer link_index="n409_guild_board-accepting-b" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Adventurers Society Bulletin$<BR>You can search to the collapse of the mine <FONT color=#a82424>Miner&#39;s remains</FONT>? In that case，How many family members have also been some comfort to it。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting-b" image="GQ_prop.dds" itemindex="">
+      <talk_answer link_index="n409_guild_board-accepting-c" mid="66"><![CDATA[<html>Search for the remains of miner</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Collect<FONT color=#2b2723>The mine collapse<FONT color=#a82424>Miner&#39;s remains</FONT>。Miner&#39;s remains can be found from the remains of the heap。</FONT><BR><FONT color=#7e12d2> Principal：Senior Pastor Aino</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n409_guild_board-accepting-d" mid="11"><![CDATA[<html><FONT color=#086171>（Entrusted）</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Commission award$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting-d" image="GQ_prop.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html><FONT color=#2b2723>$[Association commission]The obligations of survivors$</FONT><FONT color=#2b2723><BR>You accept the Association commissioned。<BR>Collected in the collapsed mine<FONT color=#a82424>Miner&#39;s remains</FONT>。</FONT><BR><FONT color=#2b2723>Miner remains of Buu from around the Ogre<FONT color=#a82424>Bones pile</FONT>Found。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-1" image="GQ_prop.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Currently being implemented<FONT color=#a82424>[Association commission]The obligations of survivors<FONT color=#2b2723></FONT></FONT>。<BR><BR>※ <FONT color=#7e12d2>In the same bulletin board can only delegate the implementation of a Society。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-2" image="GQ_prop_end.dds" itemindex="">
+      <talk_answer link_index="n409_guild_board-2-a" mid="22"><![CDATA[<html>[Commissioned] <FONT color=#086171>The obligations of survivors</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Completion of commissioning of the adventurer，Please complete the following instructions on the seal affixed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-2-a" image="" itemindex="">
+      <talk_answer link_index="n409_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Commission award$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-2-b" image="GQ_prop_end.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Association commissioned the adventurer has completed。<BR><BR><FONT color=#a82424>[Adventurers Society Association]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,3206, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">32060,,,,</exe>
+         <exe type="huntitem" num="1" exe="5,6,7" onexe="">300235</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">32060,,,,</exe>
+         <exe type="complete">3206</exe>
+         <exe type="delquestitem" num="-1">300235</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n409_guild_board" sub="c">3</exelink>
+   <exelink qstep="accepting" npc="n409_guild_board" sub="d">0,1,4,2</exelink>
+   <exelink qstep="2" npc="n409_guild_board" sub="a">0</exelink>
+   <exelink qstep="2" npc="n409_guild_board" sub="b">1,2</exelink>
+   <journal_data recompense="32060" quest_title="[길드의뢰] 살아남은 자의 의무" chapterid="" quest_level="28" quest_mark_type="19" use_item_list="300235">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_29.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>294,0,0</destination_pos>
+         <destination_mode>custom:291@1,292@1,293@1,294@4</destination_mode>
+         <statemark_npcid>409</statemark_npcid>
+         <statemark_type>20</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Search for the remains of miner]]></title>
+         <contents mid="43"><![CDATA[<html>Turn over the remains of the collapsed mine in the search heap <FONT color=#a82424>Miner&#39;s remains</FONT>It。<BR><FONT color=#086171><FONT color=#2b2723>※</FONT></FONT><FONT color=#7e12d2>Miner&#39;s remains could be looking for in the vicinity of Ogre Buu。</FONT><BR><BR><FONT color=#086171>Heermadai port（Dark mine entrance）</FONT><FONT color=#a82424>→ Mine collapse</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[Collection]Mine collapse]]></destination>
+         <todo_msg mid="45"><![CDATA[Add the adventurer Association commissioned。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_guild_board.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n409</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>409</statemark_npcid>
+         <statemark_type>21</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Report to the board commissioned adventurer]]></title>
+         <contents mid="47"><![CDATA[<html>Port to the adventurer in Heermadai report commissioned by the Society Bulletin。<BR><BR><FONT color=#086171>Heermadai port（Dark mine entrance） </FONT><FONT color=#a82424>→ Adventurers Society Bulletin</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Bulletin Board commissioned the report to the adventurer]]></destination>
+         <todo_msg mid="49"><![CDATA[Association commissioned to complete adventurer。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>28:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>3203</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

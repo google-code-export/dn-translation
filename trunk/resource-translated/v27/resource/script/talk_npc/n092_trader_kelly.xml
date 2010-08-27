@@ -1,0 +1,48 @@
+   <talk>
+      <npcename>n092_trader_kelly</npcename>
+      <npcid>92</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Kelly Merchant]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="buy1" mid="4"><![CDATA[<html>[Store transaction/Goods repair]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Kelly Merchant${action:Talk}<BR>Hello?My adventurer，What you want?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="46" link_target="sq11_487_merchant_study2.xml"><![CDATA[<html>[Lv34] <FONT color=#086171>Business coursesⅡ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="51" link_target="sq11_491_darkelf_teleju1.xml"><![CDATA[<html>[Lv36] <FONT color=#086171>Dark Elf tere beadsⅠ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back1" mid="52"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Kelly Merchant$<BR>Oh~My adventurer，What is the right words to say？</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="36"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="buy2" mid="37"><![CDATA[<html>[Store transaction/Goods repair]</html>]]></talk_answer>
+         <talk_answer link_index="003" mid="38"><![CDATA[<html>[Dialogue] About Geraint</html>]]></talk_answer>
+         <talk_answer link_index="004" mid="39"><![CDATA[<html>[Dialogue] The raid on the Black Dragon</html>]]></talk_answer>
+         <talk_question mid="35"><![CDATA[<html>$Kelly Merchant${action:Talk}<BR>
+Abnormal frequency operation once the soldiers to calm down now。 <BR>
+I wonder what happened Montenegro direction，Asked who did not say。Really boring。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="003" image="" itemindex="">
+         <talk_answer link_index="002" mid="41"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="40"><![CDATA[<html>$Kelly Merchant${action:Talk}<BR><FONT color=#a82424>Geraint</FONT>? Then the name is really common, but ah。<BR><FONT color=#a82424>Black Dragon of the raid</FONT> Period of time after，Once the words were born blond boy，This name will。I even raised a hound is called <FONT color=#a82424>Geraint</FONT>It。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="004" image="" itemindex="">
+         <talk_answer link_index="002" mid="43"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="42"><![CDATA[<html>$Kelly Merchant${action:Talk}<BR>
+Yes ah，I know there are not many。<BR>
+Unfortunately, even the grandmother also said, without exception,，At that time because there is no sacred paradise，Had therefore not witness to arrest<FONT color=#a82424>Black Dragon</FONT>Inroads to the Montenegro<FONT color=#a82424>Dragon by</FONT>Their heroic。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="openshop">40</exe>
+         <exe type="conexe" true="3" false="0">0</exe>
+         <exe type="talk">002</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 408) == 1</chk>
+      </conditions>
+      <exelink idx="buy1">1</exelink>
+      <exelink idx="back1">2</exelink>
+      <exelink idx="buy2">1</exelink>
+   </talk>

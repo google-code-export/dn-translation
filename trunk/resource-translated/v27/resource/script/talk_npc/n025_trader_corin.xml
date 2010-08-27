@@ -1,0 +1,45 @@
+   <talk>
+      <npcename>n025_trader_corin</npcename>
+      <npcid>25</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Blacksmith Colin]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Task] </html>]]></talk_answer>
+         <talk_answer link_index="w_buy" mid="4"><![CDATA[<html>[Store transaction/Goods repair]</html>]]></talk_answer>
+         <talk_answer link_index="itemupgrade" mid="23"><![CDATA[<html>[Items to strengthen]</html>]]></talk_answer>
+         <talk_answer link_index="opencompounditem2" mid="26"><![CDATA[<html>[Goods production]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Blacksmith Colin$<BR>Welcome!What you want?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="37" link_target="sq08_273_make_ring1.xml"><![CDATA[<html>[Lv10] <FONT color=#086171>Ring producedⅠ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="sq08_274_make_ring2.xml"><![CDATA[<html>[Lv10] <FONT color=#086171>Ring producedⅡ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="sq08_288_iron_scale1.xml"><![CDATA[<html>[Lv11] <FONT color=#086171>[Title]「ImmortalLv2」Steel skinⅠ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="sq08_289_iron_scale2.xml"><![CDATA[<html>[Lv11] <FONT color=#086171>[Title] 「ImmortalLv2」Steel skinⅡ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="35" link_target="sq08_302_ring_thief2.xml"><![CDATA[<html>[Lv14] <FONT color=#086171>Ring stolen II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="36"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="27"><![CDATA[<html>$Blacksmith Colin$<BR>
+To say you have any？</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="openshop">11</exe>
+         <exe type="openshop">12</exe>
+         <exe type="openshop">13</exe>
+         <exe type="openshop">14</exe>
+         <exe type="conexe" true="1" false="6">0</exe>
+         <exe type="conexe" true="2" false="7">1</exe>
+         <exe type="conexe" true="3" false="8">2</exe>
+         <exe type="conexe" true="4" false="0">3</exe>
+         <exe type="custom">api_ui_OpenUpgradeItem(userObjID);</exe>
+         <exe type="custom">api_ui_OpenCompoundItem(userObjID, 3);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <exelink idx="w_buy">5</exelink>
+      <exelink idx="itemupgrade">9</exelink>
+      <exelink idx="opencompounditem2">10</exelink>
+   </talk>

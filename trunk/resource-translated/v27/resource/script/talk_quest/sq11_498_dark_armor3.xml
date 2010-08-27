@@ -1,0 +1,277 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_498_dark_armor3</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>498</qid>
+      <designer>손원호</designer>
+      <qlevel>29</qlevel>
+      <qdesc>가져온 연기가 너무 많아 콜록 거리는 벨린. 지나치게 어둠의 힘에 중독되어 성격이 이상해진다. 황급히 상급 클레릭 에녹에게 정화를 받아오라고 하는데… 에녹에게 가서 증세를 설명하면 사악한 힘에 오염될 수 있으니 어서 정화수를 뿌리라고 한다. 받아와서 뿌리면 다시 정신을 차리는 벨린. 거기에서 아이디어를 얻어, 이번엔 정화된 연기를 가져오라고 한다. 성수를 몸에 뿌리고 출발하는 주인공. 정화된 검은 연기로 무형의 갑옷 제작에 성공하는 벨린. 이제 코린에게 앞섰다며 호방하게 웃는다. 도와 준 대가로 불사 Lv3 겟
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Title]「ImmortalLv3」Dark ArmorⅢ]]></qkname>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-a" mid="6"><![CDATA[<html>Well, now you can create a?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Blacksmith Berlin$<BR>Ah，As the smoke can not crawl，To use it made of armor，Crystallization may need to approach it。But did not expect to use their holy water can easily carry out crystallization... Is this the power of purification?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Blacksmith Berlin$<BR>Hei hei。 Basically ready for it。But to obtain pure crystalline light that still does not work。Best to have directly to the collapse of the mine&#39;s monster for the way... Ehe！ Ah，That method...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-b" image="QS_Default.dds" itemindex="300080">
+      <talk_answer link_index="n091_trader_bellin-accepting-c" mid="10"><![CDATA[<html>Then I would try it。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Blacksmith Berlin$<BR>Sprinkle holy water on him this after，If those monsters to destroy，Should obtain pure<FONT color=#a82424>Dark Crystal</FONT>It。<BR>
+ <BR>
+<FONT color=#7e12d2>（Berlin, sprinkling holy water to my body ）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Dark Armor Ⅲ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="QS_Default.dds" itemindex="300080">
+      <talk_answer link_index="n091_trader_bellin-1-a" mid="17"><![CDATA[<html>Take I&#39;ll be back。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Blacksmith Berlin$<BR>As long as there<FONT color=#a82424>Dark Crystal</FONT>Sure you can make more<FONT color=#a82424>Strength of die title</FONT>！ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-a" image="QW_29.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Blacksmith Berlin$<BR><FONT color=#a82424>The mine collapse</FONT>Port direction in Heermadai，Let it Kuaiqukuaihui！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Blacksmith Berlin$<BR>With holy water can make a dark crystal。<BR>
+I have no thought of how it？/html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3" image="QS_Default.dds" itemindex="300080">
+      <talk_answer link_index="n091_trader_bellin-3-a" mid="22"><![CDATA[<html>（To hand over the dark crystal）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Blacksmith Berlin$<BR>I&#39;m waiting for you！<BR>
+<FONT color=#a82424>Dark Crystal</FONT>Where？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-b" mid="24"><![CDATA[<html>The success of this bar?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Blacksmith Berlin$<BR>Oh，Ah... This is what I have been looking for the dark crystal…Further refined his words，Sure...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-c" mid="26"><![CDATA[<html>（Wait）</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Blacksmith Berlin$<BR>Haha。Do not worry，Will not let you see that kind of ugly as the last。 <BR>
+ <BR>
+<FONT color=#7e12d2>（Berlin began to produce the dark armor）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-d" mid="28"><![CDATA[<html>Ah?Well what can not see?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Blacksmith Berlin$<BR>Ah，This feeling ah。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-d" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-e" mid="30"><![CDATA[<html>（Wear dark armor）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Blacksmith Berlin$<BR>It is invisible<FONT color=#a82424>Invisible Armor</FONT>。<BR>
+Come，You put on a try。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-e" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-f" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html><FONT color=#7e12d2>（The body was wrapped with black smoke，Again, come to naught。A stronger sense of the body）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-f" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-g" mid="32"><![CDATA[<html>Thank you。</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Blacksmith Berlin$<BR>Ah ha ha！ It seems I do more than to do a better rookie Colin ah。Now you can throw away the title of that date，Wearing the more powerful<FONT color=#a82424>Immortal Lv3</FONT>It！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-g" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-h" mid="34"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-h" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-i" mid="36"><![CDATA[<html>If you kinda embarrassed。</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Blacksmith Berlin$<BR>Although it is not satisfactory，But…If you do come out… Thank you so or say it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-i" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-j" mid="38"><![CDATA[<html>Farewell！</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Blacksmith Berlin$<BR>What？！You this rookie！<BR>
+I was about to say something nice to，You insatiable！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-j" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Blacksmith Berlin$<BR>Hum，It quickly disappeared before my eyes！</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">4980,,,,</exe>
+         <exe type="setquest">498</exe>
+         <exe type="talk" npc="n091_trader_bellin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">849</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300080</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntitem" num="1" exe="3,4,6" onexe="">300080</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200849</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4980,,,,</exe>
+         <exe type="complete">498</exe>
+         <exe type="delquestitem" num="-1">300080</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n091_trader_bellin" sub="a">0,7,2,8,1</exelink>
+   <exelink qstep="3" npc="n091_trader_bellin" sub="a">2</exelink>
+   <exelink qstep="3" npc="n091_trader_bellin" sub="b" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="c" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="d" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="e" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="f" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="g">0</exelink>
+   <exelink qstep="3" npc="n091_trader_bellin" sub="h">1</exelink>
+   <exelink qstep="3" npc="n091_trader_bellin" sub="i" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="j" />
+   <journal_data recompense="0:4980" quest_title="[칭호]「불사Lv3」어둠의 갑옷Ⅲ" chapterid="" quest_level="29" quest_mark_type="10" use_item_list="300080,300081">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[Berlin dialogue with the blacksmith]]></title>
+         <contents mid="42"><![CDATA[<html>Found that the holy water, sprinkling can become dark smoke crystal Berlin decided to adopt this approach。Let the dialogue with Berlin。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Berlin dialogue with the blacksmith]]></destination>
+         <todo_msg mid="44"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_29.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>294,0,0</destination_pos>
+         <destination_mode>custom:291@1,292@4,293@4,294@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Get the dark crystal]]></title>
+         <contents mid="46"><![CDATA[<html>After sprinkling holy water by the Berlin，In re-entering the mine collapse，After the eradication of self-righteousness smoke，Come back for the crystallization of Darkness。<BR><FONT color=#7e12d2>※ To the collapse of the mine can be found in self-righteous way to hide the smoke。</FONT><BR><BR><FONT color=#086171>Heermadai port（Dark mine entrance）</FONT> <FONT color=#a82424>→ The mine collapse</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Get the dark crystal]]></destination>
+         <todo_msg mid="48"><![CDATA[To the collapse of the mining right for the dark crystal。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Berlin dialogue with the blacksmith]]></title>
+         <contents mid="50"><![CDATA[<html>Get a dark crystal。Back to the holy heaven to the dark crystal to a blacksmith in Berlin，And complete the immortal title bar。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Berlin dialogue with the blacksmith]]></destination>
+         <todo_msg mid="52"><![CDATA[Get a dark crystal。Report it back to the blacksmith Berlin。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>29:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>497</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

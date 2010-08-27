@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n172_cleric_tomas</npcename>
+      <npcid>172</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Pastor Thomas]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$Pastor Thomas$<BR><FONT color=#387206>{user_nick}</FONT>, You<FONT color=#a82424>Jack</FONT>The most difficult ah。<BR>Thanks to you what I was able to arrive safely <FONT color=#a82424>Magic Ridge</FONT>。Haha~</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="enterquest">sq05_155_remember</exe>
+         <exe type="conexe" true="0" false="2">0</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">155</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,159 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq01_063_enter_adventure</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>63</qid>
+      <designer>김인정</designer>
+      <qlevel>8</qlevel>
+      <qdesc>모험자 길드원과 대화
+길드 게시판과 대화</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Adventurer Introduction]]></qkname>
+      <qnpc>
+         <npcid>341</npcid>
+         <npcename>n341_guild_luke</npcename>
+         <npckname>모험자 길드원 루크</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>402</npcid>
+         <npcename>n402_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting" image="" itemindex="">
+      <talk_answer link_index="n341_guild_luke-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Association members adventurer Luke$<BR><FONT color=#382000>{user_class} {user_nick}</FONT>Adult，<BR>Adventurer&#39;s life, you&#39;ve also successfully?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n341_guild_luke-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Association members adventurer Luke$<BR>In the course of a long adventure，Will certainly be a loss、Flawless、Lost time。There are so-called<FONT color=#a82424>Adventure</FONT> <FONT color=#a82424>Malaise</FONT>When。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n341_guild_luke-accepting-c" mid="10"><![CDATA[<html>How to accept commission?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Association members adventurer Luke${action:Talk}<BR>Now，May wish to<FONT color=#a82424>Adventurers Association</FONT>Accept<FONT color=#a82424>Entrust</FONT>Implementation of the look。All sorts of things, and things will be clear capable display，So do not hesitate to glance right and left of the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting-c" image="QW_WindForest.dds" itemindex="">
+      <talk_answer link_index="n341_guild_luke-accepting-d" mid="12"><![CDATA[<html>What is the commission?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Association members adventurer Luke$<BR>Leave the village leading to the crypt of the region have a variety of<FONT color=#a82424>Adventurers Society Bulletin</FONT> 。Where the nearest... On<FONT color=#a82424>Wind forest</FONT>。Wind forest<FONT color=#a82424>Tomb entrance</FONT>And<FONT color=#a82424>Forest Temple entrance of wind</FONT>Were an adventurer Association Bulletin Board。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n341_guild_luke-accepting-e" mid="14"><![CDATA[<html>So that。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Association members adventurer Luke$<BR>That you want to select<FONT color=#a82424>Consistent with its current strength of the task</FONT>To perform。Cats look to eliminate from Monster, etc.，Can accept a wide range of commission Oh。Moreover, with the board still have a chance to do different<FONT color=#a82424>Hide</FONT> <FONT color=#a82424>Task</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n341_guild_luke-accepting-f" mid="16"><![CDATA[<html>It was so organized。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Association members adventurer Luke${action:Talk}<BR>Related Bulletin Board<FONT color=#a82424>Completion of all commissioned</FONT>Time，Hide task is added。You can not know the hidden mission bulletin board from which there。In short...Well seeing is believing，If you are interested in, then，May wish to look at himself in the past ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting-f" image="QS_Default.dds" itemindex="300227">
+      <talk_answer link_index="n341_guild_luke-accepting-g" mid="18"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Association members adventurer Luke$<BR>Ah，When to go，By the way I do things to help? Just I have a<FONT color=#a82424>Junior Adventurer power of attorney</FONT>，I posted for this bulletin board bar。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n341_guild_luke-accepting-acceptted" mid="20"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Adventurer Introduction$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-1" image="QW_WindForest.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Association members adventurer Luke${action:Talk}<BR>Now located at<FONT color=#a82424>Forest Temple entrance of wind</FONT>Department<FONT color=#a82424>Adventurers Society Bulletin</FONT>See it。After posting the proxy，I do not have to come back separately report。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n402_guild_board-1" image="" itemindex="">
+      <talk_answer link_index="n402_guild_board-1-a" mid="23"><![CDATA[<html>（Posting instructions）</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Adventurers Society Bulletin$<BR><FONT color=#7e12d2>（Posters scattered all commissioned。There were tear、Have been modified so all the power of attorney）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n402_guild_board-1-a" image="" itemindex="">
+      <talk_answer link_index="n402_guild_board-1-b" mid="25"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n402_guild_board-1-b" image="QS_Default.dds" itemindex="300227">
+      <talk_question mid="26"><![CDATA[<html>$Adventurers Society Bulletin$<BR><FONT color=#7e12d2>（Association members from the adventurer posted got the junior adventurer Luke Power of Attorney。A closer look at the discovery of several current can also delegate the implementation of。If want to receive commission，Bulletin Board once again carefully to see if it）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,631,632,633,634</exe>
+         <exe type="setquest">63</exe>
+         <exe type="talk" npc="n341_guild_luke">1</exe>
+         <exe type="addquestitem" num="1">300227</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,631,632,633,634</exe>
+         <exe type="delquestitem" num="-1">300227</exe>
+         <exe type="complete">63</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n341_guild_luke" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n341_guild_luke" sub="acceptted">1,2,3</exelink>
+   <exelink qstep="1" npc="n402_guild_board" sub="a">0</exelink>
+   <exelink qstep="1" npc="n402_guild_board" sub="b">1,2</exelink>
+   <journal_data recompense="1:631,2:632,3:633,4:634" quest_title="모험자 입문" chapterid="" quest_level="8" quest_mark_type="10" use_item_list="300227">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_WindForest.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>3,n402</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>402</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="28"><![CDATA[Association commissioned the entry adventurer]]></title>
+         <contents mid="29"><![CDATA[<html>In<FONT color=#a82424>Forest Temple entrance of wind</FONT>Notice board of the Society adventurers power of attorney。<BR>
+ <BR>
+<FONT color=#086171>Wind forest</FONT> <FONT color=#a82424>→Forest Temple entrance of wind</FONT></html>]]></contents>
+         <destination mid="30"><![CDATA[Confirm wind forest temple bulletin board at the entrance of the adventurer Association]]></destination>
+         <todo_msg mid="31"><![CDATA[To confirm wind forest temple entrance Bulletin Bar Association adventurer。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>8:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1:2</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

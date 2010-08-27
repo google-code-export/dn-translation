@@ -1,0 +1,174 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq_903_ring_event</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>REPEAT</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>903</qid>
+      <designer>곽노찬</designer>
+      <qlevel>1</qlevel>
+      <qdesc>872415233 마구모아 응모권</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Capture the crazy duck！]]></qkname>
+      <qnpc>
+         <npcid>100</npcid>
+         <npcename>n100_event_ilyn</npcename>
+         <npckname>이벤트 도우미 아이린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting" image="QM_CrazyDug.dds" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Activities Guide Eileen$<BR>I love Dragon Valley of the players to express my sincere thanks to。To mark<FONT color=#a94407>S5Chapter. [Guardian Geraint]</FONT>Update，Currently being held[<FONT color=#a82424>Capture the crazy duck！</FONT>]Activity。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-acceptted" mid="8"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Capture the crazy duck！$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1" image="QM_CrazyDug.dds" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-a" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Activities Guide Eileen$<BR>Please hunting<FONT color=#a82424>Crazy duck</FONT>。<FONT color=#a82424>Crazy duck</FONT>Have lower chance of appearing in the general points，Certificates will be summoned drop disorderly。<BR>
+※ <FONT color=#7e12d2>Crazy Town, ducks will Pourailly、Magic mountain ridges and regional barriers haunt Kedella。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-a" image="QS_Default.dds" itemindex="872415233">
+      <talk_question mid="12"><![CDATA[<html>$Activities Guide Eileen$<BR>Collection of ducks falling to the crazy<FONT color=#a82424>Disorderly summoned Certificates</FONT>15Zhang&#39;s remarks，Can be exchanged to<FONT color=#a82424>Ring Earring</FONT>。<BR>※ <FONT color=#7e12d2>Ring earrings can3Days when the restrictions on use of equipment。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-a" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Activities Guide Eileen$<BR>Called up to collect tickets, ah, disorderly。<BR><FONT color=#a82424><FONT color=#2b2723>Awards will be distributed to</FONT><FONT color=#a82424>Mall gift box</FONT><FONT color=#2b2723>In。<BR>Click</FONT><FONT color=#a82424>[F11]</FONT></FONT><FONT color=#2b2723>Into the mall，Gift box to confirm。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-b" mid="18"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-b" image="QM_CrazyDug.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Activities Guide Eileen$<BR>[<FONT color=#a82424>Capture the crazy duck！</FONT>] Activities during the event can be<FONT color=#a82424>Repeat</FONT>Execution。Collected15Zhang, disorderly summoned after coupon，Can always come to me～</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">9030,,,,</exe>
+         <exe type="setquest">903</exe>
+         <exe type="talk" npc="n100_event_ilyn">1</exe>
+         <exe type="huntitem" num="15" exe="4" onexe="">872415233</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="item" num="15" op="]=">872415233</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="talk" npc="n100_event_ilyn">1</exe>
+         <exe type="talk" npc="n100_event_ilyn">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">9030,,,,</exe>
+         <exe type="complete">903</exe>
+         <exe type="delitem" num="15">872415233</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="acceptted">1,2,3</exelink>
+   <exelink qstep="1" npc="n100_event_ilyn">0</exelink>
+   <exelink qstep="2" npc="n100_event_ilyn" sub="a">0</exelink>
+   <exelink qstep="2" npc="n100_event_ilyn" sub="b">1,2</exelink>
+   <journal_data recompense="0:9030" quest_title="크레이지 덕을 잡자!" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QM_CrazyDug.dds</contents_image>
+         <need_itemlist />
+         <destination_pos />
+         <destination_mode>hide</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Summoned to collect tickets, disorderly]]></title>
+         <contents mid="26"><![CDATA[<html>Elimination of barriers in the wild ducks appear，Collected15Zhang, disorderly summoned after coupon，Activities Office in exchange to ring the wizard Irene Earrings。<BR><BR>※ <FONT color=#7e12d2>Crazy Town, ducks will Pourailly、Magic mountain ridges and Kedella crossing points appear。</FONT><BR>※ <FONT color=#7e12d2>Ring earrings can3Days when the restrictions on use of equipment。</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Collection15Zhang, disorderly summoned Certificates]]></destination>
+         <todo_msg mid="28"><![CDATA[Please collect tickets, disorderly summoned。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n100</destination_pos>
+         <destination_mode>custom:1@4,5@4,11@4</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="29"><![CDATA[Ring exchange earrings]]></title>
+         <contents mid="30"><![CDATA[<html>Collected to15Zhang, disorderly summoned Certificates。<BR>Go to activities where the exchange of rings guide Eileen Earrings。<BR><BR><FONT color=#086171>Pourailly town/Magic Ridge/Kedella points/Holy Paradise</FONT> <FONT color=#a82424>→ Activities Guide Eileen</FONT></html>]]></contents>
+         <destination mid="31"><![CDATA[Eileen dialogue and activities guide]]></destination>
+         <todo_msg mid="32"><![CDATA[Summoned to the disorderly collection of tickets。Eileen dialogue and activities guide, please。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

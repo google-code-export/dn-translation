@@ -1,0 +1,492 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_411_rose_in_nightmare</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>411</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>412</nextqid>
+      <nextqname>mq11_412_cure_of_fairystar</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[Sleeping Prophet]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>251</npcid>
+         <npcename>n251_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio$<BR>Yes ah，Can now see<FONT color=#a82424>Geraint</FONT>Only you people。Both warriors were gun sword，Magic or magician who can not destroy the door on the Enchantment。So you talk to explain how he，Let me in。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-1" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Rose$<BR>…….<BR><FONT color=#7e12d2>(No response。Seems to be asleep。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-a" mid="8"><![CDATA[<html>Telamayi……It is the Pope。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Geraint$<BR>…Goddess Mission？<BR>Ah，Be<FONT color=#a82424>Telamayi</FONT>It belongs to the Mission。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-a" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-b" mid="10"><![CDATA[<html>This is50Years ago, the story of a bar？</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Geraint$<BR>Pope？Ah，Not long ago, or<FONT color=#a82424>Youth Pastor</FONT>He，Now they all have a pope？<BR>The human time flies fast ah Zhengou！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-b" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-c" mid="12"><![CDATA[<html>(And Algerita actually the same as，Think50Is the blink of an eye on things, but……)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Geraint$<BR>Yes ah，<BR>He was a honest good people。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-c" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-d" mid="15"><![CDATA[<html>Not，I said that adults want to come in Bishop Ignacio。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Geraint$<BR>Be<FONT color=#a82424>Telamayi</FONT>Want to come to you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-d" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-e" mid="17"><![CDATA[<html>But……</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Geraint$<BR>Eh？ It seems I do not know him。<BR>No matter who he is，<FONT color=#a82424>Descendants of ancient people</FONT> The power of human beings can not wake up。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-e" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Geraint$<BR>Either personally seen，Human beings are not easily believe。<BR>Tell me, then go back。<BR>
+<FONT color=#a82424>Telamayi</FONT>In person, then，I will allow him to come in。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Geraint$<BR><FONT color=#a82424>Ancient times</FONT><FONT color=#a82424>Descendants</FONT>The power of human beings can not wake up。<BR>
+But，If<FONT color=#a82424>Telamayi</FONT>Come，I will allow him to come in。<BR>
+Go back to tell me this。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-2-a" mid="22"><![CDATA[<html>Please Telamayi grown-ups do not？</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Unless<FONT color=#a82424>Telamayi</FONT>Pope personally to adult，They would not let anyone in.……Ah，I see。<BR>
+If this means he，That no other way。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-2-class1" mid="24"><![CDATA[<html>(Bishop sigh)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Bishop Ignacio$<BR>Unfortunately, adults not to say that the Pope came to be able to。<BR>This can be in trouble。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2-b" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-2-d" mid="26"><![CDATA[<html>I have heard。</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Bishop Ignacio$<BR>You are a member of the Knights of the Temple，This is something you should have heard of。<BR>Goddess of the current pope Mission<FONT color=#a82424>Telamayi</FONT>Adults from long ago, do not care，Retreat of the rivers and lakes。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-2-d" mid="28"><![CDATA[<html>Retreat？</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Bishop Ignacio$<BR>Most people do not know this，Only a few high-level know。<BR>Goddess of the current pope Mission<FONT color=#a82424>Telamayi</FONT>Adults already have do not care，Recluse somewhere in this world。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-2-e" mid="30"><![CDATA[<html>So that。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Bishop Ignacio$<BR>Yes ah，Unfortunately, no one knows his current whereabouts，Even as the characters Mission No. I do not know where he really reclusive。So，Impossible for him to come here in person。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2-e" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-2-levelc1" mid="32"><![CDATA[<html>That may be how to do？</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Bishop Ignacio$<BR>Even so,，We can not give up wake up<FONT color=#a82424>Prophet</FONT>。<BR>
+We have to try to say is true Geraint。<BR>We need your help。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2-f" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Bishop Ignacio$<BR>It will help you？Then I first went looking through the records of Mission，See if there are any measures。Your first step down，Take a break。<BR><FONT color=#7e12d2>(To achieve such32Level and above to enter the next stage。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2-g" image="QS_Default.dds" itemindex="300247">
+      <talk_answer link_index="n039_bishop_ignasio-2-h" mid="35"><![CDATA[<html>Holy Water？</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Bishop Ignacio$<BR>Well，Even Eertaiya goddess must have loyalty to you will be much appreciated in。<BR>Then I started making<FONT color=#a82424>Holy Water</FONT>，With holy water when you go to see if you can wake up the prophet。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2-h" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-2-i" mid="37"><![CDATA[<html>How to do it too？</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Bishop Ignacio$<BR>I look at the academic log Pope adults，Found records show a long time ago<FONT color=#a82424>Water Wizard</FONT>Tears to wake the sleeping people。Although this region has long been not the Wizard，But it should still be able to get some tears in the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2-i" image="QW_37.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Bishop Ignacio$<BR>You go<FONT color=#a82424>Wizard grave</FONT>See it。Even dead elves，Their bitterness will not easily disappear。Many powerful Monster that area of the body is still with<FONT color=#a82424>Tears of wizard</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="QW_37.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Bishop Ignacio$<BR>I will be in accordance with the method of the Goddess Mission generations to make holy water。<BR>You go<FONT color=#a82424>Wizard grave</FONT>Tears of the wizard to take some。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3" image="" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Geraint$<BR><FONT color=#a82424>Holy Water</FONT>？……It seems that you do not believe me say a？<BR>Ye Hao，So you met a setback in relation to understand。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-a" mid="46"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Oh……<FONT color=#a82424>Holy Paradise</FONT>Loyal warrior finally back！<BR>If this king of the city more10A warrior like you，I do not have to worry about it all day long。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-b" mid="48"><![CDATA[<html>(For holy water)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Bishop Ignacio$<BR>You brought back something to my。Already do a holy water……<BR>
+<FONT color=#7e12d2>(Bishop joined the holy water in a blue beads，Then began to pray devoutly)</FONT>We would like to grant all of the compassionate goddess ah，Let miracle it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-b" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$Bishop Ignacio$<BR>Darling<FONT color=#382000>{user_class} {user_nick}</FONT>。<BR>
+Please hold this bottle of holy water for me to wake up the sleeping<FONT color=#a82424>Prophet</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Bishop Ignacio$<BR>Quickly take on<FONT color=#a82424>Holy Water</FONT>To wake up the prophet bar。<BR>If the goddess of devotion and anxiety can hear our prayer，Sure would make a miracle happen。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-a" mid="53"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Geraint$<BR><FONT color=#a82424>Holy Water</FONT>？……It seems that you do not believe me, then the？<BR>Ye Hao。<BR>
+So you met a setback in relation to understand。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-a" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Injured Geraint$<BR>You directly with<FONT color=#a82424>Descendants of ancient people</FONT>Try to speak。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-5" image="" itemindex="">
+      <talk_answer link_index="n251_rose-5-a" mid="58"><![CDATA[<html>(Sprinkling holy water)</html>]]></talk_answer>
+      <talk_answer link_index="n251_rose-5-b" mid="59"><![CDATA[<html>(Fed with holy water)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Rose$<BR>…….<BR><FONT color=#7e12d2>(No response。Seems to be asleep。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-5-a" image="" itemindex="">
+      <talk_answer link_index="n251_rose-5-rose1" mid="61"><![CDATA[<html>(Seem to hear the faint voice of，But she still has not opened his eyes。)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Rose$<BR>……Now…… Hate…….I……<BR>Me…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-5-b" image="" itemindex="">
+      <talk_answer link_index="n251_rose-5-rose2" mid="63"><![CDATA[<html>(Seem to hear the faint voice of，But she still has not opened his eyes。)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Rose$<BR>Not……To。<BR>
+I do not want to know…… Much more of the…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-5-c" image="" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Rose$<BR>…….<BR><FONT color=#7e12d2>(They no longer speak。It seems holy water still can not wake her。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-6" image="" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$Rose$<BR>…….<BR><FONT color=#7e12d2>(They no longer speak。It seems holy water still can not wake her。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-6-a" mid="68"><![CDATA[<html>How do we go I？</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Geraint$<BR>I&#39;ve told you do not？<FONT color=#a82424>Descendants of ancient people</FONT>Can not wake up。<BR>Although I do not know why，But she seems unwilling to wake up from sleep。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-6-b" mid="70"><![CDATA[<html>But……</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Geraint$<BR>Do not know，Time to wake up it will be her natural。<BR>But，In their lifetime，She is no longer willing to wake up is possible。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6-b" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Geraint$<BR>Humans are doing their own<FONT color=#a82424>Select</FONT>Of。She could not wake up，Is her own choice。<BR><FONT color=#a82424>Send you to the people</FONT>If you ask them，It&#39;s that back him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-6-a" mid="73"><![CDATA[<html>She did not wake up。</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Prophets have not opened my eyes？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-6-b" mid="75"><![CDATA[<html>No。</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Bishop Ignacio$<BR>It&#39;s a shame。<FONT color=#7e12d2>(Bishop looked very disappointed。)</FONT><BR>……It seems we are pious enough to pray。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-6-c" mid="77"><![CDATA[<html>(Bishop mind was made up)</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Bishop Ignacio$<BR>As long as the more pious prayer to the goddess，Miracles happen，Prophet will open their eyes。<BR>You have to believe that。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-6-!next" mid="79"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">4</chk>
+         <chk type="lvl" op="]=">32</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">b</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">c</exe>
+         <exe type="conexe" true="5" false="4">1</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">f</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">g</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="12">1007</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">300246</exe>
+         <exe type="huntitem" num="1" exe="" onexe="9,10,11">300246</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="delquestitem" num="-1">300246</exe>
+         <exe type="addquestitem" num="1">300247</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="talk" npc="n251_rose">c</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="delquestitem" num="-1">300247</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4111,4112,4113,4114</exe>
+         <exe type="complete">411</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="d" />
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="e">0,1</exelink>
+   <exelink qstep="2" npc="n039_bishop_ignasio" sub="class1">0</exelink>
+   <exelink qstep="2" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="2" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="2" npc="n039_bishop_ignasio" sub="e" />
+   <exelink qstep="2" npc="n039_bishop_ignasio" sub="levelc1">3</exelink>
+   <exelink qstep="2" npc="n039_bishop_ignasio" sub="h" />
+   <exelink qstep="2" npc="n039_bishop_ignasio" sub="i">6,8,13,7</exelink>
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="b">2,3,0,1</exelink>
+   <exelink qstep="5" npc="n251_rose" sub="rose1">0,1,2,3</exelink>
+   <exelink qstep="5" npc="n251_rose" sub="rose2">0,1,2,3</exelink>
+   <exelink qstep="6" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="6" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="6" npc="n039_bishop_ignasio" sub="c">0</exelink>
+   <exelink qstep="6" npc="n039_bishop_ignasio" sub="!next">1</exelink>
+   <journal_data recompense="1:4111,2:4112,3:4113,4:4114" quest_title="깨어나지 않는 선지자" chapterid="5" quest_level="32" quest_mark_type="7" use_item_list="300246,300247">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[Bishop&#39;s request]]></title>
+         <contents mid="82"><![CDATA[<html>Bishop Ignacio proposed to personally see the Prophet to pray for。Find<FONT color=#a82424>Geraint</FONT>Bishop asked whether the band came。<BR><BR><FONT color=#086171>Holy Heaven King City(Secret underground area)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[And the King City ground Geraint dialogue]]></destination>
+         <todo_msg mid="84"><![CDATA[Find Geraint，To convey the words of Bishop。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[Long answer]]></title>
+         <contents mid="86"><![CDATA[<html>Geraint said that if the Pope<FONT color=#a82424>Telamayi</FONT>I have come to allow him to enter。To<FONT color=#a82424>Bishop Ignacio</FONT>To convey his meaning。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[And Bishop Ignacio Dialogue]]></destination>
+         <todo_msg mid="88"><![CDATA[Go back and find Bishop Ignacio，Tell Geraint answer。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_37.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>374,0,0</destination_pos>
+         <destination_mode>custom:371@1,372@1,373@1,374@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[Tears of wizard]]></title>
+         <contents mid="90"><![CDATA[<html>Wake prophet holy water produced，Need to tear the wizard。To find<FONT color=#a82424>Tears of wizard</FONT>。Monster in the most powerful body to obtain。<BR><BR><FONT color=#7e12d2>※ Difficulty level can not be carried out in the abyss。</FONT><BR><BR><FONT color=#086171>Heermadai port(Downstream of the ruins of the entrance)</FONT> <FONT color=#a82424>→ Wizard grave</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[Wizard wizard to collect the tears of the grave]]></destination>
+         <todo_msg mid="92"><![CDATA[Please go to the grave to collect Wizard Wizard tears。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[Holy water of the material]]></title>
+         <contents mid="94"><![CDATA[<html>Now things are required to collect all the，The report went to Bishop Ignacio。<BR><BR><FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[Report to the Bishop Ignacio]]></destination>
+         <todo_msg mid="96"><![CDATA[Bishop Ignacio referred to the tears of wizard。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Rose.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13014,n251</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>251</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="97"><![CDATA[The power of holy water]]></title>
+         <contents mid="98"><![CDATA[<html>Bishop Ignacio made with holy water to the sleeping<FONT color=#a82424>Rose</FONT>Side，Dialogue with her。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City(Secret underground area)</FONT> <FONT color=#a82424>→ Rose</FONT></html>]]></contents>
+         <destination mid="99"><![CDATA[And King&#39;s Rose dialogue underground city]]></destination>
+         <todo_msg mid="100"><![CDATA[Bring holy water to find the ground floor of Ross King City。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="101"><![CDATA[Failure]]></title>
+         <contents mid="102"><![CDATA[<html>Use of holy water，But<FONT color=#a82424>Prophet</FONT>Did not wake up。Go back and find the report of Bishop Ignacio。<BR><BR><FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="103"><![CDATA[And Bishop Ignacio Dialogue]]></destination>
+         <todo_msg mid="104"><![CDATA[Holy water has no effect。Bishop Ignacio to the report, please。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>410</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,223 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_340_change_job1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>340</qid>
+      <designer>김인정</designer>
+      <qlevel>15</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Irene&#39;s transfer gifts]]></qkname>
+      <qnpc>
+         <npcid>100</npcid>
+         <npcename>n100_event_ilyn</npcename>
+         <npckname>이벤트 도우미 아이린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>32</npcid>
+         <npcename>n032_warrior_master_chandler</npcename>
+         <npckname>상급 워리어 챈들러</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Activities Guide Eileen$<BR>Really bad weather。<BR>I am here，Want to tell you the good news！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-a" mid="7"><![CDATA[<html>Not，No……</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah，On the，To commemorate be heard<FONT color=#382000>{user_class}</FONT>，<FONT color=#a82424>Activities Guide Eileen</FONT>A gift for you。You to have seen her yet？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-acceptted" mid="9"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Irene&#39;s transfer gifts$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2" mid="12"><![CDATA[<html>Not，No……</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah，On the，To commemorate be heard<FONT color=#382000>{user_class}</FONT>，<FONT color=#a82424>Activities Guide Eileen</FONT>A gift for you。You to have seen her yet？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Activities Guide Eileen$<BR>Really bad weather。<BR>I am here，Want to tell you the good news！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2" image="QN_Event_Red.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Senior Warrior Chandler$<BR>This is not a bad thing for you。<BR>Since coming here，Would you like to see her do？<BR>
+Well，You go and meet<FONT color=#a82424>Activities Guide Eileen</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-a" mid="17"><![CDATA[<html>Hei hei，Thank you！！</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Activities Guide Eileen${action:Talk1}<BR>Yes，You are<FONT color=#382000>{user_class} {user_nick}</FONT>。<BR>Heartfelt congratulations on your successful transfer～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-b" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Activities Guide Eileen$<BR>To<FONT color=#387206>{user_nick}</FONT>Congratulations on appointment，I have prepared for you a small gift。I hope you take risks in the mainland when Alturia，Can play a little help。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-b" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-reward_check_1" mid="21"><![CDATA[<html>[Recognition awards]<FONT color=#a82424>Brown velvet suit</FONT></html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-2-reward_check_2" mid="33"><![CDATA[<html>[Recognition awards]<FONT color=#a82424>Line velvet suit</FONT></html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-2-reward_check_3" mid="34"><![CDATA[<html>[Recognition awards]<FONT color=#a82424>Green velvet suit</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Activities Guide Eileen$<BR>Clothing is issued as a gift<FONT color=#a82424>Restrictions on goods</FONT>。<BR>Please select your favorite clothing color。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-c" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-b" mid="36"><![CDATA[<html>I would like to choose other！</html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-2-reward" mid="37"><![CDATA[<html>Determined！</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Recognition awards$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-d" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-e" mid="23"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-e" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Activities Guide Eileen${action:Talk}<BR>Maybe there is now difficult，But<FONT color=#387206>{user_nick}</FONT>Your adventure in the future will be<FONT color=#a82424>Legend</FONT>Of。<BR>I hope you can always keep a happy heart～！</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">3401,,,,</exe>
+         <exe type="setquest">340</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 1) == 1</chk>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 1) == 2</chk>
+      </conditions>
+      <executions>
+         <exe type="complete">340</exe>
+         <exe type="recompense_view">3401,,,,</exe>
+         <exe type="recompense_view">3402,,,,</exe>
+         <exe type="recompense_view">3403,,,,</exe>
+         <exe type="recompense">3401,,,,</exe>
+         <exe type="recompense">3402,,,,</exe>
+         <exe type="recompense">3403,,,,</exe>
+         <exe type="talk" npc="n100_event_ilyn">c</exe>
+         <exe type="talk" npc="n100_event_ilyn">d</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 1, 1);</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 1, 2);</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 1, 3);</exe>
+         <exe type="conexe" true="4,8" false="13">0</exe>
+         <exe type="conexe" true="5,8" false="6,8">1</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="acceptted">1,2,3,4</exelink>
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n100_event_ilyn" sub="b" />
+   <exelink qstep="2" npc="n100_event_ilyn" sub="reward_check_1">1,7,9</exelink>
+   <exelink qstep="2" npc="n100_event_ilyn" sub="reward_check_2">2,7,10</exelink>
+   <exelink qstep="2" npc="n100_event_ilyn" sub="reward_check_3">3,7,11</exelink>
+   <exelink qstep="2" npc="n100_event_ilyn" sub="b" />
+   <exelink qstep="2" npc="n100_event_ilyn" sub="reward">12</exelink>
+   <exelink qstep="2" npc="n100_event_ilyn" sub="e">0</exelink>
+   <journal_data recompense="0:3401" quest_title="아이린의 전직 선물" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Transfer completed！]]></title>
+         <contents mid="26"><![CDATA[<html>Chandler seems to have senior soldier on the transfer of something to say to me。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior Warrior Chandler</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Chandler dialogue and advanced fighters]]></destination>
+         <todo_msg mid="28"><![CDATA[Tasks have been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n100</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="29"><![CDATA[Irene&#39;s gift]]></title>
+         <contents mid="30"><![CDATA[<html>Eileen in activities where they can receive transfer wizard gift。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Activities Guide Eileen</FONT></html>]]></contents>
+         <destination mid="31"><![CDATA[Eileen dialogue and activities guide]]></destination>
+         <todo_msg mid="32"><![CDATA[Go to activities go to receive transfer wizard presents Eileen。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1</user_class>
+      <prev_quest>279</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

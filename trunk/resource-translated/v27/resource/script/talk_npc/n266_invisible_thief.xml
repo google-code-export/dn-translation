@@ -1,0 +1,21 @@
+   <talk>
+      <npcename>n266_invisible_thief</npcename>
+      <npcid>266</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Unseen steal]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="6"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>（What sense of moving。</FONT><BR>
+<FONT color=#7e12d2>Distribution of a very sharp，However, some familiar stench）</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="enterquest">sq08_309_hapless_thief</exe>
+         <exe type="enterquest">sq08_308_strange_smell</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">309</chk>
+         <chk type="hasquest">308</chk>
+      </conditions>
+   </talk>

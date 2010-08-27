@@ -1,0 +1,505 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_459_complete_decode</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>459</qid>
+      <designer>김인정</designer>
+      <qlevel>27</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>460</nextqid>
+      <nextqname>sq11_460_who_is_whiterose</nextqname>
+      <nextqnpc>n088_scholar_starshy</nextqnpc>
+      <qkname mid="1"><![CDATA[Reading completed]]></qkname>
+      <qnpc>
+         <npcid>133</npcid>
+         <npcename>n133_lena_duglars</npcename>
+         <npckname>레나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>285</npcid>
+         <npcename>n285_saint_guard</npcename>
+         <npckname>왕성 근위병</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>64</npcid>
+         <npcename>n064_whilerose_lena</npcename>
+         <npckname>하얀 장미의 기사</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Now there are many things to do，After a while you come to me again。<BR><FONT color=#7e12d2>(In King City, where Miss Leina within acceptable task)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-noquest" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$White Rose Knight$<BR>Hum……There&#39;s really nothing you and I。Step aside。<BR><FONT color=#7e12d2>(In King City, where Miss Leina within acceptable task)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-noquest" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Duke Stewart$<BR>Must pose a threat to the kingdom to clean up all the criminals。<BR><FONT color=#7e12d2>(In King City, where Miss Leina within acceptable task)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n285_saint_guard-noquest" image="" itemindex="">
+      <talk_question mid="115"><![CDATA[<html>$King City guardsman$<BR>I&#39;m tasks。<BR><FONT color=#7e12d2>(In King City, where Miss Leina within acceptable task)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting" image="QS_Default.dds" itemindex="300254">
+      <talk_answer link_index="n133_lena_duglars-accepting-a" mid="11"><![CDATA[<html>Yes，I put it to the coat of arms scholars Stasi。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$蕾娜 Miss$<BR>You note sent，I have already handed over<FONT color=#a82424>Father</FONT>。<BR>But apart from his father outside，Back to others that you read the paper do？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-a" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-b" mid="13"><![CDATA[<html>(Know what？)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$蕾娜 Miss$<BR>Eh……<FONT color=#a82424>Heraldic scholars Stasi</FONT>If，Maybe you can detect the contents of a note。<BR>I know。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-c" mid="15"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Reading completed$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-c" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$蕾娜 Miss${action:Talk}<BR>You Anything else？I am also very busy。Disturb the。<BR><FONT color=#7e12d2>(Must go to heraldic scholars Stasi there to see whether s paper completed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1" image="QS_Default.dds" itemindex="300254">
+      <talk_answer link_index="n133_lena_duglars-1-a" mid="19"><![CDATA[<html>Yes，I put it to the coat of arms scholars Stasi。</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$蕾娜 Miss$<BR>Why look at me with those eyes？I will pass on a note<FONT color=#a82424>Father</FONT>，Do not worry。<BR>But……Slips of paper had been moving through the traces。In addition to his father than，You read right back to others？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1-a" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-2" mid="21"><![CDATA[<html>(Know what？)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$蕾娜 Miss$<BR>Eh……<FONT color=#a82424>Heraldic scholars Stasi</FONT>If，Maybe you can detect the contents of a note。<BR>I know。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-1" image="" itemindex="">
+      <talk_question mid="113"><![CDATA[<html>$White Rose Knight${action:Talk}<BR>Hum……<BR>There&#39;s really nothing you and I。Step aside！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="">
+      <talk_question mid="116"><![CDATA[<html>$Duke Stewart$<BR>Must pose a threat to the kingdom<FONT color=#a82424>Criminal</FONT>All cleared up！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n285_saint_guard-1" image="" itemindex="">
+      <talk_question mid="117"><![CDATA[<html>$King City guardsman$<BR>I&#39;m tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$蕾娜 Miss${action:Talk}<BR>You Anything else？I am also very busy。Disturb the。<BR><FONT color=#7e12d2>(Must go to heraldic scholars Stasi there to see whether s paper completed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-2" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$White Rose Knight${action:Talk}<BR>Hum……<BR>There&#39;s really nothing you and I。Step aside！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Duke Stewart$<BR>Must pose a threat to the kingdom to clean up all the criminals。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Oh，Well, just the interpretation。<BR>However, a written too carelessly，And the middle of another empty lot，I do not know right。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Heraldic scholars Stasi$<BR>However, the content should be right about the。<FONT color=#7e12d2> (Stasi took out a thick book me)</FONT>Here，Look here。Here and a piece of paper written a few similar names。This book is the official name of the record of King City。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-c" mid="34"><![CDATA[<html>Eh？</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Heraldic scholars Stasi$<BR>That is，This paper is a<FONT color=#a82424>List</FONT>。However, many of them use it only in King City and aliases used by the saying，Therefore difficult to understand the external people。Seems to be a list of organizations……I&#39;m not sure the other。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-c" image="QS_Default.dds" itemindex="300042">
+      <talk_answer link_index="n088_scholar_starshy-2-d" mid="37"><![CDATA[<html>(Open letter out Stasi)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Heraldic scholars Stasi$<BR>In addition,……<FONT color=#7e12d2>(Stasi pause for a moment，Rummaging in the pocket)</FONT>Actually，Before you come to me，I received this thing。<BR>You guessed right？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-d" image="QW_28.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-e" mid="40"><![CDATA[<html>Who sent this letter？</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Believe$<BR>To<FONT color=#a82424>Dark Overlord&#39;s territory</FONT>Come。<BR>Where to find you something，Do not be late。<BR><FONT color=#7e12d2>(Painted a very familiar of the White Rose)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-f" mid="42"><![CDATA[<html>Please do not worry about me。</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Do not know。I do not know when to appear in the table。<BR>Must have recently created a hubbub of<FONT color=#a82424>Pirates of the blame</FONT>Sent。Are you OK？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-f" image="QW_28.dds" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Heraldic scholars Stasi${action:Talk}<BR>It says to you<FONT color=#a82424>Dark Overlord&#39;s territory</FONT>Go，But it is too dangerous，You Do not in the past。<BR>Please pay attention to safety。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="QW_28.dds" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Heraldic scholars Stasi${action:Talk}<BR>The things your hands，Pirates must be strange white rose of threatening letters。It says to you<FONT color=#a82424>Dark Overlord&#39;s territory</FONT>Go。You better be careful，Do not the past。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-3" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-3-a" mid="61"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$White Rose Knight${action:Talk}<BR>I&#39;m waiting for you。<BR>Why do you always enjoy being back in my ass？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-3-a" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-3-b" mid="63"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$White Rose Knight$<BR>I know you guess<FONT color=#a82424>Ring inside the strip</FONT>Content，I tried to track。Such things should be done in secret。<BR>If because of your reckless actions，If things are screwed up，Can you afford that responsibility you fear？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-3-b" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-3-c" mid="65"><![CDATA[<html>What are the contents of that note in the end？！</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$White Rose Knight$<BR>Big trouble if things further，I will obstruct。<BR>I warn you the first time，I hope you can remember。In the future must be contented！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-3-c" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-3-d" mid="67"><![CDATA[<html>Why？</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$White Rose Knight$<BR>Do you think I&#39;ll tell you right？Hum。<BR>In short，Bala you hassle me to grasp。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-3-d" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-3-camera" mid="69"><![CDATA[<html>(Heard footsteps behind)</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$White Rose Knight${action:Talk}<BR>I will not be a hostage-taking。Understand me？<BR>Ah……<FONT color=#7e12d2>(Suddenly said angrily)</FONT>……You mean the guy that！Dare to<FONT color=#a82424>Duke</FONT>Running dogs brought？We&#39;ll see！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-3-e" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$White Rose Knight${action:Talk}<BR><FONT color=#7e12d2>(Duke seemed to catch the soldiers who had come)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-4" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$White Rose Knight${action:Talk}<BR>Wait and see。<BR>How dare you to<FONT color=#a82424>Duke</FONT>Take over the running dogs……！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Heraldic scholars Stasi${action:Talk}<BR>I&#39;m afraid you are<FONT color=#a82424>Pirates of the blame</FONT>Hijack，So the city was reported to the king。<BR>I do this also just in case，I hope you do not hurt。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n285_saint_guard-4" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n285_saint_guard-4-a" mid="120"><![CDATA[<html>How do you know that I am here？</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$King City guardsman${action:Talk}<BR>You did not hurt it？<BR>
+We Bong<FONT color=#a82424>Duke Stewart</FONT>Of life come here to track criminals。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n285_saint_guard-4-a" image="" itemindex="">
+      <talk_answer link_index="n285_saint_guard-4-b" mid="122"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$King City guardsman$<BR>It was reported that you received a threatening letter。<BR>We come to this neighborhood search，Is planning to go back。I hope you pay attention to safety in the future。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n285_saint_guard-4-b" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="123"><![CDATA[<html>$King City guardsman$<BR>Goodbye。Please you go<FONT color=#a82424>Duke Stewart</FONT>Report，Say you gonna be alright。<BR><FONT color=#7e12d2>(Elite soldiers began to investigate the nearby footprints)</FONT>……Feed！We came here to look into！！Something like！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n285_saint_guard-5" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="124"><![CDATA[<html>$King City guardsman$<BR>Back after，Please you go<FONT color=#a82424>Duke Stewart</FONT>Report，Say you gonna be alright。<BR><FONT color=#7e12d2>(Elite soldiers as if something in the vicinity of the investigation)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-5" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-5-a" mid="126"><![CDATA[<html>Yes。</html>]]></talk_answer>
+      <talk_question mid="125"><![CDATA[<html>$Duke Stewart$<BR>I have received<FONT color=#a82424>Heraldic scholars Stasi</FONT>Report。<BR>The offender to an unpleasant<FONT color=#382000>{user_class}</FONT>Sent a threatening letter。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-5-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-5-b" mid="128"><![CDATA[<html>(Duke arrogant to say)</html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html>$Duke Stewart$<BR>Why did not you report，The choice facing the threat alone does？<BR>If I did not send troops to the past，May have been something wrong。You should feel lucky。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-5-b" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-5-c" mid="130"><![CDATA[<html>Good things？</html>]]></talk_answer>
+      <talk_question mid="129"><![CDATA[<html>$Duke Stewart$<BR>Although you do not timely report，Caused a big problem，But the better catch the last time we found a good thing。I&#39;ll forgive you this time it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-5-c" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="131"><![CDATA[<html>$Duke Stewart$<BR>Goes well，Might be able to seize the criminals that make people unhappy。We should give the report to the King City<FONT color=#a82424>Heraldic scholars Stasi</FONT>Rewards。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-6" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="133"><![CDATA[<html>$Duke Stewart$<BR>Do not accept convicts after provocation，Must immediately report。<BR>We should give the report to the King City<FONT color=#a82424>Heraldic scholars Stasi</FONT>Rewards。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-a" mid="135"><![CDATA[<html>(Stasi very happy)</html>]]></talk_answer>
+      <talk_question mid="134"><![CDATA[<html>$Heraldic scholars Stasi${action:Talk}<BR>Nothing like you。After you are gone，I always feel worried about。<BR>So I reported to the king of this city。I also worry that it will be too late……Really nice。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-b" mid="137"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="136"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Do not know<FONT color=#a82424>Pirates of the blame</FONT>Why do I want you。If you encounter any danger，Must pay attention to their own security。<BR>Like the words of your own business，Perhaps it will suffer for。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-!next" mid="139"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="138"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4591,4592,4593,4594</exe>
+         <exe type="setquest">459</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4591,4592,4593,4594</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4591,4592,4593,4594</exe>
+         <exe type="complete">459</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="c">1,2,3</exelink>
+   <exelink qstep="1" npc="n133_lena_duglars" sub="2">1,2</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="f">0,1</exelink>
+   <exelink qstep="3" npc="n064_whilerose_lena" sub="b" />
+   <exelink qstep="3" npc="n064_whilerose_lena" sub="c" />
+   <exelink qstep="3" npc="n064_whilerose_lena" sub="d" />
+   <exelink qstep="3" npc="n064_whilerose_lena" sub="camera">0,1</exelink>
+   <exelink qstep="4" npc="n285_saint_guard" sub="b">0,1</exelink>
+   <exelink qstep="5" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="5" npc="n041_duke_stwart" sub="c">0,1</exelink>
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="b">0</exelink>
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="!next">1</exelink>
+   <journal_data recompense="1:4591,2:4592,3:4593,4:4594" quest_title="해독 완료" chapterid="" quest_level="27" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n133</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>133</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[蕾娜 Miss]]></title>
+         <contents mid="94"><![CDATA[<html>To note the general&#39;s daughter to Miss Leina。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ 蕾娜 Miss</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[Miss dialogue and Leina]]></destination>
+         <todo_msg mid="96"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="97"><![CDATA[Reading completed]]></title>
+         <contents mid="98"><![CDATA[<html>Interpretation of note finally finished。Movement of heraldic scholars Stasi check it out。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Heraldic scholars Stasi</FONT></html>]]></contents>
+         <destination mid="99"><![CDATA[And heraldic scholar Stasi dialogue]]></destination>
+         <todo_msg mid="100"><![CDATA[Please confirm to heraldic scholars Stasi paper has been completed, where s。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_White-Rose_Lena.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>283,n64</destination_pos>
+         <destination_mode>custom:281@1,282@1,283@1</destination_mode>
+         <statemark_npcid>64</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="101"><![CDATA[Pirates of the threatening letters strange]]></title>
+         <contents mid="102"><![CDATA[<html>Do not know how your girlfriend is aware of the White Rose，She received a threat letter。Overlord&#39;s territory to the dark and the White Rose Knight dialogue。<BR>
+ <BR>
+<FONT color=#086171>Montenegro hill angle(Dark Overlord of the barriers)</FONT> <FONT color=#a82424>→Dark Overlord&#39;s territory → White Rose Knight</FONT></html>]]></contents>
+         <destination mid="103"><![CDATA[Overlord&#39;s territory to the dark and white roses dialogue]]></destination>
+         <todo_msg mid="104"><![CDATA[Go Dark Overlord of the territory to meet and White Rose Knight。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>283,n64</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>285</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="141"><![CDATA[Tracker]]></title>
+         <contents mid="142"><![CDATA[<html>The soldiers ran up and，White Rose escaped。And King City, near the guard dialogue，To see what happened。<BR>
+ <BR>
+<FONT color=#086171>Montenegro hill angle(Dark Overlord of the barriers)</FONT> <FONT color=#a82424>→Dark Overlord&#39;s territory → King City guardsman</FONT></html>]]></contents>
+         <destination mid="143"><![CDATA[And King City, near the guard dialogue]]></destination>
+         <todo_msg mid="144"><![CDATA[White Rose escaped。Please follow the king came near the city guard dialogue。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="105"><![CDATA[Duke soldiers]]></title>
+         <contents mid="106"><![CDATA[<html>Send soldiers to the people like Duke Stewart。Back after，Dialogue, and Duke Stewart。<BR><BR><FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Duke Stewart</FONT></html>]]></contents>
+         <destination mid="107"><![CDATA[Dialogue, and Duke Stewart]]></destination>
+         <todo_msg mid="108"><![CDATA[Please dialogue Duke Stewart。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="109"><![CDATA[Stasi&#39;s good intentions]]></title>
+         <contents mid="110"><![CDATA[<html>Report to the Duke，Like<FONT color=#a82424>Heraldic scholars Stasi</FONT>。Talk to him，Look at what happened in the end。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Heraldic scholars Stasi</FONT></html>]]></contents>
+         <destination mid="111"><![CDATA[And heraldic scholar Stasi dialogue]]></destination>
+         <todo_msg mid="112"><![CDATA[Please heraldic scholars Stasi dialogue。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>27:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>458</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

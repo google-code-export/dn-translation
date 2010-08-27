@@ -1,0 +1,564 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_422_question_of_dragon</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>422</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>423</nextqid>
+      <nextqname>mq11_423_doubt_history</nextqname>
+      <nextqnpc>n088_scholar_starshy</nextqnpc>
+      <qkname mid="1"><![CDATA[Stasi&#39;s question]]></qkname>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>213</npcid>
+         <npcename>n213_slave_david</npcename>
+         <npckname>아르젠타의 노예 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Geraint$<BR>I vaguely heard<FONT color=#a82424>King City</FONT>Someone is talking about your name。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Heraldic scholars Stasi$<BR>I clearly told<FONT color=#a82424>Elite soldiers</FONT>Spoken，How not to ah？The adventurer……<BR><FONT color=#7e12d2>(Stasi, who like being)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-1" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$David$<BR>Now the task ended，I want to go to an adult Algerita！You better nice<FONT color=#a82424>Geraint</FONT>If adults。<BR>(<FONT color=#7e12d2>Must return to King City)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-1-a" mid="9"><![CDATA[<html>Ah？Me？</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Elite soldiers Cleander${action:Talk}<BR>Ah！！You just come。I&#39;m waiting for you。<BR><FONT color=#382000>{user_nick}</FONT> ，Some people see you，Let me take a message。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1-a" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-1-b" mid="11"><![CDATA[<html>Who he is？</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Elite soldiers Cleander$<BR>Yes。The man said something to please you，He does not like the other adventurers，Therefore, you must let me find。<BR>
+He said there and study the things I want to ask you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1-b" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Elite soldiers Cleander$<BR>Is<FONT color=#a82424>Heraldic scholars Stasi</FONT>。Actually……He had been conducting related research and the Dragon，So he wants to meet you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Elite soldiers Cleander${action:Talk}<BR>To have seen you<FONT color=#a82424>Heraldic scholars Stasi</FONT>The right？<BR>Has been，He is investigating the matter and the Dragon，He seems to find you something。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="15"><![CDATA[<html>What I do for you？</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Heraldic scholars Stasi$<BR>You finally Laila。I hope hope you have almost broken neck。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="17"><![CDATA[<html>King city……？</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Heraldic scholars Stasi${action:Talk}<BR>While outsiders do not know，But I often because of personal reasons and out of King City，So all I heard was。<BR>
+I heard the city is now the king……<BR>
+(<FONT color=#7e12d2>Stacy looked around)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-c" mid="19"><![CDATA[<html>Well。What do I need to do？</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Ha ha，Over there<FONT color=#a82424>Elite soldiers</FONT>Walking around，Inconvenient to talk。<BR>I just say what I need，Well, you listen to。<BR>
+Other things to say after you return。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-c" image="QW_38.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Heraldic scholars Stasi$<BR>You go<FONT color=#a82424>Death city intersection</FONT>Help me to collect a<FONT color=#a82424>Dark Elves necklace</FONT>。Dark Elves do not generally，To<FONT color=#a82424>Karan Cheater</FONT>Body necklace。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="QW_38.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Heraldic scholars Stasi$<BR>I had a question for you，But now is not the time。You go<FONT color=#a82424>Death city intersection</FONT>Help me to collect a<FONT color=#a82424>Dark Elves necklace</FONT>。Karan necklace best cheater。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="QM_DarkelfGray.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-a" mid="23"><![CDATA[<html>You have a question for me？</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Heraldic scholars Stasi$<BR>You 来啦。The necklace to me。<BR>There is the gateway to<FONT color=#a82424>Dark Elves</FONT>Junction city，Monster is very strong there, very clever。Of great value。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-b" mid="25"><![CDATA[<html>Spread so quickly to the right？</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Heraldic scholars Stasi${action:Talk}<BR><FONT color=#7e12d2>(Stacy looked around)</FONT><BR>
+Ah……<FONT color=#7e12d2>(Low voice，Whispered)</FONT><BR>
+I heard……<FONT color=#a82424>Golden Dragon</FONT>King of the underground in the city，Guardian of the Prophet is there。Is this really……？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-b" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-c" mid="28"><![CDATA[<html>(Stasi dig Road)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Not，No。Dark Overlord of the barriers to the soldiers that someone saw the dragon，But the army and the King City<FONT color=#a82424>Control of the message</FONT>。<FONT color=#a82424>Duke Stewart</FONT>It will be packaged，And then released out。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-c" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-d" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Stupid guys，Dragon is something humans can not master。Even50Years ago<FONT color=#a82424>6 Heroes</FONT>Same。<BR>
+When<FONT color=#a82424>Golden Dragon</FONT>Appear before them when，They all shook。In recent，They are still with the total death of companion。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-d" image="QN_Npc_Geraint_silhouette.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-e" mid="33"><![CDATA[<html>Do you know the identity of Geraint？</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Kara autumn and Ballner very angry，Feel betrayed。<BR>
+Chaos of human，Hide the head of six heroes<FONT color=#a82424>Geraint</FONT>Be<FONT color=#a82424>Golden Dragon</FONT>The fact that。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-f" mid="35"><![CDATA[<html>(Stasi&#39;s eyes were glassy issued，Grabbed my shoulders)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Actually，I have also not believe what they saw。After that，Painstaking research and I<FONT color=#a82424>Dragon</FONT>Related issues。Deeper study，I am more confused。Because it can not find the information，This is certainly something。So……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-f" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-g" mid="37"><![CDATA[<html>Well……I help you go ask……</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Finally<FONT color=#a82424>Long words can be</FONT>！This kind of thing once in lifetime to！Not，May no longer have that chance！<BR>So I want you to help me ask<FONT color=#a82424>Geraint</FONT>Several problems，Then he told me the answer。Come on you！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-g" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-h" mid="39"><![CDATA[<html>Manufactured……？Meaning of？</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Heraldic scholars Stasi${action:Talk}<BR>Thank you！Thanks！<BR>
+<FONT color=#7e12d2>(Stasi&#39;s eyes with tears)<BR></FONT>You go ask him，How long is manufactured。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-h" image="QM_black_Dragon.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Heraldic scholars Stasi$<BR>I think50Years ago and is now the Black Dragon<FONT color=#a82424>The power of the ancient people created the artificial product</FONT>。Although this just my hypothesis，But recently I have become increasingly convinced that a。I want to know the other<FONT color=#a82424>Dragon</FONT>Is is also produced from this。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Heraldic scholars Stasi$<BR>You go and I ask<FONT color=#a82424>Golden Dragon</FONT>。<BR>Not all are created by the Dragon。And, like Black Dragon，Is to use the power of the ancient people created。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-a" mid="44"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Geraint$<BR>Man this stuff，Like all doubt。If you do not personally see，Would not readily believe。So often been deceived by a variety of lies，Is trivial influenced by feelings and delusions。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-b" mid="46"><![CDATA[<html>But I still want to know。</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Geraint$<BR>……Someone once told me so。<BR>Even with the human and sincerely explained，Maybe they still will not accept。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-b" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-c" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Geraint$<BR><FONT color=#a82424>Black Dragon</FONT>Be<FONT color=#a94407>Chaos Dragon</FONT>The missing body of one of the，Is to use the power of the ancient people to become a complete non-natural product。<BR>
+Use human language,，Be said that out of the Dragon。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-c" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-d" mid="116"><![CDATA[<html>(To hear a more detailed explanation)</html>]]></talk_answer>
+      <talk_question mid="115"><![CDATA[<html>$Geraint$<BR>
+But we……I Algerita is<FONT color=#a94407>Ancient dragon</FONT>Long after the birth of separation，Long is not manufactured。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-d" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-e" mid="50"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Geraint$<BR>Was in the beginning of time，<FONT color=#a94407>Aertaiya</FONT>Goddess created<FONT color=#a94407>Ancient dragon</FONT>And<FONT color=#a94407>Chaos Dragon</FONT>，As a regulator of the world。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-e" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-f" mid="125"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="124"><![CDATA[<html>$Geraint$<BR>
+Aertaiya created this world，Long in the two asylum and good<FONT color=#a82424>Ancient people</FONT>Of care under，Lived a quiet life, day after day。However, as Wei Siti goddess within the jealous goddess of the Aertaiya，Have peace<FONT color=#a94407>阿尔切林加</FONT>Appeared in the dark。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-f" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-g" mid="127"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$Geraint$<BR>
+Aertaiya drank poison after the fall of，Kind of ancient people were contaminated by the dark，Gradually become degenerate。From Wei Siti within<FONT color=#a94407>Mystery of the continent</FONT>Over from<FONT color=#a94407>Shadow Dragon</FONT>Start destruction 阿尔切林加。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-g" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-h" mid="129"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$Geraint$<BR>
+Although the ancient dragon and chaos eventually brought down Long Shadow Dragon，But the chaos has long been the evil Shadow Dragon atmosphere pollution。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-h" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-i" mid="120"><![CDATA[<html>Who won？</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Geraint$<BR>
+Fall of Chaos Long start threatening the world。Ancient Dragon come out to stop him，They started a long battle between。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-i" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-j" mid="131"><![CDATA[<html>Ancient Dragon&#39;s offspring is Geraint and Algerita you？</html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$Geraint$<BR>
+No winner……In battle，Chaos dragon body for quite a few pieces of torn，Scattered to all over the world。Exhaustion of the forces of ancient dragons，Split into two parts，Prepare for future combat。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-j" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-k" mid="132"><![CDATA[<html>This seems to be a long time ago it。</html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$Geraint$<BR>
+Yes。I Algerita born from the ancient Dragon<FONT color=#a82424>Brother and sister</FONT>。Our mission is to stop the chaos dragon miss the resurrection body。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-k" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-l" mid="54"><![CDATA[<html>Chaos dragon how other missing body like the？</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Geraint$<BR>Long time ago……？<BR>
+Ah，I do not know the time of human。<BR>Your finished asking you questions？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-l" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-m" mid="135"><![CDATA[<html>So that in the future there will be no other dragon appeared right？</html>]]></talk_answer>
+      <talk_question mid="134"><![CDATA[<html>$Geraint$<BR>
+50Years ago，Start with Black Dragon，We look around and seal<FONT color=#a82424>Miss chaos dragon body</FONT>。Fortunately, no other body of awakening thoughts Chan。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-m" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-n" mid="137"><![CDATA[<html>You can fit you Algerita？</html>]]></talk_answer>
+      <talk_question mid="136"><![CDATA[<html>$Geraint$<BR>
+Unfortunately。Our strength is too weak，Body can not eliminate missing。<BR>
+And if combined with Algerita，Maybe you can do。<BR>
+But，As long as I do not disappear，Seal will not unlock。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-n" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-o" mid="139"><![CDATA[<html>Giant Stone……？</html>]]></talk_answer>
+      <talk_question mid="138"><![CDATA[<html>$Geraint$<BR>
+Ah……<BR>
+Did not try before，I do not know。Perhaps it is possible。<BR>
+But，We can not do that。Because she must also support<FONT color=#a94407>Giant Stone</FONT>……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-o" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-p" mid="141"><![CDATA[<html>Good……All the power of the dragon that is very similar to you？</html>]]></talk_answer>
+      <talk_question mid="140"><![CDATA[<html>$Geraint$<BR>
+You do not need to remember the kind of thing。<BR>
+It forget it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-p" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-q" mid="142"><![CDATA[<html>Algerita you so strong？But the last time……</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Geraint$<BR>Well，Ancient Dragon split into I and<FONT color=#a82424>Algerita</FONT>When，Most of the power and took them by Algerita。She is now my strength is at least three to four times。Chaos Dragon&#39;s thoughts should be different for each body。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-q" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="143"><![CDATA[<html>$Geraint$<BR>
+<FONT color=#a82424>Algerita</FONT>Now can not use the full strength。<BR>
+I have just spoken，The majority of her strength to be used to support<FONT color=#a82424>Giant Stone</FONT>。I think that I have explained it very clear to？<BR>
+You go back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$Geraint$<BR>Now you can go back to tell you the answer to the people of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-a" mid="59"><![CDATA[<html>(Quoted the words of Geraint)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Get<FONT color=#a82424>Geraint</FONT>The answer you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-a" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-b" mid="61"><![CDATA[<html>Yes。</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Heraldic scholars Stasi$<BR>So that。<FONT color=#a82424>Black Dragon</FONT>Is chaos dragon<FONT color=#a82424>Fragment</FONT>One……<BR>So that，As long as the core of the body is still missing，He can continue revival。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-c" mid="63"><![CDATA[<html>People called to see him？</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Ah……Thank you for telling me so precious information。<BR>If this can be done，I really want to go and ask<FONT color=#a82424>He</FONT>。But I really was people called to see him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-c" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-d" mid="65"><![CDATA[<html>(Stacy looked down)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Heraldic scholars Stasi${action:Talk}<BR>I50After the battle years ago，Did not on his side。He did not say a word on the disappeared，I was a big shock，Full of anger and loss。Failed to face up to reality。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-d" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-e" mid="67"><![CDATA[<html>You must be troubled for a long time it？</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Heraldic scholars Stasi$<BR>As a scholar，I should not have。Difficult to understand the phenomenon in all have been hiding，Leaving only<FONT color=#a82424>6 Heroes</FONT>The illusion of time，I should say that I see out of。<BR>
+……Then，So I should do。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-!next" mid="69"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">1028</exe>
+         <exe type="huntitem" num="1" exe="" onexe="5,6,7">300253</exe>
+         <exe type="addquestitem" num="1">300253</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300253</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4221,4222,4223,4224</exe>
+         <exe type="complete">422</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n209_elite_soldier" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="c">0,2,3,1</exelink>
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="g" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="h">0,1,2</exelink>
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="d" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="e" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="f" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="g" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="h" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="i" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="j" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="k" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="l" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="m" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="n" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="o" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="p" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="q">0,1</exelink>
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="e">0</exelink>
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="!next">1</exelink>
+   <journal_data recompense="1:4221,2:4222,3:4223,4:4224" quest_title="스타쉬의 의문" chapterid="5" quest_level="34" quest_mark_type="7" use_item_list="300253">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n209</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>209</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[King City things]]></title>
+         <contents mid="72"><![CDATA[<html>David things done。Back<FONT color=#a82424>King City</FONT>，See if there are other things it。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Elite soldiers Cleander</FONT></html>]]></contents>
+         <destination mid="73"><![CDATA[To King City and elite soldiers Cleander dialogue]]></destination>
+         <todo_msg mid="74"><![CDATA[Go back to King City to find other things to do。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="75"><![CDATA[Heraldic scholars call Stasi]]></title>
+         <contents mid="76"><![CDATA[<html>Heraldic scholars Stasi are looking for me。To see him，To see what has。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Heraldic scholars Stasi</FONT></html>]]></contents>
+         <destination mid="77"><![CDATA[And heraldic scholar Stasi dialogue]]></destination>
+         <todo_msg mid="78"><![CDATA[Please go heraldic scholars Stasi。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_38.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>384,0,0</destination_pos>
+         <destination_mode>custom:381@1,382@1,383@1,384@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[Dark Elves necklace]]></title>
+         <contents mid="80"><![CDATA[<html>Heraldic scholars around the great circle Stasi，I help him a favor。He seems to think so when people say no。His first commission in accordance with，Go<FONT color=#a82424>Death city intersection</FONT>Collection<FONT color=#a82424>Dark Elves necklace</FONT>It。<BR>
+ <BR>
+<FONT color=#7e12d2>※ Difficulty can not be implemented under the abyss。</FONT><BR>
+ <BR>
+<FONT color=#086171>Heermadai port(Dark mine entrance)</FONT> <FONT color=#a82424>→ Death city intersection</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[Necklace collection Dark Elves]]></destination>
+         <todo_msg mid="82"><![CDATA[Go to city junctions to collect the death of the Necklace Dark Elves。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[Stasi&#39;s question]]></title>
+         <contents mid="84"><![CDATA[<html>Collected to the Dark Elves necklace。Go back to hear the words to tell<FONT color=#a82424>Heraldic scholars Stasi</FONT>。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Heraldic scholars Stasi</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[And heraldic scholar Stasi dialogue]]></destination>
+         <todo_msg mid="86"><![CDATA[Please send the necklace to the coat of arms Dark Elves scholar Stasi。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="87"><![CDATA[Created by Dragon？]]></title>
+         <contents mid="88"><![CDATA[<html><FONT color=#a82424>Article</FONT><FONT color=#a82424>Scholars Stasi</FONT>That would like to ask and the Dragon Geraint matters relating to。Whereabouts<FONT color=#a82424>Geraint</FONT>To convey his issues now。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise(Secret underground area)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="89"><![CDATA[And Geraint dialogue]]></destination>
+         <todo_msg mid="90"><![CDATA[Please convey to heraldic scholars Stasi Geraint problems。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[The dragon is not the same]]></title>
+         <contents mid="92"><![CDATA[<html>Movement of heraldic scholars quoted Geraint answer Stasi。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Heraldic scholars Stasi</FONT></html>]]></contents>
+         <destination mid="93"><![CDATA[And heraldic scholar Stasi dialogue]]></destination>
+         <todo_msg mid="94"><![CDATA[Please heraldic scholars quoted Geraint answer Stasi。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>418</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

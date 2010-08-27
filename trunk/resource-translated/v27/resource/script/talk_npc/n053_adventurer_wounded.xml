@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n053_adventurer_wounded</npcename>
+      <npcid>53</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Wounded adventurer]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$Wounded adventurer$<BR>
+I&#39;m fine，Rush to help other folks dungeon！</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="enterquest">mq08_203_black_knight_tracking</exe>
+         <exe type="conexe" true="0" false="2">0</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">203</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,16 @@
+   <talk>
+      <npcename>n127_mailbox</npcename>
+      <npcid>127</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Mailbox]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="open_mail" mid="6"><![CDATA[<html>(Open the mailbox)</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Mailbox$<BR>Do fine-mail。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenMailBox(userObjID);</exe>
+      </executions>
+      <conditions />
+      <exelink idx="open_mail">1</exelink>
+   </talk>
