@@ -1,0 +1,289 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Sam (IMCGames Co., Ltd) -->
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<quest_desc>
+		<qename>sq11_499_powerup_mucle1</qename>
+		<qtype>subquest</qtype>
+		<qcomtype>ONCE</qcomtype>
+		<qchapter>-1</qchapter>
+		<qid>499</qid>
+		<designer>김주연</designer>
+		<qlevel>32</qlevel>
+		<qdesc>상급 워리어 로드리고를 통해 투사 Lv2 칭호를 얻기 위한 첫 번째 시험을 받는다. 외딴 섬 중심부를 SS랭크로 클리어하는 열혈의 시험을 통과하자.</qdesc>
+		<qdifficulty>1</qdifficulty>
+		<nextqid>500</nextqid>
+		<nextqname>sq11_500_powerup_mucle2</nextqname>
+		<nextqnpc>n098_warrior_master_lodrigo</nextqnpc>
+		<qkname mid="1"><![CDATA[[Title]GladiatorLv2/ Force to strengthen Ⅰ]]></qkname>
+		<qnpc>
+			<npcid>98</npcid>
+			<npcename>n098_warrior_master_lodrigo</npcename>
+			<npckname>상급 워리어 로드리고</npckname>
+		</qnpc>
+	</quest_desc>
+	<talk_paragraph index="q_enter"/>
+	<talk_paragraph index="!quit"/>
+	<talk_paragraph index="_no_quest">
+		<talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_full_quest">
+		<talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_full_inventory">
+		<talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_daily_quest_fail">
+		<talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_full_Qinventory">
+		<talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-accepting" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-accepting-a" mid="6"><![CDATA[<html>Me？?</html>]]></talk_answer>
+		<talk_question mid="5"><![CDATA[<html>$Advanced fighters Rodrigo$<BR><FONT color=#a82424>Said Cao Cao went to the</FONT>。Looking for you。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-accepting-a" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-accepting-b" mid="8"><![CDATA[<html>Gladiator title?</html>]]></talk_answer>
+		<talk_question mid="7"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>
+Do you remember the senior soldier from Chandler Kedella where you get the champion title？</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-accepting-b" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-accepting-c" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+		<talk_question mid="9"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>
+Adventurers like you are so active，The title should already have numerous，Forget the title of the fighters are not surprising。 </html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-accepting-c" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-accepting-d" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+		<talk_question mid="11"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>But for the true adventurer who，Gladiator title is required！<BR>The reason I find you，To the more the strengthened<FONT color=#a82424>GladiatorLv2 Title</FONT>。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-accepting-d" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-accepting-e" mid="14"><![CDATA[<html>If wings are not as，But even more powerful it……</html>]]></talk_answer>
+		<talk_question mid="13"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>If you can get Gladiator title，Will<FONT color=#a82424>Such as wings</FONT>。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-accepting-e" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-accepting-f" mid="16"><![CDATA[<html>(Seems to want to fool the past……)</html>]]></talk_answer>
+		<talk_question mid="15"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>Tiger is still important, as you so？Important is training hard！</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-accepting-f" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-accepting-h" mid="18"><![CDATA[<html>I would like to challenge。</html>]]></talk_answer>
+		<talk_answer link_index="n098_warrior_master_lodrigo-accepting-g" mid="19"><![CDATA[<html>Not interested。</html>]]></talk_answer>
+		<talk_question mid="17"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>Say<FONT color=#a82424>Anxious earthworm can jump off the wall</FONT>！<BR>If your body&#39;s blood flowing fighters，Click on to challenge<FONT color=#a82424>Gladiator Lv2Title</FONT>It！</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-accepting-g" image="" itemindex="">
+		<talk_question mid="20"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>If you&#39;re not interested,，I can do。<BR>I do not want forces you to challenge the champion title。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-accepting-h" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-accepting-i" mid="22"><![CDATA[<html>Know。</html>]]></talk_answer>
+		<talk_question mid="21"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>As expected and as I expected，You are a champion of the blood flowing with the real adventurer！<BR>However, the higher level title，Examination and the more trouble。You&#39;d better be psychologically prepared for。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-accepting-i" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-accepting-acceptted" mid="24"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+		<talk_question mid="23"><![CDATA[<html>$Force to strengthen Ⅰ$</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-1" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-1-a" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+		<talk_question mid="25"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>
+The first blood test is the examination。<BR>
+I hope you can target a monster coming，Will display your blood，Get<FONT color=#a82424>CAnd above</FONT>Results。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-1-a" image="QW_33.dds" itemindex="">
+		<talk_question mid="27"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>
+Test site is<FONT color=#a82424>Island center</FONT>。 If you can get<FONT color=#a82424>CAnd above</FONT>Results，Can get the qualifications to participate in the second test。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-2" image="QW_33.dds" itemindex="">
+		<talk_question mid="28"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>
+As long as you will have blood，In<FONT color=#a82424>Island center</FONT>Get<FONT color=#a82424>CLevel</FONT>Result should be a piece of cake。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-3" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-3-a" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+		<talk_question mid="29"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>
+Did not expect you back so soon。<BR>
+Well seems pretty good foundation。/html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-3-a" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-3-b" mid="32"><![CDATA[<html>(Slightly adjust breathing)</html>]]></talk_answer>
+		<talk_question mid="31"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>
+You breathe a very powerful。<BR>
+First went to break it。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-3-b" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-3-c" mid="34"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+		<talk_question mid="33"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-3-c" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-3-d" mid="36"><![CDATA[<html>Ah？So fast？</html>]]></talk_answer>
+		<talk_question mid="35"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>
+You probably have enough rest，Let&#39;s go to the second candidate to。<BR>
+ </html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-3-d" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-3-e" mid="38"><![CDATA[<html>Not“Strike while the iron is hot”You……</html>]]></talk_answer>
+		<talk_question mid="37"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>It does not matter。Do not mean to<FONT color=#a82424>Endure hot iron</FONT>You？</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-3-e" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-3-f" mid="40"><![CDATA[<html>Toughness test？</html>]]></talk_answer>
+		<talk_question mid="39"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>……Anyway，Let us get on to the second candidate to。This exam is tough examination。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n098_warrior_master_lodrigo-3-f" image="" itemindex="">
+		<talk_answer link_index="n098_warrior_master_lodrigo-3-!next" mid="42"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+		<talk_question mid="41"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>Toughness test，Is to have a strong will confirm whether，In the face of the powerful Monster can adhere to the time of the last。</html>]]></talk_question>
+	</talk_paragraph>
+	<qstep_change qstep="accepting">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="recompense_view">4990,,,,</exe>
+			<exe type="setquest">499</exe>
+			<exe type="talk" npc="n098_warrior_master_lodrigo">1</exe>
+		</executions>
+	</qstep_change>
+	<qstep_change qstep="1">
+		<comment/>
+		<conditions>
+			<chk type="stageConstructionLevel" op="]=">0</chk>
+		</conditions>
+		<executions>
+			<exe type="checkStageClearRank" rand="5" num="331" onexe="6" true="[=" xsi:nil="true"/>
+			<exe type="setstep">2</exe>
+			<exe type="setjornal">2</exe>
+			<exe type="delcount">.</exe>
+			<exe type="setstep">3</exe>
+			<exe type="setjornal">3</exe>
+			<exe type="conexe" true="3,4,5" false="">0</exe>
+		</executions>
+	</qstep_change>
+	<qstep_change qstep="2">
+		<comment/>
+		<conditions/>
+		<executions/>
+	</qstep_change>
+	<qstep_change qstep="3">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="recompense">4990,,,,</exe>
+			<exe type="complete">499</exe>
+		</executions>
+	</qstep_change>
+	<exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="i">0</exelink>
+	<exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="acceptted">1,2</exelink>
+	<exelink qstep="1" npc="n098_warrior_master_lodrigo" sub="a">1,0,2</exelink>
+	<exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="b">0</exelink>
+	<exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="c">1</exelink>
+	<exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="d"/>
+	<exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="e"/>
+	<exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="f"/>
+	<exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="!next"/>
+	<journal_data recompense="4990" quest_title="[칭호] 투사Lv2/ 근력 강화 Ⅰ" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="">
+		<journal index="1">
+			<title_image/>
+			<contents_image>QN_NPC_Warrior_Lodrigo.dds</contents_image>
+			<need_itemlist/>
+			<destination_pos>11,n98</destination_pos>
+			<destination_mode>custom</destination_mode>
+			<statemark_npcid>98</statemark_npcid>
+			<statemark_type>11</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="44"><![CDATA[[Title]GladiatorLv2]]></title>
+			<contents mid="45"><![CDATA[<html><FONT color=#a82424>Advanced fighters Rodrigo</FONT>If you pass the examination that he，Can become stronger so that the title of champion。To find out the specific circumstances it。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Advanced fighters Rodrigo</FONT></html>]]></contents>
+			<destination mid="46"><![CDATA[And advanced fighters Rodrigo dialogue]]></destination>
+			<todo_msg mid="47"><![CDATA[Tasks have been added。]]></todo_msg>
+		</journal>
+		<journal index="2">
+			<title_image/>
+			<contents_image/>
+			<need_itemlist/>
+			<destination_pos>331,0,0</destination_pos>
+			<destination_mode>custom:331@3</destination_mode>
+			<statemark_npcid>QW_33.dds</statemark_npcid>
+			<statemark_type>12</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="48"><![CDATA[Island centerCGrade or higher clearance]]></title>
+			<contents mid="49"><![CDATA[<html>I challenge advanced fighter fighter Rodrigues Lv2Title。To improve the level title，Must<FONT color=#a82424>CLevel</FONT>By the above results<FONT color=#a82424>Island center</FONT>。<BR>
+ <BR>
+<FONT color=#086171>Heermadai port(Island transport ship)</FONT><FONT color=#a82424>→ Island center</FONT><BR>
+ <BR>
+ </html>]]></contents>
+			<destination mid="50"><![CDATA[Island centerCGrade or higher clearance]]></destination>
+			<todo_msg mid="51"><![CDATA[PleaseCGrade or higher clearance center island。]]></todo_msg>
+		</journal>
+		<journal index="3">
+			<title_image/>
+			<contents_image>QN_NPC_Warrior_Lodrigo.dds</contents_image>
+			<need_itemlist/>
+			<destination_pos>11,n98</destination_pos>
+			<destination_mode>custom</destination_mode>
+			<statemark_npcid>98</statemark_npcid>
+			<statemark_type>12</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="52"><![CDATA[And advanced fighters Rodrigo dialogue]]></title>
+			<contents mid="53"><![CDATA[<html>WithCLevel and above to get through the island center。Go back to see<FONT color=#a82424>Advanced fighters Rodrigo</FONT>It。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Advanced fighters Rodrigo</FONT></html>]]></contents>
+			<destination mid="54"><![CDATA[And advanced fighters Rodrigo dialogue]]></destination>
+			<todo_msg mid="55"><![CDATA[Please return to the advanced fighters Rodrigo holy heaven go there。]]></todo_msg>
+		</journal>
+	</journal_data>
+	<condition_data>
+		<user_level>50:-1</user_level>
+		<user_worldzone_level/>
+		<user_class/>
+		<prev_quest>291</prev_quest>
+		<have_normal_item/>
+		<complete_mission/>
+		<have_symbol_item/>
+	</condition_data>
+</quest>

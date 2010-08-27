@@ -1,0 +1,446 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_488_merchant_study3</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>488</qid>
+      <designer>김주연</designer>
+      <qlevel>34</qlevel>
+      <qdesc>썩은 사과	400158
+냄새나는 진흙 덩어리	400159
+불사의 결정	400160
+
+
+어마어마한 빚을 없애주는 대신에 내기를 하자는 상인 포프. 그가 건네주는 썩은 사과를 황금으로 교환해와야 하는데… </qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>489</nextqid>
+      <nextqname>sq11_489_merchant_study4</nextqname>
+      <nextqnpc>n045_soceress_master_stella</nextqnpc>
+      <qkname mid="1"><![CDATA[Business coursesⅢ]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>279</npcid>
+         <npcename>n279_orc_oneeye</npcename>
+         <npckname>김오크</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-noquest" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Advanced magician Stella$<BR>
+Akira blind in front of me again，I put you into a frog。<BR>
+<FONT color=#7e12d2>(Pope dialogue and profiteers，Acceptable task)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-noquest" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Orc King$<BR>I&#39;d like to……Apple！Rotten apple！<BR>
+<FONT color=#7e12d2>(Pope dialogue and profiteers，Acceptable task)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Heraldic scholars Stasi$<BR>…. <BR>
+<FONT color=#a82424>(Attentively reading，Management ignored me)</FONT><BR>
+<FONT color=#7e12d2>(Pope dialogue and profiteers，Acceptable task)</FONT><BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-a" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Profiteer Pope$<BR>Ah，I said，I see you have great talent of doing business，Do not you will worship it in my Ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-b" mid="11"><![CDATA[<html>I can not give up the adventure。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Profiteer Pope$<BR>If you want to be my apprentice，A businessman，Our debt to write off between。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-c" mid="13"><![CDATA[<html>Dreams can not buy with money。</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Profiteer Pope$<BR>……I cherish your talent。<BR>To kill his dragon，I will earn more with business。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-d" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Profiteer Pope$<BR>Hum，I thought your mind is so active it，Did not expect just an ordinary guy。<BR>……Then，So how do？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-e" mid="17"><![CDATA[<html>How bet？</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Profiteer Pope$<BR>I&#39;ll bet you。If I win，You&#39;ll be my disciple，To become a businessman。If you win，To write off debts。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-f" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Profiteer Pope$<BR>You take this rotten apple，Exchange it into gold。Can not use money to buy gold，Can only rotten apple out of gold。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-g" mid="21"><![CDATA[<html>(Promised, and he bet)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Profiteer Pope$<BR>Its my slave life，This proposal not it be nice？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-acceptted" mid="23"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Business coursesⅢ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-a" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Profiteer Pope$<BR>Replace the rotten apple gold，Period is3Day。If you can change it gold，Even if you win。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-a" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Profiteer Pope$<BR>If you do not know how to do so，Go ask the eccentric<FONT color=#a82424>Stasi</FONT>！Of course do not know know how to replace rotten apple gold，Ha ha ha！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Magician Stella$<BR>Akira blind in front of me again，I put you into a frog。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-1" image="" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Orc King$<BR>I&#39;d like to…… Apple！Rotten apple！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Heraldic scholars Stasi$<BR>……<BR><FONT color=#7e12d2>(Attentively reading，Not look at me)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-2" image="" itemindex="400158">
+      <talk_question mid="30"><![CDATA[<html>$Profiteer Pope$<BR>Even with a rotten apple for the gold？This is impossible。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="32"><![CDATA[<html>(Asked about the exchange with the rotten apples way to gold)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Heraldic scholars Stasi$<BR><FONT color=#7e12d2>(Attentively reading，Not look at me)</FONT><BR><FONT color=#2b2723>Ah！……I patronize the reading，Do not know it was coming。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="34"><![CDATA[<html>You can not？</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Ah？Exchange with the rotten apple of gold？Haha，How the book which may be the kind of absurd things……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-c" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Ah，Existing books which do not seem related content。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-c" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-d" mid="38"><![CDATA[<html>But……</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Heraldic scholars Stasi$<BR>I would like rotten apples or something<FONT color=#a82424>Orc</FONT>May like to。For ordinary people，No value simply……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-d" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-e" mid="40"><![CDATA[<html>Where do see orc？</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Ah……Orc&#39;s appetite is very unique，I heard more badly rotten apple，The more they like to eat。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-e" image="QW_40.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-f" mid="44"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Heraldic scholars Stasi$<BR>To<FONT color=#a82424>Overlord Dark Tower</FONT>To words，Orcs should be very easy to find。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-f" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-g" mid="46"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Heraldic scholars Stasi$<BR>You do not really want to go<FONT color=#a82424>Orc</FONT>It？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-g" image="" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Really，This is very dangerous。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Heraldic scholars Stasi$<BR>I have to look around to see，Whether the book“The rotten apple exchange into gold”Records。But I think this theory is basically non-existent。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3" image="" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-a" mid="50"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Orc King$<BR>I&#39;d like to…… Apple！Rotten apple！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-a" image="" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-b" mid="52"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Orc King$<BR>Matter how？This is not my fate in the rival<FONT color=#382000>{user_nick}</FONT>You！<BR>
+I smell a good smell taste。It is……Must have the taste of rotten apples？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-b" image="" itemindex="400158">
+      <talk_answer link_index="n279_orc_oneeye-3-c" mid="54"><![CDATA[<html>Let us exchange。</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Orc King$<BR>If you brought rotten apples，I experienced the best before date nirvana。Quickly handed！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-c" image="" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-d" mid="56"><![CDATA[<html>Gold can be。</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Orc King$<BR>What？Exchange？<BR>What should I give you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-d" image="" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-e" mid="58"><![CDATA[<html>Forget it……No matter what can be。</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Orc King$<BR><FONT color=#a82424>Gold</FONT>？What is that thing？How does it taste？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-e" image="" itemindex="400158">
+      <talk_answer link_index="n279_orc_oneeye-3-f" mid="60"><![CDATA[<html>(And the exchange of things Orc King)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Orc King$<BR>This is my favorite things……I use it to exchange it rotten apple。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-f" image="" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-g" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Orc King$<BR><FONT color=#7e12d2>(Orc King took out a piece of clay in odor emitted！)</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-g" image="" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-h" mid="64"><![CDATA[<html>This can be used to do ah……</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Orc King$<BR>Why！The expression！Kim got my beloved earth Orcs，Glad some of you do not behave！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-h" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-i" mid="66"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Orc King$<BR>Do not know，This is not my thing。On the，Last night I saw a name like<FONT color=#a82424>Stella</FONT>Of<FONT color=#a82424>Magician</FONT>Removed some soil from the vicinity of……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-i" image="" itemindex="">
+      <talk_answer link_index="n279_orc_oneeye-3-j" mid="68"><![CDATA[<html>(It first went to see the magician Stella)</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Orc King$<BR>I do not know what she would like to use it。I do not know anything。Ah ha ha ha！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-3-j" image="" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$Orc King$<BR>Today look at<FONT color=#a82424>Rotten apple</FONT>Sake，You first put a horse。Do not let me hit you next time！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n279_orc_oneeye-4" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Orc King$<BR>Apple……！I also want to eat！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-a" mid="72"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Magician Stella$<BR>Oops，Cute adventurer looking for what I do？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-a" image="" itemindex="400159">
+      <talk_answer link_index="n045_soceress_master_stella-4-b" mid="74"><![CDATA[<html>(With the exchange of gold，Really do not work？)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Magician Stella$<BR>This……You is not mud？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-b" image="" itemindex="400159">
+      <talk_answer link_index="n045_soceress_master_stella-4-c" mid="76"><![CDATA[<html>Ah？This thing is very rare you？</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Magician Stella$<BR>It is very difficult to get that<FONT color=#a82424>Montenegro hill angle of soil</FONT>！！！Such a precious thing Where did you find？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-c" image="" itemindex="400159">
+      <talk_answer link_index="n045_soceress_master_stella-4-d" mid="78"><![CDATA[<html>Would you like to do with the gold and I exchanged？</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Magician Stella$<BR>Ha ha，Produced that makes people use it to cure, then the young，That people can look younger10Years。Aunt so well inside their palace welcomed。Of course，Do not know its value for people who，Just a smelly mud Bale。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-e" mid="80"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Magician Stella$<BR>Ah……Gold？<BR>Although this soil is very valuable，But would like to exchange to gold or Chaliaoyidian。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-e" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-f" mid="82"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Magician Stella$<BR>But is not no way。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-f" image="" itemindex="400160">
+      <talk_answer link_index="n045_soceress_master_stella-4-g" mid="84"><![CDATA[<html>Really？</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Magician Stella$<BR>Also need to make elixir<FONT color=#a82424>Die mold</FONT>。That thing is also very valuable……If you can not die to me with crystal，I use the gold trade with you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-g" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-!next" mid="86"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4881,4882,4883,4884</exe>
+         <exe type="setquest">488</exe>
+         <exe type="talk" npc="n277_bluff_dealers_pope">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">400158</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="1">400158</exe>
+         <exe type="addquestitem" num="1">400159</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4881,4882,4883,4884</exe>
+         <exe type="complete">488</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="a">0,1,2</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="g">0,1</exelink>
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="b" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="c" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="d" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="e" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="f" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="g" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="h" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="i" />
+   <exelink qstep="3" npc="n279_orc_oneeye" sub="j">0,1,2,3</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="f" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="g">0</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="!next">1</exelink>
+   <journal_data recompense="1:4881,2:4882,3:4883,4:4884" quest_title="상인수업Ⅲ" chapterid="" quest_level="34" quest_mark_type="10" use_item_list="400158,400159,400160">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n277</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>27</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="87"><![CDATA[Pope dialogue and profiteers]]></title>
+         <contents mid="88"><![CDATA[<html>Pope said, and I bet，If I win，Even if the two clear。However, if the lost，To be his apprentice。And<FONT color=#a82424>Profiteer Pope</FONT>Dialogue。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Profiteer Pope</FONT></html>]]></contents>
+         <destination mid="89"><![CDATA[Pope dialogue and profiteers]]></destination>
+         <todo_msg mid="90"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[And heraldic scholar Stasi dialogue]]></title>
+         <contents mid="92"><![CDATA[<html>Profiteer Pope said that if I use rotten apples into gold exchange，To write off debt owed to his。First went to consult<FONT color=#a82424>Heraldic scholars Stasi</FONT>It。</html>]]></contents>
+         <destination mid="93"><![CDATA[And heraldic scholar Stasi dialogue]]></destination>
+         <todo_msg mid="94"><![CDATA[Movement of heraldic scholars Stasi Consulting。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QM_Orc_Oneeye.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>403,n279</destination_pos>
+         <destination_mode>custom:401@1,402@1,403@1,,404@0</destination_mode>
+         <statemark_npcid>279</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="95"><![CDATA[Overlord Dark Tower to find the orc]]></title>
+         <contents mid="96"><![CDATA[<html>Heraldic scholars Stasi said that while a bit ridiculous，Yet, I like to eat rotten apple orc。Go<FONT color=#a82424>Overlord Dark Tower</FONT>Find Orc Bar。<BR><BR><FONT color=#086171>Montenegro hill angle(Dark Overlord of the barriers)</FONT> <FONT color=#a82424>→Overlord Dark Tower</FONT></html>]]></contents>
+         <destination mid="97"><![CDATA[Overlord Dark Tower to find the orc]]></destination>
+         <todo_msg mid="98"><![CDATA[Dark Overlord Tower go in search of dialogue Orcs can。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="99"><![CDATA[And senior magician Stella dialogue]]></title>
+         <contents mid="100"><![CDATA[<html>With the rotting apple and orcs gold exchange to soil。Orc King said he saw some high-level dirt removed magician Stella。First go to see<FONT color=#a82424>Advanced magician Stella</FONT>It。</html>]]></contents>
+         <destination mid="101"><![CDATA[And senior magician Stella dialogue]]></destination>
+         <todo_msg mid="102"><![CDATA[Please bring the soil，To meet senior magicians Stella。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>34:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>487</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

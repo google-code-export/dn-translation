@@ -1,0 +1,264 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_276_catherock_challenger_2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>276</qid>
+      <designer>손원호</designer>
+      <qlevel>22</qlevel>
+      <qdesc>도전자 선행퀘를 완료 후에 23랩이 되어 워리어 챈들러에게 가면 퀘스트를 받을 수 있다. 퀘스트를 완료하면 다음 퀘스트로 자동 연결된다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>277</nextqid>
+      <nextqname>sq08_277_catherock_challenger_3</nextqname>
+      <nextqnpc>n032_warrior_master_chandler</nextqnpc>
+      <qkname mid="1"><![CDATA[Challenger Orc King Ⅱ]]></qkname>
+      <qnpc>
+         <npcid>32</npcid>
+         <npcename>n032_warrior_master_chandler</npcename>
+         <npckname>상급 워리어 챈들러 (캐더락 워려 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-a" mid="7"><![CDATA[<html>What is?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Senior Warrior Chandler${action:Talk}<BR>I&#39;m waiting for you。<FONT color=#382000>{user_nick}</FONT>！<BR>Holding！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-b" mid="9"><![CDATA[<html>Love letter?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Senior Warrior Chandler$<BR>A loving<FONT color=#a82424>Love letter</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-c" mid="11"><![CDATA[<html>（Disappointed） Well written and a challenge...</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Senior Warrior Chandler$<BR>For the true warrior in terms of，Challenge a book is a love letter。<BR>You see！The challenge of love pink book...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-d" mid="13"><![CDATA[<html>（Read the book challenges）</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Senior Warrior Chandler$<BR>Well，Open to see it soon！<BR>Ha……Ha……<BR><FONT color=#7e12d2>(Chandler blushing handed over to the book challenges)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-d" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-e" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Orc King book challenge$<BR><FONT color=#382000>{user_nick}，Do not forget me? <BR>Unfortunately, although the last lost，But this definitely will not do，Hei hei。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-e" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-f" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Orc King book challenge$<BR><FONT color=#382000>After you defeat since being，I do five push-ups every day，<BR>10 chin-up…Not，Frankly not a daily Rights 。</FONT> <BR>
+<FONT color=#382000>Because of the weekend also and girls dating，Ha ha。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-f" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-g" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Orc King book challenge$<BR><FONT color=#382000>But at least do five times a week…… </FONT><BR><FONT color=#382000>Not……It may be dissatisfied with five……<BR>Anyway，Gifted blood and fire through the following，I have become more powerful。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-g" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-h" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Orc King book challenge$<BR><FONT color=#382000>You are reading this letter when，Will certainly have a very simple task that is it。But this time I&#39;ve come to really Rights，I want to duel with you wholeheartedly。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-h" image="QM_Orc_two_brothers.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-i" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Orc King book challenge$<BR><FONT color=#382000>Although it is not something important，But I still say，This will be more powerful than I shot my brother help me。I&#39;m not want to win little more than，Ah you do not misunderstand，Hei hei。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-i" image="QM_Orc_two_brothers.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-j" mid="25"><![CDATA[<html><FONT size=2 face=Arial>(</FONT>Chandler dialogue and Warriors)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Orc King book challenge$<BR><FONT color=#382000>I will rest in the office waiting for your prayers。</FONT><BR><BR><FONT color=#382000>Another) If you refuse to accept the challenge，I curse you10Years, can not find love。Ha ha ha。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-j" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-l" mid="27"><![CDATA[<html>(Challenge)</html>]]></talk_answer>
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-k" mid="28"><![CDATA[<html>(Refusal to challenge)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Senior Warrior Chandler$<BR>Is the last guy ah，Zuifan is this tenacity than the stronger guy。But Daoshi quite want to know how strong he gets it this time。 <BR>Of course，You will not refuse to challenge it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-k" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-l" mid="30"><![CDATA[<html>... Acceptance。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html><FONT color=#a82424><FONT color=#2b2723>$Warning$</FONT></FONT><BR>
+<FONT color=#a82424>Warning：Refusal to challenge the words，10There will be no love in yo。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-l" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-acceptted" mid="32"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Challenger Orc King Ⅱ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-m" image="QM_Orc_two_brothers.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-n" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Senior Warrior Chandler$<BR>Challenge to write the book，This time he also<FONT color=#a82424>Reinforcements</FONT>，You can get ready ah。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-n" image="QW_26.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Senior Warrior Chandler$<BR>Challenger is<FONT color=#a82424>Rest in peace prayer Department</FONT>Waiting for you！Still not Go，Share your love back， Ha ha ha！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1" image="QM_Orc_two_brothers.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Senior Warrior Chandler$<BR>Challenger is<FONT color=#a82424>Rest in peace prayer Department</FONT>Waiting for you！<BR>Still not Go，Share your love back， Ha ha ha！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-a" mid="40"><![CDATA[<html>I win。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Senior Warrior Chandler$<BR>Finally back again。 Ah，How ah outcome?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-b" mid="42"><![CDATA[<html>（I am not your disciple...）</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ha ha ha！I really never makes mistakes！ <BR>Is indeed my disciples ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-c" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Senior Warrior Chandler$<BR>See you like this，I followed excited ah。<BR>Ah ah…This reminds me of that time。<BR>10Years ago, the battle extremely heroic, but ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-d" mid="56"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Senior Warrior Chandler$<BR>10Years ago, when the monster attacks Kedella，I have been in the forefront and they fought。Then，I met a very powerful guy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-e" mid="70"><![CDATA[<html>Who won？</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Senior Warrior Chandler$<BR>That guy is a powerful orc。<BR>Although the enemy，But really strong。<BR>When attacks like lightning，Time as the iron wall of defense，Really powerful。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-f" mid="58"><![CDATA[<html>Then，You win?</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah ha ha！How could I lose it！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-f" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-g" mid="60"><![CDATA[<html>One eye…Is it Orc King?</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Senior Warrior Chandler$<BR>Not！I did not win him，Ah ha ha！<BR>We just exchanged one eye。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-g" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-h" mid="62"><![CDATA[<html>This is one。</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ha ha ha！If the Orc King is the guy at the time, then，You can not come back alive。That guy and I matched，How it might be lost to you！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-h" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-i" mid="64"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Senior Warrior Chandler$<BR>But，Perhaps there really a link can not say。<BR>Rookie！Please help me do one thing?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-i" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-j" mid="66"><![CDATA[<html>Ah，Understand。</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Senior Warrior Chandler$<BR>Monster-related things to say，No one Bibei Li know more of that guy。While still a child Xiaopi Hai，But knowledge is also much more to think than the elderly。To him to ask <FONT color=#a82424>Orc King</FONT>The bottom line Come back！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-j" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-!next" mid="68"><![CDATA[<html><FONT color=#a82424>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,2761,2762,2763,2764</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID,276, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">m</exe>
+         <exe type="huntmon" num="1" party="1" exe="6,7,8" onexe="">21075</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2761,2762,2763,2764</exe>
+         <exe type="complete">276</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="l">0</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="l">0</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="acceptted">1,2,5,3,4</exelink>
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="b" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="c" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="d" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="e" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="f" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="g" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="h" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="i" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="j">0</exelink>
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="!next">1</exelink>
+   <journal_data recompense="1:2761,2:2762,3:2763,4:2764" quest_title="도전자 김오크 Ⅱ" chapterid="" quest_level="22" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QM_Orc_two_brothers.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>264,0,0</destination_pos>
+         <destination_mode>custom:261@1,262@1,263@1,264@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Defeated challenger Orc King]]></title>
+         <contents mid="46"><![CDATA[<html><FONT color=#2b2723>To prayer resting Department and the Orcs for the second duel gold bar。</FONT><BR><FONT color=#086171></FONT><BR><FONT color=#086171>Shore littered with fallen leaves（Forgotten Temple entrance）</FONT> <FONT color=#a82424>→</FONT> <FONT color=#a82424>Rest in peace prayer Department</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Defeated challenger Orc King]]></destination>
+         <todo_msg mid="48"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Dialogue with senior soldiers Chandler]]></title>
+         <contents mid="50"><![CDATA[<html>Fought off a second challenge of the Challenger gold orc。Back Kedella fighters crossing Chandler report to the High Bar。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior Warrior Chandler</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Dialogue with senior soldiers Chandler]]></destination>
+         <todo_msg mid="52"><![CDATA[Fought off challenger]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>22:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>275</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

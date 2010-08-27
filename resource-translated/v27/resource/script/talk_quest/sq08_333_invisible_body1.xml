@@ -1,0 +1,323 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_333_invisible_body1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>333</qid>
+      <designer>김주연</designer>
+      <qlevel>21</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>334</nextqid>
+      <nextqname>sq08_334_invisible_body2</nextqname>
+      <nextqnpc>n034_cleric_master_germain</nextqnpc>
+      <qkname mid="1"><![CDATA[Invisible bodyⅠ]]></qkname>
+      <qnpc>
+         <npcid>255</npcid>
+         <npcename>n255_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>269</npcid>
+         <npcename>n269_invisible_thef_sq333_334</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（The task did not meet the criteria）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Bulletin$<br>Over the task of implementation，Temporarily unable to accept the task of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Bulletin$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Bulletin$<br>Task with a backpack full。<br>（Please order as soon as possible backpack）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-noquest" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$???$<BR>Feels like there is something。<BR><FONT color=#7e12d2>（The priest points with Kedella acceptable Jermaine dialogue task）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-noquest" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$???$<BR>Feels like there is something<BR><FONT color=#7e12d2>（The priest points with Kedella acceptable Jermaine dialogue task）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Consumables business Mee$<BR>If the business heaven the sacred mission of our Kedella like a regular。In that case，No one would say that I miss the country store。<FONT color=#7e12d2>（The priest points with Kedella acceptable Jermaine dialogue task）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-a" mid="9"><![CDATA[<html>Ah，Despite that。</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Pastor Jermaine$<BR>
+I could listen to a word being?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-a" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-b" mid="11"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Pastor Jermaine${action:Talk}<BR><FONT color=#a82424>Kedella protest </FONT>Period，In<FONT color=#a82424>No return</FONT>A great battle took place。No matter the terrain from the point of no return，Or the morale of our military，At that time we have the overwhelming advantage 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-b" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-c" mid="13"><![CDATA[<html>So that….</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Pastor Jermaine$<BR>
+But the result was tragic exception。Most people involved in the fighting，Almost lost their lives there。<BR>
+After the fight the battle that people who did not participate in the reunification，So they started<FONT color=#a82424>No return</FONT>Of this statement。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-c" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-d" mid="15"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Pastor Jermaine$<BR>Although this was a long time，But the whole Kedella still not come out from the pain。I have been saving for it。<BR>Forest loss in the death of a teacher not a few days，I lost a unique friend。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-d" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-e" mid="70"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Pastor Jermaine$<BR>A few days ago is the anniversary of the death of his friend，So I take the opportunity to<FONT color=#a82424>No return</FONT>Looked。But I found there was something never before discovered。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-e" image="QP_Manufactory.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-f" mid="17"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Pastor Jermaine$<BR>Actually placed somewhere in the river of no return with a<FONT color=#a82424>Highly toxic manufacturing machine</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-f" image="QP_Manufactory.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-g" mid="19"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Pastor Jermaine${action:Talk}<BR>Since I can not stay long，So hurry back，But that station <FONT color=#a82424>Highly toxic manufacturing machine</FONT>Always persist。 <BR>
+Why is there the kind of machine where，Can you help me to look into it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-acceptted" mid="21"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Invisible bodyⅠ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QP_Manufactory.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Pastor Jermaine$<BR>To<FONT color=#a82424>No return</FONT>End，You will see that machine。Perhaps that is what they planned conspiracy Monster。Come on you to look into it on。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1" image="QW_23.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$???$<BR>Feels like there is something<BR><FONT color=#7e12d2>（To the river of no return）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QW_23.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Consumables business Mee$<BR>Jermaine adults since the river of no return came back，Into a meditation on。He wondered what in the end?<BR><FONT color=#7e12d2>(Must go to the river of no return)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1" image="" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-a" mid="27"><![CDATA[<html>（Startling…）What if?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Stealth thief$<BR>Feed，Adventurer。 <BR>I hope you can understand，You caused me a lot of trouble, but。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-a" image="QP_Manufactory.dds" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-b" mid="29"><![CDATA[<html>Well anyway, is a steal，And it is the Monster of…</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Stealth thief$<BR>You do not just destroy me <FONT color=#a82424>I almost can become assets directory1Number of highly toxic manufacturing machine</FONT>Well。Wanted to make it out to make a small fortune stolen。<BR>It is a great volume of，Should be worth a lot of money。You put it destroyed by the，How you would like to resolve this matter？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-b" image="QP_Manufactory.dds" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-c" mid="31"><![CDATA[<html>Anyway, the thief is not a good thing to do。</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Stealth thief$<BR>Be！I steal！<BR>But I wanted to make it sell，I&#39;m used to restore funding body of experimental ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-c" image="" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-d" mid="33"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Stealth thief$<BR>Look，Please clear。I do not like a thief in the ah。<BR>Since a little after the body has become transparent to the interest it。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-d" image="" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-e" mid="35"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Stealth thief$<BR>But，I understand that even if the physical transparency of the，Pirates of the blame can not be off duty，Can not be a magician。I always wanted to restore as stood，So I just stole it。You understand me ？<BR>
+You can understand the loneliness of people do not see！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-e" image="" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-f" mid="37"><![CDATA[<html>That，Antidote to see it with Zhao Zhao。</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Stealth thief$<BR>In order to move it here，I spent much effort ah? The want it sold… Hum，Me …Hum，Wanted to take a try… Hum！But you actually gave it to destroy the，Even admonished by you！…Hum。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-f" image="" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-g" mid="39"><![CDATA[<html>（Mee… You?）Then，Back to the village first talk about it。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Stealth thief$<BR>Ah，Can we do that?<BR>Hei hei，Then you may wish to help create super-powerful lotion last man ah。The lotion can be really effective ah。The kind of things people can do，Estimated to be able to solve my trouble ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-g" image="" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-h" mid="41"><![CDATA[<html>Then，Waiting for me to come home，But do not hold any great expectations of ah。</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Stealth thief$<BR>Not，I do not want to return to villages、 <BR>Where more people have。I am homeless and，No one can talk to me… But feel that it alone。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-h" image="" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Stealth thief$<BR>Ah，Anyway, as you will save a great future，To please you。<BR>
+I can trust you people, it was only。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-2" image="" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Stealth thief$<BR>If my body can show if，The first thing I do is buy the best clothes to see。<BR>Feed，If I got the kind of help if the drug，I can give you the first look at my handsome looks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Consumables business Mee$<BR>Hear<FONT color=#a82424>Pastor Jermaine</FONT>Adults in the river of no return witnessed suspicious circumstances，That Really?<BR>Ah ah，Ah really curious。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-a" mid="83"><![CDATA[<html>（Explained to the）</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Pastor Jermaine$<BR>Back again。<BR>Check out the Monster who wants to create machines that do the right platform?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-b" mid="50"><![CDATA[<html>He does not want back to the village。</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Pastor Jermaine$<BR>
+Thief…? <BR>
+Ah….<BR>If it brought him here，I can use my power of God to help him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-c" mid="52"><![CDATA[<html>Dao Shi Magic Magic….</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Pastor Jermaine$<BR>Eh?Faith or trust is not mandatory requirements，So I could not ah。However, the body actually can not see，This amazing ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-d" mid="85"><![CDATA[<html><FONT color=#086171>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-d" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-!next" mid="88"><![CDATA[<html>Anyway… I look to first for help, Miss Mee。</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Pastor Jermaine$<BR>
+How do you want to get drugs then?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3331,3332,3333,3334</exe>
+         <exe type="setquest">333</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">1</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3331,3332,3333,3334</exe>
+         <exe type="complete">333</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="acceptted">1,2,3</exelink>
+   <exelink qstep="1" npc="n269_invisible_thef_sq333_334" sub="b" />
+   <exelink qstep="1" npc="n269_invisible_thef_sq333_334" sub="c" />
+   <exelink qstep="1" npc="n269_invisible_thef_sq333_334" sub="d" />
+   <exelink qstep="1" npc="n269_invisible_thef_sq333_334" sub="e" />
+   <exelink qstep="1" npc="n269_invisible_thef_sq333_334" sub="f" />
+   <exelink qstep="1" npc="n269_invisible_thef_sq333_334" sub="g" />
+   <exelink qstep="1" npc="n269_invisible_thef_sq333_334" sub="h">0,1</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="c">0</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="d">1</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="!next" />
+   <journal_data recompense="1:3331,2:3332,3:3333,4:3334" quest_title="보이지 않는 몸Ⅰ" chapterid="" quest_level="21" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Dialogue with Pastor Jermaine]]></title>
+         <contents mid="56"><![CDATA[<html>Pastor Jermaine said that the investigation <FONT color=#a82424>No return</FONT>See suspicious circumstances when。Come listen to him carefully Road。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Pastor Jermaine</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Dialogue with Pastor Jermaine]]></destination>
+         <todo_msg mid="58"><![CDATA[Add a task。.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_23.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>174,0,0</destination_pos>
+         <destination_mode>custom:171@1,172@1,173@1,174@4</destination_mode>
+         <statemark_npcid>269</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[No return survey]]></title>
+         <contents mid="60"><![CDATA[<html>Jermaine as a memorial after his friends <FONT color=#a82424>No return</FONT>Way，Where the poison found in the manufacture of machine。To investigate to see if it。<BR><BR><FONT color=#086171>Crystal Valley（Sigh Canyon entrance）</FONT> <FONT color=#a82424>→ No return</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Investigation of no return]]></destination>
+         <todo_msg mid="62"><![CDATA[Investigation of no return to see it。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[Report to the Pastor Jermaine]]></title>
+         <contents mid="64"><![CDATA[<html>Located<FONT color=#a82424>No return</FONT>Dead end of the manufacturing machine was originally put there stealthy thief、<BR>
+First back <FONT color=#a82424>Pastor Jermaine</FONT>To report it。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Pastor Jermaine</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[Report to the Pastor Jermaine]]></destination>
+         <todo_msg mid="66"><![CDATA[Back Kedella checkpoints report it to the priest Jermaine。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>21:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

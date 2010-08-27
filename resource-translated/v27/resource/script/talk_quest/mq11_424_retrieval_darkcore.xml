@@ -1,0 +1,245 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_424_retrieval_darkcore</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>424</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc>1. 주교와 대화
+2. 검은 대군주의 탑으로 가서, 검은 코어 프랍을 통해 아이템 습득
+3. 주교에게 보고
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>425</nextqid>
+      <nextqname>mq11_425_missing_spirits</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[Recycling Black stones]]></qkname>
+      <qnpc>
+         <npcid>287</npcid>
+         <npcename>n287_blackdragons_wing</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>Black Dragon&#39;s……Fragment？</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Do not worry。Everything should be in order to。<BR>First need to collect<FONT color=#a82424>Black Dragon Fragments</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="37"><![CDATA[<html>The kind of thing where to find ah？</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Bishop Ignacio$<BR>To clean, then，Need to have the object……Hence the need for and the power of Black Dragon<FONT color=#a82424>Directly connected</FONT>Material。<BR>If can find the Black Dragon of the physical things，The better。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="8"><![CDATA[<html>Ah，So you come back with his hand？</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio$<BR>Last time you do not see？<FONT color=#a82424>Black Dragon&#39;s Broken Wings </FONT>。<BR>You go to take it back，It clean，This will not pose a threat to the sanctity of heaven……How 样？It is a good idea？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="10"><![CDATA[<html>Good，I went to try。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Bishop Ignacio$<BR>Although it is terrible，But I hope you courage。Take a small part of the back should not have much of a problem。<BR>Note Do not touch the black dragon as long as the blood，For such a warrior like you is，This kind of thing should be a piece of cake to。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-d" image="QW_40.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>Overlord Dark Tower</FONT>It is very dangerous place，Must idea。Although the Dark Overlord disappeared，But he was affected by the strange creatures gathered there now。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-1" image="" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Surrounded by evil black wings debris。</FONT><BR>
+<FONT color=#7e12d2>Scattered around the blood-like stuff)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_40.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Bishop Ignacio$<BR>Although<FONT color=#a82424>Overlord Dark</FONT>Disappeared，But he was affected by the strange creatures gathered there now。Please make sure<FONT color=#a82424>Black Dragon Fragments</FONT>Brought back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-2" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n287_blackdragons_wing-2-a" mid="44"><![CDATA[<html>(Carefully remove the part of the)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Black Dragon wings debris$<BR><FONT color=#7e12d2>(Black Dragon&#39;s Broken Wings。<BR>Was surrounded by dark gloomy atmosphere)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-2-a" image="QS_Default.dds" itemindex="300026">
+      <talk_question mid="45"><![CDATA[<html>$Black Dragon wings debris$<BR><FONT color=#7e12d2>(Carefully collected fragments of the wings，No stains of blood。<BR>Just hold in the hand，You can feel a very ominous atmosphere)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="QS_Default.dds" itemindex="300026">
+      <talk_answer link_index="n039_bishop_ignasio-3-a" mid="14"><![CDATA[<html>(Bring back things out)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Bishop Ignacio$<BR>The atmosphere is dangerous……！<BR>
+Dissemination of the eye with Sage are afraid of the bright light。<BR>Things you must bring a strong force of debris。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-a" image="QS_Default.dds" itemindex="300026">
+      <talk_answer link_index="n039_bishop_ignasio-3-b" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>This light is really evil……That the dark，It looked it would unknowingly be confused。<BR>The greatest evil，Perhaps the greatest U.S.。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-b" image="QS_Default.dds" itemindex="300026">
+      <talk_answer link_index="n039_bishop_ignasio-3-c" mid="18"><![CDATA[<html>Can help you，I am very pleased。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Bishop Ignacio$<BR>Now for the purification<FONT color=#a82424>Power debris</FONT>Have found，We should begin preparations for the ceremony of purification。<BR><FONT color=#7e12d2>(Bishop warmly shook hands with me)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-!next" mid="20"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-3" image="QM_black_Dragon.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Black Dragon wings debris$<BR><FONT color=#7e12d2>(Black Dragon&#39;s Broken Wings。<BR>Was surrounded by dark gloomy atmosphere)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300026</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300026</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4241,4242,4243,4244</exe>
+         <exe type="delquestitem" num="-1">300026</exe>
+         <exe type="complete">424</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d">0,2,1</exelink>
+   <exelink qstep="2" npc="n287_blackdragons_wing" sub="a">0,1,2,3</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="c">0</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="!next">1,2</exelink>
+   <journal_data recompense="1:4241,2:4242,3:4243,4:4244" quest_title="검은 코어 회수" chapterid="5" quest_level="34" quest_mark_type="7" use_item_list="300026">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[What is needed]]></title>
+         <contents mid="24"><![CDATA[<html>And Bishop Ignacio Dialogue，Understand completely the power of Black Dragon purification methods。<BR>
+<BR><FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT><FONT color=#a82424>Theo</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[And Bishop Ignacio Dialogue]]></destination>
+         <todo_msg mid="26"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_40.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>403,n287</destination_pos>
+         <destination_mode>custom:401@1,402@1,403@1</destination_mode>
+         <statemark_npcid>287</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="28"><![CDATA[Fragment]]></title>
+         <contents mid="29"><![CDATA[<html>In order to purify，Must collect<FONT color=#a82424>Black Dragon Fragments</FONT>。Overlord Dark Tower to collect debris, it。<BR><BR><FONT color=#086171>Montenegro hill angle(Dark Overlord of the barriers)</FONT> <FONT color=#a82424>→Overlord Dark Tower</FONT></html>]]></contents>
+         <destination mid="30"><![CDATA[Black Dragon of debris collected]]></destination>
+         <todo_msg mid="31"><![CDATA[Dark Overlord Tower go to collect the debris Black Dragon。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="32"><![CDATA[Black Dragon wings debris]]></title>
+         <contents mid="33"><![CDATA[<html>Black Dragon fragments obtained。Back to the holy city of Paradise King，It to the Bishop Ignacio。<BR><BR><FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="34"><![CDATA[Report to the Bishop Ignacio]]></destination>
+         <todo_msg mid="35"><![CDATA[The Black Dragon of debris collected。Bishop Ignacio to the report, please。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>423</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

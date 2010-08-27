@@ -1,0 +1,482 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_218_awakened_guardian</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>218</qid>
+      <designer>김주연</designer>
+      <qlevel>22</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>401</nextqid>
+      <nextqname>mq11_401_castle_sainthaven</nextqname>
+      <nextqnpc>n099_engineer_hubert</nextqnpc>
+      <qkname mid="1"><![CDATA[Wake of the Guardian]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나 (캐더락 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>55</npcid>
+         <npcename>n055_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트     (캐더락 관문)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QS_Default.dds" itemindex="300063">
+      <talk_answer link_index="n035_soceress_master_tiana-1-a" mid="7"><![CDATA[<html>Finally got the start key！</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Advanced magician Tina$<BR>Well，Only ethics textbook content to appear on, do not say that again，We should do is say。Order to activate the cleaning device，Need<FONT color=#a82424>Start the keys purification equipment</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-a" image="QW_26.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-b" mid="9"><![CDATA[<html>Well lion scorpion……</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Advanced magician Tina$<BR>If your dumb head there are some words of memory，Should know where to find it？<BR>Keys<FONT color=#a82424>Rest in peace prayer Department</FONT>Of<FONT color=#a82424>Lion scorpion Kelu Lu</FONT>Body。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-b" image="QM_Manticore.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-c" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Advanced magician Tina$<BR><FONT color=#a82424>Lion scorpion</FONT>Magic combination of ancient civilization and the birth of creation。The lion head is usually、Sheep&#39;s body、Snake&#39;s tail so mixed patchwork，Is a Chimera。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-c" image="QM_Manticore.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-d" mid="13"><![CDATA[<html>Hum……Estimate of。</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Advanced magician Tina$<BR><FONT color=#a82424>Rest in peace prayer Department</FONT>The lion is more like scorpion Ke Lulu senior Warcraft。<FONT color=#a82424>Ancient human remains of it as a guardian of guardian</FONT>，Estimate will be very difficult to deal with。</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-d" image="QM_Manticore.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2" mid="15"><![CDATA[<html>Yes!</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Advanced magician Tina${action:talk}<BR><FONT color=#387206>{user_nick}</FONT>，Although your ability before the show is not strong，But at least there is still a glimmer of hope over ancient Warcraft。<BR>You do a good job and lion fighting Scorpion Ke Lulu prepared me？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Algerita$<BR>Start suspension device of a swallow Ogre，The formation of airborne toxic releases toxins was Ailei Na，The method will not let me go over really。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Airship engineer Hubert$<BR>Pervasive fog of unknown……Before the opening of the fog lifted，Airship is not safe to proceed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-1" image="" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$Elite soldiers Cleander$<BR>Although the task failed，But I hope to come back wounded soldiers safely。I will not let the murderers I lost soldiers……！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="QM_Manticore.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Advanced magician Tina$<BR>Go<FONT color=#a82424>Rest in peace prayer Department</FONT>Down with Lions scorpion Ke Lulu，<FONT color=#a82424>Start with the start key purification devices</FONT>，Should be able to purify the contaminated material scattered in the Kedella。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-3-a" mid="21"><![CDATA[<html>Hei hei。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Advanced magician Tina$<BR>You seem to be severe than the imagine some of。Did not expect even to overthrow the lion scorpion Ke Lulu。And you show me the research value of teacher，I should thank you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3-a" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Advanced magician Tina$<BR>Although a little mushy so that……But forget，From today，I will get you called<FONT color=#a82424>Heroic rescue Kedella</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Airship engineer Hubert$<BR>Great，Well done！Now as long as the other falls away to open on the line！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Algerita$<BR>Well，Well。<BR>I am satisfied with the performance of your visit。You down with the lion scorpion Ke Lulu，As for your approval，After I told you<FONT color=#a82424>Useful slaves</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-4-a" mid="28"><![CDATA[<html>Nice？！Slave……Scribe……Call</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Algerita$<BR>Well，Well。<BR>You down with the lion scorpion Ke Lulu，I said to you the recognition performance。<BR>I will give you a<FONT color=#a82424>Easy to use the title of the slaves</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-4-b" mid="30"><![CDATA[<html>Anyway，Finally purified Kedella。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Algerita$<BR>People do not always know to meet the。<BR>
+I called to be“Nice”，You should feel fear Caidui。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-b" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-4-c" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Algerita$<BR>If so like the。Some localities have not been purified。This is very strange。<BR>On the，When you go to holy heaven ah？！！Airship should be able to fly right now？You go to confirm。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-c" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Algerita$<BR>If&#39;m lazy, then，I care spanking！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Advanced magician Tina$<BR>You have completed the great task。You are the true heroes to save Kedella！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-5-a" mid="36"><![CDATA[<html>Really nice。</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Airship engineer Hubert$<BR>Fog starting to lift<BR>
+Immediately able to<FONT color=#a82424>Holy Paradise</FONT>The。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-5-b" mid="68"><![CDATA[<html>Elite soldiers Cleander you？</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Airship engineer Hubert$<BR>
+But just<FONT color=#a82424>Elite soldiers Cleander</FONT>Over the，That you must meet。They seem to want to go back，What might be something to say to you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5-b" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$Airship engineer Hubert${action:talk}<BR>
+Fog has not completely dissipated，You go to meet<FONT color=#a82424>Elite soldiers Cleander</FONT>It。Perhaps there is something important。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-6" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-6-a" mid="71"><![CDATA[<html>You&#39;re welcome……</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Elite soldiers Cleander$<BR>Hear<FONT color=#a82424>Airship</FONT>Almost repaired。As the elite soldiers sent by sacred heaven，Even to accept the help of adventurers。Really ashamed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-6-a" image="" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-6-b" mid="73"><![CDATA[<html>What ah？</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Elite soldiers Cleander$<BR>We intend to sit back airship<FONT color=#a82424>Holy Paradise</FONT>……But<FONT color=#382000>{user_nick}</FONT>，You are the guardian of checkpoints Kedella，I have something to please you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-6-b" image="" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-6-c" mid="75"><![CDATA[<html>Ah？Me？！</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Elite soldiers Cleander$<BR>Back after，I must go to<FONT color=#a82424>Kaxiwusi King</FONT>Your majesty。<FONT color=#382000>{user_nick}</FONT>，I&#39;d like this Kedella peer guardian of the boundary，You help me to report。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-6-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-6-d" mid="77"><![CDATA[<html>Good。</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Elite soldiers Cleander$<BR><FONT color=#a82424>Prophet</FONT>How did the，<FONT color=#a82424>Black Knight</FONT>How powerful，Light me a man with verbal report。You to defend Kedella，And Monster have been many battle，I hope you can help me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-6-d" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$Elite soldiers Cleander$<BR>Really Thank you。That we<FONT color=#a82424>Holy Paradise</FONT>See。Please Go to<FONT color=#a82424>Airship engineer Hubert</FONT>Confirm，Airship is not repaired。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$Airship engineer Hubert${action:talk}<BR>
+Fog has not completely dissipated，You go to meet<FONT color=#a82424>Elite soldiers Cleander</FONT>It。Perhaps there is something important。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-7" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n099_engineer_hubert-7-a" mid="81"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Airship engineer Hubert$<BR>Fog starting to lift！！！Patronize a carefully fog，Forgot to repair the airship。<FONT color=#a82424>Suspension device</FONT>Brought the right？Quickly，Come to me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-7-a" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-7-!next" mid="95"><![CDATA[<html><FONT color=#a94407>(Rewarded)</FONT></html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-7" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Elite soldiers Cleander$<BR>Really Thank you。That we<FONT color=#a82424>Holy Paradise</FONT>See。Please Go to<FONT color=#a82424>Airship engineer Hubert</FONT>Confirm，Airship is not repaired。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>300063 (정화장치 가동열쇠)</comment>
+      <conditions />
+      <executions>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5,6">762</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">300063</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>300064 (순백의 오브)
+300063 (정화장치 가동열쇠)
+</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300064</exe>
+         <exe type="delquestitem" num="-1">300063</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment>300103 부유장치
+노예의 증표는 아르젠타 서브퀘 전부 완료했을 때 삭제(아르젠타의 노예 퀘스트)</comment>
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300103</exe>
+         <exe type="complete">218</exe>
+         <exe type="recompense">,2181,2182,2183,2184</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="c" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="d" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="2">2,0,1</exelink>
+   <exelink qstep="3" npc="n035_soceress_master_tiana" sub="a">0,1,2,3</exelink>
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="c">0,1</exelink>
+   <exelink qstep="5" npc="n099_engineer_hubert" sub="b">0,1</exelink>
+   <exelink qstep="6" npc="n055_elite_soldier" sub="b" />
+   <exelink qstep="6" npc="n055_elite_soldier" sub="c" />
+   <exelink qstep="6" npc="n055_elite_soldier" sub="d">0,1</exelink>
+   <exelink qstep="7" npc="n099_engineer_hubert" sub="a">2</exelink>
+   <exelink qstep="7" npc="n099_engineer_hubert" sub="!next">0,1</exelink>
+   <journal_data recompense="1:2181,2:2182,3:2183,4:2184" quest_title="깨어난 수호자" chapterid="3" quest_level="22" quest_mark_type="7" use_item_list="300064,300063">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2265,1121</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[And senior magician Tina dialogue]]></title>
+         <contents mid="44"><![CDATA[<html>Get<FONT color=#a82424>Pure white of the ball</FONT>After，The following things to do and discuss high-level magician Tina。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Advanced magician Tina</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[And senior magician Tina dialogue]]></destination>
+         <todo_msg mid="46"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_Manticore.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>264,0,0</destination_pos>
+         <destination_mode>custom:261@1,262@1,263@1,264@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Department of lions resting prayer and purification devices scorpion]]></title>
+         <contents mid="48"><![CDATA[<html>It is said<FONT color=#a82424>Start the keys purification equipment</FONT>In<FONT color=#a82424>Rest in peace prayer Department</FONT>The lion scorpion body。Down<FONT color=#a82424>Lion scorpion Kelu Lu</FONT>，Start the keys purification equipment found，Start cleaning device。<BR><BR><FONT color=#086171>Shore littered with fallen leaves(Forgotten Temple entrance)</FONT> <FONT color=#a82424>→ Rest in peace prayer Department</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Prayer defeat scorpion lion resting Department]]></destination>
+         <todo_msg mid="50"><![CDATA[Please pray for those who rest down with the lion scorpion Office，Start the keys purification equipment found。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2265,1121</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Start cleaning device！Reports to senior magician Tina]]></title>
+         <contents mid="53"><![CDATA[<html>Down with the lion scorpion，<FONT color=#a82424>Start a purification device</FONT>。All the information to<FONT color=#a82424>Advanced magician Tina</FONT>Report。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Advanced magician Tina</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[And senior magician Tina dialogue]]></destination>
+         <todo_msg mid="55"><![CDATA[Down with the lion scorpion，Start a purification device。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[And the gray ruins of Algerita dialogue]]></title>
+         <contents mid="58"><![CDATA[<html>Start a purification device，Airship can take off like。Tell the story this time Algerita。<BR>
+ <BR>
+<FONT color=#086171>Gray ruins</FONT> <FONT color=#a82424>→ Algerita</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[And the gray ruins of Algerita dialogue]]></destination>
+         <todo_msg mid="60"><![CDATA[Please tell Algerita before doing。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,3959,3392</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[And airship engineer Hubert dialogue]]></title>
+         <contents mid="64"><![CDATA[<html>Airborne toxic are beginning to dissipate the，Ask the engineer can proceed to the Hubert<FONT color=#a82424>Holy Paradise</FONT>The。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Airship engineer Hubert</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[And airship engineer Hubert dialogue]]></destination>
+         <todo_msg mid="66"><![CDATA[Please airship engineer Hubert dialogue。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n55</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>55</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[Principal elite soldiers Cleander]]></title>
+         <contents mid="85"><![CDATA[<html>Elite soldiers Cleander seem to have something to say to me。Dissipated in the time waiting for airborne toxic，Go see him and his dialogue。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Elite soldiers Cleander</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[And elite soldiers Cleander dialogue]]></destination>
+         <todo_msg mid="87"><![CDATA[Please elite soldiers Cleander dialogue。]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[Dissipation of the date of airborne toxic]]></title>
+         <contents mid="89"><![CDATA[<html>With decisions and elite soldiers Cleander，King City to the holy heaven。Ask<FONT color=#a82424>Airship engineer Hubert</FONT>Can proceed to<FONT color=#a82424>Holy Paradise</FONT>The。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Airship engineer Hubert</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[And airship engineer Hubert dialogue]]></destination>
+         <todo_msg mid="91"><![CDATA[Please airship engineer Hubert dialogue。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>217</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

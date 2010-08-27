@@ -1,0 +1,310 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_556_timid_man2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>556</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[And Miss Capital City Leina dialogueⅡ]]></qkname>
+      <qnpc>
+         <npcid>133</npcid>
+         <npcename>n133_lena_duglars</npcename>
+         <npckname>레나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>280</npcid>
+         <npcename>n280_saint_guard</npcename>
+         <npckname>왕성 근위병 말콤</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(Help Marken messenger)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Timid man$<br>Notice，The task did not meet the criteria。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Have too many tasks$<br>Can not accept more tasks，Notice。<br><br><FONT color=#7e12d2>※ Backpack space，Can not be rewarded。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Please leave space in the backpack$<br>(To get the reward，Notice。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Currently unable to accept the task of$<br>Notice。<br>(Or has exceeded the maximum number of tasks)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-noquest" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Taskbar space backpack$<BR><FONT color=#a82424>Please order Backpack</FONT>King City, near the guard Marken？<BR>……蕾娜 Miss，What to say……If she refuses……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Himself$<BR><FONT color=#a82424>I hope she can return the necklace</FONT>Marken？<BR>
+King City guardsman。How that guy does not come back？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-a" mid="8"><![CDATA[<html>(Changing of the guard long time to)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$He that will not really run it${action:Talk}<BR>Explain the situation？蕾娜 Miss<FONT color=#a82424>Ah</FONT>Name？……Marken？<BR>Confession……I do not remember？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-b" mid="10"><![CDATA[<html>(King City, near the guard)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Leina rummage in the pocket$<BR>……蕾娜 Miss，Who he is……<BR>Oops，Necklace。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-c" mid="12"><![CDATA[<html>Yes。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$I think of it$<BR>蕾娜 Miss，He made you the necklace back to him，When I went to review the guard of honor。One elite soldiers threw me this necklace……Then run away。He muttered a few words with me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-d" mid="14"><![CDATA[<html>(But I totally did not catch)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Then put the matter to the forgotten$<BR>蕾娜 Miss？<BR>Get Necklace，Why should I own to go ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-d" image="QW_34.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-e" mid="16"><![CDATA[<html>Since you have to help him convey a message。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Know$<BR>蕾娜 Miss。Thank you<FONT color=#a82424>Can you help me get something good the past</FONT>You is coming。<BR>River downstream of submerged land<FONT color=#a82424>Go</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-f" mid="18"><![CDATA[<html><FONT color=#086171>King City, near the guard Marken</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Given the task ofⅡ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-f" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Timid man$<BR>蕾娜 Miss，Please help me return the necklace。<BR>Really，King City, near the guard that really makes people chilling？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1" image="QW_34.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-1-a" mid="21"><![CDATA[<html>He do not know that people who dare to face。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Know$<BR>蕾娜 Miss。Thank you<FONT color=#a82424>You is coming</FONT>No value even answer you。<BR>River downstream of submerged land<FONT color=#a82424>Go</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1-a" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Please help me return the necklace${action:Talk}<BR>King City, near the guard Marken，蕾娜 Miss。<BR>Really，King City, near the guard that really makes people chilling？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$He do not know that people who dare to face$<BR><FONT color=#a82424>No value even answer you</FONT>King City guardsman？<BR>
+Marken，How that guy does not come back。Changing of the guard long time to？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-1" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Hum$<BR><FONT color=#a82424>He that will not really run it</FONT>King City, near the guard Marken？<BR>……蕾娜 Miss，What to say……If she refuses……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-2" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$I hope she can return the necklace$<BR>蕾娜 Miss<FONT color=#a82424>Himself</FONT>You is coming。<BR>River downstream of submerged land<FONT color=#a82424>Go</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Please help me return the necklace$<BR>King City, near the guard Marken？<FONT color=#a82424>King City guardsman</FONT>Ah？Marken。<BR>Fortunately, not what was wrong。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-2" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n280_saint_guard-2-a" mid="28"><![CDATA[<html>Found the right guy。</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Please let him come back quickly$<BR>Take back the necklace……King City, near the guard Marken？<FONT color=#a82424>How</FONT>蕾娜 Miss？<BR>……How like a？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-2-a" image="" itemindex="">
+      <talk_answer link_index="n280_saint_guard-2-b" mid="30"><![CDATA[<html>(Not to do，Necklace it)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Marken tears in his eyes$<BR>King City, near the guard Marken，Heart finally put down……<BR>Great，Too！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-2-b" image="QS_Default.dds" itemindex="300255">
+      <talk_answer link_index="n280_saint_guard-2-c" mid="32"><![CDATA[<html>In order to express my mind……(Great？)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$I spent a month&#39;s wages to buy this stuff$<BR>King City, near the guard Marken，<FONT color=#a82424>Why should you declare ah</FONT>Declare failure，Necklace。<BR>I think very desperate here～May also lose，Thanks to you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-2-c" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n280_saint_guard-2-d" mid="34"><![CDATA[<html>Oh……(Ah！！)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Why should declare ah did in the end$<BR>King City, near the guard Marken，Actually，I finally not hungry。Is also a headache？If the lady accepted my confession～Oh，Now think about。How I can support any kind of salary does a lady！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-2-d" image="QS_Default.dds" itemindex="300255">
+      <talk_question mid="35"><![CDATA[<html>$Ha ha ha$<BR>King City, near the guard Marken，The original is too impulsive<FONT color=#a82424>To</FONT>I must hurry back。Necklace……Good～<BR><FONT color=#7e12d2>(Sell 才行)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-3" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Goodbye$<BR>King City, near the guard Marken，Actually，If the lady accepted my confession。Is also a headache？How I can support any kind of salary does a lady～Oh，Marken&#39;s voice can not find a trace of sadness of lost love。Now think about！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$The original is too impulsive$<BR>Ha ha ha<FONT color=#a82424>King City guardsman</FONT>To？蕾娜 Miss？<BR>……Asserts。Marken guy<FONT color=#a82424>What a fool</FONT>General Douglas，He must know it……Daughter。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-3-a" mid="39"><![CDATA[<html>Oh。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Will go for her${action:Talk}<BR><FONT color=#a82424>蕾娜 Miss</FONT>Necklace？<BR>This is nothing like and luck with the opposite sex，Also back ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3-a" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-3-b" mid="41"><![CDATA[<html>(How are such silly people)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$I really was no luck with the opposite sex$<BR>蕾娜 Miss，Leina naughty smile，Really like。<BR>……Boring to the necklace I throw，Ha ha。Not even a handkerchief do not give me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3-b" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-3-c" mid="43"><![CDATA[<html>(Joke……)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$White Rose is the identity of his followers right up Dragon$<BR>Not many people would let me see the。<BR>蕾娜 Miss……I do not have time to care about love and precious stones necklace。<FONT color=#7e12d2>(I have my own things to do)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3-c" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-3-d" mid="45"><![CDATA[<html>(Other things matter to me)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Leina put a decidedly expression$<BR>蕾娜 Miss，Leina solemnly thanked me。<BR>Anyway。I will remember。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3-d" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-3-e" mid="47"><![CDATA[<html><FONT color=#086171>(You helped me deal with something this annoying things)</FONT></html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Get Award$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3-e" image="" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Each time to trouble you${action:Talk}<BR>Task reward。<BR>蕾娜 Miss，Goodbye。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">556</exe>
+         <exe type="addquestitem" num="1">300255</exe>
+         <exe type="recompense_view">,5561,5562,5563,5564</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300255</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5561,5562,5563,5564</exe>
+         <exe type="complete">556</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="e">2</exelink>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="f">0,1,3,4</exelink>
+   <exelink qstep="1" npc="n133_lena_duglars" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n280_saint_guard" sub="b" />
+   <exelink qstep="2" npc="n280_saint_guard" sub="c" />
+   <exelink qstep="2" npc="n280_saint_guard" sub="d">0,1,2</exelink>
+   <exelink qstep="3" npc="n133_lena_duglars" sub="b" />
+   <exelink qstep="3" npc="n133_lena_duglars" sub="c" />
+   <exelink qstep="3" npc="n133_lena_duglars" sub="d">0</exelink>
+   <exelink qstep="3" npc="n133_lena_duglars" sub="e">1</exelink>
+   <journal_data recompense="1:5561,2:5562,3:5563,4:5564" quest_title="소심한 남자Ⅱ" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="300255">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n133</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>133</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Your favor]]></title>
+         <contents mid="50"><![CDATA[<html>Timid man。<BR>
+ <BR>
+<FONT color=#086171>I will one day return to your</FONT> <FONT color=#a82424>→ Holy Heaven King City</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[蕾娜 Miss]]></destination>
+         <todo_msg mid="52"><![CDATA[And Miss Leina King City near the guards talking about the things Marken。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_34.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>343,n280</destination_pos>
+         <destination_mode>custom:341@1,342@1,343@1</destination_mode>
+         <statemark_npcid>280</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Miss dialogue and Leina]]></title>
+         <contents mid="54"><![CDATA[<html><FONT color=#a82424>Tasks have been added</FONT>蕾娜 Miss。Forgotten man。<BR>
+ <BR>
+<FONT color=#086171>Has no recollection of Marken was(Heermadai port)</FONT> <FONT color=#a82424>→ Downstream ruins entrance</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[The necklace to the King City right near the guard Marken]]></destination>
+         <todo_msg mid="56"><![CDATA[River downstream of submerged land。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n133</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>133</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[And submerged land Marken River downstream of the dialogue]]></title>
+         <contents mid="58"><![CDATA[<html>Leina Miss Love，Please necklace to the King River downstream of submerged land near the city guard Marken。Recovered after Necklace。<BR>
+ <BR>
+<FONT color=#086171>Marken very pleased</FONT> <FONT color=#a82424>→ Holy Heaven King City</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[蕾娜 Miss]]></destination>
+         <todo_msg mid="60"><![CDATA[Report back to Miss Xiang Leina re-。And Miss Capital City Leina dialogue。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>555</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

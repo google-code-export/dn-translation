@@ -1,0 +1,182 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_559_healing_tears</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>559</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Treatment of tears]]></qkname>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-a" mid="6"><![CDATA[<html>You&#39;re welcome。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Senior archer Yixilian$<BR>Thanks to you to find drug treatment，Only to avoid the sacrifice of many people。<BR>Really appreciate。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-b" mid="8"><![CDATA[<html>What can you do to help？</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Senior archer Yixilian$<BR>But now many of the wounded。Some people have been treated，But injuries continued to deteriorate，So now is the lack of drugs。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-c" mid="10"><![CDATA[<html>Good。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Senior archer Yixilian$<BR>Can you say，Too grateful to the。Sorry，I would like you to help。<BR>Because<FONT color=#a82424>Wizard of tears</FONT>Very valuable，Very difficult to collect。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-acceppted" mid="12"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Treatment of tears$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="QW_37.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Senior archer Yixilian$<BR>Please go visit<FONT color=#a82424>Wizard grave</FONT>，Tears of wizard to help me collect。<BR>I received a report，Said<FONT color=#a82424>Lizardman</FONT>Who can be found in small pieces，Please help me to collect10A。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-a" mid="16"><![CDATA[<html>(Yixilian sigh)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Senior archer Yixilian$<BR>To collect the right！<BR>During this period the number of victims has increased，I was very worried。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-b" mid="18"><![CDATA[<html>Hope to find a cure medicine as soon as possible。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Senior archer Yixilian$<BR>Even with drugs，But this is not complete<FONT color=#a82424>Treatment Drugs</FONT>，Only temporarily prevent further deterioration of symptoms。<BR>The other depends on their determination of the soldiers。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-c" mid="20"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-c" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Senior archer Yixilian$<BR>Unfortunately……Limited my ability，So we can only look forward to<FONT color=#a82424>Lotus Swamp</FONT>Of<FONT color=#a82424>Karatyup</FONT>。<BR>I want her to reply to me soon，Before，I can only do what its power。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">559</exe>
+         <exe type="recompense_view">,5591,5592,5593,5594</exe>
+         <exe type="talk" npc="n044_archer_master_ishilien">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">1001</exe>
+         <exe type="addquestitem" num="1">300246</exe>
+         <exe type="huntitem" num="10" exe="6,7,8" onexe="">300246</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300246</exe>
+         <exe type="recompense">,5591,5592,5593,5594</exe>
+         <exe type="complete">559</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="c">1</exelink>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="acceppted">0,3,5,2</exelink>
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="b">1</exelink>
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="c">0,2</exelink>
+   <journal_data recompense="1:5591,2:5592,3:5593,4:5594" quest_title="치료하는 눈물" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="300246">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_37.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>374,0,0</destination_pos>
+         <destination_mode>custom:371@3,372@3,373@3,374@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[Wizard of tears]]></title>
+         <contents mid="24"><![CDATA[<html>Received the commission senior archers Yixilian。To the wizard lizard was collected from the grave<FONT color=#a82424>Wizard of tears</FONT>。<BR><BR>
+<FONT color=#7e12d2>※ Difficulty can not be implemented under the abyss。</FONT><BR>
+<BR><FONT color=#086171>Heermadai port(Downstream ruins entrance)</FONT> <FONT color=#a82424>→ Wizard grave</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[Wizard of tears collected]]></destination>
+         <todo_msg mid="26"><![CDATA[Please go to the tomb to collect Wizard Wizard tears。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[Report to senior archer Yixilian]]></title>
+         <contents mid="28"><![CDATA[<html>Tears collected the Wizard。Whereabouts<FONT color=#a82424>Senior archer Yixilian</FONT>Report。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Senior archer Yixilian</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[Report to senior archer Yixilian]]></destination>
+         <todo_msg mid="30"><![CDATA[Tears of the wizard to complete collection。Please go back and report to senior archer Yixilian。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>415</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

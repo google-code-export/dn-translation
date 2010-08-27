@@ -1,0 +1,360 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_408_soaring_black_arkmonarch</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>408</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>1. 검은 대군주의 연병장 입장시 컷신 1
+2. 보스전 필드에서 컷신 2
+3. 그 후 제레인트와 대화.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>409</nextqid>
+      <nextqname>mq11_409_remainder_works</nextqname>
+      <nextqnpc>n214_geraint_wounded</nextqnpc>
+      <qkname mid="1"><![CDATA[Dark Overlord of the monument as]]></qkname>
+      <qnpc>
+         <npcid>214</npcid>
+         <npcename>n214_geraint_wounded</npcename>
+         <npckname>부상당한 제레인트(검은 대군주의 연병장)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>215</npcid>
+         <npcename>n215_argenta</npcename>
+         <npckname>아르젠타(검은 대군주의 연병장)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>&#39;ll Be right back。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio$<BR>It quickly and<FONT color=#a82424>General Douglas</FONT>Consult，Together with the army to<FONT color=#a82424>Dark Overlord training grounds</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio$<BR>Naturally, I am only the guardian can do better now <FONT color=#a82424>Holy Paradise</FONT> City，Pray you will return home safely。<BR>Be careful ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$King Kaxiwusi$<BR>Have heard<FONT color=#a82424>General Douglas</FONT>Said。You for a great effort I? Was very loyal。Omen，I&#39;ll be here waiting for you return to victory，Please be sure to beat the Black Dragon ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-a" mid="10"><![CDATA[<html>Played the Duke of adults do not?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Duke Stewart${action:talk}<BR><FONT color=#a82424>Bishop Ignacio</FONT>Adults Daoshi very appreciate your，Holy heaven with the elite who fought side by side，Is your glory，You have to refuel ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Duke Stewart$<BR>I&#39;m sorry。Because I must also look after the young king could not withdraw ah。Guardian of King City is also very important things，You concentrate on the things you deal with it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-a" mid="13"><![CDATA[<html>Kala An adults do not face the challenge of?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Court magician Kala An${action:talk}<BR>I heard，In order to rescue you <FONT color=#a82424>Prophet</FONT>The appearances of things?Hum~Do complacent。You think that raccoons are the same<FONT color=#a82424>Bishop</FONT>High regard can Apprentice… I know better，Hum。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-b" mid="15"><![CDATA[<html>（Kala An seemed embarrassed，Enhanced voice）</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Court magician Kala An$<BR>Who……Who said I was afraid?！ As the court magician of I Would not a person on a battlefield？Whatever next？If I really do about it，Magician&#39;s status will decline！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-b" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Court magician Kala An${action:talk}<BR>Hum。Although I am annoying the bishop，But the Prophet still have to look back。Black Dragon ah kill you quickly in the past！<BR>It is said<FONT color=#a82424>General Douglas</FONT>Will send troops，Simply got to go on with。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="18"><![CDATA[<html>Can start at any time！</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$General Douglas${action:talk}<BR>We have ready。<FONT color=#382000>{user_class} {user_nick}</FONT>！<BR>You can also have it ready?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-b" mid="20"><![CDATA[<html>Be！</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$General Douglas$<BR>Inherit50Six years ago, a heroic feat，Let us and describe the history of the new bar。<BR>Hesitate to move forward，Will be able to eliminate<FONT color=#a82424>Black Dragon</FONT>Can be found<FONT color=#a82424>Prophet</FONT>Of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-b" image="QW_36.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$General Douglas$<BR>You is coming<FONT color=#a82424>Dark Overlord training grounds</FONT>Go。<BR>I have issued instructions to the army，They will then proceed。<BR>
+<FONT color=#7e12d2>(In the team unable to perform the task of state)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-1" image="" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Injured Geraint$<BR>...You have nothing to say with a。<BR>Do，You should know</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n215_argenta-1" image="" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Algerita$<BR>I&#39;m not empty longer look after you ah? You can figure it out?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Bishop Ignacio$<BR>Naturally, I am able to do the only guardian of good<FONT color=#a82424>Holy Paradise</FONT> City，Pray you will return home safely。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QW_36.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$General Douglas$<BR>As a precaution，Will strengthen the defense of sacred paradise。You peace of mind to <FONT color=#a82424>Dark Overlord training grounds</FONT>To find <FONT color=#a82424>Prophet</FONT>It！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="QW_36.dds" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$Bishop Ignacio$<BR>Approaching<FONT color=#a82424>Dark Overlord training grounds</FONT>Go。I hope you can contribute to a sacred paradise。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="QW_36.dds" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$General Douglas$<BR>Must go as soon as possible<FONT color=#a82424>Dark Overlord training grounds</FONT>Find the Prophet。Our soldiers should have been there and Monster have fought。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4" image="QW_36.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>Geraint</FONT>And you will not say<FONT color=#a82424>Dark Overlord training grounds</FONT>Will help you merge right？There he would……Even Black Dragon，Can also be under a higher。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$General Douglas$<BR>I am very much looking forward to you。You are not elite soldiers，Nor is there any position，But courageous fight for the sacred paradise！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5" image="QW_36.dds" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>Geraint</FONT>And you will not say<FONT color=#a82424>Dark Overlord training grounds</FONT>Will help you merge right？There he would……Even Black Dragon，Can also be under a higher。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-5" image="" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$General Douglas$<BR>I am very much looking forward to you。You are not elite soldiers，Nor is there any position，But courageous fight for the sacred paradise！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6" image="QW_36.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>Dark Overlord training grounds</FONT>Depths……<FONT color=#a82424>Prophet</FONT>Necessarily where。Take her out some。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6" image="QW_36.dds" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$General Douglas$<BR>I am your profound respect for the brave。<BR>
+I hope you get its job done，Enron return！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n215_argenta-7" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$Algerita$<BR>Successfully found<FONT color=#a82424>Children of ancient people</FONT>，These results should be quite a good。<BR><FONT color=#7e12d2>(Dialogue must Geraint)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-7" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n214_geraint_wounded-7-a" mid="59"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Algerita$<BR>
+Geraint！Geraint！Wake！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-7-a" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n214_geraint_wounded-7-b" mid="75"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Geraint$<BR>Eh-hem…I&#39;m fine，Algerita。<BR>Need not…Worried。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-7-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n214_geraint_wounded-7-c" mid="77"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Algerita$<BR>Now do not need to worry about！<BR>Left eye…Also be so the！<BR><FONT color=#7e12d2>（Algerita holding Geraint wiping away tears）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-7-c" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n214_geraint_wounded-7-d" mid="84"><![CDATA[<html>Geraint…Alright?</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Geraint$<BR>This is…The best result of the。<BR>
+No reason，Blame yourself。<BR>
+You have another try，Algerita….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-7-d" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n214_geraint_wounded-7-e" mid="82"><![CDATA[<html>Fighting…When the end of?</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Geraint${action:Talk}<BR>
+I have not see in front of the….<BR>
+Since it was a positive hit，I can no longer be able to restore vision of the….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-7-e" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n214_geraint_wounded-7-f" mid="63"><![CDATA[<html>How to do that?</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Geraint$<BR>
+It is only for the time being repelled Black Dragon….<BR>Since there<FONT color=#a82424>Descendants of ancient people</FONT>，Do not know what will happen ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-7-f" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n214_geraint_wounded-7-g" mid="65"><![CDATA[<html>Where to return？</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Geraint$<BR>Do things that do….<BR>I will lead the girls to go back together with Algerita，Before you return it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-7-g" image="QW_SaintHaven_Inside.dds" itemindex="">
+      <talk_answer link_index="n214_geraint_wounded-7-h" mid="72"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Geraint$<BR><FONT color=#a82424>Holy Heaven King City</FONT>Where there may be leading to<FONT color=#a82424>Underground</FONT>Road。Let go there。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-7-h" image="" itemindex="">
+      <talk_answer link_index="n214_geraint_wounded-7-!next" mid="67"><![CDATA[<html><FONT color=#a94407>(Rewarded)</FONT></html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4081,4082,4083,4084</exe>
+         <exe type="complete">408</exe>
+         <exe type="addquestitem" num="1">300022</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="b">0,1</exelink>
+   <exelink qstep="7" npc="n214_geraint_wounded" sub="b" />
+   <exelink qstep="7" npc="n214_geraint_wounded" sub="c" />
+   <exelink qstep="7" npc="n214_geraint_wounded" sub="d" />
+   <exelink qstep="7" npc="n214_geraint_wounded" sub="e" />
+   <exelink qstep="7" npc="n214_geraint_wounded" sub="f" />
+   <exelink qstep="7" npc="n214_geraint_wounded" sub="g" />
+   <exelink qstep="7" npc="n214_geraint_wounded" sub="h">0</exelink>
+   <exelink qstep="7" npc="n214_geraint_wounded" sub="!next">1,2</exelink>
+   <journal_data recompense="1:4081,2:4082,3:4083,4:4084" quest_title="검은 대군주의 비상" chapterid="4" quest_level="30" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Send troops]]></title>
+         <contents mid="36"><![CDATA[<html>Has completed preparations for sending troops，General discussions get going with the Douglas。<BR>
+<FONT color=#7e12d2>(Team can not be the task state)</FONT><BR><FONT color=#7e12d2></FONT><BR><FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Dialogue with the General Douglas]]></destination>
+         <todo_msg mid="38"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_36.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13012,0,0</destination_pos>
+         <destination_mode>custom:361@3,362@3,363@3,364@3,13012@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[Join]]></title>
+         <contents mid="40"><![CDATA[<html>In<FONT color=#a82424>Dark Overlord training grounds</FONT>And<FONT color=#a82424>Geraint</FONT>Meet eliminate Black Dragon Bar。<BR><FONT color=#7e12d2>(Team can not be the task state)</FONT><BR><BR><FONT color=#086171>Montenegro hill angle（Dark Overlord of the barriers）</FONT> <FONT color=#a82424>→Dark Overlord training grounds</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[(Single) Elimination of Black Dragon]]></destination>
+         <todo_msg mid="42"><![CDATA[Eliminate dark training grounds of the Black Dragon Overlord。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Geraint.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13012,n214</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>214</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Injured]]></title>
+         <contents mid="44"><![CDATA[<html>Although<FONT color=#a82424>Black</FONT> <FONT color=#a82424>Dragon</FONT>Has been eliminated，But the injury did not seem to light Geraint。Fortunately safe wire basket。Find someone<FONT color=#a82424>Geraint</FONT>Dialog and。<BR>
+ <BR>
+<FONT color=#086171>Dark Overlord training grounds</FONT> <FONT color=#a82424>→Geraint</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Dialogue with Geraint]]></destination>
+         <todo_msg mid="46"><![CDATA[Let the dialogue with the injured Geraint。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>407</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

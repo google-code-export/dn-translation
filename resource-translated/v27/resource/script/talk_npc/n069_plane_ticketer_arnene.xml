@@ -1,0 +1,65 @@
+   <talk>
+      <npcename>n069_plane_ticketer_arnene</npcename>
+      <npcid>69</npcid>
+      <startexe>3</startexe>
+      <npckname mid="1"><![CDATA[Conductor A Nanna]]></npckname>
+      <talk_paragraph index="001" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+         <talk_question mid="2"><![CDATA[<html>$Conductor A Nanna$<BR>I am sorry，Mr. adventurer。 <FONT color=#a82424>阿尔巴特罗</FONT>No. As the current damaged，Not run。<BR>Repairs go on the airship<FONT color=#a82424>Airship engineer Hubert</FONT>Where the consultation it。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="QW_AirShip.dds" itemindex="">
+         <talk_answer link_index="changemap" mid="6"><![CDATA[<html>[Take the airship]</html>]]></talk_answer>
+         <talk_answer link_index="completecutscene" mid="9"><![CDATA[<html></html>]]></talk_answer>
+         <talk_question mid="4"><![CDATA[<html>$Conductor A Nanna$<BR>Welcome。Fly<FONT color=#a82424>Holy Paradise</FONT> The airship is ready。<BR><FONT color=#a82424>Tickets</FONT>Price<FONT color=#a82424>5 Silver</FONT> 。<BR>Sure you should ride blimp？<BR>
+※ <FONT color=#7e12d2>State in the team can not take the airship。</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="003" image="QW_AirShip.dds" itemindex="">
+         <talk_question mid="5"><![CDATA[<html>$Conductor A Nanna$<BR>Very sorry，Mr. adventurer。The amount is not enough to buy your ticket。<FONT color=#a82424>Tickets</FONT>Price<FONT color=#a82424>5 Silver</FONT> Make sure your balance。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="mq401_1" image="" itemindex="">
+         <talk_answer link_index="mq401_a" mid="37"><![CDATA[<html>Be，Finally to the divine heaven。</html>]]></talk_answer>
+         <talk_question mid="12"><![CDATA[<html>$Conductor A Nanna$<BR>Hello?Mr. adventurer。<BR>Thanks to your<FONT color=#a82424>阿尔巴特罗</FONT>Enabled us to complete repairs No.，Now running a。For your help，Once again, I am very grateful。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="mq401_a" image="" itemindex="">
+         <talk_answer link_index="mq401_b" mid="38"><![CDATA[<html>There are things unhandled End。</html>]]></talk_answer>
+         <talk_answer link_index="go_saint" mid="39"><![CDATA[<html>Be，To take advantage of。</html>]]></talk_answer>
+         <talk_question mid="14"><![CDATA[<html>$Conductor A Nanna$<BR>To take the airship，Need to purchase tickets。Since you provided when I repaired a lot of help，So I will allow you to free travel。Determined to<FONT color=#a82424>Ride</FONT><FONT color=#a82424>阿尔巴特罗</FONT> No. right?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="mq401_b" image="" itemindex="">
+         <talk_question mid="17"><![CDATA[<html>$Conductor A Nanna$<BR>Understand。<BR>We will suspend the proceeding，After processing is complete things，Please notify us。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="party_member" image="" itemindex="">
+         <talk_question mid="21"><![CDATA[<html>$Conductor A Nanna$<BR>
+Very sorry，Mr. adventurer。State in the team can not take the Airship。<BR>
+After temporarily out of companion，Then take the airship it。<BR>
+※ <FONT color=#7e12d2>State can not take the airship team。</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="talk">003</exe>
+         <exe type="conexe" true="9" false="4">1</exe>
+         <exe type="conexe" true="1" false="0">0</exe>
+         <exe type="conexe" true="16" false="2">2</exe>
+         <exe type="custom">api_user_DelCoin( userObjID, 500 );</exe>
+         <exe type="custom">api_user_PlayCutScene(userObjID,npcObjID,96,true);</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,11,1);</exe>
+         <exe type="conexe" true="10" false="0">3</exe>
+         <exe type="talk">mq401_1</exe>
+         <exe type="conexe" true="12" false="15">4</exe>
+         <exe type="custom">api_user_PlayCutScene(userObjID,npcObjID,97,true);</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID, 13015, 1);</exe>
+         <exe type="conexe" true="13" false="8">1</exe>
+         <exe type="talk">party_member</exe>
+         <exe type="conexe" true="6,7" false="15">4</exe>
+      </executions>
+      <conditions>
+         <chk type="lvl" op=">=">24</chk>
+         <chk type="custom">api_quest_GetQuestStep(userObjID, 401) == 1</chk>
+         <chk type="custom">api_user_GetCoin( userObjID ) >= 500</chk>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, 401, 1) == 2</chk>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <exelink idx="changemap">5</exelink>
+      <exelink idx="completecutscene">14</exelink>
+      <exelink idx="go_saint">11</exelink>
+   </talk>

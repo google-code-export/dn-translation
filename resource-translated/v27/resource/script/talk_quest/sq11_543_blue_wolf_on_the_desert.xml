@@ -1,0 +1,241 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_543_blue_wolf_on_the_desert</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>543</qid>
+      <designer>나은하</designer>
+      <qlevel>24</qlevel>
+      <qdesc>매표원 소렌느는 세인트헤이븐이 초행이냐고 묻는다. 소렌느는 세인트헤이븐에서 지내기 위해서 알아둬야 할 것이 있다면, 상급 워리어 로드리고를 찾아가  보는 게 어떻겠냐는 말을 한다. 상급 워리어 로드리고를 찾아가면, 되도 않은 세인트헤이븐 생활백서와 워리어의 아버지 램버트에 대한 이야기를 들을 수 있다.
+400139 세인트헤이븐 약도</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Desert blue wolf]]></qkname>
+      <qnpc>
+         <npcid>70</npcid>
+         <npcename>n070_plane_ticketer_sorene</npcename>
+         <npckname>매표원 소렌느</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>98</npcid>
+         <npcename>n098_warrior_master_lodrigo</npcename>
+         <npckname>상급 워리어 로드리고</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（The task did not meet the criteria）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Bulletin$<br>Over the task of implementation，Temporarily unable to accept the task of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Bulletin$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Bulletin$<br>Task with a backpack full。<br>（Please order as soon as possible backpack）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Conductor Suolan Na$<BR>I hope you and am happy in the holy paradise。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>I now practice time，Come back next time。<BR><FONT color=#7e12d2>（To complete the dialogue with the conductor Suolan Na。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-accepting" image="" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-accepting-a" mid="8"><![CDATA[<html>Is the first time。</html>]]></talk_answer>
+      <talk_answer link_index="n070_plane_ticketer_sorene-accepting-a" mid="9"><![CDATA[<html>How do I see，My previous visits had。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Conductor Suolan Na$<BR>It seems your first time to the sacred right of heaven?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-accepting-b" mid="11"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Conductor Suolan Na$<BR>Ha ha，Eh。 <BR>Ah，Sorry，Faux pas of the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-accepting-b" image="QN_NPC_Warrior_Lodrigo.dds" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-accepting-c" mid="13"><![CDATA[<html>Where ah senior soldiers Rodriguez?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Conductor Suolan Na$<BR>What if during this period do not understand，Can find<FONT color=#a82424>Advanced fighters Rodrigo</FONT>Adult。You may need to pay attention to his advice。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-accepting-c" image="QS_Default.dds" itemindex="400139">
+      <talk_answer link_index="n070_plane_ticketer_sorene-accepting-d" mid="15"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Conductor Suolan Na$<BR>I&#39;ll give you a brief map，You in accordance with the map to find it。<BR>Should be relatively easy to find。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Desert blue wolf$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-1" image="QN_NPC_Warrior_Lodrigo.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Conductor Suolan Na$<BR>You do not see the map does not know the method it?<BR>Read a map, then，Can know<FONT color=#a82424>Advanced fighters Rodrigo</FONT>Where the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-1-a" mid="20"><![CDATA[<html>Ah，I come from Kedella points。</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>Ah?Ah well new faces，Novice you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1-a" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-1-b" mid="22"><![CDATA[<html>（Speak some weird ah，Whether it was）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>Having said that，I heard near the landing of the airship in Kedella has finished repairs。<FONT color=#a82424>Said Ma traveling thousands of miles without legs</FONT>，No more legs of the airship Fly。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1-b" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-1-c" mid="24"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>Ah，Newbie。Take it up。<BR>In that case，You will be as successful as I。I<FONT color=#a94407>Lotus Swamp</FONT>When I first came here, they also suffered quite a lot。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1-c" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-1-d" mid="26"><![CDATA[<html>（What words are ah，But forget it or）</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>Have you ever heard the words fall in the holy paradise<FONT color=#a82424>The place is broken nose</FONT>This, then it。However, if personal experience，Heaven is holy<FONT color=#a82424>The combination of shock and horror</FONT>。And difficult to learn the language here，1:30 would be too difficult to find work ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1-d" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-1-e" mid="28"><![CDATA[<html>Ah，Really hard you。</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>Even from abroad to grant an excuse for the experience of mixing point。<FONT color=#7e12d2>（Rodriguez seems to fall into bitter grief among，Still wiping away tears。）</FONT><BR>Cough，I am very busy boss。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1-e" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-1-f" mid="30"><![CDATA[<html>Are monsters there are holes you drill it。 （Finally, though that came）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>But I have survived the！<BR>Not have<FONT color=#a82424>Monsters，There are worms crawling around</FONT>This sentence you。The world is full of tough people who can only live。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1-f" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-1-g" mid="32"><![CDATA[<html>Ah?！</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>Do not stick section！<BR>The Germans did look up the earth it！<BR>But，You！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1-g" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-1-h" mid="34"><![CDATA[<html>Yes ah，I can not seen you, ah。</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>In what seems to have seen you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1-h" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-2" mid="36"><![CDATA[<html>You know my father?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>You，Long as<FONT color=#a94407>Lambert</FONT>Adults ah。<BR><FONT color=#7e12d2>（Lambert，This is my father&#39;s name ah？）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-2-a" mid="38"><![CDATA[<html>Is true…</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>Ha ha ha cough！Joking。I told him crystal-clear，Alone do not know if he still has a son like you <BR>How a young age will lie ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2-a" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-2-b" mid="40"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>But I am well aware of his，Because he is my idol。<BR>I fought it with him。 In<FONT color=#a94407>Tainumala</FONT>Place <FONT color=#a82424>Monster massive crusade war</FONT>Among，He handedly repelled <FONT color=#a82424>Hundreds of the Monster</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2-b" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-2-c" mid="42"><![CDATA[<html>Ah，He is a disciple Ballner?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>Since then people have started calling him<FONT color=#a94407>Desert blue wolf</FONT>。But compared to his own forces repelled<FONT color=#a82424>Thousands</FONT>Monster&#39;s<FONT color=#a94407>Ballner</FONT>But even more powerful ah。 <BR>Do not do better than the teacher disciple。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2-c" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-2-d" mid="44"><![CDATA[<html>I am not saying he is my father Well。</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>Be<FONT color=#a94407>Ballner</FONT>Adults<FONT color=#a82424>Last disciple</FONT>。 <BR>But why do you ask such a question ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2-d" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-2-e" mid="46"><![CDATA[<html>Where is he now ah?</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>Is it wrong to eat anything Rights。 <BR>If so where pain，Stella witch over there get some medicine to take a eat。<BR>Can not say I called her witch ah！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2-e" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-2-f" mid="48"><![CDATA[<html>（He talked down again and not expected to be of help to me）</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>Yes ah，He finally<FONT color=#a94407>Lotus Swamp</FONT>After missing，No one knew he was gone。Of course even know，Will not tell you this rookie。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2-f" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3" mid="50"><![CDATA[<html><FONT color=#086171>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-a" mid="52"><![CDATA[<html>（So when his father is said）</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Memory of his father&#39;s voice$<BR><FONT color=#7e12d2>I have to leave tomorrow。<BR>Who wish to stay here, will you，But can not ah。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-a" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-b" mid="54"><![CDATA[<html>（Heroes Ballner adult disciples, then，Why should I become soldiers than adults do Ballner）</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Memory of his father&#39;s voice$<BR><FONT color=#7e12d2>Beyond it to become soldiers Ballner。<BR>In that case，You can come to me。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-b" image="" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Advanced fighters Rodrigo$<BR>Click one&#39;s tongue-Turned out to be<FONT color=#a94407>Lambert</FONT>Adult son。<BR>How could this。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">5430,,,,</exe>
+         <exe type="setquest">543</exe>
+         <exe type="talk" npc="n070_plane_ticketer_sorene">1</exe>
+         <exe type="addquestitem" num="1">400139</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">5430,,,,</exe>
+         <exe type="complete">543</exe>
+         <exe type="delquestitem" num="-1">400139</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n070_plane_ticketer_sorene" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n070_plane_ticketer_sorene" sub="acceptted">1,2,3</exelink>
+   <exelink qstep="1" npc="n098_warrior_master_lodrigo" sub="b" />
+   <exelink qstep="1" npc="n098_warrior_master_lodrigo" sub="c" />
+   <exelink qstep="1" npc="n098_warrior_master_lodrigo" sub="d" />
+   <exelink qstep="1" npc="n098_warrior_master_lodrigo" sub="e" />
+   <exelink qstep="1" npc="n098_warrior_master_lodrigo" sub="f" />
+   <exelink qstep="1" npc="n098_warrior_master_lodrigo" sub="g" />
+   <exelink qstep="1" npc="n098_warrior_master_lodrigo" sub="h" />
+   <exelink qstep="1" npc="n098_warrior_master_lodrigo" sub="2">0</exelink>
+   <exelink qstep="2" npc="n098_warrior_master_lodrigo" sub="b" />
+   <exelink qstep="2" npc="n098_warrior_master_lodrigo" sub="c" />
+   <exelink qstep="2" npc="n098_warrior_master_lodrigo" sub="d" />
+   <exelink qstep="2" npc="n098_warrior_master_lodrigo" sub="e" />
+   <exelink qstep="2" npc="n098_warrior_master_lodrigo" sub="f">0</exelink>
+   <exelink qstep="2" npc="n098_warrior_master_lodrigo" sub="3">1,2</exelink>
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="b" />
+   <journal_data recompense="5430" quest_title="사막의 푸른 늑대" chapterid="" quest_level="24" quest_mark_type="10" use_item_list="400139">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Lodrigo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n98</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>98</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Rodriguez&#39;s meeting with senior soldiers]]></title>
+         <contents mid="57"><![CDATA[<html>Go<FONT color=#a82424>Advanced fighters Rodrigo</FONT>Right to seek some guidance。<BR><BR><FONT color=#086171>Holy Paradise</FONT><FONT color=#a82424>→</FONT> <FONT color=#a82424>Advanced fighters Rodrigo</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Dialogue with senior soldiers Rodriguez]]></destination>
+         <todo_msg mid="59"><![CDATA[Let the dialogue with senior soldiers。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

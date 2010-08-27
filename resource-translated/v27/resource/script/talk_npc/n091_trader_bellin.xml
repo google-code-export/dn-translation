@@ -1,0 +1,70 @@
+   <talk>
+      <npcename>n091_trader_bellin</npcename>
+      <npcid>91</npcid>
+      <startexe>11</startexe>
+      <npckname mid="1"><![CDATA[Blacksmith Berlin]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="wbuy1" mid="4"><![CDATA[<html>[Store transaction/Goods repair]</html>]]></talk_answer>
+         <talk_answer link_index="itemupgrade1" mid="5"><![CDATA[<html>[Items to strengthen]</html>]]></talk_answer>
+         <talk_answer link_index="opencompounditem1" mid="24"><![CDATA[<html>[Goods production]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Blacksmith Berlin$<BR>Find what?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="35" link_target="sq11_519_boom_artist.xml"><![CDATA[<html>[Lv24] <FONT color=#086171>Shells experts</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="sq11_537_basis_of_the_strategy.xml"><![CDATA[<html>[Lv25] <FONT color=#086171>The basis of Art of War </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="sq11_458_amazing_memory.xml"><![CDATA[<html>[Lv27] <FONT color=#086171>Amazing memory</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="sq11_496_dark_armor1.xml"><![CDATA[<html>[Lv29] <FONT color=#086171>[Title]「ImmortalLv3」Dark ArmorⅠ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="61" link_target="sq11_497_dark_armor2.xml"><![CDATA[<html>[Lv29] <FONT color=#086171>[Title]「ImmortalLv3」Dark ArmorⅡ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="65" link_target="sq11_498_dark_armor3.xml"><![CDATA[<html>[Lv29] <FONT color=#086171>[Title]「ImmortalLv3」Dark ArmorⅢ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="75" link_target="sq11_516_beast_from_the_hell.xml"><![CDATA[<html>[Lv32] <FONT color=#086171>Hell of Warcraft</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="80" link_target="sq11_561_busy_bellin.xml"><![CDATA[<html>[Lv32] <FONT color=#086171>Busy blacksmith</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="83" link_target="sq11_597_lord_manticore_1.xml"><![CDATA[<html>[Lv40] <FONT color=#086171>Eat light of WarcraftⅠ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="84" link_target="sq11_598_lord_manticore_2.xml"><![CDATA[<html>[Lv40] <FONT color=#086171>Eat light of WarcraftⅡ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back1" mid="81"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Blacksmith Berlin$<BR>My family is very famous in China, but the family blacksmith。In mainland China is difficult to find anywhere to surpass our blacksmith。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="53"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="wbuy2" mid="54"><![CDATA[<html>[Store transaction/Goods repair]</html>]]></talk_answer>
+         <talk_answer link_index="itemupgrade2" mid="55"><![CDATA[<html>[Items to strengthen]</html>]]></talk_answer>
+         <talk_answer link_index="opencompounditem2" mid="56"><![CDATA[<html>[Goods production]</html>]]></talk_answer>
+         <talk_answer link_index="opencompounditem3" mid="68"><![CDATA[<html>[MakeAGrade items]</html>]]></talk_answer>
+         <talk_question mid="52"><![CDATA[<html>$Blacksmith Berlin$<BR>Find what?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="openshop">21</exe>
+         <exe type="openshop">22</exe>
+         <exe type="openshop">23</exe>
+         <exe type="openshop">24</exe>
+         <exe type="conexe" true="1" false="6">0</exe>
+         <exe type="conexe" true="2" false="7">1</exe>
+         <exe type="conexe" true="3" false="8">2</exe>
+         <exe type="conexe" true="4" false="0">3</exe>
+         <exe type="custom">api_ui_OpenUpgradeItem(userObjID);</exe>
+         <exe type="custom">api_ui_OpenCompoundItem(userObjID, 4);</exe>
+         <exe type="conexe" true="12" false="14">4</exe>
+         <exe type="talk">002</exe>
+         <exe type="custom">api_ui_OpenCompoundItem(userObjID, 101);</exe>
+         <exe type="conexe" true="12" false="0">5</exe>
+         <exe type="conexe" true="16" false="13">5</exe>
+         <exe type="custom">api_ui_OpenCompoundItem(userObjID, 102);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 516) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 598) == 1</chk>
+      </conditions>
+      <exelink idx="wbuy1">5</exelink>
+      <exelink idx="itemupgrade1">9</exelink>
+      <exelink idx="opencompounditem1">10</exelink>
+      <exelink idx="back1">11</exelink>
+      <exelink idx="wbuy2">5</exelink>
+      <exelink idx="itemupgrade2">9</exelink>
+      <exelink idx="opencompounditem2">10</exelink>
+      <exelink idx="opencompounditem3">15</exelink>
+   </talk>

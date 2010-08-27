@@ -1,0 +1,344 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_405_cursed_fragment</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>405</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>1. 아르젠타와 대화
+2. 말라버린 마리사의 샘에서 룬의 파편 수집
+3. 아르젠타에게 보고
+4. 주교에게 돌아가 보고.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>406</nextqid>
+      <nextqname>mq11_406_guard_of_munition</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[Fragments of the Damned]]></qkname>
+      <qnpc>
+         <npcid>212</npcid>
+         <npcename>n212_argenta</npcename>
+         <npckname>아르젠타(검은 산자락)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-1-check" mid="7"><![CDATA[<html>First...Debris may collect Crescent。</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Algerita$<BR>To make<FONT color=#a82424>Long crescent of ancient priests</FONT>，Crescent must first collect debris。Then fragments to form a complete crescent，And to find a sand core into force，Help them become one。<BR>Know that doing the right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1-a" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Algerita$<BR>Sounds nice。But look at the way you are now fragile，What can crescent which to collect debris ah? Picked up before the，You have no guarantee against unemployment do little life。<BR><FONT color=#7e12d2>（30Level to the next stage after。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1-b" image="QS_Default.dds" itemindex="300020">
+      <talk_answer link_index="n212_argenta-1-c" mid="10"><![CDATA[<html>Where to get?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Algerita$<BR>Well quite positive。Also，Ancient people in close proximity，Can not pursue，Certainly anxious about it。<BR>Then hurry to collect<FONT color=#a82424>Crescent</FONT> <FONT color=#a82424>Fragment</FONT>Come back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1-c" image="QW_35.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-1-d" mid="12"><![CDATA[<html>Be，&#39;ll Be right back！</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Algerita$<BR>Ah you know what in the end。Know<FONT color=#a82424>Melissa Quan depleted</FONT>The place you? Not long ago,，There had appeared to force a device to absorb the dark。So now perhaps debris still remained Crescent。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1-d" image="QW_35.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Algerita$<BR>Carefully to find the words will be found。<BR>Give me straight up to find out<FONT color=#a82424>10A</FONT>Return。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Bishop Ignacio$<BR>How to do things in the past friends? Nobles persuaded by me，You worry。<BR><FONT color=#7e12d2>（To see Angle in Algerita Montenegro）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-2" image="QW_35.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Algerita$<BR>In<FONT color=#a82424>Melissa Quan depleted</FONT>Carefully look for it will find crescent debris。Although a broken<FONT color=#a82424>Fragment</FONT> ，However, you can collect the full crescent made，So look carefully eyes wide open Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-a" mid="17"><![CDATA[<html>（Submit crescent pieces）</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Algerita$<BR>Ah...Sounds nice，Anyway, even a monkey could complete such a thing。I mean that，You have worked hard。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-a" image="QS_Default.dds" itemindex="300020">
+      <talk_answer link_index="n212_argenta-3-b" mid="19"><![CDATA[<html>What I do for you?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Algerita$<BR>Whether past or present of mankind has been no change。Ancient humans were also present，In my view no different than。<FONT color=#7e12d2>（Algerita touched the crescent）</FONT> While this is intact the original crescent，Only a stupid waste of human beings it has become like this。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-b" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-c" mid="21"><![CDATA[<html>（Algerita frowned）</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Algerita$<BR>Some of the ancient people may start there dissent，They begin<FONT color=#a82424>Prohibited</FONT> <FONT color=#a82424>Test</FONT>。Ah，This world is not always have a person like to do and not to do the right Chuangxia disaster？ If you like you are simply the words of Pudd&#39;nhead，Will not happen the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-c" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-d" mid="23"><![CDATA[<html>Be，Thanks。</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Algerita$<BR>In short I will make use of these<FONT color=#a82424>Long crescent of ancient priests</FONT>。Synthesis of a thing to pieces，Jiugen Like puzzle。Even if children can，But you can not do？ So I just help you do，Thank me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-d" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-e" mid="25"><![CDATA[<html>Well, I should report back to King City, complete return。</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Algerita$<BR>Hum。S easy to say. ...You do not know the truth you sometime in。Even I need some time。<BR>Take advantage of this time you had a good practice it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-e" image="QW_SaintHaven_Inside.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-3-f" mid="27"><![CDATA[<html>Hey，Everything wants to do less pessimistic。</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Algerita$<BR><FONT color=#a82424>Report</FONT>? Whatever you。You have enough poor，Ah also on human illusions? What you want to taste the bitterness it will wake up?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-f" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-g" mid="29"><![CDATA[<html>...Ah? Then?！</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Algerita$<BR>What not to say that the negative，But you were a kid bragging。If humans are as simple as you think，At least at that time ...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-g" image="QW_SaintHaven_Inside.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Algerita$<BR>...I have to concentrate on doing our job。You have enough trouble with the noise。<BR>Then to<FONT color=#a82424>King City</FONT>Or a request to report on as you please。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-4" image="QW_SaintHaven_Inside.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Algerita$<BR>...I have to concentrate on doing our job。You have enough trouble with the noise。<BR>Then to<FONT color=#a82424>King City</FONT>Or a request to report on as you please。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-a" mid="34"><![CDATA[<html>Sage&#39;s... Eye?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Bishop Ignacio$<BR>I already know have been built into the nest。While we can not personally to confirm lair，But I have <FONT color=#a82424>The Sage</FONT> <FONT color=#a82424>Eye</FONT>Ah。 <FONT color=#7e12d2>（Ignacio come up with a unique shape Baozhu）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-b" mid="36"><![CDATA[<html>Oh, magic items。</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Bishop Ignacio$<BR>This is50Years ago, Dragon raid used very origin of the goods Oh。When the surrounding super-<FONT color=#a82424>Enchantment</FONT>Moment，Fengyun Baozhu emit strong light。Lair is also a kind of powerful enchantment，Therefore, its formation can also be used to confirm Fengyun Baozhu。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-b" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-c" mid="38"><![CDATA[<html>In fact... Black Dragon has risen。</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Bishop Ignacio$<BR>Make<FONT color=#a82424>Den</FONT>Who do?<BR>
+Is it those who hijacked prophets<FONT color=#a82424>The Dark Knight</FONT>You?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-d" mid="40"><![CDATA[<html>（Bishop fold the hands with a sigh）</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Bishop Ignacio$<BR>What?！Black... <FONT color=#a82424>Black Dragon</FONT>Re-awakening?！<BR>This...Is really imminent disaster ah。Oh...May God bless our sacred paradise bar...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-e" mid="42"><![CDATA[<html>Know that the ancient priests of the crescent moon?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Bishop Ignacio$<BR>Things more difficult the。Difficult to avoid the conflict appears to have a positive。Fortunately Algerita do<FONT color=#a82424>Long crescent of ancient priests</FONT>，We can calm down a little。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-e" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-f" mid="44"><![CDATA[<html>Otherwise go rescue it...</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Bishop Ignacio$<BR>Certainly know ah。It is<FONT color=#a82424>50Black Dragon&#39;s lair to break before</FONT>Items used。<BR>Black Dragon wake again，Really worried about the safety of the Prophet who ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-f" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-g" mid="46"><![CDATA[<html>（Bishop lost in thought，Are looking at here）</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Bishop Ignacio$<BR>And the Black Dragon has regained consciousness，Paradise City at any time the sacred king of the danger of being subjected to Monster&#39;s invasion。So until then have to find the Prophet。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-g" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-h" mid="48"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-h" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-!next" mid="50"><![CDATA[<html>Be，Understand。</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Bishop Ignacio$<BR>I will continue to persuade the other nobles and king，Early mobilization of the Knights of the Temple to do the preparations for war。<BR>I know you are anxious，But please believe me，So let&#39;s see it again。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">30</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="talk" npc="n212_argenta">a</exe>
+         <exe type="talk" npc="n212_argenta">b</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="10" exe="6,7,8" onexe="">300020</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300020</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4051,4052,4053,4054</exe>
+         <exe type="complete">405</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n212_argenta" sub="check">0</exelink>
+   <exelink qstep="1" npc="n212_argenta" sub="c" />
+   <exelink qstep="1" npc="n212_argenta" sub="d">3,4,5</exelink>
+   <exelink qstep="3" npc="n212_argenta" sub="b" />
+   <exelink qstep="3" npc="n212_argenta" sub="c" />
+   <exelink qstep="3" npc="n212_argenta" sub="d" />
+   <exelink qstep="3" npc="n212_argenta" sub="e" />
+   <exelink qstep="3" npc="n212_argenta" sub="f" />
+   <exelink qstep="3" npc="n212_argenta" sub="g">2,0,1</exelink>
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="e" />
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="f" />
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="g">0</exelink>
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="h">1</exelink>
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="!next" />
+   <journal_data recompense="1:4051,2:4052,3:4053,4:4054" quest_title="저주받은 파편들" chapterid="4" quest_level="30" quest_mark_type="7" use_item_list="300020">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13,n212</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>212</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Long crescent of ancient priests]]></title>
+         <contents mid="53"><![CDATA[<html>To enter the lair of the ancient priests need a long crescent。To<FONT color=#a82424>Algerita</FONT>Consulting Making it。<BR>
+<FONT color=#7e12d2>(30Level and above to perform tasks)</FONT><BR>
+
+<BR><FONT color=#086171>Montenegro hill angle</FONT> <FONT color=#a82424>→ Algerita</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[(Lv30) And Montenegro Angle in Algerita dialogue]]></destination>
+         <todo_msg mid="55"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_35.dds</contents_image>
+         <need_itemlist>300020</need_itemlist>
+         <destination_pos>354,0,0</destination_pos>
+         <destination_mode>custom:351@4,352@4,353@4,354@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Crescent debris]]></title>
+         <contents mid="57"><![CDATA[<html>Melissa spring collection in the depletion <FONT color=#a82424>Crescent debris</FONT>It。<BR><BR><FONT color=#086171>Montenegro hill angle（Dark jungle road）</FONT> <FONT color=#a82424>→Melissa Quan depleted</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Crescent debris collected]]></destination>
+         <todo_msg mid="59"><![CDATA[Melissa spring collection in the depletion debris crescent bar。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist>300020</need_itemlist>
+         <destination_pos>13,n212</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>212</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[Complete collection]]></title>
+         <contents mid="61"><![CDATA[<html>Has been completed<FONT color=#a82424>Crescent debris</FONT>Collection。Report it to Algerita。<BR><BR><FONT color=#086171>Montenegro hill angle</FONT> <FONT color=#a82424>→Algerita</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[And Montenegro Angle in Algerita dialogue]]></destination>
+         <todo_msg mid="63"><![CDATA[Complete collection。Angle to the mountains of Montenegro Algerita address bar。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Of reports]]></title>
+         <contents mid="65"><![CDATA[<html>Algerita debris in the synthesis when the crescent moon，Back to King City to the holy heaven<FONT color=#a82424>Bishop Ignacio</FONT>Reporting it。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Dialogue with the Bishop Ignacio]]></destination>
+         <todo_msg mid="67"><![CDATA[Ignacio reporting it to the bishop。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>404</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

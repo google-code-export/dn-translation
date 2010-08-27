@@ -1,0 +1,23 @@
+   <talk>
+      <npcename>n021_sorceress_fallen</npcename>
+      <npcid>21</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Fallen wizard]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="2"><![CDATA[<html>$Fallen wizard$<BR>(Seems to have lost consciousness，Dialogue can not be。)</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="3" false="1">0</exe>
+         <exe type="conexe" true="4" false="2">1</exe>
+         <exe type="conexe" true="5" false="6">2</exe>
+         <exe type="enterquest">mq05_104_orb_of_vision2</exe>
+         <exe type="enterquest">mq05_105_orb_of_vision3</exe>
+         <exe type="enterquest">mq05_113_orb_of_vision1</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">104</chk>
+         <chk type="hasquest">105</chk>
+         <chk type="hasquest">113</chk>
+      </conditions>
+   </talk>

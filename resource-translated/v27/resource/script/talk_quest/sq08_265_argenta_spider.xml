@@ -1,0 +1,492 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_265_argenta_spider</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>265</qid>
+      <designer>김인정</designer>
+      <qlevel>19</qlevel>
+      <qdesc>독주머니(400091)
+독주머니 10개 수집. 수집되는 아이템 아니고, 스테이지를 제대로 진행하면 마지막 보스전 후 npc에게 습득하게 되어 있음. 이하 진행 개요.
+아르젠타에게 퀘스트 수락.
+1번 필드에서 데이비드와 대화.
+3번 필드에서 데이비드와 대화.
+보스 클리어 후 데이비드와 대화.
+데이비드에게 독 주머니 10개 습득.
+아르젠타에게 보고.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Algerita poison sac]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>189</npcid>
+         <npcename>n189_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드(페어리스타 마법연구소)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Kraft adventurer David$<BR>Appears to require my signature ah。Does fit to sign a free，Oh。<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-a" mid="8"><![CDATA[<html>What do the ah?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Algerita$<BR>Poor rookie to do so really Leia。<BR>
+However, we have continued to ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-a" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-party1" mid="10"><![CDATA[<html>（Advisory to do）</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Algerita$<BR>Is not going to<FONT color=#a82424>佩奥里斯塔 Magic Institute</FONT>To do things right?<BR>
+There is going to，By the way my things organized。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-b" image="" itemindex="">
+      <talk_question mid="102"><![CDATA[<html>$Algerita$<BR>On this matter，Would also like to bring people in the past ah?<BR>I&#39;m not what you grasp Long?A person in the past it。<BR><FONT color=#7e12d2>（Team can not be the task state）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-c" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n164_argenta_wounded-accepting-d" mid="12"><![CDATA[<html>A little...? Point is how much ah?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Algerita$<BR>The thing with dogs can effortlessly completion。That is, with little<FONT color=#a82424>Poison sac</FONT>Come back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-d" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-e" mid="14"><![CDATA[<html>I go and try。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Algerita$<BR><FONT color=#a82424>Certain</FONT>Is<FONT color=#a82424>A little</FONT>Ah。What a young age regardless of the number of ah? I did not goods。Anyway, that is to<FONT color=#a82424>佩奥里斯塔 Magic Institute</FONT>Came back grasp a few things Monster，Easy it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-f" mid="16"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Algerita and poison sac$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-f" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Algerita$<BR>I will not wait for you for too long?<BR>
+You can figure it out。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-party2" mid="20"><![CDATA[<html>So，What to do?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Algerita$<BR>Is not going to<FONT color=#a82424>佩奥里斯塔 Magic Institute</FONT>To do things right?<BR>There is going to，By the way my things organized。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-a" image="" itemindex="">
+      <talk_question mid="103"><![CDATA[<html>$Algerita$<BR>On this matter，Would also like to bring people in the past ah?<BR>I&#39;m not what you grasp Long? A person in the past it。<BR><FONT color=#7e12d2>（Team can not be the task state）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-b" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n164_argenta_wounded-1-c" mid="22"><![CDATA[<html>A little...? Point is how much ah?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Algerita$<BR>The thing with dogs can effortlessly completion。That is, with little<FONT color=#a82424>Poison sac</FONT>Come back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-c" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-d" mid="24"><![CDATA[<html>I go and try。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Algerita$<BR><FONT color=#a82424>Certain</FONT>Is <FONT color=#a82424>A little</FONT>Ah。What a young age regardless of the number of ah? I did not goods。Anyway, that is to<FONT color=#a82424>佩奥里斯塔 Magic Institute</FONT>Came back grasp a few things Monster，Easy it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-2" mid="26"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Algerita and poison sac$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="100"><![CDATA[<html>$Kraft adventurer David$<BR>Ha，You can not keep up in the back of my ass ah？Ha，Ha，Ha。<BR><FONT color=#7e12d2>(Must be dialogue and gray ruins Algerita)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2" image="" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Algerita$<BR>I will not wait for you for too long?<BR>
+You can figure it out。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-2" image="" itemindex="">
+      <talk_answer link_index="n189_slave_david-2-a" mid="30"><![CDATA[<html>（Whether he wanted to do。）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$David$<BR>Ha ha ha。 Addition of the 1 <FONT color=#a82424>The great adventurer David</FONT>Adult followers ah！ Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-2-a" image="" itemindex="">
+      <talk_answer link_index="n189_slave_david-2-b" mid="32"><![CDATA[<html>In order to take poison sac...</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$David$<BR>This time on what<FONT color=#a82424>Excuse</FONT><FONT color=#a82424>Follow me</FONT>To the ah? Oh。<BR>
+I can handle small。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-2-b" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n189_slave_david-2-c" mid="34"><![CDATA[<html>Ah? Why?</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$David${action:Talk}<BR>Ah? <FONT color=#7e12d2>（David scoffed）</FONT> <BR>Oh。 This is really silly reason ah。<BR>Rookie，Here is not available<FONT color=#a82424>Poison sac</FONT>Of！ Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-2-c" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$David$<BR>One reason is you<FONT color=#a82424>Direct</FONT>To understand it！ Ha ha ha。<BR><FONT color=#7e12d2>（David began posturing）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-3" image="QS_Default.dds" itemindex="400091">
+      <talk_question mid="36"><![CDATA[<html>$David$<BR>Here for<FONT color=#a82424>Poison sac</FONT>... Ah it seems rookie！ Ha ha ha。<BR><FONT color=#7e12d2>（David began posturing）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n189_slave_david-4-a" mid="38"><![CDATA[<html>（Nothing to say absurd。）</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$David$<BR>Ha ha ha。 Why not get in here<FONT color=#a82424>Poison sac</FONT>Then，It seems that you want to know it，Well。Can not ah，Since I am so<FONT color=#a82424>Pitiful</FONT>You，Let me <FONT color=#a82424>Specialized</FONT>！ Tell you！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-a" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n189_slave_david-4-b" mid="40"><![CDATA[<html>…Instructed my people to say, ah。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$David${action:Talk}<BR>Have<FONT color=#a82424>Drug capsule</FONT>Place is not here，But<FONT color=#a82424>Death Basin</FONT>！ Oh。 Even this did not know，What is also looking for drug capsule ah... Rookie rookie is ah。My<FONT color=#a82424>The great David</FONT>Adults can not make this happen！ Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-b" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n189_slave_david-4-c" mid="42"><![CDATA[<html>But I can not afford to give you。</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$David$<BR>Yo Yo Yo，Also depend on other people ah?You may never become much of this attitude<FONT color=#a82424>Great adventurer</FONT>，Oh。But rest assured，Rookie！I happen to have a good collection <FONT color=#a82424>Poison sac</FONT>， Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-c" image="" itemindex="">
+      <talk_answer link_index="n189_slave_david-4-d" mid="44"><![CDATA[<html>...A little? What conditions?</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$David$<BR>I have a great adventurer！ Is that point would be for the sake of<FONT color=#a82424>Penny</FONT>And the poison sac to your right? Really? Ha ha ha。I will<FONT color=#a82424>Free</FONT>To you。Although<FONT color=#a82424>A little</FONT>Condition。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-d" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_answer link_index="n189_slave_david-4-e" mid="46"><![CDATA[<html>Lying in the bar?</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$David$<BR>I just clear the inside of the finished<FONT color=#a82424>Spider Queen</FONT>..... But，<FONT color=#a82424>Too tired to fight it out temporarily take a break</FONT> ！ He sent <FONT color=#a82424>Step</FONT>The！！，Just because hands all slippery and did not play out，Oh。 Spider Queen Well luck is not a general? Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-e" image="" itemindex="">
+      <talk_answer link_index="n189_slave_david-4-f" mid="48"><![CDATA[<html>Foresight is not accidental but it。</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$David$<BR>True，Is true！ Oh，Have you seen me you lying? Ha ha ha。 I&#39;m a<FONT color=#382000>Great、</FONT> <FONT color=#7e12d2>Super Professional、</FONT> <FONT color=#a94407>Strong、</FONT> <FONT color=#086171>Upright</FONT>Adventurers。 You could see no，I am so for you <FONT color=#a82424>Rookie</FONT>And foresight brought the<FONT color=#a82424>Poison sac</FONT>Of? Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-f" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_answer link_index="n189_slave_david-4-g" mid="50"><![CDATA[<html>Helpless tears。</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$David$<BR>Anyway！ <FONT color=#a82424>Got left step</FONT>The！！ The Queen of spiders！！ The final step！！ I&#39;ll give you this，Oh。 How? <FONT color=#a82424>Thus！ The last step！！！</FONT> Can get a drug capsule，This is what you dream of me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-g" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$David$<BR>Do not be too impressed~ Oh。 Ah，So quickly in the past<FONT color=#a82424>Give it！！About！！！</FONT>Eradicate<FONT color=#a82424>Spider Queen</FONT>It！ Ha ha ha。<BR><FONT color=#7e12d2>（David is still posturing）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-5" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$David$<BR>Call... <FONT color=#a82424>Spider Queen</FONT>You are absolutely right，My arms are disposed of，Cut... No one saw me?<BR><FONT color=#7e12d2>（David himself trembling。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-6" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_answer link_index="n189_slave_david-6-a" mid="55"><![CDATA[<html>Ah what can not be resolved。</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$David$<BR>Ha ha ha。 Rookie <FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>！！<BR>Face<FONT color=#a82424>About</FONT>Can be solved<FONT color=#a82424>Spider Queen</FONT>，You rookie level of confrontation，But was I glance ah！！ Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-6-a" image="" itemindex="">
+      <talk_answer link_index="n189_slave_david-6-b" mid="57"><![CDATA[<html>…Brag it?</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$David$<BR>That…Are you the guy that<FONT color=#a82424>Too weak</FONT> ！！ If my words！Do not say that about...  <FONT color=#a82424>Only！！Under half！！</FONT>It can be easy to solve，Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-6-b" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n189_slave_david-6-c" mid="59"><![CDATA[<html>（Get the poison capsule）</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$David$<BR>Anyway, I will not go back on the！ <FONT color=#a82424>Great adventurer</FONT>I would like it. …For you，Is that too esoteric?<BR>Oh。In short I will stick to<FONT color=#a82424>Promise</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-6-c" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$David$<BR>Ha ha ha。 Good night！ Rookie！<BR><FONT color=#7e12d2>（David Swing up looking at the skyPOSE）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-7" image="" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$David$<BR>Ha ha ha。 Good night！ Rookie！<BR><FONT color=#7e12d2>（David Swing up looking at the skyPOSE）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n164_argenta_wounded-7-a" mid="63"><![CDATA[<html>（Submit）</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Algerita$<BR>To come to ah? Rookie <FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>。<BR>Bring back the right drug capsule?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-b" mid="65"><![CDATA[<html>That…Ah, but that highly toxic...！</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Algerita$<BR>You，Still is that<FONT color=#a82424>Rookie</FONT>Ah? Actually this is also<FONT color=#a82424>Only</FONT>10A。<BR><FONT color=#7e12d2>（Algerita breath down to eat the poison sac）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-c" mid="67"><![CDATA[<html>Will eat dead！</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Algerita$<BR>Ah? Why surprised ah? <FONT color=#a82424>Small drug</FONT>Is also a drug，You do not know?<BR>
+Human will to weak drug overlaid with food consumption。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-d" mid="69"><![CDATA[<html>That only the dead have the ah Basin。</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Algerita$<BR>I would not die，You see，I&#39;m dead right?<BR>…But why you not satisfied with the kind of looked at me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-e" mid="71"><![CDATA[<html>You do not say that the Institute produced 佩奥里斯塔 do magic。</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Algerita$<BR>Oh?So what?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-f" mid="73"><![CDATA[<html>Ah... Ah...</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Algerita$<BR><FONT color=#a82424>Not long ago,</FONT>Well I do not have said，... Monster also has its own legs，Do not move, ah。How do you are always twisted in such a<FONT color=#a82424>Small</FONT>Which it? I see you are <FONT color=#a82424>No products</FONT>Ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-f" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-g" mid="75"><![CDATA[<html>（Really Sigh）</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Algerita$<BR>On your child it was a Xiaopi Hai，Bit line is not measured?Hurry back，Why go to the why。<BR>…Maybe so, but you will also need to，That time had to come Oh obediently。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-g" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-h" mid="77"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-h" image="" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$Algerita$<BR>Ah?I do not let you free to do bad ah?Can never do such cheap thing to<FONT color=#a82424>Slave</FONT>Then，So you have to thank me is。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">265</exe>
+         <exe type="setstep">2</exe>
+         <exe type="recompense_view">,2651,2652,2653,2654</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n164_argenta_wounded">c</exe>
+         <exe type="talk" npc="n164_argenta_wounded">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="recompense_view">,2651,2652,2653,2654</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n164_argenta_wounded">b</exe>
+         <exe type="talk" npc="n164_argenta_wounded">a</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="10">400091</exe>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400091</exe>
+         <exe type="recompense">,2651,2652,2653,2654</exe>
+         <exe type="complete">265</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="party1">3</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="e">2</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="f">0,1</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="party2">2</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="d">1</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="2">0</exelink>
+   <exelink qstep="2" npc="n189_slave_david" sub="b" />
+   <exelink qstep="2" npc="n189_slave_david" sub="c">0,1</exelink>
+   <exelink qstep="4" npc="n189_slave_david" sub="b" />
+   <exelink qstep="4" npc="n189_slave_david" sub="c" />
+   <exelink qstep="4" npc="n189_slave_david" sub="d" />
+   <exelink qstep="4" npc="n189_slave_david" sub="e" />
+   <exelink qstep="4" npc="n189_slave_david" sub="f" />
+   <exelink qstep="4" npc="n189_slave_david" sub="g">0,1</exelink>
+   <exelink qstep="6" npc="n189_slave_david" sub="b" />
+   <exelink qstep="6" npc="n189_slave_david" sub="c">0,1,2</exelink>
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="d" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="e" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="f" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="g">1</exelink>
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="h">0,2</exelink>
+   <journal_data recompense="1:2651,2:2652,3:2653,4:2654" quest_title="아르젠타의 독주머니" chapterid="" quest_level="19" quest_mark_type="10" use_item_list="400091">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_21.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>152,n189</destination_pos>
+         <destination_mode>custom:151@1,152@1</destination_mode>
+         <statemark_npcid>189</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="80"><![CDATA[Algerita&#39;s errand]]></title>
+         <contents mid="81"><![CDATA[<html>The orders must be in accordance with the Algerita，Institute collection of magic to 佩奥里斯塔<FONT color=#a82424>Poison sac</FONT>。It is not known access methods，First go<FONT color=#a82424>佩奥里斯塔 Magic Institute</FONT>See it。<BR>
+<FONT color=#7e12d2>(In the team can not be the task under)<BR></FONT><BR><FONT color=#086171>Crystal Valley → Melting Forest（Magician of the Road）</FONT> <FONT color=#a82424>→ 佩奥里斯塔 Magic Institute</FONT></html>]]></contents>
+         <destination mid="82"><![CDATA[（Single）Institute for Exploration 佩奥里斯塔 Magic]]></destination>
+         <todo_msg mid="83"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_21.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>153,n189</destination_pos>
+         <destination_mode>custom:152@3,153@1</destination_mode>
+         <statemark_npcid>189</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[Suspicious adventurer David]]></title>
+         <contents mid="85"><![CDATA[<html>Met name<FONT color=#a82424>David</FONT>Suspicious person。He seems to know how to obtain<FONT color=#a82424>Poison sac</FONT>，But it seems unwilling to tell me。Perhaps, then re-enter the depths of，Says no way can that be right，Then let&#39;s see it move forward。<BR>
+ <BR>
+<FONT color=#086171>Melting Forest（Magician of the Road）</FONT> <FONT color=#a82424>→ 佩奥里斯塔 Magic Institute</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[Institute for Exploration 佩奥里斯塔 Magic]]></destination>
+         <todo_msg mid="87"><![CDATA[The depth of drug capsules in order to obtain further progress bar。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QM_Queen_Spider.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>154,0,0</destination_pos>
+         <destination_mode>custom:153@1,154@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[David&#39;s proposal]]></title>
+         <contents mid="89"><![CDATA[<html>David poison capsule that can provide，However, to eliminate his behalf<FONT color=#a82424>Spider Queen</FONT>Cai Xing。David said he almost complete solution，The last step backward in the，Although not quite believe，But his proposal was in accordance with the wide desire for bar。 <BR>
+ <BR>
+<FONT color=#086171>Melting Forest（Magician of the Road）</FONT> <FONT color=#a82424>→ 佩奥里斯塔 Magic Institute</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[Elimination of the spider queen]]></destination>
+         <todo_msg mid="91"><![CDATA[Please destroy the queen spider laruns。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image />
+         <need_itemlist />
+         <destination_pos>154,n189</destination_pos>
+         <destination_mode>custom:154@1</destination_mode>
+         <statemark_npcid>189</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[Bragging King David]]></title>
+         <contents mid="93"><![CDATA[<html>Spider Queen has been eliminated。And <FONT color=#a82424>David</FONT>Dialogue，Were in accordance with the promise to get poison sac Caixing。<BR>
+ <BR>
+<FONT color=#086171>佩奥里斯塔 Magic Institute</FONT> <FONT color=#a82424>→ Kraft adventurer David</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[Dialogue with David]]></destination>
+         <todo_msg mid="95"><![CDATA[Spider Queen has been eliminated，Let the dialogue with David。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist>400091</need_itemlist>
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="96"><![CDATA[Obtain drug capsule]]></title>
+         <contents mid="97"><![CDATA[<html>David gave me a poison capsule。Now put<FONT color=#a82424>Poison sac</FONT>To <FONT color=#a82424>Gray ruins</FONT>Of<FONT color=#a82424>Algerita</FONT>It。<BR>
+ <BR>
+<FONT color=#086171>Gray ruins</FONT> <FONT color=#a82424>→ Algerita</FONT></html>]]></contents>
+         <destination mid="98"><![CDATA[Report to the Algerita]]></destination>
+         <todo_msg mid="99"><![CDATA[Received drug capsule，Report to the gray ruins of Algerita bar。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>19:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>264</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

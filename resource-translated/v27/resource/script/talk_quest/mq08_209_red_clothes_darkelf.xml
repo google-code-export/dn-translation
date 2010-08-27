@@ -1,0 +1,122 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_209_red_clothes_darkelf</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>209</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc>1.  [투명 NPC 클릭] 보상 수령, 존 이동을 위한 선택지 출력. 209퀘스트 입수
+2. 컷씬 2 출력
+3. 습격자들의 매복지 보스 맵으로 이동한 플레이어는 홉고블린 제조 동영상을 목격하고, 자신이 묶여 있음을 알게 된다. 묶은 것을 풀고 홉고블린을 물리치면 마을로 돌아온다.
+4. 아르젠타에게 보고 겸 엘레나에 대해서 물으러 간다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>210</nextqid>
+      <nextqname>mq08_210_destruction_of_manufactory</nextqname>
+      <nextqnpc>n164_argenta_wounded</nextqnpc>
+      <qkname mid="1"><![CDATA[Red dress Dark Elves]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>167</npcid>
+         <npcename>n167_charging_point</npcename>
+         <npckname>투명NPC(이름 없음)(잠든자의 신전 이벤트 맵)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n167_charging_point-1" image="QS_Default.dds" itemindex="300103">
+      <talk_question mid="5"><![CDATA[<html>$Suspension device$<BR>
+<html><FONT color=#7e12d2>(Sufficient to complete the suspended installation。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-a" mid="29"><![CDATA[<html>(About the appearance of Dark Elves and the suspension device case)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Algerita$<BR>God?I do not how it was decent...?<BR>
+What happened？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-a" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n164_argenta_wounded-1-b" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Algerita$<BR><FONT color=#a82424>Suspension device</FONT>Big man eaten by Ogre，Was also a first time to see<FONT color=#a82424>Dark Elves</FONT>Stress？<BR>Brag it，Boast……Click one&#39;s tongue……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-!next" mid="9"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2091,2092,2093,2094</exe>
+         <exe type="complete">209</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="b">0</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="!next">1</exelink>
+   <journal_data recompense="1:2091,2:2092,3:2093,4:2094" quest_title="붉은 옷의 다크엘프" chapterid="3" quest_level="14" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image />
+         <need_itemlist />
+         <destination_pos>9,n164</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Report to the Algerita]]></title>
+         <contents mid="26"><![CDATA[<html><FONT color=#a82424>Red dress Dark Elves</FONT>Hear<FONT color=#a82424>Algerita</FONT>After the name of，Very angry，Began mass production<FONT color=#a82424>Elf</FONT>。All the circumstances truthfully tell Algerita。<BR><BR><FONT color=#086171>Gray ruins</FONT><FONT color=#a82424> → Algerita</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Report to the Algerita]]></destination>
+         <todo_msg mid="28"><![CDATA[Please gray ruins of Algerita dialogue。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>208 </prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,183 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>gq11_3185_n411_island_boss</qename>
+      <qtype>venturerquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>3185</qid>
+      <designer>손원호</designer>
+      <qlevel>26</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Association commission] Reward：Thick thorns]]></qkname>
+      <qnpc>
+         <npcid>411</npcid>
+         <npcename>n411_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-accepting" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n411_guild_board-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html><FONT color=#2b2723>$Adventurers Society Bulletin$<BR></FONT><FONT color=#a82424>Reward：Thick thorns</FONT><BR><FONT color=#2b2723><BR>Great food people heinous plant。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-accepting-a" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n411_guild_board-accepting-b" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Wizard control water loss in the island。<BR>They often Qinzhu past islands of the crew and then eat。<BR>Highly aggressive，It is noteworthy that the root is fixed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-accepting-b" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n411_guild_board-accepting-c" mid="66"><![CDATA[<html>BOSS Elimination of thick thorns</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Adventurers Society Bulletin$<BR>
+Thick thorns kill the person will receive awards。<BR>Residence：Island<BR><BR><FONT color=#7e12d2> Principal：Company president Gunter adventurer </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n411_guild_board-accepting-d" mid="11"><![CDATA[<html><FONT color=#086171>（Entrusted）</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Commission award$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-accepting-d" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$[Association commission] Reward：Thick thorns$<BR><FONT color=#2b2723>You accept the Association commissioned。<BR>Eliminate<FONT color=#a82424>Island</FONT>On <FONT color=#a82424>Thick thorns</FONT>。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-1" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Currently being implemented<FONT color=#a82424>[Association commission]Reward：Thick thorns</FONT>。<BR><BR>※ <FONT color=#7e12d2>In the same bulletin board can only delegate the implementation of a Society。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-2" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n411_guild_board-2-a" mid="22"><![CDATA[<html>[Commissioned] <FONT color=#086171>Reward：Thick thorns</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Completion of commissioning of the adventurer，Please complete the following instructions on the seal affixed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-2-a" image="" itemindex="">
+      <talk_answer link_index="n411_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Commission award$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-2-b" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Association commissioned the adventurer has completed。<BR><BR><FONT color=#a82424>[Adventurers Society Association]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,3185, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">31850,,,,</exe>
+         <exe type="huntmon" num="1" party="1" exe="5,6,7" onexe="">870</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200870</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 870);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">31850,,,,</exe>
+         <exe type="complete">3185</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n411_guild_board" sub="c">3</exelink>
+   <exelink qstep="accepting" npc="n411_guild_board" sub="d">0,1,4,8,2</exelink>
+   <exelink qstep="2" npc="n411_guild_board" sub="a">0</exelink>
+   <exelink qstep="2" npc="n411_guild_board" sub="b">1</exelink>
+   <journal_data recompense="31850" quest_title="[길드의뢰] 현상 수배 : 스티키 쏜즈" chapterid="" quest_level="26" quest_mark_type="19" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_30.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>301,0,0</destination_pos>
+         <destination_mode>custom:301@1</destination_mode>
+         <statemark_npcid>411</statemark_npcid>
+         <statemark_type>20</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Eliminate isolated islands ofBOSS Thick thorns]]></title>
+         <contents mid="43"><![CDATA[<html>Elimination of the leader of thick thorn island。<BR><BR><FONT color=#086171>Heermadai port(Island transport ship) </FONT><FONT color=#a82424>→ Island</FONT><BR>
+<BR>
+</html>]]></contents>
+         <destination mid="44"><![CDATA[[Hunt]Island]]></destination>
+         <todo_msg mid="45"><![CDATA[Add the adventurer Association commissioned。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_guild_board.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n411</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>411</statemark_npcid>
+         <statemark_type>21</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Report to the board commissioned adventurer]]></title>
+         <contents mid="47"><![CDATA[<html>Port to the adventurer in Heermadai report commissioned by the Society Bulletin。<BR><BR><FONT color=#086171>Heermadai port（Send Ship Island） </FONT><FONT color=#a82424>→ Adventurers Society Bulletin</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Bulletin Board commissioned the report to the adventurer]]></destination>
+         <todo_msg mid="49"><![CDATA[Association commissioned to complete adventurer。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>26:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>3182</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

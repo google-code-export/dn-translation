@@ -1,0 +1,295 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_118_snatch_orb</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>118</qid>
+      <designer>손원호</designer>
+      <qlevel>5</qlevel>
+      <qdesc>오브를 훔쳐간 자가 세드릭이라는 것을 알게 된 소서리스. 가면을 쓴 자가 서리바람 숲으로 갔다는 정보를 얻고 쫓아가지만 괴한은 문 뒤로 사라진다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>119</nextqid>
+      <nextqname>mq05_119_prospect</nextqname>
+      <nextqnpc>n012_sorceress_master_cynthia</nextqnpc>
+      <qkname mid="1"><![CDATA[Stolen Baozhu]]></qkname>
+      <qnpc>
+         <npcid>11</npcid>
+         <npcename>n011_priest_leonardo</npcename>
+         <npckname>상급 클레릭 레오날드    (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-a" mid="7"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Advanced magician Cynthia$<BR>Find<FONT color=#a82424>Lei Angna more old man</FONT>It，He will provide clues about the missing priest。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-b" mid="9"><![CDATA[<html>（Close Cynthia）</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Advanced magician Cynthia$<BR>...Also tell you a secret。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-c" mid="11"><![CDATA[<html>Ah，Why do，Rights have goose bumps。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Advanced magician Cynthia$<BR>I always believe you。<BR>
+Until now，Has been。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-c" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Advanced magician Cynthia$<BR>Ah，Approaching<FONT color=#a82424>雷昂纳 more</FONT>Where the old man recognized the real bottom line right pastor！All your hands。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR>In fact, we have been supporting you, oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n011_priest_leonardo-2-a" mid="15"><![CDATA[<html>Rev. suspicious。</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Senior Pastor Leiang Na more${action:Talk}<BR><FONT color=#a82424>Secret of the ball</FONT>&#39;ve Heard a thing stolen。<BR>
+What should I help you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-a" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-c" mid="17"><![CDATA[<html>Jack is very suspicious。</html>]]></talk_answer>
+      <talk_answer link_index="n011_priest_leonardo-2-b" mid="18"><![CDATA[<html>Saide Rui very suspicious。</html>]]></talk_answer>
+      <talk_answer link_index="n011_priest_leonardo-2-d" mid="19"><![CDATA[<html>Culprit is more than you Leiang Na！</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>After the pastor of the last received survey pearls，We are sure that we teach groups of items。Then，You know who the pastor suspected? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-b" image="QN_Npc_Cl_Fallen_Cedric.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-e" mid="22"><![CDATA[<html>After him，Where do you go?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>Yes，And as I would like。Reduce the carriage of the guard had，And the attack to snatch something Sage staves，Are<FONT color=#a82424>Saide Rui</FONT>In the monkey business。Our Mission is also brought to Sai Derui it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-c" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-a" mid="24"><![CDATA[<html>Then... Is...</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR><FONT color=#a82424>Jack</FONT>...In view of this，He then disappears。Although the move has been attention to his，But before there is no conclusive evidence，On how he can not do。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-d" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-a" mid="26"><![CDATA[<html>Then...Is...</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>Ah?！ Me...I am the culprit?You look puzzled detective novels in it。That was a real game，On the other vexatious。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-e" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-2-f" mid="30"><![CDATA[<html>Do not worry。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>Wait a moment。<FONT color=#7e12d2>（Approved more than batman instruments Leiang Na）<BR></FONT><FONT color=#a82424>霜风 forest</FONT>！Some witnesses had reported that masked men had into this place，Hurry your actions。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2-f" image="QW_10.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>Really did not expect out of a renegade pastor in... <BR>
+To get to<FONT color=#a82424>霜风 forest</FONT>Go and see。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3" image="QW_10.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Senior Pastor Leiang Na more${action:Talk}<BR>While it is not known mask is not Saide Rui，But can confirm that indeed it was entered Shuangfeng forest。Approaching<FONT color=#a82424>霜风 forest</FONT>Chase him ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3" image="QW_10.dds" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR><FONT color=#a82424>霜风 forest</FONT>... Too quickly in the past。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4" image="QS_22.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-a" mid="34"><![CDATA[<html>（Things down at the door report）</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Advanced magician Cynthia$<BR>Oh? <FONT color=#a82424>Secret of the ball</FONT>Found you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-!next" mid="36"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>스테이지 보스방에 입장하여 컷씬 본 후, 4스텝/4저널로 바꿔주도록 변경</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1180,,,,</exe>
+         <exe type="complete">118</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="c" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="b" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="d" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="e" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="a" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="a" />
+   <exelink qstep="2" npc="n011_priest_leonardo" sub="f">0,1</exelink>
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="a">0</exelink>
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="!next">1</exelink>
+   <journal_data recompense="1180" quest_title="도난당한 오브" chapterid="1" quest_level="5" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[And senior magician Cynthia dialogue]]></title>
+         <contents mid="39"><![CDATA[<html>Secret of the lost ball，I suspected。Where the innocence went to Cynthia teacher！<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Advanced magician Cynthia</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[And senior magician Cynthia dialogue]]></destination>
+         <todo_msg mid="41"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Cl_Leonardo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n11</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>11</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[More dialogue and senior pastor Leiang Na]]></title>
+         <contents mid="45"><![CDATA[<html>Stole the ball is probably the secret of the missing priest。To find the old man to find related Leiang Na pastor more clues it。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Senior Pastor Leiang Na more</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[More dialogue and senior pastor Leiang Na]]></destination>
+         <todo_msg mid="47"><![CDATA[Find Leiang Na ask about the missing priest many things]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_10.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>98,0,0</destination_pos>
+         <destination_mode>custom:96@1,97@1,98@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string>보스맵 입장 
+컷씬 : 문 뒤로 사라지는 가면쓴 클레릭</trigger_string>
+         <maptool_index />
+         <title mid="48"><![CDATA[Chase away the forest minister in Shuangfeng]]></title>
+         <contents mid="49"><![CDATA[<html>Suspected to be called Sai Derui of the missing priest hiding in the forest Shuangfeng。Let him quickly to track。<BR>
+ <BR>
+<FONT color=#086171>雪霜 ramp（Shuangfeng Canyon entrance）</FONT> <FONT color=#a82424>→霜风 forest</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Chase away the forest minister in Shuangfeng]]></destination>
+         <todo_msg mid="51"><![CDATA[Chase away the forest in Shuangfeng it masked priest。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[And senior magician Cynthia dialogue]]></title>
+         <contents mid="53"><![CDATA[<html>When the priest is about to catch up soon，Unfortunately, at the door with the lost。Or ask for help right teachers to Cynthia。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Advanced magician Cynthia</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[And senior magician Cynthia dialogue]]></destination>
+         <todo_msg mid="55"><![CDATA[Run away with the priest lost。Back to the village to seek help it。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>117</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

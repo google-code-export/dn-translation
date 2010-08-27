@@ -1,0 +1,370 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_106_find_the_orb</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>106</qid>
+      <designer>곽노찬</designer>
+      <qlevel>5</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>107</nextqid>
+      <nextqname>mq05_107_internal_enemy</nextqname>
+      <nextqnpc>n013_cleric_tomas</nextqnpc>
+      <qkname mid="1"><![CDATA[Find secret of the ball]]></qkname>
+      <qnpc>
+         <npcid>13</npcid>
+         <npcename>n013_cleric_tomas</npcename>
+         <npckname>상급 클레릭 토마스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>14</npcid>
+         <npcename>n014_cleric_cedric</npcename>
+         <npckname>클레릭 세드릭</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-a" mid="10"><![CDATA[<html>I am sorry……</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Pastor Thomas$<BR>Ah……Even secret of the balls have been taken away……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-a" image="QM_MinotaurosNormal.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-b" mid="12"><![CDATA[<html>Yes…….</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>I&#39;m not blaming you，You do not worry。<BR>Snatched the ball of the Monster is the secret<FONT color=#a82424>Minotaur</FONT>You？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-b" image="QM_MinotaurosNormal.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Pastor Thomas$<BR><FONT color=#a82424>Minotaur</FONT>Monster is not a common。The sudden<FONT color=#a82424>Magic Ridge</FONT>Appear，Really hard to believe……<BR>Probably<FONT color=#a82424>Dragon followers</FONT>Manipulation of habitat in the nearby<FONT color=#a82424>Minotaur</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Pastor Sai Derui$<BR><FONT color=#7e12d2>(Injuries were not resume，Looks very painful)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1" image="QM_MinotaurosNormal.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Magician Tala$<BR>I have received news of Cynthia。<BR><FONT color=#a82424>Minotaur</FONT>Stole<FONT color=#a82424>Secret of the ball</FONT>……<BR><FONT color=#a82424>Minotaur</FONT>……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>He snatched at the<FONT color=#a82424>Secret of the ball</FONT>To<FONT color=#a82424>Dragon followers</FONT>Before，We need to act quickly。<BR>You go<FONT color=#a82424>Magician Tala</FONT>Ask<FONT color=#a82424>Minotaur</FONT>Habitat areas，Then go to<FONT color=#a82424>雪霜 ramp</FONT>Meet<FONT color=#a82424>Jack</FONT>，And his act together。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2" image="QM_MinotaurosNormal.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="19"><![CDATA[<html>Minotaur habitat near the ridge in the magic you？</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Magician Tala$<BR>I have received news of Cynthia。<FONT color=#a82424>Minotaur</FONT>The ball away a secret……？<BR><FONT color=#a82424>Minotaur</FONT>……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-a" image="QM_MinotaurosNormal.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-b" mid="21"><![CDATA[<html>Eh？I know。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Magician Tala$<BR>A long time ago，Magic Ridge pastor who went<FONT color=#a82424>Holy Paradise</FONT>After，Empty<FONT color=#a82424>Silent monastery corridor</FONT>Was<FONT color=#a82424>Minotaur Ombaba</FONT>Occupy，Into his lair。Habitat near the ridge in the magic<FONT color=#a82424>Minotaur</FONT>Only he。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-b" image="QM_MinotaurosNormal.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-3" mid="23"><![CDATA[<html>Thank you for your advice。</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Magician Tala$<BR><FONT color=#a82424>Minotaur Ombaba</FONT>Size is large and strong Monster。<FONT color=#a82424>Minotaur Ombaba</FONT>Once the attack，It is difficult to stop。<BR>Once he began operations，Skills can only use force to stop him，Or predict his movements and as soon as possible to avoid。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3" image="QM_MinotaurosNormal.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Magician Tala$<BR>Please<FONT color=#a82424>Minotaur Ombaba</FONT>Where the recovered<FONT color=#a82424>Secret of the ball</FONT>。<BR>Although Cynthia is very angry，Let you go，But I think your attitude is very sincere。Me……I believe you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-4" image="" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-4-a" mid="26"><![CDATA[<html>The body is a little better you？</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Pastor Sai Derui$<BR>Ah，Ready……Goddess&#39;s grace be with you！<BR>Is my honor to meet you。You are my<FONT color=#a82424>Savior</FONT>。I have to go to Meet your，But this time there are many things that need to be addressed，So, can not spare time。I&#39;m sorry……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-4-a" image="" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-4-b" mid="28"><![CDATA[<html>I came to see Pastor Jack。</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Pastor Sai Derui$<BR>In addition to leg wounded,，Operations outside of a little inconvenience，Others are better。<BR>Here you have something wrong？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-4-b" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-5" mid="70"><![CDATA[<html>Nothing。Then I come to him next time it。</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Pastor Sai Derui$<BR>Oops……<FONT color=#a82424>Pastor Jack</FONT>Just not。<BR>He did not know where the。Do you have any urgent……？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-5" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Pastor Sai Derui$<BR>Good。<BR>
+<FONT color=#387206>{user_nick}</FONT>，Wish the blessings of the Goddess be with you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-6" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n013_cleric_tomas-6-a" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>The ball found the secret！Haha！<BR>Really hard you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-6-a" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-6-!next" mid="34"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6,3,4,5">269</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="addquestitem" num="1">300059</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300059</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">106</exe>
+         <exe type="recompense">1060,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="b" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="3">0,1</exelink>
+   <exelink qstep="4" npc="n014_cleric_cedric" sub="b" />
+   <exelink qstep="4" npc="n014_cleric_cedric" sub="5">7,2,0,1</exelink>
+   <exelink qstep="6" npc="n013_cleric_tomas" sub="a">1</exelink>
+   <exelink qstep="6" npc="n013_cleric_tomas" sub="!next">0</exelink>
+   <journal_data recompense="1060" quest_title="오브를 찾아라" chapterid="1" quest_level="5" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[And Pastor Thomas dialogue]]></title>
+         <contents mid="36"><![CDATA[<html>The secret of the ball<FONT color=#a82424>Paleilinuo rest Department</FONT>Was<FONT color=#a82424>Minotaur</FONT>Report to take away the fact that<FONT color=#a82424>Thomas</FONT>。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Pastor Thomas</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[And Pastor Thomas dialogue]]></destination>
+         <todo_msg mid="38"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,910,38</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>15</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[Tara dialogue and magician]]></title>
+         <contents mid="41"><![CDATA[<html><FONT color=#a82424>Thomas</FONT>Say<FONT color=#a82424>Minotaur</FONT>Should not suddenly appear in the magic mountain ridge，Let me whereabouts<FONT color=#a82424>Magician Tala</FONT>Ask around there<FONT color=#a82424>Minotaur</FONT>Local habitat，<BR>And<FONT color=#a82424>Magician Tala</FONT>Dialogue。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Magician Tala</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Tara dialogue and magician]]></destination>
+         <todo_msg mid="43"><![CDATA[Please magician Tara dialogue]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>6,4597,-2090</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Pastor Jack to Xueshuang ramp and dialogue]]></title>
+         <contents mid="46"><![CDATA[<html><FONT color=#a82424>Magician Tala</FONT>Said a long time ago，Minotaur Ombaba occupied<FONT color=#a82424>Silent monastery corridor</FONT>。<BR>Go<FONT color=#a82424>雪霜 ramp</FONT>Meet<FONT color=#a82424>Pastor Jack</FONT>，And<FONT color=#a82424>Silent monastery corridor</FONT>Investigation。<BR><BR><FONT color=#086171>雪霜 ramp</FONT> <FONT color=#a82424>→Pastor Jack</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Pastor Jack to Xueshuang ramp and dialogue]]></destination>
+         <todo_msg mid="48"><![CDATA[Please go to the ramp and the Rev. Jack dialogue Xueshuang]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Cl_Fallen_Cedric.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>6,440,-820</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>14</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[Pastor Sai Derui to Xueshuang ramp and dialogue]]></title>
+         <contents mid="51"><![CDATA[<html>In<FONT color=#a82424>雪霜 ramp</FONT>The priest did not see the camps<FONT color=#a82424>Jack</FONT>Shadow。And<FONT color=#a82424>Pastor Sai Derui</FONT>Dialogue，Ask<FONT color=#a82424>Jack</FONT>Whereabouts。<BR><BR><FONT color=#086171>雪霜 ramp</FONT> <FONT color=#a82424>→Pastor Sai Derui</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[Pastor Sai Derui to Xueshuang ramp and dialogue]]></destination>
+         <todo_msg mid="53"><![CDATA[Jack did not see。Please dialogue with Pastor Sai Derui。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QW_9.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>93,0,0</destination_pos>
+         <destination_mode>custom:91@1,92@1,93@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[To search for secret of the silent monastery cloister ball]]></title>
+         <contents mid="55"><![CDATA[<html>Jack is not，Can not go with me。<BR>Go<FONT color=#a82424>Silent monastery corridor</FONT>Remove<FONT color=#a82424>Minotaur Ombaba</FONT>，Find<FONT color=#a82424>Secret of the ball</FONT>。<BR><BR><FONT color=#086171>Melting Forest(Silent monastery entrance)</FONT> <FONT color=#a82424>→ Silent monastery corridor</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[To search for secret of the silent monastery cloister ball]]></destination>
+         <todo_msg mid="57"><![CDATA[To still get rid of the monastery cloister Minotaur Ombaba。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[And Pastor Thomas dialogue]]></title>
+         <contents mid="60"><![CDATA[<html>In<FONT color=#a82424>Silent monastery corridor</FONT>，Are trying to stop the<FONT color=#a82424>Secret of the ball</FONT>To<FONT color=#a82424>Dragon followers</FONT>Of<FONT color=#a82424>Minotaur Ombaba</FONT>，Find the secret of the ball。<BR>Back<FONT color=#a82424>Magic Ridge</FONT>，To<FONT color=#a82424>Pastor Thomas</FONT>Report。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Pastor Thomas</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[And Pastor Thomas dialogue]]></destination>
+         <todo_msg mid="62"><![CDATA[Please return to magic mountain ridge，And Pastor Thomas dialogue。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>105</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

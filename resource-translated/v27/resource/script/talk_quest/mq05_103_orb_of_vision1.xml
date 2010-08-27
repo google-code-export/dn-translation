@@ -1,0 +1,365 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_103_orb_of_vision1</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>103</qid>
+      <designer>곽노찬</designer>
+      <qlevel>3</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>104</nextqid>
+      <nextqname>mq05_104_orb_of_vision2</nextqname>
+      <nextqnpc>n012_sorceress_master_cynthia</nextqnpc>
+      <qkname mid="1"><![CDATA[Secret of the ballⅠ]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>13</npcid>
+         <npcename>n013_cleric_tomas</npcename>
+         <npckname>클레릭 토마스 (마나리지 클레릭 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>160</npcid>
+         <npcename>n160_cleric_jake</npcename>
+         <npckname>클레릭 제이크(파렐리나의 안식처)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>To confirm<FONT color=#a82424>Secret of the ball</FONT>Is it safe。If even the secret of the ball was snatched away，Pagan&#39;s appetite will increase，Ancestor of the relics left behind may all be stolen……You go to meet<FONT color=#a82424>Advanced magician Cynthia</FONT>，Inquire about<FONT color=#a82424>Secret of the ball</FONT>Location。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-a" mid="8"><![CDATA[<html>Some of the things on the secret of the balls would like to ask you。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR>What I do for you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-a" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-b" mid="12"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Advanced magician Cynthia$<BR>Why do you ask<FONT color=#a82424>Secret of the ball</FONT>Things？<BR>Because of their stupid pastor<FONT color=#a82424>Sage of the stick</FONT>Grabbed me by Monster？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-b" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-c" mid="14"><![CDATA[<html>Secret of the ball……Where ah？</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Advanced magician Cynthia$<BR>Click one&#39;s tongue……Although I know they are stupid，But did not think they can fool the image of the performance was so perfect。Ha ha～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-c" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-d" mid="16"><![CDATA[<html>The thing……Dragon followers are involved。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR><FONT color=#a82424>Secret of the ball</FONT>Is securely sent by the children magic ridge，You do not have to worry about。You first find out where the missing<FONT color=#a82424>Sage of the stick</FONT>Furthermore it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-d" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-e" mid="18"><![CDATA[<html>I can help you。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Advanced magician Cynthia$<BR>……？！<FONT color=#a82424>Dragon followers</FONT>……？If there are those who betrayed humanity to intervene，Our children alone may be a little dangerous……<BR>Cut……Real trouble。<FONT color=#a82424>Dragon followers</FONT>……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-e" image="QW_8.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2" mid="20"><![CDATA[<html>Report to the Thomas，I will immediately start。</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Advanced magician Cynthia$<BR>Uh……Did not expect the priest to help……<BR>But since the claims<FONT color=#a82424>Knights of the Temple</FONT>，I hope you have the ability and name match。The ball is in secret<FONT color=#a82424>Paleilinuo rest Department</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-1" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Pastor Jack${action:Talk}<BR><FONT color=#387206>{user_nick}</FONT>？What are you here？<BR>Very dangerous here，You quickly go back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="QW_8.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR>Know。<BR>Hurry，Is not too late to take advantage of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2" image="QM_TrollBlue.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2-a" mid="54"><![CDATA[<html>Giant……Difficult to deal with you？</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR><FONT color=#a82424>Paleilinuo rest Department</FONT>？<BR>There is not<FONT color=#a82424>Giant Zhu Cloake</FONT>Habitat, the place you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2-a" image="QM_TrollBlue.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2-b" mid="56"><![CDATA[<html>Next to you to avoid？</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Pastor Thomas$<BR>Strength to you，Not too difficult to deal with them。<BR>But，<FONT color=#a82424>Giant Zhu Cloake</FONT>Would love to curl up into the attack launched by surprise，You must pay attention to。There is no way to resist，Must immediately avoid Caixing。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2-b" image="QM_TrollBlue.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2-c" mid="58"><![CDATA[<html>I remember。</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>Yes。You know press the two keys，Or hold down the arrow keys, press<BR>[ <FONT color=#a82424>Shift</FONT> ]Key，Can<FONT color=#a82424>Charge</FONT>It？<BR>When he love to curl up into a time when suddenly，Times correctly to avoid，Then attack his gap。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2-c" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2-d" mid="113"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Pastor Thomas$<BR>In order to demonstrate and<FONT color=#a82424>Knights of the Temple</FONT>Reputation to match strength，Will not neglect learning of skills。<BR>Come on… </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2-d" image="QM_TrollBlue.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2-_skill_trade_1" mid="60"><![CDATA[<html>[Skill]</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Pastor Thomas$<BR>Having said that，You also seem to have to learn new skills this time。I can help you open the skills bar，You try to learn<FONT color=#a82424>Empowerment bomb</FONT>It。Cope<FONT color=#a82424>Giant Zhu Cloake</FONT>Oh, but very effective。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3" image="QW_8.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-3-a" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>Learn new skills in the right？Although much can now learn the skills，But with the level of upgrade，Learn more abundant skills，So do not be too impatient。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3-a" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-4" mid="115"><![CDATA[<html>Thank you, teach。</html>]]></talk_answer>
+      <talk_question mid="114"><![CDATA[<html>$Pastor Thomas$<BR>
+Other，Reach<FONT color=#a82424>15Level</FONT>Time，Can<FONT color=#a82424>Transfer</FONT>Learn more subdivision and special skills。While it is too early to say that transfer，But with your strength will soon become an excellent Knights of the Temple。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-4" image="" itemindex="">
+      <talk_answer link_index="n160_cleric_jake-4-a" mid="28"><![CDATA[<html>Jack？In the end……What happened？</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Pastor Jack${action:Talk}<BR><FONT color=#387206>{user_nick}</FONT>？What are you here？<BR>Very dangerous here，You quickly go back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-4-a" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n160_cleric_jake-5" mid="70"><![CDATA[<html>(Note once again from beginning to end things)</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Pastor Jack$<BR>I follow<FONT color=#a82424>Dragon followers</FONT>，Came here。<BR>When I arrived，Magician who has been attacked。<BR>Do you come here？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4" image="QW_8.dds" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$Pastor Thomas$<BR>
+Go<FONT color=#a82424>Paleilinuo rest Department</FONT>，To<FONT color=#a82424>Secret of the ball</FONT>Get it back。<BR>Even the secret of the ball was away, then，Can not control the situation，Must take it back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-a" mid="73"><![CDATA[<html>Secret of the ball as if nothing。</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Advanced magician Cynthia$<BR>Child……All the children were knocked down……Fucking<FONT color=#a82424>Dragon followers</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-a" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-b" mid="75"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR><FONT color=#a82424>Seal the room</FONT>The key to the children who。<BR>Fortunately,<FONT color=#a82424>Dragon followers</FONT>If not found……<BR>Do not know that guy know how much。You go to the children who find the key，Then find the secret of the ball。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-!next" mid="77"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-5" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="88"><![CDATA[<html>$Pastor Jack${action:Talk}<BR><FONT color=#a82424>Secret of the ball</FONT>……？So that，The other side of the door is kept secret of the ball<FONT color=#a82424>Seal the room</FONT>The？Ah……Door looks intact，The ball seems very secure secret……You go back into<FONT color=#a82424>Magic Ridge</FONT>，To tell it<FONT color=#a82424>Advanced magician Cynthia</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>***파렐리나의 안식처 보스방 입장시 스텝,저널을 4/4으로 바꿈***</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">103</exe>
+         <exe type="recompense">1030,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="e" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n013_cleric_tomas" sub="b" />
+   <exelink qstep="2" npc="n013_cleric_tomas" sub="c" />
+   <exelink qstep="2" npc="n013_cleric_tomas" sub="d" />
+   <exelink qstep="2" npc="n013_cleric_tomas" sub="_skill_trade_1">0,1,2</exelink>
+   <exelink qstep="3" npc="n013_cleric_tomas" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n160_cleric_jake" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="b">1</exelink>
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="!next">0</exelink>
+   <journal_data recompense="1030" quest_title="비전의 오브Ⅰ" chapterid="1" quest_level="3" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-456,4330</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[And senior magician Cynthia dialogue]]></title>
+         <contents mid="38"><![CDATA[<html>To<FONT color=#a82424>Advanced magician Cynthia</FONT>Ask<FONT color=#a82424>Secret of the ball</FONT>Situation。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Advanced magician Cynthia</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[And senior magician Cynthia dialogue]]></destination>
+         <todo_msg mid="40"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[And Pastor Thomas dialogue]]></title>
+         <contents mid="42"><![CDATA[<html><FONT color=#a82424>Secret of the ball</FONT>In<FONT color=#a82424>Paleilinuo rest Department</FONT>。To<FONT color=#a82424>Pastor Thomas</FONT>Report，Go<FONT color=#a82424>Paleilinuo rest Department</FONT>。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Pastor Thomas</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[And Pastor Thomas dialogue]]></destination>
+         <todo_msg mid="44"><![CDATA[Please dialogue with Pastor Thomas。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_8.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>88,0,0</destination_pos>
+         <destination_mode>custom:86@1,87@1,88@4</destination_mode>
+         <statemark_npcid>160</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[To Paleilinuo secret of the ball resting Department confirmed the safety of]]></title>
+         <contents mid="46"><![CDATA[<html>Cynthia said, is to<FONT color=#a82424>Secret of the ball</FONT>From<FONT color=#a82424>Paleilinuo rest Department</FONT>Transported to the magic mountain ridge。<BR>Go<FONT color=#a82424>Paleilinuo rest Department</FONT>Confirm<FONT color=#a82424>Secret of the ball</FONT>Security。<BR><BR><FONT color=#086171>Melting Forest(Magician of the Road)</FONT> <FONT color=#a82424>→ Paleilinuo rest Department</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Forest in the melt Paleilinuo Department confirmed that the Pearl of the safety rest]]></destination>
+         <todo_msg mid="48"><![CDATA[Please go to Paleilina secret of the ball resting Department confirmed the safety of。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>88,-90,80</destination_pos>
+         <destination_mode>custom:86@1,87@1,88@1</destination_mode>
+         <statemark_npcid>160</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[To Paleilinuo Department and Pastor Jack rest in peace dialogue]]></title>
+         <contents mid="50"><![CDATA[<html>Go<FONT color=#a82424>Paleilinuo rest Department</FONT>Transport<FONT color=#a82424>Secret of the ball</FONT>The magician who suffered attacks，Were all down，<FONT color=#a82424>Pastor Jack</FONT>Around the investigation is。<BR>And<FONT color=#a82424>Pastor Jack</FONT>Dialogue。<BR><BR><FONT color=#086171>Melting Forest(Magician of the Road)</FONT> <FONT color=#a82424>→ Paleilinuo rest Department(Pastor Jack)</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[To Paleilinuo Department and Pastor Jack rest in peace dialogue]]></destination>
+         <todo_msg mid="52"><![CDATA[Please go to Paleilina resting dialogue Department and Pastor Jack。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-456,4330</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[And senior magician Cynthia dialogue]]></title>
+         <contents mid="83"><![CDATA[<html>Back<FONT color=#a82424>Magic Ridge</FONT>，To<FONT color=#a82424>Advanced magician Cynthia</FONT>Relay<FONT color=#a82424>Paleilinuo rest Department</FONT>Events。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Advanced magician Cynthia</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[And senior magician Cynthia dialogue]]></destination>
+         <todo_msg mid="85"><![CDATA[Please return to magic mountain ridge，And senior magician Cynthia dialogue。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>102</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

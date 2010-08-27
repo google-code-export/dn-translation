@@ -1,0 +1,22 @@
+   <talk>
+      <npcename>n301_auction_manger_scrooge</npcename>
+      <npcid>301</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Exchange President Screwgee]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="auction" mid="3"><![CDATA[<html>[Exchange]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="4"><![CDATA[<html>[Dialogue] Where exchange is？</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Exchange President Screwgee${action:Talk}<BR>What you need?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="001" mid="6"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Exchange President Screwgee$<BR>
+Exchange is a simple consignment place。Commissioned articles at，Deduct certain expenses will help you to sell something。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenMarket(userObjID);</exe>
+      </executions>
+      <conditions />
+      <exelink idx="auction">1</exelink>
+   </talk>

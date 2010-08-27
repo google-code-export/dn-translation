@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n123_prairie_wounded</npcename>
+      <npcid>123</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[The villagers were injured]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="2"><![CDATA[<html>$The villagers were injured$<BR>Uh……<BR>(Dialogue seems to have no。)</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="enterquest">mq01_004_red_emblem1</exe>
+         <exe type="conexe" true="0" false="4">0</exe>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq01_003_red_emblem1</exe>
+         <exe type="conexe" true="3" false="2">1</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">4</chk>
+         <chk type="hasquest">3</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,39 @@
+   <talk>
+      <npcename>n281_darkelf_teleju</npcename>
+      <npcid>281</npcid>
+      <startexe>3</startexe>
+      <npckname mid="1"><![CDATA[Dark Elf tere beads]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="4"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Dark Elf tere beads$<BR>
+Beginning from which it？<BR>
+Goddess created things，We should all try。This is the latest fashion trends！Hei hei。<BR>
+ </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="6" link_target="sq11_490_darkelf_girl.xml"><![CDATA[<html>[Lv36]<FONT color=#086171> Dark Elf girl</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="sq11_491_darkelf_teleju1.xml"><![CDATA[<html>[Lv36]<FONT color=#086171> Dark Elf tere beadsⅠ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="sq11_492_darkelf_teleju2.xml"><![CDATA[<html>[Lv36]<FONT color=#086171> Dark Elf tere beadsⅡ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="sq11_493_darkelf_teleju3.xml"><![CDATA[<html>[Lv36]<FONT color=#086171> Dark Elf tere beadsⅢ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="sq11_494_darkelf_teleju4.xml"><![CDATA[<html>[Lv36]<FONT color=#086171> Dark Elf tere beadsⅣ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="11" link_target="sq11_495_darkelf_teleju5.xml"><![CDATA[<html>[Lv36]<FONT color=#086171> Dark Elf tere beadsⅤ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="12"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Dark Elf tere beads$<BR>
+But I was out without the knowledge of other ethnic，So be careful。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_question mid="14"><![CDATA[<html>$Dark Elf tere beads$<BR>Nice to meet you。<BR>
+Goodbye。<FONT color=#382000><FONT color=#382000>{user_nick}</FONT>.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="enterquest">sq11_510_darkelf_teleju6</exe>
+         <exe type="conexe" true="4" false="1">1</exe>
+         <exe type="talk">002</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">510</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 510) == 1</chk>
+      </conditions>
+   </talk>

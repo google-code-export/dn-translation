@@ -1,0 +1,24 @@
+   <talk>
+      <npcename>n130_scholar_geil</npcename>
+      <npcid>130</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Heraldic scholar Gail (Magic Ridge)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="jewel2" mid="3"><![CDATA[<html>[Dialogue] Asked about the coat of arms and the gem of the things.</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Heraldic scholar Gail$<BR>I am specializing in heraldic scholars and gem force。Now is the magic of the sacred power of the ridge、The power of magic and coat of arms、The strength of the relationship between Baoyu。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="jewel" image="" itemindex="">
+         <talk_answer link_index="jewel2" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Heraldic scholar Gail$<BR>Gem known as the essence of the world，And from all the ancient ruins found in the combination of heraldic，Would be surprising to generate force to produce a new coat of arms。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="jewel2" image="" itemindex="">
+         <talk_answer link_index="001" mid="9"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Heraldic scholar Gail$<BR>Why would this phenomenon……Coat of arms with the gem of the origin of what is，These issues have to be more scholars to study the coat of arms。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenCompoundEmblem(userObjID);</exe>
+         <exe type="custom">api_ui_OpenUpgradeJewel(userObjID);</exe>
+      </executions>
+      <conditions />
+   </talk>

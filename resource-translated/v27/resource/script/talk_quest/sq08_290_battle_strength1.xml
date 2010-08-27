@@ -1,0 +1,270 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_290_battle_strength1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>290</qid>
+      <designer>손원호</designer>
+      <qlevel>17</qlevel>
+      <qdesc>나약해보이는 유저에게 다짜고짜 풋내기라고 깔아뭉개는 챈들러. 전투의 기본은 쌈박질이니 마을에서 어슬렁거리지 말고 당장 뛰어나가 몬스터와 싸우라고 하는데. 투사칭호를 얻고 싶으면 힘으로 증명해보이라고 한다. 첫번 째 과제는 카타콤 집회장을 S등급 이상으로 클리어 할 것.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>291</nextqid>
+      <nextqname>sq08_291_battle_strength2</nextqname>
+      <nextqnpc>n032_warrior_master_chandler</nextqnpc>
+      <qkname mid="1"><![CDATA[[Title]「GladiatorLv1」The basic is to have the fighting forceⅠ]]></qkname>
+      <qnpc>
+         <npcid>32</npcid>
+         <npcename>n032_warrior_master_chandler</npcename>
+         <npckname>상급 워리어 챈들러</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-a" mid="8"><![CDATA[<html>Xiao Maohai！</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Senior Warrior Chandler${action:Talk}<BR>What ah laugh！ Xiao Maohai！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-b" mid="10"><![CDATA[<html>Gladiator title?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah ha ha！Would also like you do not like Xiao Maohai，You are also directed at <FONT color=#a82424>Gladiator title</FONT>You come！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-c" mid="12"><![CDATA[<html>Gladiator title is to increase the power of the original ah。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Senior Warrior Chandler$<BR>It may be that the title of world&#39;s most courageous。The most important thing is the face of the enemy forces and will！Will is something deep inside their own，And<FONT color=#a82424>Force</FONT>You can continue through the strengthening of the title。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-d" mid="14"><![CDATA[<html>Ah…I also want to be champion title。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Senior Warrior Chandler$<BR>Yes！But the champion title in itself does not get it<FONT color=#a82424>Blood evidence</FONT>You！If you are a brave person，Both men and women get a fighter that is the real warriors。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-e" mid="16"><![CDATA[<html>I am very brave！</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah ha ha！ Whatever you think people get the title right。Gladiator title is only brave people can get real，Rookie like you is impossible to obtain！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-f" mid="18"><![CDATA[<html>Yes!</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah? See you look very fragile！Really have to challenge you champion title?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-acceptted" mid="20"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$The basic is to have the fighting force Ⅰ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1" image="QW_20.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-a" mid="24"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Senior Warrior Chandler$<BR>First, you must confirm it has no corresponding strength！Let me think ... Where the test rookie... Ah，<FONT color=#a82424>Set grave site</FONT>Should be good。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-a" image="QW_20.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Senior Warrior Chandler$<BR>To<FONT color=#a82424>Set grave site</FONT>To frankly have to eradicate it there Monster！If<FONT color=#a82424>C</FONT><FONT color=#a82424>Level</FONT>The completion of clearance above，I&#39;ll let you through the first hurdle！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2" image="QW_20.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Senior Warrior Chandler$<BR>Do not swinging in the village，Do not hurry to <FONT color=#a82424>Set grave site</FONT>Ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-a" mid="29"><![CDATA[<html>Let me now recognized?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ha ha，Well a lot stronger than thought。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-b" mid="31"><![CDATA[<html>Oh，Trivial。</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah ha ha ha！ You&#39;re that guy，Only get a<FONT color=#a82424>C</FONT><FONT color=#a82424>Level</FONT>Ah so proud to。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-c" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah? Dare ignore this<FONT color=#a82424>Gladiator title</FONT>Test，Really able to blow ah，Yes！ Ah ha ha！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-d" mid="38"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-e" mid="40"><![CDATA[<html>Ready。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Senior Warrior Chandler$<BR>But do not get too excited，Now the real beginning of the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-e" image="QM_minotauros_White.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-f" mid="35"><![CDATA[<html>Easy！</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Senior Warrior Chandler$<BR>Set in the grave site has a depth of expertise of the most brutal of the monster eating travelers。It is called<FONT color=#a82424>Class Ruha</FONT>Guy。If you destroy it, then，I will acknowledge your ability。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-f" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-g" mid="42"><![CDATA[<html>Ah? Master mode can not do ah...</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Senior Warrior Chandler$<BR>Really right?The test must be in<FONT color=#a82424>Master mode</FONT>To complete clearance。Master difficulty, but under the more powerful class Ruha Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-g" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-h" mid="44"><![CDATA[<html>On the use of such equipment... Difficult to challenge the masters on...</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah ha ha！Now in a funk！Rookie rookie is ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-h" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-!next" mid="46"><![CDATA[<html>... Be。 （Anyway, let&#39;s see it challenge）</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Senior Warrior Chandler$<BR>
+No equipment to make up with your tenacity，No power to resolve it with the perseverance to！ Now that&#39;s domineering！The way real fighter！</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">2900,,,,</exe>
+         <exe type="setquest">290</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="checkStageClearRank" rand="5" num="149" onexe="3,4" true="[=" xsi:nil="true" />
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2900,,,,</exe>
+         <exe type="complete">290</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="f">0</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="a">0,1,2</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="b" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="c">0</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="d">1</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="e" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="f" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="g" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="h" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="!next" />
+   <journal_data recompense="0:2900" quest_title="[칭호]「투사Lv1」전투의 기본은 힘Ⅰ" chapterid="" quest_level="17" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Dialogue with senior soldiers Chandler]]></title>
+         <contents mid="49"><![CDATA[<html>Senior Warrior will tell the new title of Chandler。Let the dialogue with him。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior Warrior Chandler</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Dialogue with senior soldiers Chandler]]></destination>
+         <todo_msg mid="51"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_20.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>149,0,0</destination_pos>
+         <destination_mode>custom:146@1,147@1,148@1,149@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Grave site in order to setCAnd above the completion of customs clearance]]></title>
+         <contents mid="53"><![CDATA[<html>In order to obtain the title of champion is the tomb of the first set off the venue toCAnd above the completion of customs clearance。<BR><BR><FONT color=#086171>Wind forest（Tomb entrance）</FONT> <FONT color=#a82424>→ Set grave site</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Grave site in order to setCAnd above the completion of customs clearance]]></destination>
+         <todo_msg mid="55"><![CDATA[Grave site in order to setCAnd above it the completion of customs clearance。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Dialogue with senior soldiers Chandler]]></title>
+         <contents mid="58"><![CDATA[<html>To champion title by a first pass。Back Kedella checkpoints receive the second high-level fighters Chandler off it。 <BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior Warrior Chandler</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Dialogue with senior soldiers Chandler]]></destination>
+         <todo_msg mid="60"><![CDATA[The first hurdle champion title has passed。Report it to Chandler。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>17:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

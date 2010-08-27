@@ -1,0 +1,516 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_418_curious_david</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>418</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>422</nextqid>
+      <nextqname>mq11_422_question_of_dragon</nextqname>
+      <nextqnpc>n213_slave_david</nextqnpc>
+      <qkname mid="1"><![CDATA[Curious about the age]]></qkname>
+      <qnpc>
+         <npcid>213</npcid>
+         <npcename>n213_slave_david</npcename>
+         <npckname>아르젠타의 노예 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>261</npcid>
+         <npcename>n261_slave_david</npcename>
+         <npckname>아르젠타의 노예 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$David$<BR>You return to<FONT color=#a82424>King City</FONT>Whereabouts<FONT color=#a82424>Bishop</FONT>Report yet？<BR>Our place is not an appointment<FONT color=#a82424>Montenegro hill angle</FONT>You？I play Flight of the time listening to what。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$David$<BR>How so slow？Did not you say go<FONT color=#a82424>King City</FONT>To<FONT color=#a82424>Bishop</FONT>Report you？<BR>Still not Go！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Geraint$<BR>See you again<FONT color=#a82424>Descendants of ancient people</FONT>You？<BR>As long as I，No one could move her。Believe me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="9"><![CDATA[<html>Good。</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Bishop Ignacio$<BR>You&#39;ve worked hard。<BR>I&#39;m going to<FONT color=#a82424>Holy Paradise</FONT>The depot to confirm，Before then left to get rid of things。Your first step down，Good rest。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="11"><![CDATA[<html>I made an appointment with other people，To go to the hill angle Montenegro。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Bishop Ignacio$<BR>Where are you going ah？<BR><FONT color=#a82424>Golden Dragon</FONT>Seems unwilling to meet outsiders……<BR>
+Do you have other things to do？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR><FONT color=#a82424>Montenegro hill angle</FONT>？<BR>Oh，You&#39;re always so busy。We really trust the people, ah well。<BR>
+<FONT color=#7e12d2>(Please Montenegro and David Hill to meet with angle)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Bishop Ignacio$<BR>You&#39;re going to<FONT color=#a82424>Montenegro hill angle</FONT>See who then？<BR>That person must be waiting for you，You go fast。<BR>
+<FONT color=#7e12d2>(Please Montenegro and David Hill to meet with angle)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-2" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-2-a" mid="15"><![CDATA[<html>People who let others help you，I did not。</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$David$<BR>You finally Laila？I can wait to be falling out of the eyeball！<BR>
+Ah～If then come later，I have to go！！<BR><FONT color=#7e12d2>(David aggressive to yell)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-2-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-2-b" mid="17"><![CDATA[<html>(Indeed a say……)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$David${action:Stand01}<BR>Help……I let you help me do！！You are wrong！<BR>I just gave you for<FONT color=#a82424>Algerita</FONT>Chance of Service～Get the！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-2-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-2-c" mid="19"><![CDATA[<html>……What are you talking ah？Forget it，What is the matter in the end？</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$David$<BR>In short！！With hope you can help me a happy heart。<BR><FONT color=#a82424>Algerita</FONT>Let me do it, the subsequent wait for you here，Not only do I not finish here waiting for your。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-2-c" image="QS_Default.dds" itemindex="300249">
+      <talk_answer link_index="n261_slave_david-2-d" mid="21"><![CDATA[<html>Dark stones……？Know。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$David$<BR>Is to<FONT color=#a82424>Overlord Dark Tower</FONT>Collect several<FONT color=#a82424>Dark fruit core debris</FONT>。<BR>Algerita that as long as the eradication of the tower Monster，Can be。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-2-d" image="QS_Default.dds" itemindex="300249">
+      <talk_question mid="22"><![CDATA[<html>$David$<BR>Ha ha ha。Do not lazy，Go Fast。<BR>I am here waiting for you～！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3" image="QW_40.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$David$<BR>Well！Approaching<FONT color=#a82424>Overlord Dark Tower</FONT>Go。<BR>
+Eliminate Monster，Collection<FONT color=#a82424>Dark fruit core debris</FONT>。Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-4" image="QS_Default.dds" itemindex="300249">
+      <talk_answer link_index="n261_slave_david-4-a" mid="26"><![CDATA[<html>Instrument allows for the bar？Goodbye。</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$David$<BR>Oh～<FONT color=#a82424>Nut fragments</FONT>All collected Rights。<BR>
+Pretty deft hands and feet did not expect the Well？Oh……<BR>
+Of course，For me<FONT color=#a82424>David</FONT>For adults，This is nothing。Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-4-a" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-4-b" mid="28"><![CDATA[<html>Geraint？</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$David${action:Stand01}<BR>Etc.，Etc.！Wait！How such a temper Jia？<BR>
+See you a young age，Click one&#39;s tongue。<BR>Debris must be handed over to the dark fruit core<FONT color=#a82424>Geraint</FONT>Adults 才行。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-4-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-4-c" mid="30"><![CDATA[<html>Well，Goodbye。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$David$<BR>Yes！！Algerita says so。<FONT color=#a82424>Collection of dark fruit core debris，To Geraint！！</FONT><BR>I&#39;ll go catch up Algerita adults，Can you help me get past it right。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-4-c" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-4-d" mid="32"><![CDATA[<html>If yes。</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$David$<BR>Ah！！When you go，Way to help me ask him。<BR>50Years ago，Geraint adults is<FONT color=#a82424>6 Heroes</FONT>Leader，Right？I have heard adults say Algerita。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-4-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-4-e" mid="34"><![CDATA[<html>Ah……Well？</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$David$<BR>I would like to know……I am the goddess of beauty and strong<FONT color=#a82424>Algerita</FONT>Six of which heroes are not adults and how。<BR>
+You also want to know it？Definitely want to know it？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-4-e" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-4-f" mid="36"><![CDATA[<html>……I went to ask to see。</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$David$<BR>Why？Lounged in the。You do not want to know？Click one&#39;s tongue……<BR>
+Was young, there have been many problems when！<BR>……To honest I am curious about the age！！<BR>
+You go ask him！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-4-f" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$David$<BR>Well，Well。You go and meet<FONT color=#a82424>Geraint</FONT>Adult bar。<BR>After answers，Then<FONT color=#a82424>Heermadai port</FONT>Find me。I will be there for ship，Ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-5" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$David$<BR>You are not to see<FONT color=#a82424>Geraint</FONT> Adults do？<BR>I&#39;ll go<FONT color=#a82424>Heermadai port</FONT>，You go and ask，Then I went over there。You know？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-5" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$David$<BR>I give you something to<FONT color=#a82424>Geraint</FONT>Adults get in the past，How do you still here ah？<BR>More rapidly compared with the giant I came here，Like how do you like the orc slow ah！Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-a" mid="41"><![CDATA[<html>I sent a Algerita。</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Geraint$<BR>I feel the faint breath of Black Dragon。<BR>Do you have<FONT color=#a82424>Dark fruit core debris</FONT>You？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-b" mid="43"><![CDATA[<html>Good，I have a question。</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Geraint$<BR>Is the healing of it sent to me？<BR>Know。This very dangerous for you，Do not carry too much body。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-b" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-c" mid="45"><![CDATA[<html>(David&#39;s question about)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Geraint$<BR>Problem……？What problems？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-c" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-d" mid="113"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Geraint$<BR>
+You want to know50Years ago that the ah。<BR>
+At that time in order to eliminate<FONT color=#a82424>Black Dragon</FONT>，Five forces jointly together。<BR>
+<FONT color=#7e12d2>(Geraint said dismissively)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-d" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-e" mid="47"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Geraint$<BR>
+Wizard<FONT color=#a82424>Man Neil</FONT>Silver crescent Archer Group，<BR>
+Soldier<FONT color=#a82424>Ballner</FONT>The mercenary alliance，<BR>
+Pastor<FONT color=#a82424>Telamayi</FONT>Temple led the Knights，<BR>
+Magician<FONT color=#a82424>Karatyup</FONT>Group led by 佩奥里斯塔 magician。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-e" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-f" mid="120"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Geraint$<BR>
+And……<BR>
+<FONT color=#a82424>Beisikede</FONT>Kingdom Knights led Kaxiwusi。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-f" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-g" mid="49"><![CDATA[<html>Dark Elf Ai Leina you？</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Geraint$<BR>I was a leader from，Algerita to detect<FONT color=#a82424>Red army</FONT>Own movements and actions。<BR>
+After，Her back-up team in response to attacks<FONT color=#a82424>Dark Elves</FONT>，Not able to participate in advance of the action。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-g" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-h" mid="51"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Geraint$<BR>Yes。Algerita face is<FONT color=#a82424>Ai Leina</FONT>Army led by Monster，She eventually eliminate them。<BR>
+……After the defeat Black Dragon，Various forces led humans to the name of the person together，Known as the six heroes。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-h" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-i" mid="53"><![CDATA[<html>So that。</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Geraint$<BR>Therefore，Action alone<FONT color=#a82424>Algerita</FONT>The record does not leave too much。Actually，In addition to being called a hero for many people，Little is known of her existence。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-i" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Geraint$<BR>Obsessed with reputation and record of only human。<BR>
+Because their life is very short，I hope his name will survive for long。<BR>These things to me and<FONT color=#a82424>Algerita</FONT>It does not make any sense。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Geraint$<BR>There are other issues you？<BR><FONT color=#7e12d2>(David must be returned to the port go Heermadai)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-6" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-6-a" mid="57"><![CDATA[<html>Yes。</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$David${action:Stand01}<BR>Come just！！I should say at this time you will come！Ha ha ha。<BR>See<FONT color=#a82424>Geraint</FONT>Adults the right？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-6-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-6-b" mid="59"><![CDATA[<html>(Quoted the words of Geraint)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$David$<BR><FONT color=#7e12d2>Beautiful</FONT><FONT color=#382000><FONT color=#a94407>Cute</FONT> </FONT><FONT color=#086171>Perfect</FONT>Of<FONT color=#a82424>My Algerita</FONT>Adult，Why not become a hero ah！Because you know you？Tell me！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-6-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-6-c" mid="61"><![CDATA[<html>(Mouthful of rhetoric，Spittle sprayed out all)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$David${action:Stand01}<BR><FONT color=#7e12d2>(After listening to，David&#39;s eyes shining tears)</FONT><BR>
+Really worthy of my<FONT color=#a82424>Algerita</FONT>Adult～！！Man&#39;s reputation is like a fig leaf for you as，No value！<BR>
+Oh～Profound but is really a noble view of the world！Oh～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-6-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-6-d" mid="63"><![CDATA[<html>Huh，How do you know Algerita dragon ah？</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$David$<BR>Ignorance of the people at the mention of dragons，That is the leader of the Monster，Tremble with fear。But I and they are not the same。<BR>See<FONT color=#a82424>Algerita</FONT>Adult！！Long must be descendents of the goddess Eertaiya！There is a noble！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-6-d" image="" itemindex="">
+      <talk_answer link_index="n213_slave_david-6-e" mid="65"><![CDATA[<html>(Do not lie Long……)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$David$<BR>Do not know if even this，It was not a fool you？Ha，Do not be surprised hearing。<BR>I am brave！<BR>……Directly ask the<FONT color=#a82424>Algerita</FONT>Adult。Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-6-e" image="" itemindex="">
+      <talk_answer link_index="n213_slave_david-6-!next" mid="67"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">1062</exe>
+         <exe type="addquestitem" num="1">300249</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntitem" num="10" exe="4,5,6" onexe="">300249</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300249</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4181,4182,4183,4184</exe>
+         <exe type="complete">418</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n261_slave_david" sub="b" />
+   <exelink qstep="2" npc="n261_slave_david" sub="c" />
+   <exelink qstep="2" npc="n261_slave_david" sub="d">0,2,7,1</exelink>
+   <exelink qstep="4" npc="n261_slave_david" sub="b" />
+   <exelink qstep="4" npc="n261_slave_david" sub="c" />
+   <exelink qstep="4" npc="n261_slave_david" sub="d" />
+   <exelink qstep="4" npc="n261_slave_david" sub="e" />
+   <exelink qstep="4" npc="n261_slave_david" sub="f">0,1</exelink>
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="d" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="e" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="f" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="g" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="h" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="i">0,1,2</exelink>
+   <exelink qstep="6" npc="n213_slave_david" sub="b" />
+   <exelink qstep="6" npc="n213_slave_david" sub="c" />
+   <exelink qstep="6" npc="n213_slave_david" sub="d" />
+   <exelink qstep="6" npc="n213_slave_david" sub="e">0</exelink>
+   <exelink qstep="6" npc="n213_slave_david" sub="!next">1</exelink>
+   <journal_data recompense="1:4181,2:4182,3:4183,4:4184" quest_title="궁금한 게 많을 나이" chapterid="5" quest_level="34" quest_mark_type="7" use_item_list="300249">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Visit]]></title>
+         <contents mid="69"><![CDATA[<html>Mission accomplished，Bishop Ignacio to and saying hello。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[And Bishop Ignacio Dialogue]]></destination>
+         <todo_msg mid="71"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13,n261</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>261</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Unwelcome guests]]></title>
+         <contents mid="73"><![CDATA[<html>Now go to<FONT color=#a82424>Montenegro hill angle</FONT>And<FONT color=#a82424>David</FONT>Meet。He seems to have something。<BR>
+ <BR>
+<FONT color=#086171>Montenegro hill angle</FONT> <FONT color=#a82424>→ David</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[David Hill corner and Montenegro dialogue]]></destination>
+         <todo_msg mid="75"><![CDATA[Corner to go to Montenegro to see David Hill。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_40.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>404,0,0</destination_pos>
+         <destination_mode>custom:401@3,402@3,403@3,404@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Dark fruit core debris]]></title>
+         <contents mid="91"><![CDATA[<html>David seemed to help run errands Algerita。To go<FONT color=#a82424>Overlord Dark Tower</FONT>Collection of dark fruit core debris。<BR>
+ <BR>
+<FONT color=#7e12d2>※ Difficulty can not be implemented under the abyss。</FONT><BR>
+ <BR>
+<FONT color=#086171>Montenegro hill angle(Dark Overlord of the barriers)</FONT> <FONT color=#a82424>→ Overlord Dark Tower</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[Collection of dark fruit core debris]]></destination>
+         <todo_msg mid="93"><![CDATA[Please Overlord Dark Tower to collect fragments of dark fruit core。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13,n261</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>261</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[David waiting]]></title>
+         <contents mid="77"><![CDATA[<html>Dark fruit core debris collected，It is waiting to<FONT color=#a82424>David</FONT>It。<BR>
+ <BR>
+<FONT color=#086171>Montenegro hill angle</FONT> <FONT color=#a82424>→ David</FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[David Hill corner and Montenegro dialogue]]></destination>
+         <todo_msg mid="79"><![CDATA[Please keep the dark fruit core debris to the corner of David Hill Montenegro。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="80"><![CDATA[David&#39;s questions]]></title>
+         <contents mid="81"><![CDATA[<html>Something must be collected to<FONT color=#a82424>Geraint</FONT>。The things to Geraint，And relayed<FONT color=#a82424>David</FONT>Questions。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise(Secret underground area)</FONT> → Geraint</html>]]></contents>
+         <destination mid="82"><![CDATA[And Geraint dialogue]]></destination>
+         <todo_msg mid="83"><![CDATA[Please give Geraint dark fruit core debris。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n213</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>213</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[Algerita past]]></title>
+         <contents mid="85"><![CDATA[<html>50Years ago，<FONT color=#a82424>Algerita</FONT>Does not seem to act together and the six heroes，But in and<FONT color=#a82424>Ai Leina</FONT>Fighting。David Geraint answer to tell it。<BR>
+ <BR>
+<FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→ David</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[And David Heermadai port dialogue]]></destination>
+         <todo_msg mid="87"><![CDATA[Please return to the port of David Heermadai go。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>417</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

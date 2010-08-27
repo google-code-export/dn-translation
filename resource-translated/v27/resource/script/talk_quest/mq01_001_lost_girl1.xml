@@ -1,0 +1,206 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_001_lost_girl1</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>1</qid>
+      <designer>김주연</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>11</nextqid>
+      <nextqname>mq01_001_lost_girl2</nextqname>
+      <nextqnpc>n004_guard_steave</nextqnpc>
+      <qkname mid="1"><![CDATA[Missing girlⅠ]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Guard Steve$<BR>Heard that you have saved Lily。Lily seems to have just woke up。I thank you on behalf of villagers。<BR><FONT color=#7e12d2>(Must accept the task from the village, where Harold can only proceed after。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-accepting" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-accepting-acceptted" mid="238"><![CDATA[<html>In the end what happened？</html>]]></talk_answer>
+      <talk_question mid="237"><![CDATA[<html>$Harold village$<BR>You are rescued<FONT color=#a82424>Lily</FONT>The adventurer Bar。Really grateful。<BR>Do not know how to repay you Daendade……Eh-hem, Eh-hem……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-1-a" mid="8"><![CDATA[<html>In the end what happened？</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Harold village$<BR>You are rescued<FONT color=#a82424>Lily</FONT>The adventurer Bar。Really grateful。<BR>Do not know how to repay you Daendade……Eh-hem, Eh-hem……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-a" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-1-b" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Harold village$<BR>First meeting did not know whether to say it...<BR>In fact..Recently strange things missing villagers frequently.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-b" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-1-c" mid="234"><![CDATA[<html>When I picked up Lily to save this stuff。</html>]]></talk_answer>
+      <talk_question mid="233"><![CDATA[<html>$Harold village$<BR>So the village against village to go out……However, they still ran out of the village granddaughter，Experienced a misfortune。Thanks to you，Young，<FONT color=#a82424>Lily</FONT>Saved，But<FONT color=#a82424>Wire basket</FONT>Been taken away by the monster，This how to do it……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-c" image="QS_Default.dds" itemindex="300002">
+      <talk_answer link_index="n001_elder_harold-1-d" mid="236"><![CDATA[<html>Do you know what is taking Monster wire basket you？</html>]]></talk_answer>
+      <talk_question mid="235"><![CDATA[<html>$Harold village${action:Talk}<BR>This，This is……Eh-hem, Eh-hem……<FONT color=#a82424>Wire basket pendant</FONT>。<BR>I urged her to have his side of the……<BR>Hum……Bamboo basket……Lo wire her……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-d" image="QM_OrcGreen.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-1-e" mid="231"><![CDATA[<html>I am willing to go wire basket。</html>]]></talk_answer>
+      <talk_question mid="198"><![CDATA[<html>$Harold village$<BR>A nearby village called<FONT color=#a82424>Shadow Forest foothills</FONT>Areas frequented by orcs。Perhaps the leader of wandering in that region<FONT color=#a82424>Orc</FONT><FONT color=#a82424>Klosi</FONT>Dried。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-e" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="175"><![CDATA[<html>$Harold village$<BR>Thank you……Before you go to the forest，First go to see<FONT color=#a82424>Self-defense, head of Steve</FONT>，He will give you some advice。<BR>It please the。Eh-hem, cough……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QN_Elder_Harold.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Guard Steve$:{action:Talk}<BR>Hello，<FONT color=#a82424>Harold village</FONT>If you are looking for。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Harold village$<BR>Last<FONT color=#a82424>Shadow Forest foothills</FONT>Before，You go to see<FONT color=#a82424>Self-defense, head of Steve</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-a" mid="147"><![CDATA[<html>Please tell me what the orcs Klosi。</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Self-defense, head of Steve${action:Talk}<BR>I heard you&#39;re going to<FONT color=#a82424>Shadow Forest foothills</FONT>Search<FONT color=#a82424>Wire basket</FONT>。<BR>The power of self-defense groups is not enough，Also with<FONT color=#008000>{user_nick}</FONT>Power，Really sorry。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-a" image="QM_OrcGreen.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-b" mid="149"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="148"><![CDATA[<html>$Self-defense, head of Steve$<BR>Inhabit<FONT color=#a82424>Shadow Forest foothills</FONT>Of<FONT color=#a82424>Orc</FONT><FONT color=#a82424>Klosi</FONT>Is a powerful force of murderous Magic Things。And the surface gives the impression of different，They can flexibly<FONT color=#a82424>Large shield</FONT>，Withstand most of the offensive，Very clever。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-b" image="QM_OrcGreen.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-c" mid="151"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="150"><![CDATA[<html>$Self-defense, head of Steve$<BR>To those guys fighting talk，Best to destroy them in the hands of<FONT color=#a82424>Shield</FONT>。Use<FONT color=#008000>{user_nick}</FONT>Now good at<FONT color=#a82424>Skill</FONT>Can easily destroy their<FONT color=#a82424>Shield</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-c" image="QS_Default.dds" itemindex="302132232">
+      <talk_answer link_index="n004_guard_steave-2-d" mid="190"><![CDATA[<html>Thank you。</html>]]></talk_answer>
+      <talk_question mid="152"><![CDATA[<html>$Self-defense, head of Steve$<BR>This is a self-defense group&#39;s members to use in emergency situations<FONT color=#a82424>Drugs</FONT>，Although the few remaining，But I hope to help you overcome<FONT color=#a82424>Orc</FONT><FONT color=#a82424>Klosi</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-d" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-!next" mid="192"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="185"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">1</exe>
+         <exe type="custom">npc_talk_index = "n001_elder_harold-1-a";</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>(팬던트 뺏음)</comment>
+      <conditions />
+      <executions>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">2</exe>
+         <exe type="delquestitem" num="-1">300002</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">10,,,,</exe>
+         <exe type="complete">1</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n001_elder_harold" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n001_elder_harold" sub="b" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="c" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="d" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="e">0,1,2</exelink>
+   <exelink qstep="2" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="c" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="d">0</exelink>
+   <exelink qstep="2" npc="n004_guard_steave" sub="!next">1</exelink>
+   <journal_data recompense="0:10" quest_title="실종된 소녀Ⅰ" chapterid="1" quest_level="1" quest_mark_type="7" use_item_list="300002">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Elder_Harold.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-1390,-629</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>튜토리얼</get_location>
+         <start_npc>릴리</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>촌장 해롤드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[Missing girl]]></title>
+         <contents mid="51"><![CDATA[<html>And Pourailly town<FONT color=#a82424>Harold village</FONT>Dialogue。<BR><BR><FONT color=#086171>Pourailly town</FONT> <FONT color=#a82424>→ Harold village</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[And the village chief Harold dialogue]]></destination>
+         <todo_msg mid="53"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>촌장 해롤드</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>자경단장 스티브</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Guard Steve]]></title>
+         <contents mid="55"><![CDATA[<html>Pourailly town mayor 海洛德拜托 hijacked my basket wire rescue，And allow me to meet Steve, head of self-defense。<BR>And<FONT color=#a82424>Self-defense, head of Steve</FONT>Dialogue，Listen to his proposal。<BR><BR><FONT color=#086171>Pourailly town</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>→ Self-defense, head of Steve</FONT></FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[Steve dialogue with the guards]]></destination>
+         <todo_msg mid="57"><![CDATA[Please guard Steve dialogue]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level>-1:-1</user_worldzone_level>
+      <user_class>1:2</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

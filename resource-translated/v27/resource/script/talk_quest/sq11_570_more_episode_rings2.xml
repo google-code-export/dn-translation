@@ -1,0 +1,354 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_570_more_episode_rings2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>570</qid>
+      <designer>김인정</designer>
+      <qlevel>35</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Earrings knowⅡ]]></qkname>
+      <qnpc>
+         <npcid>231</npcid>
+         <npcename>n231_sorceress_karakule</npcename>
+         <npckname>소서리스 카라큘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>232</npcid>
+         <npcename>n232_cleric_teramai</npcename>
+         <npckname>클레릭 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>296</npcid>
+         <npcename>n296_butterfly_ring</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n296_butterfly_ring-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(A little soil marks were found on。</FONT><BR>
+<FONT color=#7e12d2>In addition, nothing)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-a" mid="7"><![CDATA[<html>Time allow me to do ah？</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Advanced magician Stella${action:Talk}<BR><FONT color=#a82424>Karatyup</FONT>The earrings on the memory……Is just not enough。<BR>Though very interesting，But no sense to me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-a" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-b" mid="9"><![CDATA[<html>Ah，Be……</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Advanced magician Stella$<BR>You do not know me？I want to know is respected<FONT color=#a82424>Karatyup</FONT>Memory，Others it does not matter to me，Hum。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-c" mid="11"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Earrings knowⅡ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-c" image="QW_46.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Advanced magician Stella$<BR>Understand the words，With the quick<FONT color=#a82424>Dream Powder</FONT>，Then a trip there，To see if there is no other memory。<BR>Since the start of the，Would have to be harvested，Can not give up。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="14"><![CDATA[<html>Ah，Be……</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Advanced magician Stella$<BR>You do not know me？I want to know is respected<FONT color=#a82424>Karatyup</FONT>Memory，Others it does not matter to me，Hum。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="QW_46.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Advanced magician Stella${action:Talk}<BR>Understand the words，With the quick<FONT color=#a82424>Dream Powder</FONT>，Then a trip there，To see if there is no other memory。<BR>Since the start of the，Would have to be harvested，Can not give up。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_46.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Advanced magician Stella$<BR>You go<FONT color=#a82424>The sunken vessel</FONT>，Sprinkle in a place where dreams earrings pink。<BR>Well，Kuaiqukuaihui。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n296_butterfly_ring-2" image="QS_Default.dds" itemindex="300036">
+      <talk_answer link_index="n296_butterfly_ring-2-a" mid="19"><![CDATA[<html>(What is the sound heard)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Sprinkle in a place where dreams earrings pink)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n296_butterfly_ring-2-a" image="" itemindex="">
+      <talk_answer link_index="n296_butterfly_ring-3" mid="65"><![CDATA[<html>(Listen to ghost talk)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Light pink dream start，Phantom appeared vague。<BR>About 1:00，If you can hear them speak)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n296_butterfly_ring-3" image="QN_Npc_Karakule.dds" itemindex="">
+      <talk_answer link_index="n296_butterfly_ring-3-a" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Karatyup$<BR>Hum hum～Looking for so long did not see。Ah，Hate。<BR>All because of you！！Your fault！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n296_butterfly_ring-3-a" image="QN_cleric_Teramai.dds" itemindex="">
+      <talk_answer link_index="n296_butterfly_ring-3-b" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Telamayi$<BR>For your help，I thank。But I want to say a few times before you know ah。<BR>I think I have because part of the responsibility，So will accompany you come earrings……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n296_butterfly_ring-3-b" image="QN_Npc_Karakule.dds" itemindex="">
+      <talk_answer link_index="n296_butterfly_ring-3-c" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Karatyup$<BR>Not with me，But because you just lost the。Of course you and me up to！Pastor you all so unreasonable？<BR>By the grace if people，Should not you be rewarded？！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n296_butterfly_ring-3-c" image="QN_cleric_Teramai.dds" itemindex="">
+      <talk_answer link_index="n296_butterfly_ring-3-d" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Telamayi$<BR>Press……But now can not find the earrings，How do you intend to？<BR>Shall I buy you a new pair of earrings？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n296_butterfly_ring-3-d" image="QN_Npc_Karakule.dds" itemindex="">
+      <talk_answer link_index="n296_butterfly_ring-3-e" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Karatyup$<BR>Forget it。I like the that of the earrings，I do not want anything else。<BR>If you pick me up cake Set100Seed，I will forgive you。Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n296_butterfly_ring-3-e" image="QN_cleric_Teramai.dds" itemindex="">
+      <talk_answer link_index="n296_butterfly_ring-3-f" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Telamayi$<BR>Oh……<FONT color=#7e12d2>(Telamayi loud sigh)</FONT><BR>In that case，<FONT color=#a82424>Algerita</FONT>And<FONT color=#a82424>Neil text</FONT>Would say that you put on weight in。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n296_butterfly_ring-3-f" image="QN_Npc_Karakule.dds" itemindex="">
+      <talk_answer link_index="n296_butterfly_ring-3-g" mid="67"><![CDATA[<html>(Sound have become blurred)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Karatyup$<BR>Even，What！！Your pastor this offensive！！<BR>Well！This time I really took<FONT color=#a82424>佩奥里斯塔</FONT>Magician returned to his hometown to group all！！！Wait and see！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n296_butterfly_ring-3-g" image="" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$Where something light$<BR><FONT color=#7e12d2>(How to listen again，Have not heard the sound of the)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n296_butterfly_ring-4" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Where something light$<BR><FONT color=#7e12d2>(How to listen again，Have not heard the sound of the)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-a" mid="37"><![CDATA[<html>Yes，Kara autumn and Telamayi……</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Advanced magician Stella${action:Talk}<BR>This should see our distinguished<FONT color=#a82424>Karatyup</FONT>The memory of the bar？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-a" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-b" mid="39"><![CDATA[<html>(Stella is very excited)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Advanced magician Stella$<BR>Even……What？Dare say that our great<FONT color=#a82424>Karatyup</FONT>Long fat！<BR>
+As a magician，I&#39;m used to rude pastor……But this really vicious slander！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-b" image="QS_Default.dds" itemindex="300036">
+      <talk_answer link_index="n045_soceress_master_stella-4-c" mid="41"><![CDATA[<html>(Nothing to say)</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-4-c" mid="42"><![CDATA[<html>Be，Be……</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Advanced magician Stella$<BR>Karatyup lost precious earrings，Also affected by this insult。The thought of this，My heart just shatters。Priests are not good things！You are not？！ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-c" image="QS_Default.dds" itemindex="300083">
+      <talk_answer link_index="n045_soceress_master_stella-4-d" mid="44"><![CDATA[<html>(Kara is not expected to fall, I like this plan)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Advanced magician Stella$<BR>In short this time you&#39;ve worked hard。<BR>In order to collect relevant<FONT color=#a82424>Karatyup</FONT>Valuable information，I have to continue to use Dream Powder。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-e" mid="46"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-e" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Advanced magician Stella${action:Talk}<BR>Goodbye，Karatyup Guard orderly pro-<FONT color=#387206>{user_nick}</FONT>！<BR>If something happens next，I will find you。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5701,5702,5703,5704</exe>
+         <exe type="setquest">570</exe>
+         <exe type="addquestitem" num="1">300083</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300083</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300083</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5701,5702,5703,5704</exe>
+         <exe type="complete">570</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="c">1,2,3,4</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="a">0,1,2</exelink>
+   <exelink qstep="2" npc="n296_butterfly_ring" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n296_butterfly_ring" sub="b" />
+   <exelink qstep="3" npc="n296_butterfly_ring" sub="c" />
+   <exelink qstep="3" npc="n296_butterfly_ring" sub="d" />
+   <exelink qstep="3" npc="n296_butterfly_ring" sub="e" />
+   <exelink qstep="3" npc="n296_butterfly_ring" sub="f" />
+   <exelink qstep="3" npc="n296_butterfly_ring" sub="g">0,2,1</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="d">0</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="e">1</exelink>
+   <journal_data recompense="1:5701,2:5702,3:5703,4:5704" quest_title="귀고리는 알고 있다Ⅱ" chapterid="" quest_level="35" quest_mark_type="10" use_item_list="300083">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Stella wanted to know]]></title>
+         <contents mid="50"><![CDATA[<html>And senior magician Stella dialogue。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Advanced magician Stella</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[And senior magician Stella dialogue]]></destination>
+         <todo_msg mid="52"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_46.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>461,n296</destination_pos>
+         <destination_mode>custom:461@1</destination_mode>
+         <statemark_npcid>296</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Kara places where the earrings fall]]></title>
+         <contents mid="54"><![CDATA[<html>To the sunken vessel，In<FONT color=#a82424>Kara places where the earrings fall</FONT>Sprinkle powder dreams，To collect memory。<BR>
+ <BR>
+<FONT color=#086171>Heermadai port(Island transport ship)</FONT> <FONT color=#a82424>→ The sunken vessel</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Carla earrings fall to explore the place where the]]></destination>
+         <todo_msg mid="56"><![CDATA[Go to the sunken vessel to find karaoke place where autumn earrings。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_46.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>461,n296</destination_pos>
+         <destination_mode>custom:461@1</destination_mode>
+         <statemark_npcid>296</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Kara autumn and Telamayi]]></title>
+         <contents mid="58"><![CDATA[<html>Sprinkle powder after the dream，Again the Phantom。Listen to what they say it。<BR>
+ <BR>
+<FONT color=#086171>Heermadai port(Island transport ship)</FONT> <FONT color=#a82424>→ The sunken vessel</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Carla fall of the place where the dialogue earrings]]></destination>
+         <todo_msg mid="60"><![CDATA[Go to the place where the earrings and the illusion of dialogue。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Collected memory]]></title>
+         <contents mid="62"><![CDATA[<html>The collected memory to tell to the senior magicians Stella。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> → Advanced magician Stella</html>]]></contents>
+         <destination mid="63"><![CDATA[And senior magician Stella dialogue]]></destination>
+         <todo_msg mid="64"><![CDATA[Please go back and report to senior magician Stella，To hear the things to tell her。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>35:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>569</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

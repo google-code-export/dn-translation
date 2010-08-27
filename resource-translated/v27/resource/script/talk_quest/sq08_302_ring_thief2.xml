@@ -1,0 +1,471 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_302_ring_thief2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>302</qid>
+      <designer>김인정</designer>
+      <qlevel>14</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>303</nextqid>
+      <nextqname>sq08_303_ring_thief3</nextqname>
+      <nextqnpc>n255_invisible_thief</nextqnpc>
+      <qkname mid="1"><![CDATA[Ring stolen II]]></qkname>
+      <qnpc>
+         <npcid>25</npcid>
+         <npcename>n025_trader_corin</npcename>
+         <npckname>대장장이 코린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>254</npcid>
+         <npcename>n254_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>255</npcid>
+         <npcename>n255_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>29</npcid>
+         <npcename>n029_crew_kevin</npcename>
+         <npckname>자칭 승무원 케빈</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-noquest" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Blacksmith Colin$<BR>Tends to go away。<BR><FONT color=#7e12d2>（Hubert received from the airship engineer tasks）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n254_invisible_thief-noquest" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$???$<BR>......<BR><FONT color=#7e12d2>（Hubert received from the airship engineer tasks）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-noquest" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$???$<BR>......<BR><FONT color=#7e12d2>（Hubert received from the airship engineer tasks）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-noquest" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Kevin Crew$<BR>It seems…The thief did not catch it。Ming... It does not matter。Can not ah，Or to <FONT color=#a82424>Hubert</FONT> Uncle there to see it。Not there is a hurry to wait for adventurers adults Well?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting" image="QN_crew_kevin.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-a" mid="10"><![CDATA[<html>（That is not paint ah...）</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Airship engineer Hubert$<BR>Stolen<FONT color=#a82424>Kevin</FONT> Treasures of the thief... It seems to track the<FONT color=#a82424>Miss Mee pigment</FONT>Well flavor。No matter how clean，Taste can not be disregarded 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-a" image="QS_Default.dds" itemindex="300214">
+      <talk_answer link_index="n099_engineer_hubert-accepting-b" mid="12"><![CDATA[<html>（Dirty cloth exudes taste disgusting）</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Airship engineer Hubert$<BR>It may take a hound Caixing。Then it heard the<FONT color=#a82424>Dirty cloth</FONT>Taste，Do not give up then to track，You first accept the cloth。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-c" mid="14"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Ring stolen II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-c" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Airship engineer Hubert$<BR>As can be<FONT color=#a82424>Blacksmith Colin</FONT>There by a hound。Adopted a total Buzhi Yu wild dogs right now，So, out of or through a comparison of Well?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-1-a" mid="18"><![CDATA[<html>（Hubert again dirty cloth over to me）</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Airship engineer Hubert$<BR>No matter how clean this <FONT color=#a82424>Taste</FONT>Estimate is about ten days, the lingering。So go to borrow a<FONT color=#a82424>Hound</FONT>Come back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-a" image="QS_Default.dds" itemindex="300214">
+      <talk_answer link_index="n099_engineer_hubert-1-b" mid="20"><![CDATA[<html>（Dirty cloth exudes taste disgusting）</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Airship engineer Hubert$<BR>Through the Beagle after，It heard the<FONT color=#a82424>Dirty cloth</FONT>Taste，Do not give up then to track。Well, this approach?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-b" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-1-c" mid="22"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Ring stolen II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-c" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Airship engineer Hubert$<BR>As can be<FONT color=#a82424>Blacksmith Colin</FONT>There by a<FONT color=#a82424>Hound</FONT>。Adopted a total Buzhi Yu wild dogs right now，So go out through a better?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-1" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Kevin Crew$<BR>It can retrieve his father&#39;s ring? ...But what can be caught<FONT color=#a82424>Thief</FONT>It？ Ming。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n254_invisible_thief-1" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$???$<BR>......<BR><FONT color=#7e12d2>（Seems to be something）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$???$<BR>......<BR><FONT color=#7e12d2>（Seems to be something）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Airship engineer Hubert$<BR>To<FONT color=#a82424>Blacksmith</FONT> <FONT color=#a82424>David</FONT>It by a hound。Smell that it<FONT color=#a82424>Dirty cloth</FONT>Taste，Go up。Fast，Rush to ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-a" mid="29"><![CDATA[<html>Would like a hound。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Blacksmith Colin$<BR><FONT color=#2b2723>What I do for you? Ah? Where&#39;s the smell?<BR></FONT><FONT color=#7e12d2>（Colin stretching the nostrils）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-a" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-b" mid="32"><![CDATA[<html>（David grabbed the dog&#39;s reins）</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Blacksmith Colin$<BR>Ah? Would like<FONT color=#a82424>Hound</FONT>?<BR>...Ah，I see ah，Well just seems to come。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-b" image="QS_Default.dds" itemindex="300214">
+      <talk_answer link_index="n025_trader_corin-2-c" mid="34"><![CDATA[<html>（After the dogs smell the cloth，Whole body shake a bit）</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Blacksmith Colin$<BR>Come，To the distribution of pieces of cloth to take over the taste。This is very clever dogs，Will certainly remember。 <FONT color=#7e12d2>（David the cloth out into the dog&#39;s nose before）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-c" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-d" mid="36"><![CDATA[<html>（…To this degree is not feeding，It poisons the hound）</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Blacksmith Colin$<BR>Ah? How?！ This，Matter how? <FONT color=#7e12d2>（As the voice of Colin&#39;s surprise，After intense shaking in dogs，Collapsing。Eyes grim faint） </FONT>Whoops~ Wang Cai！Wang Cai This is how my friends?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-d" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-e" mid="38"><![CDATA[<html>This is to do business Mee ah...</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Blacksmith Colin$<BR>This is the abuse of dogs ah！！You have to compensate my loss！ <FONT color=#7e12d2>（Colin side roared，Side to pour cold water collapsed the hound）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-e" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-f" mid="40"><![CDATA[<html>Thank you。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Blacksmith Colin$<BR>Oh！ Wang Cai awake。 <FONT color=#7e12d2>（Wake of the hounds to tear a piece of dirty cloth to pieces）</FONT> …Down short as I promised，I lent you for the time being it took Wang Cai。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-f" image="QW_16.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Blacksmith Colin$<BR>Take it to <FONT color=#a82424>Sleeper Temple</FONT>Yes? Followed by the words of Wang Cai，Are sure to find the thief，Go Fast。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3" image="QW_16.dds" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Blacksmith Colin$<BR>Take it to <FONT color=#a82424>Sleeper Temple</FONT>Yes? Followed by the words of Wang Cai，Are sure to find the thief，Go Fast。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3" image="QW_16.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Airship engineer Hubert$<BR>Ah，Borrowed hound the right? That quickly brought<FONT color=#a82424>Sleeper</FONT> <FONT color=#a82424>Temple</FONT>Go and see，Hopefully this will catch a thief。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-3" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Kevin Crew$<BR>Ah~ Let<FONT color=#a82424>Hound</FONT>Heard of after，To track the taste is right? Wow，This is really a good way to ah！This certainly catch a thief， Hei hei。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n254_invisible_thief-3" image="" itemindex="">
+      <talk_answer link_index="n254_invisible_thief-3-a" mid="48"><![CDATA[<html>（Get in a word）</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$???$<BR>...<BR>
+<FONT color=#7e12d2>（What do not pretend，However, some people really feel）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n254_invisible_thief-3-a" image="" itemindex="">
+      <talk_answer link_index="n254_invisible_thief-3-b" mid="50"><![CDATA[<html>Indeed，Really people, ah,！！</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Invisible thief$<BR>Oh！！Even，What ah…Where&#39;s the smell<FONT color=#a82424>Hound</FONT>！！Roll！ Hush！<BR>Really…Was found the right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n254_invisible_thief-3-b" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n254_invisible_thief-3-c" mid="52"><![CDATA[<html>Kevin&#39;s ring is stolen it you！！</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Invisible thief$<BR>Not straight to the bar here，Cut... That <FONT color=#a82424>Strange green dye</FONT>What is the stuff in the end?Poison you?Or any special magic kit? How clean are the kind of indelible<FONT color=#a82424>Taste</FONT>Ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n254_invisible_thief-3-c" image="QS_Default.dds" itemindex="300213">
+      <talk_answer link_index="n254_invisible_thief-3-d" mid="54"><![CDATA[<html>I quickly returned to！</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Invisible thief$<BR>Ah~ The old ring?I took it，It was not anything special，I&#39;m just stole it。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n254_invisible_thief-3-d" image="" itemindex="">
+      <talk_answer link_index="n254_invisible_thief-3-e" mid="56"><![CDATA[<html>（Thieves seem to want to run）</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Invisible thief$<BR>Row，Row。Take the broken ring，Returned to you。Ah~ Because it shares<FONT color=#a82424>Taste</FONT>Have to worry about being arrested while hiding so far away，Did not expect a recovery to the still stunned... It seems ah have to go back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n254_invisible_thief-3-e" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$Invisible thief$<BR>Now I will not escape，Back Goodbye。You checkpoints that to Kedella<FONT color=#a82424>Elite soldiers</FONT>Their<FONT color=#a82424>Hut</FONT>Come over。 <FONT color=#7e12d2>（After the Mass proceeded as if completed，Only moments away to hear the voice of the thief）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n254_invisible_thief-4" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$Invisible thief$<BR>... <FONT color=#7e12d2>（What is now gone。I hurried to the Kedella elite soldiers crossing shelter hut at the top go and see）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-4" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-4-a" mid="60"><![CDATA[<html>（Seems to have been hunting dogs bite）</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Invisible thief$<BR>Ah，Well come Daoting fast？Really smart，Ha ha。<BR>But why?Also with<FONT color=#a82424>Hound</FONT>To do?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-4-a" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$Invisible thief$<BR>Ah quickly returned to the owner！Fast！Before I can say nothing。 <FONT color=#7e12d2>（Really，I have been hunting dogs bite it。The dogs and then come back to the blacksmith Cowlin）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-4" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-4-a" mid="63"><![CDATA[<html>Ah~ That was，Looking for business Mee~Rights...</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Blacksmith Colin$<BR>Oh，My Wangcai smooth back again。Then again，On the abuse of the dog&#39;s injuries compensation，Where the complaint should we do it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-4-a" image="" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Blacksmith Colin$<BR>Rights to know。Do not know if there is no thief caught。Anyway, I want to give Wang Cai fed，You are busy you go。 <FONT color=#7e12d2>（Colin the bowl containing the food handed it over in front of dogs，It neatly in the trap the reins）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-5" image="" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$Blacksmith Colin$<BR>Prosperous wealth actually run not so fast。It seems I have to declare compensation for the loss of? <FONT color=#7e12d2>（Colin looked alert dogs）</FONT> …How do you still here ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5" image="" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$Airship engineer Hubert$<BR>Things that catch the thief had not taken shape? Kevin the best as soon as possible to seize the treasure to find back。Kevin has been a lot, actually listlessness。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-a" mid="68"><![CDATA[<html>（Garlic also pretend to be a thief）</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Invisible thief$<BR>来啦 Oh。But the promises of the people I，Do not doubt what people looked at me~ Huh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-b" mid="70"><![CDATA[<html>First ring out。</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Invisible thief$<BR>It seems very curious why you can not see me the way~ Anyway, I already found you，Then I told you the right，Huh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-b" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-!next" mid="72"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-6" image="QW_16.dds" itemindex="">
+      <talk_question mid="94"><![CDATA[<html>$Blacksmith Colin$<BR>You say you want to go with it<FONT color=#a82424>Sleeper Temple</FONT>？Behind with the dogs，There must be a thief hiding place。Go Fast。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n254_invisible_thief-6" image="" itemindex="">
+      <talk_question mid="95"><![CDATA[<html>$???$<BR>……<BR><FONT color=#7e12d2>(Do not know illusion，I feel like something)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-6" image="" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$???$<BR>……<BR><FONT color=#7e12d2>(Do not know illusion，I feel like something)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6" image="" itemindex="">
+      <talk_question mid="97"><![CDATA[<html>$Kevin Crew$<BR>Ah～Let<FONT color=#a82424>Hound</FONT>Go up after the news of the taste？Wow，What a great idea！！The thief will be able to seize，Hei hei。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6" image="QW_16.dds" itemindex="">
+      <talk_question mid="98"><![CDATA[<html>$Airship engineer Hubert$<BR>Ah，Borrow a hound？It is coming<FONT color=#a82424>Sleeper Temple</FONT>Go。I hope you can seize the thief。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">302</exe>
+         <exe type="recompense_view">,3021,3022,3023,3024</exe>
+         <exe type="addquestitem" num="1">300214</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3021,3022,3023,3024</exe>
+         <exe type="addquestitem" num="1">300214</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300214</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3021,3022,3023,3024</exe>
+         <exe type="complete">302</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n099_engineer_hubert" sub="b">1</exelink>
+   <exelink qstep="accepting" npc="n099_engineer_hubert" sub="c">2,0,3,4</exelink>
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="b">0</exelink>
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="c">1,2,3</exelink>
+   <exelink qstep="2" npc="n025_trader_corin" sub="b" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="c" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="d" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="e" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="f">0,1,2</exelink>
+   <exelink qstep="3" npc="n254_invisible_thief" sub="b" />
+   <exelink qstep="3" npc="n254_invisible_thief" sub="c" />
+   <exelink qstep="3" npc="n254_invisible_thief" sub="d" />
+   <exelink qstep="3" npc="n254_invisible_thief" sub="e">0,1</exelink>
+   <exelink qstep="4" npc="n025_trader_corin" sub="a">0,1</exelink>
+   <exelink qstep="5" npc="n255_invisible_thief" sub="b">0</exelink>
+   <exelink qstep="5" npc="n255_invisible_thief" sub="!next">1</exelink>
+   <journal_data recompense="1:3021,2:3022,3:3023,4:3024" quest_title="반지 도둑 II" chapterid="" quest_level="14" quest_mark_type="10" use_item_list="300214">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[Hubert&#39;s a good idea]]></title>
+         <contents mid="75"><![CDATA[<html><FONT color=#a82424>Airship engineer Hubert</FONT>Would like hounds to track the thief，Listen to it in detail。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Airship engineer Hubert</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[And airship engineer Hubert dialogue]]></destination>
+         <todo_msg mid="77"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n25</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>25</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[The dogs smell taste]]></title>
+         <contents mid="79"><![CDATA[<html>To borrow dogs blacksmith Colin，Track thieves。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Blacksmith Colin</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[Dialogue with the blacksmith Colin]]></destination>
+         <todo_msg mid="81"><![CDATA[Blacksmith Colin borrow to hound bar。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_16.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>129,n254</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@1</destination_mode>
+         <statemark_npcid>254</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[Hunting guide]]></title>
+         <contents mid="83"><![CDATA[<html>Follow the hounds，Go<FONT color=#a82424>Sleeper Temple</FONT>Tracking the whereabouts of the thief。<BR><BR><FONT color=#086171>Gray ruins → Shore littered with fallen leaves(Forgotten Temple)</FONT> <FONT color=#a82424>→ Sleeper Temple</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[Follow the hounds in the sleeper Temple]]></destination>
+         <todo_msg mid="85"><![CDATA[Sleeping dogs in the search for thieves who followed the Temple Bar。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n25</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>25</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[Hounds return]]></title>
+         <contents mid="87"><![CDATA[<html>Found the invisible thief。Fortunately Kedella barriers that re-meet。First hound back Kedella crossing<FONT color=#a82424>Blacksmith Colin</FONT>It。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Blacksmith Colin</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[Dialogue with the blacksmith Colin]]></destination>
+         <todo_msg mid="89"><![CDATA[Hound to the blacksmith, Colin returned to it。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n255</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>255</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Invisible thief]]></title>
+         <contents mid="91"><![CDATA[<html>The dogs back to the blacksmith Cowlin。Now go to where the elite soldiers in camp and not see the thief to meet it。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Invisible thief</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[Dialogue with the invisible thief]]></destination>
+         <todo_msg mid="93"><![CDATA[And the elite soldiers in the hut near the invisible thief dialog and。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>14:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>301</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

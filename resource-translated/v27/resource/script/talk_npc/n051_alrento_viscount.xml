@@ -1,0 +1,21 @@
+   <talk>
+      <npcename>n051_alrento_viscount</npcename>
+      <npcid>51</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Viscount United Arab Extension]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Viscount United Arab Extension$<BR>
+Ah。Select a friend in the holy paradise it is important。Once found a person doing nothing to work with …. As the order of the day will make you a general jail。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="3">0</exe>
+         <exe type="enterquest">sq11_453_missing_ring</exe>
+         <exe type="conexe" true="4" false="0">1</exe>
+         <exe type="enterquest">sq11_454_second_kidnapping</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">453</chk>
+         <chk type="hasquest">454</chk>
+      </conditions>
+   </talk>

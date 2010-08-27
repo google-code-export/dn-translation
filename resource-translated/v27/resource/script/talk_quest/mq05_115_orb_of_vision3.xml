@@ -1,0 +1,317 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_115_orb_of_vision3</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>115</qid>
+      <designer>손원호</designer>
+      <qlevel>3</qlevel>
+      <qdesc>파렐리나 안식처의 오브를 더 안전한 곳으로 옮기기 위해 두개의 열쇠를 모아 가는 소서리스. 첫번 째 열쇠는 신시아게서, 두번 째 열쇠는 율리아에게서 얻고 문을 열지만 오히려 적에게 습격당해 오브를 빼앗긴다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>116</nextqid>
+      <nextqname>mq05_116_arrest</nextqname>
+      <nextqnpc>n015_sorceress_tara</nextqnpc>
+      <qkname mid="1"><![CDATA[Secret of the ballⅢ]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라   (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>207</npcid>
+         <npcename>n207_sorceress_yullia</npcename>
+         <npckname>소서리스 율리아(소서전용)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="QS_Default.dds" itemindex="300146">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-a" mid="6"><![CDATA[<html>What&#39;s this?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Advanced magician Cynthia$<BR>Well，Take it。 <BR>
+Although not trust the，But that can not，Now you have nothing to do。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-a" image="QS_Default.dds" itemindex="300146">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Advanced magician Cynthia$<BR>Secret of the ball is the magician as a treasured，The key to opening the door in two custody。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-b" image="QS_Default.dds" itemindex="300146">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-c" mid="76"><![CDATA[<html>The second key then?</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Advanced magician Cynthia$<BR>I give you<FONT color=#a82424>Red Contract</FONT>Is the first to open the door key。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-c" image="QS_Default.dds" itemindex="300147">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-d" mid="10"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Advanced magician Cynthia$<BR>The second the key<FONT color=#a82424>Blue Oath</FONT>Melissa custody by the。You go to her to take the second right keys。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-d" image="QW_FrostHill.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Advanced magician Cynthia$<BR>Yulia said that it will<FONT color=#a82424>雪霜 ramp</FONT>Waiting for you。You go fast。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1" image="" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$Magician Tala${action:Talk}<BR>It seems a little cold weather?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="QW_FrostHill.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR>Yulia said that it will<FONT color=#a82424>雪霜 ramp</FONT>Waiting for you。You go fast。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n207_sorceress_yullia-2" image="" itemindex="">
+      <talk_answer link_index="n207_sorceress_yullia-2-a" mid="18"><![CDATA[<html><FONT color=#382000>{user_nick}，Adult greeting to Melissa。</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Melissa magician$<BR>Long time no see。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n207_sorceress_yullia-2-a" image="" itemindex="">
+      <talk_answer link_index="n207_sorceress_yullia-2-b" mid="20"><![CDATA[<html>That...It is...</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Melissa magician$<BR>
+I heard after you leave the magic mountain ridge，Experienced a lot of things？  <BR>Things because you，Ridge was once also known as the CPE magic。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n207_sorceress_yullia-2-b" image="" itemindex="">
+      <talk_answer link_index="n207_sorceress_yullia-2-c" mid="22"><![CDATA[<html>Cynthia abusive adults all day。</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Melissa magician$<BR>I&#39;m not blaming you，Please do not stress。In fact, both Cynthia and I trust you，Has been quietly support you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n207_sorceress_yullia-2-c" image="" itemindex="">
+      <talk_answer link_index="n207_sorceress_yullia-2-d" mid="24"><![CDATA[<html>Secret of the ball in danger。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Melissa magician$<BR>
+You will eventually understand，That&#39;s all for you。On the，Today, there is something you do to?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n207_sorceress_yullia-2-d" image="QS_Default.dds" itemindex="300147">
+      <talk_answer link_index="n207_sorceress_yullia-2-e" mid="26"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Melissa magician$<BR>
+Sure enough, I expected，To the secret of the ball transfer time。I<FONT color=#a82424>Blue Oath</FONT>You，Please rest, you go to Paleilinuo Department of the ball taken out of the esoteric。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n207_sorceress_yullia-2-e" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Melissa magician$<BR>
+You more than you think good。To believe in yourself。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n207_sorceress_yullia-3" image="QW_8.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Melissa magician$<BR>Approaching<FONT color=#a82424>Paleilinuo rest Department</FONT>Go。Time to lose。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3" image="QW_8.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Magician Tala$<BR>Senior，Said that the key to all of you two got? I have only to<FONT color=#a82424>Paleilinuo rest Department</FONT>Miss Sarah&#39;s things back up，Refueling ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3" image="" itemindex="">
+      <talk_question mid="74"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR>Look the way you do nothing，Seem to have got all day thing in a lot of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-a" mid="43"><![CDATA[<html>Ah ha ha…</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Magician Tala${action:Talk}<BR>Ah?Baozhu robbed Rights?How&#39;s going on in the end...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4-a" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-b" mid="45"><![CDATA[<html>Cynthia Rao adults can not ah?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Magician Tala$<BR>This is not a joke，Is lost<FONT color=#a82424>Secret of the ball</FONT>Ah。<BR>
+The magician&#39;s treasure！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4-b" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-c" mid="47"><![CDATA[<html>It seems...To get back Baozhu Caixing。</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Magician Tala$<BR>Far greater lessons you want to?I am afraid may use a meteor magic，Even the ancient magic is banned and killed you can not say oh? There is also a day is a pain，Making life worse than death。You should also know Cynthia adult temper ah...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4-c" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-!next" mid="49"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300146</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300147</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1150,,,,</exe>
+         <exe type="complete">115</exe>
+         <exe type="delquestitem" num="-1">300146</exe>
+         <exe type="delquestitem" num="-1">300147</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="d">0,1,2</exelink>
+   <exelink qstep="2" npc="n207_sorceress_yullia" sub="b" />
+   <exelink qstep="2" npc="n207_sorceress_yullia" sub="c" />
+   <exelink qstep="2" npc="n207_sorceress_yullia" sub="d" />
+   <exelink qstep="2" npc="n207_sorceress_yullia" sub="e">0,1,2</exelink>
+   <exelink qstep="4" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="4" npc="n015_sorceress_tara" sub="c">0</exelink>
+   <exelink qstep="4" npc="n015_sorceress_tara" sub="!next">1,2,3</exelink>
+   <journal_data recompense="3:1150" quest_title="비전의 오브Ⅲ" chapterid="1" quest_level="3" quest_mark_type="7" use_item_list="300146,300147">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[And senior magician Cynthia dialogue]]></title>
+         <contents mid="53"><![CDATA[<html>Dialogue with senior magician Cynthia。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Advanced magician Cynthia</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[And senior magician Cynthia dialogue]]></destination>
+         <todo_msg mid="55"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_FrostHill.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>6,n207</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>207</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Melissa dialogue and magician]]></title>
+         <contents mid="57"><![CDATA[<html>To the secret of the ball transferred to security，Cynthia teacher from the first to get the red key contract。Melissa went to the magician vows a second blue bar keys。<BR><BR><FONT color=#086171>雪霜 ramp</FONT> <FONT color=#a82424>→ Melissa magician</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Melissa dialogue and magician]]></destination>
+         <todo_msg mid="59"><![CDATA[Melissa went to the magician to get the second key it。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_8.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>88,0,0</destination_pos>
+         <destination_mode>custom:86@1,87@1,88@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[To obtain Baozhu Paleilinuo rest]]></title>
+         <contents mid="61"><![CDATA[<html>Access to all key。On to the rest to open the door Paleilina it back Baozhu。<BR>
+ <BR>
+<FONT color=#086171>Melting Forest（Magician of the Road）</FONT> <FONT color=#a82424>→Paleilinuo rest Department</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[Service charge Pearl of rest to Paleilinuo]]></destination>
+         <todo_msg mid="63"><![CDATA[Service charge Pearl of rest to Paleilinuo。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n15</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>15</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string>오브 빼앗기는 컷씬 출력</trigger_string>
+         <maptool_index />
+         <title mid="65"><![CDATA[Tara dialogue and magician]]></title>
+         <contents mid="66"><![CDATA[<html>Secret of the ball robbed！So back to where Cynthia teacher，Estimated to be Trying to avoid a。Talk about it first to find Tara。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Magician Tala</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[Tara dialogue and magician]]></destination>
+         <todo_msg mid="68"><![CDATA[Secret of the ball robbed！Tara ridge to find magic to discuss it。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>114</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

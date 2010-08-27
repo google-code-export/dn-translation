@@ -1,0 +1,328 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_208_depleting_fuel</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>208</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc>300103 부유장치</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>209</nextqid>
+      <nextqname>mq08_209_red_eyes_darkelf</nextqname>
+      <nextqnpc>n167_charging_point</nextqnpc>
+      <qkname mid="1"><![CDATA[Depletion of energy]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>167</npcid>
+         <npcename>n167_charging_point</npcename>
+         <npckname>투명NPC(이름 없음)(잠든자의 신전 이벤트 맵)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-1-cutscene" mid="49"><![CDATA[<html>Wow～</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Airship engineer Hubert$<BR>No. 阿尔巴特罗 finally repaired。<BR> Well，You back a little。 Eh-hem……阿尔巴特罗 No.～Take off～！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Algerita$<BR>Go<FONT color=#a82424>Holy Paradise</FONT>Find the blonde swordsman，Tell him what happened before。<BR>Then request his help。<BR>He will be able to stop the Black Knight。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-a" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Airship engineer Hubert$<BR>Oops！！How the matter in the end？！Engine exploded，Sure what went wrong！What in the end？What had gone wrong with it？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-a" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n099_engineer_hubert-2-b" mid="87"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Airship engineer Hubert$<BR>Call……Sure enough, the problem is dynamic。Otherwise they can not think of other questions。阿尔巴特罗 number is only used to add energy in the holy paradise special drive。There is no device can start its。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-b" image="QW_AirShip.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Airship engineer Hubert$<BR>Call……It seems airship can not be moved temporarily。<BR>Sorry，Let you down。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-a" mid="57"><![CDATA[<html>(Description airship after a failure)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Algerita$<BR>What？！You this guy，I asked you to do things，How still here？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-b" mid="59"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Algerita$<BR>That damn black knight…...？！Cut，Even by his first start with the。No way，It seems only wait to go there after repaired airship。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-b" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n164_argenta_wounded-3-c" mid="61"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Algerita$<BR>On the，That<FONT color=#a82424>Suspension device</FONT>，May be left with the power of empowerment here。We can leave things in the past Black Knights，Although a little humiliation。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-c" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-d" mid="63"><![CDATA[<html>Temple you were sleeping？</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Algerita$<BR><FONT color=#387206>{user_nick}</FONT>！！Do you remember the past Black Knights<FONT color=#a82424>Who stole the ancient power of the place</FONT>It？You with<FONT color=#a82424>Suspension device</FONT>Go there，Confirm whether it can be injected into force。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-d" image="QW_16.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Algerita$<BR>Ah，Mouth pain！I was injured，Do not dawdle in，Grown doubled<FONT color=#a82424>Suspension device</FONT>Taken<FONT color=#a82424>Sleeper Temple</FONT>Go！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$Airship engineer Hubert$<BR>Where the energy can be added only really<FONT color=#a82424>Holy Paradise</FONT>。Call……It seems the time being can not move the airship。<BR>Sorry，Let you down……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-a" mid="67"><![CDATA[<html>If there are other ways。</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Airship engineer Hubert$<BR>It seems to take off the airship is temporarily unavailable。<BR>You do not have to see you……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-a" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-party" mid="69"><![CDATA[<html>Give me your first suspension device。</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Airship engineer Hubert$<BR>Other methods？！There can be no heaven to the sacred ways to improve engine power？！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-b" image="QS_Default.dds" itemindex="300103">
+      <talk_question mid="70"><![CDATA[<html>$Airship engineer Hubert$<BR>Good，I will not ask，A game of you！I just airship can fly,。More things you&#39;ll tell me！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-c" image="" itemindex="">
+      <talk_question mid="85"><![CDATA[<html>$Airship engineer Hubert$<BR>Good，I will not ask，A game of you！I just airship can fly,。Ah，If you are around some people and this has nothing to do，Add enough energy bar a person？<FONT color=#7e12d2>(Team can not perform the task under)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Algerita$<BR>Ah，Mouth pain！I was injured，Do not dawdle in，Grown doubled<FONT color=#a82424>Suspension device</FONT>Taken<FONT color=#a82424>Sleeper Temple</FONT>Go！Of course，Device was suspended from the<FONT color=#a82424>Engineer Hubert</FONT>Getting there，That you ought to know it？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-5" image="QW_16.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Algerita$<BR>How do you still coming along on the？Fast with<FONT color=#a82424>Suspension device</FONT>Go<FONT color=#a82424>Sleeper Temple</FONT>，Now immediately。Hear me？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5" image="QS_Default.dds" itemindex="300103">
+      <talk_question mid="73"><![CDATA[<html>$Airship engineer Hubert$<BR><FONT color=#a82424>Suspension device full of energy</FONT>After，阿尔巴特罗 number can take off！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n167_charging_point-5" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n167_charging_point-5-a" mid="75"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html><FONT color=#a82424><FONT color=#2b2723>$Suspension device$</FONT></FONT><BR>
+<html><FONT color=#7e12d2>(Suspension device is fully able to。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n167_charging_point-5-a" image="" itemindex="">
+      <talk_answer link_index="n167_charging_point-5-b" mid="77"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n167_charging_point-5-b" image="QS_Default.dds" itemindex="300103">
+      <talk_question mid="95"><![CDATA[<html><FONT color=#a82424>
+<FONT color=#a82424><FONT color=#2b2723>$Suspension device$</FONT></FONT><BR>
+<html><FONT color=#7e12d2>(Sufficient to complete the suspended installation。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_user_PlayCutScene(userObjID,npcObjID,61);</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>잠든자의 신전에서 부유장치를 충전한 뒤, 컷신 출력(71)</comment>
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="addquestitem" num="1">300103</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n099_engineer_hubert">b</exe>
+         <exe type="talk" npc="n099_engineer_hubert">c</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment>퀘스트 완료후, 컷씬 보기, 18-BossA맵으로 이동 순으로 실행됨.
+</comment>
+      <conditions />
+      <executions>
+         <exe type="complete">208</exe>
+         <exe type="recompense">,2081,2082,2083,2084</exe>
+         <exe type="delquestitem" num="-1">300103</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="cutscene">0,1</exelink>
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="d">0,1</exelink>
+   <exelink qstep="4" npc="n099_engineer_hubert" sub="party">0,1,2,3</exelink>
+   <exelink qstep="5" npc="n167_charging_point" sub="a">1</exelink>
+   <exelink qstep="5" npc="n167_charging_point" sub="b">0,2</exelink>
+   <journal_data recompense="1:2081,2:2082,3:2083,4:2084" quest_title="고갈된 에너지" chapterid="3" quest_level="14" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,3959,3392</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>엔지니어 휴버트</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>엔지니어 휴버트</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[And airship engineer Hubert dialogue 1]]></title>
+         <contents mid="37"><![CDATA[<html>The components to the<FONT color=#a82424>Hubert</FONT>After，No. He said 阿尔巴特罗 fly again soon。And his dialogue。<BR>
+<BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Airship engineer Hubert</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[And airship engineer Hubert dialogue]]></destination>
+         <todo_msg mid="39"><![CDATA[阿尔巴特罗 No. restart！]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Argenta_wounded.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>엔지니어 휴버트</start_npc>
+         <desc_location>숲의 성역</desc_location>
+         <step_action>수집</step_action>
+         <complete_npc>엔지니어 휴버트</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item>상급 정화석 6개</collect_item>
+         <collect_itemindex>42</collect_itemindex>
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[And the gray ruins of Algerita dialogue]]></title>
+         <contents mid="41"><![CDATA[<html>In the Go<FONT color=#a82424>Holy Paradise</FONT>Search<FONT color=#a82424>Blonde swordsman</FONT>Way，That the only means of transport<FONT color=#a82424>阿尔巴特罗 No.</FONT>Damaged。To dialogue and Algerita。<BR><FONT color=#a82424></FONT><BR><FONT color=#a82424><FONT color=#086171>Gray ruins</FONT> → Algerita</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[And the gray ruins of Algerita dialogue]]></destination>
+         <todo_msg mid="43"><![CDATA[Please tell Algerita news airship explosion。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,3959,3392</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>숲의 성역</get_location>
+         <start_npc />
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>엔지니어 휴버트</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[And airship engineer Hubert dialogue 1]]></title>
+         <contents mid="45"><![CDATA[<html>Due to power shortage 阿尔巴特罗 No.，Flight ended in failure。Number of suspended devices to 拿阿尔巴特罗。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Airship engineer Hubert</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[And airship engineer Hubert dialogue]]></destination>
+         <todo_msg mid="47"><![CDATA[To engineer Hubert suspension device that 里拿阿尔巴特罗 No.。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_16.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>130,0,0</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@1,130@4,13005@3</destination_mode>
+         <statemark_npcid>167</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[Ancient people used the power of empowerment to the suspension device]]></title>
+         <contents mid="82"><![CDATA[<html>With<FONT color=#a82424>Suspension device</FONT>Go<FONT color=#a82424>Sleeper Temple</FONT>。Said that there still remained a black knight who stole the power of the ancient，Maybe suspension device for empowerment。<BR>
+<FONT color=#7e12d2>(Team can not perform the task under)<BR><BR></FONT><FONT color=#086171>Shore littered with fallen leaves(Forgotten Temple entrance)</FONT><FONT color=#a82424> → Sleeper Temple</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[(1People)Ancient people used the power of empowerment to the suspension device]]></destination>
+         <todo_msg mid="84"><![CDATA[Please go to sleep by the Temple to the suspension device empowerment。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>207</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,349 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_301_ring_thief1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>301</qid>
+      <designer>김인정</designer>
+      <qlevel>14</qlevel>
+      <qdesc>케빈과 대화
+휴버트와 대화
+잠든자의 신전 클리어
+보스맵의 투명 npc와 대화
+휴버트에게 보고
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>302</nextqid>
+      <nextqname>sq08_302_ring_thief2</nextqname>
+      <nextqnpc>n099_engineer_hubert</nextqnpc>
+      <qkname mid="1"><![CDATA[Ring stolen I]]></qkname>
+      <qnpc>
+         <npcid>253</npcid>
+         <npcename>n253_peace_of_linen</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>29</npcid>
+         <npcename>n029_crew_kevin</npcename>
+         <npckname>자칭 승무원 케빈</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-noquest" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Airship engineer Hubert$<BR>Kevin looks like the guy is listless，Know why you?<BR><FONT color=#7e12d2>（Kevin from the crew there to accept the task）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n253_peace_of_linen-noquest" image="" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>（Seems to wipe a lot and dirty piece of cloth。In the dark green viscous sewage stench exudes the familiar）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-a" mid="7"><![CDATA[<html>What ah?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Kevin Crew$<BR>Ah... <FONT color=#382000>{user_nick}</FONT> Adventurer adults！How to do it?Me，Chuang of the disaster of the，Ming。<BR><FONT color=#7e12d2>（Kevin distress suffered eye look）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-a" image="QS_Default.dds" itemindex="300213">
+      <talk_answer link_index="n029_crew_kevin-accepting-b" mid="9"><![CDATA[<html>Nothing to see you?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Kevin Crew$<BR>I<FONT color=#a82424>Father&#39;s ring</FONT>Lost。Ming，Movements of stolen so fast，I have not see，Directly in front of me snatched the ring！！ Really soon... <FONT color=#a82424>Can not see with the eyes</FONT>Speed！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-b" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-c" mid="11"><![CDATA[<html>You are so fast?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Kevin Crew$<BR>Ah，That and the other side<FONT color=#a82424>Airship engineer Hubert</FONT>Uncle with the time，Uncle is nothing that，At first I thought it was blown away?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-d" mid="13"><![CDATA[<html>Well。</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Kevin Crew$<BR>This is really！！<BR>Come on you~ Adventurer adults！！Please help me find my father&#39;s ring it，Ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Ring stolen I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-1" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Kevin Crew$<BR>Thank you！At that time I<FONT color=#a82424>Airship engineer Hubert</FONT>Uncle together，It may wish to ask what he。I know only that a thief snatched the rings on it like a breeze。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="QN_crew_kevin.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-1-a" mid="18"><![CDATA[<html>Seen the thief？</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Airship engineer Hubert$<BR>Ah，But it was because it was so sad, ah thing? <FONT color=#a82424>Kevin</FONT>Guy…It is very sad。Because his father had found the ring he did a happy ah，I have to show off what。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-a" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-1-b" mid="20"><![CDATA[<html>Is... It does not really wind?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Airship engineer Hubert$<BR>Not。Nothing to see，Really fast like the wind！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-b" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n099_engineer_hubert-1-c" mid="22"><![CDATA[<html>（Hubert me the bucket）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Airship engineer Hubert$<BR>I almost think that way。But that guy Daoshi miscalculated step 。Anxious to steal rings，Accidentally stepped down beside me <FONT color=#a82424>Bucket</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-c" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-1-d" mid="24"><![CDATA[<html>（Well it seems not work as pigment...）</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Airship engineer Hubert$<BR>This however<FONT color=#a82424>Mee</FONT>Cheap sell me something, Miss。 <FONT color=#7e12d2>（Press exudes an odor will not forget。Certainly the flavor of the dog&#39;s feeding）</FONT> Intended to be used as pigments...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-d" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-1-e" mid="26"><![CDATA[<html>Follow the footprints to read you?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Airship engineer Hubert$<BR>Anyway, is that goddamn thief stepped down my bucket。Well，Here the obvious left<FONT color=#a82424>Footprint</FONT>。Consecutive footprints almost catch up to the tracks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-e" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-1-f" mid="28"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Airship engineer Hubert$<BR>Read，In<FONT color=#a82424>Sleeper Temple</FONT>Direction and disappeared。I do not have to enter there…If you are sure of it，To go look at it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-f" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Airship engineer Hubert$<BR>I asked where the guard，If they see someone come out and tell me，But so far no news。I would like to be still inside！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n253_peace_of_linen-1" image="" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>（Seems to wipe a lot and dirty piece of cloth。In the dark green viscous sewage stench exudes the familiar）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2" image="QW_16.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Airship engineer Hubert$<BR>Been<FONT color=#a82424>Sleeper Temple</FONT>The right？<BR>
+Kevin must be to help seize the precious ring of thieves that stole the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-2" image="QW_16.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Kevin Crew$<BR>Ah? To follow the footprints to<FONT color=#a82424>Sleeper Temple</FONT>? It is dangerous…It does not matter right？<BR>Be sure to get back his father&#39;s ring ah~！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n253_peace_of_linen-3" image="QS_Default.dds" itemindex="300214">
+      <talk_answer link_index="n253_peace_of_linen-3-a" mid="33"><![CDATA[<html>（Hold the cloth go back）</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>（Seems to wipe a lot and dirty piece of cloth。In the dark green viscous sewage stench exudes the familiar）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n253_peace_of_linen-3-a" image="QS_Default.dds" itemindex="300066">
+      <talk_question mid="34"><![CDATA[<html>$Dirty cloth$<BR><FONT color=#7e12d2>（Hound exudes Mee made up to judge the nutritional meal taste，The thief on the dirt stuck to shoes with this piece of cloth, wipe off the。In addition there are no other suspicious things）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n253_peace_of_linen-4" image="QS_Default.dds" itemindex="300066">
+      <talk_question mid="35"><![CDATA[<html>$Dirty cloth$<BR><FONT color=#7e12d2>（Fall dirty cloth is also a foul smell where。This is Mee do dogs smell the nutritional meals）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-4" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Kevin Crew$<BR>It seems…The thief did not catch it。Ming... It does not matter。Can not ah，Or to <FONT color=#a82424>Hubert</FONT> Uncle there to see it。Not there is a hurry to wait for adventurers adults Well?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4" image="QS_Default.dds" itemindex="300214">
+      <talk_answer link_index="n099_engineer_hubert-4-a" mid="39"><![CDATA[<html>（Submission of dirty cloth）</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Airship engineer Hubert$<BR>Ah? Well did not seem to catch a thief，What is in his hand?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-a" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n099_engineer_hubert-4-b" mid="41"><![CDATA[<html>If yes。</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Airship engineer Hubert$<BR>Oh? This... Exudes and buys from Miss Mee <FONT color=#a82424>Pigment</FONT>The same taste ah！ <FONT color=#7e12d2>（Hubert seems to still think it is paint）</FONT> Ah... The thief is certainly stick with the cloth to the feet<FONT color=#a82424>Pigment</FONT>Erased。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-b" image="QM_HoundNormal.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-c" mid="43"><![CDATA[<html>（Hubert said the self-confidence）</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Airship engineer Hubert$<BR>Ah，There are ways of，Use good taste smell<FONT color=#a82424>Hound</FONT>，Go <FONT color=#a82424>Track</FONT>How this kind of taste?No matter how clean can not erase the taste of it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-c" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-!next" mid="45"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3011,3012,3013,3014</exe>
+         <exe type="setquest">301</exe>
+         <exe type="talk" npc="n029_crew_kevin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="5,3,4">413</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200413</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 413);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300214</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300214</exe>
+         <exe type="recompense">,3011,3012,3013,3014</exe>
+         <exe type="complete">301</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="b" />
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="c" />
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="d" />
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="e" />
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="f">0,2,6,1</exelink>
+   <exelink qstep="3" npc="n253_peace_of_linen" sub="a">0,1,2</exelink>
+   <exelink qstep="4" npc="n099_engineer_hubert" sub="b" />
+   <exelink qstep="4" npc="n099_engineer_hubert" sub="c">1</exelink>
+   <exelink qstep="4" npc="n099_engineer_hubert" sub="!next">0,2</exelink>
+   <journal_data recompense="1:3011,2:3012,3:3013,4:3014" quest_title="반지 도둑 I" chapterid="" quest_level="14" quest_mark_type="10" use_item_list="300214">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Kevin worries]]></title>
+         <contents mid="48"><![CDATA[<html>Kevin lost ring。It is said <FONT color=#a82424>Airship engineer</FONT> <FONT color=#a82424>Hubert</FONT>Witnessed the incident，To listen to how he says it。<BR>
+<BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Airship engineer Hubert</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[And airship engineer Hubert dialogue]]></destination>
+         <todo_msg mid="50"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_16.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>129,n253</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@4</destination_mode>
+         <statemark_npcid>253</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[The whereabouts of footprints]]></title>
+         <contents mid="52"><![CDATA[<html>The thief stole the ring left stained with footprints of nutrition for dogs。<FONT color=#a82424>Footprint</FONT>Has been leading<FONT color=#a82424>Sleeper Temple</FONT>Direction。Tracking the whereabouts of the thief。<FONT color=#7e12d2><BR></FONT><BR><FONT color=#086171>Gray ruins → Shore littered with fallen leaves(Forgotten Temple)</FONT> <FONT color=#a82424>→ Sleeper Temple</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Explore sleeper Temple]]></destination>
+         <todo_msg mid="54"><![CDATA[Temple to find thief in the sleeper to。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_16.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>129,n253</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@1</destination_mode>
+         <statemark_npcid>253</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Suspicious object]]></title>
+         <contents mid="56"><![CDATA[<html>Thief still can not find。Have a look around<FONT color=#a82424>Suspect</FONT>Mark it。<BR><BR><FONT color=#086171>Sleeper Temple</FONT> <FONT color=#a82424>→ ???</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Explore around the suspicious object]]></destination>
+         <todo_msg mid="58"><![CDATA[Investigate whether the suspicious object around。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Evidence]]></title>
+         <contents mid="60"><![CDATA[<html>From<FONT color=#a82424>Dirty cloth</FONT>Distribute <FONT color=#a82424>The dog&#39;s feeding</FONT>Taste，It seems that the thief is wipe their feet。Perhaps this is the clue，Hold it back airship engineer <FONT color=#a82424>Hubert</FONT>Where it。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Airship engineer Hubert</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[And airship engineer Hubert dialogue]]></destination>
+         <todo_msg mid="62"><![CDATA[To get things right to the airship engineer Hubert。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>14:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>300</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

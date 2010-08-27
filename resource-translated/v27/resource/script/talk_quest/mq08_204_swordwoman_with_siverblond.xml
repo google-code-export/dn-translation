@@ -1,0 +1,349 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_204_swordwoman_with_siverblond</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>204</qid>
+      <designer>김주연</designer>
+      <qlevel>12</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>205</nextqid>
+      <nextqname>mq08_205_ancient_relic</nextqname>
+      <nextqnpc>n028_scholar_bailey</nextqnpc>
+      <qkname mid="1"><![CDATA[Seniors female swordsman]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>27</npcid>
+         <npcename>n027_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Society of Dai Kade adventurer${action:Talk}<BR>Well……It was not that the characters are friends or foes。<BR>I do not know in detail，Is said to occur in the Black Knights begin its activities after the adventurer。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="8"><![CDATA[<html>Where can I see what the woman swordsman？</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Society of Dai Kade adventurer${action:Refusal}<BR>Sacred Black Knight appears in the forest of information is from the silver female swordsman get there。<BR>Kedella adventurer Association impaired and therefore half the strength of……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QW_15.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-c" mid="10"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>I sent to clean up the scene, members of the Society received a report，Said<FONT color=#a82424>Forest Sanctuary</FONT>A silver female swordsman。<BR>If starting now，Might even see her。Do not know if she did not set out to track the black knight。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Society of Dai Kade adventurer${action:Refusal}<BR>If you<FONT color=#a82424>Forest Sanctuary</FONT>To see who<FONT color=#a82424>Seniors female swordsman</FONT>，Please on behalf of the Society commissioned her adventurer helped track Black Knight。Adventurers Association must now focus on recovery efforts。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Heraldic scholars Bailey$<BR><FONT color=#387206> {user_nick}</FONT>，<FONT color=#a82424>Society of Dai Kade adventurer</FONT>If you are looking for。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Algerita$<BR>You clearly do not？Do not stroll in here，Quickly go home。<BR><FONT color=#7e12d2>(Seniors female swordsman impatiently)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QW_15.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>According to Association members reported that，Seniors female swordsman in<FONT color=#a82424>Forest Sanctuary</FONT>。<BR>If starting now，Might even see her。Do not know if she did not set out to track the black knight。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2" image="" itemindex="">
+      <talk_answer link_index="n027_argenta-2-a" mid="16"><![CDATA[<html>I heard that your track Black Knight。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Algerita$<BR>Why do you come here，Xiao Maohai？<BR><FONT color=#7e12d2>(Seniors female swordsman impatiently)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-a" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-2-b" mid="18"><![CDATA[<html>(Black Knight asked what)</html>]]></talk_answer>
+      <talk_answer link_index="n027_argenta-2-c" mid="19"><![CDATA[<html>(Asked a girl thing)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Algerita$<BR><FONT color=#a82424>Black Knight</FONT>？Ha ha……Too bad your strength as a bar，Also to care about<FONT color=#a82424>Black Knight</FONT>？<BR>Almost dead last，Fortunately, I saved you。You really do not know what fear。Go back soon！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-b" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-2-a" mid="21"><![CDATA[<html>(Return)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Algerita$<BR>You do not know why<FONT color=#a82424>Black Knight</FONT>So interested，But I give you some advice。<BR>You&#39;d better find out little，If you want to go on living……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-2-d" mid="23"><![CDATA[<html>(Asked a girl thing)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Algerita$<BR>Girl？That<FONT color=#a82424>Black Knight</FONT>Walk around with red hair little girl you？I do not know how she is like a……？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-d" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-2-e" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Algerita$<BR>Even……What？<BR>Who is that girl<FONT color=#a82424>Descendants of ancient people</FONT>……It seems I am late step。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-e" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-2-f" mid="27"><![CDATA[<html>I promised to rescue the others make girls。</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Algerita$<BR>(Female swordsman frowned)<BR>If as you say，The girl really <FONT color=#a94407>Descendants of ancient people</FONT>，Different things。<BR>But，Why do you want to track<FONT color=#a82424>Black Knight</FONT>It？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-f" image="" itemindex="">
+      <talk_answer link_index="n027_argenta-2-g" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Algerita$<BR>Promised to someone else……？Hum，What a convention……<BR>I doubt you can not refuse the temptation in the face when，It can comply with this agreement。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-g" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-2-h" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Algerita$<BR>Well！Anyway, I have no time，The harm to accept your help。<BR><FONT color=#a82424>Black Knight</FONT>Now should<FONT color=#a82424>Sleeper Temple</FONT>There。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-h" image="QS_Default.dds" itemindex="300030">
+      <talk_answer link_index="n027_argenta-2-i" mid="33"><![CDATA[<html>Obedience pendant where it can be found？</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Algerita$<BR>Guy wandering in the ruins of ancient time，I think it&#39;s impossible……Instrument allows to confirmed。You look for<FONT color=#a82424>Compliance Pendant</FONT>。The hands of a teenage guy，Why do not the things。But we need to have forgotten the key to the monastery。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2-i" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Algerita$<BR>This kind of thing you ask<FONT color=#a82424>Adventurers Association</FONT>！After finding Pendant，You to<FONT color=#a82424>Sleeper Temple</FONT>Find me。<BR>The girl must quickly find。<BR>Goodbye，Xiao Maohai。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Heraldic scholars Bailey${action:Talk}<BR><FONT color=#387206>{user_nick}</FONT>，I heard you saved the adventurers in the<FONT color=#a82424>Forest Sanctuary</FONT>。<BR>(Go to Forest Sanctuary to meet silver female swordsman<FONT color=#a82424>Algerita</FONT>)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Heraldic scholars Bailey$<BR><FONT color=#387206> {user_nick}</FONT>，<FONT color=#a82424>Society of Dai Kade adventurer</FONT>Looking for you。<BR><FONT color=#7e12d2>(Please adventurer dialogue Society of Dai Kade)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-a" mid="38"><![CDATA[<html>(Note once again from beginning to end things)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Society of Dai Kade adventurer${action:Talk}<BR>Seniors find the right female swordsman？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-a" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-b" mid="40"><![CDATA[<html>If yes。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Society of Dai Kade adventurer${action:Refusal}<BR>Black Knight went<FONT color=#a82424>Sleeper Temple</FONT>……It appears that he is indeed the power of people in search of ancient。<BR>On the，Algerita you look on the girls interested in？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-c" mid="42"><![CDATA[<html>She looks like a bad guy。</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Eh？Ah……Do not know if she is also coveted the power of ancient people，Or of the coveted power of a group of ancient people。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-c" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-d" mid="44"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>
+You seem to be too easy to believe in the。<BR>
+Remember，Not all people like you。<BR>
+Perhaps when it will face a significant loss。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-d" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Society of Dai Kade adventurer${action:Talk}<BR>Stop here……<FONT color=#a82424>Compliance Pendant</FONT>Well……<FONT color=#a82424>Heraldic scholars Bailey</FONT>Should know。Go and ask them for help it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-3" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Algerita$<BR><FONT color=#a82424>Compliance Pendant</FONT>The things you ask<FONT color=#a82424>Society of Adventurers</FONT>！<BR>After finding Pendant，You to<FONT color=#a82424>Sleeper Temple</FONT>Find me。<BR>Goodbye，Xiao Maohai。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Society of Dai Kade adventurer$<BR><FONT color=#a82424>Compliance Pendant</FONT>If，<FONT color=#a82424>Heraldic scholars Bailey</FONT>Should know。You can ask them for help。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-4" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-4-a" mid="49"><![CDATA[<html>Seems alright。</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Heraldic scholars Bailey${action:Talk}<BR>Ah，Is to participate in the Black Knight fought running battles in the<FONT color=#387206>{user_class}{user_nick}</FONT>Ah。<BR>How your body like the？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-4-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-4-b" mid="51"><![CDATA[<html>(Asked what obedience pendant)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Fortunately nothing。What can I do that you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-4-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-4-!next" mid="53"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">204</exe>
+         <exe type="recompense">,2041,2042,2043,2044</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n027_argenta" sub="b" />
+   <exelink qstep="2" npc="n027_argenta" sub="c" />
+   <exelink qstep="2" npc="n027_argenta" sub="a" />
+   <exelink qstep="2" npc="n027_argenta" sub="d" />
+   <exelink qstep="2" npc="n027_argenta" sub="e" />
+   <exelink qstep="2" npc="n027_argenta" sub="f" />
+   <exelink qstep="2" npc="n027_argenta" sub="g" />
+   <exelink qstep="2" npc="n027_argenta" sub="h" />
+   <exelink qstep="2" npc="n027_argenta" sub="i">0,1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="c" />
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="d">0,1</exelink>
+   <exelink qstep="4" npc="n028_scholar_bailey" sub="b">1</exelink>
+   <exelink qstep="4" npc="n028_scholar_bailey" sub="!next">0</exelink>
+   <journal_data recompense="1:2041,2:2042,3:2043,4:2044" quest_title="은발의 여검사" chapterid="2" quest_level="12" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>모험자 길드장 데커드</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>모험자 길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Society of Daika De dialogue and adventurer]]></title>
+         <contents mid="55"><![CDATA[<html>To<FONT color=#a82424>Society of Dai Kade adventurer</FONT>Asked the woman to save his own silver things swordsman。<BR><BR>
+<FONT color=#086171>Kedella points</FONT><FONT color=#a82424> → Society of Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[Society of Daika De dialogue and adventurer]]></destination>
+         <todo_msg mid="57"><![CDATA[Please adventurer dialogue Society of Dai Kade。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>124, -556,-706</destination_pos>
+         <destination_mode>custom:121@1,122@1,123@1,124@2</destination_mode>
+         <statemark_npcid>27</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>모험자 길드장 데커드</start_npc>
+         <desc_location>숲의 성역</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>아르젠타</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[And silver female swordsman dialogue]]></title>
+         <contents mid="59"><![CDATA[<html>Go<FONT color=#a82424>Forest Sanctuary</FONT>Meet<FONT color=#a82424>Seniors female swordsman</FONT>，Asked about the whereabouts of the black knights and girls。<BR><BR><FONT color=#086171>Gray ruins(The Sacred invasion of entry)</FONT><FONT color=#a82424> → Forest Sanctuary</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[And silver female swordsman dialogue]]></destination>
+         <todo_msg mid="61"><![CDATA[Go to the forest to look for silver female swordsman Sanctuary。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>숲의 성역</get_location>
+         <start_npc>아르젠타</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>모험자 길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[Society of Daika De dialogue and adventurer]]></title>
+         <contents mid="63"><![CDATA[<html>To see a silver female swordsman Algerita，Black Knight that the next destination is the sleeper Temple。<BR>Go back to<FONT color=#a82424>Society of Dai Kade adventurer</FONT>Report what happened。<BR><BR><FONT color=#086171>Kedella points</FONT><FONT color=#a82424> → Society of Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[Society of Daika De dialogue and adventurer]]></destination>
+         <todo_msg mid="65"><![CDATA[Please go back and report to Dai Kade。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2694,-3175</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[And the coat of arms Bailey scholars dialogue]]></title>
+         <contents mid="94"><![CDATA[<html>To find what seniors female swordsman Algerita<FONT color=#a82424>Compliance Pendant</FONT>，Whereabouts<FONT color=#a82424>Heraldic scholars Bailey</FONT>Request Help。<BR><BR><FONT color=#086171>Kedella points</FONT><FONT color=#a82424> → Heraldic scholars Bailey</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[And the coat of arms Bailey scholars dialogue]]></destination>
+         <todo_msg mid="96"><![CDATA[Please go to see heraldic scholars Bailey。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level>-1:-1</user_worldzone_level>
+      <user_class />
+      <prev_quest>203</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

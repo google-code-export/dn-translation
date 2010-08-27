@@ -1,0 +1,299 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_119_prospect</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>119</qid>
+      <designer>손원호</designer>
+      <qlevel>8</qlevel>
+      <qdesc>괴한이 도망간 곳은 마리온 전당으로 연결되어 있었다. 신시아의 조언으로 마리온 전당으로 가서 괴한의 정체를 밝히지만 의외로 범인은 제이크였다. 오브와 지팡이를 되 찾아 귀환하는 소서리스.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>120</nextqid>
+      <nextqname>mq05_120_money_girl</nextqname>
+      <nextqnpc>n011_priest_leonardo</nextqnpc>
+      <qkname mid="1"><![CDATA[Had I known ah。]]></qkname>
+      <qnpc>
+         <npcid>11</npcid>
+         <npcename>n011_priest_leonardo</npcename>
+         <npckname>상급 클레릭 레오날드    (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>165</npcid>
+         <npcename>n165_cleric_jake</npcename>
+         <npckname>클레릭 제이크(쓰러진 용추종자.ver)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="QW_11.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-a" mid="6"><![CDATA[<html>Leave it to me。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Advanced magician Cynthia$<BR>Shuangfeng depths of the forest...There certainly is a gateway<FONT color=#a82424>Mali An Diantang</FONT>Door,。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-a" image="QW_11.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Advanced magician Cynthia$<BR>Care for the magic word。<BR>
+※ <FONT color=#7e12d2>Mali An Diantang are8And above the barrier to enter。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="QW_11.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Advanced magician Cynthia$<BR>Hurry。If you missed this opportunity，May no longer be able to find the ball secret。<BR>
+※ <FONT color=#7e12d2>Mali An Diantang are8And above the barrier to enter。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2" image="QW_11.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR><FONT color=#a82424>Mali An Diantang</FONT>……Hurry！He must seize this。<BR>
+※ <FONT color=#7e12d2>Mali An Diantang are8And above the barrier to enter。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n165_cleric_jake-3" image="" itemindex="">
+      <talk_answer link_index="n165_cleric_jake-3-a" mid="10"><![CDATA[<html>（Jack lifted up）</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Pastor Jack$<BR>Snore，Did not expect to lose it all...<BR>You...After all you, ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n165_cleric_jake-3-a" image="" itemindex="">
+      <talk_answer link_index="n165_cleric_jake-3-b" mid="12"><![CDATA[<html>This is your right conspiracy?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Pastor Jack$<BR>My dream is now over the bar。<BR>
+I actually fell on being reckoned with ...You...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n165_cleric_jake-3-b" image="" itemindex="">
+      <talk_answer link_index="n165_cleric_jake-3-c" mid="14"><![CDATA[<html>Why do such a thing...</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Pastor Jack$<BR>
+Eh-hem... Followers of the dragon forces was more than you think...Stronger。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n165_cleric_jake-3-c" image="" itemindex="">
+      <talk_answer link_index="n165_cleric_jake-3-d" mid="16"><![CDATA[<html>Feeling weak...</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Pastor Jack$<BR>Even with you our vision ...You...Not understand...<BR>
+Weak ...Mood...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n165_cleric_jake-3-d" image="" itemindex="">
+      <talk_answer link_index="n165_cleric_jake-3-e" mid="18"><![CDATA[<html>（Recycling secret of the ball and Sage Wand）</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Pastor Jack$<BR>Good and evil ...As both sides of coin...Long ah，Re-employment Training last…Soar...<BR><FONT color=#7e12d2></FONT><BR>
+<FONT color=#7e12d2>（Jack gradually stop breathing）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n165_cleric_jake-3-e" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Pastor Jack$<BR>
+.......<BR><FONT color=#7e12d2>（Jack stopped breathing。His eyes seemed to be watching from afar，Was extremely gloomy。Then，All signs of life return to silence）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-4" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-4-a" mid="21"><![CDATA[<html>（Jack died of something that）</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Senior Pastor Leiang Na more${action:Talk}<BR>Oh，How?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-4-a" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-4-b" mid="23"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-4-b" image="QN_Jake_Down.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-4-c" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>How could... Jack and Saide Rui actually do as a spy。<BR>I never thought with Jack...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-4-c" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-4-!next" mid="27"><![CDATA[<html>Let me first report on the teacher again, to consider。</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>Oh，Is not that right Sage Wand? <BR>
+Hurry back to me！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR>Although the report is important，But first <FONT color=#a82424>Lei Angna more old man</FONT>Where the death of the pastor to tell him it。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1190,,,,</exe>
+         <exe type="complete">119</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="a">0,1</exelink>
+   <exelink qstep="3" npc="n165_cleric_jake" sub="b" />
+   <exelink qstep="3" npc="n165_cleric_jake" sub="c" />
+   <exelink qstep="3" npc="n165_cleric_jake" sub="d" />
+   <exelink qstep="3" npc="n165_cleric_jake" sub="e">0,1</exelink>
+   <exelink qstep="4" npc="n011_priest_leonardo" sub="a">0</exelink>
+   <exelink qstep="4" npc="n011_priest_leonardo" sub="b">1</exelink>
+   <exelink qstep="4" npc="n011_priest_leonardo" sub="c" />
+   <exelink qstep="4" npc="n011_priest_leonardo" sub="!next" />
+   <journal_data recompense="1190" quest_title="그럴 줄 알았지" chapterid="1" quest_level="8" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[And senior magician Cynthia dialogue]]></title>
+         <contents mid="31"><![CDATA[<html>About to catch up with the masked priest，Unfortunately, at the door with the lost。Can ask for help right teachers Cynthia。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Advanced magician Cynthia</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[And senior magician Cynthia dialogue]]></destination>
+         <todo_msg mid="33"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_11.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>103,0,0</destination_pos>
+         <destination_mode>custom:101@1,102@1,103@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string>일반 보스 대신 용 추종자 등장
+용 추종자 쓰러트리면 쓰러진 제이크 NPC 등장, 대화 가능</trigger_string>
+         <maptool_index />
+         <title mid="34"><![CDATA[Eliminate Mali An Diantang of masked priests]]></title>
+         <contents mid="35"><![CDATA[<html>Pastor said that masked the door leading to the disappearance of Mali An Diantang。An Diantang to Mali，Elimination of masked priests，Recover the lost secret of the ball！<BR>
+※ <FONT color=#7e12d2>Mali An Diantang are8And above the barrier to enter。</FONT><BR><BR><FONT color=#086171>Melting Forest(Magician of the Road)</FONT> <FONT color=#a82424>→ Mali An Diantang</FONT></html>]]></contents>
+         <destination mid="36"><![CDATA[(Lv8)Mali An Diantang to eliminate masked priest]]></destination>
+         <todo_msg mid="37"><![CDATA[Eliminate Mali An Diantang of masked priests bar。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Jake_Down.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>103,0,0</destination_pos>
+         <destination_mode>custom:103@3</destination_mode>
+         <statemark_npcid>165</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[Jack dialogue with the fallen]]></title>
+         <contents mid="39"><![CDATA[<html>The pastor is actually masked Jack！...看吧 ask。<BR>
+ <BR>
+<FONT color=#a82424>Marian&#39;s Palace →Jack fell down</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[Jack dialogue with the fallen]]></destination>
+         <todo_msg mid="41"><![CDATA[Elimination of masked priests。Jack dialogue with the fallen。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Cl_Leonardo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-1194,3978</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>11</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[More dialogue and senior pastor Leiang Na]]></title>
+         <contents mid="43"><![CDATA[<html>Before the report to the teacher Cynthia，More than the old man first Leiang Na convey Jack&#39;s death right there。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Senior Pastor Leiang Na more</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[More dialogue and senior pastor Leiang Na]]></destination>
+         <todo_msg mid="45"><![CDATA[Magic more to the ridge of the Lei Angna report the death of Jack。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>118</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

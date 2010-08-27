@@ -1,0 +1,192 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_541_armors_of_deadman</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>541</qid>
+      <designer>김주연</designer>
+      <qlevel>28</qlevel>
+      <qdesc>다크 스켈레톤의 갑옷 400148
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[The deceased&#39;s armor]]></qkname>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（The task did not meet the criteria）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Bulletin$<br>Over the task of implementation，Temporarily unable to accept the task of Services。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Bulletin$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Bulletin$<br>Task with a backpack full。<br>（Please order as soon as possible backpack）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="6"><![CDATA[<html>Difficulties?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$General Douglas$<BR>Search the prophet&#39;s work is carried out step by step。<BR>
+But there are several difficulties。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="8"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$General Douglas$<BR>Montenegro is different from the other foot of the Monster Monster，They wear armor more robust。Therefore, the more difficult to eliminate them。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-c" mid="10"><![CDATA[<html>Collection of armor….</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$General Douglas$<BR>I would like to investigate their armor，Search for weaknesses in armor。One of the most easy to survey the giant&#39;s armor dark admirer。Can you help us collect their armor ah ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="12"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$The deceased&#39;s armor$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QW_43.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$General Douglas$<BR>Admirer of the dark haunted place is the giant primary<FONT color=#a82424>Dark Territory guard force base</FONT>。<BR>Where the collection15A dark giant of armor come home。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="" itemindex="400148">
+      <talk_answer link_index="n042_general_duglars-2-a" mid="15"><![CDATA[<html>（Brought in all the pay out）</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$General Douglas$<BR>Dark the giant armor are collected Rights。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-b" mid="17"><![CDATA[<html><FONT color=#086171>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-b" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$General Douglas$<BR>I use statistics to study it，See if you can find a way to destroy it。<BR>You&#39;ve worked hard。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="15" op="]=">400148</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense_view">,5411,5412,5413,5414</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID,541, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">1128</exe>
+         <exe type="huntitem" num="15" exe="" onexe="11">400148</exe>
+         <exe type="conexe" true="8,9,10" false="7,14">0</exe>
+         <exe type="addquestitem" num="1">400148</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="conexe" true="8,9,10" false="">0</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">1129</exe>
+         <exe type="conexe" true="8,9,10" false="">0</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">201128</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">201129</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5411,5412,5413,5414</exe>
+         <exe type="complete">541</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">1,2,4,5,13,15,16,3,12</exelink>
+   <exelink qstep="2" npc="n042_general_duglars" sub="a">0</exelink>
+   <exelink qstep="2" npc="n042_general_duglars" sub="b">1</exelink>
+   <journal_data recompense="1:5411,2:5412,3:5413,4:5414" quest_title="죽은자의 갑옷" chapterid="" quest_level="28" quest_mark_type="10" use_item_list="400148">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_43.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>432,0,0</destination_pos>
+         <destination_mode>custom:431@3,432@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="19"><![CDATA[Effective armor]]></title>
+         <contents mid="20"><![CDATA[<html>Eliminate<FONT color=#a82424>Dark Territory guard force base</FONT>Haunt the followers of the dark giant，And collect15A<FONT color=#a82424>Dark the giant armor</FONT>It。<BR>
+ <BR>
+<FONT color=#086171>Montenegro hill angle（Dark Overlord of the barriers）</FONT> <FONT color=#a82424>→ Dark Territory guard force base</FONT></html>]]></contents>
+         <destination mid="21"><![CDATA[Guard force base in the dark territory to collect armor]]></destination>
+         <todo_msg mid="22"><![CDATA[Dark Territory Force base to guard it。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[Dialogue with the General Douglas]]></title>
+         <contents mid="24"><![CDATA[<html>15A dark giant of the armor collection of complete。It to the sacred king of heaven within the city<FONT color=#a82424>General Douglas</FONTIt。<BR>
+ <BR>
+<FONT color=#086171>Paradise City within the sacred king</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[Dialogue with the General Douglas]]></destination>
+         <todo_msg mid="26"><![CDATA[Back to General Douglas armor right there to hand over。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>28:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>523</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

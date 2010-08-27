@@ -1,0 +1,279 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_006_escape_of_the_catacomb</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>6</qid>
+      <designer>김주연</designer>
+      <qlevel>5</qlevel>
+      <qdesc>300010 붉은 인장 (붉은 인장을 소지하고 있어야 트랩이 동작하지 않는다.)</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>7</nextqid>
+      <nextqname>mq01_007_whereabouts_girl1</nextqname>
+      <nextqnpc>n004_guard_steave</nextqnpc>
+      <qkname mid="1"><![CDATA[Escape from the grave]]></qkname>
+      <qnpc>
+         <npcid>129</npcid>
+         <npcename>n129_scholar_bunstain</npcename>
+         <npckname>문장학자 번스테인 (프레리)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Steve head in self-defense${action:Talk}<BR>You&#39;re going to the grave？<FONT color=#a82424>Minotaur</FONT><FONT color=#a82424>Dion Lake</FONT>Not easy to find。And<FONT color=#a82424>Heraldic scholars Bernstein</FONT>Moving on after，Go<FONT color=#a82424>Grave</FONT>Look before you come looking for me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-1" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_answer link_index="n129_scholar_bunstain-2" mid="134"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="115"><![CDATA[<html>$Heraldic scholars Bernstein${action:Talk}<BR>Come，You。This is a combined<FONT color=#a82424>Red Seal</FONT>。Traps should be no problem now，But I heard<FONT color=#a82424>Grave</FONT>Of<FONT color=#a82424>Minotaur</FONT><FONT color=#a82424>Dion Lake</FONT>Is very terrifying monster。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="QW_2.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-a" mid="118"><![CDATA[<html>It does not matter。Compared to this……(Things that Mingtimoxi)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Steve head in self-defense${action:Talk}<BR>You 来啦？Thank you<FONT color=#a82424>Ancient temple ruins</FONT>For our help。Thanks to you，Missing man to safety who returned to the village。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-a" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-b" mid="120"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Steve head in self-defense$<BR>Has just received a report……Wire basket that was<FONT color=#a82424>Grave</FONT>Of<FONT color=#a82424>Minotaur</FONT><FONT color=#a82424>Dion Lake</FONT>Captured。Ah，The opponent seems a little tricky……<FONT color=#a82424>Dion Lake</FONT>……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-b" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-c" mid="122"><![CDATA[<html>I remember。</html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$Steve head in self-defense$<BR>Cope<FONT color=#a82424>Minotaur Weng Lake</FONT>When，You can only use force to stop its operations skills。Or predict its actions and quickly dodge。Must always pay attention to<FONT color=#a82424>Minotaur</FONT><FONT color=#a82424>Dion Lake</FONT>The sudden spin attacks and sudden attack。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3" mid="124"><![CDATA[<html><FONT size=2>Know。</FONT></html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$Steve head in self-defense$<BR>……Ah……Beginning……That only occasionally……But from the situation……They start playing<FONT color=#a82424>Wire basket</FONT>Idea……Call……Must take<FONT color=#a82424>Wire basket</FONT>Saved，Must be fast。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-2" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="138"><![CDATA[<html>$Heraldic scholars Bernstein$<BR>May wish to find<FONT color=#a82424>Steve head in self-defense</FONT>Listen to his advice it。<BR>
+Goddess bless you willing to。.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3" image="QW_3.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Steve head in self-defense${action:Talk}<BR>Please proceed immediately to<FONT color=#a82424>Grave</FONT>It。We then went to。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-4" image="QW_3.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-4-a" mid="125"><![CDATA[<html>Wire basket and Timothy returned yet？</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Steve head in self-defense$<BR>You&#39;ve worked hard。That you should be able to defeat<FONT color=#a82424>Grave</FONT>Of<FONT color=#a82424>Minotaur</FONT><FONT color=#a82424>Dion Lake</FONT>……Your strength is really amazing。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-4-a" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-4-b" mid="127"><![CDATA[<html>(Explain what the tomb)</html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$Steve head in self-defense$<BR>Not back……<BR>They do not come back with you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-4-b" image="QN_Guard_Timose.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-4-c" mid="129"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$Steve head in self-defense$<BR><FONT color=#a82424>Timothy</FONT>With<FONT color=#a82424>Wire basket</FONT>，Dodged<FONT color=#a82424>Minotaur</FONT><FONT color=#a82424>Dion Lake</FONT>Escaped……？But why has not returned to the village to do……？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-4-c" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-4-!next" mid="131"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-4" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="132"><![CDATA[<html>$Heraldic scholars Bernstein$<BR><FONT color=#a82424>Steve head in self-defense</FONT>Is waiting for you。Let you go and meet Steve。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>붉은 인장을 소지하고 있지 않으면 데미지가 발생하는 트랩 설치
+보스방에 입장하면 퀘스트 컷씬 플레이
+내용: 마물들이 로제를 고대에 만들어진 시설처럼 보이는 곳에 얹는다. 그러자 시설이 반응을 보인다. 마물들은 놀라워하다가 기뻐한다. 그 순간, 갑자기 나타난 티모시가 로제의 손을 잡고 달아난다. </comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">148</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,61,62,62,62</exe>
+         <exe type="complete">6</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n129_scholar_bunstain" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="c" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="3">0,1,2</exelink>
+   <exelink qstep="4" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="4" npc="n004_guard_steave" sub="c">0</exelink>
+   <exelink qstep="4" npc="n004_guard_steave" sub="!next">1</exelink>
+   <journal_data recompense="1:61,2:62" quest_title="카타콤 탈출" chapterid="1" quest_level="5" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,1628,1078</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>129</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>문장학자 번스테인</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>문장학자 번스테인</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[And heraldic scholars dialogue Bernstein]]></title>
+         <contents mid="53"><![CDATA[<html>They set traps to lift Monster approach is their use with Monster<FONT color=#a82424>Red Seal</FONT>Through the trap。<BR><BR><FONT color=#086171>Pourailly town</FONT> <FONT color=#a82424>→ Heraldic scholars Bernstein</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[And heraldic scholars dialogue Bernstein]]></destination>
+         <todo_msg mid="55"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>자경단장 스티브</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>자경단장 스티브</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Dialogue with guard Steve]]></title>
+         <contents mid="57"><![CDATA[<html>Must understand<FONT color=#a82424>Dion Lake</FONT>Related information。To and<FONT color=#a82424>Steve head in self-defense</FONT>Speak。<BR><BR><FONT color=#086171>Pourailly town</FONT> <FONT color=#a82424>→ Steve head in self-defense</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Dialogue with guard Steve]]></destination>
+         <todo_msg mid="59"><![CDATA[Please Steve, head of the dialogue and self-defense。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QM_minotauros_Bison.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>64,0,0</destination_pos>
+         <destination_mode>custom:61@3,62@3,64@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <get_location>카타콤</get_location>
+         <start_npc />
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>자경단장 스티브</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster>카타콤 미노타우르스 1</hunt_monster>
+         <hunt_monsterindex>148</hunt_monsterindex>
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[Weng Lake defeat the leader of the tomb]]></title>
+         <contents mid="61"><![CDATA[<html>Go<FONT color=#a82424>Grave</FONT>Remove<FONT color=#a82424>Weng Lake graves Minotaur</FONT>，Rescued<FONT color=#a82424>Wire basket</FONT>。<BR><BR><FONT color=#086171>Wind forest(Tomb entrance)</FONT> <FONT color=#a82424>→ Grave</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[Weng Lake defeat the leader of the tomb]]></destination>
+         <todo_msg mid="63"><![CDATA[Please go to the grave defeat Lions Lake，Basket wire rescue。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>자경단장 스티브</start_npc>
+         <desc_location>바람 숲</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>가드 디킨슨</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Dialogue with guard Steve]]></title>
+         <contents mid="65"><![CDATA[<html>From<FONT color=#a82424>Grave</FONT>Of<FONT color=#a82424>Minotaur</FONT><FONT color=#a82424>Dion Lake</FONT>Wire basket and rescued the hands of Timothy，But do not know whether they successfully escape。<BR>Go back to see<FONT color=#a82424>Steve head in self-defense</FONT>。<BR><BR><FONT color=#086171>Pourailly town</FONT> <FONT color=#a82424>→ Steve head in self-defense</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Dialogue with guard Steve]]></destination>
+         <todo_msg mid="67"><![CDATA[Repelled the Lions Lake。Please return to Pourailly town where self-defense, head of Steve。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>5</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

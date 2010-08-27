@@ -1,0 +1,344 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_117_love_money</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>117</qid>
+      <designer>손원호</designer>
+      <qlevel>5</qlevel>
+      <qdesc>오브의 안전을 위해 회랑으로 갔다는 제이크의 소식을 듣고, 길이 엇갈린 소서리스는 오브의 안전을 전하기 위해 회랑으로 향한다. 소식을 전하고 마을로 온 소서리스에게 타라는 오브가 사라졌다는 소식을 전한다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>118</nextqid>
+      <nextqname>mq05_118_snatch_orb</nextqname>
+      <nextqnpc>n012_sorceress_master_cynthia</nextqnpc>
+      <qkname mid="1"><![CDATA[Rich or good]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>14</npcid>
+         <npcename>n014_cleric_cedric</npcename>
+         <npckname>클레릭 세드릭   (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라   (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>206</npcid>
+         <npcename>n206_cleric_jake</npcename>
+         <npckname>클레릭 제이크(고요한 수도원 회랑)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1" image="" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-1-a" mid="6"><![CDATA[<html>What?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Pastor Sai Derui$<BR>Please wait。Sorry there&#39;s something to please you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1-a" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-1-b" mid="8"><![CDATA[<html>Jack?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Pastor Sai Derui$<BR>... Is about<FONT color=#a82424>Jack</FONT>Delegate。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1-b" image="QW_9.dds" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-1-c" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Pastor Sai Derui$<BR>Yes，To find Baozhu，Jack also went<FONT color=#a82424>Silent monastery corridor</FONT>。But he did not know what Miss Sarah has been recovered。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1-c" image="" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-1-d" mid="72"><![CDATA[<html>（Ah...Oh, a little trouble）</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Pastor Sai Derui$<BR>Can go back again，Miss Sarah has been found to convey his message?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1-d" image="" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-1-e" mid="12"><![CDATA[<html>Well。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Pastor Sai Derui$<BR>You know I do not have family belongings，But this time, if the words help to Jack，I will<FONT color=#a82424>Rich rewards</FONT>Of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1-e" image="QW_9.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Pastor Sai Derui$<BR>It would please you。On<FONT color=#a82424>Silent monastery corridor</FONT>。Quickly in the past to see it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1" image="" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$Magician Tala${action:Talk}<BR>It seems a little cold weather?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Advanced magician Cynthia$<BR>
+The atmosphere is very unusual magic。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-2" image="QW_9.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Pastor Sai Derui$<BR>In the silence of the monastery cloister。Quickly leave ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n206_cleric_jake-2" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n206_cleric_jake-2-a" mid="16"><![CDATA[<html>Baozhu have found。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Pastor Jack$<BR>You are to find<FONT color=#a82424>Secret of the ball</FONT>You come?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n206_cleric_jake-2-a" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n206_cleric_jake-2-b" mid="18"><![CDATA[<html>Be，Do not worry。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Pastor Jack$<BR>Eh，Really...Luckily it。Pearl of in a safe place now you do?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n206_cleric_jake-2-b" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Pastor Jack$<BR>Call，Fortunately,。 <BR>
+Then，I went back to report the situation slightly。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-3-a" mid="25"><![CDATA[<html>What ah?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Magician Tala${action:Talk}<BR>Where the?Find the Lao Bantian it！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3-a" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n015_sorceress_tara-3-b" mid="29"><![CDATA[<html>Cynthia adults do not properly preserved...</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Magician Tala$<BR>Baozhu disappear Rights。<FONT color=#a82424>Secret of the ball</FONT>Ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3-b" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n015_sorceress_tara-3-c" mid="31"><![CDATA[<html>Ah。</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Magician Tala$<BR>You do not feel a bit strange？<FONT color=#a82424>Secret of the ball</FONT>Cynthia is from the custody of confidential，How to know what the offender is？Is……Predecessors, it took？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3-c" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-3-d" mid="33"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Magician Tala$<BR>Call...Regret。Anyway, we are in a state of high tension among the，Hurry first <FONT color=#a82424>Cynthia</FONT>Adults there to check it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3-d" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-3-e" mid="35"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3-e" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Magician Tala$<BR><FONT color=#a82424>Cynthia</FONT>Be upset with adults，You have CAREFUL IN THE SUMMER！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Magician Tala$<BR><FONT color=#a82424>Cynthia</FONT>Be upset with adults，Quickly in the past to see it！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-a" mid="39"><![CDATA[<html>Not me ah。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR><FONT color=#382000>{user_nick}！</FONT>You you you you you！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-a" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-b" mid="41"><![CDATA[<html>Not me la。</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Advanced magician Cynthia$<BR>Not a ah！Even then you Baozhu，How can you steal something that does? Do not pay out if my，Are you pretty！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-c" mid="43"><![CDATA[<html>（What Well...）</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Advanced magician Cynthia$<BR>... What，Not your? <FONT color=#7e12d2>（Pure color）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-d" mid="45"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Advanced magician Cynthia$<BR>I you had any brains，How could you do。Even if you re-reckless，At least in the know <FONT color=#a82424>Important thing to keep his small life bar。</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-d" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-e" mid="76"><![CDATA[<html>My pastor said Saide Rui。</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Advanced magician Cynthia$<BR>But how can the enemy in the end Miss Sarah on I know it here?Strange。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-e" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-!next" mid="47"><![CDATA[<html>（Call...）</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Advanced magician Cynthia$<BR>Oops，I you had any brains，No wonder you look honestly。<BR>Do not worry，I feel pretty good，Lesson you will not。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1170,,,,</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">117</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n014_cleric_cedric" sub="b" />
+   <exelink qstep="1" npc="n014_cleric_cedric" sub="c" />
+   <exelink qstep="1" npc="n014_cleric_cedric" sub="d" />
+   <exelink qstep="1" npc="n014_cleric_cedric" sub="e">0,1</exelink>
+   <exelink qstep="2" npc="n206_cleric_jake" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="3" npc="n015_sorceress_tara" sub="c" />
+   <exelink qstep="3" npc="n015_sorceress_tara" sub="d">0</exelink>
+   <exelink qstep="3" npc="n015_sorceress_tara" sub="e">1,2</exelink>
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="e" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="!next">0</exelink>
+   <journal_data recompense="1170" quest_title="부자가 좋아" chapterid="1" quest_level="5" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Cl_Fallen_Cedric.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>6,n14</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>14</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Dialogue with the pastor Saide Rui]]></title>
+         <contents mid="50"><![CDATA[<html>Pastor Sai Derui looking for my。To villages outside the ramp to find Saide Rui Xue Shuang see it。<BR><BR><FONT color=#086171>雪霜 ramp</FONT> <FONT color=#a82424>→Pastor Sai Derui</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Dialogue with the pastor Saide Rui]]></destination>
+         <todo_msg mid="52"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_9.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>93,0,0</destination_pos>
+         <destination_mode>custom:91@1,92@1,93@4</destination_mode>
+         <statemark_npcid>206</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string>고요한 수도원 회랑
+n206_cleric_jake : 제이크 등장 </trigger_string>
+         <maptool_index />
+         <title mid="53"><![CDATA[Convey a message to Reverend Jack]]></title>
+         <contents mid="54"><![CDATA[<html>Jack is also silent monastery cloister。Miss Sarah to tell him there is now very safe。<BR>
+ <BR>
+<FONT color=#086171>Melting Forest（Silent monastery entrance）</FONT> <FONT color=#a82424>→Silent monastery corridor</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Convey a message to Reverend Jack]]></destination>
+         <todo_msg mid="56"><![CDATA[Jack silent monastery cloister to see it。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n15</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>15</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Tara dialogue and magician]]></title>
+         <contents mid="58"><![CDATA[<html>Jack to a lot of money！To convey the good news Tara。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Magician Tala</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Tara dialogue and magician]]></destination>
+         <todo_msg mid="60"><![CDATA[Tara Ridge to convey messages Magic Bar。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[And senior magician Cynthia dialogue]]></title>
+         <contents mid="62"><![CDATA[<html>Secret of the ball is lost，The suspected to my head。Cynthia told the teacher I am innocent！<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Advanced magician Cynthia</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[And senior magician Cynthia dialogue]]></destination>
+         <todo_msg mid="64"><![CDATA[To Cynthia tell I was innocent。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>116</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,704 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Sam (IMCGames Co., Ltd) -->
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<quest_desc>
+		<qename>mq11_410_sea_monsters_soul</qename>
+		<qtype>mainquest</qtype>
+		<qcomtype>ONCE</qcomtype>
+		<qchapter>5</qchapter>
+		<qid>410</qid>
+		<designer>김인정</designer>
+		<qlevel>30</qlevel>
+		<qdesc>1. 아르젠타와 대화
+2. 주교와 대화
+3. 클림드와 대화
+4. 귀족들과 돌아가며 대화
+</qdesc>
+		<qdifficulty>1</qdifficulty>
+		<nextqid>411</nextqid>
+		<nextqname>mq11_411_rose_in_nightmare</nextqname>
+		<nextqnpc>n039_bishop_ignasio</nextqnpc>
+		<qkname mid="1"><![CDATA[Things human are]]></qkname>
+		<qnpc>
+			<npcid>209</npcid>
+			<npcename>n209_elite_soldier</npcename>
+			<npckname>정예병사 클림드</npckname>
+		</qnpc>
+		<qnpc>
+			<npcid>216</npcid>
+			<npcename>n216_geraint_wounded</npcename>
+			<npckname>부상당한 제레인트(왕성 비밀장소)</npckname>
+		</qnpc>
+		<qnpc>
+			<npcid>217</npcid>
+			<npcename>n217_argenta</npcename>
+			<npckname>아르젠타(왕성 비밀장소)</npckname>
+		</qnpc>
+		<qnpc>
+			<npcid>38</npcid>
+			<npcename>n038_royal_magician_kalaen</npcename>
+			<npckname>궁정 소서리스 칼라엔</npckname>
+		</qnpc>
+		<qnpc>
+			<npcid>39</npcid>
+			<npcename>n039_bishop_ignasio</npcename>
+			<npckname>주교 이그나시오</npckname>
+		</qnpc>
+		<qnpc>
+			<npcid>40</npcid>
+			<npcename>n040_king_casius</npcename>
+			<npckname>국왕 카시우스</npckname>
+		</qnpc>
+		<qnpc>
+			<npcid>41</npcid>
+			<npcename>n041_duke_stwart</npcename>
+			<npckname>공작 스튜어트</npckname>
+		</qnpc>
+		<qnpc>
+			<npcid>42</npcid>
+			<npcename>n042_general_duglars</npcename>
+			<npckname>장군 더글라스</npckname>
+		</qnpc>
+	</quest_desc>
+	<talk_paragraph index="q_enter"/>
+	<talk_paragraph index="!quit"/>
+	<talk_paragraph index="_no_quest">
+		<talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_full_quest">
+		<talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_full_inventory">
+		<talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space。<br>(Please sort out backpack)</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_daily_quest_fail">
+		<talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_full_Qinventory">
+		<talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n217_argenta-1" image="" itemindex="">
+		<talk_question mid="7"><![CDATA[<html>$Algerita$<BR>Give me a good Daizhuo，Rookie。<BR>
+※ <FONT color=#7e12d2>S4Chapter. [King City sacred paradise]Has been completed。<BR></FONT>※ <FONT color=#7e12d2>S5Chapter. [Guardian Geraint]The next version update will open。</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n216_geraint_wounded-1" image="QN_Rose.dds" itemindex="">
+		<talk_question mid="8"><![CDATA[<html>$Geraint$<BR>You are worried about the descendants of the ancient people it？As long as I was，No one can hurt her，You can rest assured。<BR>
+※ <FONT color=#7e12d2>S4Chapter. [King City sacred paradise]Has been completed。<BR></FONT>※ <FONT color=#7e12d2>S5Chapter. [Guardian Geraint]The next version update will open。</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n040_king_casius-1" image="QN_Rose.dds" itemindex="">
+		<talk_question mid="9"><![CDATA[<html>$King Kaxiwusi$<BR>Can<FONT color=#a82424>Prophet</FONT>Brought back，Your contribution is not small ah。Omen...I was surprised。But the prophet who was...Well that is a country girls，Really let me down ah。 Not to bow to me，Always in bed，Ah really disappointed...Hey。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n041_duke_stwart-1" image="QN_Rose.dds" itemindex="">
+		<talk_question mid="10"><![CDATA[<html>$Duke Stewart$<BR>Listen to the soldiers of the report，Band<FONT color=#a82424>Prophet</FONT>To the King City ground is<FONT color=#a82424>Golden Dragon</FONT>。<BR>…However, consider this worthy of a good thing oh。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n038_royal_magician_kalaen-1" image="QN_Rose.dds" itemindex="">
+		<talk_question mid="11"><![CDATA[<html>$Court magician Kala An${action:Talk}<BR>That was called<FONT color=#a82424>Prophet</FONT>Girl，Has been sleeping？Like like a big slacker……Oh，I know this！Although there are many rumors about the Prophet，But I knew not what to use！</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n042_general_duglars-1" image="QN_Rose.dds" itemindex="">
+		<talk_question mid="12"><![CDATA[<html>$General Douglas$<BR>Ah... I heard finally rescued<FONT color=#a82424>Prophet</FONT>Has been sleeping。In the end is why? ...Anyway, we have another try，On the Prophet&#39;s address to the king, on the。In short you have worked hard。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-1" image="" itemindex="">
+		<talk_question mid="13"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Oh，Sacred paradise true friend！<BR>Welcome！<BR>
+※ <FONT color=#7e12d2>S4Chapter. [King City sacred paradise]Has been completed。<BR></FONT>※ <FONT color=#7e12d2>S5Chapter. [Guardian Geraint]The next version update will open。</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-1-a" image="QN_Npc_Velskud1.dds" itemindex="">
+		<talk_answer link_index="n039_bishop_ignasio-1-b" mid="17"><![CDATA[<html>Uh，This in the end how matter...</html>]]></talk_answer>
+		<talk_question mid="16"><![CDATA[<html>$Bishop Ignacio$<BR>But the guardian of your holy warriors of heaven。Really great ah。<BR>
+But…Incredible。Knight was still the Kingdom of<FONT color=#a82424>Beisikede</FONT>Actually cling to<FONT color=#a82424>Black Dragon</FONT>Power。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-1-b" image="QM_black_Dragon.dds" itemindex="">
+		<talk_answer link_index="n039_bishop_ignasio-1-c" mid="19"><![CDATA[<html>（Unfortunately, Bishop of surface expression with）</html>]]></talk_answer>
+		<talk_question mid="18"><![CDATA[<html>$Bishop Ignacio$<BR>In order to prevent<FONT color=#a82424>Black Dragon</FONT>The battle of the people and its，Instead, its pollution by。What a strange, sad story。It&#39;s a shame really……</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-1-c" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+		<talk_answer link_index="n039_bishop_ignasio-1-d" mid="109"><![CDATA[<html>So that。</html>]]></talk_answer>
+		<talk_question mid="108"><![CDATA[<html>$Bishop Ignacio$<BR>And with<FONT color=#a82424>Prophet</FONT>Is back<FONT color=#a82424>Golden Dragon</FONT>。<BR>Nobles may have Naofan Tian a。Have already begun meeting to discuss follow-up question，However, the results are still not reached any。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-1-d" image="QN_Rose.dds" itemindex="">
+		<talk_answer link_index="n039_bishop_ignasio-1-e" mid="21"><![CDATA[<html>Before that I would like to convey the situation on the Prophet。</html>]]></talk_answer>
+		<talk_question mid="20"><![CDATA[<html>$Bishop Ignacio$<BR>Hear，Now dragon and <FONT color=#a82424>Prophet</FONT>Stay in place with only you can freely。<BR>Says no<FONT color=#a82424>Nobility</FONT>They said there are a lot of gossip，So I could listen to a word ah?</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-1-e" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+		<talk_answer link_index="n039_bishop_ignasio-1-f" mid="23"><![CDATA[<html>Ah，Then I&#39;ll be right back。</html>]]></talk_answer>
+		<talk_question mid="22"><![CDATA[<html>$Bishop Ignacio$<BR>Oh? …Ah，Yes ah。You accept the commission but from other parts of the process to save the Prophet to here。I&#39;d forgotten that this crop of the。Ha ha。<BR>
+If you want to send letters of words，Can find<FONT color=#a82424>Elite soldiers Cleander</FONT>。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-1-f" image="QM_black_Dragon.dds" itemindex="">
+		<talk_question mid="24"><![CDATA[<html>$Bishop Ignacio$<BR>Kuaiqukuaihui ah。<BR>Although<FONT color=#a82424>Black</FONT> <FONT color=#a82424>Dragon</FONT>Has lost track，But human activities are now really beginning。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n209_elite_soldier-1" image="QN_Rose.dds" itemindex="">
+		<talk_question mid="82"><![CDATA[<html>$Elite soldiers Cleander$<BR>I have heard at last to save the <FONT color=#a82424>Prophet</FONT>News。<BR>Lucky ah。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-2" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+		<talk_question mid="25"><![CDATA[<html>$Bishop Ignacio$<BR>
+If you want to send letters of words，Can be delegated to<FONT color=#a82424>Elite soldiers Cleander</FONT>。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n209_elite_soldier-2" image="" itemindex="">
+		<talk_answer link_index="n209_elite_soldier-2-class4" mid="111"><![CDATA[<html>Write here。</html>]]></talk_answer>
+		<talk_question mid="110"><![CDATA[<html>$Elite soldiers Cleander${action:talk}<BR>Ah，You mean<FONT color=#a82424>Letter</FONT> Ah? Like me。<BR>I will be the messenger to King City。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n209_elite_soldier-2-a" image="QN_Elder_Harold.dds" itemindex="">
+		<talk_answer link_index="n209_elite_soldier-2-d" mid="113"><![CDATA[<html>（Submit letters）</html>]]></talk_answer>
+		<talk_question mid="112"><![CDATA[<html>$Elite soldiers Cleander$<BR>Ah… To Pourailly town <FONT color=#a82424>Harold village</FONT> You can do? Then write your name on it here。<BR>
+<FONT color=#7e12d2>（Completed）</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n209_elite_soldier-2-b" image="QN_SoceressCynthia.dds" itemindex="">
+		<talk_answer link_index="n209_elite_soldier-2-d" mid="115"><![CDATA[<html>（Submit letters）</html>]]></talk_answer>
+		<talk_question mid="114"><![CDATA[<html>$Elite soldiers Cleander$<BR>Ah… Ridge to the magic <FONT color=#a82424>Advanced magician Cynthia</FONT>Adults can do?Then write your name on it here。<BR>
+<FONT color=#7e12d2>（Completed）</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n209_elite_soldier-2-c" image="QN_Cl_Tomas.dds" itemindex="">
+		<talk_answer link_index="n209_elite_soldier-2-d" mid="117"><![CDATA[<html>（Submit letters）</html>]]></talk_answer>
+		<talk_question mid="116"><![CDATA[<html>$Elite soldiers Cleander$<BR>Ah… Ridge to the magic<FONT color=#a82424>Pastor Thomas</FONT>Adults can do?Then write your name on it here。<BR>
+<FONT color=#7e12d2>（Completed）</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n209_elite_soldier-2-d" image="" itemindex="">
+		<talk_answer link_index="n209_elite_soldier-2-e" mid="119"><![CDATA[<html>Thank you。</html>]]></talk_answer>
+		<talk_question mid="118"><![CDATA[<html>$Elite soldiers Cleander$<BR>Ah，I&#39;ll be served。<BR>Got the news of each other will be too happy。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n209_elite_soldier-2-e" image="QN_Npc_Bishop.dds" itemindex="">
+		<talk_question mid="120"><![CDATA[<html>$Elite soldiers Cleander$<BR>It seems you have a lot to do?<BR>Since it is obtained <FONT color=#a82424>Bishop Ignacio</FONT> Adults who commissioned，Certainly very busy。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n209_elite_soldier-3" image="QN_Npc_Bishop.dds" itemindex="">
+		<talk_question mid="121"><![CDATA[<html>$Elite soldiers Cleander${action:Talk}<BR>Zhe Feng letter I have sent for you，Please be assured that。<BR>You have to return to<FONT color=#a82424>Bishop Ignacio</FONT>There you go？</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-3" image="QN_Rose.dds" itemindex="">
+		<talk_answer link_index="n039_bishop_ignasio-3-a" mid="123"><![CDATA[<html>Ah，Be it so。</html>]]></talk_answer>
+		<talk_question mid="122"><![CDATA[<html>$Bishop Ignacio$<BR>Welcome ah。<BR>Well, you are linked to those worried<FONT color=#a82424>Prophet</FONT>People，I can put down the heart of the。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-3-a" image="" itemindex="">
+		<talk_answer link_index="n039_bishop_ignasio-3-b" mid="125"><![CDATA[<html>Understand。</html>]]></talk_answer>
+		<talk_question mid="124"><![CDATA[<html>$Bishop Ignacio${action:talk}<BR>Now for the<FONT color=#a82424>Prophet</FONT>And<FONT color=#a82424>Wounded</FONT>Their treatment of，His Majesty the King and many nobles are still debating。<BR>Are now，Can be sleeping in the Prophet only people around you，I could listen to a word ah?</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-3-b" image="QN_Npc_King_Casius.dds" itemindex="">
+		<talk_question mid="126"><![CDATA[<html>$Bishop Ignacio$<BR>So let me say right from the beginning。<BR>First…To young <FONT color=#a82424>King</FONT> <FONT color=#a82424>Kaxiwusi </FONT>His Majesty greeting to ah?</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-4" image="QN_Npc_King_Casius.dds" itemindex="">
+		<talk_question mid="127"><![CDATA[<html>$Bishop Ignacio$<BR>Not wake up the prophet…Take her back to the Golden Dragon…Many people seem to have much to say。<BR><FONT color=#7e12d2>（Need to dialogue with the king Kaxiwusi）</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n040_king_casius-4" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+		<talk_answer link_index="n040_king_casius-4-a" mid="129"><![CDATA[<html>You mean Geraint?</html>]]></talk_answer>
+		<talk_question mid="128"><![CDATA[<html>$King Kaxiwusi$<BR>That……Blonde swordsman……The soldiers said he was<FONT color=#a82424>Golden Dragon</FONT>……<BR>His greeting to me how not to do？<BR>
+True……Really rude……</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n040_king_casius-4-a" image="QN_Npc_Geraint_silhouette.dds" itemindex="">
+		<talk_answer link_index="n040_king_casius-4-b" mid="131"><![CDATA[<html>（Kaxiwusi appear very soon）</html>]]></talk_answer>
+		<talk_question mid="130"><![CDATA[<html>$King Kaxiwusi$<BR>Geraint？The past and<FONT color=#a82424>Black Dragon fought hero</FONT>Name……But<FONT color=#a82424>Geraint</FONT>The name itself is indeed quite common……<BR>Ah，Anyway，This city is the I&#39;s，How can come in without permission to do the door closed……Really rude。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n040_king_casius-4-b" image="QN_Rose.dds" itemindex="">
+		<talk_answer link_index="n040_king_casius-4-c" mid="133"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+		<talk_question mid="132"><![CDATA[<html>$King Kaxiwusi$<BR>This……Should have been kick out of his，Show the majesty of the king……But as he set a great service，I&#39;ll forgive him once。<BR>For I，To take good care of<FONT color=#a82424>Prophet</FONT>。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n040_king_casius-4-c" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+		<talk_question mid="134"><![CDATA[<html>$King Kaxiwusi$<BR>The aftermath of war，I decided to<FONT color=#a82424>Uncle</FONT>And<FONT color=#a82424>General Douglas</FONT>。This……This should……It？<BR>
+<FONT color=#7e12d2>(Stewart looked at Duke)</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-5" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+		<talk_question mid="135"><![CDATA[<html>$Bishop Ignacio$<BR>Not wake up the prophet…Take her back to the Golden Dragon…Many people seem to have much to say。<BR><FONT color=#7e12d2>（Need to dialogue with the Duke Stewart）</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n040_king_casius-5" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+		<talk_question mid="136"><![CDATA[<html>$King Kaxiwusi$<BR>Adults say uncle…Jinlong Wang is not what the city underground …Bad thing。 Omen，I was thinking。<BR><FONT color=#7e12d2>（Need to dialogue with the Duke Stewart）</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n041_duke_stwart-5" image="QN_Rose.dds" itemindex="">
+		<talk_answer link_index="n041_duke_stwart-5-a" mid="139"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+		<talk_question mid="137"><![CDATA[<html>$Duke Stewart${action:Stand2}<BR>Originally thought that all evil dragon，Really surprising。<BR>
+And<FONT color=#a82424>Golden Dragon</FONT>Also the appearance of human，And<FONT color=#a82424>Prophet</FONT>Appeared together……Real surprise。<BR>
+So I would think so。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n041_duke_stwart-5-a" image="QN_Npc_King_Casius.dds" itemindex="">
+		<talk_answer link_index="n041_duke_stwart-5-b" mid="141"><![CDATA[<html>（Duke of self-serving interpretation of、Has moved）</html>]]></talk_answer>
+		<talk_question mid="140"><![CDATA[<html>$Duke Stewart$<BR>That is our small<FONT color=#a82424>King</FONT>The End by the probation。Even<FONT color=#a82424>Evil dragon</FONT>Began<FONT color=#a82424>Guard</FONT>Holy heaven。<BR>Oh……This is a wonderful thing ah？</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n041_duke_stwart-5-b" image="QN_Npc_King_Casius.dds" itemindex="">
+		<talk_answer link_index="n041_duke_stwart-5-c" mid="143"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+		<talk_question mid="142"><![CDATA[<html>$Duke Stewart$<BR>Good thing about this package，And then widely publicize the，People who will be so pleased，Will praise His Majesty the King。<BR>And strong in<FONT color=#a82424>Black Knight</FONT>Winning the battle，These are all child care<FONT color=#a82424>His Majesty the King</FONT>Blessing。Ah，It is certain。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n041_duke_stwart-5-c" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+		<talk_answer link_index="n041_duke_stwart-5-d" mid="145"><![CDATA[<html>(Duke glanced furtively General)</html>]]></talk_answer>
+		<talk_question mid="144"><![CDATA[<html>$Duke Stewart$<BR>
+Compared，Those clamoring for additional military spending、Mobilization of the elite military forces have done in the end ah？<BR>
+Hum……Certainly，I am not in doubt<FONT color=#a82424>General Douglas</FONT>Loyalty……Ah ha。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n041_duke_stwart-5-d" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+		<talk_question mid="146"><![CDATA[<html>$Duke Stewart$<BR>Good，I have to prepare as quickly as possible，King&#39;s contribution to public information。Let your first step down。You can fight loyal to His Majesty，I think you will certainly proud of。<BR><FONT color=#7e12d2>(General Douglas listened impassively, then Duke)</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n041_duke_stwart-6" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+		<talk_question mid="148"><![CDATA[<html>$Duke Stewart${action:Stand2}<BR>Those clamoring for additional military spending、Mobilization of the elite military forces have done in the end ah？Hum……<BR>
+<FONT color=#7e12d2>(General Douglas dialogue must)</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n040_king_casius-6" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+		<talk_question mid="149"><![CDATA[<html>$King Kaxiwusi$<BR>Although、While I think that the views of adult uncle……Can do no wrong……But I also believe that General Douglas also set a lot of the……Credit。<BR><FONT color=#7e12d2>(General Douglas dialogue must)</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-6" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+		<talk_question mid="150"><![CDATA[<html>$Bishop Ignacio$<BR>The Prophet did not wake up……Take her back to the Golden Dragon……<BR>
+This matter should be how to deal with，I think we have a lot of say。<BR><FONT color=#7e12d2>(General Douglas dialogue must)</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n042_general_duglars-6" image="QN_Rose.dds" itemindex="">
+		<talk_answer link_index="n042_general_duglars-6-a" mid="152"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+		<talk_question mid="151"><![CDATA[<html>$General Douglas${action:Talk}<BR>Hear<FONT color=#a82424>Prophet</FONT>Has been unable to wake sleeping。Help us defeat the enemy knight is<FONT color=#a82424>Golden Dragon</FONT>……<BR>Really unbelievable。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n042_general_duglars-6-a" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+		<talk_answer link_index="n042_general_duglars-6-b" mid="156"><![CDATA[<html>(General Douglas assumed a disgruntled face)</html>]]></talk_answer>
+		<talk_question mid="153"><![CDATA[<html>$General Douglas$<BR>So many things happened at once，I worry that people will shake their。<FONT color=#a82424>Duke</FONT>And<FONT color=#a82424>Bishop</FONT>Should be properly handled，Stable living people……But you only pay attention to them，Forget the hard work paid soldiers。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n042_general_duglars-6-b" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+		<talk_answer link_index="n042_general_duglars-6-c" mid="158"><![CDATA[<html>（It is very not be）</html>]]></talk_answer>
+		<talk_question mid="157"><![CDATA[<html>$General Douglas$<BR>We face many of the Monster started fighting，So very heavy army casualties。<FONT color=#a82424>Duke</FONT>Attention may all be<FONT color=#a82424>Golden Dragon</FONT>Attracted……<BR>The soldiers failed to properly credit evaluation，I regret。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n042_general_duglars-6-c" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+		<talk_question mid="159"><![CDATA[<html>$General Douglas$<BR>I think the treatment of injuries and the elimination of priority remnants Monster。<BR><FONT color=#a82424>Court magician Kala An</FONT>，Do not know how you think。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n042_general_duglars-7" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+		<talk_question mid="160"><![CDATA[<html>$General Douglas$<BR>Although I do not know the other nobles Kuaizenmexiang，But as I feel is imperative that treatment of the wounded were rushed processing and eliminate the remnants of something strange creatures。<BR><FONT color=#7e12d2>（Need to dialogue with the court magician Kala An）</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-7" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+		<talk_question mid="162"><![CDATA[<html>$Bishop Ignacio$<BR>Not wake up the prophet…Take her back to the Golden Dragon…Many people seem to have much to say。<BR><FONT color=#7e12d2>（Need to dialogue with the court magician Kala An）</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n040_king_casius-7" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+		<talk_question mid="163"><![CDATA[<html>$King Kaxiwusi$<BR>First，If the prophet can wake up to greet me like a。When will it wake up?<BR><FONT color=#7e12d2>（Need to dialogue with the court magician Kala An）</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n041_duke_stwart-7" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+		<talk_question mid="164"><![CDATA[<html>$Duke Stewart$<BR>Ah… <FONT color=#a82424>Jinlong Chen services compassion on His Majesty the King，Determined to be the guardian of the Dragon</FONT>！…How?Very decent bar?<BR><FONT color=#7e12d2>（Need to dialogue with the court magician Kala An）</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n038_royal_magician_kalaen-7" image="QN_Npc_Bishop.dds" itemindex="">
+		<talk_answer link_index="n038_royal_magician_kalaen-7-a" mid="168"><![CDATA[<html>（Kala An could not help laughing out loud）</html>]]></talk_answer>
+		<talk_question mid="166"><![CDATA[<html>$Court magician Kala An${action:Talk}<BR>1 heard<FONT color=#a82424>Golden Dragon</FONT>There，The same as that raccoon<FONT color=#a82424>Bishop</FONT>But the face is pale ah？Unfortunately, you do not see。<BR>
+And it is ridiculous！Kaka Ka～</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n038_royal_magician_kalaen-7-a" image="QN_Rose.dds" itemindex="">
+		<talk_answer link_index="n038_royal_magician_kalaen-7-b" mid="170"><![CDATA[<html>Does not awake，Ah really a bit worrying。</html>]]></talk_answer>
+		<talk_question mid="169"><![CDATA[<html>$Court magician Kala An$<BR>Whether there underground dragon，I have, and it does not matter。<BR>
+But<FONT color=#a82424>Prophet</FONT>Always wake up is not the answer。<BR>Prophet Prophet should have looked，Should give us what the point of prophecy，Not you？</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n038_royal_magician_kalaen-7-b" image="QN_Rose.dds" itemindex="">
+		<talk_answer link_index="n038_royal_magician_kalaen-7-c" mid="172"><![CDATA[<html>Really do?</html>]]></talk_answer>
+		<talk_question mid="171"><![CDATA[<html>$Court magician Kala An$<BR>Well，Well～I know you and I think the same。Ha ha ha～<BR>
+Do not worry。I will have handed down the secret magic magician wake<FONT color=#a82424>Prophet</FONT>。You just watch。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n038_royal_magician_kalaen-7-c" image="" itemindex="">
+		<talk_answer link_index="n038_royal_magician_kalaen-7-d" mid="174"><![CDATA[<html>（Ah now start looking for information…）</html>]]></talk_answer>
+		<talk_question mid="173"><![CDATA[<html>$Court magician Kala An$<BR>
+Of course，I am not saying right away to her wake。Everything need to be prepared！<FONT color=#7e12d2>(Kala An scramble turned over a huge book)</FONT><BR>
+Should be seen in this neighborhood is ah……Is not this the book you……<BR>
+<FONT color=#7e12d2>(Rummage)</FONT> You，What you see ah！！</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n038_royal_magician_kalaen-7-d" image="QN_Npc_Bishop.dds" itemindex="">
+		<talk_question mid="175"><![CDATA[<html>$Court magician Kala An$<BR>I need a little time to prepare。You help me to deal with the same raccoon<FONT color=#a82424>Bishop</FONT>It。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n042_general_duglars-8" image="QN_Npc_Bishop.dds" itemindex="">
+		<talk_question mid="176"><![CDATA[<html>$General Douglas$<BR>Although I do not know the other nobles Kuaizenmexiang，But as I feel is imperative that treatment of the wounded were rushed processing and eliminate the remnants of something strange creatures。<BR><FONT color=#7e12d2>（Need to dialogue with the Bishop Ignacio）</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n040_king_casius-8" image="QN_Npc_Bishop.dds" itemindex="">
+		<talk_question mid="177"><![CDATA[<html>$King Kaxiwusi$<BR>First，If the prophet can wake up to greet me like a。When will it wake up?<BR><FONT color=#7e12d2>（Need to dialogue with the Bishop Ignacio）</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n041_duke_stwart-8" image="QN_Npc_Bishop.dds" itemindex="">
+		<talk_question mid="178"><![CDATA[<html>$Duke Stewart$<BR>Ah… Jinlong Chen services compassion on His Majesty the King，Determined to be the guardian of the Dragon！<BR>
+…How?Very decent bar?<BR><FONT color=#7e12d2>（Need to dialogue with the Bishop Ignacio）</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n038_royal_magician_kalaen-8" image="QN_Npc_Bishop.dds" itemindex="">
+		<talk_question mid="179"><![CDATA[<html>$Court magician Kala An${action:talk}<BR>When I started to prepare，You went to the bishop as well to meet a raccoon。He seems to also find you have gone wrong。Ha ha ha。<BR><FONT color=#7e12d2>（Need to dialogue with the Bishop Ignacio）</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-8" image="QN_Rose.dds" itemindex="">
+		<talk_answer link_index="n039_bishop_ignasio-8-a" mid="181"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+		<talk_question mid="180"><![CDATA[<html>$Bishop Ignacio${action:talk}<BR>You may also have heard the，Since many problems facing，We are now very busy。<BR>Among，I am most worried<FONT color=#a82424>Prophet</FONT>Ah。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-8-a" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+		<talk_answer link_index="n039_bishop_ignasio-8-b" mid="183"><![CDATA[<html>You can not wake her up?</html>]]></talk_answer>
+		<talk_question mid="182"><![CDATA[<html>$Bishop Ignacio$<BR>Although he returned to the Prophet，But did not wake up，Do not know what she has power in the end，Goddess in the end, what will convey to her？<BR>
+And<FONT color=#a82424>Geraint</FONT>In order to protect the Prophet，Now become immobile。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-8-b" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+		<talk_answer link_index="n039_bishop_ignasio-8-c" mid="185"><![CDATA[<html>Is there any way you？</html>]]></talk_answer>
+		<talk_question mid="184"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>Court magician Kala An</FONT>Like looking for the secret code 佩奥里斯塔。I am also looking for the Goddess Mission some of the information passed down。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-8-c" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+		<talk_answer link_index="n039_bishop_ignasio-8-d" mid="187"><![CDATA[<html>Ah? Should I go?</html>]]></talk_answer>
+		<talk_question mid="186"><![CDATA[<html>$Bishop Ignacio$<BR>I 倒是 found a potentially effective treatment。<BR>
+I like to use the secret code Mission wake Prophet。Can you help me to tell<FONT color=#a82424>Geraint</FONT>You？</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n039_bishop_ignasio-8-d" image="" itemindex="">
+		<talk_answer link_index="n039_bishop_ignasio-8-!next" mid="189"><![CDATA[<html><FONT color=#a94407>（Rewarded）</FONT></html>]]></talk_answer>
+		<talk_question mid="188"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+	</talk_paragraph>
+	<qstep_change qstep="accepting">
+		<comment/>
+		<conditions/>
+		<executions/>
+	</qstep_change>
+	<qstep_change qstep="1">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="setstep">2</exe>
+			<exe type="setjornal">2</exe>
+		</executions>
+	</qstep_change>
+	<qstep_change qstep="2">
+		<comment/>
+		<conditions>
+			<chk type="class" op="=">3</chk>
+			<chk type="class" op="=">4</chk>
+		</conditions>
+		<executions>
+			<exe type="conexe" true="2" false="1">0</exe>
+			<exe type="conexe" true="3" false="4">1</exe>
+			<exe type="talk" npc="n209_elite_soldier">b</exe>
+			<exe type="talk" npc="n209_elite_soldier">c</exe>
+			<exe type="talk" npc="n209_elite_soldier">a</exe>
+			<exe type="setstep">3</exe>
+			<exe type="setjornal">3</exe>
+		</executions>
+	</qstep_change>
+	<qstep_change qstep="3">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="setstep">4</exe>
+			<exe type="setjornal">4</exe>
+		</executions>
+	</qstep_change>
+	<qstep_change qstep="4">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="setstep">5</exe>
+			<exe type="setjornal">5</exe>
+		</executions>
+	</qstep_change>
+	<qstep_change qstep="5">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="setstep">6</exe>
+			<exe type="setjornal">6</exe>
+		</executions>
+	</qstep_change>
+	<qstep_change qstep="6">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="setstep">7</exe>
+			<exe type="setjornal">7</exe>
+		</executions>
+	</qstep_change>
+	<qstep_change qstep="7">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="setstep">8</exe>
+			<exe type="setjornal">8</exe>
+		</executions>
+	</qstep_change>
+	<qstep_change qstep="8">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="recompense">,4101,4102,4103,4104</exe>
+			<exe type="complete">410</exe>
+		</executions>
+	</qstep_change>
+	<exelink qstep="1" npc="n039_bishop_ignasio" sub="b"/>
+	<exelink qstep="1" npc="n039_bishop_ignasio" sub="c"/>
+	<exelink qstep="1" npc="n039_bishop_ignasio" sub="d"/>
+	<exelink qstep="1" npc="n039_bishop_ignasio" sub="e"/>
+	<exelink qstep="1" npc="n039_bishop_ignasio" sub="f">0,1</exelink>
+	<exelink qstep="2" npc="n209_elite_soldier" sub="class4">0</exelink>
+	<exelink qstep="2" npc="n209_elite_soldier" sub="d"/>
+	<exelink qstep="2" npc="n209_elite_soldier" sub="d"/>
+	<exelink qstep="2" npc="n209_elite_soldier" sub="d"/>
+	<exelink qstep="2" npc="n209_elite_soldier" sub="e">5,6</exelink>
+	<exelink qstep="3" npc="n039_bishop_ignasio" sub="b">0,1</exelink>
+	<exelink qstep="4" npc="n040_king_casius" sub="b"/>
+	<exelink qstep="4" npc="n040_king_casius" sub="c">0,1</exelink>
+	<exelink qstep="5" npc="n041_duke_stwart" sub="b"/>
+	<exelink qstep="5" npc="n041_duke_stwart" sub="c"/>
+	<exelink qstep="5" npc="n041_duke_stwart" sub="d">0,1</exelink>
+	<exelink qstep="6" npc="n042_general_duglars" sub="b"/>
+	<exelink qstep="6" npc="n042_general_duglars" sub="c">0,1</exelink>
+	<exelink qstep="7" npc="n038_royal_magician_kalaen" sub="b"/>
+	<exelink qstep="7" npc="n038_royal_magician_kalaen" sub="c"/>
+	<exelink qstep="7" npc="n038_royal_magician_kalaen" sub="d">0,1</exelink>
+	<exelink qstep="8" npc="n039_bishop_ignasio" sub="b"/>
+	<exelink qstep="8" npc="n039_bishop_ignasio" sub="c"/>
+	<exelink qstep="8" npc="n039_bishop_ignasio" sub="d">0</exelink>
+	<exelink qstep="8" npc="n039_bishop_ignasio" sub="!next">1</exelink>
+	<journal_data recompense="1:4101,2:4102,3:4103,4:4104" quest_title="Things human are" chapterid="5" quest_level="30" quest_mark_type="7" use_item_list="">
+		<journal index="1">
+			<title_image/>
+			<contents_image/>
+			<need_itemlist/>
+			<destination_pos>21,n39</destination_pos>
+			<destination_mode>hide</destination_mode>
+			<statemark_npcid/>
+			<statemark_type>2</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string>후반부 업데이트 때 수정해야 할 것.
+1. 목표 알리미 모드 custom 으로 수정해야 됨
+2. 퀘스트 아이콘 NPC 39로 세팅
+</trigger_string>
+			<maptool_index/>
+			<title mid="83"><![CDATA[Say goodbye]]></title>
+			<contents mid="84"><![CDATA[<html>※ <FONT color=#7e12d2>S4Chapter. [King City sacred paradise]Has been completed。<BR></FONT>※ <FONT color=#7e12d2>S5Chapter. [Guardian Geraint]The next version update will open。</FONT></html>]]></contents>
+			<destination mid="85"><![CDATA[S4Chapter. King City sacred paradise【Complete】]]></destination>
+			<todo_msg mid="86"><![CDATA[Add a task。]]></todo_msg>
+		</journal>
+		<journal index="2">
+			<title_image/>
+			<contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+			<need_itemlist/>
+			<destination_pos>21,n209</destination_pos>
+			<destination_mode>custom</destination_mode>
+			<statemark_npcid>209</statemark_npcid>
+			<statemark_type>2</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="87"><![CDATA[Good news]]></title>
+			<contents mid="88"><![CDATA[<html>To convey the Prophet <FONT color=#a82424>Wire basket</FONT>Rescued the news。 Find<FONT color=#a82424>Elite soldiers Cleander</FONT>It。<BR><BR><FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Elite soldiers Cleander</FONT></html>]]></contents>
+			<destination mid="89"><![CDATA[Convey a message to the elite soldiers Cleander]]></destination>
+			<todo_msg mid="90"><![CDATA[To convey to the elite soldiers Cleander basket rescued some news wire。]]></todo_msg>
+		</journal>
+		<journal index="3">
+			<title_image/>
+			<contents_image>QN_Npc_Bishop.dds</contents_image>
+			<need_itemlist/>
+			<destination_pos>21,n39</destination_pos>
+			<destination_mode>custom</destination_mode>
+			<statemark_npcid>39</statemark_npcid>
+			<statemark_type>2</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="191"><![CDATA[Human affairs I]]></title>
+			<contents mid="192"><![CDATA[<html>Letter has been forwarded，Where the right to return to Bishop Ignacio。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+			<destination mid="193"><![CDATA[Dialogue with the Bishop Ignacio]]></destination>
+			<todo_msg mid="194"><![CDATA[Letters have been reached。Please further dialogue with the Bishop Ignacio。]]></todo_msg>
+		</journal>
+		<journal index="4">
+			<title_image/>
+			<contents_image>QN_Npc_King_Casius.dds</contents_image>
+			<need_itemlist/>
+			<destination_pos>21,n40</destination_pos>
+			<destination_mode>custom</destination_mode>
+			<statemark_npcid>40</statemark_npcid>
+			<statemark_type>2</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="195"><![CDATA[Human affairs II]]></title>
+			<contents mid="196"><![CDATA[<html>For the handling of the aftermath after the war，We seem to be some differences。First of all, the dialogue with the king Kaxiwusi it。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ King Kaxiwusi</FONT></html>]]></contents>
+			<destination mid="197"><![CDATA[Dialogue with the king Kaxiwusi]]></destination>
+			<todo_msg mid="198"><![CDATA[Let the king hear the words Kaxiwusi。]]></todo_msg>
+		</journal>
+		<journal index="5">
+			<title_image/>
+			<contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+			<need_itemlist/>
+			<destination_pos>21,n41</destination_pos>
+			<destination_mode>custom</destination_mode>
+			<statemark_npcid>41</statemark_npcid>
+			<statemark_type>2</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="199"><![CDATA[Human affairs III]]></title>
+			<contents mid="200"><![CDATA[<html>King seems to have amnesty Kaxiwusi located underground Geraint King City。It is now a dialogue with the Duke Stewart。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Duke Stewart</FONT></html>]]></contents>
+			<destination mid="201"><![CDATA[Dialogue with the Duke Stewart]]></destination>
+			<todo_msg mid="202"><![CDATA[Let the dialogue with the Duke Stewart。]]></todo_msg>
+		</journal>
+		<journal index="6">
+			<title_image/>
+			<contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+			<need_itemlist/>
+			<destination_pos>21,n42</destination_pos>
+			<destination_mode>custom</destination_mode>
+			<statemark_npcid>42</statemark_npcid>
+			<statemark_type>2</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="203"><![CDATA[Human affairs IV]]></title>
+			<contents mid="204"><![CDATA[<html>Duke Stewart would like to take this fight to victory Geraint landscaping become merit King。It is now a dialogue with General Douglas。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+			<destination mid="205"><![CDATA[Dialogue with the General Douglas]]></destination>
+			<todo_msg mid="206"><![CDATA[Let the dialogue with General Douglas。]]></todo_msg>
+		</journal>
+		<journal index="7">
+			<title_image/>
+			<contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+			<need_itemlist/>
+			<destination_pos>21,n38</destination_pos>
+			<destination_mode>custom</destination_mode>
+			<statemark_npcid>38</statemark_npcid>
+			<statemark_type>2</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="207"><![CDATA[Human affairs V]]></title>
+			<contents mid="208"><![CDATA[<html>General Douglas of the Golden Dragon and the Prophet is very concerned about，And on the nobility of the unfair treatment of soldiers dissatisfied。And the court magician Kala An end to the dialogue it。<BR><FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Court magician Kala An</FONT></html>]]></contents>
+			<destination mid="209"><![CDATA[Dialogue with the court magician Kala An]]></destination>
+			<todo_msg mid="210"><![CDATA[Let the dialogue with the court magician Kala An。]]></todo_msg>
+		</journal>
+		<journal index="8">
+			<title_image/>
+			<contents_image>QN_Npc_Bishop.dds</contents_image>
+			<need_itemlist/>
+			<destination_pos>21,n39</destination_pos>
+			<destination_mode>custom</destination_mode>
+			<statemark_npcid>39</statemark_npcid>
+			<statemark_type>3</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="211"><![CDATA[Sleeping prophet]]></title>
+			<contents mid="212"><![CDATA[<html>Nobles who had heard something。Bishop Ignacio dialog and again。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+			<destination mid="213"><![CDATA[Dialogue with the Bishop Ignacio]]></destination>
+			<todo_msg mid="214"><![CDATA[Let the dialogue with the bishops re-Ignacio。]]></todo_msg>
+		</journal>
+	</journal_data>
+	<condition_data>
+		<user_level>-1:-1</user_level>
+		<user_worldzone_level/>
+		<user_class/>
+		<prev_quest>409</prev_quest>
+		<have_normal_item/>
+		<complete_mission/>
+		<have_symbol_item/>
+	</condition_data>
+</quest>

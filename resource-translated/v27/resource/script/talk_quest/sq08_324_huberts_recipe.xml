@@ -1,0 +1,424 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_324_huberts_recipe</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>324</qid>
+      <designer>김주연</designer>
+      <qlevel>13</qlevel>
+      <qdesc>거미의 독샘	400114
+비행선 엔지니어 휴버트의 레시피	400115
+예뻐져요 치즈 스프	400132
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Hubert Recommended Recipes]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（The task did not meet the criteria）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Bulletin$<br>Over the task of implementation，Temporarily unable to accept the task of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Bulletin$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Bulletin$<br>Task with a backpack full。<br>（Please order as soon as possible backpack）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-noquest" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Airship engineer Hubert$<BR>
+Recently Mee seems to make something in a tight ah。<BR>
+Do not do dishes then told me a strange …。<BR>
+<FONT color=#7e12d2>（Dialogue with consumables business Mee，Given the task of）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="QM_DarkelfGray.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="7"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Consumables business Mee$<BR>The Dark Elves of the immortality slim，Are highly nutritious red cheese went into，Definitely can lose weight，But also strong…
+<FONT color=#7e12d2>（The same as meditation mantra，Into the material side）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="9"><![CDATA[<html>（Not to give it taste?）</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Consumables business Mee$<BR>Ah，Although some unpleasant taste，But okay。<BR>Otherwise he give to understand my<FONT color=#a82424>Airship engineer Hubert</FONT>Uncle?<BR>
+<FONT color=#7e12d2>（Has been divided into the tray and start）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="11"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Consumables business Mee$<BR>Adventurer！It also?<BR>Back when，Way to<FONT color=#a82424>Hubert</FONT>Uncle, the food bar，Ha ha</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Hubert Recommended Recipes$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2" mid="81"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Consumables business Mee$<BR><FONT color=#a82424>Airship engineer Hubert</FONT> If Uncle，Will give impartial advice。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="QS_Default.dds" itemindex="400132">
+      <talk_answer link_index="n099_engineer_hubert-2" mid="87"><![CDATA[<html>Is entrusted to the food Mee。</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Airship engineer Hubert$<BR>Oops，What is this smell ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-a" mid="16"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Airship engineer Hubert$<BR>…They have diarrhea of the。<BR>Fortunately, I was ready ahead of digestive medicine，Haha！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-a" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-b" mid="18"><![CDATA[<html>（Tell the good things related to grocery store）</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Airship engineer Hubert$<BR>But why did it suddenly start cooking ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-b" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-c" mid="20"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Airship engineer Hubert$<BR>Ha ha ha，Indeed the…It turns out that food is the first step in starting ah?<BR>
+It is rare to hear the words lifted ah…。<BR>
+In short， If they like<FONT color=#a82424>Mee</FONT>Said，Kedella grocery store to many sacred paradise of business groups, then，It is also a good thing for the village。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-c" image="QS_Default.dds" itemindex="400132">
+      <talk_answer link_index="n099_engineer_hubert-2-d" mid="22"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Airship engineer Hubert$<BR>Try to see it not anti-。<BR>…………<BR>
+<FONT color=#7e12d2>（Hubert Sheng spoonful of soup，Ate go）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-d" image="QS_Default.dds" itemindex="400132">
+      <talk_answer link_index="n099_engineer_hubert-2-e" mid="24"><![CDATA[<html>The extent that you already？</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Airship engineer Hubert$<BR>Bah！<BR>This，If two people eat，O death, yet had to。<BR>Although a bit for her taste，But，Hey。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-e" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-f" mid="26"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Airship engineer Hubert$<BR>
+Call….To do this, then returned to her，Certainly make her sad。<BR>
+<FONT color=#7e12d2>（Hubert lost in thought which）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-f" image="QS_Default.dds" itemindex="400115">
+      <talk_answer link_index="n099_engineer_hubert-2-g" mid="28"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Airship engineer Hubert$<BR>On the！Yes！<BR>I have to teach her popular in our family40Secret for many years the traditional cooking method。<BR>But，Can not really say Zhunmei Yi do come to that unique flavor。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-g" image="QS_Default.dds" itemindex="400115">
+      <talk_answer link_index="n099_engineer_hubert-2-h" mid="30"><![CDATA[<html>What is it?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Airship engineer Hubert$<BR>But having said that，Among the cuisine of France the most important ingredients， Mee may be difficult to got。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-h" image="QS_Default.dds" itemindex="400114">
+      <talk_answer link_index="n099_engineer_hubert-2-i" mid="32"><![CDATA[<html>Spider…Spider venom?！</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Airship engineer Hubert$<BR>
+It was only from<FONT color=#a82424>Death forest</FONT>The spider who can only access！<BR>
+<FONT color=#a82424>Spider venom</FONT>！<BR>
+But also many！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-i" image="QS_Default.dds" itemindex="400114">
+      <talk_answer link_index="n099_engineer_hubert-2-j" mid="34"><![CDATA[<html>（How a more than a strange ah）</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Airship engineer Hubert$<BR>It is processed from<FONT color=#a82424>Spider venom</FONT>Repeatedly refined dishes out of the jam！It has superior flavor and taste of memorable。This is40Years ago, the secrets of cooking the Hubert family law！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-j" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-k" mid="36"><![CDATA[<html>Me?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Airship engineer Hubert$<BR>If you listen clearly, then，You get<FONT color=#a82424> Death forest</FONT>A trip to the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-k" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-3" mid="38"><![CDATA[<html>Having said that，But ….</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Airship engineer Hubert$<BR>That is it me？Is，Look Mee you like to be bullied by those not a ferocious Monster?<BR>
+So you can rest assured you sleep?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Consumables business Mee$<BR>
+So，No matter what the uncle said that if Hubert，Is better to be humble to accept。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3" image="QM_Spider_Yellow.dds" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$Airship engineer Hubert$<BR>To<FONT color=#a82424>Death forest</FONT>From <FONT color=#a82424>Spider contaminated stripes</FONT>Who can get。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4" image="QS_Default.dds" itemindex="400114">
+      <talk_answer link_index="n099_engineer_hubert-4-a" mid="40"><![CDATA[<html>This is enough of it?</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Airship engineer Hubert$<BR>
+Ah，Careful careful！<BR>
+Although the ingredients are，But it is also highly toxic ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-a" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-b" mid="42"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Airship engineer Hubert$<BR>Ah，These can be a。<BR>With it and the recipes to <FONT color=#a82424>Mee</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-b" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-c" mid="44"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Airship engineer Hubert$<BR>Do not mention anything'Soup'，Let<FONT color=#a82424>Mee</FONT>Oh sad，Say you get a spread can be made40Moved the school year means something like the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-c" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Airship engineer Hubert$<BR>Follow the recipe, then follow suit，Excellent grocery store belonging to very easy！<BR>
+Ha ha ha！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Airship engineer Hubert$<BR>
+Call，Now do not eat pungent smell of food Rights。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-5-a" mid="48"><![CDATA[<html>（Brought things to hand over）</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Consumables business Mee$<BR>How 样?What did you say?<BR>Was moved to tears not shed? Yes it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5-a" image="QS_Default.dds" itemindex="400115">
+      <talk_answer link_index="n026_trader_may-5-b" mid="50"><![CDATA[<html>Hubert passed down the family40In the traditional ….</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Consumables business Mee$<BR>
+Ah?What&#39;s this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5-b" image="QS_Default.dds" itemindex="400115">
+      <talk_answer link_index="n026_trader_may-5-c" mid="52"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Consumables business Mee$<BR>It is！'<FONT color=#a82424>Acid nose chocolate pie</FONT>！' <BR>I&#39;ve eaten it！Surprise to me such a precious recipes….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5-c" image="QS_Default.dds" itemindex="400115">
+      <talk_answer link_index="n026_trader_may-5-d" mid="54"><![CDATA[<html>（I did not exist ah…）</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Consumables business Mee$<BR>Childhood，Eat this one，Nose will be acid、Often moved to tears will be shed。<BR>One secret is the original spider venom ah！<BR>
+<FONT color=#7e12d2>（Carefully read recipes）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5-d" image="QS_Default.dds" itemindex="400115">
+      <talk_answer link_index="n026_trader_may-5-e" mid="56"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Consumables business Mee$<BR>And3Times，Then fold the left，Then …Ah…So that。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-5-f" mid="58"><![CDATA[<html><FONT color=#086171>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5-f" image="QS_Default.dds" itemindex="400115">
+      <talk_question mid="59"><![CDATA[<html>$Consumables business Mee$<BR><FONT color=#7e12d2>（Only the view recipes）</FONT><BR><FONT color=#2b2723>Really thank you ah~。Do not forget to come after taste ah。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3241,3242,3243,3243</exe>
+         <exe type="setquest">324</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+         <exe type="addquestitem" num="1">400132</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="1" op="]=">400132</chk>
+      </conditions>
+      <executions>
+         <exe type="addquestitem" num="1">400132</exe>
+         <exe type="conexe" true="" false="0">0</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>400114</comment>
+      <conditions>
+         <chk type="prob">500</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="10" exe="5,6,7" onexe="">400114</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">427</exe>
+         <exe type="addquestitem" num="1">400114</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="-1">400132</exe>
+         <exe type="conexe" true="4" false="">0</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200427</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">400115</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3241,3242,3243,3244</exe>
+         <exe type="complete">324</exe>
+         <exe type="delquestitem" num="-1">400114</exe>
+         <exe type="delquestitem" num="-1">400115</exe>
+         <exe type="delquestitem" num="-1">400132</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2,3,4</exelink>
+   <exelink qstep="1" npc="n026_trader_may" sub="2">1</exelink>
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="b" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="c" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="d" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="e" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="f" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="g" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="h" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="i" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="j" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="k" />
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="3">0,1,3,10,2,8</exelink>
+   <exelink qstep="4" npc="n099_engineer_hubert" sub="b" />
+   <exelink qstep="4" npc="n099_engineer_hubert" sub="c">0,1,2</exelink>
+   <exelink qstep="5" npc="n026_trader_may" sub="b" />
+   <exelink qstep="5" npc="n026_trader_may" sub="c" />
+   <exelink qstep="5" npc="n026_trader_may" sub="d" />
+   <exelink qstep="5" npc="n026_trader_may" sub="e">0</exelink>
+   <exelink qstep="5" npc="n026_trader_may" sub="f">1,2,3,4</exelink>
+   <journal_data recompense="1:3241,2:3242,3:3243,4:3244" quest_title="휴버트의 추천 레시피" chapterid="" quest_level="13" quest_mark_type="10" use_item_list="400114,400115,400132">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[Commissioned taste]]></title>
+         <contents mid="66"><![CDATA[<html><FONT color=#a82424>Consumables business Mee</FONT>With the Dark Elves of the immortality and made a blue cheese '<FONT color=#a82424>Become beautiful Rights cheese soup</FONT>'。 It to the airship engineer Hubert，Let him taste it。<BR>
+<BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Airship engineer Hubert</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[Dialogue with the airship engineer Hubert]]></destination>
+         <todo_msg mid="68"><![CDATA[The dishes to the airship engineer Hubert Bar。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_17.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>133,0,0</destination_pos>
+         <destination_mode>custom:131@3,132@3,133@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[In the collection of spider venom of forest death]]></title>
+         <contents mid="70"><![CDATA[<html><FONT color=#a82424>Airship engineer Hubert</FONT>After tasting the dish Mee，She intends to teach40In the traditional cuisine of the law secret。Difficult only because the core material got，I have for him from<FONT color=#a82424>Death forest</FONT>Come back for spider venom。<BR><BR><FONT color=#086171>Shore littered with fallen leaves（Death forest entrance）</FONT> <FONT color=#a82424>→ Death forest</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[In the collection of spider venom of forest death]]></destination>
+         <todo_msg mid="72"><![CDATA[In the collection of spider venom of forest death it。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[Dialogue with the airship engineer Hubert]]></title>
+         <contents mid="74"><![CDATA[<html>40Secrets in the traditional cuisine of France&#39;s material has been collected。Back<FONT color=#a82424>Airship engineer Hubert Department</FONT>Dialogue with it。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Airship engineer Hubert</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[Dialogue with the airship engineer Hubert]]></destination>
+         <todo_msg mid="76"><![CDATA[Back to the airship, where engineers and their dialog and Hubert。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Dialogue with the consumables business Mee]]></title>
+         <contents mid="78"><![CDATA[<html>Hubert from the airship engineer to get all the recipes and materials to the consumables business mey bar。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Consumables business Mee</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Dialogue with the consumables business Mee]]></destination>
+         <todo_msg mid="80"><![CDATA[Let the dialogue with the consumables business Mee。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>13:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>323</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

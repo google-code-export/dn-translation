@@ -1,0 +1,519 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_263_argenta_trap2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>263</qid>
+      <designer>김인정</designer>
+      <qlevel>17</qlevel>
+      <qdesc>아르젠타에게 퀘스트 받음.
+신전 예배당의 1번 스테이지에서 데이비드와 만남.
+2번 스테이지에서 데이비드와 대화한 후, 깃발 트리거를 클릭한다.
+그 후 다시 데이비드와 대화.
+아르젠타에게 보고.
+
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Special device II]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>187</npcid>
+         <npcename>n187_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드(신전 예배당)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Kraft adventurer David$<BR>Appears to require my signature ah。Does fit to sign a free，Oh。<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-a" mid="7"><![CDATA[<html>Did not seem to say that if ah...</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Algerita$<BR>What are you in the end ah fuss?This is incredible ah。<BR>Not saying that I am your benefactor，For me whatever they ask you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-a" image="QW_19.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-b" mid="9"><![CDATA[<html>Special device?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Algerita$<BR>Anyway, this went to<FONT color=#a82424>Shrine Chapel</FONT>See it。<BR>There is said to have a<FONT color=#a82424>Special device</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-c" mid="11"><![CDATA[<html>With that bet...?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Algerita$<BR>Ah，Not have a bump after the，Open the door closed, there will be things you？<BR>In addition to those heard outside the ordinary，There are special devices。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-d" mid="13"><![CDATA[<html>Ah... Be...</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Algerita$<BR>Of course, bet ah，I rely on others to rely on because it trivial to annoying the。<BR>Well adults。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-party" mid="15"><![CDATA[<html>（Understand）</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Algerita$<BR>So you to identify the next<FONT color=#a82424>In the end is not a special device</FONT>。<BR>Ah，There is no need for this kind of thing with a few people over the past，Current<FONT color=#a82424>Alone</FONT>In the past on it，Get it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-e" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Algerita$<BR>…That is definitely the light，You are a newbie，Something on that point also launching a campaign to go with so ah? <FONT color=#a82424>Alone</FONT> Ah the last solution。<BR><FONT color=#7e12d2>（The task team can not be under）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-f" image="QW_19.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-g" mid="18"><![CDATA[<html>Be~Try it。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Algerita$<BR>In this issue you also need it costs so long? To get to<FONT color=#a82424>Shrine Chapel</FONT>Kuaiqukuaihui。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-h" mid="20"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Special device II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-h" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Algerita$<BR>Long overdue to do so。Such a delay，Do not bet they will not be recognized and be proud? Had I known，Had passed on the random individual。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QW_19.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-a" mid="24"><![CDATA[<html>Special device?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Algerita$<BR>This went to<FONT color=#a82424>Shrine Chapel</FONT>See it。<BR>There is said to have special equipment。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-b" mid="26"><![CDATA[<html>With that bet...?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Algerita$<BR>Ah，Not have a bump after the，Open the door closed, there will be things you？<BR>In addition to those heard outside the ordinary，There are special devices。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-c" mid="28"><![CDATA[<html>Ah…Be...</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Algerita$<BR>Of course, bet ah，I rely on others to rely on because it trivial to annoying the。<BR>Well adults。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-party" mid="30"><![CDATA[<html>（Understand）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Algerita$<BR>So to confirm you are not under a special device in the end。<BR>Ah，There is no need for this kind of thing with a few people over the past，Current<FONT color=#a82424>Alone</FONT>In the past on it，Get it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-d" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Algerita$<BR>…That is definitely the light，You are a newbie，Something on that point also launching a campaign to go with so ah? <FONT color=#a82424>Alone</FONT> Ah the last solution。<BR><FONT color=#7e12d2>（The task team can not be under）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-e" image="QW_19.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-f" mid="33"><![CDATA[<html>Be~Try it。</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Algerita$<BR>In this issue you also need it costs so long? To get to<FONT color=#a82424>Shrine Chapel</FONT>Kuaiqukuaihui。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-f" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-2" mid="35"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Special device II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-1" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-2" mid="195"><![CDATA[<html>(Quietly walked over)</html>]]></talk_answer>
+      <talk_question mid="194"><![CDATA[<html>$Kraft adventurer David$<BR><FONT color=#7e12d2>(A man stood triumphantly。Seems to want people to go and talk to him)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Algerita$<BR>Long overdue to do so。Such a delay，Do not bet they will not be recognized and be proud? Had I known，Had passed on the random individual。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-2" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-2-david1" mid="40"><![CDATA[<html>（Echoed in the buzzing sound）</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Kraft adventurer David$<BR>Ha，Ha，Ha。Feed，You！！<BR><FONT color=#a82424>Rookie</FONT>Adventurer！！Soon have nothing to say！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-2-a" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-2-b" mid="42"><![CDATA[<html>（I do not know where on the voice）</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Kraft adventurer David${action:Talk}<BR>You，This will not be that naive<FONT color=#a82424>Follow me</FONT>I will have to protect your right?<BR>I was too lazy to control you！ Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-2-b" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-2-c" mid="44"><![CDATA[<html>…Then you go first。</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Kraft adventurer David$<BR>I&#39;m going to walk first，You should also realize that their own<FONT color=#a82424>Weak</FONT>，Come back as early as possible? Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-2-c" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Kraft adventurer David$<BR>Go，Oh, go！Do not <FONT color=#a82424>Stop</FONT>I Oh?！！<BR><FONT color=#7e12d2>（Ignore him，Continue to go about your business。）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-2-d" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-2-david2" mid="146"><![CDATA[<html>（…Strange people）</html>]]></talk_answer>
+      <talk_question mid="145"><![CDATA[<html>$Kraft adventurer David$<BR>Oh…Met again！<BR>I understand your<FONT color=#a82424>Respect</FONT>I feel，They still do not follow me ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-2-e" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-2-david3" mid="148"><![CDATA[<html>（Strange people, ah,）</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$Kraft adventurer David$<BR>Ha ha ha。 But I <FONT color=#a82424>The great adventurer David</FONT> ！！You must be chasing me to come right here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-3" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Kraft adventurer David$<BR>Ha ha ha。 It seems like being protected by the adults? Oh...<BR><FONT color=#7e12d2>（He is ignoring it）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-4" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-4-a" mid="49"><![CDATA[<html>I still go to my bar。</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Kraft adventurer David$<BR>Oh。 All<FONT color=#a82424>Chase</FONT>Here 来啦，Could it be that you<FONT color=#a82424>Jealousy</FONT>I am not a?<BR>If envy me<FONT color=#a82424>Lofty reputation</FONT>If，Honest to me for advice on the do not have to， Oh...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-4-a" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-4-davidwho2" mid="51"><![CDATA[<html>Excused。</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html><FONT color=#2b2723>$Kraft adventurer David$<BR>Ha ha ha。Placed in front of me kind of attitude ，You&#39;ll be sorry。 Ha ha ha。<BR></FONT><FONT color=#7e12d2>（David cheerful smile）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-4-b" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-4-d" mid="151"><![CDATA[<html>Do you know the particular device？</html>]]></talk_answer>
+      <talk_question mid="150"><![CDATA[<html>$Kraft adventurer David${action:Talk}<BR>Ha ha ha。 You this guy，Do not think<FONT color=#a82424>Long presentable shape</FONT>Show off in front of me，Useless！！I do not want to win door? Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-4-c" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-4-d" mid="153"><![CDATA[<html>Do you know the particular device？</html>]]></talk_answer>
+      <talk_question mid="152"><![CDATA[<html>$Kraft adventurer David$<BR>Ha ha ha。I know you are concerned about my great adventurer！ Ha ha ha。 You seem to feel <FONT color=#a82424>Very cute</FONT>In front of me Xianbai，No way！ Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-4-d" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-4-e" mid="154"><![CDATA[<html>You know？</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Kraft adventurer David$<BR>What？Special device？……Aha，<FONT color=#a82424>That</FONT>You！<FONT color=#7e12d2>(Surprising is，David seems to know what)</FONT>Ha，Ha，Ha。Well，Let me pointers about your right to this rookie adventurer。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-4-e" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-5" mid="157"><![CDATA[<html>That flag is a special device？</html>]]></talk_answer>
+      <talk_question mid="156"><![CDATA[<html>$Kraft adventurer David$<BR>Look over there<FONT color=#a82424>Banner</FONT>。Ha，Ha，Ha。Rookie is such，Treasure can not see in front of。That is！！Only<FONT color=#a82424>Excellent adventurer</FONT>To see the device！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-5" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html><FONT color=#2b2723>$Kraft adventurer David$<BR>……Go or not to confirm you have the freedom，But……Ha，Ha，Ha，Anyway I told you all。</FONT><BR>
+<FONT color=#2b2723>Ha，Ha，Ha。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-6" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-6-a" mid="159"><![CDATA[<html>Well，This time I have accepted your help……</html>]]></talk_answer>
+      <talk_question mid="158"><![CDATA[<html>$Kraft adventurer David${action:talk}<BR>How 样？It is amazing？Ha，Ha，Ha。David adults, if not me，How can you find on？<FONT color=#7e12d2>(David laughed heartily at me)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-6-a" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-6-b" mid="161"><![CDATA[<html>My name？……My name is<FONT color=#387206>{user_nick}</FONT>。</html>]]></talk_answer>
+      <talk_question mid="160"><![CDATA[<html>$Kraft adventurer David$<BR>See you are so sincere appreciation,，The only thing quite manners。<BR>Well！！I ask an exception<FONT color=#a82424>Your name</FONT>！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-6-b" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-6-c" mid="163"><![CDATA[<html>(Do not know who the rookie……)</html>]]></talk_answer>
+      <talk_question mid="162"><![CDATA[<html>$Kraft adventurer David$<BR><FONT color=#387206>{user_nick}</FONT>？Sure enough, and you name it matched the novice， Ha。<BR><FONT color=#7e12d2>(David of talking to and shook my hand)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-6-c" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-6-d" mid="165"><![CDATA[<html>I received an order，Come here to look for specific devices。</html>]]></talk_answer>
+      <talk_question mid="164"><![CDATA[<html>$Kraft adventurer David$<BR>On the，You are here to do the？<BR>……Ah，Of course，I know you are with me<FONT color=#a82424>David</FONT>Adults come，Ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-6-d" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-6-e" mid="167"><![CDATA[<html>I say is true。</html>]]></talk_answer>
+      <talk_question mid="166"><![CDATA[<html>$Kraft adventurer David$<BR>Ah？You really come to that thing, ah？……That is more than<FONT color=#a82424>Rookie</FONT>Also rookie rookie……Ah？Are you kidding me ah！<BR>Ha，Not the kind of thing in the world！！You should also know，Ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-6-e" image="" itemindex="">
+      <talk_answer link_index="n187_slave_david-6-f" mid="169"><![CDATA[<html>(David kept rhetoric)</html>]]></talk_answer>
+      <talk_question mid="168"><![CDATA[<html>$Kraft adventurer David$<BR>You just have to see，Device is only just now emerging that there is<FONT color=#a82424>Mushrooms</FONT>Emerge to it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-6-f" image="" itemindex="">
+      <talk_question mid="170"><![CDATA[<html>$Kraft adventurer David${action:talk}<BR>Ha，Ha，Ha。Not even the just could not……Really is<FONT color=#a82424>Rookie</FONT>。Ha，I&#39;m going to rest。Let you be careful。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n187_slave_david-7" image="" itemindex="">
+      <talk_question mid="171"><![CDATA[<html>$Kraft adventurer David$<BR>Goodbye，Rookie。Ha，Ha，Ha。<BR><FONT color=#7e12d2>(David is still pretending to look very great)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-a" mid="173"><![CDATA[<html>You worry。</html>]]></talk_answer>
+      <talk_question mid="172"><![CDATA[<html>$Algerita$<BR>So late！To identify what it takes so long？<BR>I thought you was dead off a cliff，Do you want to go。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-b" mid="175"><![CDATA[<html>It is not necessary is not……</html>]]></talk_answer>
+      <talk_question mid="174"><![CDATA[<html>$Algerita$<BR>Worried？Why should I worry about you？<BR>
+I went to see you you kill you，Its concern is that you do？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-b" image="QW_19.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-c" mid="177"><![CDATA[<html>(Explain why things happen)</html>]]></talk_answer>
+      <talk_question mid="176"><![CDATA[<html>$Algerita$<BR>How 样？I said to find<FONT color=#a82424>Special</FONT><FONT color=#a82424>Equipment</FONT>The bar？<BR>No matter how stupid，This matter should be able to do it？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-c" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-d" mid="179"><![CDATA[<html>Eh……</html>]]></talk_answer>
+      <talk_question mid="178"><![CDATA[<html>$Algerita$<BR>What？The result is nothing？Really……Just keep the device to grow mushrooms？In the end is that jerk doing out ah？Try hard to find fault，That is quite consistent with that<FONT color=#a82424>Black guy</FONT>Way of doing things，Hum。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-e" mid="181"><![CDATA[<html>(The original is a white hard。)</html>]]></talk_answer>
+      <talk_question mid="180"><![CDATA[<html>$Algerita$<BR>Anyway，Enough。I do not<FONT color=#a82424>White hard </FONT>，And you<FONT color=#a82424>White hard</FONT>The trip，All is well。<BR>You helped me a white hard journey，You should feel very honored to it？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-f" mid="183"><![CDATA[<html><FONT color=#086171>(Rewarded)</FONT></html>]]></talk_answer>
+      <talk_question mid="182"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-f" image="" itemindex="">
+      <talk_question mid="184"><![CDATA[<html>$Algerita$<BR>Ah……The following should make you do what this idiot？I would think to do for you。Do not lazy，Come on over！<BR><FONT color=#7e12d2>(18Level above，Can accept the next task)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n164_argenta_wounded">f</exe>
+         <exe type="talk" npc="n164_argenta_wounded">e</exe>
+         <exe type="recompense_view">,2631,2632,2633,2634</exe>
+         <exe type="setquest">263</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n164_argenta_wounded">e</exe>
+         <exe type="talk" npc="n164_argenta_wounded">d</exe>
+         <exe type="recompense_view">,2631,2632,2633,2634</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 260 ) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n187_slave_david">d</exe>
+         <exe type="talk" npc="n187_slave_david">e</exe>
+         <exe type="talk" npc="n187_slave_david">a</exe>
+         <exe type="talk" npc="n187_slave_david">a</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="conexe" true="2" false="4">0</exe>
+         <exe type="talk" npc="n187_slave_david">b</exe>
+         <exe type="talk" npc="n187_slave_david">c</exe>
+         <exe type="conexe" true="3" false="5">1</exe>
+         <exe type="conexe" true="2" false="3">2</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2631,2632,2633,2634</exe>
+         <exe type="complete">263</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="party">0</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="g">3</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="h">4,5</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="party">0</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="f">3</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="2">4,5</exelink>
+   <exelink qstep="1" npc="n187_slave_david" sub="2">4</exelink>
+   <exelink qstep="2" npc="n187_slave_david" sub="david1">2</exelink>
+   <exelink qstep="2" npc="n187_slave_david" sub="b" />
+   <exelink qstep="2" npc="n187_slave_david" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n187_slave_david" sub="david2">5</exelink>
+   <exelink qstep="2" npc="n187_slave_david" sub="david3">6</exelink>
+   <exelink qstep="4" npc="n187_slave_david" sub="davidwho2">1</exelink>
+   <exelink qstep="4" npc="n187_slave_david" sub="d" />
+   <exelink qstep="4" npc="n187_slave_david" sub="d" />
+   <exelink qstep="4" npc="n187_slave_david" sub="e" />
+   <exelink qstep="4" npc="n187_slave_david" sub="5">0,6</exelink>
+   <exelink qstep="6" npc="n187_slave_david" sub="b" />
+   <exelink qstep="6" npc="n187_slave_david" sub="c" />
+   <exelink qstep="6" npc="n187_slave_david" sub="d" />
+   <exelink qstep="6" npc="n187_slave_david" sub="e" />
+   <exelink qstep="6" npc="n187_slave_david" sub="f">0,1</exelink>
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="d" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="e">0</exelink>
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="f">1</exelink>
+   <journal_data recompense="1:2631,2:2632,3:2633,4:2634" quest_title="특별한 장치 II" chapterid="" quest_level="17" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_19.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>141,n187</destination_pos>
+         <destination_mode>custom:141@1</destination_mode>
+         <statemark_npcid>187</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="119"><![CDATA[Algerita curiosity]]></title>
+         <contents mid="120"><![CDATA[<html>Algerita said she and people use<FONT color=#a82424>Shrine Chapel</FONT>A special device called a man bet。Go<FONT color=#a82424>Wind forest</FONT>Of<FONT color=#a82424>Shrine Chapel</FONT>Special device to find it。<BR><FONT color=#7e12d2>（In the team can not be implemented under）</FONT><BR><BR><FONT color=#086171>Crystal Valley → Wind forest（Forest Temple entrance of wind）</FONT> <FONT color=#a82424>→ Shrine Chapel</FONT></html>]]></contents>
+         <destination mid="121"><![CDATA[(Single) Chapel in the Temple to find a special device]]></destination>
+         <todo_msg mid="122"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_19.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>142,n187</destination_pos>
+         <destination_mode>custom:141@3,142@3,143@4</destination_mode>
+         <statemark_npcid>187</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="123"><![CDATA[Strange people]]></title>
+         <contents mid="124"><![CDATA[<html>Met a man named<FONT color=#a82424>David</FONT>Suspicious person，But do not ignore him，Focus on doing things right Algerita account。Have not seen the particular device，In<FONT color=#a82424>Clues before</FONT>，Go forth。<BR><BR><FONT color=#086171>Wind forest(Forest Temple entrance of wind)</FONT> <FONT color=#a82424>→ Shrine Chapel</FONT></html>]]></contents>
+         <destination mid="125"><![CDATA[(Single) Chapel in the Temple to find a special device]]></destination>
+         <todo_msg mid="126"><![CDATA[To find a special device to move it。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos />
+         <destination_mode>custom:142@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="127"><![CDATA[Suspect device]]></title>
+         <contents mid="128"><![CDATA[<html>According to<FONT color=#a82424>David</FONT>Say，Nearby<FONT color=#a82424>Banner</FONT>As is the special device。<BR><BR><FONT color=#086171>Shrine Chapel</FONT> <FONT color=#a82424>→ Special device</FONT></html>]]></contents>
+         <destination mid="129"><![CDATA[(Single) Special investigation unit banner]]></destination>
+         <todo_msg mid="130"><![CDATA[Please investigate the banner of the surrounding。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>142,n187</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>187</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="186"><![CDATA[Boring truth]]></title>
+         <contents mid="187"><![CDATA[<html>Although a special unit to find，However, the growth seems to simply<FONT color=#a82424>Mushrooms</FONT>Device。Re and<FONT color=#a82424>David</FONT>Dialogue。<BR><BR><FONT color=#086171>Gray ruins</FONT> <FONT color=#a82424>→ David</FONT></html>]]></contents>
+         <destination mid="188"><![CDATA[(Single) And David dialogue]]></destination>
+         <todo_msg mid="189"><![CDATA[To find a special device。Please dialogue, and David。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="190"><![CDATA[Report]]></title>
+         <contents mid="191"><![CDATA[<html>Algerita said nothing special device。Although it is disappointing，But still go back to<FONT color=#a82424>Gray ruins</FONT>Of<FONT color=#a82424>Algerita</FONT>Report it。<BR><BR><FONT color=#086171>Gray ruins</FONT> <FONT color=#a82424>→ Algerita</FONT></html>]]></contents>
+         <destination mid="192"><![CDATA[Report to the gray ruins of Algerita]]></destination>
+         <todo_msg mid="193"><![CDATA[Please report to the gray ruins of Algerita the case of the special devices。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>17:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>262</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

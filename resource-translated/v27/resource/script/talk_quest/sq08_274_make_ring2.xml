@@ -1,0 +1,192 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_274_make_ring2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>274</qid>
+      <designer>곽노찬</designer>
+      <qlevel>10</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Production of ringⅡ]]></qkname>
+      <qnpc>
+         <npcid>25</npcid>
+         <npcename>n025_trader_corin</npcename>
+         <npckname>대장장이 코린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting" image="QS_Default.dds" itemindex="336732192">
+      <talk_answer link_index="n025_trader_corin-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Blacksmith Colin$<BR><FONT color=#a82424>Fragments of normal stars</FONT>Got it？<BR>Now let&#39;s ring it started production。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-acceptted" mid="8"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Production of ringⅡ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1" image="QS_Default.dds" itemindex="287906048">
+      <talk_answer link_index="n025_trader_corin-1-a" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Blacksmith Colin$<BR>You want to make the ring is<FONT color=#a82424>Magical sapphire ring</FONT>And<FONT color=#a82424>Damaged sapphire ring</FONT>。Not produced2A，It produced a ring which you need。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-a" image="QS_Default.dds" itemindex="287906048">
+      <talk_answer link_index="n025_trader_corin-1-opencompounditem1" mid="14"><![CDATA[<html>[Production of goods]</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Blacksmith Colin$<BR>
+<FONT color=#a82424>Magical sapphire ring</FONT>Properties and magic attacks and magic of the。And<FONT color=#a82424>Damaged sapphire ring</FONT>And physical attacks were related to。See what is more important to you，Then choose a production。The success rate of production is not100%，May fail。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2" image="QS_Default.dds" itemindex="287906048">
+      <talk_answer link_index="n025_trader_corin-2-opencompounditem2" mid="16"><![CDATA[<html>[Production of goods]</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Blacksmith Colin$<BR>Not to please？Fast in<FONT color=#a82424>Magical sapphire ring</FONT>And<FONT color=#a82424>Damaged sapphire ring</FONT>Produced by choosing a，Then come back to me。<BR><FONT color=#7e12d2>※ Must be made good in the ring, and his dialogue in a backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-a" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-b" mid="41"><![CDATA[<html>Thank you。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Blacksmith Colin$<BR>Oh？Well, ah。Ha ha……<BR>Good，I made an exception to give you a Star。This is<FONT color=#a82424>Star compact debris</FONT>，Can be used to create pieces better than the ordinary stuff of Stars。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-b" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-c" mid="43"><![CDATA[<html><FONT color=#086171>(Rewarded)</FONT></html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-c" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Blacksmith Colin$<BR>Good，Goodbye。<BR>Often patronize ah，Ha ha……</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">2740,,,,</exe>
+         <exe type="setquest">274</exe>
+         <exe type="talk" npc="n025_trader_corin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="custom">api_ui_OpenCompoundItem(userObjID, 3);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="item" num="1" op="]=">287906048</chk>
+         <chk type="item" num="1" op="]=">287905984</chk>
+      </conditions>
+      <executions>
+         <exe type="custom">api_ui_OpenCompoundItem(userObjID, 3);</exe>
+         <exe type="conexe" true="3" false="2">0</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="talk" npc="n025_trader_corin">a</exe>
+         <exe type="talk" npc="n025_trader_corin">2</exe>
+         <exe type="recompense">2740,,,,</exe>
+         <exe type="complete">274</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n025_trader_corin" sub="opencompounditem1">0,1,2</exelink>
+   <exelink qstep="2" npc="n025_trader_corin">1</exelink>
+   <exelink qstep="2" npc="n025_trader_corin" sub="opencompounditem2">0</exelink>
+   <exelink qstep="2" npc="n025_trader_corin" sub="b">5</exelink>
+   <exelink qstep="2" npc="n025_trader_corin" sub="c">6</exelink>
+   <journal_data recompense="2740" quest_title="반지 제작Ⅱ" chapterid="" quest_level="10" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n25</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>25</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[And the blacksmith Colin dialogue]]></title>
+         <contents mid="26"><![CDATA[<html>In<FONT color=#a82424>Blacksmith Colin</FONT>There was a<FONT color=#a82424>Fragments of normal stars</FONT>。<BR>
+And the blacksmith Colin dialogue，Listen to what the production of rings。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Blacksmith Colin</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[And the blacksmith Colin dialogue]]></destination>
+         <todo_msg mid="28"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n25</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>25</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[Production of ring]]></title>
+         <contents mid="31"><![CDATA[<html>Blacksmith Colin let me<FONT color=#a82424>Magical sapphire ring</FONT>And<FONT color=#a82424>Damaged sapphire ring</FONT>Choose between1A production。Production of ring，And then to see the blacksmith Cowlin。<BR>
+ <BR>
+<FONT color=#7e12d2>※ Must be made good in the ring, and his dialogue in a backpack。</FONT><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Blacksmith Colin(Production of goods)</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[Production of sapphire rings，And the blacksmith Colin dialogue]]></destination>
+         <todo_msg mid="33"><![CDATA[Please get from the stars Colin debris production ring。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>273</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

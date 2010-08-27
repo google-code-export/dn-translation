@@ -1,0 +1,346 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_318_beautiful_siver_blonde</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>318</qid>
+      <designer>곽노찬</designer>
+      <qlevel>20</qlevel>
+      <qdesc>400123 질좋은 은색의 머리카락
+400124 퇴색한 은색의 머리카락</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Beautiful Seniors]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（The task did not meet the criteria）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Bulletin$<br>Over the task of implementation，Temporarily unable to accept the task of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Bulletin$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Bulletin$<br>Task with a backpack full。<br>（Please order as soon as possible backpack）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-noquest" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Algerita$<BR>Some swollen face always felt like….<BR>
+Ah，Is eating too much last night….<BR><FONT color=#7e12d2>（Department can accept the task of consumables business Mee）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="6"><![CDATA[<html>（Hear the voice of yet elegant Meiyiminglang disturbed ah）</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Consumables business Mee$<BR>Ah，<FONT color=#382000>{user_nick}</FONT>You come just。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="8"><![CDATA[<html>What is strange is not it commissioned?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Consumables business Mee$<BR>In fact, I have something to entrust your。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="QS_Default.dds" itemindex="400123">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="10"><![CDATA[<html>（Speaking of silver hair，Reminds me of Algerita）</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Consumables business Mee$<BR>Ha ha，I have been entrusted to you when strange things ah。<BR>IsVIPOut copies of a special customer order。 <BR>Is the need for wig materials<FONT color=#a82424>Silver hair</FONT>Only。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="QS_Default.dds" itemindex="400123">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="12"><![CDATA[<html>Ah…</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Consumables business Mee$<BR>
+Do not need too much，On10Bundle on the line，How ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="QM_DarkelfGray.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-e" mid="14"><![CDATA[<html>（If rejected, then，She will spend an hour or more to convince me ah…）</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Consumables business Mee$<BR>10Well tie it，From<FONT color=#a82424>No return</FONT>Of<FONT color=#a82424>Dark Elves</FONT> Out there, crossing a do not on it？So I please you very much，Ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-f" mid="16"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Beautiful silver hair$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-f" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted_1" mid="18"><![CDATA[<html>（Obediently on the grab bar Dark Elves）</html>]]></talk_answer>
+      <talk_answer link_index="n026_trader_may-accepting-g" mid="19"><![CDATA[<html>（Otherwise go to entrust Algerita?）</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>${user_nick}$<BR>
+<FONT color=#a82424>If want to cut hair Algerita，&#39;m Not sure my ass does not guarantee…But still try?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-g" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted_2" mid="69"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>${user_nick}$<BR>
+<FONT color=#a82424>Please take a look，If that does not work，Well, to grab the dark wizard。Total Buzhi Yu kill me…?</FONT><BR>
+<FONT color=#7e12d2>（Really will be killed…）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QS_Default.dds" itemindex="400123">
+      <talk_question mid="21"><![CDATA[<html>$Consumables business Mee$<BR>Then~Come on10Bundle<FONT color=#a82424>High-quality silver hair</FONT>It。<BR><FONT color=#7e12d2>（Or grab on to the road of no return Dark Elves，Or to delegate Algerita）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-a" mid="25"><![CDATA[<html>Ah?They want me to do ah…</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Algerita$<BR>
+Come just，<FONT color=#086171>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-b" mid="27"><![CDATA[<html>Not，No….You talk。</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Algerita$<BR>
+And what…?<BR>
+Rights is the right wing hard?<BR>
+You do a few things on bragging Rights?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-c" mid="29"><![CDATA[<html>This seems，Does little。</html>]]></talk_answer>
+      <talk_answer link_index="n164_argenta_wounded-1-d" mid="30"><![CDATA[<html>Algerita your face has not changed ah。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Algerita$<BR>Is not a big deal…，Eat a little bit last night，Always feel swollen face some formidable，In your opinion, how ah。<BR><FONT color=#7e12d2>（View 察Algerita face carefully）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-f" mid="35"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Algerita$<BR>Eh?Pudd&#39;nhead like you saw it all felt a strange，Ah really seems to be some problems。Ah…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-e" mid="36"><![CDATA[<html>Not，Nah…</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Algerita$<BR>What?！You mean my face you have dirty?！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-e" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-f" mid="38"><![CDATA[<html>Ah? What responsibility ah…</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Algerita$<BR>Ah，Forget it！I&#39;ll come see you gas，My face becomes even more eclipsed。<BR>If you punctuality to eat, then I am prepared to，I would not be too late at night also ate！I blame your face like that ah，You are responsible for in the end。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-f" image="QS_Default.dds" itemindex="335545217">
+      <talk_answer link_index="n164_argenta_wounded-1-g" mid="41"><![CDATA[<html>Diet pills…，Ah?</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Algerita$<BR>Dark Elves eat nutrients which a man named<FONT color=#a82424>Diet pills</FONT>Things，It brought me to。Is said to be particularly effective，I have to try it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-g" image="QS_Default.dds" itemindex="400123">
+      <talk_answer link_index="n164_argenta_wounded-1-h" mid="43"><![CDATA[<html>Then I can get the hair you are on the ground?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Algerita$<BR>How?Do not?<BR><FONT color=#7e12d2>（Algerita around a lot of silver hair。Estimated to have collected so10More tied up right）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-h" image="QS_Default.dds" itemindex="335545217">
+      <talk_question mid="44"><![CDATA[<html>$Algerita$<BR>Row。 If brought<FONT color=#a82424>Diet pills</FONT>If，Can Naqu。<BR><BR>※ <FONT color=#7e12d2>Slimming dark wizard fall hunting of common prop。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-i" image="QS_Default.dds" itemindex="335545217">
+      <talk_answer link_index="n164_argenta_wounded-1-j" mid="46"><![CDATA[<html>（Submission of diet pills）</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Algerita$<BR>
+Ha ha…Or bring the wow。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-j" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-k" mid="48"><![CDATA[<html>（Pick up the hair）</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Algerita$<BR>Then I&#39;ll try it?<BR>Got hair, then lightly Naqu。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-k" image="QS_Default.dds" itemindex="400124">
+      <talk_question mid="49"><![CDATA[<html>${user_nick}$<BR>Uh…?<BR><FONT color=#7e12d2>（Obtained high-quality silver hair 9Silver hair bundle and the fade1Bundle。 …Ah，Pretended not to know the calculations directly to the Mee）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Algerita$<BR><FONT color=#7e12d2>（Algerita are eating weight loss drug。Better not disturb her good）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2-a" image="" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Algerita$<BR>Some swollen face always felt like…
+Ah，Is eating too much last night…。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="QS_Default.dds" itemindex="400124">
+      <talk_answer link_index="n026_trader_may-2-a" mid="59"><![CDATA[<html>That… A…Ah… Is…</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Consumables business Mee$<BR>God，Collection of back hair ah。<BR>
+But…This<FONT color=#a82424>Faded silver hair</FONT>What is? I am not saying10High-quality silver hair tied me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-a" image="QS_Default.dds" itemindex="400124">
+      <talk_answer link_index="n026_trader_may-2-reward_1" mid="61"><![CDATA[<html>… Ah. （True Stingy…）</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Consumables business Mee$<BR>
+No friends。Ah，Well the inevitable errors。<BR>
+But，Not all bring commissioned，Therefore, the corresponding return was lost oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-b" image="QS_Default.dds" itemindex="400123">
+      <talk_answer link_index="n026_trader_may-2-reward_2" mid="62"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Consumables business Mee$<BR>
+God，Collection of back hair ah。<BR>
+You&#39;ve worked hard~。<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-d" mid="64"><![CDATA[<html><FONT color=#086171>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-e" mid="66"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Merchant Mee$<BR>Served with holy heaven with the production of the latest trends in the silver wig 。<BR>
+<FONT color=#7e12d2>（Mee dug lifestyle magazine goddess bless）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-e" image="" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$Goddess bless$<BR><FONT color=#a82424>Holy Heaven Dragon is now popular during the retro raid！Shining silver hair and bright red jacket in contrast to！！The most beautiful and strong girl！！！</FONT><BR><FONT color=#7e12d2>（Silver hair and red coat? The story it will not be Algerita?）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="prob">600</chk>
+         <chk type="questitem" num="10" op="]=">400123</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">318</exe>
+         <exe type="recompense_view">3180,,,,</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">608</exe>
+         <exe type="huntitem" num="10" exe="" onexe="">400123</exe>
+         <exe type="addquestitem" num="1">400123</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+         <exe type="conexe" true="4,11" false="">0</exe>
+         <exe type="conexe" true="8,9,10" false="6">1</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="8,9,10" false="">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200608</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>335545217 살빼그라</comment>
+      <conditions>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 1) == 1</chk>
+         <chk type="item" num="1" op="]=">335545217</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="talk" npc="n164_argenta_wounded">1</exe>
+         <exe type="talk" npc="n164_argenta_wounded">i</exe>
+         <exe type="talk" npc="n164_argenta_wounded">h</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 1, 1);</exe>
+         <exe type="delitem" num="1">335545217</exe>
+         <exe type="addquestitem" num="9">400123</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 1, 2);</exe>
+         <exe type="addquestitem" num="1">400124</exe>
+         <exe type="custom">api_user_DelItem(UserObjectID, 335545217, 1);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 1) == 2</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n164_argenta_wounded">2</exe>
+         <exe type="talk" npc="n164_argenta_wounded">a</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n026_trader_may">2</exe>
+         <exe type="talk" npc="n026_trader_may">b</exe>
+         <exe type="talk" npc="n026_trader_may">c</exe>
+         <exe type="recompense">3181,,,,</exe>
+         <exe type="recompense">3180,,,,</exe>
+         <exe type="complete">318</exe>
+         <exe type="delquestitem" num="-1">400123</exe>
+         <exe type="delquestitem" num="-1">400124</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="f">0,2,12,3</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted_1">5</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted_2">5</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded">0</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="d" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="f" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="e" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="f" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="g" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="h">5</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="j" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="k">10,6,7,12,8,9,11</exelink>
+   <exelink qstep="2" npc="n164_argenta_wounded">0</exelink>
+   <exelink qstep="2" npc="n026_trader_may">3</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="reward_1">6,7</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="reward_2">6,8</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="d">9,10,11</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="e" />
+   <journal_data recompense="0:3180" quest_title="아름다운 은색의 머릿결" chapterid="" quest_level="20" quest_mark_type="10" use_item_list="400123,400124">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_23.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>174,0,0</destination_pos>
+         <destination_mode>custom:9@4,171@3,172@3,173@3,174@3</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[Collect10High-quality silver hair tied]]></title>
+         <contents mid="72"><![CDATA[<html>Collect10High-quality silver hair tied。<BR>
+Dark Wizard in the arrest of no return，Or to entrust Algerita。<BR>
+ <BR>
+<FONT color=#086171>Crystal Valley（Sigh Canyon entrance）</FONT> <FONT color=#a82424>→ No return</FONT><BR>
+<FONT color=#086171>Gray ruins</FONT> <FONT color=#a82424>→ 阿尔杰塔</FONT></html>]]></contents>
+         <destination mid="73"><![CDATA[Collect10High-quality silver hair tied]]></destination>
+         <todo_msg mid="74"><![CDATA[Add a task。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[Dialogue with the consumables business Mee]]></title>
+         <contents mid="77"><![CDATA[<html>Obtained high-quality silver hair。 <BR>
+It points to the Kedella consumables business mey bar。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Consumables business Mee</FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[Dialogue with the consumables business Mee]]></destination>
+         <todo_msg mid="79"><![CDATA[Obtain high quality hair，Back to the consumables business, where it mey。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>20:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

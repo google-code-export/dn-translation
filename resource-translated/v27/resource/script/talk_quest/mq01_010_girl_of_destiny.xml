@@ -1,0 +1,214 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_010_girl_of_destiny</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>10</qid>
+      <designer>김주연</designer>
+      <qlevel>9</qlevel>
+      <qdesc>시작레벨이 9.
+
+9레벨이 아직 되지 않았다면 수정 개울은 위험한 곳이니 좀 더 실력을 쌓으란 충고를 하고, 9레벨이 넘으면 촌장님께 들리란 말을 한다. 
+ 대사를 넣기 위해 8레벨로 넣음.
+ </qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>201</nextqid>
+      <nextqname>mq08_201_secret_melody</nextqname>
+      <nextqnpc>n001_elder_harold</nextqnpc>
+      <qkname mid="1"><![CDATA[Fate of the girl]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-1-a" mid="99"><![CDATA[<html>I&#39;m going to track the monster，Back to basket wire rescue。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Self-defense, head of Steve$<BR>How do you think it should be after？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-a" image="QW_CristalStream.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-1-bbcd" mid="101"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Self-defense, head of Steve$<BR>So that……According to the report，Taking wire basket<FONT color=#a82424>Red Eagle Mito mistress</FONT>Wind through the forest，Flew<FONT color=#a82424>Crystal Valley</FONT>There。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-b" image="QS_Default.dds" itemindex="300012">
+      <talk_answer link_index="n004_guard_steave-1-c" mid="103"><![CDATA[<html>Thank you……I will definitely come back ribbon basket。</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Self-defense, head of Steve$<BR>To pass the Crystal Valley，Must Walled City……Hence the need for permit。This is<FONT color=#a82424>Crystal Valley Pass</FONT>，I give it to you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-c" image="QN_Elder_Harold.dds" itemindex="">
+      <talk_question mid="104"><![CDATA[<html>$Self-defense, head of Steve$<BR>For your help，I express my heartfelt thanks。<BR>Before leaving，You better go to meet<FONT color=#a82424>Village head</FONT>。Me……Must prepare for the funeral of Timothy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-d" image="QW_CristalStream.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-1-e" mid="106"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Self-defense, head of Steve$<BR><FONT color=#a82424>Crystal Valley</FONT>Gathering place is the monster who，They<FONT color=#a82424>Kedella points</FONT>Eyeing。I heard they are different and the nearby monster，Actions well organized，So very dangerous。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-e" image="QW_CristalStream.dds" itemindex="">
+      <talk_question mid="107"><![CDATA[<html>$Self-defense, head of Steve$<BR>Strength to you，Not enough to deal with them。Would you like to temporarily leave the town in Pourailly，Further practice you？<BR><FONT color=#a82424>(Must be9And above，To perform the task of the next stage)</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="108"><![CDATA[<html>$Harold village$<BR><FONT color=#387206>{user_nick}</FONT>，<FONT color=#a82424>Self-defense, head of Steve</FONT>Is waiting for you。Eh-hem, Eh-hem……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="QN_Elder_Harold.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Self-defense, head of Steve${action:Talk}<BR>Before leaving，You better go to meet<FONT color=#a82424>Village head</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-a" mid="114"><![CDATA[<html>Village of ages？</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Harold village$<BR>You 来啦……<FONT color=#a82424>Wire basket</FONT>And<FONT color=#a82424>Timothy</FONT>Eh-hem, Eh-hem……<BR>Timothy sacrificed for wire basket，This all because I cherish the sky，My heart is heavy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-b" mid="115"><![CDATA[<html><FONT color=#a94407>Reading dreamer</FONT>Be…What？</html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$Harold village$<BR><FONT color=#a82424>Wire basket</FONT> Is a special child。She has long been nobody has ever<FONT color=#a94407>Reading dreamer</FONT>Ability……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-c" mid="116"><![CDATA[<html>Wire baskets that take away the reason Monster Is？</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$Harold village$<BR>According to legend，It is a dream to see the ability of others。This capability is said to enhance the ability of persons to the extreme part of the，Can even read<FONT color=#a94407>Goddess Aertaiya</FONT>Dream。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-d" mid="117"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Harold village${action:Talk}<BR>Now can only wish for……I had hoped to ordinary wire baskets grow up……It seems that my expectations too high。Eh-hem, Eh-hem……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-d" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-e" mid="120"><![CDATA[<html>I certainly will look back wire basket……</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Harold village${action:Talk}<BR>Had I known，Might as well accept the<FONT color=#a82424>Holy Heaven King City</FONT>Or<FONT color=#a82424>Te Lama by Mission</FONT>Protection，Although it will be used，But at least the threat to life will not be monsters……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-e" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-f" mid="122"><![CDATA[<html>Thank you。</html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$Harold village$<BR>In order to have not met the basket wire，You pay so much effort……I do not know how to thank you。Eh-hem, Eh-hem……<FONT color=#387206>{user_nick}</FONT>，This is a village and self-defense groups to prepare something for you，Although not worth much money，But I hope you can help……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-f" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-!next" mid="124"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>300012 : 수정 개울 통행증
+300010 :붉은 인장 삭제</comment>
+      <conditions>
+         <chk type="lvl" op="]=">9</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n004_guard_steave">b</exe>
+         <exe type="talk" npc="n004_guard_steave">d</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300012</exe>
+         <exe type="delquestitem" num="-1">300010</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,101,102,102,102</exe>
+         <exe type="complete">10</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n004_guard_steave" sub="bbcd">0</exelink>
+   <exelink qstep="1" npc="n004_guard_steave" sub="c">5,3,4,6</exelink>
+   <exelink qstep="1" npc="n004_guard_steave" sub="e" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="b" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="c" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="d" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="e" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="f">0</exelink>
+   <exelink qstep="2" npc="n001_elder_harold" sub="!next">1</exelink>
+   <journal_data recompense="1:101,2:102" quest_title="운명의 소녀" chapterid="1" quest_level="9" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>자경단장 스티브</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>자경단장 스티브</complete_npc>
+         <get_item>수정 개울 통행증</get_item>
+         <get_itemindex>300012</get_itemindex>
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Steve dialogue with the guards]]></title>
+         <contents mid="44"><![CDATA[<html>Steve told me, head in self-defense，To find a wire basket，Have to<FONT color=#a82424>Red Eagle Mito mistress</FONT>Crystal Valley to where the。<BR>Go<FONT color=#a82424>Steve</FONT>There receive<FONT color=#a82424>Crystal Valley Pass</FONT>。<BR>※ <FONT color=#a82424>Role of the hierarchy must be9And above，To perform the task of the next stage。</FONT><BR><BR><FONT color=#086171>Pourailly town</FONT> <FONT color=#a82424>→ Self-defense, head of Steve</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Steve dialogue with the guards]]></destination>
+         <todo_msg mid="46"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Elder_Harold.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-1390,-629</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>자경단장 스티브</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>촌장 해롤드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[And the village chief Harold dialogue]]></title>
+         <contents mid="48"><![CDATA[<html>Steve has given me through the valley of the Walled City Crystal permit required，And allow me to meet the village head。<BR>Go to meet<FONT color=#a82424>Harold village</FONT>，And do a good job to<FONT color=#a82424>Crystal Valley</FONT>Preparation。<BR><BR><FONT color=#086171>Pourailly town</FONT> <FONT color=#a82424>→ Harold village</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[And the village chief Harold dialogue]]></destination>
+         <todo_msg mid="50"><![CDATA[Permit access to the Crystal Valley。Please village Harold dialogue。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

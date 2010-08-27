@@ -1,0 +1,263 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_273_make_ring1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>273</qid>
+      <designer>곽노찬</designer>
+      <qlevel>10</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>274</nextqid>
+      <nextqname>sq08_274_make_ring2</nextqname>
+      <nextqnpc>n025_trader_corin</nextqnpc>
+      <qkname mid="1"><![CDATA[Production of ringⅠ]]></qkname>
+      <qnpc>
+         <npcid>25</npcid>
+         <npcename>n025_trader_corin</npcename>
+         <npckname>대장장이 코린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-class_check" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Blacksmith Colin$<BR>Ah……I feel like I&#39;ve never seen you in Kedella……？<BR>You are……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-a" image="QW_PrairieTown.dds" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-b" mid="8"><![CDATA[<html>If not particularly well known……</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Blacksmith Colin$<BR>Yes……Yes……You&#39;re the one in<FONT color=#a82424>Pourailly town</FONT>It is well-known adventurer！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-b" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-e" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Blacksmith Colin$<BR>Ha ha……My brother<FONT color=#a82424>Dowling</FONT>Ah, but you praise。Bad temper that guy that you want to come watch Kedella，Let me point you care。I always wanted to see you in the end what kind of person。Ha ha……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-c" image="QW_ManaRidge.dds" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-d" mid="15"><![CDATA[<html>If not particularly well known……</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Blacksmith Colin$<BR>Yes……Yes……You&#39;re the one in<FONT color=#a82424>Pourailly town</FONT>It is well-known adventurer！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-d" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-e" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Blacksmith Colin$<BR>Ha ha……My brother<FONT color=#a82424>Dowling</FONT>Ah, but you praise。Bad temper that guy that you want to come watch Kedella，Let me point you care。I always wanted to see you in the end what kind of person。Ha ha……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-e" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-f" mid="20"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Blacksmith Colin$<BR>Now let me take care of your brothers，I should help you……Ah……<FONT color=#a82424>Kedella points</FONT>Experienced adventurers everywhere。You can not use this beginners（Lame）Thing……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-g" mid="23"><![CDATA[<html>Ah……Nothing……Well, you gave me！</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Blacksmith Colin$<BR><FONT color=#7e12d2>(Blacksmith Colin looked at me up and down)</FONT><BR>While you are looking body rag，But anyhow fairly complete equipment。So I have nothing to help you prepare the equipment……Ah……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-g" image="QS_Default.dds" itemindex="336732192">
+      <talk_answer link_index="n025_trader_corin-accepting-h" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Blacksmith Colin$<BR>Well。I have a few remaining production rings<FONT color=#a82424>Fragments of normal stars</FONT>，Can you make a ring for you to use。How 样？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-acceptted" mid="28"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Production of ringⅠ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-1-a" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Blacksmith Colin$<BR>To make rings，Some materials need to use。<BR>
+That is,<FONT color=#a82424>Agate fragments</FONT>And<FONT color=#a82424>Fragments of normal stars</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-a" image="QS_Default.dds" itemindex="336617472">
+      <talk_answer link_index="n025_trader_corin-1-b" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Blacksmith Colin$<BR><FONT color=#a82424>Agate fragments</FONT>You should have a lot of，I will not show。The Star is not that easy to get。Ha ha……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-b" image="QS_Default.dds" itemindex="336732192">
+      <talk_answer link_index="n025_trader_corin-1-c" mid="37"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Blacksmith Colin$<BR>This time I took<FONT color=#a82424>Fragments of normal stars</FONT>Give you what。But the light that seems a bit too good for you？I ask you a few questions，You try and answer。Before I will tell you a simple education，Should not be difficult to answer。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-c" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-1-d" mid="50"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Blacksmith Colin$<BR>In each village blacksmith can make items。Items can be divided into<FONT color=#a82424>Arms</FONT>/<FONT color=#a82424>Armor</FONT>/<FONT color=#a82424>Accessories</FONT>。Of course，Each village can make the types of items will be different。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-d" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-1-e" mid="51"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Blacksmith Colin$<BR>Pourailly town and the ridge of the blacksmith can make magic10Below the rank of the equipment，Here you can create24Below the rank of the equipment。The next area can be made sacred paradise24Equipment above the rank of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-e" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-1-f" mid="44"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Blacksmith Colin$<BR>There are two methods of producing goods。In the list of goods production，At about configuration items can be seen。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-f" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-1-g" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Blacksmith Colin$<BR>Difference is<FONT color=#a82424>Amount of material</FONT>And<FONT color=#a82424>Production probability</FONT>。Of course，Consumption of materials, method of making production more than a high success rate。The consumption of material means less low success rate，They can try more times。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-g" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-1-h" mid="53"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Blacksmith Colin$<BR>Also，The most important thing is！Items produced according to the different types of，Property will be very different。Even for the same goods，Properties may vary。View items you want to make，You can see what properties can be。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-h" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2" mid="55"><![CDATA[<html>(How ah feel a little irresponsible……</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Blacksmith Colin$<BR>
+Lucky，Will be able to get the property you want to have their own items。If bad luck，Goods production will fail。Or even make a successful，Can not get the property you want。Ha ha……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-a" mid="57"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Blacksmith Colin$<BR>
+Good！Instructions on here！<BR>
+I want the title of the。Listen carefully，Then correct answer。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-a" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-b" mid="60"><![CDATA[<html> Arms</html>]]></talk_answer>
+      <talk_answer link_index="n025_trader_corin-2-b" mid="61"><![CDATA[<html> Armor</html>]]></talk_answer>
+      <talk_answer link_index="n025_trader_corin-2-b" mid="62"><![CDATA[<html> Accessories</html>]]></talk_answer>
+      <talk_answer link_index="n025_trader_corin-2-c" mid="63"><![CDATA[<html> Hound</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Blacksmith Colin$<BR>
+The following items，Items can not be produced？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-b" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-a" mid="65"><![CDATA[<html>(Re-answer questions)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Blacksmith Colin$<BR>
+Even this can be got it wrong，Really served you……Your mind is<FONT color=#a82424>Offline</FONT> State right？Click one&#39;s tongue……Listen carefully！<BR>
+Categories of items can be made is<FONT color=#a82424>Arms</FONT>/<FONT color=#a82424>Armor</FONT>/<FONT color=#a82424>Accessories</FONT>。Over again！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-c" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-d" mid="68"><![CDATA[<html>☞ Yes~！</html>]]></talk_answer>
+      <talk_answer link_index="n025_trader_corin-2-e" mid="69"><![CDATA[<html>☞ No~！</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Blacksmith Colin$<BR>
+Next question！<FONT color=#a82424>Method of producing goods</FONT>A total of<FONT color=#a82424>Three kinds of</FONT>。Materials were consumed over a high success rate but the method、Low success rate, but less consumption of materials, methods，And method of making money is not material。Choice of the words<FONT color=#a82424>Yes</FONT>！If the wrong choice<FONT color=#a82424>NO</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-d" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-a" mid="71"><![CDATA[<html>(Answer from the beginning)</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Blacksmith Colin$<BR>Wrong！The only way to make consumption of material goods but the success rate of the method of multi-，And less consumption of materials, but the method of the low success rate<FONT color=#a82424>Two</FONT>！<BR>Over again！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-e" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-f" mid="73"><![CDATA[<html> Props can only blacksmith in the village office to。</html>]]></talk_answer>
+      <talk_answer link_index="n025_trader_corin-2-f" mid="77"><![CDATA[<html> Create props properties were generated in a certain range。</html>]]></talk_answer>
+      <talk_answer link_index="n025_trader_corin-2-g" mid="78"><![CDATA[<html> Production of materials can be purchased at the blacksmith and the grocery store。</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Blacksmith Colin$<BR>
+The last question！Which is not the characteristics of goods produced？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-f" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-a" mid="80"><![CDATA[<html>(Answer from the beginning)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Blacksmith Colin$<BR>
+Unfortunately，Wrong answer。Production of material goods can only be obtained by hunting or decomposition。From scratch～！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-g" image="QS_Default.dds" itemindex="336732192">
+      <talk_answer link_index="n025_trader_corin-2-h" mid="82"><![CDATA[<html>Thank you。</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Blacksmith Colin$<BR>
+Really great！Good，By convention，I<FONT color=#a82424>Fragments of normal stars</FONT>Give you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-h" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-!next" mid="84"><![CDATA[<html><FONT color=#086171>(Rewarded)</FONT></html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="conexe" true="2" false="3">1</exe>
+         <exe type="talk" npc="n025_trader_corin">a</exe>
+         <exe type="talk" npc="n025_trader_corin">c</exe>
+         <exe type="recompense_view">2730,,,,</exe>
+         <exe type="setquest">273</exe>
+         <exe type="talk" npc="n025_trader_corin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2730,,,,</exe>
+         <exe type="complete">273</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="class_check">0</exelink>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="h">4</exelink>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="acceptted">5,6</exelink>
+   <exelink qstep="1" npc="n025_trader_corin" sub="b" />
+   <exelink qstep="1" npc="n025_trader_corin" sub="c" />
+   <exelink qstep="1" npc="n025_trader_corin" sub="d" />
+   <exelink qstep="1" npc="n025_trader_corin" sub="e" />
+   <exelink qstep="1" npc="n025_trader_corin" sub="f" />
+   <exelink qstep="1" npc="n025_trader_corin" sub="g" />
+   <exelink qstep="1" npc="n025_trader_corin" sub="h" />
+   <exelink qstep="1" npc="n025_trader_corin" sub="2">0</exelink>
+   <exelink qstep="2" npc="n025_trader_corin" sub="b" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="b" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="b" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="c" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="a" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="d" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="e" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="a" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="f" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="f" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="g" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="a" />
+   <exelink qstep="2" npc="n025_trader_corin" sub="h">0</exelink>
+   <exelink qstep="2" npc="n025_trader_corin" sub="!next">1</exelink>
+   <journal_data recompense="2730" quest_title="반지 제작Ⅰ" chapterid="" quest_level="10" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n25</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>25</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="87"><![CDATA[And the blacksmith Colin dialogue]]></title>
+         <contents mid="88"><![CDATA[<html><FONT color=#a82424>Blacksmith Colin</FONT>That will be used with leftover<FONT color=#a82424>Fragments of normal stars</FONT>Help me make the ring。<BR>And the blacksmith Colin dialogue，To obtain fragments of ordinary stars。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Blacksmith Colin</FONT></html>]]></contents>
+         <destination mid="89"><![CDATA[And the blacksmith Colin dialogue]]></destination>
+         <todo_msg mid="90"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>10:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,376 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_216_argentas_kiss</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>216</qid>
+      <designer>김주연</designer>
+      <qlevel>20</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>217</nextqid>
+      <nextqname>mq08_217_blessed_stone</nextqname>
+      <nextqnpc>n035_soceress_master_tiana</nextqnpc>
+      <qkname mid="1"><![CDATA[Algerita breathing]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나 (캐더락 소서리 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Ah……If able to stop the gas diffusion，If the toxin can be purified……Ah？！On the！！Purify！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Aha，Let me think……<BR>Magician like the ancient people had of the purification technology。<FONT color=#387206>{user_nick}！</FONT>Come on you one thing。Ask the<FONT color=#a82424>Advanced magician Tina</FONT>，Which magician of the ancient people had of the purification facilities。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Perhaps the magician&#39;s study is our hope。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Advanced magician Tina$<BR>Heard pollutants are dispersed into the Kedella。<FONT color=#387206>{user_nick}</FONT>，Dai Kade looking for you，You go and see him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Algerita$<BR>Feed，Between those who say that under the finished Kedella。Go confirm how the matter in the end。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-a" mid="13"><![CDATA[<html>You know you purification facilities of the situation？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Advanced magician Tina$<BR>Pollutants spread things，I have heard。I am looking at what can help to busy……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-b" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Advanced magician Tina$<BR>Ah，Of course。Actually，Resistance with Monster10Years ago，I<FONT color=#a82424>Heroes magician karatyup</FONT>The order of，Ancient people responsible for the investigation of purification equipment。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-c" mid="17"><![CDATA[<html>I see the research data you？</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Advanced magician Tina$<BR>Teacher&#39;s fate<FONT color=#a82424>Monster War</FONT>Turning point occurred in，Had to interrupt after a purification device for。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-c" image="QW_24.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-d" mid="19"><![CDATA[<html>I go and find it。</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Advanced magician Tina$<BR>Unfortunately，Of information in the teacher&#39;s death<FONT color=#a82424>Death Basin</FONT>In，Who does not know where are files。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-d" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Advanced magician Tina$<BR>You did not expect such a positive。I can now say that only those。<BR><FONT color=#387206>{user_nick}</FONT>，Fortune and you would like to be with。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Algerita$<BR>Dai Kade not think of anything？You ask me how to know？All can not escape the sound near my ear。You go and meet<FONT color=#a82424>Tina</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html><FONT color=#a82424><FONT color=#2b2723>$Society of Dai Kade adventurer$<BR>Ask the</FONT>Advanced magician Tina</FONT>，Which magician of the ancient people had of the purification facilities。Perhaps the magician&#39;s study is our hope。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3" image="QW_24.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-a" mid="24"><![CDATA[<html>You are worried do I？</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Algerita$<BR>Do you really going to die Basin？The research data to find that magician？This is very dangerous for you。Prior to，You hold the first。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-cutscene" mid="26"><![CDATA[<html>Right is……</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Algerita$<BR>Hum，If you die，Who to talk to me，Who will help me run errands ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Algerita$<BR>You died, I will be very bored，So I will help you。Do not misunderstand。On the，The effect that not too long continued，You want your attention。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4" image="QS_Default.dds" itemindex="300061">
+      <talk_question mid="30"><![CDATA[<html>$Advanced magician Tina$<BR>Teachers of information in his death<FONT color=#a82424>Death Basin</FONT>In。If no research data，Who does not even help you。You can quickly go back to research information to find you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-5-a" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Advanced magician Tina$<BR>Thank you。Cough……Eventually like to take someone else&#39;s hands to find。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-5-levelcheck" mid="34"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5-b" image="" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$Advanced magician Tina$<BR>Interpretation of files need some time，Please wait a moment。<BR>You also do not idle，Can go to practice cultivation。<BR>You must take this kind of work it good practice?<BR><FONT color=#7e12d2>（Must be22Level and above can be implemented）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-6-a" mid="103"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Advanced magician Tina$<BR>Interpretation of the documents have been good，Ah……As if you could find a way。Read here<FONT color=#a82424>“Around the ancient people used to Kedella ancient forests to life mechanism”'</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6-a" image="QP_puri_facility.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-6-b" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Advanced magician Tina$<BR>Does not know the cleaning device，Can not be allowed to neglect the forest of death reinstated。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-6-!next" mid="99"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Advanced magician Tina$<BR>Knowledge of ancient people are said，There is a toxic substance can relieve the toxicity of cleaning equipment。This document recorded and the contents of purification installations。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6-c" image="" itemindex="">
+      <talk_question mid="104"><![CDATA[<html>$Advanced magician Tina$<BR>I began to interpret documents，It may take some time，Please be patient。<BR><FONT color=#7e12d2>（Must be22Level and above can be implemented）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="custom">api_user_PlayCutScene(userObjID,npcObjID,72);</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7,4,5,6">664</exe>
+         <exe type="addquestitem" num="1">300061</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">22</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">,2161,2162,2163,2164</exe>
+         <exe type="setstep">6</exe>
+         <exe type="conexe" true="1,3" false="1,4">0</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">6</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">b</exe>
+         <exe type="delquestitem" num="-1">300061</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">22</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">6</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">c</exe>
+         <exe type="complete">216</exe>
+         <exe type="delquestitem" num="-1">300004</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="c" />
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="d">0,1</exelink>
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="cutscene">3,0,2,1</exelink>
+   <exelink qstep="5" npc="n035_soceress_master_tiana" sub="a">0</exelink>
+   <exelink qstep="5" npc="n035_soceress_master_tiana" sub="levelcheck">2,5</exelink>
+   <exelink qstep="6" npc="n035_soceress_master_tiana">0</exelink>
+   <exelink qstep="6" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="6" npc="n035_soceress_master_tiana" sub="!next">3,4</exelink>
+   <journal_data recompense="1:2161,2:2162,3:2163,4:2164" quest_title="아르젠타의 숨결" chapterid="3" quest_level="20" quest_mark_type="7" use_item_list="300061">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Society of Daika De dialogue and adventurer]]></title>
+         <contents mid="43"><![CDATA[<html><FONT color=#a82424>Society of Dai Kade adventurer</FONT>Said he is looking for<FONT color=#a82424>Purify</FONT>Contaminated by pollutants, the method Kedella。Society of Dai Kade and adventurers to the dialogue。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Society of Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Society of Daika De dialogue and adventurer]]></destination>
+         <todo_msg mid="45"><![CDATA[Please join Dai Kade，Thinking purification methods Kedella。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2265,1121</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[And Kedella dialogue senior magician Tina]]></title>
+         <contents mid="83"><![CDATA[<html>According to<FONT color=#a82424>Society of Dai Kade adventurer</FONT>Recall，Kedella the magician has conducted research related to purification。To dialogue and senior magician Tina。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Advanced magician Tina</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[And Kedella dialogue senior magician Tina]]></destination>
+         <todo_msg mid="85"><![CDATA[Please go to Kedella points，And senior magician Tina dialogue。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[Prior to the death Basin，And Algerita dialogue]]></title>
+         <contents mid="87"><![CDATA[<html>It is said by wizards“Purify”Of data loss in the death of basin。Prior to the death Basin，And<FONT color=#a82424>Algerita</FONT>Dialogue。<BR><BR><FONT color=#086171>Gray ruins</FONT><FONT color=#a82424> → Algerita</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[Prior to the death Basin，And Algerita dialogue]]></destination>
+         <todo_msg mid="89"><![CDATA[Prior to the death Basin，Please Algerita dialogue。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_24.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>244,0,0</destination_pos>
+         <destination_mode>custom:241@1,242@1,243@1,244@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Basin to the death of magician data search]]></title>
+         <contents mid="91"><![CDATA[<html>It is said about<FONT color=#a82424>Purifier</FONT>Of information in<FONT color=#a82424>Death Basin</FONT>。Basin to find the magician of death information。<BR><BR><BR><FONT color=#086171>Shore littered with fallen leaves(Death Forest entrance)</FONT> <FONT color=#a82424>→ Death Basin</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[Basin to the death of magician data search]]></destination>
+         <todo_msg mid="93"><![CDATA[Please search wizard to death basin research data。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2265,1121</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[To find the log to the advanced magician Tina]]></title>
+         <contents mid="95"><![CDATA[<html>Found a written record of the magician and the research log。Crossing it to Kedella<FONT color=#a82424>Advanced magician Tina</FONT>It。<BR><FONT color=#7e12d2>※ 22Level above be carried out。</FONT><BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Advanced magician Tina</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[（22Level）To find the log to the advanced magician Tina]]></destination>
+         <todo_msg mid="97"><![CDATA[Found a written record of the log。Please send it to the senior magician Tina。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>215</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

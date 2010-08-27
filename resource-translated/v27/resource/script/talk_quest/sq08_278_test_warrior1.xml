@@ -1,0 +1,372 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_278_test_warrior1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>278</qid>
+      <designer>손원호</designer>
+      <qlevel>15</qlevel>
+      <qdesc>주인공의 무기를 보고, 놀라는 챈들러. "지금까지 이런 장비로 싸워온건가!" 제대로 정식 수련도 받아보지 못한 주인공이 지금까지 살아있는 것은 기적이라고 하며, 앞으로의 모험에는 새로운 힘이 필요할 것이라고 말하는 챈들러. 하지만 강한 힘에는 큰 의지가 필요한 법. 먼저 주인공이 그 힘을 받을 자격이 되어 있는지 확인해야 겠다고 하는데… 워리어 시험의 방으로 보내준다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>279</nextqid>
+      <nextqname>sq08_279_test_warrior2</nextqname>
+      <nextqnpc>n032_warrior_master_chandler</nextqnpc>
+      <qkname mid="1"><![CDATA[[Transfer] Proof of soldiers Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>32</npcid>
+         <npcename>n032_warrior_master_chandler</npcename>
+         <npckname>상급 워리어 챈들러 (캐더락 워려 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-a" mid="7"><![CDATA[<html>Why suddenly say things in the past?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Senior Warrior Chandler${action:Talk}<BR>Every soldier，Should remember the names of two people。One of them is the legend and the Black Dragon, fought in<FONT color=#a82424>Mercenary captain Ballner</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-b" mid="9"><![CDATA[<html>... Well like a villain?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Senior Warrior Chandler$<BR>Obediently continue to listen to ah。Another，Also the respect of all soldiers。He is different from the single-minded pursuit of justice Ballner，He is a powerful force to pursue。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-c" mid="82"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Senior Warrior Chandler$<BR>In short，The so-called justice for each person has a different significance in terms of it。His mind is the pursuit of justice can not lose to anyone powerful force。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-d" mid="94"><![CDATA[<html>Very Italian soldiers?</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Senior Warrior Chandler$<BR>His pursuit of more power，Continuous cultivation of the hard，Ultimately successful, the other soldiers had arrived not to ever<FONT color=#a82424>Ultimate Warrior</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-e" mid="84"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Senior Warrior Chandler$<BR>Yes ah…Who does not know what that means exactly represent，However, since the soldiers left has reached the limit of the news，Disappeared in the long river of history which。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-f" mid="100"><![CDATA[<html>... Lambert！</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Senior Warrior Chandler$<BR>Endless pursuit of power，He gave all the soldiers left a strong impression of incomparable，Until now, people still become a legend is widespread。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-g" mid="86"><![CDATA[<html>If the father left behind...</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Senior Warrior Chandler$<BR>
+Ah，This is your father，<FONT color=#a82424>Lambert</FONT>The story。<BR>There he left me to tell you if you，Only here, there have been waiting for you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-h" mid="88"><![CDATA[<html>（Listen to words of the deceased）</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Senior Warrior Chandler$<BR>He left your last testament。 <BR>
+You must be sure to remember。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-i" mid="90"><![CDATA[<html>... Father。</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Senior Warrior Chandler$<BR><FONT color=#7e12d2>Keep it up strong。</FONT><BR><FONT color=#7e12d2>When you finally reach a height of one day<FONT color=#7e12d2>When...</FONT> </FONT><BR><FONT color=#7e12d2>To see me。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-j" mid="92"><![CDATA[<html>How to become more powerful?</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Senior Warrior Chandler$<BR>
+To see him so，Continue to be strong Rise up。<BR>Only in this way，To see him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-j" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-k" mid="11"><![CDATA[<html>Transfer?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Senior Warrior Chandler$<BR>Your ability to be soldiers now use only the most basic technology。 In order to become more powerful，Need to learn more powerful techniques。However, if we learn new technology must be<FONT color=#a82424>Transfer</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-k" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-l" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Senior Warrior Chandler$<BR>Simply，Novice fighters like you need if you want to go further<FONT color=#a82424>Transfer</FONT><FONT color=#2b2723>It</FONT>。If the soldier is to rely on several technologies that nonsense words Xiaopi Hai，Transfer is to become good at fighting knight。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-l" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Proof of soldiers Ⅰ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-m" image="" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah... There are other people around you，This can only tell you one thing，So first<FONT color=#a82424>Out team</FONT>Come again。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-a" mid="20"><![CDATA[<html>Qualifications?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Senior Warrior Chandler$<BR>Commitments in accordance with your father，Let me lead you right to that road。But powerful forces will require corresponding，Before making transfer，Have to confirm that you have a <FONT color=#a82424>Matching qualifications</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-b" mid="22"><![CDATA[<html>What kind of test。</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Senior Warrior Chandler$<BR>You do not get too excited。While rookie in terms of，Will find some difficulty，But if you walk past a smooth road warrior, then，Should be easily adopted。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-c" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Senior Warrior Chandler$<BR>To improve the power has been an instant<FONT color=#a82424>Trials room</FONT>。The influx of strange creatures, from many who feel the body should be able to power up your own kind of force constantly。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-d" mid="26"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Senior Warrior Chandler$<BR>Trials in the Room<FONT color=#a82424> Monster gather too much will fail</FONT>，So as soon as possible eliminate the smoke monster storm Caixing general。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-member1" mid="28"><![CDATA[<html>（Now the challenge）</html>]]></talk_answer>
+      <talk_answer link_index="n032_warrior_master_chandler-1-g" mid="29"><![CDATA[<html>（Challenge next time）</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Senior Warrior Chandler$<BR><FONT color=#a82424>Wielded your sword</FONT>Zhanla enemies,，Can not rest a moment。 <BR>
+The Road Warrior，Just above the waving of the Corner！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-go_test_room" mid="70"><![CDATA[<html>（Room to move to the trials）</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Senior Warrior Chandler$<BR>Then went to the<FONT color=#a82424>Trials room</FONT>How?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-f" image="" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Senior Warrior Chandler$<BR><FONT color=#a82424>Trials room</FONT>Can not go along with team team。 On<BR>
+<FONT color=#a82424>Alone</FONT>Into it！<BR>
+<FONT color=#7e12d2>(Team can not be under)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-g" image="" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$Senior Warrior Chandler$<BR>What a timid guy。 <BR>
+Then, when ready, Come again！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-member1" mid="32"><![CDATA[<html>（Now the challenge）</html>]]></talk_answer>
+      <talk_answer link_index="n032_warrior_master_chandler-2-c" mid="33"><![CDATA[<html>（Challenge next time）</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Senior Warrior Chandler$<BR>What also linger，Challenges have been well<FONT color=#a82424>Transfer test</FONT>Preparation of the right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-go_test_room" mid="76"><![CDATA[<html>（Room to move to the trials）</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Senior Warrior Chandler$<BR>Then went to the<FONT color=#a82424>Trials room</FONT>How?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-b" image="" itemindex="">
+      <talk_question mid="77"><![CDATA[<html>$Senior Warrior Chandler$<BR><FONT color=#a82424>Trials room</FONT>Can not go along with team team。 On<BR>
+<FONT color=#a82424>Alone</FONT>Into it！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-c" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Senior Warrior Chandler$<BR>What a timid guy。 <BR>
+Then, when ready, Come again！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-a" mid="36"><![CDATA[<html>What is the next test?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Senior Warrior Chandler$<BR>Really worthy of the legendary warrior，Lambert&#39;s son ah。 <BR>
+Ah good skill。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-b" mid="38"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Senior Warrior Chandler$<BR>
+Before that there is a question for you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-c" mid="40"><![CDATA[<html>... Ah！</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Senior Warrior Chandler$<BR><FONT color=#a82424>Lambert</FONT>To search for more power and has abandoned you。 <BR>Would you like to see him do？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-d" mid="42"><![CDATA[<html>It does not matter。</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah... If that is the path of your choice, then，I can not stop you。But from now on the road more thorns will be waiting for you，You really can do? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-e" mid="44"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Senior Warrior Chandler$<BR>Ah ha ha！Select the thorny road,，Is indeed the son of Lambert ah。Also，And he&#39;s the only way to meet，Is to become the strongest warrior... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-f" mid="46"><![CDATA[<html>Understand！</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Senior Warrior Chandler$<BR>You want to go on Caixing firm。 <BR>He will visit you before the end that awaits you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-f" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-g" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Senior Warrior Chandler$<BR>Added a lot of nonsense。 <BR>
+So start now<FONT color=#a82424>The second test</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-g" image="QS_Default.dds" itemindex="300072">
+      <talk_answer link_index="n032_warrior_master_chandler-3-h" mid="50"><![CDATA[<html>Courage in the heart of stone?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Senior Warrior Chandler$<BR>Want to use the power of new weapons will need to match Caixing。I will commission a blacksmith to do here for you to bring a new weapon，And you will tries to get some<FONT color=#a82424>Courage in the heart of stone</FONT>Come back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-h" image="QS_Default.dds" itemindex="300072">
+      <talk_answer link_index="n032_warrior_master_chandler-3-i" mid="52"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Senior Warrior Chandler$<BR>That is to wake up your potential as a<FONT color=#a82424>Catalyst</FONT>Only，I would like to use it to force your body out of step by step excitation。Why do? Do not go and get me！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-i" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-!next" mid="54"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense_view">2780,,,,</exe>
+         <exe type="setquest">278</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">1</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">a</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">m</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>전직 시험
+스탭 3, 저널 3으로 변경</comment>
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13009,1);</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">e</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">f</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="custom">api_user_ChangeMap(userObjID,13009,1);</exe>
+         <exe type="conexe" true="2" false="3">0</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">a</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2780,,,,</exe>
+         <exe type="complete">278</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="a">3</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="l">0</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="b" />
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="c" />
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="d">0,1</exelink>
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="member1">3</exelink>
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="g" />
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="go_test_room">2</exelink>
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="member1">1</exelink>
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="go_test_room">0</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="b" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="c" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="d" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="e" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="f" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="g" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="h" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="i">0</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="!next">1</exelink>
+   <journal_data recompense="2780" quest_title="[전직] 전사의 증명 Ⅰ" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Dialogue with senior soldiers Chandler]]></title>
+         <contents mid="57"><![CDATA[<html>In order to obtain new power and high-level dialogue soldiers Chandler。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior Warrior Chandler</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Dialogue with senior soldiers Chandler]]></destination>
+         <todo_msg mid="59"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom:13009@2</destination_mode>
+         <statemark_npcid>250</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[Room through the trials]]></title>
+         <contents mid="61"><![CDATA[<html>To complete the transfer test trials room bar。 Senior Warrior trials Chandler room can access。<BR><FONT color=#7e12d2></FONT><BR>
+<FONT color=#7e12d2>※ Test of the room in the team can not enter state。</FONT><BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior Warrior Chandler</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[Room through the trials]]></destination>
+         <todo_msg mid="63"><![CDATA[Let the room through the trials。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Dialogue with senior soldiers Chandler]]></title>
+         <contents mid="65"><![CDATA[<html>Room through the trials！ Soldiers went to the High Chandler to accept the second transfer test it。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior Warrior Chandler</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Dialogue with senior soldiers Chandler]]></destination>
+         <todo_msg mid="67"><![CDATA[Room through the trials，Back to where it advanced fighter Chandler。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

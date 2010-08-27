@@ -1,0 +1,582 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_414_odd_sequela</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>414</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>415</nextqid>
+      <nextqname>mq11_415_stopgap</nextqname>
+      <nextqnpc>n044_archer_master_ishilien</nextqnpc>
+      <qkname mid="1"><![CDATA[Strange consequences]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Court magician Kala An$<BR>
+I have to take a break to rest。<BR>Duke has been over there watching us，You go<FONT color=#a82424>Duke Stewart</FONT>Ask him what it。<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Geraint$<BR>You seem very worried<FONT color=#a82424>Descendants of ancient people</FONT>？<BR>As long as I have breath，Would not be half a step away from this girl，Do not worry。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$General Douglas$<BR>To protect the sanctity of heaven and those soldiers who desperately，You all do not mind。Your only concern alone<FONT color=#a82424>Golden Dragon</FONT>Power……<FONT color=#7e12d2>(General Douglas Stewart Duke looked very unhappy)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Senior archer Yixilian$<BR><FONT color=#a82424>Geraint</FONT>……Even if people do not know，He also hiding from my eyes。<BR>He is50Years ago, the man to lead us。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-a" mid="10"><![CDATA[<html>What I do for you？</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Duke Stewart$<BR>Loyalty to the sacred warrior heaven<FONT color=#382000>{user_nick}</FONT>，Come soon。<BR>I have important things is you want to find。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-a" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-b" mid="13"><![CDATA[<html>What？Appointment Books？</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Duke Stewart${action:Stand2}<BR>The dragon……His name is not mentioned<FONT color=#a82424>Geraint</FONT>？<BR>
+Ah，The name is rare，But actually happens on and50Heroes of the same name years ago。In short，I would like to honor this tremendous<FONT color=#a82424>Appointment Books</FONT>Gave him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-b" image="QS_Default.dds" itemindex="300248">
+      <talk_answer link_index="n041_duke_stwart-1-c" mid="15"><![CDATA[<html>Is there a misunderstanding somewhere？</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Duke Stewart$<BR>Yes ah，If he can be<FONT color=#a82424>Our young mighty End of His Majesty King moved，He will offer to the king and the sacred guardian of paradise</FONT>Of。So nice to be able to？If the matter is we all know，Must be greatly encouraging。Therefore, I have prepared a formal letter of appointment。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-c" image="QS_Default.dds" itemindex="300248">
+      <talk_answer link_index="n041_duke_stwart-1-d" mid="18"><![CDATA[<html>Did not seek his own opinion does not matter right？</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Duke Stewart$<BR>Haha，What&#39;s mistake can？<BR>We are discussing，To him as<FONT color=#a82424>Guardian of dragon country</FONT>，Established for him in the side of a<FONT color=#a82424>Bronze statue</FONT>。<BR>
+For him, the more glory than to the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-d" image="QS_Default.dds" itemindex="300248">
+      <talk_answer link_index="n041_duke_stwart-1-e" mid="20"><![CDATA[<html>(Come up with a bigger way of appointment)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Duke Stewart$<BR>Ah，I actually find you to this matter come。<BR>
+Only you can hear out there？<BR>Besides I would detract from the Duke to go directly to，Also some was improper。So still you to be my envoy it，Help me to him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-e" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-f" mid="22"><![CDATA[<html>(Duke seems like a very good mood)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Duke Stewart${action:Talk}<BR><FONT color=#a82424>Golden Dragon</FONT>Submission in our words，Will greatly enhance the appeal of His Majesty the King and national cohesion。<BR>Whether people will or aristocratic pride and our pride。Ha ha ha～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-f" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Duke Stewart$<BR><FONT color=#382000>{user_nick}</FONT>，Go，The book will be appointed to<FONT color=#a82424>Golden Dragon</FONT>。In the name of the great King Kaxiwusi，Appointed him<FONT color=#a82424>Divine guardian of heaven</FONT>，And the king&#39;s guard Knight。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Duke Stewart$<BR><FONT color=#382000>{user_nick}</FONT>，Go，The book will be appointed to<FONT color=#a82424>Golden Dragon</FONT>。In the name of the great King Kaxiwusi，Appointed him<FONT color=#a82424>Divine guardian of heaven</FONT>，And the king&#39;s guard Knight。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-2-a" mid="29"><![CDATA[<html>Again……This set of？</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Geraint$<BR>Guardian Knight？Appointment Books？<BR>……Also true love？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-2-b" mid="31"><![CDATA[<html>To refuse to do this appointment？</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Geraint$<BR><FONT color=#a82424>50Years ago</FONT>The same is true。Zhang break them whole paper to me and my companions，Let us take part in endless boring ceremony。<BR>
+Elves said that the human is always too fast，But I think it takes so long，Human beings are still the same then？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-b" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-2-c" mid="33"><![CDATA[<html>So please accept this letter of appointment。</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Geraint$<BR>Yes，I am indeed in heaven as a divine<FONT color=#a82424>Den</FONT>Protect。But，How human beings are willing to call me，I would not care。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-c" image="QS_Default.dds" itemindex="300248">
+      <talk_answer link_index="n216_geraint_wounded-2-d" mid="35"><![CDATA[<html>(What is it easily placed somewhere)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Geraint$<BR>I&#39;ll leave it。<BR>This thing is useless to me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-d" image="" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Geraint$<BR>It seems you are coming for this thing。<BR><FONT color=#7e12d2>(Geraint interest in the matter stop here)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3" image="" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Geraint$<BR>Yes，I am indeed in heaven as a divine<FONT color=#a82424>Den</FONT>Protect。But，How human beings are willing to call me，I would not care。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-3-a" mid="39"><![CDATA[<html>(Duke looks good mood)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Duke Stewart${action:Talk}<BR>He rejected the appointment of the ceremony so beautiful can be packed into these future-known<FONT color=#a82424>Meitan</FONT>。<BR>
+Of course，This can also save the state treasury expenditure，Be nice。Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-3-b" mid="41"><![CDATA[<html>No other things the right？</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Duke Stewart${action:Stand2}<BR>
+Now have to start making bronze statues of the，I would like to monitor the progress of，Estimated to be busy for a while。If necessary，I will find you。Well，I excused。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3-b" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-3-c" mid="43"><![CDATA[<html>Treatment of the wounded？</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Duke Stewart$<BR>Are not……Ah，On the。<BR><FONT color=#a82424>General Douglas</FONT>I have been entangled with the things that is not enough to treat the injured staff。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3-c" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-3-d" mid="45"><![CDATA[<html>(Duke frowned，Sigh)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Duke Stewart$<BR>In fact, I do not do not know<FONT color=#a82424>General Douglas</FONT>How much hard work paid，But in the end this matter not because of His Majesty the King&#39;s divine grace and proper solution of the right？<BR>
+Those elite soldiers in the end doing，Need to apply for support？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3-d" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Duke Stewart${action:Stand2}<BR>
+I can not not care，You help me see it。<BR>What is there to help，You help out a good look at the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Duke Stewart${action:Stand2}<BR><FONT color=#a82424>General Douglas</FONT>Because of shortage of things to treat the injured，Always told me to say no use proposals。<BR>You go and see，If there is that I can help and tell me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-a" mid="50"><![CDATA[<html>I heard you need a helping hand。</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$General Douglas${action:Talk}<BR>Yo yo，Who is that。This is not<FONT color=#382000>{user_nick}</FONT>You？Thanks to you last really，Hard work。<BR>You look like a good war，Encouraged a number of fighters。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-b" mid="52"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$General Douglas$<BR>You come for this matter？Really……<BR>
+It looks，Duke is not going to send officials to a formal。<BR>This can be in trouble。This is something that is very difficult……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-b" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-c" mid="54"><![CDATA[<html>This is indeed a major event。</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$General Douglas$<BR>Since<FONT color=#a82424>Golden Dragon</FONT>Appears，Credit for all the soldiers have been overlooked。<BR>The most important issue now is，In order to protect the country for those wounded were wounded to help our little。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-d" mid="57"><![CDATA[<html>Let me help it。</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$General Douglas${action:Talk}<BR>Especially with<FONT color=#a82424>Strange symptoms</FONT>The wounded to emerge。To the treatment they must first investigate these strange symptoms，I am looking for people who can help the investigation。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-d" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$General Douglas$<BR>Would you like to help us？This is really……Embarrassing，You&#39;re not a member of King City，We are always looking for your help。<BR>
+Now<FONT color=#a82424>Senior archer Yixilian</FONT>Is helping treat the wounded wounded。Ask the specific circumstances of her right。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-5" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$General Douglas${action:Talk}<BR>Treatment of the wounded is now in charge of<FONT color=#a82424>Senior archer Yixilian</FONT>，Ask her specific situation you find it。<BR>More and more soldiers are suffering from this strange disease，I am very worried。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-5" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-5-a" mid="63"><![CDATA[<html>Not the officials do not work？</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Senior archer Yixilian$<BR>I remember to apply for transfer to King City is the official bar？<BR>How to send a<FONT color=#382000>{user_class}</FONT>A person over the？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-5-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-5-b" mid="65"><![CDATA[<html>I mainly wanted to know about the wounded were strange symptoms。</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Senior archer Yixilian$<BR>It is not necessary nor is it……<BR>King City, people always think they do is the most important。<BR>
+But，This is their choice is their destiny。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-5-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-5-c" mid="67"><![CDATA[<html>What is the disease in the end it？</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Senior archer Yixilian$<BR>In this part of the war wounded soldiers，Shown strange symptoms。Magician who has failed to，They have never seen these symptoms。<BR>But，I am familiar with this disease does not even。<BR>
+While it is not certain……But certainly I know of a disease。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-5-c" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-5-d" mid="69"><![CDATA[<html>What？</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Senior archer Yixilian$<BR>If I was right，Such a high fever and some strange variation of the body……<FONT color=#7e12d2>(Yixilian paused Buddist)</FONT> <BR>
+……Some things are not confirmed。<BR>
+This is what I want to please you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-5-d" image="QW_36.dds" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Senior archer Yixilian$<BR>Now we have soldiers were sent to<FONT color=#a82424>Dark Overlord of the training grounds</FONT>Eliminate the residual Party Monster。<BR>You go over there，Help eliminate the remnants of Monster，And some of<FONT color=#a82424>Contaminated soil samples</FONT>Brought back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-6" image="QW_36.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-6-chkitem" mid="111"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Senior archer Yixilian$<BR><FONT color=#a82424>Dark Overlord of the training grounds</FONT>There is also a lot of residual Party Monster。<BR>If they who have stained the soil samples to investigate must have something to gain certain。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-6-a" image="QW_36.dds" itemindex="">
+      <talk_question mid="112"><![CDATA[<html>$Senior archer Yixilian$<BR>
+You brought back<FONT color=#a82424>Contaminated soil samples</FONT>Texture problem，Not what the basic analysis。<BR>
+Although it is embarrassing，But still want to trouble you from<FONT color=#a82424>More powerful Monster</FONT>Who came back to collect more specimens。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-6-b" image="QW_36.dds" itemindex="">
+      <talk_question mid="113"><![CDATA[<html>$Senior archer Yixilian$<BR>
+<FONT color=#a82424>Contaminated soil samples</FONT>Do not collect？<BR>
+To those wounded，Can you please hurry up。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-7" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-7-a" mid="73"><![CDATA[<html>(This is probably considered it a compliment)</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Senior archer Yixilian$<BR>Back？It seems I want you to please those who still king of the city than the officials to secure a lot of。<BR>King City for those who absolutely can not distinguish prioritize。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-7-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-7-b" mid="75"><![CDATA[<html>50Years ago……Event……？</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Senior archer Yixilian$<BR>The color of this soil……<BR>
+<FONT color=#7e12d2>(Yixilian examine the specimens)</FONT><BR>
+I really did not guess wrong。<BR>And50Years ago, that same pollution incident。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-7-b" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-7-c" mid="77"><![CDATA[<html>Black Dragon&#39;s Blood？</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Senior archer Yixilian$<BR>That case is called<FONT color=#a82424>Plague of rain</FONT>。Black Dragon&#39;s Blood……<BR>50Years ago，After the raid Black Dragon，There are still a lot of people suffer。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-7-c" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-7-d" mid="79"><![CDATA[<html>Do not cure please？</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Senior archer Yixilian$<BR>Yes。Monster blood for a strong case is no different from other organisms, highly toxic。Black Dragon&#39;s blood will be boiling like a volcano&#39;s lava burning human body，Even further erosion nerve。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-7-d" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-7-!next" mid="81"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300248</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300248</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="huntmon" num="30000" party="0" exe="" onexe="4">982</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">987</exe>
+         <exe type="addquestitem" num="1">300252</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300252</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="1" op="]=">300252</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n044_archer_master_ishilien">a</exe>
+         <exe type="talk" npc="n044_archer_master_ishilien">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300252</exe>
+         <exe type="recompense">,4141,4142,4143,4144</exe>
+         <exe type="complete">414</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="1" npc="n041_duke_stwart" sub="c" />
+   <exelink qstep="1" npc="n041_duke_stwart" sub="d" />
+   <exelink qstep="1" npc="n041_duke_stwart" sub="e" />
+   <exelink qstep="1" npc="n041_duke_stwart" sub="f">0,1,2</exelink>
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="d">0,1,2</exelink>
+   <exelink qstep="3" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="3" npc="n041_duke_stwart" sub="c" />
+   <exelink qstep="3" npc="n041_duke_stwart" sub="d">0,1</exelink>
+   <exelink qstep="4" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="4" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="4" npc="n042_general_duglars" sub="d">0,1</exelink>
+   <exelink qstep="5" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="5" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="5" npc="n044_archer_master_ishilien" sub="d">0,3,8,1</exelink>
+   <exelink qstep="6" npc="n044_archer_master_ishilien" sub="chkitem">0</exelink>
+   <exelink qstep="7" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="7" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="7" npc="n044_archer_master_ishilien" sub="d">1</exelink>
+   <exelink qstep="7" npc="n044_archer_master_ishilien" sub="!next">0,2</exelink>
+   <journal_data recompense="1:4141,2:4142,3:4143,4:4144" quest_title="기이한 후유증" chapterid="5" quest_level="32" quest_mark_type="7" use_item_list="300248,300252">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[Other things]]></title>
+         <contents mid="84"><![CDATA[<html><FONT color=#a82424>Duke Stewart</FONT>Seem to find you something，He went to visit it。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> → Duke Stewart</html>]]></contents>
+         <destination mid="85"><![CDATA[Dialogue, and Duke Stewart]]></destination>
+         <todo_msg mid="86"><![CDATA[To meet the Duke Stewart。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="87"><![CDATA[Grant of appointment]]></title>
+         <contents mid="88"><![CDATA[<html>Duke Stewart seems to want to use<FONT color=#a82424>Geraint</FONT>Publicity。Referred to the letter of appointment。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise(Secret underground area)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="89"><![CDATA[Referred to the letter of appointment Geraint]]></destination>
+         <todo_msg mid="90"><![CDATA[Please book the appointment of the Duke of Stewart transferred to Geraint。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[There is no interest in things]]></title>
+         <contents mid="92"><![CDATA[<html><FONT color=#a82424>Geraint</FONT>Seems not very interested in human things。Will be forwarded to him after the letter of appointment to go back to find Duke Stewart。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Duke Stewart</FONT></html>]]></contents>
+         <destination mid="93"><![CDATA[Dialogue, and Duke Stewart]]></destination>
+         <todo_msg mid="94"><![CDATA[Referred to the appointment book，Report to the Duke Stewart。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="95"><![CDATA[General discontent]]></title>
+         <contents mid="96"><![CDATA[<html>General need to help treat the wounded in the hand，To meet General Douglas。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="97"><![CDATA[And General Douglas dialogue]]></destination>
+         <todo_msg mid="98"><![CDATA[Please to meet General Douglas。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="99"><![CDATA[Really useful to help]]></title>
+         <contents mid="100"><![CDATA[<html>And are providing help to injured soldiers, senior archer Yixilian dialogue。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Senior archer Yixilian</FONT></html>]]></contents>
+         <destination mid="101"><![CDATA[And senior archers Yixilian dialogue]]></destination>
+         <todo_msg mid="102"><![CDATA[And senior archers Yixilian treatment of wounded soldiers chat。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QW_36.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>364,0,0</destination_pos>
+         <destination_mode>custom:361@1,362@1,363@1,364@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="103"><![CDATA[Contaminated soil samples]]></title>
+         <contents mid="104"><![CDATA[<html>Dark Overlord of the parade ground to collect<FONT color=#a82424>Contaminated soil samples</FONT>。<BR>
+ <BR>
+<FONT color=#7e12d2>※ Difficulty can not be implemented under the abyss。</FONT><BR>
+ <BR>
+<FONT color=#086171>Montenegro hill angle(Dark Overlord of the barriers)</FONT> <FONT color=#a82424>→ Dark Overlord of the training grounds</FONT></html>]]></contents>
+         <destination mid="105"><![CDATA[Overlord&#39;s training grounds in the dark, collecting samples]]></destination>
+         <todo_msg mid="106"><![CDATA[Go Dark Overlord of the training grounds to collect samples of contaminated soil。]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="107"><![CDATA[Complete collection]]></title>
+         <contents mid="108"><![CDATA[<html>Complete specimen collection。Report to senior archer Yixilian。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Senior archer Yixilian</FONT></html>]]></contents>
+         <destination mid="109"><![CDATA[And senior archers Yixilian dialogue]]></destination>
+         <todo_msg mid="110"><![CDATA[Access to the specimens。Please report to senior archer Yixilian。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>413</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

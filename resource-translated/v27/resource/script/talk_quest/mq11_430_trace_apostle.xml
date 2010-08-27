@@ -1,0 +1,485 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_430_trace_apostle</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>430</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>431</nextqid>
+      <nextqname>mq11_431_next_town</nextqname>
+      <nextqnpc>n042_general_duglars</nextqnpc>
+      <qkname mid="1"><![CDATA[The whereabouts of the Apostles]]></qkname>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>219</npcid>
+         <npcename>n219_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$King Kaxiwusi$<BR>How could this happen……Why would this be the prophet……Himself。Great Kaxiwusi kings……How I should do in the end？Himself……<BR><FONT color=#7e12d2>(King City must go underground secret place to confirm the safety of Rose)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Duke Stewart$<BR>Even such a thing happened……So to say，Prophet became unable to use weapons。<BR><FONT color=#7e12d2>(King City must go underground secret place to confirm the safety of Rose)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Court magician Kala An${action:Talk}<BR>Hum，Raccoons can not believe that the same sinister old man，I have said many times Kala An do not？！Now look at what it had～King City guys。<BR><FONT color=#7e12d2>(King City must go underground secret place to confirm the safety of Rose)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$General Douglas$<BR>I&#39;m checking the important report。You wait and then come to me。<BR><FONT color=#7e12d2>(King City must go underground secret place to confirm the safety of Rose)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Elite soldiers Cleander$<BR>Because suddenly received a message，King City, once confusion up。<BR><FONT color=#7e12d2>(King City must go underground secret place to confirm the safety of Rose)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n219_velskud-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n219_velskud-1-a" mid="12"><![CDATA[<html>Apostle？！</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Beisikede$<BR>I came back to take<FONT color=#a82424>Apostle</FONT> The heads of the Ignacio。Did not think he has run away。<BR>And with the ancient people。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n219_velskud-1-a" image="" itemindex="">
+      <talk_answer link_index="n219_velskud-1-b" mid="14"><![CDATA[<html>In the end what you are saying？</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Beisikede$<BR>Yes。<FONT color=#a82424>Red Dragon</FONT>Hands of the stupid guys。<BR>……Those guys are doing good，Make a mess。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n219_velskud-1-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n219_velskud-1-c" mid="16"><![CDATA[<html>What is Apostolic？Where he？</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Beisikede$<BR>I do not want to stay here with the leisurely people to explain。<BR>You guess it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n219_velskud-1-c" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Beisikede$<BR>And you are such a fool，I have nothing to say about，Goodbye。<BR>The value of even stepping on the guy did not，Quickly get out of the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n219_velskud-2" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Beisikede$<BR>And you are such a fool，I have nothing to say about，Goodbye。<BR>The value of even stepping on the guy did not，Quickly get out of the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-2-a" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Elite soldiers Cleander${action:Talk}<BR><FONT color=#382000>{user_nick}</FONT>！！You know<FONT color=#a82424>Prophet</FONT>Gone right？<BR>I saw the ground had closed the door opened，So let the guards to search，Results can not find how the Prophet。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-2-b" mid="22"><![CDATA[<html>Bishop Ignacio you？</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Elite soldiers Cleander$<BR>And<FONT color=#a82424>Bishop Ignacio</FONT>Also disappeared，Now Wang has entered a state of emergency in the city。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-b" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Elite soldiers Cleander$<BR>Yes。This seems very unusual。<BR>Now<FONT color=#a82424>General Douglas</FONT>Are dealing with this matter，You go to see him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Elite soldiers Cleander${action:Talk}<BR><FONT color=#a82424>Bishop Ignacio</FONT>And disappeared with the prophet。<BR><FONT color=#a82424>General Douglas</FONT>Now give instructions to soldiers。You go to see him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="27"><![CDATA[<html>How the matter in the end？</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$General Douglas${action:Talk}<BR>You finally Laila！In your absence，Here out of the event。<BR>Prophet disappeared！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-b" mid="29"><![CDATA[<html>Is hijacked along with you？</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$General Douglas$<BR>Although I can not believe，But<FONT color=#a82424>Bishop Ignacio</FONT>And<FONT color=#a82424>Prophet</FONT>Disappeared together。I just received a report of scout，Now find their whereabouts。It appears that they have left the sacred paradise。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-b" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-c" mid="31"><![CDATA[<html>What？How could this happen……！</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$General Douglas$<BR>If so niches！……You do not know？Not only you，All were<FONT color=#a82424>Ignacio</FONT>Juggling among！！His goal from the beginning that the Prophet！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-c" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$General Douglas$<BR>Detailed information you ask<FONT color=#a82424>Court magician Kala An</FONT>It。<BR>
+She immediately to deploy additional manpower to chase him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$General Douglas${action:Talk}<BR>Detailed information you ask<FONT color=#a82424>Court magician Kala An</FONT>It。<BR>She immediately to deploy additional manpower to chase him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-4" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-4-a" mid="36"><![CDATA[<html>(Kaxiwusi looked with troubled eyes looked)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$King Kaxiwusi$<BR>Main……Bishop even betrayed I，Hijacked prophets……Really unbelievable。Sob，Stewart uncle was right，The world can trust，Only<FONT color=#a82424>Uncle</FONT>A person……Sob。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-4-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$King Kaxiwusi$<BR>You，You are my faithful the subjects as you？Ah？……But no matter what you say，I will not believe your。Sob……<BR><FONT color=#a82424>General Douglas</FONT>Should be able to trust it？General……Is a good minister。<FONT color=#7e12d2>(Kaxiwusi very anxious)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-4-a" mid="39"><![CDATA[<html>(Duke with a sigh)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Duke Stewart${action:Stand2}<BR>Our small<FONT color=#a82424>King</FONT>His Majesty as this, he was a great blow。<BR>I would like to use the Dragon and the Prophet do some publicity……This happened to a bad time。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-a" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-4-" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Duke Stewart$<BR><FONT color=#a82424>Prophet</FONT>And<FONT color=#a82424>Golden Dragon</FONT>Things disappear，Best to confidentiality。<BR>The most important is to defeat Black Dragon，Other things like not matter how。Are not you？？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-b" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Duke Stewart$<BR>Therefore<FONT color=#a82424>Bishop Ignacio</FONT>The disappearance of low-key approach we should。<BR>I believe you should listen to understand my words，Hum。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-a" mid="45"><![CDATA[<html>Ah？Me？</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Court magician Kala An${action:Talk}<BR>Hum，Can not believe that the same sinister raccoon<FONT color=#a82424>Old man</FONT>，I have said many times Kala An do not？！Now look at what it had～King City guys。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-b" mid="47"><![CDATA[<html>(Lie……)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Court magician Kala An$<BR>It&#39;s all because of you！What they do not know where Scrapped，The results for the raccoon to<FONT color=#a82424>Prophet</FONT>Stole！<BR>I knew so～I know～！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-b" image="QW_44.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-c" mid="49"><![CDATA[<html>I&#39;ll go。</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Court magician Kala An$<BR>I heard the general say，Bishop seems to<FONT color=#a82424>Tomb of unknown tyrant</FONT>There fled the。<BR>If you have a little sense of responsibility, then，To quickly pursue him！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-c" image="" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Court magician Kala An$<BR>If you want to borrow such a thing as an excuse to force us Sorcerer，Think again！！<BR>As long as things are not OK，Even the things the Kingdom，We will not provide any support for the magician。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-5" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-5-a" mid="54"><![CDATA[<html>(Ka Laan, where a large temper)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Court magician Kala An$<BR>Many people in different places to see him，But we can not every place to troubleshoot。This is the reason for your！！Because you have that<FONT color=#a82424>Raccoon</FONT>To take away<FONT color=#a82424>Prophet</FONT>！！This should be your responsibility！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-5-a" image="QW_44.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Court magician Kala An$<BR>How do you not go<FONT color=#a82424>Tomb of unknown tyrant</FONT>，What still linger？This does not want me help you？Help you, then I do not like it，What do you have to find？Hum。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-5" image="QW_44.dds" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$General Douglas$<BR>According to the report，I sent to several places to track。But I think I should not be so easy to find。<BR>I let the court magician for Kala An<FONT color=#a82424>Tomb of unknown tyrant</FONT>……She put things in your hands？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-6" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-6-a" mid="58"><![CDATA[<html>……Yes，The early brains。</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Court magician Kala An${action:Talk}<BR>Ah～He ran away you were？With that<FONT color=#a82424>Raccoon</FONT>You see no shadow？Hum～I know this。I know！I know that is very sinister bishop，Has other ideas in play。I know that you stupid！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-6-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-6-b" mid="61"><![CDATA[<html>Be……(Enough is enough)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Court magician Kala An$<BR>Hum，Why do I say？I am a graceful observer，Not your teacher。<BR>I have nothing to say to you。You make such a big mistake，Why has the cheek to hang on here？Do not give me away fast！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-6-b" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$Court magician Kala An$<BR>……Me said if you are successful，I can and<FONT color=#a82424>General Douglas</FONT>Boast boast。Really a waste of emotion～Ah，Really makes Greatest Fire～！<BR><FONT color=#7e12d2>(Kala An look at the other side, General Douglas，Constant nagging)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-a" mid="64"><![CDATA[<html>(General seems to really worry)</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$General Douglas${action:Talk}<BR>Ah……There really did not find<FONT color=#a82424>Ignacio</FONT>Trail。<BR>Bishop……Not，King City to all have been cheated by Ignacio。You do not have too much self-blame。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-b" mid="66"><![CDATA[<html>…….</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$General Douglas$<BR>Although the matter has become such，But I know you are very loyal to the sacred paradise。<BR>Share of result of loyalty like this，Really is a very unfortunate thing。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-c" mid="68"><![CDATA[<html>(Should be Safentela the discredited owes something to)</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$General Douglas$<BR>But……I do not know because the pain is still fighting inside fatigue，Do not you look good。<BR><FONT color=#7e12d2>(General look of concern and looked at me)</FONT>You，Is not a health problem？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-c" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-d" mid="70"><![CDATA[<html>Good，Know。</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$General Douglas$<BR>And the Black Dragon that will not be fighting the fatigue accumulated burst out right now？This is strange。<BR>I think you better go take a look at previously served as the Military<FONT color=#a82424>Senior archer Yixilian</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-d" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-!next" mid="72"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">1159</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4301,4302,4303,4304</exe>
+         <exe type="complete">430</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n219_velskud" sub="b" />
+   <exelink qstep="1" npc="n219_velskud" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n209_elite_soldier" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="c">0,1</exelink>
+   <exelink qstep="4" npc="n041_duke_stwart" sub="" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="c">0,2,1</exelink>
+   <exelink qstep="6" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="6" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="6" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="6" npc="n042_general_duglars" sub="d">0</exelink>
+   <exelink qstep="6" npc="n042_general_duglars" sub="!next">1</exelink>
+   <journal_data recompense="1:4301,2:4302,3:4303,4:4304" quest_title="사도의 행방" chapterid="5" quest_level="38" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13014,n219</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>219</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[Unexpected meeting]]></title>
+         <contents mid="75"><![CDATA[<html><FONT color=#a82424>Beisikede</FONT>In King City Underground。Prophet seems to have disappeared。And his dialogue，To see how the matter in the end it。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City(Secret underground area)</FONT> <FONT color=#a82424>→ Beisikede</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[And Beisikede dialogue]]></destination>
+         <todo_msg mid="77"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n209</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>209</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[Wang city chaos]]></title>
+         <contents mid="79"><![CDATA[<html>Do not know what it means to say Beisikede。First go to the king in the city to hear what other people say it。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Elite soldiers Cleander</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[And dialogue with the rest of King City]]></destination>
+         <todo_msg mid="81"><![CDATA[Please ask the king the rest of the city What happened in the end。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[Bishop disappeared]]></title>
+         <contents mid="83"><![CDATA[<html>According to the words of Cleander，It seems that the Prophet took Bishop。Go<FONT color=#a82424>General Douglas</FONT>To find out the detailed information it。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[And General Douglas dialogue]]></destination>
+         <todo_msg mid="85"><![CDATA[Please contact the General Douglas asked what had happened in the end。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[Situation]]></title>
+         <contents mid="87"><![CDATA[<html>Although I can not believe，But<FONT color=#a82424>Bishop Ignacio</FONT>Seems to disappear with Rose。Whereabouts<FONT color=#a82424>Court magician Kala An</FONT>Read more details。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Court magician Kala An</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[And the court magician Kala An dialogue]]></destination>
+         <todo_msg mid="89"><![CDATA[Please and court magician Kala An dialogue。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QW_44.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>444,0,0</destination_pos>
+         <destination_mode>custom:441@1,442@1,443@1,444@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Tracking the whereabouts of]]></title>
+         <contents mid="91"><![CDATA[<html>Tracking the whereabouts of Bishop Ignacio，Go<FONT color=#a82424>Tomb of unknown tyrant</FONT>。<BR>
+ <BR>
+<FONT color=#7e12d2>※ Difficulty can not be implemented under the abyss。</FONT><BR>
+ <BR>
+<FONT color=#086171>Heermadai port(Dark mine entrance)</FONT> <FONT color=#a82424>→ Tomb of unknown tyrant</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[Explore the unknown tomb of the tyrant]]></destination>
+         <todo_msg mid="93"><![CDATA[Tomb of unknown tyrant go to find the whereabouts of Bishop Ignacio。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[Failed to track]]></title>
+         <contents mid="95"><![CDATA[<html>Bishop Ignacio and Rose did not find the whereabouts。Kala An and to the court magician<FONT color=#a82424>General Douglas</FONT>Report。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[And General Douglas dialogue]]></destination>
+         <todo_msg mid="97"><![CDATA[Bishop could not be found。Please report to the General Douglas。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>429</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

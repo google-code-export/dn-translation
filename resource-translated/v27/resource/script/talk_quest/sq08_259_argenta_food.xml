@@ -1,0 +1,350 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_259_argenta_food</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>259</qid>
+      <designer>김인정</designer>
+      <qlevel>15</qlevel>
+      <qdesc>300113(죽음의 숲 진액)
+선행: 206퀘스트(메인)
+데커드에게 퀘스트 받기.
+죽음의 숲에서 버섯 쳐서 진액 10개 수집.
+아르젠타에게 보고.
+데커드 최종 보고.
+(바로 2번 퀘스트로 연결)
+
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>260</nextqid>
+      <nextqname>sq08_260_argenta_flower</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[Algerita health food]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-noquest" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Algerita$<BR>…Why? See what see? You，Ah no reason here Xia Guang?<BR><FONT color=#7e12d2>（Adventurer, president of Dai Kade from the public to continue to accept the task before）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Company president Dai Kade adventurer${action:Talk}<BR>I am worried that<FONT color=#a82424>Seniors female swordsman</FONT>。<BR>Last I heard she saved you，I am still a little doubt。I heard she was injured，I feel very uneasy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>And I heard that woman swordsman is<FONT color=#a82424>Big beauty</FONT>？Her eyes have seen people say that fall is coming soon……Because Dark Knight last saw her when things，She took the veil，So could not see clearly。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="109"><![CDATA[<html>What is the relationship between beauty and injuries……</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>So it&#39;s pretty ah……<BR>
+Ah，<FONT color=#a82424>Beauty</FONT>If wounded，What a pain in the ah？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-d" mid="11"><![CDATA[<html>So Americans and wounded anything to do...</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Anyway，Wounded must maintain。<BR>Injury did not heal，If not good to eat，To<FONT color=#a82424>Beauty</FONT>The body will be not so good！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-e" mid="13"><![CDATA[<html>（Finally is out to understand）</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>This case，Due to personal circumstances of you might find some health food sent to her ah?<BR>She&#39;s your savior then，This should do the right reward！！ This is the basic truth in life ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-e" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-f" mid="15"><![CDATA[<html>She does not find some to be the end...</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Go<FONT color=#a82424>Death forest</FONT>Collection<FONT color=#a82424>Blue Mushroom</FONT>，Made of chopped<FONT color=#a82424>Death forest fluids</FONT>，What do you think？A little is enough。<BR>
+Because it is poisonous mushroom body fluid，Instead, eat more unhealthy,。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Algerita health food$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QS_Default.dds" itemindex="300113">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="60"><![CDATA[<html>（Understand）</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Must collect5A<FONT color=#a82424>Death forest fluids</FONT>Cai Xing。It should not be difficult？<BR>I hope you Kuaiqukuaihui。<BR>For his rescuers，This small total should do it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QS_Default.dds" itemindex="300113">
+      <talk_question mid="61"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Weakness of the beauty and health food... Yes。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Algerita$<BR>…See what see ah?<BR>You，Ah no reason here Xia Guang?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QS_Default.dds" itemindex="300113">
+      <talk_question mid="21"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Must collect5A<FONT color=#a82424>Death forest fluids</FONT>Cai Xing。It should not be difficult？I hope you Kuaiqukuaihui。<BR>For his rescuers，This small total should do it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Algerita$<BR>…Why? …See what see ah?<BR>You，Ah no reason here Xia Guang?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QS_Default.dds" itemindex="300113">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-a" mid="32"><![CDATA[<html>Can it give Algerita?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Oh～<FONT color=#a82424>Death forest fluids</FONT>……Ah，Really good。Fragrant！A look that is suitable for beauty food supplements。<BR>Ah，Although some toxicity，But eating less is a good medicine。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Good。<BR>Grown doubled in supplements to the injured<FONT color=#a82424>Beauty</FONT>Get past it。<BR>Do not forget that I let you get past the！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3" image="QS_Default.dds" itemindex="300113">
+      <talk_answer link_index="n164_argenta_wounded-3-a" mid="62"><![CDATA[<html>Company president Dai Kade adventurer I send tonic……</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html><FONT color=#2b2723>$Algerita$<BR>Ah……？What is this ah？<BR>Is to eat right？</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-a" image="QS_Default.dds" itemindex="300113">
+      <talk_answer link_index="n164_argenta_wounded-3-b" mid="64"><![CDATA[<html>（Really breath finished）</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Algerita$<BR>Tonic？<FONT color=#a82424>Tonic</FONT>Of course, the meat should be，Not you？Click one&#39;s tongue……I did not sincere。<BR>
+<FONT color=#7e12d2>(Algerita a drink to the death of forests and body fluids were overturned)</FONT><BR>
+……This is something，Only enough to stick to your teeth。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-c" mid="66"><![CDATA[<html>(But finally it got until the……)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Algerita$<BR>Ah……Damn，Till I had no appetite。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-d" mid="85"><![CDATA[<html>So I to repay...</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Algerita$<BR>
+Why……To worry me now？<BR>Such a weak person like you，Because who can live up to now ah？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-d" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="67"><![CDATA[<html><FONT color=#a82424><FONT color=#2b2723>$Algerita$<BR>Oh～You want to repay the benefactor？<BR>Then I would have the disrespect of the。</FONT></FONT><BR><FONT color=#a82424><FONT color=#2b2723>You ran back to tell<FONT color=#a82424>Daika De</FONT>，Let him give up on this heart，Then immediately</FONT>Return。</FONT>You know？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Algerita$<BR>Back again so soon？<BR>…I do not want to give you what。Come on you too will be another<BR>
+<FONT color=#7e12d2>(Should not go public President Dai Kade report adventurer)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-a" mid="68"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html><FONT color=#2b2723>$Company president Dai Kade adventurer$<BR>How 样？Seniors should be very pleased to bar female swordsman? </FONT><FONT color=#2b2723>Thanks to my，You can repay the kindness of benefactors，It must be very happy。Wow haha！<BR>Do not thank me。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-b" mid="70"><![CDATA[<html>Nobody is allowed to worry about you。</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>How to say beautiful woman swordsman？<BR>
+You tell her that I Dai Kade……<BR>Not，Although I did not let you have to mention my……Ah ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-c" mid="87"><![CDATA[<html>(How could……)</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Company president Dai Kade adventurer${action:Talk}<BR>What？！……Indeed the，Really do not understand a woman&#39;s mind。<BR>
+I heard recently<FONT color=#a82424>Holy Paradise</FONT>Popular heart happy，But unhappy with the surface mounted……Perhaps the situation is similar。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-c" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-d" mid="89"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-!next" mid="91"><![CDATA[<html>Ah，Well。</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>A word you&#39;ve worked hard。<BR>For me to who may wish to re- <FONT color=#a82424>Seniors Female Swordsman</FONT>Hello it。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,2591,2592,2593,2594</exe>
+         <exe type="setquest">259</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntitem" num="5" exe="5,3,4" onexe="">300113</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300113</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">259</exe>
+         <exe type="recompense">,2591,2592,2593,2594</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="f">0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="a">0,1,2</exelink>
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="d">0,1,2</exelink>
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="c">1</exelink>
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="d">0</exelink>
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="!next" />
+   <journal_data recompense="1:2591,2:2592,3:2593,4:2594" quest_title="아르젠타의 보양식" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="300113">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>모험자 길드장 데커드</start_npc>
+         <desc_location>죽음의 숲</desc_location>
+         <step_action>수집</step_action>
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item>죽음의 숲 진액 10개</collect_item>
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Dai Kade care]]></title>
+         <contents mid="44"><![CDATA[<html><FONT color=#a82424>Company president Dai Kade adventurer</FONT>Proposed to the injured<FONT color=#a82424>Algerita</FONT>Over the past delivery point tonic。Dai Kade listen to a detailed proposal right there。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Company president Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[And adventurer, president of Dai Kade public dialogue]]></destination>
+         <todo_msg mid="46"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_17.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>134,0,0</destination_pos>
+         <destination_mode>custom:131@3,132@3,133@3,134@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[Body fluid collecting forest death]]></title>
+         <contents mid="95"><![CDATA[<html>Whatever the reason，All in all, savior。To Algerita，Go<FONT color=#086171><FONT color=#a82424>Death forest</FONT></FONT>Collection<FONT color=#a82424>Blue Mushroom</FONT>，To collect the chopped<FONT color=#a82424>Death forest fluids</FONT>It。<BR><BR><FONT color=#086171>Gray ruins → Shore littered with fallen leaves(Death Forest entrance)</FONT> <FONT color=#a82424>→ Death forest</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[Death of the forest to collect body fluid]]></destination>
+         <todo_msg mid="97"><![CDATA[Go to the forest to collect death5A dead forest fluids。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,n164</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="98"><![CDATA[To Algerita]]></title>
+         <contents mid="99"><![CDATA[<html>According to<FONT color=#a82424>Company president Dai Kade adventurer</FONT>Delegate，Collected to Algerita the tonic。The supplements to the<FONT color=#a82424>Algerita</FONT>I bar。<BR><BR><FONT color=#086171>Gray ruins</FONT> <FONT color=#a82424>→ Algerita</FONT></html>]]></contents>
+         <destination mid="100"><![CDATA[And the gray ruins of Algerita dialogue]]></destination>
+         <todo_msg mid="101"><![CDATA[Please deaths gray forest to the ruins of the Algerita body fluid。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="102"><![CDATA[Algerita response]]></title>
+         <contents mid="103"><![CDATA[<html>The supplements to the<FONT color=#a82424>Algerita</FONT>，But she seems not very like。Back<FONT color=#a82424>Company president adventurer</FONT><FONT color=#a82424>Daika De</FONT>There，Findings it。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Company president Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="104"><![CDATA[And adventurer, president of Dai Kade public dialogue]]></destination>
+         <todo_msg mid="105"><![CDATA[Please report to the adventurer public president Dai Kade。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>206</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item>300003</have_symbol_item>
+   </condition_data>
+</quest>

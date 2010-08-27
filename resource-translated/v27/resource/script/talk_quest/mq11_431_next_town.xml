@@ -1,0 +1,403 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_431_next_town</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>431</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Pollution]]></qkname>
+      <qnpc>
+         <npcid>213</npcid>
+         <npcename>n213_slave_david</npcename>
+         <npckname>자칭 모험가 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-1" image="" itemindex="">
+      <talk_question mid="83"><![CDATA[<html>$David$<BR>Why do you ask me here？Oh……<BR>This is the secret！Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-a" mid="85"><![CDATA[<html>(Kaxiwusi looked with troubled eyes looked)</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$King Kaxiwusi$<BR>Main……Bishop even betrayed I，Hijacked<FONT color=#a82424>Prophet</FONT>……Really unbelievable。Sob，Stewart uncle was right，The world can trust，Only<FONT color=#a82424>Uncle</FONT>A person……Sob。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="86"><![CDATA[<html>$King Kaxiwusi$<BR>You，You are my faithful the subjects as you？Ah？……But no matter what you say，I will not believe your。Sob……<BR><FONT color=#a82424>General Douglas</FONT>Should be able to trust it？General……Is a good minister。<FONT color=#7e12d2>(Kaxiwusi very anxious)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-a" mid="88"><![CDATA[<html>(Duke with a sigh)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Duke Stewart$<BR>Our Xiaoguo Wang Majesty for this, he was a great blow。<BR>I would like to use the Dragon and the Prophet do some publicity……This happened to a bad time。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-a" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-b" mid="90"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Duke Stewart$<BR>Prophet and<FONT color=#a82424>Golden Dragon</FONT>Things disappear，Best to confidentiality。<BR>The most important is to defeat Black Dragon，Other things like not matter how。Are not you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-b" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="91"><![CDATA[<html>$Duke Stewart${action:Stand2}<BR>Therefore<FONT color=#a82424>Bishop Ignacio</FONT>The disappearance of low-key approach we should。<BR>I believe you should listen to understand my words，Hum。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-a" mid="94"><![CDATA[<html>(Kala An aggressive exclaimed)</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Court magician Kala An$<BR>Hum～I know this。I know！I know that<FONT color=#a82424> Bishop</FONT> Is insidious，Has been playing another note。I know that you stupid！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-b" mid="96"><![CDATA[<html>Eh？</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Court magician Kala An${action:Talk}<BR>I&#39;m always right～Ha ha Ha ha ha！I am a graceful observer。But you are a fool lost prophets！Ha ha ha，<BR>But<FONT color=#a82424>Prophet</FONT>Missing things can not let people know，I will not punish you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-b" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="97"><![CDATA[<html>$Court magician Kala An$<BR>Well～I will not put you in jail。<BR>In<FONT color=#a82424>Duke</FONT>Change their mind before，You&#39;d better hurry away。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_question mid="98"><![CDATA[<html>$General Douglas${action:Talk}<BR>Wish you a pleasant journey。<BR>Wherever，Are not to lose courage。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-a" mid="100"><![CDATA[<html>Actually……(Explain the situation)</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Senior archer Yixilian$<BR>What I do for you？You come to help me do？<BR>……Oops，Your face does not seem good。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-a" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-b" mid="102"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$Senior archer Yixilian$<BR>Original……So。<FONT color=#a82424>Geraint</FONT>……<BR>……Strange feeling。He is to have supreme power of the Dragon。Even he died。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-c" mid="104"><![CDATA[<html>By Black Dragon&#39;s Blood of the pollution？</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Senior archer Yixilian$<BR>If you&#39;re telling the truth，You are a very dangerous situation。<BR>You might like to be<FONT color=#a82424>Plague of rain</FONT>Pollution, as people，Suffering from serious disease。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-c" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-d" mid="106"><![CDATA[<html>Please help me make the kind of medicine。</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Senior archer Yixilian$<BR>Yes。From your eyes, and body temperature changes，I can see。<BR>You know，This disease has no treatment for drug。However, symptomatic relief is possible。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-d" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-e" mid="108"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="107"><![CDATA[<html>$Senior archer Yixilian$<BR>Of course，I can help you make。Pollutants must be used near the thing produced drugs。As to get better，Or worse，All depends on your own determination of the。I hope you can remember。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-e" image="QW_45.dds" itemindex="">
+      <talk_question mid="109"><![CDATA[<html>$Senior archer Yixilian$<BR>To invite you to<FONT color=#a82424>Desolate forest ghost village</FONT>To collect<FONT color=#a82424>Desolate forest fossil fragments</FONT>，Then bring to me。<BR>I have what can only produce very weak drug effects，So let yourself go and collect only。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="QW_45.dds" itemindex="">
+      <talk_question mid="110"><![CDATA[<html>$Senior archer Yixilian$<BR>Please Go<FONT color=#a82424>Desolate forest ghost village</FONT>Collection<FONT color=#a82424>Desolate forest fossil fragments</FONT>，Then bring to me。<BR>I have what can only produce very weak drug effects，So let yourself go and collect only。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-a" mid="112"><![CDATA[<html>(Yixilian getting busy)</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$Senior archer Yixilian$<BR>
+Bring friends。<BR>I&#39;ll make drugs for you，Please wait a moment。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-b" mid="114"><![CDATA[<html>Thank you。</html>]]></talk_answer>
+      <talk_question mid="113"><![CDATA[<html>$Senior archer Yixilian$<BR>To，This is good medicine。<BR><FONT color=#7e12d2>(Took out a bottle of wonderfully flavored medicine)</FONT>The rest depends on your luck。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-c" mid="141"><![CDATA[<html>(Yixilian looked at me with bright eyes)</html>]]></talk_answer>
+      <talk_question mid="140"><![CDATA[<html>$Senior archer Yixilian$<BR><FONT color=#7e12d2>(After drinking the medicine，Flow through the body feel like a Wang Qingquan。My body feels comfortable with some of the)</FONT><BR>
+Oil。Can not succumb to the evil forces of Monster。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-d" mid="116"><![CDATA[<html>She seems to go to the Lotus Swamp。</html>]]></talk_answer>
+      <talk_question mid="115"><![CDATA[<html>$Senior archer Yixilian$<BR>On the，<FONT color=#a82424>Algerita </FONT>Where now？<BR>I think I should tell her the news of Geraint。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-d" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-e" mid="118"><![CDATA[<html>Good，I still have things to give to her。</html>]]></talk_answer>
+      <talk_question mid="117"><![CDATA[<html>$Senior archer Yixilian$<BR>It would be wonderful。You better hurry to find<FONT color=#a82424>Algerita</FONT>。<BR>Just<FONT color=#a82424>Karatyup</FONT>There is also，She has been studying the disease。Maybe you can help。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-e" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="119"><![CDATA[<html>$Senior archer Yixilian$<BR>Please be quick to<FONT color=#a82424>Heermadai port</FONT>Go。Only where the boat，To reach the Lotus Swamp。<BR>Hope that the goddess of luck is with you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="120"><![CDATA[<html>$Senior archer Yixilian${action:talk}<BR>Please be quick to<FONT color=#a82424>Heermadai port</FONT>Go。Only where the boat，To reach the Lotus Swamp。<BR>Hope that the goddess of luck is with you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4" image="" itemindex="">
+      <talk_answer link_index="n213_slave_david-4-a" mid="122"><![CDATA[<html>(Not seen as)</html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$David$<BR>What？Do you know to come，So come the right track？Ha ha ha。<BR>Did not think you have very unique aspect of Well？！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-4-b" mid="124"><![CDATA[<html>There you go again doing here？</html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$David${action:Stand01}<BR>Long time no see，How your face has become that way？Ha ha ha。<BR>This is all because of you been<FONT color=#a82424>Algerita</FONT>Abandoned by adults！Ha，You are not qualified to be her slave，Poor！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-4-c" mid="126"><![CDATA[<html>Ah，Actually……(About what happened during the)</html>]]></talk_answer>
+      <talk_question mid="125"><![CDATA[<html>$David$<BR>Why can？Is Algerita adults I come！She said that the eyes can be found a very good medicine，Let me<FONT color=#a82424>Geraint</FONT>Adults get in the past。<BR>Good！Quick to help me get past it！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4-c" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-4-d" mid="128"><![CDATA[<html>(Could not bear to answer)</html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html>$David$<BR>What?! <FONT color=#7e12d2>(David was astonished)</FONT>You just、Just saying？What？Outstanding、Geraint adults……<BR>Geraint is dead……What？Died？Really right？！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4-d" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-4-e" mid="130"><![CDATA[<html>But it is true。</html>]]></talk_answer>
+      <talk_question mid="129"><![CDATA[<html>$David$<BR>You must be kidding？He is and the world<FONT color=#382000>Most beautiful</FONT><FONT color=#7e12d2>The most glaring</FONT><FONT color=#a94407>The most headstrong</FONT>，But<FONT color=#086171>The most lovely</FONT> Algerita people as strong，How it will be dead？！Black Dragon is not that he beat me！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4-e" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-4-f" mid="132"><![CDATA[<html>Algerita words，Does so。</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$David$<BR>Uh…… (<FONT color=#7e12d2>David tore hair)</FONT> Through my mind of a genius，If the news to<FONT color=#a82424>Algerita</FONT>Adult，She will explode！！Will beat me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4-f" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-4-g" mid="134"><![CDATA[<html>I&#39;m going to Lotus Swamp。</html>]]></talk_answer>
+      <talk_question mid="133"><![CDATA[<html>$David$<BR>Why！！Death is<FONT color=#a82424>Geraint</FONT>！！！Why do I have to take a beating？！！！Wrong you！You！You mistakenly appeared in front of me。So！……So you go and tell me<FONT color=#a82424>Algerita</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4-g" image="" itemindex="">
+      <talk_answer link_index="n213_slave_david-5" mid="136"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="135"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-5" image="" itemindex="">
+      <talk_question mid="137"><![CDATA[<html>$Slave David${action:Stand01}<BR>Ha ha ha，Transaction set。Well！Great slave<FONT color=#a82424>David</FONT>Adults will personally take you to where adults Algerita。You should feel honored。 <BR>Good……Let us proceed to<FONT color=#a82424>Lotus Swamp</FONT>It！！</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">1172</exe>
+         <exe type="addquestitem" num="1">300250</exe>
+         <exe type="huntitem" num="5" exe="5,6,7" onexe="">300250</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300250</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4311,4312,4313,4314</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="1" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="d" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="e">0,2,4,1</exelink>
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="d" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="e">0,1,2</exelink>
+   <exelink qstep="4" npc="n213_slave_david" sub="b" />
+   <exelink qstep="4" npc="n213_slave_david" sub="c" />
+   <exelink qstep="4" npc="n213_slave_david" sub="d" />
+   <exelink qstep="4" npc="n213_slave_david" sub="e" />
+   <exelink qstep="4" npc="n213_slave_david" sub="f" />
+   <exelink qstep="4" npc="n213_slave_david" sub="g">0</exelink>
+   <exelink qstep="4" npc="n213_slave_david" sub="5">1,2</exelink>
+   <journal_data recompense="1:4311,2:4312,3:4313,4:4314" quest_title="오염" chapterid="5" quest_level="38" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="142"><![CDATA[Seek advice]]></title>
+         <contents mid="143"><![CDATA[<html>As being<FONT color=#a82424>Safentela blood</FONT> Of，Become very poor physical condition。Go to meet<FONT color=#a82424>Senior archer Yixilian</FONT>，Maybe some of the recommendations can be。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Senior archer Yixilian</FONT></html>]]></contents>
+         <destination mid="144"><![CDATA[And senior archers Yixilian dialogue]]></destination>
+         <todo_msg mid="145"><![CDATA[To understand the advanced disease, where archers Yixilian。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_45.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>454,0,0</destination_pos>
+         <destination_mode>custom:451@3,452@3,453@3,454@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="146"><![CDATA[Desolate forest fossil fragments]]></title>
+         <contents mid="147"><![CDATA[<html>Black Dragon&#39;s blood appeared to be contaminated as people，I like being Safentela blood contamination。In order to alleviate the condition，Drug treatment must be made。Go<FONT color=#a82424>Desolate forest ghost village</FONT>Collection<FONT color=#a82424>Desolate forest fossil fragments</FONT>It。<BR>
+ <BR>
+<FONT color=#7e12d2>※ Difficulty can not be implemented under the abyss。</FONT><BR>
+ <BR>
+<FONT color=#086171>Montenegro hill angle(Dark jungle road)</FONT> <FONT color=#a82424>→ Desolate forest ghost village</FONT></html>]]></contents>
+         <destination mid="148"><![CDATA[Fossil collecting desolate forest fragments]]></destination>
+         <todo_msg mid="149"><![CDATA[Go to the village to collect desolate desolate forest ghost forest fossil fragments。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="150"><![CDATA[Drug treatment]]></title>
+         <contents mid="151"><![CDATA[<html>The material collected to the drug，Senior bow hand it to the right Yixilian。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Senior archer Yixilian</FONT></html>]]></contents>
+         <destination mid="152"><![CDATA[And senior archers Yixilian dialogue]]></destination>
+         <todo_msg mid="153"><![CDATA[The material collected。Please report to senior archer Yixilian。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n213</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>213</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="154"><![CDATA[Port to Heermadai]]></title>
+         <contents mid="155"><![CDATA[<html>Lotus Swamp have to go find Algerita。I heard you can cruise port in the Heermadai，Go there to see it。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Heermadai port</FONT></html>]]></contents>
+         <destination mid="156"><![CDATA[Port to Heermadai]]></destination>
+         <todo_msg mid="157"><![CDATA[Please Heermadai port to。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>430</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

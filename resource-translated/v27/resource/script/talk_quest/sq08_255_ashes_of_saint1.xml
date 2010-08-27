@@ -1,0 +1,307 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_255_ashes_of_saint1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>255</qid>
+      <designer>김주연</designer>
+      <qlevel>13</qlevel>
+      <qdesc>300006 성수가 든 병</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>256</nextqid>
+      <nextqname>sq08_256_ashes_of_saint2</nextqname>
+      <nextqnpc>n034_cleric_master_germain</nextqnpc>
+      <qkname mid="1"><![CDATA[Teacher remainsⅠ]]></qkname>
+      <qnpc>
+         <npcid>186</npcid>
+         <npcename>n186_awakened_willem</npcename>
+         <npckname>저메인의 스승 윌리엄 구울</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인  (캐더락 클레릭 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$William body back to life$<BR>Oh…Ah so how dark eyes。Where is my ah ...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-a" mid="7"><![CDATA[<html>What ah？</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Senior Pastor Jermaine$<BR>Ah，Can you help me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-b" mid="9"><![CDATA[<html>Then complete the funeral the body was found it。</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Senior Pastor Jermaine$<BR><FONT color=#a82424>Ghoul 波尔德尼斯</FONT>Was repulsed，This thing I had, I heard，But<FONT color=#a82424>Death forest</FONT>Has been contaminated。So, from time to time there will be resurrection of the dead。The teacher thought that the remains of abandoned contaminated land in，I really do not worry ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-c" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Senior Pastor Jermaine$<BR>Be，I go there should have been put<FONT color=#a82424>Teacher remains</FONT>Come back。However, where the gas distribution，1:00 ah I can not approach。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-d" mid="13"><![CDATA[<html>How does the body purification？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Senior Pastor Jermaine$<BR>But<FONT color=#382000>{user_nick}</FONT>You seem to be able to withstand the kind of gas it。So your only please。Can be grateful if you to the death of the forest<FONT color=#a82424>Purify the body of William</FONT>Come back please?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-e" mid="15"><![CDATA[<html>What to do?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Senior Pastor Jermaine$<BR>Purification ceremony the body needs a lot of steps have been。But also simplifies handling。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-f" mid="17"><![CDATA[<html>Ah，Give it a try。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Senior Pastor Jermaine$<BR>Eliminate<FONT color=#a82424>Ghoul 波尔德尼斯</FONT>After，Where I give you the holy water shed。Although the summary of the points，But this is how the ceremony have to prepare for the next bar。Can we do that？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-s" mid="19"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Teacher remains I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QM_GhoulBlue.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Senior Pastor Jermaine$<BR>To the elimination of the death of forests<FONT color=#a82424>Ghoul 波尔德尼斯</FONT>After，Where he died in the shed to your holy water。Then please look at your body then solve it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-1" image="" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$William body back to life$<BR>Oh…Ah so how dark eyes。Where is my ah ...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-2" image="" itemindex="">
+      <talk_answer link_index="n186_awakened_willem-2-a" mid="22"><![CDATA[<html>Rev. William adults，You are already here, the deceased。</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$William body back to life$<BR>Oh…Ah so how dark eyes。Where is my ah ...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-2-a" image="" itemindex="">
+      <talk_answer link_index="n186_awakened_willem-2-b" mid="24"><![CDATA[<html>Sedation。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$William body back to life${sound:Ghoul_Skill_SelfExplosion_01_Shout.wav}<BR>Me…I&#39;m dead? <BR><FONT color=#7e12d2>（A ghoul screaming William Heartbreakers）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-2-b" image="" itemindex="">
+      <talk_answer link_index="n186_awakened_willem-2-c" mid="26"><![CDATA[<html>Lei An? Who he is?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$William body back to life$<BR>Dark Monster have…How like a?<BR>He... Leian successful you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-2-c" image="" itemindex="">
+      <talk_answer link_index="n186_awakened_willem-2-d" mid="28"><![CDATA[<html>Never heard of such a person。</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$William body back to life$<BR>That is to unlock from the<FONT color=#a82424>North of the man</FONT>... Can save Kedella of... <FONT color=#a82424>Guardian Seal</FONT>... Away... He…Is he not succeed?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-2-d" image="" itemindex="">
+      <talk_answer link_index="n186_awakened_willem-2-e" mid="30"><![CDATA[<html>Guardian?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$William body back to life$<BR>…To Resurrection <FONT color=#a94407>The existence of fate</FONT>... This world can be rescued from the disaster... <FONT color=#a82424>Guardian</FONT>Ah...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-2-e" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$William body back to life${sound:Ghoul_Skill_SelfExplosion_01_Shout.wav}<BR><FONT color=#a82424>Lei An</FONT>… Prior to his return…I must not fall… Ye cursed the darkness of the Monster, ah… <BR><FONT color=#7e12d2>（William began to lament the dead。And he seems very difficult for a dialogue）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="QM_GhoulBlue.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Senior Pastor Jermaine$<BR>To<FONT color=#a82424>Death forest</FONT>Eliminate<FONT color=#a82424> Ghoul 波尔德尼斯</FONT>After，Shed where he died in this holy water right。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n186_awakened_willem-3" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$William body back to life$<BR><FONT color=#7e12d2>（William began to lament the dead。And he seems very difficult for a dialogue）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-a" mid="36"><![CDATA[<html>（William Tell on the back from the dead body of relevant issues）</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Senior Pastor Jermaine$<BR>Remains to solve the right teacher?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-!next" mid="40"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="qcount">.</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="fullquest">.</exe>
+         <exe type="recompense_view">,2551,2552,2553,2554</exe>
+         <exe type="setquest">255</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">1</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300006</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300006</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2551,2552,2553,2554</exe>
+         <exe type="complete">255</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="f">0</exelink>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="s">3,4,5,6,7</exelink>
+   <exelink qstep="1" npc="n034_cleric_master_germain">0,1,2</exelink>
+   <exelink qstep="2" npc="n186_awakened_willem" sub="b" />
+   <exelink qstep="2" npc="n186_awakened_willem" sub="c" />
+   <exelink qstep="2" npc="n186_awakened_willem" sub="d" />
+   <exelink qstep="2" npc="n186_awakened_willem" sub="e">0,1</exelink>
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="a">0</exelink>
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="!next">1</exelink>
+   <journal_data recompense="1:2551,2:2552,3:2553,4:2554" quest_title="스승의 유해Ⅰ" chapterid="" quest_level="13" quest_mark_type="10" use_item_list="300006">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Jermaine dialogue with senior pastor]]></title>
+         <contents mid="44"><![CDATA[<html><FONT color=#a82424>Senior Pastor Jermaine</FONT>That is very worried about being dumped<FONT color=#a82424>Death forest</FONT>The remains of the teachers。Come listen to him carefully Road。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior Pastor Jermaine</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Jermaine dialogue with senior pastor]]></destination>
+         <todo_msg mid="46"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_17.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>134,-327,1180</destination_pos>
+         <destination_mode>custom:131@1,132@1,133@1,134@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Elimination of the death of forests Ghoul 波尔德尼斯]]></title>
+         <contents mid="48"><![CDATA[<html>In<FONT color=#a82424>Death forest</FONT>Eliminate<FONT color=#a82424>Ghoul 波尔德尼斯</FONT>After，In his place sprinkling holy water expense，Pastor Jermaine purifying the body of the teacher it。<BR><BR><FONT color=#086171>Gray ruins → Shore littered with fallen leaves（Death Forest entrance）</FONT> <FONT color=#a82424>→ Death forest</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Eliminated after the death of forests Ghoul 波尔德尼斯，Place in a sprinkle holy water weapons]]></destination>
+         <todo_msg mid="50"><![CDATA[Eliminated after the death of forests Ghoul 波尔德尼斯，Place in a sprinkling holy water right arms。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QM_GhoulBlue.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>134,n186</destination_pos>
+         <destination_mode>custom:131@1,132@1,133@1,134@1</destination_mode>
+         <statemark_npcid>186</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[William revive dialogue with the body]]></title>
+         <contents mid="55"><![CDATA[<html>In<FONT color=#a82424>Death forest</FONT>Inserted<FONT color=#a82424>William weapons place</FONT>After sprinkling holy water，There back from the dead body of William。Let the dialogue with him。<BR><BR><FONT color=#086171>Gray ruins → Shore littered with fallen leaves（Death Forest entrance）</FONT> <FONT color=#a82424>→ Death forest</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[William revive dialogue with the body]]></destination>
+         <todo_msg mid="57"><![CDATA[William revive dialogue with the body bar。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Senior Pastor Jermaine dialogue with it。]]></title>
+         <contents mid="60"><![CDATA[<html>Can not seem to again and revive the bodies of William and dialogue。Back<FONT color=#a82424>Kedella points</FONT>Of<FONT color=#a82424>Senior Pastor Jermaine</FONT>Find out more details right。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior Pastor Jermaine</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Jermaine dialogue with senior pastor]]></destination>
+         <todo_msg mid="62"><![CDATA[Senior Pastor Jermaine dialogue with it。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>13:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>205</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

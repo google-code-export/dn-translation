@@ -1,0 +1,21 @@
+   <talk>
+      <npcename>n061_kidnaped_trader_dorin</npcename>
+      <npcid>61</npcid>
+      <startexe>3</startexe>
+      <npckname mid="1"><![CDATA[Dowling kidnapped blacksmith]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Blacksmith Dowling$<BR>This，In the end want to do ah？<BR>
+Ah～Bah！！</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_457_missing_dorin</exe>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="4" false="0">1</exe>
+         <exe type="enterquest">sq11_458_amazing_memory</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">457</chk>
+         <chk type="hasquest">458</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,526 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_538_strange_smoke</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>538</qid>
+      <designer>김주연</designer>
+      <qlevel>26</qlevel>
+      <qdesc>초록색 약물	400143
+초록색 얼룩	400144
+스타쉬의 소견서	400145
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Weird smoke]]></qkname>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（The task did not meet the criteria）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Bulletin$<br>Over the task of implementation，Temporarily unable to accept the task of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Bulletin$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Bulletin$<br>Task with a backpack full。<br>（Please order as soon as possible backpack）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$General Douglas$<BR>Current enemy，Is all there have been some unfortunate，Ah really worrying。<BR><FONT color=#7e12d2>（Need to guard Joel near the end of the royal family be given the task of dialogue）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Heraldic scholars Stasi$<BR>I heard from a fire military weapons storage，I do not know what happened。<BR><FONT color=#7e12d2>（Near the end of the guard Joel needs to be given the task of dialogue）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-a" mid="8"><![CDATA[<html>What happened was you unpleasant things?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Joel King City, near the guard$<BR><FONT color=#7e12d2>（King City, near the guard&#39;s face seems very difficult to see Joel）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-b" mid="10"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Joel King City, near the guard$<BR><FONT color=#7e12d2>（Joel hastily opened its mouth）</FONT><BR>In fact, yesterday when I guard weapons storage，A little nap a bit，In the neutral gear is a fire</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-c" mid="12"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Joel King City, near the guard$<BR>Fire is not a spontaneous combustion，But artificial。But at that time because I just fell asleep，Therefore been subject to heavy penalties，Be punished by the law。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-d" mid="14"><![CDATA[<html>Suddenly you fall asleep?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Joel King City, near the guard$<BR>But I do not want lazy。I can never usually happened on idle performance。Just do not know why on that day，But he was asleep。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-e" mid="16"><![CDATA[<html>Ah。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Joel King City, near the guard$<BR>Yes，So I woke up，Warehouse has been burning。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-f" mid="18"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Joel King City, near the guard$<BR>Hear<FONT color=#382000>{user_nick}</FONT>Your hero is as prestigious Kedella。Even the general adult is willing to<FONT color=#382000>{user_nick}</FONT>If your ears。Please be sure to please your case to him that I，Discretion of the Bar。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-acceptted" mid="20"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Weird smoke$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-1-a" mid="22"><![CDATA[<html>I can help you，But there are a few things need to confirm。</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Joel King City, near the guard$<BR>Really thank you，Adventurer adults。<BR>
+I will not forget your End of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-1-b" mid="24"><![CDATA[<html>Day，Before you nap for suspicious incidents?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Joel King City, near the guard$<BR>Would like to confirm what?<BR>
+I know tell you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-1-c" mid="26"><![CDATA[<html>James and Edward?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Joel King City, near the guard$<BR>Ah，A man named James and his son after Edward&#39;s business warehouse。They had to thank me after about1Hours，I sank into a dream which。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-c" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-1-d" mid="28"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Joel King City, near the guard$<BR>Ah，James is a young businessman who participated in the Dragon during the crusade against followers of a good business team。And his son Edward，Although some nervous，But pretty is a relatively intelligent person。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-d" image="QS_Default.dds" itemindex="400144">
+      <talk_answer link_index="n252_saint_guard-1-e" mid="30"><![CDATA[<html>What is that green stain?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Joel King City, near the guard$<BR>They are trusted，Will not have any relationship with the fire。<BR><FONT color=#7e12d2>（Joel saw the suspect&#39;s clothes on the green stains）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-e" image="QS_Default.dds" itemindex="400144">
+      <talk_answer link_index="n252_saint_guard-1-f" mid="32"><![CDATA[<html>That is probably not what a relationship with you asleep?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Joel King City, near the guard$<BR>Green stain? Ah，When was the glue?<BR><FONT color=#7e12d2>（Joel sniffed stains）</FONT><BR>Eh-hem，This wonderful scent it also points。Seems like the aroma of flowers and plants….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-f" image="QS_Default.dds" itemindex="400144">
+      <talk_answer link_index="n252_saint_guard-1-g" mid="34"><![CDATA[<html>Stasi&#39;s words to heraldic scholars，Should be able to find out what clues it。</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Joel King City, near the guard$<BR>Ah，Is，I nap is no such stains before。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-g" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="97"><![CDATA[<html>$Joel King City, near the guard$<BR>
+<FONT color=#7e12d2>（Joel to have cut down some of the stain）</FONT><BR>Hope<FONT color=#a82424>Heraldic scholars Stasi</FONT>Adults can find out clues of green stains，Cleared my grievances ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$General Douglas$<BR>Current enemy，Is all there have been some unfortunate，Ah really worrying。<BR><FONT color=#7e12d2>（Need to guard Joel near the end of the royal family be given the task of dialogue）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Heraldic scholars Stasi$<BR>I heard from a fire military weapons storage，I do not know what happened。<BR><FONT color=#7e12d2>（Need to guard Joel near the end of the royal family be given the task of dialogue）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Joel King City, near the guard$<BR>Hope<FONT color=#a82424>Heraldic scholars Stasi</FONT>Adults can find out clues of green stains，Cleared my grievances ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="39"><![CDATA[<html>（King City, Joel shows what life guard）</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Is preparing a large dark domain of Raiders of the young monarch to me how come?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="QS_Default.dds" itemindex="400144">
+      <talk_answer link_index="n088_scholar_starshy-3" mid="41"><![CDATA[<html>（Produce green stains）</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Ah-。After James and his son Edward, after1Hours suddenly fell into deep sleep。But still has green stains on clothes。The stains that look right to me ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$General Douglas$<BR>Current enemy，Is all there have been some unfortunate，Ah really worrying。<BR><FONT color=#7e12d2>（Need to dialogue with the coat of arms before the end of scholars to task Stasi）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="QS_Default.dds" itemindex="400144">
+      <talk_answer link_index="n088_scholar_starshy-3-a" mid="44"><![CDATA[<html>What is it then that?</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Heraldic scholars Stasi$<BR><FONT color=#7e12d2>（Heraldic scholars Stasi sniffed stains）</FONT><BR>Really is a unique fragrance ah。<BR>
+Ah…Ah，I know what flavor。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-b" mid="46"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Heraldic scholars Stasi$<BR>This use of fire Blow blame in order to strengthen their ability to use magic potion is very similar。If you can find some kind of medicine to the words，I can make more detailed investigations ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-b" image="QW_28.dds" itemindex="">
+      <talk_question mid="102"><![CDATA[<html>$Heraldic scholars Stasi$<BR>
+To<FONT color=#a82424>Dark Overlord&#39;s territory</FONT>From<FONT color=#a82424>Strange fire worshipers Blow Master</FONT>Who obtain5Come back a green syrup。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="QW_28.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Heraldic scholars Stasi$<BR>To<FONT color=#a82424>Dark Overlord&#39;s territory</FONT>From<FONT color=#a82424>Strange fire worshipers Blow Master</FONT>Who obtain5Come back a green syrup。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5" image="QS_Default.dds" itemindex="400143">
+      <talk_answer link_index="n088_scholar_starshy-6" mid="49"><![CDATA[<html>（Out of green syrup）</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Green syrup is collected back again。<BR>Gave it to me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6" image="QS_Default.dds" itemindex="400143">
+      <talk_answer link_index="n088_scholar_starshy-6-a" mid="51"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Heraldic scholars Stasi$<BR>The analysis also needs some time，Please wait a moment。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-a" image="QS_Default.dds" itemindex="400143">
+      <talk_answer link_index="n088_scholar_starshy-6-b" mid="53"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Heraldic scholars Stasi$<BR><FONT color=#7e12d2>（Drug test after a period of time to do experiments Stasi nodded）</FONT><BR>Ah，Yes，Seems to have know what it is。Blow strange use of green syrup used as some kind of magic。It can also be used as a kind of strange BulohMPPotion Bar。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-b" image="QS_Default.dds" itemindex="400143">
+      <talk_answer link_index="n088_scholar_starshy-6-c" mid="55"><![CDATA[<html>Sleep efficiency?</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Heraldic scholars Stasi$<BR>
+But for humans，With hallucinations or<FONT color=#a82424>Strong effects of sleep</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-d" mid="57"><![CDATA[<html>What&#39;s this?</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Heraldic scholars Stasi$<BR>The soldier sleep is reason for this medicine。But I do not know how they use the medicine。<BR><FONT color=#7e12d2>（Heraldry scholars Stasi wrote in the paper over to me what）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-d" image="QS_Default.dds" itemindex="400145">
+      <talk_answer link_index="n088_scholar_starshy-7" mid="59"><![CDATA[<html>Ah，Thank you。</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Heraldic scholars Stasi$<BR>This is my analysis of that name near the guard&#39;s clothes were green stains and Blow strange green substance<FONT color=#a82424>Submissions</FONT>。That sleepwalk soldiers to defend themselves，Or you this young man next to the stubborn，If my opinion is not a bar。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-7" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-7-a" mid="61"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Heraldic scholars Stasi$<BR>What Xie… Oh what the world is not free。 <BR>To owe me a favor when you oh。<BR>Later have to remember also ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-7-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Holding submissions to find<FONT color=#a82424>General Douglas</FONT>It。<BR>Other，He details the soldier to the night by going through it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-7" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-8" mid="64"><![CDATA[<html>（Submission to surrender Stasi）</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$General Douglas$<BR>What ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-8" image="QS_Default.dds" itemindex="400145">
+      <talk_answer link_index="n042_general_duglars-8-a" mid="66"><![CDATA[<html>What？</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$General Douglas$<BR><FONT color=#7e12d2>（Douglas read a heraldic submissions scholars Stasi）</FONT><BR>Ah…But，Near the guard that can not be exempt。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-8-a" image="QS_Default.dds" itemindex="400145">
+      <talk_question mid="67"><![CDATA[<html>$General Douglas$<BR>
+Although it is difficult Disclaimer，But to this submission and you say，I&#39;ve probably had several heart。<BR>
+I will be lenient in。<BR>
+<FONT color=#7e12d2>（Fortunately,，King City, near the guard rushed to convey the message it Joel）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-8" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-8-a" mid="69"><![CDATA[<html>（Tells him what happened in detail）</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Joel King City, near the guard$<BR>Has a right to intercede General Douglas?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-8-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-8-b" mid="71"><![CDATA[<html><FONT color=#086171>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-8-b" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Joel King City, near the guard$<BR>Really thank you！<BR>
+Adventurer adults can help me a big favor！<BR>
+<FONT color=#7e12d2>（King City, near the guard looks like Joel very grateful）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5381,5382,5383,5384</exe>
+         <exe type="setquest">538</exe>
+         <exe type="talk" npc="n252_saint_guard">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">400144</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="1">400144</exe>
+         <exe type="setstep">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>400143</comment>
+      <conditions>
+         <chk type="questitem" num="5" op="]=">400143</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntitem" num="5" exe="5,6,7" onexe="">400143</exe>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="4">825</exe>
+         <exe type="addquestitem" num="1">400143</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200825</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>983
+</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400143</exe>
+         <exe type="setstep">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="addquestitem" num="1">400145</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">8</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="delquestitem" num="-1">400145</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="8">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5381,5382,5383,5384</exe>
+         <exe type="complete">538</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="f">0</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n252_saint_guard" sub="b" />
+   <exelink qstep="1" npc="n252_saint_guard" sub="c" />
+   <exelink qstep="1" npc="n252_saint_guard" sub="d" />
+   <exelink qstep="1" npc="n252_saint_guard" sub="e" />
+   <exelink qstep="1" npc="n252_saint_guard" sub="f" />
+   <exelink qstep="1" npc="n252_saint_guard" sub="g">0,1,2</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="b">0,2,3,8,1</exelink>
+   <exelink qstep="5" npc="n088_scholar_starshy" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="7">0,1,2</exelink>
+   <exelink qstep="7" npc="n042_general_duglars" sub="8">0,1,2</exelink>
+   <exelink qstep="8" npc="n042_general_duglars" sub="a">2,3,4</exelink>
+   <exelink qstep="8" npc="n252_saint_guard" sub="a">0</exelink>
+   <exelink qstep="8" npc="n252_saint_guard" sub="b">1</exelink>
+   <journal_data recompense="1:5381,2:5382,3:5383,4:5384" quest_title="이상한 연기" chapterid="" quest_level="26" quest_mark_type="10" use_item_list="400143,400144,400145">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n252</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>252</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[Joel King City near the guards and dialogue]]></title>
+         <contents mid="74"><![CDATA[<html>To<FONT color=#a82424>Joel King City, near the guard</FONT>Asked Fire the specific circumstances of the accident the day。<BR><BR><FONT color=#086171>Paradise City within the sacred king</FONT> <FONT color=#a82424>→ Joel King City, near the guard</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[Joel King City near the guards and dialogue]]></destination>
+         <todo_msg mid="76"><![CDATA[Add a task。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Dialogue with the heraldic scholars Stasi]]></title>
+         <contents mid="78"><![CDATA[<html>To<FONT color=#a82424>Heraldic scholars Stasi</FONT>Give it the green stains。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Heraldic scholars Stasi</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Dialogue with the heraldic scholars Stasi]]></destination>
+         <todo_msg mid="80"><![CDATA[To heraldic scholars Stasi see green stains on it。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_28.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>284,0,0</destination_pos>
+         <destination_mode>custom:281@3,282@3,283@3,284@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[Overlord&#39;s territory in the dark green of drug collection]]></title>
+         <contents mid="82"><![CDATA[<html>In<FONT color=#2b2723><FONT color=#a82424>Dark Overlord&#39;s territory</FONT>Eliminate</FONT> <FONT color=#a82424>Flame Master strange followers Blow</FONT>And collect5A green solution it。<BR>
+ <BR>
+<FONT color=#086171>Montenegro hill angle（Dark Overlord of the barriers）</FONT> <FONT color=#a82424>→ Dark Overlord&#39;s territory</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[Overlord&#39;s territory in a dark green syrup collection]]></destination>
+         <todo_msg mid="84"><![CDATA[Overlord&#39;s territory in the dark green solution to collect it。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[Dialogue with the heraldic scholars Stasi]]></title>
+         <contents mid="86"><![CDATA[<html>Complete collection of green syrup。It to the sacred paradise<FONT color=#a82424>Heraldic scholars Stasi</FONT>It。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Heraldic scholars Stasi</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[Dialogue with the heraldic scholars Stasi]]></destination>
+         <todo_msg mid="88"><![CDATA[Back to the holy coat of arms of heaven right there, scholars Stasi。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[Dialogue with the General Douglas]]></title>
+         <contents mid="90"><![CDATA[<html>Stasi&#39;s submission to the king holding a town where the bar within the General Douglas。King City, near the same time defend the right guard Joel。<BR><BR><FONT color=#086171>Paradise City within the sacred king</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[Dialogue with the General Douglas]]></destination>
+         <todo_msg mid="92"><![CDATA[And Wang, General Douglas dialogue within the city bar。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n252</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>252</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[Joel King City near the guards and dialogue]]></title>
+         <contents mid="94"><![CDATA[<html><FONT color=#a82424>Joel King City, near the guard</FONT>Reduce the punishment。The news to King City right near the guard Joel。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→Joel King City, near the guard</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[Joel King City near the guards and dialogue]]></destination>
+         <todo_msg mid="96"><![CDATA[King of the city close to the guards back to where it Joel。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>26:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>403</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

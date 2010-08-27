@@ -1,0 +1,223 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_001_lost_girl2</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>11</qid>
+      <designer>김주연</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>2</nextqid>
+      <nextqname>mq01_002_scattered_evidence</nextqname>
+      <nextqnpc>n004_guard_steave</nextqnpc>
+      <qkname mid="1"><![CDATA[Missing girlⅡ]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-noquest" image="QN_Lily.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Harold village$<BR>You are right adventurers rescued my granddaughter。Really grateful。Do not know how to repay you Daendade……Eh-hem, Eh-hem……<BR><FONT color=#7e12d2>(There must be Lily can only proceed after receiving the task。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-noquest" image="QN_Lily.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Guard Steve$<BR>Heard that you have saved Lily。Lily seems to have just woke up。You do not go and talk to you Lily？<BR><FONT color=#7e12d2>(There must be Lily can only proceed after receiving the task。)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QS_Default.dds" itemindex="302132232">
+      <talk_answer link_index="n004_guard_steave-2" mid="238"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="237"><![CDATA[<html>$Self-defense, head of Steve${action:Talk}<BR>Give you the drugs，Please open the bag<FONT color=#a82424>[I]</FONT>After，Drag items，Add to shortcut bar at the bottom of the screen，You can use。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="239"><![CDATA[<html>$Harold village$<BR>Last<FONT color=#a82424>Shadow Forest foothills</FONT>Before，You go to see<FONT color=#a82424>Self-defense, head of Steve</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="QM_OrcGreen.dds" itemindex="">
+      <talk_question mid="240"><![CDATA[<html>$Self-defense, head of Steve$<BR>Ready after，Please go quickly<FONT color=#a82424>Shadow Forest foothills</FONT>Eliminate<FONT color=#a82424>Orc</FONT><FONT color=#a82424>Klosi</FONT>，Search<FONT color=#a82424>Wire basket</FONT>Whereabouts。<BR>Then I wish you good luck。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2" image="" itemindex="">
+      <talk_question mid="241"><![CDATA[<html>$Harold village$<BR><FONT color=#a82424>Shadow Forest foothills</FONT>In the shadow of the forest outside the village left<FONT color=#a82424>Shaded forest paths</FONT>There。<BR>You must rescue basket wire……Eh-hem, cough……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-a" mid="243"><![CDATA[<html>(Head of the map fragments show it self-defense, see Steve。)</html>]]></talk_answer>
+      <talk_question mid="242"><![CDATA[<html>$Self-defense, head of Steve${action:Talk}<BR>Hello，Adventurer。<BR><FONT color=#a82424>Wire basket</FONT>……Seems not to find it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-a" image="QS_Default.dds" itemindex="300057">
+      <talk_answer link_index="n004_guard_steave-3-b" mid="245"><![CDATA[<html>This is the orc in the shadow of forests found in。</html>]]></talk_answer>
+      <talk_question mid="244"><![CDATA[<html>$Self-defense, head of Steve$<BR>What&#39;s this……？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-b" image="QM_OrcGreen.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-c" mid="247"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="246"><![CDATA[<html>$Self-defense, head of Steve$<BR>Ah……Seems that a common<FONT color=#a82424>Map fragment</FONT>……But if it is from<FONT color=#a82424>Orc</FONT><FONT color=#a82424>Klosi</FONT>Found on the map……Maybe can find some<FONT color=#a82424>Wire basket</FONT>And the missing clues to the villagers。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-c" image="QS_Default.dds" itemindex="300057">
+      <talk_answer link_index="n004_guard_steave-3-d" mid="249"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="248"><![CDATA[<html>$Self-defense, head of Steve$<BR>Must first recover the map。I heard one team member self-defense<FONT color=#a82424>Wire basket</FONT>After the disappearance of，Went<FONT color=#a82424>Shadow Forest foothills</FONT>。Please adventurer, and who find self-defense, with the remaining members<FONT color=#a82424>Map fragment</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-d" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-!next" mid="251"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="250"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="1,4,5,6">104</exe>
+         <exe type="addquestitem" num="1">300057</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">11</exe>
+         <exe type="recompense">11,11,12,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n004_guard_steave" sub="2">0,2,3</exelink>
+   <exelink qstep="3" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="3" npc="n004_guard_steave" sub="c" />
+   <exelink qstep="3" npc="n004_guard_steave" sub="d">1</exelink>
+   <exelink qstep="3" npc="n004_guard_steave" sub="!next">0</exelink>
+   <journal_data recompense="1:11,2:12" quest_title="실종된 소녀Ⅱ" chapterid="1" quest_level="1" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="252"><![CDATA[Guard Steve]]></title>
+         <contents mid="253"><![CDATA[<html>Pourailly town mayor 海洛德拜托 hijacked my basket wire rescue，And allow me to meet Steve, head of self-defense。<BR>And<FONT color=#a82424>Self-defense, head of Steve</FONT>Dialogue，Listen to his proposal。<BR><BR><FONT color=#086171>Pourailly town</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>→ Self-defense, head of Steve</FONT></FONT></html>]]></contents>
+         <destination mid="254"><![CDATA[Steve dialogue with the guards]]></destination>
+         <todo_msg mid="255"><![CDATA[Please guard Steve dialogue]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_OrcGreen.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>53,-46.66,-10.48</destination_pos>
+         <destination_mode>53,-46.66,-10.48</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="256"><![CDATA[Elimination of the shadow of forests at the foot of Klosi]]></title>
+         <contents mid="257"><![CDATA[<html>Go<FONT color=#a82424>Shadow Forest foothills</FONT>Eliminate<FONT color=#a82424>Orc</FONT><FONT color=#a82424>Klosi</FONT>，Looking for traces of wire basket。<BR><BR><FONT color=#2b2723><FONT color=#086171>Shadow Forest(Shaded forest paths)</FONT> </FONT><FONT color=#a82424>→ Shadow Forest foothills</FONT></html>]]></contents>
+         <destination mid="258"><![CDATA[Elimination of the shadow of forests at the foot of Klosi]]></destination>
+         <todo_msg mid="259"><![CDATA[Please eliminate the shadow of the foothills of the Klosi forest。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="260"><![CDATA[Map fragment]]></title>
+         <contents mid="261"><![CDATA[<html>Searched<FONT color=#a82424>Shadow Forest foothills</FONT>，Wire basket but did not find the abducted villagers and the whereabouts of。<BR>With from<FONT color=#a82424>Klosi</FONT>Who obtained<FONT color=#a82424>Map fragment</FONT>Find Pourailly town<FONT color=#a82424>Self-defense, head of Steve</FONT>。<BR><BR><FONT color=#086171>Pourailly town</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>→ Self-defense, head of Steve</FONT></html>]]></contents>
+         <destination mid="262"><![CDATA[Steve dialogue with the guards]]></destination>
+         <todo_msg mid="263"><![CDATA[Who obtained the map from the Klosi debris。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level>-1:-1</user_worldzone_level>
+      <user_class>1:2</user_class>
+      <prev_quest>1</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

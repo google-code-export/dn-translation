@@ -1,0 +1,362 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_489_merchant_study4</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>489</qid>
+      <designer>김주연</designer>
+      <qlevel>34</qlevel>
+      <qdesc>불사의 결정	400160
+황금이 담긴 주머니	400161
+
+
+썩은 사과를 진흙을 바꾸기는 했다. 이제 진흙을 황금으로 바꾸기만 하면 되는데 …. 
+ 진흙을 채취했다고하는 상급 소서리스 스텔라는 그 진흙을 젊어지는 묘약을 제조하는 데 사용한다고 한다.
+또 다른 재료인 불사의 결정을 구해오면 황금하고 바꿔줄 수도 있다고 하는데 ….</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Business coursesⅣ]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-noquest" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Profiteer Pope$<BR>
+Rotten apples can be replaced by gold！How could？<BR>
+<FONT color=#7e12d2>(Dialogue must be advanced magician Stella)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-a" mid="7"><![CDATA[<html>One thing I would like to exchange into gold。</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Magician Stella$<BR>Huh？Cute adventurer looking for what I do？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-b" mid="9"><![CDATA[<html>(With the exchange of gold，Really do not work？)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Magician Stella$<BR>This……You is not mud？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-c" mid="11"><![CDATA[<html>Ah？This thing is very rare you？</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Magician Stella$<BR>It is very difficult to got Angle in the soil of Montenegro！！！Such a precious thing Where did you find？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-d" mid="13"><![CDATA[<html>Would you like to do with the gold and I exchanged？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Magician Stella$<BR>Ha ha，Produced that makes people use it to cure, then the young，That people can look younger10Years。Aunt so well inside their palace welcomed。Of course，Do not know its value for people who，Just a smelly mud Bale。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-e" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Magician Stella$<BR>Ah……Gold？<BR>Although this soil is very valuable，But would like to exchange to gold or Chaliaoyidian。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-f" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Magician Stella$<BR>But is not no way。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-g" mid="19"><![CDATA[<html>Really？</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Magician Stella$<BR>Production need not die mold cure。That thing is also very valuable……If you can<FONT color=#a82424>Die mold</FONT>To me with，I use the gold trade with you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="21"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Business coursesⅣ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="QW_46.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Magician Stella$<BR>Crystals can not die <FONT color=#a82424>The sunken vessel</FONT>Get near the monster hunting。Hear<FONT color=#a82424>Harpy one female leader Kanna</FONT>Drew the resentment of the dead crew，Formed in the body<FONT color=#a82424>Die mold</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Magician Stella$<BR><FONT color=#a82424>Crystallization of the two die</FONT>For gold！Well, you have to remember。<BR>Good luck，Cute adventurer。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Profiteer Pope$<BR>Replace the rotten apple gold，Period is3Day。If you can change it gold，Even if you win。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_46.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Magician Stella$<BR>Crystals can not die<FONT color=#a82424>The sunken vessel</FONT>Nearby<FONT color=#a82424>Harpy one female leader Kanna</FONT>Body found。Female leaders who heard Harpy Kanna draws resentment of the dead crew，Crystals formed in the body die。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-a" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Magician Stella$<BR>Crystal found any dead？What a wonderful child。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-b" mid="30"><![CDATA[<html><FONT face=Arial size=2>(Get Gold)</FONT></html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Magician Stella$<BR>By convention，I give you gold。Although do not know what you want to use it to，But I hope you can make good use。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-b" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Magician Stella$<BR>I hope we meet again，Cute adventurer。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Magician Stella$<BR>Did not you say what do you use gold？Things between us seem to have ended ah……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4" image="" itemindex="400161">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-a" mid="34"><![CDATA[<html>(Out gold)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Profiteer Pope$<BR>What？You do not really rotten apple with the exchange to a bar of gold？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-b" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Profiteer Pope$<BR>This……This！Really gold！<BR>You……Really great。Has indeed exchanged with rotten apples to gold！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-c" mid="38"><![CDATA[<html>Call……Great。</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Profiteer Pope$<BR>This can be wasted if，To pity。<BR>But I mean what they say，We will write off the debt between。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-c" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-d" mid="40"><![CDATA[<html>Broken sword……Is it fast saint sword？</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Profiteer Pope$<BR>It really is a very cost-effective business。<BR>Mere<FONT color=#a82424>15Silver</FONT>Broken sword to the gold exchange。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-d" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-e" mid="42"><![CDATA[<html>Uh uh……Tolerate！</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Profiteer Pope$<BR>Ha ha ha！Life is like that。<BR><FONT color=#a82424>Imperial sword rapidly</FONT>My name is played blind。When the meeting did not think that you should。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-e" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-f" mid="44"><![CDATA[<html>Really mad！</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Profiteer Pope$<BR>Etc.……Etc.，Sedation！Relex！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-f" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-g" mid="46"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Profiteer Pope$<BR>Angry too late now。Trading is the trading，I can not bring the gold back to you……But I give you this，You first vent its anger。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-g" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-h" mid="48"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-h" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-i" mid="50"><![CDATA[<html>Enough。</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Profiteer Pope$<BR>Well，We have had two clear……Do you want to see something else？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-i" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-j" mid="52"><![CDATA[<html>Enough！</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Profiteer Pope$<BR>Look at this thing，This is used by the ancient<FONT color=#a82424>Storm Sanxian</FONT>……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-j" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Profiteer Pope$<BR>What is necessary，Please feel free to come to me！Ha ha ha！</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment>n045_soceress_master_stella</comment>
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4891,4892,4893,4894</exe>
+         <exe type="setquest">489</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="2" op="]=">400160</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="2" exe="" onexe="">400160</exe>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="8">1197</exe>
+         <exe type="conexe" true="5,6,7" false="">0</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="conexe" true="5,6,7" false="9,4">0</exe>
+         <exe type="addquestitem" num="1">400160</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">201197</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>400161</comment>
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400160</exe>
+         <exe type="addquestitem" num="1">400161</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4891,4892,4893,4894</exe>
+         <exe type="complete">489</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="a">0,2,3,10,1</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="b">0,1,2,3</exelink>
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="b" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="c" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="d" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="e" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="f" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="g">0</exelink>
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="h">1</exelink>
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="i" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="j" />
+   <journal_data recompense="1:4891,2:4892,3:4893,4:4894" quest_title="상인 수업Ⅳ" chapterid="" quest_level="34" quest_mark_type="10" use_item_list="400160,400161">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[And senior magician Stella dialogue]]></title>
+         <contents mid="55"><![CDATA[<html>Gold can be exchanged with the soil。However, we must change the young people gathered to make the necessary medicines and other materials，To exchange。And<FONT color=#a82424>Advanced magician Stella</FONT>Dialogue。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Advanced magician Stella</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[And senior magician Stella dialogue]]></destination>
+         <todo_msg mid="57"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_46.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>462,0,0</destination_pos>
+         <destination_mode>custom:461@3,462@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[The sunken vessel to eliminate human female leader Kanna Harpy]]></title>
+         <contents mid="59"><![CDATA[<html>Stella said that if I can go to the sunken vessel to collect dead near the crystallization，With gold and I exchanged。Elimination of the sunken vessel near the infested<FONT color=#a82424>Harpy one female leader Kanna</FONT>Collection<FONT color=#a82424>2A</FONT>Die crystal bar。<BR><FONT color=#086171></FONT><BR><FONT color=#086171>Heermadai port(Island transport ship)</FONT> <FONT color=#a82424>→ The sunken vessel</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[The sunken vessel to eliminate human female leader Kanna Harpy]]></destination>
+         <todo_msg mid="61"><![CDATA[Go to the sunken vessel to destroy the human female leader Kanna Harpy。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[And senior magician Stella dialogue]]></title>
+         <contents mid="63"><![CDATA[<html>Crystal collection to die。It to<FONT color=#a82424>Advanced magician Stella</FONT>，Exchange of gold bar。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Advanced magician Stella</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[And senior magician Stella dialogue]]></destination>
+         <todo_msg mid="65"><![CDATA[Go back to where senior magician Stella。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n277</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>277</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[Pope dialogue and profiteers]]></title>
+         <contents mid="67"><![CDATA[<html>Finally succeeded with a rotten apple to the gold exchange。Back<FONT color=#a82424>Profiteer Pope</FONT>Go。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Profiteer Pope</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Pope dialogue and profiteers]]></destination>
+         <todo_msg mid="69"><![CDATA[Please go back to profiteer Pope。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>34:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>488</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

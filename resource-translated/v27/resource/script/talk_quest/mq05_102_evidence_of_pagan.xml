@@ -1,0 +1,339 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_102_evidence_of_pagan</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>102</qid>
+      <designer>곽노찬</designer>
+      <qlevel>2</qlevel>
+      <qdesc>300145_붉은 가면</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>103</nextqid>
+      <nextqname>mq05_103_orb_of_vision1</nextqname>
+      <nextqnpc>n013_cleric_tomas</nextqnpc>
+      <qkname mid="1"><![CDATA[Evidence of pagan]]></qkname>
+      <qnpc>
+         <npcid>13</npcid>
+         <npcename>n013_cleric_tomas</npcename>
+         <npckname>클레릭 토마스 (마나리지 클레릭 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>156</npcid>
+         <npcename>n156_cleric_jake</npcename>
+         <npckname>클레릭 제이크</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>157</npcid>
+         <npcename>n157_cleric_jake</npcename>
+         <npckname>클레릭 제이크(서리바람 계곡)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>158</npcid>
+         <npcename>n158_point_mark</npcename>
+         <npckname>느낌표(!)_(ID는 빈공란)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-a" mid="19"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>Do not know is it not premature to conclude，But I think it is necessary to look into。You go<FONT color=#a82424>雪霜 ramp</FONT>Meet Your Brother<FONT color=#a82424>Pastor Jack</FONT>。Both of you to<FONT color=#a82424>霜风 Canyon</FONT>Re-investigate。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-a" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Pastor Thomas$<BR>During this period，I will continue to investigate<FONT color=#a82424>雷昂纳 more</FONT>What escort。I hope you can give me good news。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-1" image="QN_Cl_Tomas.dds" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-1-a" mid="13"><![CDATA[<html>Head to say how do you think？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Pastor Jack${action:Talk}<BR>You 来啦。<FONT color=#a82424>Thomas</FONT>You are still head。<BR>Ha ha……You&#39;ve worked hard。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-1-a" image="QS_Default.dds" itemindex="300144">
+      <talk_answer link_index="n156_cleric_jake-1-b" mid="21"><![CDATA[<html>Me……Do not understand the words of Archbishop。</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Pastor Jack$<BR>Well……Even with all<FONT color=#a82424>Monster&#39;s Lair</FONT>Found in the<FONT color=#a82424>Pearls</FONT>On the next judge，Seems a little too anxious，However, the value of a survey。In the end have no problem？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-1-b" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-1-c" mid="22"><![CDATA[<html>Yes。Pagan……Do not also servants of God？How will……</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Pastor Jack$<BR>Do not understand<FONT color=#a82424>Archbishop</FONT>If？<BR>He said to<FONT color=#a82424>Magic Ridge</FONT>Of<FONT color=#a82424>Pastor</FONT>Possession of a row<FONT color=#a82424>Pagan</FONT>？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-1-c" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-1-d" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Pastor Jack$<BR>Ah……We<FONT color=#a82424>Pagan</FONT>……，Is<FONT color=#a82424>Dragon followers</FONT>The 孽缘，More distant than you think。Although the previous Pope<FONT color=#a82424>Benedit Pope</FONT>Have been many efforts，But they have been teaching of the internal roots。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-1-d" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-1-e" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Pastor Jack$<BR><FONT color=#a82424>The difficulty of followers of the Dragon</FONT>After，They fell into silence for the time being。But the teaching can not see the dark group，They have not ceased。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-1-e" image="" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-2" mid="64"><![CDATA[<html>I&#39;m fine。</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Pastor Jack$<BR>I know you are sincere，Difficult to accept the fact that……But do not easily trust others。I am very worried about the time when the faith shattered，You will be hurt deeply……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n157_cleric_jake-1" image="" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$Pastor Jack${action:Talk}<BR>If no special place……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n158_point_mark-1" image="" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Do not see anything special about it)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-2" image="QW_7.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Pastor Jack${action:Talk}<BR>Ha ha……That&#39;s good。<BR>Well，We Go<FONT color=#a82424>霜风 Canyon</FONT>It。<BR><FONT color=#a82424>Thomas</FONT>Head is waiting for us。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n157_cleric_jake-2" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Pastor Jack${action:Talk}<BR>Like nothing special……<BR>You go look around。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n158_point_mark-2" image="" itemindex="">
+      <talk_answer link_index="n158_point_mark-2-a" mid="35"><![CDATA[<html>(Pick up things)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(In the grass to see something in the light)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n158_point_mark-2-a" image="QS_Default.dds" itemindex="300145">
+      <talk_question mid="36"><![CDATA[<html>$Strange mask$<BR><FONT color=#7e12d2>(Obtained with strange patterns and decorative horns</FONT><FONT color=#a82424>Red mask</FONT><FONT color=#7e12d2>。Back to Jack, where)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n157_cleric_jake-3" image="QS_206.dds" itemindex="">
+      <talk_answer link_index="n157_cleric_jake-4" mid="38"><![CDATA[<html>Do you know this thing？</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Pastor Jack$<BR>Ah，This is……<BR><FONT color=#7e12d2>(Jack looked at the mask，After thinking for a moment)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-4-a" mid="43"><![CDATA[<html>(Dragon mask out followers)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>You 来啦。What was not found？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4-a" image="QS_206.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-4-b" mid="45"><![CDATA[<html>Do you know what the right thing？</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Pastor Thomas$<BR>This……This is<FONT color=#a82424>Dragon followers</FONT>They use the mask……<BR>Mask patterns carved from view，This is not the mask of ordinary believers，But<FONT color=#a82424>Dragon followers</FONT>Level among the priests who wear the mask。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4-b" image="QS_15.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-4-c" mid="47"><![CDATA[<html>Sage of the stick？</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Pastor Thomas$<BR>Yes。In order to convince the stubborn old man，Cost me a lot of effort。Ha ha……<BR>Was looted Monster<FONT color=#a82424>Thing</FONT>Turned out to be<FONT color=#a82424>Sage of the stick</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4-c" image="QS_15.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-4-d" mid="49"><![CDATA[<html>Ah……How not to escort the Temple Knights……</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Pastor Thomas$<BR><FONT color=#a82424>Sage</FONT>Is the ancestor of Rev.<FONT color=#a82424>Jie Kebo</FONT>And the sorcerer&#39;s ancestor<FONT color=#a82424>Marian</FONT>Teacher，Be500Years ago the saints。<BR>But……So sacred even when delivery is not so careful，Really ridiculous……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4-d" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-4-e" mid="51"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>I know<FONT color=#a82424>Pope</FONT>And<FONT color=#a82424>Archbishop</FONT>Bad relationship，But did not expect the bad to the point where。<BR>Such an important matter，Did not do and<FONT color=#a82424>Archbishop</FONT>Say，On arbitrary……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4-e" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n013_cleric_tomas-4-f" mid="53"><![CDATA[<html>What is the secret of the ball？</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Pastor Thomas$<BR>
+To find<FONT color=#a82424>Sage of the stick</FONT>，Appears to be very difficult。But……If they covet the relic Sage，Sage will not be satisfied with the stick。<BR>
+They may also on<FONT color=#a82424>Secret of the ball</FONT>Start with。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4-f" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n013_cleric_tomas-4-g" mid="56"><![CDATA[<html>Eh……</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Pastor Thomas$<BR><FONT color=#a82424>Sage of the stick</FONT>Originally from the rod and the secret of a ball。Sage said that the two disciples，That is, the two ancestor，To separate the rod and the secret of ball，And a part of their custody。<FONT color=#a82424>Secret of the ball</FONT>By the magic of the magician who kept the ridge。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4-g" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-4-!next" mid="58"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n157_cleric_jake-4" image="QS_Default.dds" itemindex="300145">
+      <talk_question mid="87"><![CDATA[<html>$Pastor Jack${action:Talk}<BR>This is……<FONT color=#a82424>Dragon followers of the mask</FONT>。Really……<FONT color=#a82424>Archbishop</FONT>Was right，Magic ridge hidden<FONT color=#a82424>Dragon followers</FONT>Collaborator。<BR>Tear it to<FONT color=#a82424>Thomas</FONT>Head。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300145</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300145</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">102</exe>
+         <exe type="recompense">1020,,,,</exe>
+         <exe type="delquestitem" num="-1">300145</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n156_cleric_jake" sub="b" />
+   <exelink qstep="1" npc="n156_cleric_jake" sub="c" />
+   <exelink qstep="1" npc="n156_cleric_jake" sub="d" />
+   <exelink qstep="1" npc="n156_cleric_jake" sub="e" />
+   <exelink qstep="1" npc="n156_cleric_jake" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n158_point_mark" sub="a">3,0,1,2</exelink>
+   <exelink qstep="3" npc="n157_cleric_jake" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n013_cleric_tomas" sub="b" />
+   <exelink qstep="4" npc="n013_cleric_tomas" sub="c" />
+   <exelink qstep="4" npc="n013_cleric_tomas" sub="d" />
+   <exelink qstep="4" npc="n013_cleric_tomas" sub="e" />
+   <exelink qstep="4" npc="n013_cleric_tomas" sub="f" />
+   <exelink qstep="4" npc="n013_cleric_tomas" sub="g">1</exelink>
+   <exelink qstep="4" npc="n013_cleric_tomas" sub="!next">0,2</exelink>
+   <journal_data recompense="1020" quest_title="이단의 증거" chapterid="1" quest_level="2" quest_mark_type="7" use_item_list="300145">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>6,426,-583</destination_pos>
+         <destination_mode>custem</destination_mode>
+         <statemark_npcid>156</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[And the Rev. Jack dialogue Xueshuang ramp]]></title>
+         <contents mid="71"><![CDATA[<html><FONT color=#a82424>Pastor Thomas</FONT>Say<FONT color=#a82424>霜风 Canyon</FONT>Found<FONT color=#a82424>Pastor of St. beads</FONT>People should follow what their，And ordered me and<FONT color=#a82424>Pastor Jack</FONT>Again to<FONT color=#a82424>霜风 Canyon</FONT>Survey。<BR> 
+Go<FONT color=#a82424>雪霜 ramp</FONT>And<FONT color=#a82424>Pastor Jack</FONT>Dialogue。<BR> 
+<BR> 
+<FONT color=#086171>雪霜 ramp</FONT> <FONT color=#a82424>→Pastor Jack</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[And the Rev. Jack dialogue Xueshuang ramp]]></destination>
+         <todo_msg mid="73"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_7.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>83,-589,-309</destination_pos>
+         <destination_mode>custom:81@1,82@1,83@1</destination_mode>
+         <statemark_npcid>158</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="75"><![CDATA[Survey Shuangfeng Canyon]]></title>
+         <contents mid="76"><![CDATA[<html>And<FONT color=#a82424>Pastor Jack</FONT>With the survey<FONT color=#a82424>霜风 Canyon</FONT>。<BR><BR><FONT color=#086171>雪霜 ramp(Shuangfeng Canyon entrance)</FONT> <FONT color=#a82424>→ 霜风 Canyon</FONT></html>]]></contents>
+         <destination mid="77"><![CDATA[Survey Shuangfeng Canyon]]></destination>
+         <todo_msg mid="78"><![CDATA[Please join Pastor Jack investigation Shuangfeng Canyon。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>83,550,-96</destination_pos>
+         <destination_mode>custom:81@1,82@1,83@1</destination_mode>
+         <statemark_npcid>157</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[And Pastor Jack dialogue]]></title>
+         <contents mid="80"><![CDATA[<html>Survey<FONT color=#a82424>霜风 Canyon</FONT>When，Get a strange pattern of engraved<FONT color=#a82424>Red mask</FONT>。<BR>And<FONT color=#a82424>Pastor Jack</FONT>Dialogue。<BR><BR><FONT color=#086171>雪霜 ramp(Shuangfeng Canyon entrance)</FONT> <FONT color=#a82424>→ 霜风 Canyon(Pastor Jack)</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[And Pastor Jack dialogue]]></destination>
+         <todo_msg mid="82"><![CDATA[Received a red mask。Please dialogue with Pastor Jack。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[And Pastor Thomas dialogue]]></title>
+         <contents mid="84"><![CDATA[<html>In<FONT color=#a82424>霜风 Canyon</FONT>Obtained<FONT color=#a82424>Red mask</FONT>Be<FONT color=#a82424>Dragon followers</FONT>Things。Back to the magic mountain ridge，The mask to the followers of the Dragon<FONT color=#a82424>Pastor Thomas</FONT>。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Pastor Thomas</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[And Pastor Thomas dialogue]]></destination>
+         <todo_msg mid="86"><![CDATA[Please return the mask to the magic priest Thomas Ridge。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>121</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

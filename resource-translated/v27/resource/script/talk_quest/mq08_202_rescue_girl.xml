@@ -1,0 +1,347 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_202_rescue_girl</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>202</qid>
+      <designer>김주연</designer>
+      <qlevel>10</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>203</nextqid>
+      <nextqname>mq08_203_black_knight_tracking</nextqname>
+      <nextqnpc>n023_ranger_fugus</nextqnpc>
+      <qkname mid="1"><![CDATA[Girl rescued]]></qkname>
+      <qnpc>
+         <npcid>182</npcid>
+         <npcename>n182_point_mark</npcename>
+         <npckname>느낌표(!)_(ID는 빈공란)/탄식의 협곡3층</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>23</npcid>
+         <npcename>n023_ranger_fugus</npcename>
+         <npckname>정찰병 퍼거스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>33</npcid>
+         <npcename>n033_archer_master_adellin</npcename>
+         <npckname>상급 아처 아델린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>6</npcid>
+         <npcename>n006_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-1-a" mid="6"><![CDATA[<html>What I do for you？</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Scout Fugu Si$<BR>Ah……<FONT color=#a82424>Sigh Canyon</FONT>Is a very dangerous area，I should go with you Caixing……<BR>But<FONT color=#387206>{user_nick}</FONT>，I am sorry，<FONT color=#a82424>Adventurers Association</FONT>Issued an emergency standby command，So I can not leave。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-1-b" mid="29"><![CDATA[<html>…Know。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Scout Fugu Si$<BR>I heard people Reward Association recently appeared around Kedella。The man wearing black armor and cloak，Is called<FONT color=#a82424>Black Knight</FONT>。Association of the most mercenary adventurer in pursuit of his whereabouts。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-b" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Scout Fugu Si${action:Talk}<BR><FONT color=#382000>{user_nick}</FONT>，You go<FONT color=#a82424>Aide Lin</FONT>Where fix harp，Then to the canyon to sigh。After we complete our things and you go to convergence。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n006_rose-1" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Wire basket$<BR>Darkness is near……<BR> <FONT color=#7e12d2>(Basket wire stare talking gibberish)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1" image="" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Senior archer Aide Lin$<BR>For me，Kedella crossing is a place of joy and sadness coexist……The joy of meeting him，Parting sorrow……<BR>This is a place full of memories。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-1" image="" itemindex="">
+      <talk_question mid="77"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Do not see anything special about it)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-2" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Scout Fugu Si${action:Talk}<BR><FONT color=#008000>{user_nick}</FONT>，You must first go where the harp repaired Aide Lin。You checkpoints to meet Aide Lin Kedella。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2" image="QS_Default.dds" itemindex="300015">
+      <talk_answer link_index="n033_archer_master_adellin-2-b" mid="45"><![CDATA[<html>I hope you can help me fix the harp。</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Senior archer Aide Lin$<BR>I have not seen a harp。Recently went to inspect the time Fugu Si，Seems to have heard the voice of the harp……Ah，Sorry。What do you see me do？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2-a" image="QS_Default.dds" itemindex="300015">
+      <talk_question mid="46"><![CDATA[<html>$Senior archer Aide Lin$<BR>The harp in your hand……Appearing to have not played it a long time。I can help you fix it，But needs some time。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2-b" image="QS_Default.dds" itemindex="300015">
+      <talk_answer link_index="n033_archer_master_adellin-2-c" mid="48"><![CDATA[<html>Ah，Thank you。</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Senior archer Aide Lin$<BR>Harp in his hand……I seem to have been a long time without playing a harp。I can help you fix it，Just extra strings on hand。As long as it put something on the line。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2-c" image="QS_Default.dds" itemindex="300015">
+      <talk_answer link_index="n033_archer_master_adellin-2-d" mid="50"><![CDATA[<html>(Note once again from beginning to end things)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Senior archer Aide Lin$<BR>Tell me what you want to do anything that the harp？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2-d" image="QS_Default.dds" itemindex="300015">
+      <talk_answer link_index="n033_archer_master_adellin-2-e" mid="52"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Senior archer Aide Lin${sound:Quest_Harp_01.wav}<BR>Ah，I can play the melody to you。Fugu Si&#39;s performance level is poor，I heard the melody I play it to you。<BR>
+<FONT color=#7e12d2>(Aide Lin gently close your eyes，Started to play harp)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2-e" image="QW_14.dds" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Senior archer Aide Lin$<BR>The melody seems to be open<FONT color=#a82424>Sigh Canyon</FONT>The Enchantment of the key。Now you can start a。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-3" image="QW_14.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Senior archer Aide Lin$<BR>Not easy to play harp，But I think you can do it。In<FONT color=#a82424>Sigh canyon</FONT>Just play the melody with harp，Ward will be open。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-3" image="QM_HarpyRed.dds" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$Scout Fugu Si${action:Talk}<BR>Young girls being held in<FONT color=#a82424>Sigh Canyon</FONT>In。Please bring your magic harp，Go there to<FONT color=#a82424>Red Eagle Mito mistress</FONT>Lure out，The girl out of the hands from Monster。<FONT color=#a82424>Red Eagle Mito mistress</FONT>Looks different from ordinary Harpy，You must be careful。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-3" image="" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$Canyon Enchantment$<BR>
+<FONT color=#7e12d2>(Harp，Lifting of Enchantment)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-4" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-4-a" mid="59"><![CDATA[<html>(Black Knight said something)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Scout Fugu Si$<BR>How things like the? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-4-a" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-4-b" mid="61"><![CDATA[<html>Yes…</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Scout Fugu Si$<BR>Black Knight appears in the sigh Canyon，Snatched girl？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-4-b" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-4-!next" mid="63"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>탄식의 협곡 3층에서 저널 3을 4로 바꿔줌.</comment>
+      <conditions>
+         <chk type="lvl" op="]=">10</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n033_archer_master_adellin">b</exe>
+         <exe type="talk" npc="n033_archer_master_adellin">a</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6,7,8">372</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10">200372</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 372);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">202</exe>
+         <exe type="delquestitem" num="-1">300015</exe>
+         <exe type="recompense">,2021,2022,2023,2024</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n033_archer_master_adellin" sub="c" />
+   <exelink qstep="2" npc="n033_archer_master_adellin" sub="d" />
+   <exelink qstep="2" npc="n033_archer_master_adellin" sub="e">5,3,9,4</exelink>
+   <exelink qstep="4" npc="n023_ranger_fugus" sub="b">2</exelink>
+   <exelink qstep="4" npc="n023_ranger_fugus" sub="!next">0,1</exelink>
+   <journal_data recompense="1:2021,2:2022,3:2023,4:2024" quest_title="소녀를 구출하라" chapterid="2" quest_level="10" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_ranger_fugus.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,335,-26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>23</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>수정 개울</get_location>
+         <start_npc>정찰병 퍼거스</start_npc>
+         <desc_location>수정 개울</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>정찰병 퍼거스</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="16"><![CDATA[Girl rescued]]></title>
+         <contents mid="17"><![CDATA[<html>Go<FONT color=#a82424>Scout Fugu Si</FONT>To understand the situation where the Black Knight。<BR><BR><FONT color=#086171>Crystal Valley </FONT><FONT color=#a82424>→ Scout Fugu Si</FONT></html>]]></contents>
+         <destination mid="18"><![CDATA[And Crystal Valley Scout Fugu Si dialogue]]></destination>
+         <todo_msg mid="19"><![CDATA[Please Fugu Si dialogues]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Adellin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,-2912,2754</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>33</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[Senior Aide Lin and harp archer]]></title>
+         <contents mid="66"><![CDATA[<html>Fugu Si that senior Archer Aide Lin can fix Harp，I went to see her。With harp，To meet high-level archers Aide Lin bar。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Senior archer Aide Lin</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[And senior archers Aide Lin dialogue]]></destination>
+         <todo_msg mid="68"><![CDATA[Please Kedella barriers dialogue senior archer Aide Lin。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_14.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>118,708,2468</destination_pos>
+         <destination_mode>custom:116@1,117@1,118@1</destination_mode>
+         <statemark_npcid>182</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[Eagle Canyon sigh body to lift the people of tie]]></title>
+         <contents mid="70"><![CDATA[<html>From there, using the Institute&#39;s harp melody Aide Lin，Go<FONT color=#a82424>Sigh Canyon</FONT>Lifting of Harpy&#39;s Ward。<BR>
+ <BR>
+<FONT color=#086171>Crystal Valley(Sigh Canyon entrance)</FONT> <FONT color=#a82424>→ Sigh Canyon</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[Eagle Canyon sigh body to lift the people of tie]]></destination>
+         <todo_msg mid="72"><![CDATA[Please play harp，Canyon Enchantment lifting sigh。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QM_HarpyRed.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>119,0,0</destination_pos>
+         <destination_mode>custom:116@1,117@1,118@1,119@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[To kill the red eagle canyon sigh body of people]]></title>
+         <contents mid="74"><![CDATA[<html>Lifted the Harpy&#39;s Ward。Down hijacking<FONT color=#a82424>Girl</FONT>Of<FONT color=#a82424> Red Eagle Mito mistress</FONT>。<BR><BR><FONT color=#086171>Crystal Valley(Sigh Canyon entrance)</FONT> <FONT color=#a82424>→ Sigh Canyon</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[To kill the red eagle canyon sigh body of people]]></destination>
+         <todo_msg mid="76"><![CDATA[Please go to defeat the Red sigh Canyon Eagle Mito mistress。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_ranger_fugus.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>4,335,-26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>23</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[And Crystal Valley Scout Fugu Si dialogue]]></title>
+         <contents mid="80"><![CDATA[<html>Beat<FONT color=#a82424>Red Eagle Mito mistress</FONT>，Moment about rescued girls，<FONT color=#a82424>Black Knight</FONT>Suddenly，Snatched girl。Go back to see adventurers Association<FONT color=#a82424>Scout Fugu Si</FONT>。<BR><BR><FONT color=#086171>Crystal Valley</FONT> <FONT color=#a82424>→ Scout Fugu Si</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[And Crystal Valley Scout Fugu Si dialogue]]></destination>
+         <todo_msg mid="82"><![CDATA[Go back to where scouts Fugu Si。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>201</prev_quest>
+      <have_normal_item xml:space="preserve"> </have_normal_item>
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,211 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_479_catastrophic_rain1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>479</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>오염된 토양표본(300016)
+군터에게 가면 블랙 드래곤을 퇴치한 후 인근이 크게 오염되고 있다는 말을 한다. 용추종자들도 이때를 틈타서 난립하고 있다며, 잡아 들이는 걸 또 도와달라고 한다.
+검은 대군주의 연병장(30~32)에서 오염된 표본을 채집해 전염병을 퍼뜨리려는 용추종자들이 있다고 한다. 가서 일망타진해 달라는 의뢰.
+용추종자들을 해치우고 오염된 표본을 압수해 온다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Plague of rain I]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="6"><![CDATA[<html>You mean the battle with the Black Dragon?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Company president Gunter adventurer${action:talk}<BR>Oh，I heard that you also participated in the battle?Is<FONT color=#a82424>Dark Overlord points</FONT>Fierce battle took place。I heard that you and<BR><FONT color=#a82424>General Douglas</FONT>Elite soldiers led by a very brave。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="40"><![CDATA[<html>So that。</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Company president Gunter adventurer$<BR>Ah…Since you&#39;re a war，It also witnessed the。<BR>Because <FONT color=#a82424>Black Dragon</FONT>Once the message appears again, then spread out，Cause panic，So Wang has started a secret deal with the city。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="42"><![CDATA[<html>（Or count on friends in the royal credit。）</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Company president Gunter adventurer$<BR>Despite the security measures taken，But in the end paper is smoke there&#39;s fire，Ah really worrying。<BR>
+But，It so quickly repelled，Frankly speaking，My new look to our military really ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="8"><![CDATA[<html>And?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Company president Gunter adventurer$<BR>Although<FONT color=#a82424>Black Dragon</FONT>Disappeared，Yet, I have been around<FONT color=#a82424>Pollution</FONT>Very serious，Suffered severe injury is not generally ah。Contact with the wound from the Black Dragon, after leaving out things，Or will get sick，Either dead… And</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-e" mid="10"><![CDATA[<html>That…Really big is not good。 </html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Company president Gunter adventurer$<BR>Take advantage of this opportunity<FONT color=#a82424>Dragon followers</FONT>With signs of rampant again。Black Dragon also want to use the legacy of the guys to do bad things。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-f" mid="12"><![CDATA[<html>What can I do?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Company president Gunter adventurer$<BR>Regardless of the truth，Anyway, the recent holy people are panic in paradise。So if you are not busy, then，Could you help me a little big favor?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-f" image="QW_36.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-g" mid="14"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Company president Gunter adventurer$<BR>Dragon is said to followers of rump is<FONT color=#a82424>Dark Overlord training grounds</FONT>Collection of pollutants，For infectious diseases。If the soldiers led by a mighty words of the last raids，Certainly escape，So you quietly in the past to solve it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Plague of rain I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="QS_Default.dds" itemindex="300016">
+      <talk_question mid="17"><![CDATA[<html>$Company president Gunter adventurer${action:talk}<BR>They will be collected upon<FONT color=#a82424>Contaminated soil samples</FONT>，After the complete elimination，Come back to it。<BR>Be careful ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-a" mid="20"><![CDATA[<html>（Contaminated soil samples submitted）</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Company president Gunter adventurer$<BR>Oh，Come。<BR>Is waiting for you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-a" image="QS_Default.dds" itemindex="300016">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-b" mid="22"><![CDATA[<html>（Gunter lost in thought which）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Company president Gunter adventurer${action:talk}<BR>Ah… Sure enough, the color is unknown ah。Although the general pollution of the surrounding areas are also Monster，But an even greater risk as do giant Monster。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-b" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-c" mid="24"><![CDATA[<html>Ah，This is not what matters。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Company president Gunter adventurer$<BR>Hear<FONT color=#a82424>Heraldic scholars Stasi</FONT>Being studied for these polluting，I wonder if they will help him，You take the matter to him to look at it。<BR>In short，You&#39;ve worked hard。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-d" mid="26"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-d" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-next_quest" mid="28"><![CDATA[<html>Ah? What?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Company president Gunter adventurer$<BR>Ah... Mention<FONT color=#a82424>Stasi</FONT>Daorang I think of it，I commissioned last have something to do。Even with the way things done that how ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">479</exe>
+         <exe type="recompense_view">,4791,4792,4793,4794</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,5,6,7">21070</exe>
+         <exe type="addquestitem" num="1">300016</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300016</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n036_adventurer_guildmaster_gunter">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4791,4792,4793,4794</exe>
+         <exe type="complete">479</exe>
+         <exe type="delquestitem" num="-1">300016</exe>
+         <exe type="custom">api_npc_NextScript(userObjID, npcObjID, "n036_adventurer_guildmaster_gunter-1", "sq11_480_catastrophic_rain2.xml");</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="g">1</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">0,8,2,4</exelink>
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="b" />
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="c">0</exelink>
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="d">1,2</exelink>
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="next_quest">3</exelink>
+   <journal_data recompense="1:4791,2:4792,3:4793,4:4794" quest_title="재앙의 비 I" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="300016">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_36.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>363,0,0</destination_pos>
+         <destination_mode>custom:361@1,362@1,363@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Messy situation]]></title>
+         <contents mid="32"><![CDATA[<html>To the training grounds to destroy the Dark Overlord<FONT color=#a82424>Dragon followers</FONT>，And collect samples of contaminated soil it。<BR><BR><FONT color=#086171>Montenegro hill angle（Dark Overlord of the barriers）</FONT> <FONT color=#a82424>→Dark Overlord training grounds</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Recycling of contaminated soil samples]]></destination>
+         <todo_msg mid="34"><![CDATA[Overlord training grounds in the dark followers destroy the Dragon Bar。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Recycling success]]></title>
+         <contents mid="36"><![CDATA[<html>Go back to the adventurer, president of Gunter public report it。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→Company president Gunter adventurer</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[President Gunter public report to the adventurer]]></destination>
+         <todo_msg mid="38"><![CDATA[Gunter, president of the adventurer public report it。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>409</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

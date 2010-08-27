@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n158_point_mark</npcename>
+      <npcid>158</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Points marked]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$???$<BR>(Conspicuous places no particular)</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq05_102_evidence_of_pagan</exe>
+         <exe type="conexe" true="1" false="3">0</exe>
+         <exe type="conexe" true="4" false="0">1</exe>
+         <exe type="enterquest">mq05_112_doubt</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">102</chk>
+         <chk type="hasquest">112</chk>
+      </conditions>
+   </talk>

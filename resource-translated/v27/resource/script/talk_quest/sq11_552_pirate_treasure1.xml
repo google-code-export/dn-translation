@@ -1,0 +1,380 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_552_pirate_treasure1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>552</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>553</nextqid>
+      <nextqname>sq11_553_pirate_treasure2</nextqname>
+      <nextqnpc>n087_beggar</nextqnpc>
+      <qkname mid="1"><![CDATA[Have too many tasksⅠ]]></qkname>
+      <qnpc>
+         <npcid>286</npcid>
+         <npcename>n286_treasure_box</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>49</npcid>
+         <npcename>n049_sainthaven_kid</npcename>
+         <npckname>까치머리 꼬마</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>87</npcid>
+         <npcename>n087_beggar</npcename>
+         <npckname>로피</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(Pirate King&#39;s Treasure)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$The task did not meet the criteria$<br>Notice，Have too many tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Can not accept more tasks$<br>Notice，Backpack space。<br><br><FONT color=#7e12d2>※ Can not be rewarded，Please leave space in the backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $To get the reward$<br>(Notice，Currently unable to accept the task of。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Or has exceeded the maximum number of tasks$<br>Notice。<br>(Taskbar space backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Please order Backpack$<BR>Beggars Roffey～Haha～Death to all～！！ <BR><FONT color=#7e12d2>(Hey Hey Hey，Talking gibberish)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n286_treasure_box-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$????$<BR><FONT color=#7e12d2>(Toward the empty laughter)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-a" mid="10"><![CDATA[<html>(Can not open)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Xiao Maohai kidding$<BR>Recklessly children～Rustic adventurer？Hei hei。<BR>Pirate King&#39;s Treasure～Can you fed rice。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-a" image="QN_Npc_Beggar.dds" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-b" mid="12"><![CDATA[<html>Haha？</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$What ah$<BR>Recklessly children，Recently in the vicinity of a well-known rumor？<BR>You know<FONT color=#a82424>Is over there</FONT>Recently income alright。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-c" mid="14"><![CDATA[<html>Roffey…?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Getting on well past the time the uncle thing$<BR>Pirate，Recklessly children……Ah<FONT color=#a82424>Well</FONT>Beggar！Roffey～Uncle<FONT color=#a82424>The past is a non-</FONT>～！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-c" image="QN_Npc_Beggar.dds" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-d" mid="75"><![CDATA[<html>Often name……</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Pirate$<BR>
+Not believe！Recklessly children。<BR>
+Yes，Uncle told me that Roffey，Although he was a little crazy now，Become a beggar<FONT color=#a82424>But when he was young</FONT>，As soon as that。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-d" image="QN_Npc_Beggar.dds" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-e" mid="16"><![CDATA[<html>Scarlet Roffey……No one can say that I do not know the sacred paradise。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Ah$<BR>Let me check it out。Recklessly children～I do not think，But。Pirate King sailing past the time？<BR>
+<FONT color=#a82424>Left a huge treasure</FONT>You heard me！！Roffey？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-acceppted" mid="18"><![CDATA[<html><FONT color=#086171>Uncle said that the location of treasure</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Is this reallyⅠ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-1" image="QN_Npc_Beggar.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Given the task of$<BR>Pirate King&#39;s Treasure<FONT color=#a82424>Recklessly children</FONT>，But must give a lot of money, or Uncle Roffey……Gem，He will tell you？<BR>
+Adventurer？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-1" image="QN_Npc_Beggar.dds" itemindex="">
+      <talk_answer link_index="n087_beggar-1-haveitem" mid="21"><![CDATA[<html>(You do not a pauper)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Talk to him$<BR>You can find out by you～Beggars Roffey～Hey Hey～！！<BR><FONT color=#7e12d2>(Kill me，Hey Hey)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-1-a" image="QS_Default.dds" itemindex="336617472">
+      <talk_question mid="22"><![CDATA[<html>$Talking gibberish$<BR>Toward the empty laughter……Beggars Roffey……<BR>My head&#39;s dog began to call the<FONT color=#a82424>10Ha ha Ha ha</FONT><FONT color=#a82424>To eat it</FONT>Agate pieces，Block……If……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-1-b" image="QS_Default.dds" itemindex="336617472">
+      <talk_answer link_index="n087_beggar-1-c" mid="24"><![CDATA[<html>(Some of it should be quiet)</html>]]></talk_answer>
+      <talk_answer link_index="n087_beggar-1-giveitem" mid="25"><![CDATA[<html>(Ha ha Ha ha10Do not give him)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$To it$<BR>Beggars Roffey……One agate pieces，Ha ha Ha ha<FONT color=#a82424>You</FONT>Have……Agate pieces……<BR>Ah？Ha ha ha～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-1-c" image="QM_HoundNormal.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Hey Hey$<BR>You brought me for my<FONT color=#382000> {user_class}</FONT>！！Beggars Roffey？You are a bad？Do you want to steal my head hound you！Eh，Ha ha Ha ha！I will not give you。Away！Away！<BR><FONT color=#7e12d2>(Greedy ghost)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n286_treasure_box-1" image="" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$????$<BR><FONT color=#7e12d2>(Ha ha ha ha)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-2" image="" itemindex="">
+      <talk_answer link_index="n087_beggar-2-party" mid="28"><![CDATA[<html>Can not open？</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Started issuing strange laughter$<BR>Beggars Roffey<FONT color=#a82424>Inside my head</FONT>Hound……I heard that you know the pirate king&#39;s treasure hidden where……<BR>……Ha ha Ha ha？Started calling the？Who are you……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-2-a" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Ha ha ha$<BR>Beggars Roffey？The dog&#39;s food you。Why do crowds hanging around in front of me ah？Not in front of me swinging……<BR>You know，Ha ha Ha ha……<BR><FONT color=#7e12d2>(Ha ha Ha ha)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-2-b" image="QM_HoundNormal.dds" itemindex="">
+      <talk_answer link_index="n087_beggar-2-c" mid="31"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$I became like this because the pay is bad friends${action:Stand2}<BR>In the team can not perform the task under？Beggars Roffey？What……Ha ha Ha ha<FONT color=#a82424>Pirate King</FONT>，Inside my head<FONT color=#a82424>Hound</FONT>，Gem，We took？Right～Should be a good answer……Bark！！……Hu Lulu，Wang。Since the dogs so that！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-2-c" image="QS_Default.dds" itemindex="300260">
+      <talk_answer link_index="n087_beggar-2-d" mid="33"><![CDATA[<html>(Ha ha ha，I&#39;ll tell you)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$The fleas Paidiao$<BR>Closing down<FONT color=#a82424>Beggars Roffey</FONT>Treasure Map。Pirate King&#39;s treasures must be……<BR><FONT color=#7e12d2>(To find，Ha ha Ha ha)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-2-d" image="QW_39.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Beggar who turned in a moment$<BR>Beggars Roffey<FONT color=#a82424>Come up with something it had</FONT>You take<FONT color=#a82424>Map</FONT>To。Go……<BR>Captain Durrant base，Ha ha Ha ha……Can also be found there……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-3" image="QW_39.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Ha ha Ha ha$<BR>Beggars Roffey……Even if it is hungry hound eyes closed for four days！Ha ha Ha ha！Ah ha ha ha ha ha～！I am head of the dogs are beginning to bite things<FONT color=#a82424>Go right to find treasure</FONT>，Captain Durrant base？I let you go？Ah！！How do you back！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n286_treasure_box-3" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n286_treasure_box-3-a" mid="38"><![CDATA[<html>(Why)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Ha ha ha${action:Close_Open}<BR><FONT color=#7e12d2>(Reading Notes，Treasure Box)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n286_treasure_box-3-a" image="" itemindex="">
+      <talk_answer link_index="n286_treasure_box-3-b" mid="40"><![CDATA[<html>(Open the treasure box view)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Which puts a very thick notebook$<BR><FONT color=#a82424>The following are people passionate youth adventure diary blood！Box notesOne Pi……</FONT> <BR>
+<FONT color=#7e12d2>(With you must be on)</FONT><BR>
+<FONT color=#a82424>……Who see this note，Dream！</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n286_treasure_box-3-b" image="" itemindex="">
+      <talk_answer link_index="n286_treasure_box-3-c" mid="42"><![CDATA[<html>(……Text is erased，Although reluctant to believe)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Came here$<BR><FONT color=#7e12d2>(Box notes)</FONT><BR>
+<FONT color=#a82424>But this is the end of the，Open the last page。We encountered many fellow！Experienced numerous hardships and adversities！！</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n286_treasure_box-3-c" image="QN_Npc_Beggar.dds" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$To come here and pay the sweat and tears$<BR><FONT color=#7e12d2>(Treasure Box，This is nothing can exchange into a valuable asset。Empty box)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n286_treasure_box-4" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$After the notes out$<BR><FONT color=#7e12d2>(Treasure Box)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-4" image="" itemindex="">
+      <talk_answer link_index="n087_beggar-4-a" mid="46"><![CDATA[<html>Go back to the beggar Roffey protest……</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$What the box did not$<BR>Sedation… Beggars Roffey……Shiver Shiver……<BR>Shiver……Bright fire is chasing me？！<BR>
+It is？That you,！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-4-a" image="" itemindex="">
+      <talk_answer link_index="n087_beggar-4-b" mid="48"><![CDATA[<html>Eh。</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$You are tracking me$<BR>Beggars Roffey……Shiver……Treasure box nothing……Shiver shake！<BR>I had hoped for happiness！<BR>
+……Bark WANG？Huh？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-4-b" image="QS_Default.dds" itemindex="300260">
+      <talk_answer link_index="n087_beggar-4-c" mid="50"><![CDATA[<html>Head of the hound began to call the。</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$You${action:Stand2}<BR>Have you come to me do……？！<BR>Beggars Roffey<FONT color=#a82424>Bark</FONT>Map。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-4-c" image="" itemindex="">
+      <talk_answer link_index="n087_beggar-4-d" mid="52"><![CDATA[<html>(Me to you)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Continue$<BR>Show me？Beggars Roffey？……Deceived it！Deceived it！Ha ha ha ha！Fool！Fool～You～Was～Even the map is returned to me！Cheat！<BR>
+The！Ha ha ha ha ha ha，Ha！！<BR>
+<FONT color=#7e12d2>(I fooled fool，Ha ha ha)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-4-d" image="" itemindex="">
+      <talk_answer link_index="n087_beggar-4-!next" mid="54"><![CDATA[<html><FONT color=#086171>(Roffey the ground Dazhao Gun)</FONT></html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$To throw around all kinds of things$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">5520,,,,</exe>
+         <exe type="setquest">552</exe>
+         <exe type="talk" npc="n049_sainthaven_kid">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="item" num="10" op="]=">336617472</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n087_beggar">b</exe>
+         <exe type="talk" npc="n087_beggar">a</exe>
+         <exe type="delitem" num="10">336617472</exe>
+         <exe type="talk" npc="n087_beggar">2</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n087_beggar">b</exe>
+         <exe type="talk" npc="n087_beggar">a</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300260</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5521,5522,5523,5524</exe>
+         <exe type="delquestitem" num="-1">300260</exe>
+         <exe type="complete">552</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n049_sainthaven_kid" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n049_sainthaven_kid" sub="acceppted">1,2</exelink>
+   <exelink qstep="1" npc="n087_beggar" sub="haveitem">0</exelink>
+   <exelink qstep="1" npc="n087_beggar" sub="c" />
+   <exelink qstep="1" npc="n087_beggar" sub="giveitem">3,5,6,4</exelink>
+   <exelink qstep="2" npc="n087_beggar" sub="party">0</exelink>
+   <exelink qstep="2" npc="n087_beggar" sub="c" />
+   <exelink qstep="2" npc="n087_beggar" sub="d">5,3,4</exelink>
+   <exelink qstep="3" npc="n286_treasure_box" sub="b" />
+   <exelink qstep="3" npc="n286_treasure_box" sub="c">0,1</exelink>
+   <exelink qstep="4" npc="n087_beggar" sub="b" />
+   <exelink qstep="4" npc="n087_beggar" sub="c" />
+   <exelink qstep="4" npc="n087_beggar" sub="d">0</exelink>
+   <exelink qstep="4" npc="n087_beggar" sub="!next">1,2</exelink>
+   <journal_data recompense="0:5520" quest_title="해적왕의 보물Ⅰ" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="300260">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Beggar.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n87</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>87</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Get Award Task reward?]]></title>
+         <contents mid="57"><![CDATA[<html>Pirate King<FONT color=#a82424>Roffey</FONT>Roffey。Once a pirate<FONT color=#a82424>Recklessly told me a beggar child</FONT>Pirate King&#39;s Treasure，He may know。<BR><BR><FONT color=#086171>The place where</FONT> <FONT color=#a82424>→ Holy Paradise</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Roffey]]></destination>
+         <todo_msg mid="59"><![CDATA[Ask him right。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Beggar.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n87</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>87</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[Dialogue and beggars Roffey]]></title>
+         <contents mid="61"><![CDATA[<html>Roffey answer，Required to pay the cost of beggars Roffey。<BR><BR><FONT color=#086171>Please pirate king to beggar Roffey asked the whereabouts of the treasures</FONT> <FONT color=#a82424>→ Holy Paradise</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[Roffey]]></destination>
+         <todo_msg mid="63"><![CDATA[Dialogue and beggars Roffey。Now it was his turn to pirate treasure king told me things。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_39.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>391,n286</destination_pos>
+         <destination_mode>custom:391@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[The price paid to the beggar Roffey]]></title>
+         <contents mid="65"><![CDATA[<html>Continue to listen to a story to tell。Find Treasure，Roffey has given me a treasure map pieces<FONT color=#a82424>He said that in accordance with the map to the pirate&#39;s cave</FONT>。<BR><BR><FONT color=#7e12d2>※ Treasure Box。</FONT><BR><BR><FONT color=#086171>Can be found(Heermadai port)</FONT> <FONT color=#a82424>→ Island transport ship</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[(1Captain Durrant base)Team can not perform the task under]]></destination>
+         <todo_msg mid="67"><![CDATA[People。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Beggar.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n87</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>87</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Captain Durrant base to search for treasure box]]></title>
+         <contents mid="69"><![CDATA[<html>Go to Captain Durrant base to find treasure box，Vain。Little treasure。<BR>
+ <BR>
+<FONT color=#086171>Treasure box which is only a note</FONT> <FONT color=#a82424>→ Holy Paradise</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Roffey]]></destination>
+         <todo_msg mid="71"><![CDATA[Back to settle the account with the beggar Roffey。Dialogue and beggars Roffey。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

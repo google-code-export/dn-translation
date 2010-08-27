@@ -1,0 +1,199 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_212_elimination_hobgoblin</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>212</qid>
+      <designer>김주연</designer>
+      <qlevel>16</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>213</nextqid>
+      <nextqname>mq08_213_priestess_in_red</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[Repel elf]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>The new deformation<FONT color=#a82424>Elf、Blow strange、Spider、Ogre</FONT>……According to what you said，Kedella the Monster is the red hands of the dark wizard。More than the goblins all over the Kedella small wizard？！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Hum……Think of the legs become weak。The biggest achievement was the success of reconnaissance。We will be based on the content you hear，Proceed with processing 11。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QP_hobgoblin_maker.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-c" mid="10"><![CDATA[<html>Position……？！</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>She told<FONT color=#a82424>Ai Leina</FONT>It……？Well，Let us act quickly，Her impasse！First，In my experience and perspective strategist……<FONT color=#a82424>Elf manufacturing facilities</FONT>The position……！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-c" image="QW_19.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Be<FONT color=#a82424>Shrine Chapel</FONT>！！<BR>You go to the elf manufacturing facilities destroyed，Repel elf，Defense Kedella！Well，Proceed quickly！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QW_19.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>From my years of experience，And scientific、Reasonable inspiration，埃雷娜 of<FONT color=#a82424>Elf manufacturing facilities</FONT>Necessarily in<FONT color=#a82424>Shrine Chapel</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-a" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Hard work。<BR>See your face，I must have guessed it！Well，Goes on……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-!next" mid="36"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">212</exe>
+         <exe type="recompense">,2121,2122,2123,2124</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c">0,1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="a">1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="!next">0</exelink>
+   <journal_data recompense="1:2121,2:2122,3:2123,4:2124" quest_title="홉고블린 퇴치" chapterid="3" quest_level="16" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>길드장 데커드</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[New Message]]></title>
+         <contents mid="24"><![CDATA[<html>Grave to hear the speech should be content to tell Dai Kade，And discuss with him measures。And<FONT color=#a82424>Association president Dai Kade</FONT>Dialogue。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Society of Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[Society of Daika De dialogue and adventurer]]></destination>
+         <todo_msg mid="26"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_HopGoblinGreen.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>144,0,0</destination_pos>
+         <destination_mode>custom:141@1,142@1,143@1,144@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <get_location>캐더락</get_location>
+         <start_npc>길드장 데커드</start_npc>
+         <desc_location>바람 숲 지역, 바람 숲 신전 입구의 신전 예배당</desc_location>
+         <step_action>사냥</step_action>
+         <complete_npc>길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster>홉고블린</hunt_monster>
+         <hunt_monsterindex>461,475</hunt_monsterindex>
+         <collect_item>오염자의 지령서</collect_item>
+         <collect_itemindex>50</collect_itemindex>
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[Defeat the Temple Church elf，Destruction of manufacturing facilities]]></title>
+         <contents mid="28"><![CDATA[<html>According to Dai Kade scientific、Reasonable inspiration，<FONT color=#a82424>Elf manufacturing facilities</FONT>Should<FONT color=#a82424>Shrine Chapel</FONT>。<BR>Go<FONT color=#a82424>Shrine Chapel</FONT>Damage<FONT color=#a82424>Elf manufacturing facilities</FONT>。<BR><BR><FONT color=#086171>Wind forest areas(Forest Temple entrance of wind)</FONT> <FONT color=#a82424>→Shrine Chapel</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[Defeat the Temple Church elf，Destruction of manufacturing facilities]]></destination>
+         <todo_msg mid="30"><![CDATA[Please repel the Temple Church of the Little Wizard，Destruction of manufacturing facilities。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>캐더락 관문</get_location>
+         <start_npc>길드장 데커드</start_npc>
+         <desc_location>캐더락 관문</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>길드장 데커드</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Society of Daika De dialogue and adventurer]]></title>
+         <contents mid="32"><![CDATA[<html>Repelled elf，Destroyed the shrine in the chapel of the manufacturing facilities。Go back to<FONT color=#a82424>Kedella checkpoints Association president Dai Kade</FONT>Report。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Society of Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Society of Daika De dialogue and adventurer]]></destination>
+         <todo_msg mid="34"><![CDATA[Please go back and report to the adventurer guild Dai Kade。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1;-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>211</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

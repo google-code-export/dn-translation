@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n219_saint_guard</npcename>
+      <npcid>219</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[King City guardsman]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$King City guardsman$<BR>My mission was to perform important。Timid adventurers who go on the flash side。</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">mq11_417_guardian_geraint</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="enterquest">mq11_418_go_lotusmash</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">417</chk>
+         <chk type="hasquest">418</chk>
+      </conditions>
+   </talk>

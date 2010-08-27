@@ -1,0 +1,569 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_467_endless_dream3</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>467</qid>
+      <designer>손원호</designer>
+      <qlevel>27</qlevel>
+      <qdesc>꿈 가루를 이용해서 엘로이즈의 꿈 속으로 들어가지만 결국 깨우지 못하고, 대신 길리안의 이야기를 듣는다. 길리안에게 찾아가면 그는 소녀를 모른다고 하는데…
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Can not wake up the dream Ⅲ]]></qkname>
+      <qnpc>
+         <npcid>237</npcid>
+         <npcename>n237_sylock</npcename>
+         <npckname>거상 샤일록</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>238</npcid>
+         <npcename>n238_elloise</npcename>
+         <npckname>엘로이즈</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>239</npcid>
+         <npcename>n239_elloise</npcename>
+         <npckname>엘로이즈</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>240</npcid>
+         <npcename>n240_elloise</npcename>
+         <npckname>엘로이즈</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Sleeping Hailuoweizi$<BR>... ...<BR><BR><FONT color=#7e12d2>（Sleeping among）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Hailuoweizi$<BR>
+I am much better now。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-accepting" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-accepting-a" mid="8"><![CDATA[<html>（Thing about Gillian）</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Giant Mayi Luo$<BR>How the? Gillian Why not come?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-accepting-b" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Giant Mayi Luo$<BR>Eh……So that。<BR>
+Guy……Seems to be more spirit than the look of some of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-accepting-acceptted" mid="12"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Can not wake up the dream Ⅲ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-1" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-1-a" mid="15"><![CDATA[<html>On to me。</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Giant Mayi Luo$<BR>You fast access to Hailuoweizi dreams，The pendant to her。<BR>
+I thanks to you……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-1-a" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Giant Mayi Luo$<BR>As long as Hailuoweizi to wake up，I have no other desire ah...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-2" image="QN_elloise.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Giant Mayi Luo$<BR>I thanks to you……<BR>
+Have to wake up my daughter。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-2" image="QS_Default.dds" itemindex="300083">
+      <talk_answer link_index="n238_elloise-2-member1" mid="19"><![CDATA[<html>（Use Dream Powder）</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Hailuoweizi$<BR>... ...<BR>
+<BR><FONT color=#7e12d2>（Which seems to still sleep）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-2-a" image="" itemindex="">
+      <talk_answer link_index="n238_elloise-2-into_dream" mid="107"><![CDATA[<html>（Enter dream）</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$Hailuoweizi$<BR>… …<BR><BR><FONT color=#7e12d2>（Dream of the powder used，Hailuoweizi exudes mystery surrounding the light）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-2-b" image="" itemindex="">
+      <talk_question mid="108"><![CDATA[<html>$System$<BR><FONT color=#7e12d2><FONT color=#a82424>Can only enter the dream alone。If the words of team，Please try after withdrawal force。</FONT> </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-3-a" mid="21"><![CDATA[<html>Have something to say to you。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Dream Hailuoweizi$<BR>Is you, ah。<BR>
+Why do you refuse to let me do？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-a" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-3-b" mid="23"><![CDATA[<html>（Hand pendant）</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Dream Hailuoweizi$<BR>I did not need。<BR>
+Let me beg you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-b" image="QS_Default.dds" itemindex="300074">
+      <talk_answer link_index="n239_elloise-3-c" mid="25"><![CDATA[<html>Gillian gave me is。</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Dream Hailuoweizi$<BR>This……It is？！<BR>
+How do you have this<FONT color=#a82424>Pendant</FONT>？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-c" image="QS_Default.dds" itemindex="300074">
+      <talk_answer link_index="n239_elloise-3-d" mid="27"><![CDATA[<html>He did not abandon you。</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Dream Hailuoweizi$<BR>Impossible！This is both our<FONT color=#a82424>Keepsake</FONT>，We each promise not to any person... He…Or abandoned me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-d" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-3-e" mid="29"><![CDATA[<html>Gillian order you want to become stronger。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Dream Hailuoweizi$<BR>Lie！<BR>
+Final<FONT color=#a82424>He left me……</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-e" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-3-f" mid="31"><![CDATA[<html>For you，Is working to become more well。</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Dream Hailuoweizi$<BR>To…Me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-f" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-3-g" mid="34"><![CDATA[<html>To see you again，He determined to try and try again。</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Dream Hailuoweizi$<BR>... ... To come back to me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-g" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-3-h" mid="36"><![CDATA[<html>（Hailuoweizi very strange looks）</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Dream Hailuoweizi$<BR>Oh，Gillian，My Jillian……<BR>
+I have the back……<BR>
+Not work，I can not go back。<FONT color=#a82424>I can not wake up！</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-h" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-3-i" mid="38"><![CDATA[<html>（Dark black smoke emitted） </html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Dream Hailuoweizi$<BR>I want to wake up，But no，Can not wake up。<BR>
+Here is where the dream，Dream master……I！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-i" image="QM_Wraith_Red.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Dream Hailuoweizi$<BR>Fast……Go fast。<BR>
+<FONT color=#a82424>Nightmare</FONT>To begin。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-4" image="QM_Wraith_Red.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Dream Hailuoweizi$<BR>Fast…Escape bar。 <FONT color=#a82424>Nightmare</FONT>Has regained consciousness。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-5" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-5-a" mid="42"><![CDATA[<html>Spirit of the good points of the right?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Dream Hailuoweizi$<BR>Destroy my<FONT color=#a82424>Nightmare</FONT>…Thank you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-5-a" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-5-out_dream" mid="44"><![CDATA[<html>（&#39;re Holding hands Hailuoweizi）</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Dream Hailuoweizi$<BR>Ah，Thanks to you，I am more awake。<BR>
+Let us go back。<BR>
+Back to her own world……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-6" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Giant Mayi Luo$<BR>Hailuoweizi The color is very strange……<BR>
+Seem……What has changed……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-6" image="" itemindex="">
+      <talk_answer link_index="n240_elloise-6-a" mid="47"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Hailuoweizi$<BR>... ...<BR>
+<BR><FONT color=#7e12d2>（Slowly opened his eyes Hailuoweizi）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-6-a" image="" itemindex="">
+      <talk_answer link_index="n240_elloise-6-b" mid="49"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Hailuoweizi$<BR>Blue sky，Cool wind，White cloud……Sparkling sea<BR>
+This……Is a world where I。<BR><FONT color=#7e12d2>(Hailuoweizi with clear eyes looked around)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-6-b" image="" itemindex="">
+      <talk_answer link_index="n240_elloise-6-c" mid="52"><![CDATA[<html>Fortunately,。</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Hailuoweizi$<BR>Thank you，Thanks to you I was able to re-open my eyes，See our world。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-6-c" image="" itemindex="">
+      <talk_answer link_index="n240_elloise-6-d" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Hailuoweizi$<BR>Gillian... He also somewhere in this world to concentrate on learning it... Since you helped me to eliminate my nightmares，I have to brave to face the reality of the nightmare，Bravely forward。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-6-d" image="" itemindex="">
+      <talk_answer link_index="n240_elloise-6-e" mid="56"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Hailuoweizi$<BR>In order to meet again with Gillian，I will work hard to live in。 When there is to see him again，I will use my will to him in person，I love him，And never again with his separation。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-6-e" image="" itemindex="">
+      <talk_answer link_index="n240_elloise-6-f" mid="58"><![CDATA[<html>I wish you luck。</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Hailuoweizi$<BR>I&#39;ll refocus my father，I want to be trusted by his daughter ，This time I will stand up to him about my Gillian。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-6-f" image="" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Hailuoweizi$<BR>Wake me for you，I once again express deep gratitude。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-7" image="QN_shylock.dds" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$Hailuoweizi$<BR>I have…All right。What if his father would want to tell you that</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-7" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-7-a" mid="63"><![CDATA[<html>Finally woke up，What are you crying ah?</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Giant Mayi Luo$<BR>
+Ming... Ming... Ming... My daughter... Hailuoweizi woke up...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-7-a" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-7-b" mid="65"><![CDATA[<html>Is Gillian has agreed with the right contacts？</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Giant Mayi Luo$<BR>This is what happy tears。Hailuoweizi has grown up…It seems that the time was married... Hum。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-7-b" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-7-c" mid="67"><![CDATA[<html>Great。</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Giant Mayi Luo$<BR>
+Ah... Although the guy is not into my discernment，But since so sure if her daughter，Next time get a good look for him to talk about the…Now she is responsible for their actions an adult 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-7-c" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-7-d" mid="69"><![CDATA[<html>I can understand。</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Giant Mayi Luo$<BR>Young adventurers like you so how can it be to understand the feelings of the father。I have only one hope，Is <FONT color=#a82424>Hailuoweizi happiness</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-7-d" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-7-e" mid="71"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Giant Mayi Luo$<BR>Thank you for your understanding…This is the time to reward prepared for you to help me a little appreciation，Please do accept。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-7-e" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-7-f" mid="73"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-7-f" image="" itemindex="">
+      <talk_question mid="74"><![CDATA[<html>$Giant Mayi Luo$<BR>
+Now open your heart I find her a good chat… Thank you for helping me。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4671,4672,4673,4674</exe>
+         <exe type="setquest">467</exe>
+         <exe type="talk" npc="n237_sylock">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13013,1);</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n238_elloise">a</exe>
+         <exe type="talk" npc="n238_elloise">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">21068</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,12,7);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4671,4672,4673,4674</exe>
+         <exe type="complete">467</exe>
+         <exe type="delquestitem" num="1">300083</exe>
+         <exe type="delquestitem" num="1">300074</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n237_sylock" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n237_sylock" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n237_sylock" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n238_elloise" sub="member1">3</exelink>
+   <exelink qstep="2" npc="n238_elloise" sub="into_dream">0,1,2</exelink>
+   <exelink qstep="3" npc="n239_elloise" sub="b" />
+   <exelink qstep="3" npc="n239_elloise" sub="c" />
+   <exelink qstep="3" npc="n239_elloise" sub="d" />
+   <exelink qstep="3" npc="n239_elloise" sub="e" />
+   <exelink qstep="3" npc="n239_elloise" sub="f" />
+   <exelink qstep="3" npc="n239_elloise" sub="g" />
+   <exelink qstep="3" npc="n239_elloise" sub="h" />
+   <exelink qstep="3" npc="n239_elloise" sub="i">0,2,1</exelink>
+   <exelink qstep="5" npc="n239_elloise" sub="out_dream">0,1,2</exelink>
+   <exelink qstep="6" npc="n240_elloise" sub="b" />
+   <exelink qstep="6" npc="n240_elloise" sub="c" />
+   <exelink qstep="6" npc="n240_elloise" sub="d" />
+   <exelink qstep="6" npc="n240_elloise" sub="e" />
+   <exelink qstep="6" npc="n240_elloise" sub="f">0,1</exelink>
+   <exelink qstep="7" npc="n237_sylock" sub="b" />
+   <exelink qstep="7" npc="n237_sylock" sub="c" />
+   <exelink qstep="7" npc="n237_sylock" sub="d" />
+   <exelink qstep="7" npc="n237_sylock" sub="e">0</exelink>
+   <exelink qstep="7" npc="n237_sylock" sub="f">1,2,3</exelink>
+   <journal_data recompense="1:4671,2:4672,3:4673,4:4674" quest_title="깨지 않는 꿈 Ⅲ" chapterid="" quest_level="27" quest_mark_type="10" use_item_list="300083,300074">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_shylock.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n237</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>237</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Dialogue with the giant Mayi Luo]]></title>
+         <contents mid="78"><![CDATA[<html>Before entering the Hailuoweizi&#39;s dream with giant Mayi Luo dialog and。<BR><BR><FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→Giant Mayi Luo</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Dialogue with the giant Mayi Luo]]></destination>
+         <todo_msg mid="80"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_elloise.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n238</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>238</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[Dream into Hailuoweizi]]></title>
+         <contents mid="82"><![CDATA[<html>In the sleeping Hailuoweizi who use Dream Powder，Into her dream bar。<BR><BR><FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→Sleeping Hailuoweizi</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[Dream into Hailuoweizi]]></destination>
+         <todo_msg mid="84"><![CDATA[Dream it once again into the Hailuoweizi。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_elloise.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13013,n239</destination_pos>
+         <destination_mode>custom:13013@1</destination_mode>
+         <statemark_npcid>239</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[Dialogue with the dream of Hailuoweizi]]></title>
+         <contents mid="87"><![CDATA[<html>Dream into Hailuoweizi chat with her right。<BR>
+<BR><FONT color=#086171>Hailuoweizi dream</FONT> <FONT color=#a82424>→Hailuoweizi</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[Dialogue with the dream of Hailuoweizi]]></destination>
+         <todo_msg mid="89"><![CDATA[Let the dialogue with the dream of Hailuoweizi。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QM_Wraith_Red.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13013,n239</destination_pos>
+         <destination_mode>custom:13013@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Elimination of the bloody nightmare of Death]]></title>
+         <contents mid="91"><![CDATA[<html>Hailuoweizi destroy her dream in the Heart of Darkness generated by a bloody death right。<BR>
+ <BR>
+<FONT color=#086171>Hailuoweizi dream</FONT> <FONT color=#a82424>→Nightmare of bloody death</FONT><BR>
+ </html>]]></contents>
+         <destination mid="92"><![CDATA[Eliminate the nightmare of bloody death]]></destination>
+         <todo_msg mid="93"><![CDATA[Crushed Hailuoweizi nightmare it generated。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_elloise.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13013,n239</destination_pos>
+         <destination_mode>custom:13013@1</destination_mode>
+         <statemark_npcid>239</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[Dialogue with the dream of Hailuoweizi]]></title>
+         <contents mid="95"><![CDATA[<html>Eliminate the nightmare of bloody death。Dialogue with the dream of Hailuoweizi go back to reality。<BR>
+ <BR>
+<FONT color=#086171>Hailuoweizi dream</FONT> <FONT color=#a82424>→Hailuoweizi</FONT><BR>
+ <BR>
+ </html>]]></contents>
+         <destination mid="96"><![CDATA[Dialogue with the dream of Hailuoweizi]]></destination>
+         <todo_msg mid="97"><![CDATA[Let the dialogue with the dream of Hailuoweizi。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_elloise.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n240</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>240</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="98"><![CDATA[Dialogue with Hailuoweizi]]></title>
+         <contents mid="99"><![CDATA[<html>Hailuoweizi awake，Let the dialogue with Hailuoweizi。<BR>
+ <BR>
+<FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→Hailuoweizi</FONT></html>]]></contents>
+         <destination mid="100"><![CDATA[Dialogue with Hailuoweizi]]></destination>
+         <todo_msg mid="101"><![CDATA[Let the dialogue with the emergence of Hailuoweizi。]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <title_image />
+         <contents_image>QN_shylock.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n237</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>237</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="102"><![CDATA[Dialogue with the giant Mayi Luo]]></title>
+         <contents mid="103"><![CDATA[<html>Wake up Hailuoweizi that will live on，This good news to giant Mayi Luo bar。<BR><BR><FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→Giant Mayi Luo</FONT></html>]]></contents>
+         <destination mid="104"><![CDATA[Dialogue with the giant Mayi Luo]]></destination>
+         <todo_msg mid="105"><![CDATA[Let the dialogue with the Mayi Luo。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>27:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>466</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

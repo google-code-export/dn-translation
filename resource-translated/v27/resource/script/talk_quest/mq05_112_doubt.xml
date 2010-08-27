@@ -1,0 +1,301 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_112_doubt</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>112</qid>
+      <designer>손원호</designer>
+      <qlevel>1</qlevel>
+      <qdesc>신시아의 부탁으로 다시 서리바람 계곡으로 향하는 소서리스. 마차를 습격한 무리가 흘리고 간 단서를 찾아온다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>113</nextqid>
+      <nextqname>mq05_113_orb_of_vision1</nextqname>
+      <nextqnpc>n012_sorceress_master_cynthia</nextqnpc>
+      <qkname mid="1"><![CDATA[Questionable breath]]></qkname>
+      <qnpc>
+         <npcid>11</npcid>
+         <npcename>n011_priest_leonardo</npcename>
+         <npckname>상급 클레릭 레오날드    (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>156</npcid>
+         <npcename>n156_cleric_jake</npcename>
+         <npckname>클레릭 제이크(눈서리 고갯길)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>158</npcid>
+         <npcename>n158_point_mark</npcename>
+         <npckname>느낌표(!)_(ID는 빈공란)/서리바람 계곡</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-a" mid="6"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Advanced magician Cynthia$<BR>Go visit a good look into Shuangfeng Canyon。Since the discovery of the empty box，Certainly leaves the theft of Magus Wand<FONT color=#a82424>The Monster traces of pirates</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-a" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Advanced magician Cynthia$<BR>Way to go when<FONT color=#a82424>雪霜 ramp</FONT>Informed about the pastors。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-1" image="" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$Senior Pastor Leiang Na more$<BR>Huh，The older，Light stand are tired ah.。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-2" image="" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-2-a" mid="9"><![CDATA[<html>（Informed on the matter of empty boxes）</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Pastor Jack${action:Talk}<BR>What ah?Young adult magician。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-2-a" image="" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-2-b" mid="11"><![CDATA[<html>Saide Rui where the?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Pastor Jack$<BR>Oh...As Cynthia said adults，Sage Wand certainly be transferred to any place other。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-2-b" image="" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-2-c" mid="13"><![CDATA[<html>Some of it to the rich reward。</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Pastor Jack$<BR>I have decided to temporarily take a break to heal。He asked me to convey to you，To cause unnecessary trouble adult magician really sorry。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-2-c" image="QW_7.dds" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-2-d" mid="15"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Pastor Jack$<BR>Haha，You&#39;re funny ah。But I am a servant of God，So nothing valuables。Jokes on the end here，May wish to rush to Cynthia told adults<FONT color=#a82424>霜风 Canyon</FONT>How ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-2-d" image="s" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Pastor Jack$<BR>
+Although the long-term confrontation between the magician and the priest，But now times have changed Rights。Current predictions show，We should collaborate，Quickly find<FONT color=#a82424>Sage Wand</FONT>As well。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Advanced magician Cynthia$<BR>Still linger，In the end do it！ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-3" image="QW_7.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Pastor Jack$<BR>Hurry to<FONT color=#a82424>霜风 Canyon</FONT>。<BR>
+If late，Be hard to find any clue。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n158_point_mark-3" image="" itemindex="">
+      <talk_answer link_index="n158_point_mark-3-a" mid="24"><![CDATA[<html>（Seizure of things）</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Suspicious sites$<BR><FONT color=#7e12d2>（Something shining in the grass）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n158_point_mark-3-a" image="QS_Default.dds" itemindex="300144">
+      <talk_question mid="25"><![CDATA[<html>$Suspicious sites$<BR><FONT color=#7e12d2>（Picked up a priest pearls）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-a" mid="27"><![CDATA[<html>（Fish for pearls pastor）</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Advanced magician Cynthia${action:Talk}<BR>Ah，Any gain you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-a" image="QS_Default.dds" itemindex="300144">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-b" mid="29"><![CDATA[<html>Priests in doubt you?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Advanced magician Cynthia$<BR><FONT color=#a82424>Pastor of St. beads?！</FONT>Is...Pastor attacked and gang-related goods。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-c" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Advanced magician Cynthia$<BR>Conclusive evidence is at hand，How can we not doubt it！ The situation further before，The pastor was quickly expelled for good。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-!next" mid="85"><![CDATA[<html><FONT color=#a94407>(Rewarded)</FONT></html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300144</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1120,,,,</exe>
+         <exe type="complete">112</exe>
+         <exe type="delquestitem" num="-1">300144</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n156_cleric_jake" sub="b" />
+   <exelink qstep="2" npc="n156_cleric_jake" sub="c" />
+   <exelink qstep="2" npc="n156_cleric_jake" sub="d">0,1</exelink>
+   <exelink qstep="3" npc="n158_point_mark" sub="a">0,1,2</exelink>
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="c">0</exelink>
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="!next">1,2</exelink>
+   <journal_data recompense="1120" quest_title="수상한 기운" chapterid="1" quest_level="1" quest_mark_type="7" use_item_list="300144">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[And senior magician Cynthia dialogue]]></title>
+         <contents mid="50"><![CDATA[<html>Dialogue with the teacher Cynthia。<BR>
+<BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→ Advanced magician Cynthia</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[And senior magician Cynthia dialogue]]></destination>
+         <todo_msg mid="52"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>6,n156</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>156</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[And Pastor Jack dialogue]]></title>
+         <contents mid="54"><![CDATA[<html>Jack dialogue with Xueshuang ramp。<BR><BR><FONT color=#086171>雪霜 ramp</FONT> <FONT color=#a82424>→Pastor Jack</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[And Pastor Jack dialogue]]></destination>
+         <todo_msg mid="56"><![CDATA[Jack dialogue with Xueshuang ramp。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_7.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>83,0,0</destination_pos>
+         <destination_mode>custom:81@1,82@1,83@3</destination_mode>
+         <statemark_npcid>158</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Monster trucks to find traces of attacks]]></title>
+         <contents mid="58"><![CDATA[<html>Go to Shuangfeng Canyon to find the pirates attack the trail of trucks Monster Bar。<BR><BR><FONT color=#086171>雪霜 ramp（Shuangfeng Canyon entrance）</FONT> <FONT color=#a82424>→霜风 Canyon</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Monster trucks to find traces of attacks]]></destination>
+         <todo_msg mid="60"><![CDATA[Go to Shuangfeng Canyon to find the Monster trucks hit the trail of the pirates bar。.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string>스탭 3에 보스맵 진입 : n158_point_mark 생성. 보스 해치워야만 대화 가능. 대화 종료후 스테이지 종료.</trigger_string>
+         <maptool_index />
+         <title mid="61"><![CDATA[And senior magician Cynthia dialogue]]></title>
+         <contents mid="62"><![CDATA[<html>Picked up the priest&#39;s holy beads。Back to magic mountain ridge where the reporting teacher Cynthia。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Advanced magician Cynthia</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[And senior magician Cynthia dialogue]]></destination>
+         <todo_msg mid="64"><![CDATA[Back to magic mountain ridge where the reporting teacher Cynthia。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>122</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

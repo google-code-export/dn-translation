@@ -1,0 +1,260 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Sam (IMCGames Co., Ltd) -->
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<quest_desc>
+		<qename>sq11_508_strange_asking1</qename>
+		<qtype>subquest</qtype>
+		<qcomtype>ONCE</qcomtype>
+		<qchapter>-1</qchapter>
+		<qid>508</qid>
+		<designer>김주연</designer>
+		<qlevel>32</qlevel>
+		<qdesc>구급상자	400162</qdesc>
+		<qdifficulty>1</qdifficulty>
+		<nextqid>509</nextqid>
+		<nextqname>sq11_509_strange_asking2</nextqname>
+		<nextqnpc>n036_adventurer_guildmaster_gunter</nextqnpc>
+		<qkname mid="1"><![CDATA[A strange commissionⅠ]]></qkname>
+		<qnpc>
+			<npcid>36</npcid>
+			<npcename>n036_adventurer_guildmaster_gunter</npcename>
+			<npckname>모험자 길드장 군터</npckname>
+		</qnpc>
+		<qnpc>
+			<npcid>75</npcid>
+			<npcename>n075_wounded_huntingturn</npcename>
+			<npckname>조난자 헌팅턴</npckname>
+		</qnpc>
+	</quest_desc>
+	<talk_paragraph index="q_enter"/>
+	<talk_paragraph index="!quit"/>
+	<talk_paragraph index="_no_quest">
+		<talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_full_quest">
+		<talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_full_inventory">
+		<talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_daily_quest_fail">
+		<talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="_full_Qinventory">
+		<talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n075_wounded_huntingturn-noquest" image="" itemindex="">
+		<talk_question mid="5"><![CDATA[<html>$Huntington victims$<BR>Uh uh……<BR><FONT color=#7e12d2>(Loss of consciousness，If not, and his dialogue)</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="" itemindex="">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="7"><![CDATA[<html>What I do for you？</html>]]></talk_answer>
+		<talk_question mid="6"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Ah，You just come。I was looking for you then。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="9"><![CDATA[<html>(Accept and read the letter)</html>]]></talk_answer>
+		<talk_question mid="8"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Have a letter sent to you strange。<BR>
+You look at it first opened。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="12074">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="11"><![CDATA[<html>What does it mean in the end ah？</html>]]></talk_answer>
+		<talk_question mid="10"><![CDATA[<html>$Strange letter$<BR><FONT color=#7e12d2>After seeing this letter，I think you will be very surprised。</FONT><BR>
+<FONT color=#7e12d2>But to my future，Please do not grave into wizard to save people in distress。Come on you。</FONT></html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+		<talk_question mid="12"><![CDATA[<html>$Society of Gaunt adventurer$<BR><FONT color=#7e12d2>(Gunter shrugged)</FONT><BR>Who knows？This letter may be a hoax，But it says was killed in a，I am not quite at ease。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="QW_37.dds" itemindex="">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-e" mid="15"><![CDATA[<html>Wizard grave…….</html>]]></talk_answer>
+		<talk_question mid="14"><![CDATA[<html>$Society of Gaunt adventurer$<BR>
+Have time，You can go to<FONT color=#a82424>Wizard grave</FONT>To see if the victims do？</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-e" image="" itemindex="">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+		<talk_question mid="16"><![CDATA[<html>$A strange commissionⅠ$</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="" itemindex="QW_37.dds">
+		<talk_question mid="18"><![CDATA[<html>$Society of Gaunt adventurer$<BR><FONT color=#a82424>Wizard grave</FONT>Downstream port on the ruins of nearby Heermadai。Where are you going to see if the victims。If you find the words of the victims，By using the<FONT color=#a82424>First aid kit</FONT>On the line。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n075_wounded_huntingturn-1" image="" itemindex="">
+		<talk_answer link_index="n075_wounded_huntingturn-2" mid="20"><![CDATA[<html>(Seems to find victims。Let use first aid kit)</html>]]></talk_answer>
+		<talk_question mid="19"><![CDATA[<html>$Huntington victims$<BR>Uh uh……</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n075_wounded_huntingturn-2" image="" itemindex="">
+		<talk_answer link_index="n075_wounded_huntingturn-2-a" mid="22"><![CDATA[<html>You wake Rights。How did you come back in this place？</html>]]></talk_answer>
+		<talk_question mid="21"><![CDATA[<html>$Huntington victims$<BR>This is……Where？</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n075_wounded_huntingturn-2-a" image="" itemindex="">
+		<talk_answer link_index="n075_wounded_huntingturn-2-b" mid="24"><![CDATA[<html>Fortunately nothing。You can go right？</html>]]></talk_answer>
+		<talk_question mid="23"><![CDATA[<html>$Huntington victims$<BR>My companions here with the investigation……But……Companions are all dead。I……Looking for export……The results are here……Fainted。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n075_wounded_huntingturn-2-b" image="" itemindex="">
+		<talk_answer link_index="n075_wounded_huntingturn-3" mid="26"><![CDATA[<html>Please go out along the side of the road。There should be no longer appear strange creatures, the。</html>]]></talk_answer>
+		<talk_question mid="25"><![CDATA[<html>$Huntington victims$<BR>Can……I&#39;m just tired，Only faint。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n075_wounded_huntingturn-3" image="" itemindex="">
+		<talk_question mid="27"><![CDATA[<html>$Huntington victims$<BR>Thank you。If you have a place in the unconscious，Will become a monster who&#39;s dinner。<BR>Good，I first go back。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-3" image="" itemindex="">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-3-a" mid="29"><![CDATA[<html>Nothing。</html>]]></talk_answer>
+		<talk_question mid="28"><![CDATA[<html>$Society of Gaunt adventurer$<BR>Where you really dead？<BR>Ah，Anyway，You&#39;ve worked hard。</html>]]></talk_question>
+	</talk_paragraph>
+	<talk_paragraph index="n036_adventurer_guildmaster_gunter-3-a" image="" itemindex="">
+		<talk_answer link_index="n036_adventurer_guildmaster_gunter-3-!next" mid="31"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+		<talk_question mid="30"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+	</talk_paragraph>
+	<qstep_change qstep="accepting">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="recompense_view">,5081,5082,5083,5084</exe>
+			<exe type="setquest">508</exe>
+			<exe type="addquestitem" num="1">400162</exe>
+			<exe type="talk" npc="n036_adventurer_guildmaster_gunter">1</exe>
+		</executions>
+	</qstep_change>
+	<qstep_change qstep="1">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="setstep">2</exe>
+			<exe type="setjornal">2</exe>
+			<exe type="delquestitem" num="1">400162</exe>
+		</executions>
+	</qstep_change>
+	<qstep_change qstep="2">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="setstep">3</exe>
+			<exe type="setjornal">3</exe>
+		</executions>
+	</qstep_change>
+	<qstep_change qstep="3">
+		<comment/>
+		<conditions/>
+		<executions>
+			<exe type="recompense">,5081,5082,5083,5084</exe>
+			<exe type="complete">508</exe>
+		</executions>
+	</qstep_change>
+	<exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="e">0</exelink>
+	<exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">1,2,3</exelink>
+	<exelink qstep="1" npc="n075_wounded_huntingturn" sub="2">0,1,2</exelink>
+	<exelink qstep="2" npc="n075_wounded_huntingturn" sub="b"/>
+	<exelink qstep="2" npc="n075_wounded_huntingturn" sub="3">0,1</exelink>
+	<exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="a">0</exelink>
+	<exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="!next">1</exelink>
+	<journal_data recompense="1:5081,2:5082,3:5083,4:5084" quest_title="이상한 부탁Ⅰ" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="400162">
+		<journal index="1">
+			<title_image/>
+			<contents_image>QW_37.dds</contents_image>
+			<need_itemlist/>
+			<destination_pos>373,n75</destination_pos>
+			<destination_mode>custom:371@1,372@1,373@1,374@0</destination_mode>
+			<statemark_npcid>75</statemark_npcid>
+			<statemark_type>11</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="32"><![CDATA[Search Wizard grave]]></title>
+			<contents mid="33"><![CDATA[<html>Go<FONT color=#a82424>Wizard grave</FONT>Search for the victims it。<BR>
+ <BR>
+<FONT color=#086171>Heermadai port(Downstream ruins)</FONT> <FONT color=#a82424>→ Wizard grave</FONT></html>]]></contents>
+			<destination mid="34"><![CDATA[Search Wizard grave]]></destination>
+			<todo_msg mid="35"><![CDATA[Please go to the tomb to search for victims Wizard。]]></todo_msg>
+		</journal>
+		<journal index="2">
+			<title_image/>
+			<contents_image>QW_SaintHaven.dds</contents_image>
+			<need_itemlist/>
+			<destination_pos>373,n75</destination_pos>
+			<destination_mode>custom:371@1,372@1,373@1,374@0</destination_mode>
+			<statemark_npcid>75</statemark_npcid>
+			<statemark_type>11</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="37"><![CDATA[And the victims of Huntington dialogue]]></title>
+			<contents mid="38"><![CDATA[<html>Found<FONT color=#a82424>Huntington victims</FONT>。Send him back to<FONT color=#a82424>Holy Paradise</FONT>Go。<BR>
+ <BR>
+<FONT color=#086171>Heermadai port(Downstream ruins)</FONT> <FONT color=#a82424>→ Wizard grave</FONT></html>]]></contents>
+			<destination mid="39"><![CDATA[And the victims of Huntington dialogue]]></destination>
+			<todo_msg mid="40"><![CDATA[Please dialogue with the victims of Huntington。]]></todo_msg>
+		</journal>
+		<journal index="3">
+			<title_image/>
+			<contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+			<need_itemlist/>
+			<destination_pos>11,n36</destination_pos>
+			<destination_mode>custom</destination_mode>
+			<statemark_npcid>36</statemark_npcid>
+			<statemark_type>12</statemark_type>
+			<get_location/>
+			<start_npc/>
+			<desc_location/>
+			<step_action/>
+			<complete_npc/>
+			<get_item/>
+			<get_itemindex/>
+			<hunt_monster/>
+			<hunt_monsterindex/>
+			<collect_item/>
+			<collect_itemindex/>
+			<comp_symbol/>
+			<comp_symbolindex/>
+			<comp_item/>
+			<comp_itemindex/>
+			<comp_exp/>
+			<comp_money/>
+			<trigger_string/>
+			<maptool_index/>
+			<title mid="41"><![CDATA[Society of Gaunt dialogue and adventurer]]></title>
+			<contents mid="42"><![CDATA[<html>Huntington victims went back to holy heaven。Whereabouts of the sacred paradise<FONT color=#a82424>Society of Gaunt adventurer</FONT>Reporting it。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise </FONT><FONT color=#a82424>→ Society of Gaunt adventurer</FONT></html>]]></contents>
+			<destination mid="43"><![CDATA[Society of Gaunt dialogue and adventurer]]></destination>
+			<todo_msg mid="44"><![CDATA[Please report to the adventurer Society of Gaunt。]]></todo_msg>
+		</journal>
+	</journal_data>
+	<condition_data>
+		<user_level>50:-1</user_level>
+		<user_worldzone_level/>
+		<user_class/>
+		<prev_quest/>
+		<have_normal_item/>
+		<complete_mission/>
+		<have_symbol_item/>
+	</condition_data>
+</quest>

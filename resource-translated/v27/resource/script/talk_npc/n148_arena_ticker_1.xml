@@ -1,0 +1,39 @@
+   <talk>
+      <npcename>n148_arena_ticker_1</npcename>
+      <npcid>148</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Joseph Arena Management soldiers]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="gogogo" mid="4"><![CDATA[<html>Into the arena。</html>]]></talk_answer>
+         <talk_answer link_index="ask_colosseum1" mid="6"><![CDATA[<html>(Inquired about arena thing)</html>]]></talk_answer>
+         <talk_answer link_index="exit_colosseum1" mid="7"><![CDATA[<html>(Asked how to go out from the Arena)</html>]]></talk_answer>
+         <talk_answer link_index="quest" mid="19"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Joseph Arena Management soldiers${action:Talk}<BR>
+Here is<FONT color=#a82424>Atria China</FONT>Adventurers verify their strength areas。<BR>
+You are to test their strength from you？</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_colosseum1" image="" itemindex="">
+         <talk_answer link_index="ask_colosseum2" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Joseph Arena Management soldiers${action:Talk}<BR>
+<FONT color=#a82424>King City sacred paradise</FONT>From long ago held regularly<FONT color=#a82424>Athletic Conference</FONT>The。Numerous powerful adventurers into the General Assembly through Competitive<FONT color=#a82424>King City</FONT>Of<FONT color=#a82424>Guard ban</FONT>Member。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_colosseum2" image="" itemindex="">
+         <talk_answer link_index="001" mid="11"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="10"><![CDATA[<html>$Joseph Arena Management soldiers${action:Talk}<BR>50Years ago, And<FONT color=#a82424>Black Dragon</FONT>Died fighting <FONT color=#a82424>Hero</FONT>, The late<FONT color=#a82424>Beisikede</FONT>Guards Marquis was elected head of opportunity is what would be through the sword fight here 。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="exit_colosseum1" image="" itemindex="">
+         <talk_answer link_index="001" mid="13"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="12"><![CDATA[<html>$Joseph Arena Management soldiers${action:Talk}<BR>To exit the arena need to click on the screen<FONT color=#a82424>Top right</FONT>Of <FONT color=#a82424>Channels</FONT>Button after，Select <FONT color=#a82424>Village Channel</FONT>Can return to the village。<BR>Arena is open at any time。I hope you can come again。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="20" link_target="sq08_304_victories_list_of_colosseum.xml"><![CDATA[<html>[Lv10] <FONT color=#086171>Arena outcome Record Book</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="21"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="16"><![CDATA[<html>$Joseph Arena Management soldiers${action:Talk}<BR>What if you want me?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_user_RequestEnterPVP( userObjID  );</exe>
+      </executions>
+      <conditions />
+      <exelink idx="gogogo">1</exelink>
+   </talk>

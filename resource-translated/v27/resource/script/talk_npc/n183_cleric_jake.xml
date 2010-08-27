@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n183_cleric_jake</npcename>
+      <npcid>183</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Pastor Jack]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Pastor Jack$<BR>How&#39;s going？</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">sq08_285_test_cleric2</exe>
+         <exe type="conexe" true="1" false="3">0</exe>
+         <exe type="conexe" true="4" false="0">1</exe>
+         <exe type="enterquest">sq08_284_test_cleric1</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">285</chk>
+         <chk type="hasquest">284</chk>
+      </conditions>
+   </talk>

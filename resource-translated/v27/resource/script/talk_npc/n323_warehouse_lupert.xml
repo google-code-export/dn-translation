@@ -1,0 +1,31 @@
+   <talk>
+      <npcename>n323_warehouse_lupert</npcename>
+      <npcid>323</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Warehouse keeper Lu Bote]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="warehouse" mid="3"><![CDATA[<html>[Warehouse]</html>]]></talk_answer>
+         <talk_answer link_index="quest" mid="4"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_answer link_index="what" mid="14"><![CDATA[<html>[Dialogue] Warehouse is where？</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Warehouse keeper Lu Bote${action:Talk}<BR>Oh, many things seem。Order to receive timely booty，Need to empty the package at any time。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="what" image="" itemindex="">
+         <talk_answer link_index="001" mid="6"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>Risk often occurs with the full package of the situation，A time to come to me for the time being keep your items。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="warehouse" image="" itemindex="">
+         <talk_question mid="7"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>If necessary, access items，Please self-recognition。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="15" link_target="sq08_261_argenta_milk.xml"><![CDATA[<html>[Lv17] <FONT color=#086171>Algerita and milk</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="21" link_target="sq08_286_argenta_slave.xml"><![CDATA[<html>[Lv22] <FONT color=#086171>Algerita slaves</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="22"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="11"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>Does not seem to keep coming for the。<BR>Then，What can I do for you?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenWareHouse(userObjID);</exe>
+      </executions>
+      <conditions />
+      <exelink idx="warehouse">1</exelink>
+   </talk>

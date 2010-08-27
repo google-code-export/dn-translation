@@ -1,0 +1,281 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_107_internal_enemy</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>107</qid>
+      <designer>곽노찬</designer>
+      <qlevel>5</qlevel>
+      <qdesc>300059 비전의 오브</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>108</nextqid>
+      <nextqname>mq05_108_chase_and_chased</nextqname>
+      <nextqnpc>n013_cleric_tomas</nextqnpc>
+      <qkname mid="1"><![CDATA[The enemy within]]></qkname>
+      <qnpc>
+         <npcid>13</npcid>
+         <npcename>n013_cleric_tomas</npcename>
+         <npckname>상급 클레릭 토마스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>156</npcid>
+         <npcename>n156_cleric_jake</npcename>
+         <npckname>클레릭 제이크</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2" mid="53"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>Secret of the ball by me to<FONT color=#a82424>Cynthia</FONT>。<BR>
+Find the secret of the ball though，Unfortunately failed to capture<FONT color=#a82424>Dragon followers</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-1" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Pastor Jack$<BR><FONT color=#7e12d2>(Pastor Jack lost in thought at what)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2" image="300028" itemindex="300028">
+      <talk_answer link_index="n013_cleric_tomas-3" mid="54"><![CDATA[<html>I take a look。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>He must track，Sage rod to find the whereabouts of……<FONT color=#a82424>Silent monastery corridor</FONT>Did not leave behind any traces of suspicious you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3" image="QN_Jake.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Pastor Thomas$<BR>Eh？<BR>You go<FONT color=#a82424>雪霜 ramp</FONT>And<FONT color=#a82424>Jack</FONT>Together,<FONT color=#a82424>Silent monastery corridor</FONT>Investigation。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-3" image="QN_Npc_Cl_Fallen_Cedric.dds" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-3-a" mid="14"><![CDATA[<html>Let us re-Thomas, head of the investigation on the Abbey。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Pastor Jack${action:Talk}<BR>Heard that the ball had found the secret。<BR>You this guy，Really great。<BR>On the，Hear<FONT color=#a82424>Saide Rui</FONT>That you are looking for me，What I do for you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-3-a" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-4" mid="16"><![CDATA[<html>Yes…….</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Pastor Jack$<BR><FONT color=#a82424>Silent monastery corridor</FONT>……？<BR>It seems he was looking for<FONT color=#a82424>Dragon followers</FONT>Traces……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-4" image="QW_9.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Pastor Jack${action:Talk}<BR>Ah……<FONT color=#a82424>Silent monastery corridor</FONT>The survey will be handed to you。<BR>
+I went to investigate other places。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-5" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-5-a" mid="20"><![CDATA[<html>Head，What happened？</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Pastor Thomas$<BR>Damn……Fucking<FONT color=#a82424>Dragon followers</FONT>……Cough……<BR><FONT color=#7e12d2>(Pastor Thomas frowned，Walking back and forth impatiently)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-5-a" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-5-b" mid="22"><![CDATA[<html>Ah？！Secret of the ball had been stolen？</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Pastor Thomas$<BR>Ah！You，You just come！<BR>That dirty<FONT color=#a82424>Dragon followers</FONT>Slipped into the village，To<FONT color=#a82424>Secret of the ball</FONT>Stole！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-5-b" image="QW_10.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-5-c" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Pastor Thomas$<BR><FONT color=#a82424>Advanced magician Cynthia</FONT>On his house<FONT color=#a82424>Secret of the ball</FONT>In the evening had been stolen。<BR>Footprints all the way to<FONT color=#a82424>Shuangfeng Canyon entrance</FONT>Nearby，Must have escaped in that direction。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-5-c" image="QW_10.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-5-d" mid="26"><![CDATA[<html>I went to see the forest Shuangfeng。</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>Magicians and priests to<FONT color=#a82424>霜风 Canyon</FONT>Chase went，But there is no news。<BR>I think he may not have to<FONT color=#a82424>霜风 Canyon</FONT>Over there，But to<FONT color=#a82424>霜风 forest</FONT>Direction escaped。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-5-d" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-5-!next" mid="28"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="delquestitem" num="-1">300059</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="5,3,4">269</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1070,,,,</exe>
+         <exe type="complete">107</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n013_cleric_tomas" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n156_cleric_jake" sub="4">0,1,2</exelink>
+   <exelink qstep="5" npc="n013_cleric_tomas" sub="b" />
+   <exelink qstep="5" npc="n013_cleric_tomas" sub="c" />
+   <exelink qstep="5" npc="n013_cleric_tomas" sub="d">0</exelink>
+   <exelink qstep="5" npc="n013_cleric_tomas" sub="!next">1</exelink>
+   <journal_data recompense="1070" quest_title="내부의 적" chapterid="1" quest_level="5" quest_mark_type="7" use_item_list="300059">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[And Pastor Thomas dialogue]]></title>
+         <contents mid="31"><![CDATA[<html>To retrieve the secret of the ball to<FONT color=#a82424>Pastor Thomas</FONT>。<BR>
+<BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Pastor Thomas</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[And Pastor Thomas dialogue]]></destination>
+         <todo_msg mid="33"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>6,405,-614</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>156</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="34"><![CDATA[Pastor Jack to Xueshuang ramp and dialogue]]></title>
+         <contents mid="35"><![CDATA[<html>Go<FONT color=#a82424>雪霜 ramp</FONT>Meet<FONT color=#a82424>Pastor Jack</FONT>，Then the investigation<FONT color=#a82424>Silent monastery corridor</FONT><BR><BR><FONT color=#086171>雪霜 ramp</FONT> <FONT color=#a82424>→Pastor Jack</FONT></html>]]></contents>
+         <destination mid="36"><![CDATA[Pastor Jack to Xueshuang ramp and dialogue]]></destination>
+         <todo_msg mid="37"><![CDATA[Please go to the ramp and the Rev. Jack dialogue Xueshuang]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_9.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>93,0,0</destination_pos>
+         <destination_mode>custom:91@1,92@1,93@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[Survey quiet monastery cloister]]></title>
+         <contents mid="40"><![CDATA[<html><FONT color=#a82424>Pastor Jack</FONT>That re-<FONT color=#a82424>Silent monastery corridor</FONT>What clues do not investigate，He should also investigate。<BR>Survey<FONT color=#a82424>Silent monastery corridor</FONT>，Then return<FONT color=#a82424>Magic Ridge</FONT>。<BR><BR><FONT color=#086171>Melting Forest(Silent monastery entrance)</FONT> <FONT color=#a82424>→ Silent monastery corridor</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[Survey quiet monastery cloister]]></destination>
+         <todo_msg mid="42"><![CDATA[Please investigate silent monastery cloister。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[And Pastor Thomas dialogue]]></title>
+         <contents mid="45"><![CDATA[<html>Re-<FONT color=#a82424>Silent monastery corridor</FONT>Investigated，But did not find anything special about it。Return<FONT color=#a82424>Magic Ridge</FONT>，To<FONT color=#a82424>Pastor Thomas</FONT>Report。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Pastor Thomas</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[And Pastor Thomas dialogue]]></destination>
+         <todo_msg mid="47"><![CDATA[Completion of the investigation。Go back to where Pastor Thomas。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>106</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

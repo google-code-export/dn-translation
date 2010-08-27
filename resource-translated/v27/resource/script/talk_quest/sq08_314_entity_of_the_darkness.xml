@@ -1,0 +1,304 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_314_entity_of_the_darkness</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>314</qid>
+      <designer>곽노찬</designer>
+      <qlevel>12</qlevel>
+      <qdesc>400120 오염된 마물의 신체</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[The dark atmosphere of the entity]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（The task did not meet the criteria）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Bulletin$<br>Over the task of implementation，Temporarily unable to accept the task of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Bulletin$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Bulletin$<br>Task with a backpack full。<br>（Please order as soon as possible backpack）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-noquest" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Heraldic scholars Bailey$<BR>We are worried about the Prophet girl ah，Must hurry to find her we go。<BR>
+<FONT color=#7e12d2>（Senior Pastor Jermaine in office given the task of）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-a" mid="7"><![CDATA[<html>That monster come from it?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Senior Pastor Jermaine$<BR>
+It seems，Teachers into ghouls may be because it was dark by the eruption of strange creatures are gas bar。I first saw the eruption as superior to gas for Monster ah….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-a" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-b" mid="9"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Senior Pastor Jermaine$<BR>I am also a long-term investigation of them。If you can identify the root causes of these strange creatures, if they ，I believe<FONT color=#a82424>Death forest</FONT>Can also be purified and then。But，Unfortunately，So far we have not identified the origin of their。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-b" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-c" mid="11"><![CDATA[<html>Well。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Senior Pastor Jermaine$<BR>Final，We have to ask<FONT color=#a82424>Heraldic scholars Bailey</FONT>Help。Sorry ah，Could help him investigate the death of forests breath ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$The dark atmosphere of the entity$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Senior Pastor Jermaine$<BR>I have to<FONT color=#a82424>Heraldic scholars Bailey</FONT>Greeted the。<BR>
+Find Bailey，He will tell you what help。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="16"><![CDATA[<html>Yes，What do I need to do?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Oh，<FONT color=#382000>{user_nick}</FONT>。 <BR><FONT color=#a82424>Jermaine</FONT> Father said he would send a helper，But it was you, ah。I&#39;m waiting for it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="19"><![CDATA[<html>Body…Portion?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Ah…，First obtain<FONT color=#a82424>Death forest</FONT>To secure some part of the dead body。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2" mid="21"><![CDATA[<html>（A little horror）That，Well….</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Be，I see <FONT color=#a82424>Ghoul</FONT>Quite appropriate。<BR>
+Of course，I am not saying you take their neck like the back arm ah。I mean，I want to use their body as experimental samples。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QS_Default.dds" itemindex="400120">
+      <talk_question mid="22"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Then，To arrest on the death of forests<FONT color=#a82424>Contaminated Ghoul</FONT>And<FONT color=#a82424>Ghoul 波尔德尼斯</FONT>And collect some parts of the<FONT color=#a82424>Monster contaminated body</FONT>Come back。Samples need to<FONT color=#a82424>10A</FONT>So you can。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3" image="QS_Default.dds" itemindex="400120">
+      <talk_answer link_index="n028_scholar_bailey-3-a" mid="25"><![CDATA[<html>Ah。 （Let him fast training and preparation）</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Experimental samples<FONT color=#a82424>Monster contaminated body</FONT>Get it back, ah，Really hard you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-b" mid="27"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Heraldic scholars Bailey$<BR><FONT color=#7e12d2>（Bailey looked at samples of carefully，And a wonderful use of drug testing）</FONT><BR>Ah…，The really amazing ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-c" mid="29"><![CDATA[<html>Swallow life monster?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Heraldic scholars Bailey$<BR>
+<FONT color=#7e12d2>（Bailey looked forward to painting a variety of life on the books）</FONT><BR>
+The ancient people of the books and records are<FONT color=#a82424>Swallow life monster</FONT>The damage is very similar to human。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-d" mid="31"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Heraldic scholars Bailey$<BR>
+Yes。Swallow life monster，Is the fall of the ancient people made use of dark magic evil beings。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-e" mid="33"><![CDATA[<html>Then…Those are the people…Eh？</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Heraldic scholars Bailey$<BR>
+Legend，Fall of the ancient people in ancient times when the civil war，There is no capacity for the human as a weapon，Using dark magic to the dark forces they mutate to。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-e" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-f" mid="35"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Heraldic scholars Bailey$<BR>
+Unfortunately，Is human。<BR>
+Different from the natural growth of the Monster Ghoul or，They are designed for war generated Monster。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-f" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-g" mid="37"><![CDATA[<html>That there is no purification of strange creatures, who has become the method ah?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Heraldic scholars Bailey$<BR>
+In fact，It is said<FONT color=#a82424>Swallow life monster</FONT>Forces are not strong imagination。They fear the power of life is swallowed，That is victimized by the monster of infectious human Monster。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-g" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-h" mid="40"><![CDATA[<html>Now it seems there is no other way to ah….</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Heraldic scholars Bailey$<BR>
+For the record，Long in the ancient sacrifices have to clean some of the dark forces of life and body。Perhaps the flowing blood of the prophets of ancient people，It should have this ability。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-h" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-i" mid="42"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Unfortunately，Is such…。I will<BR><FONT color=#a82424>Jermaine</FONT>Said。<BR>Other，That are not allowed to fight when we can identify Monster，Very difficult to deal with the reason for their。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-i" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-j" mid="44"><![CDATA[<html><FONT color=#086171>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-j" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Heraldic scholars Bailey$<BR>
+Rumor，Monster struggle,，Dark Monster are mostly not affected by the loss on the withdrawal of what went… Really worried that they will once again haunt ah，Call…</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3141,3142,3143,3144</exe>
+         <exe type="setquest">314</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="prob">700</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">429</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">433</exe>
+         <exe type="huntitem" num="10" exe="7,8,9" onexe="">400120</exe>
+         <exe type="addquestitem" num="1">400120</exe>
+         <exe type="conexe" true="5" false="">0</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200429</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200450</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3141,3142,3143,3144</exe>
+         <exe type="complete">314</exe>
+         <exe type="delquestitem" num="-1">400120</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="2">0,1,2,3,10,11,4</exelink>
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="e" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="f" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="g" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="h" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="i">0</exelink>
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="j">1,2</exelink>
+   <journal_data recompense="1:3141,2:3142,3:3143,4:3144" quest_title="검은 기운의 실체" chapterid="" quest_level="12" quest_mark_type="10" use_item_list="400120">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Dialogue with the coat of arms Bailey Scholars]]></title>
+         <contents mid="48"><![CDATA[<html>To heraldic scholars Bailey Inquiry I need to do it。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Heraldic scholars Bailey</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Dialogue with the coat of arms Bailey Scholars]]></destination>
+         <todo_msg mid="50"><![CDATA[Add a task。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_17.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>134,0,0</destination_pos>
+         <destination_mode>custom:131@3,132@3,133@3,134@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Collect10The body with contaminated Monster]]></title>
+         <contents mid="52"><![CDATA[<html>Arrest in the death of forests contaminated Ghoul and Ghoul 波尔德尼斯，Collect<FONT color=#a82424>10The body with contaminated Monster</FONT>Come back。<BR><BR><FONT color=#086171>Shore littered with fallen leaves（Death forest entrance）</FONT> <FONT color=#a82424>→ Death forest</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Collect10The body with contaminated Monster]]></destination>
+         <todo_msg mid="54"><![CDATA[Collected in the death of forests contaminated Monster Body Bar。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Dialogue with the coat of arms Bailey Scholars]]></title>
+         <contents mid="56"><![CDATA[<html>Monster contaminated body collection is completed。Back Kedella barriers to heraldic scholars Bailey Bar。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Heraldic scholars Bailey</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Dialogue with the coat of arms Bailey Scholars]]></destination>
+         <todo_msg mid="58"><![CDATA[Monster contaminated body collection is completed。Back to the Bailey, where it。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>205</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

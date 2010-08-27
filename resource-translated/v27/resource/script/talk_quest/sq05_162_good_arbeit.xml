@@ -1,0 +1,355 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq05_162_good_arbeit</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>162</qid>
+      <designer>손원호</designer>
+      <qlevel>8</qlevel>
+      <qdesc>매직 마스터 실기 시험을 마치면 할 수 있는 퀘스트. 도망친 배신자 세드릭을 추적하고 사로잡으려 하지만 소서리스의 파워가 너무 강해서 죽이고 마는데… 
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[A good part-time]]></qkname>
+      <qnpc>
+         <npcid>11</npcid>
+         <npcename>n011_priest_leonardo</npcename>
+         <npckname>상급 클레릭 레오날드    (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>13</npcid>
+         <npcename>n013_cleric_tomas</npcename>
+         <npckname>클레릭 토마스 (마나리지 클레릭 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-noquest" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="95"><![CDATA[<html>$Pastor Thomas$<BR><FONT color=#a82424>雷昂纳 more</FONT>As if searching for you。<BR>
+After the first few come to meet him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-accepting" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-accepting-a" mid="6"><![CDATA[<html>You find me?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$High priest Leiang Na more${action:Talk}<BR>Welcome ah。<FONT color=#382000>{user_nick}.</FONT> <BR>
+I was waiting for you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-accepting-b" mid="8"><![CDATA[<html>The original is a matter of traitors Saide Rui ah。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$High priest Leiang Na more$<BR>Have to…Can only please you, ah。 Even a traitor，But I really do not bear companion order issued arrest ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-accepting-b" image="QN_Npc_Cl_Fallen_Cedric.dds" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-accepting-c" mid="10"><![CDATA[<html>Own business did not do themselves，Mean ah。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$High priest Leiang Na more$<BR>Yes。Jack, although the traitor well you handle，But<FONT color=#a82424>Saide Rui</FONT>Remains still get away with it。Although we got a guy hiding place…They are unwilling to destroy his heart turned to priests issued an order。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-accepting-d" mid="12"><![CDATA[<html>（Seems to be a good part-time）</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$High priest Leiang Na more$<BR>If you unhappy I apologize Well。But this is not insist but pleaded ah。But will not pay less for your。How？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-accepting-e" mid="16"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$High priest Leiang Na more$<BR>...? That means that you promise Rights?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-accepting-acceptted" mid="18"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$A good part-time$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-1" image="QN_Cl_Tomas.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$High priest Leiang Na more$<BR>Then I believe the slightly。<BR>
+More detailed information on the Saide Rui ask<FONT color=#a82424>Thomas</FONT>Well。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-a" mid="23"><![CDATA[<html>（Walk）</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Pastor Thomas$<BR>What is Lei Angna call you to the right people，Come here。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-a" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-b" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Pastor Thomas$<BR>Although prepared with，With the power of the magician really want to ah... Pastor&#39;s shame ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-b" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-c" mid="27"><![CDATA[<html>Followers of the dragon?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Pastor Thomas$<BR>Once we all thought that Jake is a very good priest... Who would have thought he would be<FONT color=#a82424>Followers of the dragon</FONT>The then，Ah really tragic。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-c" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-d" mid="29"><![CDATA[<html>Purpose?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Pastor Thomas$<BR>Followers of the dragon... They sold their soul group，Then worship the power of the Dragon guys。Of course they have their own organizations，For the same purpose with a variety of activities everywhere。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-d" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-e" mid="31"><![CDATA[<html>Red hair girl...</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Pastor Thomas$<BR>Although they do not know the true purpose，But the only certainty is，They are spy<FONT color=#a82424>Ancient people</FONT>Power。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-e" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-f" mid="33"><![CDATA[<html>So that。</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Pastor Thomas$<BR>Yes。Sage revelation had seen that<FONT color=#a82424>Red hair girl，</FONT>If she is indeed the words of the ancients，No doubt there will be more guys staring at her。<BR>
+That power must not fall into the evil hands of the party。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-f" image="QW_11.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-g" mid="35"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Pastor Thomas$<BR>First, we must seize the traitor Saide Rui，So long before the followers of the backyard on fire。According to intelligence，Saide Rui hidden in<FONT color=#a82424>Mali An Diantang</FONT>Internal，Excuse me you capture him go quietly in the past。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-g" image="" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Pastor Thomas$<BR>Must be done cleanly。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2" image="QW_11.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Pastor Thomas$<BR>Before he fled to other places，To get to<FONT color=#a82424>Mali An Diantang</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-3-a" mid="39"><![CDATA[<html>That…Dead。</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Pastor Thomas$<BR>Ah? Saide Rui caught me? Where?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3-a" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-3-b" mid="41"><![CDATA[<html>Ah ha ha。</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Pastor Thomas$<BR>What? Allows you to capture him，How confused he was eliminated Rights！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3-b" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-3-c" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Pastor Thomas$<BR>Haha…But…If a better solution out。No matter how he held，Probably difficult to pull the rear of his followers Dragon。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3-c" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Pastor Thomas$<BR>Convey the message to<FONT color=#a82424>雷昂纳 more</FONT>Adult bar，Even if you have completed this task。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Pastor Thomas$<BR>To what people reporting it Leiang Na，Even if you have completed this task。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-4" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-4-a" mid="47"><![CDATA[<html>(Explain why things happen)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$High priest Leiang Na more$<BR>Ah，How to do that thing?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-4-a" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-4-b" mid="49"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$High priest Leiang Na more$<BR>Saide Rui finally step up Jack&#39;s footsteps ah。If you can，Daoshi really want to use the power of God, let revival... It also considered the fate of you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-4-b" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-4-c" mid="51"><![CDATA[<html>They just...</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$High priest Leiang Na more$<BR>How can we blame them it，They also have their own view of justice, the so-called。Although they betrayed Mission，But, after all, have a child of God。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-4-c" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-4-d" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$High priest Leiang Na more$<BR>In fact, the so-called justice is relative。Justice without force is impotent，Power without justice is violence in the。Mission is now between incompetence and violence，Backwards ah。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-4-d" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-4-e" mid="72"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-4-e" image="" itemindex="">
+      <talk_question mid="77"><![CDATA[<html>$High priest Leiang Na more$<BR>Thank you for helping me。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">1620,,,,</exe>
+         <exe type="setquest">162</exe>
+         <exe type="talk" npc="n011_priest_leonardo">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1620,,,,</exe>
+         <exe type="complete">162</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n011_priest_leonardo" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n011_priest_leonardo" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="b" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="c" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="d" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="e" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="f" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="g">0,1</exelink>
+   <exelink qstep="3" npc="n013_cleric_tomas" sub="b" />
+   <exelink qstep="3" npc="n013_cleric_tomas" sub="c">0,1</exelink>
+   <exelink qstep="4" npc="n011_priest_leonardo" sub="b" />
+   <exelink qstep="4" npc="n011_priest_leonardo" sub="c" />
+   <exelink qstep="4" npc="n011_priest_leonardo" sub="d">0</exelink>
+   <exelink qstep="4" npc="n011_priest_leonardo" sub="e">1</exelink>
+   <journal_data recompense="0:1620" quest_title="괜찮은 아르바이트" chapterid="" quest_level="8" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n13</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[And Pastor Thomas dialogue]]></title>
+         <contents mid="79"><![CDATA[<html>Pastor Thomas heard about Sai Derui found hidden between the relevant information it。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Pastor Thomas</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[And Pastor Thomas dialogue]]></destination>
+         <todo_msg mid="81"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_11.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>103,0,0</destination_pos>
+         <destination_mode>custom:101@1,102@1,103@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[To eliminate Saide Rui An Diantang Mali]]></title>
+         <contents mid="83"><![CDATA[<html>Captured in Mali An Diantang traitor Saide Rui bar。<BR>
+ <BR>
+<FONT color=#086171>Melting Forest（Magician of the Road）</FONT> <FONT color=#a82424>→Marian&#39;s Palace</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[To eliminate Saide Rui An Diantang Mali]]></destination>
+         <todo_msg mid="85"><![CDATA[To eliminate Saide Rui An Diantang Mali bar。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n13</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string>마리온 전당 보스방에 세드릭 보스몹으로 등장
+세드릭 처치후 가면 깨지는 컷씬 
+컷씬 종료후 스탭, 저널 2 에서 3으로 변경</trigger_string>
+         <maptool_index />
+         <title mid="86"><![CDATA[And Pastor Thomas dialogue]]></title>
+         <contents mid="87"><![CDATA[<html>Eliminate the traitor Saide Rui！Report it to the priest Thomas。<BR>
+ <BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Pastor Thomas</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[And Pastor Thomas dialogue]]></destination>
+         <todo_msg mid="89"><![CDATA[Eliminate the traitor Saide Rui！Go to the Rev. Thomas report。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Cl_Leonardo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n11</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>11</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[More dialogue and senior pastor Leiang Na]]></title>
+         <contents mid="91"><![CDATA[<html>Conveyed to the senior pastor Leiang Na Saide Rui many awards it received the news。<BR><BR>
+<FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→High priest Leiang Na more</FONT><BR>
+ </html>]]></contents>
+         <destination mid="92"><![CDATA[More dialogue and senior pastor Leiang Na]]></destination>
+         <todo_msg mid="93"><![CDATA[Saide Rui Lei Angna many reports to the news of it。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>161</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

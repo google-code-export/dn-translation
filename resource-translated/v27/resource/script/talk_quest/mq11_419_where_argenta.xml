@@ -1,0 +1,429 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_419_where_argenta</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>419</qid>
+      <designer>김인정</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>420</nextqid>
+      <nextqname>mq11_420_return_of_the_general</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[Algerita whereabouts]]></qkname>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>261</npcid>
+         <npcename>n261_slave_david</npcename>
+         <npckname>자칭 모험가 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>262</npcid>
+         <npcename>n262_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（The task did not meet the criteria）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>You accept the task too，Can not accept the task of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Task with a backpack full。<br>（Please order as soon as possible backpack）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>But，1 to King City on and Algerita separated and can not confirm her whereabouts。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio${action:talk}<BR><FONT color=#a82424>Algerita</FONT>…? Ha ha。Impression that is quite pleasing and the name of ah…<BR>Ah…Be。Since she is tracking<FONT color=#a82424>Black Knight</FONT>，Then she should know what it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="8"><![CDATA[<html>Then so be it first。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio$<BR>She is now a great need to help，So be sure to find her…<BR>You may wish to ask and come back with you<FONT color=#a82424>Elite soldiers Cleander</FONT>How? Algerita If the words from King City，The soldiers will certainly see。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Bishop Ignacio$<BR>I will be letting our ministers to the king and，As you would send some reinforcements，You go Zhao Zhao<FONT color=#a82424>Algerita</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Algerita slave David$<BR>Ha ha ha。I am<FONT color=#a82424>David</FONT>！ Is the world&#39;s most beautiful and elegant<FONT color=#a82424>Algerita</FONT>Adults slaves！<BR>…Ah? Are not available to chat with you！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-1" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Algerita$<BR>You should not still here?<BR>Do not bother me，To do the right thing to do。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Elite soldiers Cleander$<BR>Regret，I am now very busy。On<FONT color=#a82424>Kedella</FONT>Events，Write at least100Zhang。Hey……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Bishop Ignacio$<BR>You learned?<BR><FONT color=#a82424>Cleander</FONT>But an honest friend，What a message it will certainly tell you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-2-a" mid="16"><![CDATA[<html>Where were you know she?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Elite soldiers Cleander${action:talk}<BR>Ah，This is not<FONT color=#382000>{user_nick}</FONT>Adults do。<BR>But，<FONT color=#a82424>Algerita</FONT>If，Refers to the woman that you ride the airship？Of course I remember her。<BR>
+She&#39;s a rare beauty Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-a" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-2-b" mid="18"><![CDATA[<html>Ah，David is right?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Elite soldiers Cleander$<BR>The lady said she did not make the destination，However, other<FONT color=#a82424>Peers</FONT>Should be aware of it。<BR>
+Call… Wear…What was it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-b" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-2-c" mid="20"><![CDATA[<html>So that。</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Elite soldiers Cleander$<BR>To，He also quietly consulting over<FONT color=#a82424>Montenegro hill angle</FONT>In the end how dangerous。<BR>However, an introduction by me，He had a moment Jiangzainali。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-c" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Elite soldiers Cleander$<BR>I am not sure，You may wish to personally<FONT color=#a82424>Montenegro hill angle</FONT>Look。I did not remember correctly，That is called<FONT color=#a82424>David</FONT>The President went to that place is definitely。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-3" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Elite soldiers Cleander$<BR>I do not know the whereabouts of Algerita，But I remember correctly，Who called Mr. Dai Weide certainly go<FONT color=#a82424>Montenegro hill angle</FONT> 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-a" mid="25"><![CDATA[<html>…Algerita where?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Algerita slave David$<BR>Long time no see，<FONT color=#382000>{user_nick}</FONT>！！<BR>
+You are to imagine<FONT color=#a82424>David</FONT>Adults and you made a special trip to come here? Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-b" mid="27"><![CDATA[<html>Leave you and left?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Algerita slave David$<BR><FONT color=#a82424>Algerita</FONT>Adults do? Not long ago it was still here！<BR>But suddenly a man gone！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-b" image="QS_Default.dds" itemindex="300003">
+      <talk_answer link_index="n261_slave_david-3-c" mid="29"><![CDATA[<html>So where to friends?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Algerita slave David$<BR>Lose，What is missing lost ah！Impossible！You did not see<FONT color=#a82424>Algerita</FONT>I personally bestowed by adults<FONT color=#a82424>Proof of slaves</FONT>You?<BR><FONT color=#7e12d2>（David angry that out of the slave）</FONT><BR>
+Only…It just happened a few emergency！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-c" image="QW_31.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-d" mid="31"><![CDATA[<html>Abandoned 韦尔顿哈鲁? …Know。</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Algerita slave David$<BR><FONT color=#a82424>Abandoned 韦尔顿哈鲁</FONT>！<BR>I observe that the results of David adults，Definitely go there！！Me，Is not because of fear did not follow the past！Cut。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-d" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-e" mid="87"><![CDATA[<html>……You can figure it out。</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Algerita slave David$<BR>
+Feed！Important is that I have to prepare to<FONT color=#a82424>Algerita</FONT>Adult meal，What to do Well。I killed you, although the position of slave，But now that you used to be her slave，Certainly know what it Algerita adults like to eat?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-e" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Algerita slave David$<BR>
+You&#39;re，Rude guys！ On to adult food so dismissive Algerita ah！ <BR>
+In short… If you see<FONT color=#a82424>Algerita</FONT>If adults，Please tell her to，David my weak angle in the mountains of Montenegro obediently waiting for her to come back！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-4" image="QW_31.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Algerita slave David$<BR>Have not walked? <FONT color=#a82424>Algerita</FONT>Adults, but the speed at which to<FONT color=#a82424>Abandoned 韦尔顿哈鲁</FONT>Ah。<BR>You do not leave to find<FONT color=#a82424>Algerita</FONT>Adults ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-4" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n262_argenta-4-a" mid="36"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Algerita$<BR>Hum。 <FONT color=#a82424>Geraint</FONT>This guy…I have felt his breath was，But in the end to the possession of which it? Are they being friends he was thrown?<BR>
+<FONT color=#7e12d2>（Algerita show deep look）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-4-a" image="" itemindex="">
+      <talk_answer link_index="n262_argenta-4-b" mid="38"><![CDATA[<html>Algerita，Black Knights may find the whereabouts of the right?</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Algerita$<BR>Ah? …What are you here?<BR>Not to say that back<FONT color=#a82424>King City</FONT>Report you，Bored again Rights?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-4-b" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n262_argenta-4-c" mid="40"><![CDATA[<html>Then know where he has gone?</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Algerita$<BR><FONT color=#a82424>Black Knight</FONT>? Guy，When I arrived，No longer here。<BR>
+Seemingly the same as the mouse，Gone right。<BR>Leaving only his breath just ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-4-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n262_argenta-4-d" mid="42"><![CDATA[<html>Own territory… ?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Algerita$<BR>Yes ah，Now what happened here has nothing，I may go back to his old haunts the bar。He has been<FONT color=#a82424>The power of the ancients</FONT>，So this will certainly return to their<FONT color=#a82424>Territory</FONT>The bar。<BR>
+He was quickly eliminated Caixing ah… Cut。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-4-d" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n262_argenta-4-e" mid="44"><![CDATA[<html>Report to the King City，I followed。</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Algerita$<BR>In addition to<FONT color=#a82424>Dark Overlord of the territory</FONT>Where will ah。<BR>Anyway, I have to continue to chase<FONT color=#a82424>That</FONT> <FONT color=#a82424>Guy</FONT>。Although I will not stop you follow me，However, the strength to you，Bacheng will be expired…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-4-e" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Algerita$<BR>
+?King City? Report?<BR>Hum… You people still do nothing to grow ah。<BR>
+Ah，Anyway, as you can。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-5" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Algerita$<BR>I would like to<FONT color=#a82424>Dark Overlord of the territory</FONT>Embarked on a。<BR>Do not you want back<FONT color=#a82424>King City</FONT>To report me?Anyway，As you 便把。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-5" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Algerita slave David$<BR>Algerita adults go<FONT color=#a82424>Dark Overlord of the territory</FONT>?<BR>That，In that case，I have to wait for her back honestly！<BR>
+Me，I&#39;m not only do not fear the！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-a" mid="49"><![CDATA[<html>Seems to escape the dark territory of a great monarch。</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Bishop Ignacio$<BR>
+Oh，It has been seen Algerita。<BR>Ah，She knew<FONT color=#a82424>Black Knight</FONT>Whereabouts you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-b" mid="51"><![CDATA[<html>There will be a prophet bar…</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Bishop Ignacio$<BR>Ah…Event is not good。 <BR>
+<FONT color=#a82424>Dark Overlord of the territory</FONT>However, their den ah Monster?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-c" mid="53"><![CDATA[<html>（Ignacio eyes looked at me with a sigh）</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Bishop Ignacio$<BR>Should it。Even to find<FONT color=#a82424>Prophet</FONT>，We also have to overcome<FONT color=#a82424>Dark Overlord of the territory</FONT>Is。<BR>But… Ah now no way you can mobilize the troops…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-c" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-d" mid="55"><![CDATA[<html>King City near Guard and elite soldiers do not work?</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>Knights of the Temple</FONT>Since the ridge and Kedella sent after the magic，Not come back。Even coming back to re-preparation time had to，It could not immediately provide effective support for。<BR>
+<FONT color=#a82424>Magician</FONT>They also will not match and can not expect them to…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-d" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-e" mid="57"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Bishop Ignacio$<BR>Without Guards<FONT color=#a82424>Duke</FONT>If permission is not unauthorized actions。 <FONT color=#a82424>Duke</FONT>For the safety of the young king and in order to deal with emergencies and will not be easily spend nearly Guard。Having said that，The most realistic way to only use the elite soldiers of the King City。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-e" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-!next" mid="59"><![CDATA[<html><FONT color=#a94407>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4191,4192,4193,4194</exe>
+         <exe type="complete">419</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n209_elite_soldier" sub="b" />
+   <exelink qstep="2" npc="n209_elite_soldier" sub="c">0,1</exelink>
+   <exelink qstep="3" npc="n261_slave_david" sub="b" />
+   <exelink qstep="3" npc="n261_slave_david" sub="c" />
+   <exelink qstep="3" npc="n261_slave_david" sub="d" />
+   <exelink qstep="3" npc="n261_slave_david" sub="e">0,1</exelink>
+   <exelink qstep="4" npc="n262_argenta" sub="b" />
+   <exelink qstep="4" npc="n262_argenta" sub="c" />
+   <exelink qstep="4" npc="n262_argenta" sub="d" />
+   <exelink qstep="4" npc="n262_argenta" sub="e">0,1</exelink>
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="e">0</exelink>
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="!next">1</exelink>
+   <journal_data recompense="1:4191,2:4192,3:4193,4:4194" quest_title="아르젠타의 행방" chapterid="4" quest_level="24" quest_mark_type="7" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Bishop Ignacio&#39;s proposal]]></title>
+         <contents mid="62"><![CDATA[<html>Bishop Ignacio seems to have something to say on the Algerita。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Dialogue with the Bishop Ignacio。]]></destination>
+         <todo_msg mid="64"><![CDATA[Add a task。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n209</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>209</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[Investigate the whereabouts of Algerita I]]></title>
+         <contents mid="66"><![CDATA[<html>Until<FONT color=#a82424>Algerita</FONT>There confirm the whereabouts of the black knight。Back to heaven with the sacred<FONT color=#a82424>Elite soldiers Cleander</FONT>，Should know where it Algerita。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> → Elite soldiers Cleander</html>]]></contents>
+         <destination mid="67"><![CDATA[Dialogue with the elite soldiers Cleander。]]></destination>
+         <todo_msg mid="68"><![CDATA[To the elite soldiers Cleander Advisory Algerita gone。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13,n261</destination_pos>
+         <destination_mode>custom:21@1,11@1,261@1</destination_mode>
+         <statemark_npcid>261</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[Investigate the whereabouts of Algerita II]]></title>
+         <contents mid="70"><![CDATA[<html>Together with Algerita seems to go by David<FONT color=#a82424>Montenegro hill angle</FONT>。Look at it first went to David。<BR>
+ <BR>
+<FONT color=#086171>Montenegro hill angle</FONT> <FONT color=#a82424>→ David</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[David Hill Point in Montenegro and dialogue。]]></destination>
+         <todo_msg mid="72"><![CDATA[Montenegro hill angle to find the whereabouts of David and to understand it Algerita。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>314,n262</destination_pos>
+         <destination_mode>custom:311@1,312@1,313@1,314@1</destination_mode>
+         <statemark_npcid>262</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[Investigate the whereabouts of Algerita III]]></title>
+         <contents mid="74"><![CDATA[<html>Under<FONT color=#a82424>David</FONT>Said，Algerita going to be abandoned 韦尔顿哈鲁。<BR>
+ <BR>
+<FONT color=#086171>Montenegro（Dark jungle road）</FONT><FONT color=#a82424> → Abandoned 韦尔顿哈鲁</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[Abandoned 韦尔顿哈鲁 in dialogue with Algerita。]]></destination>
+         <todo_msg mid="76"><![CDATA[Found in abandoned 韦尔顿哈鲁 Algerita and dialogue with it。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[Report to the bishop]]></title>
+         <contents mid="79"><![CDATA[<html>It seems，<FONT color=#a82424>Black Knight</FONT>Overlord has returned to the territory of the dark。Go back to<FONT color=#a82424>Bishop Ignacio</FONT>Report it。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[Dialogue with the Bishop Ignacio。]]></destination>
+         <todo_msg mid="81"><![CDATA[Bishop Ignacio to report it on the whereabouts of the black knight。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>402</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

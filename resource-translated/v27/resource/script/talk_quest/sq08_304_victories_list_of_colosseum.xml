@@ -1,0 +1,226 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_304_victories_list_of_colosseum</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>304</qid>
+      <designer>김주연</designer>
+      <qlevel>10</qlevel>
+      <qdesc>콜로세움 승률기록부	300230
+
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Arena outcome Record Book]]></qkname>
+      <qnpc>
+         <npcid>148</npcid>
+         <npcename>n148_arena_ticker_1</npcename>
+         <npckname>콜로세움 관리병 조셉</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n148_arena_ticker_1-noquest" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Joseph Arena Management soldiers${action:Talk}<BR>Arena challenge you to do？<BR>
+<FONT color=#7e12d2>(Adventurers from Kedella points given the task of public office, president of Dai Kade)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="6"><![CDATA[<html>What does matter？</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Ah，Come just。Me trying things you do please。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="10"><![CDATA[<html>What is the winning arena record book?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Ah，No other。Recently too busy，We had enough time to the arena。<BR>The best arena to get a winning record book like。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="12"><![CDATA[<html>Record book that the outcome can bring it?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Tournament Record Book is to record the outcome of the fighting arena of people participated in the winning percentage of documents。See it can know who is the most powerful fighters of the。But it is very important to select talents reference Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-d" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Yes ah，Do not have to do anything else，The work will complete the blink of an eye ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-e" mid="16"><![CDATA[<html>Since so easily，Then I come across it。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>See<FONT color=#a82424>Move the upper right channel Key</FONT>The bar? Click it<FONT color=#a82424>Select Arena Channel</FONT>Can。<BR>You can go to?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="18"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Arena outcome Record Book$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="20"><![CDATA[<html>（Method of consultation into the arena again） </html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="21"><![CDATA[<html>Ah，I will now proceed！</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Is，Back again so soon。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Seems to have forgotten<FONT color=#a82424>Way into the arena</FONT>The bar。<BR>See<FONT color=#a82424>The top right of the channel mobile key</FONT>The bar? Click it<FONT color=#a82424>Select Arena Channel</FONT>Can。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QN_Npc_Pvp_Gambler.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>To<FONT color=#a82424>Arena Management soldiers called </FONT><FONT color=#2b2723>Joseph</FONT>Get a friend<FONT color=#a82424>Outcome Record Book</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n148_arena_ticker_1-1" image="" itemindex="">
+      <talk_answer link_index="n148_arena_ticker_1-1-a" mid="28"><![CDATA[<html>Not，Is Dai Kade I come。</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Joseph Arena Management soldiers$<BR>I feel like I&#39;ve never seen you before？<BR>You will come to the right arena sword fight？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n148_arena_ticker_1-1-a" image="" itemindex="">
+      <talk_answer link_index="n148_arena_ticker_1-2" mid="30"><![CDATA[<html>（Arena record book was the outcome）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Joseph Arena Management soldiers$<BR>So that。Ah……It seems that he is fit ah。<BR>This is<FONT color=#a82424>Winning record</FONT>，You take it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n148_arena_ticker_1-2" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Joseph Arena Management soldiers$<BR>Mah，Welcome to arena challenge at any time。And other adventurers a chance to be much higher under the Well。Then，Goodbye……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="33"><![CDATA[<html>（Winning record books submitted Arena）</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>How 样？<BR>It brought a winning record？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="35"><![CDATA[<html>But，What do you want to record victory？</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Ha ha，Yes！<BR>Hard work。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-c" mid="39"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-c" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-d" mid="51"><![CDATA[<html>(Feel strange)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>
+The right？Of course, to investigate their record and winning percentage adventurer。This is the most basic information adventurer Association gathering，Do not fuss。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-d" image="" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Ah……Ah？Matter how this guy&#39;s record？I thought he could do……Click one&#39;s tongue……Ha……！Odds12Times！Ah……</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">304</exe>
+         <exe type="recompense_view">,3041,3042,3043,3044</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300230</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">304</exe>
+         <exe type="delquestitem" num="-1">300230</exe>
+         <exe type="recompense">,3041,3042,3043,3044</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n148_arena_ticker_1" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b">2</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="d" />
+   <journal_data recompense="1:3041,2:3042,3:3043,4:3044" quest_title="콜로세움의 승률기록부" chapterid="" quest_level="10" quest_mark_type="10" use_item_list="300230">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Pvp_Gambler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>40,n148</destination_pos>
+         <destination_mode>custom:8@4</destination_mode>
+         <statemark_npcid>148</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Arena outcome Record Book]]></title>
+         <contents mid="43"><![CDATA[<html>To the arena to see<FONT color=#a82424>Joseph Arena Management soldiers</FONT>。To obtain from him<FONT color=#a82424>Arena winning record</FONT>。<BR><FONT color=#7e12d2>(Through the top right of the channel selection window，Can select and move to the Arena Channel。)</FONT><BR><BR><FONT color=#086171>Arena Channel</FONT> <FONT color=#a82424>→ Joseph Arena Management soldiers </FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Arena outcome Record Book]]></destination>
+         <todo_msg mid="45"><![CDATA[Joseph dialogue with the Arena Management soldiers Bar。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom:40@4</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Society of Dai Kade dialogue with the adventurer]]></title>
+         <contents mid="47"><![CDATA[<html>To<FONT color=#a82424>Arena winning record</FONT>Checkpoints to Kedella<FONT color=#a82424>Company president Dai Kade adventurer</FONT>。<BR><BR><FONT color=#086171>Kedella points </FONT><FONT color=#a82424>→ Company president Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[And adventurer, president of Dai Kade public dialogue]]></destination>
+         <todo_msg mid="49"><![CDATA[Please adventurer public dialogue president Dai Kade。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>10:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,181 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_337_frighten_rookies</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>337</qid>
+      <designer>나은하</designer>
+      <qlevel>10</qlevel>
+      <qdesc>모험자 길드장 데커드는 최근 해빙의 숲에 오크들이 수상한 진지를 만들었다고 한다. 아마도 수정개울 쪽에 파병할 병력을 훈련시킬 거점을 만든 거 같다며, 오크들이 먼저 움직이기 전에 뜨거운 맛을 보여주자고 한다.
+우선은 오크 부대에 입대한 지 얼마 안되는 습격대 오크 훈련병들을 처치하자.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Scare new]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="QW_BlizzardPlain.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="8"><![CDATA[<html>The new positions？</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Do you know animal people<FONT color=#a82424>Melting Forest</FONT>Construction of new bases there you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="QW_12.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="10"><![CDATA[<html>It was too bad。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>In order to facilitate attacks on Crystal Valley，The orcs seem to build a new resident。It is there to carry out reconnaissance of the Fugu Si said，Constantly gather new strength to get there。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="12"><![CDATA[<html>Ah?!</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Yes，Very serious，You are so that it？<BR>I want to give you a Crystal Valley and Kedella barriers to protect the opportunity。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="QM_OrcGreen.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-d" mid="14"><![CDATA[<html>Training soldiers should not be too difficult to deal with。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Please be assured that，This is not very difficult。<BR>You only have to<FONT color=#a82424>Orc attack team positions</FONT>Go，Destroyed<FONT color=#a82424>5A</FONT>Arrived there soon<FONT color=#a82424>Orc attack team training soldiers</FONT>On it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Scare new$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QW_12.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Company president Dai Kade adventurer$<BR><FONT color=#a82424>Orc attack team positions</FONT>The magician in the melt on the road side of the forest。If destroyed<FONT color=#a82424>5A</FONT><FONT color=#a82424>Orc attack team training soldiers</FONT>，Orc Orc attack team positions recruits will pale with fear of。Ha ha ha</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QM_OrcGreen.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="20"><![CDATA[<html>(Indeed turns blue orcs incantation division)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Oh，It seems that you have learned to attack the team to train soldiers in the bar Orc？<BR>Now they are pale with fear of it？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="22"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-b" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>You&#39;ve worked hard。Someday，Would you like me，Become a guardian hero Kedella，Respected by all men。Before that day comes，I hope you continue to work。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3371,3372,3373,3374</exe>
+         <exe type="setquest">337</exe>
+         <exe type="huntmon" num="5" party="1" exe="3,4,5" onexe="">321</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200321</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 321);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3371,3372,3373,3374</exe>
+         <exe type="complete">337</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">1,2,7,6</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="a">0</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b">1</exelink>
+   <journal_data recompense="1:3371,2:3372,3:3373,4:3374" quest_title="신참 겁주기" chapterid="" quest_level="10" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_12.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>107,0,0</destination_pos>
+         <destination_mode>custom:106@3,107@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="24"><![CDATA[Destroy the orcs attacked the orc stronghold team training soldiers]]></title>
+         <contents mid="25"><![CDATA[<html>Orc attack team positions to eliminate5Orc team training soldiers were attacked.<BR><BR><FONT color=#086171>Melting Forest(Magician of the Road)</FONT> <FONT color=#a82424>→ Orc attack team positions</FONT></html>]]></contents>
+         <destination mid="26"><![CDATA[Eliminate5Orc team training soldiers were attacked]]></destination>
+         <todo_msg mid="27"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="28"><![CDATA[Adventurer, president of Dai Kade report to the public]]></title>
+         <contents mid="29"><![CDATA[<html>Severely to scare the new recruits about orcs。Back Kedella checkpoints president Dai Kade public report to the adventurer。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Company president Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="30"><![CDATA[And adventurer, president of Dai Kade public dialogue]]></destination>
+         <todo_msg mid="31"><![CDATA[Please Kedella adventurers crossing the public dialogue, president of Dai Kade。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>10:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

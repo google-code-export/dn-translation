@@ -1,0 +1,218 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_121_lost_sacred_object2</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>121</qid>
+      <designer>곽노찬</designer>
+      <qlevel>1</qlevel>
+      <qdesc>300144 클레릭의 묵주</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>102</nextqid>
+      <nextqname>mq05_102_evidence_of_pagan</nextqname>
+      <nextqnpc>n013_cleric_tomas</nextqnpc>
+      <qkname mid="1"><![CDATA[Looted itemsⅡ]]></qkname>
+      <qnpc>
+         <npcid>13</npcid>
+         <npcename>n013_cleric_tomas</npcename>
+         <npckname>클레릭 토마스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1" image="QM_OrcBlue.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-a" mid="6"><![CDATA[<html>I remember。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Pastor Thomas$<BR><FONT color=#a82424>Orc</FONT>Race are available for general attack<FONT color=#a82424>Large shield</FONT>Low-end housing，You first learn how to destroy its shield it。Orc is tantamount to losing the shield of sandbags can be beaten，Very easy to deal with。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-a" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Pastor Thomas$<BR>It would please you。<BR>Like the goddess of grace be with you……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2" image="QM_OrcBlue.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>You go<FONT color=#a82424>霜风 Canyon</FONT>Remove<FONT color=#a82424>Orc korba Library</FONT>，Investigate<FONT color=#a82424>雷昂纳 more</FONT>Things being robbed。<BR>Like the goddess of grace be with you……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-3-a" mid="10"><![CDATA[<html>(Out from the forest to get the pastor of St. beads)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Pastor Thomas$<BR>
+Ah，Realized that what you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3-a" image="QS_Default.dds" itemindex="300144">
+      <talk_answer link_index="n013_cleric_tomas-3-b" mid="12"><![CDATA[<html>Occasionally found out what the orcs around。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Pastor Thomas$<BR>Is not that...?<BR>Priests used<FONT color=#a82424>Pearls</FONT>You?<BR>This how the...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3-b" image="QS_Default.dds" itemindex="300144">
+      <talk_answer link_index="n013_cleric_tomas-3-c" mid="14"><![CDATA[<html>What do you guess？</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Pastor Thomas$<BR>In<FONT color=#a82424>霜风 Canyon</FONT>Found <FONT color=#a82424>Pastor of St. beads</FONT>...?<BR>In the Monster&#39;s lair they find the pearls...<BR>Ah.....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3-c" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-3-d" mid="16"><![CDATA[<html>Our goal……？</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Pastor Thomas${action:Talk}<BR>……Ha ha……Did not expect to find clues in this place。<BR>Although do not know<FONT color=#a82424>雷昂纳 more</FONT>What is brought back<FONT color=#a82424>Thing</FONT>，But as long as keep track of that piece<FONT color=#a82424>Thing</FONT>，Our goal might be able to automatically reach。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3-d" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-3-e" mid="18"><![CDATA[<html>……Possible。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Pastor Thomas$<BR>
+We follow the pagan and Magic Things are working hand in glove seems to have had...<BR>
+If not pagan，How could their nests found in the Monster <FONT color=#a82424>Pastor of St. beads</FONT>It?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3-e" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-3-!next" mid="20"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="3,4,5,6">224</exe>
+         <exe type="addquestitem" num="1">300144</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">121</exe>
+         <exe type="recompense">1210,,,,</exe>
+         <exe type="delquestitem" num="-1">300144</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="a">0,1,2</exelink>
+   <exelink qstep="3" npc="n013_cleric_tomas" sub="b" />
+   <exelink qstep="3" npc="n013_cleric_tomas" sub="c" />
+   <exelink qstep="3" npc="n013_cleric_tomas" sub="d" />
+   <exelink qstep="3" npc="n013_cleric_tomas" sub="e">1</exelink>
+   <exelink qstep="3" npc="n013_cleric_tomas" sub="!next">0,2</exelink>
+   <journal_data recompense="1210" quest_title="빼앗긴 물건Ⅱ" chapterid="1" quest_level="1" quest_mark_type="7" use_item_list="300144">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="22"><![CDATA[And Pastor Thomas dialogue]]></title>
+         <contents mid="23"><![CDATA[<html><FONT color=#a82424>Senior Pastor Leiang Na more</FONT>His party escort<FONT color=#a82424>A thing</FONT>The way the attacks were a Monster。<BR>And<FONT color=#a82424>Pastor Thomas</FONT>Dialogue。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Pastor Thomas</FONT></html>]]></contents>
+         <destination mid="24"><![CDATA[And Pastor Thomas dialogue]]></destination>
+         <todo_msg mid="25"><![CDATA[Please dialogue with Pastor Thomas。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_OrcBlue.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>83,0,0</destination_pos>
+         <destination_mode>custom:81@1,82@1,83@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[Orc korba removed Shuangfeng Canyon Library]]></title>
+         <contents mid="27"><![CDATA[<html>Multi-line Monster attack Leiang Na magic mountain ridge in the vicinity of<FONT color=#a82424>霜风 Canyon</FONT>Habitat<FONT color=#a82424>Orc korba Library</FONT>。<BR>Eliminate<FONT color=#a82424>霜风 Canyon</FONT>Of<FONT color=#a82424>Orc korba Library</FONT>Eliminate and recover items looted it。<BR><BR><FONT color=#086171>雪霜 ramp（Shuangfeng Canyon entrance）</FONT> <FONT color=#a82424>→霜风 Canyon</FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[Orc korba removed Shuangfeng Canyon Library]]></destination>
+         <todo_msg mid="29"><![CDATA[Please go away Orc korba Library Shuangfeng Canyon。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[And Pastor Thomas dialogue]]></title>
+         <contents mid="31"><![CDATA[<html>From<FONT color=#a82424>Orc korba Library</FONT>Who received<FONT color=#a82424>Pastor of St. beads</FONT>。Back<BR>Magic Ridge<FONT color=#a82424>Pastor Thomas</FONT>Where it。<BR><BR><FONT color=#086171>Magic Ridge</FONT> <FONT color=#a82424>→Pastor Thomas</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[And Pastor Thomas dialogue]]></destination>
+         <todo_msg mid="33"><![CDATA[Was the pastor of St. beads。Go back to where Pastor Thomas。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>101</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

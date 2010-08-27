@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n219_velskud</npcename>
+      <npcid>219</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Beisikede]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Should not be here if the person)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="enterquest">mq11_430_trace_apostle.xml</exe>
+         <exe type="enterquest">mq11_429_guardian_geraint.xml</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">430</chk>
+         <chk type="hasquest">429</chk>
+      </conditions>
+   </talk>
