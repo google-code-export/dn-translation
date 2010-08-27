@@ -20,3 +20,7 @@ After the file has been split, you should be able to run it through the Translat
 Use a text editor and save the following line as *merge.bat* then put it in the folder with all the split pieces. Run the batch file to merge all the XML files.
 
 `FOR %%1 in (*.xml) do type %%1 >> merged.xml`
+
+=== Known Issues ===
+
+A fully machine translated *uistring.xml* will crash the game client. Currently we know that NPC names cannot be longer than 16 characters. There could be other unknown issues as well.
