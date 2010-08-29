@@ -1,0 +1,248 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_346_curtain_of_abyss</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>346</qid>
+      <designer>김인정</designer>
+      <qlevel>20</qlevel>
+      <qdesc>심연의 장막 아이템 처리에 따라 변경.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>347</nextqid>
+      <nextqname>sq08_347_decuman_filed</nextqname>
+      <nextqnpc>n199_darklair_castia</nextqnpc>
+      <qkname mid="1"><![CDATA[Barrier into the abyss]]></qkname>
+      <qnpc>
+         <npcid>199</npcid>
+         <npcename>n199_darklair_castia</npcename>
+         <npckname>어둠의 여신관 카스티아</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Dark Goddess official Castellana$<BR>It&#39;s like a light shadow of the world，Is the goddess of the local drug deposition。<BR>We will use the magic barrier around up here，Prevent pollution of the outside world。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting-a" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-acceppted" mid="8"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Dark Goddess official Castellana$<BR>However, the strength of our，Seal can no longer sustain the。So we started to the outside world capable adventurer invitation。Please……Should help us guard<FONT color=#a82424>Dark border</FONT>Seal。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-a" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Dark Goddess official Castellana$<BR>It&#39;s like a light shadow of the world，Is the goddess of the local drug deposition。<BR>We use<FONT color=#a82424>Magic Barrier</FONT>Will be up around here，Prevent pollution of the outside world。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-a" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-b" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Dark Goddess official Castellana${action:Talk}<BR>Actually……Before someone helped us also。But exposure to the nightmare of the moment fall，They have become a Monster。After we read the study，Create a special amulet。Finally can prevent that kind of thing will not happen。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-b" image="QS_Default.dds" itemindex="337772545">
+      <talk_answer link_index="n199_darklair_castia-1-c" mid="14"><![CDATA[<html>Dark Goddess Sue？Know。</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Dark Goddess official Castellana$<BR>To enter the nightmare，Need the name of<FONT color=#a82424>Barrier into the abyss</FONT>The special charm。You can<FONT color=#a82424>Dark Goddess Sue</FONT>Get。Barrier into the abyss with you，Hate to go to the nightmare，Purification endless nightmare。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-c" image="QN_darklair_chou.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-d" mid="19"><![CDATA[<html>(Understanding of the conditions)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Barrier into the abyss$<BR><FONT color=#7e12d2>※ Dark border——Recommended hate nightmare4Person team game。<BR>※ To enter the dark border，Barriers need to abyss。</FONT><BR><FONT color=#7e12d2>※ Goddess in the dark abyss of barriers can get government off。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-d" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2" mid="21"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Barrier into the abyss$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2-a" mid="22"><![CDATA[<html>Ah？Barrier into the abyss where you can get it？</html>]]></talk_answer>
+      <talk_answer link_index="n199_darklair_castia-2-b" mid="43"><![CDATA[<html>What is Round？</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Dark Goddess official Castellana$<BR>We guard the border is through the dark<FONT color=#a82424>Door nightmare</FONT>Into the nightmare of hatred。Your goal now，Is reached<FONT color=#a82424>Hate nightmare</FONT>Of<FONT color=#a82424>S5Round</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-a" image="QN_darklair_chou.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Dark Goddess official Castellana$<BR>Barrier by deep<FONT color=#a82424>Dark Goddess Sue</FONT>Get。<BR><FONT color=#a82424>Can receive per day2Zhang</FONT>，I hope you can remember。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-b" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2-c" mid="45"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Dark Goddess official Castellana$<BR>In the fall of the nightmare，Difficult to find the way forward。You need to do is fight and emerging Monster。The time in the Monster<FONT color=#a82424>All purification</FONT>，Is complete<FONT color=#a82424>1 Round</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-c" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2-d" mid="47"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Dark Goddess official Castellana$<BR>Repeat this round，Nightmare to get to the depths of the land more。Then there will be many Monster。Can persist in a few rounds……See you on the ability of the whole。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-d" image="QW_DarkLair.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Dark Goddess official Castellana${action:Talk}<BR>Ah，It is important to note。Every five rounds，Appears stronger than usual Monster。Please be vigilant。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-a" mid="26"><![CDATA[<html>(Castellana smiled)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Dark Goddess official Castellana${action:Talk}<BR>Ah，Adventurer！<BR>See you are not nightmare erosion，I am really pleased。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-a" image="QS_Default.dds" itemindex="337772545">
+      <talk_answer link_index="n199_darklair_castia-3-b" mid="28"><![CDATA[<html>In the future？Do not complete？</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Dark Goddess official Castellana$<BR>Even if you have<FONT color=#a82424>Barrier into the abyss</FONT>，Not careful, could become Monster。<BR>Hope that you be safe。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-b" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-!next" mid="30"><![CDATA[<html><FONT color=#086171>(Rewarded)</FONT></html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n199_darklair_castia-1-a", npc_talk_target);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="recompense_view">3460,,,,</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="4,5,6">100128</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="setquest">346</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3460,,,,</exe>
+         <exe type="complete">346</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n199_darklair_castia" sub="acceppted">0</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="b" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="c" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="d">2</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="2">7,0,3,1</exelink>
+   <exelink qstep="2" npc="n199_darklair_castia" sub="c" />
+   <exelink qstep="2" npc="n199_darklair_castia" sub="d" />
+   <exelink qstep="3" npc="n199_darklair_castia" sub="b">0</exelink>
+   <exelink qstep="3" npc="n199_darklair_castia" sub="!next">1</exelink>
+   <journal_data recompense="3460" quest_title="심연의 장막" chapterid="" quest_level="20" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>23,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@0,11@0</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[The first thing the dark lair]]></title>
+         <contents mid="32"><![CDATA[<html>To the dark border watchtowers and Shuer Pa<FONT color=#a82424>Dark Goddess official Castellana</FONT>Dialogue，Learn commissioned content。<BR><BR><FONT color=#086171>Dark border Shuer Pa watchtower</FONT> <FONT color=#a82424>→ Dark Goddess official Castellana</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Official Castellana dialogue and dark goddess]]></destination>
+         <todo_msg mid="34"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_DarkLair.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12004,0,0</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@0,11@0,12004@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[The fifth piece of land]]></title>
+         <contents mid="36"><![CDATA[<html>Dark border Hate cleaning nightmare5Round the above。<BR><BR><FONT color=#7e12d2>※ Dark border Recommended4Person team game。<BR>※ To enter the dark border，Barriers need to abyss。<BR>※ Goddess in the dark abyss of barriers can get government off。</FONT><BR><BR><FONT color=#086171>Door nightmare</FONT> <FONT color=#a82424>→ Hate nightmare first5Round</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Break through the nightmare of the first hate5Round]]></destination>
+         <todo_msg mid="38"><![CDATA[Please break through the nightmare of the dark hatred of the border section5Round the above。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>23,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@0,11@0</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[Report to the dark goddess official Castellana]]></title>
+         <contents mid="40"><![CDATA[<html>Commissioned。Go back to the dark goddess of the report it official Castellana。<BR><BR><FONT color=#086171>Dark border Shuer Pa watchtower</FONT> <FONT color=#a82424>→ Dark Goddess official Castellana</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[Official Castellana dialogue and dark goddess]]></destination>
+         <todo_msg mid="42"><![CDATA[Commissioned。Please report to the dark goddess official Castellana。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>345</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

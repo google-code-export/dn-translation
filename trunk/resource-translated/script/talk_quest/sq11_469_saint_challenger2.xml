@@ -1,0 +1,445 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_469_saint_challenger2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>469</qid>
+      <designer>손원호</designer>
+      <qlevel>29</qlevel>
+      <qdesc>"두번째 도전장을 받는다. 하지만 이번엔 도전의 내용이 아니라 자신의 기억 찾기를 도와달라는 내용이다. 현재 자신이 기억하는 유일한 친구(?)는 나 밖에 없으니… 일단 김오크가 기다리고 있다는 검은 산자락으로 가보자. 여전히 멍한 김오크. 그에게서 잃어버린 무기(안대)에 대한 이야기를 듣는다. 분명 검은옷의 상대에게 도전하러 간 것까진 기억하는데 그 이후가 기억나지 않는다는 내용이다. (졸개몹에게 다구리 맞고 뻗었음) 그리고 깨어보니 무기와 기억이 사라져버렸다는 … 무기를 찾으면 기억도 찾을 거란 말을 하며 도와달라고 부탁하는 김오크. (보상으로 김오크의 손길이 녹아 들어간 핑크 스웨터를 받을 수 있을지도.) 보스 방에서 김오크가 잃어버린 무기를 발견할 수 있다. 무기를 받고 아버지의 기억을 떠올리는 김오크. 다시 예전의 기억을 되찾는다. 주인공이 스웨터를 달라고 하자, 그런 남자답지 못한 것은 기억에 없다고 오리발. 은혜는 정정당당한 승부로 보답하겠다는 김오크."
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Resurrection of the Orc King]]></qkname>
+      <qnpc>
+         <npcid>243</npcid>
+         <npcename>n243_orc_oneeye</npcename>
+         <npckname>김오크</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>98</npcid>
+         <npcename>n098_warrior_master_lodrigo</npcename>
+         <npckname>상급 워리어 로드리고</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Orc King$<BR>
+Where I am?Who is here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-a" mid="7"><![CDATA[<html>A letter?The book is not a challenge?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Senior Warrior Rodriguez$<BR>When you are not I receive the Orc King<FONT color=#a82424>Second letter</FONT>。I had assumed that he had received the letter issued with the stench of... How it has always given me。Really have to jump with a ghost hip hopThe。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-b" mid="9"><![CDATA[<html>（Orc King read the letter）</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Senior Warrior Rodriguez$<BR>Kanba you read the detailed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-b" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-c" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Orc King&#39;s letter$<BR><FONT color=#387206>Hello，{user_nick}。The weather here is like the Iberian Peninsula as bright woman dancing。The only drawback is the relatively near from Montenegro，Heavy sulfur smell。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-c" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-d" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Orc King&#39;s letter$<BR><FONT color=#387206>After last night bid farewell to you，I thought carefully。Before I lost my memory in the，We seem to be very good friends。I forgot the other，But remember your name。This is evidence，Ha ha。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-d" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-e" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Orc King&#39;s letter$<BR><FONT color=#387206>Since we are good friends，I want to please you one thing。</FONT><BR>
+<FONT color=#387206>You should help me？Ha ha ha～</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-e" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-f" mid="17"><![CDATA[<html>（Dialogue with Rodriguez）</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Orc King&#39;s letter$<BR><FONT color=#387206>Detailed information，We<FONT color=#a82424>Montenegro hill angle</FONT></FONT><FONT color=#387206>Speak after meeting。Through the letter was improper to talk about important things a bit。<BR><BR> Dear friends Orc Gold Hill Point written in Montenegro</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-g" mid="19"><![CDATA[<html>This guy just keep doing day-dreaming in。</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Senior Warrior Rodriguez$<BR>Ah…You or a friend ah Orc King?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-h" mid="21"><![CDATA[<html>Yes ah，Really did not expect。</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Senior Warrior Rodriguez$<BR>But the orc King also has not Well，Amnesia are still remember the names of opponents。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-acceptted" mid="23"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Resurrection of the Orc King$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-1-a" mid="26"><![CDATA[<html>Not to say'Friends and wine is as long as possible' You?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Senior Warrior Rodriguez$<BR><FONT color=#a82424>Friends and wine more expensive the better</FONT>。<BR>
+Let your friends treasure。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1-a" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Senior Warrior Rodriguez$<BR>Cut，Forget it，Orc payment quickly to your<FONT color=#a82424>Montenegro hill angle</FONT>Go and see！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-1" image="" itemindex="">
+      <talk_question mid="107"><![CDATA[<html>$Orc King$<BR>
+Like knitting a sweater!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Senior Warrior Rodriguez$<BR>Orc Kim<FONT color=#a82424>Montenegro hill angle</FONT>Waiting for you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-a" mid="31"><![CDATA[<html>You do not write me to the right！</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Orc King$<BR>My dear friend<FONT color=#382000>{user_nick}！<BR></FONT>To see you，Ah, like a dream。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-a" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-b" mid="33"><![CDATA[<html>That is because you saw me I wanted to challenge...</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Orc King$<BR>It seems that we are<FONT color=#a82424>Best friend</FONT>Ah。See you I feel my heart beat faster，Muscle shake it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-b" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-c" mid="35"><![CDATA[<html>……Ah，Even if it。</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Orc King$<BR>Challenge?！How can I do it so barbaric acts? Able to use dialogue to resolve the matter why the fist handle it……<BR>
+Really can not understand。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-c" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-d" mid="37"><![CDATA[<html>What?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Orc King$<BR>In fact, as something to be commissioned to write。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-d" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-e" mid="39"><![CDATA[<html>Valuables?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Orc King$<BR>Not long ago I started getting a little to refresh his memory of the，But still a little fuzzy... Although not sure，I seem to be in the dark territory garrison base What is lost<FONT color=#a82424>Valuables</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-e" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-f" mid="41"><![CDATA[<html>So ah。</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Orc King$<BR>Although I do not know what that is，But it seems important to me。Without it, then，After that I will never be allowed to resume can not remember the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-f" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-g" mid="43"><![CDATA[<html>I refuse to！And we is not friends?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Orc King$<BR>You are my friend，It should help me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-g" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-h" mid="45"><![CDATA[<html>...Then promise you?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Orc King$<BR>Oops……If you can accept me please，I was going to<FONT color=#a82424>Orc family treasure</FONT>Give you……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-h" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-i" mid="47"><![CDATA[<html>I hope so。（Ah well now nauseating）</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Orc King$<BR>You really are my best friend ah，If found that if the missing items，I am sure that will restore memory。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-i" image="QW_43.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Orc King$<BR>I lost items may be in<FONT color=#a82424>Dark Territory garrison base </FONT>Deepest。However, very dangerous place where，Oh be careful！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-3" image="QW_43.dds" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Orc King$<BR><FONT color=#a82424>Dark Territory garrison base </FONT>！Actually for me to that dangerous place，I would like to thank you or thank you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-a" mid="52"><![CDATA[<html>This is what you lose you?</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Orc King$<BR>Oh！Security, back again。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-a" image="QS_Default.dds" itemindex="300092">
+      <talk_answer link_index="n243_orc_oneeye-4-b" mid="54"><![CDATA[<html>（The weapons to the Orc King）</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Orc King$<BR>That……Weapons that do not？<BR>
+Weapons such a terrible thing，Important thing that it is me……、</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-b" image="QS_Default.dds" itemindex="300092">
+      <talk_answer link_index="n243_orc_oneeye-4-c" mid="56"><![CDATA[<html>How? Restore memory of you?</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Orc King$<BR>Ah，This feeling，This gloss……<BR>
+And also the taste！<BR>
+Yes，This is my weapon。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-c" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-d" mid="58"><![CDATA[<html>……Okay？</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Orc King$<BR>Oops，It&#39;s not comic。Do find something you can instantly restore memory of the…… <FONT color=#7e12d2>(Orc King also seems a headache，Constant struggle)</FONT> <BR>
+Uh……Uh ah ah ah ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-d" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-e" mid="60"><![CDATA[<html>Feed……Feed？</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Orc King$<BR>... ...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-e" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-f" mid="62"><![CDATA[<html>Ah? Restore memory Rights?</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Orc King$<BR>Ha ha ha，How dare a mere human adults hands-on Orc King。Think of their lives on the road is not born, ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-f" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-g" mid="64"><![CDATA[<html>Deceive……You do not lose their memory of the？</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Orc King$<BR>Oh。 I Orc King adults may lose the memory of how it，Only slightly…… Ah……Sleep for a while it stood！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-g" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-h" mid="66"><![CDATA[<html>But how weapons will be there ah?</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Orc King$<BR>If the usual，I would spot your little life，But I am glad because you father for me to find the weapons left behind，You put it on a horse。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-h" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-i" mid="68"><![CDATA[<html>Generally clear how the matter。</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Orc King$<BR>...I would not say that I am to challenge the great monarch，But man was not to their Xiaolou Luo something tragic hit the light-headed！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-i" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-j" mid="71"><![CDATA[<html>I&#39;m busy，I rushed to the treasure ah。</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Orc King$<BR>>Hei hei……If I had this degree of injury by the words，So guys……<FONT color=#7e12d2>(Must live happily)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-j" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-k" mid="73"><![CDATA[<html>Did not you say the words for you，You will give me the right Orc family treasures。</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Orc King$<BR>Treasure? What if ah? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-k" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-l" mid="75"><![CDATA[<html>Feed，Is not the intention...</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Orc King$<BR>Hei hei，So you also get a glimpse of our family treasures ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-l" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-m" mid="77"><![CDATA[<html>That you give me ah！</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Orc King$<BR>Shu Bei，<BR>
+Do you really want to do our family treasures？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-m" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-n" mid="79"><![CDATA[<html>Feed…Well，Even if the treasure...</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Orc King$<BR>I did not approach，And so will ah。I Orc King，Is the broken promises。<BR>
+<BR><FONT color=#7e12d2>（Orc King is searching for his underwear）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-n" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-o" mid="81"><![CDATA[<html>Well！</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Orc King$<BR>Find a moment to find……Our family treasures，<FONT color=#a82424>Hidden100In the pea，This is how chewing again，Treasures will not disappear。So I often chew，Usually been placed<FONT color=#a82424>Underpants</FONT>……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-o" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-p" mid="83"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Orc King$<BR>Ah，Do not want to even the。Then accept that it。<BR><BR><FONT color=#7e12d2>(Orc King rummage in your pocket)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-p" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-q" mid="85"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-q" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-r" mid="87"><![CDATA[<html>Ah，Want to challenge me ah?</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Orc King$<BR>Is now clear relationship between us，The remaining is to determine the winner of the！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-r" image="QN_NPC_Warrior_Lodrigo.dds" itemindex="">
+      <talk_question mid="88"><![CDATA[<html>$Orc King$<BR>BS！Got left for us a way duel Rights。I will again <FONT color=#a82424>Rodriguez</FONT>Send challenge book，On to a victory in it is legitimate when！<BR>
+Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4691,4692,4693,4694</exe>
+         <exe type="setquest">469</exe>
+         <exe type="talk" npc="n098_warrior_master_lodrigo">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5,6">1131</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">300092</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">201131</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1131);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">469</exe>
+         <exe type="recompense">,4691,4692,4693,4694</exe>
+         <exe type="delquestitem" num="1">300092</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="h">0</exelink>
+   <exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n098_warrior_master_lodrigo" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="b" />
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="c" />
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="d" />
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="e" />
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="f" />
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="g" />
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="h" />
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="i">0,2,7,1</exelink>
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="b">2</exelink>
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="c" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="d" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="e" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="f" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="g" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="h" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="i" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="j" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="k" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="l" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="m" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="n" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="o" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="p">1</exelink>
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="q">0</exelink>
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="r" />
+   <journal_data recompense="1:4691,2:4692,3:4693,4:4694" quest_title="부활한 김오크" chapterid="" quest_level="29" quest_mark_type="10" use_item_list="300068">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Lodrigo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n98</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>98</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Dialogue with senior soldiers Rodriguez]]></title>
+         <contents mid="91"><![CDATA[<html>Gold from the orcs get the second challenge that the book，Not，A letter。Contents of the letter to Rodriguez Consulting bar。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→Senior Warrior Rodriguez</FONT><BR>
+ </html>]]></contents>
+         <destination mid="92"><![CDATA[Dialogue with senior soldiers Rodriguez]]></destination>
+         <todo_msg mid="93"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_Orc_Oneeye.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13,n243</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>243</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="95"><![CDATA[Dialogue with the orcs]]></title>
+         <contents mid="96"><![CDATA[<html>According to the letter，Orc Gold Hill Point will be waiting for me in Montenegro。Go there and look at it。<BR><BR><FONT color=#086171>Montenegro hill angle</FONT> <FONT color=#a82424>→Orc King</FONT></html>]]></contents>
+         <destination mid="97"><![CDATA[Dialogue with the orcs]]></destination>
+         <todo_msg mid="98"><![CDATA[To the mountains of Montenegro and the Orcs Dialogue right angle。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_43.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>432,0,0</destination_pos>
+         <destination_mode>custom:431@1,432@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="99"><![CDATA[Find orc gold valuables]]></title>
+         <contents mid="100"><![CDATA[<html>The Orc King said amnesia seems to valuables lost in the dark territory of the garrison base。In order to help restore memory Orc King，Go and find his lost valuables bar。<BR>
+<BR>
+<FONT color=#086171>Montenegro hill angle（Dark Overlord of the barriers）</FONT> <FONT color=#a82424>→Dark Territory garrison base</FONT></html>]]></contents>
+         <destination mid="101"><![CDATA[Find orc gold valuables]]></destination>
+         <todo_msg mid="102"><![CDATA[Into the dark territory of garrison locations to find the missing valuables orc gold bar！]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QM_Orc_Oneeye.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13,n243</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>243</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="103"><![CDATA[Dialogue with the orcs]]></title>
+         <contents mid="104"><![CDATA[<html>Orc gold valuables like a weapon。Orc King confirmed it back to where。<BR><BR>
+<FONT color=#086171>Montenegro hill angle</FONT> <FONT color=#a82424>→Orc King</FONT></html>]]></contents>
+         <destination mid="105"><![CDATA[Dialogue with the orcs]]></destination>
+         <todo_msg mid="106"><![CDATA[Back to the Orc King, where it and its dialogue。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>29:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>468</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

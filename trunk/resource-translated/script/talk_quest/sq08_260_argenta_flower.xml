@@ -1,0 +1,562 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_260_argenta_flower</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>260</qid>
+      <designer>김인정</designer>
+      <qlevel>15</qlevel>
+      <qdesc>300136(성역의 꽃다발)
+데커드에게 퀘스트 수락.
+아르젠타에게.
+숲의 성역에서 각 맵마다 있는 데이비드와 대화.
+보스클리어 후 데이비드와 대화. 성역의 꽃다발 습득.
+아르젠타에게 꽃다발을 주고 보상을 받음.
+3번 퀘스트로.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Ambitious level]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>184</npcid>
+         <npcename>n184_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Algerita$<BR>…Wait can really make Fana。<BR><FONT color=#7e12d2>（President of Dai Kade from adventurer to accept the task before the public to continue）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Adventurer David Kraft$<BR>Seems to need my signature ah。Does fit to sign a free，Oh。<BR><FONT color=#7e12d2>（President of Dai Kade from adventurer to accept the task before the public to continue）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Who <FONT color=#a82424>Seniors Female Swordsman</FONT>How was recently ah?<BR>Is not often go to visit her ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="11"><![CDATA[<html>Be，If I do it occasionally...</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Do not look at her appearance and strength of conviction，In fact, only a<FONT color=#a82424>Delicate young lady</FONT></FONT>。Usually there will be problems such as，<BR>You often in the past to help her bar。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="13"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Ambitious level$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Ah，Well, as it should！Be kind to her oh。<BR>No matter what people say，After all, she is your<FONT color=#a82424>Savior</FONT> It，Ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Ah，Only on the Well！Be kind to her oh。<BR>Anyway，After all, she is your<FONT color=#a82424>Savior</FONT></FONT>Ah，Haha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-1" image="" itemindex="">
+      <talk_question mid="147"><![CDATA[<html>$Adventurer David Kraft$<BR>You need my signature on？<BR>
+I can help you to sign a free，Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-a" mid="153"><![CDATA[<html>Even this is not so right？</html>]]></talk_answer>
+      <talk_question mid="151"><![CDATA[<html>$Algerita$<BR><FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>，You came too late……<BR>
+I do not make you run back to you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-b" mid="155"><![CDATA[<html>When I……</html>]]></talk_answer>
+      <talk_question mid="154"><![CDATA[<html>$Algerita$<BR>
+Why？？Feed……<BR>
+Savior for you to do things，You want to talk back？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-2" mid="157"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="156"><![CDATA[<html>$Algerita$<BR>
+Ah～Noisy dead！<BR>So when you，I thought the following should allow you to do。<BR>
+Find you can do this Ruangu Tou，It is not easy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>One is the benefactor to save the life，Oh can not forget。<BR>Do not understand the words of gratitude，And those nasty ogre What is the difference ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2" image="QS_Default.dds" itemindex="300136">
+      <talk_answer link_index="n164_argenta_wounded-2-a" mid="24"><![CDATA[<html>Still painful right？</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Algerita$<BR>You go and I have collected<FONT color=#a82424>Sanctuary flowers</FONT>。I use it to treat wounds。<BR>Acquisition spend that sort of thing，Even the cat can do。You should be all right？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2-a" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-2-b" mid="32"><![CDATA[<html>…Unlike a heart problem ah 。</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Algerita$<BR>How、How could！！<BR>
+Do you think I would be bothered by such a small injury you？<BR>I just thought of that<FONT color=#a82424>Damn</FONT>，Feel a little bad。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2-b" image="QW_15.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-2-party1" mid="34"><![CDATA[<html>Ah，I&#39;ll be back。</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Algerita$<BR>Ah～How do you so much nonsense ah？<BR>BS，Go<FONT color=#a82424>Forest Sanctuary</FONT>Help me to collect<FONT color=#a82424>Sanctuary flowers</FONT>。Little better。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2-c" image="" itemindex="">
+      <talk_question mid="172"><![CDATA[<html>$Algerita$<BR>Would also like to take on something that people in the past ah?<BR>On your<FONT color=#a82424>A person</FONT>Bygones。<BR><FONT color=#7e12d2>（Team can not be the task under）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2-d" image="" itemindex="">
+      <talk_question mid="167"><![CDATA[<html>$Algerita$<BR>
+Kuaiqukuaihui！<BR>
+So slow，Careful I kick your butt！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3" image="QW_15.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Algerita$<BR>Although troublesome，But I&#39;ll tell you expound on this fool。In<FONT color=#a82424>Forest Sanctuary</FONT>In turn about，You can see what I want to spend the。Get them back on the line。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-3" image="" itemindex="">
+      <talk_answer link_index="n184_slave_david-3-a" mid="39"><![CDATA[<html>（Oh strange person）</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Unidentified juveniles$<BR>Oh……<FONT color=#a82424>Devil King 昆扎拉雷斯 泰尔波尔纳 奇库埃尔托比埃 Er Naer</FONT>What is also not。I<FONT color=#a82424>David Super Warriors</FONT>Before，Is a Sangjiazhiquan。Ha，Ha，Ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-3-a" image="" itemindex="">
+      <talk_answer link_index="n184_slave_david-3-b" mid="171"><![CDATA[<html>……Let me give you a？</html>]]></talk_answer>
+      <talk_question mid="170"><![CDATA[<html>$Adventurer David Kraft${action:Talk}<BR>
+Why？<BR>
+Ha……You should not be a special trip to an adult audience with David Let me？Damn popular……How so busy ah。<BR>
+What a poor adventurer……Well！Do you want my signature？！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-3-b" image="" itemindex="">
+      <talk_answer link_index="n184_slave_david-3-c" mid="42"><![CDATA[<html>（I came to flowers）</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Adventurer David Kraft$<BR>Etc.、Etc.！！！I am here all the property of Monster<FONT color=#a82424>The great adventurer David</FONT>All！！<BR>If you want to name for oneself，On to other places to go hunting right！You know?！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-3-c" image="QS_Default.dds" itemindex="300136">
+      <talk_answer link_index="n184_slave_david-3-d" mid="44"><![CDATA[<html>（Ignore him，Go somewhere else）</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Adventurer David Kraft$<BR>Flower?What flower? …Do you mean in the wild flowers in full bloom near you?！<BR>When，Of course, these flowers are my<FONT color=#a82424>David</FONT>Adults！！If you even dared to touch them，I will not spare you！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-3-d" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Adventurer David Kraft$<BR>You this guy！You ignore my existence?If you dared to touch a flower here，I will never forgive you！！<BR><FONT color=#7e12d2>（To smooth the adoption of the bouquet，It seems better to go elsewhere)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-4" image="" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Adventurer David Kraft$<BR>You、You will regret it！！You will regret not seeking my knees！<BR><FONT color=#7e12d2>(To smooth the adoption of the bouquet，It seems better to go elsewhere)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-5" image="" itemindex="">
+      <talk_answer link_index="n184_slave_david-5-a" mid="58"><![CDATA[<html>Over the bar with you。</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html><FONT color=#2b2723><FONT color=#2b2723>$Adventurer David Kraft$</FONT><BR>Ha，Ha，Ha。We met again，<FONT color=#a82424>Rookie</FONT>Adventurer。<BR>Have you followed me David adults over the right rear end？Oh。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-5-a" image="" itemindex="">
+      <talk_answer link_index="n184_slave_david-5-b" mid="60"><![CDATA[<html>（Ignore）</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Adventurer David Kraft$<BR>Hum！You can say the only thing over Daoshi！！<BR>You still want to adopt a flower you go here？！I repeat，Those flowers are my～！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-5-b" image="" itemindex="">
+      <talk_answer link_index="n184_slave_david-5-c" mid="62"><![CDATA[<html>……Have you any idea in play？</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Adventurer David Kraft$<BR>Etc.，Wait！！<BR>
+……Hum，Sounds nice。I even make adults rush David……<BR>Well，I<FONT color=#a82424>Special</FONT>Allows you to adopt those flowers。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-5-c" image="" itemindex="">
+      <talk_answer link_index="n184_slave_david-5-d" mid="115"><![CDATA[<html>……Let me open。</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Adventurer David Kraft$<BR>But，Without my help，Like you<FONT color=#a82424>Rookie</FONT>May not be able to live here，Give point<FONT color=#a82424>Gratuity</FONT>It。<BR><FONT color=#a82424>100Gold</FONT>！ How，Cheap bar?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-5-d" image="" itemindex="">
+      <talk_question mid="116"><![CDATA[<html>$Adventurer David Kraft$<BR>After…Regret is useless！Enter，Into the next map and then regret the late Rights！！<BR><FONT color=#7e12d2>(To smooth the adoption of the bouquet，It seems better to go elsewhere)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-6" image="" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Adventurer David Kraft$<BR>You、You will regret it！！You will regret not seeking my knees！<BR><FONT color=#7e12d2>(To smooth the adoption of the bouquet，It seems better to go elsewhere)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-7" image="" itemindex="">
+      <talk_answer link_index="n184_slave_david-7-a" mid="76"><![CDATA[<html>Oh，Eh……</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Adventurer David Kraft$<BR>I for one stroke eliminate Monster are here recharge your batteries in it。<BR><FONT color=#a82424>Not the fear of，You can not get me wrong~！！ </FONT><FONT color=#2b2723>Know?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-7-a" image="QS_Default.dds" itemindex="300136">
+      <talk_answer link_index="n184_slave_david-7-b" mid="78"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Adventurer David Kraft$<BR>Ah，This guy looks like you will do business the only thing pretty? Well。I used these flowers made a sanctuary<FONT color=#a82424>Bouquet</FONT>，I<FONT color=#a82424>Specialized</FONT>！ Cheap sell you what。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-7-b" image="" itemindex="">
+      <talk_answer link_index="n184_slave_david-7-c" mid="80"><![CDATA[<html>Oh you。</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Adventurer David Kraft${action:Talk}<BR>I&#39;ll give you a price，<FONT color=#a82424>50Gold</FONT>!！！How 样？<BR>I will<FONT color=#a82424>Escort</FONT>You，Safely away from here！<BR>
+Ha，Ha，Ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-7-c" image="" itemindex="">
+      <talk_question mid="81"><![CDATA[<html>$Adventurer David Kraft$<BR>This，This is the last chance ah！ Into the next map and then may later regret Oh！！<BR><FONT color=#7e12d2>(To smooth the adoption of the bouquet，It seems better to go elsewhere)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-8" image="" itemindex="">
+      <talk_question mid="117"><![CDATA[<html>$Adventurer David Kraft$<BR>Damn……You will regret it。You really will regret it！<BR><FONT color=#7e12d2>(To smooth the adoption of the bouquet，It seems better to go elsewhere)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-9" image="" itemindex="">
+      <talk_answer link_index="n184_slave_david-9-a" mid="119"><![CDATA[<html>…What it also hide。</html>]]></talk_answer>
+      <talk_question mid="118"><![CDATA[<html>$Adventurer David Kraft$<BR>Oh…Ah well。Of course，If my words，Also effortlessly Rights...<BR>But you this<FONT color=#a82424>Rookie</FONT>Well guys do not rely on ? Ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-9-a" image="QS_Default.dds" itemindex="300136">
+      <talk_answer link_index="n184_slave_david-9-b" mid="121"><![CDATA[<html>Bouquet just was not done right?</html>]]></talk_answer>
+      <talk_question mid="120"><![CDATA[<html>$Adventurer David Kraft$<BR>Say，Say！ Do not casually<FONT color=#a82424>Slander</FONT>Okay people，Really mean！！<BR>I have been doing this<FONT color=#a82424>Sanctuary of the bouquet</FONT>To the，Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-9-b" image="" itemindex="">
+      <talk_answer link_index="n184_slave_david-9-c" mid="123"><![CDATA[<html>（There&#39;s nothing language of the）</html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$Adventurer David Kraft$<BR>Because Monster&#39;s strength is weak，So I just<FONT color=#a82424>You</FONT>About it！！<BR>…I am polite<FONT color=#a82424>Treat you</FONT>，Instead you will be so rude?<BR><FONT color=#7e12d2>（David turned exaggerated）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-9-c" image="QS_Default.dds" itemindex="300136">
+      <talk_answer link_index="n184_slave_david-9-d" mid="125"><![CDATA[<html>Money。</html>]]></talk_answer>
+      <talk_question mid="124"><![CDATA[<html>$Adventurer David Kraft${action:Talk}<BR>Anyway, no use for me too，This<FONT color=#a82424>Specialized</FONT>Give you anyway。See you almost<FONT color=#a82424>Feel grateful</FONT>Look，Let the 忍忍，Oh。<BR><FONT color=#7e12d2>（David threw the bouquet over Holy Realm）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-9-d" image="" itemindex="">
+      <talk_question mid="126"><![CDATA[<html>$Adventurer David Kraft$<BR>Oh，I have only to<FONT color=#a82424>Reward you</FONT> The trouble to find here。<BR>Do you think I like Henzai<FONT color=#a82424>Rookie</FONT>People do? Oh…Really funny。<BR><FONT color=#7e12d2>（Swing up and staring at the DavidPOSE）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n184_slave_david-10" image="" itemindex="">
+      <talk_question mid="127"><![CDATA[<html>$Adventurer David Kraft$<BR>Rookie，You also want to be like me, who do? Ha ha ha。<BR><FONT color=#7e12d2>（Swing up and staring at the DavidPOSE）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-a" mid="129"><![CDATA[<html>Ah...?</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$Algerita$<BR>I thought you were a mindless guy，It seems not a。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-b" mid="131"><![CDATA[<html>Take it anyway。</html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$Algerita$<BR><FONT color=#a82424>More</FONT>Mindless of the very ah 。<BR>On this matter，Also charge for so long ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-b" image="QS_Default.dds" itemindex="300136">
+      <talk_answer link_index="n164_argenta_wounded-10-c" mid="133"><![CDATA[<html>You should bring?</html>]]></talk_answer>
+      <talk_question mid="132"><![CDATA[<html>$Algerita$<BR><FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>！How do you have to be mean ah? Spend enough on this point which ah。<BR>Children to be mean，What the future can become？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-d" mid="135"><![CDATA[<html>Ah... Ah...</html>]]></talk_answer>
+      <talk_question mid="134"><![CDATA[<html>$Algerita$<BR>Forget it。<BR>See you weak enough，The more trouble you&#39;re in crunch。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-e" mid="137"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="136"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-f" mid="139"><![CDATA[<html>What do ah?</html>]]></talk_answer>
+      <talk_question mid="138"><![CDATA[<html>$Algerita$<BR>Ah，With you so much rubbish，Also strange hunger。<BR>Well then do me a favor? Ah?Busy? …I do not care。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-f" image="" itemindex="">
+      <talk_question mid="149"><![CDATA[<html>$Algerita$<BR>What do you want...<BR>Ah，I want to be，First so you will ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-10" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-10-a" mid="145"><![CDATA[<html>Ah... Only casually prepared。</html>]]></talk_answer>
+      <talk_question mid="142"><![CDATA[<html>$Company president Dai Kade adventurer$<BR>Oh，That<FONT color=#a82424>Bouquet</FONT>Is<FONT color=#a82424>Seniors Female Swordsman</FONT>Prepared for you?You，Oh, did not see it！Girls like to spend the only thing in this respect，Ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-10-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="146"><![CDATA[<html><FONT color=#2b2723>$Company president Dai Kade adventurer$<BR>This treat<FONT color=#a82424>Benefactor</FONT>The attitude is very satisfying ah。I hope you also make persistent efforts in the future，Ha ha。<BR></FONT><FONT color=#7e12d2>（Dai Kade hearty laugh）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,2601,2602,2603,2604</exe>
+         <exe type="setquest">260</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="3,0,1" false="4">0</exe>
+         <exe type="talk" npc="n164_argenta_wounded">d</exe>
+         <exe type="talk" npc="n164_argenta_wounded">c</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">8</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="8">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="9">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300136</exe>
+         <exe type="setstep">10</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="10">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2601,2602,2603,2604</exe>
+         <exe type="delquestitem" num="-1">300136</exe>
+         <exe type="complete">260</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="c">1,2</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="2">0</exelink>
+   <exelink qstep="2" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="2" npc="n164_argenta_wounded" sub="party1">2</exelink>
+   <exelink qstep="3" npc="n184_slave_david" sub="b" />
+   <exelink qstep="3" npc="n184_slave_david" sub="c" />
+   <exelink qstep="3" npc="n184_slave_david" sub="d">0,1</exelink>
+   <exelink qstep="5" npc="n184_slave_david" sub="b" />
+   <exelink qstep="5" npc="n184_slave_david" sub="c" />
+   <exelink qstep="5" npc="n184_slave_david" sub="d">0,1</exelink>
+   <exelink qstep="7" npc="n184_slave_david" sub="b" />
+   <exelink qstep="7" npc="n184_slave_david" sub="c">0,1</exelink>
+   <exelink qstep="9" npc="n184_slave_david" sub="b" />
+   <exelink qstep="9" npc="n184_slave_david" sub="c" />
+   <exelink qstep="9" npc="n184_slave_david" sub="d">0,1,2</exelink>
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="d">0</exelink>
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="e">1,2</exelink>
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="f" />
+   <journal_data recompense="1:2601,2:2602,3:2603,4:2604" quest_title="원대한 스케일" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="300136">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,n164</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Dai Kade concerns]]></title>
+         <contents mid="91"><![CDATA[<html>What seems to be errand Algerita。See<FONT color=#a82424>Gray ruins</FONT>Of<FONT color=#a82424>Algerita</FONT>It。<BR><BR><FONT color=#086171>Gray ruins</FONT> <FONT color=#a82424>→ Algerita</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[And the gray ruins of Algerita dialogue]]></destination>
+         <todo_msg mid="93"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_15.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>121,n184</destination_pos>
+         <destination_mode>121@4,122@4,123@4,124@4</destination_mode>
+         <statemark_npcid>184</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[Algerita command]]></title>
+         <contents mid="95"><![CDATA[<html>Algerita to healing，Need <FONT color=#a82424>Sanctuary of the bouquet</FONT>。Use<FONT color=#a82424>Forest Sanctuary</FONT>Sanctuary of the white flower bouquet to do it。<BR>
+<FONT color=#7e12d2>(Team can not perform the task under)<BR></FONT><BR><FONT color=#086171>Gray ruins（Violations of the sanctuary entrance）</FONT> <FONT color=#a82424>→ Forest Sanctuary</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[(Single)Sanctuary Forest Sanctuary to look for flowers]]></destination>
+         <todo_msg mid="97"><![CDATA[Sanctuary for Sacred in the forest of flowers it。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_15.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>122,n184</destination_pos>
+         <destination_mode>121@4,122@4,123@4,124@4</destination_mode>
+         <statemark_npcid>184</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="98"><![CDATA[Strange people]]></title>
+         <contents mid="99"><![CDATA[<html>Since there named<FONT color=#a82424>David</FONT>Strange people，Can not successfully adopt to spend。Move，Sanctuary of flowers can be collected to find the place it。<BR><BR><FONT color=#086171>Gray ruins(The Sacred invasion of entry)</FONT> <FONT color=#a82424>→ Forest Sanctuary</FONT></html>]]></contents>
+         <destination mid="100"><![CDATA[The bouquet for the search to find Sacred Forest Sanctuary]]></destination>
+         <todo_msg mid="101"><![CDATA[To find Sanctuary The depth of the bouquet and then moving it。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_15.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>123,n184</destination_pos>
+         <destination_mode>121@4,122@4,123@4,124@4</destination_mode>
+         <statemark_npcid>184</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="102"><![CDATA[David&#39;s cry]]></title>
+         <contents mid="103"><![CDATA[<html><FONT color=#a82424>David</FONT>I can not always prevent collection bouquet。To find<FONT color=#a82424>Sanctuary of the bouquet</FONT>The depth of the road it。<BR><BR><FONT color=#086171>Gray ruins（Violations of the sanctuary entrance）</FONT> <FONT color=#a82424>→ Forest Sanctuary</FONT></html>]]></contents>
+         <destination mid="104"><![CDATA[The bouquet for the search to find Sacred Forest Sanctuary]]></destination>
+         <todo_msg mid="105"><![CDATA[To find Sanctuary The depth of the bouquet and then moving it。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QW_15.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>124,n184</destination_pos>
+         <destination_mode>121@4,122@4,123@4,124@4</destination_mode>
+         <statemark_npcid>184</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="107"><![CDATA[Sanctuary of the bouquet]]></title>
+         <contents mid="108"><![CDATA[<html>To not<FONT color=#a82424>David</FONT>Hindrance，And obtain<FONT color=#a82424>Sanctuary of the bouquet</FONT>，The depth of the road was re-。<BR><BR><FONT color=#086171>Gray ruins（Violations of the sanctuary entrance）</FONT> <FONT color=#a82424>→ Forest Sanctuary</FONT></html>]]></contents>
+         <destination mid="109"><![CDATA[The bouquet for the search to find Sacred Forest Sanctuary]]></destination>
+         <todo_msg mid="110"><![CDATA[To find Sanctuary The depth of the bouquet and then moving it。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist>300136</need_itemlist>
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="111"><![CDATA[Unexpected bouquet]]></title>
+         <contents mid="112"><![CDATA[<html>Surprisingly, obtained <FONT color=#a82424>Sanctuary of the bouquet</FONT>。It to <FONT color=#a82424>Algerita</FONT>It。<BR><BR><FONT color=#086171>Gray ruins</FONT> <FONT color=#a82424>→ Algerita</FONT></html>]]></contents>
+         <destination mid="113"><![CDATA[And the gray ruins of Algerita dialogue]]></destination>
+         <todo_msg mid="114"><![CDATA[And the gray ruins of Algerita dialog and。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>259</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

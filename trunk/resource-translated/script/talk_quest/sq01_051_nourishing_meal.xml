@@ -1,0 +1,355 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq01_051_nourishing_meal</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>51</qid>
+      <designer>김주연</designer>
+      <qlevel>2</qlevel>
+      <qdesc>300065(하운드의 먹이),300066(하운드 영양식)</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[The dog&#39;s nutrition]]></qkname>
+      <qnpc>
+         <npcid>2</npcid>
+         <npcename>n002_trader_dorin</npcename>
+         <npckname>대장장이 도린 (프레리 무기상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>3</npcid>
+         <npcename>n003_trader_dolis</npcename>
+         <npckname>상인 도리스 (프레리 잡화상)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-noquest" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Merchant Doris$<BR>Hello，Adventurer。What can I do for you？<BR><FONT color=#7e12d2>(Must</FONT><FONT color=#a82424>Blacksmith Dowling</FONT><FONT color=#7e12d2>There can only proceed after receiving the task)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-a" mid="7"><![CDATA[<html>What do you do？</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Blacksmith Dowling$<BR>You now have the time to do？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-b" mid="9"><![CDATA[<html>Have，You talk。</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Blacksmith Dowling$<BR>Ah，Not the other，I have a piece affair……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-b" image="QM_HoundNormal_2.dds" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-c" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Blacksmith Dowling$<BR>Thank you。A few days ago，My grocery store<FONT color=#a82424>Merchant Doris</FONT>Where to buy a big<FONT color=#a82424>Wild dogs</FONT>。But to come back only to find，This guy even walking walk。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-c" image="QM_HoundNormal_2.dds" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-d" mid="13"><![CDATA[<html>Eh……</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Blacksmith Dowling$<BR>According to Doris said,，This is captured in the shadow of the forest<FONT color=#a82424>Jump in the wild hound</FONT>。What kind of thing in this……I am also a businessman，Businessmen say there must be a credit Caixing Well。I feel like being cheated by Doris，But there is no evidence。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-d" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-e" mid="15"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Blacksmith Dowling$<BR>So……Can you help me to<FONT color=#a82424>Doris</FONT>Trip there，Only way to walk the dogs are<FONT color=#a82424>Drained away</FONT>，Or<FONT color=#a82424>Change</FONT>One other hound you？I can not leave the blacksmith&#39;s shop，So like you to help me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$The dog&#39;s nutrition$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Blacksmith Dowling$<BR>It please the。I would tell you<FONT color=#a82424>Merchant Doris</FONT>，Her<FONT color=#a82424>&#39;ll Leave</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-a" mid="20"><![CDATA[<html>Dowling said that would like to return or exchange a hound。</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Merchant Doris${action:Talk}<BR><FONT color=#a82424>Blacksmith Dowling</FONT>Buy<FONT color=#a82424>Hound</FONT>The state is not okay？<BR>Can not ah。Our store sells only<FONT color=#a82424>High quality</FONT>Of<FONT color=#a82424>Brand-name products</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-a" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-b" mid="22"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>Ah！Returns，Replacement！<BR>You do not know the rules of our stores is<FONT color=#a82424>Replacement</FONT>、<FONT color=#a82424>Refund</FONT>、<FONT color=#a82424>Returns</FONT>、<FONT color=#a82424>Credit</FONT><FONT color=#a82424>All declined</FONT>You？Sorry，Please tell Dowling，This is impossible。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-b" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-c" mid="24"><![CDATA[<html>(………………)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Merchant Doris$<BR>What are you waiting for？Come back to tell him not work。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-c" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-d" mid="26"><![CDATA[<html>(………………………)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Merchant Doris$<BR>Feed……Do you hear me speak？I will let you quickly go back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-d" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-e" mid="28"><![CDATA[<html>(Lying on the ground)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Merchant Doris$<BR>Feed，Please do not bother me to do business。You go back soon～！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-e" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-f" mid="30"><![CDATA[<html>How do you want it？Your money back？</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Merchant Doris$<BR>Oh！Feed……Feed！You……What are you doing！I know，You quickly stand up。Well！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-f" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-g" mid="32"><![CDATA[<html>(Lying on the ground)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>You&#39;re a formidable……But the refund or replacement is definitely impossible。<BR>This relates to<FONT color=#a82424>I10Years of experience in business</FONT>Of<FONT color=#a82424>Self-esteem</FONT>。I can not order such things and destroy their business Road……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-g" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-h" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Merchant Doris$<BR>Feed……Feed！Call……Well you heard me finish！Although not Return，But I will help you think of other ways。I would like to<FONT color=#a82424>Hound</FONT>Walk road of reason，May be because<FONT color=#a82424>Homesickness</FONT>The reason。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-h" image="QW_1.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-i" mid="36"><![CDATA[<html>……After all you still want me to solve？</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>So as long as it felt<FONT color=#a82424>The taste of home</FONT>，It effort to restore a past。Place to capture the hound is<FONT color=#a82424>Shadow Forest foothills</FONT>，Please go to<FONT color=#a82424>Shadow Forest foothills</FONT>Collect some of the dogs eat the food。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-i" image="QW_1.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-2" mid="38"><![CDATA[<html>…Know。</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Merchant Doris$<BR>What are you talking ah？You collect what is material to a。I will use my<FONT color=#a82424>Secret recipe</FONT>，Produce dogs can feel the taste of home<FONT color=#a82424>Hound nutrition</FONT>。Please go and collect material it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2" image="QW_1.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>Please go to<FONT color=#a82424>Shadow Forest foothills</FONT>Remove<FONT color=#a82424>Hound</FONT>，To collect the dog&#39;s food。<BR>I will do here to prepare nutritious food production。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-3" image="QS_Default.dds" itemindex="300065">
+      <talk_answer link_index="n003_trader_dolis-3-a" mid="41"><![CDATA[<html>You。(Out the dog&#39;s food)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Merchant Doris$<BR>The dog&#39;s food you get back？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-3-a" image="QS_Default.dds" itemindex="300065">
+      <talk_answer link_index="n003_trader_dolis-3-b" mid="43"><![CDATA[<html>(Doris is a strange chemical substances produced……)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Merchant Doris$<BR>Hard work。Put food in to……Stir……Fry then this……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-3-b" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n003_trader_dolis-4" mid="45"><![CDATA[<html>(Got a strange substance)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Merchant Doris$<BR>Well，Do the。Take the matter<FONT color=#a82424>Blacksmith Dowling</FONT>Home<FONT color=#a82424>Hound</FONT>Eat，It will be reborn again become a。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-4" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>Well，Please send it to<FONT color=#a82424>Blacksmith Dowling</FONT>。<BR>So I credit the higher the。Ha ha ha～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-4-a" mid="48"><![CDATA[<html>(Note once again from beginning to end things)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Blacksmith Dowling$<BR>Doris how to say？Would certainly say that it absolutely can not return or exchange……？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-a" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-4-b" mid="50"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Blacksmith Dowling$<BR>Sure enough, I expected……Anyway，You do very well。<BR>Thank you for helping me，This is the point you <FONT color=#a82424>Acknowledge</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-b" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-4-c" mid="52"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-c" image="QM_HoundNormal_2.dds" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Blacksmith Dowling$<BR>Thank you。See you next time。<BR><FONT color=#7e12d2>(Blacksmith Dowling took the hound dogs went to the nutritious food)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment xml:space="preserve">
+</comment>
+      <conditions />
+      <executions>
+         <exe type="setquest">51</exe>
+         <exe type="recompense_view">,511,512,512,512</exe>
+         <exe type="talk" npc="n002_trader_dorin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="">111</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">105</exe>
+         <exe type="huntitem" num="10" exe="7,5,6" onexe="">300065</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">300065</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300065</exe>
+         <exe type="addquestitem" num="1">300066</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,511,512,512,512</exe>
+         <exe type="delquestitem" num="-1">300066</exe>
+         <exe type="complete">51</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n002_trader_dorin" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n002_trader_dorin" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n003_trader_dolis" sub="b" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="c" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="d" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="e" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="f" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="g" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="h" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="i" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="2">1,2,3,4</exelink>
+   <exelink qstep="3" npc="n003_trader_dolis" sub="b" />
+   <exelink qstep="3" npc="n003_trader_dolis" sub="4">0,1,2,3</exelink>
+   <exelink qstep="4" npc="n002_trader_dorin" sub="b">0</exelink>
+   <exelink qstep="4" npc="n002_trader_dorin" sub="c">1,2</exelink>
+   <journal_data recompense="1:511,2:512" quest_title="하운드의 영양식" chapterid="" quest_level="2" quest_mark_type="10" use_item_list="300065,300066">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_Doris.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,755.95,1811.22</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>3</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>대장장이 도린</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>상인 도리스</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Doris stubbornness]]></title>
+         <contents mid="55"><![CDATA[<html><FONT color=#a82424>Blacksmith Dowling</FONT>That he not long ago<FONT color=#a82424>Merchant Doris</FONT>Where to buy<FONT color=#a82424>Hound</FONT>Walk way，I request a refund or replacement whereabouts Doris。<BR>
+ <BR>
+<FONT color=#086171>Pourailly town</FONT> <FONT color=#a82424>→ Merchant Doris</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[And businessmen Doris dialogue]]></destination>
+         <todo_msg mid="57"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_1.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>52,0,0</destination_pos>
+         <destination_mode>custom:51@3,52@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>상인 도리스</start_npc>
+         <desc_location>그늘 숲 기슭</desc_location>
+         <step_action>사냥/수집</step_action>
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster>하운드</hunt_monster>
+         <hunt_monsterindex>103,105</hunt_monsterindex>
+         <collect_item>하운드 먹이 10개</collect_item>
+         <collect_itemindex>300065</collect_itemindex>
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[Nutrition of food ingredients]]></title>
+         <contents mid="59"><![CDATA[<html>Doris Dowling said merchants to buy the blacksmith&#39;s dog got homesick like，That prepare nutritious food for dogs。<BR> 
+Go<FONT color=#a82424>Shadow Forest foothills</FONT>Catch<FONT color=#a82424>Hound</FONT>，To collect the dog&#39;s food。<BR> 
+<BR> 
+<FONT color=#086171>Shadow Forest(Shaded forest paths)</FONT> <FONT color=#a82424>→ Shadow Forest foothills</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[The shadow of the foothills to the forest to collect food for dogs]]></destination>
+         <todo_msg mid="61"><![CDATA[Go to the foot of the shadow of the forest to collect food for dogs。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_Doris.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,755.95,1811.22</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>3</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>그늘 숲 기슭</get_location>
+         <start_npc />
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>상인 도리스</complete_npc>
+         <get_item>하운드의 영양식</get_item>
+         <get_itemindex>300066</get_itemindex>
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[The dog&#39;s nutritionⅠ]]></title>
+         <contents mid="63"><![CDATA[<html>The foothills in the shadow of the forest to collect food to the dogs<FONT color=#a82424>Merchant Doris</FONT>。<BR><BR><FONT color=#086171>Pourailly town</FONT> <FONT color=#a82424>→ Merchant Doris</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[And businessmen Doris dialogue]]></destination>
+         <todo_msg mid="65"><![CDATA[The dog&#39;s food to collect complete。Go back to see business Doris。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-962.33,49.29</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>2</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>상인 도리스</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>대장장이 도린</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[The dog&#39;s nutritionⅡ]]></title>
+         <contents mid="67"><![CDATA[<html>Produced by the Doris<FONT color=#a82424>Hound nutrition</FONT>To<FONT color=#a82424>Blacksmith Dowling</FONT>。<BR><BR><FONT color=#086171>Pourailly town</FONT> <FONT color=#a82424>→ Blacksmith Dowling</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[And dialogue blacksmith Dowling]]></destination>
+         <todo_msg mid="69"><![CDATA[Please Doris nutritious food to the dogs produced by blacksmiths Dowling。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>2:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1:2</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

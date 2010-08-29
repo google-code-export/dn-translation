@@ -1,0 +1,591 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_266_argenta_darkelf</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>266</qid>
+      <designer>김인정</designer>
+      <qlevel>21</qlevel>
+      <qdesc>300115(다크엘프의 목걸이)
+아르젠타에게 의뢰 수락
+1번맵에서 데이비드와 조우.
+2번 맵에서 다시 데이비드와 대화.
+3번 맵에서 보스맵 가기 전의 데이비드와 대화.
+보스전 마친 후 데이비드와 대화. 목걸이 습득.
+아르젠타에게 보고.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>267</nextqid>
+      <nextqname>sq08_267_crisis_of_david</nextqname>
+      <nextqnpc>n164_argenta_wounded</nextqnpc>
+      <qkname mid="1"><![CDATA[Algerita and Dark Elves]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>190</npcid>
+         <npcename>n190_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드(돌아오지 못하는 길)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>191</npcid>
+         <npcename>n191_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드(잿빛 폐허)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Adventurer David Kraft$<BR>Seems to need my signature ah。Does fit to sign a free，Oh。<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n191_slave_david-noquest" image="" itemindex="">
+      <talk_answer link_index="n191_slave_david-noquest-a" mid="110"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="109"><![CDATA[<html>$Adventurer David Kraft$<BR>Ha ha ha。 I even can become<FONT color=#a82424>Algerita</FONT>Miss Great Knight，You need not envy，Oh。 The pursuit of winning the world had very harsh。<BR><FONT color=#7e12d2>（David caught his imagination which）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n191_slave_david-noquest-a" image="" itemindex="">
+      <talk_question mid="111"><![CDATA[<html>$Adventurer David Kraft$<BR>Ha ha ha。  Is Algerita spotted me so quickly you ? Oh... But my popularity， Ha ha ha。<BR>
+<FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-a" mid="9"><![CDATA[<html>Do not end it。</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Algerita$<BR>Ah~Heard of no return，Because you，That <FONT color=#a82424>Ai Leina</FONT> Not have to bite the evacuated? That<FONT color=#a82424>Nasty Dark Elves</FONT>Moment should be the look of your gas like it，Hei hei。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-party1" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Algerita$<BR>Of course, ah，Who finished?<BR>In short <FONT color=#a82424>Xiao Pihai</FONT>So，To the point of a face on the bragging? Hum。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-b" image="" itemindex="">
+      <talk_question mid="129"><![CDATA[<html>$Algerita$<BR>Something to make you do，But a man came ah。Do not worry about the people around，One over on you。<BR><FONT color=#7e12d2>（Team can not be the task under）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-c" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-d" mid="13"><![CDATA[<html>Dark Elves?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Algerita$<BR>Although we have successfully withstood the further spread of contaminants，But what it had to deal with the aftermath。So，<FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>！！Then <FONT color=#a82424>No return</FONT>Further remove unwanted <FONT color=#a82424>Dark Elves</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-d" image="QS_Default.dds" itemindex="300115">
+      <talk_answer link_index="n164_argenta_wounded-accepting-e" mid="15"><![CDATA[<html>Dark Elves necklace? What is it?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Algerita$<BR>Ah，Also as evidence of your work，Again with some <FONT color=#a82424>Dark Elves</FONT> Held<FONT color=#a82424>Dark Elves necklace</FONT>Return。<BR>Do not say a necklace also brings back the oh?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-e" image="QM_DarkelfGray.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-f" mid="17"><![CDATA[<html>Be，Understand。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Algerita$<BR>Ah，Although made with good gemstone necklace，But, after all, they take off，I do not need。Anyway, this is to<FONT color=#a82424>Sure you have any serious work</FONT>Only。Other nonsense，Kuaiqukuaihui it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-acceptted" mid="19"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Algerita and Dark Elves$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Algerita$<BR><FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>！！<BR>There are many things to do then，Do not think of lazy ah。<BR>
+<FONT color=#7e12d2>(In the deep level of difficulty can not be under)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-1" image="" itemindex="">
+      <talk_answer link_index="n190_slave_david-1-a" mid="23"><![CDATA[<html>（Really do not want to control these things...）</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Adventurer David Kraft$<BR>Have been waiting for you，You&#39;re smelly<FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>！！！<BR><FONT color=#7e12d2>（David denounced voice cry）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-1-a" image="" itemindex="">
+      <talk_answer link_index="n190_slave_david-1-b" mid="25"><![CDATA[<html>See…What did see?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Adventurer David Kraft$<BR>Ha ha ha。 Is not afraid and I<FONT color=#086171><FONT color=#a82424>The sharp eyes</FONT></FONT>On visual ah！ Oh。But I clearly see！With my sharp eyes！！！<BR><FONT color=#7e12d2>（David pointed to his eyes without seeking desireless）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-1-b" image="" itemindex="">
+      <talk_answer link_index="n190_slave_david-1-c" mid="27"><![CDATA[<html>Ah? Beauty? …Who? Where? What?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Adventurer David Kraft$<BR>That of course is，Let my eyes the<FONT color=#a82424>Stunning beauty</FONT>！ As if<FONT color=#a82424>Xiu Shui ditch of a rose</FONT>Is<FONT color=#a82424>Sparkling diamond dust and mud</FONT>... Not，Be <FONT color=#a82424>Ruby</FONT>... Not... Ah，Anyway！！ Is<FONT color=#a82424>A beautiful woman with you</FONT>Ah！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-1-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n190_slave_david-1-d" mid="29"><![CDATA[<html>Pitiful?Kindly? …Is Algerita?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Adventurer David Kraft$<BR>In<FONT color=#a82424>Gray ruins</FONT> <FONT color=#a82424>Poor</FONT>Leaning，<FONT color=#a82424>Kindly</FONT>Who&#39;s watching you<FONT color=#a82424>Beauty</FONT>！<BR>Would also like to pretend you do not know?！You&#39;re damn guy！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-1-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n190_slave_david-1-e" mid="31"><![CDATA[<html>...<FONT color=#382000>{user_nick}</FONT>Where, how friends！！</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Adventurer David Kraft$<BR>Well uh！ Who <FONT color=#382000>Pitiful、</FONT> <FONT color=#7e12d2>Beautiful、</FONT> <FONT color=#a94407>Good</FONT> Ms. Fang-called<FONT color=#a82424>Algerita</FONT>Yes！ Ha ha ha。Really...Even take the name of all that is full of flavor！！ And<FONT color=#382000>{user_nick}This kind</FONT> Compared with the empty name is simply the difference between heaven and earth Well！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-1-e" image="" itemindex="">
+      <talk_answer link_index="n190_slave_david-1-f" mid="33"><![CDATA[<html>（Just keep moving lot, actually...）</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Adventurer David Kraft${action:Talk}<BR>Ha ha ha。 I &#39;s time strange，During this time, why do you guys do those<FONT color=#a82424>Boring</FONT> Thing，Now finally<FONT color=#a82424>Found the answer</FONT>！！ Ah ah~ I had to gasp in admiration own<FONT color=#a82424>Intelligence and wisdom</FONT>， Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-1-f" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n190_slave_david-1-g" mid="35"><![CDATA[<html>（The commission said 明Algerita）</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Adventurer David Kraft$<BR>Ah，Something done today is to come ah? Who<FONT color=#382000>Pitiful</FONT> <FONT color=#7e12d2>Beautiful</FONT> <FONT color=#a94407>Kindly</FONT>Lady glowing tears，To you that<FONT color=#a82424>Rookie</FONT>What&#39;s the matter entrusted?！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-1-g" image="QM_DarkelfGray.dds" itemindex="">
+      <talk_answer link_index="n190_slave_david-1-h" mid="37"><![CDATA[<html>I do not need help ah。</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Adventurer David Kraft$<BR><FONT color=#a82424>Dark Elves</FONT>... Oh。 For me in terms of the great adventurer David， <FONT color=#a82424>Dark Elves</FONT>At most is simply<FONT color=#a82424>The corner of the eye can be uniform</FONT> Of<FONT color=#a82424>Presence</FONT>Only，Ha ha ha。 You this guy，Today, I run into you hit the Grand Canal Operator Rights，Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-1-h" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Adventurer David Kraft$<BR>Oh！Want to <FONT color=#a82424>Algerita</FONT> Miss a good performance, right?This is impossible！Polish your eyes good to see me<FONT color=#a82424>Magnificent</FONT>Skills it~！！ <FONT color=#7e12d2>（Self-confidence and looking at the empty cries of the）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n191_slave_david-1" image="" itemindex="">
+      <talk_question mid="125"><![CDATA[<html>$Adventurer David Kraft${action:Talk}<BR>Ha ha ha。It seems that you have no confidence and I am better than the bar，The present era is the era of competition！！ Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-2" image="" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Adventurer David Kraft$<BR>Ha ha ha。 Polish your eyes good to see me<FONT color=#a82424>Magnificent</FONT>Skills it~！！ <BR><FONT color=#7e12d2>（David was confident and looking at the empty cry）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-3" image="" itemindex="">
+      <talk_answer link_index="n190_slave_david-3-a" mid="42"><![CDATA[<html>（Seems to be afraid of it this way）</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Adventurer David Kraft$<BR>Ha ha ha。 I&#39;m not afraid of those who <FONT color=#a82424>Monster was so</FONT>！！<BR>
+Absolutely！！Not！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-3-a" image="" itemindex="">
+      <talk_answer link_index="n190_slave_david-3-b" mid="44"><![CDATA[<html>Anyway, let me open。</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Adventurer David Kraft$<BR>For<FONT color=#a82424>Rookie</FONT>You think I like the general <FONT color=#a82424>Coward</FONT>！But！！Now, I just<FONT color=#a82424>Strategic and tactical</FONT>Put it here under consideration array ！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-3-b" image="QM_DarkelfGray.dds" itemindex="">
+      <talk_answer link_index="n190_slave_david-3-c" mid="46"><![CDATA[<html>Ah then grab Dark Elves。</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Adventurer David Kraft$<BR>Ha ha ha。 Unfortunately，I will not retreat from here，Now I have to capture the dark wizard， Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-3-c" image="QM_DarkelfGray.dds" itemindex="">
+      <talk_answer link_index="n190_slave_david-3-d" mid="48"><![CDATA[<html>（Stunned）</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Adventurer David Kraft${action:Talk}<BR>You&#39;re<FONT color=#a82424>Rookie</FONT>，Oh。I was waiting for <FONT color=#a82424>Dark Elves here</FONT>。 I was not very impressed<FONT color=#a82424>Endurance</FONT>Ah? Ha ha ha。Then enjoy the <FONT color=#a82424>Amazed</FONT>It，Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-3-d" image="" itemindex="">
+      <talk_answer link_index="n190_slave_david-3-e" mid="50"><![CDATA[<html>Road to look When you&#39;re on the line...</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Adventurer David Kraft$<BR>Ah，Want to come there <FONT color=#a82424>As Longxue，Then nothing is Dragon</FONT>！ Well then，May well be a way to directly grasp。 Ha ha ha。I&#39;m a generous，So as long as <FONT color=#a82424>You grab it with</FONT>It can be considered together with the past，Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-3-e" image="" itemindex="">
+      <talk_answer link_index="n190_slave_david-3-f" mid="52"><![CDATA[<html>Not mean that，But quickly get out of the ah...！！</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Adventurer David Kraft$<BR><FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>，Since you begged me so，As a great adventurer let me<FONT color=#a82424>Specialized</FONT>Help you look at it，Oh。…Ah，Let it go forward quickly， Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-3-f" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Adventurer David Kraft$<BR>Oh do not be too impressed，Ha ha ha。Understand<FONT color=#a82424>Rookie</FONT>Of<FONT color=#a82424>Even a little bit of hard work</FONT>The help will also be imposed<FONT color=#a82424>Great adventurer</FONT>Obligations as Well，Ha ha ha。<BR>
+<FONT color=#7e12d2>（David has not heard any word into the）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-4" image="" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Adventurer David Kraft$<BR><FONT color=#382000>{user_nick}</FONT>，Since you begged me so，As a great adventurer let me<FONT color=#a82424>Specialized</FONT>Help you look at it，Oh。…Ah，Let it go forward quickly， Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-5" image="QS_Default.dds" itemindex="300115">
+      <talk_answer link_index="n190_slave_david-5-a" mid="56"><![CDATA[<html>You got？</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Adventurer David Kraft${action:talk}<BR>Newbie，Look you seem to not be<FONT color=#a82424>Dark Elves necklace</FONT>Yes，Ha ha ha。<BR>
+Do not worry！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-5-a" image="" itemindex="">
+      <talk_answer link_index="n190_slave_david-5-b" mid="128"><![CDATA[<html>Hey… Ah…（After all, I grab ah）</html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html><FONT color=#a82424><FONT color=#2b2723>$Adventurer David Kraft$</FONT></FONT><BR>
+Hey，I believe I David adult bar！ Ha ha ha。Can<FONT color=#a82424>Ogre Zhu Baca</FONT>Around<FONT color=#a82424>Resident Camp Dark Elf</FONT>Get necklace，Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-5-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$Adventurer David Kraft$<BR>You have to look at my<FONT color=#a82424>Gorgeous</FONT>Of<FONT color=#a82424>Work</FONT>Oh posture，And then to lay it in to <FONT color=#a82424>Algerita</FONT>Miss consulting his！！ Ha ha ha。<BR><FONT color=#7e12d2>（David began posturing）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-6" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Adventurer David Kraft$<BR>You have to look at my<FONT color=#a82424>Gorgeous</FONT>Of<FONT color=#a82424>Work</FONT>Oh posture，And then to lay it in to <FONT color=#a82424>Algerita</FONT>Miss consulting his！！ Ha ha ha。<BR><FONT color=#7e12d2>（David began posturing）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-7" image="" itemindex="">
+      <talk_answer link_index="n190_slave_david-7-a" mid="61"><![CDATA[<html>Sure where Tibet…Did not see you, ah?</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Adventurer David Kraft$<BR>Ha ha ha。I focus on eradication of<FONT color=#a82424>Ogre Zhu Baca</FONT>When，You have been given<FONT color=#a82424>Necklace</FONT>Yes， Oh。 <FONT color=#a82424>Dark Elves</FONT> Zhu Baca than Ogre is simply pale into insignificance Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-7-a" image="" itemindex="">
+      <talk_answer link_index="n190_slave_david-7-b" mid="63"><![CDATA[<html>How could。</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Adventurer David Kraft$<BR>Even，What if！！ You did not see me<FONT color=#a82424>Gorgeous but lightning</FONT>Action！ Oh。 So like you<FONT color=#a82424>Rookie</FONT>Certainly can not see, ah！！！ Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-7-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n190_slave_david-7-c" mid="66"><![CDATA[<html>（What is a common practice Algerita tube ah...）</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Adventurer David Kraft$<BR>Say tut-tut，Own<FONT color=#a82424>Ignorance</FONT>You have to be passed on to someone else? Rookie！In short I believe you will see this matter to my<FONT color=#a82424>Great</FONT>，Ha ha ha。 <FONT color=#a82424>Algerita</FONT>I will miss at least better than you know how strong this guy a lot， Oh。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-7-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n190_slave_david-7-david89" mid="68"><![CDATA[<html>（How become your Algerita?）</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Adventurer David Kraft$<BR>Is not approaching <FONT color=#a82424>My</FONT> Algerita Miss me there<FONT color=#382000>Excellent、</FONT><FONT color=#7e12d2> Professional、</FONT> <FONT color=#a94407>Sharp unparalleled</FONT> <FONT color=#a82424>Skill</FONT>Honestly report to her，Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-7-d" image="" itemindex="">
+      <talk_answer link_index="n190_slave_david-7-david90" mid="118"><![CDATA[<html>（…Lawlessness ah you！！！）</html>]]></talk_answer>
+      <talk_question mid="117"><![CDATA[<html>$Adventurer David Kraft$<BR>Ha ha ha。 See you this posture，You this guy…And I is the difference between heaven and earth！It&#39;s like！！ <FONT color=#a82424>Heroes Ballner and junior soldiers</FONT>！！ General！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-7-e" image="" itemindex="">
+      <talk_answer link_index="n190_slave_david-7-david91" mid="133"><![CDATA[<html>（While we Elves and orcs have a world of difference between the aesthetic standards）</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Adventurer David Kraft$<BR>Ha ha ha。 Jealousy is the right？ Oh…But even if you looked like a cute，But if and Algerita may compared with Miss！！！ Gap between heaven and earth ah！！！Is<FONT color=#a82424>Man and Orc Hero Neil</FONT>！！ This degree of difference it！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-7-f" image="" itemindex="">
+      <talk_answer link_index="n190_slave_david-7-david92" mid="122"><![CDATA[<html>(As a pastor is not the angry ah…)</html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$Adventurer David Kraft$<BR>Ha ha ha。 Ha ha ha。 See you this posture，You this guy…And I is the difference between heaven and earth！It&#39;s like！！<FONT color=#a82424>Hero Tai Lansi and trainee priests</FONT>！！！ General！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-7-g" image="" itemindex="">
+      <talk_answer link_index="n190_slave_david-7-david93" mid="124"><![CDATA[<html>（This guy，Really want to beat up meal！！！）</html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$Adventurer David Kraft$<BR>Ha ha ha。 Jealousy is the right？ Oh…But even if you looked like a cute，But if and Algerita may compared with Miss！！！ Gap between heaven and earth ah！！！Is<FONT color=#a82424>Kara autumn and trainee wizard hero</FONT>！！ General！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-7-h" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$Adventurer David Kraft$<BR>Ha ha ha。 <FONT color=#a82424>Algerita</FONT> If fancy I&#39;ll miss if I find it difficult to do…But，As a hero not so random discard beauty heart ah， Oh。<BR><FONT color=#7e12d2>（David in his fancy which）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n190_slave_david-8" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Adventurer David Kraft$<BR>Ha ha ha。Even if I become<FONT color=#a82424>Algerita</FONT>Miss Great<FONT color=#a82424>Knight</FONT>，You do not<FONT color=#a82424>Jealousy</FONT>，Oh。 But the pursuit of winning the world<FONT color=#a82424>Grim</FONT>Oh, cruel。<BR><FONT color=#7e12d2>（David deep hollow among fantasy）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-a" mid="72"><![CDATA[<html>…You have less to worry about it。</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Algerita$<BR>Really slow！！And what?How also had brought a <FONT color=#a82424>Tail</FONT>Back again? <BR>
+<FONT color=#7e12d2>（Algerita point in a direction。Seems to hide under the direction of a</FONT><FONT color=#a82424>Acquaintance</FONT><FONT color=#7e12d2>）</FONT><BR>
+All the way with you，You actually did not find? Ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-a" image="QS_Default.dds" itemindex="300115">
+      <talk_answer link_index="n164_argenta_wounded-8-b" mid="74"><![CDATA[<html>（Necklace submitted Dark Elves）</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Algerita$<BR>Even if you do not say，I will not pipe? Hum。In addition to my<FONT color=#a82424>Slave</FONT>Outside，My guys are not interested in any。<BR>
+Ah，Not me，To me the first thing you bring it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-c" mid="76"><![CDATA[<html>Is it worrying about me?</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Algerita$<BR>To gather the kind of thing，How it took so long？<BR>
+I thought you were dead, then。<BR>Forget it，Since you came back alive，Even if the bar。This time I will forgive you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-d" mid="78"><![CDATA[<html>Oh…Ah really endless。</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Algerita$<BR>Sure，I have no other<FONT color=#a82424>Slave</FONT>，If you follow the above who died, I let<FONT color=#a82424>Errand</FONT>Ah?<BR>Ah，Oh, the lazy from time to again。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-e" mid="80"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-!next" mid="82"><![CDATA[<html>What do the ah?</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Algerita$<BR>Certainly not over yet。How much was done，Ah so you ?<BR>
+小屁孩 children。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n191_slave_david-8" image="" itemindex="">
+      <talk_answer link_index="n191_slave_david-8-a" mid="114"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="113"><![CDATA[<html>$Adventurer David Kraft$<BR>Ha ha ha。Even if I become<FONT color=#a82424>Algerita</FONT>Miss Great Knight，You do not<FONT color=#a82424>Jealousy</FONT>，Oh。 But the pursuit of winning the world<FONT color=#a82424>Grim</FONT>Oh, cruel。<BR><FONT color=#7e12d2>（David deep hollow among fantasy）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n191_slave_david-8-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="115"><![CDATA[<html>$Adventurer David Kraft${action:Talk}<BR>Ha ha ha。 Is <FONT color=#a82424>Algerita</FONT>Miss spotted me so quickly?<BR>Oh…My Popularity，Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">266</exe>
+         <exe type="talk" npc="n164_argenta_wounded">1</exe>
+         <exe type="recompense_view">,2661,2662,2663,2664</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n164_argenta_wounded">c</exe>
+         <exe type="talk" npc="n164_argenta_wounded">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">608</exe>
+         <exe type="addquestitem" num="1">300115</exe>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200608</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 608);</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,4,5">300115</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">8</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="conexe" true="5" false="3">0</exe>
+         <exe type="conexe" true="6" false="4">1</exe>
+         <exe type="conexe" true="8" false="7">2</exe>
+         <exe type="talk" npc="n190_slave_david">d</exe>
+         <exe type="talk" npc="n190_slave_david">e</exe>
+         <exe type="talk" npc="n190_slave_david">f</exe>
+         <exe type="talk" npc="n190_slave_david">g</exe>
+         <exe type="talk" npc="n190_slave_david">h</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="8">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300115</exe>
+         <exe type="recompense">,2661,2662,2663,2664</exe>
+         <exe type="complete">266</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="party1">3</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="f">2</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n190_slave_david" sub="b" />
+   <exelink qstep="1" npc="n190_slave_david" sub="c" />
+   <exelink qstep="1" npc="n190_slave_david" sub="d" />
+   <exelink qstep="1" npc="n190_slave_david" sub="e" />
+   <exelink qstep="1" npc="n190_slave_david" sub="f" />
+   <exelink qstep="1" npc="n190_slave_david" sub="g" />
+   <exelink qstep="1" npc="n190_slave_david" sub="h">0,1</exelink>
+   <exelink qstep="3" npc="n190_slave_david" sub="b" />
+   <exelink qstep="3" npc="n190_slave_david" sub="c" />
+   <exelink qstep="3" npc="n190_slave_david" sub="d" />
+   <exelink qstep="3" npc="n190_slave_david" sub="e" />
+   <exelink qstep="3" npc="n190_slave_david" sub="f">0,1</exelink>
+   <exelink qstep="5" npc="n190_slave_david" sub="b">2,7,9,0,1</exelink>
+   <exelink qstep="7" npc="n190_slave_david" sub="b" />
+   <exelink qstep="7" npc="n190_slave_david" sub="c" />
+   <exelink qstep="7" npc="n190_slave_david" sub="david89">2</exelink>
+   <exelink qstep="7" npc="n190_slave_david" sub="david90">0,1,9</exelink>
+   <exelink qstep="7" npc="n190_slave_david" sub="david91">0,1,9</exelink>
+   <exelink qstep="7" npc="n190_slave_david" sub="david92">0,1,9</exelink>
+   <exelink qstep="7" npc="n190_slave_david" sub="david93">0,1,9</exelink>
+   <exelink qstep="8" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="8" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="8" npc="n164_argenta_wounded" sub="d">1</exelink>
+   <exelink qstep="8" npc="n164_argenta_wounded" sub="e">0,2</exelink>
+   <exelink qstep="8" npc="n164_argenta_wounded" sub="!next" />
+   <journal_data recompense="1:2661,2:2662,3:2663,4:2664" quest_title="아르젠타와 다크엘프" chapterid="" quest_level="21" quest_mark_type="10" use_item_list="300115">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_23.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>171,n190</destination_pos>
+         <destination_mode>custom:171@1</destination_mode>
+         <statemark_npcid>190</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[Ai Leina trail]]></title>
+         <contents mid="86"><![CDATA[<html><FONT color=#a82424>Algerita</FONT>Say，Even if <FONT color=#a82424>Ai Leina</FONT>Has been eliminated，Or be<FONT color=#a82424>No return</FONT>Do deal with the aftermath Caixing。Go destroy Dark Elf，To<FONT color=#a82424>Dark Elves necklace</FONT>Take it back as evidence。<BR><FONT color=#7e12d2></FONT><BR>
+<FONT color=#7e12d2>※In the team can not be under<BR></FONT><BR><FONT color=#086171>Crystal Valley(Sigh Canyon entrance)</FONT> <FONT color=#a82424>→ No return</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[（Single）Exploration of no return]]></destination>
+         <todo_msg mid="88"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_23.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>172,n190</destination_pos>
+         <destination_mode>custom:171@1,172@1</destination_mode>
+         <statemark_npcid>190</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[Ms. David referred to]]></title>
+         <contents mid="90"><![CDATA[<html>David said that<FONT color=#a82424>Pitiful、Beautiful、Ms. charity</FONT>Seems to refer to<FONT color=#a82424>Algerita</FONT>。I do not know what David will make things ridiculous，And the first not to move it。<BR>
+<BR>
+<FONT color=#086171>Crystal Valley（Sigh Canyon entrance）</FONT> <FONT color=#a82424>→ No return</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[Exploration of no return]]></destination>
+         <todo_msg mid="92"><![CDATA[Necklace is not here，Let&#39;s see it elsewhere。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_23.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>173,n190</destination_pos>
+         <destination_mode>custom:172@1,173@1</destination_mode>
+         <statemark_npcid>190</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[Necklace where?]]></title>
+         <contents mid="94"><![CDATA[<html>In short<FONT color=#a82424>David</FONT>Appears to have fixed on<FONT color=#a82424>Dark Elves necklace</FONT>。But it seems very afraid of a person&#39;s appearance over the past。Perhaps David will be with me，However, in order to obtain the necklace commissioned Algerita，Ah have to move on。BR>
+<BR>
+<FONT color=#086171>Crystal Valley（Sigh Canyon entrance）</FONT> <FONT color=#a82424>→ No return</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[Exploration of no return]]></destination>
+         <todo_msg mid="96"><![CDATA[Necklace is not here，Let&#39;s see it elsewhere。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QM_DarkelfGray.dds</contents_image>
+         <need_itemlist>300115</need_itemlist>
+         <destination_pos>174,0,0</destination_pos>
+         <destination_mode>custom:173@1,174@3</destination_mode>
+         <statemark_npcid>190</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="97"><![CDATA[Dark Elves necklace]]></title>
+         <contents mid="98"><![CDATA[<html>David said, according to，Can<FONT color=#a82424>Ogre Zhu Baca</FONT>Around <FONT color=#a82424>Dark Elves</FONT>Get necklace。Baca and the elimination of Ogre Zhu Necklace Dark Elves get it after。<BR><BR><FONT color=#086171>Crystal Valley(Sigh Canyon entrance)</FONT> <FONT color=#a82424>→ No return</FONT></html>]]></contents>
+         <destination mid="99"><![CDATA[Elimination of Dark Elves]]></destination>
+         <todo_msg mid="100"><![CDATA[Ogre Zhu Baca to eliminate the dark wizard with it。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>174,n190</destination_pos>
+         <destination_mode>custom:174@1</destination_mode>
+         <statemark_npcid>190</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="101"><![CDATA[Get necklace]]></title>
+         <contents mid="102"><![CDATA[<html>Has been<FONT color=#a82424>Dark Elves necklace</FONT>。After the elimination of all monsters，And no less than they are alone to help hide<FONT color=#a82424>David</FONT>Dialog and。<BR>
+<BR>
+<FONT color=#086171>No return</FONT> <FONT color=#a82424>→ Adventurer David Kraft</FONT></html>]]></contents>
+         <destination mid="103"><![CDATA[Dialogue with David]]></destination>
+         <todo_msg mid="104"><![CDATA[The necklace was a dark wizard。David dialog and。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom:174@1,9@1</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="105"><![CDATA[Safe return]]></title>
+         <contents mid="106"><![CDATA[<html>David Lai was no help。Anyway, got smooth<FONT color=#a82424>Dark Elves necklace</FONT>，On the <FONT color=#a82424>Gray ruins</FONT>The Algerita report it。<BR>
+<BR>
+<FONT color=#086171>Gray ruins</FONT> <FONT color=#a82424>→ 阿尔杰塔</FONT></html>]]></contents>
+         <destination mid="107"><![CDATA[Dialogue with Algerita]]></destination>
+         <todo_msg mid="108"><![CDATA[Report to the gray ruins of Algerita bar。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>21:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>215:265</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

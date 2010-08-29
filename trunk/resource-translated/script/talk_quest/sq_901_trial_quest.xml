@@ -1,0 +1,434 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq_901_trial_quest</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>901</qid>
+      <designer>곽노찬</designer>
+      <qlevel>15</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[The fate of young girls]]></qkname>
+      <qnpc>
+         <npcid>902</npcid>
+         <npcename>n902_lily</npcename>
+         <npckname>릴리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>903</npcid>
+         <npcename>n903_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>904</npcid>
+         <npcename>n904_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>905</npcid>
+         <npcename>n905_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n902_lily-accepting" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n902_lily-accepting-a" mid="6"><![CDATA[<html>Where her sister was taken to the？</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Lily$<BR>Adventurer……Hum……Sister……<FONT color=#a82424>Rose</FONT>Sister was taken away by a terrible monster。How to do it……Hum……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n902_lily-accepting-a" image="QW_1.dds" itemindex="">
+      <talk_answer link_index="n902_lily-accepting-acceptted" mid="8"><![CDATA[<html>I went to her，Waiting for you here。Do not worry。</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Lily$<BR>To<FONT color=#a82424>Shadow Forest foothills</FONT>Direction of the。<BR>提摩西哥哥 chase a sister，But I am worried that he could from the terrible monster out there to save sister。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n902_lily-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Lily$<BR>Thank you，Hum……You must take<FONT color=#a82424>Rose</FONT>Come back to save her sister and 提摩西哥哥。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n903_argenta-1" image="" itemindex="">
+      <talk_answer link_index="n903_argenta-1-a" mid="11"><![CDATA[<html>Who are you？</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Algerita$<BR>Cut……One step too late。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n903_argenta-1-a" image="" itemindex="">
+      <talk_answer link_index="n903_argenta-1-b" mid="13"><![CDATA[<html>I was asked by the person，Is looking for a girl。</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Algerita$<BR>Who can know how I？<BR>What do you come here？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n903_argenta-1-b" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n903_argenta-1-c" mid="15"><![CDATA[<html>Guy……？Who？</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Algerita$<BR>I have the same。<BR>That girl must be given<FONT color=#a82424>Guy</FONT>Before，Saved her……Damn！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n903_argenta-1-c" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n903_argenta-2" mid="17"><![CDATA[<html>Etc.，I went。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Algerita$<BR>Of course, is to get that girl<FONT color=#a82424>Guy</FONT>The。<BR>I do not have time to explain，Talk about it later，Child。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n903_argenta-2" image="QW_15.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Algerita$<BR>Hum……Whatever you。<BR>You along the right side of the road shaded forest，To<FONT color=#a82424>Forest Sanctuary</FONT>Go。<BR>I will be there for you，Faster。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n902_lily-2" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n902_lily-2-a" mid="20"><![CDATA[<html>I am sorry……Not found。</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Lily$<BR>Found<FONT color=#a82424>Rose</FONT>Sister of the right……？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n902_lily-2-a" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Lily$<BR>Ah……Sister Rose……Hum……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2" image="" itemindex="">
+      <talk_answer link_index="n904_argenta-2-a" mid="37"><![CDATA[<html>How like a girl？</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Algerita$<BR>Really slow……Action so slow，Do not give me trouble already thankful。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2-a" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n904_argenta-2-b" mid="39"><![CDATA[<html>Who is that？Why should young girls taken away？</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Algerita$<BR>Or was<FONT color=#a82424>Guy</FONT>Captured。<BR>Fortunately for the time being as if nothing，But do not know what will happen after。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2-b" image="" itemindex="">
+      <talk_answer link_index="n904_argenta-2-c" mid="41"><![CDATA[<html>Why should that person taken away girl ah？</html>]]></talk_answer>
+      <talk_answer link_index="n904_argenta-2-f" mid="42"><![CDATA[<html>Who is that ah？</html>]]></talk_answer>
+      <talk_answer link_index="n904_argenta-2-h" mid="43"><![CDATA[<html>Why are you looking for girls ah？</html>]]></talk_answer>
+      <talk_answer link_index="n904_argenta-2-l" mid="44"><![CDATA[<html>Who are you？</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Algerita$<BR>Asked one by one！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2-c" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n904_argenta-2-d" mid="46"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Algerita$<BR><FONT color=#a82424>Guy</FONT>A long time ago，Accidental……Not，Premeditated access to a certain great power。<BR>But that power is not human beings can bear。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2-d" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n904_argenta-2-e" mid="48"><![CDATA[<html>You can wake up the kind of girl power？</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Algerita$<BR>Therefore<FONT color=#a82424>Guy</FONT>Although access to a powerful force，But can not be used。<BR>
+So wake up the power he has been looking for ways。<BR>Now he finally found。That is the girl。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2-e" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n904_argenta-2-h" mid="50"><![CDATA[<html>Only girls can……？Who is that girl in the end……</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Algerita$<BR>Yes，There is only that<FONT color=#a82424>Girl</FONT>Can。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2-f" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n904_argenta-2-g" mid="52"><![CDATA[<html>Beisikede……What does his relationship？</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Algerita$<BR>That guy named<FONT color=#a82424>Beisikede</FONT>。<BR>Man who calls him The Dark Knight。<BR>Hum，Perfidious knight……Are ashamed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2-g" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n904_argenta-2-m" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_answer link_index="n904_argenta-2-b" mid="119"><![CDATA[<html>(Asked other questions)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Algerita$<BR>This is a Nie Yuan。<BR>Thought he could not see through the mask of evil，By his use of……<BR>Ah，Infuriating……You do not ask！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2-h" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n904_argenta-2-i" mid="57"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Algerita$<BR>You say you are looking for<FONT color=#a82424>Girl</FONT>，Do you not know her identity？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2-i" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n904_argenta-2-j" mid="59"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Algerita$<BR>That<FONT color=#a82424>Girl</FONT>Be<FONT color=#a94407>Descendants of ancient people</FONT>。<BR>A long time ago，There are human beings who called the Sage，Predicted the emergence of young girls。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2-j" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n904_argenta-2-k" mid="61"><![CDATA[<html>Ancient people……？What the ancient people？</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Algerita$<BR>He said，Pacific Star is raised when，Powerful forces have unprecedented awakening of the ancient people will。<BR>
+Although not sure<FONT color=#a82424>Girl</FONT>Is the prophecy of the ancient people，But the most powerful candidate。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2-k" image="" itemindex="">
+      <talk_answer link_index="n904_argenta-2-m" mid="121"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_answer link_index="n904_argenta-2-b" mid="122"><![CDATA[<html>(Asked other questions)</html>]]></talk_answer>
+      <talk_question mid="120"><![CDATA[<html>$Algerita$<BR>How do you ah so many questions？<BR>Why do I need to tell you explain the origins of the ancient people ah？Let yourself go slowly。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2-l" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n904_argenta-2-m" mid="63"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_answer link_index="n904_argenta-2-b" mid="123"><![CDATA[<html>(Asked other questions)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Algerita$<BR>I<FONT color=#a82424>Algerita</FONT>。<BR>And Geraint together，Have been the guy in the track。<BR>Other things，You do not need to know this child。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2-m" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n904_argenta-2-n" mid="73"><![CDATA[<html>……？This is all planned？</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Algerita$<BR>Can not be delayed，Must act quickly。<BR>You first go inside，Attract<FONT color=#a82424>He</FONT>Attention。<BR>I will take the opportunity to attack him from behind。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2-n" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n904_argenta-2-o" mid="75"><![CDATA[<html>Let me do that right bait……</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Algerita$<BR>>To。I am sorry，Words clash，I can not guarantee that we can overcome<FONT color=#a82424>Guy</FONT>。It can only find flaws，Surprise attack。I hope you let him surprising flaws。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-2-o" image="" itemindex="">
+      <talk_answer link_index="n904_argenta-3" mid="77"><![CDATA[<html>…Know。</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Algerita$<BR>To go to the bright side，But is the battle plans of the，Do not try too much，Child。<BR>Well，You advanced to。I will look for opportunities，Then in the past。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n904_argenta-3" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Algerita$<BR>Do Zhouzhao a brow。Hurry。<BR>Do all that in order to rescue<FONT color=#a82424>Girl</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n905_argenta-3" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n905_argenta-3-a" mid="80"><![CDATA[<html>How like a girl……？</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Algerita$<BR>Uh……Damn！<BR>If the previous，<FONT color=#a82424>Beisikede</FONT>I like the guy snaps his fingers as long as the first bomb went out on the fly，Damn……<BR>
+Did not think he&#39;s stronger than I thought。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n905_argenta-3-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n905_argenta-3-b" mid="82"><![CDATA[<html>Ah？</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Algerita$<BR>
+Course from<FONT color=#a82424>Guy</FONT>Back hand grab！<BR>
+On the，You！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n905_argenta-3-b" image="" itemindex="">
+      <talk_answer link_index="n905_argenta-3-c" mid="84"><![CDATA[<html>If this time Beisikede hiding，How are you going to do it……？</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Algerita$<BR>
+Well, after such injury，I will follow him back to。You have to wait on me this time。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n905_argenta-3-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n905_argenta-3-d" mid="86"><![CDATA[<html>I want to practice……Access can counterbalance the power of his。</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Algerita$<BR>Hum！Even if he was hiding，I can not escape<FONT color=#a82424>Algerita</FONT>The omnipotent！<BR>Anyway, this guy you are unable to move his finger。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n905_argenta-3-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n905_argenta-3-e" mid="88"><![CDATA[<html>Ah？……Slave……？？</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Algerita$<BR>Oh……？<BR>Ah，Well。<BR>If even this did not dare，Is not qualified to do<FONT color=#a82424>I</FONT>Of<FONT color=#a82424>Slave</FONT>Of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n905_argenta-3-e" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n905_argenta-3-f" mid="125"><![CDATA[<html><FONT color=#a94407>Thanks for Play!</FONT></html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Algerita$<BR>
+<FONT color=#7e12d2>(No attention to me)</FONT><BR>The story is just beginning！<BR><FONT color=#a82424>Beisikede</FONT>！You go Escape，Before we meet again，O death, you can do！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n905_argenta-3-f" image="" itemindex="">
+      <talk_question mid="126"><![CDATA[<html>$Dragon Valley$<BR>
+<FONT color=#7e12d2>Thank you for using Dragon Valley Experience Edition。<BR>Please look forward to the Valley of the formally launched dragon。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">901</exe>
+         <exe type="talk" npc="n902_lily">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">901</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n902_lily" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n903_argenta" sub="b" />
+   <exelink qstep="1" npc="n903_argenta" sub="c" />
+   <exelink qstep="1" npc="n903_argenta" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n904_argenta" sub="b" />
+   <exelink qstep="2" npc="n904_argenta" sub="c" />
+   <exelink qstep="2" npc="n904_argenta" sub="f" />
+   <exelink qstep="2" npc="n904_argenta" sub="h" />
+   <exelink qstep="2" npc="n904_argenta" sub="l" />
+   <exelink qstep="2" npc="n904_argenta" sub="d" />
+   <exelink qstep="2" npc="n904_argenta" sub="e" />
+   <exelink qstep="2" npc="n904_argenta" sub="h" />
+   <exelink qstep="2" npc="n904_argenta" sub="g" />
+   <exelink qstep="2" npc="n904_argenta" sub="m" />
+   <exelink qstep="2" npc="n904_argenta" sub="b" />
+   <exelink qstep="2" npc="n904_argenta" sub="i" />
+   <exelink qstep="2" npc="n904_argenta" sub="j" />
+   <exelink qstep="2" npc="n904_argenta" sub="k" />
+   <exelink qstep="2" npc="n904_argenta" sub="m" />
+   <exelink qstep="2" npc="n904_argenta" sub="b" />
+   <exelink qstep="2" npc="n904_argenta" sub="m" />
+   <exelink qstep="2" npc="n904_argenta" sub="b" />
+   <exelink qstep="2" npc="n904_argenta" sub="n" />
+   <exelink qstep="2" npc="n904_argenta" sub="o" />
+   <exelink qstep="2" npc="n904_argenta" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n905_argenta" sub="b" />
+   <exelink qstep="3" npc="n905_argenta" sub="c" />
+   <exelink qstep="3" npc="n905_argenta" sub="d" />
+   <exelink qstep="3" npc="n905_argenta" sub="e">0</exelink>
+   <exelink qstep="3" npc="n905_argenta" sub="f" />
+   <journal_data recompense="" quest_title="운명의 소녀" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_1.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13505,0,0</destination_pos>
+         <destination_mode>custom:13503@1,13504@1,13505@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[Save the girls]]></title>
+         <contents mid="95"><![CDATA[<htmlChildren encounter in the forest, said his sister, Lily Rose was hijacked Monster。<BR>
+Go<FONT color=#a82424>Shadow Forest foothills</FONT>Search<FONT color=#a82424>Rose</FONT>。</html>]]></contents>
+         <destination mid="96"><![CDATA[Search the foothills of the shadow of the forest]]></destination>
+         <todo_msg mid="97"><![CDATA[Go to the foot of the shadow of the forest to search for Rose。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13505,n903</destination_pos>
+         <destination_mode>custom:13505@1</destination_mode>
+         <statemark_npcid>903</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="100"><![CDATA[Seniors female swordsman]]></title>
+         <contents mid="101"><![CDATA[<html>Is on the foothills of the shadow of the forest to search。Timothy found Mingjiaoluosi and youth，But Rose was stolen monster，名叫提摩西 eventually die young。<BR>
+Then a woman wearing a red robe in front of me。<BR>
+And wearing a red robe of<FONT color=#a82424>Seniors female swordsman</FONT>Dialogue。</html>]]></contents>
+         <destination mid="102"><![CDATA[And silver female swordsman dialogue]]></destination>
+         <todo_msg mid="103"><![CDATA[Please wear red robes of silver female swordsman dialogue。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_15.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13509,n904</destination_pos>
+         <destination_mode>custom:13506@1,13507@1,13508@1,13509@1</destination_mode>
+         <statemark_npcid>904</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="105"><![CDATA[To Forest Sanctuary]]></title>
+         <contents mid="106"><![CDATA[<html>Seniors female swordsman that is tracking a young girl who wants to hijack。She let me go to the forest sanctuary，Then disappeared。<BR>
+Followed her to move to<FONT color=#a82424>Forest Sanctuary</FONT>。</html>]]></contents>
+         <destination mid="107"><![CDATA[Sacred forests and silver go to meet women swordsman]]></destination>
+         <todo_msg mid="108"><![CDATA[Move to the Forest Sanctuary，And seniors to meet female swordsman。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_knight_velskud_silhouette.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13510,0,0</destination_pos>
+         <destination_mode>custom:13509@1,13510@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="110"><![CDATA[Surprise]]></title>
+         <contents mid="111"><![CDATA[<html>To meet Forest Sanctuary and Algerita。<BR>
+Moved to the temple inside，Girl rescued。</html>]]></contents>
+         <destination mid="112"><![CDATA[Moved to the temple inside]]></destination>
+         <todo_msg mid="113"><![CDATA[Please move to the altar within the Temple。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Argenta_wounded.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13510,n905</destination_pos>
+         <destination_mode>custom:13510@1</destination_mode>
+         <statemark_npcid>905</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="114"><![CDATA[The fate of young girls]]></title>
+         <contents mid="115"><![CDATA[<html>And Algerita attacked with Beisikede，But the attack was that he came to a realization，Themselves but suffered heavy injuries。<BR>
+And<FONT color=#a82424>Algerita</FONT>Dialogue。</html>]]></contents>
+         <destination mid="116"><![CDATA[And injured Algerita dialogue]]></destination>
+         <todo_msg mid="117"><![CDATA[Please Algerita dialogue]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

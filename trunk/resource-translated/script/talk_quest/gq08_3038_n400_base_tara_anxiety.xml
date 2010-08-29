@@ -1,0 +1,202 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>gq08_3038_n400_base_tara_anxiety</qename>
+      <qtype>venturerquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>3038</qid>
+      <designer>나은하</designer>
+      <qlevel>10</qlevel>
+      <qdesc>$[길드의뢰] 타라의 근심 $
+안녕하세요, 저는 마나리지의 견습 소서리스 타라예요. 이렇게 공적인 장소에 글을 남기는 것이 좀 부끄럽긴 하네요. 하지만 앞으로 베껴 써야할 주문서가 100권에 실전 마법연습 시간이 3500시간이 남았으니, 정말 마나리지에선 꼼짝도 할 수 없어서요.
+어제 상급 소서리스 신시아님이 이런 말씀을 하셨어요.
+
+"아, 저 놈의 오크떼들! 저 놈들이 구룩거리는 소리 때문에 밤잠을 설쳤더니 다크서클이 무릎까지 내려올 기세잖아! 타라, 넌 뭐하니? 어서 가서 저 오크 놈들을 손 보지 못해?!"
+
+전 곧 승급 시험을 앞두고 있어서 눈코 뜰 새 없이 바쁘답니다. 누가 저의 장래와 신시아님의 우윳빛깔 피부를 위해서 습격대 거점의 오크들을 혼내주세요.
+
+참, 각별히 손을 봐주셔야 할 놈들은 하드 모드의 습격대 거점의 오크들이랍니다. 잊지 마세요.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Association commission]Tara concerns]]></qkname>
+      <qnpc>
+         <npcid>400</npcid>
+         <npcename>n400_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-accepting" image="GQ_hard.dds" itemindex="">
+      <talk_answer link_index="n400_guild_board-accepting-a" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Hello，I am a trainee magician magic Tara Ridge。<BR>
+In such public places a message，Makes you ashamed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-accepting-a" image="GQ_hard.dds" itemindex="">
+      <talk_answer link_index="n400_guild_board-accepting-b" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Adventurers Society Bulletin$<BR>
+But I have to write100Zhang reel，Have to be3,500Hours of actual practice magic，So I could not leave the magic mountain ridge。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-accepting-b" image="GQ_hard.dds" itemindex="">
+      <talk_answer link_index="n400_guild_board-accepting-c" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Yesterday evening，Cynthia told me that。<BR><FONT color=#7e12d2>“Ah，Those damn orcs！I did not sleep all night because they，Black eye it took to！Tara，What are you doing？Not quickly find ways to get rid of the orcs？！”</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-accepting-c" image="GQ_hard.dds" itemindex="">
+      <talk_answer link_index="n400_guild_board-accepting-d" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Adventurers Society Bulletin$<BR>I have to upgrade soon to participate in examination，Busy。Hope someone can for my future and Cynthia white skin，A lesson for me to attack the Orc team base。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-accepting-d" image="GQ_hard.dds" itemindex="">
+      <talk_answer link_index="n400_guild_board-accepting-e" mid="14"><![CDATA[<html>Orc attack team positions，Difficulty difficulty level and above clearance</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Adventurers Society Bulletin$<BR>
+On the，Special needs lessons，Be<FONT color=#a82424>Difficulty difficulty</FONT>Of<FONT color=#a82424>Orc attack team positions</FONT>Orcs。Please do not forget。<BR>
+<FONT color=#7e12d2> Principal：Tara magician</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n400_guild_board-accepting-f" mid="16"><![CDATA[<html><FONT color=#086171>(Entrusted)</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Commission award$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-accepting-f" image="GQ_hard.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$[Association commission]Tara concerns$<BR>The commission has accepted the Association。<BR>Please<FONT color=#a82424>More difficult problems</FONT>Clearance<FONT color=#a82424>Orc attack team positions</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-1" image="GQ_hard.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Now being implemented<FONT color=#a82424>[Association commission]Tara concerns</FONT>。<BR><BR>※ <FONT color=#7e12d2>The same bulletin board，Society can only accept a commission。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-2" image="GQ_hard_end.dds" itemindex="">
+      <talk_answer link_index="n400_guild_board-2-a" mid="22"><![CDATA[<html>[Commissioned] <FONT color=#086171>Tara concerns</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurers Society Bulletin$<BR>
+Completion of the commissioned adventurers Please complete the seal affixed to the power of attorney。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-2-a" image="" itemindex="">
+      <talk_answer link_index="n400_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Commission award$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-2-b" image="GQ_hard_end.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Association commissioned the adventurer has completed。<BR><BR><FONT color=#a82424>[Adventurers Association]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="stageConstructionLevel" op="]=">2</chk>
+      </conditions>
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,3038, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">30380,,,,</exe>
+         <exe type="checkStageClearRank" rand="6" num="107" onexe="5" true="[=" xsi:nil="true" />
+         <exe type="conexe" true="6,7,8" false="">0</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">30380,,,,</exe>
+         <exe type="complete">3038</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n400_guild_board" sub="e">3</exelink>
+   <exelink qstep="accepting" npc="n400_guild_board" sub="f">0,1,4,2</exelink>
+   <exelink qstep="2" npc="n400_guild_board" sub="a">0</exelink>
+   <exelink qstep="2" npc="n400_guild_board" sub="b">1</exelink>
+   <journal_data recompense="30380" quest_title="[길드의뢰] 타라의 근심" chapterid="" quest_level="10" quest_mark_type="19" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_12.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>107,0,0</destination_pos>
+         <destination_mode>custom:106@1,107@3</destination_mode>
+         <statemark_npcid>400</statemark_npcid>
+         <statemark_type>20</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[Orc attack team positions difficult to clearance problems]]></title>
+         <contents mid="27"><![CDATA[<html>More difficult to difficulties in customs clearance hit team orc stronghold。<BR><BR><FONT color=#086171>Melting Forest(Magician of the Road) <FONT color=#a82424>→ Orc attack team positions</FONT></FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[[Difficult]Orc attack team positions]]></destination>
+         <todo_msg mid="29"><![CDATA[Add complete adventurer Association commissioned。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_guild_board.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>7,n400</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>400</statemark_npcid>
+         <statemark_type>21</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[Association bulletin board to report the results adventurer]]></title>
+         <contents mid="31"><![CDATA[<html>To melt the forest adventurers Association bulletin board findings。<BR><BR><FONT color=#086171>Melting Forest</FONT><FONT color=#a82424>→ Adventurers Society Bulletin</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[Association bulletin board to report the results adventurer]]></destination>
+         <todo_msg mid="33"><![CDATA[Association commissioned the completion of the adventurer。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>10:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>3035</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>
