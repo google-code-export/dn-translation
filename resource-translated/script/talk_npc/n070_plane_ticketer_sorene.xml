@@ -1,0 +1,45 @@
+   <talk>
+      <npcename>n070_plane_ticketer_sorene</npcename>
+      <npcid>70</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Conductor Suolan Na]]></npckname>
+      <talk_paragraph index="001" image="QW_AirShip.dds" itemindex="">
+         <talk_answer link_index="quest" mid="10"><![CDATA[<html><FONT face=Arial size=2>[Task]</FONT></html>]]></talk_answer>
+         <talk_answer link_index="changemap" mid="11"><![CDATA[<html>[Take the airship]</html>]]></talk_answer>
+         <talk_answer link_index="completecutscene" mid="20"><![CDATA[<html></html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Conductor Suolan Na$<BR>Welcome。Fly<FONT color=#a82424>Kedella points</FONT>The airship is ready。<BR><FONT color=#a82424>Tickets</FONT>Price<FONT color=#a82424>5 Silver</FONT> 。<BR>Are you sure you want to take the airship you?<BR>
+※ <FONT color=#7e12d2>State can not take the airship team。</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="QW_AirShip.dds" itemindex="">
+         <talk_question mid="6"><![CDATA[<html>$Conductor Suolan Na$<BR>Very sorry，Mr. adventurer。The amount is not enough to buy your ticket。<FONT color=#a82424>Tickets</FONT>Price <FONT color=#a82424>5 Silver</FONT> 。Make sure your balance。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="12" link_target="mq11_401_castle_sainthaven.xml"><![CDATA[<html>[Lv24] <FONT color=#a94407>King City sacred paradise</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="35" link_target="sq11_543_blue_wolf_on_the_desert.xml"><![CDATA[<html>[Lv24] <FONT color=#086171>Desert Blue Wolf</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="sq11_544_fate_and_desire.xml"><![CDATA[<html>[Lv24] <FONT color=#086171>Noble destiny</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="sq11_545_vain_dream.xml"><![CDATA[<html>[Lv24] <FONT color=#086171>Fantasy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="sq11_546_the_place_left.xml"><![CDATA[<html>[Lv24] <FONT color=#086171>Left position</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="39"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Conductor Suolan Na$<BR>There are other events you?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="party_member" image="" itemindex="">
+         <talk_question mid="23"><![CDATA[<html>$Conductor Suolan Na$<BR>
+Very sorry，Mr. adventurer。In the team can not take the airship under。<BR>After temporarily out of the same class，Then take the airship。<BR>※ <FONT color=#7e12d2>State can not take the airship team。</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="6" false="1">0</exe>
+         <exe type="custom">api_user_DelCoin( userObjID, 500 );</exe>
+         <exe type="custom">api_user_PlayCutScene(userObjID,npcObjID,95,true);</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,8,1);</exe>
+         <exe type="conexe" true="3,4" false="7">1</exe>
+         <exe type="talk">party_member</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_user_GetCoin( userObjID ) >= 500</chk>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <exelink idx="changemap">2</exelink>
+      <exelink idx="completecutscene">5</exelink>
+   </talk>

@@ -1,0 +1,73 @@
+   <talk>
+      <npcename>n400_guild_board</npcename>
+      <npcid>400</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Adventurers Association Bulletin Board:Magician of the Road]]></npckname>
+      <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="4" link_target="gq05_3011_n400_marion_normal.xml"><![CDATA[<html>[Lv8] <FONT color=#086171>Brave the RoadⅠ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="5" link_target="gq05_3012_n400_marion_hunt.xml"><![CDATA[<html>[Lv8] <FONT color=#086171>Shattered Sword</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="22" link_target="gq08_3035_n400_base_help_sebastian.xml"><![CDATA[<html>[Lv10] <FONT color=#086171>Help me，Sebastian</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="23" link_target="gq08_3036_n400_base_hungry.xml"><![CDATA[<html>[Lv10] <FONT color=#086171>Hungry</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="gq08_3037_n400_base_enermy_plan.xml"><![CDATA[<html>[Lv10] <FONT color=#086171>Preponderance of reasons</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="25" link_target="gq08_3038_n400_base_tara_anxiety.xml"><![CDATA[<html>[Lv10] <FONT color=#086171>Tara concerns</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="26" link_target="gq08_3101_n400_fairy_normal.xml"><![CDATA[<html>[Lv18] <FONT color=#086171>Proud</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="gq08_3102_n400_fairy_hunt.xml"><![CDATA[<html>[Lv18] <FONT color=#086171>Collecting spider eggs</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="gq08_3103_n400_fairy_drop.xml"><![CDATA[<html>[Lv18] <FONT color=#086171>Challenge puzzle kingⅠ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="gq08_3104_n400_fairy_hard.xml"><![CDATA[<html>[Lv18] <FONT color=#086171>Kevin Little collectors Ⅶ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="30" link_target="gq08_3105_n400_fairy_boss.xml"><![CDATA[<html>[Lv18] <FONT color=#086171>Rehabilitation</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="31" link_target="gq08_3110_n400_fairy_rank.xml"><![CDATA[<html>[Lv18] <FONT color=#7e12d2>Proof of strength</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="32" link_target="gq08_3109_n400_fairy_abyss.xml"><![CDATA[<html>[Lv23] <FONT color=#7e12d2>Toward the abyss：Crusade laruns</FONT></html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Adventurers Association Bulletin Board${action:Talk} <BR>Currently the commission received the following。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="_no_quest" image="QN_guild_board.dds" itemindex="">
+         <talk_question mid="16"><![CDATA[<html>$Adventurers Association Bulletin Board${action:Talk}<BR>
+There is no commission received。 <BR><BR><FONT color=#086171> Orc hair restorer，Use 便知。Now people can beast out of trouble a shaved head。Hair spray will look，Trust me。</FONT> </html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="8" false="2">0</exe>
+         <exe type="conexe" true="9" false="3">1</exe>
+         <exe type="conexe" true="10" false="4">2</exe>
+         <exe type="conexe" true="11" false="5">3</exe>
+         <exe type="conexe" true="12" false="6">4</exe>
+         <exe type="conexe" true="13" false="7">5</exe>
+         <exe type="conexe" true="14" false="15">6</exe>
+         <exe type="enterquest">gq05_3011_n400_marion_normal</exe>
+         <exe type="enterquest">gq05_3012_n400_marion_hunt</exe>
+         <exe type="enterquest">gq08_3101_n400_fairy_normal</exe>
+         <exe type="enterquest">gq08_3102_n400_fairy_hunt</exe>
+         <exe type="enterquest">gq08_3103_n400_fairy_drop</exe>
+         <exe type="enterquest">gq08_3104_n400_fairy_hard</exe>
+         <exe type="enterquest">gq08_3105_n400_fairy_boss</exe>
+         <exe type="conexe" true="16" false="17">7</exe>
+         <exe type="enterquest">gq08_3110_n400_fairy_rank</exe>
+         <exe type="conexe" true="18" false="19">8</exe>
+         <exe type="enterquest">sq05_165_enter_adventure</exe>
+         <exe type="conexe" true="20" false="21">9</exe>
+         <exe type="enterquest">gq08_3109_n400_fairy_abyss</exe>
+         <exe type="conexe" true="25" false="22">10</exe>
+         <exe type="conexe" true="26" false="23">11</exe>
+         <exe type="conexe" true="27" false="24">12</exe>
+         <exe type="conexe" true="28" false="0">13</exe>
+         <exe type="enterquest">gq08_3035_n400_base_help_sebastian</exe>
+         <exe type="enterquest">gq08_3036_n400_base_hungry</exe>
+         <exe type="enterquest">gq08_3037_n400_base_enermy_plan</exe>
+         <exe type="enterquest">gq08_3038_n400_base_tara_anxiety</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">3011</chk>
+         <chk type="hasquest">3012</chk>
+         <chk type="hasquest">3101</chk>
+         <chk type="hasquest">3102</chk>
+         <chk type="hasquest">3103</chk>
+         <chk type="hasquest">3104</chk>
+         <chk type="hasquest">3105</chk>
+         <chk type="hasquest">3110</chk>
+         <chk type="hasquest">165</chk>
+         <chk type="hasquest">3109</chk>
+         <chk type="hasquest">3035</chk>
+         <chk type="hasquest">3036</chk>
+         <chk type="hasquest">3037</chk>
+         <chk type="hasquest">3038</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,193 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>gq11_3333_n410_timeruin_drop</qename>
+      <qtype>venturerquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>3333</qid>
+      <designer>김주연</designer>
+      <qlevel>36</qlevel>
+      <qdesc>리자드맨 블루(1213)
+/리자드맨의 메뚜기(400180)</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Association commission]Their secret]]></qkname>
+      <qnpc>
+         <npcid>410</npcid>
+         <npcename>n410_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurers Society Bulletin$<BR>This world，There is a secret you do not know。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-a" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-b" mid="70"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Adventurers Society Bulletin$<BR>You have not found……Pourailly town、Magic mountain ridges and Kedella crossing all look a like blacksmith？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-b" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-c" mid="72"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Oh，You must feel that their appearance was surprised it？Yes，They are not brothers！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-c" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-d" mid="76"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Adventurers Society Bulletin$<BR>
+They……Be……Brother and sister。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-d" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-e" mid="74"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Well，I told you such a good information，Approaching<FONT color=#a82424>The ruins of forgotten time</FONT>Go and I have collected some of<FONT color=#a82424>Tracker blue scales Lizardman</FONT>The Grasshopper Bar。I wanted to do kind of snacks。<BR><FONT color=#7e12d2>  Principal：BoasterP</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-f" mid="11"><![CDATA[<html><FONT color=#086171>（Entrusted）</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Commission award$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-f" image="GQ_item.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$[Association commission]Their secret$<BR>Go<FONT color=#a82424>The ruins of forgotten time<FONT color=#2b2723>Go</FONT>Collection<FONT color=#a82424>Lizard&#39;s Grasshopper</FONT></FONT><FONT color=#2b2723>。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-1" image="GQ_item.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Now being implemented<FONT color=#a82424>[Association commission]Their secret</FONT>。<BR><BR>※ <FONT color=#7e12d2>The same bulletin board，Society can only accept a commission。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-2" image="GQ_prop_end.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-2-a" mid="22"><![CDATA[<html>[Commissioned] <FONT color=#086171> Their secret</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Completion of commissioning of the adventurer，Please complete the following instructions on the seal affixed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-2-a" image="" itemindex="">
+      <talk_answer link_index="n410_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(Rewarded)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Commission rewards$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-2-b" image="GQ_prop_end.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Adventurers Society Bulletin$<BR>Association commissioned the adventurer has completed。<BR><BR><FONT color=#a82424>[Adventurers Society Association]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,3333, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">33330,,,,</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">400180</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6,7,8,9">1213</exe>
+         <exe type="addquestitem" num="1">400180</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="11">201213</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1213);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">33330,,,,</exe>
+         <exe type="complete">3333</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n410_guild_board" sub="e">3</exelink>
+   <exelink qstep="accepting" npc="n410_guild_board" sub="f">0,1,4,10,5,2</exelink>
+   <exelink qstep="2" npc="n410_guild_board" sub="a">0</exelink>
+   <exelink qstep="2" npc="n410_guild_board" sub="b">1</exelink>
+   <journal_data recompense="33330" quest_title="[길드의뢰] 그들의 비밀" chapterid="" quest_level="36" quest_mark_type="19" use_item_list="400180">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_47.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>474,0,0</destination_pos>
+         <destination_mode>custom:471@1,472@3,473@0,474@0</destination_mode>
+         <statemark_npcid>410</statemark_npcid>
+         <statemark_type>20</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Lizard&#39;s grasshopper collection]]></title>
+         <contents mid="43"><![CDATA[<html>To destroy the ruins of forgotten time scales Tracker Blue Lizardman，Lizard&#39;s grasshopper collection。<BR>
+<BR><FONT color=#086171>Heermadai port(Downstream of the ruins of the entrance) </FONT><FONT color=#a82424>→ The ruins of forgotten time</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[Collection]The ruins of forgotten time]]></destination>
+         <todo_msg mid="45"><![CDATA[Add the adventurer Association commissioned。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_guild_board.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>13,n410</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>410</statemark_npcid>
+         <statemark_type>21</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Port of adventurers to Heermadai Society Bulletin reports the results]]></title>
+         <contents mid="47"><![CDATA[<html>River downstream to the Heermadai port near the entrance to the ruins of adventurers Society Bulletin reports the results。<BR><BR><FONT color=#086171>Heermadai port(River downstream of the ruins of the entrance) </FONT><FONT color=#a82424>→ Adventurers Society Bulletin</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Port of adventurers to Heermadai Society Bulletin reports the results]]></destination>
+         <todo_msg mid="49"><![CDATA[Association commissioned to complete adventurer。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>36:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>3331</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

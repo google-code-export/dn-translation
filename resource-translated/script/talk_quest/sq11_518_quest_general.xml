@@ -1,0 +1,353 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_518_quest_general</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>518</qid>
+      <designer>손원호</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>519</nextqid>
+      <nextqname>sq11_519_boom_artist</nextqname>
+      <nextqnpc>n036_adventurer_guildmaster_gunter</nextqnpc>
+      <qkname mid="1"><![CDATA[General commissioned]]></qkname>
+      <qnpc>
+         <npcid>265</npcid>
+         <npcename>n265_invisible</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（The task did not meet the criteria）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>You accept the task too，Can not accept the task of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Task with a backpack full。<br>（Please order as soon as possible backpack）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n265_invisible-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Shell box$<BR><FONT color=#7e12d2>（Seems different from other shells）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-noquest" image="" itemindex="">
+      <talk_question mid="106"><![CDATA[<html>$Company president Gunter adventurer$<BR>
+Monster move some of their unusual ah…<BR>
+<FONT color=#7e12d2>（Can be located within the city of Douglas King to accept general office tasks）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="QM_Orc_Gray.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="8"><![CDATA[<html>What?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$General Douglas$<BR>Very worried about strange creatures, dark mines are dynamic ah。<BR>
+Occupation of the mine<FONT color=#a82424>Bomb experts Nuomuhake</FONT>Definitely something in the plot plan…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="15"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$General Douglas$<BR>
+Back in with you before the King City，I have been led by elite military is a sacred haven near the foot of the Monster crusade against Montenegro who。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-c" mid="83"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$General Douglas$<BR>
+A few years ago near the holy paradise of strange creatures at most only 34 small groups，Or only single action Monster。In fact，Did not pose any human threat，They had not seriously。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-c" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-d" mid="85"><![CDATA[<html>Monster are preparing to start a war you?</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$General Douglas$<BR>
+But，I do not know since when，Monster had to<FONT color=#a82424>Montenegro</FONT>As the center began to gather together a large-scale，And what seems to initiate a general war，Also prepared for war supplies。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-d" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-e" mid="88"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$General Douglas$<BR>
+Yes。Although their destination was not clear heaven is not sacred，But it seems really preparing for war supplies。<BR>
+In short，We can not be the king of strange creatures around the city have gradually increased their forces sit idly by。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-e" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-f" mid="90"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$General Douglas$<BR>Since then we have continued to crusade <FONT color=#a82424>Montenegro</FONT>The Monster，But they never seem to reduce the appearance。And Monster have weapons as time goes by，Become increasingly hard。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-f" image="QW_27.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-g" mid="92"><![CDATA[<html>Use shells do orc is？</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$General Douglas$<BR>
+But，We finally realized that their supply materials to support the Monster is<FONT color=#a82424>Dark mine</FONT>Out。And where we met shells are produced<FONT color=#a82424>Guy</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-g" image="QM_Orc_Gray.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-h" mid="94"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$General Douglas$<BR>Yes，Is<FONT color=#a82424>Bomb experts Nuomuhake</FONT>Guy。It is different from other orcs，Production of artillery shells could be a very smart guy。Although the order to catch him，We enter the mine several times，But failed each time。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-h" image="QM_Orc_Gray.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-i" mid="97"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="96"><![CDATA[<html>$General Douglas$<BR>
+The problem is，It is said to create what is now something new… We can not know what it is in the end manufacturing。Ah really foreboding。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$General commissioned$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QM_Orc_Gray.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="25"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$General Douglas$<BR>
+<FONT color=#a82424>Nuomuhake</FONT>Doing，This matter has been asking me to heart。Can you look at that thing in the end to detect what is ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="QS_Default.dds" itemindex="300244">
+      <talk_question mid="26"><![CDATA[<html>$General Douglas$<BR>
+To search<FONT color=#a82424>Dark mine</FONT>，And understand<FONT color=#a82424>Nuomuhake</FONT>In the end what in the manufacturing。Estimates are of modern<FONT color=#a82424>Shells</FONT>It… Making life difficult to imagine how it might be ah。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n265_invisible-1" image="QS_Default.dds" itemindex="300244">
+      <talk_question mid="102"><![CDATA[<html>$Shell box$<BR><FONT color=#7e12d2>（Seems different from other shells）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="" itemindex="">
+      <talk_question mid="107"><![CDATA[<html>$Company president Gunter adventurer$<BR>
+Monster move some of their unusual ah…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QS_Default.dds" itemindex="300244">
+      <talk_question mid="28"><![CDATA[<html>$General Douglas$<BR>
+To search the dark mine，And look at things in the end Nuomuhake what made，Estimates it is studying new types of shells… Making life difficult to imagine how it might be ah。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n265_invisible-2" image="QS_Default.dds" itemindex="300244">
+      <talk_answer link_index="n265_invisible-2-a" mid="30"><![CDATA[<html>（Dish shells）</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Shell box$<BR><FONT color=#7e12d2>（Seems somewhat different from other shells）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n265_invisible-2-a" image="QS_Default.dds" itemindex="300244">
+      <talk_question mid="52"><![CDATA[<html>$Shell box$<BR>
+<FONT color=#7e12d2>（Orc special shells obtained，Back to General Douglas where it）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="QS_Default.dds" itemindex="300244">
+      <talk_answer link_index="n042_general_duglars-4" mid="109"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$General Douglas$<BR>
+This is<FONT color=#a82424>Nuomuhake</FONT>Being made new<FONT color=#a82424>Shells</FONT>You…?<BR>
+Well no difference between the surface…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n265_invisible-3" image="" itemindex="">
+      <talk_question mid="103"><![CDATA[<html>$Shell box$<BR>
+<FONT color=#7e12d2>（Can it take only a shell）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-4" image="QS_Default.dds" itemindex="300244">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-4-a" mid="57"><![CDATA[<html>（Note what was going on）</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Company president Gunter adventurer$<BR>Ah? What&#39;s this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-4-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-4-b" mid="59"><![CDATA[<html><FONT color=#086171>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-4-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-4-!next" mid="61"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Company president Gunter adventurer$<BR>Ah… The surface is used in the original Monster is no different shells poor… Appears to be an analysis to see。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_question mid="112"><![CDATA[<html>$General Douglas$<BR>
+Seems to have to carefully analyze Caixing ah。<BR>
+While this shell to the<FONT color=#a82424>Company president Gunter adventurer</FONT>It。He will tell what information。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">518</exe>
+         <exe type="recompense_view">,5181,5182,5183,5184</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300244</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300244</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5181,5182,5183,5184</exe>
+         <exe type="complete">518</exe>
+         <exe type="delquestitem" num="-1">300244</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="i">1</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="a">0,1,2</exelink>
+   <exelink qstep="2" npc="n265_invisible" sub="a">0,1,2</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n036_adventurer_guildmaster_gunter" sub="a">0</exelink>
+   <exelink qstep="4" npc="n036_adventurer_guildmaster_gunter" sub="b">1,2</exelink>
+   <exelink qstep="4" npc="n036_adventurer_guildmaster_gunter" sub="!next" />
+   <journal_data recompense="1:5181,2:5182,3:5183,4:5184" quest_title="장군의 부탁" chapterid="" quest_level="24" quest_mark_type="10" use_item_list="300244">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Dialogue with the General Douglas]]></title>
+         <contents mid="65"><![CDATA[<html>General Douglas seems to have something to say。Let the dialogue with General Douglas。<BR><BR><FONT color=#086171>Holy Paradise（King City Internal）</FONT> <FONT color=#a82424>→  General Douglas</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Dialogue with the General Douglas]]></destination>
+         <todo_msg mid="67"><![CDATA[Add a task。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_27.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>273,n265</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@1</destination_mode>
+         <statemark_npcid>265</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Looking for new shells Nuomuhake]]></title>
+         <contents mid="69"><![CDATA[<html>According to General Douglas said，Occupation of the dark mine of bomb experts Nuomuhake are creating a new shell。 Within the mine in the dark to find the shells scattered<FONT color=#a82424>Orc special shells</FONT>Go back。<BR><BR><FONT color=#086171>Heermadai port（Dark mine entrance）</FONT> <FONT color=#a82424>→ Dark mine</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Get1Orc special shells]]></destination>
+         <todo_msg mid="71"><![CDATA[Into the darkness to find the orc mine specially made shells it。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_27.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[Dialogue with the General Douglas]]></title>
+         <contents mid="74"><![CDATA[<html>According to the intelligence of General Douglas，Found in other shells do not like orcs special shells。<BR>
+Back to the holy heaven to the king of the orcs special shells within the city, General Douglas Bar。<BR><BR><FONT color=#086171>Holy Paradise（King City Internal）</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[Dialogue with the General Douglas]]></destination>
+         <todo_msg mid="76"><![CDATA[Orc special shells obtained。Back to General Douglas, where it。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[President Gunter public dialogue with the adventurer。]]></title>
+         <contents mid="79"><![CDATA[<html>General Douglas shells in order to further investigate，I entrust to the adventurer shell company president Gunter。<BR>
+Put to the sacred shells adventurers paradise, president of Gunter public bar。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Company president Gunter adventurer</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[President Gunter public dialogue with the adventurer。]]></destination>
+         <todo_msg mid="81"><![CDATA[Gunter, president of the dialogue with the public right adventurer。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>420</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

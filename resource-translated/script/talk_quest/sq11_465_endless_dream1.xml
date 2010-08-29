@@ -1,0 +1,606 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_465_endless_dream1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>465</qid>
+      <designer>손원호</designer>
+      <qlevel>27</qlevel>
+      <qdesc>스탤라의 부탁으로 헤르말테 포구로 나가보면 잠든 엘로이즈와 그녀의 아버지 샤일록을 만날 수 있다. 엘로이즈를 깨우기 위해 다시 스탤라에게 오면 몽환의 풀을 구해달라고 하는데. 몽환의 풀을 구해주면 꿈가루를 만들어 주고, 이걸 이용해서 엘로이즈의 꿈 속으로 들어갈 수 있다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>466</nextqid>
+      <nextqname>sq11_466_endless_dream2</nextqname>
+      <nextqnpc>n045_soceress_master_stella</nextqnpc>
+      <qkname mid="1"><![CDATA[Can not wake up the dream Ⅰ]]></qkname>
+      <qnpc>
+         <npcid>237</npcid>
+         <npcename>n237_sylock</npcename>
+         <npckname>거상 샤일록</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>238</npcid>
+         <npcename>n238_elloise</npcename>
+         <npckname>엘로이즈</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Giant Mayi Luo$<BR>I just want her to do it as the responsibility of the father……<BR><BR><FONT color=#7e12d2>(The task of heaven from the senior magician Stella Holy Office to accept)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Hailuoweizi$<BR>... ...<BR><BR><FONT color=#7e12d2>(The task of heaven from the senior magician Stella Holy Office to accept)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-a" mid="11"><![CDATA[<html>Please？</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Advanced magician Stella$<BR>
+See you look like a very boring。<BR>
+Do not be silly standing there，You do me a favor？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-b" mid="13"><![CDATA[<html>What rumors?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Advanced magician Stella$<BR>Not the other，Recently the crew were very suspicious of the rumors circulating。<BR>
+I hope you can help me to confirm the truth。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-c" mid="15"><![CDATA[<html>Where Well?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Advanced magician Stella$<BR>Is about<FONT color=#a82424>Girls can not wake up</FONT>Rumors ah。Must have been trapped by the dream，I wanted to know how it is out of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-c" image="QW_HermaltePort.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-d" mid="17"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Advanced magician Stella$<BR>Call，Real trouble…I say，You should listen to understand is ah，Since it is a rumor that the crew，It certainly<FONT color=#a82424>Heermadai port</FONT>Direction Rights。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="19"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Can not wake up the dream Ⅰ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="21"><![CDATA[<html>Yes。</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Advanced magician Stella$<BR>You go to look at specific symptoms Heermadai port。<BR>
+You know？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Advanced magician Stella$<BR>Can not wake from a dream…Zhengou magic。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Giant Mayi Luo$<BR>My daughter…My Hailuoweizi can not wake from the dream ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-1" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Hailuoweizi$<BR>... ...<BR>
+<BR><FONT color=#7e12d2>（Sleeping）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Advanced magician Stella$<BR>Is<FONT color=#a82424>Heermadai port</FONT>Where the rumor came，Check it directly to the port。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-2" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-2-a" mid="27"><![CDATA[<html>What?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Giant Mayi Luo$<BR>Feed，See your costume，Must be an adventurer it。<BR>Sorry，Can you help me a favor？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-2-a" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-2-b" mid="29"><![CDATA[<html>Can not wake from the dream?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Giant Mayi Luo$<BR>My daughter……<BR>
+Our family has deep slumber Hailuoweizi。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-2-b" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-2-c" mid="31"><![CDATA[<html>I can help you。</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Giant Mayi Luo$<BR>How do you so Fana！<BR>
+Just can not wake up from slumber。<BR>
+This can how to do ah……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-2-c" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-2-d" mid="33"><![CDATA[<html>His daughter, in which ah?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Giant Mayi Luo$<BR>Really？<BR>
+Thank you！Thank you……<BR>
+You go look at my daughter&#39;s status bar。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-2-d" image="QN_elloise.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Giant Mayi Luo$<BR>You are not on my side，Do you really adventurer?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-3" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Giant Mayi Luo$<BR>Not me，Is to wake my daughter ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-3" image="" itemindex="">
+      <talk_answer link_index="n238_elloise-3-a" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Hailuoweizi$<BR>... ...<BR><BR>
+<FONT color=#7e12d2>（White girl which seems to still sleep。Did not look like the way pretended to sleep）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-3-a" image="" itemindex="">
+      <talk_answer link_index="n238_elloise-3-b" mid="39"><![CDATA[<html>（Shake to see）</html>]]></talk_answer>
+      <talk_answer link_index="n238_elloise-3-c" mid="40"><![CDATA[<html>（Pinched look of a pinch）</html>]]></talk_answer>
+      <talk_answer link_index="n238_elloise-3-d" mid="41"><![CDATA[<html>（Playing a dozen to see）</html>]]></talk_answer>
+      <talk_answer link_index="n238_elloise-3-e" mid="42"><![CDATA[<html>（Give up，Think about it the other way）</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Hailuoweizi$<BR>... ...<BR>
+<BR><FONT color=#7e12d2>（Sleeping among，What to do?）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-3-b" image="" itemindex="">
+      <talk_answer link_index="n238_elloise-3-a" mid="44"><![CDATA[<html>（Think of other ways）</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Hailuoweizi$<BR>... ...<BR><BR>
+<FONT color=#7e12d2>（Shook，But does not seem useful，Appears to require more severe measures）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-3-c" image="" itemindex="">
+      <talk_answer link_index="n238_elloise-3-a" mid="46"><![CDATA[<html>（Think of other ways）</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Hailuoweizi$<BR>... ...<BR><BR>
+<FONT color=#7e12d2>（Pinch the cheek，But not any response。Appears to require more severe measures）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-3-d" image="" itemindex="">
+      <talk_answer link_index="n238_elloise-3-a" mid="48"><![CDATA[<html>（Think of other ways）</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Hailuoweizi$<BR>Snapped！ ... ...<BR><BR>
+<FONT color=#7e12d2>（Played under the cheek，Also no response。Whether this approach seems to use）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-3-e" image="" itemindex="">
+      <talk_question mid="49"><![CDATA[<html><FONT color=#7e12d2>（Although the use of the many ways of，But it seems also will not wake up。Then chat with Mayi Luo Kanba）</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-4" image="" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Hailuoweizi$<BR>... ...<BR>
+<BR><FONT color=#7e12d2>（Sleeping among）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-4" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-4-a" mid="52"><![CDATA[<html>Tried many ways of，Will not work ah。</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Giant Mayi Luo$<BR>Ah，How ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-4-a" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-4-b" mid="54"><![CDATA[<html>I went to ask Stella to see if it。</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Giant Mayi Luo$<BR>Hey…It seems you can not wake up to Hailuoweizi ah?This is what to do...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-4-b" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_answer link_index="n237_sylock-4-c" mid="56"><![CDATA[<html>Please wait a moment！</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Giant Mayi Luo$<BR>Stella? You mean<FONT color=#a82424>Advanced magician Stella</FONT>You？Ah……If her words，He might be aware of how。Fast……Go Fast……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-4-c" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$Giant Mayi Luo$<BR>Hurry。She<FONT color=#a82424>Holy Paradise</FONT>，Perhaps a good way to know what。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-5" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$Giant Mayi Luo$<BR>Hurry up， <FONT color=#a82424>Holy Paradise</FONT>Of <FONT color=#a82424>Advanced magician Stella</FONT>What options specified。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-5" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-5-a" mid="60"><![CDATA[<html>（That the sleeping girl thing）</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Advanced magician Stella$<BR>What I do for you？<BR>
+Look the way you Huanglihuangzhang，Is not what happened？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-5-a" image="QN_elloise.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-5-b" mid="62"><![CDATA[<html>Trapped by dreams，How could?</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Advanced magician Stella$<BR>Oh……Original rumor is true ah。<BR>
+It seems……Sure enough, the child was<FONT color=#a82424>Trapped in a dream</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-5-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-5-c" mid="65"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Advanced magician Stella$<BR>Ha ha ha，Fool。<BR>
+Is，Xiao Pihai like you，How it might feel the changes in the world。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-5-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-5-d" mid="67"><![CDATA[<html>Is behind?</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Advanced magician Stella$<BR>You would not know<FONT color=#a82424>Dark Overlord has been resurrected</FONT>，Was sealed around the ancient Warcraft is awake these things right。Do not you think this all his followers with the right lung,。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-5-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-5-e" mid="69"><![CDATA[<html>That and the girl trapped in a dream, ah, what relationship?</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Advanced magician Stella$<BR>Even a child should know，Its<FONT color=#a82424>Behind</FONT>There must be more massive force。Of course，Such a fool like you might also not know 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-5-e" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-5-f" mid="71"><![CDATA[<html>How can I make girls do wake up？</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Advanced magician Stella$<BR>Very simple，That the world has been distorted chanting。People trapped in a dream，While sleeping to awake the ancient forces of。After this<FONT color=#a82424>What will happen</FONT>Do not you curious about you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-5-f" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-5-g" mid="73"><![CDATA[<html>Than the girls that were first put out in front of ah。</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Advanced magician Stella$<BR>Really……If people do not listen to it？<BR>
+Do for you，Crisis in the world do not matter?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-5-g" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-5-h" mid="75"><![CDATA[<html>Enter dream?</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Advanced magician Stella$<BR>Ah，What a fun children。Ha ha ha，Interesting。<BR>
+Since you make me happy，I told you into girls<FONT color=#a82424>Method of dream</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-5-h" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-5-i" mid="77"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Advanced magician Stella$<BR>To wake up from a dream，Must first understand the reasons for not waking up is。The best solution is to ask her。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-5-i" image="QS_Default.dds" itemindex="300073">
+      <talk_answer link_index="n045_soceress_master_stella-5-j" mid="79"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Advanced magician Stella$<BR>From the direction of the port to Heermadai have access to<FONT color=#a82424>Island</FONT>The Road。To enter the dream girl needs some<FONT color=#a82424>Dream Grass</FONT>。Might first go to get that thing。 I have to deal with the remaining。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-5-j" image="QS_Default.dds" itemindex="300073">
+      <talk_question mid="80"><![CDATA[<html>$Advanced magician Stella$<BR><FONT color=#a82424>Dream Grass</FONT><FONT color=#2b2723>Is an island BOSS <FONT color=#a82424>Thick thorns</FONT>Staple，Therefore, they should be able to get hold of elimination。Oh, then careful，My lovely guy。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-6" image="QS_Default.dds" itemindex="300073">
+      <talk_question mid="81"><![CDATA[<html>$Advanced magician Stella$<BR><FONT color=#a82424>Dream Grass</FONT>Blooming<FONT color=#a82424>Island</FONT>There are many evil monsters around，Must be careful ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-7" image="QS_Default.dds" itemindex="300073">
+      <talk_answer link_index="n045_soceress_master_stella-7-a" mid="83"><![CDATA[<html>（Submit a draft of Dreams）</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Advanced magician Stella$<BR>Ha ha，Well faster than thought。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-7-a" image="QS_Default.dds" itemindex="300083">
+      <talk_answer link_index="n045_soceress_master_stella-7-b" mid="85"><![CDATA[<html>（Sitting here waiting）</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Advanced magician Stella$<BR>
+Where you wait a bit。<BR>I use it to make a dream powder。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-7-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-7-c" mid="87"><![CDATA[<html>What is it... Terrifying...</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Advanced magician Stella$<BR>Budi，Puli Di，Suo Sadi！ <BR>Magic power of Salala Leap！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-7-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-7-d" mid="89"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Task reward$ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-7-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-7-e" mid="91"><![CDATA[<html>You have to be careful body……</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$Advanced magician Stella$<BR>
+Come，Well。It took a little effort today points，Hey hey。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-7-e" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-7-f" mid="94"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Advanced magician Stella$<BR>Hum！I expended much effort to help you，How do you so much rubbish？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-7-f" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-7-!next" mid="96"><![CDATA[<html>Ah？That……Then forget it……</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Advanced magician Stella$<BR>If one dare say，I&#39;ll take you where no one&#39;s place，I, for you alone。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4651,4652,4653,4654</exe>
+         <exe type="setquest">465</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">870</exe>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntitem" num="1" exe="3,4,5" onexe="">300073</exe>
+         <exe type="addquestitem" num="1">300073</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200870</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4651,4652,4653,4654</exe>
+         <exe type="addquestitem" num="1">300083</exe>
+         <exe type="complete">465</exe>
+         <exe type="delquestitem" num="1">300073</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n237_sylock" sub="b" />
+   <exelink qstep="2" npc="n237_sylock" sub="c" />
+   <exelink qstep="2" npc="n237_sylock" sub="d">0,1</exelink>
+   <exelink qstep="3" npc="n238_elloise" sub="b" />
+   <exelink qstep="3" npc="n238_elloise" sub="c" />
+   <exelink qstep="3" npc="n238_elloise" sub="d" />
+   <exelink qstep="3" npc="n238_elloise" sub="e">0,1</exelink>
+   <exelink qstep="3" npc="n238_elloise" sub="a" />
+   <exelink qstep="3" npc="n238_elloise" sub="a" />
+   <exelink qstep="3" npc="n238_elloise" sub="a" />
+   <exelink qstep="4" npc="n237_sylock" sub="b" />
+   <exelink qstep="4" npc="n237_sylock" sub="c">0,1</exelink>
+   <exelink qstep="5" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="5" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="5" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="5" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="5" npc="n045_soceress_master_stella" sub="f" />
+   <exelink qstep="5" npc="n045_soceress_master_stella" sub="g" />
+   <exelink qstep="5" npc="n045_soceress_master_stella" sub="h" />
+   <exelink qstep="5" npc="n045_soceress_master_stella" sub="i" />
+   <exelink qstep="5" npc="n045_soceress_master_stella" sub="j">0,6,2,8,1</exelink>
+   <exelink qstep="7" npc="n045_soceress_master_stella" sub="a">3</exelink>
+   <exelink qstep="7" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="7" npc="n045_soceress_master_stella" sub="c">0</exelink>
+   <exelink qstep="7" npc="n045_soceress_master_stella" sub="d">1,2</exelink>
+   <exelink qstep="7" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="7" npc="n045_soceress_master_stella" sub="f" />
+   <exelink qstep="7" npc="n045_soceress_master_stella" sub="!next" />
+   <journal_data recompense="1:4651,2:4652,3:4653,4:4654" quest_title="깨지 않는 꿈 Ⅰ" chapterid="" quest_level="27" quest_mark_type="10" use_item_list="300073">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="99"><![CDATA[Dialogue with senior magician Stella]]></title>
+         <contents mid="100"><![CDATA[<html>Stella to talk with senior magician girls can not wake from the dream to do it。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Advanced magician Stella</FONT></html>]]></contents>
+         <destination mid="101"><![CDATA[Dialogue with senior magician Stella]]></destination>
+         <todo_msg mid="102"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_shylock.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n237</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>237</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="103"><![CDATA[Confirmed rumors Heermadai port]]></title>
+         <contents mid="104"><![CDATA[<html>To Heermadai port to verify them on can not wake from the dream girl talk it。<BR><BR><FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→ Giant Mayi Luo</FONT></html>]]></contents>
+         <destination mid="105"><![CDATA[Confirmed rumors Heermadai port]]></destination>
+         <todo_msg mid="106"><![CDATA[To verify the rumor it Heermadai port。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_elloise.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n238</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>238</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="107"><![CDATA[Tried to wake Hailuoweizi]]></title>
+         <contents mid="108"><![CDATA[<html>Shylock&#39;s daughter Hailuoweizi giant could not wake from the dream。Whether true or directly check it out。<BR>
+ <BR>
+<FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→ Sleeping Hailuoweizi</FONT></html>]]></contents>
+         <destination mid="109"><![CDATA[Tried to wake Hailuoweizi]]></destination>
+         <todo_msg mid="110"><![CDATA[It tried to wake Hailuoweizi]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_shylock.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n237</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>237</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="111"><![CDATA[Dialogue with the giant Mayi Luo]]></title>
+         <contents mid="112"><![CDATA[<html>Tried many ways of，However, it seems do not want to wake Hailuoweizi。Let the dialogue again and Mayi Luo。<BR><BR><FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→ Giant Mayi Luo</FONT></html>]]></contents>
+         <destination mid="113"><![CDATA[And giant Mayi Luo dialogue]]></destination>
+         <todo_msg mid="114"><![CDATA[Let the dialogue with the giant Mayi Luo。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="115"><![CDATA[Dialogue with senior magician Stella]]></title>
+         <contents mid="116"><![CDATA[<html>Can wake to find ways to find high-level sorcerer Hailuoweizi Stella Bar。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Advanced magician Stella</FONT></html>]]></contents>
+         <destination mid="117"><![CDATA[Dialogue with senior magician Stella]]></destination>
+         <todo_msg mid="118"><![CDATA[Go to advanced magician Stella Bar。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QW_30.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>301,0,0</destination_pos>
+         <destination_mode>custom:301@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="119"><![CDATA[Get Fantasy grass]]></title>
+         <contents mid="120"><![CDATA[<html>To enter the dream Hailuoweizi，Need to grass Dreams。 To the island to destroy the illusion of thick thorns and grass get it。<BR>
+<BR>
+<FONT color=#086171>Heermadai port（Send Ship Island）</FONT> <FONT color=#a82424>→ Island</FONT><BR>
+ </html>]]></contents>
+         <destination mid="121"><![CDATA[Get Fantasy grass]]></destination>
+         <todo_msg mid="122"><![CDATA[To obtain the dream of the grass island bar。]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <title_image />
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="123"><![CDATA[Dialogue with senior magician Stella]]></title>
+         <contents mid="124"><![CDATA[<html>Grass won the Dream。Back to where it advanced magician Stella。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Advanced magician Stella</FONT></html>]]></contents>
+         <destination mid="125"><![CDATA[Dialogue with senior magician Stella]]></destination>
+         <todo_msg mid="126"><![CDATA[Grass won the Dream。Senior magician on the back where the bar stella。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>27:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

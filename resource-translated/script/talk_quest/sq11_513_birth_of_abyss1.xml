@@ -1,0 +1,322 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_513_birth_of_abyss1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>513</qid>
+      <designer>김인정</designer>
+      <qlevel>31</qlevel>
+      <qdesc>군터와 대화
+스타쉬와 대화
+어비스 5군데를 돌며 보스를 잡고, 보옥을 습득
+스타쉬에게 보고</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>514</nextqid>
+      <nextqname>sq11_514_birth_of_abyss2</nextqname>
+      <nextqnpc>n088_scholar_starshy</nextqnpc>
+      <qkname mid="1"><![CDATA[The birth of deep-level I]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Heraldic scholars Stasi$<BR>This is really…Be accomplished ah。 <FONT color=#7e12d2>（Alone Himself。Perhaps to the adventurer, president of Gunter, where the public should be able to know what happened the bar）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="7"><![CDATA[<html>Event is not good。</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Company president Gunter adventurer$<BR>I thought that was recently<FONT color=#a82424>General Douglas</FONT> Assistance can be against more Monster…Has suddenly received new intelligence that began to haunt the guy was extremely powerful。What is your interest you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="9"><![CDATA[<html>Event is not good。</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Company president Gunter adventurer$<BR>Branch points have received assistance invitation Kedella，Investigated<FONT color=#a82424>Deep level</FONT>... In my opinion it certainly is the result of。Holy heaven with a similar phenomenon occurred in the vicinity began。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="11"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Company president Gunter adventurer$<BR>Because unable to obtain accurate information inevitably raises the fear ah。Best to ask the experts。So I have to<FONT color=#a82424>Heraldic scholars</FONT> <FONT color=#a82424>Stasi</FONT>Seek help，You quickly hear how he said in the past it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$The birth of deep-level I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Company president Gunter adventurer$<BR>Approaching<FONT color=#a82424>Heraldic scholars Stasi</FONT>There to see it。Says no to the information received from Kedella basis points，What it can find。Can only count on him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-a" mid="18"><![CDATA[<html>What shall we do?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Heraldic scholars Stasi$<BR>I heard。I estimate that<FONT color=#a82424>Deep level</FONT>Problems。<BR>Indeed the... Did not expect all of the<FONT color=#a82424>Holy Paradise</FONT>Impact on nearby...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-b" mid="21"><![CDATA[<html>（Stasi discontent shook his head）</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Ah, so what&#39;s approach？Now nothing can eliminate <FONT color=#a82424>Deep level</FONT>The way to do。As a scholar in this sad ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-c" mid="23"><![CDATA[<html>The doing?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Heraldic scholars Stasi$<BR>This is not to send troops things that can be solved。But if the action adventurer alone is not the same。How，Please help me to challenge that incredible<FONT color=#a82424>Deep level</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-d" mid="25"><![CDATA[<html>So that。</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Heraldic scholars Stasi$<BR>In addition to<FONT color=#a82424>A matter of intelligence gathering</FONT>What else?As the soldiers acted according to orders，Therefore can not explore all aspects of the enemy。However, if relatively adventurer，Well not a easy operation?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-e" mid="27"><![CDATA[<html>To destroy what Monster Caixing？</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Heraldic scholars Stasi$<BR>That investigation as soon as the nascent<FONT color=#a82424>Deep level</FONT>，Collection of the chieftains of the deformation of the gem。I heard Kedella barriers also because of the assistance of adventurers to a lot of intelligence collected by it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-f" mid="29"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Heraldic scholars Stasi$<BR><FONT color=#a82424>Nuomushake</FONT>，<FONT color=#a82424>Stone Wings</FONT>，<FONT color=#a82424>Thick thorns</FONT>，<FONT color=#a82424>Fire wings</FONT>，Also <FONT color=#a82424>Ogre Buu</FONT> Of<FONT color=#a82424>Deformation of the gem</FONT>Can。Although the one-time requirements so much embarrassed… However, because a sudden increase in deep-level region，We are a lack of manpower and resources to do。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-f" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-g" mid="31"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Heraldic scholars Stasi$<BR>I repeat that you want to go deep-level region。<FONT color=#a82424>Dark mine</FONT>，<FONT color=#a82424>Abandoned 韦尔顿哈鲁</FONT>，<FONT color=#a82424>Island</FONT>，<FONT color=#a82424>Dark Overlord&#39;s territory</FONT>，<FONT color=#a82424>The mine collapse</FONT>...This total of five regions。Elimination of the abyss where the level<FONT color=#a82424>Chieftains</FONT> <FONT color=#a82424>Monster</FONT>，Deformation of gem can be obtained。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-g" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Do not forget。Must be entered<FONT color=#a82424>Deep level</FONT>Area 才行。Eliminate deep-level<FONT color=#a82424>Chieftains Monster</FONT>The gem can be deformed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-" mid="35"><![CDATA[<html>Again to talk about it。</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Is not remember where to go ah。I can also understand，Once you get back to so many local deformation of the gem，I did not expect you to be successful and go so fast。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="37"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Know。Now the sacred heaven-class area near the abyss of a total of five local。 <FONT color=#a82424>Dark mine</FONT>，<FONT color=#a82424>Abandoned 韦尔顿哈鲁</FONT>，<FONT color=#a82424>Island</FONT>，<FONT color=#a82424>Dark Overlord&#39;s territory</FONT>，<FONT color=#a82424>The mine collapse</FONT>... Do well to remember that these areas，Into those <FONT color=#a82424>Deep level</FONT>Right after the elimination of chieftains Monster。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Must enter<FONT color=#a82424>Deep level</FONT>Region。And eliminate deep-level leaders and Monster to get the gem deformation。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Company president Gunter adventurer$<BR>To help<FONT color=#a82424>Heraldic scholars</FONT> <FONT color=#a82424>Stasi</FONT>Of it，In order to divine paradise。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-a" mid="41"><![CDATA[<html>（Submitted deformation gem）</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Oh！ Deformation<FONT color=#a82424>Gem</FONT>Are gathered?<BR>For the investigation of deep-level region without any progress slow，Can help you come just in time ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-b" mid="43"><![CDATA[<html>（Stasi sigh）</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Yes。 By<FONT color=#a82424>Some influence</FONT> Monster has become violent。Study quickly，Generated near sacred paradise as soon as possible to identify the reasons for deep-level like the...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-!next" mid="45"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">513</exe>
+         <exe type="recompense_view">,5131,5132,5133,5134</exe>
+         <exe type="talk" npc="n036_adventurer_guildmaster_gunter">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="prob">1000</chk>
+         <chk type="questitem" num="1" op="]=">300216</chk>
+         <chk type="questitem" num="1" op="]=">300217</chk>
+         <chk type="questitem" num="1" op="]=">300218</chk>
+         <chk type="questitem" num="1" op="]=">300219</chk>
+         <chk type="questitem" num="1" op="]=">300220</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense_view">,5131,5132,5133,5134</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200806</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200889</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200870</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200827</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10">200858</exe>
+         <exe type="conexe" true="26" false="21">1</exe>
+         <exe type="conexe" true="26" false="22">2</exe>
+         <exe type="conexe" true="26" false="23">3</exe>
+         <exe type="conexe" true="26" false="24">4</exe>
+         <exe type="conexe" true="26" false="25">5</exe>
+         <exe type="addquestitem" num="1">300216</exe>
+         <exe type="addquestitem" num="1">300217</exe>
+         <exe type="addquestitem" num="1">300218</exe>
+         <exe type="addquestitem" num="1">300219</exe>
+         <exe type="addquestitem" num="1">300220</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300216</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300217</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300218</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300219</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300220</exe>
+         <exe type="conexe" true="11,26" false="">0</exe>
+         <exe type="conexe" true="12,26" false="">0</exe>
+         <exe type="conexe" true="13,26" false="">0</exe>
+         <exe type="conexe" true="14,26" false="">0</exe>
+         <exe type="conexe" true="15,26" false="">0</exe>
+         <exe type="conexe" true="27,30,31" false="">1 and 2 and 3 and 4 and 5</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5131,5132,5133,5134</exe>
+         <exe type="delquestitem" num="-1">300216</exe>
+         <exe type="delquestitem" num="-1">300217</exe>
+         <exe type="delquestitem" num="-1">300218</exe>
+         <exe type="delquestitem" num="-1">300219</exe>
+         <exe type="delquestitem" num="-1">300220</exe>
+         <exe type="complete">513</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="c">1</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="g">28,16,17,18,19,20,1,2,3,4,5,29</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="b">0</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="!next">1,2,3,4,5,6</exelink>
+   <journal_data recompense="1:5131,2:5132,3:5133,4:5134" quest_title="어비스의 탄생 I" chapterid="" quest_level="31" quest_mark_type="10" use_item_list="300216,300217,300218,300219,300220">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[The abyss of divine paradise level]]></title>
+         <contents mid="48"><![CDATA[<html><FONT color=#a82424>Holy Paradise</FONT>Seems to have appeared nearby<FONT color=#a82424>Deep level</FONT>。To<FONT color=#a82424>Heraldic scholars Stasi</FONT>Detailed advice it。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Heraldic scholars Stasi</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Dialogue with the heraldic scholars Stasi]]></destination>
+         <todo_msg mid="50"><![CDATA[Stasi said, listening to heraldic scholars have problems it deep level。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image />
+         <need_itemlist>300216,300217,300218,300219,300220</need_itemlist>
+         <destination_pos />
+         <destination_mode>hide</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Deformation gem collection]]></title>
+         <contents mid="52"><![CDATA[<html>Eliminate<FONT color=#a82424>Abyss</FONT>Region<FONT color=#a82424>BOSS</FONT>Get the gem right after deformation。<BR><BR><FONT color=#086171>Heermadai port（Dark mine）</FONT> <FONT color=#a82424>→ Dark mine</FONT><BR><FONT color=#086171>Montenegro hill angle（Dark jungle road）<FONT color=#2b2723> </FONT><FONT color=#a82424>→ Abandoned 韦尔顿哈鲁</FONT></FONT><BR>
+<FONT color=#086171>Heermadai port（Send Ship Island）</FONT> <FONT color=#a82424>→ Island<BR></FONT><FONT color=#086171>Montenegro hill angle（Dark Overlord of the barriers）<FONT color=#2b2723> </FONT><FONT color=#a82424>→ Dark Overlord&#39;s territory</FONT></FONT><BR>
+<FONT color=#086171>Heermadai port（Dark mine）</FONT> <FONT color=#a82424>→ The mine collapse</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Deformation gem collection]]></destination>
+         <todo_msg mid="54"><![CDATA[Deep-level region in the deformation of the gem collection of bar。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location>`</get_location>
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Complete the gem collection]]></title>
+         <contents mid="57"><![CDATA[<html>The deformation of the gem collection to scholars Stasi bar to the coat of arms。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Heraldic scholars Stasi</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Dialogue with the heraldic scholars Stasi]]></destination>
+         <todo_msg mid="59"><![CDATA[The deformation of the gem collection to scholars Stasi bar to the coat of arms。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>31:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

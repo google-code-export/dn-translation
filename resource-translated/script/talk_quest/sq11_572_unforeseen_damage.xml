@@ -1,0 +1,295 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_572_unforeseen_damage</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>572</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>573</nextqid>
+      <nextqname>sq11_573_fearful_fact</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Unexpected injury]]></qkname>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>52</npcid>
+         <npcename>n052_place_of_trail</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Something like，But can not see anything)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-a" mid="7"><![CDATA[<html>(Laughed triumphantly)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Court magician Kala An${action:Talk}<BR>
+Ha ha Ha ha～See if you look！You have curry favor with the<FONT color=#a82424>Raccoon old man</FONT>，Now no place to go the bar？<BR>Now you do not like a hound of the smith！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-b" mid="9"><![CDATA[<html>(Kala An himself,)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Court magician Kala An$<BR>But<FONT color=#a82424>Kala An</FONT>I am a compassionate adults who，Taking into account the suffering of your time……Want to give you something。But can not do！Ah～If you say white gift，Not good for children&#39;s growth。Oops～I was not too concerned about you？ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-c" mid="11"><![CDATA[<html>(Really need to travel……)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Court magician Kala An$<BR>Hum……I give you a simple task，You go and I finished。<BR>In that case，I&#39;ll buy you something。Anyway you want to leave here，Also need to travel。Not you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-d" mid="13"><![CDATA[<html>What is there？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Court magician Kala An$<BR>What do you do……What is good……Ah……<FONT color=#7e12d2>(Kala An in there thinking,)<BR></FONT>Ah，Once you finally do something，Will look for trouble spots on it，Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-d" image="QW_45.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-e" mid="15"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Court magician Kala An$<BR>You to<FONT color=#a82424>Desolate forest ghost village</FONT>Go，Lessons learned those pesky Daimon。<BR>Not long ago I sent my disciples in the past，Came back but Henlang Bei……Well，You go fast。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-acceppted" mid="17"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Unexpected injury$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QW_45.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Court magician Kala An${action:Talk}<BR><FONT color=#a82424>Desolate forest ghost village</FONT>There are many dangerous Monster，You&#39;d better pay attention to safety。<BR>But even if you are out of things，Also, and I does not matter。Ha ha Ha ha～！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-1" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Something like，But can not see anything)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-a" mid="23"><![CDATA[<html>(You really can not remember the？)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Court magician Kala An$<BR>Ah？Who are you？……What tasks？<BR>What？I will let you do this kind of things？This can be Burongyia。Hum！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-b" mid="25"><![CDATA[<html>Come to me。</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Court magician Kala An${action:Talk}<BR>
+For you<FONT color=#a82424>Travel</FONT>？I？Oops……How could it have such a thing ah？<BR>Forget it，Since you say of it，Well, even if there is such thing。Ha ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-b" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Court magician Kala An$<BR>After following the corridor there，Have a<FONT color=#a82424>Tables</FONT>。<BR>There are pieces of the table where I put things。Let you take it away。Fast～！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3" image="" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Court magician Kala An$<BR>I do not let you go right to the table over there？<FONT color=#a82424>Tables</FONT> ，Tables。<BR>End of the corridor over there，Do not have a table？Do you want me to take you past？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-3" image="" itemindex="">
+      <talk_answer link_index="n052_place_of_trail-3-a" mid="29"><![CDATA[<html>Who，Who！</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$???$<BR>……Was……Was found in you？<BR>Money on the table was I took！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-3-a" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n052_place_of_trail-3-b" mid="31"><![CDATA[<html>Ah！How did you come here？</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Invisible thief$<BR>Ah？You forget you？In<FONT color=#a82424>Kedella points</FONT>Encountered great thief！！Want to be the descendants of people who break Pan……I do not remember you even you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-3-b" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n052_place_of_trail-3-c" mid="33"><![CDATA[<html>You can really impatient。</html>]]></talk_answer>
+      <talk_answer link_index="n052_place_of_trail-3-c" mid="34"><![CDATA[<html>Then you do not steal things right。</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Invisible thief$<BR>Why here？In<FONT color=#a82424>Kedella points</FONT>Nothing to steal，Feel very bored，So I take the airship，Secretly came to the holy heaven。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-3-c" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n052_place_of_trail-3-d" mid="36"><![CDATA[<html>But？</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Invisible thief$<BR>Ah，I had intended to not do the thief，But just when I am helpless，<FONT color=#a82424>Bishop Ignacio</FONT>I found。<BR>He said I have a strange ability Pirates。But……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-3-d" image="" itemindex="">
+      <talk_answer link_index="n052_place_of_trail-3-e" mid="39"><![CDATA[<html>(Invisible thief himself,)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Invisible thief$<BR>Oh～The world really is not even a person who can not trust you？<BR>Accidentally will be plot……Ah，Of course，I will not be plotted against the。Anyway！It really is a cold world！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-3-e" image="QW_38.dds" itemindex="">
+      <talk_answer link_index="n052_place_of_trail-3-f" mid="41"><![CDATA[<html>What？Is……(Geraint&#39;s pendant？)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Invisible thief$<BR>Last time you go<FONT color=#a82424>Death city intersection</FONT>When collecting fossils，I order according to Bishop, where hiding in the。Stole from that guy&#39;s arms to a<FONT color=#a82424>Pendant</FONT>。He has not found。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-3-f" image="QS_Default.dds" itemindex="300022">
+      <talk_answer link_index="n052_place_of_trail-3-g" mid="43"><![CDATA[<html>……Why do you think of it tell me？</html>]]></talk_answer>
+      <talk_answer link_index="n052_place_of_trail-3-g" mid="44"><![CDATA[<html>(This guy……Truly outrageous。)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Invisible thief$<BR>Yes，Is a……<FONT color=#a82424>The same pattern carved dragon pendant</FONT>……I did not look carefully。I have followed<FONT color=#a82424>Bishop</FONT>Pendant stolen to order and handed it to him！！But he quietly escaped！！Ha！！Really hateful！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-3-g" image="" itemindex="">
+      <talk_answer link_index="n052_place_of_trail-3-h" mid="46"><![CDATA[<html>(Thief told me，What then took out a)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Invisible thief$<BR>Why use that looked at me contemptuously？<BR>Call……It seems still can not believe that anyone。I&#39;ll give you a piece of advice，Do not trust anyone after！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-3-h" image="" itemindex="">
+      <talk_answer link_index="n052_place_of_trail-3-i" mid="48"><![CDATA[<html>What？</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Invisible thief$<BR>I see you are too poor，So will give you。I hope you make good use。<BR>Ah，See you later，I suddenly thought of something。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-3-i" image="" itemindex="">
+      <talk_answer link_index="n052_place_of_trail-3-!next" mid="50"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">572</exe>
+         <exe type="recompense_view">,5721,5722,5723,5724</exe>
+         <exe type="huntmon" num="5" party="1" exe="3,4,5" onexe="">1167</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n038_royal_magician_kalaen">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5721,5722,5723,5724</exe>
+         <exe type="complete">572</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="acceppted">0,2,6</exelink>
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n052_place_of_trail" sub="b" />
+   <exelink qstep="3" npc="n052_place_of_trail" sub="c" />
+   <exelink qstep="3" npc="n052_place_of_trail" sub="c" />
+   <exelink qstep="3" npc="n052_place_of_trail" sub="d" />
+   <exelink qstep="3" npc="n052_place_of_trail" sub="e" />
+   <exelink qstep="3" npc="n052_place_of_trail" sub="f" />
+   <exelink qstep="3" npc="n052_place_of_trail" sub="g" />
+   <exelink qstep="3" npc="n052_place_of_trail" sub="g" />
+   <exelink qstep="3" npc="n052_place_of_trail" sub="h" />
+   <exelink qstep="3" npc="n052_place_of_trail" sub="i">0</exelink>
+   <exelink qstep="3" npc="n052_place_of_trail" sub="!next">1</exelink>
+   <journal_data recompense="1:5721,2:5722,3:5723,4:5724" quest_title="예상 외의 피해" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_45.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>453,0,0</destination_pos>
+         <destination_mode>custom:451@3,452@3,453@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Lessons learned to their！]]></title>
+         <contents mid="54"><![CDATA[<html>Accepted the court entrusted the magician Kala An。Go<FONT color=#a82424>Desolate forest ghost village</FONT>Defeat Daimon。<BR>
+ <BR>
+<FONT color=#7e12d2>※ </FONT><FONT color=#7e12d2>Difficulty can not be implemented under the abyss。</FONT><BR>
+ <BR>
+<FONT color=#086171>Montenegro hill angle(Dark jungle road)</FONT> <FONT color=#a82424>→ Desolate forest ghost village</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[To defeat the Monster desolate forest ghost village]]></destination>
+         <todo_msg mid="56"><![CDATA[Please desolate forest ghost village to defeat the Daimon。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Kala An address to the court magician]]></title>
+         <contents mid="58"><![CDATA[<html>Completed commission。Go back to court magician Kala An。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Court magician Kala An</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Kala An address to the court magician]]></destination>
+         <todo_msg mid="60"><![CDATA[Please report the results to the court magician Kala An。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_SaintHaven_Inside.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n52</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>52</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Compensation table]]></title>
+         <contents mid="62"><![CDATA[<html><FONT color=#a82424>Palace</FONT><FONT color=#a82424> Magician Kala An</FONT>Wang said the reward on the table within the city。Go and find Kanba。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> → ???</html>]]></contents>
+         <destination mid="63"><![CDATA[King City, a table inside the investigation]]></destination>
+         <todo_msg mid="64"><![CDATA[Please tables inside the vicinity of King City investigation。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>429</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

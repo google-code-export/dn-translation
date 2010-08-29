@@ -1,0 +1,763 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_261_argenta_milk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>261</qid>
+      <designer>김인정</designer>
+      <qlevel>17</qlevel>
+      <qdesc>향긋한 와인맛 우유(300137), 발효된 나무 열매(300129)</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Algerita and milk]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이   (캐더락 잡화상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>29</npcid>
+         <npcename>n029_crew_kevin</npcename>
+         <npckname>자칭 승무원 케빈</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>323</npcid>
+         <npcename>n323_warehouse_lupert</npcename>
+         <npckname>창고지기 루퍼트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>Nothing to keep you？Then please Come back when you&#39;re busy。<BR><FONT color=#7e12d2>(Must be there from the gray ruins of Algerita after accepting the assignment,，Can be)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Consumables business Mee$<BR>Ah?What events do?<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Heraldic scholars Bailey$<BR>To understand the coat of arms or gem-related matters，Come to me at any time。<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Kevin Crew$<BR>Want to ride the airship，Can not do now！<BR><FONT color=#7e12d2>（From the gray ruins of Algerita given the task of，Be continued）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-a" mid="11"><![CDATA[<html>……？What？</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Algerita$<BR>Very hungry。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-b" mid="187"><![CDATA[<html>What is that……</html>]]></talk_answer>
+      <talk_question mid="186"><![CDATA[<html>$Algerita$<BR>Ah，What is good……<BR>Ah，That seems a good thing。I suddenly want to eat<FONT color=#a82424>That</FONT>The。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-c" mid="13"><![CDATA[<html>Hungry milk be able to do light？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Algerita$<BR>Well not long ago is not very popular，That you do not know?<BR><FONT color=#a82424>Grape flavored milk</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-c" image="QS_Default.dds" itemindex="300137">
+      <talk_answer link_index="n164_argenta_wounded-accepting-d" mid="15"><![CDATA[<html>(……I can no interest……)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Algerita$<BR>Click one&#39;s tongue，You are too young to，Do not know anything。<BR>
+It is said the greatest poet，Also known liar&#39;s Ponce in the drinking milk aroma of wine, after，Such a call had been。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-e" mid="185"><![CDATA[<html>……So where can we collect it……？</html>]]></talk_answer>
+      <talk_question mid="184"><![CDATA[<html>$Poet Ponce$<BR><FONT color=#7e12d2>Ah ah……Yes，This！This！This！Is this！</FONT><BR><FONT color=#7e12d2>The flavor is that people can really feel the tango in the Iberian Peninsula favorable weather in the mind of the elderly want the true of wine, milk～！Oh，Really dead, also the value of the～！</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-f" mid="17"><![CDATA[<html>Does have consumables business，But……</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Algerita$<BR>Do not know。Go<FONT color=#a82424>Store</FONT>See，May be sold。<BR>Where human life do not store？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-f" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-g" mid="19"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Algerita$<BR>What do you go to that<FONT color=#a82424>Consumables</FONT><FONT color=#a82424>Businessman</FONT>Where to buy。<BR>Stores human right not a lot of things？<BR>
+There should have it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-h" mid="21"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Algerita and milk$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-h" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Algerita$<BR>Kuaiqukuaihui ah，I&#39;m going impatient。<BR><FONT color=#7e12d2>（Algerita turned boring）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-a" mid="26"><![CDATA[<html>……？What？</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Algerita$<BR>Very hungry。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-b" mid="180"><![CDATA[<html>What is that……</html>]]></talk_answer>
+      <talk_question mid="179"><![CDATA[<html>$Algerita$<BR>Ah，What is good……<BR>Ah，That seems a good thing。I suddenly want to eat<FONT color=#a82424>That</FONT>The。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-b" image="QS_Default.dds" itemindex="300137">
+      <talk_answer link_index="n164_argenta_wounded-1-c" mid="28"><![CDATA[<html>Hungry milk be able to do light？</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Algerita$<BR>Well not long ago is not very popular，That you do not know?<BR><FONT color=#a82424>Aroma of wine, milk</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-d" mid="30"><![CDATA[<html>(……I can no interest……)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Algerita$<BR>Click one&#39;s tongue，You are too young to，Do not know anything。<BR>
+It is said the greatest poet，Also known liar&#39;s Ponce in the drinking milk aroma of wine, after，Such a call had been。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-e" mid="182"><![CDATA[<html>……So where can we collect it……？</html>]]></talk_answer>
+      <talk_question mid="181"><![CDATA[<html>$Poet Ponce$<BR><FONT color=#7e12d2>Ah ah……Yes，This！This！This！Is this！</FONT><BR><FONT color=#7e12d2>The flavor is that people can really feel the tango in the Iberian Peninsula favorable weather in the mind of the elderly want the true of wine, milk～！Oh，Really dead, also the value of the～！</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-f" mid="32"><![CDATA[<html>Does have consumables business，But……</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Algerita$<BR>Regardless of Rights。 <FONT color=#a82424>Store</FONT>Not have to sell the only thing?<BR>There does not patronize the store of human right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-f" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-2" mid="34"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Algerita$<BR>What do you go to that<FONT color=#a82424>Consumables/FONT><FONT color=#a82424>Businessman</FONT>Where to buy。<BR>Stores human right not a lot of things？<BR>
+There should have it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="174"><![CDATA[<html>$Merchant Mee$<BR>Ah？Can I do for you？<BR><FONT color=#7e12d2>(Please gray ruins of Algerita dialogue)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="175"><![CDATA[<html>$Heraldic scholars Bailey$<BR>If you want to know what coat of arms and gem，Please feel free to come to me。<BR><FONT color=#7e12d2>(Please gray ruins of Algerita dialogue)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="176"><![CDATA[<html>$Kevin Crew$<BR>Although you want to take the airship，But not now！<BR><FONT color=#7e12d2>(Please gray ruins of Algerita dialogue)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="177"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>Nothing to keep you？Then please Come back when you&#39;re busy。<BR><FONT color=#7e12d2>(Please gray ruins of Algerita dialogue)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Algerita$<BR>Kuaiqukuaihui ah，I&#39;m going impatient。<BR><FONT color=#7e12d2>（Algerita turned boring）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-a" mid="41"><![CDATA[<html>Flavored milk with no grapes?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Consumables business Mee$<BR>Recently the supply of materials is not well，Ah good cause for concern。<BR>Would like to sell Quemo goods is not one or two objects ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-b" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Consumables business Mee$<BR>Aroma of wine, milk……Ah！I know！There is……Where I have Zhaozhao formula。<BR><FONT color=#7e12d2>(Mee began rummaging through the)</FONT> <BR>Ah，With！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-c" mid="45"><![CDATA[<html>Ah? 50Years...?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Consumables business Mee$<BR>Recently left the place of this recipe can be slightly more than。Because it is at least <FONT color=#a82424>50Years ago</FONT>Pop drinks ah~ You can really not bad luck，Ha ha。<BR><FONT color=#7e12d2>（Mee pleased rocked the old recipes）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-c" image="QS_Default.dds" itemindex="300129">
+      <talk_answer link_index="n026_trader_may-2-d" mid="47"><![CDATA[<html>How to obtain?</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Consumables business Mee$<BR>Ah~Recently it will not say for certain popular。I happen to have materials，To help you do a bit of it。<BR>But to scent the words，Take several<FONT color=#a82424>Fermented fruit</FONT>。Can you help me to gather some of you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-d" image="QW_20.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3" mid="49"><![CDATA[<html>In short to me to do it。</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Merchant Mee$<BR>Received some prior，But as Monster truck hit，All things being taken away。I heard a distant<FONT color=#a82424>Set grave site</FONT>Of<FONT color=#a82424>Bat</FONT>Like sweet，So they grabbed the……Can you help me by robbing me？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-2" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="165"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>Nothing to keep you？Then please Come back when you&#39;re busy。<BR><FONT color=#7e12d2>(Nothing matters now。Should go to meet<FONT color=#7e12d2>Consumables business Mee</FONT>)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="166"><![CDATA[<html>$Heraldic scholars Bailey$<BR>To understand the coat of arms or gem-related matters，Come to me at any time。<BR><FONT color=#7e12d2>（Now no events。Must go<FONT color=#7e12d2>Consumables business Mee</FONT> ）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-2" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="167"><![CDATA[<html>$Kevin Crew$<BR>Want to ride the airship，Can not do now！<BR><FONT color=#7e12d2>（Now no events。Must go<FONT color=#7e12d2>Consumables business Mee</FONT> ）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QS_Default.dds" itemindex="300129">
+      <talk_question mid="50"><![CDATA[<html>$Consumables business Mee$<BR><FONT color=#a82424>Fermented fruit</FONT>Have5Or so should be sufficient。<BR>You go this time，I will first do drink。<BR>
+<FONT color=#7e12d2>(Difficulty level in the abyss under the impossible)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="QS_Default.dds" itemindex="300129">
+      <talk_answer link_index="n026_trader_may-4-a" mid="54"><![CDATA[<html>（To bring in to him）</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Consumables business Mee$<BR>Ah，Brings you? <FONT color=#a82424>Fermented fruit trees</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-b" mid="58"><![CDATA[<html>Volume…May have more... Ah...?</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Consumables business Mee$<BR>Wait a moment。Almost do the。<BR><FONT color=#7e12d2>（Mee pointed to a huge pot）</FONT> <BR>
+…Here，Be it！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-c" mid="60"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Consumables business Mee$<BR>I am also the first time to do，So do not grasp the amount of。<BR>Add to this that&#39;s on， Ha ha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-c" image="QS_Default.dds" itemindex="300137">
+      <talk_answer link_index="n026_trader_may-4-d" mid="62"><![CDATA[<html>Ah…So be it。</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Consumables business Mee$<BR>Ah，Sorry ah。Do a little more，So back to sub for everyone to taste... Please help me<FONT color=#a82424>Mail</FONT>Past?<BR>Return，I put the milk free of charge to you anyway。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-d" image="QN_Npc_Guilian.dds" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$Consumables business Mee$<BR>Ah，Thank you！Then…The first person on the first gift<FONT color=#a82424>Warehouse keeper Lu Bote</FONT> ，Then<FONT color=#a82424>Heraldic scholars Bailey</FONT> ，The last is near that airship<FONT color=#a82424>Kevin Crew</FONT>。Please send this on your first three bar。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5" image="QN_Npc_Guilian.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Consumables business Mee$<BR>Ah…First sent<FONT color=#a82424>Warehouse keeper Lu Bote</FONT>There on the line。<BR>This is really trouble you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-5" image="QS_Default.dds" itemindex="300137">
+      <talk_answer link_index="n323_warehouse_lupert-5-a" mid="67"><![CDATA[<html>（Handed drinks and explain the situation）</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>Ah，What&#39;s this？Seems not to store things to me ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-5-a" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-5-b" mid="69"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>Aha，<FONT color=#a82424>Mee</FONT>？Thanks a lot～Ah，Just thirsty。<BR>Please help me to thank her。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-5-b" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>If you have something to keep the words of，Please come back to me。<BR><FONT color=#7e12d2>(Bailey goes on should go to heraldic scholars)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-6" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Consumables business Mee$<BR>Next to be sent to<FONT color=#a82424>Heraldic scholars Bailey</FONT> There。<BR>This is really trouble you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-6" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-6-a" mid="74"><![CDATA[<html>（Handed drinks and explain the situation）</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Thank you ah。<BR>
+What can I do today to find me ah?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-6-a" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-6-b" mid="76"><![CDATA[<html>Heard before the very popular?</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Heraldic scholars Bailey${action:Talk}<BR>Ah? <FONT color=#a82424>Mee</FONT> Brewed beverages you?Extremely。<BR>Mee actually there are so many<FONT color=#a82424>Ancient recipes</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-6-b" image="QS_Default.dds" itemindex="300137">
+      <talk_answer link_index="n028_scholar_bailey-6-c" mid="78"><![CDATA[<html>50Years... Ah... So that。</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Heraldic scholars Bailey$<BR>How could。<BR>
+This is but my<FONT color=#a82424>Grandmother</FONT>Young to drink beverages like it。<BR>Popular words，Is<FONT color=#a82424>50Years ago</FONT>What the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-6-c" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Let me think of Grandma ah。Generation I<FONT color=#a82424>Mee</FONT> Thank bar。<BR><FONT color=#7e12d2>（Then go to where the crew Kevin）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-6" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="81"><![CDATA[<html>$Warehouse keeper Lu Bote$<BR>Really tasty。If you have something to keep the words of，Please come back to me。<BR><FONT color=#7e12d2>(Bailey goes on should go to heraldic scholars)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-7" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Heraldic scholars Bailey$<BR>Let me think of Grandma ah。Generation I<FONT color=#a82424>Mee</FONT> Thank bar。<BR><FONT color=#7e12d2>（Then go to where the crew Kevin）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-7" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="83"><![CDATA[<html>$Consumables business Mee$<BR>Ah，The last step backward in the。 Please send<FONT color=#7e12d2><FONT color=#a82424>Kevin Crew</FONT></FONT>There?<BR>This is really trouble you。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-7" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-7-a" mid="85"><![CDATA[<html>（Handed drinks and explain the situation）</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Kevin Crew$<BR>Can not now take the airship！<BR>…Ah? Other things?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-7-a" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-7-b" mid="87"><![CDATA[<html>How to taste?</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Kevin Crew$<BR>This is not a bar? To become a competent crew，Can not drink it。<BR>…Oh，Be <FONT color=#a82424>Milk</FONT>Ah? <BR>
+<FONT color=#7e12d2>（Kevin winked）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-7-b" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-7-kevinansw" mid="89"><![CDATA[<html>Airship took off in the other you?</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Kevin Crew$<BR>Wow~Really tasty！！As<FONT color=#7e12d2>Tango in the elderly Yibeiliya Peninsula</FONT>……Ah？Where is it, but Yibeiliya Peninsula……Total、In sum really good drink。Ah～If one side is sitting<FONT color=#a82424>Airship</FONT>Looking at the clouds，While drinking it，It nice to ah。What do you think？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-7-c" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-7-d" mid="92"><![CDATA[<html>Should be able to take off soon。</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html><FONT color=#2b2723>$Kevin Crew$<BR>Ah……Hubert said the uncle who is the adventurer Is……？！I heard！！Thanks to you，Airship can take off again？！</FONT><BR>
+<FONT color=#7e12d2>(Kevin seems to be excited)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-7-d" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-7-e" mid="94"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html><FONT color=#2b2723>$Kevin Crew$<BR>Wow~Spectacular ah！！I now count as a real<FONT color=#a82424>Crew</FONT>The bar！！ The nice<FONT color=#a82424>阿尔巴特罗 No.</FONT>Imposing on flight attendants！！ Hei hei！！</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-7-e" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-7-j" mid="96"><![CDATA[<html>Ah，Goodbye。</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Kevin Crew$<BR>Then 就跟<FONT color=#a82424>Mee</FONT>Sister，I intend to sell them milk the passengers on the airship。Oh sure will sell?<BR>Hei hei。Then I go to prepare Rights~！！Goodbye slightly~！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-7-f" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-7-g" mid="98"><![CDATA[<html>To take off soon。</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Kevin Crew$<BR>Ah，I thought this<FONT color=#a82424>阿尔巴特罗 No.</FONT>It can take off again…What is it in the end will?Even if we ask <FONT color=#a82424>Hubert</FONT> Uncle，How he did not reply to my ah。Oh well too?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-7-g" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-7-j" mid="101"><![CDATA[<html>（Kevin began to fantasize）</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Kevin Crew$<BR>How?！ Hei hei... So if I told <FONT color=#a82424>Mee</FONT> Sister，Airship on milk sold to these customers Well。Oh definitely a good selling！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-7-h" image="QS_20.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-7-i" mid="103"><![CDATA[<html>To take off soon。</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Kevin Crew$<BR>Ah，Such a long time，Perhaps it will take off！！ <FONT color=#a82424>Hubert</FONT> Uncle said~ There is now<FONT color=#a82424>Adventurer</FONT> It is looking for parts！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-7-i" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-7-j" mid="105"><![CDATA[<html>（Kevin is excited which）</html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>$Kevin Crew$<BR>How?！ Hei hei... So if I told <FONT color=#a82424>Mee</FONT> Sister，Airship on milk sold to these customers Well。Oh definitely a good selling！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-7-j" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-7-k" mid="172"><![CDATA[<html>I will tell her。</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$Kevin Crew$<BR>Ah ah！ Generation I<FONT color=#a82424>Mee</FONT> Sister says thank you！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-7-k" image="" itemindex="">
+      <talk_question mid="173"><![CDATA[<html>$Kevin Crew$<BR>Ah~Although some old lady&#39;s taste... Anyway, it should sell well。Hei hei。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-8" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="107"><![CDATA[<html>$Kevin Crew$<BR>Ah ah！ Generation I<FONT color=#a82424>Mee</FONT> Sister says thank you！！Although some old lady&#39;s taste... Anyway, it should sell well。Hei hei。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-8" image="QS_Default.dds" itemindex="300137">
+      <talk_answer link_index="n026_trader_may-8-a" mid="110"><![CDATA[<html>Everyone likes。</html>]]></talk_answer>
+      <talk_question mid="109"><![CDATA[<html>$Consumables business Mee$<BR>God，So fast while stock up? Wow~Kezhenkuai ah！Worthy adventurer Ah。<BR>However, if you like what milk?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-8-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-8-b" mid="112"><![CDATA[<html>One hundred years on...</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$Consumables business Mee$<BR>Fortunately,。This recipe，Do not know that there are no use。<BR>Or <FONT color=#a82424>Popular retro</FONT>Ah！ In decade, it is definitely impossible，How at least have to<FONT color=#a82424>5 years</FONT>！！ <FONT color=#a82424>A century</FONT>Cai Xing！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-8-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-9" mid="114"><![CDATA[<html>Thanks。</html>]]></talk_answer>
+      <talk_question mid="113"><![CDATA[<html>$Consumables business Mee$<BR>Anyway, to make good use of the future 50 years ago, the recipe to see if it， Ha ha。<BR>That I promise you it to you，Put a lot of it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-9" image="" itemindex="">
+      <talk_question mid="115"><![CDATA[<html>$Consumables business Mee$<BR>Would meet again slightly。。<BR>…Ah，Then do it~?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-9" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-9-a" mid="117"><![CDATA[<html>Not，Because of the need to re-create……</html>]]></talk_answer>
+      <talk_question mid="116"><![CDATA[<html>$Algerita$<BR>How to get to for so long？<BR>
+Not that to<FONT color=#a82424>Consumables business</FONT>Some things for you there？！<BR>
+You are a person drank me？！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-9-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-9-b" mid="119"><![CDATA[<html>It is，50Years ago, things pop off。</html>]]></talk_answer>
+      <talk_question mid="118"><![CDATA[<html>$Algerita$<BR>Is……Must be very popular，All sold out of the bar？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-9-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-9-c" mid="121"><![CDATA[<html>Well not long ago but for a long time ago...</html>]]></talk_answer>
+      <talk_question mid="120"><![CDATA[<html>$Algerita$<BR>Yes，50Years。<BR>
+So what？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-9-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-9-d" mid="123"><![CDATA[<html>（Silent in） …Anyway，Hold it。</html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$Algerita$<BR>
+Was only50In Well，500Years ago、5000Years ago, so what？<BR><FONT color=#a82424>Child</FONT>How so<FONT color=#a82424>Mind</FONT>Narrow ah？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-9-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-9-e" mid="125"><![CDATA[<html>（Algerita breath drinking milk）</html>]]></talk_answer>
+      <talk_question mid="124"><![CDATA[<html>$Algerita$<BR>Gone so long，Just get it back10Bottle？ So how you doing<FONT color=#a82424>Careful</FONT>，So<FONT color=#a82424>Stingy</FONT>Ah。So you just make a fuss，To<FONT color=#a82424>50Years</FONT>As a long time ago。Click one&#39;s tongue……<BR><FONT color=#7e12d2>(Gulp)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-9-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-9-f" mid="127"><![CDATA[<html><FONT color=#2b2723>(Drank 10 bottles of，Just enough to Wet your sub-ah……)</FONT></html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$Algerita$<BR>Wet your whistle had almost enough，I&#39;ll let you a horse right。<BR>Feed，Ruan Gutou<FONT color=#382000>{user_nick}</FONT>！That you take it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-9-f" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-9-g" mid="170"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-9-g" image="" itemindex="">
+      <talk_question mid="171"><![CDATA[<html>$Algerita$<BR>Ah……On the，You said not long ago，Reminds me of one thing。<BR>
+You should not even think lazy，Come back soon，Get it？</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,2611,2612,2613,2614</exe>
+         <exe type="setquest">261</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,2611,2612,2613,2614</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="5" op="]=">300129</chk>
+         <chk type="prob">300</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">483</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntitem" num="5" exe="" onexe="">300129</exe>
+         <exe type="conexe" true="5,3,4" false="10">0</exe>
+         <exe type="addquestitem" num="1">300129</exe>
+         <exe type="conexe" true="5,3,4" false="">0</exe>
+         <exe type="conexe" true="8,9" false="">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200483</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300129</exe>
+         <exe type="addquestitem" num="3">300137</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="1">300137</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="1">300137</exe>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 218 ) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 208 ) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="talk" npc="n029_crew_kevin">c</exe>
+         <exe type="talk" npc="n029_crew_kevin">f</exe>
+         <exe type="talk" npc="n029_crew_kevin">h</exe>
+         <exe type="delquestitem" num="-1">300137</exe>
+         <exe type="setstep">8</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="8">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="10">300137</exe>
+         <exe type="setstep">9</exe>
+         <exe type="setjornal">8</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="9">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2611,2612,2613,2614</exe>
+         <exe type="delquestitem" num="-1">300137</exe>
+         <exe type="complete">261</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="h">1,2</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="d" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="e" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="f" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="2">1</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="b" />
+   <exelink qstep="2" npc="n026_trader_may" sub="c" />
+   <exelink qstep="2" npc="n026_trader_may" sub="d" />
+   <exelink qstep="2" npc="n026_trader_may" sub="3">2,11,6,0,1</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="b" />
+   <exelink qstep="4" npc="n026_trader_may" sub="c" />
+   <exelink qstep="4" npc="n026_trader_may" sub="d">0,1,2,3</exelink>
+   <exelink qstep="5" npc="n323_warehouse_lupert" sub="b">0,1,2</exelink>
+   <exelink qstep="6" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="6" npc="n028_scholar_bailey" sub="c">0,1,2</exelink>
+   <exelink qstep="7" npc="n029_crew_kevin" sub="b" />
+   <exelink qstep="7" npc="n029_crew_kevin" sub="kevinansw">0</exelink>
+   <exelink qstep="7" npc="n029_crew_kevin" sub="d" />
+   <exelink qstep="7" npc="n029_crew_kevin" sub="e" />
+   <exelink qstep="7" npc="n029_crew_kevin" sub="j" />
+   <exelink qstep="7" npc="n029_crew_kevin" sub="g" />
+   <exelink qstep="7" npc="n029_crew_kevin" sub="j" />
+   <exelink qstep="7" npc="n029_crew_kevin" sub="i" />
+   <exelink qstep="7" npc="n029_crew_kevin" sub="j" />
+   <exelink qstep="7" npc="n029_crew_kevin" sub="k">5,6,7</exelink>
+   <exelink qstep="8" npc="n026_trader_may" sub="b" />
+   <exelink qstep="8" npc="n026_trader_may" sub="9">0,1,2</exelink>
+   <exelink qstep="9" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="9" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="9" npc="n164_argenta_wounded" sub="d" />
+   <exelink qstep="9" npc="n164_argenta_wounded" sub="e" />
+   <exelink qstep="9" npc="n164_argenta_wounded" sub="f">0</exelink>
+   <exelink qstep="9" npc="n164_argenta_wounded" sub="g">1,2</exelink>
+   <journal_data recompense="1:2611,2:2612,3:2613,4:2614" quest_title="아르젠타와 우유" chapterid="" quest_level="17" quest_mark_type="10" use_item_list="300137, 300129">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="131"><![CDATA[Algerita famine]]></title>
+         <contents mid="132"><![CDATA[<html><FONT color=#a82424>Algerita</FONT>Seems to want to drink<FONT color=#a82424>Grape flavored milk</FONT>。Perhaps there is a sale shop，May wish to<FONT color=#a82424>Consumables business Mee</FONT>Where to see it。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Consumables business Mee</FONT></html>]]></contents>
+         <destination mid="133"><![CDATA[Dialogue with the consumables business Mee]]></destination>
+         <todo_msg mid="134"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_20.dds</contents_image>
+         <need_itemlist>300129</need_itemlist>
+         <destination_pos>149,0,0</destination_pos>
+         <destination_mode>custom:146@3,147@3,148@3,149@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="135"><![CDATA[Mee recipe]]></title>
+         <contents mid="136"><![CDATA[<html><FONT color=#2b2723>To create the formula according to beverage business Mee，Need<FONT color=#a82424>Fermented fruit</FONT>。Go<FONT color=#a82424>Set grave site</FONT>To be<FONT color=#a82424>Bat</FONT>They took away the fruits of robbing the fermentation。</FONT><BR><BR><FONT color=#086171>Crystal Valley → Wind forest(Tomb entrance)</FONT> <FONT color=#a82424>→ Set grave site</FONT></html>]]></contents>
+         <destination mid="137"><![CDATA[Collect5A fermented fruit trees]]></destination>
+         <todo_msg mid="138"><![CDATA[Please go to the grave site to hunting bats Set。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="139"><![CDATA[Complete collection of materials]]></title>
+         <contents mid="140"><![CDATA[<html><FONT color=#a82424>Fermented fruit trees</FONT>Complete collection。Now back to Kedella crossing<FONT color=#a82424>Consumables business Mee</FONT>There，Made her drink it needs Algerita。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Consumables business Mee</FONT></html>]]></contents>
+         <destination mid="141"><![CDATA[Dialogue with the consumables business Mee]]></destination>
+         <todo_msg mid="142"><![CDATA[Points of consumables and Kedella dialog and merchants Mee。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Guilian.dds</contents_image>
+         <need_itemlist>300137</need_itemlist>
+         <destination_pos>8,n323</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>323</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="145"><![CDATA[Mee&#39;s Mail commissioned I]]></title>
+         <contents mid="146"><![CDATA[<html><FONT color=#a82424>Grape flavored milk</FONT>Production of finished。Subject<FONT color=#a82424>Consumables business Mee</FONT>Commissioned for her to several places，In return for free access to drinks。First sent<FONT color=#a82424>Warehouse keeper Lu Bote</FONT>Where it。<BR><BR><FONT color=#086171>Kedella points</FONT> → <FONT color=#a82424>Warehouse keeper Lu Bote</FONT></html>]]></contents>
+         <destination mid="147"><![CDATA[Dialogue with the warehouse guards Lu Bote]]></destination>
+         <todo_msg mid="148"><![CDATA[Mail to the warehouse keeper Lu Bote grape flavor milk bar。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <need_itemlist>300137</need_itemlist>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="149"><![CDATA[Mee&#39;s Mail commissioned II]]></title>
+         <contents mid="150"><![CDATA[<html><FONT color=#a82424>Grape flavored milk</FONT>Production of finished。Subject<FONT color=#a82424>Consumables business Mee</FONT>Commissioned for her to several places，In return for free access to drinks。Then sent to the<FONT color=#a82424>Heraldic scholars Bailey</FONT>Where it。<BR><BR><FONT color=#086171>Kedella points</FONT> → <FONT color=#a82424>Heraldic scholars Bailey</FONT></html>]]></contents>
+         <destination mid="151"><![CDATA[And the coat of arms Bailey scholars dialogue]]></destination>
+         <todo_msg mid="152"><![CDATA[Bailey to heraldic scholars grape flavored milk it by mail。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QN_crew_kevin.dds</contents_image>
+         <need_itemlist>300137</need_itemlist>
+         <destination_pos>8,n29</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>29</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="153"><![CDATA[Mee&#39;s Mail commissioned III]]></title>
+         <contents mid="154"><![CDATA[<html>It seems<FONT color=#a82424>Grape flavored milk</FONT>Is the drinks have been popular。Last sent<FONT color=#a82424>Kevin Crew</FONT>Where it。<BR>
+ <BR>
+<FONT color=#086171>Kedella points</FONT> → <FONT color=#a82424>Kevin Crew</FONT></html>]]></contents>
+         <destination mid="155"><![CDATA[Kevin dialogue with the crew]]></destination>
+         <todo_msg mid="156"><![CDATA[Mail to the crew Kevin grape flavor milk bar。]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="157"><![CDATA[Mee commissioned mail]]></title>
+         <contents mid="158"><![CDATA[<html><FONT color=#a82424>Consumables business Mee</FONT>Grape flavored milk commissioned completed mail。Now back<FONT color=#a82424>Consumables business Mee</FONT>Where she reported it to the。<BR><BR><FONT color=#086171>Kedella points</FONT> → <FONT color=#a82424>Consumables business Mee</FONT></html>]]></contents>
+         <destination mid="159"><![CDATA[Dialogue with the consumables business Mee]]></destination>
+         <todo_msg mid="160"><![CDATA[Complete mailing。Report it to the consumables business Mee。]]></todo_msg>
+      </journal>
+      <journal index="8">
+         <title_image />
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <need_itemlist>300137</need_itemlist>
+         <destination_pos>9,n164</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="161"><![CDATA[Algerita and milk]]></title>
+         <contents mid="162"><![CDATA[<html>From<FONT color=#a82424>Consumables business Mee</FONT>Department received<FONT color=#a82424>Grape flavored milk</FONT>。It to<FONT color=#a82424>Gray ruins</FONT>Of<FONT color=#a82424>Algerita</FONT>。<BR><BR><FONT color=#086171>Gray ruins</FONT> <FONT color=#a82424>→ Algerita</FONT></html>]]></contents>
+         <destination mid="163"><![CDATA[Dialogue with the gray ruins of Algerita]]></destination>
+         <todo_msg mid="164"><![CDATA[Grape flavor to the milk bar to Algerita。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>17:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>260</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

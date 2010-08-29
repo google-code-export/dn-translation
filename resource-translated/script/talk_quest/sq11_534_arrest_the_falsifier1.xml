@@ -1,0 +1,413 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_534_arrest_the_falsifier1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>534</qid>
+      <designer>김주연</designer>
+      <qlevel>24</qlevel>
+      <qdesc>피묻은 제퍼트의 군번줄	400130
+국왕 카시우스의 척서 400138
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>535</nextqid>
+      <nextqname>sq11_535_arrest_the_falsifier2</nextqname>
+      <nextqnpc>n041_duke_stwart</nextqnpc>
+      <qkname mid="1"><![CDATA[Found guilty of forging documentsI]]></qkname>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>271</npcid>
+         <npcename>n271_saint_guard</npcename>
+         <npckname>왕성 근위병 레이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（The task did not meet the criteria）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Bulletin$<br>Over the task of implementation，Temporarily unable to accept the task of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Bulletin$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Bulletin$<br>Task with a backpack full。<br>（Please order as soon as possible backpack）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Duke Stewart$<BR>Certainly have a traitor within the palace。<BR><FONT color=#7e12d2>（Duke Stewart seems to think something）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$King City, near the guard Trail$<BR><FONT color=#7e12d2>（Capital City Trail near the guard&#39;s position of not watching the front move）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-noquest" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$King City, near the guard Joel$<BR>Within King City <FONT color=#a82424>Duke Stewart</FONT>Looking<FONT color=#382000>{user_nick}</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-a" mid="9"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Duke Stewart$<BR>Instruments to get them for you based on the results of the survey is，King City is indeed a traitor within。Other，<FONT color=#a82424>韦尔顿哈鲁</FONT>Is about to become deserted because people are digging up ancient relics caused by。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-b" mid="11"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Duke Stewart$<BR>For those guys who sit idly，The foundation of the royal family will be shaken。You do not always loyal to the royal family、I will give you a chance to prove their loyalty，To be responsible for arrest<FONT color=#a82424>Committed forgery with</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Looking for committed forgery with$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-a" mid="16"><![CDATA[<html>Imperial jade seal?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Duke Stewart$<BR>This is…?<BR>Although some content has been destroyed，However, the form of written or authored by the royal family of instruments，But here also printed Yuxi。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-b" mid="18"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Duke Stewart$<BR>The royal coat of arms is certainly Kaxiwusi Yuxi。<BR>The culprits had the temerity to touch the hand of the royal family of Yuxi！<BR>These guys bragging?！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-b" image="QW_31.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-c" mid="20"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Duke Stewart$<BR>This forged instrument and write His Majesty the King also issued an order for emergency excavation。That time almost<FONT color=#a82424>韦尔顿哈鲁</FONT>We lost contact with the same time。Who stole the rights of the royal family，This blatant lie then compiled。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-c" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2" mid="22"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Duke Stewart$<BR>Ferret out the perpetrators of such serious crimes must be the guy。<BR>Once again, I give you the opportunity to prove their loyalty，You go to insult the royal authority for arrest <FONT color=#a82424>Committed forgery with</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-1" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$King City, near the guard Trail$<BR><FONT color=#7e12d2>（Capital City Trail near the guard&#39;s position of not watching the front move）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$King City, near the guard Joel$<BR>Within King City <FONT color=#a82424>Duke Stewart</FONT>Looking<FONT color=#382000>{user_nick}</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2" image="QS_Default.dds" itemindex="400138">
+      <talk_answer link_index="n041_duke_stwart-2-a" mid="26"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Duke Stewart${action:Stand2}<BR>I would like to grant you His Majesty&#39;s command Kaxiwusi。If there are people of non-cooperation，Give him<FONT color=#a82424>His Majesty&#39;s command</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Duke Stewart$<BR>Yuxi garrison kept the room are<FONT color=#a82424>King City, near the guard Trail</FONT>。Although he left King City no matter，But, after all, because lost Yuxi，It can not escape accountability。First of all, to ask questions<FONT color=#a82424>Trail</FONT>It。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-2" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n271_saint_guard-2-a" mid="29"><![CDATA[<html>Faux pas of the。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$King City, near the guard Trail$<BR><FONT color=#7e12d2>（King City, near the guard watching the front of the Trail）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-2-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n271_saint_guard-2-b" mid="31"><![CDATA[<html>（Come up with the king&#39;s command Kaxiwusi）</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$King City, near the guard Trail$<BR>Chat ban on duty。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-2-b" image="QS_Default.dds" itemindex="400138">
+      <talk_answer link_index="n271_saint_guard-2-c" mid="33"><![CDATA[<html>（Explained to the）</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$King City, near the guard Trail$<BR>There had<FONT color=#a82424>His Majesty&#39;s command</FONT>Ah。<BR>What do you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-2-c" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n271_saint_guard-2-d" mid="79"><![CDATA[<html>Do you have any suspicious?</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$King City, near the guard Trail$<BR>
+Imperial jade seal… Ah…<BR>
+Is…?<BR>
+<FONT color=#7e12d2>（Capital City Trail near guard frowned）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-2-d" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n271_saint_guard-3" mid="35"><![CDATA[<html>Is suspicious ah…It was you know he&#39;s whereabouts?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$King City, near the guard Trail$<BR>
+In fact… Room in the garrison of soldiers kept Yuxi which a man named<FONT color=#a82424>Jie Fote</FONT>People…I do not know from when to start up a little suspicious。<BR>
+He did not return to the so-called force，To the crime being a deserter wanted by the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-3" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$King City, near the guard Trail$<BR>I heard on duty outside City<FONT color=#a82424>King City, near the guard Joel</FONT>Seems to have seen him。<BR>
+It may wish to ask him。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-3-a" mid="38"><![CDATA[<html>（Come up with the king&#39;s command Kaxiwusi）</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$King City, near the guard Joel$<BR>Chat ban on duty。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-a" image="QS_Default.dds" itemindex="400138">
+      <talk_answer link_index="n252_saint_guard-3-b" mid="40"><![CDATA[<html>Wang Jie Fote guards know the whereabouts of the city near you?</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$King City, near the guard Joel$<BR>There had<FONT color=#a82424>His Majesty&#39;s command</FONT>Ah。<BR>
+What do you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-b" image="QW_31.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-3-c" mid="81"><![CDATA[<html>No。Thank you。</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$King City, near the guard Joel$<BR>Jie Fote，Recently, I saw him enter the gloomy forest scared。Because it is obsolete<FONT color=#a82424>Abandoned 韦尔顿哈鲁</FONT>Direction，I think the accident is inevitable ah。<BR>
+What is wrong with you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-c" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$King City, near the guard Joel$<BR>
+Blunt。<BR>
+<FONT color=#7e12d2>（Joel King City, near the guard watching the front）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3" image="QS_Default.dds" itemindex="400138">
+      <talk_question mid="68"><![CDATA[<html>$Duke Stewart$<BR>If there are people of non-cooperation，Give him<FONT color=#a82424>His Majesty&#39;s command</FONT>It。Jie Fote to find the whereabouts of the relevant questions were asked about it。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-4" image="QW_31.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$King City, near the guard Joel$<BR>Jie Fote，Recently, I saw him enter the gloomy forest scared。Because it is obsolete<FONT color=#a82424>Abandoned 韦尔顿哈鲁</FONT>Direction，I think the accident is inevitable ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-4" image="QW_31.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$King City, near the guard Trail$<BR>Jie Fote went to the abandoned abandoned 韦尔顿哈鲁 direction，I also feel very unexpected。<BR><FONT color=#7e12d2>（Been abandoned 韦尔顿哈鲁）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-5" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-5-a" mid="44"><![CDATA[<html>（Give blood on the Jie Fote&#39;s collar number）</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Duke Stewart$<BR>I have heard。<BR>
+Then，Found traitor<FONT color=#a82424>Jie Fote</FONT>The whereabouts of the right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-5-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-5-!next" mid="46"><![CDATA[<html><FONT color=#086171>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5341,5342,5343,5344</exe>
+         <exe type="setquest">534</exe>
+         <exe type="talk" npc="n041_duke_stwart">2</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">400138</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">400138</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">886</exe>
+         <exe type="huntitem" num="30000" exe="" onexe="5,6,7">400130</exe>
+         <exe type="addquestitem" num="1">400130</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="setstep">5</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200886</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>884</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5341,5342,5343,5344</exe>
+         <exe type="complete">534</exe>
+         <exe type="delquestitem" num="-1">400130</exe>
+         <exe type="delquestitem" num="-1">400138</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="acceptted">1,2,3,4,5</exelink>
+   <exelink qstep="1" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="1" npc="n041_duke_stwart" sub="c" />
+   <exelink qstep="1" npc="n041_duke_stwart" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n271_saint_guard" sub="b" />
+   <exelink qstep="2" npc="n271_saint_guard" sub="c" />
+   <exelink qstep="2" npc="n271_saint_guard" sub="d" />
+   <exelink qstep="2" npc="n271_saint_guard" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n252_saint_guard" sub="b" />
+   <exelink qstep="3" npc="n252_saint_guard" sub="c">0,2,8,3,1</exelink>
+   <exelink qstep="5" npc="n041_duke_stwart" sub="a">0</exelink>
+   <exelink qstep="5" npc="n041_duke_stwart" sub="!next">1,2,3</exelink>
+   <journal_data recompense="1:5341,2:5342,3:5343,4:5344" quest_title="문서 위조범을 찾아라I" chapterid="" quest_level="24" quest_mark_type="10" use_item_list="400130,400138">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Wang defector within the city]]></title>
+         <contents mid="48"><![CDATA[<html>Shredded paper shows there is a traitor within King City。And<FONT color=#a82424>Duke Stewart</FONT>Details of the contents of the dialogue to listen to it。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise（Paradise City within the sacred king）</FONT> <FONT color=#a82424>→ Duke Stewart</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Dialogue with the Duke Stewart]]></destination>
+         <todo_msg mid="50"><![CDATA[Add a task。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n271</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>271</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[King City Trail near the guards and dialogue]]></title>
+         <contents mid="52"><![CDATA[<html>Garrison soldiers in the room save the Yuxi City, near the guard Trail 或 No。<BR>
+And the King City Trail dialog and close to the guard。<BR><BR><FONT color=#086171>Holy Paradise（Paradise City within the sacred king）</FONT> <FONT color=#a82424>→King City, near the guard Trail</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[King City Trail near the guards and dialogue]]></destination>
+         <todo_msg mid="54"><![CDATA[And the King City Trail dialog and close to the guard。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n252</destination_pos>
+         <destination_mode />
+         <statemark_npcid>252</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Joel King City near the guards and dialogue]]></title>
+         <contents mid="56"><![CDATA[<html>To guard the sacred paradise<FONT color=#a82424>King City, near the guard Joel</FONT>Asked about the whereabouts of it Jiefo Te。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→King City, near the guard Joel</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Joel King City near the guards and dialogue]]></destination>
+         <todo_msg mid="58"><![CDATA[Joel King City near the guard with the dialogue it。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_31.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>313,0,0</destination_pos>
+         <destination_mode>custom:311@1,312@1,313@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Chase fleeing Jie Fote]]></title>
+         <contents mid="60"><![CDATA[<html>Dragon King followers fled the city almost seems a guard Jie Fote<FONT color=#a82424>Abandoned 韦尔顿哈鲁</FONT>Direction。 Chase him to the direction of the abandoned 韦尔顿哈鲁 see it。<BR><BR><FONT color=#086171>Montenegro hill angle（Gloomy forest）</FONT> <FONT color=#a82424>→ Abandoned 韦尔顿哈鲁</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Chase fleeing Jie Fote]]></destination>
+         <todo_msg mid="62"><![CDATA[In pursuit Jie Fote abandoned 韦尔顿哈鲁 it。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[Dialogue with the Duke Stewart]]></title>
+         <contents mid="64"><![CDATA[<html>Discovered the bloody Jie Fote&#39;s collar number。It to the sacred king of heaven within the city<FONT color=#a82424>Duke Stewart</FONT>It。<BR><BR><FONT color=#086171>Holy Paradise（Paradise City within the sacred king）</FONT> <FONT color=#a82424>→ Duke Stewart</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[Dialogue with the Duke Stewart]]></destination>
+         <todo_msg mid="66"><![CDATA[Let the dialogue with the Duke Stewart。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>533</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,431 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq01_059_dorins_amazing_box1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>59</qid>
+      <designer>곽노찬</designer>
+      <qlevel>7</qlevel>
+      <qdesc>300150 낡은 유물함
+300151 폭풍의 바랄라이카
+300152 바랄라이카 부스러기</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>60</nextqid>
+      <nextqname>sq01_060_dorins_amazing_box2</nextqname>
+      <nextqnpc>n002_trader_dorin</nextqnpc>
+      <qkname mid="1"><![CDATA[Dowling relic boxⅠ]]></qkname>
+      <qnpc>
+         <npcid>2</npcid>
+         <npcename>n002_trader_dorin</npcename>
+         <npckname>대장장이 도린 (프레리 무기상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>361</npcid>
+         <npcename>n361_item_destroy</npcename>
+         <npckname>아이템 분해기</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-a" mid="6"><![CDATA[<html>……Encounter unpleasant things of the？</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Blacksmith Dowling$<BR>Hey Hey~ This is Who？<BR>This is not the last person in the village red……Ah～Sneeze！<BR> 
+High-spirited of<FONT color=#a82424>Madman Warriors</FONT>You～？！<BR>Came to me today，What I do for you？Ah～Sneeze！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Blacksmith Dowling$<BR>Ah？No no！～What&#39;s so unpleasant things……Ah～Sneeze～！<BR>Do I have to because other people<FONT color=#a82424>Thing</FONT>Big bag big bag to<FONT color=#a82424>Be sold</FONT>，I have to think hard to do<FONT color=#a82424>Thing</FONT>But<FONT color=#a82424>No one would watch a，</FONT>So you will？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-c" mid="20"><![CDATA[<html>(Ah，Disgusting……) Ah，What good things you？</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Blacksmith Dowling$<BR> 
+Oops，There will be anything else……<BR> 
+Ah，Today<FONT color=#a82424>Sputum</FONT>How much。Cough，Ah～Sneeze～！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-d" mid="12"><![CDATA[<html>(………)Give me something casually……</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Blacksmith Dowling$<BR> Oops！Welcome～～In accordance with our Blacksmith<FONT color=#a82424>Enthusiasm</FONT>、<FONT color=#a82424>Upright</FONT>Shop training，Provide year round<FONT color=#a82424>Highest quality</FONT>Things，Continuous Customer Satisfaction<FONT color=#dc5a00>10</FONT><FONT color=#a82424>Years</FONT>No.<FONT color=#dc5a00>1</FONT><FONT color=#a82424></FONT>。In line with<FONT color=#a82424>Serve the public</FONT>Purpose，Provide the best products to customers，Is our greatest honor smithy。What you need～？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-d" image="QS_Default.dds" itemindex="300150">
+      <talk_answer link_index="n002_trader_dorin-accepting-e" mid="15"><![CDATA[<html>Relic box……？What is it？</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Blacksmith Dowling$<BR>Oh～！In that case，I solemnly tell you about our family for generations<FONT color=#a82424>Relics box</FONT>，Now the magic price，As long as<FONT color=#dc5a00>10</FONT>A<FONT color=#a82424>Gold</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Dowling relic boxⅠ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1" image="QS_Default.dds" itemindex="300150">
+      <talk_answer link_index="n002_trader_dorin-1-a" mid="22"><![CDATA[<html>So that。</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Blacksmith Dowling$<BR>The so-called<FONT color=#a82424>Relic box</FONT>，Is inside<FONT color=#a82424>Do not know what is installed</FONT>Box～！<BR>To know what the box containing，Must<FONT color=#a82424>Relics box</FONT>Open to know～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1-a" image="QS_Default.dds" itemindex="300150">
+      <talk_answer link_index="n002_trader_dorin-1-b" mid="24"><![CDATA[<html>Ah，I now have no money……So next time……</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Blacksmith Dowling$<BR>To come～An excellent opportunity to change the dismal life！Reversal of the long epic of life！You want<FONT color=#a82424>Relics</FONT><FONT color=#a82424>Box</FONT>You～？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1-b" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-1-c" mid="26"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Blacksmith Dowling$<BR>
+…<BR>
+……<BR>
+………<BR>
+Ah，Go away……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1-c" image="QS_Default.dds" itemindex="300150">
+      <talk_answer link_index="n002_trader_dorin-1-d" mid="30"><![CDATA[<html>Thank……Thank you。</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Blacksmith Dowling$<BR>Ah……While I was selling something，But you can be considered old customers of the，This time I will allow you to<FONT color=#a82424>Credit</FONT>It。<FONT color=#a82424>Relics box</FONT>I will first give you on credit，You open to see it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1-d" image="QS_Default.dds" itemindex="300150">
+      <talk_answer link_index="n002_trader_dorin-1-e" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Blacksmith Dowling$<BR>In<FONT color=#a82424>Backpack</FONT>Select<FONT color=#a82424>Relic box</FONT>，Use<FONT color=#a82424>Right</FONT>Can be used。Open the box，After the confirmation pop-up items，Come and talk to me。<BR><FONT color=#7e12d2>(Blacksmith Dowling to<FONT color=#a82424>Old relic box</FONT>Over to me)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1-e" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Blacksmith Dowling$<BR> 
+Ah，On the……<FONT color=#a82424>Credit interest rates</FONT>Be<FONT color=#a82424>Per year</FONT><FONT color=#dc5a00>79.24</FONT><FONT color=#086171>%</FONT>，<FONT color=#a82424>Delay interest</FONT>Maximum<FONT color=#dc5a00>99.98</FONT><FONT color=#a82424>%</FONT>。<FONT color=#a82424>Fee</FONT>And other<FONT color=#a82424>Additional costs</FONT>Excluded。I must first tell you this～Hei hei～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2" image="QS_Default.dds" itemindex="300150">
+      <talk_question mid="28"><![CDATA[<html>$Blacksmith Dowling$<BR>Are you doing？I do not say，In<FONT color=#a82424>Backpack</FONT>Select<FONT color=#a82424>Relic box</FONT>，Click<FONT color=#a82424>Right</FONT>You can use？<BR>You do not forget it so soon？Grown doubled to open the box！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-a" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n002_trader_dorin-2-b" mid="39"><![CDATA[<html>Out like a very good thing……</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Blacksmith Dowling$<BR>
+Ha……Ha ha ha ha？！！！This……This is……！！！<BR>
+<FONT color=#7e12d2>(Blacksmith Road Forest boss eyes open，Eyes seemed to jump out of the same)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-b" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n002_trader_dorin-2-class_check_2" mid="41"><![CDATA[<html>Do you know this thing？</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Blacksmith Dowling$<BR> This……This is not……<BR> Violent…Violent…Violent…Violent…Violent…Violent…Violent…Violent…Violent……<BR> <FONT color=#dc5a00>Storm shamisen</FONT>You？！！？！<BR> How……How can there……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-c" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n002_trader_dorin-2-e" mid="44"><![CDATA[<html>Hei hei～Anyway，Thank you for letting me be a good thing。</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Blacksmith Dowling$<BR>That、That is our<FONT color=#a82424>Ancestor</FONT>After several generations, made of<FONT color=#a82424>Ancient weapons</FONT>。That……So how good things will be in that same old garbage box ah……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-d" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n002_trader_dorin-2-e" mid="46"><![CDATA[<html>Ha ha～Anyway，Thank you for letting me be a good thing～</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Blacksmith Dowling$<BR>That、That is our<FONT color=#a82424>Ancestor</FONT>After several generations, made of<FONT color=#a82424>Ancient weapons</FONT>。That……So how good things will be in that same old garbage box ah……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-e" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n002_trader_dorin-2-f" mid="48"><![CDATA[<html>Can not be used？</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Blacksmith Dowling$<BR>
+Ha ha……But anyway, is now<FONT color=#a82424>Can not use weapons</FONT>The。<BR>
+In addition to being<FONT color=#a82424>Antique</FONT>，Have no other value of the。If it does not transform what，Used to make new weapons。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-f" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n002_trader_dorin-2-g" mid="50"><![CDATA[<html>The transformation of what you say，Production of new weapons is how matter……？</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Blacksmith Dowling$<BR>
+Matter how？You sure had the right items？<BR>
+You look at<FONT color=#a82424>Items of information</FONT>。<FONT color=#a82424>Occupational limit</FONT>Is written in the<FONT color=#dc5a00>Ancient people</FONT>，Not you？<FONT color=#dc5a00>Ancient people</FONT>Has been shattered for hundreds of years，So it is now a thing no one can use。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-g" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n002_trader_dorin-2-h" mid="53"><![CDATA[<html>(Dowling mouth and float a smile，Said。)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Blacksmith Dowling$<BR> Although<FONT color=#a82424>Decomposition</FONT>Ancestors<FONT color=#a82424>The legacy of the ancients</FONT>Is so full of hurt，But the life cycle of the process is kept，Not you？Anyway, the thing is useless，Than to create something new。Can be said to create and destroy～Hei hei……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-h" image="QN_Npc_ItemDissolution.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Blacksmith Dowling$<BR>Long story short，You get the first decomposition<FONT color=#dc5a00>Storm shamisen</FONT>。<BR>I will help you re-manufactured weapons you can use。<BR><FONT color=#a82424>Articles disassembling</FONT>In<FONT color=#a82424>Shadow Forest</FONT>，You Kuaiqukuaihui。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-i" image="QS_Default.dds" itemindex="300150">
+      <talk_question mid="85"><![CDATA[<html>$Blacksmith Dowling$<BR>Ah？<FONT color=#a82424>Relic box</FONT>Lost？So talk and all hands……<BR>I will give you a，You Go<FONT color=#a82424>Backpack</FONT>Select<FONT color=#a82424>Relic box</FONT>，Then click<FONT color=#a82424>Right</FONT>Use！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2-j" image="QS_Default.dds" itemindex="300150">
+      <talk_question mid="89"><![CDATA[<html>$Blacksmith Dowling$<BR>You this guy?<BR>You open the box remains，Nest in the warehouse, but you do ah? Not quickly out！<BR><FONT color=#7e12d2>（The box of ancient artifacts out of the props to the Blacksmith Bar Dowling）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n002_trader_dorin-3-a" mid="95"><![CDATA[<html>Ah？This is the decomposition of debris items be……</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Blacksmith Dowling$<BR>…<BR>………<BR>……………<BR>…………………What is this ah？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-a" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n002_trader_dorin-3-b" mid="61"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Blacksmith Dowling$<BR> ……<BR>Not，I mean……<BR><FONT color=#dc5a00>Storm shamisen</FONT>After decomposition，How these things will come out？<BR> What&#39;s this……？Ah？Why are some<FONT color=#a82424>Garbage</FONT>Ah～！！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-b" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n002_trader_dorin-3-c" mid="63"><![CDATA[<html>You and I say what is the use……</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Blacksmith Dowling$<BR>
+In order to produce<FONT color=#dc5a00>Storm shamisen</FONT>，Our ancestors did not know how many coat of arms used up、Gem、Gold and precious stones？！！<BR>
+Why do only those things？？This is more like me？！！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-c" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n002_trader_dorin-3-d" mid="65"><![CDATA[<html>……(Such a plan had also……)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Blacksmith Dowling$<BR>Ah～！I originally wanted to create a transcendent<FONT color=#dc5a00>Storm shamisen</FONT>Of、<FONT color=#a82424>Spectacular</FONT>、<FONT color=#086171>Amazing</FONT>、<FONT color=#dc5a00>Oriental</FONT>、<FONT color=#7e12d2>Stunning</FONT>、<FONT color=#419300>Megaton</FONT>、<FONT color=#a82424>Full of suspense</FONT>、<FONT color=#dc5a00>Only</FONT>Goods！！Ah ah ah～～～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-d" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-3-!next" mid="67"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-e" image="QN_Npc_ItemDissolution.dds" itemindex="">
+      <talk_question mid="87"><![CDATA[<html>$Blacksmith Dowling$<BR>I let you go decomposition<FONT color=#a94407>Storm shamisen</FONT>，Where you throw it up？I will give you a，You immediately go to<FONT color=#a82424>Shadow Forest</FONT><FONT color=#a82424>Decomposition</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-f" image="QN_Npc_ItemDissolution.dds" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$Blacksmith Dowling$<BR>What dillydally? Not tell you to go<FONT color=#a82424>Shadow Forest</FONT>To<FONT color=#dc5a00>Storm shamisen</FONT> Conduct<FONT color=#a82424>Decomposition</FONT>After you come back?<BR>Do not decompose quickly in the past to prop up the<FONT color=#a82424>Material</FONT>Get it back。<BR>
+<FONT color=#7e12d2>（Use of materials it shamisen decomposition machine decomposition Storm）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-g" image="QS_Default.dds" itemindex="300152">
+      <talk_question mid="98"><![CDATA[<html>$Blacksmith Dowling$<BR>I do not let you go and decomposition<FONT color=#a94407>Storm shamisen</FONT>，Then take back the right materials？<BR>
+<FONT color=#7e12d2>(Please Storm stringed decomposition taken over by the Material)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">59</exe>
+         <exe type="recompense_view">,591,592,592,592</exe>
+         <exe type="talk" npc="n002_trader_dorin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>300150 케케묵은 깜짝 상자</comment>
+      <conditions />
+      <executions>
+         <exe type="additem" num="1">300150</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="30000" exe="" onexe="4,5,6">300152</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>300150 낡은 유물함
+300151 폭풍의 바랄라이카
+300152 바랄라이카 부스러기
+</comment>
+      <conditions>
+         <chk type="item" num="1" op="]=">300151</chk>
+         <chk type="class" op="=">1</chk>
+         <chk type="item" num="1" op="]=">300150</chk>
+         <chk type="item" num="1" op="]=">300152</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300150 , 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300151 , 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300152 , 1) >= 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="10,16,6,9" false="18">3</exe>
+         <exe type="talk" npc="n002_trader_dorin">a</exe>
+         <exe type="talk" npc="n002_trader_dorin">2</exe>
+         <exe type="conexe" true="4" false="5">1</exe>
+         <exe type="talk" npc="n002_trader_dorin">c</exe>
+         <exe type="talk" npc="n002_trader_dorin">d</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntitem" num="30000" exe="" onexe="10,9">300152</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="conexe" true="1" false="19">0</exe>
+         <exe type="talk" npc="n002_trader_dorin">i</exe>
+         <exe type="additem" num="1">300150</exe>
+         <exe type="conexe" true="2" false="15">2</exe>
+         <exe type="conexe" true="17" false="12,13">4</exe>
+         <exe type="talk" npc="n002_trader_dorin">3</exe>
+         <exe type="talk" npc="n002_trader_dorin">j</exe>
+         <exe type="conexe" true="17" false="11">6</exe>
+         <exe type="conexe" true="17" false="14">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="item" num="1" op="]=">300152</chk>
+         <chk type="class" op="=">1</chk>
+         <chk type="item" num="1" op="]=">300151</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300151 , 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300152 , 1) >= 1</chk>
+         <chk type="item" num="1" op="]=">130150</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300150 , 1) >= 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="7">0</exe>
+         <exe type="talk" npc="n002_trader_dorin">3</exe>
+         <exe type="talk" npc="n002_trader_dorin">f</exe>
+         <exe type="recompense">591,,,,</exe>
+         <exe type="complete">59</exe>
+         <exe type="conexe" true="3" false="6">1</exe>
+         <exe type="recompense">592,,,,</exe>
+         <exe type="conexe" true="12" false="10">4</exe>
+         <exe type="talk" npc="n002_trader_dorin">e</exe>
+         <exe type="additem" num="1">300151</exe>
+         <exe type="conexe" true="2" false="11">2</exe>
+         <exe type="conexe" true="12" false="13">3</exe>
+         <exe type="talk" npc="n002_trader_dorin">g</exe>
+         <exe type="conexe" true="12" false="14">5</exe>
+         <exe type="conexe" true="12" false="8,9">6</exe>
+         <exe type="delitem" num="-1">300150</exe>
+         <exe type="delitem" num="-1">300151</exe>
+         <exe type="delitem" num="-1">300152</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n002_trader_dorin" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n002_trader_dorin" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n002_trader_dorin" sub="b" />
+   <exelink qstep="1" npc="n002_trader_dorin" sub="c" />
+   <exelink qstep="1" npc="n002_trader_dorin" sub="d" />
+   <exelink qstep="1" npc="n002_trader_dorin" sub="e">0,1,2,3</exelink>
+   <exelink qstep="2" npc="n002_trader_dorin">0</exelink>
+   <exelink qstep="2" npc="n002_trader_dorin" sub="b" />
+   <exelink qstep="2" npc="n002_trader_dorin" sub="class_check_2">3</exelink>
+   <exelink qstep="2" npc="n002_trader_dorin" sub="e" />
+   <exelink qstep="2" npc="n002_trader_dorin" sub="e" />
+   <exelink qstep="2" npc="n002_trader_dorin" sub="f" />
+   <exelink qstep="2" npc="n002_trader_dorin" sub="g" />
+   <exelink qstep="2" npc="n002_trader_dorin" sub="h">6,7,8</exelink>
+   <exelink qstep="3" npc="n002_trader_dorin">0</exelink>
+   <exelink qstep="3" npc="n002_trader_dorin" sub="b" />
+   <exelink qstep="3" npc="n002_trader_dorin" sub="c" />
+   <exelink qstep="3" npc="n002_trader_dorin" sub="d">5</exelink>
+   <exelink qstep="3" npc="n002_trader_dorin" sub="!next">4,15,16,17</exelink>
+   <journal_data recompense="1:591,2:592" quest_title="도린의 유물함Ⅰ" chapterid="" quest_level="7" quest_mark_type="10" use_item_list="300151,300150,300152">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,n2</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>2</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[And dialogue blacksmith Dowling]]></title>
+         <contents mid="69"><![CDATA[<html>Listen to the blacksmith, where Dowling<FONT color=#a82424>Relics box</FONT>Things。<BR><BR><FONT color=#086171>Pourailly town</FONT> <FONT color=#a82424>→ Blacksmith Dowling</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[And dialogue blacksmith Dowling]]></destination>
+         <todo_msg mid="71"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,n2</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>2</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[After using the old relic box，And dialogue blacksmith Dowling]]></title>
+         <contents mid="73"><![CDATA[<html>Use Dowling received from the<FONT color=#a82424>Old relic box</FONT>，Obtain substances，Re and<FONT color=#a82424>Dowling</FONT>Dialogue。<BR><BR><FONT color=#086171>Pourailly town</FONT> <FONT color=#a82424>→ Blacksmith Dowling</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[After using the old relic box，And dialogue blacksmith Dowling]]></destination>
+         <todo_msg mid="75"><![CDATA[Please use the Dowling received from the relics of the old box。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_ItemDissolution.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>2,n361</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>361</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Decomposition of forest goods with the shadow plane decomposition Storm shamisen]]></title>
+         <contents mid="78"><![CDATA[<html>Dowling said that after the storm stringed decomposition can be made into new items，Let me go<FONT color=#a82424>Shadow Forest</FONT>Of<FONT color=#a82424>Articles disassembling</FONT>To<FONT color=#dc5a00>Storm shamisen</FONT>Broken down。<BR> 
+<BR> 
+<FONT color=#086171>Shadow Forest</FONT> <FONT color=#a82424>→ Articles disassembling</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Decomposition of forest goods with the shadow plane decomposition Storm shamisen]]></destination>
+         <todo_msg mid="80"><![CDATA[Please use the decomposition of the shadow of the forest was divided Storm stringed items。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,n2</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>2</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[And dialogue blacksmith Dowling]]></title>
+         <contents mid="82"><![CDATA[<html><FONT color=#a82424>Decomposition</FONT>The<FONT color=#dc5a00>Storm shamisen</FONT>，Obtained<FONT color=#a82424>Shamisen slag</FONT>。Back Pourailly town<FONT color=#a82424>Blacksmith Dowling</FONT>There，And its dialogue。<BR><BR><FONT color=#086171>Pourailly town</FONT> <FONT color=#a82424>→ Blacksmith Dowling</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[And dialogue blacksmith Dowling]]></destination>
+         <todo_msg mid="84"><![CDATA[Decomposition of the storm shamisen。Go back to where the blacksmith Dowling。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>7:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1:2</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

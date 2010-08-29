@@ -1,0 +1,277 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_420_return_of_the_general</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>420</qid>
+      <designer>김인정</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>403</nextqid>
+      <nextqname>mq11_403_meet_argenta_again</nextqname>
+      <nextqnpc>n042_general_duglars</nextqnpc>
+      <qkname mid="1"><![CDATA[General Regression]]></qkname>
+      <qnpc>
+         <npcid>263</npcid>
+         <npcename>n263_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（The task did not meet the criteria）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>You accept too many tasks，Can not accept the task of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Task with a backpack full。<br>（Please order as soon as possible backpack）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-1" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$General Douglas$<BR>Sacred paradise now brave soldiers to resist the Monster Mine are very dark due diligence。<BR>
+<FONT color=#7e12d2>（Let the dialogue with the Bishop Ignacio）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$General Douglas$<BR>Just back。<BR>
+Mountains of things to deal with it，If no events，Come back later。<BR>
+<FONT color=#7e12d2>（Let the dialogue with the Bishop Ignacio）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="8"><![CDATA[<html>Dark mine?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio${action:talk}<BR>Elite soldiers now and in the<FONT color=#a82424>General Douglas</FONT>With positive<FONT color=#a82424>Dark mine</FONT>Gathered near。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="10"><![CDATA[<html>Then I&#39;ll go dark mine。</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Bishop Ignacio$<BR>They are working with<FONT color=#a82424>Dark mine</FONT>The Monster Among their confrontation。<BR>There is also a critical situation even though they，But something more important thing the Prophet，So better to<FONT color=#a82424>General Douglas</FONT>To report to the situation where there is better。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QS_Default.dds" itemindex="300243">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="12"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Bishop Ignacio$<BR>Great? That quickly to<FONT color=#a82424>General Douglas</FONT>Where to report to him the situation here，And try to persuade soldiers were evacuated to King City Come。You，This is my handwritten letters。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="QW_27.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Bishop Ignacio${action:talk}<BR>Letters go with Zhe Feng<FONT color=#a82424>Dark mine</FONT>General Douglas Bar。<BR>He really dedicated people,，Will understand。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_27.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Bishop Ignacio${action:talk}<BR>Letters go with Zhe Feng<FONT color=#a82424>Dark mine</FONT>General Douglas Bar。<BR>He really dedicated people,，Will understand。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2" image="" itemindex="">
+      <talk_answer link_index="n263_general_duglars-2-a" mid="16"><![CDATA[<html>I<FONT color=#382000>{user_class} {user_nick}</FONT>。</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$General Douglas${action:talk}<BR>Ah? Who are you?<BR>Seems to be a common adventurer Well，Very dangerous here，&#39;d Better go back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2-a" image="" itemindex="">
+      <talk_answer link_index="n263_general_duglars-2-b" mid="18"><![CDATA[<html>This is a handwritten letter Bishop Ignacio。</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$General Douglas$<BR>Daoshi first heard Oh，What events come to me?<BR>You can also see，We are fighting them。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2-b" image="QS_Default.dds" itemindex="300243">
+      <talk_answer link_index="n263_general_duglars-2-c" mid="20"><![CDATA[<html>（General closed his reading of the letter of the）</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$General Douglas$<BR>Ah?Bishop letters？Give me see。<BR><FONT color=#7e12d2>（Anxious to read letters）</FONT><BR>…Ah，I am not the original time，Events occurred ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n263_general_duglars-2-d" mid="22"><![CDATA[<html>（General shrugged）</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$General Douglas$<BR><FONT color=#a82424>Dark mine</FONT>But a very important strategic location。If by Magic Things here have claimed, then，Very tricky。But the rescue<FONT color=#a82424>Prophet</FONT>Is also important，The defense seems to be here temporarily to the Association of the adventurer。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2-d" image="QM_Orc_Gray.dds" itemindex="">
+      <talk_answer link_index="n263_general_duglars-2-e" mid="24"><![CDATA[<html>Understand。</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$General Douglas$<BR>
+Although in his spare under the eyes of those who<FONT color=#a82424>Bomb experts Nuomuhake</FONT>Some regrets，But only look forward to next time…<BR>
+Ah，May force a transfer。Call of soldiers stationed near the mine go back。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2-e" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$General Douglas${action:talk}<BR>It in<FONT color=#a82424>King City</FONT>Goodbye。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-3" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$General Douglas$<BR>Defense for the time being commissioned here<FONT color=#a82424>Adventurers Association</FONT>，We have to first go back。<BR>I will immediately return to<FONT color=#a82424>King City</FONT>Come with you soon。Good-bye in King City。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>General Douglas</FONT>Just come back。<BR>Go and discuss with him a base to attack the black knight&#39;s plan it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="29"><![CDATA[<html>Great monarch was rushed to the dark territory of ah。</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$General Douglas${action:talk}<BR>Just come back。<BR>
+You safe and sound right。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-b" mid="31"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$General Douglas$<BR>Ah，Do not worry first。There are a lot of strength not to，But also<FONT color=#a82424>Dark mine</FONT>Long war，Many<FONT color=#a82424>Soldier</FONT>Still tired ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-b" image="QW_27.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-c" mid="33"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$General Douglas$<BR>After the army is ready，Will immediately send troops to<FONT color=#a82424>Dark Overlord&#39;s territory</FONT>，You do not worry too much。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-!next" mid="35"><![CDATA[<html><FONT color=#a94407>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300243</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300243</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4201,4202,4203,4204</exe>
+         <exe type="complete">420</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c">0,1,2</exelink>
+   <exelink qstep="2" npc="n263_general_duglars" sub="b" />
+   <exelink qstep="2" npc="n263_general_duglars" sub="c" />
+   <exelink qstep="2" npc="n263_general_duglars" sub="d" />
+   <exelink qstep="2" npc="n263_general_duglars" sub="e">0,1,2</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="c">0</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="!next">1</exelink>
+   <journal_data recompense="1:4201,2:4202,3:4203,4:4204" quest_title="장군의 귀환" chapterid="4" quest_level="24" quest_mark_type="7" use_item_list="300243">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[Elite soldiers assembled plan]]></title>
+         <contents mid="39"><![CDATA[<html>A matter for the use of elite soldiers，Let the dialogue with the Bishop Ignacio。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[Dialogue with the Bishop Ignacio。]]></destination>
+         <todo_msg mid="41"><![CDATA[Add a task。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>272,n263</destination_pos>
+         <destination_mode>custom:271@1,272@1</destination_mode>
+         <statemark_npcid>263</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[From General Douglas]]></title>
+         <contents mid="43"><![CDATA[<html>Bishop Ignacio elite soldiers who wish to convene，But they are working with<FONT color=#a82424>General Douglas</FONT>Together<FONT color=#a82424>Dark mine</FONT>。General Douglas mine went to the dark bar。<BR>
+ <BR>
+<FONT color=#086171>Heermadai port（Dark mine entrance）</FONT> <FONT color=#a82424>→ Dark mine</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[In the dark mine a dialogue with General Douglas]]></destination>
+         <todo_msg mid="45"><![CDATA[General Douglas mine went to the dark，Strength to support its request it。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[King City return]]></title>
+         <contents mid="47"><![CDATA[<html>General Douglas commitment to withdraw troops。And back to<FONT color=#a82424>King City</FONT>Of<FONT color=#a82424>General Douglas</FONT>Return to dialogue，Request for troops to support it again。<BR>
+ <BR>
+<FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Holy heaven with the King City of Douglas General dialogue]]></destination>
+         <todo_msg mid="49"><![CDATA[Holy heaven with the King City of Douglas General dialog and。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>419</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

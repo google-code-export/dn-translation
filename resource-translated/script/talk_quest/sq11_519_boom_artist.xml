@@ -1,0 +1,379 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_519_boom_artist</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>519</qid>
+      <designer>손원호</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Shells experts]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[（The task did not meet the criteria）]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>You accept the task too，Can not accept the task of。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Task with a backpack full。<br>（Please order as soon as possible backpack）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Company president Gunter adventurer$<BR>
+Monster move some of their unusual ah。<BR>
+Really makes gripping ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="QS_Default.dds" itemindex="300244">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="8"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Company president Gunter adventurer$<BR>You bring the shells，Appears to need further<FONT color=#a82424>Precision analysis</FONT>Cai Xing。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Orc shells experts$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-a" mid="25"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Company president Gunter adventurer$<BR><FONT color=#a82424>Blacksmith Berlin</FONT>In this regard, but trusted expert ah。The shell to him，What he should be able to obtain valuable information。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-a" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Company president Gunter adventurer$<BR><FONT color=#a82424>Berlin</FONT>Although the character a bit rude，But the kind-hearted。Tell him I sent you，He will give you analysis of shells。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Company president Gunter adventurer$<BR>You will not find<FONT color=#a82424>Berlin</FONT>It?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2" image="QS_Default.dds" itemindex="300244">
+      <talk_answer link_index="n091_trader_bellin-2-a" mid="30"><![CDATA[<html>Is the shell。</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Blacksmith Berlin$<BR>Ah? That… What you&#39;re holding?！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-a" image="QS_Default.dds" itemindex="300244">
+      <talk_answer link_index="n091_trader_bellin-2-b" mid="32"><![CDATA[<html>（Told him that sent me Gaunt）</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Blacksmith Berlin$<BR>What? Shells? <BR>I want to throw ah? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-b" image="QS_Default.dds" itemindex="300244">
+      <talk_answer link_index="n091_trader_bellin-2-c" mid="34"><![CDATA[<html>（Produce shells）</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Blacksmith Berlin$<BR>Oh，The commission is Gunter ah。<BR>Then give me see it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-c" image="QM_Orc_Gray.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-2-d" mid="36"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Blacksmith Berlin$<BR>Ah… This is <FONT color=#a82424>Orc Mechanic</FONT>Craft ah，Yes，Severe。 <BR>Years of work grow so big ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-d" image="QM_Orc_Gray.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-2-e" mid="38"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Blacksmith Berlin$<BR>Orc-made bombs, but so far very poor。Toys that simply could not get the same thing I am interested in…But this is not the same friends。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-e" image="QM_Orc_Gray.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-2-f" mid="40"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Blacksmith Berlin$<BR>Certainly learned where the real gunpowder production method。The shells might blow up the wall that is more than enough ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-f" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Blacksmith Berlin$<BR>This is too dangerous… <BR>Hurry back to the<FONT color=#a82424>Gunter</FONT>Report it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Blacksmith Berlin$<BR>Went back to where Gaunt，To report to the danger of bombs on the ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-3" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-3-a" mid="89"><![CDATA[<html>（About the power of artillery shells）</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Company president Gunter adventurer$<BR>Grace，Berlin?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-3-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-3-b" mid="91"><![CDATA[<html>Pre-emptive?</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$Company president Gunter adventurer$<BR>Ah… Now can not wait any longer。<BR>While this shell Now that we know the power of，Have to<FONT color=#a82424>Pre-emptive</FONT>The。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-3-b" image="QM_Orc_Gray.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-3-c" mid="93"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$Company president Gunter adventurer$<BR>According to our intelligence，Mine development in the dark shells are from<FONT color=#a82424>Bomb experts Nuomuhake</FONT>Hand。While the guy was an orc，But it is a very smart shells experts。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-3-c" image="QM_Orc_Gray.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-3-d" mid="95"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Company president Gunter adventurer$<BR><FONT color=#a82424>Bomb experts Nuomuhake</FONT>Shells in the manufacture of more before the，Please destroy them。Eliminated if the technical core，They will definitely drop the speed down。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-3-d" image="QM_Orc_Gray.dds" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$Company president Gunter adventurer$<BR><FONT color=#a82424>Bomb experts Nuomuhake</FONT>Hide<FONT color=#a82424>Dark mine</FONT>Deep，Leave it quickly。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-4" image="QM_Orc_Gray.dds" itemindex="">
+      <talk_question mid="98"><![CDATA[<html>$Company president Gunter adventurer$<BR>If<FONT color=#a82424>Bomb experts Nuomuhake</FONT>It&#39;s that easy to make bombs, then，King City is difficult to hold up ah。Just do it fast。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-a" mid="100"><![CDATA[<html>Of course。</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Company president Gunter adventurer$<BR>Ah，Successfully completed the task you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-b" mid="102"><![CDATA[<html><FONT color=#086171>（Rewarded）</FONT></html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-c" mid="104"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Company president Gunter adventurer$<BR>Hard work。But I have been doing the rounds sent to the Dark Overlord of the city&#39;s intelligence。War seemed imminent, ah we should。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-d" mid="106"><![CDATA[<html>（Continue）</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Company president Gunter adventurer$<BR>Brought the message to the General Douglas。Now that you know more，General Douglas will certainly help convince the nobles。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-d" image="" itemindex="">
+      <talk_question mid="107"><![CDATA[<html>$Company president Gunter adventurer$<BR>May soon have to need your help，Ah you can not relax our vigilance。</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">519</exe>
+         <exe type="recompense_view">,5191,5192,5193,5194</exe>
+         <exe type="talk" npc="n036_adventurer_guildmaster_gunter">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="1" party="1" exe="3,4,5" onexe="">806</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200806</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 806);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5191,5192,5193,5194</exe>
+         <exe type="complete">519</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="a">1</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n091_trader_bellin" sub="b" />
+   <exelink qstep="2" npc="n091_trader_bellin" sub="c" />
+   <exelink qstep="2" npc="n091_trader_bellin" sub="d" />
+   <exelink qstep="2" npc="n091_trader_bellin" sub="e" />
+   <exelink qstep="2" npc="n091_trader_bellin" sub="f">0,1</exelink>
+   <exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="b" />
+   <exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="c" />
+   <exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="d">0,2,6,1</exelink>
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="a">0</exelink>
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="b">1</exelink>
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="c" />
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="d" />
+   <journal_data recompense="1:5191,2:5192,3:5193,4:5194" quest_title="폭탄 전문가" chapterid="" quest_level="24" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[President Gunter public dialogue with the adventurer。]]></title>
+         <contents mid="65"><![CDATA[<html>Gunter, president of the dialogue with the public right adventurer。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Company president Gunter adventurer</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[President Gunter public dialogue with the adventurer。]]></destination>
+         <todo_msg mid="67"><![CDATA[Add a task。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Berlin dialogue with the blacksmith]]></title>
+         <contents mid="69"><![CDATA[<html>The mine in the dark to find the orcs into the blacksmith, tailor-made shells, where analysis of the Berlin Bar。<BR>
+<BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Berlin dialogue with the blacksmith]]></destination>
+         <todo_msg mid="71"><![CDATA[The analysis of shells brought Blacksmith Bar Berlin。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[President Gunter public dialogue with the adventurer。]]></title>
+         <contents mid="74"><![CDATA[<html>According to Berlin, then，Overwhelming power of shells。Report the situation back to where it Gunter。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Company president Gunter adventurer</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[President Gunter public dialogue with the adventurer。]]></destination>
+         <todo_msg mid="76"><![CDATA[Go back to the adventurer, president of Gunter public report it。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QM_Orc_Gray.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>274,0,0</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@1,274@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[Bomb experts Nuomuhake crusade]]></title>
+         <contents mid="79"><![CDATA[<html>To eliminate the dark mineBOSSBomb experts Nuomuhake it。<BR><BR><FONT color=#086171>Heermadai port（Dark mine entrance）<FONT color=#2b2723> </FONT><FONT color=#a82424>→ Dark mine</FONT></FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[Bomb experts Nuomuhake crusade]]></destination>
+         <todo_msg mid="81"><![CDATA[To eliminate Nuomuhake it dark mine。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="109"><![CDATA[President Gunter public report to the adventurer]]></title>
+         <contents mid="110"><![CDATA[<html>Bomb experts destroyed Nuomuhake。Go back to the paradise of adventurers sacred public report of it, president of Gaunt。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Company president Gunter adventurer</FONT></html>]]></contents>
+         <destination mid="111"><![CDATA[President Gunter public report to the adventurer]]></destination>
+         <todo_msg mid="112"><![CDATA[Gaunt reports to the divine right of heaven。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>518</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

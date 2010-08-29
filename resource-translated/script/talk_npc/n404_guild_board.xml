@@ -1,0 +1,59 @@
+   <talk>
+      <npcename>n404_guild_board</npcename>
+      <npcid>404</npcid>
+      <startexe>6</startexe>
+      <npckname mid="1"><![CDATA[Adventurers Association Bulletin Board:Attackers den Entrance]]></npckname>
+      <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="6" link_target="gq08_3021_n404_haunt_normal.xml"><![CDATA[<html>[Lv9] <FONT color=#086171>Brave the RoadⅡ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="gq08_3022_n404_haunt_hunt.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv9] </FONT></FONT><FONT color=#086171>Natural disasters?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="12" link_target="gq08_3023_n404_haunt_drop.xml"><![CDATA[<html>[Lv9] <FONT color=#086171>Damage to sperm hut</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="13" link_target="gq08_3071_n404_ambush_normal.xml"><![CDATA[<html>[Lv14] <FONT color=#086171>Support troops</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="14" link_target="gq08_3072_n404_ambush_hunt.xml"><![CDATA[<html>[Lv14] <FONT color=#086171>Variable tender steak</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="22" link_target="gq08_3073_n404_ambush_drop.xml"><![CDATA[<html>[Lv14] <FONT color=#086171>Discharge risk</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="23" link_target="gq08_3074_n404_ambush_hard.xml"><![CDATA[<html>[Lv14] <FONT color=#086171>Kevin Little collectorsⅣ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="gq08_3080_n404_ambush_rank.xml"><![CDATA[<html>[Lv14] <FONT color=#7e12d2>Counteroffensives:Attackers ambushed their point</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="30" link_target="gq08_3029_n404_haunt_abyss.xml"><![CDATA[<html>[Lv15] <FONT color=#7e12d2>Toward the abyss:Lydia crusade</FONT>  </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="31" link_target="gq08_3079_n404_ambush_abyss.xml"><![CDATA[<html>[Lv15] <FONT color=#7e12d2>Toward the abyss:Crusade Kusifeide</FONT></html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Adventurers Association Bulletin Board$<BR>
+Currently receive the following tasks</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="_no_quest" image="QN_guild_board.dds" itemindex="">
+         <talk_question mid="27"><![CDATA[<html>$Adventurers Association Bulletin Board${action:Talk}<BR>
+There is no mandate to receive。 <BR><BR><FONT color=#086171> Recruitment would like to learn as people who travel a copy，The person responsible in the end。Every day4Hours of labor，Can ensure high-yield。</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">gq08_3021_n404_haunt_normal</exe>
+         <exe type="enterquest">gq08_3022_n404_haunt_hunt</exe>
+         <exe type="enterquest">gq08_3023_n404_haunt_drop</exe>
+         <exe type="enterquest">gq08_3071_n404_ambush_normal</exe>
+         <exe type="enterquest">gq08_3072_n404_ambush_hunt</exe>
+         <exe type="conexe" true="1" false="7">0</exe>
+         <exe type="conexe" true="2" false="8">1</exe>
+         <exe type="conexe" true="3" false="9">2</exe>
+         <exe type="conexe" true="4" false="10">3</exe>
+         <exe type="conexe" true="5" false="14">4</exe>
+         <exe type="enterquest">gq08_3073_n404_ambush_drop</exe>
+         <exe type="enterquest">gq08_3074_n404_ambush_hard</exe>
+         <exe type="enterquest">gq08_3080_n404_ambush_rank</exe>
+         <exe type="conexe" true="11" false="15">5</exe>
+         <exe type="conexe" true="12" false="16">6</exe>
+         <exe type="conexe" true="13" false="19">7</exe>
+         <exe type="enterquest">gq08_3029_n404_haunt_abyss</exe>
+         <exe type="enterquest">gq08_3079_n404_ambush_abyss</exe>
+         <exe type="conexe" true="17" false="20">8</exe>
+         <exe type="conexe" true="18" false="0">9</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">3021</chk>
+         <chk type="hasquest">3022</chk>
+         <chk type="hasquest">3023</chk>
+         <chk type="hasquest">3071</chk>
+         <chk type="hasquest">3072</chk>
+         <chk type="hasquest">3073</chk>
+         <chk type="hasquest">3074</chk>
+         <chk type="hasquest">3080</chk>
+         <chk type="hasquest">3029</chk>
+         <chk type="hasquest">3079</chk>
+      </conditions>
+   </talk>

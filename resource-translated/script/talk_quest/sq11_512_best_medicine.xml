@@ -1,0 +1,612 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_512_best_medicine</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>512</qid>
+      <designer>손원호</designer>
+      <qlevel>30</qlevel>
+      <qdesc>테이의 엄마의 병은 더 심해졌고 이젠 어떻게 해야 할지 모르겠다고 한다. 테이는 예전에 스타쉬라는 학자가 이야기한 전설의 명약을 떠올린다. 문장학자 스타쉬를 찾아가면. 전설의 명약 만드라고라의 전설을 이야기해준다. 만드라고라는 지성을 가진 식물로서 지금까지 수많은 모험가들이 만드라고라를 찾으러 갔지만 누구도 만드라고라를 구해온 사람은 없다며 만드라고라가 있는 강하류 를 알려준다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[The best cure]]></qkname>
+      <qnpc>
+         <npcid>244</npcid>
+         <npcename>n244_tei</npcename>
+         <npckname>테이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>246</npcid>
+         <npcename>n246_mandra_son</npcename>
+         <npckname>만드라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>249</npcid>
+         <npcename>n249_saint_guard</npcename>
+         <npckname>왕성 근위병 로이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-noquest" image="" itemindex="">
+      <talk_question mid="151"><![CDATA[<html>$Tolly$<BR>
+I hope the mother is no longer sick。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="" itemindex="">
+      <talk_question mid="153"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Do not go away！I&#39;m busy，Do not come to bother me！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-a" mid="6"><![CDATA[<html>What?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$King City guards Raul$<BR><FONT color=#382000>{user_nick}</FONT>，You ah。<BR>
+This should be how to do it？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-a" image="QN_boy_tei.dds" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-b" mid="8"><![CDATA[<html>Ah，To help him get that juvenile rainbow lantern flower?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$King City, near the guard Raul$<BR>Remember the last port in the Heermadai boy helped me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-c" mid="10"><![CDATA[<html>Ah... </html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$King City, near the guard Raul$<BR>Ah，Is because the mother is ill and asking for help in the Tolly。Unfortunately,... Seemingly little effect of the drugs，His mother is still not really good。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-d" mid="12"><![CDATA[<html>I went to see it。</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$King City guards Raul$<BR>Ah young age how worried……Call……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$The best cure$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-1" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-1-a" mid="17"><![CDATA[<html>Do not worry。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$King City guards Raul$<BR>Eh?<BR>
+<FONT color=#382000>{user_nick}</FONT>，If you go，I can rest assured。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-1-a" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$King City, near the guard Raul$<BR>Youth can<FONT color=#a82424>Heermadai port</FONT>Find，It would please you very much。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-2" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$King City guards Raul$<BR>Ah young age how worried……Call……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-a" mid="21"><![CDATA[<html>Feed……Okay？</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Tolly$<BR>Hum，How do I do now……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-a" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-b" mid="23"><![CDATA[<html>Ah，I。</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Tolly$<BR>Ah，Adventurer adults！The original is the last person who helped me ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-b" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n244_tei-2-c" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Tolly$<BR>This is what to do... With this thought rainbow lantern flowers on my mother&#39;s illness can be cured... Ah, but it has no effect。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-c" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-d" mid="27"><![CDATA[<html>Do not worry，I will help you。</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Tolly$<BR>How to do it now? If not, then the mother…I…I...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-d" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-e" mid="29"><![CDATA[<html>That means it will have any other?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Tolly$<BR>Hum……How do you help me？<BR>
+All the drugs have been tried……<BR>
+I could do have done it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-e" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-f" mid="31"><![CDATA[<html>Think about it first, do not cry。</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Tolly$<BR>Do not know……Hum……<BR>
+Now how do ah……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-f" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-g" mid="33"><![CDATA[<html>What？</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Tolly$<BR>Hum... So want to come…I entered the port from where the crew had heard some things ...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-g" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n244_tei-2-h" mid="36"><![CDATA[<html>Heraldic scholars Stasi?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Tolly$<BR>Daoshi remember very much，It is said that<FONT color=#a82424>Holy Paradise</FONT>What is one to know<FONT color=#a82424>Well-informed old man, Dr.</FONT>，Name... Vista...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-h" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-i" mid="38"><![CDATA[<html>I used to see。</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Tolly$<BR>To。He should know how to treat my mother right ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-i" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Tolly$<BR>Sob……Thank you……<BR>
+You have to save my mother。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-3" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Tolly$<BR>Hum... Go<FONT color=#a82424>Holy Paradise</FONT>Of<FONT color=#a82424>Stasi</FONT>Ask to save my mother&#39;s drugs come home...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-a" mid="43"><![CDATA[<html>Something to please your。</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Hey，Nor is this ah。Information on how the order of the Well…Who are you again?I am busy now，Do not come to bother me。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-b" mid="45"><![CDATA[<html>（Advice can save the mother&#39;s drug juvenile）</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Entrust?I&#39;m busy，What commission which Gude Shang?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-b" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n088_scholar_starshy-3-c" mid="47"><![CDATA[<html>Monster breath?</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Ah，It really is a troublesome thing ah。 <FONT color=#a82424>Rainbow lanterns flower</FONT>Also unable to treat patients... Monster&#39;s atmosphere must have been contaminated。 </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-d" mid="49"><![CDATA[<html>How to do that?</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Black Dragon when power restored，Other Monster have become more a。Certainly in the<FONT color=#2b2723>The Monster the eruption jungle atmosphere</FONT>Caused。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-e" mid="51"><![CDATA[<html>Are there any way you?</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Unfortunately，But no way。<BR>
+Live now is a miracle。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-f" mid="53"><![CDATA[<html>The Stasi also seems to know everything do not know when。</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Heraldic scholars Stasi$<BR>No！No！Go away。<BR>
+Busy with other things I would do……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-f" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-g" mid="57"><![CDATA[<html>Do not you know to save the boy&#39;s mother, way to do。</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Heraldic scholars Stasi$<BR>What？！May be I do not know how things？<BR>
+I do not know the world does not matter。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-g" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-h" mid="59"><![CDATA[<html>Just tell me way，I...</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Hey，Stubborn guy，I may not know how it? Although it is known，Ah, but no help，So。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-h" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-i" mid="61"><![CDATA[<html>Do not know。</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Heraldic scholars Stasi$<BR>What a stubborn guy。If you really want to know，I told you……One can treat all diseases in the world<FONT color=#a82424>Legendary elixir</FONT>。Do you know what you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-i" image="QN_mandra_shadow.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-j" mid="63"><![CDATA[<html>Can you find it?</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Even that did not know ah? Is<FONT color=#a82424>Datura</FONT>Bai。It is long like people, plants，Is usually buried in the ground... Ah，You really have to explain the trouble，Anyway, there is the kind of thing。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-j" image="QN_mandra_shadow.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-k" mid="65"><![CDATA[<html>I&#39;ve seen before as。</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Heraldic scholars Stasi$<BR>To find the Mandala? Woo Ha ha ha！ <FONT color=#a82424>Datura</FONT>But the cunning will not be caught。 Let alone catch it up，Even people who did not see it then。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-k" image="QN_mandra_shadow.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-l" mid="67"><![CDATA[<html>Where to go looking for it?</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Ah? You see<FONT color=#a82424>Datura</FONT>Rights? Ha ha…You can really be bragging。Ah，If you can see the Mandala，So lucky，&#39;m Not really have to find it then。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-l" image="QW_34.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-m" mid="69"><![CDATA[<html>I went to look at it。</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Heraldic scholars Stasi$<BR>If you really want to trouble if it，On as you please。Legend<FONT color=#a82424>River downstream of submerged land</FONT>The existence of the most deep rest Mandala Agency。But no one had actually seen…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-m" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Heraldic scholars Stasi$<BR>Mandala is very sensitive to the surrounding biological，If you go with other people，It will certainly be found and fled to other places。Therefore, we must<FONT color=#a82424>Alone</FONT>To 才行！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-n" image="" itemindex="">
+      <talk_question mid="216"><![CDATA[<html>$Heraldic scholars Stasi$<BR>
+I hate a lot of people come looking for me with。You first leave the team，Then a man came to me！<BR>
+ <BR>
+<FONT color=#a82424>※ The task must be able to implement。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="QW_34.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Heraldic scholars Stasi$<BR><FONT color=#a82424>River downstream of submerged land</FONT>Mandala of the rest there is that my grandfather told me。As a matter of a very long time，We do not know where in the end there Mandala。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-a" mid="157"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="155"><![CDATA[<html>$Mandela$<BR>Ah，You ah。I thought that is what people came for our herbs 。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-a" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-b" mid="159"><![CDATA[<html>In fact... （Something tells Tolly）</html>]]></talk_answer>
+      <talk_question mid="158"><![CDATA[<html>$Mandela$<BR>Woo ha ha！Is there something to rely on the land of the prince of my！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-b" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-c" mid="161"><![CDATA[<html>Ah。</html>]]></talk_answer>
+      <talk_question mid="160"><![CDATA[<html>$Mandela$<BR>Ah? So the task we have to treat you Mandala！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-c" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-d" mid="163"><![CDATA[<html>Sorry。</html>]]></talk_answer>
+      <talk_question mid="162"><![CDATA[<html>$Mandela$<BR>Ha ha ha，How dare you came for me, the prince of this earth。<BR>
+Is really a brave man。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-d" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-e" mid="175"><![CDATA[<html>（Mandela Challenge）</html>]]></talk_answer>
+      <talk_question mid="174"><![CDATA[<html>$Mandela$<BR>Oh，Instead, I&#39;m sorry you do。You will be returned, tried to grab me but the first failure1000A challenger。 <BR><FONT color=#7e12d2>（Mandela&#39;s fist tiger style）</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-e" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-f" mid="177"><![CDATA[<html>（Began fighting）</html>]]></talk_answer>
+      <talk_question mid="176"><![CDATA[<html>$Mandela$<BR>If you win, then a word on it，As you would on a。 <BR>Come，Up ah！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-f" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-h" mid="179"><![CDATA[<html>（First attack）</html>]]></talk_answer>
+      <talk_answer link_index="n246_mandra_son-4-g" mid="180"><![CDATA[<html>（Waiting for the other&#39;s attack）</html>]]></talk_answer>
+      <talk_question mid="178"><![CDATA[<html><FONT color=#086171>Mandela VS {user_nick}</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-g" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-u" mid="182"><![CDATA[<html>(Game Over)</html>]]></talk_answer>
+      <talk_question mid="181"><![CDATA[<html>$VS Mandela${sound:Archer_SpinKick_a.wav}<BR>Mandela&#39;s fist smashed over like lightning，People not too late to dodge，Was shot in the abdomen。<BR><FONT color=#a82424> {user_nick}By10000000Injury。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-h" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-i" mid="184"><![CDATA[<html>（Targeting upper body）</html>]]></talk_answer>
+      <talk_answer link_index="n246_mandra_son-4-j" mid="185"><![CDATA[<html>（Targeting lower body）</html>]]></talk_answer>
+      <talk_question mid="183"><![CDATA[<html>$VS Mandela${sound:Archer_SpinKick_a.wav}<BR>{user_nick}Not to give relief to Mandela，Fast attack。Mandela confused by the sudden rush attack，Defense can not calm。<BR><FONT color=#a82424> Mandela by5Injury。<BR> Next attack？</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-i" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-u" mid="187"><![CDATA[<html>(Game Over)</html>]]></talk_answer>
+      <talk_question mid="186"><![CDATA[<html>$VS Mandela${sound:Archer_SpinKick_a.wav}<BR>Launched an attack targeting the upper body，Unfortunately all were blocked Mandela。After Mandela magnificent defensive skills，Then the attack is even more gorgeous。<BR> Was stunned。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-j" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-l" mid="189"><![CDATA[<html>（Barbed eyes）</html>]]></talk_answer>
+      <talk_answer link_index="n246_mandra_son-4-k" mid="190"><![CDATA[<html>（Play crucial）</html>]]></talk_answer>
+      <talk_question mid="188"><![CDATA[<html>$VS Mandela${sound:Archer_SpinKick_a.wav}<BR>Instability of the lower body seems to be his weakness。Lower body attack Mandela shaking a bit。<BR><FONT color=#a82424> Led to Mandela10Injury。</FONT><BR>Should have spotted the opportunity to launch successive attacks。The next step of the attack？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-k" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-u" mid="192"><![CDATA[<html>(Game Over)</html>]]></talk_answer>
+      <talk_question mid="191"><![CDATA[<html>$VS Mandela${sound:Archer_SpinKick_a.wav}<BR>Alignment Mandela launched the attack vital，But the crucial point seems to Mandela and human completely different，He launched a fierce counterattack。Mandela performed like a nirvana[Avalokitesvara]。<BR><FONT color=#a82424> {user_nick}By10000000Injury。<BR> Was stunned。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-l" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-m" mid="194"><![CDATA[<html>（Use Super energy wave）</html>]]></talk_answer>
+      <talk_answer link_index="n246_mandra_son-4-n" mid="195"><![CDATA[<html>（Use slay Dragon and Tiger Fist King）</html>]]></talk_answer>
+      <talk_question mid="193"><![CDATA[<html>$VS Mandela${sound:Archer_SpinKick_a.wav}<BR>
+Accidentally hit the eye。<BR><FONT color=#a82424> Led to Mandela25Injury。</FONT><BR>Mandela attacks the eyes can not see the things around。Take this opportunity to use the nirvana it。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-m" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-u" mid="165"><![CDATA[<html>(Game Over)</html>]]></talk_answer>
+      <talk_question mid="164"><![CDATA[<html>$VS Mandela${sound:Archer_SpinKick_a.wav}<BR>While gathering energy waves when，Mandela woke up。Followed by a storm like Mandela counter。Instantly become blurred sense of。<BR><FONT color=#a82424> {user_nick}By10000000Injury。<BR> Was stunned。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-n" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-o" mid="167"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="166"><![CDATA[<html>$VS Mandela${sound:Archer_SpinKick_a.wav}<BR>Slay dragon and tiger boxing Overlord……Although not studied，But they instinctively resorted to nirvana！Mandela was hit air，100Hutchison batter fell on him like a tempest。<BR><FONT color=#a82424> Led to Mandela9999999Injury。<BR> Repelled Mandela！</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-o" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-p" mid="169"><![CDATA[<html>You are a great opponent。</html>]]></talk_answer>
+      <talk_question mid="168"><![CDATA[<html><FONT color=#2b2723>$Mandela$<BR>Uh... Uh... I actually won…Really great guy ah。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-p" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-q" mid="172"><![CDATA[<html>... Why blush ah...</html>]]></talk_answer>
+      <talk_question mid="171"><![CDATA[<html>$Mandela$<BR>Ming，I... Actually…Lost。 <BR>I will abide by commitments！<BR>Now as you please... （Flushed）</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-q" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-r" mid="197"><![CDATA[<html>I thought for a moment，As long as there are leaves on the fixating？</html>]]></talk_answer>
+      <talk_question mid="196"><![CDATA[<html>$Mandela$<BR>Now follow your past into the boiling vat can not you?<BR>Ah... My short and beautiful life。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-r" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-s" mid="199"><![CDATA[<html>Juvenile&#39;s mother, as long as the degree of rescue can be。</html>]]></talk_answer>
+      <talk_question mid="198"><![CDATA[<html>$Mandela$<BR>Ah？As long as I have a small leaf，Enough to revive a human。But if I eat，The right not to receive eternal life？ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-s" image="QS_Default.dds" itemindex="300242">
+      <talk_answer link_index="n246_mandra_son-4-t" mid="202"><![CDATA[<html>(Mandela leaves are)</html>]]></talk_answer>
+      <talk_question mid="201"><![CDATA[<html>$Mandela$<BR>... You&#39;re a good boy。Ah，These can be enough to save the mother of a young。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-t" image="" itemindex="">
+      <talk_question mid="203"><![CDATA[<html>$Mandela$<BR>I will not forget your End of，Friend。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-u" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-e" mid="219"><![CDATA[<html>(Re-challenge)</html>]]></talk_answer>
+      <talk_question mid="218"><![CDATA[<html>$Game Over$<BR>
+In the Mandala gorgeous grass under attack，You fail。<BR>
+ <BR>
+<FONT color=#a82424> Whether to re-challenge？</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-5" image="" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$Mandela$<BR>I will not forget your End of，Friend。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-5" image="QS_Default.dds" itemindex="300242">
+      <talk_answer link_index="n244_tei-5-a" mid="206"><![CDATA[<html>(Mandela leaves out)</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Tolly$<BR>Ah！ Adventurer adults！Back ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-5-a" image="" itemindex="">
+      <talk_answer link_index="n244_tei-5-b" mid="208"><![CDATA[<html>Wish your mother a speedy recovery it。</html>]]></talk_answer>
+      <talk_question mid="207"><![CDATA[<html>$Tolly$<BR>This……Mandala is the grass ah。<BR>
+With it, then，Mother……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-5-b" image="" itemindex="">
+      <talk_answer link_index="n244_tei-5-c" mid="210"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="209"><![CDATA[<html>$Tolly$<BR>Thanks，Really appreciate！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-5-c" image="" itemindex="">
+      <talk_answer link_index="n244_tei-5-d" mid="212"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="211"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-5-d" image="" itemindex="">
+      <talk_answer link_index="n244_tei-5-e" mid="214"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="213"><![CDATA[<html>$Tolly$<BR>I will eat the mother！ Really thank you！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-5-e" image="" itemindex="">
+      <talk_question mid="215"><![CDATA[<html><FONT color=#7e12d2>（Mandela took root run home Tolly revealed bright smile。I could not help but laugh watching out。It seems，Help others help themselves is the old saying，Or some reason。）</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5121,5122,5123,5124</exe>
+         <exe type="setquest">512</exe>
+         <exe type="talk" npc="n249_saint_guard">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n088_scholar_starshy">a</exe>
+         <exe type="talk" npc="n088_scholar_starshy">n</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="addquestitem" num="1">300242</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5121,5122,5123,5124</exe>
+         <exe type="complete">512</exe>
+         <exe type="delquestitem" num="-1">300242</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n249_saint_guard" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n249_saint_guard" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n249_saint_guard" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n244_tei" sub="b" />
+   <exelink qstep="2" npc="n244_tei" sub="c" />
+   <exelink qstep="2" npc="n244_tei" sub="d" />
+   <exelink qstep="2" npc="n244_tei" sub="e" />
+   <exelink qstep="2" npc="n244_tei" sub="f" />
+   <exelink qstep="2" npc="n244_tei" sub="g" />
+   <exelink qstep="2" npc="n244_tei" sub="h" />
+   <exelink qstep="2" npc="n244_tei" sub="i">0,1</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="a">2</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="g" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="h" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="i" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="j" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="k" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="l" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="m">0,1</exelink>
+   <exelink qstep="4" npc="n246_mandra_son" sub="b" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="c" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="d" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="e" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="f" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="h" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="g" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="u" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="i" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="j" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="u" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="l" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="k" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="u" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="m" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="n" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="u" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="o" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="p" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="q" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="r" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="s" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="t">0,1,2</exelink>
+   <exelink qstep="4" npc="n246_mandra_son" sub="e" />
+   <exelink qstep="5" npc="n244_tei" sub="a">2</exelink>
+   <exelink qstep="5" npc="n244_tei" sub="b" />
+   <exelink qstep="5" npc="n244_tei" sub="c">0</exelink>
+   <exelink qstep="5" npc="n244_tei" sub="d">1</exelink>
+   <exelink qstep="5" npc="n244_tei" sub="e" />
+   <journal_data recompense="1:5121,2:5122,3:5123,4:5124" quest_title="최고의 영약" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="300242">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n249</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>249</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="120"><![CDATA[King City, near the guard Raul and dialogue]]></title>
+         <contents mid="121"><![CDATA[<html>King City, near the guard Raul seems to have something to say，Dialogue with him to see it。<BR><BR><FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ King City, near the guard Raul</FONT></html>]]></contents>
+         <destination mid="122"><![CDATA[King City, near the guard Raul and dialogue]]></destination>
+         <todo_msg mid="123"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_boy_tei.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n244</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>244</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="124"><![CDATA[Dialogue with young Tolly]]></title>
+         <contents mid="125"><![CDATA[<html>King City, near the guard Raul said Tolly&#39;s mother is still not fully healed。Tolly confirmed to Heermadai port to see the situation right。<BR><BR><FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→ Tolly</FONT></html>]]></contents>
+         <destination mid="126"><![CDATA[Dialogue with young Tolly]]></destination>
+         <todo_msg mid="127"><![CDATA[Heermadai port it to see Tolly。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="129"><![CDATA[Dialogue with the heraldic scholars Stasi]]></title>
+         <contents mid="130"><![CDATA[<html>In order to Tolly&#39;s mother.，In order to find new treatments to find the sacred paradise of heraldic scholars Stasi bar。<BR>
+ <BR>
+<FONT color=#086171>Holy Paradise</FONT> <FONT color=#a82424>→ Heraldic scholars Stasi</FONT></html>]]></contents>
+         <destination mid="131"><![CDATA[Dialogue with the heraldic scholars Stasi]]></destination>
+         <todo_msg mid="132"><![CDATA[Scholars to find the sacred coat of arms of heaven to see it Stasi。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QW_34.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>344,1,1</destination_pos>
+         <destination_mode>custom:341@1,342@1,343@1,344@3</destination_mode>
+         <statemark_npcid>246</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="133"><![CDATA[[1People]Mandala collection]]></title>
+         <contents mid="134"><![CDATA[<html>According to Stasi said，Mandala grass only mother&#39;s illness can be treated Tolly。Drowned in river downstream to the grass it Acquisition Mandala。<BR><BR><FONT color=#a82424>※ The task must be able to implement。</FONT><BR><BR><FONT color=#086171>Heermadai port(River downstream of the ruins of the entrance)</FONT> <FONT color=#a82424>→ River downstream of submerged land</FONT></html>]]></contents>
+         <destination mid="135"><![CDATA[[1People]Mandala collection]]></destination>
+         <todo_msg mid="136"><![CDATA[Alone in the downstream river flooded it to find Mandala。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_boy_tei.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n244</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>244</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="137"><![CDATA[Dialogue with young Tolly]]></title>
+         <contents mid="138"><![CDATA[<html>Mandala has been。Port it to Heermadai Tolly Bar。<BR><BR><FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→ Tolly</FONT></html>]]></contents>
+         <destination mid="139"><![CDATA[Dialogue with young Tolly]]></destination>
+         <todo_msg mid="140"><![CDATA[Back Heermadai port it to Mandala to Tolly。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>471</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

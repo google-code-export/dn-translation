@@ -1,0 +1,416 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_207_scattered_components</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>207</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc>300040 비행선 부품
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>208</nextqid>
+      <nextqname>mq08_208_depleting_fuel</nextqname>
+      <nextqnpc>n099_engineer_hubert</nextqnpc>
+      <qkname mid="1"><![CDATA[Scattered parts]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드의 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>54</npcid>
+         <npcename>n054_elite_soldier_wounded</npcename>
+         <npckname>부상당한 정예병사1</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>55</npcid>
+         <npcename>n055_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행정 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria。)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Accepted the task of many，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n054_elite_soldier_wounded-noquest" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Elite soldiers injured$<BR>Ah……Accident is instantaneous。I heard the bang，Then lost consciousness。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-noquest" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Elite soldiers Cleander$<BR>In order to save wounded soldiers，I have to go back。I really want to blame the soldiers hurt……！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-noquest" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Airship engineer Hubert$<BR>What？Just the damn airship already busy enough，Do not talk to me。Away！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="35"><![CDATA[<html>I have nothing to say……</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Society of Dai Kade adventurer${action:Talk}<BR>Eventually allow<FONT color=#a82424>Black Knight</FONT>Escaped……<BR>
+Injured female swordsman，And<FONT color=#a82424>Prophet</FONT>Or something<FONT color=#a82424>Girl</FONT>The guy is still among the claws……Click one&#39;s tongue……<BR>
+Really，Things grow bigger and the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Well……Although it can not say that it，But the responsibility can not be said to you。<BR>On the……She let you go<FONT color=#a82424>Holy Paradise</FONT>Search<FONT color=#a82424>Blonde swordsman</FONT>？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Society of Dai Kade adventurer$<BR><FONT color=#a82424>Holy Paradise</FONT>Well……<BR>To Go<FONT color=#a82424>King City</FONT>，Must take the airship Caixing……But the airship is also<FONT color=#a82424>Black Knight</FONT>Destroyed。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Airship engineer Hubert$<BR>What？Just the damn airship already busy enough，Do not talk to me。Away！<BR>If something，Find Kedella of<<FONT color=#a82424>Society of Dai Kade adventurer</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-1" image="" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Elite soldiers Cleander$<BR>I have to save the wounded soldiers ah。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n054_elite_soldier_wounded-1" image="" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Elite soldiers injured$<BR>Ah……Accident is instantaneous。I heard the bang，Then lost consciousness。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-a" mid="44"><![CDATA[<html>To……I am sorry。</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Airship engineer Hubert$<BR>What？The state of airship？Ha，Do you come to fuel the……！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-a" image="QW_AirShip.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Airship engineer Hubert$<BR><FONT color=#a82424>Airship operations suspended</FONT>，You go。Why suspend the operation？I have heard this question hundreds of times before。You ask the soldiers next to it。I&#39;m busy，Do not talk to me！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>You can only go to confirm their，How bad state in the end。<BR>
+To the terminal to meet<FONT color=#a82424>Airship engineer Hubert</FONT>。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3" image="QP_AirShip_part .dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Airship engineer Hubert$<BR>Ah，Really crazy。Not in stock，Was for no change。Can not go<FONT color=#a82424>Death forest</FONT>Recover<FONT color=#a82424>Scattered parts</FONT>……<BR>
+There are problems，You can ask the soldiers next to。I have to repair the airship。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-3" image="" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-3-a" mid="49"><![CDATA[<html>Ah……I<FONT color=#419300>{user_nick}</FONT>。</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Elite soldiers Cleander$<BR><FONT color=#7e12d2>(Chong soldiers cried。)</FONT><BR>
+Good，We Come。Airship repaired soon。<BR>
+Why do you have here the first Akira Akira brain？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-3-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-3-b" mid="51"><![CDATA[<html>There is no way to divine the right heaven？</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Elite soldiers Cleander$<BR> Ah，You are the one being tracked<FONT color=#a82424>Black Knight</FONT>The adventurer bar？And we are the Black Knights had to stay here。We received a mandate，Dispatched to the city from the king here，As you can see……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-3-b" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-3-c" mid="53"><![CDATA[<html>I went to ask him or need help。</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Elite soldiers Cleander$<BR>For now,，In addition to fix the airship is no other way than the。<BR>Although I would like to repair the airship helped，But……Feed！We careful not to touch the wound！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-3-c" image="" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Elite soldiers Cleander$<BR>
+Good。I have to take care of wounded soldiers，My first faux pas of the。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-4" image="" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Elite soldiers Cleander$<BR>Well，Repaired after such airship，We go back to King City！Please do not let！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-a" mid="57"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Airship engineer Hubert$<BR>Do you want to help me repair airship？<BR>Makes you happy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-a" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-b" mid="59"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Airship engineer Hubert$<BR>As far as I know，2 airship when moving to the side of being attacked。Forest of death where a fall，The other one emergency landing in here。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-b" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-5" mid="61"><![CDATA[<html>Know。</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Airship engineer Hubert$<BR>To fix the airship，Needs to collect scattered<FONT color=#a82424>Death forest</FONT>Parts。But my first-class technology……Anyway，Someone help me，Really nice。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5" image="QW_17.dds" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$Airship engineer Hubert$<BR><FONT color=#a82424>Death forest</FONT>Of<FONT color=#2b2723><FONT color=#a82424>Spider</FONT>And<FONT color=#a82424>Ghoul</FONT>Be</FONT>Very dangerous monster。But adventurers like you，Should be adequate to deal with。Please help me to collect<FONT color=#a82424>3A</FONT><FONT color=#a82424>Airship parts</FONT>。Airship parts scattered in the area should be on。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-6-a" mid="65"><![CDATA[<html>You flatter me。</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Airship engineer Hubert$<BR>Really great。This is a matter of appreciation of the，Please accept。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6-a" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-6-!next" mid="67"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="3" op="]=">300040</chk>
+      </conditions>
+      <executions>
+         <exe type="huntitem" num="3" exe="" onexe="1">300040</exe>
+         <exe type="conexe" true="4,5,6" false="">0</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2071,2072,2073,2074</exe>
+         <exe type="complete">207</exe>
+         <exe type="delquestitem" num="-1">300040</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="a">0,1</exelink>
+   <exelink qstep="3" npc="n055_elite_soldier" sub="b" />
+   <exelink qstep="3" npc="n055_elite_soldier" sub="c">0,1</exelink>
+   <exelink qstep="4" npc="n099_engineer_hubert" sub="b" />
+   <exelink qstep="4" npc="n099_engineer_hubert" sub="5">0,2,3</exelink>
+   <exelink qstep="6" npc="n099_engineer_hubert" sub="a">0</exelink>
+   <exelink qstep="6" npc="n099_engineer_hubert" sub="!next">1,2</exelink>
+   <journal_data recompense="1:2071,2:2072,3:2073,4:2074" quest_title="흩어진 부품들" chapterid="3" quest_level="14" quest_mark_type="7" use_item_list="300040">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location xml:space="preserve"> </get_location>
+         <start_npc xml:space="preserve"> </start_npc>
+         <desc_location xml:space="preserve"> </desc_location>
+         <step_action xml:space="preserve"> </step_action>
+         <complete_npc xml:space="preserve"> </complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="20"><![CDATA[Sacred way to heaven]]></title>
+         <contents mid="21"><![CDATA[<html>It is said to<FONT color=#a82424>Holy Paradise</FONT>The only way is to take the airship in Kedella。Detailed information to understand what it。<BR><BR><FONT color=#086171>Kedella points</FONT><FONT color=#a82424> → Company president Dai Kade adventurer</FONT></html>]]></contents>
+         <destination mid="22"><![CDATA[Society of Dai Kade dialogue and adventurer]]></destination>
+         <todo_msg mid="23"><![CDATA[Tasks have been added。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[And airship engineer Hubert dialogue]]></title>
+         <contents mid="71"><![CDATA[<html>Association president, said Dai Kade adventurer wants to holy heaven，Must take the damaged airship 阿尔巴特罗 No.。To the airship engineer<FONT color=#a82424>Hubert</FONT>Ask if you can take the airship。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Airship engineer Hubert</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[And airship engineer Hubert dialogue]]></destination>
+         <todo_msg mid="73"><![CDATA[Please to meet engineer Hubert。]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n55</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>55</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[And elite soldiers Cleander dialogue]]></title>
+         <contents mid="75"><![CDATA[<html><FONT color=#a82424>Engineer Hubert</FONT>Said he was busy，So I went to take the airship&#39;s elite soldiers understand the airship after damage。And camp in front of<FONT color=#a82424>Elite soldiers Cleander</FONT>Dialogue。</html>]]></contents>
+         <destination mid="76"><![CDATA[And elite soldiers Cleander dialogue]]></destination>
+         <todo_msg mid="77"><![CDATA[Please elite soldiers Cleander dialogue。]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[Hubert dialogue and engineers]]></title>
+         <contents mid="79"><![CDATA[<html>Association president, said Dai Kade adventurer wants to holy heaven，To fix the damaged airship 阿尔巴特罗 No.。<BR>Help airship engineer<FONT color=#a82424>Hubert</FONT>Repair airship。<BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Airship engineer Hubert</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[Hubert dialogue and engineers]]></destination>
+         <todo_msg mid="81"><![CDATA[Please to meet engineer Hubert。]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QW_17.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>134,0,0</destination_pos>
+         <destination_mode>custom:131@4,132@4,133@4,134@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[Collection of airship components to the death of forests]]></title>
+         <contents mid="83"><![CDATA[<html>Commissioned in accordance with Hubert，Collect scattered<FONT color=#a82424>Death forest</FONT>Of<FONT color=#a82424>3A airship parts</FONT><BR><BR><FONT color=#086171>Shore littered with fallen leaves(Death forest</FONT><FONT color=#086171>Entrance)</FONT> <FONT color=#a82424>→ Death forest</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[Collection of airship components to the death of forests]]></destination>
+         <todo_msg mid="85"><![CDATA[Go to the forest to search for the death of parts airship。]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <title_image />
+         <contents_image>QP_AirShip_part .dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[Find Parts]]></title>
+         <contents mid="87"><![CDATA[<html>All found the airship components。<BR>Give them to<FONT color=#a82424>Kedella points</FONT>Of<FONT color=#a82424>Engineer Hubert</FONT>。<FONT color=#a82424></FONT><BR><BR><FONT color=#086171>Kedella points</FONT> <FONT color=#a82424>→ Airship engineer Hubert</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[And airship engineer Hubert dialogue]]></destination>
+         <todo_msg mid="89"><![CDATA[Please spare parts to the Hubert。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>206</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>

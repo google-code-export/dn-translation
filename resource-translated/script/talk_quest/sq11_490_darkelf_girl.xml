@@ -1,0 +1,251 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_490_darkelf_girl</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>490</qid>
+      <designer>김주연</designer>
+      <qlevel>36</qlevel>
+      <qdesc>1. 헤르말테 포구에 웬 소녀가 서 있다. 엘레나인 줄 알고 경계하는 유저.
+소녀는 엘레나라는 이름에 언니를 아냐고 반색한다. 어머니이자 이모이자 언니라고... 엘프들은 한 나무에서 태어나니까.
+아무튼 소녀의 이름은 텔레주. '여신님 맙소사~'의 애독자라고 한다.
+소녀는 '잃어버린 시간의 폐허'에 구경을 가고 싶다며 안내해 달라고 한다.
+2. 잃어버린 시간의 폐허 보스맵.
+신기하다면서 즐거워하는 텔레주.
+이제 다시 헤르말테 포구로 돌아가자.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>491</nextqid>
+      <nextqname>sq11_491_darkelf_teleju1</nextqname>
+      <nextqnpc>n281_darkelf_teleju</nextqnpc>
+      <qkname mid="1"><![CDATA[Dark Elf girl]]></qkname>
+      <qnpc>
+         <npcid>281</npcid>
+         <npcename>n281_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>282</npcid>
+         <npcename>n282_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[(The task did not meet the criteria)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>$Notice$<br>Have too many tasks，Can not accept more tasks。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please order Backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n282_darkelf_teleju-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Dark Elf girl$<BR>Lala～La la la……Ah？Why do I do here～？Guess you can get your～？<BR><FONT color=#7e12d2>(And Heermadai port of Dark Elves tere beads dialogue，Acceptable task)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-a" mid="7"><![CDATA[<html>You are……Ai Leina？(Vigilant)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Dark Elf girl$<BR>Ah～This is where it～？<FONT color=#7e12d2>(Dark Elf girls looked at here)</FONT><BR>
+Huh，Why do you look at me ah？I have grown very strange？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-a" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-b" mid="9"><![CDATA[<html>(It looks like nothing preparedness，If not an enemy。)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Dark Elf girl$<BR>Oops！You know<FONT color=#a82424>Ai Leina</FONT>You？<FONT color=#7e12d2>(Clapped his hands and laughing)</FONT>Great～I just started adventure，To met you！Aha，It seems my luck better than imagined～Not you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-b" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-c" mid="11"><![CDATA[<html>Feed，Who are you？</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Dark Elf girl$<BR>Ai Leina is my mother、Aunt and sister～Haha。Dark Elves are all born in a tree。All of us are one big family。The～With！！We all know<FONT color=#a82424>Ai Leina</FONT>！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-c" image="QN_Teleju.dds" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-d" mid="13"><![CDATA[<html>{user_nick}。Why are you here ah？</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Dark Elf girl$<BR>Ah！I did not introduce yourself？Look at my memory～Hei hei。<BR>
+My name is<FONT color=#a82424>Tera beads</FONT>。You also see，I am a lovely girl Dark Elves。What do you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-e" mid="15"><![CDATA[<html>(Tera looked looked Pearl)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Dark Elf tere beads$<BR>Well～I saw<FONT color=#a82424>Goddess of the latest weekly</FONT>After，Would like to see the outside world～So I ran out。Haha。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-e" image="QW_47.dds" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-f" mid="17"><![CDATA[<html>Can not go there。</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Dark Elf tere beads$<BR>Ah～But～Goddess Weekly described<FONT color=#a82424>The ruins of forgotten time</FONT>Where is it the place？<BR>I lost you？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-g" mid="19"><![CDATA[<html>Well。</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Dark Elf tere beads$<BR>You know？Great。Would you like to race，Forgotten ruins first time you see who？<BR>
+Even if I go there，A person is nothing to。So we come to race it！How 样？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-acceptted" mid="21"><![CDATA[<html><FONT color=#086171>Given the task of</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Dark Elf girl$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1" image="QW_47.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Dark Elf tere beads$<BR>Ah～Really？Do you really want to play with you？Wow，Really happy。<BR>Good，You must go to<FONT color=#a82424>The ruins of forgotten time</FONT>To Oh～？I excused，Hei hei。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n282_darkelf_teleju-1" image="" itemindex="">
+      <talk_answer link_index="n282_darkelf_teleju-1-a" mid="24"><![CDATA[<html>Be，Eh？</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Dark Elf tere beads$<BR>Real surprise。I am better than you first had～Hei hei。<BR>I see you and the monster battle。You really strong。Handsome～</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n282_darkelf_teleju-1-a" image="" itemindex="">
+      <talk_answer link_index="n282_darkelf_teleju-1-b" mid="26"><![CDATA[<html>(Strange praise)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Dark Elf tere beads$<BR>Yes Yes～You strong。<BR>And I fight，May not be killed～Hei hei。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n282_darkelf_teleju-1-b" image="" itemindex="">
+      <talk_answer link_index="n282_darkelf_teleju-1-c" mid="28"><![CDATA[<html>(Tera beads nonstop excitement that)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Dark Elf tere beads$<BR>But～Here too pretty。Blue grass and water～Amazing。<BR>I，The first time here！I love it here。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n282_darkelf_teleju-1-c" image="QW_HermaltePort.dds" itemindex="">
+      <talk_answer link_index="n282_darkelf_teleju-2" mid="30"><![CDATA[<html>This is the end you？</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Dark Elf tere beads$<BR>Although I would like to stay a little longer，But the goddess magazine also introduced many other places。Let&#39;s go？<FONT color=#7e12d2>(Tera began look beads Magazine)</FONT> Oh～Must return<FONT color=#a82424>Heermadai port</FONT>To 才行。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n282_darkelf_teleju-2" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Dark Elf tere beads$<BR>Hei hei，Here is my first time to the～Must also go back to when I first。<BR>
+We<FONT color=#a82424>Heermadai port</FONT>See it？See you again, then，I will be very happy。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-2" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-2-a" mid="33"><![CDATA[<html>(Seems really happy)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Dark Elf tere beads$<BR>Wow～You really has come to me？<BR>
+Hei hei，I am very pleased！</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-2-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-2-b" mid="35"><![CDATA[<html>I do not want to see。</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Dark Elf tere beads$<BR>Goddess Weekly～In my life where there is no distribution。I finally just get the。<BR>Do you want to see？</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-2-b" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-2-c" mid="37"><![CDATA[<html>(Did not expect to hear it from his mouth, then Dark Elves)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Dark Elf tere beads$<BR>What～？Oh My God～This can not ah～In that case，You will miss the tide of the。<BR>You should show more concern for the world, some of the things。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-2-c" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-2-d" mid="39"><![CDATA[<html>This is50Years ago, the popular thing ah……</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Dark Elf tere beads$<BR>You，Should not drink<FONT color=#a82424>Aroma of wine, milk</FONT>It？That is something very popular recently！！<BR><FONT color=#7e12d2>(Tera beads handed it without any explanation to alcohol consumption of milk in front of me)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-2-d" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-2-e" mid="41"><![CDATA[<html>(Like to see is50Years ago Journal)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Dark Elf tere beads$<BR>Oops～Do not cheat the。You see I am a Dark Elf，Wanted to fool me？I&#39;m a faithful reader Goddess Weekly。<BR>
+All the latest fashion trends，I know。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-2-e" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-2-!next" mid="43"><![CDATA[<html><FONT color=#086171>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Task reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4901,4902,4903,4904</exe>
+         <exe type="setquest">490</exe>
+         <exe type="talk" npc="n281_darkelf_teleju">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4901,4902,4903,4904</exe>
+         <exe type="complete">490</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n281_darkelf_teleju" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n281_darkelf_teleju" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n282_darkelf_teleju" sub="b" />
+   <exelink qstep="1" npc="n282_darkelf_teleju" sub="c" />
+   <exelink qstep="1" npc="n282_darkelf_teleju" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n281_darkelf_teleju" sub="b" />
+   <exelink qstep="2" npc="n281_darkelf_teleju" sub="c" />
+   <exelink qstep="2" npc="n281_darkelf_teleju" sub="d" />
+   <exelink qstep="2" npc="n281_darkelf_teleju" sub="e">0</exelink>
+   <exelink qstep="2" npc="n281_darkelf_teleju" sub="!next">1</exelink>
+   <journal_data recompense="1:4901,2:4902,3:4903,4:4904" quest_title="다크엘프 소녀" chapterid="" quest_level="36" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_47.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>474,n282</destination_pos>
+         <destination_mode>custom:471@1,472@1,473@1,474@2</destination_mode>
+         <statemark_npcid>282</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[Race to the ruins of forgotten time]]></title>
+         <contents mid="45"><![CDATA[<html>Met and Ai Leina looks just like the<FONT color=#a82424>Dark Elf girl Tera beads</FONT>。She said the book describes the place to go，Let me first with her competition to see who<FONT color=#a82424>The ruins of forgotten time</FONT>。<BR>
+ <BR>
+<FONT color=#086171>Heermadai port(Downstream of the ruins of the entrance)</FONT> <FONT color=#a82424>→ The ruins of forgotten time</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[Race to the ruins of forgotten time]]></destination>
+         <todo_msg mid="47"><![CDATA[Please go to the ruins of forgotten times, and Dark Elves tere beads dialogue。]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Teleju.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>12,n281</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>281</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[And Heermadai port of Dark Elves tere beads dialogue]]></title>
+         <contents mid="49"><![CDATA[<html>Chu called the Dark Elves Tera is looking for a girl like the goddess of the place presented Weekly。Back<FONT color=#a82424>Heermadai port</FONT>，And her dialogue。<BR>
+ <BR>
+<FONT color=#086171>Heermadai port</FONT> <FONT color=#a82424>→Dark Elf tere beads</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[And Heermadai port of Dark Elves tere beads dialogue]]></destination>
+         <todo_msg mid="51"><![CDATA[Please return to Heermadai port，And Dark Elves tere beads dialogue。]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>36:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+   </condition_data>
+</quest>
