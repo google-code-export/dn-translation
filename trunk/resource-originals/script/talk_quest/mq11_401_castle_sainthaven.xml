@@ -82,19 +82,26 @@
    <talk_paragraph index="q_enter" />
    <talk_paragraph index="!quit" />
    <talk_paragraph index="_no_quest">
-      <talk_question mid="2"><![CDATA[(没有符合条件的任务。)]]></talk_question>
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_quest">
-      <talk_question mid="3"><![CDATA[<html>$通知$<br>接受的任务太多，无法接受更多的任务。</html>]]></talk_question>
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_inventory">
-      <talk_question mid="4"><![CDATA[<html>$通知$<br>背包空间不足，无法获得奖励。<br><br><FONT color=#7e12d2>※ 请对背包进行整理。</FONT></html>]]></talk_question>
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_daily_quest_fail">
-      <talk_question mid="99998"><![CDATA[<html> $通知$<br>(目前无法接受任务，或已超出任务数量上限。)</html>]]></talk_question>
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
-      <talk_question mid="99999"><![CDATA[<html>$通知$<br>背包任务栏空间不足。<br>(请整理背包)</html>]]></talk_question>
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-noquest" image="" itemindex="">
+      <talk_question mid="192"><![CDATA[<html>$精锐士兵克林德$<BR>要向<FONT color=#a82424>神圣</FONT> <FONT color=#a82424>天堂</FONT>的国王陛下报告。凯德拉关卡的守护者<FONT color=#382000>{user_nick}</FONT>大人就与我一起同行，帮我完成报告吧。</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n099_engineer_hubert-accepting-acceptted" mid="194"><![CDATA[<html>(继续)</html>]]></talk_answer>
+      <talk_question mid="193"><![CDATA[<html>$飞艇工程师休伯特$<BR><FONT color=#a82424>悬浮装置</FONT>拿来了吗？快快，快点给我。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n099_engineer_hubert-1" image="QW_AirShip.dds" itemindex="">
       <talk_answer link_index="n099_engineer_hubert-1-level_check" mid="58"><![CDATA[<html>(继续)</html>]]></talk_answer>
@@ -284,7 +291,10 @@
    <qstep_change qstep="accepting">
       <comment />
       <conditions />
-      <executions />
+      <executions>
+         <exe type="setquest">401</exe>
+         <exe type="talk" npc="n099_engineer_hubert">1</exe>
+      </executions>
    </qstep_change>
    <qstep_change qstep="1">
       <comment />
@@ -382,6 +392,7 @@
          <exe type="complete">401</exe>
       </executions>
    </qstep_change>
+   <exelink qstep="accepting" npc="n099_engineer_hubert" sub="acceptted">0,1</exelink>
    <exelink qstep="1" npc="n099_engineer_hubert">9</exelink>
    <exelink qstep="1" npc="n099_engineer_hubert" sub="level_check">2</exelink>
    <exelink qstep="1" npc="n099_engineer_hubert" sub="b" />
@@ -402,7 +413,7 @@
    <exelink qstep="5" npc="n039_bishop_ignasio" sub="c" />
    <exelink qstep="5" npc="n039_bishop_ignasio" sub="d">0</exelink>
    <exelink qstep="5" npc="n039_bishop_ignasio" sub="!next">1</exelink>
-   <journal_data recompense="1:4011,2:4012,3:4013,4:4014" quest_title="왕성 세인트 헤이븐" chapterid="4" quest_level="24" quest_mark_type="7" use_item_list="300028">
+   <journal_data recompense="1:4011,2:4012,3:4013,4:4014" quest_title="王城神圣天堂" chapterid="4" quest_level="24" quest_mark_type="7" use_item_list="300028">
       <journal index="1">
          <title_image />
          <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
@@ -675,5 +686,9 @@
       <have_normal_item />
       <complete_mission />
       <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
    </condition_data>
 </quest>
