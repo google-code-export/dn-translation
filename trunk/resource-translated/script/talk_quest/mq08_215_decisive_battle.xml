@@ -36,10 +36,6 @@
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
    </talk_paragraph>
-   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
-      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="38"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="37"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Good，Have you involved，On we will be very helpful。Actually，I have guessed where pollutants were sent to the。</html>]]></talk_question>
-   </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
       <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
       <talk_question mid="10"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Good，Have you involved，On we will be very helpful。Actually，I have guessed where pollutants were sent to the。</html>]]></talk_question>
@@ -66,8 +62,6 @@
       <comment />
       <conditions />
       <executions>
-         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n024_adventurer_guildmaster_decud-1-a", npc_talk_target);</exe>
-         <exe type="setquest">215</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="1">
@@ -79,6 +73,9 @@
          <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4">612</exe>
          <exe type="delcount">.</exe>
          <exe type="addquestitem" num="1">300103</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200612</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 612);</exe>
+
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -94,8 +91,7 @@
          <exe type="recompense">,2151,2152,2153,2154</exe>
       </executions>
    </qstep_change>
-   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">1,0</exelink>
-   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b">2,0,1</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b">0,2,5,1</exelink>
    <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="a">1</exelink>
    <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="!next">0</exelink>
    <journal_data recompense="1:2151,2:2152,3:2153,4:2154" quest_title="Decisive battle" chapterid="3" quest_level="20" quest_mark_type="7" use_item_list="">
