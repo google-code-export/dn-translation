@@ -34,7 +34,7 @@
       <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QM_Broo_White.dds" itemindex="">
-      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-levelcheck" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
       <talk_question mid="5"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Obey<FONT color=#a82424>Ai Leina</FONT>Monster in the order，Also Bulow strange？</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QM_Broo_White.dds" itemindex="">
@@ -74,9 +74,7 @@
    </qstep_change>
    <qstep_change qstep="1">
       <comment />
-      <conditions>
-         <chk type="lvl" op="]=">18</chk>
-      </conditions>
+      <conditions />
       <executions>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
@@ -84,9 +82,7 @@
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
          <exe type="delcount">.</exe>
-         <exe type="conexe" true="7" false="8">0</exe>
-         <exe type="talk" npc="n024_adventurer_guildmaster_decud">b</exe>
-         <exe type="talk" npc="n024_adventurer_guildmaster_decud">a</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">200559</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -102,9 +98,8 @@
          <exe type="recompense">,2131,2132,2133,2134</exe>
       </executions>
    </qstep_change>
-   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="levelcheck">6</exelink>
    <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c" />
-   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="2">2,0,1</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="2">2,6,0,1</exelink>
    <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="b">1</exelink>
    <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="c">0</exelink>
    <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="!next" />
@@ -113,7 +108,7 @@
          <title_image />
          <contents_image>QN_Master_Decud.dds</contents_image>
          <need_itemlist />
-         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_pos>8,n24</destination_pos>
          <destination_mode>custom</destination_mode>
          <statemark_npcid>24</statemark_npcid>
          <statemark_type>2</statemark_type>
@@ -146,7 +141,7 @@
          <contents_image>QW_22.dds</contents_image>
          <need_itemlist />
          <destination_pos>164,0,0</destination_pos>
-         <destination_mode>custom:161@3,162@3,163@3,164@3</destination_mode>
+         <destination_mode>custom:161@1,162@1,163@1,164@3</destination_mode>
          <statemark_npcid />
          <statemark_type>2</statemark_type>
          <get_location />
@@ -177,7 +172,7 @@
          <title_image />
          <contents_image />
          <need_itemlist />
-         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_pos>8,n24</destination_pos>
          <destination_mode>custom</destination_mode>
          <statemark_npcid>24</statemark_npcid>
          <statemark_type>3</statemark_type>

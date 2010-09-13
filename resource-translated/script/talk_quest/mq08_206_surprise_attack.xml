@@ -49,7 +49,7 @@
       <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n034_cleric_master_germain-1" image="QW_16.dds" itemindex="">
-      <talk_answer link_index="n034_cleric_master_germain-1-level1" mid="58"><![CDATA[<html>Be，Ready。</html>]]></talk_answer>
+      <talk_answer link_index="n034_cleric_master_germain-1-b" mid="58"><![CDATA[<html>Be，Ready。</html>]]></talk_answer>
       <talk_question mid="5"><![CDATA[<html>$Senior Pastor Jermaine${action:Talk}<BR>Shrine for the sleeper destination，You have ready?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n034_cleric_master_germain-1-a" image="" itemindex="">
@@ -145,14 +145,10 @@ I hope you let him surprising flaws。</html>]]></talk_question>
       <comment>n027_argenta 아르젠타는 기본형
 n128_argenta 는 이벤트 씬 용(다친 상태)</comment>
       <conditions>
-         <chk type="lvl" op="]=">14</chk>
       </conditions>
       <executions>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
-         <exe type="conexe" true="4" false="3">0</exe>
-         <exe type="talk" npc="n034_cleric_master_germain">a</exe>
-         <exe type="talk" npc="n034_cleric_master_germain">b</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -173,7 +169,6 @@ n128_argenta 는 이벤트 씬 용(다친 상태)</comment>
          <exe type="recompense">,2061,2062,2063,2064</exe>
       </executions>
    </qstep_change>
-   <exelink qstep="1" npc="n034_cleric_master_germain" sub="level1">2</exelink>
    <exelink qstep="1" npc="n027_argenta" sub="b" />
    <exelink qstep="1" npc="n027_argenta" sub="c" />
    <exelink qstep="1" npc="n027_argenta" sub="d" />

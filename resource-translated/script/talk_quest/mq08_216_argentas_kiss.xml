@@ -104,7 +104,7 @@
       <talk_question mid="31"><![CDATA[<html>$Advanced magician Tina$<BR>Thank you。Cough……Eventually like to take someone else&#39;s hands to find。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n035_soceress_master_tiana-5-a" image="" itemindex="">
-      <talk_answer link_index="n035_soceress_master_tiana-5-levelcheck" mid="34"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
+      <talk_answer link_index="n035_soceress_master_tiana-6" mid="34"><![CDATA[<html><FONT color=#a94407>(Get Award)</FONT></html>]]></talk_answer>
       <talk_question mid="33"><![CDATA[<html>$Task reward$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n035_soceress_master_tiana-5-b" image="" itemindex="">
@@ -158,6 +158,8 @@
          <exe type="setstep">5</exe>
          <exe type="setjornal">5</exe>
          <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200664</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 664);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="4">
@@ -168,14 +170,10 @@
    <qstep_change qstep="5">
       <comment />
       <conditions>
-         <chk type="lvl" op="]=">22</chk>
       </conditions>
       <executions>
          <exe type="recompense">,2161,2162,2163,2164</exe>
          <exe type="setstep">6</exe>
-         <exe type="conexe" true="1,3" false="1,4">0</exe>
-         <exe type="talk" npc="n035_soceress_master_tiana">6</exe>
-         <exe type="talk" npc="n035_soceress_master_tiana">b</exe>
          <exe type="delquestitem" num="-1">300061</exe>
       </executions>
    </qstep_change>
@@ -196,9 +194,9 @@
    <exelink qstep="2" npc="n035_soceress_master_tiana" sub="b" />
    <exelink qstep="2" npc="n035_soceress_master_tiana" sub="c" />
    <exelink qstep="2" npc="n035_soceress_master_tiana" sub="d">0,1</exelink>
-   <exelink qstep="3" npc="n164_argenta_wounded" sub="cutscene">3,0,2,1</exelink>
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="cutscene">3,8,0,2,1</exelink>
    <exelink qstep="5" npc="n035_soceress_master_tiana" sub="a">0</exelink>
-   <exelink qstep="5" npc="n035_soceress_master_tiana" sub="levelcheck">2,5</exelink>
+   <exelink qstep="5" npc="n035_soceress_master_tiana" sub="6">1,2</exelink>
    <exelink qstep="6" npc="n035_soceress_master_tiana">0</exelink>
    <exelink qstep="6" npc="n035_soceress_master_tiana" sub="b" />
    <exelink qstep="6" npc="n035_soceress_master_tiana" sub="!next">3,4</exelink>
