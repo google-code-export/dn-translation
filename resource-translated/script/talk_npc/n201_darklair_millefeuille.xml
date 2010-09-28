@@ -1,0 +1,27 @@
+<talk>
+      <npcename>n201_darklair_millefeuille</npcename>
+      <npcid>201</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Dark Goddess official Mierpiyou]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="auction" mid="3"><![CDATA[<html>[Exchange]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="4"><![CDATA[<html>[Dialogue] What is the local exchange?</html>]]></talk_answer>
+         <talk_answer link_index="quest" mid="8"><![CDATA[<html>[Task]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Dark Goddess official Mierpiyou${action:Talk}<BR>ah ... ...? I was doing to the ~? Ah.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="001" mid="6"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Dark Goddess official Mierpiyou$<BR>ah ~? Exchange is the place where goods can be sold by agents. As long as things to me on the list! ... ... Ah, it is necessary fee to. Hehe</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="15" link_target="sq08_352_beyond_the_nightmare.xml"><![CDATA[<html>[Lv20]<FONT color=#086171>Nightmare debris</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="35"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="9"><![CDATA[<html>$Dark Goddess official Mierpiyou$<BR> wow ~ you are willing to agree to my request? Great ~!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenMarket(userObjID);</exe>
+      </executions>
+      <conditions />
+      <exelink idx="auction">1</exelink>
+   </talk>

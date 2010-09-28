@@ -1,0 +1,45 @@
+<talk>
+      <npcename>n368_cart_ticketer_lornene</npcename>
+      <npcid>368</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Conductor Luo Lanna]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="go_prairie" mid="43"><![CDATA[<html>[Bound for the town to buy tickets Pourailly]</html>]]></talk_answer>
+         <talk_answer link_index="go_manaridge" mid="44"><![CDATA[<html>[Bound to purchase the tickets magic mountain ridge]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Conductor Luo Lanna$<BR>welcome. Here is the national transport <FONT color=#a82424>Atlantis</FONT>.<BR> Make sure the destination, and then buy a ticket.<BR>※<FONT color=#7e12d2> team state can not take the Atlantis.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="no_gold" image="" itemindex="">
+         <talk_question mid="6"><![CDATA[<html>$Conductor Luo Lanna$<BR>I'm sorry. Less than the amount you hold, can not buy tickets.<BR>Please confirm the amount held.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="party_member" image="" itemindex="">
+         <talk_question mid="7"><![CDATA[<html>$Conductor Luo Lanna$<BR>I'm sorry. Can not ride in the airship under team. Please separate<BR>and companions, and then take the airship.<BR>※<FONT color=#7e12d2> team state can not take the Atlantis.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="go_prairie" image="QW_PrairieTown.dds" itemindex="">
+         <talk_answer link_index="001" mid="60"><![CDATA[<html>Select other areas.</html>]]></talk_answer>
+         <talk_answer link_index="move_1" mid="61"><![CDATA[<html>[Aboard Atlantis]</html>]]></talk_answer>
+         <talk_question mid="55"><![CDATA[<html>$Conductor Luo Lanna$<BR><FONT color=#a82424>Pourailly Town</FONT> of the ticket amount <FONT color=#a82424>5 silver coins</FONT>.<BR>You want to take a bus bound <FONT color=#a82424>Pourailly Town</FONT> Atlantis number?<BR>※<FONT color=#7e12d2>team state can not take the Atlantis.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="go_manaridge" image="QW_ManaRidge.dds" itemindex="">
+         <talk_answer link_index="001" mid="62"><![CDATA[<html>Select other areas.</html>]]></talk_answer>
+         <talk_answer link_index="move_2" mid="63"><![CDATA[<html>[Aboard Atlantis]</html>]]></talk_answer>
+         <talk_question mid="56"><![CDATA[<html>$Conductor Luo Lanna$<BR><FONT color=#a82424>magic Ridge</FONT> of the ticket amount <FONT color=#a82424>5 silver coins</FONT>.<BR>You want to take the magic bound <FONT color=#a82424>ridge</FONT> Atlantis number?<BR>※<FONT color=#7e12d2>team state can not take the Atlantis.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="5">0</exe>
+         <exe type="conexe" true="7,8" false="6">1</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="conexe" true="7,9" false="6">1</exe>
+         <exe type="talk">no_gold</exe>
+         <exe type="talk">party_member</exe>
+         <exe type="custom">api_user_DelCoin( userObjID, 500 );</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,1,1);</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,5,1);</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_user_GetCoin( userObjID ) &gt;= 500</chk>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <exelink idx="move_1">1</exelink>
+      <exelink idx="move_2">3</exelink>
+   </talk>

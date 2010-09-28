@@ -1,0 +1,17 @@
+<talk>
+      <npcename>n10001_cashshop_guide</npcename>
+      <npcid>10001</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Mall guide]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_answer link_index="open_cashshop" mid="3"><![CDATA[<html>[Props Mall]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Mall guide${action:Talk}<BR>Welcome!<BR>
+Dream for you to create personalized clothing, and props where everything Oh.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenCashShop(userObjID);</exe>
+      </executions>
+      <conditions/>
+      <exelink idx="open_cashshop">1</exelink>
+   </talk>

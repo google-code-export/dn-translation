@@ -30,6 +30,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
    </talk_paragraph>
@@ -43,7 +46,7 @@
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-b" image="" itemindex="">
       <talk_answer link_index="n039_bishop_ignasio-1-c" mid="11"><![CDATA[<html>Ah？Neck？</html>]]></talk_answer>
-      <talk_question mid="10"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>Sea monster</FONT>Heaven is a long time ago a threat to the sacred monster，Was later killed。You go<FONT color=#a82424>Island</FONT>Nearby，Where the discarded sea monster&#39;s neck came back。</html>]]></talk_question>
+      <talk_question mid="10"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>Sea monster</FONT>Heaven is a long time ago a threat to the sacred monster，Was later killed。You go<FONT color=#a82424>Island</FONT>Nearby，Where the discarded sea monster's neck came back。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-c" image="" itemindex="">
       <talk_answer link_index="n039_bishop_ignasio-1-d" mid="13"><![CDATA[<html>(Bishop out of a bottle gourd)</html>]]></talk_answer>
@@ -57,7 +60,7 @@
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-3" image="QS_Default.dds" itemindex="300023">
       <talk_answer link_index="n039_bishop_ignasio-3-a" mid="18"><![CDATA[<html>You。</html>]]></talk_answer>
-      <talk_question mid="17"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>You 来啦。<BR>Sea monster&#39;s soul to do all the collected？</html>]]></talk_question>
+      <talk_question mid="17"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>You Laila。<BR>Sea monster's soul to do all the collected？</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-3-a" image="" itemindex="">
       <talk_answer link_index="n039_bishop_ignasio-3-b" mid="20"><![CDATA[<html>(Bishop is very pleased，Hold of my hand)</html>]]></talk_answer>
@@ -92,6 +95,8 @@ In order to divine paradise，In order to fight our Geraint，We have to refuel�
          <exe type="delcount">.</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">201197</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1197);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -110,7 +115,7 @@ In order to divine paradise，In order to fight our Geraint，We have to refuel�
    </qstep_change>
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
-   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d">0,2,3,1</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d">0,2,7,3,1</exelink>
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="b" />
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="c" />
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="d">0</exelink>
@@ -178,7 +183,7 @@ In order to divine paradise，In order to fight our Geraint，We have to refuel�
          <trigger_string />
          <maptool_index />
          <title mid="32"><![CDATA[To collect the soul of sea monster]]></title>
-         <contents mid="33"><![CDATA[<html>He says it is prepared ceremony，Purification Black Dragon&#39;s breath，Therefore need to sacrifice。First<FONT color=#a82424>The sunken vessel</FONT>Go，Use<FONT color=#a82424>Crystal bottle gourd</FONT>To collect the soul of it sea monster。<BR>
+         <contents mid="33"><![CDATA[<html>He says it is prepared ceremony，Purification Black Dragon's breath，Therefore need to sacrifice。First<FONT color=#a82424>The sunken vessel</FONT>Go，Use<FONT color=#a82424>Crystal bottle gourd</FONT>To collect the soul of it sea monster。<BR>
  <BR>
 <FONT color=#7e12d2>※ Difficulty can not be implemented under the abyss。</FONT><BR>
  <BR>
@@ -214,7 +219,7 @@ In order to divine paradise，In order to fight our Geraint，We have to refuel�
          <trigger_string />
          <maptool_index />
          <title mid="36"><![CDATA[Complete collection]]></title>
-         <contents mid="37"><![CDATA[<html>To collect the sea creature&#39;s soul，The crystal bottle gourd to the Bishop Ignacio。<BR>
+         <contents mid="37"><![CDATA[<html>To collect the sea creature's soul，The crystal bottle gourd to the Bishop Ignacio。<BR>
  <BR>
 <FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
          <destination mid="38"><![CDATA[And Bishop Ignacio Dialogue]]></destination>

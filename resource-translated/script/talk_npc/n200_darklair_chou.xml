@@ -1,0 +1,71 @@
+<talk>
+      <npcename>n200_darklair_chou</npcename>
+      <npcid>200</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Dark Goddess Sue]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="warehouse" mid="3"><![CDATA[<html>[Use of warehouse]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="20"><![CDATA[<html>[Dialogue] What is the barrier into the abyss?</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Dark goddess Sue${action: Talk}<BR>ah ~ sick of it. Something, you can quickly say it? If you help me work, so much the better.<BR> I want to rest.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="additem" image="QS_Default.dds" itemindex="337772545">
+         <talk_question mid="10"><![CDATA[<html>$Goddess Sue$<BR> dark abyss of barriers can only give you two a day. Too greedy, then the body can not stand. Maybe you will find trouble, but no way.<BR>※<FONT color=#7e12d2> abyss from the 4:00 barrier fatigue begins after initialization, you can receive 2 per day.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="inven" image="QS_Default.dds" itemindex="337772545">
+         <talk_question mid="11"><![CDATA[<html>$Dark Goddess Sue$<BR>
+You do not already have it? If you want to receive anything today, put the hands of the abyss barrier all spent, and then come to me.<BR>
+※<FONT color=#7e12d2> abyss barrier can only hold two.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="warehouse" image="QS_Default.dds" itemindex="337772545">
+         <talk_question mid="12"><![CDATA[<html>$Dark Goddess Sue$<BR>
+Why ... ... I think that on the warehouse do not know?<BR>
+Do not put up for the adventurer, I do not want to pit those who waste barrier.<BR>
+※<FONT color=#7e12d2> barrier in the abyss held until all used up and can not re-collect.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="complete_quest" image="QS_Default.dds" itemindex="337772545">
+         <talk_question mid="13"><![CDATA[<html>$Dark Goddess Sue$<BR>
+Today I did not have gave you? If the abuse of the abyss barriers against the power of the nightmare of fall will be gradually reduced. Today, before you take a break, come to me tomorrow.<BR>
+※<FONT color=#7e12d2> abyss from the 4:00 barrier fatigue begins after initialization, you can receive 2 per day.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="check_Inven" image="" itemindex="">
+         <talk_question mid="18"><![CDATA[<html>$Dark Goddess Sue$<BR>
+Ah? Your <FONT color=#a82424> backpack </ FONT> if full of ... ...?<BR>
+Barriers to receiving the abyss, they took backpack throw away useless things.<BR>
+※<FONT color=#7e12d2> Please leave space in backpack, then try to dialogue.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="QS_Default.dds" itemindex="337772545">
+         <talk_answer link_index="talk_2" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="21"><![CDATA[<html>$Dark Goddess Sue$<BR>
+<FONT Color=#a82424> abyss barrier</FONT> is corrupt people from the nightmare of the dark boundary of the erosion shield. Each entry barriers need to consume an abyss.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk_2" image="QS_Default.dds" itemindex="337772545">
+         <talk_answer link_index="001" mid="24"><![CDATA[<html>(Return)</html>]]></talk_answer>
+         <talk_question mid="23"><![CDATA[<html>$Dark Goddess Sue${action:Talk}<BR>
+Every day I give you two deep barrier.<BR>
+One day use too much into the abyss barrier, then resistance will weaken the power of nightmares, it is easy to become a Monster. Therefore, the number of issued must be controlled.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenWareHouse(userObjID);</exe>
+         <exe type="conexe" true="10" false="3">0</exe>
+         <exe type="conexe" true="8" false="4">1</exe>
+         <exe type="conexe" true="9" false="5">2</exe>
+         <exe type="conexe" true="6,7,12,13,14" false="11">3</exe>
+         <exe type="custom">api_user_AddItem(userObjID, 337772545, 2);</exe>
+         <exe type="talk">additem</exe>
+         <exe type="talk">inven</exe>
+         <exe type="talk">warehouse</exe>
+         <exe type="talk">complete_quest</exe>
+         <exe type="talk">check_Inven</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID,1017, 1);</exe>
+         <exe type="custom">api_quest_MarkingCompleteQuest(userObjID, 1017);</exe>
+         <exe type="custom">api_quest_CompleteQuest(userObjID, 1017, true, false);</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 1017) == 1</chk>
+         <chk type="custom">api_user_HasItem(userObjID, 337772545, 1) &gt;= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 337772545, 1) &gt;= 1</chk>
+         <chk type="custom">api_user_CheckInvenForAddItem(userObjID, 337772545, 2) &gt;= 1</chk>
+      </conditions>
+      <exelink idx="warehouse">1</exelink>
+   </talk>

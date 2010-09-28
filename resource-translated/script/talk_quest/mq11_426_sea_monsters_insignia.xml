@@ -32,20 +32,23 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1" image="QN_six_heroes_silhouette.dds" itemindex="">
       <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>Ah，Sea monster is a hero to be 6……？</html>]]></talk_answer>
-      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Ah……I&#39;ll explain to you<FONT color=#a82424>Sea monster</FONT>Things。Monster is a long time ago that living in the holy paradise near the Rhine in the brutal Roret monster。50Years ago，Being<FONT color=#a82424>Hero</FONT>Before they kill，Killed a lot of lives。</html>]]></talk_question>
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Ah……I'll explain to you<FONT color=#a82424>Sea monster</FONT>Things。Monster is a long time ago that living in the holy paradise near the Rhine in the brutal Roret monster。50Years ago，Being<FONT color=#a82424>Hero</FONT>Before they kill，Killed a lot of lives。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-a" image="" itemindex="">
       <talk_answer link_index="n039_bishop_ignasio-1-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
       <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio$<BR>Yes。That is what happened before the crusade Black Dragon。<BR>
-Heroes defeat the sea monster，Then it&#39;s body into several parts，Were sealed up。And to its<FONT color=#a82424>Source of strength</FONT>Sink to the deep places。</html>]]></talk_question>
+Heroes defeat the sea monster，Then it's body into several parts，Were sealed up。And to its<FONT color=#a82424>Source of strength</FONT>Sink to the deep places。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-b" image="" itemindex="">
-      <talk_answer link_index="n039_bishop_ignasio-1-level" mid="41"><![CDATA[<html>In the end where it？</html>]]></talk_answer>
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="41"><![CDATA[<html>In the end where it？</html>]]></talk_answer>
       <talk_question mid="40"><![CDATA[<html>$Bishop Ignacio$<BR>Just before the crusade against the monster attacked and sank a vessel，Was the hero after attack。So it remained in the neck<FONT color=#a82424>The sunken vessel</FONT>Nearby。But<FONT color=#a82424>Source of strength</FONT>Heroes had been thrown far away。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-c" image="" itemindex="">
@@ -108,12 +111,14 @@ Such a powerful force，Will be able to give it any help。</html>]]></talk_ques
          <exe type="talk" npc="n039_bishop_ignasio">d</exe>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
-         <exe type="huntmon" num="30001" party="1" exe="" onexe="6">1215</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">1215</exe>
          <exe type="addquestitem" num="1">300024</exe>
          <exe type="delcount">.</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
          <exe type="huntitem" num="1" exe="" onexe="7,8,9">300024</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="12">201215</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1215);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -131,10 +136,10 @@ Such a powerful force，Will be able to give it any help。</html>]]></talk_ques
       </executions>
    </qstep_change>
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
-   <exelink qstep="1" npc="n039_bishop_ignasio" sub="level">0</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="e" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="f" />
-   <exelink qstep="1" npc="n039_bishop_ignasio" sub="g">3,5,10,4</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="g">3,5,11,10,4</exelink>
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="b" />
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="c">0</exelink>
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="!next">1,2</exelink>
@@ -232,8 +237,8 @@ Such a powerful force，Will be able to give it any help。</html>]]></talk_ques
          <comp_money />
          <trigger_string />
          <maptool_index />
-         <title mid="36"><![CDATA[Bishop&#39;s praise]]></title>
-         <contents mid="37"><![CDATA[<html>To collect the sea monster&#39;s coat of arms。Report back to the Bishop Ignacio。<BR>
+         <title mid="36"><![CDATA[Bishop's praise]]></title>
+         <contents mid="37"><![CDATA[<html>To collect the sea monster's coat of arms。Report back to the Bishop Ignacio。<BR>
  <BR>
 <FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
          <destination mid="38"><![CDATA[And Bishop Ignacio Dialogue]]></destination>

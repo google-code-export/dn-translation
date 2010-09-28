@@ -38,6 +38,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
    </talk_paragraph>
@@ -46,11 +49,11 @@
       <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Although the prophet is the<FONT color=#a82424>Geraint</FONT>Protect，But I am worried about the defense sacred paradise。<BR>Although Black Dragon disappeared，But there are many<FONT color=#a82424>Monster</FONT>。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-a" image="" itemindex="">
-      <talk_answer link_index="n039_bishop_ignasio-1-level" mid="8"><![CDATA[<html>I can give it any help you？</html>]]></talk_answer>
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="8"><![CDATA[<html>I can give it any help you？</html>]]></talk_answer>
       <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio$<BR>Originally they are more evil things，Now lost leader，No one can control the more they are the。But the army lost the battle in the last great，<FONT color=#a82424>Quartermaster supplies</FONT>Are exhausted，Do not know when add up to。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-b" image="" itemindex="">
-      <talk_question mid="35"><![CDATA[<html>$Bishop Ignacio$<BR>Would you like to help，I can rest assured。I&#39;ll go look at armory，You first break。<BR><FONT color=#7e12d2>(34Level to implement the next phase of the task after)</FONT></html>]]></talk_question>
+      <talk_question mid="35"><![CDATA[<html>$Bishop Ignacio$<BR>Would you like to help，I can rest assured。I'll go look at armory，You first break。<BR><FONT color=#7e12d2>(34Level to implement the next phase of the task after)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-c" image="" itemindex="">
       <talk_answer link_index="n039_bishop_ignasio-1-d" mid="10"><![CDATA[<html>Where to find explosives in it？</html>]]></talk_answer>
@@ -112,15 +115,10 @@ There are special army depot responsible for this matter，So do not worry。<BR
    </qstep_change>
    <qstep_change qstep="1">
       <comment />
-      <conditions>
-         <chk type="lvl" op="]=">34</chk>
-      </conditions>
+      <conditions />
       <executions>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
-         <exe type="conexe" true="4" false="3">0</exe>
-         <exe type="talk" npc="n039_bishop_ignasio">b</exe>
-         <exe type="talk" npc="n039_bishop_ignasio">c</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -146,7 +144,7 @@ There are special army depot responsible for this matter，So do not worry。<BR
          <exe type="delquestitem" num="-1">300025</exe>
       </executions>
    </qstep_change>
-   <exelink qstep="1" npc="n039_bishop_ignasio" sub="level">2</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="e">0,1</exelink>
    <exelink qstep="3" npc="n276_invisible_thef" sub="a">0,1,2</exelink>
@@ -281,7 +279,7 @@ There are special army depot responsible for this matter，So do not worry。<BR
          <comp_money />
          <trigger_string />
          <maptool_index />
-         <title mid="58"><![CDATA[Bishop&#39;s praise]]></title>
+         <title mid="58"><![CDATA[Bishop's praise]]></title>
          <contents mid="59"><![CDATA[<html>Seems to be no more fossil。The fossils collected to<FONT color=#a82424>Bishop Ignacio</FONT>It。<BR>
  <BR>
 <FONT color=#086171>Holy Heaven King City</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>

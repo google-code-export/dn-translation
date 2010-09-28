@@ -33,8 +33,15 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-acceptted" mid="46"><![CDATA[<html>Is understood.</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Bishop Ignacio$<BR>I will continue to convince other nobles and king, early mobilization of the Knights of the Temple to do war.<BR>I know you're anxious, but please believe me, wait and see it.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1" image="" itemindex="">
       <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>Certainly。</html>]]></talk_answer>
@@ -65,7 +72,7 @@
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-2" image="QW_34.dds" itemindex="">
       <talk_question mid="18"><![CDATA[<html>$Bishop Ignacio$<BR>Request for assistance where supply unit is<FONT color=#a82424>River downstream of submerged land</FONT>。<BR>
-Now you&#39;re having fun，I am waiting for your good news。</html>]]></talk_question>
+Now you're having fun，I am waiting for your good news。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-3" image="" itemindex="">
       <talk_answer link_index="n039_bishop_ignasio-3-a" mid="21"><![CDATA[<html>Fortunately, energy and supply troops back together。</html>]]></talk_answer>
@@ -91,7 +98,10 @@ How like a?</html>]]></talk_question>
    <qstep_change qstep="accepting">
       <comment />
       <conditions />
-      <executions />
+      <executions>
+         <exe type="setquest">406</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">1</exe>
+      </executions>
    </qstep_change>
    <qstep_change qstep="1">
       <comment />
@@ -114,6 +124,7 @@ How like a?</html>]]></talk_question>
          <exe type="complete">406</exe>
       </executions>
    </qstep_change>
+   <exelink qstep="accepting" npc="n039_bishop_ignasio" sub="acceptted">0,1</exelink>
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
@@ -123,7 +134,7 @@ How like a?</html>]]></talk_question>
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="c">0</exelink>
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="d">1</exelink>
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="!next" />
-   <journal_data recompense="1:4061,2:4062,3:4063,4:4064" quest_title="운송물자 호위" chapterid="4" quest_level="30" quest_mark_type="7" use_item_list="">
+   <journal_data recompense="1:4061,2:4062,3:4063,4:4064" quest_title="Security transport materials" chapterid="4" quest_level="30" quest_mark_type="7" use_item_list="">
       <journal index="1">
          <title_image />
          <contents_image>QN_Npc_Bishop.dds</contents_image>
@@ -232,5 +243,9 @@ How like a?</html>]]></talk_question>
       <have_normal_item />
       <complete_mission />
       <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
    </condition_data>
 </quest>
