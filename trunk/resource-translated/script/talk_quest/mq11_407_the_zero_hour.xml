@@ -39,6 +39,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please sort out backpack)</html>]]></talk_question>
    </talk_paragraph>
@@ -47,7 +50,7 @@
       <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio$<BR>Do not worry，We all know how terrible enemy Black Dragon。So you went back there to complete Algerita<FONT color=#a82424>After a long crescent of ancient priests</FONT>Come back。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-a" image="" itemindex="">
-      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio$<BR>I&#39;ll try to take this work to complete the preparations to send troops。<BR>So do not worry we have the support of the。</html>]]></talk_question>
+      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio$<BR>I'll try to take this work to complete the preparations to send troops。<BR>So do not worry we have the support of the。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n212_argenta-1" image="QN_Npc_Elite_Soilder.dds" itemindex="">
       <talk_answer link_index="n212_argenta-1-a" mid="9"><![CDATA[<html>Be used。</html>]]></talk_answer>
@@ -117,7 +120,7 @@ I was born a slave worthy of ah。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-5" image="" itemindex="">
       <talk_answer link_index="n039_bishop_ignasio-5-!next" mid="62"><![CDATA[<html>（Continue）</html>]]></talk_answer>
-      <talk_question mid="58"><![CDATA[<html>$Bishop Ignacio$<BR>Holy heaven&#39;s best friend<FONT color=#382000>{user_class} {user_nick}</FONT>，As my agent Mission，Will give you the blessing of the Goddess。Be sure to save the Prophet，For the holy heaven of peace and tranquility to work it。</html>]]></talk_question>
+      <talk_question mid="58"><![CDATA[<html>$Bishop Ignacio$<BR>Holy heaven's best friend<FONT color=#382000>{user_class} {user_nick}</FONT>，As my agent Mission，Will give you the blessing of the Goddess。Be sure to save the Prophet，For the holy heaven of peace and tranquility to work it。</html>]]></talk_question>
    </talk_paragraph>
    <qstep_change qstep="accepting">
       <comment />
@@ -130,12 +133,13 @@ I was born a slave worthy of ah。</html>]]></talk_question>
       <executions>
          <exe type="setstep">2</exe>
          <exe type="setjornal">2</exe>
-         <exe type="huntmon" num="1" party="1" exe="3,4,5,6" onexe="">951</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">951</exe>
          <exe type="addquestitem" num="1">300021</exe>
          <exe type="delcount">.</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
-         <exe type="huntitem" num="1" exe="" onexe="">300021</exe>
+         <exe type="huntitem" num="1" exe="4,5,6" onexe="">300021</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">200951</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -171,7 +175,7 @@ I was born a slave worthy of ah。</html>]]></talk_question>
    </qstep_change>
    <exelink qstep="1" npc="n212_argenta" sub="b" />
    <exelink qstep="1" npc="n212_argenta" sub="c" />
-   <exelink qstep="1" npc="n212_argenta" sub="d">0,1,2,7</exelink>
+   <exelink qstep="1" npc="n212_argenta" sub="d">0,1,2,8,7</exelink>
    <exelink qstep="3" npc="n212_argenta" sub="b" />
    <exelink qstep="3" npc="n212_argenta" sub="c">2,0,1,2</exelink>
    <exelink qstep="4" npc="n039_bishop_ignasio" sub="b" />
@@ -316,7 +320,7 @@ I was born a slave worthy of ah。</html>]]></talk_question>
       </journal>
    </journal_data>
    <condition_data>
-      <user_level>-1:-1</user_level>
+      <user_level />
       <user_worldzone_level />
       <user_class />
       <prev_quest>406</prev_quest>

@@ -40,6 +40,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
    </talk_paragraph>
@@ -170,14 +173,14 @@ I do not want to know…… Much more of the…….</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n216_geraint_wounded-6" image="QN_Rose.dds" itemindex="">
       <talk_answer link_index="n216_geraint_wounded-6-a" mid="68"><![CDATA[<html>How do we go I？</html>]]></talk_answer>
-      <talk_question mid="67"><![CDATA[<html>$Geraint$<BR>I&#39;ve told you do not？<FONT color=#a82424>Descendants of ancient people</FONT>Can not wake up。<BR>Although I do not know why，But she seems unwilling to wake up from sleep。</html>]]></talk_question>
+      <talk_question mid="67"><![CDATA[<html>$Geraint$<BR>I've told you do not？<FONT color=#a82424>Descendants of ancient people</FONT>Can not wake up。<BR>Although I do not know why，But she seems unwilling to wake up from sleep。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n216_geraint_wounded-6-a" image="" itemindex="">
       <talk_answer link_index="n216_geraint_wounded-6-b" mid="70"><![CDATA[<html>But……</html>]]></talk_answer>
       <talk_question mid="69"><![CDATA[<html>$Geraint$<BR>Do not know，Time to wake up it will be her natural。<BR>But，In their lifetime，She is no longer willing to wake up is possible。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n216_geraint_wounded-6-b" image="QN_Npc_Bishop.dds" itemindex="">
-      <talk_question mid="71"><![CDATA[<html>$Geraint$<BR>Humans are doing their own<FONT color=#a82424>Select</FONT>Of。She could not wake up，Is her own choice。<BR><FONT color=#a82424>Send you to the people</FONT>If you ask them，It&#39;s that back him。</html>]]></talk_question>
+      <talk_question mid="71"><![CDATA[<html>$Geraint$<BR>Humans are doing their own<FONT color=#a82424>Select</FONT>Of。She could not wake up，Is her own choice。<BR><FONT color=#a82424>Send you to the people</FONT>If you ask them，It's that back him。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-6" image="QN_Rose.dds" itemindex="">
       <talk_answer link_index="n039_bishop_ignasio-6-a" mid="73"><![CDATA[<html>She did not wake up。</html>]]></talk_answer>
@@ -185,7 +188,7 @@ I do not want to know…… Much more of the…….</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-6-a" image="" itemindex="">
       <talk_answer link_index="n039_bishop_ignasio-6-b" mid="75"><![CDATA[<html>No。</html>]]></talk_answer>
-      <talk_question mid="74"><![CDATA[<html>$Bishop Ignacio$<BR>It&#39;s a shame。<FONT color=#7e12d2>(Bishop looked very disappointed。)</FONT><BR>……It seems we are pious enough to pray。</html>]]></talk_question>
+      <talk_question mid="74"><![CDATA[<html>$Bishop Ignacio$<BR>It's a shame。<FONT color=#7e12d2>(Bishop looked very disappointed。)</FONT><BR>……It seems we are pious enough to pray。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-6-b" image="QN_Rose.dds" itemindex="">
       <talk_answer link_index="n039_bishop_ignasio-6-c" mid="77"><![CDATA[<html>(Bishop mind was made up)</html>]]></talk_answer>
@@ -229,6 +232,7 @@ I do not want to know…… Much more of the…….</html>]]></talk_question>
          <exe type="setjornal">4</exe>
          <exe type="addquestitem" num="1">300246</exe>
          <exe type="huntitem" num="1" exe="" onexe="9,10,11">300246</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="12">201007</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="3">
@@ -274,7 +278,7 @@ I do not want to know…… Much more of the…….</html>]]></talk_question>
    <exelink qstep="2" npc="n039_bishop_ignasio" sub="e" />
    <exelink qstep="2" npc="n039_bishop_ignasio" sub="levelc1">3</exelink>
    <exelink qstep="2" npc="n039_bishop_ignasio" sub="h" />
-   <exelink qstep="2" npc="n039_bishop_ignasio" sub="i">6,8,13,7</exelink>
+   <exelink qstep="2" npc="n039_bishop_ignasio" sub="i">6,8,14,13,7</exelink>
    <exelink qstep="4" npc="n039_bishop_ignasio" sub="b">2,3,0,1</exelink>
    <exelink qstep="5" npc="n251_rose" sub="rose1">0,1,2,3</exelink>
    <exelink qstep="5" npc="n251_rose" sub="rose2">0,1,2,3</exelink>
@@ -310,7 +314,7 @@ I do not want to know…… Much more of the…….</html>]]></talk_question>
          <comp_money />
          <trigger_string />
          <maptool_index />
-         <title mid="81"><![CDATA[Bishop&#39;s request]]></title>
+         <title mid="81"><![CDATA[Bishop's request]]></title>
          <contents mid="82"><![CDATA[<html>Bishop Ignacio proposed to personally see the Prophet to pray for。Find<FONT color=#a82424>Geraint</FONT>Bishop asked whether the band came。<BR><BR><FONT color=#086171>Holy Heaven King City(Secret underground area)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
          <destination mid="83"><![CDATA[And the King City ground Geraint dialogue]]></destination>
          <todo_msg mid="84"><![CDATA[Find Geraint，To convey the words of Bishop。]]></todo_msg>
@@ -444,7 +448,7 @@ I do not want to know…… Much more of the…….</html>]]></talk_question>
          <contents mid="98"><![CDATA[<html>Bishop Ignacio made with holy water to the sleeping<FONT color=#a82424>Rose</FONT>Side，Dialogue with her。<BR>
  <BR>
 <FONT color=#086171>Holy Heaven King City(Secret underground area)</FONT> <FONT color=#a82424>→ Rose</FONT></html>]]></contents>
-         <destination mid="99"><![CDATA[And King&#39;s Rose dialogue underground city]]></destination>
+         <destination mid="99"><![CDATA[And King's Rose dialogue underground city]]></destination>
          <todo_msg mid="100"><![CDATA[Bring holy water to find the ground floor of Ross King City。]]></todo_msg>
       </journal>
       <journal index="6">

@@ -1,0 +1,75 @@
+<talk>
+      <npcename>n367_cart_ticketer_irnene</npcename>
+      <npcid>367</npcid>
+      <startexe>3</startexe>
+      <npckname mid="1"><![CDATA[Conductor Eleanor]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="45"><![CDATA[<html>$Conductor Eleanor$<BR>Nice to meet you. Here is the national transport<FONT color=#a82424> Atlantis </FONT>.<BR>Now suspended operations.<BR>
+I hope you will understand.<BR>※<FONT color=#7e12d2>9Lv can use more than</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="go_prairie" mid="43"><![CDATA[<html>[Bound for the town to buy tickets Pourailly]</html>]]></talk_answer>
+         <talk_answer link_index="go_cataract" mid="44"><![CDATA[<html>[Buy a ticket barriers bound Kedella]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Conductor Eleanor$<BR>welcome. Here is the national transport<FONT color=#a82424> Atlantis</FONT>.<BR> Make sure the destination, and then buy a ticket.<BR>※<FONT color=#7e12d2> team state can not take the Atlantis.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="003" image="" itemindex="">
+         <talk_answer link_index="go_prairie" mid="49"><![CDATA[<html>[Bound for the town to buy tickets Pourailly]</html>]]></talk_answer>
+         <talk_answer link_index="go_cataract" mid="50"><![CDATA[<html>[Buy a ticket barriers bound Kedella]</html>]]></talk_answer>
+         <talk_answer link_index="go_saint" mid="51"><![CDATA[<html>[Buy a ticket bound for sacred paradise]</html>]]></talk_answer>
+         <talk_question mid="47"><![CDATA[<html>$Conductor Eleanor$<BR>welcome. Here is the national transport<FONT color=#a82424> Atlantis</FONT>.<BR> Make sure the destination, and then buy a ticket.<BR>※<FONT color=#7e12d2> team state can not take the Atlantis.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="no_gold" image="" itemindex="">
+         <talk_question mid="6"><![CDATA[<html>$Conductor Eleanor$<BR>I'm sorry. Less than the amount you hold, can not buy tickets.<BR>Please confirm the amount held.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="party_member" image="" itemindex="">
+         <talk_question mid="7"><![CDATA[<html>$Conductor Eleanor$<BR>I'm sorry. Can not ride in the airship under team. Please separate<BR> and companions, and then take the airship.<BR>※<FONT color=#7e12d2> team state can not take the Atlantis.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="go_prairie" image="QW_PrairieTown.dds" itemindex="">
+         <talk_answer link_index="back_1" mid="60"><![CDATA[<html>Select other areas.</html>]]></talk_answer>
+         <talk_answer link_index="move_1" mid="61"><![CDATA[<html>[Aboard Atlantis]</html>]]></talk_answer>
+         <talk_question mid="55"><![CDATA[<html>$Conductor Eleanor$<BR><FONT color=#a82424> Pourailly Town</FONT> of the ticket amount <FONT color=#a82424>5 silver coins</FONT>.<BR>You want to take a bus bound<FONT color=#a82424> Pourailly Town </FONT>Atlantis number?<BR>※<FONT color=#7e12d2> team state can not take the Atlantis.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="go_cataract" image="QW_CataractGateway.dds" itemindex="">
+         <talk_answer link_index="back_3" mid="62"><![CDATA[<html>Select other areas.</html>]]></talk_answer>
+         <talk_answer link_index="move_3" mid="63"><![CDATA[<html>[Aboard Atlantis]</html>]]></talk_answer>
+         <talk_question mid="56"><![CDATA[<html>$Conductor Eleanor$<BR><FONT color=#a82424>Kedella points</FONT> of the ticket amount <FONT color=#a82424>5 silver coins</FONT>.<BR>You want to take a bus bound <FONT color=#a82424>Kedella points</FONT> Atlantis number?<BR>※<FONT color=#7e12d2>team state can not take the Atlantis.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="go_saint" image="QW_SaintHaven.dds" itemindex="">
+         <talk_answer link_index="back_4" mid="64"><![CDATA[<html>Select other areas.</html>]]></talk_answer>
+         <talk_answer link_index="move_4" mid="65"><![CDATA[<html>[Aboard Atlantis]</html>]]></talk_answer>
+         <talk_question mid="57"><![CDATA[<html>$Conductor Eleanor$<BR><FONT color=#a82424>sacred paradise</FONT> of the ticket amount <FONT color=#a82424>10 silver coins</FONT>.<BR>You want to take a bus bound <FONT color=#a82424>sacred paradise</FONT> Atlantis number?<BR>※<FONT color=#7e12d2> team state can not take the Atlantis.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="talk">003</exe>
+         <exe type="conexe" true="2" false="4">0</exe>
+         <exe type="conexe" true="1" false="0">1</exe>
+         <exe type="conexe" true="6" false="11">2</exe>
+         <exe type="conexe" true="13,15" false="12">4</exe>
+         <exe type="conexe" true="8" false="11">2</exe>
+         <exe type="conexe" true="13,16" false="12">4</exe>
+         <exe type="conexe" true="10" false="11">3</exe>
+         <exe type="conexe" true="14,17" false="12">4</exe>
+         <exe type="talk">no_gold</exe>
+         <exe type="talk">party_member</exe>
+         <exe type="custom">api_user_DelCoin( userObjID, 500 );</exe>
+         <exe type="custom">api_user_DelCoin( userObjID, 1000 );</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,1,1);</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,8,1);</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,11,1);</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 401) == 1</chk>
+         <chk type="lvl" op=">=">9</chk>
+         <chk type="custom">api_user_GetCoin( userObjID ) &gt;= 500</chk>
+         <chk type="custom">api_user_GetCoin( userObjID ) &gt;= 1000</chk>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <exelink idx="back_1">3</exelink>
+      <exelink idx="move_1">5</exelink>
+      <exelink idx="back_3">3</exelink>
+      <exelink idx="move_3">7</exelink>
+      <exelink idx="back_4">3</exelink>
+      <exelink idx="move_4">9</exelink>
+   </talk>

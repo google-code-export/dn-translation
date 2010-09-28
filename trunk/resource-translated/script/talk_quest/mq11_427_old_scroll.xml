@@ -33,6 +33,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
    </talk_paragraph>
@@ -72,7 +75,7 @@
 Really great！！I do not know how you go about the praise。Ha ha……I think it was God sent you my side。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-3-b" image="" itemindex="">
-      <talk_answer link_index="n039_bishop_ignasio-3-c" mid="40"><![CDATA[<html>Good，Then you&#39;ve worked hard。</html>]]></talk_answer>
+      <talk_answer link_index="n039_bishop_ignasio-3-c" mid="40"><![CDATA[<html>Good，Then you've worked hard。</html>]]></talk_answer>
       <talk_question mid="39"><![CDATA[<html>$Bishop Ignacio$<BR>Ready after the altar，I left the ceremony will be conducted。First you break it down。You have been very busy this time，You can visit this shopping，Enjoy the rare leisure。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-3-c" image="" itemindex="">
@@ -104,6 +107,8 @@ Really great！！I do not know how you go about the praise。Ha ha……I think
          <exe type="delcount">.</exe>
          <exe type="setstep">3</exe>
          <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">201096</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1096);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -123,7 +128,7 @@ Really great！！I do not know how you go about the praise。Ha ha……I think
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
-   <exelink qstep="1" npc="n039_bishop_ignasio" sub="e">0,2,4,1</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="e">0,2,8,4,1</exelink>
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="b" />
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="c" />
    <exelink qstep="3" npc="n039_bishop_ignasio" sub="d" />

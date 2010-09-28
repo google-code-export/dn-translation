@@ -12,7 +12,7 @@
       <nextqid>413</nextqid>
       <nextqname>mq11_413_dreaming_rose</nextqname>
       <nextqnpc>n038_royal_magician_kalaen</nextqnpc>
-      <qkname mid="1"><![CDATA[佩奥里斯塔 medicine]]></qkname>
+      <qkname mid="1"><![CDATA[Fairystar medicine]]></qkname>
       <qnpc>
          <npcid>38</npcid>
          <npcename>n038_royal_magician_kalaen</npcename>
@@ -35,6 +35,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
    </talk_paragraph>
@@ -54,7 +57,7 @@ To comfort those wounded soldiers on the battlefield，Have to report with the u
       <talk_question mid="11"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Yes，Research may also wake up Kala An<FONT color=#a82424>Prophet</FONT>Approach。<BR>There can be little hope that the outcome of her。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-2" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
-      <talk_question mid="12"><![CDATA[<html>$Bishop Ignacio$<BR>You went to see<FONT color=#a82424>Court magician Kala An</FONT>Adults the right？<BR>To wake up the prophet，She seems to also study the ancient books 佩奥里斯塔。</html>]]></talk_question>
+      <talk_question mid="12"><![CDATA[<html>$Bishop Ignacio$<BR>You went to see<FONT color=#a82424>Court magician Kala An</FONT>Adults the right？<BR>To wake up the prophet，She seems to also study the ancient books Fairystar。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n038_royal_magician_kalaen-2" image="" itemindex="">
       <talk_answer link_index="n038_royal_magician_kalaen-2-a" mid="14"><![CDATA[<html>(How it is going……)</html>]]></talk_answer>
@@ -72,14 +75,14 @@ Did it？</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n038_royal_magician_kalaen-2-c" image="" itemindex="">
       <talk_answer link_index="n038_royal_magician_kalaen-2-d" mid="20"><![CDATA[<html>(She seems to me to help find a)</html>]]></talk_answer>
-      <talk_question mid="19"><![CDATA[<html>$Court magician Kala An$<BR>Ha ha，Happy heart now more。<BR>Whatever，You！I&#39;ll give you a special opportunity，My experience<FONT color=#a82424>佩奥里斯塔</FONT>Amazing ability！</html>]]></talk_question>
+      <talk_question mid="19"><![CDATA[<html>$Court magician Kala An$<BR>Ha ha，Happy heart now more。<BR>Whatever，You！I'll give you a special opportunity，My experience<FONT color=#a82424>Fairystar</FONT>Amazing ability！</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n038_royal_magician_kalaen-2-d" image="QS_Default.dds" itemindex="300251">
       <talk_question mid="21"><![CDATA[<html>$Court magician Kala An$<BR>You rush to<FONT color=#a82424>Island center</FONT>Get me some<FONT color=#a82424>Fantasy draft</FONT>Return。<BR>
-I need that can germinate in the Monster&#39;s belly grow things，Elimination of the center island can be a powerful Monster。</html>]]></talk_question>
+I need that can germinate in the Monster's belly grow things，Elimination of the center island can be a powerful Monster。</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n038_royal_magician_kalaen-3" image="QS_Default.dds" itemindex="300251">
-      <talk_question mid="23"><![CDATA[<html>$Court magician Kala An$<BR>Matter how？Now not to go？Go<FONT color=#a82424>Island center</FONT>Find some<FONT color=#a82424>Fantasy draft</FONT>Return。I let you to experience<BR>佩奥里斯塔 great strength！</html>]]></talk_question>
+      <talk_question mid="23"><![CDATA[<html>$Court magician Kala An$<BR>Matter how？Now not to go？Go<FONT color=#a82424>Island center</FONT>Find some<FONT color=#a82424>Fantasy draft</FONT>Return。I let you to experience<BR>Fairystar great strength！</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n038_royal_magician_kalaen-4" image="QN_Npc_Bishop.dds" itemindex="">
       <talk_answer link_index="n038_royal_magician_kalaen-4-a" mid="25"><![CDATA[<html>What do you intend to use this？</html>]]></talk_answer>
@@ -133,6 +136,7 @@ This thing will be very fragrant smell，You can never eat！Remember me？</htm
          <exe type="setstep">4</exe>
          <exe type="setjornal">4</exe>
          <exe type="huntitem" num="1" exe="" onexe="4,5,6">300251</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">200931</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="3">
@@ -153,7 +157,7 @@ This thing will be very fragrant smell，You can never eat！Remember me？</htm
    <exelink qstep="1" npc="n039_bishop_ignasio" sub="b">0,1</exelink>
    <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="b" />
    <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="c" />
-   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="d">0,2,7,1</exelink>
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="d">0,2,8,7,1</exelink>
    <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="b" />
    <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="c" />
    <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="d" />

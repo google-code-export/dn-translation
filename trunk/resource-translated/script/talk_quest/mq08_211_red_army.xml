@@ -35,6 +35,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please sort out backpack。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>$Notify$<br>(currently unable to accept the task, or has exceeded the maximum number of tasks.)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Taskbar space backpack。<br>(Please sort out backpack)</html>]]></talk_question>
    </talk_paragraph>
@@ -43,7 +46,7 @@
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
       <talk_answer link_index="n024_adventurer_guildmaster_decud-1-levelcheck" mid="8"><![CDATA[<html>Recently you have seen the red wizard？</html>]]></talk_answer>
-      <talk_question mid="7"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Oh，You 来啦。I would like to do。Here you have something wrong？</html>]]></talk_question>
+      <talk_question mid="7"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Oh，You Laila。I would like to do。Here you have something wrong？</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QM_Ellena.dds" itemindex="">
       <talk_question mid="34"><![CDATA[<html>$Society of Dai Kade adventurer$<BR>Red Wizard？Never heard of……<BR>If I receive the relevant reports，I will immediately inform you。<BR><FONT color=#7e12d2>(Reach16Level to implement the next phase of the task after。)</FONT></html>]]></talk_question>
@@ -93,6 +96,8 @@
          <exe type="conexe" true="7" false="8">0</exe>
          <exe type="talk" npc="n024_adventurer_guildmaster_decud">a</exe>
          <exe type="talk" npc="n024_adventurer_guildmaster_decud">b</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10">200492</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 492);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="2">
@@ -110,7 +115,7 @@
    </qstep_change>
    <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="levelcheck">6</exelink>
    <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c" />
-   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="d">0,1,2</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="d">0,2,9,1</exelink>
    <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="a">1</exelink>
    <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="!next">0</exelink>
    <journal_data recompense="1:2111,2:2112,3:2113,4:2114" quest_title="붉은 군대" chapterid="3" quest_level="16" quest_mark_type="7" use_item_list="">

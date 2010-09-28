@@ -55,6 +55,9 @@
    <talk_paragraph index="_full_inventory">
       <talk_question mid="4"><![CDATA[<html>$Notice$<br>Backpack space，Can not be rewarded。<br><br><FONT color=#7e12d2>※ Please leave space in the backpack，To get the reward。</FONT></html>]]></talk_question>
    </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> $Notice$<br>(Currently unable to accept the task of，Or has exceeded the maximum number of tasks。)</html>]]></talk_question>
+   </talk_paragraph>
    <talk_paragraph index="_full_Qinventory">
       <talk_question mid="99999"><![CDATA[<html>$Notice$<br>Backpack taskbar space。<br>(Please order Backpack)</html>]]></talk_question>
    </talk_paragraph>
@@ -68,7 +71,7 @@
       <talk_question mid="8"><![CDATA[<html>$Court magician Kala An${action:Talk}<BR>Hum，Raccoons can not believe that the same sinister old man，I have said many times Kala An do not？！Now look at what it had～King City guys。<BR><FONT color=#7e12d2>(King City must go underground secret place to confirm the safety of Rose)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n042_general_duglars-1" image="QN_Rose.dds" itemindex="">
-      <talk_question mid="9"><![CDATA[<html>$General Douglas$<BR>I&#39;m checking the important report。You wait and then come to me。<BR><FONT color=#7e12d2>(King City must go underground secret place to confirm the safety of Rose)</FONT></html>]]></talk_question>
+      <talk_question mid="9"><![CDATA[<html>$General Douglas$<BR>I'm checking the important report。You wait and then come to me。<BR><FONT color=#7e12d2>(King City must go underground secret place to confirm the safety of Rose)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n209_elite_soldier-1" image="QN_Rose.dds" itemindex="">
       <talk_question mid="10"><![CDATA[<html>$Elite soldiers Cleander$<BR>Because suddenly received a message，King City, once confusion up。<BR><FONT color=#7e12d2>(King City must go underground secret place to confirm the safety of Rose)</FONT></html>]]></talk_question>
@@ -148,10 +151,10 @@ She immediately to deploy additional manpower to chase him。</html>]]></talk_qu
    </talk_paragraph>
    <talk_paragraph index="n038_royal_magician_kalaen-4-a" image="QN_Rose.dds" itemindex="">
       <talk_answer link_index="n038_royal_magician_kalaen-4-b" mid="47"><![CDATA[<html>(Lie……)</html>]]></talk_answer>
-      <talk_question mid="46"><![CDATA[<html>$Court magician Kala An$<BR>It&#39;s all because of you！What they do not know where Scrapped，The results for the raccoon to<FONT color=#a82424>Prophet</FONT>Stole！<BR>I knew so～I know～！！</html>]]></talk_question>
+      <talk_question mid="46"><![CDATA[<html>$Court magician Kala An$<BR>It's all because of you！What they do not know where Scrapped，The results for the raccoon to<FONT color=#a82424>Prophet</FONT>Stole！<BR>I knew so～I know～！！</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n038_royal_magician_kalaen-4-b" image="QW_44.dds" itemindex="">
-      <talk_answer link_index="n038_royal_magician_kalaen-4-c" mid="49"><![CDATA[<html>I&#39;ll go。</html>]]></talk_answer>
+      <talk_answer link_index="n038_royal_magician_kalaen-4-c" mid="49"><![CDATA[<html>I'll go。</html>]]></talk_answer>
       <talk_question mid="48"><![CDATA[<html>$Court magician Kala An$<BR>I heard the general say，Bishop seems to<FONT color=#a82424>Tomb of unknown tyrant</FONT>There fled the。<BR>If you have a little sense of responsibility, then，To quickly pursue him！</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n038_royal_magician_kalaen-4-c" image="" itemindex="">
@@ -237,6 +240,8 @@ She immediately to deploy additional manpower to chase him。</html>]]></talk_qu
          <exe type="delcount">.</exe>
          <exe type="setstep">6</exe>
          <exe type="setjornal">6</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">201159</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1159);</exe>
       </executions>
    </qstep_change>
    <qstep_change qstep="5">
@@ -259,7 +264,7 @@ She immediately to deploy additional manpower to chase him。</html>]]></talk_qu
    <exelink qstep="3" npc="n042_general_duglars" sub="c">0,1</exelink>
    <exelink qstep="4" npc="n041_duke_stwart" sub="" />
    <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="b" />
-   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="c">0,2,1</exelink>
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="c">0,2,6,1</exelink>
    <exelink qstep="6" npc="n038_royal_magician_kalaen" sub="b" />
    <exelink qstep="6" npc="n042_general_duglars" sub="b" />
    <exelink qstep="6" npc="n042_general_duglars" sub="c" />
